@@ -11,7 +11,7 @@
          var DetailGridTitle = '';
          $(document).ready(function () {
              $(function () {
-
+                 //測試
                  $("input, select, textarea").focus(function () {
                      $(this).css("background-color", "yellow");
                  });
