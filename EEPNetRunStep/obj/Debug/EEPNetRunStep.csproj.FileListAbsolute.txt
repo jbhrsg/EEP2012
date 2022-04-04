@@ -1,0 +1,23 @@
+D:\Infolight\EEP2008\Solution1\EEPNetRunStep\obj\Debug\ResolveAssemblyReference.cache
+D:\Infolight\EEP2008\Solution1\EEPNetRunStep\obj\Debug\EEPNetRunStep.frmEEPNetRunStep.resources
+D:\Infolight\EEP2008\Solution1\EEPNetRunStep\obj\Debug\EEPNetRunStep.csproj.GenerateResource.Cache
+D:\Infolight\EEP2008\Solution1\EEPNetServer\GLModule.dll
+D:\Infolight\EEP2008\Solution1\EEPNetServer\GLModule.pdb
+D:\Infolight\EEP2008\Solution1\EEPNetRunStep\obj\Debug\GLModule.dll
+D:\Infolight\EEP2008\Solution1\EEPNetRunStep\obj\Debug\GLModule.pdb
+D:\Infolight\EEP2010\EEPNetServer\GLModule.dll
+D:\Infolight\EEP2010\EEPNetRunStep\obj\Debug\ResolveAssemblyReference.cache
+D:\Infolight\EEP2010\EEPNetRunStep\obj\Debug\EEPNetRunStep.frmEEPNetRunStep.resources
+D:\Infolight\EEP2010\EEPNetRunStep\obj\Debug\GenerateResource.read.1.tlog
+D:\Infolight\EEP2010\EEPNetRunStep\obj\Debug\GenerateResource.write.1.tlog
+D:\Infolight\EEP2010\EEPNetServer\GLModule.pdb
+D:\Infolight\EEP2010\EEPNetClient\EEPNetRunStep.pdb
+D:\Infolight\EEP2010\EEPNetRunStep\obj\Debug\EEPNetRunStep.pdb
+D:\Infolight\EEP2010\EEPNetClient\EEPNetRunStep.exe
+D:\Infolight\EEP2010\EEPNetRunStep\obj\Debug\EEPNetRunStep.exe
+C:\Program Files\Infolight\EEP2012\EEPNetClient\EEPNetRunStep.exe
+C:\Program Files\Infolight\EEP2012\EEPNetClient\EEPNetRunStep.pdb
+C:\Program Files\Infolight\EEP2012\EEPNetRunStep\obj\Debug\EEPNetRunStep.frmEEPNetRunStep.resources
+C:\Program Files\Infolight\EEP2012\EEPNetRunStep\obj\Debug\EEPNetRunStep.csproj.GenerateResource.Cache
+C:\Program Files\Infolight\EEP2012\EEPNetRunStep\obj\Debug\EEPNetRunStep.exe
+C:\Program Files\Infolight\EEP2012\EEPNetRunStep\obj\Debug\EEPNetRunStep.pdb

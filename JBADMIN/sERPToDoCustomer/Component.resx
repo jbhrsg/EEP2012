@@ -1,0 +1,286 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <metadata name="serviceManager1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 55</value>
+  </metadata>
+  <metadata name="InfoConnection1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 93</value>
+  </metadata>
+  <metadata name="ERPSalesMaster.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 169</value>
+  </metadata>
+  <data name="ERPSalesMaster.CommandText" xml:space="preserve">
+    <value>WITH CTE AS ( 
+   select distinct m.SalesMasterNO,m.SalesTypeID,m.CustNO,m.CustShortName,Min(d.SalesDate) as MinSalesDate,Max(d.SalesDate) as MaxSalesDate,KeepDays,KeepDaysAlert,d.SalesID
+,(sum(distinct m.TotalSalesQty)-dbo.funReturnSalesDetailsUseQty(m.SalesMasterNO,m.SalesTypeID)) as UseQty
+,STUFF((SELECT Case Isnull(ContractDescr,'') when '' then '' else ','+Convert(nvarchar(10),SalesDate,111)+ContractDescr end from ERPSalesDetails where SalesMasterNO=m.SalesMasterNO  FOR XML PATH('')),1,1,'') as ContractDescr
+from ERPSalesMaster m	
+	inner join ERPSalesDetails d on m.SalesMasterNO=d.SalesMasterNO	
+where m.IsActive=1 and d.IsActive=1 and KeepDaysAlert=1 
+group by m.SalesMasterNO,m.SalesTypeID,m.CustNO,m.CustShortName,KeepDays,KeepDaysAlert,d.SalesID
+)
+ SELECT * FROM CTE m
+ where 1=1
+ order by MaxSalesDate</value>
+  </data>
+  <metadata name="ucERPSalesMaster.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 245</value>
+  </metadata>
+  <metadata name="ERPSalesDetails.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 283</value>
+  </metadata>
+  <data name="ERPSalesDetails.CommandText" xml:space="preserve">
+    <value>select d.SalesMasterNO,d.ItemSeq,d.CustNO,m.CustShortName,d.ContractDescr,d.SalesDescrDate,d.SalesDescrAlert,d.SalesEmployeeID,d.SalesID
+from ERPSalesDetails d
+	inner join ERPSalesMaster m on d.SalesMasterNO=m.SalesMasterNO	
+where m.IsActive=1 and d.IsActive=1 and d.SalesDescrAlert=1</value>
+  </data>
+  <metadata name="ucERPSalesDetails.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 321</value>
+  </metadata>
+  <metadata name="infoQuery.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 359</value>
+  </metadata>
+  <metadata name="infoCustomerToDoNotes.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 397</value>
+  </metadata>
+  <data name="infoCustomerToDoNotes.CommandText" xml:space="preserve">
+    <value>SELECT   distinct C.*,m.Notes,m.NotesCreateDate,m.NextCallDate,m.NextCallTime,m.PostSourceID,m.CreateBy,m.CreateDate,m.UpdateBy,m.UpateDate
+	,t.ListContent,d.SalesID,d.SalesName,'' as NextCallDateAdd,'' as NextCallTimeAdd,s.SourceName
+	,rtrim(c.CustTelNO) as CustTelNO,rtrim(c.ContactA)+ Case Isnull(rtrim(c.ContactASubTel),'') when '' then '' else ' #'+rtrim(c.ContactASubTel) end as ContactAandTel
+	,(SELECT CENTER_ID FROM ERPSalesMan WHERE SalesID=C.SALESID) as   CENTER_ID
+ FROM dbo.ERPCustomers as C 
+	inner join ERPCustomerToDoNotes m on m.CustNO=c.CustNO	
+	left join ERPPostSource s on m.PostSourceID=s.ID
+	left join ERPReferenceTable t on t.ListCategory='PostType' and c.PostType=t.ListID
+	left join ERPSalesMan d on c.SalesID=d.SalesID
+where m.NextCallDate=(select MAX(NextCallDate) from ERPCustomerToDoNotes where CustNO=c.CustNO) and IsNull(m.Notes,'')=''
+order by m.NextCallDate,c.CustNO</value>
+  </data>
+  <metadata name="infoConnection2.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 435</value>
+  </metadata>
+  <metadata name="updateCustomerToDoNotes.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 473</value>
+  </metadata>
+  <metadata name="infoNextCallTime.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 511</value>
+  </metadata>
+  <metadata name="infoPostSource.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 549</value>
+  </metadata>
+  <metadata name="infoPostType.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 587</value>
+  </metadata>
+  <metadata name="infoCustomerToDoNotesList.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 625</value>
+  </metadata>
+  <data name="infoCustomerToDoNotesList.CommandText" xml:space="preserve">
+    <value>select m.AutoKey,m.CustNO,m.Notes,m.NotesCreateDate,m.NextCallDate,m.NextCallTime,m.PostSourceID,m.CreateBy,m.CreateDate,m.UpdateBy,m.UpateDate
+	,c.CustShortName,c.PostType,t.ListContent,d.SalesID,d.SalesName,c.HrBankUrl
+from ERPCustomerToDoNotes m
+	inner join ERPCustomers c on m.CustNO=c.CustNO
+	left join ERPPostSource s on m.PostSourceID=s.ID
+	left join ERPReferenceTable t on t.ListCategory='PostType' and c.PostType=t.ListID
+	left join ERPSalesMan d on c.SalesID=d.SalesID
+where Isnull(m.Notes,'')!=''
+order by m.NextCallDate desc,m.NextCallTime,c.PostType</value>
+  </data>
+  <metadata name="infoTempToDoNotes.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 663</value>
+  </metadata>
+  <data name="infoTempToDoNotes.CommandText" xml:space="preserve">
+    <value> SELECT   C.*,m.CustNO,m.Notes,m.NotesCreateDate,m.NextCallDate,m.NextCallTime,m.PostSourceID,m.CreateBy,m.CreateDate,m.UpdateBy,m.UpateDate
+	,c.CustShortName,c.PostType,t.ListContent,d.SalesID,d.SalesName,'' as NextCallDateAdd,'' as NextCallTimeAdd,s.SourceName,c.HrBankUrl
+	,rtrim(c.CustTelNO) as CustTelNO,rtrim(c.ContactA)+ Case Isnull(rtrim(c.ContactASubTel),'') when '' then '' else ' #'+rtrim(c.ContactASubTel) end as ContactAandTel
+ FROM dbo.ERPCustomers as C 
+	inner join ERPCustomerToDoNotes m on m.CustNO=c.CustNO	
+	left join ERPPostSource s on m.PostSourceID=s.ID
+	left join ERPReferenceTable t on t.ListCategory='PostType' and c.PostType=t.ListID
+	left join ERPSalesMan d on c.SalesID=d.SalesID
+where IsNull(m.Notes,'')='' and Isnull(d.SalesID,'')=''
+order by m.NextCallDate,m.NextCallTime,c.PostType</value>
+  </data>
+  <metadata name="updateTempToDoNotes.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 739</value>
+  </metadata>
+  <metadata name="infoCustomerInfo.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 777</value>
+  </metadata>
+  <metadata name="updateCustomerInfo.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 815</value>
+  </metadata>
+  <metadata name="infoERPOffice.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 853</value>
+  </metadata>
+  <metadata name="infoERPJobWeekend.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 891</value>
+  </metadata>
+  <metadata name="infoForeignDorm.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 929</value>
+  </metadata>
+  <metadata name="infoERPCustNationality.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 967</value>
+  </metadata>
+  <metadata name="infoERPNationality.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 1005</value>
+  </metadata>
+  <metadata name="updateCustNationality.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 1043</value>
+  </metadata>
+  <metadata name="infoImportantRecord.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 1119</value>
+  </metadata>
+  <metadata name="updateImportantRecord.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 131</value>
+  </metadata>
+  <metadata name="updateContactRecord.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 701</value>
+  </metadata>
+  <metadata name="infoContactRecord.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 207</value>
+  </metadata>
+  <metadata name="ERPCustomers.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 1157</value>
+  </metadata>
+  <data name="ERPCustomers.CommandText" xml:space="preserve">
+    <value> SELECT A.*,rtrim(ltrim(A.SALESID))+' '+B.SalesName AS SalesName,
+ rtrim(ltrim(A.ContactA))+' '+RTRIM(IsNull(C.CustJobName,'')) AS CustJobName,
+ dbo.funReturnCustDealDays(LatelyDayD) as DealDays,
+ '' AS SalesTypeID,
+ '' AS QSDate,
+ '' AS QEDate,
+ (select MAX(NextCallDate) from ERPCustomerToDoNotes where CustNO=A.CustNO and IsNull(Notes,'')='') as NextCallDate
+ FROM dbo.ERPCustomers as A 
+	inner join DBO.ERPSALESMAN as B on (A.SALESID=B.SALESID) 
+	left join DBO.ERPCUSTJOB as C on (A.ContactAJobID =C.CustJobID) 	
+ where 1=1  
+ order by DealDays asc </value>
+  </data>
+  <metadata name="ucERPCustomers.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 1081</value>
+  </metadata>
+  <metadata name="infoInvoiceType.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>200, 1119</value>
+  </metadata>
+  <metadata name="$this.TrayLargeIcon" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>False</value>
+  </metadata>
+</root>

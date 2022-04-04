@@ -1,0 +1,22 @@
+C:\Program Files (x86)\Infolight\EEP2012\EFClientTools\bin\Release\EFClientTools.dll.config
+C:\Program Files (x86)\Infolight\EEP2012\EFClientTools\bin\Release\EFClientTools.dll
+C:\Program Files (x86)\Infolight\EEP2012\EFClientTools\bin\Release\EFClientTools.pdb
+C:\Program Files (x86)\Infolight\EEP2012\EFClientTools\bin\Release\EFBase.dll
+C:\Program Files (x86)\Infolight\EEP2012\EFClientTools\bin\Release\EFBase.pdb
+C:\Program Files (x86)\Infolight\EEP2012\EFClientTools\obj\Release\EFClientTools.csprojResolveAssemblyReference.cache
+C:\Program Files (x86)\Infolight\EEP2012\EFClientTools\obj\Release\EFClientTools.Editor.EditorDialog.resources
+C:\Program Files (x86)\Infolight\EEP2012\EFClientTools\obj\Release\EFClientTools.Editor.RemoteNameEditorDialog.resources
+C:\Program Files (x86)\Infolight\EEP2012\EFClientTools\obj\Release\EFClientTools.csproj.GenerateResource.Cache
+C:\Program Files (x86)\Infolight\EEP2012\EFClientTools\obj\Release\EFClientTools.dll
+C:\Program Files (x86)\Infolight\EEP2012\EFClientTools\obj\Release\EFClientTools.pdb
+D:\infolight\EEP2012\EFClientTools\bin\Release\EFClientTools.dll.config
+D:\infolight\EEP2012\EFClientTools\bin\Release\EFClientTools.dll
+D:\infolight\EEP2012\EFClientTools\bin\Release\EFClientTools.pdb
+D:\infolight\EEP2012\EFClientTools\bin\Release\EFBase.dll
+D:\infolight\EEP2012\EFClientTools\bin\Release\EFBase.pdb
+D:\infolight\EEP2012\EFClientTools\obj\Release\EFClientTools.csprojResolveAssemblyReference.cache
+D:\infolight\EEP2012\EFClientTools\obj\Release\EFClientTools.Editor.EditorDialog.resources
+D:\infolight\EEP2012\EFClientTools\obj\Release\EFClientTools.Editor.RemoteNameEditorDialog.resources
+D:\infolight\EEP2012\EFClientTools\obj\Release\EFClientTools.csproj.GenerateResource.Cache
+D:\infolight\EEP2012\EFClientTools\obj\Release\EFClientTools.dll
+D:\infolight\EEP2012\EFClientTools\obj\Release\EFClientTools.pdb

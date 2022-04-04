@@ -1,0 +1,14 @@
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sCashTakeBackMaster\bin\Debug\sCashTakeBackMaster.dll
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sCashTakeBackMaster\bin\Debug\sCashTakeBackMaster.pdb
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sCashTakeBackMaster\obj\Debug\sCashTakeBackMaster.csproj.GenerateResource.Cache
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sCashTakeBackMaster\obj\Debug\sCashTakeBackMaster.dll
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sCashTakeBackMaster\obj\Debug\sCashTakeBackMaster.pdb
+C:\Program Files (x86)\Infolight\EEP2012\EEPNetServer\JBADMIN\sCashTakeBackMaster.dll
+C:\Program Files (x86)\Infolight\EEP2012\EEPNetServer\JBADMIN\sCashTakeBackMaster.pdb
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sCashTakeBackMaster\obj\Debug\sCashTakeBackMaster.Component.resources
+D:\Infolight\EEP2012\EEPNetServer\JBADMIN\sCashTakeBackMaster.dll
+D:\Infolight\EEP2012\EEPNetServer\JBADMIN\sCashTakeBackMaster.pdb
+D:\Infolight\EEP2012\JBADMIN\sCashTakeBackMaster\obj\Debug\sCashTakeBackMaster.Component.resources
+D:\Infolight\EEP2012\JBADMIN\sCashTakeBackMaster\obj\Debug\sCashTakeBackMaster.csproj.GenerateResource.Cache
+D:\Infolight\EEP2012\JBADMIN\sCashTakeBackMaster\obj\Debug\sCashTakeBackMaster.dll
+D:\Infolight\EEP2012\JBADMIN\sCashTakeBackMaster\obj\Debug\sCashTakeBackMaster.pdb

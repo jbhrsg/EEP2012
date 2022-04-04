@@ -1,0 +1,8 @@
+<FlowDetails>
+  <FormName>JB_ADMIN.JBERP_PetitionMaster</FormName>
+  <FlowNavMode>Submit</FlowNavMode>
+  <NavMode>Insert</NavMode>
+  <Parameters>P1=Apply</Parameters>
+  <FlowFileName>D:\infolight\EEP2012\EEPNetServer\Workflow\FL\PetitionApply</FlowFileName>
+  <ImageWidth>1387</ImageWidth>
+</FlowDetails>

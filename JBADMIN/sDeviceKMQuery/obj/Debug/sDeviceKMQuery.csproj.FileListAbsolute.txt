@@ -1,0 +1,9 @@
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sDeviceKMQuery\bin\Debug\sDeviceKMQuery.dll
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sDeviceKMQuery\bin\Debug\sDeviceKMQuery.pdb
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sDeviceKMQuery\obj\Debug\sDeviceKMQuery.csproj.GenerateResource.Cache
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sDeviceKMQuery\obj\Debug\sDeviceKMQuery.dll
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sDeviceKMQuery\obj\Debug\sDeviceKMQuery.pdb
+C:\Program Files (x86)\Infolight\EEP2012\EEPNetServer\JBADMIN\sDeviceKMQuery.dll
+C:\Program Files (x86)\Infolight\EEP2012\EEPNetServer\JBADMIN\sDeviceKMQuery.pdb
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sDeviceKMQuery\obj\Debug\sDeviceKMQuery.Component.resources
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sDeviceKMQuery\obj\Debug\sDeviceKMQuery.csprojResolveAssemblyReference.cache

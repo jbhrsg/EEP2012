@@ -1,0 +1,14 @@
+D:\Infolight\EEP2012\JBHunter\sReportJobRequire\bin\Debug\sReportJobRequire.dll
+D:\Infolight\EEP2012\JBHunter\sReportJobRequire\bin\Debug\sReportJobRequire.pdb
+D:\Infolight\EEP2012\JBHunter\sReportJobRequire\obj\Debug\sReportJobRequire.csproj.GenerateResource.Cache
+D:\Infolight\EEP2012\JBHunter\sReportJobRequire\obj\Debug\sReportJobRequire.dll
+D:\Infolight\EEP2012\JBHunter\sReportJobRequire\obj\Debug\sReportJobRequire.pdb
+D:\Infolight\EEP2012\EEPNetServer\JBHunter\sReportJobRequire.dll
+D:\Infolight\EEP2012\EEPNetServer\JBHunter\sReportJobRequire.pdb
+D:\Infolight\EEP2012\JBHunter\sReportJobRequire\obj\Debug\sReportJobRequire.Component.resources
+C:\Program Files (x86)\Infolight\EEP2012\EEPNetServer\JBHunter\sReportJobRequire.dll
+C:\Program Files (x86)\Infolight\EEP2012\EEPNetServer\JBHunter\sReportJobRequire.pdb
+C:\Program Files (x86)\Infolight\EEP2012\JBHunter\sReportJobRequire\obj\Debug\sReportJobRequire.Component.resources
+C:\Program Files (x86)\Infolight\EEP2012\JBHunter\sReportJobRequire\obj\Debug\sReportJobRequire.csproj.GenerateResource.Cache
+C:\Program Files (x86)\Infolight\EEP2012\JBHunter\sReportJobRequire\obj\Debug\sReportJobRequire.dll
+C:\Program Files (x86)\Infolight\EEP2012\JBHunter\sReportJobRequire\obj\Debug\sReportJobRequire.pdb

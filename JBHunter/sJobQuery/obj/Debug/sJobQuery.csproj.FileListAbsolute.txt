@@ -1,0 +1,21 @@
+D:\Infolight\EEP2012\JBHunter\sJobQuery\bin\Debug\sJobQuery.dll
+D:\Infolight\EEP2012\JBHunter\sJobQuery\bin\Debug\sJobQuery.pdb
+D:\Infolight\EEP2012\EEPNetServer\JBHunter\sJobQuery.dll
+D:\Infolight\EEP2012\EEPNetServer\JBHunter\sJobQuery.pdb
+D:\Infolight\EEP2012\EEPNetServer\JBHunter\vi-VN\sJobQuery.resources.dll
+D:\Infolight\EEP2012\JBHunter\sJobQuery\obj\Debug\sJobQuery.Component.resources
+D:\Infolight\EEP2012\JBHunter\sJobQuery\obj\Debug\sJobQuery.Component.vi-VN.resources
+D:\Infolight\EEP2012\JBHunter\sJobQuery\obj\Debug\sJobQuery.csproj.GenerateResource.Cache
+D:\Infolight\EEP2012\JBHunter\sJobQuery\obj\Debug\vi-VN\sJobQuery.resources.dll
+D:\Infolight\EEP2012\JBHunter\sJobQuery\obj\Debug\sJobQuery.dll
+D:\Infolight\EEP2012\JBHunter\sJobQuery\obj\Debug\sJobQuery.pdb
+D:\Infolight\EEP2012\JBHunter\sJobQuery\obj\Debug\sJobQuery.csprojResolveAssemblyReference.cache
+C:\Program Files (x86)\Infolight\EEP2012\EEPNetServer\JBHunter\sJobQuery.dll
+C:\Program Files (x86)\Infolight\EEP2012\JBHunter\sJobQuery\obj\Debug\sJobQuery.Component.resources
+C:\Program Files (x86)\Infolight\EEP2012\JBHunter\sJobQuery\obj\Debug\sJobQuery.Component.vi-VN.resources
+C:\Program Files (x86)\Infolight\EEP2012\JBHunter\sJobQuery\obj\Debug\sJobQuery.csproj.GenerateResource.Cache
+C:\Program Files (x86)\Infolight\EEP2012\JBHunter\sJobQuery\obj\Debug\vi-VN\sJobQuery.resources.dll
+C:\Program Files (x86)\Infolight\EEP2012\JBHunter\sJobQuery\obj\Debug\sJobQuery.dll
+C:\Program Files (x86)\Infolight\EEP2012\JBHunter\sJobQuery\obj\Debug\sJobQuery.pdb
+C:\Program Files (x86)\Infolight\EEP2012\EEPNetServer\JBHunter\sJobQuery.pdb
+C:\Program Files (x86)\Infolight\EEP2012\EEPNetServer\JBHunter\vi-VN\sJobQuery.resources.dll

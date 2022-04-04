@@ -1,0 +1,26 @@
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sShortTermMasterApply\bin\Debug\sShortTermMasterApply.dll
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sShortTermMasterApply\bin\Debug\sShortTermMasterApply.pdb
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sShortTermMasterApply\bin\Debug\EFBase.dll
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sShortTermMasterApply\bin\Debug\EFServerTools.dll
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sShortTermMasterApply\bin\Debug\EFWCFModule.dll
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sShortTermMasterApply\bin\Debug\Newtonsoft.Json.dll
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sShortTermMasterApply\bin\Debug\EFWCFModule.EEPAdapter.dll
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sShortTermMasterApply\bin\Debug\EFServerTools.pdb
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sShortTermMasterApply\bin\Debug\EFBase.pdb
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sShortTermMasterApply\bin\Debug\EFWCFModule.pdb
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sShortTermMasterApply\bin\Debug\Newtonsoft.Json.xml
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sShortTermMasterApply\bin\Debug\EFWCFModule.EEPAdapter.pdb
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sShortTermMasterApply\obj\Debug\sShortTermMasterApply.Component.resources
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sShortTermMasterApply\obj\Debug\sShortTermMasterApply.csproj.GenerateResource.Cache
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sShortTermMasterApply\obj\Debug\sShortTermMasterApply.dll
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sShortTermMasterApply\obj\Debug\sShortTermMasterApply.pdb
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sShortTermMasterApply\obj\Debug\sShortTermMasterApply.csprojResolveAssemblyReference.cache
+C:\Program Files (x86)\Infolight\EEP2012\EEPNetServer\JBADMIN\sShortTermMasterApply.dll
+C:\Program Files (x86)\Infolight\EEP2012\EEPNetServer\JBADMIN\sShortTermMasterApply.pdb
+D:\Infolight\EEP2012\EEPNetServer\JBADMIN\sShortTermMasterApply.dll
+D:\Infolight\EEP2012\EEPNetServer\JBADMIN\sShortTermMasterApply.pdb
+D:\Infolight\EEP2012\JBADMIN\sShortTermMasterApply\obj\Debug\sShortTermMasterApply.csprojResolveAssemblyReference.cache
+D:\Infolight\EEP2012\JBADMIN\sShortTermMasterApply\obj\Debug\sShortTermMasterApply.Component.resources
+D:\Infolight\EEP2012\JBADMIN\sShortTermMasterApply\obj\Debug\sShortTermMasterApply.csproj.GenerateResource.Cache
+D:\Infolight\EEP2012\JBADMIN\sShortTermMasterApply\obj\Debug\sShortTermMasterApply.dll
+D:\Infolight\EEP2012\JBADMIN\sShortTermMasterApply\obj\Debug\sShortTermMasterApply.pdb

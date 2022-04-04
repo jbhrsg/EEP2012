@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?><ns0:FLSequentialWorkflow RejectProcedure="{p1:Null}" ConnectionType="SqlClient" Description="設備異動單" x:Name="FLSequentialWorkflow" FormName="{x:Null}" SkipForSameUser="True" EEPAlias="{x:Null}" ClientDll="{x:Null}" TableName="AssetApplyMaster" BodyField="{x:Null}" WebFormName="JB_ADMIN.JBAST_AssetApplyMaster" ExpTime="0" PresentFields="TranType,ApplyDescr,EffectDate" TimeUnit="Day" Keys="{x:Null}" ExpTimeField="{x:Null}" MailApproveLevel="{x:Null}" UrgentTime="0" NotifySendMail="True" OrgKind="0" xmlns="http://schemas.microsoft.com/winfx/2006/xaml/workflow" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:p1="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:ns0="clr-namespace:FLTools;Assembly=FLTools, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null">
+	<ns0:FLStand SendEmail="False" DelayAutoApprove="False" SendToKind="Applicate" x:Name="設備異動申請" FormName="" TimeUnit="Day" SendToUser="" AllowSendBack="True" PlusApproveReturn="True" PlusApprove="False" WebFormName="JB_ADMIN.JBAST_AssetApplyMaster" ExpTime="0" Parameters="P1=Apply" NavigatorMode="Insert" SendToField="" SendToId="{x:Null}" SendToRole="" UrgentTime="0" FLNavigatorMode="Submit" />
+	<IfElseActivity x:Name="申請異動方式">
+		<IfElseBranchActivity x:Name="請採購申請" />
+		<IfElseBranchActivity Description="ApplyTypeID==1" x:Name="設備異動">
+			<ns0:FLApprove SendEmail="False" DelayAutoApprove="False" SendToKind="Manager" InvokedDateTime="0001-01-01T00:00:00.0000000" FormName="" TimeUnit="Day" SendToUser="" AllowSendBack="True" PlusApproveReturn="True" PlusApprove="False" WebFormName="" ExpTime="0" Parameters="{x:Null}" NavigatorMode="Normal" SendToField="{x:Null}" SendToId="{x:Null}" SendToRole="" UrgentTime="0" x:Name="直屬主管審核" FLNavigatorMode="Approve">
+				<ns0:FLApprove.ApproveRights>
+					<ns1:ApproveRightCollection xmlns:ns1="clr-namespace:FLCore;Assembly=FLTools, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null">
+						<ns1:ApproveRight Grade="0" ParentActivity="{x:Null}" Expression="(Org_NOParent != &quot;10000&quot; || ApplyOrg_NO =='11100')" Name="0" />
+					</ns1:ApproveRightCollection>
+				</ns0:FLApprove.ApproveRights>
+			</ns0:FLApprove>
+		</IfElseBranchActivity>
+	</IfElseActivity>
+	<ns0:FLStand SendEmail="False" DelayAutoApprove="False" SendToKind="RefRole" x:Name="管理者異動確認" FormName="" TimeUnit="Day" SendToUser="{x:Null}" AllowSendBack="True" PlusApproveReturn="True" PlusApprove="False" WebFormName="" ExpTime="0" Parameters="P1=ADMIN" NavigatorMode="Modify" SendToField="GROUPID" SendToId="{x:Null}" SendToRole="" UrgentTime="0" FLNavigatorMode="Approve" />
+	<ns0:FLProcedure ServerDll="C:\Program Files (x86)\Infolight\EEP2012\EEPNetServer\JBADMIN\sAssetApplyMaster.dll" ModuleName="sAssetApplyMaster" ErrorLog="False" MethodName="PutAssetToBelongLogs" x:Name="異動過帳" ErrorToRole="{x:Null}" />
+	<ns0:FLNotify SendEmail="True" Parameters="{x:Null}" x:Name="設備異動成功通知申請者" FormName="" TimeUnit="Day" SendToUser="" SendToKind="Applicate" UserId="{x:Null}" WebFormName="" ExpTime="0" RoleId="{x:Null}" NavigatorMode="Normal" SendToField="" SendToRole="" UrgentTime="0" FLNavigatorMode="Notify" />
+	<ns0:FLNotify SendEmail="True" Parameters="{x:Null}" x:Name="設備異動成功通知保管者" FormName="" TimeUnit="Day" SendToUser="{x:Null}" SendToKind="RefUser" UserId="{x:Null}" WebFormName="" ExpTime="0" RoleId="{x:Null}" NavigatorMode="Normal" SendToField="AssetOwnerID" SendToRole="" UrgentTime="0" FLNavigatorMode="Notify" />
+</ns0:FLSequentialWorkflow>

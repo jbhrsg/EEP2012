@@ -1,0 +1,51 @@
+F:\Program Files\EEP2010\EFBase\bin\Debug\EFBase.dll
+F:\Program Files\EEP2010\EFBase\bin\Debug\EFBase.pdb
+F:\Program Files\EEP2010\EFBase\obj\Debug\ResolveAssemblyReference.cache
+F:\Program Files\EEP2010\EFBase\obj\Debug\EFBase.dll
+F:\Program Files\EEP2010\EFBase\obj\Debug\EFBase.pdb
+D:\Infolight\EEP2010\EFBase\bin\Debug\EFBase.dll
+D:\Infolight\EEP2010\EFBase\bin\Debug\EFBase.pdb
+D:\Infolight\EEP2010\EFBase\obj\Debug\ResolveAssemblyReference.cache
+D:\Infolight\EEP2010\EFBase\obj\Debug\EFBase.dll
+D:\Infolight\EEP2010\EFBase\obj\Debug\EFBase.pdb
+C:\Program Files\Infolight\EEP2010\EFBase\bin\Debug\EFBase.dll
+C:\Program Files\Infolight\EEP2010\EFBase\bin\Debug\EFBase.pdb
+C:\Program Files\Infolight\EEP2010\EFBase\obj\Debug\EFBase.dll
+C:\Program Files\Infolight\EEP2010\EFBase\obj\Debug\EFBase.pdb
+C:\Program Files\Infolight\EEP2012Dev\EFBase\bin\Debug\EFBase.dll
+C:\Program Files\Infolight\EEP2012Dev\EFBase\bin\Debug\EFBase.pdb
+C:\Program Files\Infolight\EEP2012Dev\EFBase\obj\Debug\EFBase.dll
+C:\Program Files\Infolight\EEP2012Dev\EFBase\obj\Debug\EFBase.pdb
+C:\Program Files\Infolight\EEP2012WF\EFBase\bin\Debug\EFBase.dll
+C:\Program Files\Infolight\EEP2012WF\EFBase\bin\Debug\EFBase.pdb
+C:\Program Files\Infolight\EEP2012WF\EFBase\obj\Debug\EFBase.dll
+C:\Program Files\Infolight\EEP2012WF\EFBase\obj\Debug\EFBase.pdb
+C:\Program Files\Infolight\EEP2012WF\EFBase\obj\Debug\EFBase.csprojResolveAssemblyReference.cache
+C:\Program Files (x86)\Infolight\EEP2012WF\EFBase\bin\Debug\EFBase.dll
+C:\Program Files (x86)\Infolight\EEP2012WF\EFBase\bin\Debug\EFBase.pdb
+C:\Program Files (x86)\Infolight\EEP2012WF\EFBase\obj\Debug\EFBase.csprojResolveAssemblyReference.cache
+C:\Program Files (x86)\Infolight\EEP2012WF\EFBase\obj\Debug\EFBase.dll
+C:\Program Files (x86)\Infolight\EEP2012WF\EFBase\obj\Debug\EFBase.pdb
+D:\版本\Version\安裝源文件\EEP2012WF(V5.0.0.020140924 SP5)\EFBase\bin\Debug\EFBase.dll
+D:\版本\Version\安裝源文件\EEP2012WF(V5.0.0.020140924 SP5)\EFBase\bin\Debug\EFBase.pdb
+D:\版本\Version\安裝源文件\EEP2012WF(V5.0.0.020140924 SP5)\EFBase\obj\Debug\EFBase.csprojResolveAssemblyReference.cache
+D:\版本\Version\安裝源文件\EEP2012WF(V5.0.0.020140924 SP5)\EFBase\obj\Debug\EFBase.dll
+D:\版本\Version\安裝源文件\EEP2012WF(V5.0.0.020140924 SP5)\EFBase\obj\Debug\EFBase.pdb
+D:\版本\Version\安裝源文件\EEP2012(V5.0.0.020140924 SP5)\EEP2012WF\EFBase\bin\Debug\EFBase.dll
+D:\版本\Version\安裝源文件\EEP2012(V5.0.0.020140924 SP5)\EEP2012WF\EFBase\bin\Debug\EFBase.pdb
+D:\版本\Version\安裝源文件\EEP2012(V5.0.0.020140924 SP5)\EEP2012WF\EFBase\obj\Debug\EFBase.dll
+D:\版本\Version\安裝源文件\EEP2012(V5.0.0.020140924 SP5)\EEP2012WF\EFBase\obj\Debug\EFBase.pdb
+D:\Program Files (x86)\Your Company Name\EEP2012\EFBase\bin\Debug\EFBase.dll
+D:\Program Files (x86)\Your Company Name\EEP2012\EFBase\bin\Debug\EFBase.pdb
+D:\Program Files (x86)\Your Company Name\EEP2012\EFBase\obj\Debug\EFBase.dll
+D:\Program Files (x86)\Your Company Name\EEP2012\EFBase\obj\Debug\EFBase.pdb
+D:\Infolight\EEP2012\EFBase\bin\Debug\EFBase.dll
+D:\Infolight\EEP2012\EFBase\bin\Debug\EFBase.pdb
+D:\Infolight\EEP2012\EFBase\obj\Debug\EFBase.csprojResolveAssemblyReference.cache
+D:\Infolight\EEP2012\EFBase\obj\Debug\EFBase.dll
+D:\Infolight\EEP2012\EFBase\obj\Debug\EFBase.pdb
+C:\Program Files (x86)\Infolight\EEP2012\EFBase\bin\Debug\EFBase.dll
+C:\Program Files (x86)\Infolight\EEP2012\EFBase\bin\Debug\EFBase.pdb
+C:\Program Files (x86)\Infolight\EEP2012\EFBase\obj\Debug\EFBase.dll
+C:\Program Files (x86)\Infolight\EEP2012\EFBase\obj\Debug\EFBase.pdb
+C:\Program Files (x86)\Infolight\EEP2012\EFBase\obj\Debug\EFBase.csprojResolveAssemblyReference.cache

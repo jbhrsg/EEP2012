@@ -1,0 +1,52 @@
+C:\Program Files (x86)\Infolight\EEP2012\FLDesigner\bin\Release\FLDesigner.exe.config
+C:\Program Files (x86)\Infolight\EEP2012\FLDesigner\bin\Release\FLDesigner.exe
+C:\Program Files (x86)\Infolight\EEP2012\FLDesigner\bin\Release\FLDesigner.XmlSerializers.dll
+C:\Program Files (x86)\Infolight\EEP2012\FLDesigner\bin\Release\FLDesigner.pdb
+C:\Program Files (x86)\Infolight\EEP2012\FLDesigner\bin\Release\FLCore.dll
+C:\Program Files (x86)\Infolight\EEP2012\FLDesigner\bin\Release\FLDesignerCore.dll
+C:\Program Files (x86)\Infolight\EEP2012\FLDesigner\bin\Release\FLRuntime.dll
+C:\Program Files (x86)\Infolight\EEP2012\FLDesigner\bin\Release\FLTools.dll
+C:\Program Files (x86)\Infolight\EEP2012\FLDesigner\bin\Release\FLCore.pdb
+C:\Program Files (x86)\Infolight\EEP2012\FLDesigner\bin\Release\FLDesignerCore.pdb
+C:\Program Files (x86)\Infolight\EEP2012\FLDesigner\bin\Release\FLRuntime.pdb
+C:\Program Files (x86)\Infolight\EEP2012\FLDesigner\bin\Release\FLTools.pdb
+C:\Program Files (x86)\Infolight\EEP2012\FLDesigner\obj\Release\FLDesigner.csprojResolveAssemblyReference.cache
+C:\Program Files (x86)\Infolight\EEP2012\FLDesigner\obj\Release\FLDesigner.AboutForm.resources
+C:\Program Files (x86)\Infolight\EEP2012\FLDesigner\obj\Release\FLDesigner.CommentForm.resources
+C:\Program Files (x86)\Infolight\EEP2012\FLDesigner\obj\Release\FLDesigner.FormInitial.resources
+C:\Program Files (x86)\Infolight\EEP2012\FLDesigner\obj\Release\FLDesigner.FormVersion.resources
+C:\Program Files (x86)\Infolight\EEP2012\FLDesigner\obj\Release\FLDesigner.LoginForm.resources
+C:\Program Files (x86)\Infolight\EEP2012\FLDesigner\obj\Release\FLDesigner.ModifyInstance.resources
+C:\Program Files (x86)\Infolight\EEP2012\FLDesigner\obj\Release\FLDesigner.MainForm.resources
+C:\Program Files (x86)\Infolight\EEP2012\FLDesigner\obj\Release\FLDesigner.Properties.Resources.resources
+C:\Program Files (x86)\Infolight\EEP2012\FLDesigner\obj\Release\FLDesigner.UploadXoml.resources
+C:\Program Files (x86)\Infolight\EEP2012\FLDesigner\obj\Release\FLDesigner.csproj.GenerateResource.Cache
+C:\Program Files (x86)\Infolight\EEP2012\FLDesigner\obj\Release\FLDesigner.exe
+C:\Program Files (x86)\Infolight\EEP2012\FLDesigner\obj\Release\FLDesigner.pdb
+C:\Program Files (x86)\Infolight\EEP2012\FLDesigner\obj\Release\FLDesigner.XmlSerializers.dll
+D:\Infolight\EEP2012\FLDesigner\obj\Release\FLDesigner.csprojResolveAssemblyReference.cache
+D:\Infolight\EEP2012\FLDesigner\obj\Release\FLDesigner.AboutForm.resources
+D:\Infolight\EEP2012\FLDesigner\obj\Release\FLDesigner.CommentForm.resources
+D:\Infolight\EEP2012\FLDesigner\obj\Release\FLDesigner.FormInitial.resources
+D:\Infolight\EEP2012\FLDesigner\obj\Release\FLDesigner.FormVersion.resources
+D:\Infolight\EEP2012\FLDesigner\obj\Release\FLDesigner.LoginForm.resources
+D:\Infolight\EEP2012\FLDesigner\obj\Release\FLDesigner.ModifyInstance.resources
+D:\Infolight\EEP2012\FLDesigner\obj\Release\FLDesigner.MainForm.resources
+D:\Infolight\EEP2012\FLDesigner\obj\Release\FLDesigner.Properties.Resources.resources
+D:\Infolight\EEP2012\FLDesigner\obj\Release\FLDesigner.UploadXoml.resources
+D:\Infolight\EEP2012\FLDesigner\obj\Release\FLDesigner.csproj.GenerateResource.Cache
+D:\Infolight\EEP2012\FLDesigner\FLDesigner.exe.config
+D:\Infolight\EEP2012\FLDesigner\obj\Release\FLDesigner.exe
+D:\Infolight\EEP2012\FLDesigner\obj\Release\FLDesigner.pdb
+D:\Infolight\EEP2012\FLDesigner\obj\Release\FLDesigner.XmlSerializers.dll
+D:\Infolight\EEP2012\FLDesigner\FLDesigner.exe
+D:\Infolight\EEP2012\FLDesigner\FLDesigner.XmlSerializers.dll
+D:\Infolight\EEP2012\FLDesigner\FLDesigner.pdb
+D:\Infolight\EEP2012\FLDesigner\FLCore.dll
+D:\Infolight\EEP2012\FLDesigner\FLDesignerCore.dll
+D:\Infolight\EEP2012\FLDesigner\FLRuntime.dll
+D:\Infolight\EEP2012\FLDesigner\FLTools.dll
+D:\Infolight\EEP2012\FLDesigner\FLCore.pdb
+D:\Infolight\EEP2012\FLDesigner\FLDesignerCore.pdb
+D:\Infolight\EEP2012\FLDesigner\FLRuntime.pdb
+D:\Infolight\EEP2012\FLDesigner\FLTools.pdb

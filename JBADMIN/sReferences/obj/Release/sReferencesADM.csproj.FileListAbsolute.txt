@@ -1,0 +1,11 @@
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sReferences\bin\Release\sReferencesADM.dll
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sReferences\bin\Release\sReferencesADM.pdb
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sReferences\bin\Release\vi-VN\sReferencesADM.resources.dll
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sReferences\bin\Release\Newtonsoft.Json.dll
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sReferences\bin\Release\Newtonsoft.Json.xml
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sReferences\obj\Release\sReferencesADM.Component.resources
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sReferences\obj\Release\sReferencesADM.Component.vi-VN.resources
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sReferences\obj\Release\sReferencesADM.csproj.GenerateResource.Cache
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sReferences\obj\Release\vi-VN\sReferencesADM.resources.dll
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sReferences\obj\Release\sReferencesADM.dll
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sReferences\obj\Release\sReferencesADM.pdb

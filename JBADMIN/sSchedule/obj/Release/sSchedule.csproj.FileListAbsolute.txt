@@ -1,0 +1,6 @@
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sSchedule\bin\Release\sSchedule.dll
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sSchedule\bin\Release\sSchedule.pdb
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sSchedule\obj\Release\sSchedule.Component.resources
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sSchedule\obj\Release\sSchedule.csproj.GenerateResource.Cache
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sSchedule\obj\Release\sSchedule.dll
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sSchedule\obj\Release\sSchedule.pdb

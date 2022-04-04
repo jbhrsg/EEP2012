@@ -1,0 +1,8 @@
+C:\Program Files (x86)\Infolight\EEP2012\JBHunter\sHunterGroup\bin\Debug\sHunterGroup.dll
+C:\Program Files (x86)\Infolight\EEP2012\JBHunter\sHunterGroup\bin\Debug\sHunterGroup.pdb
+C:\Program Files (x86)\Infolight\EEP2012\JBHunter\sHunterGroup\obj\Debug\sHunterGroup.csproj.GenerateResource.Cache
+C:\Program Files (x86)\Infolight\EEP2012\JBHunter\sHunterGroup\obj\Debug\sHunterGroup.dll
+C:\Program Files (x86)\Infolight\EEP2012\JBHunter\sHunterGroup\obj\Debug\sHunterGroup.pdb
+C:\Program Files (x86)\Infolight\EEP2012\EEPNetServer\JBHunter\sHunterGroup.dll
+C:\Program Files (x86)\Infolight\EEP2012\EEPNetServer\JBHunter\sHunterGroup.pdb
+C:\Program Files (x86)\Infolight\EEP2012\JBHunter\sHunterGroup\obj\Debug\sHunterGroup.Component.resources

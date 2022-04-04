@@ -1,0 +1,6 @@
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sERPPreOrderM\bin\Release\sERPPreOrderM.dll
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sERPPreOrderM\bin\Release\sERPPreOrderM.pdb
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sERPPreOrderM\obj\Release\sERPPreOrderM.Component.resources
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sERPPreOrderM\obj\Release\sERPPreOrderM.csproj.GenerateResource.Cache
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sERPPreOrderM\obj\Release\sERPPreOrderM.dll
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sERPPreOrderM\obj\Release\sERPPreOrderM.pdb

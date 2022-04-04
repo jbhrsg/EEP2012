@@ -1,0 +1,380 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <metadata name="serviceManager1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 55</value>
+  </metadata>
+  <metadata name="InfoConnection1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>20, 200</value>
+  </metadata>
+  <metadata name="WRMaster.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>23, 277</value>
+  </metadata>
+  <data name="WRMaster.CommandText" xml:space="preserve">
+    <value>SELECT WRNO,USERID,WorkDate,ORG_NOParent,ORG_NO,Flowflag,tdl.D_STEP_ID
+,NextDayPlan,'' as TodayPlan,File1,File2,File3,File1 as File1Link,File2 as File2Link,File3 as File3Link
+,case when CHARINDEX('/',REVERSE(SENDTO_NAME))=0  then SENDTO_NAME else REVERSE(SUBSTRING(REVERSE(SENDTO_NAME),0,CHARINDEX('/',REVERSE(SENDTO_NAME)))) end as SENDTO_NAME
+,replace((SELECT '◎'+[BeginTime]+'~'+[EndTime]+'：'+CHAR(13)+[RecordText]+CHAR(13)+CHAR(13) FROM [WRDetail] WHERE WRNO=[WRMaster].WRNO FOR XML PATH ('')),'&amp;#x0D;',char(13)) as RecordText
+FROM dbo.[WRMaster]
+LEFT OUTER JOIN EIPHRSYS.dbo.SYS_TODOLIST AS tdl ON tdl.FORM_PRESENTATION = 'WRNO=''' + dbo.WRMaster.WRNO + '''' 
+order by [WRMaster].WRNO desc
+
+--WITH EMPLOYEE_CTE([ORG_NO],[ORG_DESC],[UPPER_ORG],[ORG_MAN],USERID,LEVEL)--
+--AS
+--(
+---- Anchor member definition
+----登入者管的哪些部門
+--	SELECT V.[ORG_NO],V.[ORG_DESC],V.[UPPER_ORG],V.[ORG_MAN],V.USERID,1 as LEVEL
+--	FROM [EIPHRSYS].[dbo].[View_SYS_ORG] V
+--	where 11=11--V.userid='009'
+--    UNION ALL
+---- Recursive member definition
+----登入者管的部門的下層部門,扣掉登入者管的部門
+
+--	select B.[ORG_NO],B.[ORG_DESC],B.[UPPER_ORG],B.[ORG_MAN],B.USERID,LEVEL+1
+--	from EMPLOYEE_CTE as A
+--	inner join(
+--		SELECT V.[ORG_NO],V.[ORG_DESC],V.[UPPER_ORG],V.[ORG_MAN],V.USERID
+--		FROM [EIPHRSYS].[dbo].[View_SYS_ORG] V
+--	) as B on B.UPPER_ORG=A.ORG_NO
+--	WHERE 12=12--B.userid &lt;&gt; '009'
+--)
+---- Statement that executes the CTE
+
+--SELECT X.ORG_NO,X.ORG_DESC,X.USERID,X.USERNAME,X.LEVEL
+--,N.WRNO,N.WorkDate,N.Flowflag,N.D_STEP_ID,N.SENDTO_NAME,N.RecordText--,N.ORG_NO,N.ORG_NOParent
+
+--FROM
+--(--人
+--(--登入者看到自己(沒用到CTE)
+
+-- --部門主管
+-- select u.USERID,u.USERNAME,o.ORG_NO,o.ORG_DESC, 1  as LEVEL --,ug.GROUPID 
+-- from [EIPHRSYS].[dbo].users u
+-- inner join [EIPHRSYS].[dbo].USERGROUPS ug on ug.USERID=u.USERID
+-- inner join [EIPHRSYS].[dbo].SYS_ORG o on o.ORG_MAN=ug.GROUPID
+-- WHERE 13=13--WHERE u.USERID ='009'
+-- union
+-- --部門部屬
+-- select u.USERID,u.USERNAME,o.ORG_NO,o.ORG_DESC, 1  as LEVEL --,ug.GROUPID
+-- from [EIPHRSYS].[dbo].users u
+-- inner join [EIPHRSYS].[dbo].USERGROUPS ug on ug.USERID=u.USERID
+-- inner join [EIPHRSYS].[dbo].SYS_ORGROLES og on og.ROLE_ID=ug.GROUPID
+-- inner join [EIPHRSYS].[dbo].SYS_ORG o on o.ORG_NO=og.ORG_NO
+-- WHERE 14=14--WHERE u.USERID ='009'
+--)
+--UNION
+
+--(--begin登入者所管部門的人(包含管部門主管)和所有下層部門的人(包含管部門主管)的姓名和部門
+--select B.USERID,B.USERNAME,B.ORG_NO,B.ORG_DESC,A.LEVEL--,A.LEVEL--,B.GROUPID
+--from EMPLOYEE_CTE as A
+--inner join(
+-- --部門主管
+-- select u.USERID,u.USERNAME,o.ORG_NO,o.ORG_DESC --,ug.GROUPID 
+-- from [EIPHRSYS].[dbo].users u
+-- inner join [EIPHRSYS].[dbo].USERGROUPS ug on ug.USERID=u.USERID
+-- inner join [EIPHRSYS].[dbo].SYS_ORG o on o.ORG_MAN=ug.GROUPID
+-- where u.DESCRIPTION='JB'
+-- union
+-- --部門部屬
+-- select u.USERID,u.USERNAME,o.ORG_NO,o.ORG_DESC --,ug.GROUPID
+-- from [EIPHRSYS].[dbo].users u
+-- inner join [EIPHRSYS].[dbo].USERGROUPS ug on ug.USERID=u.USERID
+-- inner join [EIPHRSYS].[dbo].SYS_ORGROLES og on og.ROLE_ID=ug.GROUPID
+-- inner join [EIPHRSYS].[dbo].SYS_ORG o on o.ORG_NO=og.ORG_NO
+-- where u.DESCRIPTION='JB'
+--) as B on B.[ORG_NO]=A.[ORG_NO]
+--)--end登入者所管部門的人(包含管部門主管)和所有下層部門的人(包含管部門主管)的姓名和部門
+--) AS X
+
+--inner join (
+----每人的每日工作紀錄
+--SELECT WRNO,USERID,WorkDate,ORG_NO,ORG_NOParent,Flowflag,tdl.D_STEP_ID
+--,case when CHARINDEX('/',REVERSE(SENDTO_NAME))=0  then SENDTO_NAME else REVERSE(SUBSTRING(REVERSE(SENDTO_NAME),0,CHARINDEX('/',REVERSE(SENDTO_NAME)))) end as SENDTO_NAME
+--,replace((SELECT '◎'+[BeginTime]+'~'+[EndTime]+'：'+CHAR(13)+[RecordText]+CHAR(13)+CHAR(13) FROM [WRDetail] WHERE WRNO=[WRMaster].WRNO FOR XML PATH ('')),'&amp;#x0D;',char(13)) as RecordText
+--FROM dbo.[WRMaster]
+--LEFT OUTER JOIN EIPHRSYS.dbo.SYS_TODOLIST AS tdl ON tdl.FORM_PRESENTATION = 'WRNO=''' + dbo.WRMaster.WRNO + '''' 
+----order by [WRMaster].WRNO desc
+
+--) as N on N.USERID = X.USERID
+
+--WHERE 15=15
+--ORDER BY ORG_NO,LEVEL,USERID,WRNO desc
+
+
+</value>
+  </data>
+  <metadata name="ucWRMaster.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>151, 276</value>
+  </metadata>
+  <metadata name="WRDetail.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 359</value>
+  </metadata>
+  <metadata name="ucWRDetail.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>144, 357</value>
+  </metadata>
+  <metadata name="idWRMaster_WRDetail.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>70, 315</value>
+  </metadata>
+  <metadata name="View_WRMaster.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 93</value>
+  </metadata>
+  <metadata name="autoNumber1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>296, 285</value>
+  </metadata>
+  <metadata name="Employee.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>816, 90</value>
+  </metadata>
+  <data name="Employee.CommandText" xml:space="preserve">
+    <value>select   View_Employee.EmployeeID,
+            View_Employee.EmployeeName,
+            dbo.funReturnEmpOrgNO(View_Employee.EmployeeID) AS OrgNO,
+            dbo.funReturnEmpOrgNOParent(View_Employee.EmployeeID)  AS OrgNOParent
+            from View_Employee
+            where description='JB' 
+  
+--funReturnEmpOrgNOL2--我在的組織或我管的組織(出來的組織的上層組織是總經室)
+--funReturnEmpOrgNOParent--我在的組織(優先)或我管的組織的上層組織(隸屬的組織)</value>
+  </data>
+  <metadata name="Organization.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>825, 121</value>
+  </metadata>
+  <metadata name="OrganizationParent.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>809, 156</value>
+  </metadata>
+  <metadata name="ORG_NO_Query.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 245</value>
+  </metadata>
+  <data name="ORG_NO_Query.CommandText" xml:space="preserve">
+    <value>WITH EMPLOYEE_CTE([ORG_NO],[ORG_DESC],LEVEL)
+AS
+(
+-- Anchor member definition
+--登入者管的部門
+	SELECT V.[ORG_NO],V.[ORG_DESC],1 as LEVEL
+	FROM [EIPHRSYS].[dbo].[View_SYS_ORG] V
+	where 11=11--V.userid=@USERID
+    UNION ALL
+-- Recursive member definition
+--登入者管的部門的下層部門
+	select B.[ORG_NO],B.[ORG_DESC],LEVEL+1
+	from EMPLOYEE_CTE as A
+	inner join(
+		SELECT V.[ORG_NO],V.[ORG_DESC],V.[UPPER_ORG],V.[ORG_MAN],V.USERID
+		FROM [EIPHRSYS].[dbo].[View_SYS_ORG] V
+	) as B on B.UPPER_ORG=A.ORG_NO
+	WHERE 12=12--B.userid &lt;&gt; @USERID
+)
+-- Statement that executes the CTE
+(--登入者管的部門和所管部門的下層部門
+SELECT distinct [ORG_NO],[ORG_DESC]
+FROM EMPLOYEE_CTE
+)
+UNION
+(--登入者的部門
+ --部門部屬
+ select o.ORG_NO,o.ORG_DESC
+ from [EIPHRSYS].[dbo].users u
+ inner join [EIPHRSYS].[dbo].USERGROUPS ug on ug.USERID=u.USERID
+ inner join [EIPHRSYS].[dbo].SYS_ORGROLES og on og.ROLE_ID=ug.GROUPID
+ inner join [EIPHRSYS].[dbo].SYS_ORG o on o.ORG_NO=og.ORG_NO
+ WHERE  13=13--u.USERID =@USERID
+)ORDER BY ORG_NO</value>
+  </data>
+  <metadata name="USERID_Query.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>475, 219</value>
+  </metadata>
+  <data name="USERID_Query.CommandText" xml:space="preserve">
+    <value>--登入者管的部門和所有下層部門
+WITH EMPLOYEE_CTE([ORG_NO],[ORG_DESC],[UPPER_ORG],[ORG_MAN],USERID,LEVEL)--
+AS
+(
+-- Anchor member definition
+--登入者管的哪些部門
+	SELECT V.[ORG_NO],V.[ORG_DESC],V.[UPPER_ORG],V.[ORG_MAN],V.USERID,1 as LEVEL
+	FROM [EIPHRSYS].[dbo].[View_SYS_ORG] V
+	where 11=11--V.userid='335'
+    UNION ALL
+-- Recursive member definition
+--登入者管的哪些部門的下層部門
+	select B.[ORG_NO],B.[ORG_DESC],B.[UPPER_ORG],B.[ORG_MAN],B.USERID,LEVEL+1
+	from EMPLOYEE_CTE as A
+	inner join(
+		SELECT V.[ORG_NO],V.[ORG_DESC],V.[UPPER_ORG],V.[ORG_MAN],V.USERID
+		FROM [EIPHRSYS].[dbo].[View_SYS_ORG] V
+	) as B on B.UPPER_ORG=A.ORG_NO
+	WHERE 12=12--B.userid &lt;&gt; '335'
+)
+--EMPLOYEE_CTE 完成
+
+--開始查詢登入者要看到的姓名、部門、請假總時數、加班總時數、計薪年月
+
+SELECT  distinct X.USERID,X.USERNAME--,X.ORG_NO,X.ORG_DESC
+FROM
+(--begin人
+(--begin登入者自己的姓名、部門
+ --部門主管
+ select u.USERID,u.USERNAME,o.ORG_NO,o.ORG_DESC --,ug.GROUPID 
+ from [EIPHRSYS].[dbo].users u
+ inner join [EIPHRSYS].[dbo].USERGROUPS ug on ug.USERID=u.USERID
+ inner join [EIPHRSYS].[dbo].SYS_ORG o on o.ORG_MAN=ug.GROUPID
+ WHERE 13=13--u.USERID ='335'
+ union
+ --部門部屬
+ select u.USERID,u.USERNAME,o.ORG_NO,o.ORG_DESC --,ug.GROUPID
+ from [EIPHRSYS].[dbo].users u
+ inner join [EIPHRSYS].[dbo].USERGROUPS ug on ug.USERID=u.USERID
+ inner join [EIPHRSYS].[dbo].SYS_ORGROLES og on og.ROLE_ID=ug.GROUPID
+ inner join [EIPHRSYS].[dbo].SYS_ORG o on o.ORG_NO=og.ORG_NO
+ WHERE 14=14--u.USERID ='335'
+)--end登入者自己的姓名、部門
+UNION
+(--begin登入者所管部門的人(包含管部門主管)和所有下層部門的人(包含管部門主管)的姓名和部門
+select B.USERID,B.USERNAME,B.ORG_NO,B.ORG_DESC--,A.LEVEL--,B.GROUPID
+from EMPLOYEE_CTE as A
+inner join(
+ --部門主管
+ select u.USERID,u.USERNAME,o.ORG_NO,o.ORG_DESC --,ug.GROUPID 
+ from [EIPHRSYS].[dbo].users u
+ inner join [EIPHRSYS].[dbo].USERGROUPS ug on ug.USERID=u.USERID
+ inner join [EIPHRSYS].[dbo].SYS_ORG o on o.ORG_MAN=ug.GROUPID
+ union
+ --部門部屬
+ select u.USERID,u.USERNAME,o.ORG_NO,o.ORG_DESC --,ug.GROUPID
+ from [EIPHRSYS].[dbo].users u
+ inner join [EIPHRSYS].[dbo].USERGROUPS ug on ug.USERID=u.USERID
+ inner join [EIPHRSYS].[dbo].SYS_ORGROLES og on og.ROLE_ID=ug.GROUPID
+ inner join [EIPHRSYS].[dbo].SYS_ORG o on o.ORG_NO=og.ORG_NO
+) as B on B.[ORG_NO]=A.[ORG_NO]
+)--end登入者所管部門的人(包含管部門主管)和所有下層部門的人(包含管部門主管)的姓名和部門
+
+) AS X--end人
+
+WHERE 15=15--ORG_NO='10300'
+ORDER BY USERID--,LEVEL
+
+
+--SELECT A.USERID,A.USERNAME,C.ORG_NO 
+--FROM EIPHRSYS.DBO.USERS A,EIPHRSYS.DBO.USERGROUPS B,EIPHRSYS.DBO.SYS_ORGROLES C
+--WHERE A.USERID=B.USERID AND B.GROUPID=C.ROLE_ID </value>
+  </data>
+  <metadata name="$this.TrayLargeIcon" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>False</value>
+  </metadata>
+</root>

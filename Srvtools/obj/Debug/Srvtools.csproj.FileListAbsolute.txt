@@ -1,0 +1,836 @@
+F:\Program Files\EEP2010\EEPNetServer\Srvtools.dll
+F:\Program Files\EEP2010\EEPNetServer\Srvtools.pdb
+F:\Program Files\EEP2010\Srvtools\obj\Debug\ResolveAssemblyReference.cache
+F:\Program Files\EEP2010\Srvtools\obj\Debug\Srvtools.CommandTextAddTableDialog.resources
+F:\Program Files\EEP2010\Srvtools\obj\Debug\Srvtools.CommandTextJoinDialog.resources
+F:\Program Files\EEP2010\Srvtools\obj\Debug\Srvtools.CommandTextOptionDialog.resources
+F:\Program Files\EEP2010\Srvtools\obj\Debug\Srvtools.frmDGVGridRefVal.resources
+F:\Program Files\EEP2010\Srvtools\obj\Debug\Srvtools.frmNavQuery.resources
+F:\Program Files\EEP2010\Srvtools\obj\Debug\Srvtools.frmRefValQuery.resources
+F:\Program Files\EEP2010\Srvtools\obj\Debug\Srvtools.frmSelGroups.resources
+F:\Program Files\EEP2010\Srvtools\obj\Debug\Srvtools.InfoForm.resources
+F:\Program Files\EEP2010\Srvtools\obj\Debug\Srvtools.InfoCommand.resources
+F:\Program Files\EEP2010\Srvtools\obj\Debug\Srvtools.InfoDataSetEditorDialog.resources
+F:\Program Files\EEP2010\Srvtools\obj\Debug\Srvtools.InfoDataSource.resources
+F:\Program Files\EEP2010\Srvtools\obj\Debug\Srvtools.InfoNavigator.resources
+F:\Program Files\EEP2010\Srvtools\obj\Debug\Srvtools.InfoRefVal.resources
+F:\Program Files\EEP2010\Srvtools\obj\Debug\Srvtools.InfoPanel.resources
+F:\Program Files\EEP2010\Srvtools\obj\Debug\Srvtools.InfoRefValForGrid.resources
+F:\Program Files\EEP2010\Srvtools\obj\Debug\Srvtools.InfoTextBox.resources
+F:\Program Files\EEP2010\Srvtools\obj\Debug\Srvtools.InfoTransactionEditorDialog.resources
+F:\Program Files\EEP2010\Srvtools\obj\Debug\Srvtools.InfoTransactionEditorTTransactionDialog.resources
+F:\Program Files\EEP2010\Srvtools\obj\Debug\Srvtools.InfoTransactionTransFieldsAddDialog.resources
+F:\Program Files\EEP2010\Srvtools\obj\Debug\Srvtools.InfoComboBox.resources
+F:\Program Files\EEP2010\Srvtools\obj\Debug\Srvtools.InfoDataSet.resources
+F:\Program Files\EEP2010\Srvtools\obj\Debug\Srvtools.MGControl.resources
+F:\Program Files\EEP2010\Srvtools\obj\Debug\Srvtools.UGControl.resources
+F:\Program Files\EEP2010\Srvtools\obj\Debug\Srvtools.UpdateComponent.resources
+F:\Program Files\EEP2010\Srvtools\obj\Debug\Srvtools.ControlDescriptionEditorDialog.resources
+F:\Program Files\EEP2010\Srvtools\obj\Debug\Srvtools.ERModel.resources
+F:\Program Files\EEP2010\Srvtools\obj\Debug\Srvtools.fmReplaceDialog.resources
+F:\Program Files\EEP2010\Srvtools\obj\Debug\Srvtools.frmAnyQuery.resources
+F:\Program Files\EEP2010\Srvtools\obj\Debug\Srvtools.frmAnyQueryAdd.resources
+F:\Program Files\EEP2010\Srvtools\obj\Debug\Srvtools.frmAnyQuerySaveLoad.resources
+F:\Program Files\EEP2010\Srvtools\obj\Debug\Srvtools.frmExternalRefvalEditor.resources
+F:\Program Files\EEP2010\Srvtools\obj\Debug\Srvtools.frmRefButtonQuery.resources
+F:\Program Files\EEP2010\Srvtools\obj\Debug\Srvtools.InfoDateTimeBox.resources
+F:\Program Files\EEP2010\Srvtools\obj\Debug\Srvtools.FormVersion.resources
+F:\Program Files\EEP2010\Srvtools\obj\Debug\Srvtools.frmNavigatorCopy.resources
+F:\Program Files\EEP2010\Srvtools\obj\Debug\Srvtools.frmProxy.resources
+F:\Program Files\EEP2010\Srvtools\obj\Debug\Srvtools.MultiLanguageEditorDialog.resources
+F:\Program Files\EEP2010\Srvtools\obj\Debug\Srvtools.frmAgent.resources
+F:\Program Files\EEP2010\Srvtools\obj\Debug\Srvtools.frmSelectLanguage.resources
+F:\Program Files\EEP2010\Srvtools\obj\Debug\Srvtools.InfoRefPanel.resources
+F:\Program Files\EEP2010\Srvtools\obj\Debug\Srvtools.frmWebHyperLink.resources
+F:\Program Files\EEP2010\Srvtools\obj\Debug\Srvtools.InfoTransactionEditorTransFieldsDialog.resources
+F:\Program Files\EEP2010\Srvtools\obj\Debug\Srvtools.InfoTransactionEditorKeyFieldsDialog.resources
+F:\Program Files\EEP2010\Srvtools\obj\Debug\Srvtools.InfoTransactionTransKeyFieldsAddDialog.resources
+F:\Program Files\EEP2010\Srvtools\obj\Debug\Srvtools.frmAccessControlForUser.resources
+F:\Program Files\EEP2010\Srvtools\obj\Debug\Srvtools.frmAccessMenus.resources
+F:\Program Files\EEP2010\Srvtools\obj\Debug\Srvtools.frmAccessMenusForUser.resources
+F:\Program Files\EEP2010\Srvtools\obj\Debug\Srvtools.frmSelUsers.resources
+F:\Program Files\EEP2010\Srvtools\obj\Debug\Srvtools.frmTreeView.resources
+F:\Program Files\EEP2010\Srvtools\obj\Debug\Srvtools.frmWebClientQueryEditor.resources
+F:\Program Files\EEP2010\Srvtools\obj\Debug\Srvtools.frmWebSecurityAdd.resources
+F:\Program Files\EEP2010\Srvtools\obj\Debug\Srvtools.frmWebSecurity.resources
+F:\Program Files\EEP2010\Srvtools\obj\Debug\Srvtools.InfoClientMoveProgress.resources
+F:\Program Files\EEP2010\Srvtools\obj\Debug\Srvtools.frmAccessControlForGroup.resources
+F:\Program Files\EEP2010\Srvtools\obj\Debug\Srvtools.frmAccessControlAdd.resources
+F:\Program Files\EEP2010\Srvtools\obj\Debug\Srvtools.frmInfoSecurityAdd.resources
+F:\Program Files\EEP2010\Srvtools\obj\Debug\Srvtools.frmInfoSecurityEdit.resources
+F:\Program Files\EEP2010\Srvtools\obj\Debug\Srvtools.frmClientQueryEditor.resources
+F:\Program Files\EEP2010\Srvtools\obj\Debug\Srvtools.frmClientQuery.resources
+F:\Program Files\EEP2010\Srvtools\obj\Debug\Srvtools.InfoRefvalBox.resources
+F:\Program Files\EEP2010\Srvtools\obj\Debug\Srvtools.EnabledControlsEditorDialog.resources
+F:\Program Files\EEP2010\Srvtools\obj\Debug\Srvtools.ErrorDialog.resources
+F:\Program Files\EEP2010\Srvtools\obj\Debug\Srvtools.FeedbackBugDialog.resources
+F:\Program Files\EEP2010\Srvtools\obj\Debug\Srvtools.InfoBindingSource.resources
+F:\Program Files\EEP2010\Srvtools\obj\Debug\Srvtools.PERemoteName.resources
+F:\Program Files\EEP2010\Srvtools\obj\Debug\Srvtools.StateCollectionEditorDialog.resources
+F:\Program Files\EEP2010\Srvtools\obj\Debug\Srvtools.UPWDControl.resources
+F:\Program Files\EEP2010\Srvtools\obj\Debug\Srvtools.WebNavigatorEnableControlsEditorDialog.resources
+F:\Program Files\EEP2010\Srvtools\obj\Debug\GenerateResource.read.1.tlog
+F:\Program Files\EEP2010\Srvtools\obj\Debug\GenerateResource.write.1.tlog
+F:\Program Files\EEP2010\Srvtools\obj\Debug\Srvtools.dll
+F:\Program Files\EEP2010\Srvtools\obj\Debug\Srvtools.pdb
+D:\Infolight\EEP2010\EEPNetServer\Srvtools.dll
+D:\Infolight\EEP2010\EEPNetServer\Srvtools.pdb
+D:\Infolight\EEP2010\Srvtools\obj\Debug\ResolveAssemblyReference.cache
+D:\Infolight\EEP2010\Srvtools\obj\Debug\Srvtools.CommandTextAddTableDialog.resources
+D:\Infolight\EEP2010\Srvtools\obj\Debug\Srvtools.CommandTextJoinDialog.resources
+D:\Infolight\EEP2010\Srvtools\obj\Debug\Srvtools.CommandTextOptionDialog.resources
+D:\Infolight\EEP2010\Srvtools\obj\Debug\Srvtools.frmDGVGridRefVal.resources
+D:\Infolight\EEP2010\Srvtools\obj\Debug\Srvtools.frmNavQuery.resources
+D:\Infolight\EEP2010\Srvtools\obj\Debug\Srvtools.frmRefValQuery.resources
+D:\Infolight\EEP2010\Srvtools\obj\Debug\Srvtools.frmSelGroups.resources
+D:\Infolight\EEP2010\Srvtools\obj\Debug\Srvtools.InfoForm.resources
+D:\Infolight\EEP2010\Srvtools\obj\Debug\Srvtools.InfoCommand.resources
+D:\Infolight\EEP2010\Srvtools\obj\Debug\Srvtools.InfoDataSetEditorDialog.resources
+D:\Infolight\EEP2010\Srvtools\obj\Debug\Srvtools.InfoDataSource.resources
+D:\Infolight\EEP2010\Srvtools\obj\Debug\Srvtools.InfoNavigator.resources
+D:\Infolight\EEP2010\Srvtools\obj\Debug\Srvtools.InfoRefVal.resources
+D:\Infolight\EEP2010\Srvtools\obj\Debug\Srvtools.InfoPanel.resources
+D:\Infolight\EEP2010\Srvtools\obj\Debug\Srvtools.InfoRefValForGrid.resources
+D:\Infolight\EEP2010\Srvtools\obj\Debug\Srvtools.InfoTextBox.resources
+D:\Infolight\EEP2010\Srvtools\obj\Debug\Srvtools.InfoTransactionEditorDialog.resources
+D:\Infolight\EEP2010\Srvtools\obj\Debug\Srvtools.InfoTransactionEditorTTransactionDialog.resources
+D:\Infolight\EEP2010\Srvtools\obj\Debug\Srvtools.InfoTransactionTransFieldsAddDialog.resources
+D:\Infolight\EEP2010\Srvtools\obj\Debug\Srvtools.InfoComboBox.resources
+D:\Infolight\EEP2010\Srvtools\obj\Debug\Srvtools.InfoDataSet.resources
+D:\Infolight\EEP2010\Srvtools\obj\Debug\Srvtools.MGControl.resources
+D:\Infolight\EEP2010\Srvtools\obj\Debug\Srvtools.Properties.Resources.resources
+D:\Infolight\EEP2010\Srvtools\obj\Debug\Srvtools.Report.frmSelectReport.resources
+D:\Infolight\EEP2010\Srvtools\obj\Debug\Srvtools.UGControl.resources
+D:\Infolight\EEP2010\Srvtools\obj\Debug\Srvtools.UpdateComponent.resources
+D:\Infolight\EEP2010\Srvtools\obj\Debug\Srvtools.ControlDescriptionEditorDialog.resources
+D:\Infolight\EEP2010\Srvtools\obj\Debug\Srvtools.ERModel.resources
+D:\Infolight\EEP2010\Srvtools\obj\Debug\Srvtools.fmReplaceDialog.resources
+D:\Infolight\EEP2010\Srvtools\obj\Debug\Srvtools.frmAnyQuery.resources
+D:\Infolight\EEP2010\Srvtools\obj\Debug\Srvtools.frmAnyQueryAdd.resources
+D:\Infolight\EEP2010\Srvtools\obj\Debug\Srvtools.frmAnyQuerySaveLoad.resources
+D:\Infolight\EEP2010\Srvtools\obj\Debug\Srvtools.frmExternalRefvalEditor.resources
+D:\Infolight\EEP2010\Srvtools\obj\Debug\Srvtools.frmRefButtonQuery.resources
+D:\Infolight\EEP2010\Srvtools\obj\Debug\Srvtools.InfoDateTimeBox.resources
+D:\Infolight\EEP2010\Srvtools\obj\Debug\Srvtools.FormVersion.resources
+D:\Infolight\EEP2010\Srvtools\obj\Debug\Srvtools.frmNavigatorCopy.resources
+D:\Infolight\EEP2010\Srvtools\obj\Debug\Srvtools.frmProxy.resources
+D:\Infolight\EEP2010\Srvtools\obj\Debug\Srvtools.MultiLanguageEditorDialog.resources
+D:\Infolight\EEP2010\Srvtools\obj\Debug\Srvtools.frmAgent.resources
+D:\Infolight\EEP2010\Srvtools\obj\Debug\Srvtools.frmSelectLanguage.resources
+D:\Infolight\EEP2010\Srvtools\obj\Debug\Srvtools.InfoRefPanel.resources
+D:\Infolight\EEP2010\Srvtools\obj\Debug\Srvtools.frmWebHyperLink.resources
+D:\Infolight\EEP2010\Srvtools\obj\Debug\Srvtools.InfoTransactionEditorTransFieldsDialog.resources
+D:\Infolight\EEP2010\Srvtools\obj\Debug\Srvtools.InfoTransactionEditorKeyFieldsDialog.resources
+D:\Infolight\EEP2010\Srvtools\obj\Debug\Srvtools.InfoTransactionTransKeyFieldsAddDialog.resources
+D:\Infolight\EEP2010\Srvtools\obj\Debug\Srvtools.frmAccessControlForUser.resources
+D:\Infolight\EEP2010\Srvtools\obj\Debug\Srvtools.frmAccessMenus.resources
+D:\Infolight\EEP2010\Srvtools\obj\Debug\Srvtools.frmAccessMenusForUser.resources
+D:\Infolight\EEP2010\Srvtools\obj\Debug\Srvtools.frmSelUsers.resources
+D:\Infolight\EEP2010\Srvtools\obj\Debug\Srvtools.frmTreeView.resources
+D:\Infolight\EEP2010\Srvtools\obj\Debug\Srvtools.frmWebClientQueryEditor.resources
+D:\Infolight\EEP2010\Srvtools\obj\Debug\Srvtools.frmWebSecurityAdd.resources
+D:\Infolight\EEP2010\Srvtools\obj\Debug\Srvtools.frmWebSecurity.resources
+D:\Infolight\EEP2010\Srvtools\obj\Debug\Srvtools.InfoClientMoveProgress.resources
+D:\Infolight\EEP2010\Srvtools\obj\Debug\Srvtools.frmAccessControlForGroup.resources
+D:\Infolight\EEP2010\Srvtools\obj\Debug\Srvtools.frmAccessControlAdd.resources
+D:\Infolight\EEP2010\Srvtools\obj\Debug\Srvtools.frmInfoSecurityAdd.resources
+D:\Infolight\EEP2010\Srvtools\obj\Debug\Srvtools.frmInfoSecurityEdit.resources
+D:\Infolight\EEP2010\Srvtools\obj\Debug\Srvtools.frmClientQueryEditor.resources
+D:\Infolight\EEP2010\Srvtools\obj\Debug\Srvtools.frmClientQuery.resources
+D:\Infolight\EEP2010\Srvtools\obj\Debug\Srvtools.InfoRefvalBox.resources
+D:\Infolight\EEP2010\Srvtools\obj\Debug\Srvtools.EnabledControlsEditorDialog.resources
+D:\Infolight\EEP2010\Srvtools\obj\Debug\Srvtools.ErrorDialog.resources
+D:\Infolight\EEP2010\Srvtools\obj\Debug\Srvtools.FeedbackBugDialog.resources
+D:\Infolight\EEP2010\Srvtools\obj\Debug\Srvtools.InfoBindingSource.resources
+D:\Infolight\EEP2010\Srvtools\obj\Debug\Srvtools.PERemoteName.resources
+D:\Infolight\EEP2010\Srvtools\obj\Debug\Srvtools.StateCollectionEditorDialog.resources
+D:\Infolight\EEP2010\Srvtools\obj\Debug\Srvtools.UPWDControl.resources
+D:\Infolight\EEP2010\Srvtools\obj\Debug\Srvtools.WebNavigatorEnableControlsEditorDialog.resources
+D:\Infolight\EEP2010\Srvtools\obj\Debug\GenerateResource.read.1.tlog
+D:\Infolight\EEP2010\Srvtools\obj\Debug\GenerateResource.write.1.tlog
+D:\Infolight\EEP2010\Srvtools\obj\Debug\Srvtools.dll
+D:\Infolight\EEP2010\Srvtools\obj\Debug\Srvtools.pdb
+C:\Program Files\Infolight\EEP2010\EEPNetServer\Srvtools.dll
+C:\Program Files\Infolight\EEP2010\EEPNetServer\Srvtools.pdb
+C:\Program Files\Infolight\EEP2010\Srvtools\obj\Debug\Srvtools.CommandTextAddTableDialog.resources
+C:\Program Files\Infolight\EEP2010\Srvtools\obj\Debug\Srvtools.CommandTextJoinDialog.resources
+C:\Program Files\Infolight\EEP2010\Srvtools\obj\Debug\Srvtools.CommandTextOptionDialog.resources
+C:\Program Files\Infolight\EEP2010\Srvtools\obj\Debug\Srvtools.frmDGVGridRefVal.resources
+C:\Program Files\Infolight\EEP2010\Srvtools\obj\Debug\Srvtools.frmNavQuery.resources
+C:\Program Files\Infolight\EEP2010\Srvtools\obj\Debug\Srvtools.frmRefValQuery.resources
+C:\Program Files\Infolight\EEP2010\Srvtools\obj\Debug\Srvtools.frmSelGroups.resources
+C:\Program Files\Infolight\EEP2010\Srvtools\obj\Debug\Srvtools.InfoForm.resources
+C:\Program Files\Infolight\EEP2010\Srvtools\obj\Debug\Srvtools.InfoCommand.resources
+C:\Program Files\Infolight\EEP2010\Srvtools\obj\Debug\Srvtools.InfoDataSetEditorDialog.resources
+C:\Program Files\Infolight\EEP2010\Srvtools\obj\Debug\Srvtools.InfoDataSource.resources
+C:\Program Files\Infolight\EEP2010\Srvtools\obj\Debug\Srvtools.InfoNavigator.resources
+C:\Program Files\Infolight\EEP2010\Srvtools\obj\Debug\Srvtools.InfoRefVal.resources
+C:\Program Files\Infolight\EEP2010\Srvtools\obj\Debug\Srvtools.InfoPanel.resources
+C:\Program Files\Infolight\EEP2010\Srvtools\obj\Debug\Srvtools.InfoRefValForGrid.resources
+C:\Program Files\Infolight\EEP2010\Srvtools\obj\Debug\Srvtools.InfoTextBox.resources
+C:\Program Files\Infolight\EEP2010\Srvtools\obj\Debug\Srvtools.InfoTransactionEditorDialog.resources
+C:\Program Files\Infolight\EEP2010\Srvtools\obj\Debug\Srvtools.InfoTransactionEditorTTransactionDialog.resources
+C:\Program Files\Infolight\EEP2010\Srvtools\obj\Debug\Srvtools.InfoTransactionTransFieldsAddDialog.resources
+C:\Program Files\Infolight\EEP2010\Srvtools\obj\Debug\Srvtools.InfoComboBox.resources
+C:\Program Files\Infolight\EEP2010\Srvtools\obj\Debug\Srvtools.InfoDataSet.resources
+C:\Program Files\Infolight\EEP2010\Srvtools\obj\Debug\Srvtools.MGControl.resources
+C:\Program Files\Infolight\EEP2010\Srvtools\obj\Debug\Srvtools.Properties.Resources.resources
+C:\Program Files\Infolight\EEP2010\Srvtools\obj\Debug\Srvtools.Report.frmSelectReport.resources
+C:\Program Files\Infolight\EEP2010\Srvtools\obj\Debug\Srvtools.UGControl.resources
+C:\Program Files\Infolight\EEP2010\Srvtools\obj\Debug\Srvtools.UpdateComponent.resources
+C:\Program Files\Infolight\EEP2010\Srvtools\obj\Debug\Srvtools.ControlDescriptionEditorDialog.resources
+C:\Program Files\Infolight\EEP2010\Srvtools\obj\Debug\Srvtools.ERModel.resources
+C:\Program Files\Infolight\EEP2010\Srvtools\obj\Debug\Srvtools.fmReplaceDialog.resources
+C:\Program Files\Infolight\EEP2010\Srvtools\obj\Debug\Srvtools.frmAnyQuery.resources
+C:\Program Files\Infolight\EEP2010\Srvtools\obj\Debug\Srvtools.frmAnyQueryAdd.resources
+C:\Program Files\Infolight\EEP2010\Srvtools\obj\Debug\Srvtools.frmAnyQuerySaveLoad.resources
+C:\Program Files\Infolight\EEP2010\Srvtools\obj\Debug\Srvtools.frmExternalRefvalEditor.resources
+C:\Program Files\Infolight\EEP2010\Srvtools\obj\Debug\Srvtools.frmRefButtonQuery.resources
+C:\Program Files\Infolight\EEP2010\Srvtools\obj\Debug\Srvtools.InfoDateTimeBox.resources
+C:\Program Files\Infolight\EEP2010\Srvtools\obj\Debug\Srvtools.FormVersion.resources
+C:\Program Files\Infolight\EEP2010\Srvtools\obj\Debug\Srvtools.frmNavigatorCopy.resources
+C:\Program Files\Infolight\EEP2010\Srvtools\obj\Debug\Srvtools.frmProxy.resources
+C:\Program Files\Infolight\EEP2010\Srvtools\obj\Debug\Srvtools.MultiLanguageEditorDialog.resources
+C:\Program Files\Infolight\EEP2010\Srvtools\obj\Debug\Srvtools.frmAgent.resources
+C:\Program Files\Infolight\EEP2010\Srvtools\obj\Debug\Srvtools.frmSelectLanguage.resources
+C:\Program Files\Infolight\EEP2010\Srvtools\obj\Debug\Srvtools.InfoRefPanel.resources
+C:\Program Files\Infolight\EEP2010\Srvtools\obj\Debug\Srvtools.frmWebHyperLink.resources
+C:\Program Files\Infolight\EEP2010\Srvtools\obj\Debug\Srvtools.InfoTransactionEditorTransFieldsDialog.resources
+C:\Program Files\Infolight\EEP2010\Srvtools\obj\Debug\Srvtools.InfoTransactionEditorKeyFieldsDialog.resources
+C:\Program Files\Infolight\EEP2010\Srvtools\obj\Debug\Srvtools.InfoTransactionTransKeyFieldsAddDialog.resources
+C:\Program Files\Infolight\EEP2010\Srvtools\obj\Debug\Srvtools.frmAccessControlForUser.resources
+C:\Program Files\Infolight\EEP2010\Srvtools\obj\Debug\Srvtools.frmAccessMenus.resources
+C:\Program Files\Infolight\EEP2010\Srvtools\obj\Debug\Srvtools.frmAccessMenusForUser.resources
+C:\Program Files\Infolight\EEP2010\Srvtools\obj\Debug\Srvtools.frmSelUsers.resources
+C:\Program Files\Infolight\EEP2010\Srvtools\obj\Debug\Srvtools.frmTreeView.resources
+C:\Program Files\Infolight\EEP2010\Srvtools\obj\Debug\Srvtools.frmWebClientQueryEditor.resources
+C:\Program Files\Infolight\EEP2010\Srvtools\obj\Debug\Srvtools.frmWebSecurityAdd.resources
+C:\Program Files\Infolight\EEP2010\Srvtools\obj\Debug\Srvtools.frmWebSecurity.resources
+C:\Program Files\Infolight\EEP2010\Srvtools\obj\Debug\Srvtools.InfoClientMoveProgress.resources
+C:\Program Files\Infolight\EEP2010\Srvtools\obj\Debug\Srvtools.frmAccessControlForGroup.resources
+C:\Program Files\Infolight\EEP2010\Srvtools\obj\Debug\Srvtools.frmAccessControlAdd.resources
+C:\Program Files\Infolight\EEP2010\Srvtools\obj\Debug\Srvtools.frmInfoSecurityAdd.resources
+C:\Program Files\Infolight\EEP2010\Srvtools\obj\Debug\Srvtools.frmInfoSecurityEdit.resources
+C:\Program Files\Infolight\EEP2010\Srvtools\obj\Debug\Srvtools.frmClientQueryEditor.resources
+C:\Program Files\Infolight\EEP2010\Srvtools\obj\Debug\Srvtools.frmClientQuery.resources
+C:\Program Files\Infolight\EEP2010\Srvtools\obj\Debug\Srvtools.InfoRefvalBox.resources
+C:\Program Files\Infolight\EEP2010\Srvtools\obj\Debug\Srvtools.EnabledControlsEditorDialog.resources
+C:\Program Files\Infolight\EEP2010\Srvtools\obj\Debug\Srvtools.ErrorDialog.resources
+C:\Program Files\Infolight\EEP2010\Srvtools\obj\Debug\Srvtools.FeedbackBugDialog.resources
+C:\Program Files\Infolight\EEP2010\Srvtools\obj\Debug\Srvtools.InfoBindingSource.resources
+C:\Program Files\Infolight\EEP2010\Srvtools\obj\Debug\Srvtools.PERemoteName.resources
+C:\Program Files\Infolight\EEP2010\Srvtools\obj\Debug\Srvtools.StateCollectionEditorDialog.resources
+C:\Program Files\Infolight\EEP2010\Srvtools\obj\Debug\Srvtools.UPWDControl.resources
+C:\Program Files\Infolight\EEP2010\Srvtools\obj\Debug\Srvtools.WebNavigatorEnableControlsEditorDialog.resources
+C:\Program Files\Infolight\EEP2010\Srvtools\obj\Debug\Srvtools.dll
+C:\Program Files\Infolight\EEP2010\Srvtools\obj\Debug\Srvtools.pdb
+C:\Program Files\Infolight\EEP2010\Srvtools\obj\Debug\Srvtools.csproj.GenerateResource.Cache
+C:\Program Files\Infolight\EEP2010\Srvtools\obj\Debug\Srvtools.csprojResolveAssemblyReference.cache
+C:\Program Files\Infolight\EEP2012\EEPNetServer\Srvtools.dll
+C:\Program Files\Infolight\EEP2012\EEPNetServer\Srvtools.pdb
+C:\Program Files\Infolight\EEP2012\Srvtools\obj\Debug\Srvtools.csprojResolveAssemblyReference.cache
+C:\Program Files\Infolight\EEP2012\Srvtools\obj\Debug\Srvtools.CommandTextAddTableDialog.resources
+C:\Program Files\Infolight\EEP2012\Srvtools\obj\Debug\Srvtools.CommandTextJoinDialog.resources
+C:\Program Files\Infolight\EEP2012\Srvtools\obj\Debug\Srvtools.CommandTextOptionDialog.resources
+C:\Program Files\Infolight\EEP2012\Srvtools\obj\Debug\Srvtools.frmDGVGridRefVal.resources
+C:\Program Files\Infolight\EEP2012\Srvtools\obj\Debug\Srvtools.frmNavQuery.resources
+C:\Program Files\Infolight\EEP2012\Srvtools\obj\Debug\Srvtools.frmRefValQuery.resources
+C:\Program Files\Infolight\EEP2012\Srvtools\obj\Debug\Srvtools.frmSelGroups.resources
+C:\Program Files\Infolight\EEP2012\Srvtools\obj\Debug\Srvtools.InfoForm.resources
+C:\Program Files\Infolight\EEP2012\Srvtools\obj\Debug\Srvtools.InfoCommand.resources
+C:\Program Files\Infolight\EEP2012\Srvtools\obj\Debug\Srvtools.InfoDataSetEditorDialog.resources
+C:\Program Files\Infolight\EEP2012\Srvtools\obj\Debug\Srvtools.InfoDataSource.resources
+C:\Program Files\Infolight\EEP2012\Srvtools\obj\Debug\Srvtools.InfoNavigator.resources
+C:\Program Files\Infolight\EEP2012\Srvtools\obj\Debug\Srvtools.InfoRefVal.resources
+C:\Program Files\Infolight\EEP2012\Srvtools\obj\Debug\Srvtools.InfoPanel.resources
+C:\Program Files\Infolight\EEP2012\Srvtools\obj\Debug\Srvtools.InfoRefValForGrid.resources
+C:\Program Files\Infolight\EEP2012\Srvtools\obj\Debug\Srvtools.InfoTextBox.resources
+C:\Program Files\Infolight\EEP2012\Srvtools\obj\Debug\Srvtools.InfoTransactionEditorDialog.resources
+C:\Program Files\Infolight\EEP2012\Srvtools\obj\Debug\Srvtools.InfoTransactionEditorTTransactionDialog.resources
+C:\Program Files\Infolight\EEP2012\Srvtools\obj\Debug\Srvtools.InfoTransactionTransFieldsAddDialog.resources
+C:\Program Files\Infolight\EEP2012\Srvtools\obj\Debug\Srvtools.InfoComboBox.resources
+C:\Program Files\Infolight\EEP2012\Srvtools\obj\Debug\Srvtools.InfoDataSet.resources
+C:\Program Files\Infolight\EEP2012\Srvtools\obj\Debug\Srvtools.MGControl.resources
+C:\Program Files\Infolight\EEP2012\Srvtools\obj\Debug\Srvtools.Properties.Resources.resources
+C:\Program Files\Infolight\EEP2012\Srvtools\obj\Debug\Srvtools.Report.frmSelectReport.resources
+C:\Program Files\Infolight\EEP2012\Srvtools\obj\Debug\Srvtools.UGControl.resources
+C:\Program Files\Infolight\EEP2012\Srvtools\obj\Debug\Srvtools.UpdateComponent.resources
+C:\Program Files\Infolight\EEP2012\Srvtools\obj\Debug\Srvtools.ControlDescriptionEditorDialog.resources
+C:\Program Files\Infolight\EEP2012\Srvtools\obj\Debug\Srvtools.ERModel.resources
+C:\Program Files\Infolight\EEP2012\Srvtools\obj\Debug\Srvtools.fmReplaceDialog.resources
+C:\Program Files\Infolight\EEP2012\Srvtools\obj\Debug\Srvtools.frmAnyQuery.resources
+C:\Program Files\Infolight\EEP2012\Srvtools\obj\Debug\Srvtools.frmAnyQueryAdd.resources
+C:\Program Files\Infolight\EEP2012\Srvtools\obj\Debug\Srvtools.frmAnyQuerySaveLoad.resources
+C:\Program Files\Infolight\EEP2012\Srvtools\obj\Debug\Srvtools.frmExternalRefvalEditor.resources
+C:\Program Files\Infolight\EEP2012\Srvtools\obj\Debug\Srvtools.frmRefButtonQuery.resources
+C:\Program Files\Infolight\EEP2012\Srvtools\obj\Debug\Srvtools.InfoDateTimeBox.resources
+C:\Program Files\Infolight\EEP2012\Srvtools\obj\Debug\Srvtools.FormVersion.resources
+C:\Program Files\Infolight\EEP2012\Srvtools\obj\Debug\Srvtools.frmNavigatorCopy.resources
+C:\Program Files\Infolight\EEP2012\Srvtools\obj\Debug\Srvtools.frmProxy.resources
+C:\Program Files\Infolight\EEP2012\Srvtools\obj\Debug\Srvtools.MultiLanguageEditorDialog.resources
+C:\Program Files\Infolight\EEP2012\Srvtools\obj\Debug\Srvtools.frmAgent.resources
+C:\Program Files\Infolight\EEP2012\Srvtools\obj\Debug\Srvtools.frmSelectLanguage.resources
+C:\Program Files\Infolight\EEP2012\Srvtools\obj\Debug\Srvtools.InfoRefPanel.resources
+C:\Program Files\Infolight\EEP2012\Srvtools\obj\Debug\Srvtools.frmWebHyperLink.resources
+C:\Program Files\Infolight\EEP2012\Srvtools\obj\Debug\Srvtools.InfoTransactionEditorTransFieldsDialog.resources
+C:\Program Files\Infolight\EEP2012\Srvtools\obj\Debug\Srvtools.InfoTransactionEditorKeyFieldsDialog.resources
+C:\Program Files\Infolight\EEP2012\Srvtools\obj\Debug\Srvtools.InfoTransactionTransKeyFieldsAddDialog.resources
+C:\Program Files\Infolight\EEP2012\Srvtools\obj\Debug\Srvtools.frmAccessControlForUser.resources
+C:\Program Files\Infolight\EEP2012\Srvtools\obj\Debug\Srvtools.frmAccessMenus.resources
+C:\Program Files\Infolight\EEP2012\Srvtools\obj\Debug\Srvtools.frmAccessMenusForUser.resources
+C:\Program Files\Infolight\EEP2012\Srvtools\obj\Debug\Srvtools.frmSelUsers.resources
+C:\Program Files\Infolight\EEP2012\Srvtools\obj\Debug\Srvtools.frmTreeView.resources
+C:\Program Files\Infolight\EEP2012\Srvtools\obj\Debug\Srvtools.frmWebClientQueryEditor.resources
+C:\Program Files\Infolight\EEP2012\Srvtools\obj\Debug\Srvtools.frmWebSecurityAdd.resources
+C:\Program Files\Infolight\EEP2012\Srvtools\obj\Debug\Srvtools.frmWebSecurity.resources
+C:\Program Files\Infolight\EEP2012\Srvtools\obj\Debug\Srvtools.InfoClientMoveProgress.resources
+C:\Program Files\Infolight\EEP2012\Srvtools\obj\Debug\Srvtools.frmAccessControlForGroup.resources
+C:\Program Files\Infolight\EEP2012\Srvtools\obj\Debug\Srvtools.frmAccessControlAdd.resources
+C:\Program Files\Infolight\EEP2012\Srvtools\obj\Debug\Srvtools.frmInfoSecurityAdd.resources
+C:\Program Files\Infolight\EEP2012\Srvtools\obj\Debug\Srvtools.frmInfoSecurityEdit.resources
+C:\Program Files\Infolight\EEP2012\Srvtools\obj\Debug\Srvtools.frmClientQueryEditor.resources
+C:\Program Files\Infolight\EEP2012\Srvtools\obj\Debug\Srvtools.frmClientQuery.resources
+C:\Program Files\Infolight\EEP2012\Srvtools\obj\Debug\Srvtools.InfoRefvalBox.resources
+C:\Program Files\Infolight\EEP2012\Srvtools\obj\Debug\Srvtools.EnabledControlsEditorDialog.resources
+C:\Program Files\Infolight\EEP2012\Srvtools\obj\Debug\Srvtools.ErrorDialog.resources
+C:\Program Files\Infolight\EEP2012\Srvtools\obj\Debug\Srvtools.FeedbackBugDialog.resources
+C:\Program Files\Infolight\EEP2012\Srvtools\obj\Debug\Srvtools.InfoBindingSource.resources
+C:\Program Files\Infolight\EEP2012\Srvtools\obj\Debug\Srvtools.PERemoteName.resources
+C:\Program Files\Infolight\EEP2012\Srvtools\obj\Debug\Srvtools.StateCollectionEditorDialog.resources
+C:\Program Files\Infolight\EEP2012\Srvtools\obj\Debug\Srvtools.UPWDControl.resources
+C:\Program Files\Infolight\EEP2012\Srvtools\obj\Debug\Srvtools.WebNavigatorEnableControlsEditorDialog.resources
+C:\Program Files\Infolight\EEP2012\Srvtools\obj\Debug\Srvtools.csproj.GenerateResource.Cache
+C:\Program Files\Infolight\EEP2012\Srvtools\obj\Debug\Srvtools.dll
+C:\Program Files\Infolight\EEP2012\Srvtools\obj\Debug\Srvtools.pdb
+C:\Program Files\Infolight\EEP2012WF\EEPNetServer\Srvtools.dll
+C:\Program Files\Infolight\EEP2012WF\EEPNetServer\Srvtools.pdb
+C:\Program Files\Infolight\EEP2012WF\Srvtools\obj\Debug\Srvtools.CommandTextAddTableDialog.resources
+C:\Program Files\Infolight\EEP2012WF\Srvtools\obj\Debug\Srvtools.CommandTextJoinDialog.resources
+C:\Program Files\Infolight\EEP2012WF\Srvtools\obj\Debug\Srvtools.CommandTextOptionDialog.resources
+C:\Program Files\Infolight\EEP2012WF\Srvtools\obj\Debug\Srvtools.frmDGVGridRefVal.resources
+C:\Program Files\Infolight\EEP2012WF\Srvtools\obj\Debug\Srvtools.frmNavQuery.resources
+C:\Program Files\Infolight\EEP2012WF\Srvtools\obj\Debug\Srvtools.frmRefValQuery.resources
+C:\Program Files\Infolight\EEP2012WF\Srvtools\obj\Debug\Srvtools.frmSelGroups.resources
+C:\Program Files\Infolight\EEP2012WF\Srvtools\obj\Debug\Srvtools.InfoForm.resources
+C:\Program Files\Infolight\EEP2012WF\Srvtools\obj\Debug\Srvtools.InfoCommand.resources
+C:\Program Files\Infolight\EEP2012WF\Srvtools\obj\Debug\Srvtools.InfoDataSetEditorDialog.resources
+C:\Program Files\Infolight\EEP2012WF\Srvtools\obj\Debug\Srvtools.InfoDataSource.resources
+C:\Program Files\Infolight\EEP2012WF\Srvtools\obj\Debug\Srvtools.InfoNavigator.resources
+C:\Program Files\Infolight\EEP2012WF\Srvtools\obj\Debug\Srvtools.InfoRefVal.resources
+C:\Program Files\Infolight\EEP2012WF\Srvtools\obj\Debug\Srvtools.InfoPanel.resources
+C:\Program Files\Infolight\EEP2012WF\Srvtools\obj\Debug\Srvtools.InfoRefValForGrid.resources
+C:\Program Files\Infolight\EEP2012WF\Srvtools\obj\Debug\Srvtools.InfoTextBox.resources
+C:\Program Files\Infolight\EEP2012WF\Srvtools\obj\Debug\Srvtools.InfoTransactionEditorDialog.resources
+C:\Program Files\Infolight\EEP2012WF\Srvtools\obj\Debug\Srvtools.InfoTransactionEditorTTransactionDialog.resources
+C:\Program Files\Infolight\EEP2012WF\Srvtools\obj\Debug\Srvtools.InfoTransactionTransFieldsAddDialog.resources
+C:\Program Files\Infolight\EEP2012WF\Srvtools\obj\Debug\Srvtools.InfoComboBox.resources
+C:\Program Files\Infolight\EEP2012WF\Srvtools\obj\Debug\Srvtools.InfoDataSet.resources
+C:\Program Files\Infolight\EEP2012WF\Srvtools\obj\Debug\Srvtools.MGControl.resources
+C:\Program Files\Infolight\EEP2012WF\Srvtools\obj\Debug\Srvtools.Properties.Resources.resources
+C:\Program Files\Infolight\EEP2012WF\Srvtools\obj\Debug\Srvtools.Report.frmSelectReport.resources
+C:\Program Files\Infolight\EEP2012WF\Srvtools\obj\Debug\Srvtools.UGControl.resources
+C:\Program Files\Infolight\EEP2012WF\Srvtools\obj\Debug\Srvtools.UpdateComponent.resources
+C:\Program Files\Infolight\EEP2012WF\Srvtools\obj\Debug\Srvtools.ControlDescriptionEditorDialog.resources
+C:\Program Files\Infolight\EEP2012WF\Srvtools\obj\Debug\Srvtools.ERModel.resources
+C:\Program Files\Infolight\EEP2012WF\Srvtools\obj\Debug\Srvtools.fmReplaceDialog.resources
+C:\Program Files\Infolight\EEP2012WF\Srvtools\obj\Debug\Srvtools.frmAnyQuery.resources
+C:\Program Files\Infolight\EEP2012WF\Srvtools\obj\Debug\Srvtools.frmAnyQueryAdd.resources
+C:\Program Files\Infolight\EEP2012WF\Srvtools\obj\Debug\Srvtools.frmAnyQuerySaveLoad.resources
+C:\Program Files\Infolight\EEP2012WF\Srvtools\obj\Debug\Srvtools.frmExternalRefvalEditor.resources
+C:\Program Files\Infolight\EEP2012WF\Srvtools\obj\Debug\Srvtools.frmRefButtonQuery.resources
+C:\Program Files\Infolight\EEP2012WF\Srvtools\obj\Debug\Srvtools.InfoDateTimeBox.resources
+C:\Program Files\Infolight\EEP2012WF\Srvtools\obj\Debug\Srvtools.FormVersion.resources
+C:\Program Files\Infolight\EEP2012WF\Srvtools\obj\Debug\Srvtools.frmNavigatorCopy.resources
+C:\Program Files\Infolight\EEP2012WF\Srvtools\obj\Debug\Srvtools.frmProxy.resources
+C:\Program Files\Infolight\EEP2012WF\Srvtools\obj\Debug\Srvtools.MultiLanguageEditorDialog.resources
+C:\Program Files\Infolight\EEP2012WF\Srvtools\obj\Debug\Srvtools.frmAgent.resources
+C:\Program Files\Infolight\EEP2012WF\Srvtools\obj\Debug\Srvtools.frmSelectLanguage.resources
+C:\Program Files\Infolight\EEP2012WF\Srvtools\obj\Debug\Srvtools.InfoRefPanel.resources
+C:\Program Files\Infolight\EEP2012WF\Srvtools\obj\Debug\Srvtools.frmWebHyperLink.resources
+C:\Program Files\Infolight\EEP2012WF\Srvtools\obj\Debug\Srvtools.InfoTransactionEditorTransFieldsDialog.resources
+C:\Program Files\Infolight\EEP2012WF\Srvtools\obj\Debug\Srvtools.InfoTransactionEditorKeyFieldsDialog.resources
+C:\Program Files\Infolight\EEP2012WF\Srvtools\obj\Debug\Srvtools.InfoTransactionTransKeyFieldsAddDialog.resources
+C:\Program Files\Infolight\EEP2012WF\Srvtools\obj\Debug\Srvtools.frmAccessControlForUser.resources
+C:\Program Files\Infolight\EEP2012WF\Srvtools\obj\Debug\Srvtools.frmAccessMenus.resources
+C:\Program Files\Infolight\EEP2012WF\Srvtools\obj\Debug\Srvtools.frmAccessMenusForUser.resources
+C:\Program Files\Infolight\EEP2012WF\Srvtools\obj\Debug\Srvtools.frmSelUsers.resources
+C:\Program Files\Infolight\EEP2012WF\Srvtools\obj\Debug\Srvtools.frmTreeView.resources
+C:\Program Files\Infolight\EEP2012WF\Srvtools\obj\Debug\Srvtools.frmWebClientQueryEditor.resources
+C:\Program Files\Infolight\EEP2012WF\Srvtools\obj\Debug\Srvtools.frmWebSecurityAdd.resources
+C:\Program Files\Infolight\EEP2012WF\Srvtools\obj\Debug\Srvtools.frmWebSecurity.resources
+C:\Program Files\Infolight\EEP2012WF\Srvtools\obj\Debug\Srvtools.InfoClientMoveProgress.resources
+C:\Program Files\Infolight\EEP2012WF\Srvtools\obj\Debug\Srvtools.frmAccessControlForGroup.resources
+C:\Program Files\Infolight\EEP2012WF\Srvtools\obj\Debug\Srvtools.frmAccessControlAdd.resources
+C:\Program Files\Infolight\EEP2012WF\Srvtools\obj\Debug\Srvtools.frmInfoSecurityAdd.resources
+C:\Program Files\Infolight\EEP2012WF\Srvtools\obj\Debug\Srvtools.frmInfoSecurityEdit.resources
+C:\Program Files\Infolight\EEP2012WF\Srvtools\obj\Debug\Srvtools.frmClientQueryEditor.resources
+C:\Program Files\Infolight\EEP2012WF\Srvtools\obj\Debug\Srvtools.frmClientQuery.resources
+C:\Program Files\Infolight\EEP2012WF\Srvtools\obj\Debug\Srvtools.InfoRefvalBox.resources
+C:\Program Files\Infolight\EEP2012WF\Srvtools\obj\Debug\Srvtools.EnabledControlsEditorDialog.resources
+C:\Program Files\Infolight\EEP2012WF\Srvtools\obj\Debug\Srvtools.ErrorDialog.resources
+C:\Program Files\Infolight\EEP2012WF\Srvtools\obj\Debug\Srvtools.FeedbackBugDialog.resources
+C:\Program Files\Infolight\EEP2012WF\Srvtools\obj\Debug\Srvtools.InfoBindingSource.resources
+C:\Program Files\Infolight\EEP2012WF\Srvtools\obj\Debug\Srvtools.PERemoteName.resources
+C:\Program Files\Infolight\EEP2012WF\Srvtools\obj\Debug\Srvtools.StateCollectionEditorDialog.resources
+C:\Program Files\Infolight\EEP2012WF\Srvtools\obj\Debug\Srvtools.UPWDControl.resources
+C:\Program Files\Infolight\EEP2012WF\Srvtools\obj\Debug\Srvtools.WebNavigatorEnableControlsEditorDialog.resources
+C:\Program Files\Infolight\EEP2012WF\Srvtools\obj\Debug\Srvtools.csproj.GenerateResource.Cache
+C:\Program Files\Infolight\EEP2012WF\Srvtools\obj\Debug\Srvtools.dll
+C:\Program Files\Infolight\EEP2012WF\Srvtools\obj\Debug\Srvtools.pdb
+C:\Program Files\Infolight\EEP2012WF\Srvtools\obj\Debug\Srvtools.csprojResolveAssemblyReference.cache
+C:\Program Files (x86)\Infolight\EEP2012WF\EEPNetServer\Srvtools.dll
+C:\Program Files (x86)\Infolight\EEP2012WF\EEPNetServer\Srvtools.pdb
+C:\Program Files (x86)\Infolight\EEP2012WF\Srvtools\obj\Debug\Srvtools.csprojResolveAssemblyReference.cache
+C:\Program Files (x86)\Infolight\EEP2012WF\Srvtools\obj\Debug\Srvtools.CommandTextAddTableDialog.resources
+C:\Program Files (x86)\Infolight\EEP2012WF\Srvtools\obj\Debug\Srvtools.CommandTextJoinDialog.resources
+C:\Program Files (x86)\Infolight\EEP2012WF\Srvtools\obj\Debug\Srvtools.CommandTextOptionDialog.resources
+C:\Program Files (x86)\Infolight\EEP2012WF\Srvtools\obj\Debug\Srvtools.frmDGVGridRefVal.resources
+C:\Program Files (x86)\Infolight\EEP2012WF\Srvtools\obj\Debug\Srvtools.frmNavQuery.resources
+C:\Program Files (x86)\Infolight\EEP2012WF\Srvtools\obj\Debug\Srvtools.frmRefValQuery.resources
+C:\Program Files (x86)\Infolight\EEP2012WF\Srvtools\obj\Debug\Srvtools.frmSelGroups.resources
+C:\Program Files (x86)\Infolight\EEP2012WF\Srvtools\obj\Debug\Srvtools.InfoForm.resources
+C:\Program Files (x86)\Infolight\EEP2012WF\Srvtools\obj\Debug\Srvtools.InfoCommand.resources
+C:\Program Files (x86)\Infolight\EEP2012WF\Srvtools\obj\Debug\Srvtools.InfoDataSetEditorDialog.resources
+C:\Program Files (x86)\Infolight\EEP2012WF\Srvtools\obj\Debug\Srvtools.InfoDataSource.resources
+C:\Program Files (x86)\Infolight\EEP2012WF\Srvtools\obj\Debug\Srvtools.InfoNavigator.resources
+C:\Program Files (x86)\Infolight\EEP2012WF\Srvtools\obj\Debug\Srvtools.InfoRefVal.resources
+C:\Program Files (x86)\Infolight\EEP2012WF\Srvtools\obj\Debug\Srvtools.InfoPanel.resources
+C:\Program Files (x86)\Infolight\EEP2012WF\Srvtools\obj\Debug\Srvtools.InfoRefValForGrid.resources
+C:\Program Files (x86)\Infolight\EEP2012WF\Srvtools\obj\Debug\Srvtools.InfoTextBox.resources
+C:\Program Files (x86)\Infolight\EEP2012WF\Srvtools\obj\Debug\Srvtools.InfoTransactionEditorDialog.resources
+C:\Program Files (x86)\Infolight\EEP2012WF\Srvtools\obj\Debug\Srvtools.InfoTransactionEditorTTransactionDialog.resources
+C:\Program Files (x86)\Infolight\EEP2012WF\Srvtools\obj\Debug\Srvtools.InfoTransactionTransFieldsAddDialog.resources
+C:\Program Files (x86)\Infolight\EEP2012WF\Srvtools\obj\Debug\Srvtools.InfoComboBox.resources
+C:\Program Files (x86)\Infolight\EEP2012WF\Srvtools\obj\Debug\Srvtools.InfoDataSet.resources
+C:\Program Files (x86)\Infolight\EEP2012WF\Srvtools\obj\Debug\Srvtools.MGControl.resources
+C:\Program Files (x86)\Infolight\EEP2012WF\Srvtools\obj\Debug\Srvtools.Properties.Resources.resources
+C:\Program Files (x86)\Infolight\EEP2012WF\Srvtools\obj\Debug\Srvtools.Report.frmSelectReport.resources
+C:\Program Files (x86)\Infolight\EEP2012WF\Srvtools\obj\Debug\Srvtools.UGControl.resources
+C:\Program Files (x86)\Infolight\EEP2012WF\Srvtools\obj\Debug\Srvtools.UpdateComponent.resources
+C:\Program Files (x86)\Infolight\EEP2012WF\Srvtools\obj\Debug\Srvtools.ControlDescriptionEditorDialog.resources
+C:\Program Files (x86)\Infolight\EEP2012WF\Srvtools\obj\Debug\Srvtools.ERModel.resources
+C:\Program Files (x86)\Infolight\EEP2012WF\Srvtools\obj\Debug\Srvtools.fmReplaceDialog.resources
+C:\Program Files (x86)\Infolight\EEP2012WF\Srvtools\obj\Debug\Srvtools.frmAnyQuery.resources
+C:\Program Files (x86)\Infolight\EEP2012WF\Srvtools\obj\Debug\Srvtools.frmAnyQueryAdd.resources
+C:\Program Files (x86)\Infolight\EEP2012WF\Srvtools\obj\Debug\Srvtools.frmAnyQuerySaveLoad.resources
+C:\Program Files (x86)\Infolight\EEP2012WF\Srvtools\obj\Debug\Srvtools.frmExternalRefvalEditor.resources
+C:\Program Files (x86)\Infolight\EEP2012WF\Srvtools\obj\Debug\Srvtools.frmRefButtonQuery.resources
+C:\Program Files (x86)\Infolight\EEP2012WF\Srvtools\obj\Debug\Srvtools.InfoDateTimeBox.resources
+C:\Program Files (x86)\Infolight\EEP2012WF\Srvtools\obj\Debug\Srvtools.FormVersion.resources
+C:\Program Files (x86)\Infolight\EEP2012WF\Srvtools\obj\Debug\Srvtools.frmNavigatorCopy.resources
+C:\Program Files (x86)\Infolight\EEP2012WF\Srvtools\obj\Debug\Srvtools.frmProxy.resources
+C:\Program Files (x86)\Infolight\EEP2012WF\Srvtools\obj\Debug\Srvtools.MultiLanguageEditorDialog.resources
+C:\Program Files (x86)\Infolight\EEP2012WF\Srvtools\obj\Debug\Srvtools.frmAgent.resources
+C:\Program Files (x86)\Infolight\EEP2012WF\Srvtools\obj\Debug\Srvtools.frmSelectLanguage.resources
+C:\Program Files (x86)\Infolight\EEP2012WF\Srvtools\obj\Debug\Srvtools.InfoRefPanel.resources
+C:\Program Files (x86)\Infolight\EEP2012WF\Srvtools\obj\Debug\Srvtools.frmWebHyperLink.resources
+C:\Program Files (x86)\Infolight\EEP2012WF\Srvtools\obj\Debug\Srvtools.InfoTransactionEditorTransFieldsDialog.resources
+C:\Program Files (x86)\Infolight\EEP2012WF\Srvtools\obj\Debug\Srvtools.InfoTransactionEditorKeyFieldsDialog.resources
+C:\Program Files (x86)\Infolight\EEP2012WF\Srvtools\obj\Debug\Srvtools.InfoTransactionTransKeyFieldsAddDialog.resources
+C:\Program Files (x86)\Infolight\EEP2012WF\Srvtools\obj\Debug\Srvtools.frmAccessControlForUser.resources
+C:\Program Files (x86)\Infolight\EEP2012WF\Srvtools\obj\Debug\Srvtools.frmAccessMenus.resources
+C:\Program Files (x86)\Infolight\EEP2012WF\Srvtools\obj\Debug\Srvtools.frmAccessMenusForUser.resources
+C:\Program Files (x86)\Infolight\EEP2012WF\Srvtools\obj\Debug\Srvtools.frmSelUsers.resources
+C:\Program Files (x86)\Infolight\EEP2012WF\Srvtools\obj\Debug\Srvtools.frmTreeView.resources
+C:\Program Files (x86)\Infolight\EEP2012WF\Srvtools\obj\Debug\Srvtools.frmWebClientQueryEditor.resources
+C:\Program Files (x86)\Infolight\EEP2012WF\Srvtools\obj\Debug\Srvtools.frmWebSecurityAdd.resources
+C:\Program Files (x86)\Infolight\EEP2012WF\Srvtools\obj\Debug\Srvtools.frmWebSecurity.resources
+C:\Program Files (x86)\Infolight\EEP2012WF\Srvtools\obj\Debug\Srvtools.InfoClientMoveProgress.resources
+C:\Program Files (x86)\Infolight\EEP2012WF\Srvtools\obj\Debug\Srvtools.frmAccessControlForGroup.resources
+C:\Program Files (x86)\Infolight\EEP2012WF\Srvtools\obj\Debug\Srvtools.frmAccessControlAdd.resources
+C:\Program Files (x86)\Infolight\EEP2012WF\Srvtools\obj\Debug\Srvtools.frmInfoSecurityAdd.resources
+C:\Program Files (x86)\Infolight\EEP2012WF\Srvtools\obj\Debug\Srvtools.frmInfoSecurityEdit.resources
+C:\Program Files (x86)\Infolight\EEP2012WF\Srvtools\obj\Debug\Srvtools.frmClientQueryEditor.resources
+C:\Program Files (x86)\Infolight\EEP2012WF\Srvtools\obj\Debug\Srvtools.frmClientQuery.resources
+C:\Program Files (x86)\Infolight\EEP2012WF\Srvtools\obj\Debug\Srvtools.InfoRefvalBox.resources
+C:\Program Files (x86)\Infolight\EEP2012WF\Srvtools\obj\Debug\Srvtools.EnabledControlsEditorDialog.resources
+C:\Program Files (x86)\Infolight\EEP2012WF\Srvtools\obj\Debug\Srvtools.ErrorDialog.resources
+C:\Program Files (x86)\Infolight\EEP2012WF\Srvtools\obj\Debug\Srvtools.FeedbackBugDialog.resources
+C:\Program Files (x86)\Infolight\EEP2012WF\Srvtools\obj\Debug\Srvtools.InfoBindingSource.resources
+C:\Program Files (x86)\Infolight\EEP2012WF\Srvtools\obj\Debug\Srvtools.PERemoteName.resources
+C:\Program Files (x86)\Infolight\EEP2012WF\Srvtools\obj\Debug\Srvtools.StateCollectionEditorDialog.resources
+C:\Program Files (x86)\Infolight\EEP2012WF\Srvtools\obj\Debug\Srvtools.UPWDControl.resources
+C:\Program Files (x86)\Infolight\EEP2012WF\Srvtools\obj\Debug\Srvtools.WebNavigatorEnableControlsEditorDialog.resources
+C:\Program Files (x86)\Infolight\EEP2012WF\Srvtools\obj\Debug\Srvtools.csproj.GenerateResource.Cache
+C:\Program Files (x86)\Infolight\EEP2012WF\Srvtools\obj\Debug\Srvtools.dll
+C:\Program Files (x86)\Infolight\EEP2012WF\Srvtools\obj\Debug\Srvtools.pdb
+D:\版本\Version\安裝源文件\EEP2012WF(V5.0.0.020140924 SP5)\EEPNetServer\Srvtools.dll
+D:\版本\Version\安裝源文件\EEP2012WF(V5.0.0.020140924 SP5)\EEPNetServer\Srvtools.pdb
+D:\版本\Version\安裝源文件\EEP2012WF(V5.0.0.020140924 SP5)\Srvtools\obj\Debug\Srvtools.csprojResolveAssemblyReference.cache
+D:\版本\Version\安裝源文件\EEP2012WF(V5.0.0.020140924 SP5)\Srvtools\obj\Debug\Srvtools.CommandTextAddTableDialog.resources
+D:\版本\Version\安裝源文件\EEP2012WF(V5.0.0.020140924 SP5)\Srvtools\obj\Debug\Srvtools.CommandTextJoinDialog.resources
+D:\版本\Version\安裝源文件\EEP2012WF(V5.0.0.020140924 SP5)\Srvtools\obj\Debug\Srvtools.CommandTextOptionDialog.resources
+D:\版本\Version\安裝源文件\EEP2012WF(V5.0.0.020140924 SP5)\Srvtools\obj\Debug\Srvtools.frmDGVGridRefVal.resources
+D:\版本\Version\安裝源文件\EEP2012WF(V5.0.0.020140924 SP5)\Srvtools\obj\Debug\Srvtools.frmNavQuery.resources
+D:\版本\Version\安裝源文件\EEP2012WF(V5.0.0.020140924 SP5)\Srvtools\obj\Debug\Srvtools.frmRefValQuery.resources
+D:\版本\Version\安裝源文件\EEP2012WF(V5.0.0.020140924 SP5)\Srvtools\obj\Debug\Srvtools.frmSelGroups.resources
+D:\版本\Version\安裝源文件\EEP2012WF(V5.0.0.020140924 SP5)\Srvtools\obj\Debug\Srvtools.InfoForm.resources
+D:\版本\Version\安裝源文件\EEP2012WF(V5.0.0.020140924 SP5)\Srvtools\obj\Debug\Srvtools.InfoCommand.resources
+D:\版本\Version\安裝源文件\EEP2012WF(V5.0.0.020140924 SP5)\Srvtools\obj\Debug\Srvtools.InfoDataSetEditorDialog.resources
+D:\版本\Version\安裝源文件\EEP2012WF(V5.0.0.020140924 SP5)\Srvtools\obj\Debug\Srvtools.InfoDataSource.resources
+D:\版本\Version\安裝源文件\EEP2012WF(V5.0.0.020140924 SP5)\Srvtools\obj\Debug\Srvtools.InfoNavigator.resources
+D:\版本\Version\安裝源文件\EEP2012WF(V5.0.0.020140924 SP5)\Srvtools\obj\Debug\Srvtools.InfoRefVal.resources
+D:\版本\Version\安裝源文件\EEP2012WF(V5.0.0.020140924 SP5)\Srvtools\obj\Debug\Srvtools.InfoPanel.resources
+D:\版本\Version\安裝源文件\EEP2012WF(V5.0.0.020140924 SP5)\Srvtools\obj\Debug\Srvtools.InfoRefValForGrid.resources
+D:\版本\Version\安裝源文件\EEP2012WF(V5.0.0.020140924 SP5)\Srvtools\obj\Debug\Srvtools.InfoTextBox.resources
+D:\版本\Version\安裝源文件\EEP2012WF(V5.0.0.020140924 SP5)\Srvtools\obj\Debug\Srvtools.InfoTransactionEditorDialog.resources
+D:\版本\Version\安裝源文件\EEP2012WF(V5.0.0.020140924 SP5)\Srvtools\obj\Debug\Srvtools.InfoTransactionEditorTTransactionDialog.resources
+D:\版本\Version\安裝源文件\EEP2012WF(V5.0.0.020140924 SP5)\Srvtools\obj\Debug\Srvtools.InfoTransactionTransFieldsAddDialog.resources
+D:\版本\Version\安裝源文件\EEP2012WF(V5.0.0.020140924 SP5)\Srvtools\obj\Debug\Srvtools.InfoComboBox.resources
+D:\版本\Version\安裝源文件\EEP2012WF(V5.0.0.020140924 SP5)\Srvtools\obj\Debug\Srvtools.InfoDataSet.resources
+D:\版本\Version\安裝源文件\EEP2012WF(V5.0.0.020140924 SP5)\Srvtools\obj\Debug\Srvtools.MGControl.resources
+D:\版本\Version\安裝源文件\EEP2012WF(V5.0.0.020140924 SP5)\Srvtools\obj\Debug\Srvtools.Properties.Resources.resources
+D:\版本\Version\安裝源文件\EEP2012WF(V5.0.0.020140924 SP5)\Srvtools\obj\Debug\Srvtools.Report.frmSelectReport.resources
+D:\版本\Version\安裝源文件\EEP2012WF(V5.0.0.020140924 SP5)\Srvtools\obj\Debug\Srvtools.UGControl.resources
+D:\版本\Version\安裝源文件\EEP2012WF(V5.0.0.020140924 SP5)\Srvtools\obj\Debug\Srvtools.UpdateComponent.resources
+D:\版本\Version\安裝源文件\EEP2012WF(V5.0.0.020140924 SP5)\Srvtools\obj\Debug\Srvtools.ControlDescriptionEditorDialog.resources
+D:\版本\Version\安裝源文件\EEP2012WF(V5.0.0.020140924 SP5)\Srvtools\obj\Debug\Srvtools.ERModel.resources
+D:\版本\Version\安裝源文件\EEP2012WF(V5.0.0.020140924 SP5)\Srvtools\obj\Debug\Srvtools.fmReplaceDialog.resources
+D:\版本\Version\安裝源文件\EEP2012WF(V5.0.0.020140924 SP5)\Srvtools\obj\Debug\Srvtools.frmAnyQuery.resources
+D:\版本\Version\安裝源文件\EEP2012WF(V5.0.0.020140924 SP5)\Srvtools\obj\Debug\Srvtools.frmAnyQueryAdd.resources
+D:\版本\Version\安裝源文件\EEP2012WF(V5.0.0.020140924 SP5)\Srvtools\obj\Debug\Srvtools.frmAnyQuerySaveLoad.resources
+D:\版本\Version\安裝源文件\EEP2012WF(V5.0.0.020140924 SP5)\Srvtools\obj\Debug\Srvtools.frmExternalRefvalEditor.resources
+D:\版本\Version\安裝源文件\EEP2012WF(V5.0.0.020140924 SP5)\Srvtools\obj\Debug\Srvtools.frmRefButtonQuery.resources
+D:\版本\Version\安裝源文件\EEP2012WF(V5.0.0.020140924 SP5)\Srvtools\obj\Debug\Srvtools.InfoDateTimeBox.resources
+D:\版本\Version\安裝源文件\EEP2012WF(V5.0.0.020140924 SP5)\Srvtools\obj\Debug\Srvtools.FormVersion.resources
+D:\版本\Version\安裝源文件\EEP2012WF(V5.0.0.020140924 SP5)\Srvtools\obj\Debug\Srvtools.frmNavigatorCopy.resources
+D:\版本\Version\安裝源文件\EEP2012WF(V5.0.0.020140924 SP5)\Srvtools\obj\Debug\Srvtools.frmProxy.resources
+D:\版本\Version\安裝源文件\EEP2012WF(V5.0.0.020140924 SP5)\Srvtools\obj\Debug\Srvtools.MultiLanguageEditorDialog.resources
+D:\版本\Version\安裝源文件\EEP2012WF(V5.0.0.020140924 SP5)\Srvtools\obj\Debug\Srvtools.frmAgent.resources
+D:\版本\Version\安裝源文件\EEP2012WF(V5.0.0.020140924 SP5)\Srvtools\obj\Debug\Srvtools.frmSelectLanguage.resources
+D:\版本\Version\安裝源文件\EEP2012WF(V5.0.0.020140924 SP5)\Srvtools\obj\Debug\Srvtools.InfoRefPanel.resources
+D:\版本\Version\安裝源文件\EEP2012WF(V5.0.0.020140924 SP5)\Srvtools\obj\Debug\Srvtools.frmWebHyperLink.resources
+D:\版本\Version\安裝源文件\EEP2012WF(V5.0.0.020140924 SP5)\Srvtools\obj\Debug\Srvtools.InfoTransactionEditorTransFieldsDialog.resources
+D:\版本\Version\安裝源文件\EEP2012WF(V5.0.0.020140924 SP5)\Srvtools\obj\Debug\Srvtools.InfoTransactionEditorKeyFieldsDialog.resources
+D:\版本\Version\安裝源文件\EEP2012WF(V5.0.0.020140924 SP5)\Srvtools\obj\Debug\Srvtools.InfoTransactionTransKeyFieldsAddDialog.resources
+D:\版本\Version\安裝源文件\EEP2012WF(V5.0.0.020140924 SP5)\Srvtools\obj\Debug\Srvtools.frmAccessControlForUser.resources
+D:\版本\Version\安裝源文件\EEP2012WF(V5.0.0.020140924 SP5)\Srvtools\obj\Debug\Srvtools.frmAccessMenus.resources
+D:\版本\Version\安裝源文件\EEP2012WF(V5.0.0.020140924 SP5)\Srvtools\obj\Debug\Srvtools.frmAccessMenusForUser.resources
+D:\版本\Version\安裝源文件\EEP2012WF(V5.0.0.020140924 SP5)\Srvtools\obj\Debug\Srvtools.frmSelUsers.resources
+D:\版本\Version\安裝源文件\EEP2012WF(V5.0.0.020140924 SP5)\Srvtools\obj\Debug\Srvtools.frmTreeView.resources
+D:\版本\Version\安裝源文件\EEP2012WF(V5.0.0.020140924 SP5)\Srvtools\obj\Debug\Srvtools.frmWebClientQueryEditor.resources
+D:\版本\Version\安裝源文件\EEP2012WF(V5.0.0.020140924 SP5)\Srvtools\obj\Debug\Srvtools.frmWebSecurityAdd.resources
+D:\版本\Version\安裝源文件\EEP2012WF(V5.0.0.020140924 SP5)\Srvtools\obj\Debug\Srvtools.frmWebSecurity.resources
+D:\版本\Version\安裝源文件\EEP2012WF(V5.0.0.020140924 SP5)\Srvtools\obj\Debug\Srvtools.InfoClientMoveProgress.resources
+D:\版本\Version\安裝源文件\EEP2012WF(V5.0.0.020140924 SP5)\Srvtools\obj\Debug\Srvtools.frmAccessControlForGroup.resources
+D:\版本\Version\安裝源文件\EEP2012WF(V5.0.0.020140924 SP5)\Srvtools\obj\Debug\Srvtools.frmAccessControlAdd.resources
+D:\版本\Version\安裝源文件\EEP2012WF(V5.0.0.020140924 SP5)\Srvtools\obj\Debug\Srvtools.frmInfoSecurityAdd.resources
+D:\版本\Version\安裝源文件\EEP2012WF(V5.0.0.020140924 SP5)\Srvtools\obj\Debug\Srvtools.frmInfoSecurityEdit.resources
+D:\版本\Version\安裝源文件\EEP2012WF(V5.0.0.020140924 SP5)\Srvtools\obj\Debug\Srvtools.frmClientQueryEditor.resources
+D:\版本\Version\安裝源文件\EEP2012WF(V5.0.0.020140924 SP5)\Srvtools\obj\Debug\Srvtools.frmClientQuery.resources
+D:\版本\Version\安裝源文件\EEP2012WF(V5.0.0.020140924 SP5)\Srvtools\obj\Debug\Srvtools.InfoRefvalBox.resources
+D:\版本\Version\安裝源文件\EEP2012WF(V5.0.0.020140924 SP5)\Srvtools\obj\Debug\Srvtools.EnabledControlsEditorDialog.resources
+D:\版本\Version\安裝源文件\EEP2012WF(V5.0.0.020140924 SP5)\Srvtools\obj\Debug\Srvtools.ErrorDialog.resources
+D:\版本\Version\安裝源文件\EEP2012WF(V5.0.0.020140924 SP5)\Srvtools\obj\Debug\Srvtools.FeedbackBugDialog.resources
+D:\版本\Version\安裝源文件\EEP2012WF(V5.0.0.020140924 SP5)\Srvtools\obj\Debug\Srvtools.InfoBindingSource.resources
+D:\版本\Version\安裝源文件\EEP2012WF(V5.0.0.020140924 SP5)\Srvtools\obj\Debug\Srvtools.PERemoteName.resources
+D:\版本\Version\安裝源文件\EEP2012WF(V5.0.0.020140924 SP5)\Srvtools\obj\Debug\Srvtools.StateCollectionEditorDialog.resources
+D:\版本\Version\安裝源文件\EEP2012WF(V5.0.0.020140924 SP5)\Srvtools\obj\Debug\Srvtools.UPWDControl.resources
+D:\版本\Version\安裝源文件\EEP2012WF(V5.0.0.020140924 SP5)\Srvtools\obj\Debug\Srvtools.WebNavigatorEnableControlsEditorDialog.resources
+D:\版本\Version\安裝源文件\EEP2012WF(V5.0.0.020140924 SP5)\Srvtools\obj\Debug\Srvtools.csproj.GenerateResource.Cache
+D:\版本\Version\安裝源文件\EEP2012WF(V5.0.0.020140924 SP5)\Srvtools\obj\Debug\Srvtools.dll
+D:\版本\Version\安裝源文件\EEP2012WF(V5.0.0.020140924 SP5)\Srvtools\obj\Debug\Srvtools.pdb
+D:\版本\Version\安裝源文件\EEP2012(V5.0.0.020140924 SP5)\EEP2012WF\EEPNetServer\Srvtools.dll
+D:\版本\Version\安裝源文件\EEP2012(V5.0.0.020140924 SP5)\EEP2012WF\EEPNetServer\Srvtools.pdb
+D:\版本\Version\安裝源文件\EEP2012(V5.0.0.020140924 SP5)\EEP2012WF\Srvtools\obj\Debug\Srvtools.CommandTextAddTableDialog.resources
+D:\版本\Version\安裝源文件\EEP2012(V5.0.0.020140924 SP5)\EEP2012WF\Srvtools\obj\Debug\Srvtools.CommandTextJoinDialog.resources
+D:\版本\Version\安裝源文件\EEP2012(V5.0.0.020140924 SP5)\EEP2012WF\Srvtools\obj\Debug\Srvtools.CommandTextOptionDialog.resources
+D:\版本\Version\安裝源文件\EEP2012(V5.0.0.020140924 SP5)\EEP2012WF\Srvtools\obj\Debug\Srvtools.frmDGVGridRefVal.resources
+D:\版本\Version\安裝源文件\EEP2012(V5.0.0.020140924 SP5)\EEP2012WF\Srvtools\obj\Debug\Srvtools.frmNavQuery.resources
+D:\版本\Version\安裝源文件\EEP2012(V5.0.0.020140924 SP5)\EEP2012WF\Srvtools\obj\Debug\Srvtools.frmRefValQuery.resources
+D:\版本\Version\安裝源文件\EEP2012(V5.0.0.020140924 SP5)\EEP2012WF\Srvtools\obj\Debug\Srvtools.frmSelGroups.resources
+D:\版本\Version\安裝源文件\EEP2012(V5.0.0.020140924 SP5)\EEP2012WF\Srvtools\obj\Debug\Srvtools.InfoForm.resources
+D:\版本\Version\安裝源文件\EEP2012(V5.0.0.020140924 SP5)\EEP2012WF\Srvtools\obj\Debug\Srvtools.InfoCommand.resources
+D:\版本\Version\安裝源文件\EEP2012(V5.0.0.020140924 SP5)\EEP2012WF\Srvtools\obj\Debug\Srvtools.InfoDataSetEditorDialog.resources
+D:\版本\Version\安裝源文件\EEP2012(V5.0.0.020140924 SP5)\EEP2012WF\Srvtools\obj\Debug\Srvtools.InfoDataSource.resources
+D:\版本\Version\安裝源文件\EEP2012(V5.0.0.020140924 SP5)\EEP2012WF\Srvtools\obj\Debug\Srvtools.InfoNavigator.resources
+D:\版本\Version\安裝源文件\EEP2012(V5.0.0.020140924 SP5)\EEP2012WF\Srvtools\obj\Debug\Srvtools.InfoRefVal.resources
+D:\版本\Version\安裝源文件\EEP2012(V5.0.0.020140924 SP5)\EEP2012WF\Srvtools\obj\Debug\Srvtools.InfoPanel.resources
+D:\版本\Version\安裝源文件\EEP2012(V5.0.0.020140924 SP5)\EEP2012WF\Srvtools\obj\Debug\Srvtools.InfoRefValForGrid.resources
+D:\版本\Version\安裝源文件\EEP2012(V5.0.0.020140924 SP5)\EEP2012WF\Srvtools\obj\Debug\Srvtools.InfoTextBox.resources
+D:\版本\Version\安裝源文件\EEP2012(V5.0.0.020140924 SP5)\EEP2012WF\Srvtools\obj\Debug\Srvtools.InfoTransactionEditorDialog.resources
+D:\版本\Version\安裝源文件\EEP2012(V5.0.0.020140924 SP5)\EEP2012WF\Srvtools\obj\Debug\Srvtools.InfoTransactionEditorTTransactionDialog.resources
+D:\版本\Version\安裝源文件\EEP2012(V5.0.0.020140924 SP5)\EEP2012WF\Srvtools\obj\Debug\Srvtools.InfoTransactionTransFieldsAddDialog.resources
+D:\版本\Version\安裝源文件\EEP2012(V5.0.0.020140924 SP5)\EEP2012WF\Srvtools\obj\Debug\Srvtools.InfoComboBox.resources
+D:\版本\Version\安裝源文件\EEP2012(V5.0.0.020140924 SP5)\EEP2012WF\Srvtools\obj\Debug\Srvtools.InfoDataSet.resources
+D:\版本\Version\安裝源文件\EEP2012(V5.0.0.020140924 SP5)\EEP2012WF\Srvtools\obj\Debug\Srvtools.MGControl.resources
+D:\版本\Version\安裝源文件\EEP2012(V5.0.0.020140924 SP5)\EEP2012WF\Srvtools\obj\Debug\Srvtools.Properties.Resources.resources
+D:\版本\Version\安裝源文件\EEP2012(V5.0.0.020140924 SP5)\EEP2012WF\Srvtools\obj\Debug\Srvtools.Report.frmSelectReport.resources
+D:\版本\Version\安裝源文件\EEP2012(V5.0.0.020140924 SP5)\EEP2012WF\Srvtools\obj\Debug\Srvtools.UGControl.resources
+D:\版本\Version\安裝源文件\EEP2012(V5.0.0.020140924 SP5)\EEP2012WF\Srvtools\obj\Debug\Srvtools.UpdateComponent.resources
+D:\版本\Version\安裝源文件\EEP2012(V5.0.0.020140924 SP5)\EEP2012WF\Srvtools\obj\Debug\Srvtools.ControlDescriptionEditorDialog.resources
+D:\版本\Version\安裝源文件\EEP2012(V5.0.0.020140924 SP5)\EEP2012WF\Srvtools\obj\Debug\Srvtools.ERModel.resources
+D:\版本\Version\安裝源文件\EEP2012(V5.0.0.020140924 SP5)\EEP2012WF\Srvtools\obj\Debug\Srvtools.fmReplaceDialog.resources
+D:\版本\Version\安裝源文件\EEP2012(V5.0.0.020140924 SP5)\EEP2012WF\Srvtools\obj\Debug\Srvtools.frmAnyQuery.resources
+D:\版本\Version\安裝源文件\EEP2012(V5.0.0.020140924 SP5)\EEP2012WF\Srvtools\obj\Debug\Srvtools.frmAnyQueryAdd.resources
+D:\版本\Version\安裝源文件\EEP2012(V5.0.0.020140924 SP5)\EEP2012WF\Srvtools\obj\Debug\Srvtools.frmAnyQuerySaveLoad.resources
+D:\版本\Version\安裝源文件\EEP2012(V5.0.0.020140924 SP5)\EEP2012WF\Srvtools\obj\Debug\Srvtools.frmExternalRefvalEditor.resources
+D:\版本\Version\安裝源文件\EEP2012(V5.0.0.020140924 SP5)\EEP2012WF\Srvtools\obj\Debug\Srvtools.frmRefButtonQuery.resources
+D:\版本\Version\安裝源文件\EEP2012(V5.0.0.020140924 SP5)\EEP2012WF\Srvtools\obj\Debug\Srvtools.InfoDateTimeBox.resources
+D:\版本\Version\安裝源文件\EEP2012(V5.0.0.020140924 SP5)\EEP2012WF\Srvtools\obj\Debug\Srvtools.FormVersion.resources
+D:\版本\Version\安裝源文件\EEP2012(V5.0.0.020140924 SP5)\EEP2012WF\Srvtools\obj\Debug\Srvtools.frmNavigatorCopy.resources
+D:\版本\Version\安裝源文件\EEP2012(V5.0.0.020140924 SP5)\EEP2012WF\Srvtools\obj\Debug\Srvtools.frmProxy.resources
+D:\版本\Version\安裝源文件\EEP2012(V5.0.0.020140924 SP5)\EEP2012WF\Srvtools\obj\Debug\Srvtools.MultiLanguageEditorDialog.resources
+D:\版本\Version\安裝源文件\EEP2012(V5.0.0.020140924 SP5)\EEP2012WF\Srvtools\obj\Debug\Srvtools.frmAgent.resources
+D:\版本\Version\安裝源文件\EEP2012(V5.0.0.020140924 SP5)\EEP2012WF\Srvtools\obj\Debug\Srvtools.frmSelectLanguage.resources
+D:\版本\Version\安裝源文件\EEP2012(V5.0.0.020140924 SP5)\EEP2012WF\Srvtools\obj\Debug\Srvtools.InfoRefPanel.resources
+D:\版本\Version\安裝源文件\EEP2012(V5.0.0.020140924 SP5)\EEP2012WF\Srvtools\obj\Debug\Srvtools.frmWebHyperLink.resources
+D:\版本\Version\安裝源文件\EEP2012(V5.0.0.020140924 SP5)\EEP2012WF\Srvtools\obj\Debug\Srvtools.InfoTransactionEditorTransFieldsDialog.resources
+D:\版本\Version\安裝源文件\EEP2012(V5.0.0.020140924 SP5)\EEP2012WF\Srvtools\obj\Debug\Srvtools.InfoTransactionEditorKeyFieldsDialog.resources
+D:\版本\Version\安裝源文件\EEP2012(V5.0.0.020140924 SP5)\EEP2012WF\Srvtools\obj\Debug\Srvtools.InfoTransactionTransKeyFieldsAddDialog.resources
+D:\版本\Version\安裝源文件\EEP2012(V5.0.0.020140924 SP5)\EEP2012WF\Srvtools\obj\Debug\Srvtools.frmAccessControlForUser.resources
+D:\版本\Version\安裝源文件\EEP2012(V5.0.0.020140924 SP5)\EEP2012WF\Srvtools\obj\Debug\Srvtools.frmAccessMenus.resources
+D:\版本\Version\安裝源文件\EEP2012(V5.0.0.020140924 SP5)\EEP2012WF\Srvtools\obj\Debug\Srvtools.frmAccessMenusForUser.resources
+D:\版本\Version\安裝源文件\EEP2012(V5.0.0.020140924 SP5)\EEP2012WF\Srvtools\obj\Debug\Srvtools.frmSelUsers.resources
+D:\版本\Version\安裝源文件\EEP2012(V5.0.0.020140924 SP5)\EEP2012WF\Srvtools\obj\Debug\Srvtools.frmTreeView.resources
+D:\版本\Version\安裝源文件\EEP2012(V5.0.0.020140924 SP5)\EEP2012WF\Srvtools\obj\Debug\Srvtools.frmWebClientQueryEditor.resources
+D:\版本\Version\安裝源文件\EEP2012(V5.0.0.020140924 SP5)\EEP2012WF\Srvtools\obj\Debug\Srvtools.frmWebSecurityAdd.resources
+D:\版本\Version\安裝源文件\EEP2012(V5.0.0.020140924 SP5)\EEP2012WF\Srvtools\obj\Debug\Srvtools.frmWebSecurity.resources
+D:\版本\Version\安裝源文件\EEP2012(V5.0.0.020140924 SP5)\EEP2012WF\Srvtools\obj\Debug\Srvtools.InfoClientMoveProgress.resources
+D:\版本\Version\安裝源文件\EEP2012(V5.0.0.020140924 SP5)\EEP2012WF\Srvtools\obj\Debug\Srvtools.frmAccessControlForGroup.resources
+D:\版本\Version\安裝源文件\EEP2012(V5.0.0.020140924 SP5)\EEP2012WF\Srvtools\obj\Debug\Srvtools.frmAccessControlAdd.resources
+D:\版本\Version\安裝源文件\EEP2012(V5.0.0.020140924 SP5)\EEP2012WF\Srvtools\obj\Debug\Srvtools.frmInfoSecurityAdd.resources
+D:\版本\Version\安裝源文件\EEP2012(V5.0.0.020140924 SP5)\EEP2012WF\Srvtools\obj\Debug\Srvtools.frmInfoSecurityEdit.resources
+D:\版本\Version\安裝源文件\EEP2012(V5.0.0.020140924 SP5)\EEP2012WF\Srvtools\obj\Debug\Srvtools.frmClientQueryEditor.resources
+D:\版本\Version\安裝源文件\EEP2012(V5.0.0.020140924 SP5)\EEP2012WF\Srvtools\obj\Debug\Srvtools.frmClientQuery.resources
+D:\版本\Version\安裝源文件\EEP2012(V5.0.0.020140924 SP5)\EEP2012WF\Srvtools\obj\Debug\Srvtools.InfoRefvalBox.resources
+D:\版本\Version\安裝源文件\EEP2012(V5.0.0.020140924 SP5)\EEP2012WF\Srvtools\obj\Debug\Srvtools.EnabledControlsEditorDialog.resources
+D:\版本\Version\安裝源文件\EEP2012(V5.0.0.020140924 SP5)\EEP2012WF\Srvtools\obj\Debug\Srvtools.ErrorDialog.resources
+D:\版本\Version\安裝源文件\EEP2012(V5.0.0.020140924 SP5)\EEP2012WF\Srvtools\obj\Debug\Srvtools.FeedbackBugDialog.resources
+D:\版本\Version\安裝源文件\EEP2012(V5.0.0.020140924 SP5)\EEP2012WF\Srvtools\obj\Debug\Srvtools.InfoBindingSource.resources
+D:\版本\Version\安裝源文件\EEP2012(V5.0.0.020140924 SP5)\EEP2012WF\Srvtools\obj\Debug\Srvtools.PERemoteName.resources
+D:\版本\Version\安裝源文件\EEP2012(V5.0.0.020140924 SP5)\EEP2012WF\Srvtools\obj\Debug\Srvtools.StateCollectionEditorDialog.resources
+D:\版本\Version\安裝源文件\EEP2012(V5.0.0.020140924 SP5)\EEP2012WF\Srvtools\obj\Debug\Srvtools.UPWDControl.resources
+D:\版本\Version\安裝源文件\EEP2012(V5.0.0.020140924 SP5)\EEP2012WF\Srvtools\obj\Debug\Srvtools.WebNavigatorEnableControlsEditorDialog.resources
+D:\版本\Version\安裝源文件\EEP2012(V5.0.0.020140924 SP5)\EEP2012WF\Srvtools\obj\Debug\Srvtools.csproj.GenerateResource.Cache
+D:\版本\Version\安裝源文件\EEP2012(V5.0.0.020140924 SP5)\EEP2012WF\Srvtools\obj\Debug\Srvtools.dll
+D:\版本\Version\安裝源文件\EEP2012(V5.0.0.020140924 SP5)\EEP2012WF\Srvtools\obj\Debug\Srvtools.pdb
+D:\版本\Version\安裝源文件\EEP2012(V5.0.0.020140924 SP5)\EEP2012WF\Srvtools\obj\Debug\Srvtools.csprojResolveAssemblyReference.cache
+D:\Program Files (x86)\Your Company Name\EEP2012\EEPNetServer\Srvtools.dll
+D:\Program Files (x86)\Your Company Name\EEP2012\EEPNetServer\Srvtools.pdb
+D:\Program Files (x86)\Your Company Name\EEP2012\Srvtools\obj\Debug\Srvtools.CommandTextAddTableDialog.resources
+D:\Program Files (x86)\Your Company Name\EEP2012\Srvtools\obj\Debug\Srvtools.CommandTextJoinDialog.resources
+D:\Program Files (x86)\Your Company Name\EEP2012\Srvtools\obj\Debug\Srvtools.CommandTextOptionDialog.resources
+D:\Program Files (x86)\Your Company Name\EEP2012\Srvtools\obj\Debug\Srvtools.frmDGVGridRefVal.resources
+D:\Program Files (x86)\Your Company Name\EEP2012\Srvtools\obj\Debug\Srvtools.frmNavQuery.resources
+D:\Program Files (x86)\Your Company Name\EEP2012\Srvtools\obj\Debug\Srvtools.frmRefValQuery.resources
+D:\Program Files (x86)\Your Company Name\EEP2012\Srvtools\obj\Debug\Srvtools.frmSelGroups.resources
+D:\Program Files (x86)\Your Company Name\EEP2012\Srvtools\obj\Debug\Srvtools.InfoForm.resources
+D:\Program Files (x86)\Your Company Name\EEP2012\Srvtools\obj\Debug\Srvtools.InfoCommand.resources
+D:\Program Files (x86)\Your Company Name\EEP2012\Srvtools\obj\Debug\Srvtools.InfoDataSetEditorDialog.resources
+D:\Program Files (x86)\Your Company Name\EEP2012\Srvtools\obj\Debug\Srvtools.InfoDataSource.resources
+D:\Program Files (x86)\Your Company Name\EEP2012\Srvtools\obj\Debug\Srvtools.InfoNavigator.resources
+D:\Program Files (x86)\Your Company Name\EEP2012\Srvtools\obj\Debug\Srvtools.InfoRefVal.resources
+D:\Program Files (x86)\Your Company Name\EEP2012\Srvtools\obj\Debug\Srvtools.InfoPanel.resources
+D:\Program Files (x86)\Your Company Name\EEP2012\Srvtools\obj\Debug\Srvtools.InfoRefValForGrid.resources
+D:\Program Files (x86)\Your Company Name\EEP2012\Srvtools\obj\Debug\Srvtools.InfoTextBox.resources
+D:\Program Files (x86)\Your Company Name\EEP2012\Srvtools\obj\Debug\Srvtools.InfoTransactionEditorDialog.resources
+D:\Program Files (x86)\Your Company Name\EEP2012\Srvtools\obj\Debug\Srvtools.InfoTransactionEditorTTransactionDialog.resources
+D:\Program Files (x86)\Your Company Name\EEP2012\Srvtools\obj\Debug\Srvtools.InfoTransactionTransFieldsAddDialog.resources
+D:\Program Files (x86)\Your Company Name\EEP2012\Srvtools\obj\Debug\Srvtools.InfoComboBox.resources
+D:\Program Files (x86)\Your Company Name\EEP2012\Srvtools\obj\Debug\Srvtools.InfoDataSet.resources
+D:\Program Files (x86)\Your Company Name\EEP2012\Srvtools\obj\Debug\Srvtools.MGControl.resources
+D:\Program Files (x86)\Your Company Name\EEP2012\Srvtools\obj\Debug\Srvtools.Properties.Resources.resources
+D:\Program Files (x86)\Your Company Name\EEP2012\Srvtools\obj\Debug\Srvtools.Report.frmSelectReport.resources
+D:\Program Files (x86)\Your Company Name\EEP2012\Srvtools\obj\Debug\Srvtools.UGControl.resources
+D:\Program Files (x86)\Your Company Name\EEP2012\Srvtools\obj\Debug\Srvtools.UpdateComponent.resources
+D:\Program Files (x86)\Your Company Name\EEP2012\Srvtools\obj\Debug\Srvtools.ControlDescriptionEditorDialog.resources
+D:\Program Files (x86)\Your Company Name\EEP2012\Srvtools\obj\Debug\Srvtools.ERModel.resources
+D:\Program Files (x86)\Your Company Name\EEP2012\Srvtools\obj\Debug\Srvtools.fmReplaceDialog.resources
+D:\Program Files (x86)\Your Company Name\EEP2012\Srvtools\obj\Debug\Srvtools.frmAnyQuery.resources
+D:\Program Files (x86)\Your Company Name\EEP2012\Srvtools\obj\Debug\Srvtools.frmAnyQueryAdd.resources
+D:\Program Files (x86)\Your Company Name\EEP2012\Srvtools\obj\Debug\Srvtools.frmAnyQuerySaveLoad.resources
+D:\Program Files (x86)\Your Company Name\EEP2012\Srvtools\obj\Debug\Srvtools.frmExternalRefvalEditor.resources
+D:\Program Files (x86)\Your Company Name\EEP2012\Srvtools\obj\Debug\Srvtools.frmRefButtonQuery.resources
+D:\Program Files (x86)\Your Company Name\EEP2012\Srvtools\obj\Debug\Srvtools.InfoDateTimeBox.resources
+D:\Program Files (x86)\Your Company Name\EEP2012\Srvtools\obj\Debug\Srvtools.FormVersion.resources
+D:\Program Files (x86)\Your Company Name\EEP2012\Srvtools\obj\Debug\Srvtools.frmNavigatorCopy.resources
+D:\Program Files (x86)\Your Company Name\EEP2012\Srvtools\obj\Debug\Srvtools.frmProxy.resources
+D:\Program Files (x86)\Your Company Name\EEP2012\Srvtools\obj\Debug\Srvtools.MultiLanguageEditorDialog.resources
+D:\Program Files (x86)\Your Company Name\EEP2012\Srvtools\obj\Debug\Srvtools.frmAgent.resources
+D:\Program Files (x86)\Your Company Name\EEP2012\Srvtools\obj\Debug\Srvtools.frmSelectLanguage.resources
+D:\Program Files (x86)\Your Company Name\EEP2012\Srvtools\obj\Debug\Srvtools.InfoRefPanel.resources
+D:\Program Files (x86)\Your Company Name\EEP2012\Srvtools\obj\Debug\Srvtools.frmWebHyperLink.resources
+D:\Program Files (x86)\Your Company Name\EEP2012\Srvtools\obj\Debug\Srvtools.InfoTransactionEditorTransFieldsDialog.resources
+D:\Program Files (x86)\Your Company Name\EEP2012\Srvtools\obj\Debug\Srvtools.InfoTransactionEditorKeyFieldsDialog.resources
+D:\Program Files (x86)\Your Company Name\EEP2012\Srvtools\obj\Debug\Srvtools.InfoTransactionTransKeyFieldsAddDialog.resources
+D:\Program Files (x86)\Your Company Name\EEP2012\Srvtools\obj\Debug\Srvtools.frmAccessControlForUser.resources
+D:\Program Files (x86)\Your Company Name\EEP2012\Srvtools\obj\Debug\Srvtools.frmAccessMenus.resources
+D:\Program Files (x86)\Your Company Name\EEP2012\Srvtools\obj\Debug\Srvtools.frmAccessMenusForUser.resources
+D:\Program Files (x86)\Your Company Name\EEP2012\Srvtools\obj\Debug\Srvtools.frmSelUsers.resources
+D:\Program Files (x86)\Your Company Name\EEP2012\Srvtools\obj\Debug\Srvtools.frmTreeView.resources
+D:\Program Files (x86)\Your Company Name\EEP2012\Srvtools\obj\Debug\Srvtools.frmWebClientQueryEditor.resources
+D:\Program Files (x86)\Your Company Name\EEP2012\Srvtools\obj\Debug\Srvtools.frmWebSecurityAdd.resources
+D:\Program Files (x86)\Your Company Name\EEP2012\Srvtools\obj\Debug\Srvtools.frmWebSecurity.resources
+D:\Program Files (x86)\Your Company Name\EEP2012\Srvtools\obj\Debug\Srvtools.InfoClientMoveProgress.resources
+D:\Program Files (x86)\Your Company Name\EEP2012\Srvtools\obj\Debug\Srvtools.frmAccessControlForGroup.resources
+D:\Program Files (x86)\Your Company Name\EEP2012\Srvtools\obj\Debug\Srvtools.frmAccessControlAdd.resources
+D:\Program Files (x86)\Your Company Name\EEP2012\Srvtools\obj\Debug\Srvtools.frmInfoSecurityAdd.resources
+D:\Program Files (x86)\Your Company Name\EEP2012\Srvtools\obj\Debug\Srvtools.frmInfoSecurityEdit.resources
+D:\Program Files (x86)\Your Company Name\EEP2012\Srvtools\obj\Debug\Srvtools.frmClientQueryEditor.resources
+D:\Program Files (x86)\Your Company Name\EEP2012\Srvtools\obj\Debug\Srvtools.frmClientQuery.resources
+D:\Program Files (x86)\Your Company Name\EEP2012\Srvtools\obj\Debug\Srvtools.InfoRefvalBox.resources
+D:\Program Files (x86)\Your Company Name\EEP2012\Srvtools\obj\Debug\Srvtools.EnabledControlsEditorDialog.resources
+D:\Program Files (x86)\Your Company Name\EEP2012\Srvtools\obj\Debug\Srvtools.ErrorDialog.resources
+D:\Program Files (x86)\Your Company Name\EEP2012\Srvtools\obj\Debug\Srvtools.FeedbackBugDialog.resources
+D:\Program Files (x86)\Your Company Name\EEP2012\Srvtools\obj\Debug\Srvtools.InfoBindingSource.resources
+D:\Program Files (x86)\Your Company Name\EEP2012\Srvtools\obj\Debug\Srvtools.PERemoteName.resources
+D:\Program Files (x86)\Your Company Name\EEP2012\Srvtools\obj\Debug\Srvtools.StateCollectionEditorDialog.resources
+D:\Program Files (x86)\Your Company Name\EEP2012\Srvtools\obj\Debug\Srvtools.UPWDControl.resources
+D:\Program Files (x86)\Your Company Name\EEP2012\Srvtools\obj\Debug\Srvtools.WebNavigatorEnableControlsEditorDialog.resources
+D:\Program Files (x86)\Your Company Name\EEP2012\Srvtools\obj\Debug\Srvtools.csproj.GenerateResource.Cache
+D:\Program Files (x86)\Your Company Name\EEP2012\Srvtools\obj\Debug\Srvtools.dll
+D:\Program Files (x86)\Your Company Name\EEP2012\Srvtools\obj\Debug\Srvtools.pdb
+D:\Infolight\EEP2012\EEPNetServer\Srvtools.dll
+D:\Infolight\EEP2012\EEPNetServer\Srvtools.pdb
+D:\Infolight\EEP2012\Srvtools\obj\Debug\Srvtools.CommandTextAddTableDialog.resources
+D:\Infolight\EEP2012\Srvtools\obj\Debug\Srvtools.CommandTextJoinDialog.resources
+D:\Infolight\EEP2012\Srvtools\obj\Debug\Srvtools.CommandTextOptionDialog.resources
+D:\Infolight\EEP2012\Srvtools\obj\Debug\Srvtools.frmDGVGridRefVal.resources
+D:\Infolight\EEP2012\Srvtools\obj\Debug\Srvtools.frmMenuTableControl.resources
+D:\Infolight\EEP2012\Srvtools\obj\Debug\Srvtools.frmNavQuery.resources
+D:\Infolight\EEP2012\Srvtools\obj\Debug\Srvtools.frmRefValQuery.resources
+D:\Infolight\EEP2012\Srvtools\obj\Debug\Srvtools.frmSelGroups.resources
+D:\Infolight\EEP2012\Srvtools\obj\Debug\Srvtools.InfoForm.resources
+D:\Infolight\EEP2012\Srvtools\obj\Debug\Srvtools.InfoCommand.resources
+D:\Infolight\EEP2012\Srvtools\obj\Debug\Srvtools.InfoDataSetEditorDialog.resources
+D:\Infolight\EEP2012\Srvtools\obj\Debug\Srvtools.InfoDataSource.resources
+D:\Infolight\EEP2012\Srvtools\obj\Debug\Srvtools.InfoNavigator.resources
+D:\Infolight\EEP2012\Srvtools\obj\Debug\Srvtools.InfoRefVal.resources
+D:\Infolight\EEP2012\Srvtools\obj\Debug\Srvtools.InfoPanel.resources
+D:\Infolight\EEP2012\Srvtools\obj\Debug\Srvtools.InfoRefValForGrid.resources
+D:\Infolight\EEP2012\Srvtools\obj\Debug\Srvtools.InfoTextBox.resources
+D:\Infolight\EEP2012\Srvtools\obj\Debug\Srvtools.InfoTransactionEditorDialog.resources
+D:\Infolight\EEP2012\Srvtools\obj\Debug\Srvtools.InfoTransactionEditorTTransactionDialog.resources
+D:\Infolight\EEP2012\Srvtools\obj\Debug\Srvtools.InfoTransactionTransFieldsAddDialog.resources
+D:\Infolight\EEP2012\Srvtools\obj\Debug\Srvtools.InfoComboBox.resources
+D:\Infolight\EEP2012\Srvtools\obj\Debug\Srvtools.InfoDataSet.resources
+D:\Infolight\EEP2012\Srvtools\obj\Debug\Srvtools.MGControl.resources
+D:\Infolight\EEP2012\Srvtools\obj\Debug\Srvtools.Properties.Resources.resources
+D:\Infolight\EEP2012\Srvtools\obj\Debug\Srvtools.Report.frmSelectReport.resources
+D:\Infolight\EEP2012\Srvtools\obj\Debug\Srvtools.UGControl.resources
+D:\Infolight\EEP2012\Srvtools\obj\Debug\Srvtools.UpdateComponent.resources
+D:\Infolight\EEP2012\Srvtools\obj\Debug\Srvtools.ControlDescriptionEditorDialog.resources
+D:\Infolight\EEP2012\Srvtools\obj\Debug\Srvtools.ERModel.resources
+D:\Infolight\EEP2012\Srvtools\obj\Debug\Srvtools.fmReplaceDialog.resources
+D:\Infolight\EEP2012\Srvtools\obj\Debug\Srvtools.frmAnyQuery.resources
+D:\Infolight\EEP2012\Srvtools\obj\Debug\Srvtools.frmAnyQueryAdd.resources
+D:\Infolight\EEP2012\Srvtools\obj\Debug\Srvtools.frmAnyQuerySaveLoad.resources
+D:\Infolight\EEP2012\Srvtools\obj\Debug\Srvtools.frmExternalRefvalEditor.resources
+D:\Infolight\EEP2012\Srvtools\obj\Debug\Srvtools.frmRefButtonQuery.resources
+D:\Infolight\EEP2012\Srvtools\obj\Debug\Srvtools.InfoDateTimeBox.resources
+D:\Infolight\EEP2012\Srvtools\obj\Debug\Srvtools.FormVersion.resources
+D:\Infolight\EEP2012\Srvtools\obj\Debug\Srvtools.frmNavigatorCopy.resources
+D:\Infolight\EEP2012\Srvtools\obj\Debug\Srvtools.frmProxy.resources
+D:\Infolight\EEP2012\Srvtools\obj\Debug\Srvtools.MultiLanguageEditorDialog.resources
+D:\Infolight\EEP2012\Srvtools\obj\Debug\Srvtools.frmAgent.resources
+D:\Infolight\EEP2012\Srvtools\obj\Debug\Srvtools.frmSelectLanguage.resources
+D:\Infolight\EEP2012\Srvtools\obj\Debug\Srvtools.InfoRefPanel.resources
+D:\Infolight\EEP2012\Srvtools\obj\Debug\Srvtools.frmWebHyperLink.resources
+D:\Infolight\EEP2012\Srvtools\obj\Debug\Srvtools.InfoTransactionEditorTransFieldsDialog.resources
+D:\Infolight\EEP2012\Srvtools\obj\Debug\Srvtools.InfoTransactionEditorKeyFieldsDialog.resources
+D:\Infolight\EEP2012\Srvtools\obj\Debug\Srvtools.InfoTransactionTransKeyFieldsAddDialog.resources
+D:\Infolight\EEP2012\Srvtools\obj\Debug\Srvtools.frmAccessControlForUser.resources
+D:\Infolight\EEP2012\Srvtools\obj\Debug\Srvtools.frmAccessMenus.resources
+D:\Infolight\EEP2012\Srvtools\obj\Debug\Srvtools.frmAccessMenusForUser.resources
+D:\Infolight\EEP2012\Srvtools\obj\Debug\Srvtools.frmSelUsers.resources
+D:\Infolight\EEP2012\Srvtools\obj\Debug\Srvtools.frmTreeView.resources
+D:\Infolight\EEP2012\Srvtools\obj\Debug\Srvtools.frmWebClientQueryEditor.resources
+D:\Infolight\EEP2012\Srvtools\obj\Debug\Srvtools.frmWebSecurityAdd.resources
+D:\Infolight\EEP2012\Srvtools\obj\Debug\Srvtools.frmWebSecurity.resources
+D:\Infolight\EEP2012\Srvtools\obj\Debug\Srvtools.InfoClientMoveProgress.resources
+D:\Infolight\EEP2012\Srvtools\obj\Debug\Srvtools.frmAccessControlForGroup.resources
+D:\Infolight\EEP2012\Srvtools\obj\Debug\Srvtools.frmAccessControlAdd.resources
+D:\Infolight\EEP2012\Srvtools\obj\Debug\Srvtools.frmInfoSecurityAdd.resources
+D:\Infolight\EEP2012\Srvtools\obj\Debug\Srvtools.frmInfoSecurityEdit.resources
+D:\Infolight\EEP2012\Srvtools\obj\Debug\Srvtools.frmClientQueryEditor.resources
+D:\Infolight\EEP2012\Srvtools\obj\Debug\Srvtools.frmClientQuery.resources
+D:\Infolight\EEP2012\Srvtools\obj\Debug\Srvtools.InfoRefvalBox.resources
+D:\Infolight\EEP2012\Srvtools\obj\Debug\Srvtools.EnabledControlsEditorDialog.resources
+D:\Infolight\EEP2012\Srvtools\obj\Debug\Srvtools.ErrorDialog.resources
+D:\Infolight\EEP2012\Srvtools\obj\Debug\Srvtools.FeedbackBugDialog.resources
+D:\Infolight\EEP2012\Srvtools\obj\Debug\Srvtools.InfoBindingSource.resources
+D:\Infolight\EEP2012\Srvtools\obj\Debug\Srvtools.PERemoteName.resources
+D:\Infolight\EEP2012\Srvtools\obj\Debug\Srvtools.StateCollectionEditorDialog.resources
+D:\Infolight\EEP2012\Srvtools\obj\Debug\Srvtools.UPWDControl.resources
+D:\Infolight\EEP2012\Srvtools\obj\Debug\Srvtools.WebNavigatorEnableControlsEditorDialog.resources
+D:\Infolight\EEP2012\Srvtools\obj\Debug\Srvtools.csproj.GenerateResource.Cache
+D:\Infolight\EEP2012\Srvtools\obj\Debug\Srvtools.dll
+D:\Infolight\EEP2012\Srvtools\obj\Debug\Srvtools.pdb
+C:\Program Files (x86)\Infolight\EEP2012\EEPNetServer\Srvtools.dll
+C:\Program Files (x86)\Infolight\EEP2012\EEPNetServer\Srvtools.pdb
+C:\Program Files (x86)\Infolight\EEP2012\Srvtools\obj\Debug\Srvtools.CommandTextAddTableDialog.resources
+C:\Program Files (x86)\Infolight\EEP2012\Srvtools\obj\Debug\Srvtools.CommandTextJoinDialog.resources
+C:\Program Files (x86)\Infolight\EEP2012\Srvtools\obj\Debug\Srvtools.CommandTextOptionDialog.resources
+C:\Program Files (x86)\Infolight\EEP2012\Srvtools\obj\Debug\Srvtools.frmDGVGridRefVal.resources
+C:\Program Files (x86)\Infolight\EEP2012\Srvtools\obj\Debug\Srvtools.frmMenuTableControl.resources
+C:\Program Files (x86)\Infolight\EEP2012\Srvtools\obj\Debug\Srvtools.frmNavQuery.resources
+C:\Program Files (x86)\Infolight\EEP2012\Srvtools\obj\Debug\Srvtools.frmRefValQuery.resources
+C:\Program Files (x86)\Infolight\EEP2012\Srvtools\obj\Debug\Srvtools.frmSelGroups.resources
+C:\Program Files (x86)\Infolight\EEP2012\Srvtools\obj\Debug\Srvtools.InfoForm.resources
+C:\Program Files (x86)\Infolight\EEP2012\Srvtools\obj\Debug\Srvtools.InfoCommand.resources
+C:\Program Files (x86)\Infolight\EEP2012\Srvtools\obj\Debug\Srvtools.InfoDataSetEditorDialog.resources
+C:\Program Files (x86)\Infolight\EEP2012\Srvtools\obj\Debug\Srvtools.InfoDataSource.resources
+C:\Program Files (x86)\Infolight\EEP2012\Srvtools\obj\Debug\Srvtools.InfoNavigator.resources
+C:\Program Files (x86)\Infolight\EEP2012\Srvtools\obj\Debug\Srvtools.InfoRefVal.resources
+C:\Program Files (x86)\Infolight\EEP2012\Srvtools\obj\Debug\Srvtools.InfoPanel.resources
+C:\Program Files (x86)\Infolight\EEP2012\Srvtools\obj\Debug\Srvtools.InfoRefValForGrid.resources
+C:\Program Files (x86)\Infolight\EEP2012\Srvtools\obj\Debug\Srvtools.InfoTextBox.resources
+C:\Program Files (x86)\Infolight\EEP2012\Srvtools\obj\Debug\Srvtools.InfoTransactionEditorDialog.resources
+C:\Program Files (x86)\Infolight\EEP2012\Srvtools\obj\Debug\Srvtools.InfoTransactionEditorTTransactionDialog.resources
+C:\Program Files (x86)\Infolight\EEP2012\Srvtools\obj\Debug\Srvtools.InfoTransactionTransFieldsAddDialog.resources
+C:\Program Files (x86)\Infolight\EEP2012\Srvtools\obj\Debug\Srvtools.InfoComboBox.resources
+C:\Program Files (x86)\Infolight\EEP2012\Srvtools\obj\Debug\Srvtools.InfoDataSet.resources
+C:\Program Files (x86)\Infolight\EEP2012\Srvtools\obj\Debug\Srvtools.MGControl.resources
+C:\Program Files (x86)\Infolight\EEP2012\Srvtools\obj\Debug\Srvtools.Properties.Resources.resources
+C:\Program Files (x86)\Infolight\EEP2012\Srvtools\obj\Debug\Srvtools.Report.frmSelectReport.resources
+C:\Program Files (x86)\Infolight\EEP2012\Srvtools\obj\Debug\Srvtools.UGControl.resources
+C:\Program Files (x86)\Infolight\EEP2012\Srvtools\obj\Debug\Srvtools.UpdateComponent.resources
+C:\Program Files (x86)\Infolight\EEP2012\Srvtools\obj\Debug\Srvtools.ControlDescriptionEditorDialog.resources
+C:\Program Files (x86)\Infolight\EEP2012\Srvtools\obj\Debug\Srvtools.ERModel.resources
+C:\Program Files (x86)\Infolight\EEP2012\Srvtools\obj\Debug\Srvtools.fmReplaceDialog.resources
+C:\Program Files (x86)\Infolight\EEP2012\Srvtools\obj\Debug\Srvtools.frmAnyQuery.resources
+C:\Program Files (x86)\Infolight\EEP2012\Srvtools\obj\Debug\Srvtools.frmAnyQueryAdd.resources
+C:\Program Files (x86)\Infolight\EEP2012\Srvtools\obj\Debug\Srvtools.frmAnyQuerySaveLoad.resources
+C:\Program Files (x86)\Infolight\EEP2012\Srvtools\obj\Debug\Srvtools.frmExternalRefvalEditor.resources
+C:\Program Files (x86)\Infolight\EEP2012\Srvtools\obj\Debug\Srvtools.frmRefButtonQuery.resources
+C:\Program Files (x86)\Infolight\EEP2012\Srvtools\obj\Debug\Srvtools.InfoDateTimeBox.resources
+C:\Program Files (x86)\Infolight\EEP2012\Srvtools\obj\Debug\Srvtools.FormVersion.resources
+C:\Program Files (x86)\Infolight\EEP2012\Srvtools\obj\Debug\Srvtools.frmNavigatorCopy.resources
+C:\Program Files (x86)\Infolight\EEP2012\Srvtools\obj\Debug\Srvtools.frmProxy.resources
+C:\Program Files (x86)\Infolight\EEP2012\Srvtools\obj\Debug\Srvtools.MultiLanguageEditorDialog.resources
+C:\Program Files (x86)\Infolight\EEP2012\Srvtools\obj\Debug\Srvtools.frmAgent.resources
+C:\Program Files (x86)\Infolight\EEP2012\Srvtools\obj\Debug\Srvtools.frmSelectLanguage.resources
+C:\Program Files (x86)\Infolight\EEP2012\Srvtools\obj\Debug\Srvtools.InfoRefPanel.resources
+C:\Program Files (x86)\Infolight\EEP2012\Srvtools\obj\Debug\Srvtools.frmWebHyperLink.resources
+C:\Program Files (x86)\Infolight\EEP2012\Srvtools\obj\Debug\Srvtools.InfoTransactionEditorTransFieldsDialog.resources
+C:\Program Files (x86)\Infolight\EEP2012\Srvtools\obj\Debug\Srvtools.InfoTransactionEditorKeyFieldsDialog.resources
+C:\Program Files (x86)\Infolight\EEP2012\Srvtools\obj\Debug\Srvtools.InfoTransactionTransKeyFieldsAddDialog.resources
+C:\Program Files (x86)\Infolight\EEP2012\Srvtools\obj\Debug\Srvtools.frmAccessControlForUser.resources
+C:\Program Files (x86)\Infolight\EEP2012\Srvtools\obj\Debug\Srvtools.frmAccessMenus.resources
+C:\Program Files (x86)\Infolight\EEP2012\Srvtools\obj\Debug\Srvtools.frmAccessMenusForUser.resources
+C:\Program Files (x86)\Infolight\EEP2012\Srvtools\obj\Debug\Srvtools.frmSelUsers.resources
+C:\Program Files (x86)\Infolight\EEP2012\Srvtools\obj\Debug\Srvtools.frmTreeView.resources
+C:\Program Files (x86)\Infolight\EEP2012\Srvtools\obj\Debug\Srvtools.frmWebClientQueryEditor.resources
+C:\Program Files (x86)\Infolight\EEP2012\Srvtools\obj\Debug\Srvtools.frmWebSecurityAdd.resources
+C:\Program Files (x86)\Infolight\EEP2012\Srvtools\obj\Debug\Srvtools.frmWebSecurity.resources
+C:\Program Files (x86)\Infolight\EEP2012\Srvtools\obj\Debug\Srvtools.InfoClientMoveProgress.resources
+C:\Program Files (x86)\Infolight\EEP2012\Srvtools\obj\Debug\Srvtools.frmAccessControlForGroup.resources
+C:\Program Files (x86)\Infolight\EEP2012\Srvtools\obj\Debug\Srvtools.frmAccessControlAdd.resources
+C:\Program Files (x86)\Infolight\EEP2012\Srvtools\obj\Debug\Srvtools.frmInfoSecurityAdd.resources
+C:\Program Files (x86)\Infolight\EEP2012\Srvtools\obj\Debug\Srvtools.frmInfoSecurityEdit.resources
+C:\Program Files (x86)\Infolight\EEP2012\Srvtools\obj\Debug\Srvtools.frmClientQueryEditor.resources
+C:\Program Files (x86)\Infolight\EEP2012\Srvtools\obj\Debug\Srvtools.frmClientQuery.resources
+C:\Program Files (x86)\Infolight\EEP2012\Srvtools\obj\Debug\Srvtools.InfoRefvalBox.resources
+C:\Program Files (x86)\Infolight\EEP2012\Srvtools\obj\Debug\Srvtools.EnabledControlsEditorDialog.resources
+C:\Program Files (x86)\Infolight\EEP2012\Srvtools\obj\Debug\Srvtools.ErrorDialog.resources
+C:\Program Files (x86)\Infolight\EEP2012\Srvtools\obj\Debug\Srvtools.FeedbackBugDialog.resources
+C:\Program Files (x86)\Infolight\EEP2012\Srvtools\obj\Debug\Srvtools.InfoBindingSource.resources
+C:\Program Files (x86)\Infolight\EEP2012\Srvtools\obj\Debug\Srvtools.PERemoteName.resources
+C:\Program Files (x86)\Infolight\EEP2012\Srvtools\obj\Debug\Srvtools.StateCollectionEditorDialog.resources
+C:\Program Files (x86)\Infolight\EEP2012\Srvtools\obj\Debug\Srvtools.UPWDControl.resources
+C:\Program Files (x86)\Infolight\EEP2012\Srvtools\obj\Debug\Srvtools.WebNavigatorEnableControlsEditorDialog.resources
+C:\Program Files (x86)\Infolight\EEP2012\Srvtools\obj\Debug\Srvtools.csproj.GenerateResource.Cache
+C:\Program Files (x86)\Infolight\EEP2012\Srvtools\obj\Debug\Srvtools.dll
+C:\Program Files (x86)\Infolight\EEP2012\Srvtools\obj\Debug\Srvtools.pdb
+C:\Program Files (x86)\Infolight\EEP2012\Srvtools\obj\Debug\Srvtools.csprojResolveAssemblyReference.cache

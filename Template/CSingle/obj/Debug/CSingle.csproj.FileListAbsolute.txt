@@ -1,0 +1,151 @@
+D:\Project\Version\InstallVersion\20100805\EEPNetClient\Solution1\CSingle.dll
+D:\Project\Version\InstallVersion\20100805\EEPNetClient\Solution1\CSingle.pdb
+D:\Project\Version\InstallVersion\20100805\Template\CSingle\obj\Debug\ResolveAssemblyReference.cache
+D:\Project\Version\InstallVersion\20100805\Template\CSingle\obj\Debug\CSingle.Form1.resources
+D:\Project\Version\InstallVersion\20100805\Template\CSingle\obj\Debug\CSingle.Properties.Resources.resources
+D:\Project\Version\InstallVersion\20100805\Template\CSingle\obj\Debug\GenerateResource.read.1.tlog
+D:\Project\Version\InstallVersion\20100805\Template\CSingle\obj\Debug\GenerateResource.write.1.tlog
+D:\Project\Version\InstallVersion\20100805\Template\CSingle\obj\Debug\CSingle.dll
+D:\Project\Version\InstallVersion\20100805\Template\CSingle\obj\Debug\CSingle.pdb
+D:\Project\Version\InstallVersion\EEP2010(EF+WF)\EEPNetClient\Solution1\CSingle.dll
+D:\Project\Version\InstallVersion\EEP2010(EF+WF)\EEPNetClient\Solution1\CSingle.pdb
+D:\Project\Version\InstallVersion\EEP2010(EF+WF)\Template\CSingle\obj\Debug\ResolveAssemblyReference.cache
+D:\Project\Version\InstallVersion\EEP2010(EF+WF)\Template\CSingle\obj\Debug\CSingle.Form1.resources
+D:\Project\Version\InstallVersion\EEP2010(EF+WF)\Template\CSingle\obj\Debug\CSingle.Properties.Resources.resources
+D:\Project\Version\InstallVersion\EEP2010(EF+WF)\Template\CSingle\obj\Debug\GenerateResource.read.1.tlog
+D:\Project\Version\InstallVersion\EEP2010(EF+WF)\Template\CSingle\obj\Debug\GenerateResource.write.1.tlog
+D:\Project\Version\InstallVersion\EEP2010(EF+WF)\Template\CSingle\obj\Debug\CSingle.dll
+D:\Project\Version\InstallVersion\EEP2010(EF+WF)\Template\CSingle\obj\Debug\CSingle.pdb
+D:\Project\Version\InstallVersion\安装包源文件\EEP2010(SP1-CTP2)\EEP2010(EF+WF)\EEPNetClient\Solution1\CSingle.dll
+D:\Project\Version\InstallVersion\安装包源文件\EEP2010(SP1-CTP2)\EEP2010(EF+WF)\EEPNetClient\Solution1\CSingle.pdb
+D:\Project\Version\InstallVersion\安装包源文件\EEP2010(SP1-CTP2)\EEP2010(EF+WF)\Template\CSingle\obj\Debug\ResolveAssemblyReference.cache
+D:\Project\Version\InstallVersion\安装包源文件\EEP2010(SP1-CTP2)\EEP2010(EF+WF)\Template\CSingle\obj\Debug\CSingle.Form1.resources
+D:\Project\Version\InstallVersion\安装包源文件\EEP2010(SP1-CTP2)\EEP2010(EF+WF)\Template\CSingle\obj\Debug\CSingle.Properties.Resources.resources
+D:\Project\Version\InstallVersion\安装包源文件\EEP2010(SP1-CTP2)\EEP2010(EF+WF)\Template\CSingle\obj\Debug\GenerateResource.read.1.tlog
+D:\Project\Version\InstallVersion\安装包源文件\EEP2010(SP1-CTP2)\EEP2010(EF+WF)\Template\CSingle\obj\Debug\GenerateResource.write.1.tlog
+D:\Project\Version\InstallVersion\安装包源文件\EEP2010(SP1-CTP2)\EEP2010(EF+WF)\Template\CSingle\obj\Debug\CSingle.dll
+D:\Project\Version\InstallVersion\安装包源文件\EEP2010(SP1-CTP2)\EEP2010(EF+WF)\Template\CSingle\obj\Debug\CSingle.pdb
+D:\Version\安装包源文件\EEP2010(SP1-CTP3)\EEP2010(EF+WF)\EEPNetClient\Solution1\CSingle.dll
+D:\Version\安装包源文件\EEP2010(SP1-CTP3)\EEP2010(EF+WF)\EEPNetClient\Solution1\CSingle.pdb
+D:\Version\安装包源文件\EEP2010(SP1-CTP3)\EEP2010(EF+WF)\Template\CSingle\obj\Debug\ResolveAssemblyReference.cache
+D:\Version\安装包源文件\EEP2010(SP1-CTP3)\EEP2010(EF+WF)\Template\CSingle\obj\Debug\CSingle.Form1.resources
+D:\Version\安装包源文件\EEP2010(SP1-CTP3)\EEP2010(EF+WF)\Template\CSingle\obj\Debug\CSingle.Properties.Resources.resources
+D:\Version\安装包源文件\EEP2010(SP1-CTP3)\EEP2010(EF+WF)\Template\CSingle\obj\Debug\GenerateResource.read.1.tlog
+D:\Version\安装包源文件\EEP2010(SP1-CTP3)\EEP2010(EF+WF)\Template\CSingle\obj\Debug\GenerateResource.write.1.tlog
+D:\Version\安装包源文件\EEP2010(SP1-CTP3)\EEP2010(EF+WF)\Template\CSingle\obj\Debug\CSingle.dll
+D:\Version\安装包源文件\EEP2010(SP1-CTP3)\EEP2010(EF+WF)\Template\CSingle\obj\Debug\CSingle.pdb
+H:\Version\安装包源文件\EEP2010(SP1-CTP3)\EEP2010(EF+WF)\EEPNetClient\Solution1\CSingle.dll
+H:\Version\安装包源文件\EEP2010(SP1-CTP3)\EEP2010(EF+WF)\EEPNetClient\Solution1\CSingle.pdb
+H:\Version\安装包源文件\EEP2010(SP1-CTP3)\EEP2010(EF+WF)\Template\CSingle\obj\Debug\ResolveAssemblyReference.cache
+H:\Version\安装包源文件\EEP2010(SP1-CTP3)\EEP2010(EF+WF)\Template\CSingle\obj\Debug\CSingle.Form1.resources
+H:\Version\安装包源文件\EEP2010(SP1-CTP3)\EEP2010(EF+WF)\Template\CSingle\obj\Debug\CSingle.Properties.Resources.resources
+H:\Version\安装包源文件\EEP2010(SP1-CTP3)\EEP2010(EF+WF)\Template\CSingle\obj\Debug\GenerateResource.read.1.tlog
+H:\Version\安装包源文件\EEP2010(SP1-CTP3)\EEP2010(EF+WF)\Template\CSingle\obj\Debug\GenerateResource.write.1.tlog
+H:\Version\安装包源文件\EEP2010(SP1-CTP3)\EEP2010(EF+WF)\Template\CSingle\obj\Debug\CSingle.dll
+H:\Version\安装包源文件\EEP2010(SP1-CTP3)\EEP2010(EF+WF)\Template\CSingle\obj\Debug\CSingle.pdb
+H:\Version\InstallVersion\安装包源文件\EEP2010(SP1-CTP3)\EEP2010(EF+WF)\EEPNetClient\Solution1\CSingle.dll
+H:\Version\InstallVersion\安装包源文件\EEP2010(SP1-CTP3)\EEP2010(EF+WF)\EEPNetClient\Solution1\CSingle.pdb
+H:\Version\InstallVersion\安装包源文件\EEP2010(SP1-CTP3)\EEP2010(EF+WF)\Template\CSingle\obj\Debug\ResolveAssemblyReference.cache
+H:\Version\InstallVersion\安装包源文件\EEP2010(SP1-CTP3)\EEP2010(EF+WF)\Template\CSingle\obj\Debug\CSingle.Form1.resources
+H:\Version\InstallVersion\安装包源文件\EEP2010(SP1-CTP3)\EEP2010(EF+WF)\Template\CSingle\obj\Debug\CSingle.Properties.Resources.resources
+H:\Version\InstallVersion\安装包源文件\EEP2010(SP1-CTP3)\EEP2010(EF+WF)\Template\CSingle\obj\Debug\GenerateResource.read.1.tlog
+H:\Version\InstallVersion\安装包源文件\EEP2010(SP1-CTP3)\EEP2010(EF+WF)\Template\CSingle\obj\Debug\GenerateResource.write.1.tlog
+H:\Version\InstallVersion\安装包源文件\EEP2010(SP1-CTP3)\EEP2010(EF+WF)\Template\CSingle\obj\Debug\CSingle.dll
+H:\Version\InstallVersion\安装包源文件\EEP2010(SP1-CTP3)\EEP2010(EF+WF)\Template\CSingle\obj\Debug\CSingle.pdb
+H:\Version\InstallVersion\安装包源文件\EEP2010(SP1-CTP4)\EEP2010(EF+WF)\EEPNetClient\Solution1\CSingle.dll
+H:\Version\InstallVersion\安装包源文件\EEP2010(SP1-CTP4)\EEP2010(EF+WF)\EEPNetClient\Solution1\CSingle.pdb
+H:\Version\InstallVersion\安装包源文件\EEP2010(SP1-CTP4)\EEP2010(EF+WF)\Template\CSingle\obj\Debug\ResolveAssemblyReference.cache
+H:\Version\InstallVersion\安装包源文件\EEP2010(SP1-CTP4)\EEP2010(EF+WF)\Template\CSingle\obj\Debug\CSingle.Form1.resources
+H:\Version\InstallVersion\安装包源文件\EEP2010(SP1-CTP4)\EEP2010(EF+WF)\Template\CSingle\obj\Debug\CSingle.Properties.Resources.resources
+H:\Version\InstallVersion\安装包源文件\EEP2010(SP1-CTP4)\EEP2010(EF+WF)\Template\CSingle\obj\Debug\GenerateResource.read.1.tlog
+H:\Version\InstallVersion\安装包源文件\EEP2010(SP1-CTP4)\EEP2010(EF+WF)\Template\CSingle\obj\Debug\GenerateResource.write.1.tlog
+H:\Version\InstallVersion\安装包源文件\EEP2010(SP1-CTP4)\EEP2010(EF+WF)\Template\CSingle\obj\Debug\CSingle.dll
+H:\Version\InstallVersion\安装包源文件\EEP2010(SP1-CTP4)\EEP2010(EF+WF)\Template\CSingle\obj\Debug\CSingle.pdb
+H:\Version\InstallVersion\安装包源文件\EEP2010(SP1-CTP5)\EEP2010(EF+WF)\EEPNetClient\Solution1\CSingle.dll
+H:\Version\InstallVersion\安装包源文件\EEP2010(SP1-CTP5)\EEP2010(EF+WF)\EEPNetClient\Solution1\CSingle.pdb
+H:\Version\InstallVersion\安装包源文件\EEP2010(SP1-CTP5)\EEP2010(EF+WF)\Template\CSingle\obj\Debug\ResolveAssemblyReference.cache
+H:\Version\InstallVersion\安装包源文件\EEP2010(SP1-CTP5)\EEP2010(EF+WF)\Template\CSingle\obj\Debug\CSingle.Form1.resources
+H:\Version\InstallVersion\安装包源文件\EEP2010(SP1-CTP5)\EEP2010(EF+WF)\Template\CSingle\obj\Debug\CSingle.Properties.Resources.resources
+H:\Version\InstallVersion\安装包源文件\EEP2010(SP1-CTP5)\EEP2010(EF+WF)\Template\CSingle\obj\Debug\GenerateResource.read.1.tlog
+H:\Version\InstallVersion\安装包源文件\EEP2010(SP1-CTP5)\EEP2010(EF+WF)\Template\CSingle\obj\Debug\GenerateResource.write.1.tlog
+H:\Version\InstallVersion\安装包源文件\EEP2010(SP1-CTP5)\EEP2010(EF+WF)\Template\CSingle\obj\Debug\CSingle.dll
+H:\Version\InstallVersion\安装包源文件\EEP2010(SP1-CTP5)\EEP2010(EF+WF)\Template\CSingle\obj\Debug\CSingle.pdb
+H:\Version\InstallVersion\安装包源文件\EEP2010(SP2Prerelease)\EEP2010(EF+WF)\EEPNetClient\Solution1\CSingle.dll
+H:\Version\InstallVersion\安装包源文件\EEP2010(SP2Prerelease)\EEP2010(EF+WF)\EEPNetClient\Solution1\CSingle.pdb
+H:\Version\InstallVersion\安装包源文件\EEP2010(SP2Prerelease)\EEP2010(EF+WF)\Template\CSingle\obj\Debug\ResolveAssemblyReference.cache
+H:\Version\InstallVersion\安装包源文件\EEP2010(SP2Prerelease)\EEP2010(EF+WF)\Template\CSingle\obj\Debug\CSingle.Form1.resources
+H:\Version\InstallVersion\安装包源文件\EEP2010(SP2Prerelease)\EEP2010(EF+WF)\Template\CSingle\obj\Debug\CSingle.Properties.Resources.resources
+H:\Version\InstallVersion\安装包源文件\EEP2010(SP2Prerelease)\EEP2010(EF+WF)\Template\CSingle\obj\Debug\GenerateResource.read.1.tlog
+H:\Version\InstallVersion\安装包源文件\EEP2010(SP2Prerelease)\EEP2010(EF+WF)\Template\CSingle\obj\Debug\GenerateResource.write.1.tlog
+H:\Version\InstallVersion\安装包源文件\EEP2010(SP2Prerelease)\EEP2010(EF+WF)\Template\CSingle\obj\Debug\CSingle.dll
+H:\Version\InstallVersion\安装包源文件\EEP2010(SP2Prerelease)\EEP2010(EF+WF)\Template\CSingle\obj\Debug\CSingle.pdb
+H:\Version\InstallVersion\安装包源文件\EEP2010(SP2Prerelease20111116)\EEP2010(EF+WF)\EEPNetClient\Solution1\CSingle.dll
+H:\Version\InstallVersion\安装包源文件\EEP2010(SP2Prerelease20111116)\EEP2010(EF+WF)\EEPNetClient\Solution1\CSingle.pdb
+H:\Version\InstallVersion\安装包源文件\EEP2010(SP2Prerelease20111116)\EEP2010(EF+WF)\Template\CSingle\obj\Debug\ResolveAssemblyReference.cache
+H:\Version\InstallVersion\安装包源文件\EEP2010(SP2Prerelease20111116)\EEP2010(EF+WF)\Template\CSingle\obj\Debug\CSingle.Form1.resources
+H:\Version\InstallVersion\安装包源文件\EEP2010(SP2Prerelease20111116)\EEP2010(EF+WF)\Template\CSingle\obj\Debug\CSingle.Properties.Resources.resources
+H:\Version\InstallVersion\安装包源文件\EEP2010(SP2Prerelease20111116)\EEP2010(EF+WF)\Template\CSingle\obj\Debug\GenerateResource.read.1.tlog
+H:\Version\InstallVersion\安装包源文件\EEP2010(SP2Prerelease20111116)\EEP2010(EF+WF)\Template\CSingle\obj\Debug\GenerateResource.write.1.tlog
+H:\Version\InstallVersion\安装包源文件\EEP2010(SP2Prerelease20111116)\EEP2010(EF+WF)\Template\CSingle\obj\Debug\CSingle.dll
+H:\Version\InstallVersion\安装包源文件\EEP2010(SP2Prerelease20111116)\EEP2010(EF+WF)\Template\CSingle\obj\Debug\CSingle.pdb
+C:\Program Files\Infolight\EEP2012\EEPNetClient\Solution1\CSingle.dll
+C:\Program Files\Infolight\EEP2012\EEPNetClient\Solution1\CSingle.pdb
+C:\Program Files\Infolight\EEP2012\Template\CSingle\obj\Debug\CSingle.csprojResolveAssemblyReference.cache
+C:\Program Files\Infolight\EEP2012\Template\CSingle\obj\Debug\CSingle.Form1.resources
+C:\Program Files\Infolight\EEP2012\Template\CSingle\obj\Debug\CSingle.Properties.Resources.resources
+C:\Program Files\Infolight\EEP2012\Template\CSingle\obj\Debug\CSingle.csproj.GenerateResource.Cache
+C:\Program Files\Infolight\EEP2012\Template\CSingle\obj\Debug\CSingle.dll
+C:\Program Files\Infolight\EEP2012\Template\CSingle\obj\Debug\CSingle.pdb
+C:\Program Files\Infolight\EEP2012WF\EEPNetClient\Solution1\CSingle.dll
+C:\Program Files\Infolight\EEP2012WF\EEPNetClient\Solution1\CSingle.pdb
+C:\Program Files\Infolight\EEP2012WF\Template\CSingle\obj\Debug\CSingle.csprojResolveAssemblyReference.cache
+C:\Program Files\Infolight\EEP2012WF\Template\CSingle\obj\Debug\CSingle.Form1.resources
+C:\Program Files\Infolight\EEP2012WF\Template\CSingle\obj\Debug\CSingle.Properties.Resources.resources
+C:\Program Files\Infolight\EEP2012WF\Template\CSingle\obj\Debug\CSingle.csproj.GenerateResource.Cache
+C:\Program Files\Infolight\EEP2012WF\Template\CSingle\obj\Debug\CSingle.dll
+C:\Program Files\Infolight\EEP2012WF\Template\CSingle\obj\Debug\CSingle.pdb
+C:\Program Files (x86)\Infolight\EEP2012WF\EEPNetClient\Solution1\CSingle.dll
+C:\Program Files (x86)\Infolight\EEP2012WF\EEPNetClient\Solution1\CSingle.pdb
+C:\Program Files (x86)\Infolight\EEP2012WF\Template\CSingle\obj\Debug\CSingle.csprojResolveAssemblyReference.cache
+C:\Program Files (x86)\Infolight\EEP2012WF\Template\CSingle\obj\Debug\CSingle.Form1.resources
+C:\Program Files (x86)\Infolight\EEP2012WF\Template\CSingle\obj\Debug\CSingle.Properties.Resources.resources
+C:\Program Files (x86)\Infolight\EEP2012WF\Template\CSingle\obj\Debug\CSingle.csproj.GenerateResource.Cache
+C:\Program Files (x86)\Infolight\EEP2012WF\Template\CSingle\obj\Debug\CSingle.dll
+C:\Program Files (x86)\Infolight\EEP2012WF\Template\CSingle\obj\Debug\CSingle.pdb
+D:\版本\Version\安裝源文件\EEP2012WF(V5.0.0.020140924 SP5)\EEPNetClient\Solution1\CSingle.dll
+D:\版本\Version\安裝源文件\EEP2012WF(V5.0.0.020140924 SP5)\EEPNetClient\Solution1\CSingle.pdb
+D:\版本\Version\安裝源文件\EEP2012WF(V5.0.0.020140924 SP5)\Template\CSingle\obj\Debug\CSingle.csprojResolveAssemblyReference.cache
+D:\版本\Version\安裝源文件\EEP2012WF(V5.0.0.020140924 SP5)\Template\CSingle\obj\Debug\CSingle.Form1.resources
+D:\版本\Version\安裝源文件\EEP2012WF(V5.0.0.020140924 SP5)\Template\CSingle\obj\Debug\CSingle.Properties.Resources.resources
+D:\版本\Version\安裝源文件\EEP2012WF(V5.0.0.020140924 SP5)\Template\CSingle\obj\Debug\CSingle.csproj.GenerateResource.Cache
+D:\版本\Version\安裝源文件\EEP2012WF(V5.0.0.020140924 SP5)\Template\CSingle\obj\Debug\CSingle.dll
+D:\版本\Version\安裝源文件\EEP2012WF(V5.0.0.020140924 SP5)\Template\CSingle\obj\Debug\CSingle.pdb
+D:\版本\Version\安裝源文件\EEP2012(V5.0.0.020140924 SP5)\EEP2012WF\EEPNetClient\Solution1\CSingle.dll
+D:\版本\Version\安裝源文件\EEP2012(V5.0.0.020140924 SP5)\EEP2012WF\EEPNetClient\Solution1\CSingle.pdb
+D:\版本\Version\安裝源文件\EEP2012(V5.0.0.020140924 SP5)\EEP2012WF\Template\CSingle\obj\Debug\CSingle.Form1.resources
+D:\版本\Version\安裝源文件\EEP2012(V5.0.0.020140924 SP5)\EEP2012WF\Template\CSingle\obj\Debug\CSingle.Properties.Resources.resources
+D:\版本\Version\安裝源文件\EEP2012(V5.0.0.020140924 SP5)\EEP2012WF\Template\CSingle\obj\Debug\CSingle.csproj.GenerateResource.Cache
+D:\版本\Version\安裝源文件\EEP2012(V5.0.0.020140924 SP5)\EEP2012WF\Template\CSingle\obj\Debug\CSingle.dll
+D:\版本\Version\安裝源文件\EEP2012(V5.0.0.020140924 SP5)\EEP2012WF\Template\CSingle\obj\Debug\CSingle.pdb
+D:\Program Files (x86)\Your Company Name\EEP2012\EEPNetClient\Solution1\CSingle.dll
+D:\Program Files (x86)\Your Company Name\EEP2012\EEPNetClient\Solution1\CSingle.pdb
+D:\Program Files (x86)\Your Company Name\EEP2012\Template\CSingle\obj\Debug\CSingle.csprojResolveAssemblyReference.cache
+D:\Program Files (x86)\Your Company Name\EEP2012\Template\CSingle\obj\Debug\CSingle.Form1.resources
+D:\Program Files (x86)\Your Company Name\EEP2012\Template\CSingle\obj\Debug\CSingle.Properties.Resources.resources
+D:\Program Files (x86)\Your Company Name\EEP2012\Template\CSingle\obj\Debug\CSingle.csproj.GenerateResource.Cache
+D:\Program Files (x86)\Your Company Name\EEP2012\Template\CSingle\obj\Debug\CSingle.dll
+D:\Program Files (x86)\Your Company Name\EEP2012\Template\CSingle\obj\Debug\CSingle.pdb
+C:\Program Files (x86)\Infolight\EEP2012\EEPNetClient\Solution1\CSingle.dll
+C:\Program Files (x86)\Infolight\EEP2012\EEPNetClient\Solution1\CSingle.pdb
+C:\Program Files (x86)\Infolight\EEP2012\Template\CSingle\obj\Debug\CSingle.Form1.resources
+C:\Program Files (x86)\Infolight\EEP2012\Template\CSingle\obj\Debug\CSingle.Properties.Resources.resources
+C:\Program Files (x86)\Infolight\EEP2012\Template\CSingle\obj\Debug\CSingle.csproj.GenerateResource.Cache
+C:\Program Files (x86)\Infolight\EEP2012\Template\CSingle\obj\Debug\CSingle.dll
+C:\Program Files (x86)\Infolight\EEP2012\Template\CSingle\obj\Debug\CSingle.pdb
+D:\Infolight\EEP2012\EEPNetClient\Solution1\CSingle.dll
+D:\Infolight\EEP2012\EEPNetClient\Solution1\CSingle.pdb
+D:\Infolight\EEP2012\Template\CSingle\obj\Debug\CSingle.Form1.resources
+D:\Infolight\EEP2012\Template\CSingle\obj\Debug\CSingle.Properties.Resources.resources
+D:\Infolight\EEP2012\Template\CSingle\obj\Debug\CSingle.csproj.GenerateResource.Cache
+D:\Infolight\EEP2012\Template\CSingle\obj\Debug\CSingle.dll
+D:\Infolight\EEP2012\Template\CSingle\obj\Debug\CSingle.pdb

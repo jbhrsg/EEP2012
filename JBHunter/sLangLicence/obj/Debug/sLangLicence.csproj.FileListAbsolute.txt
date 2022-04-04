@@ -1,0 +1,8 @@
+C:\Program Files (x86)\Infolight\EEP2012\JBHunter\sLangLicence\bin\Debug\sLangLicence.dll
+C:\Program Files (x86)\Infolight\EEP2012\JBHunter\sLangLicence\bin\Debug\sLangLicence.pdb
+C:\Program Files (x86)\Infolight\EEP2012\JBHunter\sLangLicence\obj\Debug\sLangLicence.csproj.GenerateResource.Cache
+C:\Program Files (x86)\Infolight\EEP2012\JBHunter\sLangLicence\obj\Debug\sLangLicence.dll
+C:\Program Files (x86)\Infolight\EEP2012\JBHunter\sLangLicence\obj\Debug\sLangLicence.pdb
+C:\Program Files (x86)\Infolight\EEP2012\EEPNetServer\JBHunter\sLangLicence.dll
+C:\Program Files (x86)\Infolight\EEP2012\JBHunter\sLangLicence\obj\Debug\sLangLicence.Component.resources
+C:\Program Files (x86)\Infolight\EEP2012\EEPNetServer\JBHunter\sLangLicence.pdb

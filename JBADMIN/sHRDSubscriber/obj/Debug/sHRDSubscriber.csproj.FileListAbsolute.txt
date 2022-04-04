@@ -1,0 +1,8 @@
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sHRDSubscriber\bin\Debug\sHRDSubscriber.dll
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sHRDSubscriber\bin\Debug\sHRDSubscriber.pdb
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sHRDSubscriber\obj\Debug\sHRDSubscriber.csproj.GenerateResource.Cache
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sHRDSubscriber\obj\Debug\sHRDSubscriber.dll
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sHRDSubscriber\obj\Debug\sHRDSubscriber.pdb
+C:\Program Files (x86)\Infolight\EEP2012\EEPNetServer\JBADMIN\sHRDSubscriber.dll
+C:\Program Files (x86)\Infolight\EEP2012\EEPNetServer\JBADMIN\sHRDSubscriber.pdb
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sHRDSubscriber\obj\Debug\sHRDSubscriber.Component.resources

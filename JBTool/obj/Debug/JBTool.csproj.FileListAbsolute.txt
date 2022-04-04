@@ -1,0 +1,12 @@
+C:\Program Files (x86)\Infolight\EEP2012\EEPNetServer\JBHRIS\JBTool.dll
+C:\Program Files (x86)\Infolight\EEP2012\EEPNetServer\JBHRIS\JBTool.pdb
+D:\Infolight\EEP2012\JQWebClient\Bin\JBTool.dll
+D:\Infolight\EEP2012\JQWebClient\Bin\JBTool.pdb
+D:\Infolight\EEP2012\JBTool\obj\Debug\JBTool.csprojResolveAssemblyReference.cache
+D:\Infolight\EEP2012\JBTool\obj\Debug\JBTool.dll
+D:\Infolight\EEP2012\JBTool\obj\Debug\JBTool.pdb
+C:\Program Files (x86)\Infolight\EEP2012\JQWebClient\Bin\JBTool.dll
+C:\Program Files (x86)\Infolight\EEP2012\JQWebClient\Bin\JBTool.pdb
+C:\Program Files (x86)\Infolight\EEP2012\JBTool\obj\Debug\JBTool.csprojResolveAssemblyReference.cache
+C:\Program Files (x86)\Infolight\EEP2012\JBTool\obj\Debug\JBTool.dll
+C:\Program Files (x86)\Infolight\EEP2012\JBTool\obj\Debug\JBTool.pdb

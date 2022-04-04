@@ -1,0 +1,8 @@
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sShortTermClose\bin\Release\sShortTermClose.dll
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sShortTermClose\bin\Release\sShortTermClose.pdb
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sShortTermClose\bin\Release\Newtonsoft.Json.dll
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sShortTermClose\bin\Release\Newtonsoft.Json.xml
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sShortTermClose\obj\Release\sShortTermClose.Component.resources
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sShortTermClose\obj\Release\sShortTermClose.csproj.GenerateResource.Cache
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sShortTermClose\obj\Release\sShortTermClose.dll
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sShortTermClose\obj\Release\sShortTermClose.pdb

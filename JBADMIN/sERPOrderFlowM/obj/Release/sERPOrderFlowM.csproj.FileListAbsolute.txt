@@ -1,0 +1,6 @@
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sERPOrderFlowM\bin\Release\sERPOrderFlowM.dll
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sERPOrderFlowM\bin\Release\sERPOrderFlowM.pdb
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sERPOrderFlowM\obj\Release\sERPOrderFlowM.Component.resources
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sERPOrderFlowM\obj\Release\sERPOrderFlowM.csproj.GenerateResource.Cache
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sERPOrderFlowM\obj\Release\sERPOrderFlowM.dll
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sERPOrderFlowM\obj\Release\sERPOrderFlowM.pdb

@@ -1,0 +1,12 @@
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sAssrtLocation\bin\Debug\sAssrtLocation.dll
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sAssrtLocation\bin\Debug\sAssrtLocation.pdb
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sAssrtLocation\obj\Debug\TAG_NAMESPACE.Component.resources
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sAssrtLocation\obj\Debug\sAssrtLocation.csproj.GenerateResource.Cache
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sAssrtLocation\obj\Debug\sAssrtLocation.dll
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sAssrtLocation\obj\Debug\sAssrtLocation.pdb
+D:\Infolight\EEP2012\JBADMIN\sAssrtLocation\bin\Debug\sAssrtLocation.dll
+D:\Infolight\EEP2012\JBADMIN\sAssrtLocation\bin\Debug\sAssrtLocation.pdb
+D:\Infolight\EEP2012\JBADMIN\sAssrtLocation\obj\Debug\TAG_NAMESPACE.Component.resources
+D:\Infolight\EEP2012\JBADMIN\sAssrtLocation\obj\Debug\sAssrtLocation.csproj.GenerateResource.Cache
+D:\Infolight\EEP2012\JBADMIN\sAssrtLocation\obj\Debug\sAssrtLocation.dll
+D:\Infolight\EEP2012\JBADMIN\sAssrtLocation\obj\Debug\sAssrtLocation.pdb

@@ -1,0 +1,15 @@
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sCustomerDealQuery\bin\Debug\sCustomerDealQuery.dll
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sCustomerDealQuery\bin\Debug\sCustomerDealQuery.pdb
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sCustomerDealQuery\obj\Debug\sCustomerDealQuery.csproj.GenerateResource.Cache
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sCustomerDealQuery\obj\Debug\sCustomerDealQuery.dll
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sCustomerDealQuery\obj\Debug\sCustomerDealQuery.pdb
+C:\Program Files (x86)\Infolight\EEP2012\EEPNetServer\JBADMIN\sCustomerDealQuery.dll
+C:\Program Files (x86)\Infolight\EEP2012\EEPNetServer\JBADMIN\sCustomerDealQuery.pdb
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sCustomerDealQuery\obj\Debug\sCustomerDealQuery.Component.resources
+D:\Infolight\EEP2012\EEPNetServer\JBADMIN\sCustomerDealQuery.dll
+D:\Infolight\EEP2012\EEPNetServer\JBADMIN\sCustomerDealQuery.pdb
+D:\Infolight\EEP2012\JBADMIN\sCustomerDealQuery\obj\Debug\sCustomerDealQuery.Component.resources
+D:\Infolight\EEP2012\JBADMIN\sCustomerDealQuery\obj\Debug\sCustomerDealQuery.csproj.GenerateResource.Cache
+D:\Infolight\EEP2012\JBADMIN\sCustomerDealQuery\obj\Debug\sCustomerDealQuery.dll
+D:\Infolight\EEP2012\JBADMIN\sCustomerDealQuery\obj\Debug\sCustomerDealQuery.pdb
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sCustomerDealQuery\obj\Debug\sCustomerDealQuery.csprojResolveAssemblyReference.cache

@@ -1,0 +1,8 @@
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sMailsubscription\bin\Debug\sMailsubscription.dll
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sMailsubscription\bin\Debug\sMailsubscription.pdb
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sMailsubscription\obj\Debug\sMailsubscription.csproj.GenerateResource.Cache
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sMailsubscription\obj\Debug\sMailsubscription.dll
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sMailsubscription\obj\Debug\sMailsubscription.pdb
+C:\Program Files (x86)\Infolight\EEP2012\EEPNetServer\JBADMIN\sMailsubscription.dll
+C:\Program Files (x86)\Infolight\EEP2012\EEPNetServer\JBADMIN\sMailsubscription.pdb
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sMailsubscription\obj\Debug\sMailsubscription.Component.resources

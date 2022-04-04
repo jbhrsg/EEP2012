@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?><ns0:FLSequentialWorkflow RejectProcedure="{p1:Null}" ConnectionType="SqlClient" Description="銷貨收入申請(電子發票)" x:Name="FLSequentialWorkflow" FormName="{x:Null}" SkipForSameUser="False" EEPAlias="JBERP" ClientDll="{x:Null}" TableName="SalesMaster" BodyField="{x:Null}" WebFormName="JB_ADMIN.JBERP_SalesApply" ExpTime="0" PresentFields="" TimeUnit="Day" Keys="SalesNO" ExpTimeField="{x:Null}" MailApproveLevel="{x:Null}" UrgentTime="0" NotifySendMail="True" OrgKind="0" xmlns="http://schemas.microsoft.com/winfx/2006/xaml/workflow" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:p1="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:ns0="clr-namespace:FLTools;Assembly=FLTools, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null">
+	<ns0:FLStand SendEmail="True" DelayAutoApprove="False" SendToKind="Applicate" x:Name="銷貨申請" FormName="" TimeUnit="Day" SendToUser="" AllowSendBack="True" PlusApproveReturn="True" PlusApprove="False" WebFormName="" ExpTime="0" Parameters="P1=Apply" NavigatorMode="Insert" SendToField="" SendToId="{x:Null}" SendToRole="" UrgentTime="0" FLNavigatorMode="Submit" />
+	<IfElseActivity x:Name="銷售類別">
+		<IfElseBranchActivity Description="(SalesTypeID=='7' ||  SalesTypeID=='25' || SalesTypeID=='32'  || SalesTypeID=='33')" x:Name="銷售類別為人力派遣" />
+		<IfElseBranchActivity Description="(SalesTypeID=='30')&amp;&amp;(ApplyOrg_NO='10900')" x:Name="銷貨類別高階人才且部門人力服務桃園">
+			<ns0:FLApprove SendEmail="True" DelayAutoApprove="False" SendToKind="ApplicateManager" InvokedDateTime="0001-01-01T00:00:00.0000000" FormName="" TimeUnit="Day" SendToUser="" AllowSendBack="True" PlusApproveReturn="True" PlusApprove="False" WebFormName="" ExpTime="0" Parameters="{x:Null}" NavigatorMode="Normal" SendToField="{x:Null}" SendToId="{x:Null}" SendToRole="" UrgentTime="0" x:Name="主管簽核_" FLNavigatorMode="Approve">
+				<ns0:FLApprove.ApproveRights>
+					<ns1:ApproveRightCollection xmlns:ns1="clr-namespace:FLCore;Assembly=FLTools, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null">
+						<ns1:ApproveRight Grade="6 ; 經理/副理/顧問" ParentActivity="{x:Null}" Expression="true" Name="6" />
+					</ns1:ApproveRightCollection>
+				</ns0:FLApprove.ApproveRights>
+			</ns0:FLApprove>
+		</IfElseBranchActivity>
+		<IfElseBranchActivity x:Name="銷貨類別非人力派遣">
+			<ns0:FLApprove SendEmail="True" DelayAutoApprove="False" SendToKind="ApplicateManager" InvokedDateTime="0001-01-01T00:00:00.0000000" FormName="" TimeUnit="Day" SendToUser="" AllowSendBack="True" PlusApproveReturn="True" PlusApprove="False" WebFormName="" ExpTime="0" Parameters="{x:Null}" NavigatorMode="Normal" SendToField="{x:Null}" SendToId="{x:Null}" SendToRole="" UrgentTime="0" x:Name="主管簽核" FLNavigatorMode="Approve">
+				<ns0:FLApprove.ApproveRights>
+					<ns1:ApproveRightCollection xmlns:ns1="clr-namespace:FLCore;Assembly=FLTools, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null">
+						<ns1:ApproveRight Grade="0 ; 直屬主管" ParentActivity="{x:Null}" Expression="(Org_NOParent  !=  &quot;10000&quot;)" Name="0" />
+					</ns1:ApproveRightCollection>
+				</ns0:FLApprove.ApproveRights>
+			</ns0:FLApprove>
+		</IfElseBranchActivity>
+	</IfElseActivity>
+	<ns0:FLStand SendEmail="True" DelayAutoApprove="False" SendToKind="Role" x:Name="會計審核確認" FormName="" TimeUnit="Day" SendToUser="{x:Null}" AllowSendBack="True" PlusApproveReturn="True" PlusApprove="False" WebFormName="" ExpTime="0" Parameters="P1=Account" NavigatorMode="Modify" SendToField="{x:Null}" SendToId="{x:Null}" SendToRole="1010063 ; 專員2/會計室" UrgentTime="0" FLNavigatorMode="Approve" />
+	<ns0:FLProcedure ServerDll="C:\Program Files (x86)\Infolight\EEP2012\EEPNetServer\JBADMIN\sERPSalesInvoices.dll" ModuleName="sERPSalesInvoices" ErrorLog="False" MethodName="updateSalesMasterIsActive" x:Name="銷貨有效程序" ErrorToRole="" />
+	<ns0:FLNotify SendEmail="True" Parameters="{x:Null}" x:Name="申請成功通知" FormName="" TimeUnit="Day" SendToUser="" SendToKind="Applicate" UserId="{x:Null}" WebFormName="" ExpTime="0" RoleId="{x:Null}" NavigatorMode="Normal" SendToField="" SendToRole="" UrgentTime="0" FLNavigatorMode="Notify" />
+</ns0:FLSequentialWorkflow>

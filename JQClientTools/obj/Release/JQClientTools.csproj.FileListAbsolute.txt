@@ -1,0 +1,64 @@
+C:\Program Files (x86)\Infolight\EEP2012\JQClientTools\bin\Release\JQClientTools.dll
+C:\Program Files (x86)\Infolight\EEP2012\JQClientTools\bin\Release\JQClientTools.pdb
+C:\Program Files (x86)\Infolight\EEP2012\JQClientTools\bin\Release\EFBase.dll
+C:\Program Files (x86)\Infolight\EEP2012\JQClientTools\bin\Release\EFClientTools.dll
+C:\Program Files (x86)\Infolight\EEP2012\JQClientTools\bin\Release\EFBase.pdb
+C:\Program Files (x86)\Infolight\EEP2012\JQClientTools\bin\Release\EFClientTools.pdb
+C:\Program Files (x86)\Infolight\EEP2012\JQClientTools\obj\Release\JQClientTools.csprojResolveAssemblyReference.cache
+C:\Program Files (x86)\Infolight\EEP2012\JQClientTools\obj\Release\JQClientTools.Editor.AutoCompleteEditorDialog.resources
+C:\Program Files (x86)\Infolight\EEP2012\JQClientTools\obj\Release\JQClientTools.Editor.CheckBoxEditorDialog.resources
+C:\Program Files (x86)\Infolight\EEP2012\JQClientTools\obj\Release\JQClientTools.Editor.ComboBoxEditorDialog.resources
+C:\Program Files (x86)\Infolight\EEP2012\JQClientTools\obj\Release\JQClientTools.Editor.ComboGridEditorDialog.resources
+C:\Program Files (x86)\Infolight\EEP2012\JQClientTools\obj\Release\JQClientTools.Editor.RelationEditorDialog.resources
+C:\Program Files (x86)\Infolight\EEP2012\JQClientTools\obj\Release\JQClientTools.Editor.DateBoxEditorDialog.resources
+C:\Program Files (x86)\Infolight\EEP2012\JQClientTools\obj\Release\JQClientTools.Editor.FileUploadEditorDialog.resources
+C:\Program Files (x86)\Infolight\EEP2012\JQClientTools\obj\Release\JQClientTools.JQMetroEditForm.resources
+C:\Program Files (x86)\Infolight\EEP2012\JQClientTools\obj\Release\JQClientTools.JQMetroEditStyleObjectForm.resources
+C:\Program Files (x86)\Infolight\EEP2012\JQClientTools\obj\Release\JQClientTools.MultiLanguageTableNameDialog.resources
+C:\Program Files (x86)\Infolight\EEP2012\JQClientTools\obj\Release\JQClientTools.Editor.NumberBoxEditorDialog.resources
+C:\Program Files (x86)\Infolight\EEP2012\JQClientTools\obj\Release\JQClientTools.Editor.QrcodeEditorDialog.resources
+C:\Program Files (x86)\Infolight\EEP2012\JQClientTools\obj\Release\JQClientTools.SelectLanguageForm.resources
+C:\Program Files (x86)\Infolight\EEP2012\JQClientTools\obj\Release\JQClientTools.JQSecurityForm.resources
+C:\Program Files (x86)\Infolight\EEP2012\JQClientTools\obj\Release\JQClientTools.JQSecurityAddForm.resources
+C:\Program Files (x86)\Infolight\EEP2012\JQClientTools\obj\Release\JQClientTools.Editor.RefvalEditorDialog.resources
+C:\Program Files (x86)\Infolight\EEP2012\JQClientTools\obj\Release\JQClientTools.Editor.RemoteNameEditorDialog.resources
+C:\Program Files (x86)\Infolight\EEP2012\JQClientTools\obj\Release\JQClientTools.MultiLanguageEditorDialog.resources
+C:\Program Files (x86)\Infolight\EEP2012\JQClientTools\obj\Release\JQClientTools.Editor.TimeSpinnerEditorDialog.resources
+C:\Program Files (x86)\Infolight\EEP2012\JQClientTools\obj\Release\JQClientTools.Editor.YearMonthEditorDialog.resources
+C:\Program Files (x86)\Infolight\EEP2012\JQClientTools\obj\Release\JQClientTools.Editor.PivotTableRenderersTypeForm.resources
+C:\Program Files (x86)\Infolight\EEP2012\JQClientTools\obj\Release\JQClientTools.Editor.PivotTableAggregatorsTypeForm.resources
+C:\Program Files (x86)\Infolight\EEP2012\JQClientTools\obj\Release\JQClientTools.csproj.GenerateResource.Cache
+C:\Program Files (x86)\Infolight\EEP2012\JQClientTools\obj\Release\JQClientTools.dll
+C:\Program Files (x86)\Infolight\EEP2012\JQClientTools\obj\Release\JQClientTools.pdb
+D:\infolight\EEP2012\JQClientTools\bin\Release\JQClientTools.dll
+D:\infolight\EEP2012\JQClientTools\bin\Release\JQClientTools.pdb
+D:\infolight\EEP2012\JQClientTools\bin\Release\EFBase.dll
+D:\infolight\EEP2012\JQClientTools\bin\Release\EFClientTools.dll
+D:\infolight\EEP2012\JQClientTools\bin\Release\EFBase.pdb
+D:\infolight\EEP2012\JQClientTools\bin\Release\EFClientTools.pdb
+D:\infolight\EEP2012\JQClientTools\obj\Release\JQClientTools.csprojResolveAssemblyReference.cache
+D:\infolight\EEP2012\JQClientTools\obj\Release\JQClientTools.Editor.AutoCompleteEditorDialog.resources
+D:\infolight\EEP2012\JQClientTools\obj\Release\JQClientTools.Editor.CheckBoxEditorDialog.resources
+D:\infolight\EEP2012\JQClientTools\obj\Release\JQClientTools.Editor.ComboBoxEditorDialog.resources
+D:\infolight\EEP2012\JQClientTools\obj\Release\JQClientTools.Editor.ComboGridEditorDialog.resources
+D:\infolight\EEP2012\JQClientTools\obj\Release\JQClientTools.Editor.RelationEditorDialog.resources
+D:\infolight\EEP2012\JQClientTools\obj\Release\JQClientTools.Editor.DateBoxEditorDialog.resources
+D:\infolight\EEP2012\JQClientTools\obj\Release\JQClientTools.Editor.FileUploadEditorDialog.resources
+D:\infolight\EEP2012\JQClientTools\obj\Release\JQClientTools.JQMetroEditForm.resources
+D:\infolight\EEP2012\JQClientTools\obj\Release\JQClientTools.JQMetroEditStyleObjectForm.resources
+D:\infolight\EEP2012\JQClientTools\obj\Release\JQClientTools.MultiLanguageTableNameDialog.resources
+D:\infolight\EEP2012\JQClientTools\obj\Release\JQClientTools.Editor.NumberBoxEditorDialog.resources
+D:\infolight\EEP2012\JQClientTools\obj\Release\JQClientTools.Editor.QrcodeEditorDialog.resources
+D:\infolight\EEP2012\JQClientTools\obj\Release\JQClientTools.SelectLanguageForm.resources
+D:\infolight\EEP2012\JQClientTools\obj\Release\JQClientTools.JQSecurityForm.resources
+D:\infolight\EEP2012\JQClientTools\obj\Release\JQClientTools.JQSecurityAddForm.resources
+D:\infolight\EEP2012\JQClientTools\obj\Release\JQClientTools.Editor.RefvalEditorDialog.resources
+D:\infolight\EEP2012\JQClientTools\obj\Release\JQClientTools.Editor.RemoteNameEditorDialog.resources
+D:\infolight\EEP2012\JQClientTools\obj\Release\JQClientTools.MultiLanguageEditorDialog.resources
+D:\infolight\EEP2012\JQClientTools\obj\Release\JQClientTools.Editor.TimeSpinnerEditorDialog.resources
+D:\infolight\EEP2012\JQClientTools\obj\Release\JQClientTools.Editor.YearMonthEditorDialog.resources
+D:\infolight\EEP2012\JQClientTools\obj\Release\JQClientTools.Editor.PivotTableRenderersTypeForm.resources
+D:\infolight\EEP2012\JQClientTools\obj\Release\JQClientTools.Editor.PivotTableAggregatorsTypeForm.resources
+D:\infolight\EEP2012\JQClientTools\obj\Release\JQClientTools.csproj.GenerateResource.Cache
+D:\infolight\EEP2012\JQClientTools\obj\Release\JQClientTools.dll
+D:\infolight\EEP2012\JQClientTools\obj\Release\JQClientTools.pdb

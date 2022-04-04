@@ -1,0 +1,11 @@
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sERPSalesApply\bin\Debug\sERPSalesApply.dll
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sERPSalesApply\bin\Debug\sERPSalesApply.pdb
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sERPSalesApply\obj\Debug\sERPSalesApply.csproj.GenerateResource.Cache
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sERPSalesApply\obj\Debug\sERPSalesApply.dll
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sERPSalesApply\obj\Debug\sERPSalesApply.pdb
+C:\Program Files (x86)\Infolight\EEP2012\EEPNetServer\JBADMIN\sERPSalesApply.dll
+C:\Program Files (x86)\Infolight\EEP2012\EEPNetServer\JBADMIN\sERPSalesApply.pdb
+C:\Program Files (x86)\Infolight\EEP2012\EEPNetServer\JBADMIN\vi-VN\sERPSalesApply.resources.dll
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sERPSalesApply\obj\Debug\sERPSalesApply.Component.vi-VN.resources
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sERPSalesApply\obj\Debug\vi-VN\sERPSalesApply.resources.dll
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sERPSalesApply\obj\Debug\sERPSalesApply2.Component.resources

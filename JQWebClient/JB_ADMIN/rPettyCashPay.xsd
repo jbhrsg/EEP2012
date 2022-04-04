@@ -1,0 +1,33 @@
+<?xml version="1.0" standalone="yes"?>
+<xs:schema id="rPettyCashPay" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+  <xs:element name="rPettyCashPay" msdata:IsDataSet="true" msdata:CaseSensitive="true" msdata:UseCurrentLocale="true">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="PettyCash">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="PETTYCASHID" type="xs:string" minOccurs="0" />
+              <xs:element name="APPLYDATE" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="APPLYEMPID" type="xs:string" minOccurs="0" />
+              <xs:element name="EmployeeName" type="xs:string" minOccurs="0" />
+              <xs:element name="ApplyOrg_NO" type="xs:string" minOccurs="0" />
+              <xs:element name="AccountNotes" type="xs:string" minOccurs="0" />
+              <xs:element name="OrgName" type="xs:string" minOccurs="0" />
+              <xs:element name="CostCenterID" type="xs:string" minOccurs="0" />
+              <xs:element name="CostCenterName" type="xs:string" minOccurs="0" />
+              <xs:element name="ProofTypeID" type="xs:short" minOccurs="0" />
+              <xs:element name="ProofTypeName" type="xs:string" minOccurs="0" />
+              <xs:element name="ProofNO" type="xs:string" minOccurs="0" />
+              <xs:element name="AccountID" type="xs:string" minOccurs="0" />
+              <xs:element name="AccountName" type="xs:string" minOccurs="0" />
+              <xs:element name="PayTypeID" type="xs:short" minOccurs="0" />
+              <xs:element name="PayTypeName" type="xs:string" minOccurs="0" />
+              <xs:element name="PettyCashAmt" type="xs:int" minOccurs="0" />
+              <xs:element name="PettyCashTax" type="xs:int" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

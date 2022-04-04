@@ -1,0 +1,6 @@
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sDeviceUse\bin\Release\sDeviceUse.dll
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sDeviceUse\bin\Release\sDeviceUse.pdb
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sDeviceUse\obj\Release\sDeviceUse.Component.resources
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sDeviceUse\obj\Release\sDeviceUse.csproj.GenerateResource.Cache
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sDeviceUse\obj\Release\sDeviceUse.dll
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sDeviceUse\obj\Release\sDeviceUse.pdb

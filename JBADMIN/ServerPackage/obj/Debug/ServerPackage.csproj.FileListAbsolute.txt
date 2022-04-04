@@ -1,0 +1,15 @@
+D:\Infolight\EEP2012\JBADMIN\ServerPackage\bin\Debug\ServerPackage.dll
+D:\Infolight\EEP2012\JBADMIN\ServerPackage\bin\Debug\ServerPackage.pdb
+D:\Infolight\EEP2012\JBADMIN\ServerPackage\obj\Debug\ServerPackage.csprojResolveAssemblyReference.cache
+D:\Infolight\EEP2012\JBADMIN\ServerPackage\obj\Debug\ServerPackage.csproj.GenerateResource.Cache
+D:\Infolight\EEP2012\JBADMIN\ServerPackage\obj\Debug\ServerPackage.dll
+D:\Infolight\EEP2012\JBADMIN\ServerPackage\obj\Debug\ServerPackage.pdb
+D:\Infolight\EEP2012\EEPNetServer\JBADMIN\ServerPackage.dll
+D:\Infolight\EEP2012\EEPNetServer\JBADMIN\ServerPackage.pdb
+D:\Infolight\EEP2012\JBADMIN\ServerPackage\obj\Debug\ServerPackage.Component.resources
+C:\Program Files (x86)\Infolight\EEP2012\EEPNetServer\JBADMIN\ServerPackage.dll
+C:\Program Files (x86)\Infolight\EEP2012\EEPNetServer\JBADMIN\ServerPackage.pdb
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\ServerPackage\obj\Debug\ServerPackage.Component.resources
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\ServerPackage\obj\Debug\ServerPackage.csproj.GenerateResource.Cache
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\ServerPackage\obj\Debug\ServerPackage.dll
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\ServerPackage\obj\Debug\ServerPackage.pdb

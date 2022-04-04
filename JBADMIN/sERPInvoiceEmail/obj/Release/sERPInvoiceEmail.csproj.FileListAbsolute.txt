@@ -1,0 +1,9 @@
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sERPInvoiceEmail\bin\Release\sERPInvoiceEmail.dll
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sERPInvoiceEmail\bin\Release\sERPInvoiceEmail.pdb
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sERPInvoiceEmail\bin\Release\Newtonsoft.Json.dll
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sERPInvoiceEmail\bin\Release\Newtonsoft.Json.xml
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sERPInvoiceEmail\obj\Release\sERPInvoiceEmail.csprojResolveAssemblyReference.cache
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sERPInvoiceEmail\obj\Release\sERPInvoiceEmail.Component.resources
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sERPInvoiceEmail\obj\Release\sERPInvoiceEmail.csproj.GenerateResource.Cache
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sERPInvoiceEmail\obj\Release\sERPInvoiceEmail.dll
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sERPInvoiceEmail\obj\Release\sERPInvoiceEmail.pdb

@@ -1,0 +1,12 @@
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sPO_Normal_PRPOIQC\bin\Debug\sPO_Normal_PRPOIQC.dll
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sPO_Normal_PRPOIQC\bin\Debug\sPO_Normal_PRPOIQC.pdb
+C:\Program Files (x86)\Infolight\EEP2012\EEPNetServer\JBADMIN\sPO_Normal_PRPOIQC.dll
+C:\Program Files (x86)\Infolight\EEP2012\EEPNetServer\JBADMIN\sPO_Normal_PRPOIQC.pdb
+C:\Program Files (x86)\Infolight\EEP2012\EEPNetServer\JBADMIN\vi-VN\sPO_Normal_PRPOIQC.resources.dll
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sPO_Normal_PRPOIQC\obj\Debug\sPO_Normal_PRPOIQC.Component.resources
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sPO_Normal_PRPOIQC\obj\Debug\sPO_Normal_PRPOIQC.Component.vi-VN.resources
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sPO_Normal_PRPOIQC\obj\Debug\sPO_Normal_PRPOIQC.csproj.GenerateResource.Cache
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sPO_Normal_PRPOIQC\obj\Debug\vi-VN\sPO_Normal_PRPOIQC.resources.dll
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sPO_Normal_PRPOIQC\obj\Debug\sPO_Normal_PRPOIQC.dll
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sPO_Normal_PRPOIQC\obj\Debug\sPO_Normal_PRPOIQC.pdb
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sPO_Normal_PRPOIQC\obj\Debug\sPO_Normal_PRPOIQC.csprojResolveAssemblyReference.cache

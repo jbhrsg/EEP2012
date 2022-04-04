@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?><ns0:FLSequentialWorkflow RejectProcedure="sJBERP_WorkRecordApply.RejectServerMethod" ConnectionType="SqlClient" Description="工作紀錄單" x:Name="FLSequentialWorkflow" FormName="{x:Null}" SkipForSameUser="False" EEPAlias="JBADMIN" ClientDll="{x:Null}" TableName="WRMaster" BodyField="{x:Null}" WebFormName="JB_ADMIN.JBERP_WorkRecordApply" ExpTime="0" PresentFields="USERID,WorkDate" TimeUnit="Day" Keys="WRNO" ExpTimeField="{x:Null}" MailApproveLevel="{x:Null}" UrgentTime="0" NotifySendMail="False" OrgKind="0" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:ns0="clr-namespace:FLTools;Assembly=FLTools, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null">
+	<ns0:FLStand SendEmail="False" DelayAutoApprove="False" SendToKind="Applicate" x:Name="工作紀錄單申請" FormName="" TimeUnit="Day" SendToUser="" AllowSendBack="True" PlusApproveReturn="True" PlusApprove="False" WebFormName="" ExpTime="0" Parameters="P1=Apply" NavigatorMode="Insert" SendToField="" SendToId="{x:Null}" SendToRole="" UrgentTime="0" FLNavigatorMode="Submit" />
+	<ns0:FLApprove SendEmail="True" DelayAutoApprove="False" SendToKind="Manager" InvokedDateTime="0001-01-01T00:00:00.0000000" FormName="" TimeUnit="Day" SendToUser="" AllowSendBack="True" PlusApproveReturn="True" PlusApprove="True" WebFormName="" ExpTime="0" Parameters="P1=Manager" NavigatorMode="Normal" SendToField="{x:Null}" SendToId="{x:Null}" SendToRole="" UrgentTime="0" x:Name="主管審核" FLNavigatorMode="Approve">
+		<ns0:FLApprove.ApproveRights>
+			<ns1:ApproveRightCollection xmlns:ns1="clr-namespace:FLCore;Assembly=FLTools, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null">
+				<ns1:ApproveRight Grade="0 ; 直屬主管" ParentActivity="{x:Null}" Expression="Org_NOParent != &quot;10000&quot;" Name="0" />
+				<ns1:ApproveRight Grade="5 ; 主任/課長/專案經理" ParentActivity="{x:Null}" Expression="true" Name="5" />
+				<ns1:ApproveRight Grade="6 ; 經理/副理/顧問" ParentActivity="{x:Null}" Expression="true" Name="6" />
+				<ns1:ApproveRight Grade="7 ; 跨部門經理/協理" ParentActivity="{x:Null}" Expression="true" Name="7" />
+			</ns1:ApproveRightCollection>
+		</ns0:FLApprove.ApproveRights>
+	</ns0:FLApprove>
+	<ns0:FLNotify SendEmail="True" Parameters="{x:Null}" x:Name="結案通知申請者" FormName="" TimeUnit="Day" SendToUser="" SendToKind="Applicate" UserId="{x:Null}" WebFormName="" ExpTime="0" RoleId="{x:Null}" NavigatorMode="Normal" SendToField="" SendToRole="" UrgentTime="0" FLNavigatorMode="Notify" />
+</ns0:FLSequentialWorkflow>

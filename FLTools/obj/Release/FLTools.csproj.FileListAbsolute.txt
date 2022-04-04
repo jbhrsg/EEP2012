@@ -1,0 +1,38 @@
+C:\Program Files (x86)\Infolight\EEP2012\FLTools\bin\Release\FLTools.dll
+C:\Program Files (x86)\Infolight\EEP2012\FLTools\bin\Release\FLTools.pdb
+C:\Program Files (x86)\Infolight\EEP2012\FLTools\bin\Release\FLCore.dll
+C:\Program Files (x86)\Infolight\EEP2012\FLTools\bin\Release\FLCore.pdb
+C:\Program Files (x86)\Infolight\EEP2012\FLTools\obj\Release\FLTools.csprojResolveAssemblyReference.cache
+C:\Program Files (x86)\Infolight\EEP2012\FLTools\obj\Release\FLTools.FLDataStateCollectionEditorDialog.resources
+C:\Program Files (x86)\Infolight\EEP2012\FLTools\obj\Release\FLTools.NotifyForm.resources
+C:\Program Files (x86)\Infolight\EEP2012\FLTools\obj\Release\FLTools.SubmitConfirm.resources
+C:\Program Files (x86)\Infolight\EEP2012\FLTools\obj\Release\FLTools.Base.SelectFNForm.resources
+C:\Program Files (x86)\Infolight\EEP2012\FLTools\obj\Release\FLTools.PauseForm.resources
+C:\Program Files (x86)\Infolight\EEP2012\FLTools\obj\Release\FLTools.PlusForm.resources
+C:\Program Files (x86)\Infolight\EEP2012\FLTools\obj\Release\FLTools.Comment.resources
+C:\Program Files (x86)\Infolight\EEP2012\FLTools\obj\Release\FLTools.FLWebWizardEditorDialog.resources
+C:\Program Files (x86)\Infolight\EEP2012\FLTools\obj\Release\FLTools.FLWizardEditorDialog.resources
+C:\Program Files (x86)\Infolight\EEP2012\FLTools\obj\Release\FLTools.KeysEditorForm.resources
+C:\Program Files (x86)\Infolight\EEP2012\FLTools\obj\Release\FLTools.UploadFilesForm.resources
+C:\Program Files (x86)\Infolight\EEP2012\FLTools\obj\Release\FLTools.csproj.GenerateResource.Cache
+C:\Program Files (x86)\Infolight\EEP2012\FLTools\obj\Release\FLTools.dll
+C:\Program Files (x86)\Infolight\EEP2012\FLTools\obj\Release\FLTools.pdb
+D:\Infolight\EEP2012\FLTools\bin\Release\FLTools.dll
+D:\Infolight\EEP2012\FLTools\bin\Release\FLTools.pdb
+D:\Infolight\EEP2012\FLTools\bin\Release\FLCore.dll
+D:\Infolight\EEP2012\FLTools\bin\Release\FLCore.pdb
+D:\Infolight\EEP2012\FLTools\obj\Release\FLTools.csprojResolveAssemblyReference.cache
+D:\Infolight\EEP2012\FLTools\obj\Release\FLTools.FLDataStateCollectionEditorDialog.resources
+D:\Infolight\EEP2012\FLTools\obj\Release\FLTools.NotifyForm.resources
+D:\Infolight\EEP2012\FLTools\obj\Release\FLTools.SubmitConfirm.resources
+D:\Infolight\EEP2012\FLTools\obj\Release\FLTools.Base.SelectFNForm.resources
+D:\Infolight\EEP2012\FLTools\obj\Release\FLTools.PauseForm.resources
+D:\Infolight\EEP2012\FLTools\obj\Release\FLTools.PlusForm.resources
+D:\Infolight\EEP2012\FLTools\obj\Release\FLTools.Comment.resources
+D:\Infolight\EEP2012\FLTools\obj\Release\FLTools.FLWebWizardEditorDialog.resources
+D:\Infolight\EEP2012\FLTools\obj\Release\FLTools.FLWizardEditorDialog.resources
+D:\Infolight\EEP2012\FLTools\obj\Release\FLTools.KeysEditorForm.resources
+D:\Infolight\EEP2012\FLTools\obj\Release\FLTools.UploadFilesForm.resources
+D:\Infolight\EEP2012\FLTools\obj\Release\FLTools.csproj.GenerateResource.Cache
+D:\Infolight\EEP2012\FLTools\obj\Release\FLTools.dll
+D:\Infolight\EEP2012\FLTools\obj\Release\FLTools.pdb

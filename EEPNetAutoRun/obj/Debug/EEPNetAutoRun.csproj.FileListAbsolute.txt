@@ -1,0 +1,37 @@
+D:\Program Files\Infolight\EEP2008\Solution1\EEPNetClient\EEPNetAutoRun.exe.config
+D:\Program Files\Infolight\EEP2008\Solution1\EEPNetClient\EEPNetAutoRun.exe
+D:\Program Files\Infolight\EEP2008\Solution1\EEPNetClient\EEPNetAutoRun.pdb
+D:\Program Files\Infolight\EEP2008\Solution1\EEPNetAutoRun\obj\Debug\ResolveAssemblyReference.cache
+D:\Program Files\Infolight\EEP2008\Solution1\EEPNetAutoRun\obj\Debug\EEPNetAutoRun.frmEEPNetAutoRun.resources
+D:\Program Files\Infolight\EEP2008\Solution1\EEPNetAutoRun\obj\Debug\EEPNetAutoRun.Properties.Resources.resources
+D:\Program Files\Infolight\EEP2008\Solution1\EEPNetAutoRun\obj\Debug\EEPNetAutoRun.csproj.GenerateResource.Cache
+D:\Program Files\Infolight\EEP2008\Solution1\EEPNetAutoRun\obj\Debug\EEPNetAutoRun.exe
+D:\Program Files\Infolight\EEP2008\Solution1\EEPNetAutoRun\obj\Debug\EEPNetAutoRun.pdb
+D:\Infolight\EEP2008\Solution1\EEPNetAutoRun\obj\Debug\ResolveAssemblyReference.cache
+D:\Infolight\EEP2008\Solution1\EEPNetAutoRun\obj\Debug\EEPNetAutoRun.frmEEPNetAutoRun.resources
+D:\Infolight\EEP2008\Solution1\EEPNetAutoRun\obj\Debug\EEPNetAutoRun.Properties.Resources.resources
+D:\Infolight\EEP2008\Solution1\EEPNetAutoRun\obj\Debug\EEPNetAutoRun.csproj.GenerateResource.Cache
+D:\Infolight\EEP2008\Solution1\EEPNetAutoRun\obj\Debug\EEPNetAutoRun.exe
+D:\Infolight\EEP2008\Solution1\EEPNetAutoRun\obj\Debug\EEPNetAutoRun.pdb
+D:\Infolight\EEP2008\Solution1\EEPNetClient\EEPNetAutoRun.exe.config
+D:\Infolight\EEP2008\Solution1\EEPNetClient\EEPNetAutoRun.exe
+D:\Infolight\EEP2008\Solution1\EEPNetClient\EEPNetAutoRun.pdb
+D:\Infolight\EEP2010\EEPNetClient\EEPNetAutoRun.exe.config
+D:\Infolight\EEP2010\EEPNetClient\EEPNetAutoRun.exe
+D:\Infolight\EEP2010\EEPNetClient\EEPNetAutoRun.pdb
+D:\Infolight\EEP2010\EEPNetAutoRun\obj\Debug\ResolveAssemblyReference.cache
+D:\Infolight\EEP2010\EEPNetAutoRun\obj\Debug\EEPNetAutoRun.frmEEPNetAutoRun.resources
+D:\Infolight\EEP2010\EEPNetAutoRun\obj\Debug\EEPNetAutoRun.Properties.Resources.resources
+D:\Infolight\EEP2010\EEPNetAutoRun\obj\Debug\GenerateResource.read.1.tlog
+D:\Infolight\EEP2010\EEPNetAutoRun\obj\Debug\GenerateResource.write.1.tlog
+D:\Infolight\EEP2010\EEPNetAutoRun\obj\Debug\EEPNetAutoRun.exe
+D:\Infolight\EEP2010\EEPNetAutoRun\obj\Debug\EEPNetAutoRun.pdb
+C:\Program Files\Infolight\EEP2012\EEPNetClient\EEPNetAutoRun.exe.config
+C:\Program Files\Infolight\EEP2012\EEPNetClient\EEPNetAutoRun.exe
+C:\Program Files\Infolight\EEP2012\EEPNetClient\EEPNetAutoRun.pdb
+C:\Program Files\Infolight\EEP2012\EEPNetAutoRun\obj\Debug\EEPNetAutoRun.csprojResolveAssemblyReference.cache
+C:\Program Files\Infolight\EEP2012\EEPNetAutoRun\obj\Debug\EEPNetAutoRun.frmEEPNetAutoRun.resources
+C:\Program Files\Infolight\EEP2012\EEPNetAutoRun\obj\Debug\EEPNetAutoRun.Properties.Resources.resources
+C:\Program Files\Infolight\EEP2012\EEPNetAutoRun\obj\Debug\EEPNetAutoRun.csproj.GenerateResource.Cache
+C:\Program Files\Infolight\EEP2012\EEPNetAutoRun\obj\Debug\EEPNetAutoRun.exe
+C:\Program Files\Infolight\EEP2012\EEPNetAutoRun\obj\Debug\EEPNetAutoRun.pdb

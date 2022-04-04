@@ -1,0 +1,8 @@
+<FlowDetails>
+  <FormName>JB_ADMIN.JBERP_SalesApplyMaster</FormName>
+  <FlowNavMode>Submit</FlowNavMode>
+  <NavMode>Insert</NavMode>
+  <Parameters>P1 = Apply</Parameters>
+  <FlowFileName>C:\Program Files (x86)\Infolight\EEP2012\EEPNetServer\Workflow\FL\SalesApply</FlowFileName>
+  <ImageWidth>1387</ImageWidth>
+</FlowDetails>

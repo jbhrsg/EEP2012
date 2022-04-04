@@ -1,0 +1,14 @@
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sDeviceUse\bin\Debug\sDeviceUse.dll
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sDeviceUse\bin\Debug\sDeviceUse.pdb
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sDeviceUse\obj\Debug\sDeviceUse.csproj.GenerateResource.Cache
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sDeviceUse\obj\Debug\sDeviceUse.dll
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sDeviceUse\obj\Debug\sDeviceUse.pdb
+C:\Program Files (x86)\Infolight\EEP2012\EEPNetServer\JBADMIN\sDeviceUse.dll
+C:\Program Files (x86)\Infolight\EEP2012\EEPNetServer\JBADMIN\sDeviceUse.pdb
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sDeviceUse\obj\Debug\sDeviceUse.Component.resources
+D:\Infolight\EEP2012\EEPNetServer\JBADMIN\sDeviceUse.dll
+D:\Infolight\EEP2012\EEPNetServer\JBADMIN\sDeviceUse.pdb
+D:\Infolight\EEP2012\JBADMIN\sDeviceUse\obj\Debug\sDeviceUse.Component.resources
+D:\Infolight\EEP2012\JBADMIN\sDeviceUse\obj\Debug\sDeviceUse.csproj.GenerateResource.Cache
+D:\Infolight\EEP2012\JBADMIN\sDeviceUse\obj\Debug\sDeviceUse.dll
+D:\Infolight\EEP2012\JBADMIN\sDeviceUse\obj\Debug\sDeviceUse.pdb

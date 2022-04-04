@@ -1,0 +1,10 @@
+C:\Program Files\Infolight\EEP2012\EEPLoaderService\obj\Debug\EEPLoaderService.csprojResolveAssemblyReference.cache
+C:\Program Files\Infolight\EEP2012\EEPLoaderService\obj\Debug\EEPLoaderService.FormMain.resources
+C:\Program Files\Infolight\EEP2012\EEPLoaderService\obj\Debug\WindowsService1.ProjectInstaller.resources
+C:\Program Files\Infolight\EEP2012\EEPLoaderService\obj\Debug\EEPLoaderService.Service1.resources
+C:\Program Files\Infolight\EEP2012\EEPLoaderService\obj\Debug\EEPLoaderService.csproj.GenerateResource.Cache
+C:\Program Files\Infolight\EEP2012\EEPNetServer\EEPServerLoader.exe.config
+C:\Program Files\Infolight\EEP2012\EEPNetServer\EEPServerLoader.exe
+C:\Program Files\Infolight\EEP2012\EEPNetServer\EEPServerLoader.pdb
+C:\Program Files\Infolight\EEP2012\EEPLoaderService\obj\Debug\EEPServerLoader.exe
+C:\Program Files\Infolight\EEP2012\EEPLoaderService\obj\Debug\EEPServerLoader.pdb

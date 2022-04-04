@@ -1,0 +1,9 @@
+C:\Program Files (x86)\Infolight\EEP2012\EEPNetServer\WENETGROUP\_CON_Normal_ContactPerson.dll
+C:\Program Files (x86)\Infolight\EEP2012\EEPNetServer\WENETGROUP\_CON_Normal_ContactPerson.pdb
+C:\Program Files (x86)\Infolight\EEP2012\EEPNetServer\WENETGROUP\vi-VN\_CON_Normal_ContactPerson.resources.dll
+C:\Program Files (x86)\Infolight\EEP2012\WENETGROUP\_CON_Normal_ContactPerson\obj\Debug\_CON_Normal_ContactPerson.Component.resources
+C:\Program Files (x86)\Infolight\EEP2012\WENETGROUP\_CON_Normal_ContactPerson\obj\Debug\_CON_Normal_ContactPerson.Component.vi-VN.resources
+C:\Program Files (x86)\Infolight\EEP2012\WENETGROUP\_CON_Normal_ContactPerson\obj\Debug\_CON_Normal_ContactPerson.csproj.GenerateResource.Cache
+C:\Program Files (x86)\Infolight\EEP2012\WENETGROUP\_CON_Normal_ContactPerson\obj\Debug\vi-VN\_CON_Normal_ContactPerson.resources.dll
+C:\Program Files (x86)\Infolight\EEP2012\WENETGROUP\_CON_Normal_ContactPerson\obj\Debug\_CON_Normal_ContactPerson.dll
+C:\Program Files (x86)\Infolight\EEP2012\WENETGROUP\_CON_Normal_ContactPerson\obj\Debug\_CON_Normal_ContactPerson.pdb

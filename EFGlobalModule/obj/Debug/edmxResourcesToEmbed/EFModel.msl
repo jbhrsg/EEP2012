@@ -1,0 +1,510 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2008/09/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="EFModelStoreContainer" CdmEntityContainer="Entities">
+    <EntitySetMapping Name="USERGROUPS">
+      <EntityTypeMapping TypeName="EFModel.USERGROUPS">
+        <MappingFragment StoreEntitySet="USERGROUPS">
+          <ScalarProperty Name="GROUPID" ColumnName="GROUPID" />
+          <ScalarProperty Name="USERID" ColumnName="USERID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="COLDEF">
+      <EntityTypeMapping TypeName="EFModel.COLDEF">
+        <MappingFragment StoreEntitySet="COLDEF">
+          <ScalarProperty Name="CAPTION8" ColumnName="CAPTION8" />
+          <ScalarProperty Name="CAPTION7" ColumnName="CAPTION7" />
+          <ScalarProperty Name="CAPTION6" ColumnName="CAPTION6" />
+          <ScalarProperty Name="CAPTION5" ColumnName="CAPTION5" />
+          <ScalarProperty Name="CAPTION4" ColumnName="CAPTION4" />
+          <ScalarProperty Name="CAPTION3" ColumnName="CAPTION3" />
+          <ScalarProperty Name="CAPTION2" ColumnName="CAPTION2" />
+          <ScalarProperty Name="CAPTION1" ColumnName="CAPTION1" />
+          <ScalarProperty Name="QUERYMODE" ColumnName="QUERYMODE" />
+          <ScalarProperty Name="CHECK_NULL" ColumnName="CHECK_NULL" />
+          <ScalarProperty Name="DEFAULT_VALUE" ColumnName="DEFAULT_VALUE" />
+          <ScalarProperty Name="DD_NAME" ColumnName="DD_NAME" />
+          <ScalarProperty Name="FIELD_SCALE" ColumnName="FIELD_SCALE" />
+          <ScalarProperty Name="EXT_MENUID" ColumnName="EXT_MENUID" />
+          <ScalarProperty Name="CANREPORT" ColumnName="CANREPORT" />
+          <ScalarProperty Name="NEEDBOX" ColumnName="NEEDBOX" />
+          <ScalarProperty Name="EDITMASK" ColumnName="EDITMASK" />
+          <ScalarProperty Name="CAPTION" ColumnName="CAPTION" />
+          <ScalarProperty Name="FIELD_LENGTH" ColumnName="FIELD_LENGTH" />
+          <ScalarProperty Name="IS_KEY" ColumnName="IS_KEY" />
+          <ScalarProperty Name="FIELD_TYPE" ColumnName="FIELD_TYPE" />
+          <ScalarProperty Name="SEQ" ColumnName="SEQ" />
+          <ScalarProperty Name="FIELD_NAME" ColumnName="FIELD_NAME" />
+          <ScalarProperty Name="TABLE_NAME" ColumnName="TABLE_NAME" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="MENUITEMTYPE">
+      <EntityTypeMapping TypeName="EFModel.MENUITEMTYPE">
+        <MappingFragment StoreEntitySet="MENUITEMTYPE">
+          <ScalarProperty Name="DBALIAS" ColumnName="DBALIAS" />
+          <ScalarProperty Name="ITEMNAME" ColumnName="ITEMNAME" />
+          <ScalarProperty Name="ITEMTYPE" ColumnName="ITEMTYPE" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="MENUTABLE">
+      <EntityTypeMapping TypeName="EFModel.MENUTABLE">
+        <MappingFragment StoreEntitySet="MENUTABLE">
+          <ScalarProperty Name="OWNER" ColumnName="OWNER" />
+          <ScalarProperty Name="IMAGEURL" ColumnName="IMAGEURL" />
+          <ScalarProperty Name="IMAGE" ColumnName="IMAGE" />
+          <ScalarProperty Name="CAPTION7" ColumnName="CAPTION7" />
+          <ScalarProperty Name="CAPTION6" ColumnName="CAPTION6" />
+          <ScalarProperty Name="CAPTION5" ColumnName="CAPTION5" />
+          <ScalarProperty Name="CAPTION4" ColumnName="CAPTION4" />
+          <ScalarProperty Name="CAPTION3" ColumnName="CAPTION3" />
+          <ScalarProperty Name="CAPTION2" ColumnName="CAPTION2" />
+          <ScalarProperty Name="CAPTION1" ColumnName="CAPTION1" />
+          <ScalarProperty Name="CAPTION0" ColumnName="CAPTION0" />
+          <ScalarProperty Name="CHECKOUTDATE" ColumnName="CHECKOUTDATE" />
+          <ScalarProperty Name="CHECKOUT" ColumnName="CHECKOUT" />
+          <ScalarProperty Name="VERSIONNO" ColumnName="VERSIONNO" />
+          <ScalarProperty Name="ISSERVER" ColumnName="ISSERVER" />
+          <ScalarProperty Name="PACKAGEDATE" ColumnName="PACKAGEDATE" />
+          <ScalarProperty Name="SEQ_NO" ColumnName="SEQ_NO" />
+          <ScalarProperty Name="ITEMTYPE" ColumnName="ITEMTYPE" />
+          <ScalarProperty Name="ISSHOWMODAL" ColumnName="ISSHOWMODAL" />
+          <ScalarProperty Name="FORM" ColumnName="FORM" />
+          <ScalarProperty Name="ITEMPARAM" ColumnName="ITEMPARAM" />
+          <ScalarProperty Name="MODULETYPE" ColumnName="MODULETYPE" />
+          <ScalarProperty Name="PACKAGE" ColumnName="PACKAGE" />
+          <ScalarProperty Name="PARENT" ColumnName="PARENT" />
+          <ScalarProperty Name="CAPTION" ColumnName="CAPTION" />
+          <ScalarProperty Name="MENUID" ColumnName="MENUID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="SYS_ROLES_AGENT">
+      <EntityTypeMapping TypeName="EFModel.SYS_ROLES_AGENT">
+        <MappingFragment StoreEntitySet="SYS_ROLES_AGENT">
+          <ScalarProperty Name="REMARK" ColumnName="REMARK" />
+          <ScalarProperty Name="PAR_AGENT" ColumnName="PAR_AGENT" />
+          <ScalarProperty Name="END_TIME" ColumnName="END_TIME" />
+          <ScalarProperty Name="END_DATE" ColumnName="END_DATE" />
+          <ScalarProperty Name="START_TIME" ColumnName="START_TIME" />
+          <ScalarProperty Name="START_DATE" ColumnName="START_DATE" />
+          <ScalarProperty Name="FLOW_DESC" ColumnName="FLOW_DESC" />
+          <ScalarProperty Name="AGENT" ColumnName="AGENT" />
+          <ScalarProperty Name="ROLE_ID" ColumnName="ROLE_ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="GROUPMENUS">
+      <EntityTypeMapping TypeName="EFModel.GROUPMENUS">
+        <MappingFragment StoreEntitySet="GROUPMENUS">
+          <ScalarProperty Name="MENUID" ColumnName="MENUID" />
+          <ScalarProperty Name="GROUPID" ColumnName="GROUPID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="USERMENUS">
+      <EntityTypeMapping TypeName="EFModel.USERMENUS">
+        <MappingFragment StoreEntitySet="USERMENUS">
+          <ScalarProperty Name="MENUID" ColumnName="MENUID" />
+          <ScalarProperty Name="USERID" ColumnName="USERID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="SYS_ORGKIND">
+      <EntityTypeMapping TypeName="EFModel.SYS_ORGKIND">
+        <MappingFragment StoreEntitySet="SYS_ORGKIND">
+          <ScalarProperty Name="KIND_DESC" ColumnName="KIND_DESC" />
+          <ScalarProperty Name="ORG_KIND" ColumnName="ORG_KIND" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="SYS_REFVAL">
+      <EntityTypeMapping TypeName="EFModel.SYS_REFVAL">
+        <MappingFragment StoreEntitySet="SYS_REFVAL">
+          <ScalarProperty Name="VALUE_MEMBER" ColumnName="VALUE_MEMBER" />
+          <ScalarProperty Name="SELECT_COMMAND" ColumnName="SELECT_COMMAND" />
+          <ScalarProperty Name="SELECT_ALIAS" ColumnName="SELECT_ALIAS" />
+          <ScalarProperty Name="DISPLAY_MEMBER" ColumnName="DISPLAY_MEMBER" />
+          <ScalarProperty Name="CAPTION" ColumnName="CAPTION" />
+          <ScalarProperty Name="TABLE_NAME" ColumnName="TABLE_NAME" />
+          <ScalarProperty Name="DESCRIPTION" ColumnName="DESCRIPTION" />
+          <ScalarProperty Name="REFVAL_NO" ColumnName="REFVAL_NO" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="GROUPMENUCONTROL">
+      <EntityTypeMapping TypeName="EFModel.GROUPMENUCONTROL">
+        <MappingFragment StoreEntitySet="GROUPMENUCONTROL">
+          <ScalarProperty Name="ALLOWPRINT" ColumnName="ALLOWPRINT" />
+          <ScalarProperty Name="ALLOWDELETE" ColumnName="ALLOWDELETE" />
+          <ScalarProperty Name="ALLOWUPDATE" ColumnName="ALLOWUPDATE" />
+          <ScalarProperty Name="ALLOWADD" ColumnName="ALLOWADD" />
+          <ScalarProperty Name="VISIBLE" ColumnName="VISIBLE" />
+          <ScalarProperty Name="ENABLED" ColumnName="ENABLED" />
+          <ScalarProperty Name="TYPE" ColumnName="TYPE" />
+          <ScalarProperty Name="CONTROLNAME" ColumnName="CONTROLNAME" />
+          <ScalarProperty Name="MENUID" ColumnName="MENUID" />
+          <ScalarProperty Name="GROUPID" ColumnName="GROUPID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="MENUTABLECONTROL">
+      <EntityTypeMapping TypeName="EFModel.MENUTABLECONTROL">
+        <MappingFragment StoreEntitySet="MENUTABLECONTROL">
+          <ScalarProperty Name="TYPE" ColumnName="TYPE" />
+          <ScalarProperty Name="DESCRIPTION" ColumnName="DESCRIPTION" />
+          <ScalarProperty Name="CONTROLNAME" ColumnName="CONTROLNAME" />
+          <ScalarProperty Name="MENUID" ColumnName="MENUID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="USERMENUCONTROL">
+      <EntityTypeMapping TypeName="EFModel.USERMENUCONTROL">
+        <MappingFragment StoreEntitySet="USERMENUCONTROL">
+          <ScalarProperty Name="ALLOWPRINT" ColumnName="ALLOWPRINT" />
+          <ScalarProperty Name="ALLOWDELETE" ColumnName="ALLOWDELETE" />
+          <ScalarProperty Name="ALLOWUPDATE" ColumnName="ALLOWUPDATE" />
+          <ScalarProperty Name="ALLOWADD" ColumnName="ALLOWADD" />
+          <ScalarProperty Name="VISIBLE" ColumnName="VISIBLE" />
+          <ScalarProperty Name="ENABLED" ColumnName="ENABLED" />
+          <ScalarProperty Name="TYPE" ColumnName="TYPE" />
+          <ScalarProperty Name="CONTROLNAME" ColumnName="CONTROLNAME" />
+          <ScalarProperty Name="MENUID" ColumnName="MENUID" />
+          <ScalarProperty Name="USERID" ColumnName="USERID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="GROUPS">
+      <EntityTypeMapping TypeName="EFModel.GROUPS">
+        <MappingFragment StoreEntitySet="GROUPS">
+          <ScalarProperty Name="ISROLE" ColumnName="ISROLE" />
+          <ScalarProperty Name="MSAD" ColumnName="MSAD" />
+          <ScalarProperty Name="DESCRIPTION" ColumnName="DESCRIPTION" />
+          <ScalarProperty Name="GROUPNAME" ColumnName="GROUPNAME" />
+          <ScalarProperty Name="GROUPID" ColumnName="GROUPID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="USERS">
+      <EntityTypeMapping TypeName="EFModel.USER">
+        <MappingFragment StoreEntitySet="USERS">
+          <ScalarProperty Name="MSAD" ColumnName="MSAD" />
+          <ScalarProperty Name="SIGNATURE" ColumnName="SIGNATURE" />
+          <ScalarProperty Name="LASTDATE" ColumnName="LASTDATE" />
+          <ScalarProperty Name="AUTOLOGIN" ColumnName="AUTOLOGIN" />
+          <ScalarProperty Name="LASTTIME" ColumnName="LASTTIME" />
+          <ScalarProperty Name="EMAIL" ColumnName="EMAIL" />
+          <ScalarProperty Name="DESCRIPTION" ColumnName="DESCRIPTION" />
+          <ScalarProperty Name="CREATER" ColumnName="CREATER" />
+          <ScalarProperty Name="CREATEDATE" ColumnName="CREATEDATE" />
+          <ScalarProperty Name="PWD" ColumnName="PWD" />
+          <ScalarProperty Name="AGENT" ColumnName="AGENT" />
+          <ScalarProperty Name="USERNAME" ColumnName="USERNAME" />
+          <ScalarProperty Name="USERID" ColumnName="USERID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="SYS_PERSONAL">
+      <EntityTypeMapping TypeName="EFModel.SYS_PERSONAL">
+        <MappingFragment StoreEntitySet="SYS_PERSONAL">
+          <ScalarProperty Name="CREATEDATE" ColumnName="CREATEDATE" />
+          <ScalarProperty Name="PROPCONTENT" ColumnName="PROPCONTENT" />
+          <ScalarProperty Name="REMARK" ColumnName="REMARK" />
+          <ScalarProperty Name="USERID" ColumnName="USERID" />
+          <ScalarProperty Name="COMPNAME" ColumnName="COMPNAME" />
+          <ScalarProperty Name="FORMNAME" ColumnName="FORMNAME" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="SYSEEPLOG">
+      <EntityTypeMapping TypeName="EFModel.SYSEEPLOG">
+        <MappingFragment StoreEntitySet="SYSEEPLOG">
+          <ScalarProperty Name="EXECUTIONTIME" ColumnName="EXECUTIONTIME" />
+          <ScalarProperty Name="COMPUTERNAME" ColumnName="COMPUTERNAME" />
+          <ScalarProperty Name="COMPUTERIP" ColumnName="COMPUTERIP" />
+          <ScalarProperty Name="DESCRIPTION" ColumnName="DESCRIPTION" />
+          <ScalarProperty Name="TITLE" ColumnName="TITLE" />
+          <ScalarProperty Name="LOGTYPE" ColumnName="LOGTYPE" />
+          <ScalarProperty Name="USERID" ColumnName="USERID" />
+          <ScalarProperty Name="DOMAINID" ColumnName="DOMAINID" />
+          <ScalarProperty Name="LOGDATETIME" ColumnName="LOGDATETIME" />
+          <ScalarProperty Name="LOGSTYLE" ColumnName="LOGSTYLE" />
+          <ScalarProperty Name="LOGID" ColumnName="LOGID" />
+          <ScalarProperty Name="CONNID" ColumnName="CONNID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="SYS_TODOHIS">
+      <EntityTypeMapping TypeName="EFModel.SYS_TODOHIS">
+        <MappingFragment StoreEntitySet="SYS_TODOHIS">
+          <ScalarProperty Name="CREATE_TIME" ColumnName="CREATE_TIME" />
+          <ScalarProperty Name="ATTACHMENTS" ColumnName="ATTACHMENTS" />
+          <ScalarProperty Name="FORM_PRESENT_CT" ColumnName="FORM_PRESENT_CT" />
+          <ScalarProperty Name="UPDATE_TIME" ColumnName="UPDATE_TIME" />
+          <ScalarProperty Name="UPDATE_DATE" ColumnName="UPDATE_DATE" />
+          <ScalarProperty Name="LEVEL_NO" ColumnName="LEVEL_NO" />
+          <ScalarProperty Name="SENDBACKSTEP" ColumnName="SENDBACKSTEP" />
+          <ScalarProperty Name="VDSNAME" ColumnName="VDSNAME" />
+          <ScalarProperty Name="VERSION" ColumnName="VERSION" />
+          <ScalarProperty Name="REMARK" ColumnName="REMARK" />
+          <ScalarProperty Name="FORM_PRESENTATION" ColumnName="FORM_PRESENTATION" />
+          <ScalarProperty Name="FORM_KEYS" ColumnName="FORM_KEYS" />
+          <ScalarProperty Name="FORM_TABLE" ColumnName="FORM_TABLE" />
+          <ScalarProperty Name="FLOWURGENT" ColumnName="FLOWURGENT" />
+          <ScalarProperty Name="FLOWIMPORTANT" ColumnName="FLOWIMPORTANT" />
+          <ScalarProperty Name="TIME_UNIT" ColumnName="TIME_UNIT" />
+          <ScalarProperty Name="EXP_TIME" ColumnName="EXP_TIME" />
+          <ScalarProperty Name="PROC_TIME" ColumnName="PROC_TIME" />
+          <ScalarProperty Name="STATUS" ColumnName="STATUS" />
+          <ScalarProperty Name="PARAMETERS" ColumnName="PARAMETERS" />
+          <ScalarProperty Name="FLNAVIGATOR_MODE" ColumnName="FLNAVIGATOR_MODE" />
+          <ScalarProperty Name="NAVIGATOR_MODE" ColumnName="NAVIGATOR_MODE" />
+          <ScalarProperty Name="S_USERNAME" ColumnName="S_USERNAME" />
+          <ScalarProperty Name="WEBFORM_NAME" ColumnName="WEBFORM_NAME" />
+          <ScalarProperty Name="FORM_NAME" ColumnName="FORM_NAME" />
+          <ScalarProperty Name="USERNAME" ColumnName="USERNAME" />
+          <ScalarProperty Name="USER_ID" ColumnName="USER_ID" />
+          <ScalarProperty Name="S_USER_ID" ColumnName="S_USER_ID" />
+          <ScalarProperty Name="S_STEP_DESC" ColumnName="S_STEP_DESC" />
+          <ScalarProperty Name="D_STEP_ID" ColumnName="D_STEP_ID" />
+          <ScalarProperty Name="S_STEP_ID" ColumnName="S_STEP_ID" />
+          <ScalarProperty Name="S_ROLE_ID" ColumnName="S_ROLE_ID" />
+          <ScalarProperty Name="ROLE_ID" ColumnName="ROLE_ID" />
+          <ScalarProperty Name="FLOW_DESC" ColumnName="FLOW_DESC" />
+          <ScalarProperty Name="FLOW_ID" ColumnName="FLOW_ID" />
+          <ScalarProperty Name="LISTID" ColumnName="LISTID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="SYS_TODOLIST">
+      <EntityTypeMapping TypeName="EFModel.SYS_TODOLIST">
+        <MappingFragment StoreEntitySet="SYS_TODOLIST">
+          <ScalarProperty Name="CREATE_TIME" ColumnName="CREATE_TIME" />
+          <ScalarProperty Name="ATTACHMENTS" ColumnName="ATTACHMENTS" />
+          <ScalarProperty Name="SENDTO_NAME" ColumnName="SENDTO_NAME" />
+          <ScalarProperty Name="MULTISTEPRETURN" ColumnName="MULTISTEPRETURN" />
+          <ScalarProperty Name="PLUSROLES" ColumnName="PLUSROLES" />
+          <ScalarProperty Name="PLUSAPPROVE" ColumnName="PLUSAPPROVE" />
+          <ScalarProperty Name="FLOWPATH" ColumnName="FLOWPATH" />
+          <ScalarProperty Name="UPDATE_TIME" ColumnName="UPDATE_TIME" />
+          <ScalarProperty Name="UPDATE_DATE" ColumnName="UPDATE_DATE" />
+          <ScalarProperty Name="WEBFORM_NAME" ColumnName="WEBFORM_NAME" />
+          <ScalarProperty Name="LEVEL_NO" ColumnName="LEVEL_NO" />
+          <ScalarProperty Name="SENDBACKSTEP" ColumnName="SENDBACKSTEP" />
+          <ScalarProperty Name="VDSNAME" ColumnName="VDSNAME" />
+          <ScalarProperty Name="EMAIL_STATUS" ColumnName="EMAIL_STATUS" />
+          <ScalarProperty Name="EMAIL_ADD" ColumnName="EMAIL_ADD" />
+          <ScalarProperty Name="VERSION" ColumnName="VERSION" />
+          <ScalarProperty Name="PROVIDER_NAME" ColumnName="PROVIDER_NAME" />
+          <ScalarProperty Name="REMARK" ColumnName="REMARK" />
+          <ScalarProperty Name="FORM_PRESENT_CT" ColumnName="FORM_PRESENT_CT" />
+          <ScalarProperty Name="FORM_PRESENTATION" ColumnName="FORM_PRESENTATION" />
+          <ScalarProperty Name="FORM_KEYS" ColumnName="FORM_KEYS" />
+          <ScalarProperty Name="FORM_TABLE" ColumnName="FORM_TABLE" />
+          <ScalarProperty Name="STATUS" ColumnName="STATUS" />
+          <ScalarProperty Name="FLOWURGENT" ColumnName="FLOWURGENT" />
+          <ScalarProperty Name="FLOWIMPORTANT" ColumnName="FLOWIMPORTANT" />
+          <ScalarProperty Name="SENDTO_ID" ColumnName="SENDTO_ID" />
+          <ScalarProperty Name="SENDTO_KIND" ColumnName="SENDTO_KIND" />
+          <ScalarProperty Name="PARAMETERS" ColumnName="PARAMETERS" />
+          <ScalarProperty Name="FLNAVIGATOR_MODE" ColumnName="FLNAVIGATOR_MODE" />
+          <ScalarProperty Name="NAVIGATOR_MODE" ColumnName="NAVIGATOR_MODE" />
+          <ScalarProperty Name="FORM_NAME" ColumnName="FORM_NAME" />
+          <ScalarProperty Name="USERNAME" ColumnName="USERNAME" />
+          <ScalarProperty Name="TIME_UNIT" ColumnName="TIME_UNIT" />
+          <ScalarProperty Name="URGENT_TIME" ColumnName="URGENT_TIME" />
+          <ScalarProperty Name="EXP_TIME" ColumnName="EXP_TIME" />
+          <ScalarProperty Name="D_STEP_DESC" ColumnName="D_STEP_DESC" />
+          <ScalarProperty Name="D_STEP_ID" ColumnName="D_STEP_ID" />
+          <ScalarProperty Name="S_STEP_DESC" ColumnName="S_STEP_DESC" />
+          <ScalarProperty Name="S_STEP_ID" ColumnName="S_STEP_ID" />
+          <ScalarProperty Name="S_USER_ID" ColumnName="S_USER_ID" />
+          <ScalarProperty Name="APPLICANT" ColumnName="APPLICANT" />
+          <ScalarProperty Name="FLOW_DESC" ColumnName="FLOW_DESC" />
+          <ScalarProperty Name="FLOW_ID" ColumnName="FLOW_ID" />
+          <ScalarProperty Name="LISTID" ColumnName="LISTID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="SYS_REPORT">
+      <EntityTypeMapping TypeName="EFModel.SYS_REPORT">
+        <MappingFragment StoreEntitySet="SYS_REPORT">
+          <ScalarProperty Name="DATASOURCE_PROVIDER" ColumnName="DATASOURCE_PROVIDER" />
+          <ScalarProperty Name="TEMPLATE_DESC" ColumnName="TEMPLATE_DESC" />
+          <ScalarProperty Name="REPORT_TYPE" ColumnName="REPORT_TYPE" />
+          <ScalarProperty Name="CLIENT_QUERY" ColumnName="CLIENT_QUERY" />
+          <ScalarProperty Name="DATASOURCES" ColumnName="DATASOURCES" />
+          <ScalarProperty Name="HEADER_DATASOURCEID" ColumnName="HEADER_DATASOURCEID" />
+          <ScalarProperty Name="HEADERREPEAT" ColumnName="HEADERREPEAT" />
+          <ScalarProperty Name="MAILSETTING" ColumnName="MAILSETTING" />
+          <ScalarProperty Name="IMAGES" ColumnName="IMAGES" />
+          <ScalarProperty Name="PARAMETERS" ColumnName="PARAMETERS" />
+          <ScalarProperty Name="FORMAT" ColumnName="FORMAT" />
+          <ScalarProperty Name="SETTING" ColumnName="SETTING" />
+          <ScalarProperty Name="FIELDITEMS" ColumnName="FIELDITEMS" />
+          <ScalarProperty Name="FIELDFONT" ColumnName="FIELDFONT" />
+          <ScalarProperty Name="FOOTERITEMS" ColumnName="FOOTERITEMS" />
+          <ScalarProperty Name="FOOTERFONT" ColumnName="FOOTERFONT" />
+          <ScalarProperty Name="HEADERITEMS" ColumnName="HEADERITEMS" />
+          <ScalarProperty Name="HEADERFONT" ColumnName="HEADERFONT" />
+          <ScalarProperty Name="OUTPUTMODE" ColumnName="OUTPUTMODE" />
+          <ScalarProperty Name="FILEPATH" ColumnName="FILEPATH" />
+          <ScalarProperty Name="DESCRIPTION" ColumnName="DESCRIPTION" />
+          <ScalarProperty Name="REPORTNAME" ColumnName="REPORTNAME" />
+          <ScalarProperty Name="FILENAME" ColumnName="FILENAME" />
+          <ScalarProperty Name="REPORTID" ColumnName="REPORTID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="SYS_SDGROUPS">
+      <EntityTypeMapping TypeName="EFModel.SYS_SDGROUPS">
+        <MappingFragment StoreEntitySet="SYS_SDGROUPS">
+          <ScalarProperty Name="GROUPNAME" ColumnName="GROUPNAME" />
+          <ScalarProperty Name="GROUPID" ColumnName="GROUPID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="SYS_SDQUEUE">
+      <EntityTypeMapping TypeName="EFModel.SYS_SDQUEUE">
+        <MappingFragment StoreEntitySet="SYS_SDQUEUE">
+          <ScalarProperty Name="PRINTSETTING" ColumnName="PRINTSETTING" />
+          <ScalarProperty Name="FILENAME" ColumnName="FILENAME" />
+          <ScalarProperty Name="DOCUMENT" ColumnName="DOCUMENT" />
+          <ScalarProperty Name="FINISHFLAG" ColumnName="FINISHFLAG" />
+          <ScalarProperty Name="FINISHTIME" ColumnName="FINISHTIME" />
+          <ScalarProperty Name="CREATETIME" ColumnName="CREATETIME" />
+          <ScalarProperty Name="PAGETYPE" ColumnName="PAGETYPE" />
+          <ScalarProperty Name="USERID" ColumnName="USERID" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="SYS_SDQUEUEPAGE">
+      <EntityTypeMapping TypeName="EFModel.SYS_SDQUEUEPAGE">
+        <MappingFragment StoreEntitySet="SYS_SDQUEUEPAGE">
+          <ScalarProperty Name="PAGENAME" ColumnName="PAGENAME" />
+          <ScalarProperty Name="PHOTO" ColumnName="PHOTO" />
+          <ScalarProperty Name="DOCUMENT" ColumnName="DOCUMENT" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="SYS_SDUSERS">
+      <EntityTypeMapping TypeName="EFModel.SYS_SDUSERS">
+        <MappingFragment StoreEntitySet="SYS_SDUSERS">
+          <ScalarProperty Name="SYSTYPE" ColumnName="SYSTYPE" />
+          <ScalarProperty Name="EMAIL" ColumnName="EMAIL" />
+          <ScalarProperty Name="LASTDATE" ColumnName="LASTDATE" />
+          <ScalarProperty Name="GROUPID" ColumnName="GROUPID" />
+          <ScalarProperty Name="PASSWORD" ColumnName="PASSWORD" />
+          <ScalarProperty Name="USERNAME" ColumnName="USERNAME" />
+          <ScalarProperty Name="USERID" ColumnName="USERID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="SYS_WEBPAGES_LOG">
+      <EntityTypeMapping TypeName="EFModel.SYS_WEBPAGES_LOG">
+        <MappingFragment StoreEntitySet="SYS_WEBPAGES_LOG">
+          <ScalarProperty Name="CHECKINDESCRIPTION" ColumnName="CHECKINDESCRIPTION" />
+          <ScalarProperty Name="CHECKINUSER" ColumnName="CHECKINUSER" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="CHECKINDATE" ColumnName="CHECKINDATE" />
+          <ScalarProperty Name="SERVERDLL" ColumnName="SERVERDLL" />
+          <ScalarProperty Name="SOLUTIONID" ColumnName="SOLUTIONID" />
+          <ScalarProperty Name="USERID" ColumnName="USERID" />
+          <ScalarProperty Name="CONTENT" ColumnName="CONTENT" />
+          <ScalarProperty Name="DESCRIPTION" ColumnName="DESCRIPTION" />
+          <ScalarProperty Name="PAGETYPE" ColumnName="PAGETYPE" />
+          <ScalarProperty Name="PAGENAME" ColumnName="PAGENAME" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="SYS_WEBRUNTIME">
+      <EntityTypeMapping TypeName="EFModel.SYS_WEBRUNTIME">
+        <MappingFragment StoreEntitySet="SYS_WEBRUNTIME">
+          <ScalarProperty Name="SOLUTIONID" ColumnName="SOLUTIONID" />
+          <ScalarProperty Name="USERID" ColumnName="USERID" />
+          <ScalarProperty Name="CONTENT" ColumnName="CONTENT" />
+          <ScalarProperty Name="PAGETYPE" ColumnName="PAGETYPE" />
+          <ScalarProperty Name="PAGENAME" ColumnName="PAGENAME" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="SYS_SDUSERS_LOG">
+      <EntityTypeMapping TypeName="EFModel.SYS_SDUSERS_LOG">
+        <MappingFragment StoreEntitySet="SYS_SDUSERS_LOG">
+          <ScalarProperty Name="LOGOUTTIME" ColumnName="LOGOUTTIME" />
+          <ScalarProperty Name="LOGINTIME" ColumnName="LOGINTIME" />
+          <ScalarProperty Name="IPADDRESS" ColumnName="IPADDRESS" />
+          <ScalarProperty Name="USERID" ColumnName="USERID" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="SYS_WEBPAGES">
+      <EntityTypeMapping TypeName="EFModel.SYS_WEBPAGES">
+        <MappingFragment StoreEntitySet="SYS_WEBPAGES">
+          <ScalarProperty Name="CHECKOUTUSER" ColumnName="CHECKOUTUSER" />
+          <ScalarProperty Name="CHECKOUTDATE" ColumnName="CHECKOUTDATE" />
+          <ScalarProperty Name="CHECKOUT" ColumnName="CHECKOUT" />
+          <ScalarProperty Name="SERVERDLL" ColumnName="SERVERDLL" />
+          <ScalarProperty Name="SOLUTIONID" ColumnName="SOLUTIONID" />
+          <ScalarProperty Name="USERID" ColumnName="USERID" />
+          <ScalarProperty Name="CONTENT" ColumnName="CONTENT" />
+          <ScalarProperty Name="DESCRIPTION" ColumnName="DESCRIPTION" />
+          <ScalarProperty Name="PAGETYPE" ColumnName="PAGETYPE" />
+          <ScalarProperty Name="PAGENAME" ColumnName="PAGENAME" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="SYS_SDALIAS">
+      <EntityTypeMapping TypeName="EFModel.SYS_SDALIAS">
+        <MappingFragment StoreEntitySet="SYS_SDALIAS">
+          <ScalarProperty Name="DBTYPE" ColumnName="DBTYPE" />
+          <ScalarProperty Name="SPLIT" ColumnName="SPLIT" />
+          <ScalarProperty Name="DBNAME" ColumnName="DBNAME" />
+          <ScalarProperty Name="SYSTEMALIAS" ColumnName="SYSTEMALIAS" />
+          <ScalarProperty Name="ALIASNAME" ColumnName="ALIASNAME" />
+          <ScalarProperty Name="USERID" ColumnName="USERID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="SYS_SDSOLUTIONS">
+      <EntityTypeMapping TypeName="EFModel.SYS_SDSOLUTIONS">
+        <MappingFragment StoreEntitySet="SYS_SDSOLUTIONS">
+          <ScalarProperty Name="COMPANYIMAGE" ColumnName="COMPANYIMAGE" />
+          <ScalarProperty Name="PAGESAVEOPTION" ColumnName="PAGESAVEOPTION" />
+          <ScalarProperty Name="COMPANY" ColumnName="COMPANY" />
+          <ScalarProperty Name="THEME" ColumnName="THEME" />
+          <ScalarProperty Name="BGENDCOLOR" ColumnName="BGENDCOLOR" />
+          <ScalarProperty Name="BGSTARTCOLOR" ColumnName="BGSTARTCOLOR" />
+          <ScalarProperty Name="LOGONIMAGE" ColumnName="LOGONIMAGE" />
+          <ScalarProperty Name="ALIASOPTIONS" ColumnName="ALIASOPTIONS" />
+          <ScalarProperty Name="SETTING" ColumnName="SETTING" />
+          <ScalarProperty Name="MOUDLEXMLTEXT" ColumnName="MOUDLEXMLTEXT" />
+          <ScalarProperty Name="SOLUTIONNAME" ColumnName="SOLUTIONNAME" />
+          <ScalarProperty Name="SOLUTIONID" ColumnName="SOLUTIONID" />
+          <ScalarProperty Name="USERID" ColumnName="USERID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="SYS_LANGUAGE">
+      <EntityTypeMapping TypeName="EFModel.SYS_LANGUAGE">
+        <MappingFragment StoreEntitySet="SYS_LANGUAGE">
+          <ScalarProperty Name="LAN2" ColumnName="LAN2" />
+          <ScalarProperty Name="LAN1" ColumnName="LAN1" />
+          <ScalarProperty Name="KO" ColumnName="KO" />
+          <ScalarProperty Name="JA" ColumnName="JA" />
+          <ScalarProperty Name="HK" ColumnName="HK" />
+          <ScalarProperty Name="CHS" ColumnName="CHS" />
+          <ScalarProperty Name="CHT" ColumnName="CHT" />
+          <ScalarProperty Name="EN" ColumnName="EN" />
+          <ScalarProperty Name="KEYS" ColumnName="KEYS" />
+          <ScalarProperty Name="IDENTIFICATION" ColumnName="IDENTIFICATION" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

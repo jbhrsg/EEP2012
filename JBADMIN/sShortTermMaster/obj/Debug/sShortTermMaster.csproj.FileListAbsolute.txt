@@ -1,0 +1,14 @@
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sShortTermMaster\bin\Debug\sShortTermMaster.dll
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sShortTermMaster\bin\Debug\sShortTermMaster.pdb
+C:\Program Files (x86)\Infolight\EEP2012\EEPNetServer\JBADMIN\sShortTermMaster.dll
+C:\Program Files (x86)\Infolight\EEP2012\EEPNetServer\JBADMIN\sShortTermMaster.pdb
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sShortTermMaster\obj\Debug\sShortTermMaster.Component.resources
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sShortTermMaster\obj\Debug\sShortTermMaster.csproj.GenerateResource.Cache
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sShortTermMaster\obj\Debug\sShortTermMaster.dll
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sShortTermMaster\obj\Debug\sShortTermMaster.pdb
+D:\Infolight\EEP2012\EEPNetServer\JBADMIN\sShortTermMaster.dll
+D:\Infolight\EEP2012\EEPNetServer\JBADMIN\sShortTermMaster.pdb
+D:\Infolight\EEP2012\JBADMIN\sShortTermMaster\obj\Debug\sShortTermMaster.Component.resources
+D:\Infolight\EEP2012\JBADMIN\sShortTermMaster\obj\Debug\sShortTermMaster.csproj.GenerateResource.Cache
+D:\Infolight\EEP2012\JBADMIN\sShortTermMaster\obj\Debug\sShortTermMaster.dll
+D:\Infolight\EEP2012\JBADMIN\sShortTermMaster\obj\Debug\sShortTermMaster.pdb

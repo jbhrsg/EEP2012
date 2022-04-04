@@ -1,0 +1,8 @@
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sJBRecruit_Customer\bin\Debug\sJBRecruit_Customer.dll
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sJBRecruit_Customer\bin\Debug\sJBRecruit_Customer.pdb
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sJBRecruit_Customer\obj\Debug\sJBRecruit_Customer.csproj.GenerateResource.Cache
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sJBRecruit_Customer\obj\Debug\sJBRecruit_Customer.dll
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sJBRecruit_Customer\obj\Debug\sJBRecruit_Customer.pdb
+C:\Program Files (x86)\Infolight\EEP2012\EEPNetServer\JBADMIN\sJBRecruit_Customer.dll
+C:\Program Files (x86)\Infolight\EEP2012\EEPNetServer\JBADMIN\sJBRecruit_Customer.pdb
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sJBRecruit_Customer\obj\Debug\sJBRecruit_Customer.Component.resources

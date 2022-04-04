@@ -1,0 +1,16 @@
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sRequisitionRepo\bin\Debug\sRequisitionRepo.dll
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sRequisitionRepo\bin\Debug\sRequisitionRepo.pdb
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sRequisitionRepo\obj\Debug\sRequisitionRepo.csproj.GenerateResource.Cache
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sRequisitionRepo\obj\Debug\sRequisitionRepo.dll
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sRequisitionRepo\obj\Debug\sRequisitionRepo.pdb
+C:\Program Files (x86)\Infolight\EEP2012\EEPNetServer\JBADMIN\sRequisitionRepo.dll
+C:\Program Files (x86)\Infolight\EEP2012\EEPNetServer\JBADMIN\sRequisitionRepo.pdb
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sRequisitionRepo\obj\Debug\sRequisitionRepo.Component.resources
+D:\Infolight\EEP2012\EEPNetServer\JBADMIN\sRequisitionRepo.dll
+D:\Infolight\EEP2012\EEPNetServer\JBADMIN\sRequisitionRepo.pdb
+D:\Infolight\EEP2012\JBADMIN\sRequisitionRepo\obj\Debug\sRequisitionRepo.Component.resources
+D:\Infolight\EEP2012\JBADMIN\sRequisitionRepo\obj\Debug\sRequisitionRepo.csproj.GenerateResource.Cache
+D:\Infolight\EEP2012\JBADMIN\sRequisitionRepo\obj\Debug\sRequisitionRepo.dll
+D:\Infolight\EEP2012\JBADMIN\sRequisitionRepo\obj\Debug\sRequisitionRepo.pdb
+D:\Infolight\EEP2012\JBADMIN\sRequisitionRepo\obj\Debug\sRequisitionRepo.csprojResolveAssemblyReference.cache
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sRequisitionRepo\obj\Debug\sRequisitionRepo.csprojResolveAssemblyReference.cache

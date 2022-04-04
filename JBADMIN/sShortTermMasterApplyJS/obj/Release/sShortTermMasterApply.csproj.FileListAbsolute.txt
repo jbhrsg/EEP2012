@@ -1,0 +1,9 @@
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sShortTermMasterApply\bin\Release\sShortTermMasterApply.dll
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sShortTermMasterApply\bin\Release\sShortTermMasterApply.pdb
+C:\Program Files (x86)\Infolight\EEP2012\EEPNetServer\JBADMIN\sShortTermMasterApply.dll
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sShortTermMasterApply\obj\Release\sShortTermMasterApply.csprojResolveAssemblyReference.cache
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sShortTermMasterApply\obj\Release\sShortTermMasterApply.Component.resources
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sShortTermMasterApply\obj\Release\sShortTermMasterApply.csproj.GenerateResource.Cache
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sShortTermMasterApply\obj\Release\sShortTermMasterApply.dll
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sShortTermMasterApply\obj\Release\sShortTermMasterApply.pdb
+C:\Program Files (x86)\Infolight\EEP2012\EEPNetServer\JBADMIN\sShortTermMasterApply.pdb

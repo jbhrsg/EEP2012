@@ -1,0 +1,8 @@
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sERP_Report_OverdueUncollectedInvoiceDetails\bin\Debug\sERP_Report_OverdueUncollectedInvoiceDetails.dll
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sERP_Report_OverdueUncollectedInvoiceDetails\bin\Debug\sERP_Report_OverdueUncollectedInvoiceDetails.pdb
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sERP_Report_OverdueUncollectedInvoiceDetails\obj\Debug\sERP_Report_OverdueUncollectedInvoiceDetails.csproj.GenerateResource.Cache
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sERP_Report_OverdueUncollectedInvoiceDetails\obj\Debug\sERP_Report_OverdueUncollectedInvoiceDetails.dll
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sERP_Report_OverdueUncollectedInvoiceDetails\obj\Debug\sERP_Report_OverdueUncollectedInvoiceDetails.pdb
+C:\Program Files (x86)\Infolight\EEP2012\EEPNetServer\JBADMIN\sERP_Report_OverdueUncollectedInvoiceDetails.dll
+C:\Program Files (x86)\Infolight\EEP2012\EEPNetServer\JBADMIN\sERP_Report_OverdueUncollectedInvoiceDetails.pdb
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sERP_Report_OverdueUncollectedInvoiceDetails\obj\Debug\sERP_Report_OverdueUncollectedInvoiceDetails.Component.resources

@@ -1,0 +1,8 @@
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sERP_Code_SalesTypeOfSales\bin\Debug\sERP_Code_SalesTypeOfSales.dll
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sERP_Code_SalesTypeOfSales\bin\Debug\sERP_Code_SalesTypeOfSales.pdb
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sERP_Code_SalesTypeOfSales\obj\Debug\sERP_Code_SalesTypeOfSales.csproj.GenerateResource.Cache
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sERP_Code_SalesTypeOfSales\obj\Debug\sERP_Code_SalesTypeOfSales.dll
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sERP_Code_SalesTypeOfSales\obj\Debug\sERP_Code_SalesTypeOfSales.pdb
+C:\Program Files (x86)\Infolight\EEP2012\EEPNetServer\JBADMIN\sERP_Code_SalesTypeOfSales.dll
+C:\Program Files (x86)\Infolight\EEP2012\EEPNetServer\JBADMIN\sERP_Code_SalesTypeOfSales.pdb
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sERP_Code_SalesTypeOfSales\obj\Debug\sERP_Code_SalesTypeOfSales.Component.resources

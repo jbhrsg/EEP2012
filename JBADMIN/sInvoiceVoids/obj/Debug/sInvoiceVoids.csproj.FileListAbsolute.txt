@@ -1,0 +1,9 @@
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sInvoiceVoids\bin\Debug\sInvoiceVoids.dll
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sInvoiceVoids\bin\Debug\sInvoiceVoids.pdb
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sInvoiceVoids\obj\Debug\sInvoiceVoids.csprojResolveAssemblyReference.cache
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sInvoiceVoids\obj\Debug\sInvoiceVoids.csproj.GenerateResource.Cache
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sInvoiceVoids\obj\Debug\sInvoiceVoids.dll
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sInvoiceVoids\obj\Debug\sInvoiceVoids.pdb
+C:\Program Files (x86)\Infolight\EEP2012\EEPNetServer\JBADMIN\sInvoiceVoids.dll
+C:\Program Files (x86)\Infolight\EEP2012\EEPNetServer\JBADMIN\sInvoiceVoids.pdb
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sInvoiceVoids\obj\Debug\sInvoiceVoids.Component.resources

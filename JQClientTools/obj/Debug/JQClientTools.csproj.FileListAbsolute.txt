@@ -1,0 +1,210 @@
+C:\Program Files\Infolight\EEP2012Dev\JQClientTools\bin\Debug\JQClientTools.dll
+C:\Program Files\Infolight\EEP2012Dev\JQClientTools\bin\Debug\JQClientTools.pdb
+C:\Program Files\Infolight\EEP2012Dev\JQClientTools\bin\Debug\EFClientTools.dll
+C:\Program Files\Infolight\EEP2012Dev\JQClientTools\bin\Debug\EFBase.dll
+C:\Program Files\Infolight\EEP2012Dev\JQClientTools\bin\Debug\EFClientTools.pdb
+C:\Program Files\Infolight\EEP2012Dev\JQClientTools\bin\Debug\EFBase.pdb
+C:\Program Files\Infolight\EEP2012Dev\JQClientTools\obj\Debug\JQClientTools.csprojResolveAssemblyReference.cache
+C:\Program Files\Infolight\EEP2012Dev\JQClientTools\obj\Debug\JQClientTools.Editor.ComboBoxEditorDialog.resources
+C:\Program Files\Infolight\EEP2012Dev\JQClientTools\obj\Debug\JQClientTools.Editor.ComboGridEditorDialog.resources
+C:\Program Files\Infolight\EEP2012Dev\JQClientTools\obj\Debug\JQClientTools.Editor.RefvalEditorDialog.resources
+C:\Program Files\Infolight\EEP2012Dev\JQClientTools\obj\Debug\JQClientTools.Editor.RemoteNameEditorDialog.resources
+C:\Program Files\Infolight\EEP2012Dev\JQClientTools\obj\Debug\JQClientTools.csproj.GenerateResource.Cache
+C:\Program Files\Infolight\EEP2012Dev\JQClientTools\obj\Debug\JQClientTools.dll
+C:\Program Files\Infolight\EEP2012Dev\JQClientTools\obj\Debug\JQClientTools.pdb
+C:\Program Files\Infolight\EEP2012Dev\JQClientTools\obj\Debug\JQClientTools.JQSecurityForm.resources
+C:\Program Files\Infolight\EEP2012Dev\JQClientTools\obj\Debug\JQClientTools.JQSecurityAddForm.resources
+C:\Program Files\Infolight\EEP2012WF\JQClientTools\bin\Debug\JQClientTools.dll
+C:\Program Files\Infolight\EEP2012WF\JQClientTools\bin\Debug\JQClientTools.pdb
+C:\Program Files\Infolight\EEP2012WF\JQClientTools\bin\Debug\EFBase.dll
+C:\Program Files\Infolight\EEP2012WF\JQClientTools\bin\Debug\EFClientTools.dll
+C:\Program Files\Infolight\EEP2012WF\JQClientTools\bin\Debug\EFBase.pdb
+C:\Program Files\Infolight\EEP2012WF\JQClientTools\bin\Debug\EFClientTools.pdb
+C:\Program Files\Infolight\EEP2012WF\JQClientTools\obj\Debug\JQClientTools.csprojResolveAssemblyReference.cache
+C:\Program Files\Infolight\EEP2012WF\JQClientTools\obj\Debug\JQClientTools.Editor.CheckBoxEditorDialog.resources
+C:\Program Files\Infolight\EEP2012WF\JQClientTools\obj\Debug\JQClientTools.Editor.ComboBoxEditorDialog.resources
+C:\Program Files\Infolight\EEP2012WF\JQClientTools\obj\Debug\JQClientTools.Editor.ComboGridEditorDialog.resources
+C:\Program Files\Infolight\EEP2012WF\JQClientTools\obj\Debug\JQClientTools.Editor.FileUploadEditorDialog.resources
+C:\Program Files\Infolight\EEP2012WF\JQClientTools\obj\Debug\JQClientTools.SelectLanguageForm.resources
+C:\Program Files\Infolight\EEP2012WF\JQClientTools\obj\Debug\JQClientTools.JQSecurityForm.resources
+C:\Program Files\Infolight\EEP2012WF\JQClientTools\obj\Debug\JQClientTools.JQSecurityAddForm.resources
+C:\Program Files\Infolight\EEP2012WF\JQClientTools\obj\Debug\JQClientTools.Editor.RefvalEditorDialog.resources
+C:\Program Files\Infolight\EEP2012WF\JQClientTools\obj\Debug\JQClientTools.Editor.RemoteNameEditorDialog.resources
+C:\Program Files\Infolight\EEP2012WF\JQClientTools\obj\Debug\JQClientTools.MultiLanguageEditorDialog.resources
+C:\Program Files\Infolight\EEP2012WF\JQClientTools\obj\Debug\JQClientTools.csproj.GenerateResource.Cache
+C:\Program Files\Infolight\EEP2012WF\JQClientTools\obj\Debug\JQClientTools.dll
+C:\Program Files\Infolight\EEP2012WF\JQClientTools\obj\Debug\JQClientTools.pdb
+C:\Program Files\Infolight\EEP2012WF\JQClientTools\obj\Debug\JQClientTools.Editor.AutoCompleteEditorDialog.resources
+C:\Program Files\Infolight\EEP2012WF\JQClientTools\obj\Debug\JQClientTools.Editor.DateBoxEditorDialog.resources
+C:\Program Files\Infolight\EEP2012WF\JQClientTools\obj\Debug\JQClientTools.Editor.TimeSpinnerEditorDialog.resources
+C:\Program Files\Infolight\EEP2012WF\JQClientTools\obj\Debug\JQClientTools.Editor.QrcodeEditorDialog.resources
+C:\Program Files (x86)\Infolight\EEP2012WF\JQClientTools\bin\Debug\JQClientTools.dll
+C:\Program Files (x86)\Infolight\EEP2012WF\JQClientTools\bin\Debug\JQClientTools.pdb
+C:\Program Files (x86)\Infolight\EEP2012WF\JQClientTools\bin\Debug\EFBase.dll
+C:\Program Files (x86)\Infolight\EEP2012WF\JQClientTools\bin\Debug\EFClientTools.dll
+C:\Program Files (x86)\Infolight\EEP2012WF\JQClientTools\bin\Debug\EFBase.pdb
+C:\Program Files (x86)\Infolight\EEP2012WF\JQClientTools\bin\Debug\EFClientTools.pdb
+C:\Program Files (x86)\Infolight\EEP2012WF\JQClientTools\obj\Debug\JQClientTools.csprojResolveAssemblyReference.cache
+C:\Program Files (x86)\Infolight\EEP2012WF\JQClientTools\obj\Debug\JQClientTools.Editor.AutoCompleteEditorDialog.resources
+C:\Program Files (x86)\Infolight\EEP2012WF\JQClientTools\obj\Debug\JQClientTools.Editor.CheckBoxEditorDialog.resources
+C:\Program Files (x86)\Infolight\EEP2012WF\JQClientTools\obj\Debug\JQClientTools.Editor.ComboBoxEditorDialog.resources
+C:\Program Files (x86)\Infolight\EEP2012WF\JQClientTools\obj\Debug\JQClientTools.Editor.ComboGridEditorDialog.resources
+C:\Program Files (x86)\Infolight\EEP2012WF\JQClientTools\obj\Debug\JQClientTools.Editor.DateBoxEditorDialog.resources
+C:\Program Files (x86)\Infolight\EEP2012WF\JQClientTools\obj\Debug\JQClientTools.Editor.FileUploadEditorDialog.resources
+C:\Program Files (x86)\Infolight\EEP2012WF\JQClientTools\obj\Debug\JQClientTools.MultiLanguageTableNameDialog.resources
+C:\Program Files (x86)\Infolight\EEP2012WF\JQClientTools\obj\Debug\JQClientTools.Editor.QrcodeEditorDialog.resources
+C:\Program Files (x86)\Infolight\EEP2012WF\JQClientTools\obj\Debug\JQClientTools.SelectLanguageForm.resources
+C:\Program Files (x86)\Infolight\EEP2012WF\JQClientTools\obj\Debug\JQClientTools.JQSecurityForm.resources
+C:\Program Files (x86)\Infolight\EEP2012WF\JQClientTools\obj\Debug\JQClientTools.JQSecurityAddForm.resources
+C:\Program Files (x86)\Infolight\EEP2012WF\JQClientTools\obj\Debug\JQClientTools.Editor.RefvalEditorDialog.resources
+C:\Program Files (x86)\Infolight\EEP2012WF\JQClientTools\obj\Debug\JQClientTools.Editor.RemoteNameEditorDialog.resources
+C:\Program Files (x86)\Infolight\EEP2012WF\JQClientTools\obj\Debug\JQClientTools.MultiLanguageEditorDialog.resources
+C:\Program Files (x86)\Infolight\EEP2012WF\JQClientTools\obj\Debug\JQClientTools.Editor.TimeSpinnerEditorDialog.resources
+C:\Program Files (x86)\Infolight\EEP2012WF\JQClientTools\obj\Debug\JQClientTools.csproj.GenerateResource.Cache
+C:\Program Files (x86)\Infolight\EEP2012WF\JQClientTools\obj\Debug\JQClientTools.dll
+C:\Program Files (x86)\Infolight\EEP2012WF\JQClientTools\obj\Debug\JQClientTools.pdb
+D:\版本\Version\安裝源文件\EEP2012WF(V5.0.0.020140924 SP5)\JQClientTools\bin\Debug\JQClientTools.dll
+D:\版本\Version\安裝源文件\EEP2012WF(V5.0.0.020140924 SP5)\JQClientTools\bin\Debug\JQClientTools.pdb
+D:\版本\Version\安裝源文件\EEP2012WF(V5.0.0.020140924 SP5)\JQClientTools\bin\Debug\EFBase.dll
+D:\版本\Version\安裝源文件\EEP2012WF(V5.0.0.020140924 SP5)\JQClientTools\bin\Debug\EFClientTools.dll
+D:\版本\Version\安裝源文件\EEP2012WF(V5.0.0.020140924 SP5)\JQClientTools\bin\Debug\EFBase.pdb
+D:\版本\Version\安裝源文件\EEP2012WF(V5.0.0.020140924 SP5)\JQClientTools\bin\Debug\EFClientTools.pdb
+D:\版本\Version\安裝源文件\EEP2012WF(V5.0.0.020140924 SP5)\JQClientTools\obj\Debug\JQClientTools.csprojResolveAssemblyReference.cache
+D:\版本\Version\安裝源文件\EEP2012WF(V5.0.0.020140924 SP5)\JQClientTools\obj\Debug\JQClientTools.Editor.AutoCompleteEditorDialog.resources
+D:\版本\Version\安裝源文件\EEP2012WF(V5.0.0.020140924 SP5)\JQClientTools\obj\Debug\JQClientTools.Editor.CheckBoxEditorDialog.resources
+D:\版本\Version\安裝源文件\EEP2012WF(V5.0.0.020140924 SP5)\JQClientTools\obj\Debug\JQClientTools.Editor.ComboBoxEditorDialog.resources
+D:\版本\Version\安裝源文件\EEP2012WF(V5.0.0.020140924 SP5)\JQClientTools\obj\Debug\JQClientTools.Editor.ComboGridEditorDialog.resources
+D:\版本\Version\安裝源文件\EEP2012WF(V5.0.0.020140924 SP5)\JQClientTools\obj\Debug\JQClientTools.Editor.DateBoxEditorDialog.resources
+D:\版本\Version\安裝源文件\EEP2012WF(V5.0.0.020140924 SP5)\JQClientTools\obj\Debug\JQClientTools.Editor.FileUploadEditorDialog.resources
+D:\版本\Version\安裝源文件\EEP2012WF(V5.0.0.020140924 SP5)\JQClientTools\obj\Debug\JQClientTools.JQMetroEditForm.resources
+D:\版本\Version\安裝源文件\EEP2012WF(V5.0.0.020140924 SP5)\JQClientTools\obj\Debug\JQClientTools.MultiLanguageTableNameDialog.resources
+D:\版本\Version\安裝源文件\EEP2012WF(V5.0.0.020140924 SP5)\JQClientTools\obj\Debug\JQClientTools.Editor.NumberBoxEditorDialog.resources
+D:\版本\Version\安裝源文件\EEP2012WF(V5.0.0.020140924 SP5)\JQClientTools\obj\Debug\JQClientTools.Editor.QrcodeEditorDialog.resources
+D:\版本\Version\安裝源文件\EEP2012WF(V5.0.0.020140924 SP5)\JQClientTools\obj\Debug\JQClientTools.SelectLanguageForm.resources
+D:\版本\Version\安裝源文件\EEP2012WF(V5.0.0.020140924 SP5)\JQClientTools\obj\Debug\JQClientTools.JQSecurityForm.resources
+D:\版本\Version\安裝源文件\EEP2012WF(V5.0.0.020140924 SP5)\JQClientTools\obj\Debug\JQClientTools.JQSecurityAddForm.resources
+D:\版本\Version\安裝源文件\EEP2012WF(V5.0.0.020140924 SP5)\JQClientTools\obj\Debug\JQClientTools.Editor.RefvalEditorDialog.resources
+D:\版本\Version\安裝源文件\EEP2012WF(V5.0.0.020140924 SP5)\JQClientTools\obj\Debug\JQClientTools.Editor.RemoteNameEditorDialog.resources
+D:\版本\Version\安裝源文件\EEP2012WF(V5.0.0.020140924 SP5)\JQClientTools\obj\Debug\JQClientTools.MultiLanguageEditorDialog.resources
+D:\版本\Version\安裝源文件\EEP2012WF(V5.0.0.020140924 SP5)\JQClientTools\obj\Debug\JQClientTools.Editor.TimeSpinnerEditorDialog.resources
+D:\版本\Version\安裝源文件\EEP2012WF(V5.0.0.020140924 SP5)\JQClientTools\obj\Debug\JQClientTools.csproj.GenerateResource.Cache
+D:\版本\Version\安裝源文件\EEP2012WF(V5.0.0.020140924 SP5)\JQClientTools\obj\Debug\JQClientTools.dll
+D:\版本\Version\安裝源文件\EEP2012WF(V5.0.0.020140924 SP5)\JQClientTools\obj\Debug\JQClientTools.pdb
+D:\版本\Version\安裝源文件\EEP2012(V5.0.0.020140924 SP5)\EEP2012WF\JQClientTools\bin\Debug\JQClientTools.dll
+D:\版本\Version\安裝源文件\EEP2012(V5.0.0.020140924 SP5)\EEP2012WF\JQClientTools\bin\Debug\JQClientTools.pdb
+D:\版本\Version\安裝源文件\EEP2012(V5.0.0.020140924 SP5)\EEP2012WF\JQClientTools\bin\Debug\EFBase.dll
+D:\版本\Version\安裝源文件\EEP2012(V5.0.0.020140924 SP5)\EEP2012WF\JQClientTools\bin\Debug\EFClientTools.dll
+D:\版本\Version\安裝源文件\EEP2012(V5.0.0.020140924 SP5)\EEP2012WF\JQClientTools\bin\Debug\EFBase.pdb
+D:\版本\Version\安裝源文件\EEP2012(V5.0.0.020140924 SP5)\EEP2012WF\JQClientTools\bin\Debug\EFClientTools.pdb
+D:\版本\Version\安裝源文件\EEP2012(V5.0.0.020140924 SP5)\EEP2012WF\JQClientTools\obj\Debug\JQClientTools.csprojResolveAssemblyReference.cache
+D:\版本\Version\安裝源文件\EEP2012(V5.0.0.020140924 SP5)\EEP2012WF\JQClientTools\obj\Debug\JQClientTools.Editor.AutoCompleteEditorDialog.resources
+D:\版本\Version\安裝源文件\EEP2012(V5.0.0.020140924 SP5)\EEP2012WF\JQClientTools\obj\Debug\JQClientTools.Editor.CheckBoxEditorDialog.resources
+D:\版本\Version\安裝源文件\EEP2012(V5.0.0.020140924 SP5)\EEP2012WF\JQClientTools\obj\Debug\JQClientTools.Editor.ComboBoxEditorDialog.resources
+D:\版本\Version\安裝源文件\EEP2012(V5.0.0.020140924 SP5)\EEP2012WF\JQClientTools\obj\Debug\JQClientTools.Editor.ComboGridEditorDialog.resources
+D:\版本\Version\安裝源文件\EEP2012(V5.0.0.020140924 SP5)\EEP2012WF\JQClientTools\obj\Debug\JQClientTools.Editor.DateBoxEditorDialog.resources
+D:\版本\Version\安裝源文件\EEP2012(V5.0.0.020140924 SP5)\EEP2012WF\JQClientTools\obj\Debug\JQClientTools.Editor.FileUploadEditorDialog.resources
+D:\版本\Version\安裝源文件\EEP2012(V5.0.0.020140924 SP5)\EEP2012WF\JQClientTools\obj\Debug\JQClientTools.JQMetroEditForm.resources
+D:\版本\Version\安裝源文件\EEP2012(V5.0.0.020140924 SP5)\EEP2012WF\JQClientTools\obj\Debug\JQClientTools.MultiLanguageTableNameDialog.resources
+D:\版本\Version\安裝源文件\EEP2012(V5.0.0.020140924 SP5)\EEP2012WF\JQClientTools\obj\Debug\JQClientTools.Editor.NumberBoxEditorDialog.resources
+D:\版本\Version\安裝源文件\EEP2012(V5.0.0.020140924 SP5)\EEP2012WF\JQClientTools\obj\Debug\JQClientTools.Editor.QrcodeEditorDialog.resources
+D:\版本\Version\安裝源文件\EEP2012(V5.0.0.020140924 SP5)\EEP2012WF\JQClientTools\obj\Debug\JQClientTools.SelectLanguageForm.resources
+D:\版本\Version\安裝源文件\EEP2012(V5.0.0.020140924 SP5)\EEP2012WF\JQClientTools\obj\Debug\JQClientTools.JQSecurityForm.resources
+D:\版本\Version\安裝源文件\EEP2012(V5.0.0.020140924 SP5)\EEP2012WF\JQClientTools\obj\Debug\JQClientTools.JQSecurityAddForm.resources
+D:\版本\Version\安裝源文件\EEP2012(V5.0.0.020140924 SP5)\EEP2012WF\JQClientTools\obj\Debug\JQClientTools.Editor.RefvalEditorDialog.resources
+D:\版本\Version\安裝源文件\EEP2012(V5.0.0.020140924 SP5)\EEP2012WF\JQClientTools\obj\Debug\JQClientTools.Editor.RemoteNameEditorDialog.resources
+D:\版本\Version\安裝源文件\EEP2012(V5.0.0.020140924 SP5)\EEP2012WF\JQClientTools\obj\Debug\JQClientTools.MultiLanguageEditorDialog.resources
+D:\版本\Version\安裝源文件\EEP2012(V5.0.0.020140924 SP5)\EEP2012WF\JQClientTools\obj\Debug\JQClientTools.Editor.TimeSpinnerEditorDialog.resources
+D:\版本\Version\安裝源文件\EEP2012(V5.0.0.020140924 SP5)\EEP2012WF\JQClientTools\obj\Debug\JQClientTools.csproj.GenerateResource.Cache
+D:\版本\Version\安裝源文件\EEP2012(V5.0.0.020140924 SP5)\EEP2012WF\JQClientTools\obj\Debug\JQClientTools.dll
+D:\版本\Version\安裝源文件\EEP2012(V5.0.0.020140924 SP5)\EEP2012WF\JQClientTools\obj\Debug\JQClientTools.pdb
+D:\Program Files (x86)\Your Company Name\EEP2012\JQClientTools\bin\Debug\JQClientTools.dll
+D:\Program Files (x86)\Your Company Name\EEP2012\JQClientTools\bin\Debug\JQClientTools.pdb
+D:\Program Files (x86)\Your Company Name\EEP2012\JQClientTools\bin\Debug\EFBase.dll
+D:\Program Files (x86)\Your Company Name\EEP2012\JQClientTools\bin\Debug\EFClientTools.dll
+D:\Program Files (x86)\Your Company Name\EEP2012\JQClientTools\bin\Debug\EFBase.pdb
+D:\Program Files (x86)\Your Company Name\EEP2012\JQClientTools\bin\Debug\EFClientTools.pdb
+D:\Program Files (x86)\Your Company Name\EEP2012\JQClientTools\obj\Debug\JQClientTools.csprojResolveAssemblyReference.cache
+D:\Program Files (x86)\Your Company Name\EEP2012\JQClientTools\obj\Debug\JQClientTools.Editor.AutoCompleteEditorDialog.resources
+D:\Program Files (x86)\Your Company Name\EEP2012\JQClientTools\obj\Debug\JQClientTools.Editor.CheckBoxEditorDialog.resources
+D:\Program Files (x86)\Your Company Name\EEP2012\JQClientTools\obj\Debug\JQClientTools.Editor.ComboBoxEditorDialog.resources
+D:\Program Files (x86)\Your Company Name\EEP2012\JQClientTools\obj\Debug\JQClientTools.Editor.ComboGridEditorDialog.resources
+D:\Program Files (x86)\Your Company Name\EEP2012\JQClientTools\obj\Debug\JQClientTools.Editor.DateBoxEditorDialog.resources
+D:\Program Files (x86)\Your Company Name\EEP2012\JQClientTools\obj\Debug\JQClientTools.Editor.FileUploadEditorDialog.resources
+D:\Program Files (x86)\Your Company Name\EEP2012\JQClientTools\obj\Debug\JQClientTools.JQMetroEditForm.resources
+D:\Program Files (x86)\Your Company Name\EEP2012\JQClientTools\obj\Debug\JQClientTools.MultiLanguageTableNameDialog.resources
+D:\Program Files (x86)\Your Company Name\EEP2012\JQClientTools\obj\Debug\JQClientTools.Editor.NumberBoxEditorDialog.resources
+D:\Program Files (x86)\Your Company Name\EEP2012\JQClientTools\obj\Debug\JQClientTools.Editor.QrcodeEditorDialog.resources
+D:\Program Files (x86)\Your Company Name\EEP2012\JQClientTools\obj\Debug\JQClientTools.SelectLanguageForm.resources
+D:\Program Files (x86)\Your Company Name\EEP2012\JQClientTools\obj\Debug\JQClientTools.JQSecurityForm.resources
+D:\Program Files (x86)\Your Company Name\EEP2012\JQClientTools\obj\Debug\JQClientTools.JQSecurityAddForm.resources
+D:\Program Files (x86)\Your Company Name\EEP2012\JQClientTools\obj\Debug\JQClientTools.Editor.RefvalEditorDialog.resources
+D:\Program Files (x86)\Your Company Name\EEP2012\JQClientTools\obj\Debug\JQClientTools.Editor.RemoteNameEditorDialog.resources
+D:\Program Files (x86)\Your Company Name\EEP2012\JQClientTools\obj\Debug\JQClientTools.MultiLanguageEditorDialog.resources
+D:\Program Files (x86)\Your Company Name\EEP2012\JQClientTools\obj\Debug\JQClientTools.Editor.TimeSpinnerEditorDialog.resources
+D:\Program Files (x86)\Your Company Name\EEP2012\JQClientTools\obj\Debug\JQClientTools.csproj.GenerateResource.Cache
+D:\Program Files (x86)\Your Company Name\EEP2012\JQClientTools\obj\Debug\JQClientTools.dll
+D:\Program Files (x86)\Your Company Name\EEP2012\JQClientTools\obj\Debug\JQClientTools.pdb
+D:\Infolight\EEP2012\JQClientTools\bin\Debug\JQClientTools.dll
+D:\Infolight\EEP2012\JQClientTools\bin\Debug\JQClientTools.pdb
+D:\Infolight\EEP2012\JQClientTools\bin\Debug\EFBase.dll
+D:\Infolight\EEP2012\JQClientTools\bin\Debug\EFClientTools.dll
+D:\Infolight\EEP2012\JQClientTools\bin\Debug\EFBase.pdb
+D:\Infolight\EEP2012\JQClientTools\bin\Debug\EFClientTools.pdb
+D:\Infolight\EEP2012\JQClientTools\obj\Debug\JQClientTools.csprojResolveAssemblyReference.cache
+D:\Infolight\EEP2012\JQClientTools\obj\Debug\JQClientTools.Editor.AutoCompleteEditorDialog.resources
+D:\Infolight\EEP2012\JQClientTools\obj\Debug\JQClientTools.Editor.CheckBoxEditorDialog.resources
+D:\Infolight\EEP2012\JQClientTools\obj\Debug\JQClientTools.Editor.ComboBoxEditorDialog.resources
+D:\Infolight\EEP2012\JQClientTools\obj\Debug\JQClientTools.Editor.ComboGridEditorDialog.resources
+D:\Infolight\EEP2012\JQClientTools\obj\Debug\JQClientTools.Editor.RelationEditorDialog.resources
+D:\Infolight\EEP2012\JQClientTools\obj\Debug\JQClientTools.Editor.DateBoxEditorDialog.resources
+D:\Infolight\EEP2012\JQClientTools\obj\Debug\JQClientTools.Editor.FileUploadEditorDialog.resources
+D:\Infolight\EEP2012\JQClientTools\obj\Debug\JQClientTools.JQMetroEditForm.resources
+D:\Infolight\EEP2012\JQClientTools\obj\Debug\JQClientTools.JQMetroEditStyleObjectForm.resources
+D:\Infolight\EEP2012\JQClientTools\obj\Debug\JQClientTools.MultiLanguageTableNameDialog.resources
+D:\Infolight\EEP2012\JQClientTools\obj\Debug\JQClientTools.Editor.NumberBoxEditorDialog.resources
+D:\Infolight\EEP2012\JQClientTools\obj\Debug\JQClientTools.Editor.QrcodeEditorDialog.resources
+D:\Infolight\EEP2012\JQClientTools\obj\Debug\JQClientTools.SelectLanguageForm.resources
+D:\Infolight\EEP2012\JQClientTools\obj\Debug\JQClientTools.JQSecurityForm.resources
+D:\Infolight\EEP2012\JQClientTools\obj\Debug\JQClientTools.JQSecurityAddForm.resources
+D:\Infolight\EEP2012\JQClientTools\obj\Debug\JQClientTools.Editor.RefvalEditorDialog.resources
+D:\Infolight\EEP2012\JQClientTools\obj\Debug\JQClientTools.Editor.RemoteNameEditorDialog.resources
+D:\Infolight\EEP2012\JQClientTools\obj\Debug\JQClientTools.MultiLanguageEditorDialog.resources
+D:\Infolight\EEP2012\JQClientTools\obj\Debug\JQClientTools.Editor.TimeSpinnerEditorDialog.resources
+D:\Infolight\EEP2012\JQClientTools\obj\Debug\JQClientTools.Editor.YearMonthEditorDialog.resources
+D:\Infolight\EEP2012\JQClientTools\obj\Debug\JQClientTools.Editor.PivotTableRenderersTypeForm.resources
+D:\Infolight\EEP2012\JQClientTools\obj\Debug\JQClientTools.Editor.PivotTableAggregatorsTypeForm.resources
+D:\Infolight\EEP2012\JQClientTools\obj\Debug\JQClientTools.csproj.GenerateResource.Cache
+D:\Infolight\EEP2012\JQClientTools\obj\Debug\JQClientTools.dll
+D:\Infolight\EEP2012\JQClientTools\obj\Debug\JQClientTools.pdb
+C:\Program Files (x86)\Infolight\EEP2012\JQClientTools\bin\Debug\JQClientTools.dll
+C:\Program Files (x86)\Infolight\EEP2012\JQClientTools\bin\Debug\JQClientTools.pdb
+C:\Program Files (x86)\Infolight\EEP2012\JQClientTools\bin\Debug\EFBase.dll
+C:\Program Files (x86)\Infolight\EEP2012\JQClientTools\bin\Debug\EFClientTools.dll
+C:\Program Files (x86)\Infolight\EEP2012\JQClientTools\bin\Debug\EFBase.pdb
+C:\Program Files (x86)\Infolight\EEP2012\JQClientTools\bin\Debug\EFClientTools.pdb
+C:\Program Files (x86)\Infolight\EEP2012\JQClientTools\obj\Debug\JQClientTools.csprojResolveAssemblyReference.cache
+C:\Program Files (x86)\Infolight\EEP2012\JQClientTools\obj\Debug\JQClientTools.Editor.AutoCompleteEditorDialog.resources
+C:\Program Files (x86)\Infolight\EEP2012\JQClientTools\obj\Debug\JQClientTools.Editor.CheckBoxEditorDialog.resources
+C:\Program Files (x86)\Infolight\EEP2012\JQClientTools\obj\Debug\JQClientTools.Editor.ComboBoxEditorDialog.resources
+C:\Program Files (x86)\Infolight\EEP2012\JQClientTools\obj\Debug\JQClientTools.Editor.ComboGridEditorDialog.resources
+C:\Program Files (x86)\Infolight\EEP2012\JQClientTools\obj\Debug\JQClientTools.Editor.RelationEditorDialog.resources
+C:\Program Files (x86)\Infolight\EEP2012\JQClientTools\obj\Debug\JQClientTools.Editor.DateBoxEditorDialog.resources
+C:\Program Files (x86)\Infolight\EEP2012\JQClientTools\obj\Debug\JQClientTools.Editor.FileUploadEditorDialog.resources
+C:\Program Files (x86)\Infolight\EEP2012\JQClientTools\obj\Debug\JQClientTools.JQMetroEditForm.resources
+C:\Program Files (x86)\Infolight\EEP2012\JQClientTools\obj\Debug\JQClientTools.JQMetroEditStyleObjectForm.resources
+C:\Program Files (x86)\Infolight\EEP2012\JQClientTools\obj\Debug\JQClientTools.MultiLanguageTableNameDialog.resources
+C:\Program Files (x86)\Infolight\EEP2012\JQClientTools\obj\Debug\JQClientTools.Editor.NumberBoxEditorDialog.resources
+C:\Program Files (x86)\Infolight\EEP2012\JQClientTools\obj\Debug\JQClientTools.Editor.QrcodeEditorDialog.resources
+C:\Program Files (x86)\Infolight\EEP2012\JQClientTools\obj\Debug\JQClientTools.SelectLanguageForm.resources
+C:\Program Files (x86)\Infolight\EEP2012\JQClientTools\obj\Debug\JQClientTools.JQSecurityForm.resources
+C:\Program Files (x86)\Infolight\EEP2012\JQClientTools\obj\Debug\JQClientTools.JQSecurityAddForm.resources
+C:\Program Files (x86)\Infolight\EEP2012\JQClientTools\obj\Debug\JQClientTools.Editor.RefvalEditorDialog.resources
+C:\Program Files (x86)\Infolight\EEP2012\JQClientTools\obj\Debug\JQClientTools.Editor.RemoteNameEditorDialog.resources
+C:\Program Files (x86)\Infolight\EEP2012\JQClientTools\obj\Debug\JQClientTools.MultiLanguageEditorDialog.resources
+C:\Program Files (x86)\Infolight\EEP2012\JQClientTools\obj\Debug\JQClientTools.Editor.TimeSpinnerEditorDialog.resources
+C:\Program Files (x86)\Infolight\EEP2012\JQClientTools\obj\Debug\JQClientTools.Editor.YearMonthEditorDialog.resources
+C:\Program Files (x86)\Infolight\EEP2012\JQClientTools\obj\Debug\JQClientTools.Editor.PivotTableRenderersTypeForm.resources
+C:\Program Files (x86)\Infolight\EEP2012\JQClientTools\obj\Debug\JQClientTools.Editor.PivotTableAggregatorsTypeForm.resources
+C:\Program Files (x86)\Infolight\EEP2012\JQClientTools\obj\Debug\JQClientTools.csproj.GenerateResource.Cache
+C:\Program Files (x86)\Infolight\EEP2012\JQClientTools\obj\Debug\JQClientTools.dll
+C:\Program Files (x86)\Infolight\EEP2012\JQClientTools\obj\Debug\JQClientTools.pdb

@@ -1,0 +1,8 @@
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sIssueJobQuery\bin\Debug\sIssueJobQuery.dll
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sIssueJobQuery\bin\Debug\sIssueJobQuery.pdb
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sIssueJobQuery\obj\Debug\sIssueJobQuery.csproj.GenerateResource.Cache
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sIssueJobQuery\obj\Debug\sIssueJobQuery.dll
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sIssueJobQuery\obj\Debug\sIssueJobQuery.pdb
+C:\Program Files (x86)\Infolight\EEP2012\EEPNetServer\JBADMIN\sIssueJobQuery.dll
+C:\Program Files (x86)\Infolight\EEP2012\EEPNetServer\JBADMIN\sIssueJobQuery.pdb
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sIssueJobQuery\obj\Debug\sIssueJobQuery.Component.resources

@@ -1,0 +1,9 @@
+D:\infolight\EEP2012\EEPNetServer\JBADMIN\sPetitionMaster.dll
+D:\infolight\EEP2012\EEPNetServer\JBADMIN\sPetitionMaster.pdb
+D:\infolight\EEP2012\EEPNetServer\JBADMIN\vi-VN\sPetitionMaster.resources.dll
+D:\infolight\EEP2012\JBADMIN\sPetitionMaster\obj\Release\sPetitionMaster.Component.resources
+D:\infolight\EEP2012\JBADMIN\sPetitionMaster\obj\Release\sPetitionMaster.Component.vi-VN.resources
+D:\infolight\EEP2012\JBADMIN\sPetitionMaster\obj\Release\sPetitionMaster.csproj.GenerateResource.Cache
+D:\infolight\EEP2012\JBADMIN\sPetitionMaster\obj\Release\vi-VN\sPetitionMaster.resources.dll
+D:\infolight\EEP2012\JBADMIN\sPetitionMaster\obj\Release\sPetitionMaster.dll
+D:\infolight\EEP2012\JBADMIN\sPetitionMaster\obj\Release\sPetitionMaster.pdb

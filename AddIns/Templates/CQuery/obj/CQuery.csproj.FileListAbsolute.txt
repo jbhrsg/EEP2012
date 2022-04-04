@@ -1,0 +1,8 @@
+F:\Work\Infolight\EEP2006\AddIns\Templates\CQuery\obj\Debug\ResolveAssemblyReference.cache
+F:\Work\Infolight\EEP2006\AddIns\Templates\CQuery\obj\Debug\TAG_NAMESPACE.TAG_FORMNAME.resources
+F:\Work\Infolight\EEP2006\AddIns\Templates\CQuery\obj\Debug\CQuery.Properties.Resources.resources
+F:\Work\Infolight\EEP2006\AddIns\Templates\CQuery\obj\Debug\CQuery.csproj.GenerateResource.Cache
+F:\Work\Infolight\EEP2006\AddIns\Templates\CQuery\obj\Debug\CQuery.dll
+F:\Work\Infolight\EEP2006\AddIns\EEPNetClient\Solution1\CQuery.dll
+F:\Work\Infolight\EEP2006\AddIns\EEPNetClient\Solution1\CQuery.pdb
+F:\Work\Infolight\EEP2006\AddIns\Templates\CQuery\obj\Debug\CQuery.pdb

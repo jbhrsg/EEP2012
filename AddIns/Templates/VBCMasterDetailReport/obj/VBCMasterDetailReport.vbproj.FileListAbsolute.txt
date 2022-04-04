@@ -1,0 +1,10 @@
+F:\Work\Infolight\EEP2006\AddIns\Templates\VBCMasterDetailReport\bin\Debug\VBCMasterDetailReport.exe
+F:\Work\Infolight\EEP2006\AddIns\Templates\VBCMasterDetailReport\bin\Debug\VBCMasterDetailReport.pdb
+F:\Work\Infolight\EEP2006\AddIns\Templates\VBCMasterDetailReport\bin\Debug\VBCMasterDetailReport.xml
+F:\Work\Infolight\EEP2006\AddIns\Templates\VBCMasterDetailReport\obj\Debug\ResolveAssemblyReference.cache
+F:\Work\Infolight\EEP2006\AddIns\Templates\VBCMasterDetailReport\obj\Debug\VBCMasterDetailReport.Form1.resources
+F:\Work\Infolight\EEP2006\AddIns\Templates\VBCMasterDetailReport\obj\Debug\VBCMasterDetailReport.Resources.resources
+F:\Work\Infolight\EEP2006\AddIns\Templates\VBCMasterDetailReport\obj\Debug\VBCMasterDetailReport.vbproj.GenerateResource.Cache
+F:\Work\Infolight\EEP2006\AddIns\Templates\VBCMasterDetailReport\obj\Debug\VBCMasterDetailReport.exe
+F:\Work\Infolight\EEP2006\AddIns\Templates\VBCMasterDetailReport\obj\Debug\VBCMasterDetailReport.xml
+F:\Work\Infolight\EEP2006\AddIns\Templates\VBCMasterDetailReport\obj\Debug\VBCMasterDetailReport.pdb

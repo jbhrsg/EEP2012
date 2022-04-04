@@ -1,0 +1,8 @@
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sRequisitionRepo\bin\Release\sRequisitionRepo.dll
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sRequisitionRepo\bin\Release\sRequisitionRepo.pdb
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sRequisitionRepo\obj\Release\sRequisitionRepo.Component.resources
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sRequisitionRepo\obj\Release\sRequisitionRepo.csproj.GenerateResource.Cache
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sRequisitionRepo\obj\Release\sRequisitionRepo.dll
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sRequisitionRepo\obj\Release\sRequisitionRepo.pdb
+C:\Program Files (x86)\Infolight\EEP2012\EEPNetServer\JBADMIN\sRequisitionRepo.dll
+C:\Program Files (x86)\Infolight\EEP2012\EEPNetServer\JBADMIN\sRequisitionRepo.pdb

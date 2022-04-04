@@ -1,0 +1,414 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <metadata name="serviceManager1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 93</value>
+  </metadata>
+  <metadata name="InfoConnection1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 131</value>
+  </metadata>
+  <metadata name="CON_CONTACT.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 169</value>
+  </metadata>
+  <data name="CON_CONTACT.CommandText" xml:space="preserve">
+    <value>SELECT  A.* ,
+                ISNULL(A.CONTACT_AREA,'')+ISNULL(A.CONTACT_ADDR,'') AS ADDRESS,
+                A.CONTACT_COMPANY AS COMPANY,
+                A.CONTACT_TEL+' '+ISNULL(A.CONTACT_TEL_EXT,'') AS TEL_EXT,
+               (SELECT  AUTHORITY_NAME+  CASE  AUTHORITY_ID WHEN 2 THEN  '←'+B.CREATE_MAN ELSE '' END   FROM CON_AUTHORITY WHERE                 AUTHORITY_ID=B.AUTHORITY_ID) AS                 AUTHORITY_NAME ,
+               (SELECT CENTER_CNAME  FROM CON_CENTER WHERE CENTER_ID=A.CENTER_ID ) AS CENTER_NAME_SOU, 
+               B.CENTER_ID AS CENTER_ID1,
+               (SELECT CENTER_CNAME  FROM CON_CENTER WHERE CENTER_ID=B.CENTER_ID ) AS CENTER_NAME_CUR,
+               AUTHORITY_ID,
+               (SELECT COUNT(CONTACT_ID) FROM CON_CONTACT WHERE CONTACT_NAME = A.CONTACT_NAME AND  CONTACT_ISACTIVE=1 GROUP BY CONTACT_NAME) AS HEADCOUNT,
+               0  AS LABEL_ID,
+               ''  AS LABELVALUE,
+               ''  AS LABELDESCR,
+               ''  AS LABELFILTER1,
+               ''  AS LABELFILTER2,
+               ''  AS LABELFILTER3,
+               ''  AS LABELFILTER4,
+               ''  AS LABELFILTER5,
+               ''  AS LABELVALUE1,
+               ''  AS LABELVALUE2,
+               ''  AS LABELVALUE3,
+               ''  AS LABELVALUE4,
+               ''  AS LABELVALUE5,
+               0  AS ISNOTOK,
+               0  AS ISNOTLABEL,
+               0  AS ISACTIVITY,
+               0  AS ISNOTACTIVITY
+ FROM dbo.CON_CONTACT A,dbo.CON_CONTACTOWNERS B
+WHERE A.CONTACT_ID=B.CONTACT_ID  AND  B.ISACTIVE=1 AND A.CONTACT_ISACTIVE=1</value>
+  </data>
+  <metadata name="ucCON_CONTACT.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 207</value>
+  </metadata>
+  <metadata name="View_CON_CONTACT.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 245</value>
+  </metadata>
+  <metadata name="GROUPTYPE.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 283</value>
+  </metadata>
+  <data name="GROUPTYPE.CommandText" xml:space="preserve">
+    <value>SELECT CENTER_ID,
+             CENTER_CNAME,
+             LTRIM(STR((SELECT COUNT(A.Contact_ID) From CON_CONTACTOWNERS A,CON_CONTACT B  WHERE A.CONTACT_ID=B.CONTACT_ID AND  A.CENTER_ID=CON_CENTER.CENTER_ID AND A.AUTHORITY_ID=2 AND                               A.ISACTIVE=1 AND B.CONTACT_ISACTIVE=1),4))+'/'+
+             LTRIM(STR((SELECT COUNT(A.Contact_ID) From CON_CONTACTOWNERS A,CON_CONTACT B  WHERE A.CONTACT_ID=B.CONTACT_ID AND  A.CENTER_ID=CON_CENTER.CENTER_ID AND A.AUTHORITY_ID=1 AND                               A.ISACTIVE=1 AND B.CONTACT_ISACTIVE=1),4))+'/'+
+             LTRIM(STR((SELECT COUNT(A.Contact_ID) From CON_CONTACTOWNERS A,CON_CONTACT B  WHERE A.CONTACT_ID=B.CONTACT_ID AND  A.CENTER_ID=CON_CENTER.CENTER_ID AND
+                   A.ISACTIVE=1 AND B.CONTACT_ISACTIVE=1),4)) AS HeadCount
+FROM CON_CENTER
+ORDER  BY CENTER_SEQ
+</value>
+  </data>
+  <metadata name="CENTER.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 397</value>
+  </metadata>
+  <metadata name="CON_CENTERLABEL.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 435</value>
+  </metadata>
+  <data name="CON_CENTERLABEL.CommandText" xml:space="preserve">
+    <value>SELECT AUTOKEY,
+               CENTER_ID,
+               (SELECT  CENTER_CNAME FROM CON_CENTER WHERE CENTER_ID= CON_CONTACTLABEL.CENTER_ID) AS CENTER_CNAME,
+               CONTACT_ID,
+               LABEL_ID, 
+               (SELECT LABELNAME FROM CON_CENTERLABEL  
+               WHERE  CENTER_ID=CON_CONTACTLABEL.CENTER_ID AND LABEL_ID=CON_CONTACTLABEL.LABEL_ID) AS LABELNAME,
+               LABELVALUE,
+               CREATE_MAN,
+               CREATE_DATE
+FROM  CON_CONTACTLABEL</value>
+  </data>
+  <metadata name="CENTERLEVEL.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 511</value>
+  </metadata>
+  <metadata name="ucCENTERLEVEL.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 549</value>
+  </metadata>
+  <metadata name="CONTACT_AREA.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 587</value>
+  </metadata>
+  <metadata name="CONTACT_TYPE.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 625</value>
+  </metadata>
+  <metadata name="CONTACT_JOB.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 663</value>
+  </metadata>
+  <metadata name="CON_AUTHORITY.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 701</value>
+  </metadata>
+  <metadata name="CENTERLABEL.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 739</value>
+  </metadata>
+  <metadata name="CENTERLABEL1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 815</value>
+  </metadata>
+  <metadata name="COMPANY.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 853</value>
+  </metadata>
+  <metadata name="GROUPTYPE1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 891</value>
+  </metadata>
+  <data name="GROUPTYPE1.CommandText" xml:space="preserve">
+    <value>SELECT CENTER_ID,
+             CENTER_CNAME,
+             LTRIM(STR((SELECT COUNT(Contact_ID) From CON_CONTACTOWNERS WHERE CENTER_ID=CON_CENTER.CENTER_ID AND AUTHORITY_ID=2 AND ISACTIVE=1),4))+'/'+
+             LTRIM(STR((SELECT COUNT(Contact_ID) From CON_CONTACTOWNERS WHERE CENTER_ID=CON_CENTER.CENTER_ID AND AUTHORITY_ID=1 AND ISACTIVE=1),4))+'/'+
+             LTRIM(STR((SELECT COUNT(Contact_ID) From CON_CONTACTOWNERS WHERE CENTER_ID=CON_CENTER.CENTER_ID AND ISACTIVE=1),4)) AS HeadCount
+FROM CON_CENTER
+ORDER BY  CENTER_SEQ
+</value>
+  </data>
+  <metadata name="CONTACT_SKILL.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 929</value>
+  </metadata>
+  <metadata name="CON_CONTACTUPDATE.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 967</value>
+  </metadata>
+  <metadata name="ucCON_CONTACTUPDATE.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 1005</value>
+  </metadata>
+  <metadata name="CONTACT_HOBBY.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 1043</value>
+  </metadata>
+  <metadata name="CONTACT_DEPT.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 1119</value>
+  </metadata>
+  <metadata name="CONTACTLABEL.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 1195</value>
+  </metadata>
+  <data name="CONTACTLABEL.CommandText" xml:space="preserve">
+    <value>SELECT  DISTINCT
+               CENTER_ID,
+               LABEL_ID,
+                CONVERT(NVARCHAR(10),CENTER_ID)+CONVERT(NVARCHAR(10),LABEL_ID) AS CENTERLABELID,
+               LABELVALUE
+FROM   CON_CONTACTLABEL</value>
+  </data>
+  <metadata name="CFILTLABEL1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 1233</value>
+  </metadata>
+  <data name="CFILTLABEL1.CommandText" xml:space="preserve">
+    <value>SELECT  LABEL_ID,
+               LABELNAME,
+               CENTER_ID,
+               CONVERT(NVARCHAR(10),CENTER_ID)+CONVERT(NVARCHAR(10),LABEL_ID) AS CENTERLABELID
+FROM  CON_CENTERLABEL
+ORDER BY  LABEL_ID</value>
+  </data>
+  <metadata name="CFILTLABEL2.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 1271</value>
+  </metadata>
+  <data name="CFILTLABEL2.CommandText" xml:space="preserve">
+    <value>SELECT  LABEL_ID,
+               LABELNAME,
+               CENTER_ID,
+               CONVERT(NVARCHAR(10),CENTER_ID)+CONVERT(NVARCHAR(10),LABEL_ID) AS CENTERLABELID
+FROM  CON_CENTERLABEL
+ORDER BY  LABEL_ID</value>
+  </data>
+  <metadata name="CFILTLABEL3.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 1309</value>
+  </metadata>
+  <data name="CFILTLABEL3.CommandText" xml:space="preserve">
+    <value>SELECT  LABEL_ID,
+               LABELNAME,
+               CENTER_ID,
+               CONVERT(NVARCHAR(10),CENTER_ID)+CONVERT(NVARCHAR(10),LABEL_ID) AS CENTERLABELID
+FROM  CON_CENTERLABEL
+ORDER BY  LABEL_ID</value>
+  </data>
+  <metadata name="TEL_TYPE.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 1461</value>
+  </metadata>
+  <metadata name="EMAIL1TYPE.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 1499</value>
+  </metadata>
+  <metadata name="EMAIL2TYPE.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 1385</value>
+  </metadata>
+  <metadata name="TEL1_TYPE.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 1537</value>
+  </metadata>
+  <metadata name="EMAIL1_TYPE.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 1575</value>
+  </metadata>
+  <metadata name="EMAIL2_TYPE.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 1651</value>
+  </metadata>
+  <metadata name="CFILTLABEL4.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 1689</value>
+  </metadata>
+  <data name="CFILTLABEL4.CommandText" xml:space="preserve">
+    <value>SELECT  LABEL_ID,
+               LABELNAME,
+               CENTER_ID,
+               CONVERT(NVARCHAR(10),CENTER_ID)+CONVERT(NVARCHAR(10),LABEL_ID) AS CENTERLABELID
+FROM  CON_CENTERLABEL
+ORDER BY  LABEL_ID</value>
+  </data>
+  <metadata name="CFILTLABEL5.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 1727</value>
+  </metadata>
+  <data name="CFILTLABEL5.CommandText" xml:space="preserve">
+    <value>SELECT  LABEL_ID,
+               LABELNAME,
+               CENTER_ID,
+               CONVERT(NVARCHAR(10),CENTER_ID)+CONVERT(NVARCHAR(10),LABEL_ID) AS CENTERLABELID
+FROM  CON_CENTERLABEL
+ORDER BY  LABEL_ID</value>
+  </data>
+  <metadata name="CON_CONTACTTEMP.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 1613</value>
+  </metadata>
+  <data name="CON_CONTACTTEMP.CommandText" xml:space="preserve">
+    <value>SELECT   A.CONTACT_ID,A.CENTER_ID,  A.CONTACT_NAME,A.CONTACT_TEL,A.CONTACT_CELLPHONE,CONTACT_COMPANY ,
+               A.CONTACT_TEL+' '+ISNULL(A.CONTACT_TEL_EXT,'') AS TEL_EXT,
+               (SELECT CENTER_CNAME  FROM CON_CENTER WHERE CENTER_ID=A.CENTER_ID ) AS CENTER_NAME_SOU,
+               B.CENTER_ID AS CENTER_ID1,
+               A.CREATE_DATE,
+               1 AS ISSelected
+FROM dbo.CON_CONTACT A,dbo.CON_CONTACTOWNERS B
+WHERE A.CONTACT_ID=B.CONTACT_ID  AND  B.ISACTIVE=1 AND A.CONTACT_ISACTIVE=1 AND  B.AUTHORITY_ID=1
+ORDER BY  A.CREATE_DATE</value>
+  </data>
+  <metadata name="ACTIVITYBILLS.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 1423</value>
+  </metadata>
+  <data name="ACTIVITYBILLS.CommandText" xml:space="preserve">
+    <value>SELECT  ACT.ACTIVITY_ID,
+              ACT.CONTACT_ID, 
+              CON.CONTACT_NAME,
+              CON.CONTACT_GENDER,
+              CON.CONTACT_COMPANY,
+              CON.CONTACT_DEPT,
+              CON.CONTACT_TEL,
+              CON.CONTACT_CELLPHONE,
+              CON.CONTACT_EMAIL,
+              CON.CREATE_DATE,
+              ACT.CREATE_MAN,
+              ACT.CENTER_ID_FROM,
+             (SELECT  CENTER_CNAME FROM CON_CENTER WHERE CENTER_ID=ACT.CENTER_ID_FROM)   AS CENTERNAME 
+FROM CON_ACTIVITYDETAILS  ACT
+LEFT JOIN CON_CONTACT  CON
+ON ACT.CONTACT_ID=CON.CONTACT_ID
+WHERE  ACT.CONTACT_ISACTIVE=1
+</value>
+  </data>
+  <metadata name="ACTIVITYMASTER.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 1347</value>
+  </metadata>
+  <metadata name="CONTACT_ADDR.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 1157</value>
+  </metadata>
+  <metadata name="CONTACT_TRADE.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 1081</value>
+  </metadata>
+  <metadata name="CONTACT_SALES.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 321</value>
+  </metadata>
+  <metadata name="CONTACT_TSALES.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 777</value>
+  </metadata>
+  <metadata name="ucCON_CENTERLABEL.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 473</value>
+  </metadata>
+  <metadata name="CONTACTLABELQUERY.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 55</value>
+  </metadata>
+  <data name="CONTACTLABELQUERY.CommandText" xml:space="preserve">
+    <value>SELECT CENTER_ID,
+        CONTACT_ID,
+ (SELECT LABELNAME FROM CON_CENTERLABEL WHERE CENTER_ID=CON_CONTACTLABEL.CENTER_ID AND LABEL_ID=CON_CONTACTLABEL.LABEL_ID)+' - '+LABELVALUE AS CONLABELNAME,
+ CREATE_MAN,
+ CREATE_DATE
+ FROM CON_CONTACTLABEL ORDER BY CREATE_DATE DESC
+</value>
+  </data>
+  <metadata name="AddUser.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 359</value>
+  </metadata>
+  <metadata name="SYSVar.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>400, 1594</value>
+  </metadata>
+  <metadata name="$this.TrayLargeIcon" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>False</value>
+  </metadata>
+</root>

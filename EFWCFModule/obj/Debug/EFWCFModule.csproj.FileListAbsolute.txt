@@ -1,0 +1,56 @@
+F:\Program Files\EEP2010\WCFServer\EFWCFModule.dll
+F:\Program Files\EEP2010\WCFServer\EFWCFModule.pdb
+F:\Program Files\EEP2010\EFWCFModule\obj\Debug\ResolveAssemblyReference.cache
+F:\Program Files\EEP2010\EFWCFModule\obj\Debug\EFWCFModule.dll
+F:\Program Files\EEP2010\EFWCFModule\obj\Debug\EFWCFModule.pdb
+D:\Infolight\EEP2010\WCFServer\EFWCFModule.dll
+D:\Infolight\EEP2010\WCFServer\EFWCFModule.pdb
+D:\Infolight\EEP2010\EEPNetServer\EFWCFModule.dll
+D:\Infolight\EEP2010\EEPNetServer\EFWCFModule.pdb
+D:\Infolight\EEP2010\EFWCFModule\obj\Debug\ResolveAssemblyReference.cache
+D:\Infolight\EEP2010\EFWCFModule\obj\Debug\EFWCFModule.dll
+D:\Infolight\EEP2010\EFWCFModule\obj\Debug\EFWCFModule.pdb
+C:\Program Files\Infolight\EEP2010\EEPNetServer\EFWCFModule.dll
+C:\Program Files\Infolight\EEP2010\EFWCFModule\obj\Debug\EFWCFModule.dll
+C:\Program Files\Infolight\EEP2010\EFWCFModule\obj\Debug\EFWCFModule.pdb
+C:\Program Files\Infolight\EEP2010\EEPNetServer\EFWCFModule.pdb
+C:\Program Files\Infolight\EEP2010\EFWCFModule\obj\Debug\EFWCFModule.csprojResolveAssemblyReference.cache
+C:\Program Files\Infolight\EEP2012Dev\EEPNetServer\EFWCFModule.dll
+C:\Program Files\Infolight\EEP2012Dev\EEPNetServer\EFWCFModule.pdb
+C:\Program Files\Infolight\EEP2012Dev\EFWCFModule\obj\Debug\EFWCFModule.dll
+C:\Program Files\Infolight\EEP2012Dev\EFWCFModule\obj\Debug\EFWCFModule.pdb
+C:\Program Files\Infolight\EEP2012Dev\EFWCFModule\obj\Debug\EFWCFModule.csprojResolveAssemblyReference.cache
+C:\Program Files\Infolight\EEP2012WF\EEPNetServer\EFWCFModule.dll
+C:\Program Files\Infolight\EEP2012WF\EEPNetServer\EFWCFModule.pdb
+C:\Program Files\Infolight\EEP2012WF\EFWCFModule\obj\Debug\EFWCFModule.dll
+C:\Program Files\Infolight\EEP2012WF\EFWCFModule\obj\Debug\EFWCFModule.pdb
+C:\Program Files\Infolight\EEP2012WF\EFWCFModule\obj\Debug\EFWCFModule.csprojResolveAssemblyReference.cache
+C:\Program Files (x86)\Infolight\EEP2012WF\EEPNetServer\EFWCFModule.dll
+C:\Program Files (x86)\Infolight\EEP2012WF\EEPNetServer\EFWCFModule.pdb
+C:\Program Files (x86)\Infolight\EEP2012WF\EFWCFModule\obj\Debug\EFWCFModule.csprojResolveAssemblyReference.cache
+C:\Program Files (x86)\Infolight\EEP2012WF\EFWCFModule\obj\Debug\EFWCFModule.dll
+C:\Program Files (x86)\Infolight\EEP2012WF\EFWCFModule\obj\Debug\EFWCFModule.pdb
+D:\版本\Version\安裝源文件\EEP2012WF(V5.0.0.020140924 SP5)\EEPNetServer\EFWCFModule.dll
+D:\版本\Version\安裝源文件\EEP2012WF(V5.0.0.020140924 SP5)\EEPNetServer\EFWCFModule.pdb
+D:\版本\Version\安裝源文件\EEP2012WF(V5.0.0.020140924 SP5)\EFWCFModule\obj\Debug\EFWCFModule.csprojResolveAssemblyReference.cache
+D:\版本\Version\安裝源文件\EEP2012WF(V5.0.0.020140924 SP5)\EFWCFModule\obj\Debug\EFWCFModule.dll
+D:\版本\Version\安裝源文件\EEP2012WF(V5.0.0.020140924 SP5)\EFWCFModule\obj\Debug\EFWCFModule.pdb
+D:\版本\Version\安裝源文件\EEP2012(V5.0.0.020140924 SP5)\EEP2012WF\EEPNetServer\EFWCFModule.dll
+D:\版本\Version\安裝源文件\EEP2012(V5.0.0.020140924 SP5)\EEP2012WF\EEPNetServer\EFWCFModule.pdb
+D:\版本\Version\安裝源文件\EEP2012(V5.0.0.020140924 SP5)\EEP2012WF\EFWCFModule\obj\Debug\EFWCFModule.dll
+D:\版本\Version\安裝源文件\EEP2012(V5.0.0.020140924 SP5)\EEP2012WF\EFWCFModule\obj\Debug\EFWCFModule.pdb
+D:\Program Files (x86)\Your Company Name\EEP2012\EEPNetServer\EFWCFModule.dll
+D:\Program Files (x86)\Your Company Name\EEP2012\EEPNetServer\EFWCFModule.pdb
+D:\Program Files (x86)\Your Company Name\EEP2012\EFWCFModule\obj\Debug\EFWCFModule.dll
+D:\Program Files (x86)\Your Company Name\EEP2012\EFWCFModule\obj\Debug\EFWCFModule.pdb
+D:\版本\Version\安裝源文件\EEP2012(V5.0.0.020140924 SP5)\EEP2012WF\EFWCFModule\obj\Debug\EFWCFModule.csprojResolveAssemblyReference.cache
+C:\Program Files (x86)\Infolight\EEP2012\EEPNetServer\EFWCFModule.dll
+D:\Infolight\EEP2012\EEPNetServer\EFWCFModule.dll
+D:\Infolight\EEP2012\EEPNetServer\EFWCFModule.pdb
+D:\Infolight\EEP2012\EFWCFModule\obj\Debug\EFWCFModule.csprojResolveAssemblyReference.cache
+D:\Infolight\EEP2012\EFWCFModule\obj\Debug\EFWCFModule.dll
+D:\Infolight\EEP2012\EFWCFModule\obj\Debug\EFWCFModule.pdb
+C:\Program Files (x86)\Infolight\EEP2012\EEPNetServer\EFWCFModule.pdb
+C:\Program Files (x86)\Infolight\EEP2012\EFWCFModule\obj\Debug\EFWCFModule.dll
+C:\Program Files (x86)\Infolight\EEP2012\EFWCFModule\obj\Debug\EFWCFModule.pdb
+C:\Program Files (x86)\Infolight\EEP2012\EFWCFModule\obj\Debug\EFWCFModule.csprojResolveAssemblyReference.cache

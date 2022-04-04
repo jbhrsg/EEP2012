@@ -1,0 +1,19 @@
+D:\Infolight\EEP2012\JBADMIN\sIssueJob\bin\Debug\sIssueJob.dll
+D:\Infolight\EEP2012\JBADMIN\sIssueJob\bin\Debug\sIssueJob.pdb
+D:\Infolight\EEP2012\JBADMIN\sIssueJob\obj\Debug\sIssueJob.csproj.GenerateResource.Cache
+D:\Infolight\EEP2012\JBADMIN\sIssueJob\obj\Debug\sIssueJob.dll
+D:\Infolight\EEP2012\JBADMIN\sIssueJob\obj\Debug\sIssueJob.pdb
+D:\Infolight\EEP2012\EEPNetServer\JBADMIN\sIssueJob.dll
+D:\Infolight\EEP2012\EEPNetServer\JBADMIN\sIssueJob.pdb
+D:\Infolight\EEP2012\JBADMIN\sIssueJob\obj\Debug\sIssueJob.Component.resources
+D:\Infolight\EEP2012\JBADMIN\sIssueJob\obj\Debug\sIssueJob.csprojResolveAssemblyReference.cache
+C:\Program Files (x86)\Infolight\EEP2012\EEPNetServer\JBADMIN\sIssueJob.dll
+C:\Program Files (x86)\Infolight\EEP2012\EEPNetServer\JBADMIN\sIssueJob.pdb
+C:\Program Files (x86)\Infolight\EEP2012\EEPNetServer\JBADMIN\vi-VN\sIssueJob.resources.dll
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sIssueJob\obj\Debug\sIssueJob.Component.resources
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sIssueJob\obj\Debug\sIssueJob.Component.vi-VN.resources
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sIssueJob\obj\Debug\sIssueJob.csproj.GenerateResource.Cache
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sIssueJob\obj\Debug\vi-VN\sIssueJob.resources.dll
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sIssueJob\obj\Debug\sIssueJob.dll
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sIssueJob\obj\Debug\sIssueJob.pdb
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sIssueJob\obj\Debug\sIssueJob.csprojResolveAssemblyReference.cache

@@ -1,0 +1,8 @@
+obj\Debug\ResolveAssemblyReference.cache
+obj\Debug\TAG_NAMESPACE.TAG_FORMNAME.resources
+obj\Debug\BaseForm2.Properties.Resources.resources
+obj\Debug\MasterDetail.csproj.GenerateResource.Cache
+..\..\EEPNetClient\Solution1\BaseForm2.dll
+..\..\EEPNetClient\Solution1\BaseForm2.pdb
+obj\Debug\BaseForm2.dll
+obj\Debug\BaseForm2.pdb

@@ -1,0 +1,11 @@
+F:\Work\Infolight\EEP2006\AddIns\Templates\VBCReport\bin\Debug\VBCReport.exe
+F:\Work\Infolight\EEP2006\AddIns\Templates\VBCReport\bin\Debug\VBCReport.pdb
+F:\Work\Infolight\EEP2006\AddIns\Templates\VBCReport\bin\Debug\VBCReport.xml
+F:\Work\Infolight\EEP2006\AddIns\Templates\VBCReport\obj\Debug\ResolveAssemblyReference.cache
+F:\Work\Infolight\EEP2006\AddIns\Templates\VBCReport\obj\Debug\VBCReport.Form1.resources
+F:\Work\Infolight\EEP2006\AddIns\Templates\VBCReport\obj\Debug\VBCReport.Resources.resources
+F:\Work\Infolight\EEP2006\AddIns\Templates\VBCReport\obj\Debug\VBCReport.vbproj.GenerateResource.Cache
+F:\Work\Infolight\EEP2006\AddIns\Templates\VBCReport\obj\Debug\VBCReport.exe
+F:\Work\Infolight\EEP2006\AddIns\Templates\VBCReport\obj\Debug\VBCReport.xml
+F:\Work\Infolight\EEP2006\AddIns\Templates\VBCReport\obj\Debug\VBCReport.pdb
+F:\Work\Infolight\EEP2006\AddIns\Templates\VBCReport\obj\Debug\VBCReport.TAG_FORMNAME.resources

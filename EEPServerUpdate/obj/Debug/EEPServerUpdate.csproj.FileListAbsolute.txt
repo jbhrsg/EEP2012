@@ -1,0 +1,8 @@
+C:\Program Files\Infolight\EEP2012\EEPNetServer\EEPServerUpdate.exe.config
+C:\Program Files\Infolight\EEP2012\EEPNetServer\EEPServerUpdate.exe
+C:\Program Files\Infolight\EEP2012\EEPNetServer\EEPServerUpdate.pdb
+C:\Program Files\Infolight\EEP2012\EEPServerUpdate\obj\Debug\EEPServerUpdate.frmUpdate.resources
+C:\Program Files\Infolight\EEP2012\EEPServerUpdate\obj\Debug\EEPServerUpdate.Properties.Resources.resources
+C:\Program Files\Infolight\EEP2012\EEPServerUpdate\obj\Debug\EEPServerUpdate.csproj.GenerateResource.Cache
+C:\Program Files\Infolight\EEP2012\EEPServerUpdate\obj\Debug\EEPServerUpdate.exe
+C:\Program Files\Infolight\EEP2012\EEPServerUpdate\obj\Debug\EEPServerUpdate.pdb

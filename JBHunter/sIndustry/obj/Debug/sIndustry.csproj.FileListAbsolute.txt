@@ -1,0 +1,8 @@
+C:\Program Files (x86)\Infolight\EEP2012\JBHunter\sIndustry\bin\Debug\sIndustry.dll
+C:\Program Files (x86)\Infolight\EEP2012\JBHunter\sIndustry\bin\Debug\sIndustry.pdb
+C:\Program Files (x86)\Infolight\EEP2012\JBHunter\sIndustry\obj\Debug\sIndustry.csproj.GenerateResource.Cache
+C:\Program Files (x86)\Infolight\EEP2012\JBHunter\sIndustry\obj\Debug\sIndustry.dll
+C:\Program Files (x86)\Infolight\EEP2012\JBHunter\sIndustry\obj\Debug\sIndustry.pdb
+C:\Program Files (x86)\Infolight\EEP2012\EEPNetServer\JBHunter\sIndustry.dll
+C:\Program Files (x86)\Infolight\EEP2012\JBHunter\sIndustry\obj\Debug\sIndustry.Component.resources
+C:\Program Files (x86)\Infolight\EEP2012\EEPNetServer\JBHunter\sIndustry.pdb

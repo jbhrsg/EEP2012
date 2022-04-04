@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://webservice.cetustek.com/" targetNamespace="http://webservice.cetustek.com/" version="1.0" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="CancelAllowance" type="tns:CancelAllowance" />
+  <xs:element name="CancelAllowanceResponse" type="tns:CancelAllowanceResponse" />
+  <xs:element name="CancelInvoice" type="tns:CancelInvoice" />
+  <xs:element name="CancelInvoiceNoCheck" type="tns:CancelInvoiceNoCheck" />
+  <xs:element name="CancelInvoiceNoCheckResponse" type="tns:CancelInvoiceNoCheckResponse" />
+  <xs:element name="CancelInvoiceResponse" type="tns:CancelInvoiceResponse" />
+  <xs:element name="CreateAllowance" type="tns:CreateAllowance" />
+  <xs:element name="CreateAllowanceResponse" type="tns:CreateAllowanceResponse" />
+  <xs:element name="CreateInvoiceV3" type="tns:CreateInvoiceV3" />
+  <xs:element name="CreateInvoiceV3Response" type="tns:CreateInvoiceV3Response" />
+  <xs:element name="Exception" type="tns:Exception" />
+  <xs:element name="QueryAllowance" type="tns:QueryAllowance" />
+  <xs:element name="QueryAllowanceResponse" type="tns:QueryAllowanceResponse" />
+  <xs:element name="QueryInvoice" type="tns:QueryInvoice" />
+  <xs:element name="QueryInvoiceByOrderid" type="tns:QueryInvoiceByOrderid" />
+  <xs:element name="QueryInvoiceByOrderidResponse" type="tns:QueryInvoiceByOrderidResponse" />
+  <xs:element name="QueryInvoiceNumberByOrderid" type="tns:QueryInvoiceNumberByOrderid" />
+  <xs:element name="QueryInvoiceNumberByOrderidResponse" type="tns:QueryInvoiceNumberByOrderidResponse" />
+  <xs:element name="QueryInvoiceResponse" type="tns:QueryInvoiceResponse" />
+  <xs:element name="QueryLoveCode" type="tns:QueryLoveCode" />
+  <xs:element name="QueryLoveCodeResponse" type="tns:QueryLoveCodeResponse" />
+  <xs:element name="QueryWinningInvoice" type="tns:QueryWinningInvoice" />
+  <xs:element name="QueryWinningInvoiceResponse" type="tns:QueryWinningInvoiceResponse" />
+  <xs:complexType name="QueryAllowance">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="allowancenumber" type="xs:string" />
+      <xs:element minOccurs="0" name="rentid" type="xs:string" />
+      <xs:element minOccurs="0" name="source" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="QueryAllowanceResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="Exception">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="message" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="CancelInvoiceNoCheck">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="invoicexml" type="xs:string" />
+      <xs:element minOccurs="0" name="rentid" type="xs:string" />
+      <xs:element minOccurs="0" name="source" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="CancelInvoiceNoCheckResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="CreateAllowance">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="allowancexml" type="xs:string" />
+      <xs:element minOccurs="0" name="checkallowance" type="xs:string" />
+      <xs:element minOccurs="0" name="rentid" type="xs:string" />
+      <xs:element minOccurs="0" name="source" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="CreateAllowanceResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="CancelAllowance">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="allowancexml" type="xs:string" />
+      <xs:element minOccurs="0" name="rentid" type="xs:string" />
+      <xs:element minOccurs="0" name="source" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="CancelAllowanceResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="QueryWinningInvoice">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="winningyear" type="xs:string" />
+      <xs:element minOccurs="0" name="winningmonth" type="xs:string" />
+      <xs:element minOccurs="0" name="rentid" type="xs:string" />
+      <xs:element minOccurs="0" name="source" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="QueryWinningInvoiceResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="CreateInvoiceV3">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="invoicexml" type="xs:string" />
+      <xs:element minOccurs="0" name="hastax" type="xs:string" />
+      <xs:element minOccurs="0" name="rentid" type="xs:string" />
+      <xs:element minOccurs="0" name="source" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="CreateInvoiceV3Response">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="QueryInvoice">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="invoicenumber" type="xs:string" />
+      <xs:element minOccurs="0" name="invoiceyear" type="xs:string" />
+      <xs:element minOccurs="0" name="rentid" type="xs:string" />
+      <xs:element minOccurs="0" name="source" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="QueryInvoiceResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="QueryLoveCode">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="rentid" type="xs:string" />
+      <xs:element minOccurs="0" name="source" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="QueryLoveCodeResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="QueryInvoiceNumberByOrderid">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="orderid" type="xs:string" />
+      <xs:element minOccurs="0" name="rentid" type="xs:string" />
+      <xs:element minOccurs="0" name="source" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="QueryInvoiceNumberByOrderidResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="QueryInvoiceByOrderid">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="orderid" type="xs:string" />
+      <xs:element minOccurs="0" name="rentid" type="xs:string" />
+      <xs:element minOccurs="0" name="source" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="QueryInvoiceByOrderidResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="CancelInvoice">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="invoicexml" type="xs:string" />
+      <xs:element minOccurs="0" name="rentid" type="xs:string" />
+      <xs:element minOccurs="0" name="source" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="CancelInvoiceResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+</xs:schema>

@@ -1,0 +1,8 @@
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sOrganization\bin\Debug\sOrganization.dll
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sOrganization\bin\Debug\sOrganization.pdb
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sOrganization\obj\Debug\sOrganization.csproj.GenerateResource.Cache
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sOrganization\obj\Debug\sOrganization.dll
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sOrganization\obj\Debug\sOrganization.pdb
+C:\Program Files (x86)\Infolight\EEP2012\EEPNetServer\JBADMIN\sOrganization.dll
+C:\Program Files (x86)\Infolight\EEP2012\EEPNetServer\JBADMIN\sOrganization.pdb
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sOrganization\obj\Debug\sOrganization.Component.resources

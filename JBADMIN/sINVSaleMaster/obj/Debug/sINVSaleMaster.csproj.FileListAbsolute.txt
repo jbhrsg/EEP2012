@@ -1,0 +1,14 @@
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sINVSaleMaster\bin\Debug\sINVSaleMaster.dll
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sINVSaleMaster\bin\Debug\sINVSaleMaster.pdb
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sINVSaleMaster\obj\Debug\sINVSaleMaster.csproj.GenerateResource.Cache
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sINVSaleMaster\obj\Debug\sINVSaleMaster.dll
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sINVSaleMaster\obj\Debug\sINVSaleMaster.pdb
+C:\Program Files (x86)\Infolight\EEP2012\EEPNetServer\JBADMIN\sINVSaleMaster.dll
+C:\Program Files (x86)\Infolight\EEP2012\EEPNetServer\JBADMIN\sINVSaleMaster.pdb
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sINVSaleMaster\obj\Debug\sINVSaleMaster.Component.resources
+D:\Infolight\EEP2012\EEPNetServer\JBADMIN\sINVSaleMaster.dll
+D:\Infolight\EEP2012\EEPNetServer\JBADMIN\sINVSaleMaster.pdb
+D:\Infolight\EEP2012\JBADMIN\sINVSaleMaster\obj\Debug\sINVSaleMaster.Component.resources
+D:\Infolight\EEP2012\JBADMIN\sINVSaleMaster\obj\Debug\sINVSaleMaster.csproj.GenerateResource.Cache
+D:\Infolight\EEP2012\JBADMIN\sINVSaleMaster\obj\Debug\sINVSaleMaster.dll
+D:\Infolight\EEP2012\JBADMIN\sINVSaleMaster\obj\Debug\sINVSaleMaster.pdb

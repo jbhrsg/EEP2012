@@ -1,0 +1,8 @@
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sCustomerSaleQuery\bin\Debug\sCustomerSaleQuery.dll
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sCustomerSaleQuery\bin\Debug\sCustomerSaleQuery.pdb
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sCustomerSaleQuery\obj\Debug\sCustomerSaleQuery.csproj.GenerateResource.Cache
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sCustomerSaleQuery\obj\Debug\sCustomerSaleQuery.dll
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sCustomerSaleQuery\obj\Debug\sCustomerSaleQuery.pdb
+C:\Program Files (x86)\Infolight\EEP2012\EEPNetServer\JBADMIN\sCustomerSaleQuery.dll
+C:\Program Files (x86)\Infolight\EEP2012\EEPNetServer\JBADMIN\sCustomerSaleQuery.pdb
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sCustomerSaleQuery\obj\Debug\sCustomerSaleQuery.Component.resources

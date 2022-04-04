@@ -1,0 +1,8 @@
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sERPARInvoice\bin\Debug\sERPARInvoice.dll
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sERPARInvoice\bin\Debug\sERPARInvoice.pdb
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sERPARInvoice\obj\Debug\sERPARInvoice.csproj.GenerateResource.Cache
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sERPARInvoice\obj\Debug\sERPARInvoice.dll
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sERPARInvoice\obj\Debug\sERPARInvoice.pdb
+C:\Program Files (x86)\Infolight\EEP2012\EEPNetServer\JBADMIN\sERPARInvoice.dll
+C:\Program Files (x86)\Infolight\EEP2012\EEPNetServer\JBADMIN\sERPARInvoice.pdb
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sERPARInvoice\obj\Debug\sERPARInvoice.Component.resources

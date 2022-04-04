@@ -1,0 +1,8 @@
+<FlowDetails>
+  <FormName>JB_ADMIN.JBREQ_PettyCash</FormName>
+  <FlowNavMode>Submit</FlowNavMode>
+  <NavMode>Insert</NavMode>
+  <Parameters>P1=APPLY</Parameters>
+  <FlowFileName>C:\Program Files (x86)\Infolight\EEP2012\EEPNetServer\Workflow\FL\PettyCash</FlowFileName>
+  <ImageWidth>1113</ImageWidth>
+</FlowDetails>

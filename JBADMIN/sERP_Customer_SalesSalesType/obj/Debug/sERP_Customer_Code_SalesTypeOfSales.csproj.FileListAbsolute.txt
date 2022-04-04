@@ -1,0 +1,11 @@
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sERP_Code_SalesTypeOfSales\obj\Debug\sERP_Customer_Code_SalesTypeOfSales.Component.resources
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sERP_Code_SalesTypeOfSales\obj\Debug\sERP_Customer_Code_SalesTypeOfSales.csproj.GenerateResource.Cache
+C:\Program Files (x86)\Infolight\EEP2012\EEPNetServer\JBADMIN\sERP_Customer_Code_SalesTypeOfSales.dll
+C:\Program Files (x86)\Infolight\EEP2012\EEPNetServer\JBADMIN\sERP_Customer_Code_SalesTypeOfSales.pdb
+C:\Program Files (x86)\Infolight\EEP2012\EEPNetServer\JBADMIN\vi-VN\sERP_Customer_Code_SalesTypeOfSales.resources.dll
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sERP_Customer_Code_SalesTypeOfSales\obj\Debug\sERP_Customer_Code_SalesTypeOfSales.Component.resources
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sERP_Customer_Code_SalesTypeOfSales\obj\Debug\sERP_Customer_Code_SalesTypeOfSales.Component.vi-VN.resources
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sERP_Customer_Code_SalesTypeOfSales\obj\Debug\sERP_Customer_Code_SalesTypeOfSales.csproj.GenerateResource.Cache
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sERP_Customer_Code_SalesTypeOfSales\obj\Debug\vi-VN\sERP_Customer_Code_SalesTypeOfSales.resources.dll
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sERP_Customer_Code_SalesTypeOfSales\obj\Debug\sERP_Customer_Code_SalesTypeOfSales.dll
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sERP_Customer_Code_SalesTypeOfSales\obj\Debug\sERP_Customer_Code_SalesTypeOfSales.pdb

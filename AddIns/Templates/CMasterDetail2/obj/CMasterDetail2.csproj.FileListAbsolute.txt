@@ -1,0 +1,4 @@
+F:\Work\Infolight\EEP2006\AddIns\Templates\CMasterDetail2\obj\Debug\ResolveAssemblyReference.cache
+F:\Work\Infolight\EEP2006\AddIns\Templates\CMasterDetail2\obj\Debug\CMasterDetail2.Form1.resources
+F:\Work\Infolight\EEP2006\AddIns\Templates\CMasterDetail2\obj\Debug\CMasterDetail2.Properties.Resources.resources
+F:\Work\Infolight\EEP2006\AddIns\Templates\CMasterDetail2\obj\Debug\CMasterDetail2.csproj.GenerateResource.Cache

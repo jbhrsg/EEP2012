@@ -1,0 +1,8 @@
+C:\Program Files (x86)\Infolight\EEP2012\JBHunter\sCustomersJobs\bin\Debug\sCustomersJobs.dll
+C:\Program Files (x86)\Infolight\EEP2012\JBHunter\sCustomersJobs\bin\Debug\sCustomersJobs.pdb
+C:\Program Files (x86)\Infolight\EEP2012\JBHunter\sCustomersJobs\obj\Debug\sCustomersJobs.csproj.GenerateResource.Cache
+C:\Program Files (x86)\Infolight\EEP2012\JBHunter\sCustomersJobs\obj\Debug\sCustomersJobs.dll
+C:\Program Files (x86)\Infolight\EEP2012\JBHunter\sCustomersJobs\obj\Debug\sCustomersJobs.pdb
+C:\Program Files (x86)\Infolight\EEP2012\EEPNetServer\JBHunter\sCustomersJobs.dll
+C:\Program Files (x86)\Infolight\EEP2012\EEPNetServer\JBHunter\sCustomersJobs.pdb
+C:\Program Files (x86)\Infolight\EEP2012\JBHunter\sCustomersJobs\obj\Debug\sCustomersJobs.Component.resources

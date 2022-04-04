@@ -1,0 +1,6 @@
+C:\Program Files (x86)\Infolight\EEP2012\EEPNetServer\JBADMIN\sIssueBelong.dll
+C:\Program Files (x86)\Infolight\EEP2012\EEPNetServer\JBADMIN\sIssueBelong.pdb
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sIssueBelong\obj\Debug\sIssueBelong.Component.resources
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sIssueBelong\obj\Debug\sIssueBelong.csproj.GenerateResource.Cache
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sIssueBelong\obj\Debug\sIssueBelong.dll
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sIssueBelong\obj\Debug\sIssueBelong.pdb

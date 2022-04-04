@@ -1,0 +1,206 @@
+D:\Infolight\EEP2010\EEPNetFLClient\obj\Debug\ResolveAssemblyReference.cache
+D:\Infolight\EEP2010\EEPNetFLClient\obj\Debug\EEPNetFLClient.CurProject.resources
+D:\Infolight\EEP2010\EEPNetFLClient\obj\Debug\EEPNetFLClient.FLowDesingerForm.resources
+D:\Infolight\EEP2010\EEPNetFLClient\obj\Debug\EEPNetFLClient.frmDataBase.resources
+D:\Infolight\EEP2010\EEPNetFLClient\obj\Debug\EEPNetFLClient.frmClientMain.resources
+D:\Infolight\EEP2010\EEPNetFLClient\obj\Debug\EEPNetFLClient.frmFavorMenu.resources
+D:\Infolight\EEP2010\EEPNetFLClient\obj\Debug\EEPNetFLClient.frmLogin.resources
+D:\Infolight\EEP2010\EEPNetFLClient\obj\Debug\EEPNetFLClient.frmMessage.resources
+D:\Infolight\EEP2010\EEPNetFLClient\obj\Debug\EEPNetFLClient.frmUserPWD.resources
+D:\Infolight\EEP2010\EEPNetFLClient\obj\Debug\EEPNetFLClient.frmUsersAndGroups.resources
+D:\Infolight\EEP2010\EEPNetFLClient\obj\Debug\EEPNetFLClient.ProgressForm.resources
+D:\Infolight\EEP2010\EEPNetFLClient\obj\Debug\EEPNetFLClient.Properties.Resources.resources
+D:\Infolight\EEP2010\EEPNetFLClient\obj\Debug\GenerateResource.read.1.tlog
+D:\Infolight\EEP2010\EEPNetFLClient\obj\Debug\GenerateResource.write.1.tlog
+D:\Infolight\EEP2010\EEPNetFLClient\EEPNetFLClient.exe.config
+D:\Infolight\EEP2010\EEPNetFLClient\obj\Debug\EEPNetFLClient.exe
+D:\Infolight\EEP2010\EEPNetFLClient\obj\Debug\EEPNetFLClient.pdb
+D:\Infolight\EEP2010\EEPNetFLClient\EEPNetFLClient.exe
+D:\Infolight\EEP2010\EEPNetFLClient\EEPNetFLClient.pdb
+D:\Infolight\EEP2010\EEPNetFLClient\FLCore.dll
+D:\Infolight\EEP2010\EEPNetFLClient\FLTools.dll
+D:\Infolight\EEP2010\EEPNetFLClient\FLCore.pdb
+D:\Infolight\EEP2010\EEPNetFLClient\FLDesignerCore.pdb
+D:\Infolight\EEP2010\EEPNetFLClient\FLTools.pdb
+C:\Program Files\Infolight\EEP2010\EEPNetFLClient\obj\Debug\EEPNetFLClient.CurProject.resources
+C:\Program Files\Infolight\EEP2010\EEPNetFLClient\obj\Debug\EEPNetFLClient.FLowDesingerForm.resources
+C:\Program Files\Infolight\EEP2010\EEPNetFLClient\obj\Debug\EEPNetFLClient.frmDataBase.resources
+C:\Program Files\Infolight\EEP2010\EEPNetFLClient\obj\Debug\EEPNetFLClient.frmClientMain.resources
+C:\Program Files\Infolight\EEP2010\EEPNetFLClient\obj\Debug\EEPNetFLClient.frmFavorMenu.resources
+C:\Program Files\Infolight\EEP2010\EEPNetFLClient\obj\Debug\EEPNetFLClient.frmLogin.resources
+C:\Program Files\Infolight\EEP2010\EEPNetFLClient\obj\Debug\EEPNetFLClient.frmMessage.resources
+C:\Program Files\Infolight\EEP2010\EEPNetFLClient\obj\Debug\EEPNetFLClient.frmUserPWD.resources
+C:\Program Files\Infolight\EEP2010\EEPNetFLClient\obj\Debug\EEPNetFLClient.frmUsersAndGroups.resources
+C:\Program Files\Infolight\EEP2010\EEPNetFLClient\obj\Debug\EEPNetFLClient.ProgressForm.resources
+C:\Program Files\Infolight\EEP2010\EEPNetFLClient\obj\Debug\EEPNetFLClient.Properties.Resources.resources
+C:\Program Files\Infolight\EEP2010\EEPNetFLClient\EEPNetFLClient.exe.config
+C:\Program Files\Infolight\EEP2010\EEPNetFLClient\obj\Debug\EEPNetFLClient.exe
+C:\Program Files\Infolight\EEP2010\EEPNetFLClient\obj\Debug\EEPNetFLClient.pdb
+C:\Program Files\Infolight\EEP2010\EEPNetFLClient\EEPNetFLClient.exe
+C:\Program Files\Infolight\EEP2010\EEPNetFLClient\EEPNetFLClient.pdb
+C:\Program Files\Infolight\EEP2010\EEPNetFLClient\FLCore.dll
+C:\Program Files\Infolight\EEP2010\EEPNetFLClient\FLTools.dll
+C:\Program Files\Infolight\EEP2010\EEPNetFLClient\FLCore.pdb
+C:\Program Files\Infolight\EEP2010\EEPNetFLClient\FLDesignerCore.pdb
+C:\Program Files\Infolight\EEP2010\EEPNetFLClient\FLTools.pdb
+C:\Program Files\Infolight\EEP2010\EEPNetFLClient\obj\Debug\EEPNetFLClient.csprojResolveAssemblyReference.cache
+C:\Program Files\Infolight\EEP2010\EEPNetFLClient\obj\Debug\EEPNetFLClient.csproj.GenerateResource.Cache
+C:\Program Files\Infolight\EEP2012WF\EEPNetFLClient\obj\Debug\EEPNetFLClient.csprojResolveAssemblyReference.cache
+C:\Program Files\Infolight\EEP2012WF\EEPNetFLClient\obj\Debug\EEPNetFLClient.CurProject.resources
+C:\Program Files\Infolight\EEP2012WF\EEPNetFLClient\obj\Debug\EEPNetFLClient.FLowDesingerForm.resources
+C:\Program Files\Infolight\EEP2012WF\EEPNetFLClient\obj\Debug\EEPNetFLClient.frmDataBase.resources
+C:\Program Files\Infolight\EEP2012WF\EEPNetFLClient\obj\Debug\EEPNetFLClient.frmClientMain.resources
+C:\Program Files\Infolight\EEP2012WF\EEPNetFLClient\obj\Debug\EEPNetFLClient.frmFavorMenu.resources
+C:\Program Files\Infolight\EEP2012WF\EEPNetFLClient\obj\Debug\EEPNetFLClient.frmLogin.resources
+C:\Program Files\Infolight\EEP2012WF\EEPNetFLClient\obj\Debug\EEPNetFLClient.frmMessage.resources
+C:\Program Files\Infolight\EEP2012WF\EEPNetFLClient\obj\Debug\EEPNetFLClient.frmUserPWD.resources
+C:\Program Files\Infolight\EEP2012WF\EEPNetFLClient\obj\Debug\EEPNetFLClient.frmUsersAndGroups.resources
+C:\Program Files\Infolight\EEP2012WF\EEPNetFLClient\obj\Debug\EEPNetFLClient.ProgressForm.resources
+C:\Program Files\Infolight\EEP2012WF\EEPNetFLClient\obj\Debug\EEPNetFLClient.Properties.Resources.resources
+C:\Program Files\Infolight\EEP2012WF\EEPNetFLClient\obj\Debug\EEPNetFLClient.csproj.GenerateResource.Cache
+C:\Program Files\Infolight\EEP2012WF\EEPNetFLClient\EEPNetFLClient.exe.config
+C:\Program Files\Infolight\EEP2012WF\EEPNetFLClient\obj\Debug\EEPNetFLClient.exe
+C:\Program Files\Infolight\EEP2012WF\EEPNetFLClient\obj\Debug\EEPNetFLClient.pdb
+C:\Program Files\Infolight\EEP2012WF\EEPNetFLClient\EEPNetFLClient.exe
+C:\Program Files\Infolight\EEP2012WF\EEPNetFLClient\EEPNetFLClient.pdb
+C:\Program Files\Infolight\EEP2012WF\EEPNetFLClient\FLCore.dll
+C:\Program Files\Infolight\EEP2012WF\EEPNetFLClient\FLTools.dll
+C:\Program Files\Infolight\EEP2012WF\EEPNetFLClient\FLCore.pdb
+C:\Program Files\Infolight\EEP2012WF\EEPNetFLClient\FLTools.pdb
+C:\Program Files\Infolight\EEP2012WF\EEPNetFLClient\FLDesignerCore.pdb
+C:\Program Files (x86)\Infolight\EEP2012WF\EEPNetFLClient\obj\Debug\EEPNetFLClient.csprojResolveAssemblyReference.cache
+C:\Program Files (x86)\Infolight\EEP2012WF\EEPNetFLClient\obj\Debug\EEPNetFLClient.CurProject.resources
+C:\Program Files (x86)\Infolight\EEP2012WF\EEPNetFLClient\obj\Debug\EEPNetFLClient.FLowDesingerForm.resources
+C:\Program Files (x86)\Infolight\EEP2012WF\EEPNetFLClient\obj\Debug\EEPNetFLClient.frmDataBase.resources
+C:\Program Files (x86)\Infolight\EEP2012WF\EEPNetFLClient\obj\Debug\EEPNetFLClient.frmClientMain.resources
+C:\Program Files (x86)\Infolight\EEP2012WF\EEPNetFLClient\obj\Debug\EEPNetFLClient.frmFavorMenu.resources
+C:\Program Files (x86)\Infolight\EEP2012WF\EEPNetFLClient\obj\Debug\EEPNetFLClient.frmLogin.resources
+C:\Program Files (x86)\Infolight\EEP2012WF\EEPNetFLClient\obj\Debug\EEPNetFLClient.frmMessage.resources
+C:\Program Files (x86)\Infolight\EEP2012WF\EEPNetFLClient\obj\Debug\EEPNetFLClient.frmUserPWD.resources
+C:\Program Files (x86)\Infolight\EEP2012WF\EEPNetFLClient\obj\Debug\EEPNetFLClient.frmUsersAndGroups.resources
+C:\Program Files (x86)\Infolight\EEP2012WF\EEPNetFLClient\obj\Debug\EEPNetFLClient.ProgressForm.resources
+C:\Program Files (x86)\Infolight\EEP2012WF\EEPNetFLClient\obj\Debug\EEPNetFLClient.Properties.Resources.resources
+C:\Program Files (x86)\Infolight\EEP2012WF\EEPNetFLClient\obj\Debug\EEPNetFLClient.csproj.GenerateResource.Cache
+C:\Program Files (x86)\Infolight\EEP2012WF\EEPNetFLClient\EEPNetFLClient.exe.config
+C:\Program Files (x86)\Infolight\EEP2012WF\EEPNetFLClient\obj\Debug\EEPNetFLClient.exe
+C:\Program Files (x86)\Infolight\EEP2012WF\EEPNetFLClient\obj\Debug\EEPNetFLClient.pdb
+C:\Program Files (x86)\Infolight\EEP2012WF\EEPNetFLClient\EEPNetFLClient.exe
+C:\Program Files (x86)\Infolight\EEP2012WF\EEPNetFLClient\EEPNetFLClient.pdb
+C:\Program Files (x86)\Infolight\EEP2012WF\EEPNetFLClient\FLCore.dll
+C:\Program Files (x86)\Infolight\EEP2012WF\EEPNetFLClient\FLTools.dll
+C:\Program Files (x86)\Infolight\EEP2012WF\EEPNetFLClient\FLCore.pdb
+C:\Program Files (x86)\Infolight\EEP2012WF\EEPNetFLClient\FLDesignerCore.pdb
+C:\Program Files (x86)\Infolight\EEP2012WF\EEPNetFLClient\FLTools.pdb
+D:\版本\Version\安裝源文件\EEP2012WF(V5.0.0.020140924 SP5)\EEPNetFLClient\obj\Debug\EEPNetFLClient.csprojResolveAssemblyReference.cache
+D:\版本\Version\安裝源文件\EEP2012WF(V5.0.0.020140924 SP5)\EEPNetFLClient\obj\Debug\EEPNetFLClient.CurProject.resources
+D:\版本\Version\安裝源文件\EEP2012WF(V5.0.0.020140924 SP5)\EEPNetFLClient\obj\Debug\EEPNetFLClient.FLowDesingerForm.resources
+D:\版本\Version\安裝源文件\EEP2012WF(V5.0.0.020140924 SP5)\EEPNetFLClient\obj\Debug\EEPNetFLClient.frmDataBase.resources
+D:\版本\Version\安裝源文件\EEP2012WF(V5.0.0.020140924 SP5)\EEPNetFLClient\obj\Debug\EEPNetFLClient.frmClientMain.resources
+D:\版本\Version\安裝源文件\EEP2012WF(V5.0.0.020140924 SP5)\EEPNetFLClient\obj\Debug\EEPNetFLClient.frmFavorMenu.resources
+D:\版本\Version\安裝源文件\EEP2012WF(V5.0.0.020140924 SP5)\EEPNetFLClient\obj\Debug\EEPNetFLClient.frmLogin.resources
+D:\版本\Version\安裝源文件\EEP2012WF(V5.0.0.020140924 SP5)\EEPNetFLClient\obj\Debug\EEPNetFLClient.frmMessage.resources
+D:\版本\Version\安裝源文件\EEP2012WF(V5.0.0.020140924 SP5)\EEPNetFLClient\obj\Debug\EEPNetFLClient.frmUserPWD.resources
+D:\版本\Version\安裝源文件\EEP2012WF(V5.0.0.020140924 SP5)\EEPNetFLClient\obj\Debug\EEPNetFLClient.frmUsersAndGroups.resources
+D:\版本\Version\安裝源文件\EEP2012WF(V5.0.0.020140924 SP5)\EEPNetFLClient\obj\Debug\EEPNetFLClient.ProgressForm.resources
+D:\版本\Version\安裝源文件\EEP2012WF(V5.0.0.020140924 SP5)\EEPNetFLClient\obj\Debug\EEPNetFLClient.Properties.Resources.resources
+D:\版本\Version\安裝源文件\EEP2012WF(V5.0.0.020140924 SP5)\EEPNetFLClient\obj\Debug\EEPNetFLClient.csproj.GenerateResource.Cache
+D:\版本\Version\安裝源文件\EEP2012WF(V5.0.0.020140924 SP5)\EEPNetFLClient\EEPNetFLClient.exe.config
+D:\版本\Version\安裝源文件\EEP2012WF(V5.0.0.020140924 SP5)\EEPNetFLClient\obj\Debug\EEPNetFLClient.exe
+D:\版本\Version\安裝源文件\EEP2012WF(V5.0.0.020140924 SP5)\EEPNetFLClient\obj\Debug\EEPNetFLClient.pdb
+D:\版本\Version\安裝源文件\EEP2012WF(V5.0.0.020140924 SP5)\EEPNetFLClient\EEPNetFLClient.exe
+D:\版本\Version\安裝源文件\EEP2012WF(V5.0.0.020140924 SP5)\EEPNetFLClient\EEPNetFLClient.pdb
+D:\版本\Version\安裝源文件\EEP2012WF(V5.0.0.020140924 SP5)\EEPNetFLClient\FLCore.dll
+D:\版本\Version\安裝源文件\EEP2012WF(V5.0.0.020140924 SP5)\EEPNetFLClient\FLTools.dll
+D:\版本\Version\安裝源文件\EEP2012WF(V5.0.0.020140924 SP5)\EEPNetFLClient\FLCore.pdb
+D:\版本\Version\安裝源文件\EEP2012WF(V5.0.0.020140924 SP5)\EEPNetFLClient\FLDesignerCore.pdb
+D:\版本\Version\安裝源文件\EEP2012WF(V5.0.0.020140924 SP5)\EEPNetFLClient\FLTools.pdb
+D:\版本\Version\安裝源文件\EEP2012(V5.0.0.020140924 SP5)\EEP2012WF\EEPNetFLClient\obj\Debug\EEPNetFLClient.csprojResolveAssemblyReference.cache
+D:\版本\Version\安裝源文件\EEP2012(V5.0.0.020140924 SP5)\EEP2012WF\EEPNetFLClient\obj\Debug\EEPNetFLClient.CurProject.resources
+D:\版本\Version\安裝源文件\EEP2012(V5.0.0.020140924 SP5)\EEP2012WF\EEPNetFLClient\obj\Debug\EEPNetFLClient.FLowDesingerForm.resources
+D:\版本\Version\安裝源文件\EEP2012(V5.0.0.020140924 SP5)\EEP2012WF\EEPNetFLClient\obj\Debug\EEPNetFLClient.frmDataBase.resources
+D:\版本\Version\安裝源文件\EEP2012(V5.0.0.020140924 SP5)\EEP2012WF\EEPNetFLClient\obj\Debug\EEPNetFLClient.frmClientMain.resources
+D:\版本\Version\安裝源文件\EEP2012(V5.0.0.020140924 SP5)\EEP2012WF\EEPNetFLClient\obj\Debug\EEPNetFLClient.frmFavorMenu.resources
+D:\版本\Version\安裝源文件\EEP2012(V5.0.0.020140924 SP5)\EEP2012WF\EEPNetFLClient\obj\Debug\EEPNetFLClient.frmLogin.resources
+D:\版本\Version\安裝源文件\EEP2012(V5.0.0.020140924 SP5)\EEP2012WF\EEPNetFLClient\obj\Debug\EEPNetFLClient.frmMessage.resources
+D:\版本\Version\安裝源文件\EEP2012(V5.0.0.020140924 SP5)\EEP2012WF\EEPNetFLClient\obj\Debug\EEPNetFLClient.frmUserPWD.resources
+D:\版本\Version\安裝源文件\EEP2012(V5.0.0.020140924 SP5)\EEP2012WF\EEPNetFLClient\obj\Debug\EEPNetFLClient.frmUsersAndGroups.resources
+D:\版本\Version\安裝源文件\EEP2012(V5.0.0.020140924 SP5)\EEP2012WF\EEPNetFLClient\obj\Debug\EEPNetFLClient.ProgressForm.resources
+D:\版本\Version\安裝源文件\EEP2012(V5.0.0.020140924 SP5)\EEP2012WF\EEPNetFLClient\obj\Debug\EEPNetFLClient.Properties.Resources.resources
+D:\版本\Version\安裝源文件\EEP2012(V5.0.0.020140924 SP5)\EEP2012WF\EEPNetFLClient\obj\Debug\EEPNetFLClient.csproj.GenerateResource.Cache
+D:\版本\Version\安裝源文件\EEP2012(V5.0.0.020140924 SP5)\EEP2012WF\EEPNetFLClient\EEPNetFLClient.exe.config
+D:\版本\Version\安裝源文件\EEP2012(V5.0.0.020140924 SP5)\EEP2012WF\EEPNetFLClient\obj\Debug\EEPNetFLClient.exe
+D:\版本\Version\安裝源文件\EEP2012(V5.0.0.020140924 SP5)\EEP2012WF\EEPNetFLClient\obj\Debug\EEPNetFLClient.pdb
+D:\版本\Version\安裝源文件\EEP2012(V5.0.0.020140924 SP5)\EEP2012WF\EEPNetFLClient\EEPNetFLClient.exe
+D:\版本\Version\安裝源文件\EEP2012(V5.0.0.020140924 SP5)\EEP2012WF\EEPNetFLClient\EEPNetFLClient.pdb
+D:\版本\Version\安裝源文件\EEP2012(V5.0.0.020140924 SP5)\EEP2012WF\EEPNetFLClient\FLCore.dll
+D:\版本\Version\安裝源文件\EEP2012(V5.0.0.020140924 SP5)\EEP2012WF\EEPNetFLClient\FLTools.dll
+D:\版本\Version\安裝源文件\EEP2012(V5.0.0.020140924 SP5)\EEP2012WF\EEPNetFLClient\FLCore.pdb
+D:\版本\Version\安裝源文件\EEP2012(V5.0.0.020140924 SP5)\EEP2012WF\EEPNetFLClient\FLTools.pdb
+D:\Program Files (x86)\Your Company Name\EEP2012\EEPNetFLClient\obj\Debug\EEPNetFLClient.csprojResolveAssemblyReference.cache
+D:\Program Files (x86)\Your Company Name\EEP2012\EEPNetFLClient\obj\Debug\EEPNetFLClient.CurProject.resources
+D:\Program Files (x86)\Your Company Name\EEP2012\EEPNetFLClient\obj\Debug\EEPNetFLClient.FLowDesingerForm.resources
+D:\Program Files (x86)\Your Company Name\EEP2012\EEPNetFLClient\obj\Debug\EEPNetFLClient.frmDataBase.resources
+D:\Program Files (x86)\Your Company Name\EEP2012\EEPNetFLClient\obj\Debug\EEPNetFLClient.frmClientMain.resources
+D:\Program Files (x86)\Your Company Name\EEP2012\EEPNetFLClient\obj\Debug\EEPNetFLClient.frmFavorMenu.resources
+D:\Program Files (x86)\Your Company Name\EEP2012\EEPNetFLClient\obj\Debug\EEPNetFLClient.frmLogin.resources
+D:\Program Files (x86)\Your Company Name\EEP2012\EEPNetFLClient\obj\Debug\EEPNetFLClient.frmMessage.resources
+D:\Program Files (x86)\Your Company Name\EEP2012\EEPNetFLClient\obj\Debug\EEPNetFLClient.frmUserPWD.resources
+D:\Program Files (x86)\Your Company Name\EEP2012\EEPNetFLClient\obj\Debug\EEPNetFLClient.frmUsersAndGroups.resources
+D:\Program Files (x86)\Your Company Name\EEP2012\EEPNetFLClient\obj\Debug\EEPNetFLClient.ProgressForm.resources
+D:\Program Files (x86)\Your Company Name\EEP2012\EEPNetFLClient\obj\Debug\EEPNetFLClient.Properties.Resources.resources
+D:\Program Files (x86)\Your Company Name\EEP2012\EEPNetFLClient\obj\Debug\EEPNetFLClient.csproj.GenerateResource.Cache
+D:\Program Files (x86)\Your Company Name\EEP2012\EEPNetFLClient\obj\Debug\EEPNetFLClient.exe
+D:\Program Files (x86)\Your Company Name\EEP2012\EEPNetFLClient\obj\Debug\EEPNetFLClient.pdb
+D:\Program Files (x86)\Your Company Name\EEP2012\EEPNetFLClient\EEPNetFLClient.exe.config
+D:\Program Files (x86)\Your Company Name\EEP2012\EEPNetFLClient\EEPNetFLClient.exe
+D:\Program Files (x86)\Your Company Name\EEP2012\EEPNetFLClient\EEPNetFLClient.pdb
+D:\Program Files (x86)\Your Company Name\EEP2012\EEPNetFLClient\FLCore.dll
+D:\Program Files (x86)\Your Company Name\EEP2012\EEPNetFLClient\FLTools.dll
+D:\Program Files (x86)\Your Company Name\EEP2012\EEPNetFLClient\FLCore.pdb
+D:\Program Files (x86)\Your Company Name\EEP2012\EEPNetFLClient\FLDesignerCore.pdb
+D:\Program Files (x86)\Your Company Name\EEP2012\EEPNetFLClient\FLTools.pdb
+C:\Program Files (x86)\Infolight\EEP2012\EEPNetFLClient\obj\Debug\EEPNetFLClient.csprojResolveAssemblyReference.cache
+C:\Program Files (x86)\Infolight\EEP2012\EEPNetFLClient\obj\Debug\EEPNetFLClient.CurProject.resources
+C:\Program Files (x86)\Infolight\EEP2012\EEPNetFLClient\obj\Debug\EEPNetFLClient.FLowDesingerForm.resources
+C:\Program Files (x86)\Infolight\EEP2012\EEPNetFLClient\obj\Debug\EEPNetFLClient.frmDataBase.resources
+C:\Program Files (x86)\Infolight\EEP2012\EEPNetFLClient\obj\Debug\EEPNetFLClient.frmClientMain.resources
+C:\Program Files (x86)\Infolight\EEP2012\EEPNetFLClient\obj\Debug\EEPNetFLClient.frmFavorMenu.resources
+C:\Program Files (x86)\Infolight\EEP2012\EEPNetFLClient\obj\Debug\EEPNetFLClient.frmLogin.resources
+C:\Program Files (x86)\Infolight\EEP2012\EEPNetFLClient\obj\Debug\EEPNetFLClient.frmMessage.resources
+C:\Program Files (x86)\Infolight\EEP2012\EEPNetFLClient\obj\Debug\EEPNetFLClient.frmUserPWD.resources
+C:\Program Files (x86)\Infolight\EEP2012\EEPNetFLClient\obj\Debug\EEPNetFLClient.frmUsersAndGroups.resources
+C:\Program Files (x86)\Infolight\EEP2012\EEPNetFLClient\obj\Debug\EEPNetFLClient.ProgressForm.resources
+C:\Program Files (x86)\Infolight\EEP2012\EEPNetFLClient\obj\Debug\EEPNetFLClient.Properties.Resources.resources
+C:\Program Files (x86)\Infolight\EEP2012\EEPNetFLClient\obj\Debug\EEPNetFLClient.csproj.GenerateResource.Cache
+C:\Program Files (x86)\Infolight\EEP2012\EEPNetFLClient\EEPNetFLClient.exe.config
+C:\Program Files (x86)\Infolight\EEP2012\EEPNetFLClient\obj\Debug\EEPNetFLClient.exe
+C:\Program Files (x86)\Infolight\EEP2012\EEPNetFLClient\obj\Debug\EEPNetFLClient.pdb
+C:\Program Files (x86)\Infolight\EEP2012\EEPNetFLClient\EEPNetFLClient.exe
+C:\Program Files (x86)\Infolight\EEP2012\EEPNetFLClient\EEPNetFLClient.pdb
+C:\Program Files (x86)\Infolight\EEP2012\EEPNetFLClient\FLCore.dll
+C:\Program Files (x86)\Infolight\EEP2012\EEPNetFLClient\FLTools.dll
+C:\Program Files (x86)\Infolight\EEP2012\EEPNetFLClient\FLCore.pdb
+C:\Program Files (x86)\Infolight\EEP2012\EEPNetFLClient\FLTools.pdb
+D:\Infolight\EEP2012\EEPNetFLClient\obj\Debug\EEPNetFLClient.csprojResolveAssemblyReference.cache
+D:\Infolight\EEP2012\EEPNetFLClient\obj\Debug\EEPNetFLClient.CurProject.resources
+D:\Infolight\EEP2012\EEPNetFLClient\obj\Debug\EEPNetFLClient.FLowDesingerForm.resources
+D:\Infolight\EEP2012\EEPNetFLClient\obj\Debug\EEPNetFLClient.frmDataBase.resources
+D:\Infolight\EEP2012\EEPNetFLClient\obj\Debug\EEPNetFLClient.frmClientMain.resources
+D:\Infolight\EEP2012\EEPNetFLClient\obj\Debug\EEPNetFLClient.frmFavorMenu.resources
+D:\Infolight\EEP2012\EEPNetFLClient\obj\Debug\EEPNetFLClient.frmLogin.resources
+D:\Infolight\EEP2012\EEPNetFLClient\obj\Debug\EEPNetFLClient.frmMessage.resources
+D:\Infolight\EEP2012\EEPNetFLClient\obj\Debug\EEPNetFLClient.frmUserPWD.resources
+D:\Infolight\EEP2012\EEPNetFLClient\obj\Debug\EEPNetFLClient.frmUsersAndGroups.resources
+D:\Infolight\EEP2012\EEPNetFLClient\obj\Debug\EEPNetFLClient.ProgressForm.resources
+D:\Infolight\EEP2012\EEPNetFLClient\obj\Debug\EEPNetFLClient.Properties.Resources.resources
+D:\Infolight\EEP2012\EEPNetFLClient\obj\Debug\EEPNetFLClient.csproj.GenerateResource.Cache
+D:\Infolight\EEP2012\EEPNetFLClient\EEPNetFLClient.exe.config
+D:\Infolight\EEP2012\EEPNetFLClient\obj\Debug\EEPNetFLClient.exe
+D:\Infolight\EEP2012\EEPNetFLClient\obj\Debug\EEPNetFLClient.pdb
+D:\Infolight\EEP2012\EEPNetFLClient\EEPNetFLClient.exe
+D:\Infolight\EEP2012\EEPNetFLClient\EEPNetFLClient.pdb
+D:\Infolight\EEP2012\EEPNetFLClient\FLCore.dll
+D:\Infolight\EEP2012\EEPNetFLClient\FLTools.dll
+D:\Infolight\EEP2012\EEPNetFLClient\FLCore.pdb
+D:\Infolight\EEP2012\EEPNetFLClient\FLDesignerCore.pdb
+D:\Infolight\EEP2012\EEPNetFLClient\FLTools.pdb

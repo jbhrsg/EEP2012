@@ -1,0 +1,6 @@
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sCON_HOBBY\bin\Release\sCON_HOBBY.dll
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sCON_HOBBY\bin\Release\sCON_HOBBY.pdb
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sCON_HOBBY\obj\Release\sCON_HOBBY.Component.resources
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sCON_HOBBY\obj\Release\sCON_HOBBY.csproj.GenerateResource.Cache
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sCON_HOBBY\obj\Release\sCON_HOBBY.dll
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sCON_HOBBY\obj\Release\sCON_HOBBY.pdb

@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?><ns0:FLSequentialWorkflow RejectProcedure="{p1:Null}" ConnectionType="SqlClient" Description="現金繳回申請" x:Name="FLSequentialWorkflow" FormName="{x:Null}" SkipForSameUser="True" EEPAlias="{x:Null}" ClientDll="{x:Null}" TableName="CashTakeBackMaster" BodyField="{x:Null}" WebFormName="JB_ADMIN.JBERP_CashTakeBackApply" ExpTime="0" PresentFields="ApplyDate,ApplyNotes" TimeUnit="Day" Keys="{x:Null}" ExpTimeField="{x:Null}" MailApproveLevel="{x:Null}" UrgentTime="0" NotifySendMail="True" OrgKind="0" xmlns="http://schemas.microsoft.com/winfx/2006/xaml/workflow" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:p1="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:ns0="clr-namespace:FLTools;Assembly=FLTools, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null">
+	<ns0:FLStand SendEmail="True" DelayAutoApprove="False" SendToKind="Applicate" x:Name="現金繳回申請" FormName="" TimeUnit="Day" SendToUser="" AllowSendBack="True" PlusApproveReturn="True" PlusApprove="False" WebFormName="" ExpTime="0" Parameters="{x:Null}" NavigatorMode="Insert" SendToField="" SendToId="{x:Null}" SendToRole="" UrgentTime="0" FLNavigatorMode="Submit" />
+	<ns0:FLStand SendEmail="True" DelayAutoApprove="False" SendToKind="Role" x:Name="會計點收確認" FormName="" TimeUnit="Day" SendToUser="{x:Null}" AllowSendBack="True" PlusApproveReturn="True" PlusApprove="False" WebFormName="" ExpTime="0" Parameters="{x:Null}" NavigatorMode="Normal" SendToField="{x:Null}" SendToId="{x:Null}" SendToRole="1010062 ; 專員1/會計室" UrgentTime="0" FLNavigatorMode="Approve" />
+	<IfElseActivity x:Name="會計點收確認通知">
+		<IfElseBranchActivity Description="(CompanyID==2 ||  CompanyID==4)" x:Name="會計專員2">
+			<ns0:FLNotify SendEmail="True" Parameters="{x:Null}" x:Name="通知會計專員2" FormName="" TimeUnit="Day" SendToUser="{x:Null}" SendToKind="Role" UserId="{x:Null}" WebFormName="" ExpTime="0" RoleId="{x:Null}" NavigatorMode="Normal" SendToField="{x:Null}" SendToRole="1010062 ; 專員1/會計室" UrgentTime="0" FLNavigatorMode="Notify" />
+		</IfElseBranchActivity>
+		<IfElseBranchActivity x:Name="會計專員1" />
+	</IfElseActivity>
+	<ns0:FLNotify SendEmail="True" Parameters="{x:Null}" x:Name="現金繳回確認通知" FormName="" TimeUnit="Day" SendToUser="" SendToKind="Applicate" UserId="{x:Null}" WebFormName="" ExpTime="0" RoleId="{x:Null}" NavigatorMode="Normal" SendToField="" SendToRole="" UrgentTime="0" FLNavigatorMode="Notify" />
+	<IfElseActivity x:Name="是否帳務處理">
+		<IfElseBranchActivity x:Name="人工沖銷" />
+		<IfElseBranchActivity Description="AgainBillType != 5" x:Name="系統沖銷">
+			<ns0:FLProcedure ServerDll="C:\Program Files (x86)\Infolight\EEP2012\EEPNetServer\JBADMIN\sCashTakeBackMaster.dll" ModuleName="sCashTakeBackMaster" ErrorLog="False" MethodName="PutFeeToShortTermMinusDetails" x:Name="繳回帳務處理" ErrorToRole="{x:Null}" />
+		</IfElseBranchActivity>
+	</IfElseActivity>
+</ns0:FLSequentialWorkflow>

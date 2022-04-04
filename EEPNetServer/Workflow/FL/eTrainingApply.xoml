@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?><ns0:FLSequentialWorkflow RejectProcedure="{p1:Null}" ConnectionType="SqlClient" Description="外出申請單" x:Name="FLSequentialWorkflow" FormName="{x:Null}" SkipForSameUser="True" EEPAlias="{x:Null}" TableName="CourseApply" BodyField="{x:Null}" WebFormName="{x:Null}" ExpTime="0" PresentFields="CourseName,TermStartDate" TimeUnit="Day" Keys="ApplyID" ExpTimeField="{x:Null}" ClientDll="{x:Null}" UrgentTime="0" NotifySendMail="True" OrgKind="0" xmlns="http://schemas.microsoft.com/winfx/2006/xaml/workflow" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:p1="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:ns0="clr-namespace:FLTools;Assembly=FLTools, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null">
+	<ns0:FLStand SendEmail="True" DelayAutoApprove="False" SendToKind="Applicate" x:Name="外訓申請" FormName="" TimeUnit="Day" SendToUser="" AllowSendBack="True" PlusApproveReturn="True" PlusApprove="False" WebFormName="JB_ETRAINING.TRN_eTrainingApply" ExpTime="0" Parameters="P1=Apply" NavigatorMode="Insert" SendToField="" SendToId="{x:Null}" SendToRole="" UrgentTime="0" FLNavigatorMode="Submit" />
+	<ns0:FLApprove SendEmail="True" DelayAutoApprove="False" SendToKind="Manager" InvokedDateTime="0001-01-01T00:00:00.0000000" FormName="" TimeUnit="Day" SendToUser="" AllowSendBack="True" PlusApproveReturn="True" PlusApprove="False" WebFormName="" ExpTime="0" Parameters="{x:Null}" NavigatorMode="Normal" SendToField="{x:Null}" SendToId="{x:Null}" SendToRole="" UrgentTime="0" x:Name="主管審核" FLNavigatorMode="Approve">
+		<ns0:FLApprove.ApproveRights>
+			<ns1:ApproveRightCollection xmlns:ns1="clr-namespace:FLCore;Assembly=FLTools, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null">
+				<ns1:ApproveRight Grade="0 ; 直屬主管" ParentActivity="{x:Null}" Expression="true" Name="0" />
+			</ns1:ApproveRightCollection>
+		</ns0:FLApprove.ApproveRights>
+	</ns0:FLApprove>
+	<IfElseActivity x:Name="是否證照課程">
+		<IfElseBranchActivity Description="IsCertifiedCourse==1" x:Name="證照課程">
+			<ns0:FLStand SendEmail="False" DelayAutoApprove="False" SendToKind="Role" x:Name="證照主管" FormName="" TimeUnit="Day" SendToUser="{x:Null}" AllowSendBack="True" PlusApproveReturn="True" PlusApprove="False" WebFormName="" ExpTime="0" Parameters="{x:Null}" NavigatorMode="Normal" SendToField="" SendToId="{x:Null}" SendToRole="09001 ; 安衛環保經理" UrgentTime="0" FLNavigatorMode="Approve" />
+		</IfElseBranchActivity>
+		<IfElseBranchActivity x:Name="非證照課程" />
+	</IfElseActivity>
+	<IfElseActivity x:Name="是否海外課程">
+		<IfElseBranchActivity Description="IsOverseaCourse==1" x:Name="海外課程">
+			<ns0:FLStand SendEmail="False" DelayAutoApprove="False" SendToKind="Role" x:Name="海外訓主管" FormName="" TimeUnit="Day" SendToUser="{x:Null}" AllowSendBack="True" PlusApproveReturn="True" PlusApprove="False" WebFormName="" ExpTime="0" Parameters="{x:Null}" NavigatorMode="Normal" SendToField="{x:Null}" SendToId="{x:Null}" SendToRole="01001 ; 總經理" UrgentTime="0" FLNavigatorMode="Approve" />
+		</IfElseBranchActivity>
+		<IfElseBranchActivity x:Name="非海外課程" />
+	</IfElseActivity>
+	<ns0:FLApprove SendEmail="False" DelayAutoApprove="False" SendToKind="Manager" InvokedDateTime="0001-01-01T00:00:00.0000000" FormName="" TimeUnit="Day" SendToUser="" AllowSendBack="True" PlusApproveReturn="True" PlusApprove="False" WebFormName="" ExpTime="0" Parameters="{x:Null}" NavigatorMode="Normal" SendToField="{x:Null}" SendToId="{x:Null}" SendToRole="" UrgentTime="0" x:Name="HR主管審核" FLNavigatorMode="Approve" />
+	<ns0:FLApprove SendEmail="False" DelayAutoApprove="False" SendToKind="Manager" InvokedDateTime="0001-01-01T00:00:00.0000000" FormName="" TimeUnit="Day" SendToUser="" AllowSendBack="True" PlusApproveReturn="True" PlusApprove="False" WebFormName="" ExpTime="0" Parameters="{x:Null}" NavigatorMode="Normal" SendToField="{x:Null}" SendToId="{x:Null}" SendToRole="" UrgentTime="0" x:Name="訓練管理員報名確認" FLNavigatorMode="Approve" />
+	<ns0:FLNotify SendEmail="False" Parameters="{x:Null}" x:Name="報名成功通知" FormName="" TimeUnit="Day" SendToUser="{x:Null}" SendToKind="Role" UserId="{x:Null}" WebFormName="" ExpTime="0" RoleId="{x:Null}" NavigatorMode="Normal" SendToField="{x:Null}" SendToRole="{x:Null}" UrgentTime="0" FLNavigatorMode="Notify" />
+	<ns0:FLStand SendEmail="False" DelayAutoApprove="False" SendToKind="Role" x:Name="外訓結案" FormName="" TimeUnit="Day" SendToUser="{x:Null}" AllowSendBack="True" PlusApproveReturn="True" PlusApprove="False" WebFormName="" ExpTime="0" Parameters="{x:Null}" NavigatorMode="Normal" SendToField="{x:Null}" SendToId="{x:Null}" SendToRole="{x:Null}" UrgentTime="0" FLNavigatorMode="Submit" />
+	<ns0:FLProcedure ServerDll="{x:Null}" ModuleName="{x:Null}" ErrorLog="False" MethodName="{x:Null}" x:Name="外訓結案處理" ErrorToRole="{x:Null}" />
+</ns0:FLSequentialWorkflow>

@@ -1,0 +1,21 @@
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sSYS_ROLES_AGENT\bin\Debug\sSYS_ROLES_AGENT.dll
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sSYS_ROLES_AGENT\bin\Debug\sSYS_ROLES_AGENT.pdb
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sSYS_ROLES_AGENT\obj\Debug\sSYS_ROLES_AGENT.csproj.GenerateResource.Cache
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sSYS_ROLES_AGENT\obj\Debug\sSYS_ROLES_AGENT.dll
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sSYS_ROLES_AGENT\obj\Debug\sSYS_ROLES_AGENT.pdb
+C:\Program Files (x86)\Infolight\EEP2012\EEPNetServer\JBADMIN\sSYS_ROLES_AGENT.dll
+C:\Program Files (x86)\Infolight\EEP2012\EEPNetServer\JBADMIN\sSYS_ROLES_AGENT.pdb
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sSYS_ROLES_AGENT\obj\Debug\sSYS_ROLES_AGENT.Component.resources
+C:\Program Files (x86)\Infolight\EEP2012\EEPNetServer\JBADMIN\vi-VN\sSYS_ROLES_AGENT.resources.dll
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sSYS_ROLES_AGENT\obj\Debug\sSYS_ROLES_AGENT.Component.vi-VN.resources
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sSYS_ROLES_AGENT\obj\Debug\vi-VN\sSYS_ROLES_AGENT.resources.dll
+D:\Infolight\EEP2012\EEPNetServer\JBADMIN\sSYS_ROLES_AGENT.dll
+D:\Infolight\EEP2012\EEPNetServer\JBADMIN\sSYS_ROLES_AGENT.pdb
+D:\Infolight\EEP2012\EEPNetServer\JBADMIN\vi-VN\sSYS_ROLES_AGENT.resources.dll
+D:\Infolight\EEP2012\JBADMIN\sSYS_ROLES_AGENT\obj\Debug\sSYS_ROLES_AGENT.Component.resources
+D:\Infolight\EEP2012\JBADMIN\sSYS_ROLES_AGENT\obj\Debug\sSYS_ROLES_AGENT.Component.vi-VN.resources
+D:\Infolight\EEP2012\JBADMIN\sSYS_ROLES_AGENT\obj\Debug\sSYS_ROLES_AGENT.csproj.GenerateResource.Cache
+D:\Infolight\EEP2012\JBADMIN\sSYS_ROLES_AGENT\obj\Debug\vi-VN\sSYS_ROLES_AGENT.resources.dll
+D:\Infolight\EEP2012\JBADMIN\sSYS_ROLES_AGENT\obj\Debug\sSYS_ROLES_AGENT.dll
+D:\Infolight\EEP2012\JBADMIN\sSYS_ROLES_AGENT\obj\Debug\sSYS_ROLES_AGENT.pdb
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sSYS_ROLES_AGENT\obj\Debug\sSYS_ROLES_AGENT.csprojResolveAssemblyReference.cache

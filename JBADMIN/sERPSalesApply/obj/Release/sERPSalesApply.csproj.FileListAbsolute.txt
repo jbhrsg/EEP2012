@@ -1,0 +1,14 @@
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sERPSalesApply\bin\Release\sERPSalesApply.dll
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sERPSalesApply\bin\Release\sERPSalesApply.pdb
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sERPSalesApply\bin\Release\vi-VN\sERPSalesApply.resources.dll
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sERPSalesApply\bin\Release\Newtonsoft.Json.dll
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sERPSalesApply\bin\Release\Newtonsoft.Json.xml
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sERPSalesApply\obj\Release\sERPSalesApply.Component.vi-VN.resources
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sERPSalesApply\obj\Release\sERPSalesApply.csproj.GenerateResource.Cache
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sERPSalesApply\obj\Release\vi-VN\sERPSalesApply.resources.dll
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sERPSalesApply\obj\Release\sERPSalesApply.dll
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sERPSalesApply\obj\Release\sERPSalesApply.pdb
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sERPSalesApply\obj\Release\sERPSalesApply.Component.resources
+C:\Program Files (x86)\Infolight\EEP2012\EEPNetServer\JBADMIN\sERPSalesApply.dll
+C:\Program Files (x86)\Infolight\EEP2012\EEPNetServer\JBADMIN\sERPSalesApply.pdb
+C:\Program Files (x86)\Infolight\EEP2012\EEPNetServer\JBADMIN\vi-VN\sERPSalesApply.resources.dll

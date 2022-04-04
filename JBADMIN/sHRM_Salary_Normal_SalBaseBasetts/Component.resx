@@ -1,0 +1,185 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <metadata name="TheServiceManager.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>470, 27</value>
+  </metadata>
+  <metadata name="TheInfoConnection.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>635, 28</value>
+  </metadata>
+  <metadata name="cb_HRM_BASE_BASE.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 131</value>
+  </metadata>
+  <metadata name="cb_HRM_SALARY_SALCODE_SalaryApproval.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 196</value>
+  </metadata>
+  <data name="cb_HRM_SALARY_SALCODE_SalaryApproval.CommandText" xml:space="preserve">
+    <value>Select	C.SALARY_ID,
+		C.SALARY_CODE,
+		C.SALARY_CNAME,
+		C.SALARY_ENAME
+From	[dbo].[HRM_SALARY_SALCODE] as C
+Where	Exists(Select 1 From [dbo].[HRM_SALARY_SALMAPPING_DETAIL] Where SALMAPPING_CODE = 'SalaryApproval' and C.SALARY_ID = SALARY_ID)</value>
+  </data>
+  <metadata name="HRM_SALARY_SALBASE_BASETTS.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>389, 164</value>
+  </metadata>
+  <data name="HRM_SALARY_SALBASE_BASETTS.CommandText" xml:space="preserve">
+    <value>Select	BTS.*,
+		BAS.EMPLOYEE_CODE,BAS.NAME_C,BAS.NAME_E,
+		SSC.SALARY_CODE, SSC.SALARY_CNAME, SSC.SALARY_ENAME,
+		dbo.Decode(BTS.AMT)	as AMT_Decode,
+		DPT.DEPT_CNAME as DEPT_ID_NAME
+From	dbo.HRM_SALARY_SALBASE_BASETTS		as BTS
+		Left Join dbo.HRM_BASE_BASE			as BAS on BTS.EMPLOYEE_ID = BAS.EMPLOYEE_ID
+		Left Join dbo.HRM_SALARY_SALCODE	as SSC on BTS.SALARY_ID = SSC.SALARY_ID
+		Left Join dbo.HRM_DEPT				as DPT on DPT.DEPT_ID = [dbo].fnHRM_BASE_BASETTS_FieldName(BTS.EMPLOYEE_ID,BTS.EFFECT_DATE,'DEPT_ID')		
+Order By [EFFECT_DATE] Desc</value>
+  </data>
+  <metadata name="ucHRM_SALARY_SALBASE_BASETTS.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>638, 165</value>
+  </metadata>
+  <metadata name="log_HRM_SALARY_SALBASE_BASETTS.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>896, 165</value>
+  </metadata>
+  <metadata name="HRM_SALARY_SALBASE_BASETTS_LOG.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>389, 194</value>
+  </metadata>
+  <data name="HRM_SALARY_SALBASE_BASETTS_LOG.CommandText" xml:space="preserve">
+    <value>Select	BTS.*,
+		BAS.EMPLOYEE_CODE,BAS.NAME_C,BAS.NAME_E,
+		SSC.SALARY_CODE, SSC.SALARY_CNAME, SSC.SALARY_ENAME,
+		dbo.Decode(BTS.AMT)	as AMT_Decode,
+		DPT.DEPT_CNAME as DEPT_ID_NAME,
+		Case BTS.LOG_STATE When 'I' Then '新增' When 'M' Then '修改' When 'D' Then '刪除' Else '' End LOG_STATE_NAME,
+		USR.USERNAME as LOG_USER_NAME
+From	dbo.HRM_SALARY_SALBASE_BASETTS_LOG	as BTS
+		Left Join [dbo].[USERS]				as USR on USR.USERID = BTS.LOG_USER
+		Left Join dbo.HRM_BASE_BASE			as BAS on BTS.EMPLOYEE_ID = BAS.EMPLOYEE_ID
+		Left Join dbo.HRM_SALARY_SALCODE	as SSC on BTS.SALARY_ID = SSC.SALARY_ID
+		Left Join dbo.HRM_DEPT				as DPT on DPT.DEPT_ID = [dbo].fnHRM_BASE_BASETTS_FieldName(BTS.EMPLOYEE_ID,BTS.EFFECT_DATE,'DEPT_ID')		
+Order By [BTS].LOG_DATE Desc</value>
+  </data>
+  <metadata name="cb_HRM_DEPT.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>18, 158</value>
+  </metadata>
+  <metadata name="$this.TrayLargeIcon" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>False</value>
+  </metadata>
+</root>

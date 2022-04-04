@@ -1,0 +1,11 @@
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sERP_Setting_SalesKindSalesType\bin\Debug\sERP_Setting_SalesKindSalesType.dll
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sERP_Setting_SalesKindSalesType\bin\Debug\sERP_Setting_SalesKindSalesType.pdb
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sERP_Setting_SalesKindSalesType\obj\Debug\sERP_Setting_SalesKindSalesType.csproj.GenerateResource.Cache
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sERP_Setting_SalesKindSalesType\obj\Debug\sERP_Setting_SalesKindSalesType.dll
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sERP_Setting_SalesKindSalesType\obj\Debug\sERP_Setting_SalesKindSalesType.pdb
+C:\Program Files (x86)\Infolight\EEP2012\EEPNetServer\JBADMIN\sERP_Setting_SalesKindSalesType.dll
+C:\Program Files (x86)\Infolight\EEP2012\EEPNetServer\JBADMIN\sERP_Setting_SalesKindSalesType.pdb
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sERP_Setting_SalesKindSalesType\obj\Debug\sERP_Setting_SalesKindSalesType.Component.resources
+C:\Program Files (x86)\Infolight\EEP2012\EEPNetServer\JBADMIN\vi-VN\sERP_Setting_SalesKindSalesType.resources.dll
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sERP_Setting_SalesKindSalesType\obj\Debug\sERP_Setting_SalesKindSalesType.Component.vi-VN.resources
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sERP_Setting_SalesKindSalesType\obj\Debug\vi-VN\sERP_Setting_SalesKindSalesType.resources.dll

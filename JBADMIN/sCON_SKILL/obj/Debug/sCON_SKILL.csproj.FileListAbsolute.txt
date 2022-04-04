@@ -1,0 +1,14 @@
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sCON_SKILL\bin\Debug\sCON_SKILL.dll
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sCON_SKILL\bin\Debug\sCON_SKILL.pdb
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sCON_SKILL\obj\Debug\sCON_SKILL.csproj.GenerateResource.Cache
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sCON_SKILL\obj\Debug\sCON_SKILL.dll
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sCON_SKILL\obj\Debug\sCON_SKILL.pdb
+C:\Program Files (x86)\Infolight\EEP2012\EEPNetServer\JBADMIN\sCON_SKILL.dll
+C:\Program Files (x86)\Infolight\EEP2012\EEPNetServer\JBADMIN\sCON_SKILL.pdb
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sCON_SKILL\obj\Debug\sCON_SKILL.Component.resources
+D:\Infolight\EEP2012\EEPNetServer\JBADMIN\sCON_SKILL.dll
+D:\Infolight\EEP2012\EEPNetServer\JBADMIN\sCON_SKILL.pdb
+D:\Infolight\EEP2012\JBADMIN\sCON_SKILL\obj\Debug\sCON_SKILL.Component.resources
+D:\Infolight\EEP2012\JBADMIN\sCON_SKILL\obj\Debug\sCON_SKILL.csproj.GenerateResource.Cache
+D:\Infolight\EEP2012\JBADMIN\sCON_SKILL\obj\Debug\sCON_SKILL.dll
+D:\Infolight\EEP2012\JBADMIN\sCON_SKILL\obj\Debug\sCON_SKILL.pdb

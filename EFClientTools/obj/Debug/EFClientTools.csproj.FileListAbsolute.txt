@@ -1,0 +1,88 @@
+C:\Program Files\Infolight\EEP2012Dev\EFClientTools\bin\Debug\EFClientTools.dll.config
+C:\Program Files\Infolight\EEP2012Dev\EFClientTools\bin\Debug\EFClientTools.dll
+C:\Program Files\Infolight\EEP2012Dev\EFClientTools\bin\Debug\EFClientTools.pdb
+C:\Program Files\Infolight\EEP2012Dev\EFClientTools\bin\Debug\EFBase.dll
+C:\Program Files\Infolight\EEP2012Dev\EFClientTools\bin\Debug\EFBase.pdb
+C:\Program Files\Infolight\EEP2012Dev\EFClientTools\obj\Debug\EFClientTools.csprojResolveAssemblyReference.cache
+C:\Program Files\Infolight\EEP2012Dev\EFClientTools\obj\Debug\EFClientTools.Editor.EditorDialog.resources
+C:\Program Files\Infolight\EEP2012Dev\EFClientTools\obj\Debug\EFClientTools.Editor.RemoteNameEditorDialog.resources
+C:\Program Files\Infolight\EEP2012Dev\EFClientTools\obj\Debug\EFClientTools.csproj.GenerateResource.Cache
+C:\Program Files\Infolight\EEP2012Dev\EFClientTools\obj\Debug\EFClientTools.dll
+C:\Program Files\Infolight\EEP2012Dev\EFClientTools\obj\Debug\EFClientTools.pdb
+C:\Program Files\Infolight\EEP2012WF\EFClientTools\bin\Debug\EFClientTools.dll.config
+C:\Program Files\Infolight\EEP2012WF\EFClientTools\bin\Debug\EFClientTools.dll
+C:\Program Files\Infolight\EEP2012WF\EFClientTools\bin\Debug\EFClientTools.pdb
+C:\Program Files\Infolight\EEP2012WF\EFClientTools\bin\Debug\EFBase.dll
+C:\Program Files\Infolight\EEP2012WF\EFClientTools\bin\Debug\EFBase.pdb
+C:\Program Files\Infolight\EEP2012WF\EFClientTools\obj\Debug\EFClientTools.csprojResolveAssemblyReference.cache
+C:\Program Files\Infolight\EEP2012WF\EFClientTools\obj\Debug\EFClientTools.Editor.EditorDialog.resources
+C:\Program Files\Infolight\EEP2012WF\EFClientTools\obj\Debug\EFClientTools.Editor.RemoteNameEditorDialog.resources
+C:\Program Files\Infolight\EEP2012WF\EFClientTools\obj\Debug\EFClientTools.csproj.GenerateResource.Cache
+C:\Program Files\Infolight\EEP2012WF\EFClientTools\obj\Debug\EFClientTools.dll
+C:\Program Files\Infolight\EEP2012WF\EFClientTools\obj\Debug\EFClientTools.pdb
+C:\Program Files (x86)\Infolight\EEP2012WF\EFClientTools\bin\Debug\EFClientTools.dll.config
+C:\Program Files (x86)\Infolight\EEP2012WF\EFClientTools\bin\Debug\EFClientTools.dll
+C:\Program Files (x86)\Infolight\EEP2012WF\EFClientTools\bin\Debug\EFClientTools.pdb
+C:\Program Files (x86)\Infolight\EEP2012WF\EFClientTools\bin\Debug\EFBase.dll
+C:\Program Files (x86)\Infolight\EEP2012WF\EFClientTools\bin\Debug\EFBase.pdb
+C:\Program Files (x86)\Infolight\EEP2012WF\EFClientTools\obj\Debug\EFClientTools.csprojResolveAssemblyReference.cache
+C:\Program Files (x86)\Infolight\EEP2012WF\EFClientTools\obj\Debug\EFClientTools.Editor.EditorDialog.resources
+C:\Program Files (x86)\Infolight\EEP2012WF\EFClientTools\obj\Debug\EFClientTools.Editor.RemoteNameEditorDialog.resources
+C:\Program Files (x86)\Infolight\EEP2012WF\EFClientTools\obj\Debug\EFClientTools.csproj.GenerateResource.Cache
+C:\Program Files (x86)\Infolight\EEP2012WF\EFClientTools\obj\Debug\EFClientTools.dll
+C:\Program Files (x86)\Infolight\EEP2012WF\EFClientTools\obj\Debug\EFClientTools.pdb
+D:\版本\Version\安裝源文件\EEP2012WF(V5.0.0.020140924 SP5)\EFClientTools\bin\Debug\EFClientTools.dll.config
+D:\版本\Version\安裝源文件\EEP2012WF(V5.0.0.020140924 SP5)\EFClientTools\bin\Debug\EFClientTools.dll
+D:\版本\Version\安裝源文件\EEP2012WF(V5.0.0.020140924 SP5)\EFClientTools\bin\Debug\EFClientTools.pdb
+D:\版本\Version\安裝源文件\EEP2012WF(V5.0.0.020140924 SP5)\EFClientTools\bin\Debug\EFBase.dll
+D:\版本\Version\安裝源文件\EEP2012WF(V5.0.0.020140924 SP5)\EFClientTools\bin\Debug\EFBase.pdb
+D:\版本\Version\安裝源文件\EEP2012WF(V5.0.0.020140924 SP5)\EFClientTools\obj\Debug\EFClientTools.csprojResolveAssemblyReference.cache
+D:\版本\Version\安裝源文件\EEP2012WF(V5.0.0.020140924 SP5)\EFClientTools\obj\Debug\EFClientTools.Editor.EditorDialog.resources
+D:\版本\Version\安裝源文件\EEP2012WF(V5.0.0.020140924 SP5)\EFClientTools\obj\Debug\EFClientTools.Editor.RemoteNameEditorDialog.resources
+D:\版本\Version\安裝源文件\EEP2012WF(V5.0.0.020140924 SP5)\EFClientTools\obj\Debug\EFClientTools.csproj.GenerateResource.Cache
+D:\版本\Version\安裝源文件\EEP2012WF(V5.0.0.020140924 SP5)\EFClientTools\obj\Debug\EFClientTools.dll
+D:\版本\Version\安裝源文件\EEP2012WF(V5.0.0.020140924 SP5)\EFClientTools\obj\Debug\EFClientTools.pdb
+D:\版本\Version\安裝源文件\EEP2012(V5.0.0.020140924 SP5)\EEP2012WF\EFClientTools\bin\Debug\EFClientTools.dll.config
+D:\版本\Version\安裝源文件\EEP2012(V5.0.0.020140924 SP5)\EEP2012WF\EFClientTools\bin\Debug\EFClientTools.dll
+D:\版本\Version\安裝源文件\EEP2012(V5.0.0.020140924 SP5)\EEP2012WF\EFClientTools\bin\Debug\EFClientTools.pdb
+D:\版本\Version\安裝源文件\EEP2012(V5.0.0.020140924 SP5)\EEP2012WF\EFClientTools\bin\Debug\EFBase.dll
+D:\版本\Version\安裝源文件\EEP2012(V5.0.0.020140924 SP5)\EEP2012WF\EFClientTools\bin\Debug\EFBase.pdb
+D:\版本\Version\安裝源文件\EEP2012(V5.0.0.020140924 SP5)\EEP2012WF\EFClientTools\obj\Debug\EFClientTools.csprojResolveAssemblyReference.cache
+D:\版本\Version\安裝源文件\EEP2012(V5.0.0.020140924 SP5)\EEP2012WF\EFClientTools\obj\Debug\EFClientTools.Editor.EditorDialog.resources
+D:\版本\Version\安裝源文件\EEP2012(V5.0.0.020140924 SP5)\EEP2012WF\EFClientTools\obj\Debug\EFClientTools.Editor.RemoteNameEditorDialog.resources
+D:\版本\Version\安裝源文件\EEP2012(V5.0.0.020140924 SP5)\EEP2012WF\EFClientTools\obj\Debug\EFClientTools.csproj.GenerateResource.Cache
+D:\版本\Version\安裝源文件\EEP2012(V5.0.0.020140924 SP5)\EEP2012WF\EFClientTools\obj\Debug\EFClientTools.dll
+D:\版本\Version\安裝源文件\EEP2012(V5.0.0.020140924 SP5)\EEP2012WF\EFClientTools\obj\Debug\EFClientTools.pdb
+D:\Program Files (x86)\Your Company Name\EEP2012\EFClientTools\bin\Debug\EFClientTools.dll.config
+D:\Program Files (x86)\Your Company Name\EEP2012\EFClientTools\bin\Debug\EFClientTools.dll
+D:\Program Files (x86)\Your Company Name\EEP2012\EFClientTools\bin\Debug\EFClientTools.pdb
+D:\Program Files (x86)\Your Company Name\EEP2012\EFClientTools\bin\Debug\EFBase.dll
+D:\Program Files (x86)\Your Company Name\EEP2012\EFClientTools\bin\Debug\EFBase.pdb
+D:\Program Files (x86)\Your Company Name\EEP2012\EFClientTools\obj\Debug\EFClientTools.csprojResolveAssemblyReference.cache
+D:\Program Files (x86)\Your Company Name\EEP2012\EFClientTools\obj\Debug\EFClientTools.Editor.EditorDialog.resources
+D:\Program Files (x86)\Your Company Name\EEP2012\EFClientTools\obj\Debug\EFClientTools.Editor.RemoteNameEditorDialog.resources
+D:\Program Files (x86)\Your Company Name\EEP2012\EFClientTools\obj\Debug\EFClientTools.csproj.GenerateResource.Cache
+D:\Program Files (x86)\Your Company Name\EEP2012\EFClientTools\obj\Debug\EFClientTools.dll
+D:\Program Files (x86)\Your Company Name\EEP2012\EFClientTools\obj\Debug\EFClientTools.pdb
+D:\Infolight\EEP2012\EFClientTools\bin\Debug\EFClientTools.dll.config
+D:\Infolight\EEP2012\EFClientTools\bin\Debug\EFClientTools.dll
+D:\Infolight\EEP2012\EFClientTools\bin\Debug\EFClientTools.pdb
+D:\Infolight\EEP2012\EFClientTools\bin\Debug\EFBase.dll
+D:\Infolight\EEP2012\EFClientTools\bin\Debug\EFBase.pdb
+D:\Infolight\EEP2012\EFClientTools\obj\Debug\EFClientTools.csprojResolveAssemblyReference.cache
+D:\Infolight\EEP2012\EFClientTools\obj\Debug\EFClientTools.Editor.EditorDialog.resources
+D:\Infolight\EEP2012\EFClientTools\obj\Debug\EFClientTools.Editor.RemoteNameEditorDialog.resources
+D:\Infolight\EEP2012\EFClientTools\obj\Debug\EFClientTools.csproj.GenerateResource.Cache
+D:\Infolight\EEP2012\EFClientTools\obj\Debug\EFClientTools.dll
+D:\Infolight\EEP2012\EFClientTools\obj\Debug\EFClientTools.pdb
+C:\Program Files (x86)\Infolight\EEP2012\EFClientTools\bin\Debug\EFClientTools.dll.config
+C:\Program Files (x86)\Infolight\EEP2012\EFClientTools\bin\Debug\EFClientTools.dll
+C:\Program Files (x86)\Infolight\EEP2012\EFClientTools\bin\Debug\EFClientTools.pdb
+C:\Program Files (x86)\Infolight\EEP2012\EFClientTools\bin\Debug\EFBase.dll
+C:\Program Files (x86)\Infolight\EEP2012\EFClientTools\bin\Debug\EFBase.pdb
+C:\Program Files (x86)\Infolight\EEP2012\EFClientTools\obj\Debug\EFClientTools.csprojResolveAssemblyReference.cache
+C:\Program Files (x86)\Infolight\EEP2012\EFClientTools\obj\Debug\EFClientTools.Editor.EditorDialog.resources
+C:\Program Files (x86)\Infolight\EEP2012\EFClientTools\obj\Debug\EFClientTools.Editor.RemoteNameEditorDialog.resources
+C:\Program Files (x86)\Infolight\EEP2012\EFClientTools\obj\Debug\EFClientTools.csproj.GenerateResource.Cache
+C:\Program Files (x86)\Infolight\EEP2012\EFClientTools\obj\Debug\EFClientTools.dll
+C:\Program Files (x86)\Infolight\EEP2012\EFClientTools\obj\Debug\EFClientTools.pdb

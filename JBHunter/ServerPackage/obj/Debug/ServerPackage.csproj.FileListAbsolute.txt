@@ -1,0 +1,8 @@
+C:\Program Files (x86)\Infolight\EEP2012\JBHunter\ServerPackage\bin\Debug\ServerPackage.dll
+C:\Program Files (x86)\Infolight\EEP2012\JBHunter\ServerPackage\bin\Debug\ServerPackage.pdb
+C:\Program Files (x86)\Infolight\EEP2012\JBHunter\ServerPackage\obj\Debug\ServerPackage.csproj.GenerateResource.Cache
+C:\Program Files (x86)\Infolight\EEP2012\JBHunter\ServerPackage\obj\Debug\ServerPackage.dll
+C:\Program Files (x86)\Infolight\EEP2012\JBHunter\ServerPackage\obj\Debug\ServerPackage.pdb
+C:\Program Files (x86)\Infolight\EEP2012\EEPNetServer\JBHunter\ServerPackage.dll
+C:\Program Files (x86)\Infolight\EEP2012\EEPNetServer\JBHunter\ServerPackage.pdb
+C:\Program Files (x86)\Infolight\EEP2012\JBHunter\ServerPackage\obj\Debug\ServerPackage.Component.resources

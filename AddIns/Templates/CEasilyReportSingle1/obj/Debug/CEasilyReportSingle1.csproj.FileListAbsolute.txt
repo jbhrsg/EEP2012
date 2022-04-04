@@ -1,0 +1,6 @@
+C:\Program Files\Infolight\EEP2012\AddIns\Templates\CEasilyReportSingle1\obj\Debug\CEasilyReportSingle1.csprojResolveAssemblyReference.cache
+C:\Program Files\Infolight\EEP2012\AddIns\Templates\CEasilyReportSingle1\obj\Debug\TAG_NAMESPACE.TAG_FORMNAME.resources
+C:\Program Files\Infolight\EEP2012\AddIns\Templates\CEasilyReportSingle1\obj\Debug\CEasilyReportSingle1.Properties.Resources.resources
+C:\Program Files\Infolight\EEP2012\AddIns\Templates\CEasilyReportSingle1\obj\Debug\CEasilyReportSingle1.csproj.GenerateResource.Cache
+C:\Program Files\Infolight\EEP2012\AddIns\Templates\CEasilyReportSingle1\obj\Debug\CEasilyReportSingle1.dll
+C:\Program Files\Infolight\EEP2012\AddIns\Templates\CEasilyReportSingle1\obj\Debug\CEasilyReportSingle1.pdb

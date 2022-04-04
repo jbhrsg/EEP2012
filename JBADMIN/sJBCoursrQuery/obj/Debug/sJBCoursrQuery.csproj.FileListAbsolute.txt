@@ -1,0 +1,9 @@
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sJBCoursrQuery\bin\Debug\sJBCoursrQuery.dll
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sJBCoursrQuery\bin\Debug\sJBCoursrQuery.pdb
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sJBCoursrQuery\obj\Debug\sJBCoursrQuery.csprojResolveAssemblyReference.cache
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sJBCoursrQuery\obj\Debug\sJBCoursrQuery.csproj.GenerateResource.Cache
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sJBCoursrQuery\obj\Debug\sJBCoursrQuery.dll
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sJBCoursrQuery\obj\Debug\sJBCoursrQuery.pdb
+C:\Program Files (x86)\Infolight\EEP2012\EEPNetServer\JBADMIN\sJBCoursrQuery.dll
+C:\Program Files (x86)\Infolight\EEP2012\EEPNetServer\JBADMIN\sJBCoursrQuery.pdb
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sJBCoursrQuery\obj\Debug\sJBCoursrQuery.Component.resources

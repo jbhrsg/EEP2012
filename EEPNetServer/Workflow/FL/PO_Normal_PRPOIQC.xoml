@@ -1,0 +1,90 @@
+﻿<?xml version="1.0" encoding="utf-8"?><ns0:FLSequentialWorkflow RejectProcedure="{p1:Null}" ConnectionType="SqlClient" Description="請購申請單" x:Name="FLSequentialWorkflow" FormName="{x:Null}" SkipForSameUser="False" EEPAlias="JBADMIN" ClientDll="{x:Null}" TableName="POMaster" BodyField="{x:Null}" WebFormName="JB_ADMIN.PO_Normal_PRPOIQC" ExpTime="0" PresentFields="ApplyDate,ApplyUserID,Description" TimeUnit="Day" Keys="" ExpTimeField="{x:Null}" MailApproveLevel="{x:Null}" UrgentTime="0" NotifySendMail="True" OrgKind="0" xmlns="http://schemas.microsoft.com/winfx/2006/xaml/workflow" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:p1="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:ns0="clr-namespace:FLTools;Assembly=FLTools, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null">
+	<ns0:FLStand SendEmail="False" DelayAutoApprove="False" SendToKind="Applicate" x:Name="請購者申請" FormName="" TimeUnit="Day" SendToUser="" AllowSendBack="True" PlusApproveReturn="True" PlusApprove="False" WebFormName="" ExpTime="0" Parameters="" NavigatorMode="Insert" SendToField="" SendToId="{x:Null}" SendToRole="" UrgentTime="0" FLNavigatorMode="Submit" />
+	<IfElseActivity x:Name="請購類別">
+		<IfElseBranchActivity x:Name="工程類" />
+		<IfElseBranchActivity Description="POTypeID !='POT004'" x:Name="非工程類">
+			<ns0:FLStand SendEmail="True" DelayAutoApprove="False" SendToKind="RefRole" x:Name="資料與備品確認" FormName="" TimeUnit="Day" SendToUser="{x:Null}" AllowSendBack="True" PlusApproveReturn="True" PlusApprove="False" WebFormName="" ExpTime="0" Parameters="P1=S2" NavigatorMode="Modify" SendToField="ResponsibleGROUPID" SendToId="{x:Null}" SendToRole="" UrgentTime="0" FLNavigatorMode="Approve" />
+		</IfElseBranchActivity>
+	</IfElseActivity>
+	<IfElseActivity x:Name="請購者主管">
+		<IfElseBranchActivity Description="RequisitKindID==1" x:Name="例行性">
+			<ns0:FLApprove SendEmail="True" DelayAutoApprove="False" SendToKind="ApplicateManager" InvokedDateTime="0001-01-01T00:00:00.0000000" FormName="" TimeUnit="Day" SendToUser="" AllowSendBack="True" PlusApproveReturn="True" PlusApprove="False" WebFormName="" ExpTime="0" Parameters="P1=S3" NavigatorMode="Normal" SendToField="{x:Null}" SendToId="{x:Null}" SendToRole="" UrgentTime="0" x:Name="請購者主管審核" FLNavigatorMode="Approve">
+				<ns0:FLApprove.ApproveRights>
+					<ns1:ApproveRightCollection xmlns:ns1="clr-namespace:FLCore;Assembly=FLTools, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null">
+						<ns1:ApproveRight Grade="0 ; 直屬主管" ParentActivity="{x:Null}" Expression="Org_NOParent != &quot;10000&quot;" Name="0" />
+						<ns1:ApproveRight Grade="5 ; 主任/課長/專案經理" ParentActivity="{x:Null}" Expression="true" Name="5" />
+						<ns1:ApproveRight Grade="6 ; 經理/副理/顧問" ParentActivity="{x:Null}" Expression="true" Name="6" />
+						<ns1:ApproveRight Grade="7 ; 跨部門經理/協理" ParentActivity="{x:Null}" Expression="true" Name="7" />
+						<ns1:ApproveRight Grade="8 ; 副總" ParentActivity="{x:Null}" Expression="true" Name="8" />
+					</ns1:ApproveRightCollection>
+				</ns0:FLApprove.ApproveRights>
+			</ns0:FLApprove>
+		</IfElseBranchActivity>
+		<IfElseBranchActivity x:Name="非例行性">
+			<ns0:FLApprove SendEmail="True" DelayAutoApprove="False" SendToKind="ApplicateManager" InvokedDateTime="0001-01-01T00:00:00.0000000" FormName="" TimeUnit="Day" SendToUser="" AllowSendBack="True" PlusApproveReturn="True" PlusApprove="False" WebFormName="" ExpTime="0" Parameters="P1=S3" NavigatorMode="Normal" SendToField="{x:Null}" SendToId="{x:Null}" SendToRole="" UrgentTime="0" x:Name="請購者主管審核_" FLNavigatorMode="Approve">
+				<ns0:FLApprove.ApproveRights>
+					<ns1:ApproveRightCollection xmlns:ns1="clr-namespace:FLCore;Assembly=FLTools, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null">
+						<ns1:ApproveRight Grade="0 ; 直屬主管" ParentActivity="{x:Null}" Expression="Org_NOParent != &quot;10000&quot;" Name="0" />
+						<ns1:ApproveRight Grade="5 ; 主任/課長/專案經理" ParentActivity="{x:Null}" Expression="true" Name="5" />
+						<ns1:ApproveRight Grade="6 ; 經理/副理/顧問" ParentActivity="{x:Null}" Expression="sPO_Normal_PRPOIQC.PRTotalAmount()" Name="6" />
+						<ns1:ApproveRight Grade="7 ; 跨部門經理/協理" ParentActivity="{x:Null}" Expression="sPO_Normal_PRPOIQC.PRTotalAmount1()" Name="7" />
+						<ns1:ApproveRight Grade="8 ; 副總" ParentActivity="{x:Null}" Expression="sPO_Normal_PRPOIQC.PRTotalAmount1()" Name="8" />
+						<ns1:ApproveRight Grade="9 ; 總經理" ParentActivity="{x:Null}" Expression="sPO_Normal_PRPOIQC.PRTotalAmount2()" Name="9" />
+					</ns1:ApproveRightCollection>
+				</ns0:FLApprove.ApproveRights>
+			</ns0:FLApprove>
+		</IfElseBranchActivity>
+	</IfElseActivity>
+	<ns0:FLStand SendEmail="True" DelayAutoApprove="False" SendToKind="RefRole" x:Name="採購作業" FormName="" TimeUnit="Day" SendToUser="{x:Null}" AllowSendBack="True" PlusApproveReturn="True" PlusApprove="False" WebFormName="" ExpTime="0" Parameters="P1=S4" NavigatorMode="Modify" SendToField="ResponsibleGROUPID" SendToId="{x:Null}" SendToRole="" UrgentTime="0" FLNavigatorMode="Approve" />
+	<IfElseActivity x:Name="採購主管">
+		<IfElseBranchActivity Description="RequisitKindID==1" x:Name="例行性_">
+			<ns0:FLApprove SendEmail="True" DelayAutoApprove="False" SendToKind="Manager" InvokedDateTime="0001-01-01T00:00:00.0000000" FormName="" TimeUnit="Day" SendToUser="" AllowSendBack="True" PlusApproveReturn="True" PlusApprove="False" WebFormName="" ExpTime="0" Parameters="P1=S5" NavigatorMode="Normal" SendToField="{x:Null}" SendToId="{x:Null}" SendToRole="" UrgentTime="0" x:Name="採購主管審核" FLNavigatorMode="Approve">
+				<ns0:FLApprove.ApproveRights>
+					<ns1:ApproveRightCollection xmlns:ns1="clr-namespace:FLCore;Assembly=FLTools, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null">
+						<ns1:ApproveRight Grade="0 ; 直屬主管" ParentActivity="{x:Null}" Expression="Org_NOParent1 != &quot;10000&quot;" Name="0" />
+						<ns1:ApproveRight Grade="5 ; 主任/課長/專案經理" ParentActivity="{x:Null}" Expression="true" Name="5" />
+						<ns1:ApproveRight Grade="6 ; 經理/副理/顧問" ParentActivity="{x:Null}" Expression="true" Name="6" />
+						<ns1:ApproveRight Grade="7 ; 跨部門經理/協理" ParentActivity="{x:Null}" Expression="true" Name="7" />
+						<ns1:ApproveRight Grade="8 ; 副總" ParentActivity="{x:Null}" Expression="true" Name="8" />
+					</ns1:ApproveRightCollection>
+				</ns0:FLApprove.ApproveRights>
+			</ns0:FLApprove>
+		</IfElseBranchActivity>
+		<IfElseBranchActivity x:Name="非例行性_">
+			<ns0:FLApprove SendEmail="True" DelayAutoApprove="False" SendToKind="Manager" InvokedDateTime="0001-01-01T00:00:00.0000000" FormName="" TimeUnit="Day" SendToUser="" AllowSendBack="True" PlusApproveReturn="True" PlusApprove="False" WebFormName="" ExpTime="0" Parameters="P1=S5" NavigatorMode="Normal" SendToField="{x:Null}" SendToId="{x:Null}" SendToRole="" UrgentTime="0" x:Name="採購主管審核_" FLNavigatorMode="Approve">
+				<ns0:FLApprove.ApproveRights>
+					<ns1:ApproveRightCollection xmlns:ns1="clr-namespace:FLCore;Assembly=FLTools, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null">
+						<ns1:ApproveRight Grade="0 ; 直屬主管" ParentActivity="{x:Null}" Expression="Org_NOParent1 != &quot;10000&quot;" Name="0" />
+						<ns1:ApproveRight Grade="5 ; 主任/課長/專案經理" ParentActivity="{x:Null}" Expression="true" Name="5" />
+						<ns1:ApproveRight Grade="6 ; 經理/副理/顧問" ParentActivity="{x:Null}" Expression="sPO_Normal_PRPOIQC.POTotalAmount()" Name="6" />
+						<ns1:ApproveRight Grade="7 ; 跨部門經理/協理" ParentActivity="{x:Null}" Expression="sPO_Normal_PRPOIQC.POTotalAmount1()" Name="7" />
+						<ns1:ApproveRight Grade="8 ; 副總" ParentActivity="{x:Null}" Expression="sPO_Normal_PRPOIQC.POTotalAmount1()" Name="8" />
+						<ns1:ApproveRight Grade="9 ; 總經理" ParentActivity="{x:Null}" Expression="sPO_Normal_PRPOIQC.POTotalAmount2()" Name="9" />
+					</ns1:ApproveRightCollection>
+				</ns0:FLApprove.ApproveRights>
+			</ns0:FLApprove>
+		</IfElseBranchActivity>
+	</IfElseActivity>
+	<ns0:FLStand SendEmail="True" DelayAutoApprove="False" SendToKind="Applicate" x:Name="請購者驗收" FormName="" TimeUnit="Day" SendToUser="" AllowSendBack="True" PlusApproveReturn="True" PlusApprove="False" WebFormName="" ExpTime="0" Parameters="P1=S7" NavigatorMode="Modify" SendToField="" SendToId="{x:Null}" SendToRole="" UrgentTime="0" FLNavigatorMode="Approve" />
+	<ns0:FLStand SendEmail="True" DelayAutoApprove="False" SendToKind="ApplicateManager" x:Name="請購者主管驗收" FormName="" TimeUnit="Day" SendToUser="{x:Null}" AllowSendBack="True" PlusApproveReturn="True" PlusApprove="False" WebFormName="" ExpTime="0" Parameters="P1=S8" NavigatorMode="Modify" SendToField="{x:Null}" SendToId="{x:Null}" SendToRole="{x:Null}" UrgentTime="0" FLNavigatorMode="Approve" />
+	<ns0:FLStand SendEmail="True" DelayAutoApprove="False" SendToKind="RefRole" x:Name="採購結帳" FormName="" TimeUnit="Day" SendToUser="{x:Null}" AllowSendBack="True" PlusApproveReturn="True" PlusApprove="False" WebFormName="" ExpTime="0" Parameters="P1=S9" NavigatorMode="Modify" SendToField="ResponsibleGROUPID" SendToId="{x:Null}" SendToRole="" UrgentTime="0" FLNavigatorMode="Approve" />
+	<ns0:FLProcedure ServerDll="C:\Program Files (x86)\Infolight\EEP2012\EEPNetServer\JBADMIN\sPO_Normal_PRPOIQC.dll" ModuleName="sPO_Normal_PRPOIQC" ErrorLog="False" MethodName="InsertAssetApplyFromPO_Normal_PRPOIQC" x:Name="資產異動單起單" ErrorToRole="{x:Null}" />
+	<ns0:FLStand SendEmail="True" DelayAutoApprove="False" SendToKind="RefRole" x:Name="會計審核" FormName="" TimeUnit="Day" SendToUser="{x:Null}" AllowSendBack="True" PlusApproveReturn="True" PlusApprove="False" WebFormName="" ExpTime="0" Parameters="P1=S11" NavigatorMode="Modify" SendToField="AccountantRoleID" SendToId="{x:Null}" SendToRole="" UrgentTime="0" FLNavigatorMode="Approve" />
+	<ns0:FLProcedure ServerDll="C:\Program Files (x86)\Infolight\EEP2012\EEPNetServer\JBADMIN\sPO_Normal_PRPOIQC.dll" ModuleName="sPO_Normal_PRPOIQC" ErrorLog="False" MethodName="PutPODeliveryToAPDetails" x:Name="應付帳務處理" ErrorToRole="{x:Null}" />
+	<IfElseActivity x:Name="驗收數量確認">
+		<IfElseBranchActivity Description="sPO_Normal_PRPOIQC.IsAllReceived()" x:Name="採購數量驗收完成" />
+		<IfElseBranchActivity x:Name="採購數量驗收未完成">
+			<IfElseActivity x:Name="__">
+				<IfElseBranchActivity Description="sPO_Normal_PRPOIQC.DeliveryIsEnough()" x:Name="請購者交期安排完成">
+					<ns0:FLGoto x:Name="GoTo請購者驗收" ActivityName="請購者驗收" />
+				</IfElseBranchActivity>
+				<IfElseBranchActivity x:Name="請購者交期安排未完成">
+					<ns0:FLStand SendEmail="True" DelayAutoApprove="False" SendToKind="Applicate" x:Name="請購者交期安排" FormName="" TimeUnit="Day" SendToUser="" AllowSendBack="True" PlusApproveReturn="True" PlusApprove="False" WebFormName="" ExpTime="0" Parameters="P1=S6" NavigatorMode="Modify" SendToField="" SendToId="{x:Null}" SendToRole="" UrgentTime="0" FLNavigatorMode="Approve" />
+					<ns0:FLGoto x:Name="GoTo請購者驗收_" ActivityName="請購者驗收" />
+				</IfElseBranchActivity>
+			</IfElseActivity>
+		</IfElseBranchActivity>
+	</IfElseActivity>
+	<ns0:FLProcedure ServerDll="{x:Null}" ModuleName="sPO_Normal_PRPOIQC" ErrorLog="False" MethodName="PostIsCatalogue" x:Name="財產目錄過帳" ErrorToRole="{x:Null}" />
+	<ns0:FLNotify SendEmail="True" Parameters="{x:Null}" x:Name="結案通知" FormName="" TimeUnit="Day" SendToUser="" SendToKind="Applicate" UserId="{x:Null}" WebFormName="" ExpTime="0" RoleId="{x:Null}" NavigatorMode="Normal" SendToField="" SendToRole="" UrgentTime="0" FLNavigatorMode="Notify" />
+</ns0:FLSequentialWorkflow>

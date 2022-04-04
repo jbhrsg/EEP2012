@@ -1,0 +1,6 @@
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sAssetLocaContracts\bin\Release\sAssetLocaContracts.dll
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sAssetLocaContracts\bin\Release\sAssetLocaContracts.pdb
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sAssetLocaContracts\obj\Release\sAssetLocaContracts.Component.resources
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sAssetLocaContracts\obj\Release\sAssetLocaContracts.csproj.GenerateResource.Cache
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sAssetLocaContracts\obj\Release\sAssetLocaContracts.dll
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sAssetLocaContracts\obj\Release\sAssetLocaContracts.pdb

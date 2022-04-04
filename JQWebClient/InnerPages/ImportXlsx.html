@@ -1,0 +1,23 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>Excel匯入資料</title>
+	<meta charset="utf-8" />
+    <link href="../js/themes/default/easyui.css" rel="stylesheet" />
+    <link href="../js/themes/icon.css" rel="stylesheet" />
+    <script src="../js/jquery-1.8.0.min.js"></script>
+    <script src="../js/jquery.easyui.min.js"></script>
+</head>
+<body>
+    <div style="padding: 10px;">
+        <input type="file" id="importFileUpload" name="importFileUpload" style="width:250px" accept=".xlsx,.xls"/>
+        <div>開始匯入資料列行號:</div>
+        <input type="text" id="startRowNo" value="3"/>
+        <div>匯入欄位數:</div>
+        <input type="text" id="columnsCount" />
+        <a class="easyui-linkbutton" href="javascript:void(0)" style="vertical-align: top;"
+           onclick="uploadXlsx()">開始匯入</a>
+    </div>
+</body>
+</html>

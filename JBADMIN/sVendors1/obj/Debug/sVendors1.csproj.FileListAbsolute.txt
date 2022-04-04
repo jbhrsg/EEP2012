@@ -1,0 +1,10 @@
+C:\Program Files (x86)\Infolight\EEP2012\EEPNetServer\JBADMIN\sVendors.dll
+C:\Program Files (x86)\Infolight\EEP2012\EEPNetServer\JBADMIN\sVendors.pdb
+C:\Program Files (x86)\Infolight\EEP2012\EEPNetServer\JBADMIN\vi-VN\sVendors.resources.dll
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sVendors1\obj\Debug\sVendors1.csprojResolveAssemblyReference.cache
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sVendors1\obj\Debug\sVendors.Component.resources
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sVendors1\obj\Debug\sVendors.Component.vi-VN.resources
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sVendors1\obj\Debug\sVendors1.csproj.GenerateResource.Cache
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sVendors1\obj\Debug\vi-VN\sVendors.resources.dll
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sVendors1\obj\Debug\sVendors.dll
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sVendors1\obj\Debug\sVendors.pdb

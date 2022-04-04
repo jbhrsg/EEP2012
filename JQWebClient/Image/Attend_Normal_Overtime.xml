@@ -1,0 +1,9 @@
+<FlowDetails>
+  <FormName>JB_ADMIN.HRM_AttendOverTimeFlow</FormName>
+  <FlowNavMode>Submit</FlowNavMode>
+  <NavMode>Insert</NavMode>
+  <Parameters>
+  </Parameters>
+  <FlowFileName>C:\Program Files (x86)\Infolight\EEP2012\EEPNetServer\Workflow\FL\Attend_Normal_Overtime</FlowFileName>
+  <ImageWidth>1387</ImageWidth>
+</FlowDetails>

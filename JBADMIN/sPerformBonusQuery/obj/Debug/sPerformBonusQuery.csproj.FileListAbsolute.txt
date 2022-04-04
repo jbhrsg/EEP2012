@@ -1,0 +1,8 @@
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sPerformBonusQuery\bin\Debug\sPerformBonusQuery.dll
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sPerformBonusQuery\bin\Debug\sPerformBonusQuery.pdb
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sPerformBonusQuery\obj\Debug\sPerformBonusQuery.csproj.GenerateResource.Cache
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sPerformBonusQuery\obj\Debug\sPerformBonusQuery.dll
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sPerformBonusQuery\obj\Debug\sPerformBonusQuery.pdb
+C:\Program Files (x86)\Infolight\EEP2012\EEPNetServer\JBADMIN\sPerformBonusQuery.dll
+C:\Program Files (x86)\Infolight\EEP2012\EEPNetServer\JBADMIN\sPerformBonusQuery.pdb
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sPerformBonusQuery\obj\Debug\sPerformBonusQuery.Component.resources

@@ -1,0 +1,30 @@
+<?xml version="1.0" standalone="yes"?>
+<xs:schema id="rShortTermAcct" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+  <xs:element name="rShortTermAcct" msdata:IsDataSet="true" msdata:CaseSensitive="true" msdata:UseCurrentLocale="true">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="ShortTerm">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="ShortTermNo" type="xs:string" minOccurs="0" />
+              <xs:element name="ShortTermGist" type="xs:string" minOccurs="0" />
+              <xs:element name="ShortTermDescr" type="xs:string" minOccurs="0" />
+              <xs:element name="PlanPayDate" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="ShortTermAmount" type="xs:int" minOccurs="0" />
+              <xs:element name="PayTypeID" type="xs:int" minOccurs="0" />
+              <xs:element name="PayTypeName" type="xs:string" minOccurs="0" />
+              <xs:element name="RequestDate" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="ShortTermDate" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="EmployeeID" type="xs:string" minOccurs="0" />
+              <xs:element name="EmployeeName" type="xs:string" minOccurs="0" />
+              <xs:element name="CompanyID" type="xs:int" minOccurs="0" />
+              <xs:element name="CompanyName" type="xs:string" minOccurs="0" />
+              <xs:element name="PayTo" type="xs:string" minOccurs="0" />
+              <xs:element name="VendName" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

@@ -1,0 +1,24 @@
+C:\Program Files (x86)\Infolight\EEP2012\JQChartTools\bin\Debug\JQChartTools.dll
+C:\Program Files (x86)\Infolight\EEP2012\JQChartTools\bin\Debug\JQChartTools.pdb
+C:\Program Files (x86)\Infolight\EEP2012\JQChartTools\bin\Debug\EFBase.dll
+C:\Program Files (x86)\Infolight\EEP2012\JQChartTools\bin\Debug\EFClientTools.dll
+C:\Program Files (x86)\Infolight\EEP2012\JQChartTools\bin\Debug\EFBase.pdb
+C:\Program Files (x86)\Infolight\EEP2012\JQChartTools\bin\Debug\EFClientTools.pdb
+C:\Program Files (x86)\Infolight\EEP2012\JQChartTools\obj\Debug\JQChartTools.ColorCollection.resources
+C:\Program Files (x86)\Infolight\EEP2012\JQChartTools\obj\Debug\JQChartTools.RemoteNameEditorDialog.resources
+C:\Program Files (x86)\Infolight\EEP2012\JQChartTools\obj\Debug\JQChartTools.csproj.GenerateResource.Cache
+C:\Program Files (x86)\Infolight\EEP2012\JQChartTools\obj\Debug\JQChartTools.dll
+C:\Program Files (x86)\Infolight\EEP2012\JQChartTools\obj\Debug\JQChartTools.pdb
+C:\Program Files (x86)\Infolight\EEP2012\JQChartTools\obj\Debug\JQChartTools.csprojResolveAssemblyReference.cache
+D:\Infolight\EEP2012\JQChartTools\bin\Debug\JQChartTools.dll
+D:\Infolight\EEP2012\JQChartTools\bin\Debug\JQChartTools.pdb
+D:\Infolight\EEP2012\JQChartTools\bin\Debug\EFBase.dll
+D:\Infolight\EEP2012\JQChartTools\bin\Debug\EFClientTools.dll
+D:\Infolight\EEP2012\JQChartTools\bin\Debug\EFBase.pdb
+D:\Infolight\EEP2012\JQChartTools\bin\Debug\EFClientTools.pdb
+D:\Infolight\EEP2012\JQChartTools\obj\Debug\JQChartTools.csprojResolveAssemblyReference.cache
+D:\Infolight\EEP2012\JQChartTools\obj\Debug\JQChartTools.ColorCollection.resources
+D:\Infolight\EEP2012\JQChartTools\obj\Debug\JQChartTools.RemoteNameEditorDialog.resources
+D:\Infolight\EEP2012\JQChartTools\obj\Debug\JQChartTools.csproj.GenerateResource.Cache
+D:\Infolight\EEP2012\JQChartTools\obj\Debug\JQChartTools.dll
+D:\Infolight\EEP2012\JQChartTools\obj\Debug\JQChartTools.pdb

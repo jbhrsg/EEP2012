@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?><ns0:FLSequentialWorkflow RejectProcedure="{p1:Null}" ConnectionType="SqlClient" Description="暫借款申請單" x:Name="FLSequentialWorkflow" FormName="{x:Null}" SkipForSameUser="False" EEPAlias="{x:Null}" ClientDll="{x:Null}" TableName="ShortTerm" BodyField="{x:Null}" WebFormName="JB_ADMIN.JBREQ_ShortTerm" ExpTime="0" PresentFields="RequestDate,ShortTermGist,ShortTermAmount" TimeUnit="Day" Keys="ShortTermNO" ExpTimeField="{x:Null}" MailApproveLevel="{x:Null}" UrgentTime="0" NotifySendMail="False" OrgKind="0" xmlns="http://schemas.microsoft.com/winfx/2006/xaml/workflow" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:p1="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:ns0="clr-namespace:FLTools;Assembly=FLTools, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null">
+	<ns0:FLStand SendEmail="False" DelayAutoApprove="False" SendToKind="Applicate" x:Name="暫借款申請" FormName="" TimeUnit="Day" SendToUser="" AllowSendBack="True" PlusApproveReturn="True" PlusApprove="False" WebFormName="JB_ADMIN.JBREQ_ShortTerm" ExpTime="0" Parameters="P1=APPLY" NavigatorMode="Insert" SendToField="" SendToId="{x:Null}" SendToRole="" UrgentTime="0" FLNavigatorMode="Submit" />
+	<ns0:FLApprove SendEmail="True" DelayAutoApprove="False" SendToKind="Manager" InvokedDateTime="0001-01-01T00:00:00.0000000" FormName="" TimeUnit="Day" SendToUser="" AllowSendBack="True" PlusApproveReturn="True" PlusApprove="True" WebFormName="" ExpTime="0" Parameters="{x:Null}" NavigatorMode="Normal" SendToField="{x:Null}" SendToId="{x:Null}" SendToRole="" UrgentTime="0" x:Name="主管審核" FLNavigatorMode="Approve">
+		<ns0:FLApprove.ApproveRights>
+			<ns1:ApproveRightCollection xmlns:ns1="clr-namespace:FLCore;Assembly=FLTools, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null">
+				<ns1:ApproveRight Grade="0 ; 直屬主管" ParentActivity="{x:Null}" Expression="Org_NOParent != &quot;10000&quot; || ApplyOrg_NO ==&quot;11100&quot; || CompanyID==5" Name="0" />
+				<ns1:ApproveRight Grade="6 ; 經理" ParentActivity="{x:Null}" Expression="ShortTermAmount&gt;=3001 &amp;&amp; ShortTermAmount&lt;=10000" Name="6" />
+				<ns1:ApproveRight Grade="7 ; 協理" ParentActivity="{x:Null}" Expression="ShortTermAmount&gt;=10001" Name="7" />
+				<ns1:ApproveRight Grade="9 ; 總經理" ParentActivity="{x:Null}" Expression="ShortTermAmount&gt;100000" Name="9" />
+			</ns1:ApproveRightCollection>
+		</ns0:FLApprove.ApproveRights>
+	</ns0:FLApprove>
+	<IfElseActivity x:Name="會計審核">
+		<IfElseBranchActivity Description="(CompanyID==2 ||  CompanyID==4 ||  CompanyID==5)" x:Name="傑報人力與傑信與傑報健康">
+			<IfElseActivity x:Name="專員或副理審核">
+				<IfElseBranchActivity x:Name="傑報建康">
+					<ns0:FLStand SendEmail="True" DelayAutoApprove="False" SendToKind="Role" x:Name="會計副理審核" FormName="" TimeUnit="Day" SendToUser="{x:Null}" AllowSendBack="True" PlusApproveReturn="True" PlusApprove="False" WebFormName="" ExpTime="0" Parameters="P1=ACCOUNT" NavigatorMode="Modify" SendToField="{x:Null}" SendToId="{x:Null}" SendToRole="1010043 ; 副理/會計室" UrgentTime="0" FLNavigatorMode="Approve" />
+				</IfElseBranchActivity>
+				<IfElseBranchActivity Description="(CompanyID==2 ||  CompanyID==4)" x:Name="傑報人力與傑信">
+					<ns0:FLStand SendEmail="True" DelayAutoApprove="False" SendToKind="Role" x:Name="專員2審核" FormName="" TimeUnit="Day" SendToUser="{x:Null}" AllowSendBack="True" PlusApproveReturn="True" PlusApprove="False" WebFormName="" ExpTime="0" Parameters="P1=ACCOUNT" NavigatorMode="Modify" SendToField="{x:Null}" SendToId="{x:Null}" SendToRole="1010063 ; 專員2/會計室" UrgentTime="0" FLNavigatorMode="Approve" />
+				</IfElseBranchActivity>
+			</IfElseActivity>
+		</IfElseBranchActivity>
+		<IfElseBranchActivity Description="(CompanyID==1 ||  CompanyID==3 || CompanyID==4)" x:Name="傑報資訊與傑誠">
+			<ns0:FLStand SendEmail="True" DelayAutoApprove="False" SendToKind="Role" x:Name="專員1審核" FormName="" TimeUnit="Day" SendToUser="{x:Null}" AllowSendBack="True" PlusApproveReturn="True" PlusApprove="False" WebFormName="" ExpTime="0" Parameters="P1=ACCOUNT" NavigatorMode="Normal" SendToField="{x:Null}" SendToId="{x:Null}" SendToRole="1010062 ; 專員1/會計室" UrgentTime="0" FLNavigatorMode="Approve" />
+		</IfElseBranchActivity>
+	</IfElseActivity>
+	<ns0:FLStand SendEmail="True" DelayAutoApprove="False" SendToKind="Applicate" x:Name="申請成功檢視" FormName="" TimeUnit="Day" SendToUser="" AllowSendBack="True" PlusApproveReturn="True" PlusApprove="False" WebFormName="" ExpTime="0" Parameters="P1=SucessView" NavigatorMode="Normal" SendToField="" SendToId="{x:Null}" SendToRole="" UrgentTime="0" Enabled="False" FLNavigatorMode="Continue" />
+</ns0:FLSequentialWorkflow>

@@ -1,0 +1,15 @@
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sRequisitionQuery\bin\Debug\sRequisitionQuery.dll
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sRequisitionQuery\bin\Debug\sRequisitionQuery.pdb
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sRequisitionQuery\obj\Debug\sRequisitionQuery.csproj.GenerateResource.Cache
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sRequisitionQuery\obj\Debug\sRequisitionQuery.dll
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sRequisitionQuery\obj\Debug\sRequisitionQuery.pdb
+C:\Program Files (x86)\Infolight\EEP2012\EEPNetServer\JBADMIN\sRequisitionQuery.dll
+C:\Program Files (x86)\Infolight\EEP2012\EEPNetServer\JBADMIN\sRequisitionQuery.pdb
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sRequisitionQuery\obj\Debug\sRequisitionQuery.Component.resources
+D:\Infolight\EEP2012\EEPNetServer\JBADMIN\sRequisitionQuery.dll
+D:\Infolight\EEP2012\EEPNetServer\JBADMIN\sRequisitionQuery.pdb
+D:\Infolight\EEP2012\JBADMIN\sRequisitionQuery\obj\Debug\sRequisitionQuery.csprojResolveAssemblyReference.cache
+D:\Infolight\EEP2012\JBADMIN\sRequisitionQuery\obj\Debug\sRequisitionQuery.Component.resources
+D:\Infolight\EEP2012\JBADMIN\sRequisitionQuery\obj\Debug\sRequisitionQuery.csproj.GenerateResource.Cache
+D:\Infolight\EEP2012\JBADMIN\sRequisitionQuery\obj\Debug\sRequisitionQuery.dll
+D:\Infolight\EEP2012\JBADMIN\sRequisitionQuery\obj\Debug\sRequisitionQuery.pdb

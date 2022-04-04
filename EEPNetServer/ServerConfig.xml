@@ -1,0 +1,7 @@
+<ServerConfig>
+  <MaxTimeOut Value="0.00" />
+  <SSOTimeOut Value="24" />
+  <SSOKey Value="" />
+  <RecordLockInDatabase Value="False" />
+  <LocalServer MaxUser="50" IsMaster="False" MasterServerIP="" MasterServerKey="" />
+</ServerConfig>

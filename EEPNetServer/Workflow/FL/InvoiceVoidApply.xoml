@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?><ns0:FLSequentialWorkflow RejectProcedure="{p1:Null}" ConnectionType="SqlClient" Description="發票註銷申請單" x:Name="FLSequentialWorkflow" FormName="{x:Null}" SkipForSameUser="True" EEPAlias="" ClientDll="{x:Null}" TableName="ERPInvoiceVoidApplyMaster" BodyField="{x:Null}" WebFormName="JB_ADMIN.JBERP_InvoiceVoidApply" ExpTime="0" PresentFields="InvoiceVoidNO,VoidNotes" TimeUnit="Day" Keys="{x:Null}" ExpTimeField="{x:Null}" MailApproveLevel="{x:Null}" UrgentTime="0" NotifySendMail="False" OrgKind="0" xmlns="http://schemas.microsoft.com/winfx/2006/xaml/workflow" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:p1="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:ns0="clr-namespace:FLTools;Assembly=FLTools, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null">
+	<ns0:FLStand SendEmail="False" DelayAutoApprove="False" SendToKind="Applicate" x:Name="發票註銷申請" FormName="" TimeUnit="Day" SendToUser="" AllowSendBack="True" PlusApproveReturn="True" PlusApprove="False" WebFormName="" ExpTime="0" Parameters="{x:Null}" NavigatorMode="Insert" SendToField="" SendToId="{x:Null}" SendToRole="" UrgentTime="0" FLNavigatorMode="Submit" />
+	<IfElseActivity x:Name="是否直屬主管審核">
+		<IfElseBranchActivity Description="(ApplyEmpID != '055') &amp;&amp;  (ApplyEmpID!='068')" x:Name="非派遣開立">
+			<ns0:FLApprove SendEmail="False" DelayAutoApprove="False" SendToKind="Manager" InvokedDateTime="0001-01-01T00:00:00.0000000" FormName="" TimeUnit="Day" SendToUser="" AllowSendBack="True" PlusApproveReturn="True" PlusApprove="False" WebFormName="" ExpTime="0" Parameters="{x:Null}" NavigatorMode="Normal" SendToField="{x:Null}" SendToId="{x:Null}" SendToRole="" UrgentTime="0" x:Name="主管審核" FLNavigatorMode="Approve">
+				<ns0:FLApprove.ApproveRights>
+					<ns1:ApproveRightCollection xmlns:ns1="clr-namespace:FLCore;Assembly=FLTools, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null">
+						<ns1:ApproveRight Grade="0 ; 直屬主管" ParentActivity="{x:Null}" Expression="true" Name="0" />
+					</ns1:ApproveRightCollection>
+				</ns0:FLApprove.ApproveRights>
+			</ns0:FLApprove>
+		</IfElseBranchActivity>
+		<IfElseBranchActivity x:Name="派遣開立" />
+	</IfElseActivity>
+	<ns0:FLStand SendEmail="True" DelayAutoApprove="False" SendToKind="Role" x:Name="會計確認" FormName="" TimeUnit="Day" SendToUser="{x:Null}" AllowSendBack="True" PlusApproveReturn="True" PlusApprove="False" WebFormName="" ExpTime="0" Parameters="{x:Null}" NavigatorMode="Normal" SendToField="{x:Null}" SendToId="{x:Null}" SendToRole="1010063 ; 專員2/會計室" UrgentTime="0" FLNavigatorMode="Approve" />
+	<ns0:FLProcedure ServerDll="C:\Program Files (x86)\Infolight\EEP2012\EEPNetServer\JBADMIN\sInvoiceVoidApply.dll" ModuleName="sInvoiceVoidApply" Description="註銷行政系統發票等相關檔案&#xD;&#xA;LTODLVER&#xD;&#xA;LTODL01&#xD;&#xA;DEPOSIT" ErrorLog="False" MethodName="VoidToNjbLTODLVER" x:Name="註銷行政系統" ErrorToRole="{x:Null}" />
+	<ns0:FLNotify SendEmail="True" Parameters="{x:Null}" x:Name="註銷成功通知" FormName="" TimeUnit="Day" SendToUser="" SendToKind="Applicate" UserId="{x:Null}" WebFormName="" ExpTime="0" RoleId="{x:Null}" NavigatorMode="Normal" SendToField="" SendToRole="" UrgentTime="0" FLNavigatorMode="Notify" />
+</ns0:FLSequentialWorkflow>

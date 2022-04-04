@@ -1,0 +1,9 @@
+<FlowDetails>
+  <FormName>JB_ADMIN.JBERP_CashTakeBackApply</FormName>
+  <FlowNavMode>Submit</FlowNavMode>
+  <NavMode>Insert</NavMode>
+  <Parameters>
+  </Parameters>
+  <FlowFileName>C:\Program Files (x86)\Infolight\EEP2012\EEPNetServer\Workflow\FL\CashTakeBack</FlowFileName>
+  <ImageWidth>1387</ImageWidth>
+</FlowDetails>

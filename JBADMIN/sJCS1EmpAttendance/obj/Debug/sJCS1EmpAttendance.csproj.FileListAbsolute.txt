@@ -1,0 +1,12 @@
+D:\Infolight\EEP2012\JBADMIN\sJCS1EmpAttendance\obj\Debug\sJCS1EmpAttendance.Component.resources
+D:\Infolight\EEP2012\JBADMIN\sJCS1EmpAttendance\obj\Debug\sJCS1EmpAttendance.csproj.GenerateResource.Cache
+D:\Infolight\EEP2012\EEPNetServer\JBADMIN\sJCS1EmpAttendance.dll
+D:\Infolight\EEP2012\EEPNetServer\JBADMIN\sJCS1EmpAttendance.pdb
+D:\Infolight\EEP2012\JBADMIN\sJCS1EmpAttendance\obj\Debug\sJCS1EmpAttendance.dll
+D:\Infolight\EEP2012\JBADMIN\sJCS1EmpAttendance\obj\Debug\sJCS1EmpAttendance.pdb
+C:\Program Files (x86)\Infolight\EEP2012\EEPNetServer\JBADMIN\sJCS1EmpAttendance.dll
+C:\Program Files (x86)\Infolight\EEP2012\EEPNetServer\JBADMIN\sJCS1EmpAttendance.pdb
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sJCS1EmpAttendance\obj\Debug\sJCS1EmpAttendance.Component.resources
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sJCS1EmpAttendance\obj\Debug\sJCS1EmpAttendance.csproj.GenerateResource.Cache
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sJCS1EmpAttendance\obj\Debug\sJCS1EmpAttendance.dll
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sJCS1EmpAttendance\obj\Debug\sJCS1EmpAttendance.pdb

@@ -1,0 +1,75 @@
+﻿<?xml version="1.0" encoding="utf-8"?><ns0:FLSequentialWorkflow RejectProcedure="{p1:Null}" ConnectionType="SqlClient" Description="請款單申請" x:Name="FLSequentialWorkflow" FormName="{x:Null}" SkipForSameUser="False" EEPAlias="{x:Null}" ClientDll="{x:Null}" TableName="Requisition" BodyField="{x:Null}" WebFormName="JB_ADMIN.JBREQ_Requisition" ExpTime="0" PresentFields="RequisitionDescr,PlanPayDate,RequisitAmt" TimeUnit="Day" Keys="RequisitionNO" ExpTimeField="{x:Null}" MailApproveLevel="{x:Null}" UrgentTime="0" NotifySendMail="True" OrgKind="0" xmlns="http://schemas.microsoft.com/winfx/2006/xaml/workflow" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:p1="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:ns0="clr-namespace:FLTools;Assembly=FLTools, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null">
+	<ns0:FLStand SendEmail="False" DelayAutoApprove="False" SendToKind="Applicate" x:Name="請款單申請" FormName="" TimeUnit="Day" SendToUser="" AllowSendBack="True" PlusApproveReturn="True" PlusApprove="False" WebFormName="" ExpTime="0" Parameters="P1=APPLY" NavigatorMode="Insert" SendToField="" SendToId="{x:Null}" SendToRole="" UrgentTime="0" FLNavigatorMode="Submit" />
+	<IfElseActivity x:Name="是否加簽">
+		<IfElseBranchActivity Description="(DynamicUser != &quot;&quot;)" x:Name="選擇加簽角色">
+			<ns0:FLStand SendEmail="True" DelayAutoApprove="False" SendToKind="RefUser" x:Name="加簽審核" FormName="" TimeUnit="Day" SendToUser="{x:Null}" AllowSendBack="True" PlusApproveReturn="True" PlusApprove="False" WebFormName="" ExpTime="0" Parameters="{x:Null}" NavigatorMode="Normal" SendToField="DynamicUser" SendToId="{x:Null}" SendToRole="" UrgentTime="0" FLNavigatorMode="Approve" />
+			<ns0:FLStand SendEmail="True" DelayAutoApprove="False" SendToKind="Applicate" x:Name="申請者審核" FormName="" TimeUnit="Day" SendToUser="" AllowSendBack="True" PlusApproveReturn="True" PlusApprove="False" WebFormName="" ExpTime="0" Parameters="{x:Null}" NavigatorMode="Normal" SendToField="" SendToId="{x:Null}" SendToRole="" UrgentTime="0" FLNavigatorMode="Approve" />
+		</IfElseBranchActivity>
+		<IfElseBranchActivity Description="(DynamicUser == &quot;&quot;)" x:Name="不須加簽審核" />
+	</IfElseActivity>
+	<IfElseActivity x:Name="行政會計審核">
+		<IfElseBranchActivity Description="(IsEmpGroupID==True)" x:Name="宿管高專申請">
+			<ns0:FLStand SendEmail="False" DelayAutoApprove="False" SendToKind="Role" x:Name="行政會計簽核" FormName="" TimeUnit="Day" SendToUser="{x:Null}" AllowSendBack="True" PlusApproveReturn="True" PlusApprove="False" WebFormName="" ExpTime="0" Parameters="{x:Null}" NavigatorMode="Normal" SendToField="{x:Null}" SendToId="{x:Null}" SendToRole="1073064 ; 行政會計/行政組" UrgentTime="0" FLNavigatorMode="Approve" />
+		</IfElseBranchActivity>
+		<IfElseBranchActivity x:Name="一般申請" />
+	</IfElseActivity>
+	<IfElseActivity x:Name="主管審核">
+		<IfElseBranchActivity x:Name="媒體部">
+			<ns0:FLApprove SendEmail="True" DelayAutoApprove="False" SendToKind="Manager" InvokedDateTime="0001-01-01T00:00:00.0000000" FormName="" TimeUnit="Day" SendToUser="" AllowSendBack="True" PlusApproveReturn="True" PlusApprove="True" WebFormName="" ExpTime="0" Parameters="{x:Null}" NavigatorMode="Normal" SendToField="{x:Null}" SendToId="{x:Null}" SendToRole="" UrgentTime="0" x:Name="主管審核2" FLNavigatorMode="Approve">
+				<ns0:FLApprove.ApproveRights>
+					<ns1:ApproveRightCollection xmlns:ns1="clr-namespace:FLCore;Assembly=FLTools, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null">
+						<ns1:ApproveRight Grade="0 ; 直屬主管" ParentActivity="{x:Null}" Expression="Org_NOParent != &quot;10000&quot; || ApplyOrg_NO =='11100'  || CompanyID ==5" Name="0" />
+						<ns1:ApproveRight Grade="6 ; 經理/副理/顧問" ParentActivity="{x:Null}" Expression="true" Name="6" />
+						<ns1:ApproveRight Grade="7 ; 協理" ParentActivity="{x:Null}" Expression="true" Name="7" />
+						<ns1:ApproveRight Grade="8 ; 副總" ParentActivity="{x:Null}" Expression="true" Name="8" />
+						<ns1:ApproveRight Grade="9 ; 總經理" ParentActivity="{x:Null}" Expression="(RequisitAmt&gt;10000 &amp;&amp; RequistKindID==2)" Name="9" />
+					</ns1:ApproveRightCollection>
+				</ns0:FLApprove.ApproveRights>
+			</ns0:FLApprove>
+		</IfElseBranchActivity>
+		<IfElseBranchActivity Description="(ApplyOrg_NO != &quot;10400&quot;)" x:Name="一般部門">
+			<ns0:FLApprove SendEmail="True" DelayAutoApprove="False" SendToKind="Manager" InvokedDateTime="0001-01-01T00:00:00.0000000" FormName="" TimeUnit="Day" SendToUser="" AllowSendBack="True" PlusApproveReturn="True" PlusApprove="True" WebFormName="" ExpTime="0" Parameters="{x:Null}" NavigatorMode="Normal" SendToField="{x:Null}" SendToId="{x:Null}" SendToRole="" UrgentTime="0" x:Name="主管審核1" FLNavigatorMode="Approve">
+				<ns0:FLApprove.ApproveRights>
+					<ns1:ApproveRightCollection xmlns:ns1="clr-namespace:FLCore;Assembly=FLTools, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null">
+						<ns1:ApproveRight Grade="0 ; 直屬主管" ParentActivity="{x:Null}" Expression="Org_NOParent != &quot;10000&quot; || ApplyOrg_NO =='11100'  || CompanyID==5" Name="0" />
+						<ns1:ApproveRight Grade="5 ; 主任/課長/專案經理" ParentActivity="{x:Null}" Expression="true" Name="5" />
+						<ns1:ApproveRight Grade="6 ; 經理/副理/顧問" ParentActivity="{x:Null}" Expression="(RequisitAmt&gt;3000) " Name="6" />
+						<ns1:ApproveRight Grade="7 ; 跨部門經理/協理" ParentActivity="{x:Null}" Expression="(RequisitAmt&gt;3000)" Name="7" />
+						<ns1:ApproveRight Grade="8 ; 副總" ParentActivity="{x:Null}" Expression="(RequisitAmt&gt;5000)" Name="8" />
+						<ns1:ApproveRight Grade="9 ; 總經理" ParentActivity="{x:Null}" Expression="(RequisitAmt&gt;5000 &amp;&amp; RequistKindID==2)" Name="9" />
+					</ns1:ApproveRightCollection>
+				</ns0:FLApprove.ApproveRights>
+			</ns0:FLApprove>
+		</IfElseBranchActivity>
+	</IfElseActivity>
+	<IfElseActivity x:Name="總務代訂作業">
+		<IfElseBranchActivity Description="NeedGeneralAffairs==true" x:Name="會辦總務">
+			<ns0:FLStand SendEmail="True" DelayAutoApprove="False" SendToKind="Role" x:Name="總務作業" FormName="" TimeUnit="Day" SendToUser="{x:Null}" AllowSendBack="True" PlusApproveReturn="True" PlusApprove="False" WebFormName="" ExpTime="0" Parameters="" NavigatorMode="Modify" SendToField="{x:Null}" SendToId="{x:Null}" SendToRole="1030051 ; 總務專員/管理室" UrgentTime="0" FLNavigatorMode="Approve" />
+		</IfElseBranchActivity>
+		<IfElseBranchActivity x:Name="非會辦總務" />
+	</IfElseActivity>
+	<IfElseActivity x:Name="會計審核">
+		<IfElseBranchActivity Description="(CompanyID==2  || CompanyID==6 || CompanyID==7)" x:Name="傑報人力與傑信與傑報建康">
+			<IfElseActivity x:Name="專員與經理審核">
+				<IfElseBranchActivity x:Name="傑報建康">
+					<ns0:FLStand SendEmail="True" DelayAutoApprove="False" SendToKind="Role" x:Name="會計副理審核" FormName="" TimeUnit="Day" SendToUser="{x:Null}" AllowSendBack="True" PlusApproveReturn="True" PlusApprove="True" WebFormName="" ExpTime="0" Parameters="P1=SERVICE" NavigatorMode="Modify" SendToField="{x:Null}" SendToId="{x:Null}" SendToRole="1010043 ; 副理/會計室" UrgentTime="0" FLNavigatorMode="Approve" />
+				</IfElseBranchActivity>
+				<IfElseBranchActivity Description="(CompanyID==2  || CompanyID==6 || CompanyID==7)" x:Name="人力_傑信_國際產學">
+					<ns0:FLStand SendEmail="True" DelayAutoApprove="False" SendToKind="Role" x:Name="專員2審核" FormName="" TimeUnit="Day" SendToUser="{x:Null}" AllowSendBack="True" PlusApproveReturn="True" PlusApprove="True" WebFormName="" ExpTime="0" Parameters="P1=SERVICE" NavigatorMode="Modify" SendToField="{x:Null}" SendToId="{x:Null}" SendToRole="1010063 ; 專員2/會計室" UrgentTime="0" FLNavigatorMode="Approve" />
+				</IfElseBranchActivity>
+			</IfElseActivity>
+		</IfElseBranchActivity>
+		<IfElseBranchActivity x:Name="傑報資訊與傑誠">
+			<ns0:FLStand SendEmail="True" DelayAutoApprove="False" SendToKind="Role" x:Name="專員1審核" FormName="" TimeUnit="Day" SendToUser="{x:Null}" AllowSendBack="True" PlusApproveReturn="True" PlusApprove="True" WebFormName="" ExpTime="0" Parameters="P1=SERVICE" NavigatorMode="Modify" SendToField="" SendToId="{x:Null}" SendToRole="1010062 ; 專員1/會計室" UrgentTime="0" FLNavigatorMode="Approve" />
+		</IfElseBranchActivity>
+	</IfElseActivity>
+	<ns0:FLProcedure ServerDll="C:\Program Files (x86)\Infolight\EEP2012\EEPNetServer\JBADMIN\sRequisition.dll" ModuleName="sRequisition" ErrorLog="False" MethodName="PutFeeToShortTermMinusDetails" x:Name="請款帳務處理" ErrorToRole="{x:Null}" />
+	<IfElseActivity x:Name="通知會計專員2">
+		<IfElseBranchActivity Description="CompanyID==5" x:Name="傑報健康">
+			<ns0:FLNotify SendEmail="True" Parameters="{x:Null}" x:Name="專員2通知" FormName="" TimeUnit="Day" SendToUser="{x:Null}" SendToKind="Role" UserId="{x:Null}" WebFormName="" ExpTime="0" RoleId="{x:Null}" NavigatorMode="Normal" SendToField="{x:Null}" SendToRole="1010063 ; 專員2/會計室" UrgentTime="0" FLNavigatorMode="Notify" />
+		</IfElseBranchActivity>
+		<IfElseBranchActivity x:Name="其他公司" />
+	</IfElseActivity>
+	<ns0:FLNotify SendEmail="True" Parameters="{x:Null}" x:Name="申請成功通知_申請者" FormName="" TimeUnit="Day" SendToUser="" SendToKind="Applicate" UserId="{x:Null}" WebFormName="" ExpTime="0" RoleId="{x:Null}" NavigatorMode="Normal" SendToField="" SendToRole="" UrgentTime="0" FLNavigatorMode="Notify" />
+	<ns0:FLNotify SendEmail="True" Parameters="{x:Null}" x:Name="申請成功通知_主管" FormName="" TimeUnit="Day" SendToUser="" SendToKind="ApplicateManager" UserId="{x:Null}" WebFormName="" ExpTime="0" RoleId="{x:Null}" NavigatorMode="Normal" SendToField="" SendToRole="" UrgentTime="0" FLNavigatorMode="Notify" />
+</ns0:FLSequentialWorkflow>

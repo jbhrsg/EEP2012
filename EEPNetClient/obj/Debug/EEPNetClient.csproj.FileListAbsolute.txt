@@ -1,0 +1,242 @@
+D:\Program Files\Infolight\EEP2008\Solution1\EEPNetClient\obj\Debug\ResolveAssemblyReference.cache
+D:\Program Files\Infolight\EEP2008\Solution1\EEPNetClient\obj\Debug\EEPNetClient.CurProject.resources
+D:\Program Files\Infolight\EEP2008\Solution1\EEPNetClient\obj\Debug\EEPNetClient.frmClientMain.resources
+D:\Program Files\Infolight\EEP2008\Solution1\EEPNetClient\obj\Debug\EEPNetClient.frmDataBase.resources
+D:\Program Files\Infolight\EEP2008\Solution1\EEPNetClient\obj\Debug\EEPNetClient.frmFavorMenu.resources
+D:\Program Files\Infolight\EEP2008\Solution1\EEPNetClient\obj\Debug\EEPNetClient.frmLogin.resources
+D:\Program Files\Infolight\EEP2008\Solution1\EEPNetClient\obj\Debug\EEPNetClient.frmMessage.resources
+D:\Program Files\Infolight\EEP2008\Solution1\EEPNetClient\obj\Debug\EEPNetClient.frmUserPWD.resources
+D:\Program Files\Infolight\EEP2008\Solution1\EEPNetClient\obj\Debug\EEPNetClient.frmUsersAndGroups.resources
+D:\Program Files\Infolight\EEP2008\Solution1\EEPNetClient\obj\Debug\EEPNetClient.ProgressForm.resources
+D:\Program Files\Infolight\EEP2008\Solution1\EEPNetClient\obj\Debug\EEPNetClient.csproj.GenerateResource.Cache
+D:\Program Files\Infolight\EEP2008\Solution1\EEPNetClient\obj\Debug\EEPNetClient.Properties.Resources.resources
+D:\Program Files\Infolight\EEP2008\Solution1\EEPNetClient\EEPNetClient.exe.config
+D:\Program Files\Infolight\EEP2008\Solution1\EEPNetClient\obj\Debug\EEPNetClient.exe
+D:\Program Files\Infolight\EEP2008\Solution1\EEPNetClient\obj\Debug\EEPNetClient.pdb
+D:\Program Files\Infolight\EEP2008\Solution1\EEPNetClient\EEPNetClient.exe
+D:\Program Files\Infolight\EEP2008\Solution1\EEPNetClient\EEPNetClient.pdb
+C:\Program Files\Infolight\Solution1\EEPNetClient\obj\Debug\ResolveAssemblyReference.cache
+C:\Program Files\Infolight\Solution1\EEPNetClient\obj\Debug\EEPNetClient.CurProject.resources
+C:\Program Files\Infolight\Solution1\EEPNetClient\obj\Debug\EEPNetClient.frmClientMain.resources
+C:\Program Files\Infolight\Solution1\EEPNetClient\obj\Debug\EEPNetClient.frmDataBase.resources
+C:\Program Files\Infolight\Solution1\EEPNetClient\obj\Debug\EEPNetClient.frmFavorMenu.resources
+C:\Program Files\Infolight\Solution1\EEPNetClient\obj\Debug\EEPNetClient.frmLogin.resources
+C:\Program Files\Infolight\Solution1\EEPNetClient\obj\Debug\EEPNetClient.frmMessage.resources
+C:\Program Files\Infolight\Solution1\EEPNetClient\obj\Debug\EEPNetClient.frmUserPWD.resources
+C:\Program Files\Infolight\Solution1\EEPNetClient\obj\Debug\EEPNetClient.frmUsersAndGroups.resources
+C:\Program Files\Infolight\Solution1\EEPNetClient\obj\Debug\EEPNetClient.ProgressForm.resources
+C:\Program Files\Infolight\Solution1\EEPNetClient\obj\Debug\EEPNetClient.Properties.Resources.resources
+C:\Program Files\Infolight\Solution1\EEPNetClient\obj\Debug\EEPNetClient.csproj.GenerateResource.Cache
+C:\Program Files\Infolight\Solution1\EEPNetClient\EEPNetClient.exe.config
+C:\Program Files\Infolight\Solution1\EEPNetClient\obj\Debug\EEPNetClient.exe
+C:\Program Files\Infolight\Solution1\EEPNetClient\obj\Debug\EEPNetClient.pdb
+C:\Program Files\Infolight\Solution1\EEPNetClient\EEPNetClient.exe
+C:\Program Files\Infolight\Solution1\EEPNetClient\EEPNetClient.pdb
+F:\EEP2010\EEPNetClient\obj\Debug\ResolveAssemblyReference.cache
+F:\EEP2010\EEPNetClient\obj\Debug\EEPNetClient.CurProject.resources
+F:\EEP2010\EEPNetClient\obj\Debug\EEPNetClient.frmClientMain.resources
+F:\EEP2010\EEPNetClient\obj\Debug\EEPNetClient.frmDataBase.resources
+F:\EEP2010\EEPNetClient\obj\Debug\EEPNetClient.frmFavorMenu.resources
+F:\EEP2010\EEPNetClient\obj\Debug\EEPNetClient.frmLogin.resources
+F:\EEP2010\EEPNetClient\obj\Debug\EEPNetClient.frmMessage.resources
+F:\EEP2010\EEPNetClient\obj\Debug\EEPNetClient.frmUserPWD.resources
+F:\EEP2010\EEPNetClient\obj\Debug\EEPNetClient.frmUsersAndGroups.resources
+F:\EEP2010\EEPNetClient\obj\Debug\EEPNetClient.ProgressForm.resources
+F:\EEP2010\EEPNetClient\obj\Debug\EEPNetClient.Properties.Resources.resources
+F:\EEP2010\EEPNetClient\obj\Debug\GenerateResource-ResGen.read.1.tlog
+F:\EEP2010\EEPNetClient\obj\Debug\GenerateResource-ResGen.write.1.tlog
+F:\EEP2010\EEPNetClient\EEPNetClient.exe.config
+F:\EEP2010\EEPNetClient\obj\Debug\EEPNetClient.exe
+F:\EEP2010\EEPNetClient\obj\Debug\EEPNetClient.pdb
+F:\EEP2010\EEPNetClient\EEPNetClient.exe
+F:\EEP2010\EEPNetClient\EEPNetClient.pdb
+F:\EEP2010\EEPNetClient\obj\Debug\GenerateResource.read.1.tlog
+F:\EEP2010\EEPNetClient\obj\Debug\GenerateResource.write.1.tlog
+F:\Program Files\EEP2010\EEPNetClient\obj\Debug\ResolveAssemblyReference.cache
+F:\Program Files\EEP2010\EEPNetClient\obj\Debug\EEPNetClient.CurProject.resources
+F:\Program Files\EEP2010\EEPNetClient\obj\Debug\EEPNetClient.frmClientMain.resources
+F:\Program Files\EEP2010\EEPNetClient\obj\Debug\EEPNetClient.frmDataBase.resources
+F:\Program Files\EEP2010\EEPNetClient\obj\Debug\EEPNetClient.frmFavorMenu.resources
+F:\Program Files\EEP2010\EEPNetClient\obj\Debug\EEPNetClient.frmLogin.resources
+F:\Program Files\EEP2010\EEPNetClient\obj\Debug\EEPNetClient.frmMessage.resources
+F:\Program Files\EEP2010\EEPNetClient\obj\Debug\EEPNetClient.frmUserPWD.resources
+F:\Program Files\EEP2010\EEPNetClient\obj\Debug\EEPNetClient.frmUsersAndGroups.resources
+F:\Program Files\EEP2010\EEPNetClient\obj\Debug\EEPNetClient.ProgressForm.resources
+F:\Program Files\EEP2010\EEPNetClient\obj\Debug\EEPNetClient.Properties.Resources.resources
+F:\Program Files\EEP2010\EEPNetClient\obj\Debug\GenerateResource-ResGen.read.1.tlog
+F:\Program Files\EEP2010\EEPNetClient\obj\Debug\GenerateResource.read.1.tlog
+F:\Program Files\EEP2010\EEPNetClient\obj\Debug\GenerateResource-ResGen.write.1.tlog
+F:\Program Files\EEP2010\EEPNetClient\obj\Debug\GenerateResource.write.1.tlog
+F:\Program Files\EEP2010\EEPNetClient\EEPNetClient.exe.config
+F:\Program Files\EEP2010\EEPNetClient\obj\Debug\EEPNetClient.exe
+F:\Program Files\EEP2010\EEPNetClient\obj\Debug\EEPNetClient.pdb
+F:\Program Files\EEP2010\EEPNetClient\EEPNetClient.exe
+F:\Program Files\EEP2010\EEPNetClient\EEPNetClient.pdb
+D:\Infolight\EEP2010\EEPNetClient\obj\Debug\ResolveAssemblyReference.cache
+D:\Infolight\EEP2010\EEPNetClient\obj\Debug\EEPNetClient.CurProject.resources
+D:\Infolight\EEP2010\EEPNetClient\obj\Debug\EEPNetClient.frmClientMain.resources
+D:\Infolight\EEP2010\EEPNetClient\obj\Debug\EEPNetClient.frmDataBase.resources
+D:\Infolight\EEP2010\EEPNetClient\obj\Debug\EEPNetClient.frmFavorMenu.resources
+D:\Infolight\EEP2010\EEPNetClient\obj\Debug\EEPNetClient.frmLogin.resources
+D:\Infolight\EEP2010\EEPNetClient\obj\Debug\EEPNetClient.frmMessage.resources
+D:\Infolight\EEP2010\EEPNetClient\obj\Debug\EEPNetClient.frmUserPWD.resources
+D:\Infolight\EEP2010\EEPNetClient\obj\Debug\EEPNetClient.frmUsersAndGroups.resources
+D:\Infolight\EEP2010\EEPNetClient\obj\Debug\EEPNetClient.ProgressForm.resources
+D:\Infolight\EEP2010\EEPNetClient\obj\Debug\EEPNetClient.Properties.Resources.resources
+D:\Infolight\EEP2010\EEPNetClient\obj\Debug\GenerateResource.read.1.tlog
+D:\Infolight\EEP2010\EEPNetClient\obj\Debug\GenerateResource.write.1.tlog
+D:\Infolight\EEP2010\EEPNetClient\obj\Debug\EEPNetClient.exe
+D:\Infolight\EEP2010\EEPNetClient\obj\Debug\EEPNetClient.pdb
+D:\Infolight\EEP2010\EEPNetClient\EEPNetClient.exe.config
+D:\Infolight\EEP2010\EEPNetClient\EEPNetClient.exe
+D:\Infolight\EEP2010\EEPNetClient\EEPNetClient.pdb
+C:\Program Files\Infolight\EEP2010\EEPNetClient\obj\Debug\EEPNetClient.CurProject.resources
+C:\Program Files\Infolight\EEP2010\EEPNetClient\obj\Debug\EEPNetClient.frmClientMain.resources
+C:\Program Files\Infolight\EEP2010\EEPNetClient\obj\Debug\EEPNetClient.frmDataBase.resources
+C:\Program Files\Infolight\EEP2010\EEPNetClient\obj\Debug\EEPNetClient.frmFavorMenu.resources
+C:\Program Files\Infolight\EEP2010\EEPNetClient\obj\Debug\EEPNetClient.frmLogin.resources
+C:\Program Files\Infolight\EEP2010\EEPNetClient\obj\Debug\EEPNetClient.frmMessage.resources
+C:\Program Files\Infolight\EEP2010\EEPNetClient\obj\Debug\EEPNetClient.frmUserPWD.resources
+C:\Program Files\Infolight\EEP2010\EEPNetClient\obj\Debug\EEPNetClient.frmUsersAndGroups.resources
+C:\Program Files\Infolight\EEP2010\EEPNetClient\obj\Debug\EEPNetClient.ProgressForm.resources
+C:\Program Files\Infolight\EEP2010\EEPNetClient\obj\Debug\EEPNetClient.Properties.Resources.resources
+C:\Program Files\Infolight\EEP2010\EEPNetClient\EEPNetClient.exe.config
+C:\Program Files\Infolight\EEP2010\EEPNetClient\obj\Debug\EEPNetClient.exe
+C:\Program Files\Infolight\EEP2010\EEPNetClient\obj\Debug\EEPNetClient.pdb
+C:\Program Files\Infolight\EEP2010\EEPNetClient\EEPNetClient.exe
+C:\Program Files\Infolight\EEP2010\EEPNetClient\EEPNetClient.pdb
+C:\Program Files\Infolight\EEP2010\EEPNetClient\obj\Debug\EEPNetClient.csproj.GenerateResource.Cache
+C:\Program Files\Infolight\EEP2010\EEPNetClient\obj\Debug\EEPNetClient.csprojResolveAssemblyReference.cache
+C:\Program Files\Infolight\EEP2012\EEPNetClient\obj\Debug\EEPNetClient.csprojResolveAssemblyReference.cache
+C:\Program Files\Infolight\EEP2012\EEPNetClient\obj\Debug\EEPNetClient.CurProject.resources
+C:\Program Files\Infolight\EEP2012\EEPNetClient\obj\Debug\EEPNetClient.frmClientMain.resources
+C:\Program Files\Infolight\EEP2012\EEPNetClient\obj\Debug\EEPNetClient.frmDataBase.resources
+C:\Program Files\Infolight\EEP2012\EEPNetClient\obj\Debug\EEPNetClient.frmFavorMenu.resources
+C:\Program Files\Infolight\EEP2012\EEPNetClient\obj\Debug\EEPNetClient.frmLogin.resources
+C:\Program Files\Infolight\EEP2012\EEPNetClient\obj\Debug\EEPNetClient.frmMessage.resources
+C:\Program Files\Infolight\EEP2012\EEPNetClient\obj\Debug\EEPNetClient.frmUserPWD.resources
+C:\Program Files\Infolight\EEP2012\EEPNetClient\obj\Debug\EEPNetClient.frmUsersAndGroups.resources
+C:\Program Files\Infolight\EEP2012\EEPNetClient\obj\Debug\EEPNetClient.ProgressForm.resources
+C:\Program Files\Infolight\EEP2012\EEPNetClient\obj\Debug\EEPNetClient.Properties.Resources.resources
+C:\Program Files\Infolight\EEP2012\EEPNetClient\obj\Debug\EEPNetClient.csproj.GenerateResource.Cache
+C:\Program Files\Infolight\EEP2012\EEPNetClient\EEPNetClient.exe.config
+C:\Program Files\Infolight\EEP2012\EEPNetClient\obj\Debug\EEPNetClient.exe
+C:\Program Files\Infolight\EEP2012\EEPNetClient\obj\Debug\EEPNetClient.pdb
+C:\Program Files\Infolight\EEP2012\EEPNetClient\EEPNetClient.exe
+C:\Program Files\Infolight\EEP2012\EEPNetClient\EEPNetClient.pdb
+C:\Program Files\Infolight\EEP2012WF\EEPNetClient\obj\Debug\EEPNetClient.csprojResolveAssemblyReference.cache
+C:\Program Files\Infolight\EEP2012WF\EEPNetClient\obj\Debug\EEPNetClient.CurProject.resources
+C:\Program Files\Infolight\EEP2012WF\EEPNetClient\obj\Debug\EEPNetClient.frmClientMain.resources
+C:\Program Files\Infolight\EEP2012WF\EEPNetClient\obj\Debug\EEPNetClient.frmDataBase.resources
+C:\Program Files\Infolight\EEP2012WF\EEPNetClient\obj\Debug\EEPNetClient.frmFavorMenu.resources
+C:\Program Files\Infolight\EEP2012WF\EEPNetClient\obj\Debug\EEPNetClient.frmLogin.resources
+C:\Program Files\Infolight\EEP2012WF\EEPNetClient\obj\Debug\EEPNetClient.frmMessage.resources
+C:\Program Files\Infolight\EEP2012WF\EEPNetClient\obj\Debug\EEPNetClient.frmUserPWD.resources
+C:\Program Files\Infolight\EEP2012WF\EEPNetClient\obj\Debug\EEPNetClient.frmUsersAndGroups.resources
+C:\Program Files\Infolight\EEP2012WF\EEPNetClient\obj\Debug\EEPNetClient.ProgressForm.resources
+C:\Program Files\Infolight\EEP2012WF\EEPNetClient\obj\Debug\EEPNetClient.Properties.Resources.resources
+C:\Program Files\Infolight\EEP2012WF\EEPNetClient\obj\Debug\EEPNetClient.csproj.GenerateResource.Cache
+C:\Program Files\Infolight\EEP2012WF\EEPNetClient\EEPNetClient.exe.config
+C:\Program Files\Infolight\EEP2012WF\EEPNetClient\obj\Debug\EEPNetClient.exe
+C:\Program Files\Infolight\EEP2012WF\EEPNetClient\obj\Debug\EEPNetClient.pdb
+C:\Program Files\Infolight\EEP2012WF\EEPNetClient\EEPNetClient.exe
+C:\Program Files\Infolight\EEP2012WF\EEPNetClient\EEPNetClient.pdb
+C:\Program Files (x86)\Infolight\EEP2012WF\EEPNetClient\obj\Debug\EEPNetClient.csprojResolveAssemblyReference.cache
+C:\Program Files (x86)\Infolight\EEP2012WF\EEPNetClient\obj\Debug\EEPNetClient.CurProject.resources
+C:\Program Files (x86)\Infolight\EEP2012WF\EEPNetClient\obj\Debug\EEPNetClient.frmClientMain.resources
+C:\Program Files (x86)\Infolight\EEP2012WF\EEPNetClient\obj\Debug\EEPNetClient.frmDataBase.resources
+C:\Program Files (x86)\Infolight\EEP2012WF\EEPNetClient\obj\Debug\EEPNetClient.frmFavorMenu.resources
+C:\Program Files (x86)\Infolight\EEP2012WF\EEPNetClient\obj\Debug\EEPNetClient.frmLogin.resources
+C:\Program Files (x86)\Infolight\EEP2012WF\EEPNetClient\obj\Debug\EEPNetClient.frmMessage.resources
+C:\Program Files (x86)\Infolight\EEP2012WF\EEPNetClient\obj\Debug\EEPNetClient.frmUserPWD.resources
+C:\Program Files (x86)\Infolight\EEP2012WF\EEPNetClient\obj\Debug\EEPNetClient.frmUsersAndGroups.resources
+C:\Program Files (x86)\Infolight\EEP2012WF\EEPNetClient\obj\Debug\EEPNetClient.ProgressForm.resources
+C:\Program Files (x86)\Infolight\EEP2012WF\EEPNetClient\obj\Debug\EEPNetClient.Properties.Resources.resources
+C:\Program Files (x86)\Infolight\EEP2012WF\EEPNetClient\obj\Debug\EEPNetClient.csproj.GenerateResource.Cache
+C:\Program Files (x86)\Infolight\EEP2012WF\EEPNetClient\EEPNetClient.exe.config
+C:\Program Files (x86)\Infolight\EEP2012WF\EEPNetClient\obj\Debug\EEPNetClient.exe
+C:\Program Files (x86)\Infolight\EEP2012WF\EEPNetClient\obj\Debug\EEPNetClient.pdb
+C:\Program Files (x86)\Infolight\EEP2012WF\EEPNetClient\EEPNetClient.exe
+C:\Program Files (x86)\Infolight\EEP2012WF\EEPNetClient\EEPNetClient.pdb
+D:\版本\Version\安裝源文件\EEP2012WF(V5.0.0.020140924 SP5)\EEPNetClient\obj\Debug\EEPNetClient.csprojResolveAssemblyReference.cache
+D:\版本\Version\安裝源文件\EEP2012WF(V5.0.0.020140924 SP5)\EEPNetClient\obj\Debug\EEPNetClient.CurProject.resources
+D:\版本\Version\安裝源文件\EEP2012WF(V5.0.0.020140924 SP5)\EEPNetClient\obj\Debug\EEPNetClient.frmClientMain.resources
+D:\版本\Version\安裝源文件\EEP2012WF(V5.0.0.020140924 SP5)\EEPNetClient\obj\Debug\EEPNetClient.frmDataBase.resources
+D:\版本\Version\安裝源文件\EEP2012WF(V5.0.0.020140924 SP5)\EEPNetClient\obj\Debug\EEPNetClient.frmFavorMenu.resources
+D:\版本\Version\安裝源文件\EEP2012WF(V5.0.0.020140924 SP5)\EEPNetClient\obj\Debug\EEPNetClient.frmLogin.resources
+D:\版本\Version\安裝源文件\EEP2012WF(V5.0.0.020140924 SP5)\EEPNetClient\obj\Debug\EEPNetClient.frmMessage.resources
+D:\版本\Version\安裝源文件\EEP2012WF(V5.0.0.020140924 SP5)\EEPNetClient\obj\Debug\EEPNetClient.frmUserPWD.resources
+D:\版本\Version\安裝源文件\EEP2012WF(V5.0.0.020140924 SP5)\EEPNetClient\obj\Debug\EEPNetClient.frmUsersAndGroups.resources
+D:\版本\Version\安裝源文件\EEP2012WF(V5.0.0.020140924 SP5)\EEPNetClient\obj\Debug\EEPNetClient.ProgressForm.resources
+D:\版本\Version\安裝源文件\EEP2012WF(V5.0.0.020140924 SP5)\EEPNetClient\obj\Debug\EEPNetClient.Properties.Resources.resources
+D:\版本\Version\安裝源文件\EEP2012WF(V5.0.0.020140924 SP5)\EEPNetClient\obj\Debug\EEPNetClient.csproj.GenerateResource.Cache
+D:\版本\Version\安裝源文件\EEP2012WF(V5.0.0.020140924 SP5)\EEPNetClient\EEPNetClient.exe.config
+D:\版本\Version\安裝源文件\EEP2012WF(V5.0.0.020140924 SP5)\EEPNetClient\obj\Debug\EEPNetClient.exe
+D:\版本\Version\安裝源文件\EEP2012WF(V5.0.0.020140924 SP5)\EEPNetClient\obj\Debug\EEPNetClient.pdb
+D:\版本\Version\安裝源文件\EEP2012WF(V5.0.0.020140924 SP5)\EEPNetClient\EEPNetClient.exe
+D:\版本\Version\安裝源文件\EEP2012WF(V5.0.0.020140924 SP5)\EEPNetClient\EEPNetClient.pdb
+D:\版本\Version\安裝源文件\EEP2012(V5.0.0.020140924 SP5)\EEP2012WF\EEPNetClient\obj\Debug\EEPNetClient.CurProject.resources
+D:\版本\Version\安裝源文件\EEP2012(V5.0.0.020140924 SP5)\EEP2012WF\EEPNetClient\obj\Debug\EEPNetClient.frmClientMain.resources
+D:\版本\Version\安裝源文件\EEP2012(V5.0.0.020140924 SP5)\EEP2012WF\EEPNetClient\obj\Debug\EEPNetClient.frmDataBase.resources
+D:\版本\Version\安裝源文件\EEP2012(V5.0.0.020140924 SP5)\EEP2012WF\EEPNetClient\obj\Debug\EEPNetClient.frmFavorMenu.resources
+D:\版本\Version\安裝源文件\EEP2012(V5.0.0.020140924 SP5)\EEP2012WF\EEPNetClient\obj\Debug\EEPNetClient.frmLogin.resources
+D:\版本\Version\安裝源文件\EEP2012(V5.0.0.020140924 SP5)\EEP2012WF\EEPNetClient\obj\Debug\EEPNetClient.frmMessage.resources
+D:\版本\Version\安裝源文件\EEP2012(V5.0.0.020140924 SP5)\EEP2012WF\EEPNetClient\obj\Debug\EEPNetClient.frmUserPWD.resources
+D:\版本\Version\安裝源文件\EEP2012(V5.0.0.020140924 SP5)\EEP2012WF\EEPNetClient\obj\Debug\EEPNetClient.frmUsersAndGroups.resources
+D:\版本\Version\安裝源文件\EEP2012(V5.0.0.020140924 SP5)\EEP2012WF\EEPNetClient\obj\Debug\EEPNetClient.ProgressForm.resources
+D:\版本\Version\安裝源文件\EEP2012(V5.0.0.020140924 SP5)\EEP2012WF\EEPNetClient\obj\Debug\EEPNetClient.Properties.Resources.resources
+D:\版本\Version\安裝源文件\EEP2012(V5.0.0.020140924 SP5)\EEP2012WF\EEPNetClient\obj\Debug\EEPNetClient.csproj.GenerateResource.Cache
+D:\版本\Version\安裝源文件\EEP2012(V5.0.0.020140924 SP5)\EEP2012WF\EEPNetClient\EEPNetClient.exe.config
+D:\版本\Version\安裝源文件\EEP2012(V5.0.0.020140924 SP5)\EEP2012WF\EEPNetClient\obj\Debug\EEPNetClient.exe
+D:\版本\Version\安裝源文件\EEP2012(V5.0.0.020140924 SP5)\EEP2012WF\EEPNetClient\obj\Debug\EEPNetClient.pdb
+D:\版本\Version\安裝源文件\EEP2012(V5.0.0.020140924 SP5)\EEP2012WF\EEPNetClient\EEPNetClient.exe
+D:\版本\Version\安裝源文件\EEP2012(V5.0.0.020140924 SP5)\EEP2012WF\EEPNetClient\EEPNetClient.pdb
+D:\Program Files (x86)\Your Company Name\EEP2012\EEPNetClient\obj\Debug\EEPNetClient.csprojResolveAssemblyReference.cache
+D:\Program Files (x86)\Your Company Name\EEP2012\EEPNetClient\obj\Debug\EEPNetClient.CurProject.resources
+D:\Program Files (x86)\Your Company Name\EEP2012\EEPNetClient\obj\Debug\EEPNetClient.frmClientMain.resources
+D:\Program Files (x86)\Your Company Name\EEP2012\EEPNetClient\obj\Debug\EEPNetClient.frmDataBase.resources
+D:\Program Files (x86)\Your Company Name\EEP2012\EEPNetClient\obj\Debug\EEPNetClient.frmFavorMenu.resources
+D:\Program Files (x86)\Your Company Name\EEP2012\EEPNetClient\obj\Debug\EEPNetClient.frmLogin.resources
+D:\Program Files (x86)\Your Company Name\EEP2012\EEPNetClient\obj\Debug\EEPNetClient.frmMessage.resources
+D:\Program Files (x86)\Your Company Name\EEP2012\EEPNetClient\obj\Debug\EEPNetClient.frmUserPWD.resources
+D:\Program Files (x86)\Your Company Name\EEP2012\EEPNetClient\obj\Debug\EEPNetClient.frmUsersAndGroups.resources
+D:\Program Files (x86)\Your Company Name\EEP2012\EEPNetClient\obj\Debug\EEPNetClient.ProgressForm.resources
+D:\Program Files (x86)\Your Company Name\EEP2012\EEPNetClient\obj\Debug\EEPNetClient.Properties.Resources.resources
+D:\Program Files (x86)\Your Company Name\EEP2012\EEPNetClient\obj\Debug\EEPNetClient.csproj.GenerateResource.Cache
+D:\Program Files (x86)\Your Company Name\EEP2012\EEPNetClient\EEPNetClient.exe.config
+D:\Program Files (x86)\Your Company Name\EEP2012\EEPNetClient\obj\Debug\EEPNetClient.exe
+D:\Program Files (x86)\Your Company Name\EEP2012\EEPNetClient\obj\Debug\EEPNetClient.pdb
+D:\Program Files (x86)\Your Company Name\EEP2012\EEPNetClient\EEPNetClient.exe
+D:\Program Files (x86)\Your Company Name\EEP2012\EEPNetClient\EEPNetClient.pdb
+C:\Program Files (x86)\Infolight\EEP2012\EEPNetClient\obj\Debug\EEPNetClient.CurProject.resources
+C:\Program Files (x86)\Infolight\EEP2012\EEPNetClient\obj\Debug\EEPNetClient.frmClientMain.resources
+C:\Program Files (x86)\Infolight\EEP2012\EEPNetClient\obj\Debug\EEPNetClient.frmDataBase.resources
+C:\Program Files (x86)\Infolight\EEP2012\EEPNetClient\obj\Debug\EEPNetClient.frmFavorMenu.resources
+C:\Program Files (x86)\Infolight\EEP2012\EEPNetClient\obj\Debug\EEPNetClient.frmLogin.resources
+C:\Program Files (x86)\Infolight\EEP2012\EEPNetClient\obj\Debug\EEPNetClient.frmMessage.resources
+C:\Program Files (x86)\Infolight\EEP2012\EEPNetClient\obj\Debug\EEPNetClient.frmUserPWD.resources
+C:\Program Files (x86)\Infolight\EEP2012\EEPNetClient\obj\Debug\EEPNetClient.frmUsersAndGroups.resources
+C:\Program Files (x86)\Infolight\EEP2012\EEPNetClient\obj\Debug\EEPNetClient.ProgressForm.resources
+C:\Program Files (x86)\Infolight\EEP2012\EEPNetClient\obj\Debug\EEPNetClient.Properties.Resources.resources
+C:\Program Files (x86)\Infolight\EEP2012\EEPNetClient\obj\Debug\EEPNetClient.csproj.GenerateResource.Cache
+C:\Program Files (x86)\Infolight\EEP2012\EEPNetClient\EEPNetClient.exe.config
+C:\Program Files (x86)\Infolight\EEP2012\EEPNetClient\obj\Debug\EEPNetClient.exe
+C:\Program Files (x86)\Infolight\EEP2012\EEPNetClient\obj\Debug\EEPNetClient.pdb
+C:\Program Files (x86)\Infolight\EEP2012\EEPNetClient\EEPNetClient.exe
+C:\Program Files (x86)\Infolight\EEP2012\EEPNetClient\EEPNetClient.pdb
+D:\Infolight\EEP2012\EEPNetClient\obj\Debug\EEPNetClient.CurProject.resources
+D:\Infolight\EEP2012\EEPNetClient\obj\Debug\EEPNetClient.frmClientMain.resources
+D:\Infolight\EEP2012\EEPNetClient\obj\Debug\EEPNetClient.frmDataBase.resources
+D:\Infolight\EEP2012\EEPNetClient\obj\Debug\EEPNetClient.frmFavorMenu.resources
+D:\Infolight\EEP2012\EEPNetClient\obj\Debug\EEPNetClient.frmLogin.resources
+D:\Infolight\EEP2012\EEPNetClient\obj\Debug\EEPNetClient.frmMessage.resources
+D:\Infolight\EEP2012\EEPNetClient\obj\Debug\EEPNetClient.frmUserPWD.resources
+D:\Infolight\EEP2012\EEPNetClient\obj\Debug\EEPNetClient.frmUsersAndGroups.resources
+D:\Infolight\EEP2012\EEPNetClient\obj\Debug\EEPNetClient.ProgressForm.resources
+D:\Infolight\EEP2012\EEPNetClient\obj\Debug\EEPNetClient.Properties.Resources.resources
+D:\Infolight\EEP2012\EEPNetClient\obj\Debug\EEPNetClient.csproj.GenerateResource.Cache
+D:\Infolight\EEP2012\EEPNetClient\EEPNetClient.exe.config
+D:\Infolight\EEP2012\EEPNetClient\obj\Debug\EEPNetClient.exe
+D:\Infolight\EEP2012\EEPNetClient\obj\Debug\EEPNetClient.pdb
+D:\Infolight\EEP2012\EEPNetClient\EEPNetClient.exe
+D:\Infolight\EEP2012\EEPNetClient\EEPNetClient.pdb

@@ -1,0 +1,95 @@
+
+
+***********************************************************************
+Fatal NI connect error 12545, connecting to:
+ (DESCRIPTION=(ADDRESS=(PROTOCOL=TCP)(HOST=REIKAMI-PC)(PORT=1521))(CONNECT_DATA=(SID=Infolight)(SERVER=DEDICATED)(CID=(PROGRAM=D:\Program Files\Microsoft Visual Studio 9.0\Common7\IDE\devenv.exe)(HOST=REI)(USER=Rei))))
+
+  VERSION INFORMATION:
+	TNS for 32-bit Windows: Version 10.2.0.1.0 - Production
+	Windows NT TCP/IP NT Protocol Adapter for 32-bit Windows: Version 10.2.0.1.0 - Production
+  Time: 17-9月 -2008 13:38:58
+  Tracing not turned on.
+  Tns error struct:
+    ns main err code: 12545
+    TNS-12545: 因目标主机或对象不存在, 连接失败
+    ns secondary err code: 12560
+    nt main err code: 515
+    TNS-00515: 因目标主机或对象不存在, 连接失败
+    nt secondary err code: 1001
+    nt OS err code: 0
+
+
+***********************************************************************
+Fatal NI connect error 12545, connecting to:
+ (DESCRIPTION=(ADDRESS=(PROTOCOL=TCP)(HOST=reikami-pc)(PORT=1521))(CONNECT_DATA=(SID=ConnEEP)(SERVER=DEDICATED)(CID=(PROGRAM=D:\Program Files\Microsoft Visual Studio 9.0\Common7\IDE\devenv.exe)(HOST=REI)(USER=Rei))))
+
+  VERSION INFORMATION:
+	TNS for 32-bit Windows: Version 10.2.0.1.0 - Production
+	Windows NT TCP/IP NT Protocol Adapter for 32-bit Windows: Version 10.2.0.1.0 - Production
+  Time: 17-9月 -2008 13:39:03
+  Tracing not turned on.
+  Tns error struct:
+    ns main err code: 12545
+    TNS-12545: 因目标主机或对象不存在, 连接失败
+    ns secondary err code: 12560
+    nt main err code: 515
+    TNS-00515: 因目标主机或对象不存在, 连接失败
+    nt secondary err code: 1001
+    nt OS err code: 0
+
+
+***********************************************************************
+Fatal NI connect error 12545, connecting to:
+ (DESCRIPTION=(ADDRESS=(PROTOCOL=TCP)(HOST=REIKAMI-PC)(PORT=1521))(CONNECT_DATA=(SID=Infolight)(SERVER=DEDICATED)(CID=(PROGRAM=D:\Program Files\Microsoft Visual Studio 9.0\Common7\IDE\devenv.exe)(HOST=REI)(USER=Rei))))
+
+  VERSION INFORMATION:
+	TNS for 32-bit Windows: Version 10.2.0.1.0 - Production
+	Windows NT TCP/IP NT Protocol Adapter for 32-bit Windows: Version 10.2.0.1.0 - Production
+  Time: 09-12月-2008 15:25:20
+  Tracing not turned on.
+  Tns error struct:
+    ns main err code: 12545
+    TNS-12545: 因目标主机或对象不存在, 连接失败
+    ns secondary err code: 12560
+    nt main err code: 515
+    TNS-00515: 因目标主机或对象不存在, 连接失败
+    nt secondary err code: 1001
+    nt OS err code: 0
+
+
+***********************************************************************
+Fatal NI connect error 12545, connecting to:
+ (DESCRIPTION=(ADDRESS=(PROTOCOL=TCP)(HOST=reikami-pc)(PORT=1521))(CONNECT_DATA=(SID=ConnEEP)(SERVER=DEDICATED)(CID=(PROGRAM=D:\Program Files\Microsoft Visual Studio 9.0\Common7\IDE\devenv.exe)(HOST=REI)(USER=Rei))))
+
+  VERSION INFORMATION:
+	TNS for 32-bit Windows: Version 10.2.0.1.0 - Production
+	Windows NT TCP/IP NT Protocol Adapter for 32-bit Windows: Version 10.2.0.1.0 - Production
+  Time: 09-12月-2008 15:25:30
+  Tracing not turned on.
+  Tns error struct:
+    ns main err code: 12545
+    TNS-12545: 因目标主机或对象不存在, 连接失败
+    ns secondary err code: 12560
+    nt main err code: 515
+    TNS-00515: 因目标主机或对象不存在, 连接失败
+    nt secondary err code: 1001
+    nt OS err code: 0
+
+
+***********************************************************************
+Fatal NI connect error 12545, connecting to:
+ (DESCRIPTION=(ADDRESS=(PROTOCOL=TCP)(HOST=REIKAMI-PC)(PORT=1521))(CONNECT_DATA=(SID=Infolight)(SERVER=DEDICATED)(CID=(PROGRAM=D:\Program Files\Microsoft Visual Studio 9.0\Common7\IDE\devenv.exe)(HOST=REI)(USER=Rei))))
+
+  VERSION INFORMATION:
+	TNS for 32-bit Windows: Version 10.2.0.1.0 - Production
+	Windows NT TCP/IP NT Protocol Adapter for 32-bit Windows: Version 10.2.0.1.0 - Production
+  Time: 09-12月-2008 15:25:37
+  Tracing not turned on.
+  Tns error struct:
+    ns main err code: 12545
+    TNS-12545: 因目标主机或对象不存在, 连接失败
+    ns secondary err code: 12560
+    nt main err code: 515
+    TNS-00515: 因目标主机或对象不存在, 连接失败
+    nt secondary err code: 1001
+    nt OS err code: 0

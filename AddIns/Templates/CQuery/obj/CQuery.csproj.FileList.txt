@@ -1,0 +1,8 @@
+..\..\EEPNetClient\Solution1\CQuery.dll
+..\..\EEPNetClient\Solution1\CQuery.pdb
+obj\Debug\ResolveAssemblyReference.cache
+obj\Debug\CQuery.Form1.resources
+obj\Debug\CQuery.Properties.Resources.resources
+obj\Debug\CQuery.csproj.GenerateResource.Cache
+obj\Debug\CQuery.dll
+obj\Debug\CQuery.pdb

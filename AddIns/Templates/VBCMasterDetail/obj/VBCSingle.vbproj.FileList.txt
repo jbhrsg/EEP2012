@@ -1,0 +1,10 @@
+..\..\EEPNetClient\Solution1\VBCSingle.dll
+..\..\EEPNetClient\Solution1\VBCSingle.pdb
+..\..\EEPNetClient\Solution1\VBCSingle.xml
+obj\Debug\ResolveAssemblyReference.cache
+obj\Debug\VBCSingle.Form1.resources
+obj\Debug\VBCSingle.Resources.resources
+obj\Debug\VBCSingle.vbproj.GenerateResource.Cache
+obj\Debug\VBCSingle.dll
+obj\Debug\VBCSingle.xml
+obj\Debug\VBCSingle.pdb

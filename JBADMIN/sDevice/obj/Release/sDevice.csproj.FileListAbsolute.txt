@@ -1,0 +1,13 @@
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sDevice\bin\Release\sDevice.dll
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sDevice\bin\Release\sDevice.pdb
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sDevice\bin\Release\Newtonsoft.Json.dll
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sDevice\bin\Release\Newtonsoft.Json.xml
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sDevice\obj\Release\sDevice.Component.resources
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sDevice\obj\Release\sDevice.csproj.GenerateResource.Cache
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sDevice\obj\Release\sDevice.dll
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sDevice\obj\Release\sDevice.pdb
+C:\Program Files (x86)\Infolight\EEP2012\EEPNetServer\JB_ADMIN\sDevice.dll
+C:\Program Files (x86)\Infolight\EEP2012\EEPNetServer\JB_ADMIN\sDevice.pdb
+C:\Program Files (x86)\Infolight\EEP2012\EEPNetServer\JBADMIN\sDevice.dll
+C:\Program Files (x86)\Infolight\EEP2012\EEPNetServer\JBADMIN\sDevice.pdb
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sDevice\obj\Release\sDevice.csprojResolveAssemblyReference.cache

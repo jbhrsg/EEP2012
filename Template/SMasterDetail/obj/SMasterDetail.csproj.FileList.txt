@@ -1,0 +1,10 @@
+..\..\EEPNetServer\Solution1\SMasterDetail.dll
+..\..\EEPNetServer\Solution1\SMasterDetail.pdb
+..\..\EEPNetServer\Solution1\vi-VN\SMasterDetail.resources.dll
+obj\Debug\ResolveAssemblyReference.cache
+obj\Debug\SMasterDetail.Component.resources
+obj\Debug\SMasterDetail.csproj.GenerateResource.Cache
+obj\Debug\SMasterDetail.Component.vi-VN.resources
+obj\Debug\vi-VN\SMasterDetail.resources.dll
+obj\Debug\SMasterDetail.dll
+obj\Debug\SMasterDetail.pdb

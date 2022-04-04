@@ -1,0 +1,15 @@
+D:\Infolight\EEP2012\JBADMIN\sHumanImport\bin\Debug\sHumanImport.dll
+D:\Infolight\EEP2012\JBADMIN\sHumanImport\bin\Debug\sHumanImport.pdb
+D:\Infolight\EEP2012\JBADMIN\sHumanImport\obj\Debug\sHumanImport.csproj.GenerateResource.Cache
+D:\Infolight\EEP2012\JBADMIN\sHumanImport\obj\Debug\sHumanImport.dll
+D:\Infolight\EEP2012\JBADMIN\sHumanImport\obj\Debug\sHumanImport.pdb
+D:\Infolight\EEP2012\EEPNetServer\JBADMIN\sHumanImport.dll
+D:\Infolight\EEP2012\EEPNetServer\JBADMIN\sHumanImport.pdb
+D:\Infolight\EEP2012\JBADMIN\sHumanImport\obj\Debug\sHumanImport.Component.resources
+D:\Infolight\EEP2012\JBADMIN\sHumanImport\obj\Debug\sHumanImport.csprojResolveAssemblyReference.cache
+C:\Program Files (x86)\Infolight\EEP2012\EEPNetServer\JBADMIN\sHumanImport.dll
+C:\Program Files (x86)\Infolight\EEP2012\EEPNetServer\JBADMIN\sHumanImport.pdb
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sHumanImport\obj\Debug\sHumanImport.Component.resources
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sHumanImport\obj\Debug\sHumanImport.csproj.GenerateResource.Cache
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sHumanImport\obj\Debug\sHumanImport.dll
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sHumanImport\obj\Debug\sHumanImport.pdb

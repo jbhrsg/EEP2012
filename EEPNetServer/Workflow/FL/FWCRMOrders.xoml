@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?><ns0:FLSequentialWorkflow RejectProcedure="{p1:Null}" ConnectionType="SqlClient" Description="外勞訂單申請" x:Name="FLSequentialWorkflow" FormName="{x:Null}" SkipForSameUser="False" EEPAlias="{x:Null}" ClientDll="{x:Null}" TableName="FWCRMOrders" BodyField="{x:Null}" WebFormName="JB_ADMIN.FWCRMOrders" ExpTime="0" PresentFields="OrderNo,WorkNo,OrderType" TimeUnit="Day" Keys="OrderNo" ExpTimeField="{x:Null}" MailApproveLevel="{x:Null}" UrgentTime="0" NotifySendMail="False" OrgKind="0" xmlns="http://schemas.microsoft.com/winfx/2006/xaml/workflow" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:p1="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:ns0="clr-namespace:FLTools;Assembly=FLTools, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null">
+	<ns0:FLStand SendEmail="False" DelayAutoApprove="False" SendToKind="Applicate" x:Name="外勞訂單申請" FormName="" TimeUnit="Day" SendToUser="" AllowSendBack="True" PlusApproveReturn="True" PlusApprove="False" WebFormName="" ExpTime="0" Parameters="{x:Null}" NavigatorMode="Insert" SendToField="" SendToId="{x:Null}" SendToRole="" UrgentTime="0" FLNavigatorMode="Submit" />
+	<IfElseActivity x:Name="訂單類型">
+		<IfElseBranchActivity Description="OrderType!=1" x:Name="轉接或承接">
+			<ns0:FLStand SendEmail="True" DelayAutoApprove="False" SendToKind="ApplicateManager" x:Name="主管審核" FormName="" TimeUnit="Day" SendToUser="" AllowSendBack="True" PlusApproveReturn="True" PlusApprove="False" WebFormName="JB_ADMIN.FWCRMOrdersEdit" ExpTime="0" Parameters="" NavigatorMode="Normal" SendToField="" SendToId="{x:Null}" SendToRole="" UrgentTime="0" FLNavigatorMode="Approve" />
+			<ns0:FLStand SendEmail="True" DelayAutoApprove="False" SendToKind="Applicate" x:Name="業務列印訂單" FormName="" TimeUnit="Day" SendToUser="" AllowSendBack="True" PlusApproveReturn="True" PlusApprove="False" WebFormName="JB_ADMIN.FWCRMOrdersEdit" ExpTime="0" Parameters="D=Print" NavigatorMode="Normal" SendToField="" SendToId="{x:Null}" SendToRole="" UrgentTime="0" FLNavigatorMode="Approve" />
+			<ns0:FLStand SendEmail="True" DelayAutoApprove="False" SendToKind="Role" x:Name="外勞會計結案" FormName="" TimeUnit="Day" SendToUser="" AllowSendBack="True" PlusApproveReturn="True" PlusApprove="False" WebFormName="JB_ADMIN.FWCRMOrdersEdit" ExpTime="0" Parameters="D=FwcrmClose" NavigatorMode="Modify" SendToField="" SendToId="{x:Null}" SendToRole="1073064 ; 行政會計/行政組" UrgentTime="0" FLNavigatorMode="Approve" />
+			<ns0:FLNotify SendEmail="True" Parameters="{x:Null}" x:Name="訂單結案通知" FormName="" TimeUnit="Day" SendToUser="" SendToKind="Applicate" UserId="{x:Null}" WebFormName="" ExpTime="0" RoleId="{x:Null}" NavigatorMode="Normal" SendToField="" SendToRole="" UrgentTime="0" FLNavigatorMode="Notify" />
+			<ns0:FLNotify SendEmail="True" Parameters="{x:Null}" x:Name="結案通知主管" FormName="" TimeUnit="Day" SendToUser="" SendToKind="ApplicateManager" UserId="{x:Null}" WebFormName="" ExpTime="0" RoleId="{x:Null}" NavigatorMode="Normal" SendToField="" SendToRole="" UrgentTime="0" FLNavigatorMode="Notify" />
+		</IfElseBranchActivity>
+		<IfElseBranchActivity x:Name="入境">
+			<ns0:FLStand SendEmail="True" DelayAutoApprove="False" SendToKind="ApplicateManager" x:Name="入境主管審核" FormName="" TimeUnit="Day" SendToUser="" AllowSendBack="True" PlusApproveReturn="True" PlusApprove="False" WebFormName="JB_ADMIN.FWCRMOrdersEdit" ExpTime="0" Parameters="D=Manager" NavigatorMode="Modify" SendToField="" SendToId="{x:Null}" SendToRole="" UrgentTime="0" FLNavigatorMode="Approve" />
+			<ns0:FLStand SendEmail="True" DelayAutoApprove="False" SendToKind="Role" x:Name="國外組挑工" FormName="" TimeUnit="Day" SendToUser="" AllowSendBack="True" PlusApproveReturn="True" PlusApprove="False" WebFormName="JB_ADMIN.FWCRMOrdersRepeat" ExpTime="0" Parameters="D=Select" NavigatorMode="Modify" SendToField="" SendToId="{x:Null}" SendToRole="1073065 ; 助理專員/國外組" UrgentTime="0" FLNavigatorMode="Approve" />
+			<IfElseActivity x:Name="是否有函號">
+				<IfElseBranchActivity x:Name="無函號">
+					<ns0:FLStand SendEmail="True" DelayAutoApprove="False" SendToKind="Applicate" x:Name="函號輸入" FormName="" TimeUnit="Day" SendToUser="" AllowSendBack="True" PlusApproveReturn="True" PlusApprove="False" WebFormName="JB_ADMIN.FWCRMOrdersEdit" ExpTime="0" Parameters="D=Input" NavigatorMode="Modify" SendToField="" SendToId="{x:Null}" SendToRole="" UrgentTime="0" FLNavigatorMode="Approve" />
+				</IfElseBranchActivity>
+				<IfElseBranchActivity Description="sFWCRMOrders.flowCheckOrg_okno()" x:Name="有函號" />
+			</IfElseActivity>
+			<ns0:FLStand SendEmail="True" DelayAutoApprove="False" SendToKind="Role" x:Name="入境確認輸入" FormName="" TimeUnit="Day" SendToUser="" AllowSendBack="True" PlusApproveReturn="True" PlusApprove="False" WebFormName="JB_ADMIN.FWCRMOrdersRepeat" ExpTime="0" Parameters="D=Confirm" NavigatorMode="Modify" SendToField="" SendToId="{x:Null}" SendToRole="1073065 ; 助理專員/國外組" UrgentTime="0" FLNavigatorMode="Approve" />
+			<ns0:FLStand SendEmail="True" DelayAutoApprove="False" SendToKind="Applicate" x:Name="業務結案確認" FormName="" TimeUnit="Day" SendToUser="" AllowSendBack="True" PlusApproveReturn="True" PlusApprove="False" WebFormName="JB_ADMIN.FWCRMOrdersRepeat" ExpTime="0" Parameters="D=Close" NavigatorMode="Modify" SendToField="" SendToId="{x:Null}" SendToRole="" UrgentTime="0" FLNavigatorMode="Approve" />
+			<IfElseActivity x:Name="是否結案">
+				<IfElseBranchActivity x:Name="否">
+					<ns0:FLGoto x:Name="繼續國外挑工" ActivityName="國外組挑工" />
+				</IfElseBranchActivity>
+				<IfElseBranchActivity Description="sFWCRMOrders.flowCheckClose()" x:Name="是" />
+			</IfElseActivity>
+			<ns0:FLNotify SendEmail="True" Parameters="{x:Null}" x:Name="通知主管" FormName="" TimeUnit="Day" SendToUser="" SendToKind="ApplicateManager" UserId="{x:Null}" WebFormName="" ExpTime="0" RoleId="{x:Null}" NavigatorMode="Normal" SendToField="" SendToRole="" UrgentTime="0" FLNavigatorMode="Notify" />
+		</IfElseBranchActivity>
+	</IfElseActivity>
+</ns0:FLSequentialWorkflow>

@@ -1,0 +1,280 @@
+D:\Infolight\EEP2010\EEPManager\obj\Debug\ResolveAssemblyReference.cache
+D:\Infolight\EEP2010\EEPManager\obj\Debug\EEPManager.frmAddRefVal.resources
+D:\Infolight\EEP2010\EEPManager\obj\Debug\EEPManager.frmDBALias.resources
+D:\Infolight\EEP2010\EEPManager\obj\Debug\EEPManager.frmErrlogLargeImage.resources
+D:\Infolight\EEP2010\EEPManager\obj\Debug\EEPManager.frmErrorLogMaintenance.resources
+D:\Infolight\EEP2010\EEPManager\obj\Debug\EEPManager.frmDataDictonary.resources
+D:\Infolight\EEP2010\EEPManager\obj\Debug\EEPManager.frmDDSelTab.resources
+D:\Infolight\EEP2010\EEPManager\obj\Debug\EEPManager.frmLocateLogConnId.resources
+D:\Infolight\EEP2010\EEPManager\obj\Debug\EEPManager.frmProgress.resources
+D:\Infolight\EEP2010\EEPManager\obj\Debug\EEPManager.frmRefVal.resources
+D:\Infolight\EEP2010\EEPManager\obj\Debug\EEPManager.frmSecurityMain.resources
+D:\Infolight\EEP2010\EEPManager\obj\Debug\EEPManager.frmSelLogConditions.resources
+D:\Infolight\EEP2010\EEPManager\obj\Debug\EEPManager.frmSysLogViewerForDB.resources
+D:\Infolight\EEP2010\EEPManager\obj\Debug\EEPManager.MasterIPConfigForm.resources
+D:\Infolight\EEP2010\EEPManager\obj\Debug\EEPManager.PackageVersionHistoryForm.resources
+D:\Infolight\EEP2010\EEPManager\obj\Debug\EEPManager.PackageTransferForm.resources
+D:\Infolight\EEP2010\EEPManager\obj\Debug\EEPManager.EEPManagerForm.resources
+D:\Infolight\EEP2010\EEPManager\obj\Debug\EEPManager.frmLogin.resources
+D:\Infolight\EEP2010\EEPManager\obj\Debug\EEPManager.PackageManagerForm.resources
+D:\Infolight\EEP2010\EEPManager\obj\Debug\EEPManager.ProgressForm.resources
+D:\Infolight\EEP2010\EEPManager\obj\Debug\EEPManager.Properties.Resources.resources
+D:\Infolight\EEP2010\EEPManager\obj\Debug\EEPManager.SolutionDefineForm.resources
+D:\Infolight\EEP2010\EEPManager\obj\Debug\GenerateResource.read.1.tlog
+D:\Infolight\EEP2010\EEPManager\obj\Debug\GenerateResource.write.1.tlog
+D:\Infolight\EEP2010\EEPManager\EEPManager.exe.config
+D:\Infolight\EEP2010\EEPManager\obj\Debug\EEPManager.exe
+D:\Infolight\EEP2010\EEPManager\obj\Debug\EEPManager.pdb
+D:\Infolight\EEP2010\EEPManager\EEPManager.exe
+D:\Infolight\EEP2010\EEPManager\EEPManager.pdb
+C:\Program Files\Infolight\EEP2010\EEPManager\obj\Debug\EEPManager.frmAddRefVal.resources
+C:\Program Files\Infolight\EEP2010\EEPManager\obj\Debug\EEPManager.frmDBALias.resources
+C:\Program Files\Infolight\EEP2010\EEPManager\obj\Debug\EEPManager.frmErrlogLargeImage.resources
+C:\Program Files\Infolight\EEP2010\EEPManager\obj\Debug\EEPManager.frmErrorLogMaintenance.resources
+C:\Program Files\Infolight\EEP2010\EEPManager\obj\Debug\EEPManager.frmDataDictonary.resources
+C:\Program Files\Infolight\EEP2010\EEPManager\obj\Debug\EEPManager.frmDDSelTab.resources
+C:\Program Files\Infolight\EEP2010\EEPManager\obj\Debug\EEPManager.frmLocateLogConnId.resources
+C:\Program Files\Infolight\EEP2010\EEPManager\obj\Debug\EEPManager.frmProgress.resources
+C:\Program Files\Infolight\EEP2010\EEPManager\obj\Debug\EEPManager.frmRefVal.resources
+C:\Program Files\Infolight\EEP2010\EEPManager\obj\Debug\EEPManager.frmSecurityMain.resources
+C:\Program Files\Infolight\EEP2010\EEPManager\obj\Debug\EEPManager.frmSelLogConditions.resources
+C:\Program Files\Infolight\EEP2010\EEPManager\obj\Debug\EEPManager.frmSysLogViewerForDB.resources
+C:\Program Files\Infolight\EEP2010\EEPManager\obj\Debug\EEPManager.MasterIPConfigForm.resources
+C:\Program Files\Infolight\EEP2010\EEPManager\obj\Debug\EEPManager.PackageVersionHistoryForm.resources
+C:\Program Files\Infolight\EEP2010\EEPManager\obj\Debug\EEPManager.PackageTransferForm.resources
+C:\Program Files\Infolight\EEP2010\EEPManager\obj\Debug\EEPManager.EEPManagerForm.resources
+C:\Program Files\Infolight\EEP2010\EEPManager\obj\Debug\EEPManager.frmLogin.resources
+C:\Program Files\Infolight\EEP2010\EEPManager\obj\Debug\EEPManager.PackageManagerForm.resources
+C:\Program Files\Infolight\EEP2010\EEPManager\obj\Debug\EEPManager.ProgressForm.resources
+C:\Program Files\Infolight\EEP2010\EEPManager\obj\Debug\EEPManager.Properties.Resources.resources
+C:\Program Files\Infolight\EEP2010\EEPManager\obj\Debug\EEPManager.SolutionDefineForm.resources
+C:\Program Files\Infolight\EEP2010\EEPManager\EEPManager.exe.config
+C:\Program Files\Infolight\EEP2010\EEPManager\obj\Debug\EEPManager.exe
+C:\Program Files\Infolight\EEP2010\EEPManager\obj\Debug\EEPManager.pdb
+C:\Program Files\Infolight\EEP2010\EEPManager\EEPManager.exe
+C:\Program Files\Infolight\EEP2010\EEPManager\EEPManager.pdb
+C:\Program Files\Infolight\EEP2010\EEPManager\obj\Debug\EEPManager.csprojResolveAssemblyReference.cache
+C:\Program Files\Infolight\EEP2010\EEPManager\obj\Debug\EEPManager.csproj.GenerateResource.Cache
+C:\Program Files\Infolight\EEP2012\EEPManager\obj\Debug\EEPManager.csprojResolveAssemblyReference.cache
+C:\Program Files\Infolight\EEP2012\EEPManager\obj\Debug\EEPManager.frmAddRefVal.resources
+C:\Program Files\Infolight\EEP2012\EEPManager\obj\Debug\EEPManager.frmDBALias.resources
+C:\Program Files\Infolight\EEP2012\EEPManager\obj\Debug\EEPManager.frmErrlogLargeImage.resources
+C:\Program Files\Infolight\EEP2012\EEPManager\obj\Debug\EEPManager.frmErrorLogMaintenance.resources
+C:\Program Files\Infolight\EEP2012\EEPManager\obj\Debug\EEPManager.frmDataDictonary.resources
+C:\Program Files\Infolight\EEP2012\EEPManager\obj\Debug\EEPManager.frmDDSelTab.resources
+C:\Program Files\Infolight\EEP2012\EEPManager\obj\Debug\EEPManager.frmLocateLogConnId.resources
+C:\Program Files\Infolight\EEP2012\EEPManager\obj\Debug\EEPManager.frmProgress.resources
+C:\Program Files\Infolight\EEP2012\EEPManager\obj\Debug\EEPManager.frmRefVal.resources
+C:\Program Files\Infolight\EEP2012\EEPManager\obj\Debug\EEPManager.frmSecurityMain.resources
+C:\Program Files\Infolight\EEP2012\EEPManager\obj\Debug\EEPManager.frmSelLogConditions.resources
+C:\Program Files\Infolight\EEP2012\EEPManager\obj\Debug\EEPManager.frmSysLogViewerForDB.resources
+C:\Program Files\Infolight\EEP2012\EEPManager\obj\Debug\EEPManager.MasterIPConfigForm.resources
+C:\Program Files\Infolight\EEP2012\EEPManager\obj\Debug\EEPManager.PackageVersionHistoryForm.resources
+C:\Program Files\Infolight\EEP2012\EEPManager\obj\Debug\EEPManager.PackageTransferForm.resources
+C:\Program Files\Infolight\EEP2012\EEPManager\obj\Debug\EEPManager.EEPManagerForm.resources
+C:\Program Files\Infolight\EEP2012\EEPManager\obj\Debug\EEPManager.frmLogin.resources
+C:\Program Files\Infolight\EEP2012\EEPManager\obj\Debug\EEPManager.PackageManagerForm.resources
+C:\Program Files\Infolight\EEP2012\EEPManager\obj\Debug\EEPManager.ProgressForm.resources
+C:\Program Files\Infolight\EEP2012\EEPManager\obj\Debug\EEPManager.Properties.Resources.resources
+C:\Program Files\Infolight\EEP2012\EEPManager\obj\Debug\EEPManager.SolutionDefineForm.resources
+C:\Program Files\Infolight\EEP2012\EEPManager\obj\Debug\EEPManager.csproj.GenerateResource.Cache
+C:\Program Files\Infolight\EEP2012\EEPManager\EEPManager.exe.config
+C:\Program Files\Infolight\EEP2012\EEPManager\obj\Debug\EEPManager.exe
+C:\Program Files\Infolight\EEP2012\EEPManager\obj\Debug\EEPManager.pdb
+C:\Program Files\Infolight\EEP2012\EEPManager\EEPManager.exe
+C:\Program Files\Infolight\EEP2012\EEPManager\EEPManager.pdb
+C:\Program Files\Infolight\EEP2012WF\EEPManager\obj\Debug\EEPManager.csprojResolveAssemblyReference.cache
+C:\Program Files\Infolight\EEP2012WF\EEPManager\obj\Debug\EEPManager.frmAddRefVal.resources
+C:\Program Files\Infolight\EEP2012WF\EEPManager\obj\Debug\EEPManager.frmDBALias.resources
+C:\Program Files\Infolight\EEP2012WF\EEPManager\obj\Debug\EEPManager.frmErrlogLargeImage.resources
+C:\Program Files\Infolight\EEP2012WF\EEPManager\obj\Debug\EEPManager.frmErrorLogMaintenance.resources
+C:\Program Files\Infolight\EEP2012WF\EEPManager\obj\Debug\EEPManager.frmDataDictonary.resources
+C:\Program Files\Infolight\EEP2012WF\EEPManager\obj\Debug\EEPManager.frmDDSelTab.resources
+C:\Program Files\Infolight\EEP2012WF\EEPManager\obj\Debug\EEPManager.frmLocateLogConnId.resources
+C:\Program Files\Infolight\EEP2012WF\EEPManager\obj\Debug\EEPManager.frmProgress.resources
+C:\Program Files\Infolight\EEP2012WF\EEPManager\obj\Debug\EEPManager.frmRefVal.resources
+C:\Program Files\Infolight\EEP2012WF\EEPManager\obj\Debug\EEPManager.frmSecurityMain.resources
+C:\Program Files\Infolight\EEP2012WF\EEPManager\obj\Debug\EEPManager.frmSelLogConditions.resources
+C:\Program Files\Infolight\EEP2012WF\EEPManager\obj\Debug\EEPManager.frmSysLogViewerForDB.resources
+C:\Program Files\Infolight\EEP2012WF\EEPManager\obj\Debug\EEPManager.MasterIPConfigForm.resources
+C:\Program Files\Infolight\EEP2012WF\EEPManager\obj\Debug\EEPManager.PackageVersionHistoryForm.resources
+C:\Program Files\Infolight\EEP2012WF\EEPManager\obj\Debug\EEPManager.PackageTransferForm.resources
+C:\Program Files\Infolight\EEP2012WF\EEPManager\obj\Debug\EEPManager.EEPManagerForm.resources
+C:\Program Files\Infolight\EEP2012WF\EEPManager\obj\Debug\EEPManager.frmLogin.resources
+C:\Program Files\Infolight\EEP2012WF\EEPManager\obj\Debug\EEPManager.PackageManagerForm.resources
+C:\Program Files\Infolight\EEP2012WF\EEPManager\obj\Debug\EEPManager.ProgressForm.resources
+C:\Program Files\Infolight\EEP2012WF\EEPManager\obj\Debug\EEPManager.Properties.Resources.resources
+C:\Program Files\Infolight\EEP2012WF\EEPManager\obj\Debug\EEPManager.SolutionDefineForm.resources
+C:\Program Files\Infolight\EEP2012WF\EEPManager\obj\Debug\EEPManager.csproj.GenerateResource.Cache
+C:\Program Files\Infolight\EEP2012WF\EEPManager\EEPManager.exe.config
+C:\Program Files\Infolight\EEP2012WF\EEPManager\obj\Debug\EEPManager.exe
+C:\Program Files\Infolight\EEP2012WF\EEPManager\obj\Debug\EEPManager.pdb
+C:\Program Files\Infolight\EEP2012WF\EEPManager\EEPManager.exe
+C:\Program Files\Infolight\EEP2012WF\EEPManager\EEPManager.pdb
+C:\Program Files (x86)\Infolight\EEP2012WF\EEPManager\obj\Debug\EEPManager.csprojResolveAssemblyReference.cache
+C:\Program Files (x86)\Infolight\EEP2012WF\EEPManager\obj\Debug\EEPManager.frmAddRefVal.resources
+C:\Program Files (x86)\Infolight\EEP2012WF\EEPManager\obj\Debug\EEPManager.frmDBALias.resources
+C:\Program Files (x86)\Infolight\EEP2012WF\EEPManager\obj\Debug\EEPManager.frmErrlogLargeImage.resources
+C:\Program Files (x86)\Infolight\EEP2012WF\EEPManager\obj\Debug\EEPManager.frmErrorLogMaintenance.resources
+C:\Program Files (x86)\Infolight\EEP2012WF\EEPManager\obj\Debug\EEPManager.frmDataDictonary.resources
+C:\Program Files (x86)\Infolight\EEP2012WF\EEPManager\obj\Debug\EEPManager.frmDDSelTab.resources
+C:\Program Files (x86)\Infolight\EEP2012WF\EEPManager\obj\Debug\EEPManager.frmLocateLogConnId.resources
+C:\Program Files (x86)\Infolight\EEP2012WF\EEPManager\obj\Debug\EEPManager.frmProgress.resources
+C:\Program Files (x86)\Infolight\EEP2012WF\EEPManager\obj\Debug\EEPManager.frmRefVal.resources
+C:\Program Files (x86)\Infolight\EEP2012WF\EEPManager\obj\Debug\EEPManager.frmSecurityMain.resources
+C:\Program Files (x86)\Infolight\EEP2012WF\EEPManager\obj\Debug\EEPManager.frmSelLogConditions.resources
+C:\Program Files (x86)\Infolight\EEP2012WF\EEPManager\obj\Debug\EEPManager.frmSysLogViewerForDB.resources
+C:\Program Files (x86)\Infolight\EEP2012WF\EEPManager\obj\Debug\EEPManager.MasterIPConfigForm.resources
+C:\Program Files (x86)\Infolight\EEP2012WF\EEPManager\obj\Debug\EEPManager.PackageVersionHistoryForm.resources
+C:\Program Files (x86)\Infolight\EEP2012WF\EEPManager\obj\Debug\EEPManager.PackageTransferForm.resources
+C:\Program Files (x86)\Infolight\EEP2012WF\EEPManager\obj\Debug\EEPManager.EEPManagerForm.resources
+C:\Program Files (x86)\Infolight\EEP2012WF\EEPManager\obj\Debug\EEPManager.frmLogin.resources
+C:\Program Files (x86)\Infolight\EEP2012WF\EEPManager\obj\Debug\EEPManager.PackageManagerForm.resources
+C:\Program Files (x86)\Infolight\EEP2012WF\EEPManager\obj\Debug\EEPManager.ProgressForm.resources
+C:\Program Files (x86)\Infolight\EEP2012WF\EEPManager\obj\Debug\EEPManager.Properties.Resources.resources
+C:\Program Files (x86)\Infolight\EEP2012WF\EEPManager\obj\Debug\EEPManager.SolutionDefineForm.resources
+C:\Program Files (x86)\Infolight\EEP2012WF\EEPManager\obj\Debug\EEPManager.csproj.GenerateResource.Cache
+C:\Program Files (x86)\Infolight\EEP2012WF\EEPManager\EEPManager.exe.config
+C:\Program Files (x86)\Infolight\EEP2012WF\EEPManager\obj\Debug\EEPManager.exe
+C:\Program Files (x86)\Infolight\EEP2012WF\EEPManager\obj\Debug\EEPManager.pdb
+C:\Program Files (x86)\Infolight\EEP2012WF\EEPManager\EEPManager.exe
+C:\Program Files (x86)\Infolight\EEP2012WF\EEPManager\EEPManager.pdb
+D:\版本\Version\安裝源文件\EEP2012WF(V5.0.0.020140924 SP5)\EEPManager\obj\Debug\EEPManager.csprojResolveAssemblyReference.cache
+D:\版本\Version\安裝源文件\EEP2012WF(V5.0.0.020140924 SP5)\EEPManager\obj\Debug\EEPManager.frmAddRefVal.resources
+D:\版本\Version\安裝源文件\EEP2012WF(V5.0.0.020140924 SP5)\EEPManager\obj\Debug\EEPManager.frmDBALias.resources
+D:\版本\Version\安裝源文件\EEP2012WF(V5.0.0.020140924 SP5)\EEPManager\obj\Debug\EEPManager.frmErrlogLargeImage.resources
+D:\版本\Version\安裝源文件\EEP2012WF(V5.0.0.020140924 SP5)\EEPManager\obj\Debug\EEPManager.frmErrorLogMaintenance.resources
+D:\版本\Version\安裝源文件\EEP2012WF(V5.0.0.020140924 SP5)\EEPManager\obj\Debug\EEPManager.frmDataDictonary.resources
+D:\版本\Version\安裝源文件\EEP2012WF(V5.0.0.020140924 SP5)\EEPManager\obj\Debug\EEPManager.frmDDSelTab.resources
+D:\版本\Version\安裝源文件\EEP2012WF(V5.0.0.020140924 SP5)\EEPManager\obj\Debug\EEPManager.frmLocateLogConnId.resources
+D:\版本\Version\安裝源文件\EEP2012WF(V5.0.0.020140924 SP5)\EEPManager\obj\Debug\EEPManager.frmProgress.resources
+D:\版本\Version\安裝源文件\EEP2012WF(V5.0.0.020140924 SP5)\EEPManager\obj\Debug\EEPManager.frmRefVal.resources
+D:\版本\Version\安裝源文件\EEP2012WF(V5.0.0.020140924 SP5)\EEPManager\obj\Debug\EEPManager.frmSecurityMain.resources
+D:\版本\Version\安裝源文件\EEP2012WF(V5.0.0.020140924 SP5)\EEPManager\obj\Debug\EEPManager.frmSelLogConditions.resources
+D:\版本\Version\安裝源文件\EEP2012WF(V5.0.0.020140924 SP5)\EEPManager\obj\Debug\EEPManager.frmSysLogViewerForDB.resources
+D:\版本\Version\安裝源文件\EEP2012WF(V5.0.0.020140924 SP5)\EEPManager\obj\Debug\EEPManager.MasterIPConfigForm.resources
+D:\版本\Version\安裝源文件\EEP2012WF(V5.0.0.020140924 SP5)\EEPManager\obj\Debug\EEPManager.PackageVersionHistoryForm.resources
+D:\版本\Version\安裝源文件\EEP2012WF(V5.0.0.020140924 SP5)\EEPManager\obj\Debug\EEPManager.PackageTransferForm.resources
+D:\版本\Version\安裝源文件\EEP2012WF(V5.0.0.020140924 SP5)\EEPManager\obj\Debug\EEPManager.EEPManagerForm.resources
+D:\版本\Version\安裝源文件\EEP2012WF(V5.0.0.020140924 SP5)\EEPManager\obj\Debug\EEPManager.frmLogin.resources
+D:\版本\Version\安裝源文件\EEP2012WF(V5.0.0.020140924 SP5)\EEPManager\obj\Debug\EEPManager.PackageManagerForm.resources
+D:\版本\Version\安裝源文件\EEP2012WF(V5.0.0.020140924 SP5)\EEPManager\obj\Debug\EEPManager.ProgressForm.resources
+D:\版本\Version\安裝源文件\EEP2012WF(V5.0.0.020140924 SP5)\EEPManager\obj\Debug\EEPManager.Properties.Resources.resources
+D:\版本\Version\安裝源文件\EEP2012WF(V5.0.0.020140924 SP5)\EEPManager\obj\Debug\EEPManager.SolutionDefineForm.resources
+D:\版本\Version\安裝源文件\EEP2012WF(V5.0.0.020140924 SP5)\EEPManager\obj\Debug\EEPManager.csproj.GenerateResource.Cache
+D:\版本\Version\安裝源文件\EEP2012WF(V5.0.0.020140924 SP5)\EEPManager\EEPManager.exe.config
+D:\版本\Version\安裝源文件\EEP2012WF(V5.0.0.020140924 SP5)\EEPManager\obj\Debug\EEPManager.exe
+D:\版本\Version\安裝源文件\EEP2012WF(V5.0.0.020140924 SP5)\EEPManager\obj\Debug\EEPManager.pdb
+D:\版本\Version\安裝源文件\EEP2012WF(V5.0.0.020140924 SP5)\EEPManager\EEPManager.exe
+D:\版本\Version\安裝源文件\EEP2012WF(V5.0.0.020140924 SP5)\EEPManager\EEPManager.pdb
+D:\版本\Version\安裝源文件\EEP2012(V5.0.0.020140924 SP5)\EEP2012WF\EEPManager\obj\Debug\EEPManager.csprojResolveAssemblyReference.cache
+D:\版本\Version\安裝源文件\EEP2012(V5.0.0.020140924 SP5)\EEP2012WF\EEPManager\obj\Debug\EEPManager.frmAddRefVal.resources
+D:\版本\Version\安裝源文件\EEP2012(V5.0.0.020140924 SP5)\EEP2012WF\EEPManager\obj\Debug\EEPManager.frmDBALias.resources
+D:\版本\Version\安裝源文件\EEP2012(V5.0.0.020140924 SP5)\EEP2012WF\EEPManager\obj\Debug\EEPManager.frmErrlogLargeImage.resources
+D:\版本\Version\安裝源文件\EEP2012(V5.0.0.020140924 SP5)\EEP2012WF\EEPManager\obj\Debug\EEPManager.frmErrorLogMaintenance.resources
+D:\版本\Version\安裝源文件\EEP2012(V5.0.0.020140924 SP5)\EEP2012WF\EEPManager\obj\Debug\EEPManager.frmDataDictonary.resources
+D:\版本\Version\安裝源文件\EEP2012(V5.0.0.020140924 SP5)\EEP2012WF\EEPManager\obj\Debug\EEPManager.frmDDSelTab.resources
+D:\版本\Version\安裝源文件\EEP2012(V5.0.0.020140924 SP5)\EEP2012WF\EEPManager\obj\Debug\EEPManager.frmLocateLogConnId.resources
+D:\版本\Version\安裝源文件\EEP2012(V5.0.0.020140924 SP5)\EEP2012WF\EEPManager\obj\Debug\EEPManager.frmProgress.resources
+D:\版本\Version\安裝源文件\EEP2012(V5.0.0.020140924 SP5)\EEP2012WF\EEPManager\obj\Debug\EEPManager.frmRefVal.resources
+D:\版本\Version\安裝源文件\EEP2012(V5.0.0.020140924 SP5)\EEP2012WF\EEPManager\obj\Debug\EEPManager.frmSecurityMain.resources
+D:\版本\Version\安裝源文件\EEP2012(V5.0.0.020140924 SP5)\EEP2012WF\EEPManager\obj\Debug\EEPManager.frmSelLogConditions.resources
+D:\版本\Version\安裝源文件\EEP2012(V5.0.0.020140924 SP5)\EEP2012WF\EEPManager\obj\Debug\EEPManager.frmSysLogViewerForDB.resources
+D:\版本\Version\安裝源文件\EEP2012(V5.0.0.020140924 SP5)\EEP2012WF\EEPManager\obj\Debug\EEPManager.MasterIPConfigForm.resources
+D:\版本\Version\安裝源文件\EEP2012(V5.0.0.020140924 SP5)\EEP2012WF\EEPManager\obj\Debug\EEPManager.PackageVersionHistoryForm.resources
+D:\版本\Version\安裝源文件\EEP2012(V5.0.0.020140924 SP5)\EEP2012WF\EEPManager\obj\Debug\EEPManager.PackageTransferForm.resources
+D:\版本\Version\安裝源文件\EEP2012(V5.0.0.020140924 SP5)\EEP2012WF\EEPManager\obj\Debug\EEPManager.EEPManagerForm.resources
+D:\版本\Version\安裝源文件\EEP2012(V5.0.0.020140924 SP5)\EEP2012WF\EEPManager\obj\Debug\EEPManager.frmLogin.resources
+D:\版本\Version\安裝源文件\EEP2012(V5.0.0.020140924 SP5)\EEP2012WF\EEPManager\obj\Debug\EEPManager.PackageManagerForm.resources
+D:\版本\Version\安裝源文件\EEP2012(V5.0.0.020140924 SP5)\EEP2012WF\EEPManager\obj\Debug\EEPManager.ProgressForm.resources
+D:\版本\Version\安裝源文件\EEP2012(V5.0.0.020140924 SP5)\EEP2012WF\EEPManager\obj\Debug\EEPManager.Properties.Resources.resources
+D:\版本\Version\安裝源文件\EEP2012(V5.0.0.020140924 SP5)\EEP2012WF\EEPManager\obj\Debug\EEPManager.SolutionDefineForm.resources
+D:\版本\Version\安裝源文件\EEP2012(V5.0.0.020140924 SP5)\EEP2012WF\EEPManager\obj\Debug\EEPManager.csproj.GenerateResource.Cache
+D:\版本\Version\安裝源文件\EEP2012(V5.0.0.020140924 SP5)\EEP2012WF\EEPManager\EEPManager.exe.config
+D:\版本\Version\安裝源文件\EEP2012(V5.0.0.020140924 SP5)\EEP2012WF\EEPManager\obj\Debug\EEPManager.exe
+D:\版本\Version\安裝源文件\EEP2012(V5.0.0.020140924 SP5)\EEP2012WF\EEPManager\obj\Debug\EEPManager.pdb
+D:\版本\Version\安裝源文件\EEP2012(V5.0.0.020140924 SP5)\EEP2012WF\EEPManager\EEPManager.exe
+D:\版本\Version\安裝源文件\EEP2012(V5.0.0.020140924 SP5)\EEP2012WF\EEPManager\EEPManager.pdb
+D:\Program Files (x86)\Your Company Name\EEP2012\EEPManager\obj\Debug\EEPManager.csprojResolveAssemblyReference.cache
+D:\Program Files (x86)\Your Company Name\EEP2012\EEPManager\obj\Debug\EEPManager.frmAddRefVal.resources
+D:\Program Files (x86)\Your Company Name\EEP2012\EEPManager\obj\Debug\EEPManager.frmDBALias.resources
+D:\Program Files (x86)\Your Company Name\EEP2012\EEPManager\obj\Debug\EEPManager.frmErrlogLargeImage.resources
+D:\Program Files (x86)\Your Company Name\EEP2012\EEPManager\obj\Debug\EEPManager.frmErrorLogMaintenance.resources
+D:\Program Files (x86)\Your Company Name\EEP2012\EEPManager\obj\Debug\EEPManager.frmDataDictonary.resources
+D:\Program Files (x86)\Your Company Name\EEP2012\EEPManager\obj\Debug\EEPManager.frmDDSelTab.resources
+D:\Program Files (x86)\Your Company Name\EEP2012\EEPManager\obj\Debug\EEPManager.frmLocateLogConnId.resources
+D:\Program Files (x86)\Your Company Name\EEP2012\EEPManager\obj\Debug\EEPManager.frmProgress.resources
+D:\Program Files (x86)\Your Company Name\EEP2012\EEPManager\obj\Debug\EEPManager.frmRefVal.resources
+D:\Program Files (x86)\Your Company Name\EEP2012\EEPManager\obj\Debug\EEPManager.frmSecurityMain.resources
+D:\Program Files (x86)\Your Company Name\EEP2012\EEPManager\obj\Debug\EEPManager.frmSelLogConditions.resources
+D:\Program Files (x86)\Your Company Name\EEP2012\EEPManager\obj\Debug\EEPManager.frmSysLogViewerForDB.resources
+D:\Program Files (x86)\Your Company Name\EEP2012\EEPManager\obj\Debug\EEPManager.MasterIPConfigForm.resources
+D:\Program Files (x86)\Your Company Name\EEP2012\EEPManager\obj\Debug\EEPManager.PackageVersionHistoryForm.resources
+D:\Program Files (x86)\Your Company Name\EEP2012\EEPManager\obj\Debug\EEPManager.PackageTransferForm.resources
+D:\Program Files (x86)\Your Company Name\EEP2012\EEPManager\obj\Debug\EEPManager.EEPManagerForm.resources
+D:\Program Files (x86)\Your Company Name\EEP2012\EEPManager\obj\Debug\EEPManager.frmLogin.resources
+D:\Program Files (x86)\Your Company Name\EEP2012\EEPManager\obj\Debug\EEPManager.PackageManagerForm.resources
+D:\Program Files (x86)\Your Company Name\EEP2012\EEPManager\obj\Debug\EEPManager.ProgressForm.resources
+D:\Program Files (x86)\Your Company Name\EEP2012\EEPManager\obj\Debug\EEPManager.Properties.Resources.resources
+D:\Program Files (x86)\Your Company Name\EEP2012\EEPManager\obj\Debug\EEPManager.SolutionDefineForm.resources
+D:\Program Files (x86)\Your Company Name\EEP2012\EEPManager\obj\Debug\EEPManager.csproj.GenerateResource.Cache
+D:\Program Files (x86)\Your Company Name\EEP2012\EEPManager\EEPManager.exe.config
+D:\Program Files (x86)\Your Company Name\EEP2012\EEPManager\obj\Debug\EEPManager.exe
+D:\Program Files (x86)\Your Company Name\EEP2012\EEPManager\obj\Debug\EEPManager.pdb
+D:\Program Files (x86)\Your Company Name\EEP2012\EEPManager\EEPManager.exe
+D:\Program Files (x86)\Your Company Name\EEP2012\EEPManager\EEPManager.pdb
+C:\Program Files (x86)\Infolight\EEP2012\EEPManager\obj\Debug\EEPManager.frmAddRefVal.resources
+C:\Program Files (x86)\Infolight\EEP2012\EEPManager\obj\Debug\EEPManager.frmDBALias.resources
+C:\Program Files (x86)\Infolight\EEP2012\EEPManager\obj\Debug\EEPManager.frmErrlogLargeImage.resources
+C:\Program Files (x86)\Infolight\EEP2012\EEPManager\obj\Debug\EEPManager.frmErrorLogMaintenance.resources
+C:\Program Files (x86)\Infolight\EEP2012\EEPManager\obj\Debug\EEPManager.frmDataDictonary.resources
+C:\Program Files (x86)\Infolight\EEP2012\EEPManager\obj\Debug\EEPManager.frmDDSelTab.resources
+C:\Program Files (x86)\Infolight\EEP2012\EEPManager\obj\Debug\EEPManager.frmLocateLogConnId.resources
+C:\Program Files (x86)\Infolight\EEP2012\EEPManager\obj\Debug\EEPManager.frmProgress.resources
+C:\Program Files (x86)\Infolight\EEP2012\EEPManager\obj\Debug\EEPManager.frmRefVal.resources
+C:\Program Files (x86)\Infolight\EEP2012\EEPManager\obj\Debug\EEPManager.frmSecurityMain.resources
+C:\Program Files (x86)\Infolight\EEP2012\EEPManager\obj\Debug\EEPManager.frmSelLogConditions.resources
+C:\Program Files (x86)\Infolight\EEP2012\EEPManager\obj\Debug\EEPManager.frmSysLogViewerForDB.resources
+C:\Program Files (x86)\Infolight\EEP2012\EEPManager\obj\Debug\EEPManager.MasterIPConfigForm.resources
+C:\Program Files (x86)\Infolight\EEP2012\EEPManager\obj\Debug\EEPManager.PackageVersionHistoryForm.resources
+C:\Program Files (x86)\Infolight\EEP2012\EEPManager\obj\Debug\EEPManager.PackageTransferForm.resources
+C:\Program Files (x86)\Infolight\EEP2012\EEPManager\obj\Debug\EEPManager.EEPManagerForm.resources
+C:\Program Files (x86)\Infolight\EEP2012\EEPManager\obj\Debug\EEPManager.frmLogin.resources
+C:\Program Files (x86)\Infolight\EEP2012\EEPManager\obj\Debug\EEPManager.PackageManagerForm.resources
+C:\Program Files (x86)\Infolight\EEP2012\EEPManager\obj\Debug\EEPManager.ProgressForm.resources
+C:\Program Files (x86)\Infolight\EEP2012\EEPManager\obj\Debug\EEPManager.Properties.Resources.resources
+C:\Program Files (x86)\Infolight\EEP2012\EEPManager\obj\Debug\EEPManager.SolutionDefineForm.resources
+C:\Program Files (x86)\Infolight\EEP2012\EEPManager\obj\Debug\EEPManager.csproj.GenerateResource.Cache
+C:\Program Files (x86)\Infolight\EEP2012\EEPManager\EEPManager.exe.config
+C:\Program Files (x86)\Infolight\EEP2012\EEPManager\obj\Debug\EEPManager.exe
+C:\Program Files (x86)\Infolight\EEP2012\EEPManager\obj\Debug\EEPManager.pdb
+C:\Program Files (x86)\Infolight\EEP2012\EEPManager\EEPManager.exe
+C:\Program Files (x86)\Infolight\EEP2012\EEPManager\EEPManager.pdb
+D:\Infolight\EEP2012\EEPManager\obj\Debug\EEPManager.csprojResolveAssemblyReference.cache
+D:\Infolight\EEP2012\EEPManager\obj\Debug\EEPManager.frmAddRefVal.resources
+D:\Infolight\EEP2012\EEPManager\obj\Debug\EEPManager.frmDBALias.resources
+D:\Infolight\EEP2012\EEPManager\obj\Debug\EEPManager.frmErrlogLargeImage.resources
+D:\Infolight\EEP2012\EEPManager\obj\Debug\EEPManager.frmErrorLogMaintenance.resources
+D:\Infolight\EEP2012\EEPManager\obj\Debug\EEPManager.frmDataDictonary.resources
+D:\Infolight\EEP2012\EEPManager\obj\Debug\EEPManager.frmDDSelTab.resources
+D:\Infolight\EEP2012\EEPManager\obj\Debug\EEPManager.frmLocateLogConnId.resources
+D:\Infolight\EEP2012\EEPManager\obj\Debug\EEPManager.frmProgress.resources
+D:\Infolight\EEP2012\EEPManager\obj\Debug\EEPManager.frmRefVal.resources
+D:\Infolight\EEP2012\EEPManager\obj\Debug\EEPManager.frmSecurityMain.resources
+D:\Infolight\EEP2012\EEPManager\obj\Debug\EEPManager.frmSelLogConditions.resources
+D:\Infolight\EEP2012\EEPManager\obj\Debug\EEPManager.frmSysLogViewerForDB.resources
+D:\Infolight\EEP2012\EEPManager\obj\Debug\EEPManager.MasterIPConfigForm.resources
+D:\Infolight\EEP2012\EEPManager\obj\Debug\EEPManager.PackageVersionHistoryForm.resources
+D:\Infolight\EEP2012\EEPManager\obj\Debug\EEPManager.PackageTransferForm.resources
+D:\Infolight\EEP2012\EEPManager\obj\Debug\EEPManager.EEPManagerForm.resources
+D:\Infolight\EEP2012\EEPManager\obj\Debug\EEPManager.frmLogin.resources
+D:\Infolight\EEP2012\EEPManager\obj\Debug\EEPManager.PackageManagerForm.resources
+D:\Infolight\EEP2012\EEPManager\obj\Debug\EEPManager.ProgressForm.resources
+D:\Infolight\EEP2012\EEPManager\obj\Debug\EEPManager.Properties.Resources.resources
+D:\Infolight\EEP2012\EEPManager\obj\Debug\EEPManager.SolutionDefineForm.resources
+D:\Infolight\EEP2012\EEPManager\obj\Debug\EEPManager.csproj.GenerateResource.Cache
+D:\Infolight\EEP2012\EEPManager\EEPManager.exe.config
+D:\Infolight\EEP2012\EEPManager\obj\Debug\EEPManager.exe
+D:\Infolight\EEP2012\EEPManager\obj\Debug\EEPManager.pdb
+D:\Infolight\EEP2012\EEPManager\EEPManager.exe
+D:\Infolight\EEP2012\EEPManager\EEPManager.pdb

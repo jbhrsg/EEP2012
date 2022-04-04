@@ -1,0 +1,51 @@
+D:\Project\EEP2010\EEPNetServer\FLCore.dll
+D:\Project\EEP2010\EEPNetServer\FLCore.pdb
+D:\Project\EEP2010\FLCore\obj\Debug\ResolveAssemblyReference.cache
+D:\Project\EEP2010\FLCore\obj\Debug\FLCore.dll
+D:\Project\EEP2010\FLCore\obj\Debug\FLCore.pdb
+D:\Infolight\EEP2010\EEPNetServer\FLCore.dll
+D:\Infolight\EEP2010\EEPNetServer\FLCore.pdb
+D:\Infolight\EEP2010\FLCore\obj\Debug\ResolveAssemblyReference.cache
+D:\Infolight\EEP2010\FLCore\obj\Debug\FLCore.dll
+D:\Infolight\EEP2010\FLCore\obj\Debug\FLCore.pdb
+C:\Program Files\Infolight\EEP2010\EEPNetServer\FLCore.dll
+C:\Program Files\Infolight\EEP2010\EEPNetServer\FLCore.pdb
+C:\Program Files\Infolight\EEP2010\FLCore\obj\Debug\FLCore.dll
+C:\Program Files\Infolight\EEP2010\FLCore\obj\Debug\FLCore.pdb
+C:\Program Files\Infolight\EEP2010\FLCore\obj\Debug\FLCore.csprojResolveAssemblyReference.cache
+C:\Program Files\Infolight\EEP2012WF\EEPNetServer\FLCore.dll
+C:\Program Files\Infolight\EEP2012WF\EEPNetServer\FLCore.pdb
+C:\Program Files\Infolight\EEP2012WF\FLCore\obj\Debug\FLCore.dll
+C:\Program Files\Infolight\EEP2012WF\FLCore\obj\Debug\FLCore.pdb
+C:\Program Files\Infolight\EEP2012WF\FLCore\obj\Debug\FLCore.csprojResolveAssemblyReference.cache
+C:\Program Files\Infolight\EEP2012Dev\EEPNetServer\FLCore.dll
+C:\Program Files\Infolight\EEP2012Dev\FLCore\obj\Debug\FLCore.dll
+C:\Program Files\Infolight\EEP2012Dev\FLCore\obj\Debug\FLCore.pdb
+C:\Program Files\Infolight\EEP2012Dev\EEPNetServer\FLCore.pdb
+C:\Program Files (x86)\Infolight\EEP2012WF\EEPNetServer\FLCore.dll
+C:\Program Files (x86)\Infolight\EEP2012WF\EEPNetServer\FLCore.pdb
+C:\Program Files (x86)\Infolight\EEP2012WF\FLCore\obj\Debug\FLCore.csprojResolveAssemblyReference.cache
+C:\Program Files (x86)\Infolight\EEP2012WF\FLCore\obj\Debug\FLCore.dll
+C:\Program Files (x86)\Infolight\EEP2012WF\FLCore\obj\Debug\FLCore.pdb
+D:\版本\Version\安裝源文件\EEP2012WF(V5.0.0.020140924 SP5)\EEPNetServer\FLCore.dll
+D:\版本\Version\安裝源文件\EEP2012WF(V5.0.0.020140924 SP5)\EEPNetServer\FLCore.pdb
+D:\版本\Version\安裝源文件\EEP2012WF(V5.0.0.020140924 SP5)\FLCore\obj\Debug\FLCore.csprojResolveAssemblyReference.cache
+D:\版本\Version\安裝源文件\EEP2012WF(V5.0.0.020140924 SP5)\FLCore\obj\Debug\FLCore.dll
+D:\版本\Version\安裝源文件\EEP2012WF(V5.0.0.020140924 SP5)\FLCore\obj\Debug\FLCore.pdb
+D:\版本\Version\安裝源文件\EEP2012(V5.0.0.020140924 SP5)\EEP2012WF\EEPNetServer\FLCore.dll
+D:\版本\Version\安裝源文件\EEP2012(V5.0.0.020140924 SP5)\EEP2012WF\EEPNetServer\FLCore.pdb
+D:\版本\Version\安裝源文件\EEP2012(V5.0.0.020140924 SP5)\EEP2012WF\FLCore\obj\Debug\FLCore.dll
+D:\版本\Version\安裝源文件\EEP2012(V5.0.0.020140924 SP5)\EEP2012WF\FLCore\obj\Debug\FLCore.pdb
+D:\Program Files (x86)\Your Company Name\EEP2012\EEPNetServer\FLCore.dll
+D:\Program Files (x86)\Your Company Name\EEP2012\EEPNetServer\FLCore.pdb
+D:\Program Files (x86)\Your Company Name\EEP2012\FLCore\obj\Debug\FLCore.dll
+D:\Program Files (x86)\Your Company Name\EEP2012\FLCore\obj\Debug\FLCore.pdb
+D:\Infolight\EEP2012\EEPNetServer\FLCore.dll
+D:\Infolight\EEP2012\EEPNetServer\FLCore.pdb
+D:\Infolight\EEP2012\FLCore\obj\Debug\FLCore.dll
+D:\Infolight\EEP2012\FLCore\obj\Debug\FLCore.pdb
+C:\Program Files (x86)\Infolight\EEP2012\EEPNetServer\FLCore.dll
+C:\Program Files (x86)\Infolight\EEP2012\EEPNetServer\FLCore.pdb
+C:\Program Files (x86)\Infolight\EEP2012\FLCore\obj\Debug\FLCore.dll
+C:\Program Files (x86)\Infolight\EEP2012\FLCore\obj\Debug\FLCore.pdb
+C:\Program Files (x86)\Infolight\EEP2012\FLCore\obj\Debug\FLCore.csprojResolveAssemblyReference.cache

@@ -1,0 +1,48 @@
+DateTime:2011-09-07 13:47:27
+Type:FileNotFoundException
+Message:Could not find file 'D:\Infolight\EEP2010\InitEEP\EFGlobalModule.dll'.
+Stack:
+   at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.File.InternalCopy(String sourceFileName, String destFileName, Boolean overwrite)
+   at EFWCFModule.PackageProvider.LoadAssembly(String assemblyFile) in D:\Infolight\EEP2010\EFWCFModule\Provider.cs:line 141
+   at EFWCFModule.ServiceProvider.GetKnownTypes(ICustomAttributeProvider provider) in D:\Infolight\EEP2010\EFWCFModule\Provider.cs:line 432
+DateTime:2011-09-07 13:54:17
+Type:FileNotFoundException
+Message:Could not find file 'D:\Infolight\EEP2010\InitEEP\EFGlobalModule.dll'.
+Stack:
+   at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.File.InternalCopy(String sourceFileName, String destFileName, Boolean overwrite)
+   at EFWCFModule.PackageProvider.LoadAssembly(String assemblyFile) in D:\Infolight\EEP2010\EFWCFModule\Provider.cs:line 141
+   at EFWCFModule.ServiceProvider.GetKnownTypes(ICustomAttributeProvider provider) in D:\Infolight\EEP2010\EFWCFModule\Provider.cs:line 432
+DateTime:2011-09-07 13:54:34
+Type:FileNotFoundException
+Message:Could not find file 'D:\Infolight\EEP2010\InitEEP\EFGlobalModule.dll'.
+Stack:
+   at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.File.InternalCopy(String sourceFileName, String destFileName, Boolean overwrite)
+   at EFWCFModule.PackageProvider.LoadAssembly(String assemblyFile) in D:\Infolight\EEP2010\EFWCFModule\Provider.cs:line 141
+   at EFWCFModule.ServiceProvider.GetKnownTypes(ICustomAttributeProvider provider) in D:\Infolight\EEP2010\EFWCFModule\Provider.cs:line 432
+DateTime:2011-09-07 14:02:47
+Type:FileNotFoundException
+Message:Could not find file 'D:\Infolight\EEP2010\InitEEP\EFGlobalModule.dll'.
+Stack:
+   at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.File.InternalCopy(String sourceFileName, String destFileName, Boolean overwrite)
+   at EFWCFModule.PackageProvider.LoadAssembly(String assemblyFile) in D:\Infolight\EEP2010\EFWCFModule\Provider.cs:line 141
+   at EFWCFModule.ServiceProvider.GetKnownTypes(ICustomAttributeProvider provider) in D:\Infolight\EEP2010\EFWCFModule\Provider.cs:line 432
+DateTime:2011-09-07 14:03:45
+Type:FileNotFoundException
+Message:Could not find file 'D:\Infolight\EEP2010\InitEEP\EFGlobalModule.dll'.
+Stack:
+   at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.File.InternalCopy(String sourceFileName, String destFileName, Boolean overwrite)
+   at EFWCFModule.PackageProvider.LoadAssembly(String assemblyFile) in D:\Infolight\EEP2010\EFWCFModule\Provider.cs:line 141
+   at EFWCFModule.ServiceProvider.GetKnownTypes(ICustomAttributeProvider provider) in D:\Infolight\EEP2010\EFWCFModule\Provider.cs:line 432
+DateTime:2011-09-07 14:04:07
+Type:FileNotFoundException
+Message:Could not find file 'D:\Infolight\EEP2010\InitEEP\EFGlobalModule.dll'.
+Stack:
+   at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.File.InternalCopy(String sourceFileName, String destFileName, Boolean overwrite)
+   at EFWCFModule.PackageProvider.LoadAssembly(String assemblyFile) in D:\Infolight\EEP2010\EFWCFModule\Provider.cs:line 141
+   at EFWCFModule.ServiceProvider.GetKnownTypes(ICustomAttributeProvider provider) in D:\Infolight\EEP2010\EFWCFModule\Provider.cs:line 432

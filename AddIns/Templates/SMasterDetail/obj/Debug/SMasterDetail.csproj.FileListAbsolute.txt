@@ -1,0 +1,10 @@
+C:\Program Files\Infolight\EEP2012\AddIns\EEPNetServer\Solution1\SMasterDetail.dll
+C:\Program Files\Infolight\EEP2012\AddIns\EEPNetServer\Solution1\SMasterDetail.pdb
+C:\Program Files\Infolight\EEP2012\AddIns\EEPNetServer\Solution1\vi-VN\SMasterDetail.resources.dll
+C:\Program Files\Infolight\EEP2012\AddIns\Templates\SMasterDetail\obj\Debug\SMasterDetail.csprojResolveAssemblyReference.cache
+C:\Program Files\Infolight\EEP2012\AddIns\Templates\SMasterDetail\obj\Debug\SMasterDetail.Component.resources
+C:\Program Files\Infolight\EEP2012\AddIns\Templates\SMasterDetail\obj\Debug\SMasterDetail.Component.vi-VN.resources
+C:\Program Files\Infolight\EEP2012\AddIns\Templates\SMasterDetail\obj\Debug\SMasterDetail.csproj.GenerateResource.Cache
+C:\Program Files\Infolight\EEP2012\AddIns\Templates\SMasterDetail\obj\Debug\vi-VN\SMasterDetail.resources.dll
+C:\Program Files\Infolight\EEP2012\AddIns\Templates\SMasterDetail\obj\Debug\SMasterDetail.dll
+C:\Program Files\Infolight\EEP2012\AddIns\Templates\SMasterDetail\obj\Debug\SMasterDetail.pdb

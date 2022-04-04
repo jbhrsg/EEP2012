@@ -1,0 +1,9 @@
+C:\Program Files (x86)\Infolight\EEP2012\EEPNetServer\WENETGROUP\_CON_SHARECODE.dll
+C:\Program Files (x86)\Infolight\EEP2012\EEPNetServer\WENETGROUP\_CON_SHARECODE.pdb
+C:\Program Files (x86)\Infolight\EEP2012\EEPNetServer\WENETGROUP\vi-VN\_CON_SHARECODE.resources.dll
+C:\Program Files (x86)\Infolight\EEP2012\WENETGROUP\_CON_SHARECODE\obj\Debug\_CON_SHARECODE.Component.resources
+C:\Program Files (x86)\Infolight\EEP2012\WENETGROUP\_CON_SHARECODE\obj\Debug\_CON_SHARECODE.Component.vi-VN.resources
+C:\Program Files (x86)\Infolight\EEP2012\WENETGROUP\_CON_SHARECODE\obj\Debug\_CON_SHARECODE.csproj.GenerateResource.Cache
+C:\Program Files (x86)\Infolight\EEP2012\WENETGROUP\_CON_SHARECODE\obj\Debug\vi-VN\_CON_SHARECODE.resources.dll
+C:\Program Files (x86)\Infolight\EEP2012\WENETGROUP\_CON_SHARECODE\obj\Debug\_CON_SHARECODE.dll
+C:\Program Files (x86)\Infolight\EEP2012\WENETGROUP\_CON_SHARECODE\obj\Debug\_CON_SHARECODE.pdb

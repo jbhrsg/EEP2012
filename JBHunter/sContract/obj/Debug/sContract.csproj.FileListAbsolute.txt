@@ -1,0 +1,9 @@
+C:\Program Files (x86)\Infolight\EEP2012\JBHunter\sContract\bin\Debug\sContract.dll
+C:\Program Files (x86)\Infolight\EEP2012\JBHunter\sContract\bin\Debug\sContract.pdb
+C:\Program Files (x86)\Infolight\EEP2012\JBHunter\sContract\obj\Debug\sContract.csproj.GenerateResource.Cache
+C:\Program Files (x86)\Infolight\EEP2012\JBHunter\sContract\obj\Debug\sContract.dll
+C:\Program Files (x86)\Infolight\EEP2012\JBHunter\sContract\obj\Debug\sContract.pdb
+C:\Program Files (x86)\Infolight\EEP2012\EEPNetServer\JBHunter\sContract.dll
+C:\Program Files (x86)\Infolight\EEP2012\EEPNetServer\JBHunter\sContract.pdb
+C:\Program Files (x86)\Infolight\EEP2012\JBHunter\sContract\obj\Debug\sContract.Component.resources
+C:\Program Files (x86)\Infolight\EEP2012\JBHunter\sContract\obj\Debug\sContract.csprojResolveAssemblyReference.cache

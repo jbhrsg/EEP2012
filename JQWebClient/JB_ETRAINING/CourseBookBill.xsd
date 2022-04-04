@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="CourseBookBill" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="CourseBookBill" msdata:IsDataSet="true" msdata:CaseSensitive="true" msdata:UseCurrentLocale="true">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="CourseBookBill">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="AutoKey" type="xs:int" />
+              <xs:element name="CourseOpenID" type="xs:int" minOccurs="0" />
+              <xs:element name="StudentID" type="xs:string" minOccurs="0" />
+              <xs:element name="DeptID" type="xs:string" minOccurs="0" />
+              <xs:element name="CoursePlanStartDate1" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="CoursePlanStartDate2" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="ExamPoint" type="xs:unsignedByte" minOccurs="0" />
+              <xs:element name="TrainingFee" type="xs:int" minOccurs="0" />
+              <xs:element name="RecordFrom" type="xs:unsignedByte" minOccurs="0" />
+              <xs:element name="IsActive" type="xs:boolean" minOccurs="0" />
+              <xs:element name="IsAttend" type="xs:boolean" minOccurs="0" />
+              <xs:element name="IsPass" type="xs:boolean" minOccurs="0" />
+              <xs:element name="IsLeave" type="xs:boolean" minOccurs="0" />
+              <xs:element name="JobID" type="xs:string" minOccurs="0" />
+              <xs:element name="JobType" type="xs:int" minOccurs="0" />
+              <xs:element name="CreateBy" type="xs:string" minOccurs="0" />
+              <xs:element name="CreateDate" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="LastUpdateBy" type="xs:string" minOccurs="0" />
+              <xs:element name="LastUpdateDate" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="SeqNO" type="xs:long" minOccurs="0" />
+              <xs:element name="DEPTNAME" type="xs:string" minOccurs="0" />
+              <xs:element name="StudentName" type="xs:string" minOccurs="0" />
+              <xs:element name="Status" type="xs:string" minOccurs="0" />
+              <xs:element name="ExamTime" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="CourseOpenRecord">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="CourseOpenID" type="xs:string" />
+              <xs:element name="CourseType" type="xs:string" minOccurs="0" />
+              <xs:element name="CourseName" type="xs:string" minOccurs="0" />
+              <xs:element name="CourseLocation" type="xs:string" minOccurs="0" />
+              <xs:element name="CourseHours" type="xs:string" minOccurs="0" />
+              <xs:element name="CourseStartDate" type="xs:string" minOccurs="0" />
+              <xs:element name="CourseEndDate" type="xs:string" minOccurs="0" />
+              <xs:element name="CourseOutLine" type="xs:string" minOccurs="0" />
+              <xs:element name="CourseID" type="xs:string" minOccurs="0" />
+              <xs:element name="OpenUser" type="xs:string" minOccurs="0" />
+              <xs:element name="TeacherName1" type="xs:string" minOccurs="0" />
+              <xs:element name="TeacherName2" type="xs:string" minOccurs="0" />
+              <xs:element name="TestMethod" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//CourseBookBill" />
+      <xs:field xpath="AutoKey" />
+    </xs:unique>
+    <xs:unique name="CourseOpenRecord_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//CourseOpenRecord" />
+      <xs:field xpath="CourseOpenID" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>

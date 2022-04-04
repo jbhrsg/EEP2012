@@ -1,0 +1,8 @@
+<FlowDetails>
+  <FormName>JB_ADMIN.ERP_Normal_SalesAbnormalApply</FormName>
+  <FlowNavMode>Submit</FlowNavMode>
+  <NavMode>Insert</NavMode>
+  <Parameters>P1=Apply</Parameters>
+  <FlowFileName>C:\Program Files (x86)\Infolight\EEP2012\EEPNetServer\Workflow\FL\SalesAbnormalApply</FlowFileName>
+  <ImageWidth>1370</ImageWidth>
+</FlowDetails>

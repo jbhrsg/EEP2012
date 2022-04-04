@@ -1,0 +1,5 @@
+<LoginInfo>
+  <User>001,002,Administrator</User>
+  <DataBase>ERPS,ERPS1,newInformix,Informix,Oracle,eep</DataBase>
+  <Solution>Solution1,SOLUTION1</Solution>
+</LoginInfo>

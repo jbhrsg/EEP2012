@@ -1,0 +1,10 @@
+C:\Program Files (x86)\Infolight\EEP2012\EEPNetServer\WENETGROUP\_CON_Code_Center.dll
+C:\Program Files (x86)\Infolight\EEP2012\EEPNetServer\WENETGROUP\_CON_Code_Center.pdb
+C:\Program Files (x86)\Infolight\EEP2012\EEPNetServer\WENETGROUP\vi-VN\_CON_Code_Center.resources.dll
+C:\Program Files (x86)\Infolight\EEP2012\WENETGROUP\_CON_Code_Center\obj\Debug\_CON_Code_Center.csprojResolveAssemblyReference.cache
+C:\Program Files (x86)\Infolight\EEP2012\WENETGROUP\_CON_Code_Center\obj\Debug\_CON_Code_Center.Component.resources
+C:\Program Files (x86)\Infolight\EEP2012\WENETGROUP\_CON_Code_Center\obj\Debug\_CON_Code_Center.Component.vi-VN.resources
+C:\Program Files (x86)\Infolight\EEP2012\WENETGROUP\_CON_Code_Center\obj\Debug\_CON_Code_Center.csproj.GenerateResource.Cache
+C:\Program Files (x86)\Infolight\EEP2012\WENETGROUP\_CON_Code_Center\obj\Debug\vi-VN\_CON_Code_Center.resources.dll
+C:\Program Files (x86)\Infolight\EEP2012\WENETGROUP\_CON_Code_Center\obj\Debug\_CON_Code_Center.dll
+C:\Program Files (x86)\Infolight\EEP2012\WENETGROUP\_CON_Code_Center\obj\Debug\_CON_Code_Center.pdb

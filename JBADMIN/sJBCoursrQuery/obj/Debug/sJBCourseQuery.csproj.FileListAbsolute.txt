@@ -1,0 +1,12 @@
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sJBCoursrQuery\obj\Debug\sJBCourseQuery.Component.resources
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sJBCoursrQuery\obj\Debug\sJBCourseQuery.csproj.GenerateResource.Cache
+C:\Program Files (x86)\Infolight\EEP2012\EEPNetServer\JBADMIN\sJBCourseQuery.dll
+C:\Program Files (x86)\Infolight\EEP2012\EEPNetServer\JBADMIN\sJBCourseQuery.pdb
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sJBCoursrQuery\obj\Debug\sJBCourseQuery.dll
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sJBCoursrQuery\obj\Debug\sJBCourseQuery.pdb
+D:\Infolight\EEP2012\EEPNetServer\JBADMIN\sJBCourseQuery.dll
+D:\Infolight\EEP2012\EEPNetServer\JBADMIN\sJBCourseQuery.pdb
+D:\Infolight\EEP2012\JBADMIN\sJBCoursrQuery\obj\Debug\sJBCourseQuery.Component.resources
+D:\Infolight\EEP2012\JBADMIN\sJBCoursrQuery\obj\Debug\sJBCourseQuery.csproj.GenerateResource.Cache
+D:\Infolight\EEP2012\JBADMIN\sJBCoursrQuery\obj\Debug\sJBCourseQuery.dll
+D:\Infolight\EEP2012\JBADMIN\sJBCoursrQuery\obj\Debug\sJBCourseQuery.pdb

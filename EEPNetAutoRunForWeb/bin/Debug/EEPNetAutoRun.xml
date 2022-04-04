@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8" ?> 
+<EEPAutoRun>
+  <LoginInformation>
+    <UserID>001</UserID>
+    <Password>1</Password>
+    <DataBase>ERPS</DataBase>
+    <Solution>SOLUTION1</Solution>
+    <ServerIPAddress>192.168.1.100</ServerIPAddress>
+  </LoginInformation>
+  <LoginInformation>
+    <UserID>002</UserID>
+    <Password>1</Password>
+    <DataBase>ERPS</DataBase>
+    <Solution>SOLUTION1</Solution>
+    <ServerIPAddress>192.168.1.100</ServerIPAddress>
+  </LoginInformation>
+  <LoginInformation>
+    <UserID>003</UserID>
+    <Password>1</Password>
+    <DataBase>ERPS</DataBase>
+    <Solution>SOLUTION1</Solution>
+    <ServerIPAddress>192.168.1.100</ServerIPAddress>
+  </LoginInformation>
+  <LoginInformation>
+    <UserID>004</UserID>
+    <Password>1</Password>
+    <DataBase>ERPS</DataBase>
+    <Solution>SOLUTION1</Solution>
+    <ServerIPAddress>192.168.1.100</ServerIPAddress>
+  </LoginInformation>
+  <LoginInformation>
+    <UserID>005</UserID>
+    <Password>1</Password>
+    <DataBase>ERPS</DataBase>
+    <Solution>SOLUTION1</Solution>
+    <ServerIPAddress>192.168.1.100</ServerIPAddress>
+  </LoginInformation>
+
+  <PackageInformation>
+    <PackageName>SLClient.ReiFolder</PackageName>
+    <FormName>FormSchedule_Object</FormName>
+    <Times>1000</Times>
+  </PackageInformation> 
+</EEPAutoRun>

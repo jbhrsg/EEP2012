@@ -1,0 +1,16 @@
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sERP_Customer_Code_SalesTypeOfSales\obj\Debug\sERP_Customer_SalesSalesType.Component.resources
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sERP_Customer_Code_SalesTypeOfSales\obj\Debug\sERP_Customer_SalesSalesType.Component.vi-VN.resources
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sERP_Customer_Code_SalesTypeOfSales\obj\Debug\sERP_Customer_SalesSalesType.csproj.GenerateResource.Cache
+C:\Program Files (x86)\Infolight\EEP2012\EEPNetServer\JBADMIN\sERP_Customer_SalesSalesType.dll
+C:\Program Files (x86)\Infolight\EEP2012\EEPNetServer\JBADMIN\sERP_Customer_SalesSalesType.pdb
+C:\Program Files (x86)\Infolight\EEP2012\EEPNetServer\JBADMIN\vi-VN\sERP_Customer_SalesSalesType.resources.dll
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sERP_Customer_Code_SalesTypeOfSales\obj\Debug\vi-VN\sERP_Customer_SalesSalesType.resources.dll
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sERP_Customer_Code_SalesTypeOfSales\obj\Debug\sERP_Customer_SalesSalesType.dll
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sERP_Customer_Code_SalesTypeOfSales\obj\Debug\sERP_Customer_SalesSalesType.pdb
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sERP_Customer_Code_SalesTypeOfSales\obj\Debug\sERP_Customer_SalesSalesType.csprojResolveAssemblyReference.cache
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sERP_Customer_SalesSalesType\obj\Debug\sERP_Customer_SalesSalesType.Component.resources
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sERP_Customer_SalesSalesType\obj\Debug\sERP_Customer_SalesSalesType.Component.vi-VN.resources
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sERP_Customer_SalesSalesType\obj\Debug\sERP_Customer_SalesSalesType.csproj.GenerateResource.Cache
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sERP_Customer_SalesSalesType\obj\Debug\vi-VN\sERP_Customer_SalesSalesType.resources.dll
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sERP_Customer_SalesSalesType\obj\Debug\sERP_Customer_SalesSalesType.dll
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sERP_Customer_SalesSalesType\obj\Debug\sERP_Customer_SalesSalesType.pdb

@@ -1,0 +1,9 @@
+obj\Debug\ResolveAssemblyReference.cache
+obj\Debug\InitEEP.InitEEP.resources
+obj\Debug\InitEEP.Properties.Resources.resources
+obj\Debug\InitEEP.csproj.GenerateResource.Cache
+obj\Debug\InitEEP.exe
+obj\Debug\InitEEP.pdb
+.\InitEEP.exe
+.\InitEEP.pdb
+obj\Debug\InitEEP.Resources.EEPINIT.jpg

@@ -1,0 +1,8 @@
+<FlowDetails>
+  <FormName>JB_ADMIN.JBERP_SalesApplyException</FormName>
+  <FlowNavMode>Submit</FlowNavMode>
+  <NavMode>Insert</NavMode>
+  <Parameters>P1=Apply</Parameters>
+  <FlowFileName>C:\Program Files (x86)\Infolight\EEP2012\EEPNetServer\Workflow\FL\SalesException</FlowFileName>
+  <ImageWidth>1370</ImageWidth>
+</FlowDetails>

@@ -1,0 +1,604 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="EFModel" Alias="Self" xmlns="http://schemas.microsoft.com/ado/2008/09/edm">
+  <EntityContainer Name="Entities">
+    <EntitySet Name="USERGROUPS" EntityType="EFModel.USERGROUPS" />
+    <EntitySet Name="COLDEF" EntityType="EFModel.COLDEF" />
+    <EntitySet Name="MENUITEMTYPE" EntityType="EFModel.MENUITEMTYPE" />
+    <EntitySet Name="MENUTABLE" EntityType="EFModel.MENUTABLE" />
+    <EntitySet Name="SYS_ROLES_AGENT" EntityType="EFModel.SYS_ROLES_AGENT" />
+    <EntitySet Name="GROUPMENUS" EntityType="EFModel.GROUPMENUS" />
+    <EntitySet Name="USERMENUS" EntityType="EFModel.USERMENUS" />
+    <EntitySet Name="SYS_ORGKIND" EntityType="EFModel.SYS_ORGKIND" />
+    <AssociationSet Name="FK_MENUTABLE_MENUTABLE" Association="EFModel.FK_MENUTABLE_MENUTABLE">
+      <End Role="MENUTABLE" EntitySet="MENUTABLE" />
+      <End Role="MENUTABLE1" EntitySet="MENUTABLE" />
+    </AssociationSet>
+    <EntitySet Name="SYS_REFVAL" EntityType="EFModel.SYS_REFVAL" />
+    <EntitySet Name="GROUPMENUCONTROL" EntityType="EFModel.GROUPMENUCONTROL" />
+    <EntitySet Name="MENUTABLECONTROL" EntityType="EFModel.MENUTABLECONTROL" />
+    <EntitySet Name="USERMENUCONTROL" EntityType="EFModel.USERMENUCONTROL" />
+    <EntitySet Name="GROUPS" EntityType="EFModel.GROUPS" />
+    <EntitySet Name="USERS" EntityType="EFModel.USER" />
+    <EntitySet Name="SYS_PERSONAL" EntityType="EFModel.SYS_PERSONAL" />
+    <EntitySet Name="SYSEEPLOG" EntityType="EFModel.SYSEEPLOG" />
+    <EntitySet Name="SYS_TODOHIS" EntityType="EFModel.SYS_TODOHIS" />
+    <EntitySet Name="SYS_TODOLIST" EntityType="EFModel.SYS_TODOLIST" />
+    <EntitySet Name="SYS_REPORT" EntityType="EFModel.SYS_REPORT" />
+    <EntitySet Name="SYS_SDGROUPS" EntityType="EFModel.SYS_SDGROUPS" />
+    <EntitySet Name="SYS_SDQUEUE" EntityType="EFModel.SYS_SDQUEUE" />
+    <EntitySet Name="SYS_SDQUEUEPAGE" EntityType="EFModel.SYS_SDQUEUEPAGE" />
+    <EntitySet Name="SYS_SDUSERS" EntityType="EFModel.SYS_SDUSERS" />
+    <EntitySet Name="SYS_WEBPAGES_LOG" EntityType="EFModel.SYS_WEBPAGES_LOG" />
+    <EntitySet Name="SYS_WEBRUNTIME" EntityType="EFModel.SYS_WEBRUNTIME" />
+    <AssociationSet Name="FK_SYS_SDQUEUEPAGE_SYS_SDQUEUE" Association="EFModel.FK_SYS_SDQUEUEPAGE_SYS_SDQUEUE">
+      <End Role="SYS_SDQUEUE" EntitySet="SYS_SDQUEUE" />
+      <End Role="SYS_SDQUEUEPAGE" EntitySet="SYS_SDQUEUEPAGE" />
+    </AssociationSet>
+    <EntitySet Name="SYS_SDUSERS_LOG" EntityType="EFModel.SYS_SDUSERS_LOG" />
+    <EntitySet Name="SYS_WEBPAGES" EntityType="EFModel.SYS_WEBPAGES" />
+    <EntitySet Name="SYS_SDALIAS" EntityType="EFModel.SYS_SDALIAS" />
+    <EntitySet Name="SYS_SDSOLUTIONS" EntityType="EFModel.SYS_SDSOLUTIONS" />
+    <EntitySet Name="SYS_LANGUAGE" EntityType="EFModel.SYS_LANGUAGE" />
+  </EntityContainer>
+  <EntityType Name="USERGROUPS">
+    <Key>
+      <PropertyRef Name="USERID" />
+      <PropertyRef Name="GROUPID" />
+    </Key>
+    <Property Type="String" Name="USERID" Nullable="false" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="GROUPID" Nullable="false" MaxLength="6" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="COLDEF">
+    <Key>
+      <PropertyRef Name="TABLE_NAME" />
+      <PropertyRef Name="FIELD_NAME" />
+    </Key>
+    <Property Type="String" Name="TABLE_NAME" Nullable="false" MaxLength="20" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="FIELD_NAME" Nullable="false" MaxLength="20" FixedLength="false" Unicode="true" />
+    <Property Type="Decimal" Name="SEQ" Precision="12" Scale="0" />
+    <Property Type="String" Name="FIELD_TYPE" MaxLength="20" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="IS_KEY" Nullable="false" MaxLength="1" FixedLength="false" Unicode="true" />
+    <Property Type="Decimal" Name="FIELD_LENGTH" Precision="12" Scale="0" />
+    <Property Type="String" Name="CAPTION" MaxLength="40" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="EDITMASK" MaxLength="10" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="NEEDBOX" MaxLength="13" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="CANREPORT" MaxLength="1" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="EXT_MENUID" MaxLength="20" FixedLength="false" Unicode="true" />
+    <Property Type="Decimal" Name="FIELD_SCALE" Precision="12" Scale="0" />
+    <Property Type="String" Name="DD_NAME" MaxLength="40" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="DEFAULT_VALUE" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="CHECK_NULL" MaxLength="1" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="QUERYMODE" MaxLength="20" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="CAPTION1" MaxLength="40" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="CAPTION2" MaxLength="40" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="CAPTION3" MaxLength="40" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="CAPTION4" MaxLength="40" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="CAPTION5" MaxLength="40" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="CAPTION6" MaxLength="40" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="CAPTION7" MaxLength="40" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="CAPTION8" MaxLength="40" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="MENUITEMTYPE">
+    <Key>
+      <PropertyRef Name="ITEMTYPE" />
+    </Key>
+    <Property Type="String" Name="ITEMTYPE" Nullable="false" MaxLength="20" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="ITEMNAME" MaxLength="20" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="DBALIAS" MaxLength="50" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="MENUTABLE">
+    <Key>
+      <PropertyRef Name="MENUID" />
+    </Key>
+    <Property Type="String" Name="MENUID" Nullable="false" MaxLength="30" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="CAPTION" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="PARENT" MaxLength="30" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="PACKAGE" MaxLength="20" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="MODULETYPE" MaxLength="1" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="ITEMPARAM" MaxLength="200" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="FORM" MaxLength="32" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="ISSHOWMODAL" MaxLength="1" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="ITEMTYPE" MaxLength="20" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="SEQ_NO" MaxLength="4" FixedLength="false" Unicode="true" />
+    <Property Type="DateTime" Name="PACKAGEDATE" Precision="3" />
+    <Property Type="String" Name="ISSERVER" MaxLength="1" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="VERSIONNO" MaxLength="20" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="CHECKOUT" MaxLength="20" FixedLength="false" Unicode="true" />
+    <Property Type="DateTime" Name="CHECKOUTDATE" Precision="3" />
+    <Property Type="String" Name="CAPTION0" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="CAPTION1" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="CAPTION2" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="CAPTION3" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="CAPTION4" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="CAPTION5" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="CAPTION6" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="CAPTION7" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="Binary" Name="IMAGE" MaxLength="Max" FixedLength="false" />
+    <Property Type="String" Name="IMAGEURL" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="OWNER" MaxLength="20" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="MENUTABLE1" Relationship="EFModel.FK_MENUTABLE_MENUTABLE" FromRole="MENUTABLE" ToRole="MENUTABLE1" />
+    <NavigationProperty Name="MENUTABLE2" Relationship="EFModel.FK_MENUTABLE_MENUTABLE" FromRole="MENUTABLE1" ToRole="MENUTABLE" />
+  </EntityType>
+  <EntityType Name="SYS_ROLES_AGENT">
+    <Key>
+      <PropertyRef Name="ROLE_ID" />
+      <PropertyRef Name="AGENT" />
+    </Key>
+    <Property Type="String" Name="ROLE_ID" Nullable="false" MaxLength="12" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="AGENT" Nullable="false" MaxLength="20" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="FLOW_DESC" Nullable="false" MaxLength="40" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="START_DATE" Nullable="false" MaxLength="8" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="START_TIME" MaxLength="6" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="END_DATE" Nullable="false" MaxLength="8" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="END_TIME" MaxLength="6" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="PAR_AGENT" Nullable="false" MaxLength="4" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="REMARK" MaxLength="254" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="GROUPMENUS">
+    <Key>
+      <PropertyRef Name="GROUPID" />
+      <PropertyRef Name="MENUID" />
+    </Key>
+    <Property Type="String" Name="GROUPID" Nullable="false" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="MENUID" Nullable="false" MaxLength="30" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="USERMENUS">
+    <Key>
+      <PropertyRef Name="USERID" />
+      <PropertyRef Name="MENUID" />
+    </Key>
+    <Property Type="String" Name="USERID" Nullable="false" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="MENUID" Nullable="false" MaxLength="30" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="SYS_ORGKIND">
+    <Key>
+      <PropertyRef Name="ORG_KIND" />
+    </Key>
+    <Property Type="String" Name="ORG_KIND" Nullable="false" MaxLength="4" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="KIND_DESC" Nullable="false" MaxLength="40" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <Association Name="FK_MENUTABLE_MENUTABLE">
+    <End Type="EFModel.MENUTABLE" Role="MENUTABLE" Multiplicity="0..1" />
+    <End Type="EFModel.MENUTABLE" Role="MENUTABLE1" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="MENUTABLE">
+        <PropertyRef Name="MENUID" />
+      </Principal>
+      <Dependent Role="MENUTABLE1">
+        <PropertyRef Name="PARENT" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityType Name="SYS_REFVAL">
+    <Key>
+      <PropertyRef Name="REFVAL_NO" />
+    </Key>
+    <Property Type="String" Name="REFVAL_NO" Nullable="false" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="DESCRIPTION" MaxLength="250" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="TABLE_NAME" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="CAPTION" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="DISPLAY_MEMBER" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="SELECT_ALIAS" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="SELECT_COMMAND" MaxLength="250" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="VALUE_MEMBER" MaxLength="100" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="GROUPMENUCONTROL">
+    <Key>
+      <PropertyRef Name="GROUPID" />
+      <PropertyRef Name="MENUID" />
+      <PropertyRef Name="CONTROLNAME" />
+    </Key>
+    <Property Type="String" Name="GROUPID" Nullable="false" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="MENUID" Nullable="false" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="CONTROLNAME" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="TYPE" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="ENABLED" MaxLength="1" FixedLength="true" Unicode="false" />
+    <Property Type="String" Name="VISIBLE" MaxLength="1" FixedLength="true" Unicode="false" />
+    <Property Type="String" Name="ALLOWADD" MaxLength="1" FixedLength="true" Unicode="false" />
+    <Property Type="String" Name="ALLOWUPDATE" MaxLength="1" FixedLength="true" Unicode="false" />
+    <Property Type="String" Name="ALLOWDELETE" MaxLength="1" FixedLength="true" Unicode="false" />
+    <Property Type="String" Name="ALLOWPRINT" MaxLength="1" FixedLength="true" Unicode="false" />
+  </EntityType>
+  <EntityType Name="MENUTABLECONTROL">
+    <Key>
+      <PropertyRef Name="MENUID" />
+      <PropertyRef Name="CONTROLNAME" />
+    </Key>
+    <Property Type="String" Name="MENUID" Nullable="false" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="CONTROLNAME" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="DESCRIPTION" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="TYPE" MaxLength="20" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="USERMENUCONTROL">
+    <Key>
+      <PropertyRef Name="USERID" />
+      <PropertyRef Name="MENUID" />
+      <PropertyRef Name="CONTROLNAME" />
+    </Key>
+    <Property Type="String" Name="USERID" Nullable="false" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="MENUID" Nullable="false" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="CONTROLNAME" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="TYPE" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="ENABLED" MaxLength="1" FixedLength="true" Unicode="false" />
+    <Property Type="String" Name="VISIBLE" MaxLength="1" FixedLength="true" Unicode="false" />
+    <Property Type="String" Name="ALLOWADD" MaxLength="1" FixedLength="true" Unicode="false" />
+    <Property Type="String" Name="ALLOWUPDATE" MaxLength="1" FixedLength="true" Unicode="false" />
+    <Property Type="String" Name="ALLOWDELETE" MaxLength="1" FixedLength="true" Unicode="false" />
+    <Property Type="String" Name="ALLOWPRINT" MaxLength="1" FixedLength="true" Unicode="false" />
+  </EntityType>
+  <EntityType Name="GROUPS">
+    <Key>
+      <PropertyRef Name="GROUPID" />
+    </Key>
+    <Property Type="String" Name="GROUPID" Nullable="false" MaxLength="6" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="GROUPNAME" MaxLength="150" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="DESCRIPTION" MaxLength="200" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="MSAD" MaxLength="1" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="ISROLE" MaxLength="1" FixedLength="true" Unicode="false" />
+  </EntityType>
+  <EntityType Name="USER">
+    <Key>
+      <PropertyRef Name="USERID" />
+    </Key>
+    <Property Type="String" Name="USERID" Nullable="false" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="USERNAME" MaxLength="30" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="AGENT" MaxLength="20" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="PWD" MaxLength="20" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="CREATEDATE" MaxLength="8" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="CREATER" MaxLength="20" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="DESCRIPTION" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="EMAIL" MaxLength="40" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="LASTTIME" MaxLength="8" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="AUTOLOGIN" MaxLength="1" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="LASTDATE" MaxLength="8" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="SIGNATURE" MaxLength="30" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="MSAD" MaxLength="1" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="SYS_PERSONAL">
+    <Key>
+      <PropertyRef Name="FORMNAME" />
+      <PropertyRef Name="COMPNAME" />
+      <PropertyRef Name="USERID" />
+    </Key>
+    <Property Type="String" Name="FORMNAME" Nullable="false" MaxLength="60" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="COMPNAME" Nullable="false" MaxLength="30" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="USERID" Nullable="false" MaxLength="20" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="REMARK" MaxLength="30" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="PROPCONTENT" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Type="DateTime" Name="CREATEDATE" Precision="3" />
+  </EntityType>
+  <EntityType Name="SYSEEPLOG">
+    <Key>
+      <PropertyRef Name="CONNID" />
+      <PropertyRef Name="LOGID" />
+    </Key>
+    <Property Type="String" Name="CONNID" Nullable="false" MaxLength="20" FixedLength="false" Unicode="true" />
+    <Property Type="Int32" Name="LOGID" Nullable="false" a:StoreGeneratedPattern="Identity" xmlns:a="http://schemas.microsoft.com/ado/2009/02/edm/annotation" />
+    <Property Type="String" Name="LOGSTYLE" Nullable="false" MaxLength="1" FixedLength="false" Unicode="true" />
+    <Property Type="DateTime" Name="LOGDATETIME" Nullable="false" Precision="3" />
+    <Property Type="String" Name="DOMAINID" MaxLength="30" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="USERID" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="LOGTYPE" MaxLength="1" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="TITLE" MaxLength="64" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="DESCRIPTION" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="COMPUTERIP" MaxLength="16" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="COMPUTERNAME" MaxLength="64" FixedLength="false" Unicode="true" />
+    <Property Type="Int32" Name="EXECUTIONTIME" />
+  </EntityType>
+  <EntityType Name="SYS_TODOHIS">
+    <Key>
+      <PropertyRef Name="LISTID" />
+      <PropertyRef Name="FLOW_ID" />
+      <PropertyRef Name="ROLE_ID" />
+      <PropertyRef Name="S_ROLE_ID" />
+      <PropertyRef Name="S_STEP_ID" />
+      <PropertyRef Name="D_STEP_ID" />
+      <PropertyRef Name="S_USER_ID" />
+      <PropertyRef Name="USER_ID" />
+      <PropertyRef Name="WEBFORM_NAME" />
+      <PropertyRef Name="NAVIGATOR_MODE" />
+      <PropertyRef Name="FLNAVIGATOR_MODE" />
+      <PropertyRef Name="PROC_TIME" />
+      <PropertyRef Name="EXP_TIME" />
+      <PropertyRef Name="TIME_UNIT" />
+      <PropertyRef Name="FLOWIMPORTANT" />
+      <PropertyRef Name="FLOWURGENT" />
+    </Key>
+    <Property Type="String" Name="LISTID" Nullable="false" MaxLength="40" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="FLOW_ID" Nullable="false" MaxLength="40" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="FLOW_DESC" MaxLength="40" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="ROLE_ID" Nullable="false" MaxLength="12" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="S_ROLE_ID" Nullable="false" MaxLength="12" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="S_STEP_ID" Nullable="false" MaxLength="20" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="D_STEP_ID" Nullable="false" MaxLength="20" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="S_STEP_DESC" MaxLength="64" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="S_USER_ID" Nullable="false" MaxLength="20" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="USER_ID" Nullable="false" MaxLength="20" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="USERNAME" MaxLength="30" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="FORM_NAME" MaxLength="30" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="WEBFORM_NAME" Nullable="false" MaxLength="30" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="S_USERNAME" MaxLength="30" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="NAVIGATOR_MODE" Nullable="false" MaxLength="2" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="FLNAVIGATOR_MODE" Nullable="false" MaxLength="2" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="PARAMETERS" MaxLength="254" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="STATUS" MaxLength="4" FixedLength="false" Unicode="true" />
+    <Property Type="Decimal" Name="PROC_TIME" Nullable="false" Precision="8" Scale="2" />
+    <Property Type="Decimal" Name="EXP_TIME" Nullable="false" Precision="8" Scale="2" />
+    <Property Type="String" Name="TIME_UNIT" Nullable="false" MaxLength="4" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="FLOWIMPORTANT" Nullable="false" MaxLength="1" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="FLOWURGENT" Nullable="false" MaxLength="1" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="FORM_TABLE" MaxLength="30" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="FORM_KEYS" MaxLength="254" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="FORM_PRESENTATION" MaxLength="254" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="REMARK" MaxLength="254" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="VERSION" MaxLength="2" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="VDSNAME" MaxLength="40" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="SENDBACKSTEP" MaxLength="2" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="LEVEL_NO" MaxLength="6" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="UPDATE_DATE" MaxLength="10" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="UPDATE_TIME" MaxLength="8" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="FORM_PRESENT_CT" MaxLength="254" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="ATTACHMENTS" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="CREATE_TIME" MaxLength="50" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="SYS_TODOLIST">
+    <Key>
+      <PropertyRef Name="LISTID" />
+      <PropertyRef Name="FLOW_ID" />
+      <PropertyRef Name="APPLICANT" />
+      <PropertyRef Name="S_USER_ID" />
+      <PropertyRef Name="S_STEP_ID" />
+      <PropertyRef Name="D_STEP_ID" />
+      <PropertyRef Name="EXP_TIME" />
+      <PropertyRef Name="URGENT_TIME" />
+      <PropertyRef Name="TIME_UNIT" />
+      <PropertyRef Name="NAVIGATOR_MODE" />
+      <PropertyRef Name="FLNAVIGATOR_MODE" />
+      <PropertyRef Name="SENDTO_KIND" />
+      <PropertyRef Name="SENDTO_ID" />
+      <PropertyRef Name="FLOWIMPORTANT" />
+      <PropertyRef Name="FLOWURGENT" />
+      <PropertyRef Name="FORM_PRESENT_CT" />
+      <PropertyRef Name="WEBFORM_NAME" />
+      <PropertyRef Name="FLOWPATH" />
+      <PropertyRef Name="PLUSAPPROVE" />
+      <PropertyRef Name="PLUSROLES" />
+    </Key>
+    <Property Type="String" Name="LISTID" Nullable="false" MaxLength="40" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="FLOW_ID" Nullable="false" MaxLength="40" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="FLOW_DESC" MaxLength="40" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="APPLICANT" Nullable="false" MaxLength="20" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="S_USER_ID" Nullable="false" MaxLength="20" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="S_STEP_ID" Nullable="false" MaxLength="20" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="S_STEP_DESC" MaxLength="64" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="D_STEP_ID" Nullable="false" MaxLength="20" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="D_STEP_DESC" MaxLength="64" FixedLength="false" Unicode="true" />
+    <Property Type="Decimal" Name="EXP_TIME" Nullable="false" Precision="8" Scale="2" />
+    <Property Type="Decimal" Name="URGENT_TIME" Nullable="false" Precision="8" Scale="2" />
+    <Property Type="String" Name="TIME_UNIT" Nullable="false" MaxLength="4" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="USERNAME" MaxLength="30" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="FORM_NAME" MaxLength="30" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="NAVIGATOR_MODE" Nullable="false" MaxLength="2" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="FLNAVIGATOR_MODE" Nullable="false" MaxLength="2" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="PARAMETERS" MaxLength="254" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="SENDTO_KIND" Nullable="false" MaxLength="4" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="SENDTO_ID" Nullable="false" MaxLength="20" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="FLOWIMPORTANT" Nullable="false" MaxLength="1" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="FLOWURGENT" Nullable="false" MaxLength="1" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="STATUS" MaxLength="4" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="FORM_TABLE" MaxLength="30" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="FORM_KEYS" MaxLength="254" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="FORM_PRESENTATION" MaxLength="254" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="FORM_PRESENT_CT" Nullable="false" MaxLength="254" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="REMARK" MaxLength="254" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="PROVIDER_NAME" MaxLength="254" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="VERSION" MaxLength="2" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="EMAIL_ADD" MaxLength="40" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="EMAIL_STATUS" MaxLength="1" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="VDSNAME" MaxLength="40" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="SENDBACKSTEP" MaxLength="2" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="LEVEL_NO" MaxLength="6" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="WEBFORM_NAME" Nullable="false" MaxLength="30" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="UPDATE_DATE" MaxLength="10" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="UPDATE_TIME" MaxLength="8" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="FLOWPATH" Nullable="false" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="PLUSAPPROVE" Nullable="false" MaxLength="1" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="PLUSROLES" Nullable="false" MaxLength="254" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="MULTISTEPRETURN" MaxLength="1" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="SENDTO_NAME" MaxLength="30" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="ATTACHMENTS" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="CREATE_TIME" MaxLength="50" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="SYS_REPORT">
+    <Key>
+      <PropertyRef Name="REPORTID" />
+      <PropertyRef Name="FILENAME" />
+    </Key>
+    <Property Type="String" Name="REPORTID" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="FILENAME" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="REPORTNAME" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="DESCRIPTION" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="FILEPATH" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="OUTPUTMODE" MaxLength="20" FixedLength="false" Unicode="true" />
+    <Property Type="Binary" Name="HEADERFONT" MaxLength="Max" FixedLength="false" />
+    <Property Type="Binary" Name="HEADERITEMS" MaxLength="Max" FixedLength="false" />
+    <Property Type="Binary" Name="FOOTERFONT" MaxLength="Max" FixedLength="false" />
+    <Property Type="Binary" Name="FOOTERITEMS" MaxLength="Max" FixedLength="false" />
+    <Property Type="Binary" Name="FIELDFONT" MaxLength="Max" FixedLength="false" />
+    <Property Type="Binary" Name="FIELDITEMS" MaxLength="Max" FixedLength="false" />
+    <Property Type="Binary" Name="SETTING" MaxLength="Max" FixedLength="false" />
+    <Property Type="Binary" Name="FORMAT" MaxLength="Max" FixedLength="false" />
+    <Property Type="Binary" Name="PARAMETERS" MaxLength="Max" FixedLength="false" />
+    <Property Type="Binary" Name="IMAGES" MaxLength="Max" FixedLength="false" />
+    <Property Type="Binary" Name="MAILSETTING" MaxLength="Max" FixedLength="false" />
+    <Property Type="String" Name="HEADERREPEAT" MaxLength="5" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="HEADER_DATASOURCEID" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="Binary" Name="DATASOURCES" MaxLength="Max" FixedLength="false" />
+    <Property Type="Binary" Name="CLIENT_QUERY" MaxLength="Max" FixedLength="false" />
+    <Property Type="String" Name="REPORT_TYPE" MaxLength="1" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="TEMPLATE_DESC" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="DATASOURCE_PROVIDER" MaxLength="50" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="SYS_SDGROUPS">
+    <Key>
+      <PropertyRef Name="GROUPID" />
+    </Key>
+    <Property Type="String" Name="GROUPID" Nullable="false" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="GROUPNAME" MaxLength="30" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="SYS_SDQUEUE">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Type="Int32" Name="ID" Nullable="false" />
+    <Property Type="String" Name="USERID" Nullable="false" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="PAGETYPE" Nullable="false" MaxLength="1" FixedLength="true" Unicode="false" />
+    <Property Type="DateTime" Name="CREATETIME" Precision="3" />
+    <Property Type="DateTime" Name="FINISHTIME" Precision="3" />
+    <Property Type="Boolean" Name="FINISHFLAG" Nullable="false" />
+    <Property Type="Binary" Name="DOCUMENT" MaxLength="Max" FixedLength="false" />
+    <Property Type="String" Name="FILENAME" MaxLength="40" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="PRINTSETTING" MaxLength="40" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="SYS_SDQUEUEPAGE" Relationship="EFModel.FK_SYS_SDQUEUEPAGE_SYS_SDQUEUE" FromRole="SYS_SDQUEUE" ToRole="SYS_SDQUEUEPAGE" />
+  </EntityType>
+  <EntityType Name="SYS_SDQUEUEPAGE">
+    <Key>
+      <PropertyRef Name="ID" />
+      <PropertyRef Name="PAGENAME" />
+    </Key>
+    <Property Type="Int32" Name="ID" Nullable="false" />
+    <Property Type="Binary" Name="DOCUMENT" Nullable="false" MaxLength="Max" FixedLength="false" />
+    <Property Type="Binary" Name="PHOTO" MaxLength="Max" FixedLength="false" />
+    <Property Type="String" Name="PAGENAME" Nullable="false" MaxLength="30" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="SYS_SDQUEUE" Relationship="EFModel.FK_SYS_SDQUEUEPAGE_SYS_SDQUEUE" FromRole="SYS_SDQUEUEPAGE" ToRole="SYS_SDQUEUE" />
+  </EntityType>
+  <EntityType Name="SYS_SDUSERS">
+    <Key>
+      <PropertyRef Name="USERID" />
+    </Key>
+    <Property Type="String" Name="USERID" Nullable="false" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="USERNAME" MaxLength="30" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="PASSWORD" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="GROUPID" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Type="DateTime" Name="LASTDATE" Precision="3" />
+    <Property Type="String" Name="EMAIL" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="SYSTYPE" MaxLength="1" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="SYS_WEBPAGES_LOG">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Type="String" Name="PAGENAME" Nullable="false" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="PAGETYPE" Nullable="false" MaxLength="1" FixedLength="true" Unicode="false" />
+    <Property Type="String" Name="DESCRIPTION" MaxLength="60" FixedLength="false" Unicode="false" />
+    <Property Type="Binary" Name="CONTENT" MaxLength="Max" FixedLength="false" />
+    <Property Type="String" Name="USERID" Nullable="false" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="SOLUTIONID" Nullable="false" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Type="Binary" Name="SERVERDLL" MaxLength="Max" FixedLength="false" />
+    <Property Type="DateTime" Name="CHECKINDATE" Nullable="false" Precision="3" />
+    <Property Type="Int32" Name="ID" Nullable="false" a:StoreGeneratedPattern="Identity" xmlns:a="http://schemas.microsoft.com/ado/2009/02/edm/annotation" />
+    <Property Type="String" Name="CHECKINUSER" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="CHECKINDESCRIPTION" MaxLength="255" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="SYS_WEBRUNTIME">
+    <Key>
+      <PropertyRef Name="PAGENAME" />
+      <PropertyRef Name="PAGETYPE" />
+      <PropertyRef Name="USERID" />
+      <PropertyRef Name="SOLUTIONID" />
+    </Key>
+    <Property Type="String" Name="PAGENAME" Nullable="false" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="PAGETYPE" Nullable="false" MaxLength="1" FixedLength="true" Unicode="false" />
+    <Property Type="Binary" Name="CONTENT" MaxLength="Max" FixedLength="false" />
+    <Property Type="String" Name="USERID" Nullable="false" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="SOLUTIONID" Nullable="false" MaxLength="30" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <Association Name="FK_SYS_SDQUEUEPAGE_SYS_SDQUEUE">
+    <End Type="EFModel.SYS_SDQUEUE" Role="SYS_SDQUEUE" Multiplicity="1" />
+    <End Type="EFModel.SYS_SDQUEUEPAGE" Role="SYS_SDQUEUEPAGE" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="SYS_SDQUEUE">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="SYS_SDQUEUEPAGE">
+        <PropertyRef Name="ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityType Name="SYS_SDUSERS_LOG">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Type="Int32" Name="ID" Nullable="false" a:StoreGeneratedPattern="Identity" xmlns:a="http://schemas.microsoft.com/ado/2009/02/edm/annotation" />
+    <Property Type="String" Name="USERID" Nullable="false" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="IPADDRESS" Nullable="false" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Type="DateTime" Name="LOGINTIME" Nullable="false" Precision="3" />
+    <Property Type="DateTime" Name="LOGOUTTIME" Nullable="false" Precision="3" />
+  </EntityType>
+  <EntityType Name="SYS_WEBPAGES">
+    <Key>
+      <PropertyRef Name="PAGENAME" />
+      <PropertyRef Name="PAGETYPE" />
+      <PropertyRef Name="USERID" />
+      <PropertyRef Name="SOLUTIONID" />
+    </Key>
+    <Property Type="String" Name="PAGENAME" Nullable="false" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="PAGETYPE" Nullable="false" MaxLength="1" FixedLength="true" Unicode="false" />
+    <Property Type="String" Name="DESCRIPTION" MaxLength="60" FixedLength="false" Unicode="false" />
+    <Property Type="Binary" Name="CONTENT" MaxLength="Max" FixedLength="false" />
+    <Property Type="String" Name="USERID" Nullable="false" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="SOLUTIONID" Nullable="false" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Type="Binary" Name="SERVERDLL" MaxLength="Max" FixedLength="false" />
+    <Property Type="Boolean" Name="CHECKOUT" />
+    <Property Type="DateTime" Name="CHECKOUTDATE" Precision="3" />
+    <Property Type="String" Name="CHECKOUTUSER" MaxLength="20" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="SYS_SDALIAS">
+    <Key>
+      <PropertyRef Name="USERID" />
+      <PropertyRef Name="ALIASNAME" />
+      <PropertyRef Name="DBNAME" />
+    </Key>
+    <Property Type="String" Name="USERID" Nullable="false" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="ALIASNAME" Nullable="false" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="SYSTEMALIAS" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="DBNAME" Nullable="false" MaxLength="25" FixedLength="false" Unicode="false" />
+    <Property Type="Boolean" Name="SPLIT" />
+    <Property Type="String" Name="DBTYPE" MaxLength="1" FixedLength="true" Unicode="false" />
+  </EntityType>
+  <EntityType Name="SYS_SDSOLUTIONS">
+    <Key>
+      <PropertyRef Name="USERID" />
+      <PropertyRef Name="SOLUTIONID" />
+    </Key>
+    <Property Type="String" Name="USERID" Nullable="false" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="SOLUTIONID" Nullable="false" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="SOLUTIONNAME" MaxLength="30" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="MOUDLEXMLTEXT" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Type="Binary" Name="SETTING" MaxLength="Max" FixedLength="false" />
+    <Property Type="String" Name="ALIASOPTIONS" MaxLength="250" FixedLength="false" Unicode="false" />
+    <Property Type="Binary" Name="LOGONIMAGE" MaxLength="Max" FixedLength="false" />
+    <Property Type="String" Name="BGSTARTCOLOR" MaxLength="9" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="BGENDCOLOR" MaxLength="9" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="THEME" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="COMPANY" MaxLength="30" FixedLength="false" Unicode="true" />
+    <Property Type="Int32" Name="PAGESAVEOPTION" />
+    <Property Type="Binary" Name="COMPANYIMAGE" MaxLength="Max" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="SYS_LANGUAGE">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Type="Int32" Name="ID" Nullable="false" a:StoreGeneratedPattern="Identity" xmlns:a="http://schemas.microsoft.com/ado/2009/02/edm/annotation" />
+    <Property Type="String" Name="IDENTIFICATION" MaxLength="80" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="KEYS" MaxLength="80" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="EN" MaxLength="80" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="CHT" MaxLength="80" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="CHS" MaxLength="80" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="HK" MaxLength="80" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="JA" MaxLength="80" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="KO" MaxLength="80" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="LAN1" MaxLength="80" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="LAN2" MaxLength="80" FixedLength="false" Unicode="true" />
+  </EntityType>
+</Schema>

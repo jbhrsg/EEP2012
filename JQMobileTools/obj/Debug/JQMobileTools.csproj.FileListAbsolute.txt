@@ -1,0 +1,94 @@
+C:\Program Files\Infolight\EEP2012WF\JQMobileTools\bin\Debug\JQMobileTools.dll
+C:\Program Files\Infolight\EEP2012WF\JQMobileTools\bin\Debug\JQMobileTools.pdb
+C:\Program Files\Infolight\EEP2012WF\JQMobileTools\bin\Debug\EFClientTools.dll
+C:\Program Files\Infolight\EEP2012WF\JQMobileTools\bin\Debug\EFBase.dll
+C:\Program Files\Infolight\EEP2012WF\JQMobileTools\bin\Debug\EFClientTools.pdb
+C:\Program Files\Infolight\EEP2012WF\JQMobileTools\bin\Debug\EFBase.pdb
+C:\Program Files\Infolight\EEP2012WF\JQMobileTools\obj\Debug\JQMobileTools.csprojResolveAssemblyReference.cache
+C:\Program Files\Infolight\EEP2012WF\JQMobileTools\obj\Debug\JQMobileTools.Editor.RemoteNameEditorDialog.resources
+C:\Program Files\Infolight\EEP2012WF\JQMobileTools\obj\Debug\JQMobileTools.csproj.GenerateResource.Cache
+C:\Program Files\Infolight\EEP2012WF\JQMobileTools\obj\Debug\JQMobileTools.dll
+C:\Program Files\Infolight\EEP2012WF\JQMobileTools\obj\Debug\JQMobileTools.pdb
+C:\Program Files (x86)\Infolight\EEP2012WF\JQMobileTools\bin\Debug\JQMobileTools.dll
+C:\Program Files (x86)\Infolight\EEP2012WF\JQMobileTools\bin\Debug\JQMobileTools.pdb
+C:\Program Files (x86)\Infolight\EEP2012WF\JQMobileTools\bin\Debug\EFBase.dll
+C:\Program Files (x86)\Infolight\EEP2012WF\JQMobileTools\bin\Debug\EFClientTools.dll
+C:\Program Files (x86)\Infolight\EEP2012WF\JQMobileTools\bin\Debug\EFBase.pdb
+C:\Program Files (x86)\Infolight\EEP2012WF\JQMobileTools\bin\Debug\EFClientTools.pdb
+C:\Program Files (x86)\Infolight\EEP2012WF\JQMobileTools\obj\Debug\JQMobileTools.csprojResolveAssemblyReference.cache
+C:\Program Files (x86)\Infolight\EEP2012WF\JQMobileTools\obj\Debug\JQMobileTools.Editor.RemoteNameEditorDialog.resources
+C:\Program Files (x86)\Infolight\EEP2012WF\JQMobileTools\obj\Debug\JQMobileTools.csproj.GenerateResource.Cache
+C:\Program Files (x86)\Infolight\EEP2012WF\JQMobileTools\obj\Debug\JQMobileTools.dll
+C:\Program Files (x86)\Infolight\EEP2012WF\JQMobileTools\obj\Debug\JQMobileTools.pdb
+D:\版本\Version\安裝源文件\EEP2012WF(V5.0.0.020140924 SP5)\JQMobileTools\bin\Debug\JQMobileTools.dll
+D:\版本\Version\安裝源文件\EEP2012WF(V5.0.0.020140924 SP5)\JQMobileTools\bin\Debug\JQMobileTools.pdb
+D:\版本\Version\安裝源文件\EEP2012WF(V5.0.0.020140924 SP5)\JQMobileTools\bin\Debug\EFBase.dll
+D:\版本\Version\安裝源文件\EEP2012WF(V5.0.0.020140924 SP5)\JQMobileTools\bin\Debug\EFClientTools.dll
+D:\版本\Version\安裝源文件\EEP2012WF(V5.0.0.020140924 SP5)\JQMobileTools\bin\Debug\EFBase.pdb
+D:\版本\Version\安裝源文件\EEP2012WF(V5.0.0.020140924 SP5)\JQMobileTools\bin\Debug\EFClientTools.pdb
+D:\版本\Version\安裝源文件\EEP2012WF(V5.0.0.020140924 SP5)\JQMobileTools\obj\Debug\JQMobileTools.csprojResolveAssemblyReference.cache
+D:\版本\Version\安裝源文件\EEP2012WF(V5.0.0.020140924 SP5)\JQMobileTools\obj\Debug\JQMobileTools.JQMetroEditForm.resources
+D:\版本\Version\安裝源文件\EEP2012WF(V5.0.0.020140924 SP5)\JQMobileTools\obj\Debug\JQMobileTools.Editor.RemoteNameEditorDialog.resources
+D:\版本\Version\安裝源文件\EEP2012WF(V5.0.0.020140924 SP5)\JQMobileTools\obj\Debug\JQMobileTools.csproj.GenerateResource.Cache
+D:\版本\Version\安裝源文件\EEP2012WF(V5.0.0.020140924 SP5)\JQMobileTools\obj\Debug\JQMobileTools.dll
+D:\版本\Version\安裝源文件\EEP2012WF(V5.0.0.020140924 SP5)\JQMobileTools\obj\Debug\JQMobileTools.pdb
+D:\版本\Version\安裝源文件\EEP2012(V5.0.0.020140924 SP5)\EEP2012WF\JQMobileTools\bin\Debug\JQMobileTools.dll
+D:\版本\Version\安裝源文件\EEP2012(V5.0.0.020140924 SP5)\EEP2012WF\JQMobileTools\bin\Debug\JQMobileTools.pdb
+D:\版本\Version\安裝源文件\EEP2012(V5.0.0.020140924 SP5)\EEP2012WF\JQMobileTools\bin\Debug\EFBase.dll
+D:\版本\Version\安裝源文件\EEP2012(V5.0.0.020140924 SP5)\EEP2012WF\JQMobileTools\bin\Debug\EFClientTools.dll
+D:\版本\Version\安裝源文件\EEP2012(V5.0.0.020140924 SP5)\EEP2012WF\JQMobileTools\bin\Debug\EFBase.pdb
+D:\版本\Version\安裝源文件\EEP2012(V5.0.0.020140924 SP5)\EEP2012WF\JQMobileTools\bin\Debug\EFClientTools.pdb
+D:\版本\Version\安裝源文件\EEP2012(V5.0.0.020140924 SP5)\EEP2012WF\JQMobileTools\obj\Debug\JQMobileTools.csprojResolveAssemblyReference.cache
+D:\版本\Version\安裝源文件\EEP2012(V5.0.0.020140924 SP5)\EEP2012WF\JQMobileTools\obj\Debug\JQMobileTools.JQMetroEditForm.resources
+D:\版本\Version\安裝源文件\EEP2012(V5.0.0.020140924 SP5)\EEP2012WF\JQMobileTools\obj\Debug\JQMobileTools.Editor.RemoteNameEditorDialog.resources
+D:\版本\Version\安裝源文件\EEP2012(V5.0.0.020140924 SP5)\EEP2012WF\JQMobileTools\obj\Debug\JQMobileTools.csproj.GenerateResource.Cache
+D:\版本\Version\安裝源文件\EEP2012(V5.0.0.020140924 SP5)\EEP2012WF\JQMobileTools\obj\Debug\JQMobileTools.dll
+D:\版本\Version\安裝源文件\EEP2012(V5.0.0.020140924 SP5)\EEP2012WF\JQMobileTools\obj\Debug\JQMobileTools.pdb
+D:\Program Files (x86)\Your Company Name\EEP2012\JQMobileTools\bin\Debug\JQMobileTools.dll
+D:\Program Files (x86)\Your Company Name\EEP2012\JQMobileTools\bin\Debug\JQMobileTools.pdb
+D:\Program Files (x86)\Your Company Name\EEP2012\JQMobileTools\bin\Debug\EFBase.dll
+D:\Program Files (x86)\Your Company Name\EEP2012\JQMobileTools\bin\Debug\EFClientTools.dll
+D:\Program Files (x86)\Your Company Name\EEP2012\JQMobileTools\bin\Debug\EFBase.pdb
+D:\Program Files (x86)\Your Company Name\EEP2012\JQMobileTools\bin\Debug\EFClientTools.pdb
+D:\Program Files (x86)\Your Company Name\EEP2012\JQMobileTools\obj\Debug\JQMobileTools.csprojResolveAssemblyReference.cache
+D:\Program Files (x86)\Your Company Name\EEP2012\JQMobileTools\obj\Debug\JQMobileTools.JQMetroEditForm.resources
+D:\Program Files (x86)\Your Company Name\EEP2012\JQMobileTools\obj\Debug\JQMobileTools.Editor.RemoteNameEditorDialog.resources
+D:\Program Files (x86)\Your Company Name\EEP2012\JQMobileTools\obj\Debug\JQMobileTools.csproj.GenerateResource.Cache
+D:\Program Files (x86)\Your Company Name\EEP2012\JQMobileTools\obj\Debug\JQMobileTools.dll
+D:\Program Files (x86)\Your Company Name\EEP2012\JQMobileTools\obj\Debug\JQMobileTools.pdb
+C:\Program Files (x86)\Infolight\EEP2012\JQMobileTools\bin\Debug\JQMobileTools.dll
+C:\Program Files (x86)\Infolight\EEP2012\JQMobileTools\bin\Debug\JQMobileTools.pdb
+C:\Program Files (x86)\Infolight\EEP2012\JQMobileTools\bin\Debug\EFBase.dll
+C:\Program Files (x86)\Infolight\EEP2012\JQMobileTools\bin\Debug\EFClientTools.dll
+C:\Program Files (x86)\Infolight\EEP2012\JQMobileTools\bin\Debug\EFBase.pdb
+C:\Program Files (x86)\Infolight\EEP2012\JQMobileTools\bin\Debug\EFClientTools.pdb
+C:\Program Files (x86)\Infolight\EEP2012\JQMobileTools\obj\Debug\JQMobileTools.csprojResolveAssemblyReference.cache
+C:\Program Files (x86)\Infolight\EEP2012\JQMobileTools\obj\Debug\JQMobileTools.JQMetroEditForm.resources
+C:\Program Files (x86)\Infolight\EEP2012\JQMobileTools\obj\Debug\JQMobileTools.JQMetroEditStyleObjectForm.resources
+C:\Program Files (x86)\Infolight\EEP2012\JQMobileTools\obj\Debug\JQMobileTools.JQSecurityAddForm.resources
+C:\Program Files (x86)\Infolight\EEP2012\JQMobileTools\obj\Debug\JQMobileTools.JQSecurityForm.resources
+C:\Program Files (x86)\Infolight\EEP2012\JQMobileTools\obj\Debug\JQMobileTools.MultiLanguageEditorDialog.resources
+C:\Program Files (x86)\Infolight\EEP2012\JQMobileTools\obj\Debug\JQMobileTools.MultiLanguageTableNameDialog.resources
+C:\Program Files (x86)\Infolight\EEP2012\JQMobileTools\obj\Debug\JQMobileTools.Editor.RemoteNameEditorDialog.resources
+C:\Program Files (x86)\Infolight\EEP2012\JQMobileTools\obj\Debug\JQMobileTools.SelectLanguageForm.resources
+C:\Program Files (x86)\Infolight\EEP2012\JQMobileTools\obj\Debug\JQMobileTools.csproj.GenerateResource.Cache
+C:\Program Files (x86)\Infolight\EEP2012\JQMobileTools\obj\Debug\JQMobileTools.dll
+C:\Program Files (x86)\Infolight\EEP2012\JQMobileTools\obj\Debug\JQMobileTools.pdb
+D:\Infolight\EEP2012\JQMobileTools\bin\Debug\JQMobileTools.dll
+D:\Infolight\EEP2012\JQMobileTools\bin\Debug\JQMobileTools.pdb
+D:\Infolight\EEP2012\JQMobileTools\bin\Debug\EFBase.dll
+D:\Infolight\EEP2012\JQMobileTools\bin\Debug\EFClientTools.dll
+D:\Infolight\EEP2012\JQMobileTools\bin\Debug\EFBase.pdb
+D:\Infolight\EEP2012\JQMobileTools\bin\Debug\EFClientTools.pdb
+D:\Infolight\EEP2012\JQMobileTools\obj\Debug\JQMobileTools.csprojResolveAssemblyReference.cache
+D:\Infolight\EEP2012\JQMobileTools\obj\Debug\JQMobileTools.JQMetroEditForm.resources
+D:\Infolight\EEP2012\JQMobileTools\obj\Debug\JQMobileTools.JQMetroEditStyleObjectForm.resources
+D:\Infolight\EEP2012\JQMobileTools\obj\Debug\JQMobileTools.JQSecurityAddForm.resources
+D:\Infolight\EEP2012\JQMobileTools\obj\Debug\JQMobileTools.JQSecurityForm.resources
+D:\Infolight\EEP2012\JQMobileTools\obj\Debug\JQMobileTools.MultiLanguageEditorDialog.resources
+D:\Infolight\EEP2012\JQMobileTools\obj\Debug\JQMobileTools.MultiLanguageTableNameDialog.resources
+D:\Infolight\EEP2012\JQMobileTools\obj\Debug\JQMobileTools.Editor.RemoteNameEditorDialog.resources
+D:\Infolight\EEP2012\JQMobileTools\obj\Debug\JQMobileTools.SelectLanguageForm.resources
+D:\Infolight\EEP2012\JQMobileTools\obj\Debug\JQMobileTools.csproj.GenerateResource.Cache
+D:\Infolight\EEP2012\JQMobileTools\obj\Debug\JQMobileTools.dll
+D:\Infolight\EEP2012\JQMobileTools\obj\Debug\JQMobileTools.pdb

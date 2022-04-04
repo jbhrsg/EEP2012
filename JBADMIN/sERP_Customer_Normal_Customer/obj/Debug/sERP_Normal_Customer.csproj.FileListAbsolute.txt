@@ -1,0 +1,11 @@
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sERP_Normal_Customer\bin\Debug\sERP_Normal_Customer.dll
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sERP_Normal_Customer\bin\Debug\sERP_Normal_Customer.pdb
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sERP_Normal_Customer\obj\Debug\sERP_Normal_Customer.csproj.GenerateResource.Cache
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sERP_Normal_Customer\obj\Debug\sERP_Normal_Customer.dll
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sERP_Normal_Customer\obj\Debug\sERP_Normal_Customer.pdb
+C:\Program Files (x86)\Infolight\EEP2012\EEPNetServer\JBADMIN\sERP_Normal_Customer.dll
+C:\Program Files (x86)\Infolight\EEP2012\EEPNetServer\JBADMIN\sERP_Normal_Customer.pdb
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sERP_Normal_Customer\obj\Debug\sERP_Normal_Customer.Component.resources
+C:\Program Files (x86)\Infolight\EEP2012\EEPNetServer\JBADMIN\vi-VN\sERP_Normal_Customer.resources.dll
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sERP_Normal_Customer\obj\Debug\sERP_Normal_Customer.Component.vi-VN.resources
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sERP_Normal_Customer\obj\Debug\vi-VN\sERP_Normal_Customer.resources.dll

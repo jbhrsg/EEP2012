@@ -1,0 +1,8 @@
+<FlowDetails>
+  <FormName>JB_ADMIN.JBREQ_Requisition</FormName>
+  <FlowNavMode>Submit</FlowNavMode>
+  <NavMode>Insert</NavMode>
+  <Parameters>P1=APPLY</Parameters>
+  <FlowFileName>C:\Program Files (x86)\Infolight\EEP2012\EEPNetServer\Workflow\FL\Requisition</FlowFileName>
+  <ImageWidth>1366</ImageWidth>
+</FlowDetails>

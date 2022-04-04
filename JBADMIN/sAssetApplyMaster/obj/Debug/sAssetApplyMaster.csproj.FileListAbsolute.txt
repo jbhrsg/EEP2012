@@ -1,0 +1,15 @@
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sAssetApplyMaster\bin\Debug\sAssetApplyMaster.dll
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sAssetApplyMaster\bin\Debug\sAssetApplyMaster.pdb
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sAssetApplyMaster\obj\Debug\sAssetApplyMaster.csproj.GenerateResource.Cache
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sAssetApplyMaster\obj\Debug\sAssetApplyMaster.dll
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sAssetApplyMaster\obj\Debug\sAssetApplyMaster.pdb
+C:\Program Files (x86)\Infolight\EEP2012\EEPNetServer\JBADMIN\sAssetApplyMaster.dll
+C:\Program Files (x86)\Infolight\EEP2012\EEPNetServer\JBADMIN\sAssetApplyMaster.pdb
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sAssetApplyMaster\obj\Debug\sAssetApplyMaster.Component.resources
+D:\Infolight\EEP2012\EEPNetServer\JBADMIN\sAssetApplyMaster.dll
+D:\Infolight\EEP2012\EEPNetServer\JBADMIN\sAssetApplyMaster.pdb
+D:\Infolight\EEP2012\JBADMIN\sAssetApplyMaster\obj\Debug\sAssetApplyMaster.Component.resources
+D:\Infolight\EEP2012\JBADMIN\sAssetApplyMaster\obj\Debug\sAssetApplyMaster.csproj.GenerateResource.Cache
+D:\Infolight\EEP2012\JBADMIN\sAssetApplyMaster\obj\Debug\sAssetApplyMaster.dll
+D:\Infolight\EEP2012\JBADMIN\sAssetApplyMaster\obj\Debug\sAssetApplyMaster.pdb
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sAssetApplyMaster\obj\Debug\sAssetApplyMaster.csprojResolveAssemblyReference.cache

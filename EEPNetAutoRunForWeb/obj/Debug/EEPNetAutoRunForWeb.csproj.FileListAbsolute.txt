@@ -1,0 +1,41 @@
+D:\Program Files\Infolight\EEP2008\Solution1\EEPNetAutoRunForWeb\bin\Debug\EEPNetAutoRunForWeb.exe.config
+D:\Program Files\Infolight\EEP2008\Solution1\EEPNetAutoRunForWeb\bin\Debug\EEPNetAutoRunForWeb.exe
+D:\Program Files\Infolight\EEP2008\Solution1\EEPNetAutoRunForWeb\bin\Debug\EEPNetAutoRunForWeb.pdb
+D:\Program Files\Infolight\EEP2008\Solution1\EEPNetAutoRunForWeb\obj\Debug\ResolveAssemblyReference.cache
+D:\Program Files\Infolight\EEP2008\Solution1\EEPNetAutoRunForWeb\obj\Debug\EEPNetAutoRunForWeb.Form1.resources
+D:\Program Files\Infolight\EEP2008\Solution1\EEPNetAutoRunForWeb\obj\Debug\EEPNetAutoRunForWeb.Properties.Resources.resources
+D:\Program Files\Infolight\EEP2008\Solution1\EEPNetAutoRunForWeb\obj\Debug\EEPNetAutoRunForWeb.csproj.GenerateResource.Cache
+D:\Program Files\Infolight\EEP2008\Solution1\EEPNetAutoRunForWeb\obj\Debug\EEPNetAutoRunForWeb.exe
+D:\Program Files\Infolight\EEP2008\Solution1\EEPNetAutoRunForWeb\obj\Debug\EEPNetAutoRunForWeb.pdb
+D:\Infolight\EEP2008\Solution1\EEPNetAutoRunForWeb\bin\Debug\EEPNetAutoRunForWeb.exe.config
+D:\Infolight\EEP2008\Solution1\EEPNetAutoRunForWeb\bin\Debug\EEPNetAutoRunForWeb.exe
+D:\Infolight\EEP2008\Solution1\EEPNetAutoRunForWeb\bin\Debug\EEPNetAutoRunForWeb.pdb
+D:\Infolight\EEP2008\Solution1\EEPNetAutoRunForWeb\bin\Debug\Srvtools.dll
+D:\Infolight\EEP2008\Solution1\EEPNetAutoRunForWeb\bin\Debug\InfoRemoteModule.dll
+D:\Infolight\EEP2008\Solution1\EEPNetAutoRunForWeb\bin\Debug\InfoRemoteModule.pdb
+D:\Infolight\EEP2008\Solution1\EEPNetAutoRunForWeb\bin\Debug\Srvtools.pdb
+D:\Infolight\EEP2008\Solution1\EEPNetAutoRunForWeb\obj\Debug\ResolveAssemblyReference.cache
+D:\Infolight\EEP2008\Solution1\EEPNetAutoRunForWeb\obj\Debug\EEPNetAutoRunForWeb.Form1.resources
+D:\Infolight\EEP2008\Solution1\EEPNetAutoRunForWeb\obj\Debug\EEPNetAutoRunForWeb.Properties.Resources.resources
+D:\Infolight\EEP2008\Solution1\EEPNetAutoRunForWeb\obj\Debug\EEPNetAutoRunForWeb.csproj.GenerateResource.Cache
+D:\Infolight\EEP2008\Solution1\EEPNetAutoRunForWeb\obj\Debug\EEPNetAutoRunForWeb.exe
+D:\Infolight\EEP2008\Solution1\EEPNetAutoRunForWeb\obj\Debug\EEPNetAutoRunForWeb.pdb
+D:\Infolight\EEP2010\EEPNetAutoRunForWeb\bin\Debug\EEPNetAutoRunForWeb.exe.config
+D:\Infolight\EEP2010\EEPNetAutoRunForWeb\bin\Debug\EEPNetAutoRunForWeb.exe
+D:\Infolight\EEP2010\EEPNetAutoRunForWeb\bin\Debug\EEPNetAutoRunForWeb.pdb
+D:\Infolight\EEP2010\EEPNetAutoRunForWeb\obj\Debug\ResolveAssemblyReference.cache
+D:\Infolight\EEP2010\EEPNetAutoRunForWeb\obj\Debug\EEPNetAutoRunForWeb.Form1.resources
+D:\Infolight\EEP2010\EEPNetAutoRunForWeb\obj\Debug\EEPNetAutoRunForWeb.Properties.Resources.resources
+D:\Infolight\EEP2010\EEPNetAutoRunForWeb\obj\Debug\GenerateResource.read.1.tlog
+D:\Infolight\EEP2010\EEPNetAutoRunForWeb\obj\Debug\GenerateResource.write.1.tlog
+D:\Infolight\EEP2010\EEPNetAutoRunForWeb\obj\Debug\EEPNetAutoRunForWeb.exe
+D:\Infolight\EEP2010\EEPNetAutoRunForWeb\obj\Debug\EEPNetAutoRunForWeb.pdb
+C:\Program Files\Infolight\EEP2012\EEPNetAutoRunForWeb\bin\Debug\EEPNetAutoRunForWeb.exe.config
+C:\Program Files\Infolight\EEP2012\EEPNetAutoRunForWeb\bin\Debug\EEPNetAutoRunForWeb.exe
+C:\Program Files\Infolight\EEP2012\EEPNetAutoRunForWeb\bin\Debug\EEPNetAutoRunForWeb.pdb
+C:\Program Files\Infolight\EEP2012\EEPNetAutoRunForWeb\obj\Debug\EEPNetAutoRunForWeb.csprojResolveAssemblyReference.cache
+C:\Program Files\Infolight\EEP2012\EEPNetAutoRunForWeb\obj\Debug\EEPNetAutoRunForWeb.Form1.resources
+C:\Program Files\Infolight\EEP2012\EEPNetAutoRunForWeb\obj\Debug\EEPNetAutoRunForWeb.Properties.Resources.resources
+C:\Program Files\Infolight\EEP2012\EEPNetAutoRunForWeb\obj\Debug\EEPNetAutoRunForWeb.csproj.GenerateResource.Cache
+C:\Program Files\Infolight\EEP2012\EEPNetAutoRunForWeb\obj\Debug\EEPNetAutoRunForWeb.exe
+C:\Program Files\Infolight\EEP2012\EEPNetAutoRunForWeb\obj\Debug\EEPNetAutoRunForWeb.pdb

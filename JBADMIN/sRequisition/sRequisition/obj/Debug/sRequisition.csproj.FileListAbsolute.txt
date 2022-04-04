@@ -1,0 +1,16 @@
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sRequisition\bin\Debug\sRequisition.dll
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sRequisition\bin\Debug\sRequisition.pdb
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sRequisition\obj\Debug\sRequisition.csproj.GenerateResource.Cache
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sRequisition\obj\Debug\sRequisition.dll
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sRequisition\obj\Debug\sRequisition.pdb
+C:\Program Files (x86)\Infolight\EEP2012\EEPNetServer\JBADMIN\sRequisition.dll
+C:\Program Files (x86)\Infolight\EEP2012\EEPNetServer\JBADMIN\sRequisition.pdb
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sRequisition\obj\Debug\sRequisition.Component.resources
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sRequisition\obj\Debug\sRequisition.csprojResolveAssemblyReference.cache
+D:\Infolight\EEP2012\EEPNetServer\JBADMIN\sRequisition.dll
+D:\Infolight\EEP2012\EEPNetServer\JBADMIN\sRequisition.pdb
+D:\Infolight\EEP2012\JBADMIN\sRequisition\obj\Debug\sRequisition.Component.resources
+D:\Infolight\EEP2012\JBADMIN\sRequisition\obj\Debug\sRequisition.csproj.GenerateResource.Cache
+D:\Infolight\EEP2012\JBADMIN\sRequisition\obj\Debug\sRequisition.dll
+D:\Infolight\EEP2012\JBADMIN\sRequisition\obj\Debug\sRequisition.pdb
+D:\Infolight\EEP2012\JBADMIN\sRequisition\obj\Debug\sRequisition.csprojResolveAssemblyReference.cache

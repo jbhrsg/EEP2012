@@ -1,0 +1,15 @@
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sERPSalesApplyMaster\bin\Debug\sERPSalesApplyMaster.dll
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sERPSalesApplyMaster\bin\Debug\sERPSalesApplyMaster.pdb
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sERPSalesApplyMaster\obj\Debug\sERPSalesApplyMaster.csproj.GenerateResource.Cache
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sERPSalesApplyMaster\obj\Debug\sERPSalesApplyMaster.dll
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sERPSalesApplyMaster\obj\Debug\sERPSalesApplyMaster.pdb
+C:\Program Files (x86)\Infolight\EEP2012\EEPNetServer\JBADMIN\sERPSalesApplyMaster.dll
+C:\Program Files (x86)\Infolight\EEP2012\EEPNetServer\JBADMIN\sERPSalesApplyMaster.pdb
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sERPSalesApplyMaster\obj\Debug\sERPSalesApplyMaster.Component.resources
+D:\Infolight\EEP2012\EEPNetServer\JBADMIN\sERPSalesApplyMaster.dll
+D:\Infolight\EEP2012\EEPNetServer\JBADMIN\sERPSalesApplyMaster.pdb
+D:\Infolight\EEP2012\JBADMIN\sERPSalesApplyMaster\obj\Debug\sERPSalesApplyMaster.Component.resources
+D:\Infolight\EEP2012\JBADMIN\sERPSalesApplyMaster\obj\Debug\sERPSalesApplyMaster.csproj.GenerateResource.Cache
+D:\Infolight\EEP2012\JBADMIN\sERPSalesApplyMaster\obj\Debug\sERPSalesApplyMaster.dll
+D:\Infolight\EEP2012\JBADMIN\sERPSalesApplyMaster\obj\Debug\sERPSalesApplyMaster.pdb
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sERPSalesApplyMaster\obj\Debug\sERPSalesApplyMaster.csprojResolveAssemblyReference.cache

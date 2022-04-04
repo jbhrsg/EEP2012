@@ -1,0 +1,9 @@
+<FlowDetails>
+  <FormName>JB_ADMIN.PO_Normal_PRPOIQC</FormName>
+  <FlowNavMode>Submit</FlowNavMode>
+  <NavMode>Insert</NavMode>
+  <Parameters>
+  </Parameters>
+  <FlowFileName>C:\Program Files (x86)\Infolight\EEP2012\EEPNetServer\Workflow\FL\PO_Normal_PRPOIQC</FlowFileName>
+  <ImageWidth>1366</ImageWidth>
+</FlowDetails>

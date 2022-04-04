@@ -1,0 +1,8 @@
+F:\Work\Infolight\EEP2006\AddIns\EEPNetClient\Solution1\BaseForm2.dll
+F:\Work\Infolight\EEP2006\AddIns\EEPNetClient\Solution1\BaseForm2.pdb
+F:\Work\Infolight\EEP2006\AddIns\Templates\CMasterDetail\obj\Debug\ResolveAssemblyReference.cache
+F:\Work\Infolight\EEP2006\AddIns\Templates\CMasterDetail\obj\Debug\TAG_NAMESPACE.TAG_FORMNAME.resources
+F:\Work\Infolight\EEP2006\AddIns\Templates\CMasterDetail\obj\Debug\BaseForm2.Properties.Resources.resources
+F:\Work\Infolight\EEP2006\AddIns\Templates\CMasterDetail\obj\Debug\CMasterDetail.csproj.GenerateResource.Cache
+F:\Work\Infolight\EEP2006\AddIns\Templates\CMasterDetail\obj\Debug\BaseForm2.dll
+F:\Work\Infolight\EEP2006\AddIns\Templates\CMasterDetail\obj\Debug\BaseForm2.pdb

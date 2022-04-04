@@ -1,0 +1,79 @@
+D:\Project\EEP2010\EEPNetFLClient\FLDesignerCore.dll
+D:\Project\EEP2010\EEPNetFLClient\FLDesignerCore.pdb
+D:\Project\EEP2010\FLDesignerCore\obj\Debug\ResolveAssemblyReference.cache
+D:\Project\EEP2010\FLDesignerCore\obj\Debug\FLDesignerCore.Properties.Resources.resources
+D:\Project\EEP2010\FLDesignerCore\obj\Debug\GenerateResource.read.1.tlog
+D:\Project\EEP2010\FLDesignerCore\obj\Debug\GenerateResource.write.1.tlog
+D:\Project\EEP2010\FLDesignerCore\obj\Debug\FLDesignerCore.dll
+D:\Project\EEP2010\FLDesignerCore\obj\Debug\FLDesignerCore.pdb
+D:\Infolight\EEP2010\EEPNetFLClient\FLDesignerCore.dll
+D:\Infolight\EEP2010\EEPNetFLClient\FLDesignerCore.pdb
+D:\Infolight\EEP2010\FLDesignerCore\obj\Debug\ResolveAssemblyReference.cache
+D:\Infolight\EEP2010\FLDesignerCore\obj\Debug\FLDesignerCore.Properties.Resources.resources
+D:\Infolight\EEP2010\FLDesignerCore\obj\Debug\GenerateResource.read.1.tlog
+D:\Infolight\EEP2010\FLDesignerCore\obj\Debug\GenerateResource.write.1.tlog
+D:\Infolight\EEP2010\FLDesignerCore\obj\Debug\FLDesignerCore.dll
+D:\Infolight\EEP2010\FLDesignerCore\obj\Debug\FLDesignerCore.pdb
+C:\Program Files\Infolight\EEP2010\EEPNetFLClient\FLDesignerCore.dll
+C:\Program Files\Infolight\EEP2010\EEPNetFLClient\FLDesignerCore.pdb
+C:\Program Files\Infolight\EEP2010\FLDesignerCore\obj\Debug\FLDesignerCore.Properties.Resources.resources
+C:\Program Files\Infolight\EEP2010\FLDesignerCore\obj\Debug\FLDesignerCore.dll
+C:\Program Files\Infolight\EEP2010\FLDesignerCore\obj\Debug\FLDesignerCore.pdb
+C:\Program Files\Infolight\EEP2010\FLDesignerCore\obj\Debug\FLDesignerCore.csprojResolveAssemblyReference.cache
+C:\Program Files\Infolight\EEP2010\FLDesignerCore\obj\Debug\FLDesignerCore.csproj.GenerateResource.Cache
+C:\Program Files\Infolight\EEP2012WF\EEPNetFLClient\FLDesignerCore.dll
+C:\Program Files\Infolight\EEP2012WF\EEPNetFLClient\FLDesignerCore.pdb
+C:\Program Files\Infolight\EEP2012WF\FLDesignerCore\obj\Debug\FLDesignerCore.csprojResolveAssemblyReference.cache
+C:\Program Files\Infolight\EEP2012WF\FLDesignerCore\obj\Debug\FLDesignerCore.Properties.Resources.resources
+C:\Program Files\Infolight\EEP2012WF\FLDesignerCore\obj\Debug\FLDesignerCore.csproj.GenerateResource.Cache
+C:\Program Files\Infolight\EEP2012WF\FLDesignerCore\obj\Debug\FLDesignerCore.dll
+C:\Program Files\Infolight\EEP2012WF\FLDesignerCore\obj\Debug\FLDesignerCore.pdb
+C:\Program Files\Infolight\EEP2012Dev\EEPNetFLClient\FLDesignerCore.dll
+C:\Program Files\Infolight\EEP2012Dev\EEPNetFLClient\FLDesignerCore.pdb
+C:\Program Files\Infolight\EEP2012Dev\FLDesignerCore\obj\Debug\FLDesignerCore.csprojResolveAssemblyReference.cache
+C:\Program Files\Infolight\EEP2012Dev\FLDesignerCore\obj\Debug\FLDesignerCore.Properties.Resources.resources
+C:\Program Files\Infolight\EEP2012Dev\FLDesignerCore\obj\Debug\FLDesignerCore.csproj.GenerateResource.Cache
+C:\Program Files\Infolight\EEP2012Dev\FLDesignerCore\obj\Debug\FLDesignerCore.dll
+C:\Program Files\Infolight\EEP2012Dev\FLDesignerCore\obj\Debug\FLDesignerCore.pdb
+C:\Program Files (x86)\Infolight\EEP2012WF\EEPNetFLClient\FLDesignerCore.dll
+C:\Program Files (x86)\Infolight\EEP2012WF\EEPNetFLClient\FLDesignerCore.pdb
+C:\Program Files (x86)\Infolight\EEP2012WF\FLDesignerCore\obj\Debug\FLDesignerCore.csprojResolveAssemblyReference.cache
+C:\Program Files (x86)\Infolight\EEP2012WF\FLDesignerCore\obj\Debug\FLDesignerCore.Properties.Resources.resources
+C:\Program Files (x86)\Infolight\EEP2012WF\FLDesignerCore\obj\Debug\FLDesignerCore.csproj.GenerateResource.Cache
+C:\Program Files (x86)\Infolight\EEP2012WF\FLDesignerCore\obj\Debug\FLDesignerCore.dll
+C:\Program Files (x86)\Infolight\EEP2012WF\FLDesignerCore\obj\Debug\FLDesignerCore.pdb
+D:\版本\Version\安裝源文件\EEP2012WF(V5.0.0.020140924 SP5)\EEPNetFLClient\FLDesignerCore.dll
+D:\版本\Version\安裝源文件\EEP2012WF(V5.0.0.020140924 SP5)\EEPNetFLClient\FLDesignerCore.pdb
+D:\版本\Version\安裝源文件\EEP2012WF(V5.0.0.020140924 SP5)\FLDesignerCore\obj\Debug\FLDesignerCore.csprojResolveAssemblyReference.cache
+D:\版本\Version\安裝源文件\EEP2012WF(V5.0.0.020140924 SP5)\FLDesignerCore\obj\Debug\FLDesignerCore.Properties.Resources.resources
+D:\版本\Version\安裝源文件\EEP2012WF(V5.0.0.020140924 SP5)\FLDesignerCore\obj\Debug\FLDesignerCore.csproj.GenerateResource.Cache
+D:\版本\Version\安裝源文件\EEP2012WF(V5.0.0.020140924 SP5)\FLDesignerCore\obj\Debug\FLDesignerCore.dll
+D:\版本\Version\安裝源文件\EEP2012WF(V5.0.0.020140924 SP5)\FLDesignerCore\obj\Debug\FLDesignerCore.pdb
+D:\版本\Version\安裝源文件\EEP2012(V5.0.0.020140924 SP5)\EEP2012WF\EEPNetFLClient\FLDesignerCore.dll
+D:\版本\Version\安裝源文件\EEP2012(V5.0.0.020140924 SP5)\EEP2012WF\EEPNetFLClient\FLDesignerCore.pdb
+D:\版本\Version\安裝源文件\EEP2012(V5.0.0.020140924 SP5)\EEP2012WF\FLDesignerCore\obj\Debug\FLDesignerCore.csprojResolveAssemblyReference.cache
+D:\版本\Version\安裝源文件\EEP2012(V5.0.0.020140924 SP5)\EEP2012WF\FLDesignerCore\obj\Debug\FLDesignerCore.Properties.Resources.resources
+D:\版本\Version\安裝源文件\EEP2012(V5.0.0.020140924 SP5)\EEP2012WF\FLDesignerCore\obj\Debug\FLDesignerCore.csproj.GenerateResource.Cache
+D:\版本\Version\安裝源文件\EEP2012(V5.0.0.020140924 SP5)\EEP2012WF\FLDesignerCore\obj\Debug\FLDesignerCore.dll
+D:\版本\Version\安裝源文件\EEP2012(V5.0.0.020140924 SP5)\EEP2012WF\FLDesignerCore\obj\Debug\FLDesignerCore.pdb
+D:\Program Files (x86)\Your Company Name\EEP2012\EEPNetFLClient\FLDesignerCore.dll
+D:\Program Files (x86)\Your Company Name\EEP2012\EEPNetFLClient\FLDesignerCore.pdb
+D:\Program Files (x86)\Your Company Name\EEP2012\FLDesignerCore\obj\Debug\FLDesignerCore.csprojResolveAssemblyReference.cache
+D:\Program Files (x86)\Your Company Name\EEP2012\FLDesignerCore\obj\Debug\FLDesignerCore.Properties.Resources.resources
+D:\Program Files (x86)\Your Company Name\EEP2012\FLDesignerCore\obj\Debug\FLDesignerCore.csproj.GenerateResource.Cache
+D:\Program Files (x86)\Your Company Name\EEP2012\FLDesignerCore\obj\Debug\FLDesignerCore.dll
+D:\Program Files (x86)\Your Company Name\EEP2012\FLDesignerCore\obj\Debug\FLDesignerCore.pdb
+D:\Infolight\EEP2012\EEPNetFLClient\FLDesignerCore.dll
+D:\Infolight\EEP2012\EEPNetFLClient\FLDesignerCore.pdb
+D:\Infolight\EEP2012\FLDesignerCore\obj\Debug\FLDesignerCore.csprojResolveAssemblyReference.cache
+D:\Infolight\EEP2012\FLDesignerCore\obj\Debug\FLDesignerCore.Properties.Resources.resources
+D:\Infolight\EEP2012\FLDesignerCore\obj\Debug\FLDesignerCore.csproj.GenerateResource.Cache
+D:\Infolight\EEP2012\FLDesignerCore\obj\Debug\FLDesignerCore.dll
+D:\Infolight\EEP2012\FLDesignerCore\obj\Debug\FLDesignerCore.pdb
+C:\Program Files (x86)\Infolight\EEP2012\EEPNetFLClient\FLDesignerCore.dll
+C:\Program Files (x86)\Infolight\EEP2012\EEPNetFLClient\FLDesignerCore.pdb
+C:\Program Files (x86)\Infolight\EEP2012\FLDesignerCore\obj\Debug\FLDesignerCore.csprojResolveAssemblyReference.cache
+C:\Program Files (x86)\Infolight\EEP2012\FLDesignerCore\obj\Debug\FLDesignerCore.Properties.Resources.resources
+C:\Program Files (x86)\Infolight\EEP2012\FLDesignerCore\obj\Debug\FLDesignerCore.csproj.GenerateResource.Cache
+C:\Program Files (x86)\Infolight\EEP2012\FLDesignerCore\obj\Debug\FLDesignerCore.dll
+C:\Program Files (x86)\Infolight\EEP2012\FLDesignerCore\obj\Debug\FLDesignerCore.pdb

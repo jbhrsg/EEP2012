@@ -1,0 +1,8 @@
+C:\Program Files (x86)\Infolight\EEP2012\JBHunter\sIndCategory1\bin\Debug\sIndCategory1.dll
+C:\Program Files (x86)\Infolight\EEP2012\JBHunter\sIndCategory1\bin\Debug\sIndCategory1.pdb
+C:\Program Files (x86)\Infolight\EEP2012\JBHunter\sIndCategory1\obj\Debug\sIndCategory1.csproj.GenerateResource.Cache
+C:\Program Files (x86)\Infolight\EEP2012\JBHunter\sIndCategory1\obj\Debug\sIndCategory1.dll
+C:\Program Files (x86)\Infolight\EEP2012\JBHunter\sIndCategory1\obj\Debug\sIndCategory1.pdb
+C:\Program Files (x86)\Infolight\EEP2012\EEPNetServer\JBHunter\sIndCategory1.dll
+C:\Program Files (x86)\Infolight\EEP2012\EEPNetServer\JBHunter\sIndCategory1.pdb
+C:\Program Files (x86)\Infolight\EEP2012\JBHunter\sIndCategory1\obj\Debug\sIndCategory1.Component.resources

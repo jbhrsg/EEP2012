@@ -1,0 +1,8 @@
+C:\Program Files (x86)\Infolight\EEP2012\JBHunter\sZLangType\bin\Debug\sZLangType.dll
+C:\Program Files (x86)\Infolight\EEP2012\JBHunter\sZLangType\bin\Debug\sZLangType.pdb
+C:\Program Files (x86)\Infolight\EEP2012\JBHunter\sZLangType\obj\Debug\sZLangType.csproj.GenerateResource.Cache
+C:\Program Files (x86)\Infolight\EEP2012\JBHunter\sZLangType\obj\Debug\sZLangType.dll
+C:\Program Files (x86)\Infolight\EEP2012\JBHunter\sZLangType\obj\Debug\sZLangType.pdb
+C:\Program Files (x86)\Infolight\EEP2012\EEPNetServer\JBHunter\sZLangType.dll
+C:\Program Files (x86)\Infolight\EEP2012\EEPNetServer\JBHunter\sZLangType.pdb
+C:\Program Files (x86)\Infolight\EEP2012\JBHunter\sZLangType\obj\Debug\sZLangType.Component.resources

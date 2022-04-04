@@ -1,0 +1,14 @@
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sERPPreOrderM\bin\Debug\sERPPreOrderM.dll
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sERPPreOrderM\bin\Debug\sERPPreOrderM.pdb
+D:\Infolight\EEP2012\EEPNetServer\JBADMIN\sERPPreOrderM.dll
+D:\Infolight\EEP2012\EEPNetServer\JBADMIN\sERPPreOrderM.pdb
+D:\Infolight\EEP2012\JBADMIN\sERPPreOrderM\obj\Debug\sERPPreOrderM.Component.resources
+D:\Infolight\EEP2012\JBADMIN\sERPPreOrderM\obj\Debug\sERPPreOrderM.csproj.GenerateResource.Cache
+D:\Infolight\EEP2012\JBADMIN\sERPPreOrderM\obj\Debug\sERPPreOrderM.dll
+D:\Infolight\EEP2012\JBADMIN\sERPPreOrderM\obj\Debug\sERPPreOrderM.pdb
+C:\Program Files (x86)\Infolight\EEP2012\EEPNetServer\JBADMIN\sERPPreOrderM.dll
+C:\Program Files (x86)\Infolight\EEP2012\EEPNetServer\JBADMIN\sERPPreOrderM.pdb
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sERPPreOrderM\obj\Debug\sERPPreOrderM.Component.resources
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sERPPreOrderM\obj\Debug\sERPPreOrderM.csproj.GenerateResource.Cache
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sERPPreOrderM\obj\Debug\sERPPreOrderM.dll
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sERPPreOrderM\obj\Debug\sERPPreOrderM.pdb

@@ -1,0 +1,69 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title></title>
+</head>
+<body>
+    <form id="formPlus" style="padding: 5px">
+        <div id="tabsMain_FormPlus" class="easyui-tabs" style="width: 450px; height: 280px; padding: 5px">
+            <div class="easyui-layout" style="padding: 5px; height: 250px">
+                <div data-options="region:'north'" style="height: 40px; padding: 6px">
+                    <label id="lSearchRoleId_FormPlus">角色编号1</label>
+                    <input id="txtSearchRoleId_FormPlus" class="easyui-validatebox" style="width: 110px" />
+                    <label id="lSearchRoleName_FormPlus">角色名称1</label>
+                    <input id="txtSearchRoleName_FormPlus" class="easyui-validatebox" style="width: 110px" />
+                    <a id="btnRolesSeach_FormPlus" href="#" class="easyui-linkbutton">查询1</a>
+                </div>
+                <div data-options="region:'west'" style="width: 190px">
+                    <table id="lstRolesFrom_FormPlus" title="来自" style="width: auto" fit="true" pagination="false" rownumbers="false" singleselect="false"></table>
+                </div>
+                <div data-options="region:'east'" style="width: 190px">
+                    <table id="lstRolesTo_FormPlus" title="送往 " style="width: auto" fit="true" pagination="false" rownumbers="false" singleselect="false"></table>
+                </div>
+                <div data-options="region:'center'" style="padding: 0px; text-align: center;">
+                    <a id="btnRolesTo_FormPlus" href="#" class="easyui-linkbutton" style="margin-top: 60px">></a>
+                    <br />
+                    <br />
+                    <br />
+                    <a id="btnRolesBack_FormPlus" href="#" class="easyui-linkbutton" style="margin: auto"><</a>
+                </div>
+            </div>
+            <div id="divTabTitle0" title="选择使用者" class="easyui-layout" style="padding: 5px" fit="true">
+                <div data-options="region:'north'" style="height: 40px; padding: 6px">
+                    <label id="lSearchUserId_FormPlus">用户编号1</label>
+                    <input id="txtSearchUserId_FormPlus" class="easyui-validatebox" style="width: 110px" />
+                    <label id="lSearchUserName_FormPlus">用户姓名1</label>
+                    <input id="txtSearchUserName_FormPlus" class="easyui-validatebox" style="width: 110px" />
+                    <a id="btnUsersSeach_FormPlus" href="#" class="easyui-linkbutton">查询1</a>
+                </div>
+                <div data-options="region:'west'" style="width: 190px;">
+                    <table id="lstUsersFrom_FormPlus" title="来自1" style="width: auto" fit="true" pagination="false" rownumbers="false" singleselect="false"></table>
+                </div>
+                <div data-options="region:'east'" style="width: 190px">
+                    <table id="lstUsersTo_FormPlus" title="送往1" style="width: auto" fit="true" pagination="false" rownumbers="false" singleselect="false"></table>
+                </div>
+                <div data-options="region:'center'" style="padding: 0px; text-align: center;">
+                    <a id="btnUsersTo_FormPlus" href="#" class="easyui-linkbutton" style="margin-top: 60px">></a>
+                    <br />
+                    <br />
+                    <br />
+                    <a id="btnUsersBack_FormPlus" href="#" class="easyui-linkbutton" style="margin: auto"><</a>
+                </div>
+            </div>
+        </div>
+        <fieldset style="width: 435px;">
+            <legend id="lMessage_FormPlus">通知讯息1
+            </legend>
+            <div>
+                <textarea id="txtMessage_FormPlus" style="width: 98%; height: 60px"></textarea>
+            </div>
+        </fieldset>
+        <div>
+            <a id="btnOk_FormPlus" href="#" class="easyui-linkbutton">OK</a>
+            <a id="btnCancel_FormPlus" href="#" class="easyui-linkbutton">Close</a>
+            <label id="result_FormPlus" style="color: red"></label>
+        </div>
+    </form>
+</body>
+</html>

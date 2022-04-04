@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="rInvoiceProofSheet1" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="rInvoiceProofSheet1" msdata:IsDataSet="true" msdata:CaseSensitive="true" msdata:UseCurrentLocale="true">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="InvoiceDetails">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="InvoiceNO" type="xs:string" />
+              <xs:element name="RandNO" type="xs:string" minOccurs="0" />
+              <xs:element name="SalesNO" type="xs:string" minOccurs="0" />
+              <xs:element name="InsGroupID" type="xs:int" minOccurs="0" />
+              <xs:element name="InsGroupShortName" type="xs:string" minOccurs="0" />
+              <xs:element name="SalesTypeID" type="xs:string" minOccurs="0" />
+              <xs:element name="SalesTypeName" type="xs:string" minOccurs="0" />
+              <xs:element name="EmailAddress" type="xs:string" minOccurs="0" />
+              <xs:element name="SalesDate" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="InvoiceDate" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="SalesAmount" type="xs:int" minOccurs="0" />
+              <xs:element name="SalesTax" type="xs:int" minOccurs="0" />
+              <xs:element name="SalesTotal" type="xs:int" minOccurs="0" />
+              <xs:element name="TaxRate" type="xs:decimal" minOccurs="0" />
+              <xs:element name="SalesID" type="xs:string" minOccurs="0" />
+              <xs:element name="TaxNO" type="xs:string" minOccurs="0" />
+              <xs:element name="SalesName" type="xs:string" minOccurs="0" />
+              <xs:element name="CustNO" type="xs:string" minOccurs="0" />
+              <xs:element name="CustomerID" type="xs:string" minOccurs="0" />
+              <xs:element name="CustomerName" type="xs:string" minOccurs="0" />
+              <xs:element name="AccountClerk" type="xs:string" minOccurs="0" />
+              <xs:element name="MailCount" type="xs:int" minOccurs="0" />
+              <xs:element name="I1" type="xs:string" minOccurs="0" />
+              <xs:element name="I1SName" type="xs:string" minOccurs="0" />
+              <xs:element name="I1Qty" type="xs:int" minOccurs="0" />
+              <xs:element name="I1Unit" type="xs:string" minOccurs="0" />
+              <xs:element name="I1UnitPrice" type="xs:int" minOccurs="0" />
+              <xs:element name="I1Amount" type="xs:int" minOccurs="0" />
+              <xs:element name="I2" type="xs:string" minOccurs="0" />
+              <xs:element name="I2SName" type="xs:string" minOccurs="0" />
+              <xs:element name="I2Qty" type="xs:int" minOccurs="0" />
+              <xs:element name="I2Unit" type="xs:string" minOccurs="0" />
+              <xs:element name="I2UnitPrice" type="xs:int" minOccurs="0" />
+              <xs:element name="I2Amount" type="xs:int" minOccurs="0" />
+              <xs:element name="I3" type="xs:string" minOccurs="0" />
+              <xs:element name="I3SName" type="xs:string" minOccurs="0" />
+              <xs:element name="I3Qty" type="xs:int" minOccurs="0" />
+              <xs:element name="I3Unit" type="xs:string" minOccurs="0" />
+              <xs:element name="I3UnitPrice" type="xs:int" minOccurs="0" />
+              <xs:element name="I3Amount" type="xs:int" minOccurs="0" />
+              <xs:element name="I4" type="xs:string" minOccurs="0" />
+              <xs:element name="I4SName" type="xs:string" minOccurs="0" />
+              <xs:element name="I4Qty" type="xs:int" minOccurs="0" />
+              <xs:element name="I4Unit" type="xs:string" minOccurs="0" />
+              <xs:element name="I4UnitPrice" type="xs:int" minOccurs="0" />
+              <xs:element name="I4Amount" type="xs:int" minOccurs="0" />
+              <xs:element name="I5" type="xs:string" minOccurs="0" />
+              <xs:element name="I5SName" type="xs:string" minOccurs="0" />
+              <xs:element name="I5Qty" type="xs:int" minOccurs="0" />
+              <xs:element name="I5Unit" type="xs:string" minOccurs="0" />
+              <xs:element name="I5UnitPrice" type="xs:int" minOccurs="0" />
+              <xs:element name="I5Amount" type="xs:int" minOccurs="0" />
+              <xs:element name="I6" type="xs:string" minOccurs="0" />
+              <xs:element name="I6SName" type="xs:string" minOccurs="0" />
+              <xs:element name="I6Qty" type="xs:int" minOccurs="0" />
+              <xs:element name="I6Unit" type="xs:string" minOccurs="0" />
+              <xs:element name="I6UnitPrice" type="xs:int" minOccurs="0" />
+              <xs:element name="I6Amount" type="xs:int" minOccurs="0" />
+              <xs:element name="ARDate" type="xs:string" minOccurs="0" />
+              <xs:element name="InvoiceYM" type="xs:string" minOccurs="0" />
+              <xs:element name="SalesTotalMTC" type="xs:string" minOccurs="0" />
+              <xs:element name="SellerTaxNO" type="xs:string" minOccurs="0" />
+              <xs:element name="Address" type="xs:string" minOccurs="0" />
+              <xs:element name="InsGroupName" type="xs:string" minOccurs="0" />
+              <xs:element name="Remark" type="xs:string" minOccurs="0" />
+              <xs:element name="SaleNotes" type="xs:string" minOccurs="0" />
+              <xs:element name="I7" type="xs:string" minOccurs="0" />
+              <xs:element name="I7SName" type="xs:string" minOccurs="0" />
+              <xs:element name="I7Qty" type="xs:string" minOccurs="0" />
+              <xs:element name="I7Unit" type="xs:string" minOccurs="0" />
+              <xs:element name="I7UnitPrice" type="xs:string" minOccurs="0" />
+              <xs:element name="I7Amount" type="xs:string" minOccurs="0" />
+              <xs:element name="I8" type="xs:string" minOccurs="0" />
+              <xs:element name="I8SName" type="xs:string" minOccurs="0" />
+              <xs:element name="I8Qty" type="xs:string" minOccurs="0" />
+              <xs:element name="I8Unit" type="xs:string" minOccurs="0" />
+              <xs:element name="I8UnitPrice" type="xs:string" minOccurs="0" />
+              <xs:element name="I8Amount" type="xs:string" minOccurs="0" />
+              <xs:element name="I9" type="xs:string" minOccurs="0" />
+              <xs:element name="I9SName" type="xs:string" minOccurs="0" />
+              <xs:element name="I9Qty" type="xs:string" minOccurs="0" />
+              <xs:element name="I9Unit" type="xs:string" minOccurs="0" />
+              <xs:element name="I9UnitPrice" type="xs:string" minOccurs="0" />
+              <xs:element name="I9Amount" type="xs:string" minOccurs="0" />
+              <xs:element name="I10" type="xs:string" minOccurs="0" />
+              <xs:element name="I10SName" type="xs:string" minOccurs="0" />
+              <xs:element name="I10Qty" type="xs:string" minOccurs="0" />
+              <xs:element name="I10Unit" type="xs:string" minOccurs="0" />
+              <xs:element name="I10UnitPrice" type="xs:string" minOccurs="0" />
+              <xs:element name="I10Amount" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//InvoiceDetails" />
+      <xs:field xpath="InvoiceNO" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>

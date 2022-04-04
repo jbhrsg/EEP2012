@@ -1,0 +1,14 @@
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sERPDispatchArea\bin\Debug\sERPDispatchArea.dll
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sERPDispatchArea\bin\Debug\sERPDispatchArea.pdb
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sERPDispatchArea\obj\Debug\sERPDispatchArea.csproj.GenerateResource.Cache
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sERPDispatchArea\obj\Debug\sERPDispatchArea.dll
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sERPDispatchArea\obj\Debug\sERPDispatchArea.pdb
+C:\Program Files (x86)\Infolight\EEP2012\EEPNetServer\JBADMIN\sERPDispatchArea.dll
+C:\Program Files (x86)\Infolight\EEP2012\EEPNetServer\JBADMIN\sERPDispatchArea.pdb
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sERPDispatchArea\obj\Debug\sERPDispatchArea.Component.resources
+D:\Infolight\EEP2012\EEPNetServer\JBADMIN\sERPDispatchArea.dll
+D:\Infolight\EEP2012\EEPNetServer\JBADMIN\sERPDispatchArea.pdb
+D:\Infolight\EEP2012\JBADMIN\sERPDispatchArea\obj\Debug\sERPDispatchArea.Component.resources
+D:\Infolight\EEP2012\JBADMIN\sERPDispatchArea\obj\Debug\sERPDispatchArea.csproj.GenerateResource.Cache
+D:\Infolight\EEP2012\JBADMIN\sERPDispatchArea\obj\Debug\sERPDispatchArea.dll
+D:\Infolight\EEP2012\JBADMIN\sERPDispatchArea\obj\Debug\sERPDispatchArea.pdb

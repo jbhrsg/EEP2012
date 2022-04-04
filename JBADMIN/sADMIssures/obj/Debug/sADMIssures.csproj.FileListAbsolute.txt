@@ -1,0 +1,9 @@
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sADMIssures\bin\Debug\sADMIssures.dll
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sADMIssures\bin\Debug\sADMIssures.pdb
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sADMIssures\obj\Debug\sADMIssures.csprojResolveAssemblyReference.cache
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sADMIssures\obj\Debug\sADMIssures.csproj.GenerateResource.Cache
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sADMIssures\obj\Debug\sADMIssures.dll
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sADMIssures\obj\Debug\sADMIssures.pdb
+C:\Program Files (x86)\Infolight\EEP2012\EEPNetServer\JBADMIN\sADMIssures.dll
+C:\Program Files (x86)\Infolight\EEP2012\EEPNetServer\JBADMIN\sADMIssures.pdb
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sADMIssures\obj\Debug\sADMIssures.Component.resources

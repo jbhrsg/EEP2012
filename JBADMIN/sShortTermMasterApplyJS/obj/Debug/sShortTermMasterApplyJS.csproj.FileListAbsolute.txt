@@ -1,0 +1,7 @@
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sShortTermMasterApplyJS\obj\Debug\sShortTermMasterApplyJS.Component.resources
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sShortTermMasterApplyJS\obj\Debug\sShortTermMasterApplyJS.csproj.GenerateResource.Cache
+C:\Program Files (x86)\Infolight\EEP2012\EEPNetServer\JBADMIN\sShortTermMasterApplyJS.dll
+C:\Program Files (x86)\Infolight\EEP2012\EEPNetServer\JBADMIN\sShortTermMasterApplyJS.pdb
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sShortTermMasterApplyJS\obj\Debug\sShortTermMasterApplyJS.dll
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sShortTermMasterApplyJS\obj\Debug\sShortTermMasterApplyJS.pdb
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sShortTermMasterApplyJS\obj\Debug\sShortTermMasterApplyJS.csprojResolveAssemblyReference.cache

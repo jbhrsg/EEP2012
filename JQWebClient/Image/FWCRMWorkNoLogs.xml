@@ -1,0 +1,9 @@
+<FlowDetails>
+  <FormName>JB_ADMIN.FWCRMWorkNoLogs</FormName>
+  <FlowNavMode>Submit</FlowNavMode>
+  <NavMode>Insert</NavMode>
+  <Parameters>
+  </Parameters>
+  <FlowFileName>D:\Infolight\EEP2012\EEPNetServer\Workflow\FL\FWCRMWorkNoLogs</FlowFileName>
+  <ImageWidth>970</ImageWidth>
+</FlowDetails>

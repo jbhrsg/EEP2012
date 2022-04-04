@@ -1,0 +1,6 @@
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sPOType\obj\Debug\sPO_POType.Component.resources
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sPOType\obj\Debug\sPO_POType.csproj.GenerateResource.Cache
+C:\Program Files (x86)\Infolight\EEP2012\EEPNetServer\JBADMIN\sPO_POType.dll
+C:\Program Files (x86)\Infolight\EEP2012\EEPNetServer\JBADMIN\sPO_POType.pdb
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sPOType\obj\Debug\sPO_POType.dll
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sPOType\obj\Debug\sPO_POType.pdb

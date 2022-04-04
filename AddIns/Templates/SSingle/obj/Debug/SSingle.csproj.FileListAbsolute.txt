@@ -1,0 +1,10 @@
+C:\Program Files\Infolight\EEP2012\AddIns\EEPNetServer\Solution1\SSingle.dll
+C:\Program Files\Infolight\EEP2012\AddIns\EEPNetServer\Solution1\SSingle.pdb
+C:\Program Files\Infolight\EEP2012\AddIns\EEPNetServer\Solution1\vi-VN\SSingle.resources.dll
+C:\Program Files\Infolight\EEP2012\AddIns\Templates\SSingle\obj\Debug\SSingle.csprojResolveAssemblyReference.cache
+C:\Program Files\Infolight\EEP2012\AddIns\Templates\SSingle\obj\Debug\SSingle.Component.resources
+C:\Program Files\Infolight\EEP2012\AddIns\Templates\SSingle\obj\Debug\SSingle.Component.vi-VN.resources
+C:\Program Files\Infolight\EEP2012\AddIns\Templates\SSingle\obj\Debug\SSingle.csproj.GenerateResource.Cache
+C:\Program Files\Infolight\EEP2012\AddIns\Templates\SSingle\obj\Debug\vi-VN\SSingle.resources.dll
+C:\Program Files\Infolight\EEP2012\AddIns\Templates\SSingle\obj\Debug\SSingle.dll
+C:\Program Files\Infolight\EEP2012\AddIns\Templates\SSingle\obj\Debug\SSingle.pdb

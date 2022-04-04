@@ -1,0 +1,17 @@
+C:\Program Files (x86)\Infolight\EEP2012\EFGlobalModule\bin\Release\EFGlobalModule.dll.config
+C:\Program Files (x86)\Infolight\EEP2012\EFGlobalModule\bin\Release\EFGlobalModule.dll
+C:\Program Files (x86)\Infolight\EEP2012\EFGlobalModule\bin\Release\EFGlobalModule.pdb
+C:\Program Files (x86)\Infolight\EEP2012\EFGlobalModule\bin\Release\EFServerTools.dll
+C:\Program Files (x86)\Infolight\EEP2012\EFGlobalModule\bin\Release\EFWCFModule.dll
+C:\Program Files (x86)\Infolight\EEP2012\EFGlobalModule\bin\Release\EFWCFModule.EEPAdapter.dll
+C:\Program Files (x86)\Infolight\EEP2012\EFGlobalModule\bin\Release\EFBase.dll
+C:\Program Files (x86)\Infolight\EEP2012\EFGlobalModule\bin\Release\Newtonsoft.Json.dll
+C:\Program Files (x86)\Infolight\EEP2012\EFGlobalModule\bin\Release\EFServerTools.pdb
+C:\Program Files (x86)\Infolight\EEP2012\EFGlobalModule\bin\Release\EFWCFModule.pdb
+C:\Program Files (x86)\Infolight\EEP2012\EFGlobalModule\bin\Release\EFWCFModule.EEPAdapter.pdb
+C:\Program Files (x86)\Infolight\EEP2012\EFGlobalModule\bin\Release\EFBase.pdb
+C:\Program Files (x86)\Infolight\EEP2012\EFGlobalModule\obj\Release\EFGlobalModule.csprojResolveAssemblyReference.cache
+C:\Program Files (x86)\Infolight\EEP2012\EFGlobalModule\obj\Release\EFGlobalModule.Component.resources
+C:\Program Files (x86)\Infolight\EEP2012\EFGlobalModule\obj\Release\EFGlobalModule.csproj.GenerateResource.Cache
+C:\Program Files (x86)\Infolight\EEP2012\EFGlobalModule\obj\Release\EFGlobalModule.dll
+C:\Program Files (x86)\Infolight\EEP2012\EFGlobalModule\obj\Release\EFGlobalModule.pdb

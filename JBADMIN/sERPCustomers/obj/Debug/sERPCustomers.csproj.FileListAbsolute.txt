@@ -1,0 +1,9 @@
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sERPCustomers\bin\Debug\sERPCustomers.dll
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sERPCustomers\bin\Debug\sERPCustomers.pdb
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sERPCustomers\obj\Debug\sERPCustomers.csproj.GenerateResource.Cache
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sERPCustomers\obj\Debug\sERPCustomers.dll
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sERPCustomers\obj\Debug\sERPCustomers.pdb
+C:\Program Files (x86)\Infolight\EEP2012\EEPNetServer\JBADMIN\sERPCustomers.dll
+C:\Program Files (x86)\Infolight\EEP2012\EEPNetServer\JBADMIN\sERPCustomers.pdb
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sERPCustomers\obj\Debug\sERPCustomers.Component.resources
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sERPCustomers\obj\Debug\sERPCustomers.csprojResolveAssemblyReference.cache

@@ -1,0 +1,8 @@
+<FlowDetails>
+  <FormName>JB_ADMIN.JBERP_IssueJob</FormName>
+  <FlowNavMode>Submit</FlowNavMode>
+  <NavMode>Insert</NavMode>
+  <Parameters>D=Apply</Parameters>
+  <FlowFileName>D:\infolight\EEP2012\EEPNetServer\Workflow\FL\IssueJob</FlowFileName>
+  <ImageWidth>1366</ImageWidth>
+</FlowDetails>

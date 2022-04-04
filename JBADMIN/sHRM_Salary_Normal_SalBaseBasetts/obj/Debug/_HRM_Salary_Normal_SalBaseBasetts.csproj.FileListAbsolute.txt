@@ -1,0 +1,36 @@
+C:\Program Files (x86)\Infolight\EEP2012\EEPNetServer\JBHRIS\_HRM_Salary_Normal_SalBaseBasetts.dll
+C:\Program Files (x86)\Infolight\EEP2012\EEPNetServer\JBHRIS\_HRM_Salary_Normal_SalBaseBasetts.pdb
+C:\Program Files (x86)\Infolight\EEP2012\EEPNetServer\JBHRIS\vi-VN\_HRM_Salary_Normal_SalBaseBasetts.resources.dll
+C:\Program Files (x86)\Infolight\EEP2012\JBHRIS\_HRM_Salary_Normal_SalBaseBasetts\obj\Debug\_HRM_Salary_Normal_SalBaseBasetts.Component.resources
+C:\Program Files (x86)\Infolight\EEP2012\JBHRIS\_HRM_Salary_Normal_SalBaseBasetts\obj\Debug\_HRM_Salary_Normal_SalBaseBasetts.Component.vi-VN.resources
+C:\Program Files (x86)\Infolight\EEP2012\JBHRIS\_HRM_Salary_Normal_SalBaseBasetts\obj\Debug\_HRM_Salary_Normal_SalBaseBasetts.csproj.GenerateResource.Cache
+C:\Program Files (x86)\Infolight\EEP2012\JBHRIS\_HRM_Salary_Normal_SalBaseBasetts\obj\Debug\vi-VN\_HRM_Salary_Normal_SalBaseBasetts.resources.dll
+C:\Program Files (x86)\Infolight\EEP2012\JBHRIS\_HRM_Salary_Normal_SalBaseBasetts\obj\Debug\_HRM_Salary_Normal_SalBaseBasetts.dll
+C:\Program Files (x86)\Infolight\EEP2012\JBHRIS\_HRM_Salary_Normal_SalBaseBasetts\obj\Debug\_HRM_Salary_Normal_SalBaseBasetts.pdb
+C:\Program Files (x86)\Infolight\EEP2012\JBHRIS\_HRM_Salary_Normal_SalBaseBasetts\obj\Debug\_HRM_Salary_Normal_SalBaseBasetts.csprojResolveAssemblyReference.cache
+C:\Program Files (x86)\Infolight\EEP2012_SP6\JBHRIS\_HRM_Salary_Normal_SalBaseBasetts\obj\Debug\_HRM_Salary_Normal_SalBaseBasetts.csprojResolveAssemblyReference.cache
+C:\Program Files (x86)\Infolight\EEP2012_SP6\JBHRIS\_HRM_Salary_Normal_SalBaseBasetts\obj\Debug\_HRM_Salary_Normal_SalBaseBasetts.Component.resources
+C:\Program Files (x86)\Infolight\EEP2012_SP6\JBHRIS\_HRM_Salary_Normal_SalBaseBasetts\obj\Debug\_HRM_Salary_Normal_SalBaseBasetts.Component.vi-VN.resources
+C:\Program Files (x86)\Infolight\EEP2012_SP6\JBHRIS\_HRM_Salary_Normal_SalBaseBasetts\obj\Debug\_HRM_Salary_Normal_SalBaseBasetts.csproj.GenerateResource.Cache
+C:\Program Files (x86)\Infolight\EEP2012_SP6\JBHRIS\_HRM_Salary_Normal_SalBaseBasetts\obj\Debug\_HRM_Salary_Normal_SalBaseBasetts.dll
+C:\Program Files (x86)\Infolight\EEP2012_SP6\EEPNetServer\JBHRIS\_HRM_Salary_Normal_SalBaseBasetts.dll
+C:\Program Files (x86)\Infolight\EEP2012_SP6\EEPNetServer\JBHRIS\_HRM_Salary_Normal_SalBaseBasetts.pdb
+C:\Program Files (x86)\Infolight\EEP2012_SP6\EEPNetServer\JBHRIS\vi-VN\_HRM_Salary_Normal_SalBaseBasetts.resources.dll
+C:\Program Files (x86)\Infolight\EEP2012_SP6\JBHRIS\_HRM_Salary_Normal_SalBaseBasetts\obj\Debug\vi-VN\_HRM_Salary_Normal_SalBaseBasetts.resources.dll
+C:\Program Files (x86)\Infolight\EEP2012_SP6\JBHRIS\_HRM_Salary_Normal_SalBaseBasetts\obj\Debug\_HRM_Salary_Normal_SalBaseBasetts.pdb
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sHRM_Salary_Normal_SalBaseBasetts\obj\Debug\_HRM_Salary_Normal_SalBaseBasetts.Component.resources
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sHRM_Salary_Normal_SalBaseBasetts\obj\Debug\_HRM_Salary_Normal_SalBaseBasetts.Component.vi-VN.resources
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sHRM_Salary_Normal_SalBaseBasetts\obj\Debug\_HRM_Salary_Normal_SalBaseBasetts.csproj.GenerateResource.Cache
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sHRM_Salary_Normal_SalBaseBasetts\obj\Debug\vi-VN\_HRM_Salary_Normal_SalBaseBasetts.resources.dll
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sHRM_Salary_Normal_SalBaseBasetts\obj\Debug\_HRM_Salary_Normal_SalBaseBasetts.dll
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sHRM_Salary_Normal_SalBaseBasetts\obj\Debug\_HRM_Salary_Normal_SalBaseBasetts.pdb
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sHRM_Salary_Normal_SalBaseBasetts\obj\Debug\_HRM_Salary_Normal_SalBaseBasetts.csprojResolveAssemblyReference.cache
+D:\Infolight\EEP2012\EEPNetServer\JBHRIS\_HRM_Salary_Normal_SalBaseBasetts.dll
+D:\Infolight\EEP2012\EEPNetServer\JBHRIS\_HRM_Salary_Normal_SalBaseBasetts.pdb
+D:\Infolight\EEP2012\EEPNetServer\JBHRIS\vi-VN\_HRM_Salary_Normal_SalBaseBasetts.resources.dll
+D:\Infolight\EEP2012\JBADMIN\sHRM_Salary_Normal_SalBaseBasetts\obj\Debug\_HRM_Salary_Normal_SalBaseBasetts.Component.resources
+D:\Infolight\EEP2012\JBADMIN\sHRM_Salary_Normal_SalBaseBasetts\obj\Debug\_HRM_Salary_Normal_SalBaseBasetts.Component.vi-VN.resources
+D:\Infolight\EEP2012\JBADMIN\sHRM_Salary_Normal_SalBaseBasetts\obj\Debug\_HRM_Salary_Normal_SalBaseBasetts.csproj.GenerateResource.Cache
+D:\Infolight\EEP2012\JBADMIN\sHRM_Salary_Normal_SalBaseBasetts\obj\Debug\vi-VN\_HRM_Salary_Normal_SalBaseBasetts.resources.dll
+D:\Infolight\EEP2012\JBADMIN\sHRM_Salary_Normal_SalBaseBasetts\obj\Debug\_HRM_Salary_Normal_SalBaseBasetts.dll
+D:\Infolight\EEP2012\JBADMIN\sHRM_Salary_Normal_SalBaseBasetts\obj\Debug\_HRM_Salary_Normal_SalBaseBasetts.pdb

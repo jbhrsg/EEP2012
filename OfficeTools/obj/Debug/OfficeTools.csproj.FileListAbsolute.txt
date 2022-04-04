@@ -1,0 +1,16 @@
+C:\Program Files\Infolight\EEP2012\OfficeTools\obj\Debug\OfficeTools.csprojResolveAssemblyReference.cache
+C:\Program Files\Infolight\EEP2012\OfficeTools\obj\Debug\OfficeTools.Design.frmDataMember.resources
+C:\Program Files\Infolight\EEP2012\OfficeTools\obj\Debug\OfficeTools.Design.frmDesigner.resources
+C:\Program Files\Infolight\EEP2012\OfficeTools\obj\Debug\OfficeTools.Design.frmImageColumns.resources
+C:\Program Files\Infolight\EEP2012\OfficeTools\obj\Debug\OfficeTools.Design.frmValue.resources
+C:\Program Files\Infolight\EEP2012\OfficeTools\obj\Debug\OfficeTools.Properties.Resources.resources
+C:\Program Files\Infolight\EEP2012\OfficeTools\obj\Debug\OfficeTools.RunTime.frmEmail.resources
+C:\Program Files\Infolight\EEP2012\OfficeTools\obj\Debug\OfficeTools.RunTime.frmOutputMode.resources
+C:\Program Files\Infolight\EEP2012\OfficeTools\obj\Debug\OfficeTools.RunTime.frmProgress.resources
+C:\Program Files\Infolight\EEP2012\OfficeTools\obj\Debug\OfficeTools.csproj.GenerateResource.Cache
+C:\Program Files\Infolight\EEP2012\OfficeTools\bin\Debug\OfficeTools.dll
+C:\Program Files\Infolight\EEP2012\OfficeTools\bin\Debug\OfficeTools.pdb
+C:\Program Files\Infolight\EEP2012\OfficeTools\bin\Debug\Excel.dll
+C:\Program Files\Infolight\EEP2012\OfficeTools\bin\Debug\Word.dll
+C:\Program Files\Infolight\EEP2012\OfficeTools\obj\Debug\OfficeTools.dll
+C:\Program Files\Infolight\EEP2012\OfficeTools\obj\Debug\OfficeTools.pdb

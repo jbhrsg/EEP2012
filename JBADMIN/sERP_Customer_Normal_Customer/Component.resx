@@ -1,0 +1,342 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <metadata name="serviceManager1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 93</value>
+  </metadata>
+  <metadata name="InfoConnection1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 131</value>
+  </metadata>
+  <metadata name="Customer.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 169</value>
+  </metadata>
+  <data name="Customer.CommandText" xml:space="preserve">
+    <value>SELECT TOP 100  Customer.*,'' as SalesTypeID,d.DonateMark as DonateMarkName,c.CustomerTypeName ,
+ (Select Count(CustomerID) From CustomerSaleType Where CustomerID=Customer.CustomerID) AS STCount,
+ CS.FirstDealDate,
+ CS.FirstSaleType,
+ CS.LastestDealDate,
+ CS.LastestSaleType,
+ CS.SalesTypeCount,
+ CS.SalesCount,
+ --dbo.funReturnCustomerFirstDealDate(Customer.CustomerID)  AS FirstDealDate,
+ --dbo.funReturnCustomerFirstSaleType(Customer.CustomerID)  AS FirstSaleType,
+ --dbo.funReturnCustomerLastDealDate(Customer.CustomerID)  AS LastestDealDate,
+ --dbo.funReturnCustomerLastSaleType(Customer.CustomerID)  AS LastestSaleType,
+ --dbo.funReturnCustomerSalesTypeCount(Customer.CustomerID)  AS SalesTypeCount,
+ --dbo.funReturnCustomerSalesCount(Customer.CustomerID)  AS SalesCount,
+ ''   AS SalesID,
+ ''   AS TaxType,
+ ''   AS PayWay,
+ 0   AS BalanceDate,
+ 0   AS DebtorDays,
+ ''   AS AccountClerk,
+ ''   AS EmailAddress,
+ ''   AS QInvoiceType,
+ ''   AS DevelopLevelID,
+ ''   AS UserSalesKind 
+ FROM Customer
+ left join CustomerSaleInfo CS on CS.CustID=Customer.CustomerID
+ left join DonateMark d on d.DonateMarkID=Customer.DonateMark
+ left join CustomerType c on c.CustomerTypeID=Customer.CustomerTypeID
+ order by CustomerID desc</value>
+  </data>
+  <metadata name="ucCustomer.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 207</value>
+  </metadata>
+  <metadata name="CustomerSaleType.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 283</value>
+  </metadata>
+  <data name="CustomerSaleType.CommandText" xml:space="preserve">
+    <value>SELECT C.CustomerID,
+C.SalesTypeID,
+C.SalesTypeName,
+C.SalesID,
+S.SalesName,
+C.TaxType,
+C.PayWay,
+C.BalanceDate,
+C.DebtorDays,
+C.AccountClerk,
+C.EmailAddress,
+C.CreateBy,
+C.CreateDate,
+C.LastUpdateBy,
+C.LastUpdateDate,
+C.QInvoiceType,
+g.ShortName,
+tt.TaxTypeName,
+dbo.funReturnCustomerSalesTypeCount1(C.CustomerID,C.SalesTypeID) AS DealCount,
+'' AS SalesKindID
+FROM CustomerSaleType C
+left join SalesPerson S on C.SalesID = S.SalesID
+left join SalesType t on C.SalesTypeID=T.SalesTypeID
+left join TaxType tt  on  C.TaxType=tt.TaxTypeID 
+left join JBADMIN.dbo.InsGroup G on T.InsGroupID=g.InsGroupID</value>
+  </data>
+  <metadata name="ucCustomerSaleType.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 359</value>
+  </metadata>
+  <metadata name="CountryCity.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 397</value>
+  </metadata>
+  <metadata name="ucCountryCity.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 473</value>
+  </metadata>
+  <metadata name="DonateMark.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 55</value>
+  </metadata>
+  <metadata name="PayWay.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 511</value>
+  </metadata>
+  <metadata name="SalesPerson.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 549</value>
+  </metadata>
+  <data name="SalesPerson.CommandText" xml:space="preserve">
+    <value>SELECT SalesID,RIGHT(SalesID,3)+SalesName+Case Isnull(oldSalesID,'') when '' then '' else '-' end +Isnull(oldSalesID,'') as  SalesName ,CustomerTypeID,IsSalesRole
+FROM SalesPerson
+Where IsActive = 1 
+Order By SalesID</value>
+  </data>
+  <metadata name="SalesSalesType.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 587</value>
+  </metadata>
+  <data name="SalesSalesType.CommandText" xml:space="preserve">
+    <value>SELECT SalesID,SalesTypeID,
+ISNULL((SELECT SalesKindID From SalesKindSalesType Where SalesTypeID=dbo.SalesSalesType.SalesTypeID),'') AS SalesKindID,
+(SELECT  RIGHT(SalesID,3)+SalesName+Case Isnull(oldSalesID,'') when '' then '' else '-' end +Isnull(oldSalesID,'') From SalesPerson Where  SalesID=dbo.SalesSalesType.SalesID) AS SalesName,
+(SELECT  SalesTypeID+'-'+SalesTypeName  From  SalesType Where  SalesTypeID=dbo.SalesSalesType.SalesTypeID) AS SalesTypeName
+FROM dbo.[SalesSalesType] 
+ORDER BY SalesID</value>
+  </data>
+  <metadata name="ucSalesSalesType.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 625</value>
+  </metadata>
+  <metadata name="SalesType.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 663</value>
+  </metadata>
+  <metadata name="TaxType.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 701</value>
+  </metadata>
+  <metadata name="Country.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 739</value>
+  </metadata>
+  <metadata name="City.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 777</value>
+  </metadata>
+  <metadata name="TelNO_Query.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 815</value>
+  </metadata>
+  <metadata name="CustomerType.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 853</value>
+  </metadata>
+  <metadata name="Customer_Query.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 891</value>
+  </metadata>
+  <metadata name="InvoiceType.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 929</value>
+  </metadata>
+  <metadata name="SalesTypeDateList.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 967</value>
+  </metadata>
+  <metadata name="DevelopLevel.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 1005</value>
+  </metadata>
+  <metadata name="ContactLogs.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 1043</value>
+  </metadata>
+  <metadata name="ucContactLogs.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 1081</value>
+  </metadata>
+  <metadata name="Dialogue.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 1119</value>
+  </metadata>
+  <metadata name="CountryArea.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 1157</value>
+  </metadata>
+  <metadata name="CustomerSaleKind.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 245</value>
+  </metadata>
+  <data name="CustomerSaleKind.CommandText" xml:space="preserve">
+    <value>SELECT  A.CustomerID,A.SalesKindID,A.DevelopLevelID,A.CreateBy,A.CreateDate,
+ISNULL((SELECT ContactDescr+Str(ISNULL(IsShade,0),1) FROM ContactLogs WHERE AutoKey = (Select Max(Autokey) From ContactLogs Where CustomerID=A.CustomerID AND SalesKindID=A.SalesKindID)),'') As  LastCall,
+(SELECT CreateDate FROM ContactLogs WHERE AutoKey = (Select Max(Autokey) From ContactLogs Where CustomerID=A.CustomerID AND SalesKindID=A.SalesKindID)) As  LastCallDate,
+(SELECT CreateBy FROM ContactLogs WHERE AutoKey = (Select Max(Autokey) From ContactLogs Where CustomerID=A.CustomerID AND SalesKindID=A.SalesKindID)) As  LastCreateBy,
+(SELECT CreateByName FROM ContactLogs WHERE AutoKey = (Select Max(Autokey) From ContactLogs Where CustomerID=A.CustomerID AND SalesKindID=A.SalesKindID)) As  LastCreateByName,
+B.SalesKindName,
+isnull(B.CRUDUrl,'') AS CRUDUrl,
+(Select IsNull(Count(AutoKey),0) From ContactLogs  Where   CustomerID = A.CustomerID and  SalesKindID = A.SalesKindID)  AS ConCount,
+(Select Isnull(Max(Autokey),0) From ContactLogs      Where   CustomerID = A.CustomerID and  SalesKindID = A.SalesKindID)  As  MaxAutoKey,
+--B.CrudURL
+Case IsNull(B.CrudURL,'') When ''  then  ''  ELSE '編輯客戶' END AS EditLink,
+ISNULL((SELECT ShareTo FROM ContactLogs WHERE AutoKey = (Select Max(Autokey) From ContactLogs Where CustomerID=A.CustomerID AND SalesKindID=A.SalesKindID)),'') As ShareTo,
+ISNULL((SELECT IsShade  FROM ContactLogs WHERE AutoKey = (Select Max(Autokey) From ContactLogs Where CustomerID=A.CustomerID AND SalesKindID=A.SalesKindID)),'') As IsShade
+From  CustomerSaleKind  A
+left join SalesKind B on A.SalesKindID = B.SalesKindID
+</value>
+  </data>
+  <metadata name="ucCustomerSaleKind.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 1195</value>
+  </metadata>
+  <metadata name="SalesKind.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 1233</value>
+  </metadata>
+  <metadata name="SalesKindUser.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 1271</value>
+  </metadata>
+  <data name="SalesKindUser.CommandText" xml:space="preserve">
+    <value>SELECT A.SalesID,B.SalesKindID,C.SalesName,D.SalesKindName
+FROM SalesSalesType A
+INNER JOIN  SalesKindSalesType B ON  A.SalesTypeID = B.SalesTypeID
+LEFT JOIN  SalesPerson  C  On A.SalesID =  C.SalesID
+LEFT JOIN  SalesKind D On B.SalesKindID = D.SalesKindID
+WHERE  C.IsActive = 1 AND C.IsSalesRole = 1
+GROUP BY A.SalesID,B.SalesKindID,C.SalesName,D.SalesKindName
+ORDER BY A.SalesID,B.SalesKindID</value>
+  </data>
+  <metadata name="Industry.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 321</value>
+  </metadata>
+  <metadata name="SalesKindSalesType.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 435</value>
+  </metadata>
+  <data name="SalesKindSalesType.CommandText" xml:space="preserve">
+    <value>SELECT  SalesKindID,
+               SalesTypeID,
+               (SELECT  SalesTypeName   FROM SalesType where SalesTypeID= SalesKindSalesType.SalesTypeID)   AS SalesTypeName
+FROM SalesKindSalesType 
+</value>
+  </data>
+  <metadata name="UserSalesKind.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>297, 290</value>
+  </metadata>
+  <data name="UserSalesKind.CommandText" xml:space="preserve">
+    <value>SELECT A.SalesID,B.SalesKindID,C.SalesName,D.SalesKindName
+FROM SalesSalesType A
+INNER JOIN  SalesKindSalesType B ON  A.SalesTypeID = B.SalesTypeID
+LEFT JOIN  SalesPerson  C  On A.SalesID =  C.SalesID
+LEFT JOIN  SalesKind D On B.SalesKindID = D.SalesKindID
+WHERE  C.IsActive = 1 AND A.SalesTypeID IN (SELECT SalesTypeID FROM SALESTYPE WHERE ISNULL(SYNCDB,'')&lt;&gt;'')
+GROUP BY A.SalesID,B.SalesKindID,C.SalesName,D.SalesKindName
+ORDER BY A.SalesID,B.SalesKindID</value>
+  </data>
+  <metadata name="$this.TrayLargeIcon" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>False</value>
+  </metadata>
+</root>

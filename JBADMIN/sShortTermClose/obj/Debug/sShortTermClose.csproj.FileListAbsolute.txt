@@ -1,0 +1,15 @@
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sShortTermClose\bin\Debug\sShortTermClose.dll
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sShortTermClose\bin\Debug\sShortTermClose.pdb
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sShortTermClose\obj\Debug\sShortTermClose.csproj.GenerateResource.Cache
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sShortTermClose\obj\Debug\sShortTermClose.dll
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sShortTermClose\obj\Debug\sShortTermClose.pdb
+C:\Program Files (x86)\Infolight\EEP2012\EEPNetServer\JBADMIN\sShortTermClose.dll
+C:\Program Files (x86)\Infolight\EEP2012\EEPNetServer\JBADMIN\sShortTermClose.pdb
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sShortTermClose\obj\Debug\sShortTermClose.Component.resources
+D:\Infolight\EEP2012\EEPNetServer\JBADMIN\sShortTermClose.dll
+D:\Infolight\EEP2012\EEPNetServer\JBADMIN\sShortTermClose.pdb
+D:\Infolight\EEP2012\JBADMIN\sShortTermClose\obj\Debug\sShortTermClose.csprojResolveAssemblyReference.cache
+D:\Infolight\EEP2012\JBADMIN\sShortTermClose\obj\Debug\sShortTermClose.Component.resources
+D:\Infolight\EEP2012\JBADMIN\sShortTermClose\obj\Debug\sShortTermClose.csproj.GenerateResource.Cache
+D:\Infolight\EEP2012\JBADMIN\sShortTermClose\obj\Debug\sShortTermClose.dll
+D:\Infolight\EEP2012\JBADMIN\sShortTermClose\obj\Debug\sShortTermClose.pdb

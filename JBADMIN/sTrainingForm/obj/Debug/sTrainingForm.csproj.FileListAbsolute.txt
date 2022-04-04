@@ -1,0 +1,6 @@
+C:\Program Files (x86)\Infolight\EEP2012\EEPNetServer\JBADMIN\sTrainingForm.dll
+C:\Program Files (x86)\Infolight\EEP2012\EEPNetServer\JBADMIN\sTrainingForm.pdb
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sTrainingForm\obj\Debug\sTrainingForm.Component.resources
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sTrainingForm\obj\Debug\sTrainingForm.csproj.GenerateResource.Cache
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sTrainingForm\obj\Debug\sTrainingForm.dll
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sTrainingForm\obj\Debug\sTrainingForm.pdb

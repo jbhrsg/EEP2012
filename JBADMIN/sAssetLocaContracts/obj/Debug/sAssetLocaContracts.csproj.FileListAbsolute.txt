@@ -1,0 +1,14 @@
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sAssetLocaContracts\bin\Debug\sAssetLocaContracts.dll
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sAssetLocaContracts\bin\Debug\sAssetLocaContracts.pdb
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sAssetLocaContracts\obj\Debug\sAssetLocaContracts.csproj.GenerateResource.Cache
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sAssetLocaContracts\obj\Debug\sAssetLocaContracts.dll
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sAssetLocaContracts\obj\Debug\sAssetLocaContracts.pdb
+C:\Program Files (x86)\Infolight\EEP2012\EEPNetServer\JBADMIN\sAssetLocaContracts.dll
+C:\Program Files (x86)\Infolight\EEP2012\EEPNetServer\JBADMIN\sAssetLocaContracts.pdb
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sAssetLocaContracts\obj\Debug\sAssetLocaContracts.Component.resources
+D:\Infolight\EEP2012\EEPNetServer\JBADMIN\sAssetLocaContracts.dll
+D:\Infolight\EEP2012\EEPNetServer\JBADMIN\sAssetLocaContracts.pdb
+D:\Infolight\EEP2012\JBADMIN\sAssetLocaContracts\obj\Debug\sAssetLocaContracts.Component.resources
+D:\Infolight\EEP2012\JBADMIN\sAssetLocaContracts\obj\Debug\sAssetLocaContracts.csproj.GenerateResource.Cache
+D:\Infolight\EEP2012\JBADMIN\sAssetLocaContracts\obj\Debug\sAssetLocaContracts.dll
+D:\Infolight\EEP2012\JBADMIN\sAssetLocaContracts\obj\Debug\sAssetLocaContracts.pdb

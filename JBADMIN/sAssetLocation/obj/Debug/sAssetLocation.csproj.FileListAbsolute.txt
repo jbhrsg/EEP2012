@@ -1,0 +1,15 @@
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sAssetLocation\bin\Debug\sAssetLocation.dll
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sAssetLocation\bin\Debug\sAssetLocation.pdb
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sAssetLocation\obj\Debug\sAssetLocation.csproj.GenerateResource.Cache
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sAssetLocation\obj\Debug\sAssetLocation.dll
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sAssetLocation\obj\Debug\sAssetLocation.pdb
+C:\Program Files (x86)\Infolight\EEP2012\EEPNetServer\JBADMIN\sAssetLocation.dll
+C:\Program Files (x86)\Infolight\EEP2012\EEPNetServer\JBADMIN\sAssetLocation.pdb
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sAssetLocation\obj\Debug\sAssetLocation.Component.resources
+D:\Infolight\EEP2012\EEPNetServer\JBADMIN\sAssetLocation.dll
+D:\Infolight\EEP2012\EEPNetServer\JBADMIN\sAssetLocation.pdb
+D:\Infolight\EEP2012\JBADMIN\sAssetLocation\obj\Debug\sAssetLocation.Component.resources
+D:\Infolight\EEP2012\JBADMIN\sAssetLocation\obj\Debug\sAssetLocation.csproj.GenerateResource.Cache
+D:\Infolight\EEP2012\JBADMIN\sAssetLocation\obj\Debug\sAssetLocation.dll
+D:\Infolight\EEP2012\JBADMIN\sAssetLocation\obj\Debug\sAssetLocation.pdb
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sAssetLocation\obj\Debug\sAssetLocation.csprojResolveAssemblyReference.cache

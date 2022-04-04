@@ -1,0 +1,6 @@
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sCON_SKILL\bin\Release\sCON_SKILL.dll
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sCON_SKILL\bin\Release\sCON_SKILL.pdb
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sCON_SKILL\obj\Release\sCON_SKILL.Component.resources
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sCON_SKILL\obj\Release\sCON_SKILL.csproj.GenerateResource.Cache
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sCON_SKILL\obj\Release\sCON_SKILL.dll
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sCON_SKILL\obj\Release\sCON_SKILL.pdb

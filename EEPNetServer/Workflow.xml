@@ -1,0 +1,27 @@
+<Root>
+  <Active>False</Active>
+  <Email>service@jbjob.com.tw</Email>
+  <Password>ihgcwdf}wf}}~zxc</Password>
+  <EnableSSL>True</EnableSSL>
+  <Port>25</Port>
+  <SMTP>smtp.office365.com</SMTP>
+  <Sender>True</Sender>
+  <FlowName>True</FlowName>
+  <ActivityName>True</ActivityName>
+  <Content>True</Content>
+  <Description>True</Description>
+  <DateTime>True</DateTime>
+  <Comment>True</Comment>
+  <HyperLink>True</HyperLink>
+  <ActivityDescription>False</ActivityDescription>
+  <ApproveButton>True</ApproveButton>
+  <ReturnButton>True</ReturnButton>
+  <RejectButton>True</RejectButton>
+  <Sender2>True</Sender2>
+  <FlowName2>True</FlowName2>
+  <ActivityName2>True</ActivityName2>
+  <Description2>True</Description2>
+  <Content2>True</Content2>
+  <SMS>
+  </SMS>
+</Root>

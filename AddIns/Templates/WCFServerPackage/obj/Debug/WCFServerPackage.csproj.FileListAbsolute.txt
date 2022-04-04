@@ -1,0 +1,23 @@
+F:\EEP2010\AddIns\Templates\WCFServerPackage\obj\Debug\ResolveAssemblyReference.cache
+F:\EEP2010\AddIns\Templates\WCFServerPackage\bin\Debug\WCFServerPackage.dll
+F:\EEP2010\AddIns\Templates\WCFServerPackage\bin\Debug\WCFServerPackage.pdb
+F:\EEP2010\AddIns\Templates\WCFServerPackage\bin\Debug\EFServerTools.dll
+F:\EEP2010\AddIns\Templates\WCFServerPackage\bin\Debug\EFWCFModule.dll
+F:\EEP2010\AddIns\Templates\WCFServerPackage\bin\Debug\EFServerTools.pdb
+F:\EEP2010\AddIns\Templates\WCFServerPackage\bin\Debug\EFWCFModule.pdb
+F:\EEP2010\AddIns\Templates\WCFServerPackage\obj\Debug\WCFServerPackage.dll
+F:\EEP2010\AddIns\Templates\WCFServerPackage\obj\Debug\WCFServerPackage.pdb
+F:\Program Files\EEP2010\WCFServer\Solution1\WCFServerPackage.dll
+F:\Program Files\EEP2010\WCFServer\Solution1\WCFServerPackage.pdb
+F:\Program Files\EEP2010\AddIns\Templates\WCFServerPackage\obj\Debug\ResolveAssemblyReference.cache
+F:\Program Files\EEP2010\AddIns\Templates\WCFServerPackage\obj\Debug\WCFServerPackage.dll
+F:\Program Files\EEP2010\AddIns\Templates\WCFServerPackage\obj\Debug\WCFServerPackage.pdb
+D:\Infolight\EEP2010\WCFServer\Solution1\WCFServerPackage.dll
+D:\Infolight\EEP2010\WCFServer\Solution1\WCFServerPackage.pdb
+D:\Infolight\EEP2010\AddIns\Templates\WCFServerPackage\obj\Debug\ResolveAssemblyReference.cache
+D:\Infolight\EEP2010\AddIns\Templates\WCFServerPackage\obj\Debug\WCFServerPackage.dll
+D:\Infolight\EEP2010\AddIns\Templates\WCFServerPackage\obj\Debug\WCFServerPackage.pdb
+D:\Infolight\EEP2010\AddIns\WCFServer\Solution1\WCFServerPackage.dll
+D:\Infolight\EEP2010\AddIns\WCFServer\Solution1\WCFServerPackage.pdb
+D:\Infolight\EEP2010\EEPNetServer\SOLUTION1\WCFServerPackage.dll
+D:\Infolight\EEP2010\EEPNetServer\SOLUTION1\WCFServerPackage.pdb

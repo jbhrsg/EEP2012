@@ -1,0 +1,14 @@
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sSalesInYears\bin\Debug\sSalesInYears.dll
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sSalesInYears\bin\Debug\sSalesInYears.pdb
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sSalesInYears\obj\Debug\sSalesInYears.csproj.GenerateResource.Cache
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sSalesInYears\obj\Debug\sSalesInYears.dll
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sSalesInYears\obj\Debug\sSalesInYears.pdb
+C:\Program Files (x86)\Infolight\EEP2012\EEPNetServer\JBADMIN\sSalesInYears.dll
+C:\Program Files (x86)\Infolight\EEP2012\EEPNetServer\JBADMIN\sSalesInYears.pdb
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sSalesInYears\obj\Debug\sSalesInYears.Component.resources
+D:\Infolight\EEP2012\EEPNetServer\JBADMIN\sSalesInYears.dll
+D:\Infolight\EEP2012\EEPNetServer\JBADMIN\sSalesInYears.pdb
+D:\Infolight\EEP2012\JBADMIN\sSalesInYears\obj\Debug\sSalesInYears.Component.resources
+D:\Infolight\EEP2012\JBADMIN\sSalesInYears\obj\Debug\sSalesInYears.csproj.GenerateResource.Cache
+D:\Infolight\EEP2012\JBADMIN\sSalesInYears\obj\Debug\sSalesInYears.dll
+D:\Infolight\EEP2012\JBADMIN\sSalesInYears\obj\Debug\sSalesInYears.pdb

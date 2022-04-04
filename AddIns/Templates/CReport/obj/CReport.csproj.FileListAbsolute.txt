@@ -1,0 +1,5 @@
+F:\Work\Infolight\EEP2006\AddIns\Templates\CReport\obj\Debug\ResolveAssemblyReference.cache
+F:\Work\Infolight\EEP2006\AddIns\Templates\CReport\obj\Debug\TAG_NAMESPACE.TAG_FORMNAME.resources
+F:\Work\Infolight\EEP2006\AddIns\Templates\CReport\obj\Debug\BaseForm1.Properties.Resources.resources
+F:\Work\Infolight\EEP2006\AddIns\Templates\CReport\obj\Debug\CReport.csproj.GenerateResource.Cache
+F:\Work\Infolight\EEP2006\AddIns\Templates\CReport\obj\Debug\BaseForm1.dll

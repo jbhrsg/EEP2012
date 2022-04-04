@@ -1,0 +1,4 @@
+obj\Debug\ResolveAssemblyReference.cache
+obj\Debug\TAG_NAMESPACE.TAG_FORMNAME.resources
+obj\Debug\BaseForm1.Properties.Resources.resources
+obj\Debug\CMasterDetailReport.csproj.GenerateResource.Cache

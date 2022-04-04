@@ -1,0 +1,6 @@
+C:\Program Files (x86)\Infolight\EEP2012\EEPNetServer\JBADMIN\sSalesTransSys.dll
+C:\Program Files (x86)\Infolight\EEP2012\EEPNetServer\JBADMIN\sSalesTransSys.pdb
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sSalesTransSys\obj\Debug\sSalesTransSys.Component.resources
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sSalesTransSys\obj\Debug\sSalesTransSys.csproj.GenerateResource.Cache
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sSalesTransSys\obj\Debug\sSalesTransSys.dll
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sSalesTransSys\obj\Debug\sSalesTransSys.pdb

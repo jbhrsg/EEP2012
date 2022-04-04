@@ -1,0 +1,15 @@
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sOutDoor\bin\Debug\sOutDoor.dll
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sOutDoor\bin\Debug\sOutDoor.pdb
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sOutDoor\obj\Debug\sOutDoor.csproj.GenerateResource.Cache
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sOutDoor\obj\Debug\sOutDoor.dll
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sOutDoor\obj\Debug\sOutDoor.pdb
+C:\Program Files (x86)\Infolight\EEP2012\EEPNetServer\JBADMIN\sOutDoor.dll
+C:\Program Files (x86)\Infolight\EEP2012\EEPNetServer\JBADMIN\sOutDoor.pdb
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sOutDoor\obj\Debug\sOutDoor.Component.resources
+D:\Infolight\EEP2012\EEPNetServer\JBADMIN\sOutDoor.dll
+D:\Infolight\EEP2012\EEPNetServer\JBADMIN\sOutDoor.pdb
+D:\Infolight\EEP2012\JBADMIN\sOutDoor\obj\Debug\sOutDoor.csprojResolveAssemblyReference.cache
+D:\Infolight\EEP2012\JBADMIN\sOutDoor\obj\Debug\sOutDoor.Component.resources
+D:\Infolight\EEP2012\JBADMIN\sOutDoor\obj\Debug\sOutDoor.csproj.GenerateResource.Cache
+D:\Infolight\EEP2012\JBADMIN\sOutDoor\obj\Debug\sOutDoor.dll
+D:\Infolight\EEP2012\JBADMIN\sOutDoor\obj\Debug\sOutDoor.pdb

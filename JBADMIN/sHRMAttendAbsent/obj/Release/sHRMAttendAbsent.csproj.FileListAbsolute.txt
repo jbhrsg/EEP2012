@@ -1,0 +1,8 @@
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sHRMAttendAbsent\bin\Release\sHRMAttendAbsent.dll
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sHRMAttendAbsent\bin\Release\sHRMAttendAbsent.pdb
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sHRMAttendAbsent\bin\Release\Newtonsoft.Json.dll
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sHRMAttendAbsent\bin\Release\Newtonsoft.Json.xml
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sHRMAttendAbsent\obj\Release\sHRMAttendAbsent.Component.resources
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sHRMAttendAbsent\obj\Release\sHRMAttendAbsent.csproj.GenerateResource.Cache
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sHRMAttendAbsent\obj\Release\sHRMAttendAbsent.dll
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sHRMAttendAbsent\obj\Release\sHRMAttendAbsent.pdb

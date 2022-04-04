@@ -1,0 +1,6 @@
+C:\Program Files (x86)\Infolight\EEP2012\EEPNetServer\JB_ADMIN\sIssueType.dll
+C:\Program Files (x86)\Infolight\EEP2012\EEPNetServer\JB_ADMIN\sIssueType.pdb
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sIssueType\obj\Debug\sIssueType.Component.resources
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sIssueType\obj\Debug\sIssueType.csproj.GenerateResource.Cache
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sIssueType\obj\Debug\sIssueType.dll
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sIssueType\obj\Debug\sIssueType.pdb

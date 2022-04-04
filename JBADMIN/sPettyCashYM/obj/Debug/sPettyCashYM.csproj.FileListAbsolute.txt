@@ -1,0 +1,16 @@
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sPettyCashYM\bin\Debug\sPettyCashYM.dll
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sPettyCashYM\bin\Debug\sPettyCashYM.pdb
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sPettyCashYM\obj\Debug\sPettyCashYM.csproj.GenerateResource.Cache
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sPettyCashYM\obj\Debug\sPettyCashYM.dll
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sPettyCashYM\obj\Debug\sPettyCashYM.pdb
+C:\Program Files (x86)\Infolight\EEP2012\EEPNetServer\JBADMIN\sPettyCashYM.dll
+C:\Program Files (x86)\Infolight\EEP2012\EEPNetServer\JBADMIN\sPettyCashYM.pdb
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sPettyCashYM\obj\Debug\sPettyCashYM.Component.resources
+D:\Infolight\EEP2012\EEPNetServer\JBADMIN\sPettyCashYM.dll
+D:\Infolight\EEP2012\EEPNetServer\JBADMIN\sPettyCashYM.pdb
+D:\Infolight\EEP2012\JBADMIN\sPettyCashYM\obj\Debug\sPettyCashYM.csprojResolveAssemblyReference.cache
+D:\Infolight\EEP2012\JBADMIN\sPettyCashYM\obj\Debug\sPettyCashYM.Component.resources
+D:\Infolight\EEP2012\JBADMIN\sPettyCashYM\obj\Debug\sPettyCashYM.csproj.GenerateResource.Cache
+D:\Infolight\EEP2012\JBADMIN\sPettyCashYM\obj\Debug\sPettyCashYM.dll
+D:\Infolight\EEP2012\JBADMIN\sPettyCashYM\obj\Debug\sPettyCashYM.pdb
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sPettyCashYM\obj\Debug\sPettyCashYM.csprojResolveAssemblyReference.cache

@@ -1,0 +1,10 @@
+..\..\EEPNetServer\Solution1\SSingle.dll
+..\..\EEPNetServer\Solution1\SSingle.pdb
+..\..\EEPNetServer\Solution1\vi-VN\SSingle.resources.dll
+obj\Debug\ResolveAssemblyReference.cache
+obj\Debug\SSingle.Component.resources
+obj\Debug\SSingle.csproj.GenerateResource.Cache
+obj\Debug\SSingle.Component.vi-VN.resources
+obj\Debug\vi-VN\SSingle.resources.dll
+obj\Debug\SSingle.dll
+obj\Debug\SSingle.pdb

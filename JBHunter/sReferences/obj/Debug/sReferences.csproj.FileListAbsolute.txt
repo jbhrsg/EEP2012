@@ -1,0 +1,8 @@
+C:\Program Files (x86)\Infolight\EEP2012\JBHunter\sReferences\bin\Debug\sReferences.dll
+C:\Program Files (x86)\Infolight\EEP2012\JBHunter\sReferences\bin\Debug\sReferences.pdb
+C:\Program Files (x86)\Infolight\EEP2012\JBHunter\sReferences\obj\Debug\sReferences.csproj.GenerateResource.Cache
+C:\Program Files (x86)\Infolight\EEP2012\JBHunter\sReferences\obj\Debug\sReferences.dll
+C:\Program Files (x86)\Infolight\EEP2012\JBHunter\sReferences\obj\Debug\sReferences.pdb
+C:\Program Files (x86)\Infolight\EEP2012\EEPNetServer\JBHunter\sReferences.dll
+C:\Program Files (x86)\Infolight\EEP2012\EEPNetServer\JBHunter\sReferences.pdb
+C:\Program Files (x86)\Infolight\EEP2012\JBHunter\sReferences\obj\Debug\sReferences.Component.resources

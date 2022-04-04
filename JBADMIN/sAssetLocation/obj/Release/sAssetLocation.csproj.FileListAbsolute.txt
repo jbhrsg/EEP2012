@@ -1,0 +1,6 @@
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sAssetLocation\bin\Release\sAssetLocation.dll
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sAssetLocation\bin\Release\sAssetLocation.pdb
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sAssetLocation\obj\Release\sAssetLocation.Component.resources
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sAssetLocation\obj\Release\sAssetLocation.csproj.GenerateResource.Cache
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sAssetLocation\obj\Release\sAssetLocation.dll
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sAssetLocation\obj\Release\sAssetLocation.pdb

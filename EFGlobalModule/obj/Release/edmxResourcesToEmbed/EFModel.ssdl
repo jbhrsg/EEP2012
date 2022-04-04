@@ -1,0 +1,634 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="EFModel.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2008" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/02/edm/ssdl">
+  <EntityContainer Name="EFModelStoreContainer">
+    <EntitySet Name="COLDEF" EntityType="EFModel.Store.COLDEF" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="GROUPMENUCONTROL" EntityType="EFModel.Store.GROUPMENUCONTROL" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="GROUPMENUS" EntityType="EFModel.Store.GROUPMENUS" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="GROUPS" EntityType="EFModel.Store.GROUPS" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="MENUITEMTYPE" EntityType="EFModel.Store.MENUITEMTYPE" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="MENUTABLE" EntityType="EFModel.Store.MENUTABLE" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="MENUTABLECONTROL" EntityType="EFModel.Store.MENUTABLECONTROL" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="SYS_LANGUAGE" EntityType="EFModel.Store.SYS_LANGUAGE" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="SYS_ORGKIND" EntityType="EFModel.Store.SYS_ORGKIND" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="SYS_PERSONAL" EntityType="EFModel.Store.SYS_PERSONAL" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="SYS_REFVAL" EntityType="EFModel.Store.SYS_REFVAL" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="SYS_REPORT" EntityType="EFModel.Store.SYS_REPORT" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="SYS_ROLES_AGENT" EntityType="EFModel.Store.SYS_ROLES_AGENT" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="SYS_SDALIAS" EntityType="EFModel.Store.SYS_SDALIAS" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="SYS_SDGROUPS" EntityType="EFModel.Store.SYS_SDGROUPS" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="SYS_SDQUEUE" EntityType="EFModel.Store.SYS_SDQUEUE" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="SYS_SDQUEUEPAGE" EntityType="EFModel.Store.SYS_SDQUEUEPAGE" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="SYS_SDSOLUTIONS" EntityType="EFModel.Store.SYS_SDSOLUTIONS" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="SYS_SDUSERS" EntityType="EFModel.Store.SYS_SDUSERS" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="SYS_SDUSERS_LOG" EntityType="EFModel.Store.SYS_SDUSERS_LOG" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="SYS_TODOHIS" EntityType="EFModel.Store.SYS_TODOHIS" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="SYS_TODOLIST" EntityType="EFModel.Store.SYS_TODOLIST" store:Type="Tables" store:Schema="dbo" store:Name="SYS_TODOLIST">
+      <DefiningQuery>SELECT 
+      [SYS_TODOLIST].[LISTID] AS [LISTID], 
+      [SYS_TODOLIST].[FLOW_ID] AS [FLOW_ID], 
+      [SYS_TODOLIST].[FLOW_DESC] AS [FLOW_DESC], 
+      [SYS_TODOLIST].[APPLICANT] AS [APPLICANT], 
+      [SYS_TODOLIST].[S_USER_ID] AS [S_USER_ID], 
+      [SYS_TODOLIST].[S_STEP_ID] AS [S_STEP_ID], 
+      [SYS_TODOLIST].[S_STEP_DESC] AS [S_STEP_DESC], 
+      [SYS_TODOLIST].[D_STEP_ID] AS [D_STEP_ID], 
+      [SYS_TODOLIST].[D_STEP_DESC] AS [D_STEP_DESC], 
+      [SYS_TODOLIST].[EXP_TIME] AS [EXP_TIME], 
+      [SYS_TODOLIST].[URGENT_TIME] AS [URGENT_TIME], 
+      [SYS_TODOLIST].[TIME_UNIT] AS [TIME_UNIT], 
+      [SYS_TODOLIST].[USERNAME] AS [USERNAME], 
+      [SYS_TODOLIST].[FORM_NAME] AS [FORM_NAME], 
+      [SYS_TODOLIST].[NAVIGATOR_MODE] AS [NAVIGATOR_MODE], 
+      [SYS_TODOLIST].[FLNAVIGATOR_MODE] AS [FLNAVIGATOR_MODE], 
+      [SYS_TODOLIST].[PARAMETERS] AS [PARAMETERS], 
+      [SYS_TODOLIST].[SENDTO_KIND] AS [SENDTO_KIND], 
+      [SYS_TODOLIST].[SENDTO_ID] AS [SENDTO_ID], 
+      [SYS_TODOLIST].[FLOWIMPORTANT] AS [FLOWIMPORTANT], 
+      [SYS_TODOLIST].[FLOWURGENT] AS [FLOWURGENT], 
+      [SYS_TODOLIST].[STATUS] AS [STATUS], 
+      [SYS_TODOLIST].[FORM_TABLE] AS [FORM_TABLE], 
+      [SYS_TODOLIST].[FORM_KEYS] AS [FORM_KEYS], 
+      [SYS_TODOLIST].[FORM_PRESENTATION] AS [FORM_PRESENTATION], 
+      [SYS_TODOLIST].[FORM_PRESENT_CT] AS [FORM_PRESENT_CT], 
+      [SYS_TODOLIST].[REMARK] AS [REMARK], 
+      [SYS_TODOLIST].[PROVIDER_NAME] AS [PROVIDER_NAME], 
+      [SYS_TODOLIST].[VERSION] AS [VERSION], 
+      [SYS_TODOLIST].[EMAIL_ADD] AS [EMAIL_ADD], 
+      [SYS_TODOLIST].[EMAIL_STATUS] AS [EMAIL_STATUS], 
+      [SYS_TODOLIST].[VDSNAME] AS [VDSNAME], 
+      [SYS_TODOLIST].[SENDBACKSTEP] AS [SENDBACKSTEP], 
+      [SYS_TODOLIST].[LEVEL_NO] AS [LEVEL_NO], 
+      [SYS_TODOLIST].[WEBFORM_NAME] AS [WEBFORM_NAME], 
+      [SYS_TODOLIST].[UPDATE_DATE] AS [UPDATE_DATE], 
+      [SYS_TODOLIST].[UPDATE_TIME] AS [UPDATE_TIME], 
+      [SYS_TODOLIST].[FLOWPATH] AS [FLOWPATH], 
+      [SYS_TODOLIST].[PLUSAPPROVE] AS [PLUSAPPROVE], 
+      [SYS_TODOLIST].[PLUSROLES] AS [PLUSROLES], 
+      [SYS_TODOLIST].[MULTISTEPRETURN] AS [MULTISTEPRETURN], 
+      [SYS_TODOLIST].[SENDTO_NAME] AS [SENDTO_NAME], 
+      [SYS_TODOLIST].[ATTACHMENTS] AS [ATTACHMENTS], 
+      [SYS_TODOLIST].[CREATE_TIME] AS [CREATE_TIME]
+      FROM [dbo].[SYS_TODOLIST] AS [SYS_TODOLIST]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="SYS_WEBPAGES" EntityType="EFModel.Store.SYS_WEBPAGES" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="SYS_WEBPAGES_LOG" EntityType="EFModel.Store.SYS_WEBPAGES_LOG" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="SYS_WEBRUNTIME" EntityType="EFModel.Store.SYS_WEBRUNTIME" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="SYSEEPLOG" EntityType="EFModel.Store.SYSEEPLOG" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="USERGROUPS" EntityType="EFModel.Store.USERGROUPS" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="USERMENUCONTROL" EntityType="EFModel.Store.USERMENUCONTROL" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="USERMENUS" EntityType="EFModel.Store.USERMENUS" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="USERS" EntityType="EFModel.Store.USERS" store:Type="Tables" Schema="dbo" />
+    <AssociationSet Name="FK_SYS_SDQUEUEPAGE_SYS_SDQUEUE" Association="EFModel.Store.FK_SYS_SDQUEUEPAGE_SYS_SDQUEUE">
+      <End Role="SYS_SDQUEUE" EntitySet="SYS_SDQUEUE" />
+      <End Role="SYS_SDQUEUEPAGE" EntitySet="SYS_SDQUEUEPAGE" />
+    </AssociationSet>
+  </EntityContainer>
+  <EntityType Name="COLDEF">
+    <Key>
+      <PropertyRef Name="TABLE_NAME" />
+      <PropertyRef Name="FIELD_NAME" />
+    </Key>
+    <Property Name="TABLE_NAME" Type="nvarchar" Nullable="false" MaxLength="20" />
+    <Property Name="FIELD_NAME" Type="nvarchar" Nullable="false" MaxLength="20" />
+    <Property Name="SEQ" Type="decimal" Precision="12" />
+    <Property Name="FIELD_TYPE" Type="nvarchar" MaxLength="20" />
+    <Property Name="IS_KEY" Type="nvarchar" Nullable="false" MaxLength="1" />
+    <Property Name="FIELD_LENGTH" Type="decimal" Precision="12" />
+    <Property Name="CAPTION" Type="nvarchar" MaxLength="40" />
+    <Property Name="EDITMASK" Type="nvarchar" MaxLength="10" />
+    <Property Name="NEEDBOX" Type="nvarchar" MaxLength="13" />
+    <Property Name="CANREPORT" Type="nvarchar" MaxLength="1" />
+    <Property Name="EXT_MENUID" Type="nvarchar" MaxLength="20" />
+    <Property Name="FIELD_SCALE" Type="decimal" Precision="12" />
+    <Property Name="DD_NAME" Type="nvarchar" MaxLength="40" />
+    <Property Name="DEFAULT_VALUE" Type="nvarchar" MaxLength="100" />
+    <Property Name="CHECK_NULL" Type="nvarchar" MaxLength="1" />
+    <Property Name="QUERYMODE" Type="nvarchar" MaxLength="20" />
+    <Property Name="CAPTION1" Type="nvarchar" MaxLength="40" />
+    <Property Name="CAPTION2" Type="nvarchar" MaxLength="40" />
+    <Property Name="CAPTION3" Type="nvarchar" MaxLength="40" />
+    <Property Name="CAPTION4" Type="nvarchar" MaxLength="40" />
+    <Property Name="CAPTION5" Type="nvarchar" MaxLength="40" />
+    <Property Name="CAPTION6" Type="nvarchar" MaxLength="40" />
+    <Property Name="CAPTION7" Type="nvarchar" MaxLength="40" />
+    <Property Name="CAPTION8" Type="nvarchar" MaxLength="40" />
+  </EntityType>
+  <EntityType Name="GROUPMENUCONTROL">
+    <Key>
+      <PropertyRef Name="GROUPID" />
+      <PropertyRef Name="MENUID" />
+      <PropertyRef Name="CONTROLNAME" />
+    </Key>
+    <Property Name="GROUPID" Type="varchar" Nullable="false" MaxLength="20" />
+    <Property Name="MENUID" Type="varchar" Nullable="false" MaxLength="30" />
+    <Property Name="CONTROLNAME" Type="varchar" Nullable="false" MaxLength="50" />
+    <Property Name="TYPE" Type="varchar" MaxLength="20" />
+    <Property Name="ENABLED" Type="char" MaxLength="1" />
+    <Property Name="VISIBLE" Type="char" MaxLength="1" />
+    <Property Name="ALLOWADD" Type="char" MaxLength="1" />
+    <Property Name="ALLOWUPDATE" Type="char" MaxLength="1" />
+    <Property Name="ALLOWDELETE" Type="char" MaxLength="1" />
+    <Property Name="ALLOWPRINT" Type="char" MaxLength="1" />
+  </EntityType>
+  <EntityType Name="GROUPMENUS">
+    <Key>
+      <PropertyRef Name="GROUPID" />
+      <PropertyRef Name="MENUID" />
+    </Key>
+    <Property Name="GROUPID" Type="varchar" Nullable="false" MaxLength="20" />
+    <Property Name="MENUID" Type="nvarchar" Nullable="false" MaxLength="30" />
+  </EntityType>
+  <EntityType Name="GROUPS">
+    <Key>
+      <PropertyRef Name="GROUPID" />
+    </Key>
+    <Property Name="GROUPID" Type="nvarchar" Nullable="false" MaxLength="6" />
+    <Property Name="GROUPNAME" Type="nvarchar" MaxLength="150" />
+    <Property Name="DESCRIPTION" Type="nvarchar" MaxLength="200" />
+    <Property Name="MSAD" Type="nvarchar" MaxLength="1" />
+    <Property Name="ISROLE" Type="char" MaxLength="1" />
+  </EntityType>
+  <EntityType Name="MENUITEMTYPE">
+    <Key>
+      <PropertyRef Name="ITEMTYPE" />
+    </Key>
+    <Property Name="ITEMTYPE" Type="nvarchar" Nullable="false" MaxLength="20" />
+    <Property Name="ITEMNAME" Type="nvarchar" MaxLength="20" />
+    <Property Name="DBALIAS" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="MENUTABLE">
+    <Key>
+      <PropertyRef Name="MENUID" />
+    </Key>
+    <Property Name="MENUID" Type="nvarchar" Nullable="false" MaxLength="30" />
+    <Property Name="CAPTION" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="PARENT" Type="nvarchar" MaxLength="30" />
+    <Property Name="PACKAGE" Type="nvarchar" MaxLength="20" />
+    <Property Name="MODULETYPE" Type="nvarchar" MaxLength="1" />
+    <Property Name="ITEMPARAM" Type="nvarchar" MaxLength="200" />
+    <Property Name="FORM" Type="nvarchar" MaxLength="32" />
+    <Property Name="ISSHOWMODAL" Type="nvarchar" MaxLength="1" />
+    <Property Name="ITEMTYPE" Type="nvarchar" MaxLength="20" />
+    <Property Name="SEQ_NO" Type="nvarchar" MaxLength="4" />
+    <Property Name="PACKAGEDATE" Type="datetime" />
+    <Property Name="ISSERVER" Type="nvarchar" MaxLength="1" />
+    <Property Name="VERSIONNO" Type="nvarchar" MaxLength="20" />
+    <Property Name="CHECKOUT" Type="nvarchar" MaxLength="20" />
+    <Property Name="CHECKOUTDATE" Type="datetime" />
+    <Property Name="CAPTION0" Type="nvarchar" MaxLength="50" />
+    <Property Name="CAPTION1" Type="nvarchar" MaxLength="50" />
+    <Property Name="CAPTION2" Type="nvarchar" MaxLength="50" />
+    <Property Name="CAPTION3" Type="nvarchar" MaxLength="50" />
+    <Property Name="CAPTION4" Type="nvarchar" MaxLength="50" />
+    <Property Name="CAPTION5" Type="nvarchar" MaxLength="50" />
+    <Property Name="CAPTION6" Type="nvarchar" MaxLength="50" />
+    <Property Name="CAPTION7" Type="nvarchar" MaxLength="50" />
+    <Property Name="IMAGE" Type="varbinary(max)" />
+    <Property Name="IMAGEURL" Type="nvarchar" MaxLength="100" />
+    <Property Name="OWNER" Type="nvarchar" MaxLength="20" />
+  </EntityType>
+  <EntityType Name="MENUTABLECONTROL">
+    <Key>
+      <PropertyRef Name="MENUID" />
+      <PropertyRef Name="CONTROLNAME" />
+    </Key>
+    <Property Name="MENUID" Type="varchar" Nullable="false" MaxLength="30" />
+    <Property Name="CONTROLNAME" Type="varchar" Nullable="false" MaxLength="50" />
+    <Property Name="DESCRIPTION" Type="varchar" MaxLength="50" />
+    <Property Name="TYPE" Type="varchar" MaxLength="20" />
+  </EntityType>
+  <EntityType Name="SYS_LANGUAGE">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="IDENTIFICATION" Type="nvarchar" MaxLength="80" />
+    <Property Name="KEYS" Type="nvarchar" MaxLength="80" />
+    <Property Name="EN" Type="nvarchar" MaxLength="80" />
+    <Property Name="CHT" Type="nvarchar" MaxLength="80" />
+    <Property Name="CHS" Type="nvarchar" MaxLength="80" />
+    <Property Name="HK" Type="nvarchar" MaxLength="80" />
+    <Property Name="JA" Type="nvarchar" MaxLength="80" />
+    <Property Name="KO" Type="nvarchar" MaxLength="80" />
+    <Property Name="LAN1" Type="nvarchar" MaxLength="80" />
+    <Property Name="LAN2" Type="nvarchar" MaxLength="80" />
+  </EntityType>
+  <EntityType Name="SYS_ORGKIND">
+    <Key>
+      <PropertyRef Name="ORG_KIND" />
+    </Key>
+    <Property Name="ORG_KIND" Type="nvarchar" Nullable="false" MaxLength="4" />
+    <Property Name="KIND_DESC" Type="nvarchar" Nullable="false" MaxLength="40" />
+  </EntityType>
+  <EntityType Name="SYS_PERSONAL">
+    <Key>
+      <PropertyRef Name="FORMNAME" />
+      <PropertyRef Name="COMPNAME" />
+      <PropertyRef Name="USERID" />
+    </Key>
+    <Property Name="FORMNAME" Type="nvarchar" Nullable="false" MaxLength="60" />
+    <Property Name="COMPNAME" Type="nvarchar" Nullable="false" MaxLength="30" />
+    <Property Name="USERID" Type="nvarchar" Nullable="false" MaxLength="20" />
+    <Property Name="REMARK" Type="nvarchar" MaxLength="30" />
+    <Property Name="PROPCONTENT" Type="nvarchar(max)" />
+    <Property Name="CREATEDATE" Type="datetime" />
+  </EntityType>
+  <EntityType Name="SYS_REFVAL">
+    <Key>
+      <PropertyRef Name="REFVAL_NO" />
+    </Key>
+    <Property Name="REFVAL_NO" Type="varchar" Nullable="false" MaxLength="100" />
+    <Property Name="DESCRIPTION" Type="varchar" MaxLength="250" />
+    <Property Name="TABLE_NAME" Type="varchar" MaxLength="100" />
+    <Property Name="CAPTION" Type="varchar" MaxLength="30" />
+    <Property Name="DISPLAY_MEMBER" Type="varchar" MaxLength="100" />
+    <Property Name="SELECT_ALIAS" Type="varchar" MaxLength="50" />
+    <Property Name="SELECT_COMMAND" Type="varchar" MaxLength="250" />
+    <Property Name="VALUE_MEMBER" Type="varchar" MaxLength="100" />
+  </EntityType>
+  <EntityType Name="SYS_REPORT">
+    <Key>
+      <PropertyRef Name="REPORTID" />
+      <PropertyRef Name="FILENAME" />
+    </Key>
+    <Property Name="REPORTID" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="FILENAME" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="REPORTNAME" Type="nvarchar(max)" />
+    <Property Name="DESCRIPTION" Type="nvarchar(max)" />
+    <Property Name="FILEPATH" Type="nvarchar(max)" />
+    <Property Name="OUTPUTMODE" Type="nvarchar" MaxLength="20" />
+    <Property Name="HEADERFONT" Type="varbinary(max)" />
+    <Property Name="HEADERITEMS" Type="varbinary(max)" />
+    <Property Name="FOOTERFONT" Type="varbinary(max)" />
+    <Property Name="FOOTERITEMS" Type="varbinary(max)" />
+    <Property Name="FIELDFONT" Type="varbinary(max)" />
+    <Property Name="FIELDITEMS" Type="varbinary(max)" />
+    <Property Name="SETTING" Type="varbinary(max)" />
+    <Property Name="FORMAT" Type="varbinary(max)" />
+    <Property Name="PARAMETERS" Type="varbinary(max)" />
+    <Property Name="IMAGES" Type="varbinary(max)" />
+    <Property Name="MAILSETTING" Type="varbinary(max)" />
+    <Property Name="HEADERREPEAT" Type="nvarchar" MaxLength="5" />
+    <Property Name="HEADER_DATASOURCEID" Type="nvarchar" MaxLength="50" />
+    <Property Name="DATASOURCES" Type="varbinary(max)" />
+    <Property Name="CLIENT_QUERY" Type="varbinary(max)" />
+    <Property Name="REPORT_TYPE" Type="nvarchar" MaxLength="1" />
+    <Property Name="TEMPLATE_DESC" Type="nvarchar" MaxLength="50" />
+    <Property Name="DATASOURCE_PROVIDER" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="SYS_ROLES_AGENT">
+    <Key>
+      <PropertyRef Name="ROLE_ID" />
+      <PropertyRef Name="AGENT" />
+    </Key>
+    <Property Name="ROLE_ID" Type="nvarchar" Nullable="false" MaxLength="12" />
+    <Property Name="AGENT" Type="nvarchar" Nullable="false" MaxLength="20" />
+    <Property Name="FLOW_DESC" Type="nvarchar" Nullable="false" MaxLength="40" />
+    <Property Name="START_DATE" Type="nvarchar" Nullable="false" MaxLength="8" />
+    <Property Name="START_TIME" Type="nvarchar" MaxLength="6" />
+    <Property Name="END_DATE" Type="nvarchar" Nullable="false" MaxLength="8" />
+    <Property Name="END_TIME" Type="nvarchar" MaxLength="6" />
+    <Property Name="PAR_AGENT" Type="nvarchar" Nullable="false" MaxLength="4" />
+    <Property Name="REMARK" Type="nvarchar" MaxLength="254" />
+  </EntityType>
+  <EntityType Name="SYS_SDALIAS">
+    <Key>
+      <PropertyRef Name="USERID" />
+      <PropertyRef Name="ALIASNAME" />
+      <PropertyRef Name="DBNAME" />
+    </Key>
+    <Property Name="USERID" Type="varchar" Nullable="false" MaxLength="20" />
+    <Property Name="ALIASNAME" Type="varchar" Nullable="false" MaxLength="30" />
+    <Property Name="SYSTEMALIAS" Type="varchar" MaxLength="30" />
+    <Property Name="DBNAME" Type="varchar" Nullable="false" MaxLength="25" />
+    <Property Name="SPLIT" Type="bit" />
+    <Property Name="DBTYPE" Type="char" MaxLength="1" />
+  </EntityType>
+  <EntityType Name="SYS_SDGROUPS">
+    <Key>
+      <PropertyRef Name="GROUPID" />
+    </Key>
+    <Property Name="GROUPID" Type="varchar" Nullable="false" MaxLength="20" />
+    <Property Name="GROUPNAME" Type="varchar" MaxLength="30" />
+  </EntityType>
+  <EntityType Name="SYS_SDQUEUE">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" Nullable="false" />
+    <Property Name="USERID" Type="varchar" Nullable="false" MaxLength="30" />
+    <Property Name="PAGETYPE" Type="char" Nullable="false" MaxLength="1" />
+    <Property Name="CREATETIME" Type="datetime" />
+    <Property Name="FINISHTIME" Type="datetime" />
+    <Property Name="FINISHFLAG" Type="bit" Nullable="false" />
+    <Property Name="DOCUMENT" Type="varbinary(max)" />
+    <Property Name="FILENAME" Type="varchar" MaxLength="40" />
+    <Property Name="PRINTSETTING" Type="varchar" MaxLength="40" />
+  </EntityType>
+  <EntityType Name="SYS_SDQUEUEPAGE">
+    <Key>
+      <PropertyRef Name="ID" />
+      <PropertyRef Name="PAGENAME" />
+    </Key>
+    <Property Name="ID" Type="int" Nullable="false" />
+    <Property Name="DOCUMENT" Type="varbinary(max)" Nullable="false" />
+    <Property Name="PHOTO" Type="varbinary(max)" />
+    <Property Name="PAGENAME" Type="varchar" Nullable="false" MaxLength="30" />
+  </EntityType>
+  <EntityType Name="SYS_SDSOLUTIONS">
+    <Key>
+      <PropertyRef Name="USERID" />
+      <PropertyRef Name="SOLUTIONID" />
+    </Key>
+    <Property Name="USERID" Type="varchar" Nullable="false" MaxLength="20" />
+    <Property Name="SOLUTIONID" Type="varchar" Nullable="false" MaxLength="30" />
+    <Property Name="SOLUTIONNAME" Type="nvarchar" MaxLength="30" />
+    <Property Name="MOUDLEXMLTEXT" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="SETTING" Type="varbinary(max)" />
+    <Property Name="ALIASOPTIONS" Type="varchar" MaxLength="250" />
+    <Property Name="LOGONIMAGE" Type="varbinary(max)" />
+    <Property Name="BGSTARTCOLOR" Type="varchar" MaxLength="9" />
+    <Property Name="BGENDCOLOR" Type="varchar" MaxLength="9" />
+    <Property Name="THEME" Type="varchar" MaxLength="20" />
+    <Property Name="COMPANY" Type="nvarchar" MaxLength="30" />
+    <Property Name="PAGESAVEOPTION" Type="int" />
+    <Property Name="COMPANYIMAGE" Type="varbinary(max)" />
+  </EntityType>
+  <EntityType Name="SYS_SDUSERS">
+    <Key>
+      <PropertyRef Name="USERID" />
+    </Key>
+    <Property Name="USERID" Type="varchar" Nullable="false" MaxLength="20" />
+    <Property Name="USERNAME" Type="nvarchar" MaxLength="30" />
+    <Property Name="PASSWORD" Type="varchar" MaxLength="20" />
+    <Property Name="GROUPID" Type="varchar" MaxLength="20" />
+    <Property Name="LASTDATE" Type="datetime" />
+    <Property Name="EMAIL" Type="nvarchar" MaxLength="50" />
+    <Property Name="SYSTYPE" Type="nvarchar" MaxLength="1" />
+  </EntityType>
+  <EntityType Name="SYS_SDUSERS_LOG">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="USERID" Type="varchar" Nullable="false" MaxLength="20" />
+    <Property Name="IPADDRESS" Type="varchar" Nullable="false" MaxLength="20" />
+    <Property Name="LOGINTIME" Type="datetime" Nullable="false" />
+    <Property Name="LOGOUTTIME" Type="datetime" Nullable="false" />
+  </EntityType>
+  <EntityType Name="SYS_TODOHIS">
+    <Key>
+      <PropertyRef Name="LISTID" />
+      <PropertyRef Name="FLOW_ID" />
+      <PropertyRef Name="ROLE_ID" />
+      <PropertyRef Name="S_ROLE_ID" />
+      <PropertyRef Name="S_STEP_ID" />
+      <PropertyRef Name="D_STEP_ID" />
+      <PropertyRef Name="S_USER_ID" />
+      <PropertyRef Name="USER_ID" />
+      <PropertyRef Name="WEBFORM_NAME" />
+      <PropertyRef Name="NAVIGATOR_MODE" />
+      <PropertyRef Name="FLNAVIGATOR_MODE" />
+      <PropertyRef Name="PROC_TIME" />
+      <PropertyRef Name="EXP_TIME" />
+      <PropertyRef Name="TIME_UNIT" />
+      <PropertyRef Name="FLOWIMPORTANT" />
+      <PropertyRef Name="FLOWURGENT" />
+    </Key>
+    <Property Name="LISTID" Type="nvarchar" Nullable="false" MaxLength="40" />
+    <Property Name="FLOW_ID" Type="nvarchar" Nullable="false" MaxLength="40" />
+    <Property Name="FLOW_DESC" Type="nvarchar" MaxLength="40" />
+    <Property Name="ROLE_ID" Type="nvarchar" Nullable="false" MaxLength="12" />
+    <Property Name="S_ROLE_ID" Type="nvarchar" Nullable="false" MaxLength="12" />
+    <Property Name="S_STEP_ID" Type="nvarchar" Nullable="false" MaxLength="20" />
+    <Property Name="D_STEP_ID" Type="nvarchar" Nullable="false" MaxLength="20" />
+    <Property Name="S_STEP_DESC" Type="nvarchar" MaxLength="64" />
+    <Property Name="S_USER_ID" Type="nvarchar" Nullable="false" MaxLength="20" />
+    <Property Name="USER_ID" Type="nvarchar" Nullable="false" MaxLength="20" />
+    <Property Name="USERNAME" Type="nvarchar" MaxLength="30" />
+    <Property Name="FORM_NAME" Type="nvarchar" MaxLength="30" />
+    <Property Name="WEBFORM_NAME" Type="nvarchar" Nullable="false" MaxLength="30" />
+    <Property Name="S_USERNAME" Type="nvarchar" MaxLength="30" />
+    <Property Name="NAVIGATOR_MODE" Type="nvarchar" Nullable="false" MaxLength="2" />
+    <Property Name="FLNAVIGATOR_MODE" Type="nvarchar" Nullable="false" MaxLength="2" />
+    <Property Name="PARAMETERS" Type="nvarchar" MaxLength="254" />
+    <Property Name="STATUS" Type="nvarchar" MaxLength="4" />
+    <Property Name="PROC_TIME" Type="decimal" Nullable="false" Precision="8" Scale="2" />
+    <Property Name="EXP_TIME" Type="decimal" Nullable="false" Precision="8" Scale="2" />
+    <Property Name="TIME_UNIT" Type="nvarchar" Nullable="false" MaxLength="4" />
+    <Property Name="FLOWIMPORTANT" Type="varchar" Nullable="false" MaxLength="1" />
+    <Property Name="FLOWURGENT" Type="varchar" Nullable="false" MaxLength="1" />
+    <Property Name="FORM_TABLE" Type="nvarchar" MaxLength="30" />
+    <Property Name="FORM_KEYS" Type="nvarchar" MaxLength="254" />
+    <Property Name="FORM_PRESENTATION" Type="nvarchar" MaxLength="254" />
+    <Property Name="REMARK" Type="nvarchar" MaxLength="254" />
+    <Property Name="VERSION" Type="nvarchar" MaxLength="2" />
+    <Property Name="VDSNAME" Type="nvarchar" MaxLength="40" />
+    <Property Name="SENDBACKSTEP" Type="nvarchar" MaxLength="2" />
+    <Property Name="LEVEL_NO" Type="nvarchar" MaxLength="6" />
+    <Property Name="UPDATE_DATE" Type="nvarchar" MaxLength="10" />
+    <Property Name="UPDATE_TIME" Type="nvarchar" MaxLength="8" />
+    <Property Name="FORM_PRESENT_CT" Type="nvarchar" MaxLength="254" />
+    <Property Name="ATTACHMENTS" Type="nvarchar" MaxLength="255" />
+    <Property Name="CREATE_TIME" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <!--生成过程中发现错误:
+      警告 6002: 表/视图“Northwind.dbo.SYS_TODOLIST”未定义主键。已推断出该键，并将定义创建为只读的表/视图。
+      -->
+  <EntityType Name="SYS_TODOLIST">
+    <Key>
+      <PropertyRef Name="LISTID" />
+      <PropertyRef Name="FLOW_ID" />
+      <PropertyRef Name="APPLICANT" />
+      <PropertyRef Name="S_USER_ID" />
+      <PropertyRef Name="S_STEP_ID" />
+      <PropertyRef Name="D_STEP_ID" />
+      <PropertyRef Name="EXP_TIME" />
+      <PropertyRef Name="URGENT_TIME" />
+      <PropertyRef Name="TIME_UNIT" />
+      <PropertyRef Name="NAVIGATOR_MODE" />
+      <PropertyRef Name="FLNAVIGATOR_MODE" />
+      <PropertyRef Name="SENDTO_KIND" />
+      <PropertyRef Name="SENDTO_ID" />
+      <PropertyRef Name="FLOWIMPORTANT" />
+      <PropertyRef Name="FLOWURGENT" />
+      <PropertyRef Name="FORM_PRESENT_CT" />
+      <PropertyRef Name="WEBFORM_NAME" />
+      <PropertyRef Name="FLOWPATH" />
+      <PropertyRef Name="PLUSAPPROVE" />
+      <PropertyRef Name="PLUSROLES" />
+    </Key>
+    <Property Name="LISTID" Type="nvarchar" Nullable="false" MaxLength="40" />
+    <Property Name="FLOW_ID" Type="nvarchar" Nullable="false" MaxLength="40" />
+    <Property Name="FLOW_DESC" Type="nvarchar" MaxLength="40" />
+    <Property Name="APPLICANT" Type="nvarchar" Nullable="false" MaxLength="20" />
+    <Property Name="S_USER_ID" Type="nvarchar" Nullable="false" MaxLength="20" />
+    <Property Name="S_STEP_ID" Type="nvarchar" Nullable="false" MaxLength="20" />
+    <Property Name="S_STEP_DESC" Type="nvarchar" MaxLength="64" />
+    <Property Name="D_STEP_ID" Type="nvarchar" Nullable="false" MaxLength="20" />
+    <Property Name="D_STEP_DESC" Type="nvarchar" MaxLength="64" />
+    <Property Name="EXP_TIME" Type="decimal" Nullable="false" Precision="8" Scale="2" />
+    <Property Name="URGENT_TIME" Type="decimal" Nullable="false" Precision="8" Scale="2" />
+    <Property Name="TIME_UNIT" Type="nvarchar" Nullable="false" MaxLength="4" />
+    <Property Name="USERNAME" Type="nvarchar" MaxLength="30" />
+    <Property Name="FORM_NAME" Type="nvarchar" MaxLength="30" />
+    <Property Name="NAVIGATOR_MODE" Type="nvarchar" Nullable="false" MaxLength="2" />
+    <Property Name="FLNAVIGATOR_MODE" Type="nvarchar" Nullable="false" MaxLength="2" />
+    <Property Name="PARAMETERS" Type="nvarchar" MaxLength="254" />
+    <Property Name="SENDTO_KIND" Type="nvarchar" Nullable="false" MaxLength="4" />
+    <Property Name="SENDTO_ID" Type="nvarchar" Nullable="false" MaxLength="20" />
+    <Property Name="FLOWIMPORTANT" Type="varchar" Nullable="false" MaxLength="1" />
+    <Property Name="FLOWURGENT" Type="nvarchar" Nullable="false" MaxLength="1" />
+    <Property Name="STATUS" Type="nvarchar" MaxLength="4" />
+    <Property Name="FORM_TABLE" Type="nvarchar" MaxLength="30" />
+    <Property Name="FORM_KEYS" Type="nvarchar" MaxLength="254" />
+    <Property Name="FORM_PRESENTATION" Type="nvarchar" MaxLength="254" />
+    <Property Name="FORM_PRESENT_CT" Type="nvarchar" Nullable="false" MaxLength="254" />
+    <Property Name="REMARK" Type="nvarchar" MaxLength="254" />
+    <Property Name="PROVIDER_NAME" Type="nvarchar" MaxLength="254" />
+    <Property Name="VERSION" Type="nvarchar" MaxLength="2" />
+    <Property Name="EMAIL_ADD" Type="nvarchar" MaxLength="40" />
+    <Property Name="EMAIL_STATUS" Type="varchar" MaxLength="1" />
+    <Property Name="VDSNAME" Type="nvarchar" MaxLength="40" />
+    <Property Name="SENDBACKSTEP" Type="nvarchar" MaxLength="2" />
+    <Property Name="LEVEL_NO" Type="nvarchar" MaxLength="6" />
+    <Property Name="WEBFORM_NAME" Type="nvarchar" Nullable="false" MaxLength="30" />
+    <Property Name="UPDATE_DATE" Type="nvarchar" MaxLength="10" />
+    <Property Name="UPDATE_TIME" Type="nvarchar" MaxLength="8" />
+    <Property Name="FLOWPATH" Type="nvarchar" Nullable="false" MaxLength="100" />
+    <Property Name="PLUSAPPROVE" Type="varchar" Nullable="false" MaxLength="1" />
+    <Property Name="PLUSROLES" Type="nvarchar" Nullable="false" MaxLength="254" />
+    <Property Name="MULTISTEPRETURN" Type="varchar" MaxLength="1" />
+    <Property Name="SENDTO_NAME" Type="nvarchar" MaxLength="30" />
+    <Property Name="ATTACHMENTS" Type="nvarchar" MaxLength="255" />
+    <Property Name="CREATE_TIME" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="SYS_WEBPAGES">
+    <Key>
+      <PropertyRef Name="PAGENAME" />
+      <PropertyRef Name="PAGETYPE" />
+      <PropertyRef Name="USERID" />
+      <PropertyRef Name="SOLUTIONID" />
+    </Key>
+    <Property Name="PAGENAME" Type="varchar" Nullable="false" MaxLength="30" />
+    <Property Name="PAGETYPE" Type="char" Nullable="false" MaxLength="1" />
+    <Property Name="DESCRIPTION" Type="varchar" MaxLength="60" />
+    <Property Name="CONTENT" Type="varbinary(max)" />
+    <Property Name="USERID" Type="varchar" Nullable="false" MaxLength="20" />
+    <Property Name="SOLUTIONID" Type="varchar" Nullable="false" MaxLength="30" />
+    <Property Name="SERVERDLL" Type="varbinary(max)" />
+    <Property Name="CHECKOUT" Type="bit" />
+    <Property Name="CHECKOUTDATE" Type="datetime" />
+    <Property Name="CHECKOUTUSER" Type="varchar" MaxLength="20" />
+  </EntityType>
+  <EntityType Name="SYS_WEBPAGES_LOG">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="PAGENAME" Type="varchar" Nullable="false" MaxLength="30" />
+    <Property Name="PAGETYPE" Type="char" Nullable="false" MaxLength="1" />
+    <Property Name="DESCRIPTION" Type="varchar" MaxLength="60" />
+    <Property Name="CONTENT" Type="varbinary(max)" />
+    <Property Name="USERID" Type="varchar" Nullable="false" MaxLength="20" />
+    <Property Name="SOLUTIONID" Type="varchar" Nullable="false" MaxLength="30" />
+    <Property Name="SERVERDLL" Type="varbinary(max)" />
+    <Property Name="CHECKINDATE" Type="datetime" Nullable="false" />
+    <Property Name="ID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="CHECKINUSER" Type="varchar" MaxLength="20" />
+    <Property Name="CHECKINDESCRIPTION" Type="varchar" MaxLength="255" />
+  </EntityType>
+  <EntityType Name="SYS_WEBRUNTIME">
+    <Key>
+      <PropertyRef Name="PAGENAME" />
+      <PropertyRef Name="PAGETYPE" />
+      <PropertyRef Name="USERID" />
+      <PropertyRef Name="SOLUTIONID" />
+    </Key>
+    <Property Name="PAGENAME" Type="varchar" Nullable="false" MaxLength="30" />
+    <Property Name="PAGETYPE" Type="char" Nullable="false" MaxLength="1" />
+    <Property Name="CONTENT" Type="varbinary(max)" />
+    <Property Name="USERID" Type="varchar" Nullable="false" MaxLength="20" />
+    <Property Name="SOLUTIONID" Type="varchar" Nullable="false" MaxLength="30" />
+  </EntityType>
+  <EntityType Name="SYSEEPLOG">
+    <Key>
+      <PropertyRef Name="CONNID" />
+      <PropertyRef Name="LOGID" />
+    </Key>
+    <Property Name="CONNID" Type="nvarchar" Nullable="false" MaxLength="20" />
+    <Property Name="LOGID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="LOGSTYLE" Type="nvarchar" Nullable="false" MaxLength="1" />
+    <Property Name="LOGDATETIME" Type="datetime" Nullable="false" />
+    <Property Name="DOMAINID" Type="nvarchar" MaxLength="30" />
+    <Property Name="USERID" Type="varchar" MaxLength="20" />
+    <Property Name="LOGTYPE" Type="nvarchar" MaxLength="1" />
+    <Property Name="TITLE" Type="nvarchar" MaxLength="64" />
+    <Property Name="DESCRIPTION" Type="nvarchar(max)" />
+    <Property Name="COMPUTERIP" Type="nvarchar" MaxLength="16" />
+    <Property Name="COMPUTERNAME" Type="nvarchar" MaxLength="64" />
+    <Property Name="EXECUTIONTIME" Type="int" />
+  </EntityType>
+  <EntityType Name="USERGROUPS">
+    <Key>
+      <PropertyRef Name="USERID" />
+      <PropertyRef Name="GROUPID" />
+    </Key>
+    <Property Name="USERID" Type="varchar" Nullable="false" MaxLength="20" />
+    <Property Name="GROUPID" Type="nvarchar" Nullable="false" MaxLength="6" />
+  </EntityType>
+  <EntityType Name="USERMENUCONTROL">
+    <Key>
+      <PropertyRef Name="USERID" />
+      <PropertyRef Name="MENUID" />
+      <PropertyRef Name="CONTROLNAME" />
+    </Key>
+    <Property Name="USERID" Type="varchar" Nullable="false" MaxLength="20" />
+    <Property Name="MENUID" Type="varchar" Nullable="false" MaxLength="30" />
+    <Property Name="CONTROLNAME" Type="varchar" Nullable="false" MaxLength="50" />
+    <Property Name="TYPE" Type="varchar" MaxLength="20" />
+    <Property Name="ENABLED" Type="char" MaxLength="1" />
+    <Property Name="VISIBLE" Type="char" MaxLength="1" />
+    <Property Name="ALLOWADD" Type="char" MaxLength="1" />
+    <Property Name="ALLOWUPDATE" Type="char" MaxLength="1" />
+    <Property Name="ALLOWDELETE" Type="char" MaxLength="1" />
+    <Property Name="ALLOWPRINT" Type="char" MaxLength="1" />
+  </EntityType>
+  <EntityType Name="USERMENUS">
+    <Key>
+      <PropertyRef Name="USERID" />
+      <PropertyRef Name="MENUID" />
+    </Key>
+    <Property Name="USERID" Type="varchar" Nullable="false" MaxLength="20" />
+    <Property Name="MENUID" Type="nvarchar" Nullable="false" MaxLength="30" />
+  </EntityType>
+  <EntityType Name="USERS">
+    <Key>
+      <PropertyRef Name="USERID" />
+    </Key>
+    <Property Name="USERID" Type="varchar" Nullable="false" MaxLength="20" />
+    <Property Name="USERNAME" Type="nvarchar" MaxLength="30" />
+    <Property Name="AGENT" Type="nvarchar" MaxLength="20" />
+    <Property Name="PWD" Type="nvarchar" MaxLength="20" />
+    <Property Name="CREATEDATE" Type="nvarchar" MaxLength="8" />
+    <Property Name="CREATER" Type="nvarchar" MaxLength="20" />
+    <Property Name="DESCRIPTION" Type="nvarchar" MaxLength="100" />
+    <Property Name="EMAIL" Type="nvarchar" MaxLength="40" />
+    <Property Name="LASTTIME" Type="nvarchar" MaxLength="8" />
+    <Property Name="AUTOLOGIN" Type="nvarchar" MaxLength="1" />
+    <Property Name="LASTDATE" Type="nvarchar" MaxLength="8" />
+    <Property Name="SIGNATURE" Type="nvarchar" MaxLength="30" />
+    <Property Name="MSAD" Type="nvarchar" MaxLength="1" />
+  </EntityType>
+  <Association Name="FK_SYS_SDQUEUEPAGE_SYS_SDQUEUE">
+    <End Role="SYS_SDQUEUE" Type="EFModel.Store.SYS_SDQUEUE" Multiplicity="1" />
+    <End Role="SYS_SDQUEUEPAGE" Type="EFModel.Store.SYS_SDQUEUEPAGE" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="SYS_SDQUEUE">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="SYS_SDQUEUEPAGE">
+        <PropertyRef Name="ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+</Schema>

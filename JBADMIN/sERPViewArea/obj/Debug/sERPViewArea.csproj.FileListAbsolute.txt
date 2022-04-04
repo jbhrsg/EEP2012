@@ -1,0 +1,15 @@
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sERPViewArea\bin\Debug\sERPViewArea.dll
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sERPViewArea\bin\Debug\sERPViewArea.pdb
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sERPViewArea\obj\Debug\sERPViewArea.csproj.GenerateResource.Cache
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sERPViewArea\obj\Debug\sERPViewArea.dll
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sERPViewArea\obj\Debug\sERPViewArea.pdb
+C:\Program Files (x86)\Infolight\EEP2012\EEPNetServer\JBADMIN\sERPViewArea.dll
+C:\Program Files (x86)\Infolight\EEP2012\EEPNetServer\JBADMIN\sERPViewArea.pdb
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sERPViewArea\obj\Debug\sERPViewArea.Component.resources
+D:\Infolight\EEP2012\EEPNetServer\JBADMIN\sERPViewArea.dll
+D:\Infolight\EEP2012\EEPNetServer\JBADMIN\sERPViewArea.pdb
+D:\Infolight\EEP2012\JBADMIN\sERPViewArea\obj\Debug\sERPViewArea.Component.resources
+D:\Infolight\EEP2012\JBADMIN\sERPViewArea\obj\Debug\sERPViewArea.csproj.GenerateResource.Cache
+D:\Infolight\EEP2012\JBADMIN\sERPViewArea\obj\Debug\sERPViewArea.dll
+D:\Infolight\EEP2012\JBADMIN\sERPViewArea\obj\Debug\sERPViewArea.pdb
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sERPViewArea\obj\Debug\sERPViewArea.csprojResolveAssemblyReference.cache

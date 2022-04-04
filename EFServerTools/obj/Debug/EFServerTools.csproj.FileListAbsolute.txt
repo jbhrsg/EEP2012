@@ -1,0 +1,168 @@
+F:\Program Files\EEP2010\WCFServer\EFServerTools.dll
+F:\Program Files\EEP2010\WCFServer\EFServerTools.pdb
+F:\Program Files\EEP2010\EFServerTools\obj\Debug\ResolveAssemblyReference.cache
+F:\Program Files\EEP2010\EFServerTools\obj\Debug\EFServerTools.Properties.Resources.resources
+F:\Program Files\EEP2010\EFServerTools\obj\Debug\GenerateResource.read.1.tlog
+F:\Program Files\EEP2010\EFServerTools\obj\Debug\GenerateResource.write.1.tlog
+F:\Program Files\EEP2010\EFServerTools\obj\Debug\EFServerTools.dll
+F:\Program Files\EEP2010\EFServerTools\obj\Debug\EFServerTools.pdb
+F:\Program Files\EEP2010\EFServerTools\obj\Debug\EFServerTools.Design.EFTransactionDesign.EFTransactionEditorDialog.resources
+F:\Program Files\EEP2010\EFServerTools\obj\Debug\EFServerTools.Design.EFTransactionDesign.EFTransactionEditorTransFieldsDialog.resources
+F:\Program Files\EEP2010\EFServerTools\obj\Debug\EFServerTools.Design.EFTransactionDesign.EFTransactionEditorKeyFieldsDialog.resources
+F:\Program Files\EEP2010\EFServerTools\obj\Debug\EFServerTools.Design.EFTransactionDesign.EFTransactionEditorTTransactionDialog.resources
+F:\Program Files\EEP2010\EFServerTools\obj\Debug\EFServerTools.Design.EFTransactionDesign.EFTransactionTransFieldsAddDialog.resources
+F:\Program Files\EEP2010\EFServerTools\obj\Debug\EFServerTools.Design.EFTransactionDesign.EFTransactionTransKeyFieldsAddDialog.resources
+F:\Program Files\EEP2010\EFServerTools\obj\Debug\EFServerTools.Design.EFCommandDesign.EFCommandEditor.resources
+D:\Infolight\EEP2010\WCFServer\EFServerTools.dll
+D:\Infolight\EEP2010\WCFServer\EFServerTools.pdb
+D:\Infolight\EEP2010\EEPNetServer\EFServerTools.dll
+D:\Infolight\EEP2010\EEPNetServer\EFServerTools.pdb
+D:\Infolight\EEP2010\EFServerTools\obj\Debug\ResolveAssemblyReference.cache
+D:\Infolight\EEP2010\EFServerTools\obj\Debug\EFServerTools.Design.EFCommandDesign.EFParameterEditorDialog.resources
+D:\Infolight\EEP2010\EFServerTools\obj\Debug\EFServerTools.Design.EFTransactionDesign.EFTransactionEditorDialog.resources
+D:\Infolight\EEP2010\EFServerTools\obj\Debug\EFServerTools.Design.EFTransactionDesign.EFTransactionEditorTransFieldsDialog.resources
+D:\Infolight\EEP2010\EFServerTools\obj\Debug\EFServerTools.Design.EFTransactionDesign.EFTransactionEditorKeyFieldsDialog.resources
+D:\Infolight\EEP2010\EFServerTools\obj\Debug\EFServerTools.Design.EFTransactionDesign.EFTransactionEditorTTransactionDialog.resources
+D:\Infolight\EEP2010\EFServerTools\obj\Debug\EFServerTools.Design.EFTransactionDesign.EFTransactionTransFieldsAddDialog.resources
+D:\Infolight\EEP2010\EFServerTools\obj\Debug\EFServerTools.Design.EFTransactionDesign.EFTransactionTransKeyFieldsAddDialog.resources
+D:\Infolight\EEP2010\EFServerTools\obj\Debug\EFServerTools.Design.EFCommandDesign.EFCommandEditor.resources
+D:\Infolight\EEP2010\EFServerTools\obj\Debug\EFServerTools.Properties.Resources.resources
+D:\Infolight\EEP2010\EFServerTools\obj\Debug\GenerateResource.read.1.tlog
+D:\Infolight\EEP2010\EFServerTools\obj\Debug\GenerateResource.write.1.tlog
+D:\Infolight\EEP2010\EFServerTools\obj\Debug\EFServerTools.dll
+D:\Infolight\EEP2010\EFServerTools\obj\Debug\EFServerTools.pdb
+C:\Program Files\Infolight\EEP2010\EEPNetServer\EFServerTools.dll
+C:\Program Files\Infolight\EEP2010\EFServerTools\obj\Debug\EFServerTools.Design.EFCommandDesign.EFParameterEditorDialog.resources
+C:\Program Files\Infolight\EEP2010\EFServerTools\obj\Debug\EFServerTools.Design.EFTransactionDesign.EFTransactionEditorDialog.resources
+C:\Program Files\Infolight\EEP2010\EFServerTools\obj\Debug\EFServerTools.Design.EFTransactionDesign.EFTransactionEditorTransFieldsDialog.resources
+C:\Program Files\Infolight\EEP2010\EFServerTools\obj\Debug\EFServerTools.Design.EFTransactionDesign.EFTransactionEditorKeyFieldsDialog.resources
+C:\Program Files\Infolight\EEP2010\EFServerTools\obj\Debug\EFServerTools.Design.EFTransactionDesign.EFTransactionEditorTTransactionDialog.resources
+C:\Program Files\Infolight\EEP2010\EFServerTools\obj\Debug\EFServerTools.Design.EFTransactionDesign.EFTransactionTransFieldsAddDialog.resources
+C:\Program Files\Infolight\EEP2010\EFServerTools\obj\Debug\EFServerTools.Design.EFTransactionDesign.EFTransactionTransKeyFieldsAddDialog.resources
+C:\Program Files\Infolight\EEP2010\EFServerTools\obj\Debug\EFServerTools.Design.EFCommandDesign.EFCommandEditor.resources
+C:\Program Files\Infolight\EEP2010\EFServerTools\obj\Debug\EFServerTools.Properties.Resources.resources
+C:\Program Files\Infolight\EEP2010\EFServerTools\obj\Debug\EFServerTools.dll
+C:\Program Files\Infolight\EEP2010\EFServerTools\obj\Debug\EFServerTools.pdb
+C:\Program Files\Infolight\EEP2010\EEPNetServer\EFServerTools.pdb
+C:\Program Files\Infolight\EEP2010\EFServerTools\obj\Debug\EFServerTools.csprojResolveAssemblyReference.cache
+C:\Program Files\Infolight\EEP2010\EFServerTools\obj\Debug\EFServerTools.csproj.GenerateResource.Cache
+C:\Program Files\Infolight\EEP2012Dev\EEPNetServer\EFServerTools.dll
+C:\Program Files\Infolight\EEP2012Dev\EEPNetServer\EFServerTools.pdb
+C:\Program Files\Infolight\EEP2012Dev\EFServerTools\obj\Debug\EFServerTools.csprojResolveAssemblyReference.cache
+C:\Program Files\Infolight\EEP2012Dev\EFServerTools\obj\Debug\EFServerTools.Design.EFCommandDesign.EFParameterEditorDialog.resources
+C:\Program Files\Infolight\EEP2012Dev\EFServerTools\obj\Debug\EFServerTools.Design.EFTransactionDesign.EFTransactionEditorDialog.resources
+C:\Program Files\Infolight\EEP2012Dev\EFServerTools\obj\Debug\EFServerTools.Design.EFTransactionDesign.EFTransactionEditorTransFieldsDialog.resources
+C:\Program Files\Infolight\EEP2012Dev\EFServerTools\obj\Debug\EFServerTools.Design.EFTransactionDesign.EFTransactionEditorKeyFieldsDialog.resources
+C:\Program Files\Infolight\EEP2012Dev\EFServerTools\obj\Debug\EFServerTools.Design.EFTransactionDesign.EFTransactionEditorTTransactionDialog.resources
+C:\Program Files\Infolight\EEP2012Dev\EFServerTools\obj\Debug\EFServerTools.Design.EFTransactionDesign.EFTransactionTransFieldsAddDialog.resources
+C:\Program Files\Infolight\EEP2012Dev\EFServerTools\obj\Debug\EFServerTools.Design.EFTransactionDesign.EFTransactionTransKeyFieldsAddDialog.resources
+C:\Program Files\Infolight\EEP2012Dev\EFServerTools\obj\Debug\EFServerTools.Design.EFCommandDesign.EFCommandEditor.resources
+C:\Program Files\Infolight\EEP2012Dev\EFServerTools\obj\Debug\EFServerTools.Properties.Resources.resources
+C:\Program Files\Infolight\EEP2012Dev\EFServerTools\obj\Debug\EFServerTools.csproj.GenerateResource.Cache
+C:\Program Files\Infolight\EEP2012Dev\EFServerTools\obj\Debug\EFServerTools.dll
+C:\Program Files\Infolight\EEP2012Dev\EFServerTools\obj\Debug\EFServerTools.pdb
+C:\Program Files\Infolight\EEP2012WF\EEPNetServer\EFServerTools.dll
+C:\Program Files\Infolight\EEP2012WF\EEPNetServer\EFServerTools.pdb
+C:\Program Files\Infolight\EEP2012WF\EFServerTools\obj\Debug\EFServerTools.csprojResolveAssemblyReference.cache
+C:\Program Files\Infolight\EEP2012WF\EFServerTools\obj\Debug\EFServerTools.Design.EFCommandDesign.EFParameterEditorDialog.resources
+C:\Program Files\Infolight\EEP2012WF\EFServerTools\obj\Debug\EFServerTools.Design.EFTransactionDesign.EFTransactionEditorDialog.resources
+C:\Program Files\Infolight\EEP2012WF\EFServerTools\obj\Debug\EFServerTools.Design.EFTransactionDesign.EFTransactionEditorTransFieldsDialog.resources
+C:\Program Files\Infolight\EEP2012WF\EFServerTools\obj\Debug\EFServerTools.Design.EFTransactionDesign.EFTransactionEditorKeyFieldsDialog.resources
+C:\Program Files\Infolight\EEP2012WF\EFServerTools\obj\Debug\EFServerTools.Design.EFTransactionDesign.EFTransactionEditorTTransactionDialog.resources
+C:\Program Files\Infolight\EEP2012WF\EFServerTools\obj\Debug\EFServerTools.Design.EFTransactionDesign.EFTransactionTransFieldsAddDialog.resources
+C:\Program Files\Infolight\EEP2012WF\EFServerTools\obj\Debug\EFServerTools.Design.EFTransactionDesign.EFTransactionTransKeyFieldsAddDialog.resources
+C:\Program Files\Infolight\EEP2012WF\EFServerTools\obj\Debug\EFServerTools.Design.EFCommandDesign.EFCommandEditor.resources
+C:\Program Files\Infolight\EEP2012WF\EFServerTools\obj\Debug\EFServerTools.Properties.Resources.resources
+C:\Program Files\Infolight\EEP2012WF\EFServerTools\obj\Debug\EFServerTools.csproj.GenerateResource.Cache
+C:\Program Files\Infolight\EEP2012WF\EFServerTools\obj\Debug\EFServerTools.dll
+C:\Program Files\Infolight\EEP2012WF\EFServerTools\obj\Debug\EFServerTools.pdb
+C:\Program Files (x86)\Infolight\EEP2012WF\EEPNetServer\EFServerTools.dll
+C:\Program Files (x86)\Infolight\EEP2012WF\EEPNetServer\EFServerTools.pdb
+C:\Program Files (x86)\Infolight\EEP2012WF\EFServerTools\obj\Debug\EFServerTools.csprojResolveAssemblyReference.cache
+C:\Program Files (x86)\Infolight\EEP2012WF\EFServerTools\obj\Debug\EFServerTools.Design.EFCommandDesign.EFParameterEditorDialog.resources
+C:\Program Files (x86)\Infolight\EEP2012WF\EFServerTools\obj\Debug\EFServerTools.Design.EFTransactionDesign.EFTransactionEditorDialog.resources
+C:\Program Files (x86)\Infolight\EEP2012WF\EFServerTools\obj\Debug\EFServerTools.Design.EFTransactionDesign.EFTransactionEditorTransFieldsDialog.resources
+C:\Program Files (x86)\Infolight\EEP2012WF\EFServerTools\obj\Debug\EFServerTools.Design.EFTransactionDesign.EFTransactionEditorKeyFieldsDialog.resources
+C:\Program Files (x86)\Infolight\EEP2012WF\EFServerTools\obj\Debug\EFServerTools.Design.EFTransactionDesign.EFTransactionEditorTTransactionDialog.resources
+C:\Program Files (x86)\Infolight\EEP2012WF\EFServerTools\obj\Debug\EFServerTools.Design.EFTransactionDesign.EFTransactionTransFieldsAddDialog.resources
+C:\Program Files (x86)\Infolight\EEP2012WF\EFServerTools\obj\Debug\EFServerTools.Design.EFTransactionDesign.EFTransactionTransKeyFieldsAddDialog.resources
+C:\Program Files (x86)\Infolight\EEP2012WF\EFServerTools\obj\Debug\EFServerTools.Design.EFCommandDesign.EFCommandEditor.resources
+C:\Program Files (x86)\Infolight\EEP2012WF\EFServerTools\obj\Debug\EFServerTools.Properties.Resources.resources
+C:\Program Files (x86)\Infolight\EEP2012WF\EFServerTools\obj\Debug\EFServerTools.csproj.GenerateResource.Cache
+C:\Program Files (x86)\Infolight\EEP2012WF\EFServerTools\obj\Debug\EFServerTools.dll
+C:\Program Files (x86)\Infolight\EEP2012WF\EFServerTools\obj\Debug\EFServerTools.pdb
+D:\版本\Version\安裝源文件\EEP2012WF(V5.0.0.020140924 SP5)\EEPNetServer\EFServerTools.dll
+D:\版本\Version\安裝源文件\EEP2012WF(V5.0.0.020140924 SP5)\EEPNetServer\EFServerTools.pdb
+D:\版本\Version\安裝源文件\EEP2012WF(V5.0.0.020140924 SP5)\EFServerTools\obj\Debug\EFServerTools.csprojResolveAssemblyReference.cache
+D:\版本\Version\安裝源文件\EEP2012WF(V5.0.0.020140924 SP5)\EFServerTools\obj\Debug\EFServerTools.Design.EFCommandDesign.EFParameterEditorDialog.resources
+D:\版本\Version\安裝源文件\EEP2012WF(V5.0.0.020140924 SP5)\EFServerTools\obj\Debug\EFServerTools.Design.EFTransactionDesign.EFTransactionEditorDialog.resources
+D:\版本\Version\安裝源文件\EEP2012WF(V5.0.0.020140924 SP5)\EFServerTools\obj\Debug\EFServerTools.Design.EFTransactionDesign.EFTransactionEditorTransFieldsDialog.resources
+D:\版本\Version\安裝源文件\EEP2012WF(V5.0.0.020140924 SP5)\EFServerTools\obj\Debug\EFServerTools.Design.EFTransactionDesign.EFTransactionEditorKeyFieldsDialog.resources
+D:\版本\Version\安裝源文件\EEP2012WF(V5.0.0.020140924 SP5)\EFServerTools\obj\Debug\EFServerTools.Design.EFTransactionDesign.EFTransactionEditorTTransactionDialog.resources
+D:\版本\Version\安裝源文件\EEP2012WF(V5.0.0.020140924 SP5)\EFServerTools\obj\Debug\EFServerTools.Design.EFTransactionDesign.EFTransactionTransFieldsAddDialog.resources
+D:\版本\Version\安裝源文件\EEP2012WF(V5.0.0.020140924 SP5)\EFServerTools\obj\Debug\EFServerTools.Design.EFTransactionDesign.EFTransactionTransKeyFieldsAddDialog.resources
+D:\版本\Version\安裝源文件\EEP2012WF(V5.0.0.020140924 SP5)\EFServerTools\obj\Debug\EFServerTools.Design.EFCommandDesign.EFCommandEditor.resources
+D:\版本\Version\安裝源文件\EEP2012WF(V5.0.0.020140924 SP5)\EFServerTools\obj\Debug\EFServerTools.Properties.Resources.resources
+D:\版本\Version\安裝源文件\EEP2012WF(V5.0.0.020140924 SP5)\EFServerTools\obj\Debug\EFServerTools.csproj.GenerateResource.Cache
+D:\版本\Version\安裝源文件\EEP2012WF(V5.0.0.020140924 SP5)\EFServerTools\obj\Debug\EFServerTools.dll
+D:\版本\Version\安裝源文件\EEP2012WF(V5.0.0.020140924 SP5)\EFServerTools\obj\Debug\EFServerTools.pdb
+D:\版本\Version\安裝源文件\EEP2012(V5.0.0.020140924 SP5)\EEP2012WF\EEPNetServer\EFServerTools.dll
+D:\版本\Version\安裝源文件\EEP2012(V5.0.0.020140924 SP5)\EEP2012WF\EEPNetServer\EFServerTools.pdb
+D:\版本\Version\安裝源文件\EEP2012(V5.0.0.020140924 SP5)\EEP2012WF\EFServerTools\obj\Debug\EFServerTools.csprojResolveAssemblyReference.cache
+D:\版本\Version\安裝源文件\EEP2012(V5.0.0.020140924 SP5)\EEP2012WF\EFServerTools\obj\Debug\EFServerTools.Design.EFCommandDesign.EFParameterEditorDialog.resources
+D:\版本\Version\安裝源文件\EEP2012(V5.0.0.020140924 SP5)\EEP2012WF\EFServerTools\obj\Debug\EFServerTools.Design.EFTransactionDesign.EFTransactionEditorDialog.resources
+D:\版本\Version\安裝源文件\EEP2012(V5.0.0.020140924 SP5)\EEP2012WF\EFServerTools\obj\Debug\EFServerTools.Design.EFTransactionDesign.EFTransactionEditorTransFieldsDialog.resources
+D:\版本\Version\安裝源文件\EEP2012(V5.0.0.020140924 SP5)\EEP2012WF\EFServerTools\obj\Debug\EFServerTools.Design.EFTransactionDesign.EFTransactionEditorKeyFieldsDialog.resources
+D:\版本\Version\安裝源文件\EEP2012(V5.0.0.020140924 SP5)\EEP2012WF\EFServerTools\obj\Debug\EFServerTools.Design.EFTransactionDesign.EFTransactionEditorTTransactionDialog.resources
+D:\版本\Version\安裝源文件\EEP2012(V5.0.0.020140924 SP5)\EEP2012WF\EFServerTools\obj\Debug\EFServerTools.Design.EFTransactionDesign.EFTransactionTransFieldsAddDialog.resources
+D:\版本\Version\安裝源文件\EEP2012(V5.0.0.020140924 SP5)\EEP2012WF\EFServerTools\obj\Debug\EFServerTools.Design.EFTransactionDesign.EFTransactionTransKeyFieldsAddDialog.resources
+D:\版本\Version\安裝源文件\EEP2012(V5.0.0.020140924 SP5)\EEP2012WF\EFServerTools\obj\Debug\EFServerTools.Design.EFCommandDesign.EFCommandEditor.resources
+D:\版本\Version\安裝源文件\EEP2012(V5.0.0.020140924 SP5)\EEP2012WF\EFServerTools\obj\Debug\EFServerTools.Properties.Resources.resources
+D:\版本\Version\安裝源文件\EEP2012(V5.0.0.020140924 SP5)\EEP2012WF\EFServerTools\obj\Debug\EFServerTools.csproj.GenerateResource.Cache
+D:\版本\Version\安裝源文件\EEP2012(V5.0.0.020140924 SP5)\EEP2012WF\EFServerTools\obj\Debug\EFServerTools.dll
+D:\版本\Version\安裝源文件\EEP2012(V5.0.0.020140924 SP5)\EEP2012WF\EFServerTools\obj\Debug\EFServerTools.pdb
+D:\Program Files (x86)\Your Company Name\EEP2012\EEPNetServer\EFServerTools.dll
+D:\Program Files (x86)\Your Company Name\EEP2012\EEPNetServer\EFServerTools.pdb
+D:\Program Files (x86)\Your Company Name\EEP2012\EFServerTools\obj\Debug\EFServerTools.csprojResolveAssemblyReference.cache
+D:\Program Files (x86)\Your Company Name\EEP2012\EFServerTools\obj\Debug\EFServerTools.Design.EFCommandDesign.EFParameterEditorDialog.resources
+D:\Program Files (x86)\Your Company Name\EEP2012\EFServerTools\obj\Debug\EFServerTools.Design.EFTransactionDesign.EFTransactionEditorDialog.resources
+D:\Program Files (x86)\Your Company Name\EEP2012\EFServerTools\obj\Debug\EFServerTools.Design.EFTransactionDesign.EFTransactionEditorTransFieldsDialog.resources
+D:\Program Files (x86)\Your Company Name\EEP2012\EFServerTools\obj\Debug\EFServerTools.Design.EFTransactionDesign.EFTransactionEditorKeyFieldsDialog.resources
+D:\Program Files (x86)\Your Company Name\EEP2012\EFServerTools\obj\Debug\EFServerTools.Design.EFTransactionDesign.EFTransactionEditorTTransactionDialog.resources
+D:\Program Files (x86)\Your Company Name\EEP2012\EFServerTools\obj\Debug\EFServerTools.Design.EFTransactionDesign.EFTransactionTransFieldsAddDialog.resources
+D:\Program Files (x86)\Your Company Name\EEP2012\EFServerTools\obj\Debug\EFServerTools.Design.EFTransactionDesign.EFTransactionTransKeyFieldsAddDialog.resources
+D:\Program Files (x86)\Your Company Name\EEP2012\EFServerTools\obj\Debug\EFServerTools.Design.EFCommandDesign.EFCommandEditor.resources
+D:\Program Files (x86)\Your Company Name\EEP2012\EFServerTools\obj\Debug\EFServerTools.Properties.Resources.resources
+D:\Program Files (x86)\Your Company Name\EEP2012\EFServerTools\obj\Debug\EFServerTools.csproj.GenerateResource.Cache
+D:\Program Files (x86)\Your Company Name\EEP2012\EFServerTools\obj\Debug\EFServerTools.dll
+D:\Program Files (x86)\Your Company Name\EEP2012\EFServerTools\obj\Debug\EFServerTools.pdb
+C:\Program Files (x86)\Infolight\EEP2012\EEPNetServer\EFServerTools.dll
+D:\Infolight\EEP2012\EEPNetServer\EFServerTools.dll
+D:\Infolight\EEP2012\EEPNetServer\EFServerTools.pdb
+D:\Infolight\EEP2012\EFServerTools\obj\Debug\EFServerTools.csprojResolveAssemblyReference.cache
+D:\Infolight\EEP2012\EFServerTools\obj\Debug\EFServerTools.Design.EFCommandDesign.EFParameterEditorDialog.resources
+D:\Infolight\EEP2012\EFServerTools\obj\Debug\EFServerTools.Design.EFTransactionDesign.EFTransactionEditorDialog.resources
+D:\Infolight\EEP2012\EFServerTools\obj\Debug\EFServerTools.Design.EFTransactionDesign.EFTransactionEditorTransFieldsDialog.resources
+D:\Infolight\EEP2012\EFServerTools\obj\Debug\EFServerTools.Design.EFTransactionDesign.EFTransactionEditorKeyFieldsDialog.resources
+D:\Infolight\EEP2012\EFServerTools\obj\Debug\EFServerTools.Design.EFTransactionDesign.EFTransactionEditorTTransactionDialog.resources
+D:\Infolight\EEP2012\EFServerTools\obj\Debug\EFServerTools.Design.EFTransactionDesign.EFTransactionTransFieldsAddDialog.resources
+D:\Infolight\EEP2012\EFServerTools\obj\Debug\EFServerTools.Design.EFTransactionDesign.EFTransactionTransKeyFieldsAddDialog.resources
+D:\Infolight\EEP2012\EFServerTools\obj\Debug\EFServerTools.Design.EFCommandDesign.EFCommandEditor.resources
+D:\Infolight\EEP2012\EFServerTools\obj\Debug\EFServerTools.Properties.Resources.resources
+D:\Infolight\EEP2012\EFServerTools\obj\Debug\EFServerTools.csproj.GenerateResource.Cache
+D:\Infolight\EEP2012\EFServerTools\obj\Debug\EFServerTools.dll
+D:\Infolight\EEP2012\EFServerTools\obj\Debug\EFServerTools.pdb
+C:\Program Files (x86)\Infolight\EEP2012\EEPNetServer\EFServerTools.pdb
+C:\Program Files (x86)\Infolight\EEP2012\EFServerTools\obj\Debug\EFServerTools.csprojResolveAssemblyReference.cache
+C:\Program Files (x86)\Infolight\EEP2012\EFServerTools\obj\Debug\EFServerTools.Design.EFCommandDesign.EFParameterEditorDialog.resources
+C:\Program Files (x86)\Infolight\EEP2012\EFServerTools\obj\Debug\EFServerTools.Design.EFTransactionDesign.EFTransactionEditorDialog.resources
+C:\Program Files (x86)\Infolight\EEP2012\EFServerTools\obj\Debug\EFServerTools.Design.EFTransactionDesign.EFTransactionEditorTransFieldsDialog.resources
+C:\Program Files (x86)\Infolight\EEP2012\EFServerTools\obj\Debug\EFServerTools.Design.EFTransactionDesign.EFTransactionEditorKeyFieldsDialog.resources
+C:\Program Files (x86)\Infolight\EEP2012\EFServerTools\obj\Debug\EFServerTools.Design.EFTransactionDesign.EFTransactionEditorTTransactionDialog.resources
+C:\Program Files (x86)\Infolight\EEP2012\EFServerTools\obj\Debug\EFServerTools.Design.EFTransactionDesign.EFTransactionTransFieldsAddDialog.resources
+C:\Program Files (x86)\Infolight\EEP2012\EFServerTools\obj\Debug\EFServerTools.Design.EFTransactionDesign.EFTransactionTransKeyFieldsAddDialog.resources
+C:\Program Files (x86)\Infolight\EEP2012\EFServerTools\obj\Debug\EFServerTools.Design.EFCommandDesign.EFCommandEditor.resources
+C:\Program Files (x86)\Infolight\EEP2012\EFServerTools\obj\Debug\EFServerTools.Properties.Resources.resources
+C:\Program Files (x86)\Infolight\EEP2012\EFServerTools\obj\Debug\EFServerTools.csproj.GenerateResource.Cache
+C:\Program Files (x86)\Infolight\EEP2012\EFServerTools\obj\Debug\EFServerTools.dll
+C:\Program Files (x86)\Infolight\EEP2012\EFServerTools\obj\Debug\EFServerTools.pdb

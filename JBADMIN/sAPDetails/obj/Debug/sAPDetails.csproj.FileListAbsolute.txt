@@ -1,0 +1,8 @@
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sAPDetails\bin\Debug\sAPDetails.dll
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sAPDetails\bin\Debug\sAPDetails.pdb
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sAPDetails\obj\Debug\sAPDetails.csproj.GenerateResource.Cache
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sAPDetails\obj\Debug\sAPDetails.dll
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sAPDetails\obj\Debug\sAPDetails.pdb
+C:\Program Files (x86)\Infolight\EEP2012\EEPNetServer\JBADMIN\sAPDetails.dll
+C:\Program Files (x86)\Infolight\EEP2012\EEPNetServer\JBADMIN\sAPDetails.pdb
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sAPDetails\obj\Debug\sAPDetails.Component.resources

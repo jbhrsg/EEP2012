@@ -1,0 +1,8 @@
+D:\Infolight\EEP2012\JBADMIN\sJCSEmpAttendance\bin\Debug\sJCSEmpAttendance.dll
+D:\Infolight\EEP2012\JBADMIN\sJCSEmpAttendance\bin\Debug\sJCSEmpAttendance.pdb
+D:\Infolight\EEP2012\JBADMIN\sJCSEmpAttendance\obj\Debug\sJCSEmpAttendance.csproj.GenerateResource.Cache
+D:\Infolight\EEP2012\JBADMIN\sJCSEmpAttendance\obj\Debug\sJCSEmpAttendance.dll
+D:\Infolight\EEP2012\JBADMIN\sJCSEmpAttendance\obj\Debug\sJCSEmpAttendance.pdb
+D:\Infolight\EEP2012\EEPNetServer\JBADMIN\sJCSEmpAttendance.dll
+D:\Infolight\EEP2012\EEPNetServer\JBADMIN\sJCSEmpAttendance.pdb
+D:\Infolight\EEP2012\JBADMIN\sJCSEmpAttendance\obj\Debug\sJCSEmpAttendance.Component.resources

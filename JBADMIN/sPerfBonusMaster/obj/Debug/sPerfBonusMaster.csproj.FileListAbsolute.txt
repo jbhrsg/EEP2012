@@ -1,0 +1,9 @@
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sPerfBonusMaster\bin\Debug\sPerfBonusMaster.dll
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sPerfBonusMaster\bin\Debug\sPerfBonusMaster.pdb
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sPerfBonusMaster\obj\Debug\sPerfBonusMaster.csproj.GenerateResource.Cache
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sPerfBonusMaster\obj\Debug\sPerfBonusMaster.dll
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sPerfBonusMaster\obj\Debug\sPerfBonusMaster.pdb
+C:\Program Files (x86)\Infolight\EEP2012\EEPNetServer\JBADMIN\sPerfBonusMaster.dll
+C:\Program Files (x86)\Infolight\EEP2012\EEPNetServer\JBADMIN\sPerfBonusMaster.pdb
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sPerfBonusMaster\obj\Debug\sPerfBonusMaster.Component.resources
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sPerfBonusMaster\obj\Debug\sPerfBonusMaster.csprojResolveAssemblyReference.cache

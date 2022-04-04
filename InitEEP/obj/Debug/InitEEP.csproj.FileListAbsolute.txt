@@ -1,0 +1,28 @@
+D:\Infolight\EEP2010\InitEEP\obj\Debug\ResolveAssemblyReference.cache
+D:\Infolight\EEP2010\InitEEP\obj\Debug\InitEEP.InitEEP.resources
+D:\Infolight\EEP2010\InitEEP\obj\Debug\InitEEP.Properties.Resources.resources
+D:\Infolight\EEP2010\InitEEP\obj\Debug\GenerateResource.read.1.tlog
+D:\Infolight\EEP2010\InitEEP\obj\Debug\GenerateResource.write.1.tlog
+D:\Infolight\EEP2010\InitEEP\InitEEP.exe.config
+D:\Infolight\EEP2010\InitEEP\obj\Debug\InitEEP.exe
+D:\Infolight\EEP2010\InitEEP\obj\Debug\InitEEP.pdb
+D:\Infolight\EEP2010\InitEEP\InitEEP.exe
+D:\Infolight\EEP2010\InitEEP\InitEEP.pdb
+C:\Program Files\Infolight\EEP2010\InitEEP\obj\Debug\InitEEP.InitEEP.resources
+C:\Program Files\Infolight\EEP2010\InitEEP\obj\Debug\InitEEP.Properties.Resources.resources
+C:\Program Files\Infolight\EEP2010\InitEEP\InitEEP.exe.config
+C:\Program Files\Infolight\EEP2010\InitEEP\obj\Debug\InitEEP.exe
+C:\Program Files\Infolight\EEP2010\InitEEP\obj\Debug\InitEEP.pdb
+C:\Program Files\Infolight\EEP2010\InitEEP\InitEEP.exe
+C:\Program Files\Infolight\EEP2010\InitEEP\InitEEP.pdb
+C:\Program Files\Infolight\EEP2010\InitEEP\obj\Debug\InitEEP.csprojResolveAssemblyReference.cache
+C:\Program Files\Infolight\EEP2010\InitEEP\obj\Debug\InitEEP.csproj.GenerateResource.Cache
+C:\Program Files\Infolight\EEP2012\InitEEP\obj\Debug\InitEEP.csprojResolveAssemblyReference.cache
+C:\Program Files\Infolight\EEP2012\InitEEP\obj\Debug\InitEEP.InitEEP.resources
+C:\Program Files\Infolight\EEP2012\InitEEP\obj\Debug\InitEEP.Properties.Resources.resources
+C:\Program Files\Infolight\EEP2012\InitEEP\obj\Debug\InitEEP.csproj.GenerateResource.Cache
+C:\Program Files\Infolight\EEP2012\InitEEP\InitEEP.exe.config
+C:\Program Files\Infolight\EEP2012\InitEEP\obj\Debug\InitEEP.exe
+C:\Program Files\Infolight\EEP2012\InitEEP\obj\Debug\InitEEP.pdb
+C:\Program Files\Infolight\EEP2012\InitEEP\InitEEP.exe
+C:\Program Files\Infolight\EEP2012\InitEEP\InitEEP.pdb

@@ -1,0 +1,8 @@
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sERP_Setting_SalesType\bin\Debug\sERP_Setting_SalesType.dll
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sERP_Setting_SalesType\bin\Debug\sERP_Setting_SalesType.pdb
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sERP_Setting_SalesType\obj\Debug\sERP_Setting_SalesType.csproj.GenerateResource.Cache
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sERP_Setting_SalesType\obj\Debug\sERP_Setting_SalesType.dll
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sERP_Setting_SalesType\obj\Debug\sERP_Setting_SalesType.pdb
+C:\Program Files (x86)\Infolight\EEP2012\EEPNetServer\JBADMIN\sERP_Setting_SalesType.dll
+C:\Program Files (x86)\Infolight\EEP2012\EEPNetServer\JBADMIN\sERP_Setting_SalesType.pdb
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sERP_Setting_SalesType\obj\Debug\sERP_Setting_SalesType.Component.resources

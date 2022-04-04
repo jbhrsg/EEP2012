@@ -1,0 +1,6 @@
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sCON_CENTERLABEL\bin\Release\sCON_CENTERLABEL.dll
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sCON_CENTERLABEL\bin\Release\sCON_CENTERLABEL.pdb
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sCON_CENTERLABEL\obj\Release\sCON_CENTERLABEL.Component.resources
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sCON_CENTERLABEL\obj\Release\sCON_CENTERLABEL.csproj.GenerateResource.Cache
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sCON_CENTERLABEL\obj\Release\sCON_CENTERLABEL.dll
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sCON_CENTERLABEL\obj\Release\sCON_CENTERLABEL.pdb

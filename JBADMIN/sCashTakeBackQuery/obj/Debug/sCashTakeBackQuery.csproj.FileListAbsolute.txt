@@ -1,0 +1,14 @@
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sCashTakeBackQuery\bin\Debug\sCashTakeBackQuery.dll
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sCashTakeBackQuery\bin\Debug\sCashTakeBackQuery.pdb
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sCashTakeBackQuery\obj\Debug\sCashTakeBackQuery.csproj.GenerateResource.Cache
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sCashTakeBackQuery\obj\Debug\sCashTakeBackQuery.dll
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sCashTakeBackQuery\obj\Debug\sCashTakeBackQuery.pdb
+C:\Program Files (x86)\Infolight\EEP2012\EEPNetServer\JBADMIN\sCashTakeBackQuery.dll
+C:\Program Files (x86)\Infolight\EEP2012\EEPNetServer\JBADMIN\sCashTakeBackQuery.pdb
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sCashTakeBackQuery\obj\Debug\sCashTakeBackQuery.Component.resources
+D:\Infolight\EEP2012\EEPNetServer\JBADMIN\sCashTakeBackQuery.dll
+D:\Infolight\EEP2012\EEPNetServer\JBADMIN\sCashTakeBackQuery.pdb
+D:\Infolight\EEP2012\JBADMIN\sCashTakeBackQuery\obj\Debug\sCashTakeBackQuery.Component.resources
+D:\Infolight\EEP2012\JBADMIN\sCashTakeBackQuery\obj\Debug\sCashTakeBackQuery.csproj.GenerateResource.Cache
+D:\Infolight\EEP2012\JBADMIN\sCashTakeBackQuery\obj\Debug\sCashTakeBackQuery.dll
+D:\Infolight\EEP2012\JBADMIN\sCashTakeBackQuery\obj\Debug\sCashTakeBackQuery.pdb

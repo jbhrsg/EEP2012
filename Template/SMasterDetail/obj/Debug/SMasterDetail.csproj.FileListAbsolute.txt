@@ -1,0 +1,189 @@
+D:\Project\Version\InstallVersion\20100805\EEPNetServer\Solution1\SMasterDetail.dll
+D:\Project\Version\InstallVersion\20100805\EEPNetServer\Solution1\SMasterDetail.pdb
+D:\Project\Version\InstallVersion\20100805\EEPNetServer\Solution1\vi-VN\SMasterDetail.resources.dll
+D:\Project\Version\InstallVersion\20100805\Template\SMasterDetail\obj\Debug\ResolveAssemblyReference.cache
+D:\Project\Version\InstallVersion\20100805\Template\SMasterDetail\obj\Debug\SMasterDetail.Component.resources
+D:\Project\Version\InstallVersion\20100805\Template\SMasterDetail\obj\Debug\SMasterDetail.Component.vi-VN.resources
+D:\Project\Version\InstallVersion\20100805\Template\SMasterDetail\obj\Debug\GenerateResource.read.1.tlog
+D:\Project\Version\InstallVersion\20100805\Template\SMasterDetail\obj\Debug\GenerateResource.write.1.tlog
+D:\Project\Version\InstallVersion\20100805\Template\SMasterDetail\obj\Debug\vi-VN\SMasterDetail.resources.dll
+D:\Project\Version\InstallVersion\20100805\Template\SMasterDetail\obj\Debug\SMasterDetail.dll
+D:\Project\Version\InstallVersion\20100805\Template\SMasterDetail\obj\Debug\SMasterDetail.pdb
+D:\Project\Version\InstallVersion\EEP2010(EF+WF)\EEPNetServer\Solution1\SMasterDetail.dll
+D:\Project\Version\InstallVersion\EEP2010(EF+WF)\EEPNetServer\Solution1\SMasterDetail.pdb
+D:\Project\Version\InstallVersion\EEP2010(EF+WF)\EEPNetServer\Solution1\vi-VN\SMasterDetail.resources.dll
+D:\Project\Version\InstallVersion\EEP2010(EF+WF)\Template\SMasterDetail\obj\Debug\ResolveAssemblyReference.cache
+D:\Project\Version\InstallVersion\EEP2010(EF+WF)\Template\SMasterDetail\obj\Debug\SMasterDetail.Component.resources
+D:\Project\Version\InstallVersion\EEP2010(EF+WF)\Template\SMasterDetail\obj\Debug\SMasterDetail.Component.vi-VN.resources
+D:\Project\Version\InstallVersion\EEP2010(EF+WF)\Template\SMasterDetail\obj\Debug\GenerateResource.read.1.tlog
+D:\Project\Version\InstallVersion\EEP2010(EF+WF)\Template\SMasterDetail\obj\Debug\GenerateResource.write.1.tlog
+D:\Project\Version\InstallVersion\EEP2010(EF+WF)\Template\SMasterDetail\obj\Debug\vi-VN\SMasterDetail.resources.dll
+D:\Project\Version\InstallVersion\EEP2010(EF+WF)\Template\SMasterDetail\obj\Debug\SMasterDetail.dll
+D:\Project\Version\InstallVersion\EEP2010(EF+WF)\Template\SMasterDetail\obj\Debug\SMasterDetail.pdb
+D:\Project\Version\InstallVersion\安装包源文件\EEP2010(SP1-CTP2)\EEP2010(EF+WF)\EEPNetServer\Solution1\SMasterDetail.dll
+D:\Project\Version\InstallVersion\安装包源文件\EEP2010(SP1-CTP2)\EEP2010(EF+WF)\EEPNetServer\Solution1\SMasterDetail.pdb
+D:\Project\Version\InstallVersion\安装包源文件\EEP2010(SP1-CTP2)\EEP2010(EF+WF)\EEPNetServer\Solution1\vi-VN\SMasterDetail.resources.dll
+D:\Project\Version\InstallVersion\安装包源文件\EEP2010(SP1-CTP2)\EEP2010(EF+WF)\Template\SMasterDetail\obj\Debug\ResolveAssemblyReference.cache
+D:\Project\Version\InstallVersion\安装包源文件\EEP2010(SP1-CTP2)\EEP2010(EF+WF)\Template\SMasterDetail\obj\Debug\SMasterDetail.Component.resources
+D:\Project\Version\InstallVersion\安装包源文件\EEP2010(SP1-CTP2)\EEP2010(EF+WF)\Template\SMasterDetail\obj\Debug\SMasterDetail.Component.vi-VN.resources
+D:\Project\Version\InstallVersion\安装包源文件\EEP2010(SP1-CTP2)\EEP2010(EF+WF)\Template\SMasterDetail\obj\Debug\GenerateResource.read.1.tlog
+D:\Project\Version\InstallVersion\安装包源文件\EEP2010(SP1-CTP2)\EEP2010(EF+WF)\Template\SMasterDetail\obj\Debug\GenerateResource.write.1.tlog
+D:\Project\Version\InstallVersion\安装包源文件\EEP2010(SP1-CTP2)\EEP2010(EF+WF)\Template\SMasterDetail\obj\Debug\vi-VN\SMasterDetail.resources.dll
+D:\Project\Version\InstallVersion\安装包源文件\EEP2010(SP1-CTP2)\EEP2010(EF+WF)\Template\SMasterDetail\obj\Debug\SMasterDetail.dll
+D:\Project\Version\InstallVersion\安装包源文件\EEP2010(SP1-CTP2)\EEP2010(EF+WF)\Template\SMasterDetail\obj\Debug\SMasterDetail.pdb
+D:\Version\安装包源文件\EEP2010(SP1-CTP3)\EEP2010(EF+WF)\EEPNetServer\Solution1\SMasterDetail.dll
+D:\Version\安装包源文件\EEP2010(SP1-CTP3)\EEP2010(EF+WF)\EEPNetServer\Solution1\SMasterDetail.pdb
+D:\Version\安装包源文件\EEP2010(SP1-CTP3)\EEP2010(EF+WF)\EEPNetServer\Solution1\vi-VN\SMasterDetail.resources.dll
+D:\Version\安装包源文件\EEP2010(SP1-CTP3)\EEP2010(EF+WF)\Template\SMasterDetail\obj\Debug\ResolveAssemblyReference.cache
+D:\Version\安装包源文件\EEP2010(SP1-CTP3)\EEP2010(EF+WF)\Template\SMasterDetail\obj\Debug\SMasterDetail.Component.resources
+D:\Version\安装包源文件\EEP2010(SP1-CTP3)\EEP2010(EF+WF)\Template\SMasterDetail\obj\Debug\SMasterDetail.Component.vi-VN.resources
+D:\Version\安装包源文件\EEP2010(SP1-CTP3)\EEP2010(EF+WF)\Template\SMasterDetail\obj\Debug\GenerateResource.read.1.tlog
+D:\Version\安装包源文件\EEP2010(SP1-CTP3)\EEP2010(EF+WF)\Template\SMasterDetail\obj\Debug\GenerateResource.write.1.tlog
+D:\Version\安装包源文件\EEP2010(SP1-CTP3)\EEP2010(EF+WF)\Template\SMasterDetail\obj\Debug\vi-VN\SMasterDetail.resources.dll
+D:\Version\安装包源文件\EEP2010(SP1-CTP3)\EEP2010(EF+WF)\Template\SMasterDetail\obj\Debug\SMasterDetail.dll
+D:\Version\安装包源文件\EEP2010(SP1-CTP3)\EEP2010(EF+WF)\Template\SMasterDetail\obj\Debug\SMasterDetail.pdb
+H:\Version\安装包源文件\EEP2010(SP1-CTP3)\EEP2010(EF+WF)\EEPNetServer\Solution1\SMasterDetail.dll
+H:\Version\安装包源文件\EEP2010(SP1-CTP3)\EEP2010(EF+WF)\EEPNetServer\Solution1\SMasterDetail.pdb
+H:\Version\安装包源文件\EEP2010(SP1-CTP3)\EEP2010(EF+WF)\EEPNetServer\Solution1\vi-VN\SMasterDetail.resources.dll
+H:\Version\安装包源文件\EEP2010(SP1-CTP3)\EEP2010(EF+WF)\Template\SMasterDetail\obj\Debug\ResolveAssemblyReference.cache
+H:\Version\安装包源文件\EEP2010(SP1-CTP3)\EEP2010(EF+WF)\Template\SMasterDetail\obj\Debug\SMasterDetail.Component.resources
+H:\Version\安装包源文件\EEP2010(SP1-CTP3)\EEP2010(EF+WF)\Template\SMasterDetail\obj\Debug\SMasterDetail.Component.vi-VN.resources
+H:\Version\安装包源文件\EEP2010(SP1-CTP3)\EEP2010(EF+WF)\Template\SMasterDetail\obj\Debug\GenerateResource.read.1.tlog
+H:\Version\安装包源文件\EEP2010(SP1-CTP3)\EEP2010(EF+WF)\Template\SMasterDetail\obj\Debug\GenerateResource.write.1.tlog
+H:\Version\安装包源文件\EEP2010(SP1-CTP3)\EEP2010(EF+WF)\Template\SMasterDetail\obj\Debug\vi-VN\SMasterDetail.resources.dll
+H:\Version\安装包源文件\EEP2010(SP1-CTP3)\EEP2010(EF+WF)\Template\SMasterDetail\obj\Debug\SMasterDetail.dll
+H:\Version\安装包源文件\EEP2010(SP1-CTP3)\EEP2010(EF+WF)\Template\SMasterDetail\obj\Debug\SMasterDetail.pdb
+H:\Version\InstallVersion\安装包源文件\EEP2010(SP1-CTP3)\EEP2010(EF+WF)\EEPNetServer\Solution1\SMasterDetail.dll
+H:\Version\InstallVersion\安装包源文件\EEP2010(SP1-CTP3)\EEP2010(EF+WF)\EEPNetServer\Solution1\SMasterDetail.pdb
+H:\Version\InstallVersion\安装包源文件\EEP2010(SP1-CTP3)\EEP2010(EF+WF)\EEPNetServer\Solution1\vi-VN\SMasterDetail.resources.dll
+H:\Version\InstallVersion\安装包源文件\EEP2010(SP1-CTP3)\EEP2010(EF+WF)\Template\SMasterDetail\obj\Debug\ResolveAssemblyReference.cache
+H:\Version\InstallVersion\安装包源文件\EEP2010(SP1-CTP3)\EEP2010(EF+WF)\Template\SMasterDetail\obj\Debug\SMasterDetail.Component.resources
+H:\Version\InstallVersion\安装包源文件\EEP2010(SP1-CTP3)\EEP2010(EF+WF)\Template\SMasterDetail\obj\Debug\SMasterDetail.Component.vi-VN.resources
+H:\Version\InstallVersion\安装包源文件\EEP2010(SP1-CTP3)\EEP2010(EF+WF)\Template\SMasterDetail\obj\Debug\GenerateResource.read.1.tlog
+H:\Version\InstallVersion\安装包源文件\EEP2010(SP1-CTP3)\EEP2010(EF+WF)\Template\SMasterDetail\obj\Debug\GenerateResource.write.1.tlog
+H:\Version\InstallVersion\安装包源文件\EEP2010(SP1-CTP3)\EEP2010(EF+WF)\Template\SMasterDetail\obj\Debug\vi-VN\SMasterDetail.resources.dll
+H:\Version\InstallVersion\安装包源文件\EEP2010(SP1-CTP3)\EEP2010(EF+WF)\Template\SMasterDetail\obj\Debug\SMasterDetail.dll
+H:\Version\InstallVersion\安装包源文件\EEP2010(SP1-CTP3)\EEP2010(EF+WF)\Template\SMasterDetail\obj\Debug\SMasterDetail.pdb
+H:\Version\InstallVersion\安装包源文件\EEP2010(SP1-CTP4)\EEP2010(EF+WF)\EEPNetServer\Solution1\SMasterDetail.dll
+H:\Version\InstallVersion\安装包源文件\EEP2010(SP1-CTP4)\EEP2010(EF+WF)\EEPNetServer\Solution1\SMasterDetail.pdb
+H:\Version\InstallVersion\安装包源文件\EEP2010(SP1-CTP4)\EEP2010(EF+WF)\EEPNetServer\Solution1\vi-VN\SMasterDetail.resources.dll
+H:\Version\InstallVersion\安装包源文件\EEP2010(SP1-CTP4)\EEP2010(EF+WF)\Template\SMasterDetail\obj\Debug\ResolveAssemblyReference.cache
+H:\Version\InstallVersion\安装包源文件\EEP2010(SP1-CTP4)\EEP2010(EF+WF)\Template\SMasterDetail\obj\Debug\SMasterDetail.Component.resources
+H:\Version\InstallVersion\安装包源文件\EEP2010(SP1-CTP4)\EEP2010(EF+WF)\Template\SMasterDetail\obj\Debug\SMasterDetail.Component.vi-VN.resources
+H:\Version\InstallVersion\安装包源文件\EEP2010(SP1-CTP4)\EEP2010(EF+WF)\Template\SMasterDetail\obj\Debug\GenerateResource.read.1.tlog
+H:\Version\InstallVersion\安装包源文件\EEP2010(SP1-CTP4)\EEP2010(EF+WF)\Template\SMasterDetail\obj\Debug\GenerateResource.write.1.tlog
+H:\Version\InstallVersion\安装包源文件\EEP2010(SP1-CTP4)\EEP2010(EF+WF)\Template\SMasterDetail\obj\Debug\vi-VN\SMasterDetail.resources.dll
+H:\Version\InstallVersion\安装包源文件\EEP2010(SP1-CTP4)\EEP2010(EF+WF)\Template\SMasterDetail\obj\Debug\SMasterDetail.dll
+H:\Version\InstallVersion\安装包源文件\EEP2010(SP1-CTP4)\EEP2010(EF+WF)\Template\SMasterDetail\obj\Debug\SMasterDetail.pdb
+H:\Version\InstallVersion\安装包源文件\EEP2010(SP1-CTP5)\EEP2010(EF+WF)\EEPNetServer\Solution1\SMasterDetail.dll
+H:\Version\InstallVersion\安装包源文件\EEP2010(SP1-CTP5)\EEP2010(EF+WF)\EEPNetServer\Solution1\SMasterDetail.pdb
+H:\Version\InstallVersion\安装包源文件\EEP2010(SP1-CTP5)\EEP2010(EF+WF)\EEPNetServer\Solution1\vi-VN\SMasterDetail.resources.dll
+H:\Version\InstallVersion\安装包源文件\EEP2010(SP1-CTP5)\EEP2010(EF+WF)\Template\SMasterDetail\obj\Debug\ResolveAssemblyReference.cache
+H:\Version\InstallVersion\安装包源文件\EEP2010(SP1-CTP5)\EEP2010(EF+WF)\Template\SMasterDetail\obj\Debug\SMasterDetail.Component.resources
+H:\Version\InstallVersion\安装包源文件\EEP2010(SP1-CTP5)\EEP2010(EF+WF)\Template\SMasterDetail\obj\Debug\SMasterDetail.Component.vi-VN.resources
+H:\Version\InstallVersion\安装包源文件\EEP2010(SP1-CTP5)\EEP2010(EF+WF)\Template\SMasterDetail\obj\Debug\GenerateResource.read.1.tlog
+H:\Version\InstallVersion\安装包源文件\EEP2010(SP1-CTP5)\EEP2010(EF+WF)\Template\SMasterDetail\obj\Debug\GenerateResource.write.1.tlog
+H:\Version\InstallVersion\安装包源文件\EEP2010(SP1-CTP5)\EEP2010(EF+WF)\Template\SMasterDetail\obj\Debug\vi-VN\SMasterDetail.resources.dll
+H:\Version\InstallVersion\安装包源文件\EEP2010(SP1-CTP5)\EEP2010(EF+WF)\Template\SMasterDetail\obj\Debug\SMasterDetail.dll
+H:\Version\InstallVersion\安装包源文件\EEP2010(SP1-CTP5)\EEP2010(EF+WF)\Template\SMasterDetail\obj\Debug\SMasterDetail.pdb
+H:\Version\InstallVersion\安装包源文件\EEP2010(SP2Prerelease)\EEP2010(EF+WF)\EEPNetServer\Solution1\SMasterDetail.dll
+H:\Version\InstallVersion\安装包源文件\EEP2010(SP2Prerelease)\EEP2010(EF+WF)\EEPNetServer\Solution1\SMasterDetail.pdb
+H:\Version\InstallVersion\安装包源文件\EEP2010(SP2Prerelease)\EEP2010(EF+WF)\EEPNetServer\Solution1\vi-VN\SMasterDetail.resources.dll
+H:\Version\InstallVersion\安装包源文件\EEP2010(SP2Prerelease)\EEP2010(EF+WF)\Template\SMasterDetail\obj\Debug\ResolveAssemblyReference.cache
+H:\Version\InstallVersion\安装包源文件\EEP2010(SP2Prerelease)\EEP2010(EF+WF)\Template\SMasterDetail\obj\Debug\SMasterDetail.Component.resources
+H:\Version\InstallVersion\安装包源文件\EEP2010(SP2Prerelease)\EEP2010(EF+WF)\Template\SMasterDetail\obj\Debug\SMasterDetail.Component.vi-VN.resources
+H:\Version\InstallVersion\安装包源文件\EEP2010(SP2Prerelease)\EEP2010(EF+WF)\Template\SMasterDetail\obj\Debug\GenerateResource.read.1.tlog
+H:\Version\InstallVersion\安装包源文件\EEP2010(SP2Prerelease)\EEP2010(EF+WF)\Template\SMasterDetail\obj\Debug\GenerateResource.write.1.tlog
+H:\Version\InstallVersion\安装包源文件\EEP2010(SP2Prerelease)\EEP2010(EF+WF)\Template\SMasterDetail\obj\Debug\vi-VN\SMasterDetail.resources.dll
+H:\Version\InstallVersion\安装包源文件\EEP2010(SP2Prerelease)\EEP2010(EF+WF)\Template\SMasterDetail\obj\Debug\SMasterDetail.dll
+H:\Version\InstallVersion\安装包源文件\EEP2010(SP2Prerelease)\EEP2010(EF+WF)\Template\SMasterDetail\obj\Debug\SMasterDetail.pdb
+H:\Version\InstallVersion\安装包源文件\EEP2010(SP2Prerelease20111116)\EEP2010(EF+WF)\EEPNetServer\Solution1\SMasterDetail.dll
+H:\Version\InstallVersion\安装包源文件\EEP2010(SP2Prerelease20111116)\EEP2010(EF+WF)\EEPNetServer\Solution1\SMasterDetail.pdb
+H:\Version\InstallVersion\安装包源文件\EEP2010(SP2Prerelease20111116)\EEP2010(EF+WF)\EEPNetServer\Solution1\vi-VN\SMasterDetail.resources.dll
+H:\Version\InstallVersion\安装包源文件\EEP2010(SP2Prerelease20111116)\EEP2010(EF+WF)\Template\SMasterDetail\obj\Debug\ResolveAssemblyReference.cache
+H:\Version\InstallVersion\安装包源文件\EEP2010(SP2Prerelease20111116)\EEP2010(EF+WF)\Template\SMasterDetail\obj\Debug\SMasterDetail.Component.resources
+H:\Version\InstallVersion\安装包源文件\EEP2010(SP2Prerelease20111116)\EEP2010(EF+WF)\Template\SMasterDetail\obj\Debug\SMasterDetail.Component.vi-VN.resources
+H:\Version\InstallVersion\安装包源文件\EEP2010(SP2Prerelease20111116)\EEP2010(EF+WF)\Template\SMasterDetail\obj\Debug\GenerateResource.read.1.tlog
+H:\Version\InstallVersion\安装包源文件\EEP2010(SP2Prerelease20111116)\EEP2010(EF+WF)\Template\SMasterDetail\obj\Debug\GenerateResource.write.1.tlog
+H:\Version\InstallVersion\安装包源文件\EEP2010(SP2Prerelease20111116)\EEP2010(EF+WF)\Template\SMasterDetail\obj\Debug\vi-VN\SMasterDetail.resources.dll
+H:\Version\InstallVersion\安装包源文件\EEP2010(SP2Prerelease20111116)\EEP2010(EF+WF)\Template\SMasterDetail\obj\Debug\SMasterDetail.dll
+H:\Version\InstallVersion\安装包源文件\EEP2010(SP2Prerelease20111116)\EEP2010(EF+WF)\Template\SMasterDetail\obj\Debug\SMasterDetail.pdb
+C:\Program Files\Infolight\EEP2012\EEPNetServer\Solution1\SMasterDetail.dll
+C:\Program Files\Infolight\EEP2012\EEPNetServer\Solution1\SMasterDetail.pdb
+C:\Program Files\Infolight\EEP2012\EEPNetServer\Solution1\vi-VN\SMasterDetail.resources.dll
+C:\Program Files\Infolight\EEP2012\Template\SMasterDetail\obj\Debug\SMasterDetail.csprojResolveAssemblyReference.cache
+C:\Program Files\Infolight\EEP2012\Template\SMasterDetail\obj\Debug\SMasterDetail.Component.resources
+C:\Program Files\Infolight\EEP2012\Template\SMasterDetail\obj\Debug\SMasterDetail.Component.vi-VN.resources
+C:\Program Files\Infolight\EEP2012\Template\SMasterDetail\obj\Debug\SMasterDetail.csproj.GenerateResource.Cache
+C:\Program Files\Infolight\EEP2012\Template\SMasterDetail\obj\Debug\vi-VN\SMasterDetail.resources.dll
+C:\Program Files\Infolight\EEP2012\Template\SMasterDetail\obj\Debug\SMasterDetail.dll
+C:\Program Files\Infolight\EEP2012\Template\SMasterDetail\obj\Debug\SMasterDetail.pdb
+C:\Program Files\Infolight\EEP2012WF\EEPNetServer\Solution1\SMasterDetail.dll
+C:\Program Files\Infolight\EEP2012WF\EEPNetServer\Solution1\SMasterDetail.pdb
+C:\Program Files\Infolight\EEP2012WF\EEPNetServer\Solution1\vi-VN\SMasterDetail.resources.dll
+C:\Program Files\Infolight\EEP2012WF\Template\SMasterDetail\obj\Debug\SMasterDetail.csprojResolveAssemblyReference.cache
+C:\Program Files\Infolight\EEP2012WF\Template\SMasterDetail\obj\Debug\SMasterDetail.Component.resources
+C:\Program Files\Infolight\EEP2012WF\Template\SMasterDetail\obj\Debug\SMasterDetail.Component.vi-VN.resources
+C:\Program Files\Infolight\EEP2012WF\Template\SMasterDetail\obj\Debug\SMasterDetail.csproj.GenerateResource.Cache
+C:\Program Files\Infolight\EEP2012WF\Template\SMasterDetail\obj\Debug\vi-VN\SMasterDetail.resources.dll
+C:\Program Files\Infolight\EEP2012WF\Template\SMasterDetail\obj\Debug\SMasterDetail.dll
+C:\Program Files\Infolight\EEP2012WF\Template\SMasterDetail\obj\Debug\SMasterDetail.pdb
+C:\Program Files (x86)\Infolight\EEP2012WF\EEPNetServer\Solution1\SMasterDetail.dll
+C:\Program Files (x86)\Infolight\EEP2012WF\EEPNetServer\Solution1\SMasterDetail.pdb
+C:\Program Files (x86)\Infolight\EEP2012WF\EEPNetServer\Solution1\vi-VN\SMasterDetail.resources.dll
+C:\Program Files (x86)\Infolight\EEP2012WF\Template\SMasterDetail\obj\Debug\SMasterDetail.csprojResolveAssemblyReference.cache
+C:\Program Files (x86)\Infolight\EEP2012WF\Template\SMasterDetail\obj\Debug\SMasterDetail.Component.resources
+C:\Program Files (x86)\Infolight\EEP2012WF\Template\SMasterDetail\obj\Debug\SMasterDetail.Component.vi-VN.resources
+C:\Program Files (x86)\Infolight\EEP2012WF\Template\SMasterDetail\obj\Debug\SMasterDetail.csproj.GenerateResource.Cache
+C:\Program Files (x86)\Infolight\EEP2012WF\Template\SMasterDetail\obj\Debug\vi-VN\SMasterDetail.resources.dll
+C:\Program Files (x86)\Infolight\EEP2012WF\Template\SMasterDetail\obj\Debug\SMasterDetail.dll
+C:\Program Files (x86)\Infolight\EEP2012WF\Template\SMasterDetail\obj\Debug\SMasterDetail.pdb
+D:\版本\Version\安裝源文件\EEP2012WF(V5.0.0.020140924 SP5)\EEPNetServer\Solution1\SMasterDetail.dll
+D:\版本\Version\安裝源文件\EEP2012WF(V5.0.0.020140924 SP5)\EEPNetServer\Solution1\SMasterDetail.pdb
+D:\版本\Version\安裝源文件\EEP2012WF(V5.0.0.020140924 SP5)\EEPNetServer\Solution1\vi-VN\SMasterDetail.resources.dll
+D:\版本\Version\安裝源文件\EEP2012WF(V5.0.0.020140924 SP5)\Template\SMasterDetail\obj\Debug\SMasterDetail.csprojResolveAssemblyReference.cache
+D:\版本\Version\安裝源文件\EEP2012WF(V5.0.0.020140924 SP5)\Template\SMasterDetail\obj\Debug\SMasterDetail.Component.resources
+D:\版本\Version\安裝源文件\EEP2012WF(V5.0.0.020140924 SP5)\Template\SMasterDetail\obj\Debug\SMasterDetail.Component.vi-VN.resources
+D:\版本\Version\安裝源文件\EEP2012WF(V5.0.0.020140924 SP5)\Template\SMasterDetail\obj\Debug\SMasterDetail.csproj.GenerateResource.Cache
+D:\版本\Version\安裝源文件\EEP2012WF(V5.0.0.020140924 SP5)\Template\SMasterDetail\obj\Debug\vi-VN\SMasterDetail.resources.dll
+D:\版本\Version\安裝源文件\EEP2012WF(V5.0.0.020140924 SP5)\Template\SMasterDetail\obj\Debug\SMasterDetail.dll
+D:\版本\Version\安裝源文件\EEP2012WF(V5.0.0.020140924 SP5)\Template\SMasterDetail\obj\Debug\SMasterDetail.pdb
+D:\版本\Version\安裝源文件\EEP2012(V5.0.0.020140924 SP5)\EEP2012WF\EEPNetServer\Solution1\SMasterDetail.dll
+D:\版本\Version\安裝源文件\EEP2012(V5.0.0.020140924 SP5)\EEP2012WF\EEPNetServer\Solution1\SMasterDetail.pdb
+D:\版本\Version\安裝源文件\EEP2012(V5.0.0.020140924 SP5)\EEP2012WF\EEPNetServer\Solution1\vi-VN\SMasterDetail.resources.dll
+D:\版本\Version\安裝源文件\EEP2012(V5.0.0.020140924 SP5)\EEP2012WF\Template\SMasterDetail\obj\Debug\SMasterDetail.Component.resources
+D:\版本\Version\安裝源文件\EEP2012(V5.0.0.020140924 SP5)\EEP2012WF\Template\SMasterDetail\obj\Debug\SMasterDetail.Component.vi-VN.resources
+D:\版本\Version\安裝源文件\EEP2012(V5.0.0.020140924 SP5)\EEP2012WF\Template\SMasterDetail\obj\Debug\SMasterDetail.csproj.GenerateResource.Cache
+D:\版本\Version\安裝源文件\EEP2012(V5.0.0.020140924 SP5)\EEP2012WF\Template\SMasterDetail\obj\Debug\vi-VN\SMasterDetail.resources.dll
+D:\版本\Version\安裝源文件\EEP2012(V5.0.0.020140924 SP5)\EEP2012WF\Template\SMasterDetail\obj\Debug\SMasterDetail.dll
+D:\版本\Version\安裝源文件\EEP2012(V5.0.0.020140924 SP5)\EEP2012WF\Template\SMasterDetail\obj\Debug\SMasterDetail.pdb
+D:\Program Files (x86)\Your Company Name\EEP2012\EEPNetServer\Solution1\SMasterDetail.dll
+D:\Program Files (x86)\Your Company Name\EEP2012\EEPNetServer\Solution1\SMasterDetail.pdb
+D:\Program Files (x86)\Your Company Name\EEP2012\EEPNetServer\Solution1\vi-VN\SMasterDetail.resources.dll
+D:\Program Files (x86)\Your Company Name\EEP2012\Template\SMasterDetail\obj\Debug\SMasterDetail.csprojResolveAssemblyReference.cache
+D:\Program Files (x86)\Your Company Name\EEP2012\Template\SMasterDetail\obj\Debug\SMasterDetail.Component.resources
+D:\Program Files (x86)\Your Company Name\EEP2012\Template\SMasterDetail\obj\Debug\SMasterDetail.Component.vi-VN.resources
+D:\Program Files (x86)\Your Company Name\EEP2012\Template\SMasterDetail\obj\Debug\SMasterDetail.csproj.GenerateResource.Cache
+D:\Program Files (x86)\Your Company Name\EEP2012\Template\SMasterDetail\obj\Debug\vi-VN\SMasterDetail.resources.dll
+D:\Program Files (x86)\Your Company Name\EEP2012\Template\SMasterDetail\obj\Debug\SMasterDetail.dll
+D:\Program Files (x86)\Your Company Name\EEP2012\Template\SMasterDetail\obj\Debug\SMasterDetail.pdb
+C:\Program Files (x86)\Infolight\EEP2012\EEPNetServer\Solution1\SMasterDetail.dll
+C:\Program Files (x86)\Infolight\EEP2012\EEPNetServer\Solution1\SMasterDetail.pdb
+C:\Program Files (x86)\Infolight\EEP2012\EEPNetServer\Solution1\vi-VN\SMasterDetail.resources.dll
+C:\Program Files (x86)\Infolight\EEP2012\Template\SMasterDetail\obj\Debug\SMasterDetail.csprojResolveAssemblyReference.cache
+C:\Program Files (x86)\Infolight\EEP2012\Template\SMasterDetail\obj\Debug\SMasterDetail.Component.resources
+C:\Program Files (x86)\Infolight\EEP2012\Template\SMasterDetail\obj\Debug\SMasterDetail.Component.vi-VN.resources
+C:\Program Files (x86)\Infolight\EEP2012\Template\SMasterDetail\obj\Debug\SMasterDetail.csproj.GenerateResource.Cache
+C:\Program Files (x86)\Infolight\EEP2012\Template\SMasterDetail\obj\Debug\vi-VN\SMasterDetail.resources.dll
+C:\Program Files (x86)\Infolight\EEP2012\Template\SMasterDetail\obj\Debug\SMasterDetail.dll
+C:\Program Files (x86)\Infolight\EEP2012\Template\SMasterDetail\obj\Debug\SMasterDetail.pdb
+D:\Infolight\EEP2012\EEPNetServer\Solution1\SMasterDetail.dll
+D:\Infolight\EEP2012\EEPNetServer\Solution1\SMasterDetail.pdb
+D:\Infolight\EEP2012\EEPNetServer\Solution1\vi-VN\SMasterDetail.resources.dll
+D:\Infolight\EEP2012\Template\SMasterDetail\obj\Debug\SMasterDetail.csprojResolveAssemblyReference.cache
+D:\Infolight\EEP2012\Template\SMasterDetail\obj\Debug\SMasterDetail.Component.resources
+D:\Infolight\EEP2012\Template\SMasterDetail\obj\Debug\SMasterDetail.Component.vi-VN.resources
+D:\Infolight\EEP2012\Template\SMasterDetail\obj\Debug\SMasterDetail.csproj.GenerateResource.Cache
+D:\Infolight\EEP2012\Template\SMasterDetail\obj\Debug\vi-VN\SMasterDetail.resources.dll
+D:\Infolight\EEP2012\Template\SMasterDetail\obj\Debug\SMasterDetail.dll
+D:\Infolight\EEP2012\Template\SMasterDetail\obj\Debug\SMasterDetail.pdb

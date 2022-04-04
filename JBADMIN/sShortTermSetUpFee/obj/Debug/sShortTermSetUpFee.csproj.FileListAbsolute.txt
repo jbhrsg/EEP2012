@@ -1,0 +1,14 @@
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sShortTermSetUpFee\bin\Debug\sShortTermSetUpFee.dll
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sShortTermSetUpFee\bin\Debug\sShortTermSetUpFee.pdb
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sShortTermSetUpFee\obj\Debug\sShortTermSetUpFee.csproj.GenerateResource.Cache
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sShortTermSetUpFee\obj\Debug\sShortTermSetUpFee.dll
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sShortTermSetUpFee\obj\Debug\sShortTermSetUpFee.pdb
+C:\Program Files (x86)\Infolight\EEP2012\EEPNetServer\JBADMIN\sShortTermSetUpFee.dll
+C:\Program Files (x86)\Infolight\EEP2012\EEPNetServer\JBADMIN\sShortTermSetUpFee.pdb
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sShortTermSetUpFee\obj\Debug\sShortTermSetUpFee.Component.resources
+D:\Infolight\EEP2012\EEPNetServer\JBADMIN\sShortTermSetUpFee.dll
+D:\Infolight\EEP2012\EEPNetServer\JBADMIN\sShortTermSetUpFee.pdb
+D:\Infolight\EEP2012\JBADMIN\sShortTermSetUpFee\obj\Debug\sShortTermSetUpFee.Component.resources
+D:\Infolight\EEP2012\JBADMIN\sShortTermSetUpFee\obj\Debug\sShortTermSetUpFee.csproj.GenerateResource.Cache
+D:\Infolight\EEP2012\JBADMIN\sShortTermSetUpFee\obj\Debug\sShortTermSetUpFee.dll
+D:\Infolight\EEP2012\JBADMIN\sShortTermSetUpFee\obj\Debug\sShortTermSetUpFee.pdb

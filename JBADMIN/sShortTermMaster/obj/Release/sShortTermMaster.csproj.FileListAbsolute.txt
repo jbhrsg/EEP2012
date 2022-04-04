@@ -1,0 +1,10 @@
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sShortTermMaster\bin\Release\sShortTermMaster.dll
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sShortTermMaster\bin\Release\sShortTermMaster.pdb
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sShortTermMaster\bin\Release\Newtonsoft.Json.dll
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sShortTermMaster\bin\Release\Newtonsoft.Json.xml
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sShortTermMaster\obj\Release\sShortTermMaster.Component.resources
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sShortTermMaster\obj\Release\sShortTermMaster.csproj.GenerateResource.Cache
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sShortTermMaster\obj\Release\sShortTermMaster.dll
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sShortTermMaster\obj\Release\sShortTermMaster.pdb
+C:\Program Files (x86)\Infolight\EEP2012\EEPNetServer\JBADMIN\sShortTermMaster.dll
+C:\Program Files (x86)\Infolight\EEP2012\EEPNetServer\JBADMIN\sShortTermMaster.pdb

@@ -1,0 +1,184 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{9735D344-7507-40D5-916D-8E8AAFBF0A24}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>JQOfficeTools</RootNamespace>
+    <AssemblyName>JQOfficeTools</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EnvDTE, Version=8.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="EnvDTE80, Version=8.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="Excel">
+      <HintPath>.\Excel.dll</HintPath>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Word">
+      <HintPath>.\Word.dll</HintPath>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AdditionalTools.cs" />
+    <Compile Include="Automation.cs" />
+    <Compile Include="Design\frmDataMember.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Design\frmDataMember.Designer.cs">
+      <DependentUpon>frmDataMember.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Design\frmDesigner.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Design\frmDesigner.Designer.cs">
+      <DependentUpon>frmDesigner.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Design\frmImageColumns.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Design\frmImageColumns.Designer.cs">
+      <DependentUpon>frmImageColumns.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Design\frmValue.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Design\frmValue.Designer.cs">
+      <DependentUpon>frmValue.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ExcelAutomation.cs" />
+    <Compile Include="ExcelPlate.cs" />
+    <Compile Include="IOfficePlate.cs" />
+    <Compile Include="JQOfficePlate.cs" />
+    <Compile Include="JQCollection.cs" />
+    <Compile Include="JQPropertyEditor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="JQVariable.cs" />
+    <Compile Include="OfficeAutomation.cs" />
+    <Compile Include="OfficePlate.cs" />
+    <Compile Include="PlateLog.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <DependentUpon>Resources.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="RemoteNameEditorDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RemoteNameEditorDialog.designer.cs">
+      <DependentUpon>RemoteNameEditorDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WebExcelPlate.cs" />
+    <Compile Include="WebOfficePlate.cs" />
+    <Compile Include="WebWordPlate.cs" />
+    <Compile Include="WordAutomation.cs" />
+    <Compile Include="WordPlate.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Design\frmDataMember.resx">
+      <DependentUpon>frmDataMember.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Design\frmDesigner.resx">
+      <DependentUpon>frmDesigner.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Design\frmImageColumns.resx">
+      <DependentUpon>frmImageColumns.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Design\frmValue.resx">
+      <DependentUpon>frmValue.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RemoteNameEditorDialog.resx">
+      <DependentUpon>RemoteNameEditorDialog.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\EFBase\EFBase.csproj">
+      <Project>{592f3429-d35c-47bb-a631-ea17f58b5046}</Project>
+      <Name>EFBase</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\EFClientTools\EFClientTools.csproj">
+      <Project>{e09e8259-7e2d-4490-9c9f-469a19caf1a7}</Project>
+      <Name>EFClientTools</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DataSet.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\excel.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\function.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\micro.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\property.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\value.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\word.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

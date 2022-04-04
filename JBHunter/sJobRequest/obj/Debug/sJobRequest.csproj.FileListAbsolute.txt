@@ -1,0 +1,8 @@
+C:\Program Files (x86)\Infolight\EEP2012\JBHunter\sJobRequest\bin\Debug\sJobRequest.dll
+C:\Program Files (x86)\Infolight\EEP2012\JBHunter\sJobRequest\bin\Debug\sJobRequest.pdb
+C:\Program Files (x86)\Infolight\EEP2012\JBHunter\sJobRequest\obj\Debug\sJobRequest.csproj.GenerateResource.Cache
+C:\Program Files (x86)\Infolight\EEP2012\JBHunter\sJobRequest\obj\Debug\sJobRequest.dll
+C:\Program Files (x86)\Infolight\EEP2012\JBHunter\sJobRequest\obj\Debug\sJobRequest.pdb
+C:\Program Files (x86)\Infolight\EEP2012\EEPNetServer\JBHunter\sJobRequest.dll
+C:\Program Files (x86)\Infolight\EEP2012\EEPNetServer\JBHunter\sJobRequest.pdb
+C:\Program Files (x86)\Infolight\EEP2012\JBHunter\sJobRequest\obj\Debug\sJobRequest.Component.resources

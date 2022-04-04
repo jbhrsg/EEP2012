@@ -1,0 +1,16 @@
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sCON_ContactManagement\bin\Debug\sCON_ContactManagement.dll
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sCON_ContactManagement\bin\Debug\sCON_ContactManagement.pdb
+C:\Program Files (x86)\Infolight\EEP2012\EEPNetServer\JBADMIN\sCON_ContactManagement.dll
+C:\Program Files (x86)\Infolight\EEP2012\EEPNetServer\JBADMIN\sCON_ContactManagement.pdb
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sCON_ContactManagement\obj\Debug\sCON_ContactManagement.Component.resources
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sCON_ContactManagement\obj\Debug\sCON_ContactManagement.csproj.GenerateResource.Cache
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sCON_ContactManagement\obj\Debug\sCON_ContactManagement.dll
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sCON_ContactManagement\obj\Debug\sCON_ContactManagement.pdb
+D:\Infolight\EEP2012\EEPNetServer\JBADMIN\sCON_ContactManagement.dll
+D:\Infolight\EEP2012\EEPNetServer\JBADMIN\sCON_ContactManagement.pdb
+D:\Infolight\EEP2012\JBADMIN\sCON_ContactManagement\obj\Debug\sCON_ContactManagement.csprojResolveAssemblyReference.cache
+D:\Infolight\EEP2012\JBADMIN\sCON_ContactManagement\obj\Debug\sCON_ContactManagement.Component.resources
+D:\Infolight\EEP2012\JBADMIN\sCON_ContactManagement\obj\Debug\sCON_ContactManagement.csproj.GenerateResource.Cache
+D:\Infolight\EEP2012\JBADMIN\sCON_ContactManagement\obj\Debug\sCON_ContactManagement.dll
+D:\Infolight\EEP2012\JBADMIN\sCON_ContactManagement\obj\Debug\sCON_ContactManagement.pdb
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sCON_ContactManagement\obj\Debug\sCON_ContactManagement.csprojResolveAssemblyReference.cache

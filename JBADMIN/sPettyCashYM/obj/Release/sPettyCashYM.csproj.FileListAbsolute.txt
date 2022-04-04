@@ -1,0 +1,8 @@
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sPettyCashYM\bin\Release\sPettyCashYM.dll
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sPettyCashYM\bin\Release\sPettyCashYM.pdb
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sPettyCashYM\bin\Release\Newtonsoft.Json.dll
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sPettyCashYM\bin\Release\Newtonsoft.Json.xml
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sPettyCashYM\obj\Release\sPettyCashYM.Component.resources
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sPettyCashYM\obj\Release\sPettyCashYM.csproj.GenerateResource.Cache
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sPettyCashYM\obj\Release\sPettyCashYM.dll
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sPettyCashYM\obj\Release\sPettyCashYM.pdb

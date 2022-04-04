@@ -1,0 +1,6 @@
+C:\Program Files (x86)\Infolight\EEP2012\EEPNetServer\JBADMIN\sERPSalseDetailsTrans.dll
+C:\Program Files (x86)\Infolight\EEP2012\EEPNetServer\JBADMIN\sERPSalseDetailsTrans.pdb
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sERPSalseDetailsTrans\obj\Debug\sERPSalseDetailsTrans.Component.resources
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sERPSalseDetailsTrans\obj\Debug\sERPSalseDetailsTrans.csproj.GenerateResource.Cache
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sERPSalseDetailsTrans\obj\Debug\sERPSalseDetailsTrans.dll
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sERPSalseDetailsTrans\obj\Debug\sERPSalseDetailsTrans.pdb

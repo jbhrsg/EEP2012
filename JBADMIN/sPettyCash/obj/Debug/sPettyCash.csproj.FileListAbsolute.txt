@@ -1,0 +1,14 @@
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sPettyCash\bin\Debug\sPettyCash.dll
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sPettyCash\bin\Debug\sPettyCash.pdb
+C:\Program Files (x86)\Infolight\EEP2012\EEPNetServer\JBADMIN\sPettyCash.dll
+D:\Infolight\EEP2012\EEPNetServer\JBADMIN\sPettyCash.dll
+D:\Infolight\EEP2012\EEPNetServer\JBADMIN\sPettyCash.pdb
+D:\Infolight\EEP2012\JBADMIN\sPettyCash\obj\Debug\sPettyCash.Component.resources
+D:\Infolight\EEP2012\JBADMIN\sPettyCash\obj\Debug\sPettyCash.csproj.GenerateResource.Cache
+D:\Infolight\EEP2012\JBADMIN\sPettyCash\obj\Debug\sPettyCash.dll
+D:\Infolight\EEP2012\JBADMIN\sPettyCash\obj\Debug\sPettyCash.pdb
+C:\Program Files (x86)\Infolight\EEP2012\EEPNetServer\JBADMIN\sPettyCash.pdb
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sPettyCash\obj\Debug\sPettyCash.Component.resources
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sPettyCash\obj\Debug\sPettyCash.csproj.GenerateResource.Cache
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sPettyCash\obj\Debug\sPettyCash.dll
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sPettyCash\obj\Debug\sPettyCash.pdb

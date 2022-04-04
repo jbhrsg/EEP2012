@@ -1,0 +1,61 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title></title>
+</head>
+<body>
+    <form id="formApproveAll" style="padding: 5px">
+        <fieldset>
+            <legend id="lFieldset_FromApproveALL">确认事项</legend>
+            <div>
+                <table style="width: 100%">
+                    <tr>
+                        <td>
+                            <input id="chkImportant_FromApproveALL" type="checkbox" />
+                            <label id="lImportant_FromApproveALL">重要单据</label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input id="chkUrgent_FromApproveALL" type="checkbox" />
+                            <label id="lUrgent_FromApproveALL">紧急单据</label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="easyui-tabs" style="width: 500px; height: 200px">
+                                <div id="suggestionView_FromApproveALL" title="意见说明" style="padding: 10px">
+                                    <div>
+                                        <textarea id="txtSuggest_FromApproveALL" style="width: 100%; height: 120px"></textarea>
+                                    </div>
+                                    <div>
+                                        <label id="lSenderRole_FromApproveALL">发送者角色</label>
+                                        <input id="ddlRoles_FromApproveALL" class="easyui-combobox" data-options="valueField:'GROUPID',textField:'GROUPNAME',panelHeight:100" />
+                                    </div>
+                                </div>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <ul id="ulFiles"></ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <a id="btnOk_FromApproveALL" href="#" class="easyui-linkbutton">OK</a>
+                            <a id="btnCancel_FromApproveALL" href="#" class="easyui-linkbutton">Close</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label id="result_FromApproveALL" style="color: red"></label>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </fieldset>
+    </form>
+</body>
+</html>

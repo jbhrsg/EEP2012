@@ -1,0 +1,9 @@
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sRequisition\bin\Release\sRequisition.dll
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sRequisition\bin\Release\sRequisition.pdb
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sRequisition\bin\Release\Newtonsoft.Json.dll
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sRequisition\bin\Release\Newtonsoft.Json.xml
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sRequisition\obj\Release\sRequisition.csprojResolveAssemblyReference.cache
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sRequisition\obj\Release\sRequisition.Component.resources
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sRequisition\obj\Release\sRequisition.csproj.GenerateResource.Cache
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sRequisition\obj\Release\sRequisition.dll
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sRequisition\obj\Release\sRequisition.pdb

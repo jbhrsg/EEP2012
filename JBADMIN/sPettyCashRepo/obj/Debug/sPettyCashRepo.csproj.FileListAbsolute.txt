@@ -1,0 +1,15 @@
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sPettyCashRepo\bin\Debug\sPettyCashRepo.dll
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sPettyCashRepo\bin\Debug\sPettyCashRepo.pdb
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sPettyCashRepo\obj\Debug\sPettyCashRepo.csproj.GenerateResource.Cache
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sPettyCashRepo\obj\Debug\sPettyCashRepo.dll
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sPettyCashRepo\obj\Debug\sPettyCashRepo.pdb
+C:\Program Files (x86)\Infolight\EEP2012\EEPNetServer\JBADMIN\sPettyCashRepo.dll
+C:\Program Files (x86)\Infolight\EEP2012\EEPNetServer\JBADMIN\sPettyCashRepo.pdb
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sPettyCashRepo\obj\Debug\sPettyCashRepo.Component.resources
+D:\Infolight\EEP2012\EEPNetServer\JBADMIN\sPettyCashRepo.dll
+D:\Infolight\EEP2012\EEPNetServer\JBADMIN\sPettyCashRepo.pdb
+D:\Infolight\EEP2012\JBADMIN\sPettyCashRepo\obj\Debug\sPettyCashRepo.csprojResolveAssemblyReference.cache
+D:\Infolight\EEP2012\JBADMIN\sPettyCashRepo\obj\Debug\sPettyCashRepo.Component.resources
+D:\Infolight\EEP2012\JBADMIN\sPettyCashRepo\obj\Debug\sPettyCashRepo.csproj.GenerateResource.Cache
+D:\Infolight\EEP2012\JBADMIN\sPettyCashRepo\obj\Debug\sPettyCashRepo.dll
+D:\Infolight\EEP2012\JBADMIN\sPettyCashRepo\obj\Debug\sPettyCashRepo.pdb

@@ -1,0 +1,6 @@
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sShortTermSetUpFee\bin\Release\sShortTermSetUpFee.dll
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sShortTermSetUpFee\bin\Release\sShortTermSetUpFee.pdb
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sShortTermSetUpFee\obj\Release\sShortTermSetUpFee.Component.resources
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sShortTermSetUpFee\obj\Release\sShortTermSetUpFee.csproj.GenerateResource.Cache
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sShortTermSetUpFee\obj\Release\sShortTermSetUpFee.dll
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sShortTermSetUpFee\obj\Release\sShortTermSetUpFee.pdb

@@ -1,0 +1,20 @@
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sReferences\obj\Debug\sReferencesADM.Component.resources
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sReferences\obj\Debug\sReferencesADM.Component.vi-VN.resources
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sReferences\obj\Debug\sReferencesADM.csproj.GenerateResource.Cache
+C:\Program Files (x86)\Infolight\EEP2012\EEPNetServer\JBADMIN\sReferencesADM.dll
+C:\Program Files (x86)\Infolight\EEP2012\EEPNetServer\JBADMIN\sReferencesADM.pdb
+C:\Program Files (x86)\Infolight\EEP2012\EEPNetServer\JBADMIN\vi-VN\sReferencesADM.resources.dll
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sReferences\obj\Debug\vi-VN\sReferencesADM.resources.dll
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sReferences\obj\Debug\sReferencesADM.dll
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sReferences\obj\Debug\sReferencesADM.pdb
+D:\Infolight\EEP2012\EEPNetServer\JBADMIN\sReferencesADM.dll
+D:\Infolight\EEP2012\EEPNetServer\JBADMIN\sReferencesADM.pdb
+D:\Infolight\EEP2012\EEPNetServer\JBADMIN\vi-VN\sReferencesADM.resources.dll
+D:\Infolight\EEP2012\JBADMIN\sReferences\obj\Debug\sReferencesADM.csprojResolveAssemblyReference.cache
+D:\Infolight\EEP2012\JBADMIN\sReferences\obj\Debug\sReferencesADM.Component.resources
+D:\Infolight\EEP2012\JBADMIN\sReferences\obj\Debug\sReferencesADM.Component.vi-VN.resources
+D:\Infolight\EEP2012\JBADMIN\sReferences\obj\Debug\sReferencesADM.csproj.GenerateResource.Cache
+D:\Infolight\EEP2012\JBADMIN\sReferences\obj\Debug\vi-VN\sReferencesADM.resources.dll
+D:\Infolight\EEP2012\JBADMIN\sReferences\obj\Debug\sReferencesADM.dll
+D:\Infolight\EEP2012\JBADMIN\sReferences\obj\Debug\sReferencesADM.pdb
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sReferences\obj\Debug\sReferencesADM.csprojResolveAssemblyReference.cache

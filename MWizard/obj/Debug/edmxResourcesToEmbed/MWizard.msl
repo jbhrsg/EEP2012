@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping xmlns="urn:schemas-microsoft-com:windows:storage:mapping:CS" Space="C-S">
+  <Alias Key="Model" Value="MWizard" />
+  <Alias Key="Target" Value="MWizard.Store" />
+  <EntityContainerMapping CdmEntityContainer="MWizardContainer" StorageEntityContainer="MWizardTargetContainer" />
+</Mapping>

@@ -1,0 +1,28 @@
+C:\Program Files (x86)\Infolight\EEP2012\JBHunter\sSalesTeam\bin\Debug\sSalesTeam.dll
+C:\Program Files (x86)\Infolight\EEP2012\JBHunter\sSalesTeam\bin\Debug\sSalesTeam.pdb
+C:\Program Files (x86)\Infolight\EEP2012\JBHunter\sSalesTeam\obj\Debug\sSalesTeam.csproj.GenerateResource.Cache
+C:\Program Files (x86)\Infolight\EEP2012\JBHunter\sSalesTeam\obj\Debug\sSalesTeam.dll
+C:\Program Files (x86)\Infolight\EEP2012\JBHunter\sSalesTeam\obj\Debug\sSalesTeam.pdb
+C:\Program Files (x86)\Infolight\EEP2012\EEPNetServer\JBHunter\sSalesTeam.dll
+C:\Program Files (x86)\Infolight\EEP2012\EEPNetServer\JBHunter\sSalesTeam.pdb
+C:\Program Files (x86)\Infolight\EEP2012\JBHunter\sSalesTeam\obj\Debug\sSalesTeam.Component.resources
+C:\Program Files (x86)\Infolight\EEP2012\JBHunter\sSalesTeam\obj\Debug\sSalesTeam.csprojResolveAssemblyReference.cache
+D:\Infolight\EEP2012\EEPNetServer\JBHunter\sSalesTeam.dll
+D:\Infolight\EEP2012\EEPNetServer\JBHunter\sSalesTeam.pdb
+D:\Infolight\EEP2012\JBHunter\sSalesTeam\obj\Debug\sSalesTeam.Component.resources
+D:\Infolight\EEP2012\JBHunter\sSalesTeam\obj\Debug\sSalesTeam.csproj.GenerateResource.Cache
+D:\Infolight\EEP2012\JBHunter\sSalesTeam\obj\Debug\sSalesTeam.dll
+D:\Infolight\EEP2012\JBHunter\sSalesTeam\obj\Debug\sSalesTeam.pdb
+D:\Infolight\EEP2012\EEPNetServer\JBADMIN\sSalesTeam.dll
+D:\Infolight\EEP2012\EEPNetServer\JBADMIN\sSalesTeam.pdb
+D:\Infolight\EEP2012\JBADMIN\sSalesTeam\obj\Debug\sSalesTeam.csprojResolveAssemblyReference.cache
+D:\Infolight\EEP2012\JBADMIN\sSalesTeam\obj\Debug\sSalesTeam.Component.resources
+D:\Infolight\EEP2012\JBADMIN\sSalesTeam\obj\Debug\sSalesTeam.csproj.GenerateResource.Cache
+D:\Infolight\EEP2012\JBADMIN\sSalesTeam\obj\Debug\sSalesTeam.dll
+D:\Infolight\EEP2012\JBADMIN\sSalesTeam\obj\Debug\sSalesTeam.pdb
+C:\Program Files (x86)\Infolight\EEP2012\EEPNetServer\JBADMIN\sSalesTeam.dll
+C:\Program Files (x86)\Infolight\EEP2012\EEPNetServer\JBADMIN\sSalesTeam.pdb
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sSalesTeam\obj\Debug\sSalesTeam.Component.resources
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sSalesTeam\obj\Debug\sSalesTeam.csproj.GenerateResource.Cache
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sSalesTeam\obj\Debug\sSalesTeam.dll
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sSalesTeam\obj\Debug\sSalesTeam.pdb

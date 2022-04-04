@@ -1,0 +1,15 @@
+D:\Infolight\EEP2012\JBADMIN\sJCSCustomer\bin\Debug\sJCSCustomer.dll
+D:\Infolight\EEP2012\JBADMIN\sJCSCustomer\bin\Debug\sJCSCustomer.pdb
+D:\Infolight\EEP2012\JBADMIN\sJCSCustomer\obj\Debug\sJCSCustomer.csproj.GenerateResource.Cache
+D:\Infolight\EEP2012\JBADMIN\sJCSCustomer\obj\Debug\sJCSCustomer.dll
+D:\Infolight\EEP2012\JBADMIN\sJCSCustomer\obj\Debug\sJCSCustomer.pdb
+D:\Infolight\EEP2012\EEPNetServer\JBADMIN\sJCSCustomer.dll
+D:\Infolight\EEP2012\EEPNetServer\JBADMIN\sJCSCustomer.pdb
+D:\Infolight\EEP2012\JBADMIN\sJCSCustomer\obj\Debug\sJCSCustomer.Component.resources
+D:\Infolight\EEP2012\JBADMIN\sJCSCustomer\obj\Debug\sJCSCustomer.csprojResolveAssemblyReference.cache
+C:\Program Files (x86)\Infolight\EEP2012\EEPNetServer\JBADMIN\sJCSCustomer.dll
+C:\Program Files (x86)\Infolight\EEP2012\EEPNetServer\JBADMIN\sJCSCustomer.pdb
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sJCSCustomer\obj\Debug\sJCSCustomer.Component.resources
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sJCSCustomer\obj\Debug\sJCSCustomer.csproj.GenerateResource.Cache
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sJCSCustomer\obj\Debug\sJCSCustomer.dll
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sJCSCustomer\obj\Debug\sJCSCustomer.pdb

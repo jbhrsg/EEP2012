@@ -1,0 +1,17 @@
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sOutDoor\bin\Release\sOutDoor.dll
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sOutDoor\bin\Release\sOutDoor.pdb
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sOutDoor\bin\Release\Newtonsoft.Json.dll
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sOutDoor\bin\Release\Newtonsoft.Json.xml
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sOutDoor\obj\Release\sOutDoor.csprojResolveAssemblyReference.cache
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sOutDoor\obj\Release\sOutDoor.Component.resources
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sOutDoor\obj\Release\sOutDoor.csproj.GenerateResource.Cache
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sOutDoor\obj\Release\sOutDoor.dll
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sOutDoor\obj\Release\sOutDoor.pdb
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sOutDoor\bin\Release\EFBase.dll
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sOutDoor\bin\Release\EFServerTools.dll
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sOutDoor\bin\Release\EFWCFModule.dll
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sOutDoor\bin\Release\EFWCFModule.EEPAdapter.dll
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sOutDoor\bin\Release\EFServerTools.pdb
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sOutDoor\bin\Release\EFBase.pdb
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sOutDoor\bin\Release\EFWCFModule.pdb
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sOutDoor\bin\Release\EFWCFModule.EEPAdapter.pdb

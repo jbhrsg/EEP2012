@@ -1,0 +1,15 @@
+D:\infolight\EEP2012\JBADMIN\sPO_Setting_Item\bin\Release\sPO_Setting_Item.dll
+D:\infolight\EEP2012\JBADMIN\sPO_Setting_Item\bin\Release\sPO_Setting_Item.pdb
+D:\infolight\EEP2012\JBADMIN\sPO_Setting_Item\bin\Release\vi-VN\sPO_Setting_Item.resources.dll
+D:\infolight\EEP2012\JBADMIN\sPO_Setting_Item\bin\Release\Newtonsoft.Json.dll
+D:\infolight\EEP2012\JBADMIN\sPO_Setting_Item\bin\Release\Newtonsoft.Json.xml
+D:\infolight\EEP2012\JBADMIN\sPO_Setting_Item\obj\Release\sPO_Setting_Item.Component.resources
+D:\infolight\EEP2012\JBADMIN\sPO_Setting_Item\obj\Release\sPO_Setting_Item.Component.vi-VN.resources
+D:\infolight\EEP2012\JBADMIN\sPO_Setting_Item\obj\Release\sPO_Setting_Item.csproj.GenerateResource.Cache
+D:\infolight\EEP2012\JBADMIN\sPO_Setting_Item\obj\Release\vi-VN\sPO_Setting_Item.resources.dll
+D:\infolight\EEP2012\JBADMIN\sPO_Setting_Item\obj\Release\sPO_Setting_Item.dll
+D:\infolight\EEP2012\JBADMIN\sPO_Setting_Item\obj\Release\sPO_Setting_Item.pdb
+D:\infolight\EEP2012\EEPNetServer\JBADMIN\sPO_Setting_Item.dll
+D:\infolight\EEP2012\EEPNetServer\JBADMIN\sPO_Setting_Item.pdb
+D:\infolight\EEP2012\EEPNetServer\JBADMIN\vi-VN\sPO_Setting_Item.resources.dll
+D:\Infolight\EEP2012\JBADMIN\sPO_Setting_Item\obj\Release\sPO_Setting_Item.csprojResolveAssemblyReference.cache

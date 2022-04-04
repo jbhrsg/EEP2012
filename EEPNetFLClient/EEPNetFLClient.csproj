@@ -1,0 +1,208 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{EBD933B0-C315-4B47-8EED-5E6BCD7BD6DD}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>EEPNetFLClient</RootNamespace>
+    <AssemblyName>EEPNetFLClient</AssemblyName>
+    <ApplicationIcon>EEPNetClient32.ico</ApplicationIcon>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>.\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>.\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="FLCore, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\EEPNetServer\FLCore.dll</HintPath>
+    </Reference>
+    <Reference Include="FLDesignerCore, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL" />
+    <Reference Include="FLTools, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\EEPNetServer\FLTools.dll</HintPath>
+    </Reference>
+    <Reference Include="InfoRemoteModule, Version=1.0.0.0, Culture=neutral, PublicKeyToken=44699d1537576b3b, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\EEPNetServer\InfoRemoteModule.dll</HintPath>
+    </Reference>
+    <Reference Include="Srvtools, Version=1.0.0.0, Culture=neutral, PublicKeyToken=8763076c188bfb12, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\EEPNetServer\Srvtools.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Workflow.Activities" />
+    <Reference Include="System.Workflow.ComponentModel" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="CurProject.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CurProject.Designer.cs">
+      <DependentUpon>CurProject.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FLowDesingerForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FLowDesingerForm.Designer.cs">
+      <DependentUpon>FLowDesingerForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmClientMainExtend.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmDataBase.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmDataBase.Designer.cs">
+      <DependentUpon>frmDataBase.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmClientMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmFavorMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmFavorMenu.Designer.cs">
+      <DependentUpon>frmFavorMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMessage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMessage.Designer.cs">
+      <DependentUpon>frmMessage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmUserPWD.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmUserPWD.Designer.cs">
+      <DependentUpon>frmUserPWD.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmUsersAndGroups.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmUsersAndGroups.Designer.cs">
+      <DependentUpon>frmUsersAndGroups.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ProgressForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ProgressForm.Designer.cs">
+      <DependentUpon>ProgressForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="CurProject.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>CurProject.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FLowDesingerForm.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FLowDesingerForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmDataBase.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmDataBase.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmClientMain.resx">
+      <DependentUpon>frmClientMain.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmFavorMenu.resx">
+      <DependentUpon>frmFavorMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmLogin.resx">
+      <DependentUpon>frmLogin.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMessage.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmMessage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmUserPWD.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmUserPWD.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmUsersAndGroups.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmUsersAndGroups.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ProgressForm.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ProgressForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <SubType>Designer</SubType>
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="EEPNetAutoRun.xml" />
+    <Content Include="EEPNetClient32.ico" />
+    <None Include="Resources\064080.png" />
+    <None Include="Resources\064160.png" />
+    <None Include="Resources\AddFavor.png" />
+    <None Include="Resources\AddFavor2.png" />
+    <Content Include="Resources\d3.png" />
+    <Content Include="Resources\d4.png" />
+    <None Include="Resources\MenuGo2.gif" />
+    <None Include="Resources\MenuGo.gif" />
+    <None Include="APP.config" />
+    <None Include="Resources\EEPINIT.jpg" />
+    <None Include="Resources\EEPNETClient.jpg" />
+    <None Include="Resources\d2.png" />
+    <None Include="Resources\d1.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+</Project>

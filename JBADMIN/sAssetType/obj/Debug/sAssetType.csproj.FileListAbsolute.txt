@@ -1,0 +1,14 @@
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sAssetType\bin\Debug\sAssetType.dll
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sAssetType\bin\Debug\sAssetType.pdb
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sAssetType\obj\Debug\sAssetType.csproj.GenerateResource.Cache
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sAssetType\obj\Debug\sAssetType.dll
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sAssetType\obj\Debug\sAssetType.pdb
+C:\Program Files (x86)\Infolight\EEP2012\EEPNetServer\JBADMIN\sAssetType.dll
+C:\Program Files (x86)\Infolight\EEP2012\EEPNetServer\JBADMIN\sAssetType.pdb
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sAssetType\obj\Debug\sAssetType.Component.resources
+D:\Infolight\EEP2012\EEPNetServer\JBADMIN\sAssetType.dll
+D:\Infolight\EEP2012\EEPNetServer\JBADMIN\sAssetType.pdb
+D:\Infolight\EEP2012\JBADMIN\sAssetType\obj\Debug\sAssetType.Component.resources
+D:\Infolight\EEP2012\JBADMIN\sAssetType\obj\Debug\sAssetType.csproj.GenerateResource.Cache
+D:\Infolight\EEP2012\JBADMIN\sAssetType\obj\Debug\sAssetType.dll
+D:\Infolight\EEP2012\JBADMIN\sAssetType\obj\Debug\sAssetType.pdb

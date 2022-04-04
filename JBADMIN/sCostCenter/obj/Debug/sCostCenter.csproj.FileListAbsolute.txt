@@ -1,0 +1,15 @@
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sCostCenter\bin\Debug\sCostCenter.dll
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sCostCenter\bin\Debug\sCostCenter.pdb
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sCostCenter\obj\Debug\sCostCenter.csproj.GenerateResource.Cache
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sCostCenter\obj\Debug\sCostCenter.dll
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sCostCenter\obj\Debug\sCostCenter.pdb
+C:\Program Files (x86)\Infolight\EEP2012\EEPNetServer\JBADMIN\sCostCenter.dll
+C:\Program Files (x86)\Infolight\EEP2012\EEPNetServer\JBADMIN\sCostCenter.pdb
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sCostCenter\obj\Debug\sCostCenter.Component.resources
+D:\Infolight\EEP2012\EEPNetServer\JBADMIN\sCostCenter.dll
+D:\Infolight\EEP2012\EEPNetServer\JBADMIN\sCostCenter.pdb
+D:\Infolight\EEP2012\JBADMIN\sCostCenter\obj\Debug\sCostCenter.Component.resources
+D:\Infolight\EEP2012\JBADMIN\sCostCenter\obj\Debug\sCostCenter.csproj.GenerateResource.Cache
+D:\Infolight\EEP2012\JBADMIN\sCostCenter\obj\Debug\sCostCenter.dll
+D:\Infolight\EEP2012\JBADMIN\sCostCenter\obj\Debug\sCostCenter.pdb
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sCostCenter\obj\Debug\sCostCenter.csprojResolveAssemblyReference.cache

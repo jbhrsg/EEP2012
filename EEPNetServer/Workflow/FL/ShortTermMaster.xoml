@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8"?><ns0:FLSequentialWorkflow RejectProcedure="{p1:Null}" ConnectionType="SqlClient" Description="暫借款申請單_多筆" x:Name="FLSequentialWorkflow" FormName="{x:Null}" SkipForSameUser="True" EEPAlias="{x:Null}" ClientDll="{x:Null}" TableName="ShortTermMaster" BodyField="{x:Null}" WebFormName="JB_ADMIN.JBREQ_ShortTermMaster" ExpTime="0" PresentFields="ShortTermDate,ShortTermGist,TotalAmount" TimeUnit="Day" Keys="ShortTermNO" ExpTimeField="{x:Null}" MailApproveLevel="{x:Null}" UrgentTime="0" NotifySendMail="False" OrgKind="0" xmlns="http://schemas.microsoft.com/winfx/2006/xaml/workflow" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:p1="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:ns0="clr-namespace:FLTools;Assembly=FLTools, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null">
+	<ns0:FLStand SendEmail="False" DelayAutoApprove="False" SendToKind="Applicate" x:Name="暫借款申請多筆" FormName="" TimeUnit="Day" SendToUser="" AllowSendBack="True" PlusApproveReturn="True" PlusApprove="False" WebFormName="" ExpTime="0" Parameters="P1 = Apply" NavigatorMode="Insert" SendToField="" SendToId="{x:Null}" SendToRole="" UrgentTime="0" FLNavigatorMode="Submit" />
+	<ns0:FLApprove SendEmail="False" DelayAutoApprove="False" SendToKind="Manager" InvokedDateTime="0001-01-01T00:00:00.0000000" FormName="" TimeUnit="Day" SendToUser="" AllowSendBack="True" PlusApproveReturn="True" PlusApprove="False" WebFormName="" ExpTime="0" Parameters="{x:Null}" NavigatorMode="Normal" SendToField="{x:Null}" SendToId="{x:Null}" SendToRole="" UrgentTime="0" x:Name="主管審核" FLNavigatorMode="Approve">
+		<ns0:FLApprove.ApproveRights>
+			<ns1:ApproveRightCollection xmlns:ns1="clr-namespace:FLCore;Assembly=FLTools, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null">
+				<ns1:ApproveRight Grade="0 ; 直屬主管" ParentActivity="{x:Null}" Expression="Org_NOParent != &quot;10000&quot; || ApplyOrg_NO ==&quot;11100&quot;" Name="0" />
+				<ns1:ApproveRight Grade="6 ; 經理/副理/顧問" ParentActivity="{x:Null}" Expression="TotalAmount&gt;=3001 &amp;&amp; TotalAmount&lt;=10000" Name="6" />
+				<ns1:ApproveRight Grade="7 ; 協理" ParentActivity="{x:Null}" Expression="TotalAmount&gt;=10001" Name="7" />
+				<ns1:ApproveRight Grade="9 ; 總經理" ParentActivity="{x:Null}" Expression="TotalAmount&gt;100000 " Name="9" />
+			</ns1:ApproveRightCollection>
+		</ns0:FLApprove.ApproveRights>
+	</ns0:FLApprove>
+	<ns0:FLNotify SendEmail="True" Parameters="{x:Null}" x:Name="主管審核通知" FormName="" TimeUnit="Day" SendToUser="" SendToKind="Applicate" UserId="{x:Null}" WebFormName="" ExpTime="0" RoleId="{x:Null}" NavigatorMode="Normal" SendToField="" SendToRole="" UrgentTime="0" FLNavigatorMode="Notify" />
+	<ns0:FLProcedure ServerDll="C:\Program Files (x86)\Infolight\EEP2012\EEPNetServer\JBADMIN\sShortTermMasterApply.dll" ModuleName="sShortTermMasterApply" ErrorLog="False" MethodName="BillingRequisitionFromShortTermMaster" x:Name="請款單起單" ErrorToRole="{x:Null}" />
+	<IfElseActivity x:Name="會計審核">
+		<IfElseBranchActivity Description="(CompanyID==2 ||  CompanyID==4)" x:Name="傑報人力與傑信">
+			<ns0:FLStand SendEmail="True" DelayAutoApprove="False" SendToKind="Role" x:Name="專員2審核" FormName="" TimeUnit="Day" SendToUser="{x:Null}" AllowSendBack="True" PlusApproveReturn="True" PlusApprove="False" WebFormName="" ExpTime="0" Parameters="P1=ACCOUNT" NavigatorMode="Normal" SendToField="{x:Null}" SendToId="{x:Null}" SendToRole="1010063 ; 專員2/會計室" UrgentTime="0" FLNavigatorMode="Approve" />
+		</IfElseBranchActivity>
+		<IfElseBranchActivity Description="(CompanyID==1 ||  CompanyID==3)" x:Name="傑報資訊與傑誠">
+			<ns0:FLStand SendEmail="True" DelayAutoApprove="False" SendToKind="Role" x:Name="專員1審核" FormName="" TimeUnit="Day" SendToUser="{x:Null}" AllowSendBack="True" PlusApproveReturn="True" PlusApprove="False" WebFormName="" ExpTime="0" Parameters="P1=ACCOUNT" NavigatorMode="Normal" SendToField="{x:Null}" SendToId="{x:Null}" SendToRole="1010062 ; 專員1/會計室" UrgentTime="0" FLNavigatorMode="Approve" />
+		</IfElseBranchActivity>
+	</IfElseActivity>
+	<ns0:FLStand SendEmail="False" DelayAutoApprove="False" SendToKind="Role" x:Name="外勞會計立帳" FormName="" TimeUnit="Day" SendToUser="{x:Null}" AllowSendBack="True" PlusApproveReturn="True" PlusApprove="False" WebFormName="" ExpTime="0" Parameters="P1=SETBILL" NavigatorMode="Normal" SendToField="{x:Null}" SendToId="{x:Null}" SendToRole="1073066 ; 行政人員/行政組" UrgentTime="0" FLNavigatorMode="Submit" />
+	<ns0:FLProcedure ServerDll="C:\Program Files (x86)\Infolight\EEP2012\EEPNetServer\JBADMIN\sShortTermMasterApply.dll" ModuleName="sShortTermMasterApply" ErrorLog="False" MethodName="UpdateShortTermToEnd" x:Name="暫結結案" ErrorToRole="{x:Null}" />
+	<ns0:FLStand SendEmail="True" DelayAutoApprove="False" SendToKind="Applicate" x:Name="申請成功檢視" FormName="" TimeUnit="Day" SendToUser="" AllowSendBack="True" PlusApproveReturn="True" PlusApprove="False" WebFormName="" ExpTime="0" Parameters="P1=SucessView" NavigatorMode="Normal" SendToField="" SendToId="{x:Null}" SendToRole="" UrgentTime="0" Enabled="False" FLNavigatorMode="Continue" />
+</ns0:FLSequentialWorkflow>

@@ -1,0 +1,12 @@
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sShortTerm\bin\Release\sShortTerm.dll
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sShortTerm\bin\Release\sShortTerm.pdb
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sShortTerm\bin\Release\Newtonsoft.Json.dll
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sShortTerm\bin\Release\Newtonsoft.Json.xml
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\EEPNetServer\JBADMIN\sShortTerm.dll
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\EEPNetServer\JBADMIN\sShortTerm.pdb
+C:\Program Files (x86)\Infolight\EEP2012\EEPNetServer\JBADMIN\sShortTerm.dll
+C:\Program Files (x86)\Infolight\EEP2012\EEPNetServer\JBADMIN\sShortTerm.pdb
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sShortTerm\obj\Release\sShortTerm.Component.resources
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sShortTerm\obj\Release\sShortterm.csproj.GenerateResource.Cache
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sShortTerm\obj\Release\sShortTerm.dll
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sShortTerm\obj\Release\sShortTerm.pdb

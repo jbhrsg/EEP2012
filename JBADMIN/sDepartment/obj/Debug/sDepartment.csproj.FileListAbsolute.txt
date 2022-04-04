@@ -1,0 +1,14 @@
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sDepartment\bin\Debug\sDepartment.dll
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sDepartment\bin\Debug\sDepartment.pdb
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sDepartment\obj\Debug\sDepartment.csproj.GenerateResource.Cache
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sDepartment\obj\Debug\sDepartment.dll
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sDepartment\obj\Debug\sDepartment.pdb
+C:\Program Files (x86)\Infolight\EEP2012\EEPNetServer\JBADMIN\sDepartment.dll
+C:\Program Files (x86)\Infolight\EEP2012\EEPNetServer\JBADMIN\sDepartment.pdb
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sDepartment\obj\Debug\sDepartment.Component.resources
+D:\Infolight\EEP2012\EEPNetServer\JBADMIN\sDepartment.dll
+D:\Infolight\EEP2012\EEPNetServer\JBADMIN\sDepartment.pdb
+D:\Infolight\EEP2012\JBADMIN\sDepartment\obj\Debug\sDepartment.Component.resources
+D:\Infolight\EEP2012\JBADMIN\sDepartment\obj\Debug\sDepartment.csproj.GenerateResource.Cache
+D:\Infolight\EEP2012\JBADMIN\sDepartment\obj\Debug\sDepartment.dll
+D:\Infolight\EEP2012\JBADMIN\sDepartment\obj\Debug\sDepartment.pdb

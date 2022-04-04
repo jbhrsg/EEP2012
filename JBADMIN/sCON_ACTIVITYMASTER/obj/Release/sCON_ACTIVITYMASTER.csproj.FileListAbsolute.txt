@@ -1,0 +1,8 @@
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sCON_ACTIVITYMASTER\bin\Release\sCON_ACTIVITYMASTER.dll
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sCON_ACTIVITYMASTER\bin\Release\sCON_ACTIVITYMASTER.pdb
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sCON_ACTIVITYMASTER\bin\Release\Newtonsoft.Json.dll
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sCON_ACTIVITYMASTER\bin\Release\Newtonsoft.Json.xml
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sCON_ACTIVITYMASTER\obj\Release\sCON_ACTIVITYMASTER.Component.resources
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sCON_ACTIVITYMASTER\obj\Release\sCON_ACTIVITYMASTER.csproj.GenerateResource.Cache
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sCON_ACTIVITYMASTER\obj\Release\sCON_ACTIVITYMASTER.dll
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sCON_ACTIVITYMASTER\obj\Release\sCON_ACTIVITYMASTER.pdb

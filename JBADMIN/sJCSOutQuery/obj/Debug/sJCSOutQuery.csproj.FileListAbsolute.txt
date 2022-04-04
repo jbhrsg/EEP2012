@@ -1,0 +1,15 @@
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sJCSOutQuery\bin\Debug\sJCSOutQuery.dll
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sJCSOutQuery\bin\Debug\sJCSOutQuery.pdb
+C:\Program Files (x86)\Infolight\EEP2012\EEPNetServer\JBADMIN\sJCSOutQuery.dll
+C:\Program Files (x86)\Infolight\EEP2012\EEPNetServer\JBADMIN\sJCSOutQuery.pdb
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sJCSOutQuery\obj\Debug\sJCSOutQuery.Component.resources
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sJCSOutQuery\obj\Debug\sJCSOutQuery.csproj.GenerateResource.Cache
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sJCSOutQuery\obj\Debug\sJCSOutQuery.dll
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sJCSOutQuery\obj\Debug\sJCSOutQuery.pdb
+D:\Infolight\EEP2012\EEPNetServer\JBADMIN\sJCSOutQuery.dll
+D:\Infolight\EEP2012\EEPNetServer\JBADMIN\sJCSOutQuery.pdb
+D:\Infolight\EEP2012\JBADMIN\sJCSOutQuery\obj\Debug\sJCSOutQuery.csprojResolveAssemblyReference.cache
+D:\Infolight\EEP2012\JBADMIN\sJCSOutQuery\obj\Debug\sJCSOutQuery.Component.resources
+D:\Infolight\EEP2012\JBADMIN\sJCSOutQuery\obj\Debug\sJCSOutQuery.csproj.GenerateResource.Cache
+D:\Infolight\EEP2012\JBADMIN\sJCSOutQuery\obj\Debug\sJCSOutQuery.dll
+D:\Infolight\EEP2012\JBADMIN\sJCSOutQuery\obj\Debug\sJCSOutQuery.pdb

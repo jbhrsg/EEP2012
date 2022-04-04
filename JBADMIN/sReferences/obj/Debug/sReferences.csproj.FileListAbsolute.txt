@@ -1,0 +1,12 @@
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sReferences\bin\Debug\sReferences.dll
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sReferences\bin\Debug\sReferences.pdb
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sReferences\obj\Debug\sReferences.csprojResolveAssemblyReference.cache
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sReferences\obj\Debug\sReferences.csproj.GenerateResource.Cache
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sReferences\obj\Debug\sReferences.dll
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sReferences\obj\Debug\sReferences.pdb
+C:\Program Files (x86)\Infolight\EEP2012\EEPNetServer\JBADMIN\sReferences.dll
+C:\Program Files (x86)\Infolight\EEP2012\EEPNetServer\JBADMIN\sReferences.pdb
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sReferences\obj\Debug\sReferences.Component.resources
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sReferences\obj\Debug\sReferences.Component.vi-VN.resources
+C:\Program Files (x86)\Infolight\EEP2012\EEPNetServer\JBADMIN\vi-VN\sReferences.resources.dll
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sReferences\obj\Debug\vi-VN\sReferences.resources.dll

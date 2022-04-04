@@ -1,0 +1,16 @@
+C:\Program Files (x86)\Infolight\EEP2012WF\JQOfficeTools\obj\Debug\JQOfficeTools.csprojResolveAssemblyReference.cache
+C:\Program Files (x86)\Infolight\EEP2012WF\JQOfficeTools\obj\Debug\JQOfficeTools.Design.frmDataMember.resources
+C:\Program Files (x86)\Infolight\EEP2012WF\JQOfficeTools\obj\Debug\JQOfficeTools.Design.frmDesigner.resources
+C:\Program Files (x86)\Infolight\EEP2012WF\JQOfficeTools\obj\Debug\JQOfficeTools.Design.frmImageColumns.resources
+C:\Program Files (x86)\Infolight\EEP2012WF\JQOfficeTools\obj\Debug\JQOfficeTools.Design.frmValue.resources
+C:\Program Files (x86)\Infolight\EEP2012WF\JQOfficeTools\obj\Debug\JQOfficeTools.Properties.Resources.resources
+C:\Program Files (x86)\Infolight\EEP2012WF\JQOfficeTools\obj\Debug\JQOfficeTools.RemoteNameEditorDialog.resources
+C:\Program Files (x86)\Infolight\EEP2012WF\JQOfficeTools\obj\Debug\JQOfficeTools.csproj.GenerateResource.Cache
+C:\Program Files (x86)\Infolight\EEP2012WF\JQOfficeTools\bin\Debug\JQOfficeTools.dll
+C:\Program Files (x86)\Infolight\EEP2012WF\JQOfficeTools\bin\Debug\JQOfficeTools.pdb
+C:\Program Files (x86)\Infolight\EEP2012WF\JQOfficeTools\bin\Debug\EFBase.dll
+C:\Program Files (x86)\Infolight\EEP2012WF\JQOfficeTools\bin\Debug\EFClientTools.dll
+C:\Program Files (x86)\Infolight\EEP2012WF\JQOfficeTools\bin\Debug\EFBase.pdb
+C:\Program Files (x86)\Infolight\EEP2012WF\JQOfficeTools\bin\Debug\EFClientTools.pdb
+C:\Program Files (x86)\Infolight\EEP2012WF\JQOfficeTools\obj\Debug\JQOfficeTools.dll
+C:\Program Files (x86)\Infolight\EEP2012WF\JQOfficeTools\obj\Debug\JQOfficeTools.pdb

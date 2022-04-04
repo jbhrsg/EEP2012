@@ -1,0 +1,14 @@
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sMediaPostCount\bin\Debug\sMediaPostCount.dll
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sMediaPostCount\bin\Debug\sMediaPostCount.pdb
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sMediaPostCount\obj\Debug\sMediaPostCount.csproj.GenerateResource.Cache
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sMediaPostCount\obj\Debug\sMediaPostCount.dll
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sMediaPostCount\obj\Debug\sMediaPostCount.pdb
+C:\Program Files (x86)\Infolight\EEP2012\EEPNetServer\JBADMIN\sMediaPostCount.dll
+C:\Program Files (x86)\Infolight\EEP2012\EEPNetServer\JBADMIN\sMediaPostCount.pdb
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sMediaPostCount\obj\Debug\sMediaPostCount.Component.resources
+D:\Infolight\EEP2012\EEPNetServer\JBADMIN\sMediaPostCount.dll
+D:\Infolight\EEP2012\EEPNetServer\JBADMIN\sMediaPostCount.pdb
+D:\Infolight\EEP2012\JBADMIN\sMediaPostCount\obj\Debug\sMediaPostCount.Component.resources
+D:\Infolight\EEP2012\JBADMIN\sMediaPostCount\obj\Debug\sMediaPostCount.csproj.GenerateResource.Cache
+D:\Infolight\EEP2012\JBADMIN\sMediaPostCount\obj\Debug\sMediaPostCount.dll
+D:\Infolight\EEP2012\JBADMIN\sMediaPostCount\obj\Debug\sMediaPostCount.pdb

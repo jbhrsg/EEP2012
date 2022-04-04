@@ -1,0 +1,9 @@
+C:\Program Files (x86)\Infolight\EEP2012\FLCore\bin\Release\FLCore.dll
+C:\Program Files (x86)\Infolight\EEP2012\FLCore\bin\Release\FLCore.pdb
+C:\Program Files (x86)\Infolight\EEP2012\FLCore\obj\Release\FLCore.dll
+C:\Program Files (x86)\Infolight\EEP2012\FLCore\obj\Release\FLCore.pdb
+D:\Infolight\EEP2012\FLCore\bin\Release\FLCore.dll
+D:\Infolight\EEP2012\FLCore\bin\Release\FLCore.pdb
+D:\Infolight\EEP2012\FLCore\obj\Release\FLCore.csprojResolveAssemblyReference.cache
+D:\Infolight\EEP2012\FLCore\obj\Release\FLCore.dll
+D:\Infolight\EEP2012\FLCore\obj\Release\FLCore.pdb

@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8"?><ns0:FLSequentialWorkflow RejectProcedure="{p1:Null}" ConnectionType="SqlClient" Description="工作需求單" x:Name="FLSequentialWorkflow" FormName="{x:Null}" SkipForSameUser="False" EEPAlias="JBADMIN" ClientDll="{x:Null}" TableName="IssueJob" BodyField="{x:Null}" WebFormName="JB_ADMIN.JBERP_IssueJob" ExpTime="0" PresentFields="UrgentLevel,EstimationDate" TimeUnit="Day" Keys="IssueJobNO" ExpTimeField="{x:Null}" MailApproveLevel="{x:Null}" UrgentTime="0" NotifySendMail="False" OrgKind="0" xmlns="http://schemas.microsoft.com/winfx/2006/xaml/workflow" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:p1="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:ns0="clr-namespace:FLTools;Assembly=FLTools, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null">
+	<ns0:FLStand SendEmail="False" DelayAutoApprove="False" SendToKind="Applicate" x:Name="工作需求單" FormName="" TimeUnit="Day" SendToUser="" AllowSendBack="True" PlusApproveReturn="False" PlusApprove="False" WebFormName="" ExpTime="0" Parameters="D=Apply" NavigatorMode="Insert" SendToField="" SendToId="{x:Null}" SendToRole="" UrgentTime="0" FLNavigatorMode="Submit" />
+	<IfElseActivity x:Name="加簽">
+		<IfElseBranchActivity x:Name="否" />
+		<IfElseBranchActivity Description="PlusApproveEmployeeID !=''" x:Name="是">
+			<ns0:FLStand SendEmail="True" DelayAutoApprove="False" SendToKind="RefUser" x:Name="加簽者審核" FormName="" TimeUnit="Day" SendToUser="" AllowSendBack="True" PlusApproveReturn="True" PlusApprove="False" WebFormName="" ExpTime="0" Parameters="D=Account" NavigatorMode="Normal" SendToField="PlusApproveEmployeeID" SendToId="{x:Null}" SendToRole="" UrgentTime="0" FLNavigatorMode="Approve" />
+		</IfElseBranchActivity>
+	</IfElseActivity>
+	<ns0:FLNotify SendEmail="True" Parameters="{x:Null}" x:Name="通知主管" FormName="" TimeUnit="Day" SendToUser="" SendToKind="ApplicateManager" UserId="{x:Null}" WebFormName="" ExpTime="0" RoleId="{x:Null}" NavigatorMode="Normal" SendToField="" SendToRole="" UrgentTime="0" FLNavigatorMode="Notify" />
+	<ns0:FLStand SendEmail="True" DelayAutoApprove="False" SendToKind="RefRole" x:Name="窗口工作安排" FormName="" TimeUnit="Day" SendToUser="{x:Null}" AllowSendBack="True" PlusApproveReturn="True" PlusApprove="False" WebFormName="" ExpTime="0" Parameters="D=EstimationDate" NavigatorMode="Modify" SendToField="IssueBelongID" SendToId="{x:Null}" SendToRole="" UrgentTime="0" FLNavigatorMode="Approve" />
+	<IfElseActivity x:Name="是否轉單">
+		<IfElseBranchActivity x:Name="沒轉單" />
+		<IfElseBranchActivity Description="IsTransfer==true" x:Name="轉單">
+			<ns0:FLStand SendEmail="True" DelayAutoApprove="False" SendToKind="RefRole" x:Name="窗口工作安排1" FormName="" TimeUnit="Day" SendToUser="{x:Null}" AllowSendBack="True" PlusApproveReturn="True" PlusApprove="False" WebFormName="" ExpTime="0" Parameters="D=EstimationDate1" NavigatorMode="Modify" SendToField="IssueBelongID" SendToId="{x:Null}" SendToRole="" UrgentTime="0" FLNavigatorMode="Approve" />
+		</IfElseBranchActivity>
+	</IfElseActivity>
+	<ns0:FLNotify SendEmail="True" Parameters="{x:Null}" x:Name="通知窗口主管" FormName="" TimeUnit="Day" SendToUser="" SendToKind="RefManager" UserId="{x:Null}" WebFormName="" ExpTime="0" RoleId="{x:Null}" NavigatorMode="Normal" SendToField="IssueBelongID" SendToRole="" UrgentTime="0" FLNavigatorMode="Notify" />
+	<IfElseActivity x:Name="_">
+		<IfElseBranchActivity Description="sIssueJob.CheckCloseDate()" x:Name="有完成日期" />
+		<IfElseBranchActivity x:Name="無完成日期">
+			<ns0:FLNotify SendEmail="True" Parameters="D=Notify" x:Name="預計完成日通知" FormName="" TimeUnit="Day" SendToUser="" SendToKind="Applicate" UserId="{x:Null}" WebFormName="" ExpTime="0" RoleId="{x:Null}" NavigatorMode="Normal" SendToField="" SendToRole="" UrgentTime="0" FLNavigatorMode="Notify" />
+			<ns0:FLStand SendEmail="True" DelayAutoApprove="False" SendToKind="RefUser" x:Name="窗口確認完成日" FormName="" TimeUnit="Day" SendToUser="" AllowSendBack="True" PlusApproveReturn="True" PlusApprove="False" WebFormName="" ExpTime="0" Parameters="D=CloseDate" NavigatorMode="Modify" SendToField="ServeEmployeeID" SendToId="{x:Null}" SendToRole="" UrgentTime="0" FLNavigatorMode="Approve" />
+		</IfElseBranchActivity>
+	</IfElseActivity>
+	<ns0:FLStand SendEmail="True" DelayAutoApprove="False" SendToKind="Applicate" x:Name="驗收結案" FormName="" TimeUnit="Day" SendToUser="" AllowSendBack="True" PlusApproveReturn="True" PlusApprove="False" WebFormName="" ExpTime="0" Parameters="D=CheckDate" NavigatorMode="Modify" SendToField="" SendToId="{x:Null}" SendToRole="" UrgentTime="0" FLNavigatorMode="Approve" />
+	<IfElseActivity x:Name="__">
+		<IfElseBranchActivity x:Name="滿意度不小於3" />
+		<IfElseBranchActivity Description="CheckScore&lt;3" x:Name="滿意度小於3">
+			<ns0:FLNotify SendEmail="True" Parameters="D=Notify" x:Name="通知窗口主管2" FormName="" TimeUnit="Day" SendToUser="" SendToKind="RefManager" UserId="{x:Null}" WebFormName="" ExpTime="0" RoleId="{x:Null}" NavigatorMode="Normal" SendToField="IssueBelongID" SendToRole="" UrgentTime="0" FLNavigatorMode="Notify" />
+		</IfElseBranchActivity>
+	</IfElseActivity>
+	<IfElseActivity x:Name="是否資安事件">
+		<IfElseBranchActivity x:Name="ifElseBranchActivity1" />
+		<IfElseBranchActivity Description="IssueTypeID ==84 || IssueTypeID=85" x:Name="資安事件">
+			<ns0:FLStand SendEmail="False" DelayAutoApprove="False" SendToKind="RefRole" x:Name="資安設定回復" FormName="" TimeUnit="Day" SendToUser="{x:Null}" AllowSendBack="True" PlusApproveReturn="True" PlusApprove="False" WebFormName="" ExpTime="0" Parameters="D=Reset" NavigatorMode="Modify" SendToField="IssueBelongID" SendToId="{x:Null}" SendToRole="" UrgentTime="0" FLNavigatorMode="Approve" />
+		</IfElseBranchActivity>
+	</IfElseActivity>
+</ns0:FLSequentialWorkflow>

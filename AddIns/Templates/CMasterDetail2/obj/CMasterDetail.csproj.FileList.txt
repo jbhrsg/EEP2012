@@ -1,0 +1,8 @@
+..\..\EEPNetClient\Solution1\CMasterDetail.dll
+..\..\EEPNetClient\Solution1\CMasterDetail.pdb
+obj\Debug\ResolveAssemblyReference.cache
+obj\Debug\CMasterDetail.Form1.resources
+obj\Debug\CMasterDetail.Properties.Resources.resources
+obj\Debug\CMasterDetail.csproj.GenerateResource.Cache
+obj\Debug\CMasterDetail.dll
+obj\Debug\CMasterDetail.pdb

@@ -1,0 +1,14 @@
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sSYS_TodoList\bin\Debug\sSYS_TodoList.dll
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sSYS_TodoList\bin\Debug\sSYS_TodoList.pdb
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sSYS_TodoList\obj\Debug\sSYS_TodoList.csproj.GenerateResource.Cache
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sSYS_TodoList\obj\Debug\sSYS_TodoList.dll
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sSYS_TodoList\obj\Debug\sSYS_TodoList.pdb
+C:\Program Files (x86)\Infolight\EEP2012\EEPNetServer\JBADMIN\sSYS_TodoList.dll
+C:\Program Files (x86)\Infolight\EEP2012\EEPNetServer\JBADMIN\sSYS_TodoList.pdb
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sSYS_TodoList\obj\Debug\sSYS_TodoList.Component.resources
+D:\Infolight\EEP2012\EEPNetServer\JBADMIN\sSYS_TodoList.dll
+D:\Infolight\EEP2012\EEPNetServer\JBADMIN\sSYS_TodoList.pdb
+D:\Infolight\EEP2012\JBADMIN\sSYS_TodoList\obj\Debug\sSYS_TodoList.Component.resources
+D:\Infolight\EEP2012\JBADMIN\sSYS_TodoList\obj\Debug\sSYS_TodoList.csproj.GenerateResource.Cache
+D:\Infolight\EEP2012\JBADMIN\sSYS_TodoList\obj\Debug\sSYS_TodoList.dll
+D:\Infolight\EEP2012\JBADMIN\sSYS_TodoList\obj\Debug\sSYS_TodoList.pdb

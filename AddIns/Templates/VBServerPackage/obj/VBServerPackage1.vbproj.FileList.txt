@@ -1,0 +1,10 @@
+bin\Debug\VBServerPackage.dll
+bin\Debug\VBServerPackage.pdb
+bin\Debug\VBServerPackage.xml
+obj\Debug\ResolveAssemblyReference.cache
+obj\Debug\VBServerPackage.Component.resources
+obj\Debug\VBServerPackage.Resources.resources
+obj\Debug\VBServerPackage1.vbproj.GenerateResource.Cache
+obj\Debug\VBServerPackage.dll
+obj\Debug\VBServerPackage.xml
+obj\Debug\VBServerPackage.pdb

@@ -1,0 +1,93 @@
+F:\Program Files\EEP2010\WCFServer\EFGlobalModule.dll.config
+F:\Program Files\EEP2010\WCFServer\EFGlobalModule.dll
+F:\Program Files\EEP2010\WCFServer\EFGlobalModule.pdb
+F:\Program Files\EEP2010\EFGlobalModule\obj\Debug\ResolveAssemblyReference.cache
+F:\Program Files\EEP2010\EFGlobalModule\obj\Debug\EFGlobalModule.Component.resources
+F:\Program Files\EEP2010\EFGlobalModule\obj\Debug\GenerateResource.read.1.tlog
+F:\Program Files\EEP2010\EFGlobalModule\obj\Debug\GenerateResource.write.1.tlog
+F:\Program Files\EEP2010\EFGlobalModule\obj\Debug\EFGlobalModule.dll
+F:\Program Files\EEP2010\EFGlobalModule\obj\Debug\EFGlobalModule.pdb
+D:\Infolight\EEP2010\WCFServer\EFGlobalModule.dll.config
+D:\Infolight\EEP2010\WCFServer\EFGlobalModule.dll
+D:\Infolight\EEP2010\WCFServer\EFGlobalModule.pdb
+D:\Infolight\EEP2010\EEPNetServer\EFGlobalModule.dll.config
+D:\Infolight\EEP2010\EEPNetServer\EFGlobalModule.dll
+D:\Infolight\EEP2010\EEPNetServer\EFGlobalModule.pdb
+D:\Infolight\EEP2010\EFGlobalModule\obj\Debug\ResolveAssemblyReference.cache
+D:\Infolight\EEP2010\EFGlobalModule\obj\Debug\EFGlobalModule.Component.resources
+D:\Infolight\EEP2010\EFGlobalModule\obj\Debug\GenerateResource.read.1.tlog
+D:\Infolight\EEP2010\EFGlobalModule\obj\Debug\GenerateResource.write.1.tlog
+D:\Infolight\EEP2010\EFGlobalModule\obj\Debug\EFGlobalModule.dll
+D:\Infolight\EEP2010\EFGlobalModule\obj\Debug\EFGlobalModule.pdb
+C:\Program Files\Infolight\EEP2010\EEPNetServer\EFGlobalModule.dll.config
+C:\Program Files\Infolight\EEP2010\EEPNetServer\EFGlobalModule.dll
+C:\Program Files\Infolight\EEP2010\EFGlobalModule\obj\Debug\EFGlobalModule.Component.resources
+C:\Program Files\Infolight\EEP2010\EFGlobalModule\obj\Debug\EFGlobalModule.dll
+C:\Program Files\Infolight\EEP2010\EFGlobalModule\obj\Debug\EFGlobalModule.pdb
+C:\Program Files\Infolight\EEP2010\EEPNetServer\EFGlobalModule.pdb
+C:\Program Files\Infolight\EEP2010\EFGlobalModule\obj\Debug\EFGlobalModule.csprojResolveAssemblyReference.cache
+C:\Program Files\Infolight\EEP2010\EFGlobalModule\obj\Debug\EFGlobalModule.csproj.GenerateResource.Cache
+C:\Program Files\Infolight\EEP2012Dev\EEPNetServer\EFGlobalModule.dll.config
+C:\Program Files\Infolight\EEP2012Dev\EEPNetServer\EFGlobalModule.dll
+C:\Program Files\Infolight\EEP2012Dev\EFGlobalModule\obj\Debug\EFGlobalModule.csprojResolveAssemblyReference.cache
+C:\Program Files\Infolight\EEP2012Dev\EFGlobalModule\obj\Debug\EFGlobalModule.Component.resources
+C:\Program Files\Infolight\EEP2012Dev\EFGlobalModule\obj\Debug\EFGlobalModule.csproj.GenerateResource.Cache
+C:\Program Files\Infolight\EEP2012Dev\EFGlobalModule\obj\Debug\EFGlobalModule.dll
+C:\Program Files\Infolight\EEP2012Dev\EFGlobalModule\obj\Debug\EFGlobalModule.pdb
+C:\Program Files\Infolight\EEP2012Dev\EEPNetServer\EFGlobalModule.pdb
+C:\Program Files\Infolight\EEP2012WF\EEPNetServer\EFGlobalModule.dll.config
+C:\Program Files\Infolight\EEP2012WF\EEPNetServer\EFGlobalModule.dll
+C:\Program Files\Infolight\EEP2012WF\EEPNetServer\EFGlobalModule.pdb
+C:\Program Files\Infolight\EEP2012WF\EFGlobalModule\obj\Debug\EFGlobalModule.csprojResolveAssemblyReference.cache
+C:\Program Files\Infolight\EEP2012WF\EFGlobalModule\obj\Debug\EFGlobalModule.Component.resources
+C:\Program Files\Infolight\EEP2012WF\EFGlobalModule\obj\Debug\EFGlobalModule.csproj.GenerateResource.Cache
+C:\Program Files\Infolight\EEP2012WF\EFGlobalModule\obj\Debug\EFGlobalModule.dll
+C:\Program Files\Infolight\EEP2012WF\EFGlobalModule\obj\Debug\EFGlobalModule.pdb
+C:\Program Files (x86)\Infolight\EEP2012WF\EEPNetServer\EFGlobalModule.dll.config
+C:\Program Files (x86)\Infolight\EEP2012WF\EEPNetServer\EFGlobalModule.dll
+C:\Program Files (x86)\Infolight\EEP2012WF\EEPNetServer\EFGlobalModule.pdb
+C:\Program Files (x86)\Infolight\EEP2012WF\EFGlobalModule\obj\Debug\EFGlobalModule.csprojResolveAssemblyReference.cache
+C:\Program Files (x86)\Infolight\EEP2012WF\EFGlobalModule\obj\Debug\EFGlobalModule.Component.resources
+C:\Program Files (x86)\Infolight\EEP2012WF\EFGlobalModule\obj\Debug\EFGlobalModule.csproj.GenerateResource.Cache
+C:\Program Files (x86)\Infolight\EEP2012WF\EFGlobalModule\obj\Debug\EFGlobalModule.dll
+C:\Program Files (x86)\Infolight\EEP2012WF\EFGlobalModule\obj\Debug\EFGlobalModule.pdb
+D:\版本\Version\安裝源文件\EEP2012WF(V5.0.0.020140924 SP5)\EEPNetServer\EFGlobalModule.dll.config
+D:\版本\Version\安裝源文件\EEP2012WF(V5.0.0.020140924 SP5)\EEPNetServer\EFGlobalModule.dll
+D:\版本\Version\安裝源文件\EEP2012WF(V5.0.0.020140924 SP5)\EEPNetServer\EFGlobalModule.pdb
+D:\版本\Version\安裝源文件\EEP2012WF(V5.0.0.020140924 SP5)\EFGlobalModule\obj\Debug\EFGlobalModule.csprojResolveAssemblyReference.cache
+D:\版本\Version\安裝源文件\EEP2012WF(V5.0.0.020140924 SP5)\EFGlobalModule\obj\Debug\EFGlobalModule.Component.resources
+D:\版本\Version\安裝源文件\EEP2012WF(V5.0.0.020140924 SP5)\EFGlobalModule\obj\Debug\EFGlobalModule.csproj.GenerateResource.Cache
+D:\版本\Version\安裝源文件\EEP2012WF(V5.0.0.020140924 SP5)\EFGlobalModule\obj\Debug\EFGlobalModule.dll
+D:\版本\Version\安裝源文件\EEP2012WF(V5.0.0.020140924 SP5)\EFGlobalModule\obj\Debug\EFGlobalModule.pdb
+D:\版本\Version\安裝源文件\EEP2012(V5.0.0.020140924 SP5)\EEP2012WF\EEPNetServer\EFGlobalModule.dll.config
+D:\版本\Version\安裝源文件\EEP2012(V5.0.0.020140924 SP5)\EEP2012WF\EEPNetServer\EFGlobalModule.dll
+D:\版本\Version\安裝源文件\EEP2012(V5.0.0.020140924 SP5)\EEP2012WF\EEPNetServer\EFGlobalModule.pdb
+D:\版本\Version\安裝源文件\EEP2012(V5.0.0.020140924 SP5)\EEP2012WF\EFGlobalModule\obj\Debug\EFGlobalModule.csprojResolveAssemblyReference.cache
+D:\版本\Version\安裝源文件\EEP2012(V5.0.0.020140924 SP5)\EEP2012WF\EFGlobalModule\obj\Debug\EFGlobalModule.Component.resources
+D:\版本\Version\安裝源文件\EEP2012(V5.0.0.020140924 SP5)\EEP2012WF\EFGlobalModule\obj\Debug\EFGlobalModule.csproj.GenerateResource.Cache
+D:\版本\Version\安裝源文件\EEP2012(V5.0.0.020140924 SP5)\EEP2012WF\EFGlobalModule\obj\Debug\EFGlobalModule.dll
+D:\版本\Version\安裝源文件\EEP2012(V5.0.0.020140924 SP5)\EEP2012WF\EFGlobalModule\obj\Debug\EFGlobalModule.pdb
+D:\Program Files (x86)\Your Company Name\EEP2012\EEPNetServer\EFGlobalModule.dll.config
+D:\Program Files (x86)\Your Company Name\EEP2012\EEPNetServer\EFGlobalModule.dll
+D:\Program Files (x86)\Your Company Name\EEP2012\EEPNetServer\EFGlobalModule.pdb
+D:\Program Files (x86)\Your Company Name\EEP2012\EFGlobalModule\obj\Debug\EFGlobalModule.csprojResolveAssemblyReference.cache
+D:\Program Files (x86)\Your Company Name\EEP2012\EFGlobalModule\obj\Debug\EFGlobalModule.Component.resources
+D:\Program Files (x86)\Your Company Name\EEP2012\EFGlobalModule\obj\Debug\EFGlobalModule.csproj.GenerateResource.Cache
+D:\Program Files (x86)\Your Company Name\EEP2012\EFGlobalModule\obj\Debug\EFGlobalModule.dll
+D:\Program Files (x86)\Your Company Name\EEP2012\EFGlobalModule\obj\Debug\EFGlobalModule.pdb
+C:\Program Files (x86)\Infolight\EEP2012\EEPNetServer\EFGlobalModule.dll
+D:\Infolight\EEP2012\EEPNetServer\EFGlobalModule.dll.config
+D:\Infolight\EEP2012\EEPNetServer\EFGlobalModule.dll
+D:\Infolight\EEP2012\EEPNetServer\EFGlobalModule.pdb
+D:\Infolight\EEP2012\EFGlobalModule\obj\Debug\EFGlobalModule.csprojResolveAssemblyReference.cache
+D:\Infolight\EEP2012\EFGlobalModule\obj\Debug\EFGlobalModule.Component.resources
+D:\Infolight\EEP2012\EFGlobalModule\obj\Debug\EFGlobalModule.csproj.GenerateResource.Cache
+D:\Infolight\EEP2012\EFGlobalModule\obj\Debug\EFGlobalModule.dll
+D:\Infolight\EEP2012\EFGlobalModule\obj\Debug\EFGlobalModule.pdb
+C:\Program Files (x86)\Infolight\EEP2012\EEPNetServer\EFGlobalModule.dll.config
+C:\Program Files (x86)\Infolight\EEP2012\EEPNetServer\EFGlobalModule.pdb
+C:\Program Files (x86)\Infolight\EEP2012\EFGlobalModule\obj\Debug\EFGlobalModule.csprojResolveAssemblyReference.cache
+C:\Program Files (x86)\Infolight\EEP2012\EFGlobalModule\obj\Debug\EFGlobalModule.Component.resources
+C:\Program Files (x86)\Infolight\EEP2012\EFGlobalModule\obj\Debug\EFGlobalModule.csproj.GenerateResource.Cache
+C:\Program Files (x86)\Infolight\EEP2012\EFGlobalModule\obj\Debug\EFGlobalModule.dll
+C:\Program Files (x86)\Infolight\EEP2012\EFGlobalModule\obj\Debug\EFGlobalModule.pdb

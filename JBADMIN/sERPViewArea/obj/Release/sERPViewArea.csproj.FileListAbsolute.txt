@@ -1,0 +1,8 @@
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sERPViewArea\bin\Release\sERPViewArea.dll
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sERPViewArea\bin\Release\sERPViewArea.pdb
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sERPViewArea\bin\Release\Newtonsoft.Json.dll
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sERPViewArea\bin\Release\Newtonsoft.Json.xml
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sERPViewArea\obj\Release\sERPViewArea.Component.resources
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sERPViewArea\obj\Release\sERPViewArea.csproj.GenerateResource.Cache
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sERPViewArea\obj\Release\sERPViewArea.dll
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sERPViewArea\obj\Release\sERPViewArea.pdb

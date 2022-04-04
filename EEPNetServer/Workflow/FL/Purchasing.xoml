@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="utf-8"?><ns0:FLSequentialWorkflow RejectProcedure="{p1:Null}" ConnectionType="SqlClient" Description="請採購申請" x:Name="FLSequentialWorkflow" FormName="{x:Null}" SkipForSameUser="True" EEPAlias="{x:Null}" ClientDll="{x:Null}" TableName="{x:Null}" BodyField="{x:Null}" WebFormName="{x:Null}" ExpTime="0" PresentFields="{x:Null}" TimeUnit="Day" Keys="{x:Null}" ExpTimeField="{x:Null}" MailApproveLevel="{x:Null}" UrgentTime="0" NotifySendMail="False" OrgKind="0" xmlns="http://schemas.microsoft.com/winfx/2006/xaml/workflow" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:p1="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:ns0="clr-namespace:FLTools;Assembly=FLTools, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null">
+	<ns0:FLStand SendEmail="False" DelayAutoApprove="False" SendToKind="Role" x:Name="請購啟單" FormName="" TimeUnit="Day" SendToUser="{x:Null}" AllowSendBack="True" PlusApproveReturn="True" PlusApprove="False" WebFormName="" ExpTime="0" Parameters="{x:Null}" NavigatorMode="Normal" SendToField="{x:Null}" SendToId="{x:Null}" SendToRole="{x:Null}" UrgentTime="0" FLNavigatorMode="Submit" />
+	<IfElseActivity x:Name="管理室確認">
+		<IfElseBranchActivity x:Name="工程類" />
+		<IfElseBranchActivity x:Name="非工程類">
+			<ns0:FLStand SendEmail="False" DelayAutoApprove="False" SendToKind="Role" x:Name="資料與備品確認" FormName="" TimeUnit="Day" SendToUser="{x:Null}" AllowSendBack="True" PlusApproveReturn="True" PlusApprove="False" WebFormName="" ExpTime="0" Parameters="{x:Null}" NavigatorMode="Normal" SendToField="{x:Null}" SendToId="{x:Null}" SendToRole="{x:Null}" UrgentTime="0" FLNavigatorMode="Submit" />
+		</IfElseBranchActivity>
+	</IfElseActivity>
+	<ns0:FLApprove SendEmail="False" DelayAutoApprove="False" SendToKind="Manager" InvokedDateTime="0001-01-01T00:00:00.0000000" FormName="" TimeUnit="Day" SendToUser="" AllowSendBack="True" PlusApproveReturn="True" PlusApprove="False" WebFormName="" ExpTime="0" Parameters="{x:Null}" NavigatorMode="Normal" SendToField="{x:Null}" SendToId="{x:Null}" SendToRole="" UrgentTime="0" x:Name="請購主管審核" FLNavigatorMode="Approve" />
+	<ns0:FLStand SendEmail="False" DelayAutoApprove="False" SendToKind="Role" x:Name="採購作業" FormName="" TimeUnit="Day" SendToUser="{x:Null}" AllowSendBack="True" PlusApproveReturn="True" PlusApprove="False" WebFormName="" ExpTime="0" Parameters="{x:Null}" NavigatorMode="Normal" SendToField="{x:Null}" SendToId="{x:Null}" SendToRole="{x:Null}" UrgentTime="0" FLNavigatorMode="Submit" />
+	<ns0:FLApprove SendEmail="False" DelayAutoApprove="False" SendToKind="Manager" InvokedDateTime="0001-01-01T00:00:00.0000000" FormName="" TimeUnit="Day" SendToUser="" AllowSendBack="True" PlusApproveReturn="True" PlusApprove="False" WebFormName="" ExpTime="0" Parameters="{x:Null}" NavigatorMode="Normal" SendToField="{x:Null}" SendToId="{x:Null}" SendToRole="" UrgentTime="0" x:Name="採購主管審核" FLNavigatorMode="Approve" />
+	<ns0:FLStand SendEmail="False" DelayAutoApprove="False" SendToKind="Role" x:Name="採購交期安排" FormName="" TimeUnit="Day" SendToUser="{x:Null}" AllowSendBack="True" PlusApproveReturn="True" PlusApprove="False" WebFormName="" ExpTime="0" Parameters="{x:Null}" NavigatorMode="Normal" SendToField="{x:Null}" SendToId="{x:Null}" SendToRole="{x:Null}" UrgentTime="0" FLNavigatorMode="Submit" />
+	<ns0:FLStand SendEmail="False" DelayAutoApprove="False" SendToKind="Role" x:Name="請購人驗收" FormName="" TimeUnit="Day" SendToUser="{x:Null}" AllowSendBack="True" PlusApproveReturn="True" PlusApprove="False" WebFormName="" ExpTime="0" Parameters="{x:Null}" NavigatorMode="Normal" SendToField="{x:Null}" SendToId="{x:Null}" SendToRole="{x:Null}" UrgentTime="0" FLNavigatorMode="Submit" />
+	<ns0:FLApprove SendEmail="False" DelayAutoApprove="False" SendToKind="Manager" InvokedDateTime="0001-01-01T00:00:00.0000000" FormName="" TimeUnit="Day" SendToUser="" AllowSendBack="True" PlusApproveReturn="True" PlusApprove="False" WebFormName="" ExpTime="0" Parameters="{x:Null}" NavigatorMode="Normal" SendToField="{x:Null}" SendToId="{x:Null}" SendToRole="" UrgentTime="0" x:Name="請購直屬主管驗收" FLNavigatorMode="Approve" />
+	<ns0:FLStand SendEmail="False" DelayAutoApprove="False" SendToKind="Role" x:Name="採購結帳" FormName="" TimeUnit="Day" SendToUser="{x:Null}" AllowSendBack="True" PlusApproveReturn="True" PlusApprove="False" WebFormName="" ExpTime="0" Parameters="{x:Null}" NavigatorMode="Normal" SendToField="{x:Null}" SendToId="{x:Null}" SendToRole="{x:Null}" UrgentTime="0" FLNavigatorMode="Submit" />
+	<IfElseActivity x:Name="物品類別">
+		<IfElseBranchActivity x:Name="折舊資產手工具">
+			<ns0:FLProcedure ServerDll="{x:Null}" ModuleName="{x:Null}" ErrorLog="False" MethodName="{x:Null}" x:Name="資產管理處理" ErrorToRole="{x:Null}" />
+		</IfElseBranchActivity>
+		<IfElseBranchActivity x:Name="一般物品與工程" />
+	</IfElseActivity>
+	<IfElseActivity x:Name="會計審核">
+		<IfElseBranchActivity x:Name="傑報人力與傑信與傑報健康">
+			<IfElseActivity x:Name="專員與經理審核">
+				<IfElseBranchActivity x:Name="傑報健康">
+					<ns0:FLStand SendEmail="False" DelayAutoApprove="False" SendToKind="Role" x:Name="會計副理審核" FormName="" TimeUnit="Day" SendToUser="{x:Null}" AllowSendBack="True" PlusApproveReturn="True" PlusApprove="False" WebFormName="" ExpTime="0" Parameters="{x:Null}" NavigatorMode="Normal" SendToField="{x:Null}" SendToId="{x:Null}" SendToRole="{x:Null}" UrgentTime="0" FLNavigatorMode="Submit" />
+				</IfElseBranchActivity>
+				<IfElseBranchActivity x:Name="人力_傑信_國際產學">
+					<ns0:FLStand SendEmail="False" DelayAutoApprove="False" SendToKind="Role" x:Name="專員2審核" FormName="" TimeUnit="Day" SendToUser="{x:Null}" AllowSendBack="True" PlusApproveReturn="True" PlusApprove="False" WebFormName="" ExpTime="0" Parameters="{x:Null}" NavigatorMode="Normal" SendToField="{x:Null}" SendToId="{x:Null}" SendToRole="{x:Null}" UrgentTime="0" FLNavigatorMode="Submit" />
+				</IfElseBranchActivity>
+			</IfElseActivity>
+		</IfElseBranchActivity>
+		<IfElseBranchActivity x:Name="傑報資訊與傑誠">
+			<ns0:FLStand SendEmail="False" DelayAutoApprove="False" SendToKind="Role" x:Name="專員1審核" FormName="" TimeUnit="Day" SendToUser="{x:Null}" AllowSendBack="True" PlusApproveReturn="True" PlusApprove="False" WebFormName="" ExpTime="0" Parameters="{x:Null}" NavigatorMode="Normal" SendToField="{x:Null}" SendToId="{x:Null}" SendToRole="{x:Null}" UrgentTime="0" FLNavigatorMode="Submit" />
+		</IfElseBranchActivity>
+	</IfElseActivity>
+	<ns0:FLProcedure ServerDll="{x:Null}" ModuleName="{x:Null}" ErrorLog="False" MethodName="{x:Null}" x:Name="應付帳務處理" ErrorToRole="{x:Null}" />
+	<IfElseActivity x:Name="請購驗收確認">
+		<IfElseBranchActivity x:Name="數量驗收完成" />
+		<IfElseBranchActivity x:Name="數量未驗收完成">
+			<IfElseActivity x:Name="交期安排確認">
+				<IfElseBranchActivity x:Name="已交期安排完成">
+					<ns0:FLGoto Description="請購人驗收" x:Name="請購人待驗收" ActivityName="{x:Null}" />
+				</IfElseBranchActivity>
+				<IfElseBranchActivity x:Name="未交期安排完成">
+					<ns0:FLGoto x:Name="採購交期待安排" ActivityName="{x:Null}" />
+				</IfElseBranchActivity>
+			</IfElseActivity>
+		</IfElseBranchActivity>
+	</IfElseActivity>
+</ns0:FLSequentialWorkflow>

@@ -1,0 +1,15 @@
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sShortTermRepo\bin\Debug\sShortTermRepo.dll
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sShortTermRepo\bin\Debug\sShortTermRepo.pdb
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sShortTermRepo\obj\Debug\sShortTermRepo.csproj.GenerateResource.Cache
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sShortTermRepo\obj\Debug\sShortTermRepo.dll
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sShortTermRepo\obj\Debug\sShortTermRepo.pdb
+C:\Program Files (x86)\Infolight\EEP2012\EEPNetServer\JBADMIN\sShortTermRepo.dll
+C:\Program Files (x86)\Infolight\EEP2012\EEPNetServer\JBADMIN\sShortTermRepo.pdb
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sShortTermRepo\obj\Debug\sShortTermRepo.Component.resources
+D:\Infolight\EEP2012\EEPNetServer\JBADMIN\sShortTermRepo.dll
+D:\Infolight\EEP2012\EEPNetServer\JBADMIN\sShortTermRepo.pdb
+D:\Infolight\EEP2012\JBADMIN\sShortTermRepo\obj\Debug\sShortTermRepo.Component.resources
+D:\Infolight\EEP2012\JBADMIN\sShortTermRepo\obj\Debug\sShortTermRepo.csproj.GenerateResource.Cache
+D:\Infolight\EEP2012\JBADMIN\sShortTermRepo\obj\Debug\sShortTermRepo.dll
+D:\Infolight\EEP2012\JBADMIN\sShortTermRepo\obj\Debug\sShortTermRepo.pdb
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sShortTermRepo\obj\Debug\sShortTermRepo.csprojResolveAssemblyReference.cache

@@ -1,0 +1,12 @@
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sERPSalesInvoices\obj\Release\sERPSalesInvoices.Component.resources
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sERPSalesInvoices\obj\Release\sERPSalesInvoices.Component.vi-VN.resources
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sERPSalesInvoices\obj\Release\sERPSalesInvoices.csproj.GenerateResource.Cache
+C:\Program Files (x86)\Infolight\EEP2012\EEPNetServer\JBADMIN\sERPSalesInvoices.dll.config
+C:\Program Files (x86)\Infolight\EEP2012\EEPNetServer\JBADMIN\sERPSalesInvoices.dll
+C:\Program Files (x86)\Infolight\EEP2012\EEPNetServer\JBADMIN\sERPSalesInvoices.XmlSerializers.dll
+C:\Program Files (x86)\Infolight\EEP2012\EEPNetServer\JBADMIN\sERPSalesInvoices.pdb
+C:\Program Files (x86)\Infolight\EEP2012\EEPNetServer\JBADMIN\vi-VN\sERPSalesInvoices.resources.dll
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sERPSalesInvoices\obj\Release\vi-VN\sERPSalesInvoices.resources.dll
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sERPSalesInvoices\obj\Release\sERPSalesInvoices.dll
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sERPSalesInvoices\obj\Release\sERPSalesInvoices.pdb
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sERPSalesInvoices\obj\Release\sERPSalesInvoices.XmlSerializers.dll

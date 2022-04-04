@@ -1,0 +1,11 @@
+C:\Program Files (x86)\Infolight\EEP2012\JBHunter\sEduSubject\bin\Debug\sEduSubject.dll
+C:\Program Files (x86)\Infolight\EEP2012\JBHunter\sEduSubject\bin\Debug\sEduSubject.pdb
+C:\Program Files (x86)\Infolight\EEP2012\JBHunter\sEduSubject\obj\Debug\sEduSubject.csproj.GenerateResource.Cache
+C:\Program Files (x86)\Infolight\EEP2012\JBHunter\sEduSubject\obj\Debug\sEduSubject.dll
+C:\Program Files (x86)\Infolight\EEP2012\JBHunter\sEduSubject\obj\Debug\sEduSubject.pdb
+C:\Program Files (x86)\Infolight\EEP2012\EEPNetServer\JBHunter\sEduSubject.dll
+C:\Program Files (x86)\Infolight\EEP2012\EEPNetServer\JBHunter\sEduSubject.pdb
+C:\Program Files (x86)\Infolight\EEP2012\JBHunter\sEduSubject\obj\Debug\sEduSubject.Component.resources
+C:\Program Files (x86)\Infolight\EEP2012\EEPNetServer\JBHunter\vi-VN\sEduSubject.resources.dll
+C:\Program Files (x86)\Infolight\EEP2012\JBHunter\sEduSubject\obj\Debug\sEduSubject.Component.vi-VN.resources
+C:\Program Files (x86)\Infolight\EEP2012\JBHunter\sEduSubject\obj\Debug\vi-VN\sEduSubject.resources.dll

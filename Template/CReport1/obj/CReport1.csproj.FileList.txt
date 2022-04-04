@@ -1,0 +1,8 @@
+..\..\EEPNetClient\Solution1\CReport1.dll
+..\..\EEPNetClient\Solution1\CReport1.pdb
+obj\Debug\ResolveAssemblyReference.cache
+obj\Debug\CReport1.Form1.resources
+obj\Debug\CReport1.Properties.Resources.resources
+obj\Debug\CReport1.csproj.GenerateResource.Cache
+obj\Debug\CReport1.dll
+obj\Debug\CReport1.pdb

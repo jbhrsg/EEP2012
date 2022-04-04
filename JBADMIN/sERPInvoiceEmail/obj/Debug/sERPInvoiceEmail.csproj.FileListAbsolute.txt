@@ -1,0 +1,8 @@
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sERPInvoiceEmail\bin\Debug\sERPInvoiceEmail.dll
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sERPInvoiceEmail\bin\Debug\sERPInvoiceEmail.pdb
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sERPInvoiceEmail\obj\Debug\sERPInvoiceEmail.csproj.GenerateResource.Cache
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sERPInvoiceEmail\obj\Debug\sERPInvoiceEmail.dll
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sERPInvoiceEmail\obj\Debug\sERPInvoiceEmail.pdb
+C:\Program Files (x86)\Infolight\EEP2012\EEPNetServer\JBADMIN\sERPInvoiceEmail.dll
+C:\Program Files (x86)\Infolight\EEP2012\EEPNetServer\JBADMIN\sERPInvoiceEmail.pdb
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sERPInvoiceEmail\obj\Debug\sERPInvoiceEmail.Component.resources

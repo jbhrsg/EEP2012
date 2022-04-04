@@ -1,0 +1,15 @@
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sERPSalesMan\bin\Debug\sERPSalesMan.dll
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sERPSalesMan\bin\Debug\sERPSalesMan.pdb
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sERPSalesMan\obj\Debug\sERPSalesMan.csproj.GenerateResource.Cache
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sERPSalesMan\obj\Debug\sERPSalesMan.dll
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sERPSalesMan\obj\Debug\sERPSalesMan.pdb
+C:\Program Files (x86)\Infolight\EEP2012\EEPNetServer\JBADMIN\sERPSalesMan.dll
+C:\Program Files (x86)\Infolight\EEP2012\EEPNetServer\JBADMIN\sERPSalesMan.pdb
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sERPSalesMan\obj\Debug\sERPSalesMan.Component.resources
+D:\Infolight\EEP2012\EEPNetServer\JBADMIN\sERPSalesMan.dll
+D:\Infolight\EEP2012\EEPNetServer\JBADMIN\sERPSalesMan.pdb
+D:\Infolight\EEP2012\JBADMIN\sERPSalesMan\obj\Debug\sERPSalesMan.Component.resources
+D:\Infolight\EEP2012\JBADMIN\sERPSalesMan\obj\Debug\sERPSalesMan.csproj.GenerateResource.Cache
+D:\Infolight\EEP2012\JBADMIN\sERPSalesMan\obj\Debug\sERPSalesMan.dll
+D:\Infolight\EEP2012\JBADMIN\sERPSalesMan\obj\Debug\sERPSalesMan.pdb
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sERPSalesMan\obj\Debug\sERPSalesMan.csprojResolveAssemblyReference.cache

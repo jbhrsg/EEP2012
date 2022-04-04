@@ -1,0 +1,9 @@
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sNHI2Declare\bin\Debug\sNHI2Declare.dll
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sNHI2Declare\bin\Debug\sNHI2Declare.pdb
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sNHI2Declare\obj\Debug\sNHI2Declare.csproj.GenerateResource.Cache
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sNHI2Declare\obj\Debug\sNHI2Declare.dll
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sNHI2Declare\obj\Debug\sNHI2Declare.pdb
+C:\Program Files (x86)\Infolight\EEP2012\EEPNetServer\JBADMIN\sNHI2Declare.dll
+C:\Program Files (x86)\Infolight\EEP2012\EEPNetServer\JBADMIN\sNHI2Declare.pdb
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sNHI2Declare\obj\Debug\sNHI2Declare.Component.resources
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sNHI2Declare\obj\Debug\sNHI2Declare.csprojResolveAssemblyReference.cache

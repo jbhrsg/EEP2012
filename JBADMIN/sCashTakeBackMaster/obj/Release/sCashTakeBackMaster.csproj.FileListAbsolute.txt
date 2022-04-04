@@ -1,0 +1,9 @@
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sCashTakeBackMaster\bin\Release\sCashTakeBackMaster.dll
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sCashTakeBackMaster\bin\Release\sCashTakeBackMaster.pdb
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sCashTakeBackMaster\bin\Release\Newtonsoft.Json.dll
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sCashTakeBackMaster\bin\Release\Newtonsoft.Json.xml
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sCashTakeBackMaster\obj\Release\sCashTakeBackMaster.csprojResolveAssemblyReference.cache
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sCashTakeBackMaster\obj\Release\sCashTakeBackMaster.Component.resources
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sCashTakeBackMaster\obj\Release\sCashTakeBackMaster.csproj.GenerateResource.Cache
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sCashTakeBackMaster\obj\Release\sCashTakeBackMaster.dll
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sCashTakeBackMaster\obj\Release\sCashTakeBackMaster.pdb

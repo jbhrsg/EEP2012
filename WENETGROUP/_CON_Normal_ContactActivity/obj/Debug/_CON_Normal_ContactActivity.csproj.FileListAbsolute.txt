@@ -1,0 +1,10 @@
+C:\Program Files (x86)\Infolight\EEP2012\EEPNetServer\WENETGROUP\_CON_Normal_ContactActivity.dll
+C:\Program Files (x86)\Infolight\EEP2012\EEPNetServer\WENETGROUP\_CON_Normal_ContactActivity.pdb
+C:\Program Files (x86)\Infolight\EEP2012\EEPNetServer\WENETGROUP\vi-VN\_CON_Normal_ContactActivity.resources.dll
+C:\Program Files (x86)\Infolight\EEP2012\WENETGROUP\_CON_Normal_ContactActivity\obj\Debug\_CON_Normal_ContactActivity.csprojResolveAssemblyReference.cache
+C:\Program Files (x86)\Infolight\EEP2012\WENETGROUP\_CON_Normal_ContactActivity\obj\Debug\_CON_Normal_ContactActivity.Component.resources
+C:\Program Files (x86)\Infolight\EEP2012\WENETGROUP\_CON_Normal_ContactActivity\obj\Debug\_CON_Normal_ContactActivity.Component.vi-VN.resources
+C:\Program Files (x86)\Infolight\EEP2012\WENETGROUP\_CON_Normal_ContactActivity\obj\Debug\_CON_Normal_ContactActivity.csproj.GenerateResource.Cache
+C:\Program Files (x86)\Infolight\EEP2012\WENETGROUP\_CON_Normal_ContactActivity\obj\Debug\vi-VN\_CON_Normal_ContactActivity.resources.dll
+C:\Program Files (x86)\Infolight\EEP2012\WENETGROUP\_CON_Normal_ContactActivity\obj\Debug\_CON_Normal_ContactActivity.dll
+C:\Program Files (x86)\Infolight\EEP2012\WENETGROUP\_CON_Normal_ContactActivity\obj\Debug\_CON_Normal_ContactActivity.pdb

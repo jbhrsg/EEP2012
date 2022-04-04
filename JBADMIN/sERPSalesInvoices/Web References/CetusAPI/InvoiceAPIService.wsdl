@@ -1,0 +1,270 @@
+<?xml version="1.0" encoding="utf-8"?>
+<definitions xmlns:wsp="http://www.w3.org/ns/ws-policy" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:tns="http://webservice.cetustek.com/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsp1_2="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" name="InvoiceAPIService" targetNamespace="http://webservice.cetustek.com/" xmlns="http://schemas.xmlsoap.org/wsdl/">
+  <types>
+    <xsd:schema>
+      <xsd:import schemaLocation="http://invoice.cetustek.com.tw:80/InvoiceMultiWeb/InvoiceAPI?xsd=1" namespace="http://webservice.cetustek.com/" />
+    </xsd:schema>
+  </types>
+  <message name="QueryAllowance">
+    <part name="parameters" element="tns:QueryAllowance" />
+  </message>
+  <message name="QueryAllowanceResponse">
+    <part name="parameters" element="tns:QueryAllowanceResponse" />
+  </message>
+  <message name="Exception">
+    <part name="fault" element="tns:Exception" />
+  </message>
+  <message name="QueryInvoice">
+    <part name="parameters" element="tns:QueryInvoice" />
+  </message>
+  <message name="QueryInvoiceResponse">
+    <part name="parameters" element="tns:QueryInvoiceResponse" />
+  </message>
+  <message name="CancelInvoice">
+    <part name="parameters" element="tns:CancelInvoice" />
+  </message>
+  <message name="CancelInvoiceResponse">
+    <part name="parameters" element="tns:CancelInvoiceResponse" />
+  </message>
+  <message name="QueryInvoiceByOrderid">
+    <part name="parameters" element="tns:QueryInvoiceByOrderid" />
+  </message>
+  <message name="QueryInvoiceByOrderidResponse">
+    <part name="parameters" element="tns:QueryInvoiceByOrderidResponse" />
+  </message>
+  <message name="CreateInvoiceV3">
+    <part name="parameters" element="tns:CreateInvoiceV3" />
+  </message>
+  <message name="CreateInvoiceV3Response">
+    <part name="parameters" element="tns:CreateInvoiceV3Response" />
+  </message>
+  <message name="CancelAllowance">
+    <part name="parameters" element="tns:CancelAllowance" />
+  </message>
+  <message name="CancelAllowanceResponse">
+    <part name="parameters" element="tns:CancelAllowanceResponse" />
+  </message>
+  <message name="QueryWinningInvoice">
+    <part name="parameters" element="tns:QueryWinningInvoice" />
+  </message>
+  <message name="QueryWinningInvoiceResponse">
+    <part name="parameters" element="tns:QueryWinningInvoiceResponse" />
+  </message>
+  <message name="QueryInvoiceNumberByOrderid">
+    <part name="parameters" element="tns:QueryInvoiceNumberByOrderid" />
+  </message>
+  <message name="QueryInvoiceNumberByOrderidResponse">
+    <part name="parameters" element="tns:QueryInvoiceNumberByOrderidResponse" />
+  </message>
+  <message name="CancelInvoiceNoCheck">
+    <part name="parameters" element="tns:CancelInvoiceNoCheck" />
+  </message>
+  <message name="CancelInvoiceNoCheckResponse">
+    <part name="parameters" element="tns:CancelInvoiceNoCheckResponse" />
+  </message>
+  <message name="CreateAllowance">
+    <part name="parameters" element="tns:CreateAllowance" />
+  </message>
+  <message name="CreateAllowanceResponse">
+    <part name="parameters" element="tns:CreateAllowanceResponse" />
+  </message>
+  <message name="QueryLoveCode">
+    <part name="parameters" element="tns:QueryLoveCode" />
+  </message>
+  <message name="QueryLoveCodeResponse">
+    <part name="parameters" element="tns:QueryLoveCodeResponse" />
+  </message>
+  <portType name="InvoiceAPI">
+    <operation name="QueryAllowance">
+      <input wsam:Action="http://webservice.cetustek.com/InvoiceAPI/QueryAllowanceRequest" message="tns:QueryAllowance" />
+      <output wsam:Action="http://webservice.cetustek.com/InvoiceAPI/QueryAllowanceResponse" message="tns:QueryAllowanceResponse" />
+      <fault wsam:Action="http://webservice.cetustek.com/InvoiceAPI/QueryAllowance/Fault/Exception" name="Exception" message="tns:Exception" />
+    </operation>
+    <operation name="QueryInvoice">
+      <input wsam:Action="http://webservice.cetustek.com/InvoiceAPI/QueryInvoiceRequest" message="tns:QueryInvoice" />
+      <output wsam:Action="http://webservice.cetustek.com/InvoiceAPI/QueryInvoiceResponse" message="tns:QueryInvoiceResponse" />
+      <fault wsam:Action="http://webservice.cetustek.com/InvoiceAPI/QueryInvoice/Fault/Exception" name="Exception" message="tns:Exception" />
+    </operation>
+    <operation name="CancelInvoice">
+      <input wsam:Action="http://webservice.cetustek.com/InvoiceAPI/CancelInvoiceRequest" message="tns:CancelInvoice" />
+      <output wsam:Action="http://webservice.cetustek.com/InvoiceAPI/CancelInvoiceResponse" message="tns:CancelInvoiceResponse" />
+      <fault wsam:Action="http://webservice.cetustek.com/InvoiceAPI/CancelInvoice/Fault/Exception" name="Exception" message="tns:Exception" />
+    </operation>
+    <operation name="QueryInvoiceByOrderid">
+      <input wsam:Action="http://webservice.cetustek.com/InvoiceAPI/QueryInvoiceByOrderidRequest" message="tns:QueryInvoiceByOrderid" />
+      <output wsam:Action="http://webservice.cetustek.com/InvoiceAPI/QueryInvoiceByOrderidResponse" message="tns:QueryInvoiceByOrderidResponse" />
+      <fault wsam:Action="http://webservice.cetustek.com/InvoiceAPI/QueryInvoiceByOrderid/Fault/Exception" name="Exception" message="tns:Exception" />
+    </operation>
+    <operation name="CreateInvoiceV3">
+      <input wsam:Action="http://webservice.cetustek.com/InvoiceAPI/CreateInvoiceV3Request" message="tns:CreateInvoiceV3" />
+      <output wsam:Action="http://webservice.cetustek.com/InvoiceAPI/CreateInvoiceV3Response" message="tns:CreateInvoiceV3Response" />
+      <fault wsam:Action="http://webservice.cetustek.com/InvoiceAPI/CreateInvoiceV3/Fault/Exception" name="Exception" message="tns:Exception" />
+    </operation>
+    <operation name="CancelAllowance">
+      <input wsam:Action="http://webservice.cetustek.com/InvoiceAPI/CancelAllowanceRequest" message="tns:CancelAllowance" />
+      <output wsam:Action="http://webservice.cetustek.com/InvoiceAPI/CancelAllowanceResponse" message="tns:CancelAllowanceResponse" />
+      <fault wsam:Action="http://webservice.cetustek.com/InvoiceAPI/CancelAllowance/Fault/Exception" name="Exception" message="tns:Exception" />
+    </operation>
+    <operation name="QueryWinningInvoice">
+      <input wsam:Action="http://webservice.cetustek.com/InvoiceAPI/QueryWinningInvoiceRequest" message="tns:QueryWinningInvoice" />
+      <output wsam:Action="http://webservice.cetustek.com/InvoiceAPI/QueryWinningInvoiceResponse" message="tns:QueryWinningInvoiceResponse" />
+      <fault wsam:Action="http://webservice.cetustek.com/InvoiceAPI/QueryWinningInvoice/Fault/Exception" name="Exception" message="tns:Exception" />
+    </operation>
+    <operation name="QueryInvoiceNumberByOrderid">
+      <input wsam:Action="http://webservice.cetustek.com/InvoiceAPI/QueryInvoiceNumberByOrderidRequest" message="tns:QueryInvoiceNumberByOrderid" />
+      <output wsam:Action="http://webservice.cetustek.com/InvoiceAPI/QueryInvoiceNumberByOrderidResponse" message="tns:QueryInvoiceNumberByOrderidResponse" />
+      <fault wsam:Action="http://webservice.cetustek.com/InvoiceAPI/QueryInvoiceNumberByOrderid/Fault/Exception" name="Exception" message="tns:Exception" />
+    </operation>
+    <operation name="CancelInvoiceNoCheck">
+      <input wsam:Action="http://webservice.cetustek.com/InvoiceAPI/CancelInvoiceNoCheckRequest" message="tns:CancelInvoiceNoCheck" />
+      <output wsam:Action="http://webservice.cetustek.com/InvoiceAPI/CancelInvoiceNoCheckResponse" message="tns:CancelInvoiceNoCheckResponse" />
+      <fault wsam:Action="http://webservice.cetustek.com/InvoiceAPI/CancelInvoiceNoCheck/Fault/Exception" name="Exception" message="tns:Exception" />
+    </operation>
+    <operation name="CreateAllowance">
+      <input wsam:Action="http://webservice.cetustek.com/InvoiceAPI/CreateAllowanceRequest" message="tns:CreateAllowance" />
+      <output wsam:Action="http://webservice.cetustek.com/InvoiceAPI/CreateAllowanceResponse" message="tns:CreateAllowanceResponse" />
+      <fault wsam:Action="http://webservice.cetustek.com/InvoiceAPI/CreateAllowance/Fault/Exception" name="Exception" message="tns:Exception" />
+    </operation>
+    <operation name="QueryLoveCode">
+      <input wsam:Action="http://webservice.cetustek.com/InvoiceAPI/QueryLoveCodeRequest" message="tns:QueryLoveCode" />
+      <output wsam:Action="http://webservice.cetustek.com/InvoiceAPI/QueryLoveCodeResponse" message="tns:QueryLoveCodeResponse" />
+    </operation>
+  </portType>
+  <binding name="InvoiceAPIPortBinding" type="tns:InvoiceAPI">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <operation name="QueryAllowance">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+      <fault name="Exception">
+        <soap:fault use="literal" name="Exception" namespace="" />
+      </fault>
+    </operation>
+    <operation name="QueryInvoice">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+      <fault name="Exception">
+        <soap:fault use="literal" name="Exception" namespace="" />
+      </fault>
+    </operation>
+    <operation name="CancelInvoice">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+      <fault name="Exception">
+        <soap:fault use="literal" name="Exception" namespace="" />
+      </fault>
+    </operation>
+    <operation name="QueryInvoiceByOrderid">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+      <fault name="Exception">
+        <soap:fault use="literal" name="Exception" namespace="" />
+      </fault>
+    </operation>
+    <operation name="CreateInvoiceV3">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+      <fault name="Exception">
+        <soap:fault use="literal" name="Exception" namespace="" />
+      </fault>
+    </operation>
+    <operation name="CancelAllowance">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+      <fault name="Exception">
+        <soap:fault use="literal" name="Exception" namespace="" />
+      </fault>
+    </operation>
+    <operation name="QueryWinningInvoice">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+      <fault name="Exception">
+        <soap:fault use="literal" name="Exception" namespace="" />
+      </fault>
+    </operation>
+    <operation name="QueryInvoiceNumberByOrderid">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+      <fault name="Exception">
+        <soap:fault use="literal" name="Exception" namespace="" />
+      </fault>
+    </operation>
+    <operation name="CancelInvoiceNoCheck">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+      <fault name="Exception">
+        <soap:fault use="literal" name="Exception" namespace="" />
+      </fault>
+    </operation>
+    <operation name="CreateAllowance">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+      <fault name="Exception">
+        <soap:fault use="literal" name="Exception" namespace="" />
+      </fault>
+    </operation>
+    <operation name="QueryLoveCode">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+  </binding>
+  <service name="InvoiceAPIService">
+    <port name="InvoiceAPIPort" binding="tns:InvoiceAPIPortBinding">
+      <soap:address location="http://invoice.cetustek.com.tw:80/InvoiceMultiWeb/InvoiceAPI" />
+    </port>
+  </service>
+</definitions>

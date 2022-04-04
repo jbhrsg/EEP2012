@@ -1,0 +1,7 @@
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sOrganization\bin\Release\sOrganization.dll
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sOrganization\bin\Release\sOrganization.pdb
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sOrganization\obj\Release\sDept.csprojResolveAssemblyReference.cache
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sOrganization\obj\Release\sDept.Component.resources
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sOrganization\obj\Release\sDept.csproj.GenerateResource.Cache
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sOrganization\obj\Release\sOrganization.dll
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sOrganization\obj\Release\sOrganization.pdb

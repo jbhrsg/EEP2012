@@ -1,0 +1,4 @@
+obj\Debug\ResolveAssemblyReference.cache
+obj\Debug\$safeprojectname$.Form1.resources
+obj\Debug\$safeprojectname$.Resources.resources
+obj\Debug\VBCQuery.vbproj.GenerateResource.Cache

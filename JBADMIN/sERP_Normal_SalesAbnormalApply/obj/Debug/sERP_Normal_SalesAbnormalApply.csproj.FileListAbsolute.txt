@@ -1,0 +1,8 @@
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sERP_Normal_SalesAbnormalApply\bin\Debug\sERP_Normal_SalesAbnormalApply.dll
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sERP_Normal_SalesAbnormalApply\bin\Debug\sERP_Normal_SalesAbnormalApply.pdb
+C:\Program Files (x86)\Infolight\EEP2012\EEPNetServer\JBADMIN\sERP_Normal_SalesAbnormalApply.dll
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sERP_Normal_SalesAbnormalApply\obj\Debug\sERP_Normal_SalesAbnormalApply.Component.resources
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sERP_Normal_SalesAbnormalApply\obj\Debug\sERP_Normal_SalesAbnormalApply.csproj.GenerateResource.Cache
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sERP_Normal_SalesAbnormalApply\obj\Debug\sERP_Normal_SalesAbnormalApply.dll
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sERP_Normal_SalesAbnormalApply\obj\Debug\sERP_Normal_SalesAbnormalApply.pdb
+C:\Program Files (x86)\Infolight\EEP2012\EEPNetServer\JBADMIN\sERP_Normal_SalesAbnormalApply.pdb

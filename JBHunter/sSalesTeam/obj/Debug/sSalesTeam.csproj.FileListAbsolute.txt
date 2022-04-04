@@ -1,0 +1,8 @@
+C:\Program Files (x86)\Infolight\EEP2012\JBHunter\sSalesTeam\bin\Debug\sSalesTeam.dll
+C:\Program Files (x86)\Infolight\EEP2012\JBHunter\sSalesTeam\bin\Debug\sSalesTeam.pdb
+C:\Program Files (x86)\Infolight\EEP2012\JBHunter\sSalesTeam\obj\Debug\sSalesTeam.csproj.GenerateResource.Cache
+C:\Program Files (x86)\Infolight\EEP2012\JBHunter\sSalesTeam\obj\Debug\sSalesTeam.dll
+C:\Program Files (x86)\Infolight\EEP2012\JBHunter\sSalesTeam\obj\Debug\sSalesTeam.pdb
+C:\Program Files (x86)\Infolight\EEP2012\EEPNetServer\JBHunter\sSalesTeam.dll
+C:\Program Files (x86)\Infolight\EEP2012\EEPNetServer\JBHunter\sSalesTeam.pdb
+C:\Program Files (x86)\Infolight\EEP2012\JBHunter\sSalesTeam\obj\Debug\sSalesTeam.Component.resources

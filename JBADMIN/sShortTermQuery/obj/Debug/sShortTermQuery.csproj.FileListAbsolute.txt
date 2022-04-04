@@ -1,0 +1,9 @@
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sShortTermQuery\bin\Debug\sShortTermQuery.dll
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sShortTermQuery\bin\Debug\sShortTermQuery.pdb
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sShortTermQuery\obj\Debug\sShortTermQuery.csproj.GenerateResource.Cache
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sShortTermQuery\obj\Debug\sShortTermQuery.dll
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sShortTermQuery\obj\Debug\sShortTermQuery.pdb
+C:\Program Files (x86)\Infolight\EEP2012\EEPNetServer\JBADMIN\sShortTermQuery.dll
+C:\Program Files (x86)\Infolight\EEP2012\EEPNetServer\JBADMIN\sShortTermQuery.pdb
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sShortTermQuery\obj\Debug\sShortTermQuery.Component.resources
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sShortTermQuery\obj\Debug\sShortTermQuery.csprojResolveAssemblyReference.cache

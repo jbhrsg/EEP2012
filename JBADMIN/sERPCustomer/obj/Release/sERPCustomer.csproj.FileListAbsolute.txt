@@ -1,0 +1,8 @@
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sERPCustomer\bin\Release\sERPCustomer.dll
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sERPCustomer\bin\Release\sERPCustomer.pdb
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sERPCustomer\bin\Release\Newtonsoft.Json.dll
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sERPCustomer\bin\Release\Newtonsoft.Json.xml
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sERPCustomer\obj\Release\sERPCustomer.Component.resources
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sERPCustomer\obj\Release\sERPCustomer.csproj.GenerateResource.Cache
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sERPCustomer\obj\Release\sERPCustomer.dll
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sERPCustomer\obj\Release\sERPCustomer.pdb

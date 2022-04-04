@@ -1,0 +1,14 @@
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sERPInsGroup\bin\Debug\sERPInsGroup.dll
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sERPInsGroup\bin\Debug\sERPInsGroup.pdb
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sERPInsGroup\obj\Debug\sERPInsGroup.csproj.GenerateResource.Cache
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sERPInsGroup\obj\Debug\sERPInsGroup.dll
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sERPInsGroup\obj\Debug\sERPInsGroup.pdb
+C:\Program Files (x86)\Infolight\EEP2012\EEPNetServer\JBADMIN\sERPInsGroup.dll
+C:\Program Files (x86)\Infolight\EEP2012\EEPNetServer\JBADMIN\sERPInsGroup.pdb
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sERPInsGroup\obj\Debug\sERPInsGroup.Component.resources
+D:\Infolight\EEP2012\EEPNetServer\JBADMIN\sERPInsGroup.dll
+D:\Infolight\EEP2012\EEPNetServer\JBADMIN\sERPInsGroup.pdb
+D:\Infolight\EEP2012\JBADMIN\sERPInsGroup\obj\Debug\sERPInsGroup.Component.resources
+D:\Infolight\EEP2012\JBADMIN\sERPInsGroup\obj\Debug\sERPInsGroup.csproj.GenerateResource.Cache
+D:\Infolight\EEP2012\JBADMIN\sERPInsGroup\obj\Debug\sERPInsGroup.dll
+D:\Infolight\EEP2012\JBADMIN\sERPInsGroup\obj\Debug\sERPInsGroup.pdb

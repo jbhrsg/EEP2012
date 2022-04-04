@@ -1,0 +1,10 @@
+..\..\EEPNetServer\Solution1\ServerPackage.dll
+..\..\EEPNetServer\Solution1\ServerPackage.pdb
+..\..\EEPNetServer\Solution1\vi-VN\ServerPackage.resources.dll
+obj\Debug\ResolveAssemblyReference.cache
+obj\Debug\TAG_NAMESPACE.Component.resources
+obj\Debug\ServerPackage.csproj.GenerateResource.Cache
+obj\Debug\TAG_NAMESPACE.Component.vi-VN.resources
+obj\Debug\vi-VN\ServerPackage.resources.dll
+obj\Debug\ServerPackage.dll
+obj\Debug\ServerPackage.pdb

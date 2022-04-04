@@ -1,0 +1,24 @@
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sERPSalesInvoices\bin\Debug\sERPSalesInvoices.dll
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sERPSalesInvoices\bin\Debug\sERPSalesInvoices.pdb
+C:\Program Files (x86)\Infolight\EEP2012\EEPNetServer\JBADMIN\sERPSalesInvoices.dll.config
+C:\Program Files (x86)\Infolight\EEP2012\EEPNetServer\JBADMIN\sERPSalesInvoices.dll
+C:\Program Files (x86)\Infolight\EEP2012\EEPNetServer\JBADMIN\sERPSalesInvoices.pdb
+C:\Program Files (x86)\Infolight\EEP2012\EEPNetServer\JBADMIN\vi-VN\sERPSalesInvoices.resources.dll
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sERPSalesInvoices\obj\Debug\sERPSalesInvoices.csproj.GenerateResource.Cache
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sERPSalesInvoices\obj\Debug\vi-VN\sERPSalesInvoices.resources.dll
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sERPSalesInvoices\obj\Debug\sERPSalesInvoices.dll
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sERPSalesInvoices\obj\Debug\sERPSalesInvoices.pdb
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sERPSalesInvoices\obj\Debug\sERPSalesInvoices.Component.resources
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sERPSalesInvoices\obj\Debug\sERPSalesInvoices.Component.vi-VN.resources
+D:\Infolight\EEP2012\EEPNetServer\JBADMIN\sERPSalesInvoices.dll.config
+D:\Infolight\EEP2012\EEPNetServer\JBADMIN\sERPSalesInvoices.dll
+D:\Infolight\EEP2012\EEPNetServer\JBADMIN\sERPSalesInvoices.pdb
+D:\Infolight\EEP2012\EEPNetServer\JBADMIN\vi-VN\sERPSalesInvoices.resources.dll
+D:\Infolight\EEP2012\JBADMIN\sERPSalesInvoices\obj\Debug\sERPSalesInvoices.csprojResolveAssemblyReference.cache
+D:\Infolight\EEP2012\JBADMIN\sERPSalesInvoices\obj\Debug\sERPSalesInvoices.Component.resources
+D:\Infolight\EEP2012\JBADMIN\sERPSalesInvoices\obj\Debug\sERPSalesInvoices.Component.vi-VN.resources
+D:\Infolight\EEP2012\JBADMIN\sERPSalesInvoices\obj\Debug\sERPSalesInvoices.csproj.GenerateResource.Cache
+D:\Infolight\EEP2012\JBADMIN\sERPSalesInvoices\obj\Debug\vi-VN\sERPSalesInvoices.resources.dll
+D:\Infolight\EEP2012\JBADMIN\sERPSalesInvoices\obj\Debug\sERPSalesInvoices.dll
+D:\Infolight\EEP2012\JBADMIN\sERPSalesInvoices\obj\Debug\sERPSalesInvoices.pdb
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sERPSalesInvoices\obj\Debug\sERPSalesInvoices.csprojResolveAssemblyReference.cache

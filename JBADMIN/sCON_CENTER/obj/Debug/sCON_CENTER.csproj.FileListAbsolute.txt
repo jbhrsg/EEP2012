@@ -1,0 +1,14 @@
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sCON_CENTER\bin\Debug\sCON_CENTER.dll
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sCON_CENTER\bin\Debug\sCON_CENTER.pdb
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sCON_CENTER\obj\Debug\sCON_CENTER.csproj.GenerateResource.Cache
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sCON_CENTER\obj\Debug\sCON_CENTER.dll
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sCON_CENTER\obj\Debug\sCON_CENTER.pdb
+C:\Program Files (x86)\Infolight\EEP2012\EEPNetServer\JBADMIN\sCON_CENTER.dll
+C:\Program Files (x86)\Infolight\EEP2012\EEPNetServer\JBADMIN\sCON_CENTER.pdb
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sCON_CENTER\obj\Debug\sCON_CENTER.Component.resources
+D:\Infolight\EEP2012\EEPNetServer\JBADMIN\sCON_CENTER.dll
+D:\Infolight\EEP2012\EEPNetServer\JBADMIN\sCON_CENTER.pdb
+D:\Infolight\EEP2012\JBADMIN\sCON_CENTER\obj\Debug\sCON_CENTER.Component.resources
+D:\Infolight\EEP2012\JBADMIN\sCON_CENTER\obj\Debug\sCON_CENTER.csproj.GenerateResource.Cache
+D:\Infolight\EEP2012\JBADMIN\sCON_CENTER\obj\Debug\sCON_CENTER.dll
+D:\Infolight\EEP2012\JBADMIN\sCON_CENTER\obj\Debug\sCON_CENTER.pdb

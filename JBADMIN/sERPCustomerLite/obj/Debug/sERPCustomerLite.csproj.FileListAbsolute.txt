@@ -1,0 +1,14 @@
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sERPCustomerLite\bin\Debug\sERPCustomerLite.dll
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sERPCustomerLite\bin\Debug\sERPCustomerLite.pdb
+C:\Program Files (x86)\Infolight\EEP2012\EEPNetServer\JBADMIN\sERPCustomerLite.dll
+C:\Program Files (x86)\Infolight\EEP2012\EEPNetServer\JBADMIN\sERPCustomerLite.pdb
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sERPCustomerLite\obj\Debug\sERPCustomerLite.Component.resources
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sERPCustomerLite\obj\Debug\sERPCustomerLite.csproj.GenerateResource.Cache
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sERPCustomerLite\obj\Debug\sERPCustomerLite.dll
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sERPCustomerLite\obj\Debug\sERPCustomerLite.pdb
+D:\Infolight\EEP2012\EEPNetServer\JBADMIN\sERPCustomerLite.dll
+D:\Infolight\EEP2012\EEPNetServer\JBADMIN\sERPCustomerLite.pdb
+D:\Infolight\EEP2012\JBADMIN\sERPCustomerLite\obj\Debug\sERPCustomerLite.Component.resources
+D:\Infolight\EEP2012\JBADMIN\sERPCustomerLite\obj\Debug\sERPCustomerLite.csproj.GenerateResource.Cache
+D:\Infolight\EEP2012\JBADMIN\sERPCustomerLite\obj\Debug\sERPCustomerLite.dll
+D:\Infolight\EEP2012\JBADMIN\sERPCustomerLite\obj\Debug\sERPCustomerLite.pdb

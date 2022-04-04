@@ -1,0 +1,216 @@
+C:\Program Files\Infolight\EEP2012\EEPNetServer\obj\Debug\EEPNetServer.csprojResolveAssemblyReference.cache
+C:\Program Files\Infolight\EEP2012\EEPNetServer\obj\Debug\EEPNetServer.frmAddRemoteServer.resources
+C:\Program Files\Infolight\EEP2012\EEPNetServer\obj\Debug\EEPNetServer.frmAbout.resources
+C:\Program Files\Infolight\EEP2012\EEPNetServer\obj\Debug\EEPNetServer.frmAddDB.resources
+C:\Program Files\Infolight\EEP2012\EEPNetServer\obj\Debug\EEPNetServer.frmCreateDB.resources
+C:\Program Files\Infolight\EEP2012\EEPNetServer\obj\Debug\EEPNetServer.frmDBMan.resources
+C:\Program Files\Infolight\EEP2012\EEPNetServer\obj\Debug\EEPNetServer.frmLoginComputers.resources
+C:\Program Files\Infolight\EEP2012\EEPNetServer\obj\Debug\EEPNetServer.frmLoginMan.resources
+C:\Program Files\Infolight\EEP2012\EEPNetServer\obj\Debug\EEPNetServer.frmPkgExportDB.resources
+C:\Program Files\Infolight\EEP2012\EEPNetServer\obj\Debug\EEPNetServer.frmPkgInfo.resources
+C:\Program Files\Infolight\EEP2012\EEPNetServer\obj\Debug\EEPNetServer.frmPkgMan.resources
+C:\Program Files\Infolight\EEP2012\EEPNetServer\obj\Debug\EEPNetServer.frmPooling.resources
+C:\Program Files\Infolight\EEP2012\EEPNetServer\obj\Debug\EEPNetServer.frmProgress.resources
+C:\Program Files\Infolight\EEP2012\EEPNetServer\obj\Debug\EEPNetServer.frmRegister.resources
+C:\Program Files\Infolight\EEP2012\EEPNetServer\obj\Debug\EEPNetServer.frmServerConfig.resources
+C:\Program Files\Infolight\EEP2012\EEPNetServer\obj\Debug\EEPNetServer.frmServerMain.resources
+C:\Program Files\Infolight\EEP2012\EEPNetServer\obj\Debug\EEPNetServer.frmSrvMan.resources
+C:\Program Files\Infolight\EEP2012\EEPNetServer\obj\Debug\EEPNetServer.frmSystemLogMan.resources
+C:\Program Files\Infolight\EEP2012\EEPNetServer\obj\Debug\EEPNetServer.frmWorkflowConfig.resources
+C:\Program Files\Infolight\EEP2012\EEPNetServer\obj\Debug\EEPNetServer.PackageTransferInfoForm.resources
+C:\Program Files\Infolight\EEP2012\EEPNetServer\obj\Debug\EEPNetServer.csproj.GenerateResource.Cache
+C:\Program Files\Infolight\EEP2012\EEPNetServer\obj\Debug\EEPNetServer.Properties.Resources.resources
+C:\Program Files\Infolight\EEP2012\EEPNetServer\EEPNetServer.exe.config
+C:\Program Files\Infolight\EEP2012\EEPNetServer\obj\Debug\EEPNetServer.exe
+C:\Program Files\Infolight\EEP2012\EEPNetServer\obj\Debug\EEPNetServer.pdb
+C:\Program Files\Infolight\EEP2012\EEPNetServer\EEPNetServer.exe
+C:\Program Files\Infolight\EEP2012\EEPNetServer\EEPNetServer.pdb
+C:\Program Files\Infolight\EEP2012WF\EEPNetServer\obj\Debug\EEPNetServer.csprojResolveAssemblyReference.cache
+C:\Program Files\Infolight\EEP2012WF\EEPNetServer\obj\Debug\EEPNetServer.frmAddRemoteServer.resources
+C:\Program Files\Infolight\EEP2012WF\EEPNetServer\obj\Debug\EEPNetServer.frmAbout.resources
+C:\Program Files\Infolight\EEP2012WF\EEPNetServer\obj\Debug\EEPNetServer.frmAddDB.resources
+C:\Program Files\Infolight\EEP2012WF\EEPNetServer\obj\Debug\EEPNetServer.frmCreateDB.resources
+C:\Program Files\Infolight\EEP2012WF\EEPNetServer\obj\Debug\EEPNetServer.frmDBMan.resources
+C:\Program Files\Infolight\EEP2012WF\EEPNetServer\obj\Debug\EEPNetServer.frmLoginComputers.resources
+C:\Program Files\Infolight\EEP2012WF\EEPNetServer\obj\Debug\EEPNetServer.frmLoginMan.resources
+C:\Program Files\Infolight\EEP2012WF\EEPNetServer\obj\Debug\EEPNetServer.frmPkgExportDB.resources
+C:\Program Files\Infolight\EEP2012WF\EEPNetServer\obj\Debug\EEPNetServer.frmPkgInfo.resources
+C:\Program Files\Infolight\EEP2012WF\EEPNetServer\obj\Debug\EEPNetServer.frmPkgMan.resources
+C:\Program Files\Infolight\EEP2012WF\EEPNetServer\obj\Debug\EEPNetServer.frmPooling.resources
+C:\Program Files\Infolight\EEP2012WF\EEPNetServer\obj\Debug\EEPNetServer.frmProgress.resources
+C:\Program Files\Infolight\EEP2012WF\EEPNetServer\obj\Debug\EEPNetServer.frmRegister.resources
+C:\Program Files\Infolight\EEP2012WF\EEPNetServer\obj\Debug\EEPNetServer.frmServerConfig.resources
+C:\Program Files\Infolight\EEP2012WF\EEPNetServer\obj\Debug\EEPNetServer.frmServerMain.resources
+C:\Program Files\Infolight\EEP2012WF\EEPNetServer\obj\Debug\EEPNetServer.frmSrvMan.resources
+C:\Program Files\Infolight\EEP2012WF\EEPNetServer\obj\Debug\EEPNetServer.frmSystemLogMan.resources
+C:\Program Files\Infolight\EEP2012WF\EEPNetServer\obj\Debug\EEPNetServer.frmWorkflowConfig.resources
+C:\Program Files\Infolight\EEP2012WF\EEPNetServer\obj\Debug\EEPNetServer.PackageTransferInfoForm.resources
+C:\Program Files\Infolight\EEP2012WF\EEPNetServer\obj\Debug\EEPNetServer.Properties.Resources.resources
+C:\Program Files\Infolight\EEP2012WF\EEPNetServer\obj\Debug\EEPNetServer.csproj.GenerateResource.Cache
+C:\Program Files\Infolight\EEP2012WF\EEPNetServer\EEPNetServer.exe.config
+C:\Program Files\Infolight\EEP2012WF\EEPNetServer\obj\Debug\EEPNetServer.exe
+C:\Program Files\Infolight\EEP2012WF\EEPNetServer\obj\Debug\EEPNetServer.pdb
+C:\Program Files\Infolight\EEP2012WF\EEPNetServer\EEPNetServer.exe
+C:\Program Files\Infolight\EEP2012WF\EEPNetServer\EEPNetServer.pdb
+C:\Program Files (x86)\Infolight\EEP2012WF\EEPNetServer\obj\Debug\EEPNetServer.csprojResolveAssemblyReference.cache
+C:\Program Files (x86)\Infolight\EEP2012WF\EEPNetServer\obj\Debug\EEPNetServer.frmAddRemoteServer.resources
+C:\Program Files (x86)\Infolight\EEP2012WF\EEPNetServer\obj\Debug\EEPNetServer.frmAbout.resources
+C:\Program Files (x86)\Infolight\EEP2012WF\EEPNetServer\obj\Debug\EEPNetServer.frmAddDB.resources
+C:\Program Files (x86)\Infolight\EEP2012WF\EEPNetServer\obj\Debug\EEPNetServer.frmCreateDB.resources
+C:\Program Files (x86)\Infolight\EEP2012WF\EEPNetServer\obj\Debug\EEPNetServer.frmDBMan.resources
+C:\Program Files (x86)\Infolight\EEP2012WF\EEPNetServer\obj\Debug\EEPNetServer.frmLoginComputers.resources
+C:\Program Files (x86)\Infolight\EEP2012WF\EEPNetServer\obj\Debug\EEPNetServer.frmLoginMan.resources
+C:\Program Files (x86)\Infolight\EEP2012WF\EEPNetServer\obj\Debug\EEPNetServer.frmPkgExportDB.resources
+C:\Program Files (x86)\Infolight\EEP2012WF\EEPNetServer\obj\Debug\EEPNetServer.frmPkgInfo.resources
+C:\Program Files (x86)\Infolight\EEP2012WF\EEPNetServer\obj\Debug\EEPNetServer.frmPkgMan.resources
+C:\Program Files (x86)\Infolight\EEP2012WF\EEPNetServer\obj\Debug\EEPNetServer.frmPooling.resources
+C:\Program Files (x86)\Infolight\EEP2012WF\EEPNetServer\obj\Debug\EEPNetServer.frmProgress.resources
+C:\Program Files (x86)\Infolight\EEP2012WF\EEPNetServer\obj\Debug\EEPNetServer.frmRegister.resources
+C:\Program Files (x86)\Infolight\EEP2012WF\EEPNetServer\obj\Debug\EEPNetServer.frmServerConfig.resources
+C:\Program Files (x86)\Infolight\EEP2012WF\EEPNetServer\obj\Debug\EEPNetServer.frmServerMain.resources
+C:\Program Files (x86)\Infolight\EEP2012WF\EEPNetServer\obj\Debug\EEPNetServer.frmSrvMan.resources
+C:\Program Files (x86)\Infolight\EEP2012WF\EEPNetServer\obj\Debug\EEPNetServer.frmSystemLogMan.resources
+C:\Program Files (x86)\Infolight\EEP2012WF\EEPNetServer\obj\Debug\EEPNetServer.frmWorkflowConfig.resources
+C:\Program Files (x86)\Infolight\EEP2012WF\EEPNetServer\obj\Debug\EEPNetServer.PackageTransferInfoForm.resources
+C:\Program Files (x86)\Infolight\EEP2012WF\EEPNetServer\obj\Debug\EEPNetServer.Properties.Resources.resources
+C:\Program Files (x86)\Infolight\EEP2012WF\EEPNetServer\obj\Debug\EEPNetServer.csproj.GenerateResource.Cache
+C:\Program Files (x86)\Infolight\EEP2012WF\EEPNetServer\EEPNetServer.exe.config
+C:\Program Files (x86)\Infolight\EEP2012WF\EEPNetServer\obj\Debug\EEPNetServer.exe
+C:\Program Files (x86)\Infolight\EEP2012WF\EEPNetServer\obj\Debug\EEPNetServer.pdb
+C:\Program Files (x86)\Infolight\EEP2012WF\EEPNetServer\EEPNetServer.exe
+C:\Program Files (x86)\Infolight\EEP2012WF\EEPNetServer\EEPNetServer.pdb
+D:\版本\Version\安裝源文件\EEP2012WF(V5.0.0.020140924 SP5)\EEPNetServer\obj\Debug\EEPNetServer.csprojResolveAssemblyReference.cache
+D:\版本\Version\安裝源文件\EEP2012WF(V5.0.0.020140924 SP5)\EEPNetServer\obj\Debug\EEPNetServer.frmAddRemoteServer.resources
+D:\版本\Version\安裝源文件\EEP2012WF(V5.0.0.020140924 SP5)\EEPNetServer\obj\Debug\EEPNetServer.frmAbout.resources
+D:\版本\Version\安裝源文件\EEP2012WF(V5.0.0.020140924 SP5)\EEPNetServer\obj\Debug\EEPNetServer.frmAddDB.resources
+D:\版本\Version\安裝源文件\EEP2012WF(V5.0.0.020140924 SP5)\EEPNetServer\obj\Debug\EEPNetServer.frmCreateDB.resources
+D:\版本\Version\安裝源文件\EEP2012WF(V5.0.0.020140924 SP5)\EEPNetServer\obj\Debug\EEPNetServer.frmDBMan.resources
+D:\版本\Version\安裝源文件\EEP2012WF(V5.0.0.020140924 SP5)\EEPNetServer\obj\Debug\EEPNetServer.frmLoginComputers.resources
+D:\版本\Version\安裝源文件\EEP2012WF(V5.0.0.020140924 SP5)\EEPNetServer\obj\Debug\EEPNetServer.frmLoginMan.resources
+D:\版本\Version\安裝源文件\EEP2012WF(V5.0.0.020140924 SP5)\EEPNetServer\obj\Debug\EEPNetServer.frmPkgExportDB.resources
+D:\版本\Version\安裝源文件\EEP2012WF(V5.0.0.020140924 SP5)\EEPNetServer\obj\Debug\EEPNetServer.frmPkgInfo.resources
+D:\版本\Version\安裝源文件\EEP2012WF(V5.0.0.020140924 SP5)\EEPNetServer\obj\Debug\EEPNetServer.frmPkgMan.resources
+D:\版本\Version\安裝源文件\EEP2012WF(V5.0.0.020140924 SP5)\EEPNetServer\obj\Debug\EEPNetServer.frmPooling.resources
+D:\版本\Version\安裝源文件\EEP2012WF(V5.0.0.020140924 SP5)\EEPNetServer\obj\Debug\EEPNetServer.frmProgress.resources
+D:\版本\Version\安裝源文件\EEP2012WF(V5.0.0.020140924 SP5)\EEPNetServer\obj\Debug\EEPNetServer.frmRegister.resources
+D:\版本\Version\安裝源文件\EEP2012WF(V5.0.0.020140924 SP5)\EEPNetServer\obj\Debug\EEPNetServer.frmServerConfig.resources
+D:\版本\Version\安裝源文件\EEP2012WF(V5.0.0.020140924 SP5)\EEPNetServer\obj\Debug\EEPNetServer.frmServerMain.resources
+D:\版本\Version\安裝源文件\EEP2012WF(V5.0.0.020140924 SP5)\EEPNetServer\obj\Debug\EEPNetServer.frmSrvMan.resources
+D:\版本\Version\安裝源文件\EEP2012WF(V5.0.0.020140924 SP5)\EEPNetServer\obj\Debug\EEPNetServer.frmSystemLogMan.resources
+D:\版本\Version\安裝源文件\EEP2012WF(V5.0.0.020140924 SP5)\EEPNetServer\obj\Debug\EEPNetServer.frmWorkflowConfig.resources
+D:\版本\Version\安裝源文件\EEP2012WF(V5.0.0.020140924 SP5)\EEPNetServer\obj\Debug\EEPNetServer.PackageTransferInfoForm.resources
+D:\版本\Version\安裝源文件\EEP2012WF(V5.0.0.020140924 SP5)\EEPNetServer\obj\Debug\EEPNetServer.Properties.Resources.resources
+D:\版本\Version\安裝源文件\EEP2012WF(V5.0.0.020140924 SP5)\EEPNetServer\obj\Debug\EEPNetServer.csproj.GenerateResource.Cache
+D:\版本\Version\安裝源文件\EEP2012WF(V5.0.0.020140924 SP5)\EEPNetServer\EEPNetServer.exe.config
+D:\版本\Version\安裝源文件\EEP2012WF(V5.0.0.020140924 SP5)\EEPNetServer\obj\Debug\EEPNetServer.exe
+D:\版本\Version\安裝源文件\EEP2012WF(V5.0.0.020140924 SP5)\EEPNetServer\obj\Debug\EEPNetServer.pdb
+D:\版本\Version\安裝源文件\EEP2012WF(V5.0.0.020140924 SP5)\EEPNetServer\EEPNetServer.exe
+D:\版本\Version\安裝源文件\EEP2012WF(V5.0.0.020140924 SP5)\EEPNetServer\EEPNetServer.pdb
+D:\版本\Version\安裝源文件\EEP2012(V5.0.0.020140924 SP5)\EEP2012WF\EEPNetServer\obj\Debug\EEPNetServer.frmAddRemoteServer.resources
+D:\版本\Version\安裝源文件\EEP2012(V5.0.0.020140924 SP5)\EEP2012WF\EEPNetServer\obj\Debug\EEPNetServer.frmAbout.resources
+D:\版本\Version\安裝源文件\EEP2012(V5.0.0.020140924 SP5)\EEP2012WF\EEPNetServer\obj\Debug\EEPNetServer.frmAddDB.resources
+D:\版本\Version\安裝源文件\EEP2012(V5.0.0.020140924 SP5)\EEP2012WF\EEPNetServer\obj\Debug\EEPNetServer.frmCreateDB.resources
+D:\版本\Version\安裝源文件\EEP2012(V5.0.0.020140924 SP5)\EEP2012WF\EEPNetServer\obj\Debug\EEPNetServer.frmDBMan.resources
+D:\版本\Version\安裝源文件\EEP2012(V5.0.0.020140924 SP5)\EEP2012WF\EEPNetServer\obj\Debug\EEPNetServer.frmLoginComputers.resources
+D:\版本\Version\安裝源文件\EEP2012(V5.0.0.020140924 SP5)\EEP2012WF\EEPNetServer\obj\Debug\EEPNetServer.frmLoginMan.resources
+D:\版本\Version\安裝源文件\EEP2012(V5.0.0.020140924 SP5)\EEP2012WF\EEPNetServer\obj\Debug\EEPNetServer.frmPkgExportDB.resources
+D:\版本\Version\安裝源文件\EEP2012(V5.0.0.020140924 SP5)\EEP2012WF\EEPNetServer\obj\Debug\EEPNetServer.frmPkgInfo.resources
+D:\版本\Version\安裝源文件\EEP2012(V5.0.0.020140924 SP5)\EEP2012WF\EEPNetServer\obj\Debug\EEPNetServer.frmPkgMan.resources
+D:\版本\Version\安裝源文件\EEP2012(V5.0.0.020140924 SP5)\EEP2012WF\EEPNetServer\obj\Debug\EEPNetServer.frmPooling.resources
+D:\版本\Version\安裝源文件\EEP2012(V5.0.0.020140924 SP5)\EEP2012WF\EEPNetServer\obj\Debug\EEPNetServer.frmProgress.resources
+D:\版本\Version\安裝源文件\EEP2012(V5.0.0.020140924 SP5)\EEP2012WF\EEPNetServer\obj\Debug\EEPNetServer.frmRegister.resources
+D:\版本\Version\安裝源文件\EEP2012(V5.0.0.020140924 SP5)\EEP2012WF\EEPNetServer\obj\Debug\EEPNetServer.frmServerConfig.resources
+D:\版本\Version\安裝源文件\EEP2012(V5.0.0.020140924 SP5)\EEP2012WF\EEPNetServer\obj\Debug\EEPNetServer.frmServerMain.resources
+D:\版本\Version\安裝源文件\EEP2012(V5.0.0.020140924 SP5)\EEP2012WF\EEPNetServer\obj\Debug\EEPNetServer.frmSrvMan.resources
+D:\版本\Version\安裝源文件\EEP2012(V5.0.0.020140924 SP5)\EEP2012WF\EEPNetServer\obj\Debug\EEPNetServer.frmSystemLogMan.resources
+D:\版本\Version\安裝源文件\EEP2012(V5.0.0.020140924 SP5)\EEP2012WF\EEPNetServer\obj\Debug\EEPNetServer.frmWorkflowConfig.resources
+D:\版本\Version\安裝源文件\EEP2012(V5.0.0.020140924 SP5)\EEP2012WF\EEPNetServer\obj\Debug\EEPNetServer.PackageTransferInfoForm.resources
+D:\版本\Version\安裝源文件\EEP2012(V5.0.0.020140924 SP5)\EEP2012WF\EEPNetServer\obj\Debug\EEPNetServer.Properties.Resources.resources
+D:\版本\Version\安裝源文件\EEP2012(V5.0.0.020140924 SP5)\EEP2012WF\EEPNetServer\obj\Debug\EEPNetServer.csproj.GenerateResource.Cache
+D:\版本\Version\安裝源文件\EEP2012(V5.0.0.020140924 SP5)\EEP2012WF\EEPNetServer\EEPNetServer.exe.config
+D:\版本\Version\安裝源文件\EEP2012(V5.0.0.020140924 SP5)\EEP2012WF\EEPNetServer\obj\Debug\EEPNetServer.exe
+D:\版本\Version\安裝源文件\EEP2012(V5.0.0.020140924 SP5)\EEP2012WF\EEPNetServer\obj\Debug\EEPNetServer.pdb
+D:\版本\Version\安裝源文件\EEP2012(V5.0.0.020140924 SP5)\EEP2012WF\EEPNetServer\EEPNetServer.exe
+D:\版本\Version\安裝源文件\EEP2012(V5.0.0.020140924 SP5)\EEP2012WF\EEPNetServer\EEPNetServer.pdb
+D:\Program Files (x86)\Your Company Name\EEP2012\EEPNetServer\obj\Debug\EEPNetServer.frmAddRemoteServer.resources
+D:\Program Files (x86)\Your Company Name\EEP2012\EEPNetServer\obj\Debug\EEPNetServer.frmAbout.resources
+D:\Program Files (x86)\Your Company Name\EEP2012\EEPNetServer\obj\Debug\EEPNetServer.frmAddDB.resources
+D:\Program Files (x86)\Your Company Name\EEP2012\EEPNetServer\obj\Debug\EEPNetServer.frmCreateDB.resources
+D:\Program Files (x86)\Your Company Name\EEP2012\EEPNetServer\obj\Debug\EEPNetServer.frmDBMan.resources
+D:\Program Files (x86)\Your Company Name\EEP2012\EEPNetServer\obj\Debug\EEPNetServer.frmLoginComputers.resources
+D:\Program Files (x86)\Your Company Name\EEP2012\EEPNetServer\obj\Debug\EEPNetServer.frmLoginMan.resources
+D:\Program Files (x86)\Your Company Name\EEP2012\EEPNetServer\obj\Debug\EEPNetServer.frmPkgExportDB.resources
+D:\Program Files (x86)\Your Company Name\EEP2012\EEPNetServer\obj\Debug\EEPNetServer.frmPkgInfo.resources
+D:\Program Files (x86)\Your Company Name\EEP2012\EEPNetServer\obj\Debug\EEPNetServer.frmPkgMan.resources
+D:\Program Files (x86)\Your Company Name\EEP2012\EEPNetServer\obj\Debug\EEPNetServer.frmPooling.resources
+D:\Program Files (x86)\Your Company Name\EEP2012\EEPNetServer\obj\Debug\EEPNetServer.frmProgress.resources
+D:\Program Files (x86)\Your Company Name\EEP2012\EEPNetServer\obj\Debug\EEPNetServer.frmRegister.resources
+D:\Program Files (x86)\Your Company Name\EEP2012\EEPNetServer\obj\Debug\EEPNetServer.frmServerConfig.resources
+D:\Program Files (x86)\Your Company Name\EEP2012\EEPNetServer\obj\Debug\EEPNetServer.frmServerMain.resources
+D:\Program Files (x86)\Your Company Name\EEP2012\EEPNetServer\obj\Debug\EEPNetServer.frmSrvMan.resources
+D:\Program Files (x86)\Your Company Name\EEP2012\EEPNetServer\obj\Debug\EEPNetServer.frmSystemLogMan.resources
+D:\Program Files (x86)\Your Company Name\EEP2012\EEPNetServer\obj\Debug\EEPNetServer.frmWorkflowConfig.resources
+D:\Program Files (x86)\Your Company Name\EEP2012\EEPNetServer\obj\Debug\EEPNetServer.PackageTransferInfoForm.resources
+D:\Program Files (x86)\Your Company Name\EEP2012\EEPNetServer\obj\Debug\EEPNetServer.Properties.Resources.resources
+D:\Program Files (x86)\Your Company Name\EEP2012\EEPNetServer\obj\Debug\EEPNetServer.csproj.GenerateResource.Cache
+D:\Program Files (x86)\Your Company Name\EEP2012\EEPNetServer\EEPNetServer.exe.config
+D:\Program Files (x86)\Your Company Name\EEP2012\EEPNetServer\obj\Debug\EEPNetServer.exe
+D:\Program Files (x86)\Your Company Name\EEP2012\EEPNetServer\obj\Debug\EEPNetServer.pdb
+D:\Program Files (x86)\Your Company Name\EEP2012\EEPNetServer\EEPNetServer.exe
+D:\Program Files (x86)\Your Company Name\EEP2012\EEPNetServer\EEPNetServer.pdb
+D:\Program Files (x86)\Your Company Name\EEP2012\EEPNetServer\obj\Debug\EEPNetServer.csprojResolveAssemblyReference.cache
+D:\版本\Version\安裝源文件\EEP2012(V5.0.0.020140924 SP5)\EEP2012WF\EEPNetServer\obj\Debug\EEPNetServer.csprojResolveAssemblyReference.cache
+C:\Program Files (x86)\Infolight\EEP2012\EEPNetServer\EEPNetServer.exe
+D:\Infolight\EEP2012\EEPNetServer\obj\Debug\EEPNetServer.csprojResolveAssemblyReference.cache
+D:\Infolight\EEP2012\EEPNetServer\obj\Debug\EEPNetServer.frmAddRemoteServer.resources
+D:\Infolight\EEP2012\EEPNetServer\obj\Debug\EEPNetServer.frmAbout.resources
+D:\Infolight\EEP2012\EEPNetServer\obj\Debug\EEPNetServer.frmAddDB.resources
+D:\Infolight\EEP2012\EEPNetServer\obj\Debug\EEPNetServer.frmCreateDB.resources
+D:\Infolight\EEP2012\EEPNetServer\obj\Debug\EEPNetServer.frmDBMan.resources
+D:\Infolight\EEP2012\EEPNetServer\obj\Debug\EEPNetServer.frmLoginComputers.resources
+D:\Infolight\EEP2012\EEPNetServer\obj\Debug\EEPNetServer.frmLoginMan.resources
+D:\Infolight\EEP2012\EEPNetServer\obj\Debug\EEPNetServer.frmPkgExportDB.resources
+D:\Infolight\EEP2012\EEPNetServer\obj\Debug\EEPNetServer.frmPkgInfo.resources
+D:\Infolight\EEP2012\EEPNetServer\obj\Debug\EEPNetServer.frmPkgMan.resources
+D:\Infolight\EEP2012\EEPNetServer\obj\Debug\EEPNetServer.frmPooling.resources
+D:\Infolight\EEP2012\EEPNetServer\obj\Debug\EEPNetServer.frmProgress.resources
+D:\Infolight\EEP2012\EEPNetServer\obj\Debug\EEPNetServer.frmRegister.resources
+D:\Infolight\EEP2012\EEPNetServer\obj\Debug\EEPNetServer.frmServerConfig.resources
+D:\Infolight\EEP2012\EEPNetServer\obj\Debug\EEPNetServer.frmServerMain.resources
+D:\Infolight\EEP2012\EEPNetServer\obj\Debug\EEPNetServer.frmSrvMan.resources
+D:\Infolight\EEP2012\EEPNetServer\obj\Debug\EEPNetServer.frmSystemLogMan.resources
+D:\Infolight\EEP2012\EEPNetServer\obj\Debug\EEPNetServer.frmWorkflowConfig.resources
+D:\Infolight\EEP2012\EEPNetServer\obj\Debug\EEPNetServer.PackageTransferInfoForm.resources
+D:\Infolight\EEP2012\EEPNetServer\obj\Debug\EEPNetServer.Properties.Resources.resources
+D:\Infolight\EEP2012\EEPNetServer\obj\Debug\EEPNetServer.csproj.GenerateResource.Cache
+D:\Infolight\EEP2012\EEPNetServer\EEPNetServer.exe.config
+D:\Infolight\EEP2012\EEPNetServer\obj\Debug\EEPNetServer.exe
+D:\Infolight\EEP2012\EEPNetServer\obj\Debug\EEPNetServer.pdb
+D:\Infolight\EEP2012\EEPNetServer\EEPNetServer.exe
+D:\Infolight\EEP2012\EEPNetServer\EEPNetServer.pdb
+C:\Program Files (x86)\Infolight\EEP2012\EEPNetServer\obj\Debug\EEPNetServer.csprojResolveAssemblyReference.cache
+C:\Program Files (x86)\Infolight\EEP2012\EEPNetServer\obj\Debug\EEPNetServer.frmAddRemoteServer.resources
+C:\Program Files (x86)\Infolight\EEP2012\EEPNetServer\obj\Debug\EEPNetServer.frmAbout.resources
+C:\Program Files (x86)\Infolight\EEP2012\EEPNetServer\obj\Debug\EEPNetServer.frmAddDB.resources
+C:\Program Files (x86)\Infolight\EEP2012\EEPNetServer\obj\Debug\EEPNetServer.frmCreateDB.resources
+C:\Program Files (x86)\Infolight\EEP2012\EEPNetServer\obj\Debug\EEPNetServer.frmDBMan.resources
+C:\Program Files (x86)\Infolight\EEP2012\EEPNetServer\obj\Debug\EEPNetServer.frmLoginComputers.resources
+C:\Program Files (x86)\Infolight\EEP2012\EEPNetServer\obj\Debug\EEPNetServer.frmLoginMan.resources
+C:\Program Files (x86)\Infolight\EEP2012\EEPNetServer\obj\Debug\EEPNetServer.frmPkgExportDB.resources
+C:\Program Files (x86)\Infolight\EEP2012\EEPNetServer\obj\Debug\EEPNetServer.frmPkgInfo.resources
+C:\Program Files (x86)\Infolight\EEP2012\EEPNetServer\obj\Debug\EEPNetServer.frmPkgMan.resources
+C:\Program Files (x86)\Infolight\EEP2012\EEPNetServer\obj\Debug\EEPNetServer.frmPooling.resources
+C:\Program Files (x86)\Infolight\EEP2012\EEPNetServer\obj\Debug\EEPNetServer.frmProgress.resources
+C:\Program Files (x86)\Infolight\EEP2012\EEPNetServer\obj\Debug\EEPNetServer.frmRegister.resources
+C:\Program Files (x86)\Infolight\EEP2012\EEPNetServer\obj\Debug\EEPNetServer.frmServerConfig.resources
+C:\Program Files (x86)\Infolight\EEP2012\EEPNetServer\obj\Debug\EEPNetServer.frmServerMain.resources
+C:\Program Files (x86)\Infolight\EEP2012\EEPNetServer\obj\Debug\EEPNetServer.frmSrvMan.resources
+C:\Program Files (x86)\Infolight\EEP2012\EEPNetServer\obj\Debug\EEPNetServer.frmSystemLogMan.resources
+C:\Program Files (x86)\Infolight\EEP2012\EEPNetServer\obj\Debug\EEPNetServer.frmWorkflowConfig.resources
+C:\Program Files (x86)\Infolight\EEP2012\EEPNetServer\obj\Debug\EEPNetServer.PackageTransferInfoForm.resources
+C:\Program Files (x86)\Infolight\EEP2012\EEPNetServer\obj\Debug\EEPNetServer.Properties.Resources.resources
+C:\Program Files (x86)\Infolight\EEP2012\EEPNetServer\obj\Debug\EEPNetServer.csproj.GenerateResource.Cache
+C:\Program Files (x86)\Infolight\EEP2012\EEPNetServer\EEPNetServer.exe.config
+C:\Program Files (x86)\Infolight\EEP2012\EEPNetServer\obj\Debug\EEPNetServer.exe
+C:\Program Files (x86)\Infolight\EEP2012\EEPNetServer\obj\Debug\EEPNetServer.pdb
+C:\Program Files (x86)\Infolight\EEP2012\EEPNetServer\EEPNetServer.pdb

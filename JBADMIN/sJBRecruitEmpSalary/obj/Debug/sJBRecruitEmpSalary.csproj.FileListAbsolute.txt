@@ -1,0 +1,16 @@
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sJBRecruitEmpSalary\bin\Debug\sJBRecruitEmpSalary.dll
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sJBRecruitEmpSalary\bin\Debug\sJBRecruitEmpSalary.pdb
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sJBRecruitEmpSalary\obj\Debug\sJBRecruitEmpSalary.csproj.GenerateResource.Cache
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sJBRecruitEmpSalary\obj\Debug\sJBRecruitEmpSalary.dll
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sJBRecruitEmpSalary\obj\Debug\sJBRecruitEmpSalary.pdb
+C:\Program Files (x86)\Infolight\EEP2012\EEPNetServer\JBADMIN\sJBRecruitEmpSalary.dll
+C:\Program Files (x86)\Infolight\EEP2012\EEPNetServer\JBADMIN\sJBRecruitEmpSalary.pdb
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sJBRecruitEmpSalary\obj\Debug\sJBRecruitEmpSalary.Component.resources
+D:\Infolight\EEP2012\EEPNetServer\JBADMIN\sJBRecruitEmpSalary.dll
+D:\Infolight\EEP2012\EEPNetServer\JBADMIN\sJBRecruitEmpSalary.pdb
+D:\Infolight\EEP2012\JBADMIN\sJBRecruitEmpSalary\obj\Debug\sJBRecruitEmpSalary.csprojResolveAssemblyReference.cache
+D:\Infolight\EEP2012\JBADMIN\sJBRecruitEmpSalary\obj\Debug\sJBRecruitEmpSalary.Component.resources
+D:\Infolight\EEP2012\JBADMIN\sJBRecruitEmpSalary\obj\Debug\sJBRecruitEmpSalary.csproj.GenerateResource.Cache
+D:\Infolight\EEP2012\JBADMIN\sJBRecruitEmpSalary\obj\Debug\sJBRecruitEmpSalary.dll
+D:\Infolight\EEP2012\JBADMIN\sJBRecruitEmpSalary\obj\Debug\sJBRecruitEmpSalary.pdb
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sJBRecruitEmpSalary\obj\Debug\sJBRecruitEmpSalary.csprojResolveAssemblyReference.cache

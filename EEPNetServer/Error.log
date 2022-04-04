@@ -1,0 +1,86 @@
+DateTime:2010-06-07 10:31:14
+Type:FileNotFoundException
+Message:Could not load file or assembly 'file:///F:\Program Files\EEP2010\WCFServer\EFGlobalModule.dll' or one of its dependencies. 系统找不到指定的文件。
+Stack:
+   at System.Reflection.RuntimeAssembly._nLoad(AssemblyName fileName, String codeBase, Evidence assemblySecurity, RuntimeAssembly locationHint, StackCrawlMark& stackMark, Boolean throwOnFileNotFound, Boolean forIntrospection, Boolean suppressSecurityChecks)
+   at System.Reflection.RuntimeAssembly.nLoad(AssemblyName fileName, String codeBase, Evidence assemblySecurity, RuntimeAssembly locationHint, StackCrawlMark& stackMark, Boolean throwOnFileNotFound, Boolean forIntrospection, Boolean suppressSecurityChecks)
+   at System.Reflection.RuntimeAssembly.InternalLoadAssemblyName(AssemblyName assemblyRef, Evidence assemblySecurity, StackCrawlMark& stackMark, Boolean forIntrospection, Boolean suppressSecurityChecks)
+   at System.Reflection.RuntimeAssembly.InternalLoadFrom(String assemblyFile, Evidence securityEvidence, Byte[] hashValue, AssemblyHashAlgorithm hashAlgorithm, Boolean forIntrospection, Boolean suppressSecurityChecks, StackCrawlMark& stackMark)
+   at System.Reflection.Assembly.LoadFrom(String assemblyFile)
+   at EFWCFModule.PackageProvider.LoadAssembly(String assemblyFile) in F:\Program Files\EEP2010\EFWCFModule\Provider.cs:line 50
+   at EFWCFModule.ServiceProvider.GetKnownTypes(ICustomAttributeProvider provider) in F:\Program Files\EEP2010\EFWCFModule\Provider.cs:line 318
+DateTime:2010-06-07 10:41:26
+Type:FileNotFoundException
+Message:Could not load file or assembly 'file:///F:\Program Files\EEP2010\WCFServer\EFGlobalModule.dll' or one of its dependencies. 系统找不到指定的文件。
+Stack:
+   at System.Reflection.RuntimeAssembly._nLoad(AssemblyName fileName, String codeBase, Evidence assemblySecurity, RuntimeAssembly locationHint, StackCrawlMark& stackMark, Boolean throwOnFileNotFound, Boolean forIntrospection, Boolean suppressSecurityChecks)
+   at System.Reflection.RuntimeAssembly.nLoad(AssemblyName fileName, String codeBase, Evidence assemblySecurity, RuntimeAssembly locationHint, StackCrawlMark& stackMark, Boolean throwOnFileNotFound, Boolean forIntrospection, Boolean suppressSecurityChecks)
+   at System.Reflection.RuntimeAssembly.InternalLoadAssemblyName(AssemblyName assemblyRef, Evidence assemblySecurity, StackCrawlMark& stackMark, Boolean forIntrospection, Boolean suppressSecurityChecks)
+   at System.Reflection.RuntimeAssembly.InternalLoadFrom(String assemblyFile, Evidence securityEvidence, Byte[] hashValue, AssemblyHashAlgorithm hashAlgorithm, Boolean forIntrospection, Boolean suppressSecurityChecks, StackCrawlMark& stackMark)
+   at System.Reflection.Assembly.LoadFrom(String assemblyFile)
+   at EFWCFModule.PackageProvider.LoadAssembly(String assemblyFile) in F:\Program Files\EEP2010\EFWCFModule\Provider.cs:line 50
+   at EFWCFModule.ServiceProvider.GetKnownTypes(ICustomAttributeProvider provider) in F:\Program Files\EEP2010\EFWCFModule\Provider.cs:line 318
+DateTime:2010-06-07 11:14:09
+Type:FileNotFoundException
+Message:Could not load file or assembly 'file:///F:\Program Files\EEP2010\WCFServer\EFGlobalModule.dll' or one of its dependencies. 系统找不到指定的文件。
+Stack:
+   at System.Reflection.RuntimeAssembly._nLoad(AssemblyName fileName, String codeBase, Evidence assemblySecurity, RuntimeAssembly locationHint, StackCrawlMark& stackMark, Boolean throwOnFileNotFound, Boolean forIntrospection, Boolean suppressSecurityChecks)
+   at System.Reflection.RuntimeAssembly.nLoad(AssemblyName fileName, String codeBase, Evidence assemblySecurity, RuntimeAssembly locationHint, StackCrawlMark& stackMark, Boolean throwOnFileNotFound, Boolean forIntrospection, Boolean suppressSecurityChecks)
+   at System.Reflection.RuntimeAssembly.InternalLoadAssemblyName(AssemblyName assemblyRef, Evidence assemblySecurity, StackCrawlMark& stackMark, Boolean forIntrospection, Boolean suppressSecurityChecks)
+   at System.Reflection.RuntimeAssembly.InternalLoadFrom(String assemblyFile, Evidence securityEvidence, Byte[] hashValue, AssemblyHashAlgorithm hashAlgorithm, Boolean forIntrospection, Boolean suppressSecurityChecks, StackCrawlMark& stackMark)
+   at System.Reflection.Assembly.LoadFrom(String assemblyFile)
+   at EFWCFModule.PackageProvider.LoadAssembly(String assemblyFile) in F:\Program Files\EEP2010\EFWCFModule\Provider.cs:line 50
+   at EFWCFModule.ServiceProvider.GetKnownTypes(ICustomAttributeProvider provider) in F:\Program Files\EEP2010\EFWCFModule\Provider.cs:line 318
+DateTime:2010-06-07 11:15:01
+Type:FileNotFoundException
+Message:Could not load file or assembly 'file:///F:\Program Files\EEP2010\WCFServer\EFGlobalModule.dll' or one of its dependencies. 系统找不到指定的文件。
+Stack:
+   at System.Reflection.RuntimeAssembly._nLoad(AssemblyName fileName, String codeBase, Evidence assemblySecurity, RuntimeAssembly locationHint, StackCrawlMark& stackMark, Boolean throwOnFileNotFound, Boolean forIntrospection, Boolean suppressSecurityChecks)
+   at System.Reflection.RuntimeAssembly.nLoad(AssemblyName fileName, String codeBase, Evidence assemblySecurity, RuntimeAssembly locationHint, StackCrawlMark& stackMark, Boolean throwOnFileNotFound, Boolean forIntrospection, Boolean suppressSecurityChecks)
+   at System.Reflection.RuntimeAssembly.InternalLoadAssemblyName(AssemblyName assemblyRef, Evidence assemblySecurity, StackCrawlMark& stackMark, Boolean forIntrospection, Boolean suppressSecurityChecks)
+   at System.Reflection.RuntimeAssembly.InternalLoadFrom(String assemblyFile, Evidence securityEvidence, Byte[] hashValue, AssemblyHashAlgorithm hashAlgorithm, Boolean forIntrospection, Boolean suppressSecurityChecks, StackCrawlMark& stackMark)
+   at System.Reflection.Assembly.LoadFrom(String assemblyFile)
+   at EFWCFModule.PackageProvider.LoadAssembly(String assemblyFile) in F:\Program Files\EEP2010\EFWCFModule\Provider.cs:line 50
+   at EFWCFModule.ServiceProvider.GetKnownTypes(ICustomAttributeProvider provider) in F:\Program Files\EEP2010\EFWCFModule\Provider.cs:line 318
+DateTime:2010-07-29 13:34:38
+Type:ReflectionTypeLoadException
+Message:Unable to load one or more of the requested types. Retrieve the LoaderExceptions property for more information.
+Stack:
+   at System.Reflection.RuntimeModule.GetTypes(RuntimeModule module)
+   at System.Reflection.Assembly.GetTypes()
+   at EFWCFModule.ServiceProvider.GetKnownTypes(ICustomAttributeProvider provider) in D:\Infolight\EEP2010\EFWCFModule\Provider.cs:line 414
+DateTime:2010-07-29 13:35:47
+Type:ReflectionTypeLoadException
+Message:Unable to load one or more of the requested types. Retrieve the LoaderExceptions property for more information.
+Stack:
+   at System.Reflection.RuntimeModule.GetTypes(RuntimeModule module)
+   at System.Reflection.Assembly.GetTypes()
+   at EFWCFModule.ServiceProvider.GetKnownTypes(ICustomAttributeProvider provider) in D:\Infolight\EEP2010\EFWCFModule\Provider.cs:line 414
+DateTime:2010-10-16 14:29:01
+Type:ReflectionTypeLoadException
+Message:Unable to load one or more of the requested types. Retrieve the LoaderExceptions property for more information.
+Stack:
+   at System.Reflection.RuntimeModule.GetTypes(RuntimeModule module)
+   at System.Reflection.Assembly.GetTypes()
+   at EFWCFModule.ServiceProvider.GetKnownTypes(ICustomAttributeProvider provider) in D:\Infolight\EEP2010\EFWCFModule\Provider.cs:line 414
+DateTime:2010-10-16 14:31:01
+Type:ReflectionTypeLoadException
+Message:Unable to load one or more of the requested types. Retrieve the LoaderExceptions property for more information.
+Stack:
+   at System.Reflection.RuntimeModule.GetTypes(RuntimeModule module)
+   at System.Reflection.Assembly.GetTypes()
+   at EFWCFModule.ServiceProvider.GetKnownTypes(ICustomAttributeProvider provider) in D:\Infolight\EEP2010\EFWCFModule\Provider.cs:line 414
+DateTime:2010-10-16 14:33:51
+Type:ReflectionTypeLoadException
+Message:Unable to load one or more of the requested types. Retrieve the LoaderExceptions property for more information.
+Stack:
+   at System.Reflection.RuntimeModule.GetTypes(RuntimeModule module)
+   at System.Reflection.Assembly.GetTypes()
+   at EFWCFModule.ServiceProvider.GetKnownTypes(ICustomAttributeProvider provider) in D:\Infolight\EEP2010\EFWCFModule\Provider.cs:line 414
+DateTime:2010-10-16 14:36:38
+Type:ReflectionTypeLoadException
+Message:Unable to load one or more of the requested types. Retrieve the LoaderExceptions property for more information.
+Stack:
+   at System.Reflection.RuntimeModule.GetTypes(RuntimeModule module)
+   at System.Reflection.Assembly.GetTypes()
+   at EFWCFModule.ServiceProvider.GetKnownTypes(ICustomAttributeProvider provider) in D:\Infolight\EEP2010\EFWCFModule\Provider.cs:line 414

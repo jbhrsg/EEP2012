@@ -1,0 +1,40 @@
+D:\Project\Version\InstallVersion\20100805\EEPNetClient\Solution1\CReport1.dll
+D:\Project\Version\InstallVersion\20100805\EEPNetClient\Solution1\CReport1.pdb
+D:\Project\Version\InstallVersion\20100805\Template\CReport1\obj\Debug\ResolveAssemblyReference.cache
+D:\Project\Version\InstallVersion\20100805\Template\CReport1\obj\Debug\CReport1.Form1.resources
+D:\Project\Version\InstallVersion\20100805\Template\CReport1\obj\Debug\CReport1.Properties.Resources.resources
+D:\Project\Version\InstallVersion\20100805\Template\CReport1\obj\Debug\GenerateResource.read.1.tlog
+D:\Project\Version\InstallVersion\20100805\Template\CReport1\obj\Debug\GenerateResource.write.1.tlog
+D:\Project\Version\InstallVersion\20100805\Template\CReport1\obj\Debug\CReport1.dll
+D:\Project\Version\InstallVersion\20100805\Template\CReport1\obj\Debug\CReport1.pdb
+D:\Project\Version\InstallVersion\EEP2010(EF+WF)\EEPNetClient\Solution1\CReport1.dll
+D:\Project\Version\InstallVersion\EEP2010(EF+WF)\EEPNetClient\Solution1\CReport1.pdb
+D:\Project\Version\InstallVersion\EEP2010(EF+WF)\Template\CReport1\obj\Debug\ResolveAssemblyReference.cache
+D:\Project\Version\InstallVersion\EEP2010(EF+WF)\Template\CReport1\obj\Debug\CReport1.Form1.resources
+D:\Project\Version\InstallVersion\EEP2010(EF+WF)\Template\CReport1\obj\Debug\CReport1.Properties.Resources.resources
+D:\Project\Version\InstallVersion\EEP2010(EF+WF)\Template\CReport1\obj\Debug\GenerateResource.read.1.tlog
+D:\Project\Version\InstallVersion\EEP2010(EF+WF)\Template\CReport1\obj\Debug\GenerateResource.write.1.tlog
+D:\Project\Version\InstallVersion\EEP2010(EF+WF)\Template\CReport1\obj\Debug\CReport1.dll
+D:\Project\Version\InstallVersion\EEP2010(EF+WF)\Template\CReport1\obj\Debug\CReport1.pdb
+D:\Project\Version\InstallVersion\安装包源文件\EEP2010(SP1-CTP2)\EEP2010(EF+WF)\EEPNetClient\Solution1\CReport1.dll
+D:\Project\Version\InstallVersion\安装包源文件\EEP2010(SP1-CTP2)\EEP2010(EF+WF)\EEPNetClient\Solution1\CReport1.pdb
+D:\Project\Version\InstallVersion\安装包源文件\EEP2010(SP1-CTP2)\EEP2010(EF+WF)\Template\CReport1\obj\Debug\ResolveAssemblyReference.cache
+D:\Project\Version\InstallVersion\安装包源文件\EEP2010(SP1-CTP2)\EEP2010(EF+WF)\Template\CReport1\obj\Debug\CReport1.Form1.resources
+D:\Project\Version\InstallVersion\安装包源文件\EEP2010(SP1-CTP2)\EEP2010(EF+WF)\Template\CReport1\obj\Debug\CReport1.Properties.Resources.resources
+D:\Project\Version\InstallVersion\安装包源文件\EEP2010(SP1-CTP2)\EEP2010(EF+WF)\Template\CReport1\obj\Debug\GenerateResource.read.1.tlog
+D:\Project\Version\InstallVersion\安装包源文件\EEP2010(SP1-CTP2)\EEP2010(EF+WF)\Template\CReport1\obj\Debug\GenerateResource.write.1.tlog
+D:\Project\Version\InstallVersion\安装包源文件\EEP2010(SP1-CTP2)\EEP2010(EF+WF)\Template\CReport1\obj\Debug\CReport1.dll
+D:\Project\Version\InstallVersion\安装包源文件\EEP2010(SP1-CTP2)\EEP2010(EF+WF)\Template\CReport1\obj\Debug\CReport1.pdb
+C:\Program Files\Infolight\EEP2012\Template\CReport1\obj\Debug\CReport1.csprojResolveAssemblyReference.cache
+C:\Program Files\Infolight\EEP2012\Template\CReport1\obj\Debug\CReport1.Form1.resources
+C:\Program Files\Infolight\EEP2012\Template\CReport1\obj\Debug\CReport1.Properties.Resources.resources
+C:\Program Files\Infolight\EEP2012\Template\CReport1\obj\Debug\CReport1.csproj.GenerateResource.Cache
+C:\Program Files\Infolight\EEP2012\Template\CReport1\obj\Debug\CReport1.dll
+C:\Program Files\Infolight\EEP2012WF\EEPNetClient\Solution1\CReport1.dll
+C:\Program Files\Infolight\EEP2012WF\EEPNetClient\Solution1\CReport1.pdb
+C:\Program Files\Infolight\EEP2012WF\Template\CReport1\obj\Debug\CReport1.csprojResolveAssemblyReference.cache
+C:\Program Files\Infolight\EEP2012WF\Template\CReport1\obj\Debug\CReport1.Form1.resources
+C:\Program Files\Infolight\EEP2012WF\Template\CReport1\obj\Debug\CReport1.Properties.Resources.resources
+C:\Program Files\Infolight\EEP2012WF\Template\CReport1\obj\Debug\CReport1.csproj.GenerateResource.Cache
+C:\Program Files\Infolight\EEP2012WF\Template\CReport1\obj\Debug\CReport1.dll
+C:\Program Files\Infolight\EEP2012WF\Template\CReport1\obj\Debug\CReport1.pdb

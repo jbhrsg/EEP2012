@@ -1,0 +1,22 @@
+C:\Program Files (x86)\Infolight\EEP2012\FLDesignerCore\bin\Release\FLDesignerCore.dll
+C:\Program Files (x86)\Infolight\EEP2012\FLDesignerCore\bin\Release\FLDesignerCore.pdb
+C:\Program Files (x86)\Infolight\EEP2012\FLDesignerCore\bin\Release\FLCore.dll
+C:\Program Files (x86)\Infolight\EEP2012\FLDesignerCore\bin\Release\FLTools.dll
+C:\Program Files (x86)\Infolight\EEP2012\FLDesignerCore\bin\Release\FLCore.pdb
+C:\Program Files (x86)\Infolight\EEP2012\FLDesignerCore\bin\Release\FLTools.pdb
+C:\Program Files (x86)\Infolight\EEP2012\FLDesignerCore\obj\Release\FLDesignerCore.csprojResolveAssemblyReference.cache
+C:\Program Files (x86)\Infolight\EEP2012\FLDesignerCore\obj\Release\FLDesignerCore.Properties.Resources.resources
+C:\Program Files (x86)\Infolight\EEP2012\FLDesignerCore\obj\Release\FLDesignerCore.csproj.GenerateResource.Cache
+C:\Program Files (x86)\Infolight\EEP2012\FLDesignerCore\obj\Release\FLDesignerCore.dll
+C:\Program Files (x86)\Infolight\EEP2012\FLDesignerCore\obj\Release\FLDesignerCore.pdb
+D:\Infolight\EEP2012\FLDesignerCore\bin\Release\FLDesignerCore.dll
+D:\Infolight\EEP2012\FLDesignerCore\bin\Release\FLDesignerCore.pdb
+D:\Infolight\EEP2012\FLDesignerCore\bin\Release\FLCore.dll
+D:\Infolight\EEP2012\FLDesignerCore\bin\Release\FLTools.dll
+D:\Infolight\EEP2012\FLDesignerCore\bin\Release\FLCore.pdb
+D:\Infolight\EEP2012\FLDesignerCore\bin\Release\FLTools.pdb
+D:\Infolight\EEP2012\FLDesignerCore\obj\Release\FLDesignerCore.csprojResolveAssemblyReference.cache
+D:\Infolight\EEP2012\FLDesignerCore\obj\Release\FLDesignerCore.Properties.Resources.resources
+D:\Infolight\EEP2012\FLDesignerCore\obj\Release\FLDesignerCore.csproj.GenerateResource.Cache
+D:\Infolight\EEP2012\FLDesignerCore\obj\Release\FLDesignerCore.dll
+D:\Infolight\EEP2012\FLDesignerCore\obj\Release\FLDesignerCore.pdb

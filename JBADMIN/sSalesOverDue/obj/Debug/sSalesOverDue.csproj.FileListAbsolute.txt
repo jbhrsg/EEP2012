@@ -1,0 +1,9 @@
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sSalesOverDue\bin\Debug\sSalesOverDue.dll
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sSalesOverDue\bin\Debug\sSalesOverDue.pdb
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sSalesOverDue\obj\Debug\sSalesOverDue.csproj.GenerateResource.Cache
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sSalesOverDue\obj\Debug\sSalesOverDue.dll
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sSalesOverDue\obj\Debug\sSalesOverDue.pdb
+C:\Program Files (x86)\Infolight\EEP2012\EEPNetServer\JBADMIN\sSalesOverDue.dll
+C:\Program Files (x86)\Infolight\EEP2012\EEPNetServer\JBADMIN\sSalesOverDue.pdb
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sSalesOverDue\obj\Debug\sSalesOverDue.Component.resources
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sSalesOverDue\obj\Debug\sSalesOverDue.csprojResolveAssemblyReference.cache

@@ -1,0 +1,4 @@
+D:\EvaTest\EEP2006\AddIns\Templates\CMasterDetailReport\obj\Debug\ResolveAssemblyReference.cache
+D:\EvaTest\EEP2006\AddIns\Templates\CMasterDetailReport\obj\Debug\TAG_NAMESPACE.TAG_FORMNAME.resources
+D:\EvaTest\EEP2006\AddIns\Templates\CMasterDetailReport\obj\Debug\BaseForm1.Properties.Resources.resources
+D:\EvaTest\EEP2006\AddIns\Templates\CMasterDetailReport\obj\Debug\CMasterDetailReport.csproj.GenerateResource.Cache

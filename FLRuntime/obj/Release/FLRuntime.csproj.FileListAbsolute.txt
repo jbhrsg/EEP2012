@@ -1,0 +1,18 @@
+C:\Program Files (x86)\Infolight\EEP2012\FLRuntime\bin\Release\FLRuntime.dll
+C:\Program Files (x86)\Infolight\EEP2012\FLRuntime\bin\Release\FLRuntime.pdb
+C:\Program Files (x86)\Infolight\EEP2012\FLRuntime\bin\Release\FLCore.dll
+C:\Program Files (x86)\Infolight\EEP2012\FLRuntime\bin\Release\FLTools.dll
+C:\Program Files (x86)\Infolight\EEP2012\FLRuntime\bin\Release\FLCore.pdb
+C:\Program Files (x86)\Infolight\EEP2012\FLRuntime\bin\Release\FLTools.pdb
+C:\Program Files (x86)\Infolight\EEP2012\FLRuntime\obj\Release\FLRuntime.csprojResolveAssemblyReference.cache
+C:\Program Files (x86)\Infolight\EEP2012\FLRuntime\obj\Release\FLRuntime.dll
+C:\Program Files (x86)\Infolight\EEP2012\FLRuntime\obj\Release\FLRuntime.pdb
+D:\Infolight\EEP2012\FLRuntime\bin\Release\FLRuntime.dll
+D:\Infolight\EEP2012\FLRuntime\bin\Release\FLRuntime.pdb
+D:\Infolight\EEP2012\FLRuntime\bin\Release\FLCore.dll
+D:\Infolight\EEP2012\FLRuntime\bin\Release\FLTools.dll
+D:\Infolight\EEP2012\FLRuntime\bin\Release\FLCore.pdb
+D:\Infolight\EEP2012\FLRuntime\bin\Release\FLTools.pdb
+D:\Infolight\EEP2012\FLRuntime\obj\Release\FLRuntime.csprojResolveAssemblyReference.cache
+D:\Infolight\EEP2012\FLRuntime\obj\Release\FLRuntime.dll
+D:\Infolight\EEP2012\FLRuntime\obj\Release\FLRuntime.pdb

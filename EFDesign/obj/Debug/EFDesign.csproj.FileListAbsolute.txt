@@ -1,0 +1,27 @@
+F:\Program Files\EEP2010\EFDesign\bin\Debug\EFDesign.dll
+F:\Program Files\EEP2010\EFDesign\bin\Debug\EFDesign.pdb
+F:\Program Files\EEP2010\EFDesign\obj\Debug\ResolveAssemblyReference.cache
+F:\Program Files\EEP2010\EFDesign\obj\Debug\EFDesign.dll
+F:\Program Files\EEP2010\EFDesign\obj\Debug\EFDesign.pdb
+D:\Infolight\EEP2010\EFDesign\bin\Debug\EFDesign.dll
+D:\Infolight\EEP2010\EFDesign\bin\Debug\EFDesign.pdb
+D:\Infolight\EEP2010\EFDesign\obj\Debug\ResolveAssemblyReference.cache
+D:\Infolight\EEP2010\EFDesign\obj\Debug\EFDesign.dll
+D:\Infolight\EEP2010\EFDesign\obj\Debug\EFDesign.pdb
+D:\Infolight\EEP2010\EEPNetServer\EFDesign.dll
+D:\Infolight\EEP2010\EEPNetServer\EFDesign.pdb
+C:\Program Files\Infolight\EEP2010\EEPNetServer\EFDesign.dll
+C:\Program Files\Infolight\EEP2010\EEPNetServer\EFDesign.pdb
+C:\Program Files\Infolight\EEP2010\EFDesign\obj\Debug\EFDesign.dll
+C:\Program Files\Infolight\EEP2010\EFDesign\obj\Debug\EFDesign.pdb
+C:\Program Files\Infolight\EEP2010\EFDesign\obj\Debug\EFDesign.csprojResolveAssemblyReference.cache
+C:\Program Files\Infolight\EEP2012Dev\EEPNetServer\EFDesign.dll
+C:\Program Files\Infolight\EEP2012Dev\EEPNetServer\EFDesign.pdb
+C:\Program Files\Infolight\EEP2012Dev\EFDesign\obj\Debug\EFDesign.csprojResolveAssemblyReference.cache
+C:\Program Files\Infolight\EEP2012Dev\EFDesign\obj\Debug\EFDesign.dll
+C:\Program Files\Infolight\EEP2012Dev\EFDesign\obj\Debug\EFDesign.pdb
+C:\Program Files (x86)\Infolight\EEP2012\EEPNetServer\EFDesign.dll
+C:\Program Files (x86)\Infolight\EEP2012\EEPNetServer\EFDesign.pdb
+C:\Program Files (x86)\Infolight\EEP2012\EFDesign\obj\Debug\EFDesign.csprojResolveAssemblyReference.cache
+C:\Program Files (x86)\Infolight\EEP2012\EFDesign\obj\Debug\EFDesign.dll
+C:\Program Files (x86)\Infolight\EEP2012\EFDesign\obj\Debug\EFDesign.pdb

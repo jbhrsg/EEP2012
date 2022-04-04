@@ -1,0 +1,14 @@
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sCON_CENTERLABEL\bin\Debug\sCON_CENTERLABEL.dll
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sCON_CENTERLABEL\bin\Debug\sCON_CENTERLABEL.pdb
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sCON_CENTERLABEL\obj\Debug\sCON_CENTERLABEL.csproj.GenerateResource.Cache
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sCON_CENTERLABEL\obj\Debug\sCON_CENTERLABEL.dll
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sCON_CENTERLABEL\obj\Debug\sCON_CENTERLABEL.pdb
+C:\Program Files (x86)\Infolight\EEP2012\EEPNetServer\JBADMIN\sCON_CENTERLABEL.dll
+C:\Program Files (x86)\Infolight\EEP2012\EEPNetServer\JBADMIN\sCON_CENTERLABEL.pdb
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sCON_CENTERLABEL\obj\Debug\sCON_CENTERLABEL.Component.resources
+D:\Infolight\EEP2012\EEPNetServer\JBADMIN\sCON_CENTERLABEL.dll
+D:\Infolight\EEP2012\EEPNetServer\JBADMIN\sCON_CENTERLABEL.pdb
+D:\Infolight\EEP2012\JBADMIN\sCON_CENTERLABEL\obj\Debug\sCON_CENTERLABEL.Component.resources
+D:\Infolight\EEP2012\JBADMIN\sCON_CENTERLABEL\obj\Debug\sCON_CENTERLABEL.csproj.GenerateResource.Cache
+D:\Infolight\EEP2012\JBADMIN\sCON_CENTERLABEL\obj\Debug\sCON_CENTERLABEL.dll
+D:\Infolight\EEP2012\JBADMIN\sCON_CENTERLABEL\obj\Debug\sCON_CENTERLABEL.pdb

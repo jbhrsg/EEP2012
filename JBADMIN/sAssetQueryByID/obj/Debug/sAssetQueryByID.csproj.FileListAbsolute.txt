@@ -1,0 +1,8 @@
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sAssetQueryByID\bin\Debug\sAssetQueryByID.dll
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sAssetQueryByID\bin\Debug\sAssetQueryByID.pdb
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sAssetQueryByID\obj\Debug\sAssetQueryByID.csproj.GenerateResource.Cache
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sAssetQueryByID\obj\Debug\sAssetQueryByID.dll
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sAssetQueryByID\obj\Debug\sAssetQueryByID.pdb
+C:\Program Files (x86)\Infolight\EEP2012\EEPNetServer\JBADMIN\sAssetQueryByID.dll
+C:\Program Files (x86)\Infolight\EEP2012\EEPNetServer\JBADMIN\sAssetQueryByID.pdb
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sAssetQueryByID\obj\Debug\sAssetQueryByID.Component.resources

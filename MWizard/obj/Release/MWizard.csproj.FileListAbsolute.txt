@@ -1,0 +1,92 @@
+D:\Program Files\Infolight\EEP2008\Solution1\MWizard\bin\MWizard.dll.config
+D:\Program Files\Infolight\EEP2008\Solution1\MWizard\bin\MWizard.dll
+D:\Program Files\Infolight\EEP2008\Solution1\MWizard\bin\MWizard.pdb
+D:\Program Files\Infolight\EEP2008\Solution1\MWizard\bin\Interop.EEPLibrary.DLL
+D:\Program Files\Infolight\EEP2008\Solution1\MWizard\bin\Interop.Microsoft.VisualWebDeveloper.Interop.WebDeveloperInternal.dll
+D:\Program Files\Infolight\EEP2008\Solution1\MWizard\bin\Interop.Microsoft.VisualWebDeveloper.Interop.WebDeveloperPage.dll
+D:\Program Files\Infolight\EEP2008\Solution1\MWizard\bin\Interop.MSDASC.dll
+D:\Program Files\Infolight\EEP2008\Solution1\MWizard\bin\Interop.OLEDBError.dll
+D:\Program Files\Infolight\EEP2008\Solution1\MWizard\obj\Release\ResolveAssemblyReference.cache
+D:\Program Files\Infolight\EEP2008\Solution1\MWizard\obj\Release\Interop.MSDASC.dll
+D:\Program Files\Infolight\EEP2008\Solution1\MWizard\obj\Release\Interop.OLEDBError.dll
+D:\Program Files\Infolight\EEP2008\Solution1\MWizard\obj\Release\MWizard.csproj.ResolveComReference.cache
+D:\Program Files\Infolight\EEP2008\Solution1\MWizard\obj\Release\MWizard.CommandBar.resources
+D:\Program Files\Infolight\EEP2008\Solution1\MWizard\obj\Release\MWizard.fmClientWzard.resources
+D:\Program Files\Infolight\EEP2008\Solution1\MWizard\obj\Release\MWizard.fmEEPWebWizard.resources
+D:\Program Files\Infolight\EEP2008\Solution1\MWizard\obj\Release\MWizard.fmExtClientWizard.resources
+D:\Program Files\Infolight\EEP2008\Solution1\MWizard\obj\Release\MWizard.fmExtEEPWebWizard.resources
+D:\Program Files\Infolight\EEP2008\Solution1\MWizard\obj\Release\MWizard.fmFieldSetting.resources
+D:\Program Files\Infolight\EEP2008\Solution1\MWizard\obj\Release\MWizard.fmNewEmptySolution.resources
+D:\Program Files\Infolight\EEP2008\Solution1\MWizard\obj\Release\MWizard.fmRefVal.resources
+D:\Program Files\Infolight\EEP2008\Solution1\MWizard\obj\Release\MWizard.fmSelDetail.resources
+D:\Program Files\Infolight\EEP2008\Solution1\MWizard\obj\Release\MWizard.fmSelectProvider.resources
+D:\Program Files\Infolight\EEP2008\Solution1\MWizard\obj\Release\MWizard.fmSelKeyField.resources
+D:\Program Files\Infolight\EEP2008\Solution1\MWizard\obj\Release\MWizard.fmSelTableField.resources
+D:\Program Files\Infolight\EEP2008\Solution1\MWizard\obj\Release\MWizard.fmServerWzd.resources
+D:\Program Files\Infolight\EEP2008\Solution1\MWizard\obj\Release\MWizard.fmVirDialog.resources
+D:\Program Files\Infolight\EEP2008\Solution1\MWizard\obj\Release\MWizard.fmWizardMain.resources
+D:\Program Files\Infolight\EEP2008\Solution1\MWizard\obj\Release\MWizard.frmEEPReport.resources
+D:\Program Files\Infolight\EEP2008\Solution1\MWizard\obj\Release\MWizard.ProgressForm.resources
+D:\Program Files\Infolight\EEP2008\Solution1\MWizard\obj\Release\MWizard.csproj.GenerateResource.Cache
+D:\Program Files\Infolight\EEP2008\Solution1\MWizard\obj\Release\MWizard.dll
+D:\Program Files\Infolight\EEP2008\Solution1\MWizard\obj\Release\MWizard.pdb
+C:\Program Files (x86)\Infolight\EEP2012\MWizard\bin\MWizard.dll.config
+C:\Program Files (x86)\Infolight\EEP2012\MWizard\bin\MWizard.dll
+C:\Program Files (x86)\Infolight\EEP2012\MWizard\bin\MWizard.pdb
+C:\Program Files (x86)\Infolight\EEP2012\MWizard\bin\AjaxTools.dll
+C:\Program Files (x86)\Infolight\EEP2012\MWizard\bin\EFBase.dll
+C:\Program Files (x86)\Infolight\EEP2012\MWizard\bin\EFClientTools.dll
+C:\Program Files (x86)\Infolight\EEP2012\MWizard\bin\EFServerTools.dll
+C:\Program Files (x86)\Infolight\EEP2012\MWizard\bin\EFWCFModule.dll
+C:\Program Files (x86)\Infolight\EEP2012\MWizard\bin\Interop.EEPLibrary.DLL
+C:\Program Files (x86)\Infolight\EEP2012\MWizard\bin\Interop.Microsoft.VisualWebDeveloper.Interop.WebDeveloperInternal.dll
+C:\Program Files (x86)\Infolight\EEP2012\MWizard\bin\Interop.Microsoft.VisualWebDeveloper.Interop.WebDeveloperPage.dll
+C:\Program Files (x86)\Infolight\EEP2012\MWizard\bin\JQClientTools.dll
+C:\Program Files (x86)\Infolight\EEP2012\MWizard\bin\JQMobileTools.dll
+C:\Program Files (x86)\Infolight\EEP2012\MWizard\bin\EFWCFModule.EEPAdapter.dll
+C:\Program Files (x86)\Infolight\EEP2012\MWizard\bin\Newtonsoft.Json.dll
+C:\Program Files (x86)\Infolight\EEP2012\MWizard\bin\AjaxControlToolkit.dll
+C:\Program Files (x86)\Infolight\EEP2012\MWizard\bin\EFBase.pdb
+C:\Program Files (x86)\Infolight\EEP2012\MWizard\bin\EFClientTools.pdb
+C:\Program Files (x86)\Infolight\EEP2012\MWizard\bin\EFServerTools.pdb
+C:\Program Files (x86)\Infolight\EEP2012\MWizard\bin\EFWCFModule.pdb
+C:\Program Files (x86)\Infolight\EEP2012\MWizard\bin\JQClientTools.pdb
+C:\Program Files (x86)\Infolight\EEP2012\MWizard\bin\AjaxTools.pdb
+C:\Program Files (x86)\Infolight\EEP2012\MWizard\bin\JQMobileTools.pdb
+C:\Program Files (x86)\Infolight\EEP2012\MWizard\bin\EFWCFModule.EEPAdapter.pdb
+C:\Program Files (x86)\Infolight\EEP2012\MWizard\bin\Interop.MSDASC.dll
+C:\Program Files (x86)\Infolight\EEP2012\MWizard\bin\Interop.OLEDBError.dll
+C:\Program Files (x86)\Infolight\EEP2012\MWizard\obj\Release\MWizard.csprojResolveAssemblyReference.cache
+C:\Program Files (x86)\Infolight\EEP2012\MWizard\obj\Release\Interop.MSDASC.dll
+C:\Program Files (x86)\Infolight\EEP2012\MWizard\obj\Release\Interop.OLEDBError.dll
+C:\Program Files (x86)\Infolight\EEP2012\MWizard\obj\Release\MWizard.csproj.ResolveComReference.cache
+C:\Program Files (x86)\Infolight\EEP2012\MWizard\obj\Release\MWizard.CommandBar.resources
+C:\Program Files (x86)\Infolight\EEP2012\MWizard\obj\Release\MWizard.ErrorDialog.resources
+C:\Program Files (x86)\Infolight\EEP2012\MWizard\obj\Release\MWizard.fmSetServerPath.resources
+C:\Program Files (x86)\Infolight\EEP2012\MWizard\obj\Release\MWizard.fmClientWzard.resources
+C:\Program Files (x86)\Infolight\EEP2012\MWizard\obj\Release\MWizard.fmEasilyReport.resources
+C:\Program Files (x86)\Infolight\EEP2012\MWizard\obj\Release\MWizard.fmEEPWebWizard.resources
+C:\Program Files (x86)\Infolight\EEP2012\MWizard\obj\Release\MWizard.fmExtClientWizard.resources
+C:\Program Files (x86)\Infolight\EEP2012\MWizard\obj\Release\MWizard.fmExtEEPWebWzdu.resources
+C:\Program Files (x86)\Infolight\EEP2012\MWizard\obj\Release\MWizard.fmFieldSetting.resources
+C:\Program Files (x86)\Infolight\EEP2012\MWizard\obj\Release\MWizard.fmNewEmptySolution.resources
+C:\Program Files (x86)\Infolight\EEP2012\MWizard\obj\Release\MWizard.fmRefVal.resources
+C:\Program Files (x86)\Infolight\EEP2012\MWizard\obj\Release\MWizard.fmReportTypeSelect.resources
+C:\Program Files (x86)\Infolight\EEP2012\MWizard\obj\Release\MWizard.fmSelDetail.resources
+C:\Program Files (x86)\Infolight\EEP2012\MWizard\obj\Release\MWizard.fmSelectProvider.resources
+C:\Program Files (x86)\Infolight\EEP2012\MWizard\obj\Release\MWizard.fmSelKeyField.resources
+C:\Program Files (x86)\Infolight\EEP2012\MWizard\obj\Release\MWizard.fmSelTableField.resources
+C:\Program Files (x86)\Infolight\EEP2012\MWizard\obj\Release\MWizard.fmServerWzd.resources
+C:\Program Files (x86)\Infolight\EEP2012\MWizard\obj\Release\MWizard.fmVirDialog.resources
+C:\Program Files (x86)\Infolight\EEP2012\MWizard\obj\Release\MWizard.fmWizardMain.resources
+C:\Program Files (x86)\Infolight\EEP2012\MWizard\obj\Release\MWizard.frmEEPReport.resources
+C:\Program Files (x86)\Infolight\EEP2012\MWizard\obj\Release\MWizard.ProgressForm.resources
+C:\Program Files (x86)\Infolight\EEP2012\MWizard\obj\Release\MWizard.fmDevExpress.resources
+C:\Program Files (x86)\Infolight\EEP2012\MWizard\obj\Release\MWizard.fmJQueryWebForm.resources
+C:\Program Files (x86)\Infolight\EEP2012\MWizard\obj\Release\MWizard.fmRDLCWizard.resources
+C:\Program Files (x86)\Infolight\EEP2012\MWizard\obj\Release\MWizard.fmJQMobileForm.resources
+C:\Program Files (x86)\Infolight\EEP2012\MWizard\obj\Release\MWizard.fmJQueryToJQMobile.resources
+C:\Program Files (x86)\Infolight\EEP2012\MWizard\obj\Release\MWizard.fmIonicWizard.resources
+C:\Program Files (x86)\Infolight\EEP2012\MWizard\obj\Release\MWizard.csproj.GenerateResource.Cache
+C:\Program Files (x86)\Infolight\EEP2012\MWizard\obj\Release\MWizard.dll
+C:\Program Files (x86)\Infolight\EEP2012\MWizard\obj\Release\MWizard.pdb

@@ -1,0 +1,9 @@
+<FlowDetails>
+  <FormName>JB_ADMIN.FWCRMOrders</FormName>
+  <FlowNavMode>Submit</FlowNavMode>
+  <NavMode>Insert</NavMode>
+  <Parameters>
+  </Parameters>
+  <FlowFileName>C:\Program Files (x86)\Infolight\EEP2012\EEPNetServer\Workflow\FL\FWCRMOrders</FlowFileName>
+  <ImageWidth>1368</ImageWidth>
+</FlowDetails>

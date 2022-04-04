@@ -1,0 +1,8 @@
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sERPSalesMan\bin\Release\sERPSalesMan.dll
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sERPSalesMan\bin\Release\sERPSalesMan.pdb
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sERPSalesMan\bin\Release\Newtonsoft.Json.dll
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sERPSalesMan\bin\Release\Newtonsoft.Json.xml
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sERPSalesMan\obj\Release\sERPSalesMan.Component.resources
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sERPSalesMan\obj\Release\sERPSalesMan.csproj.GenerateResource.Cache
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sERPSalesMan\obj\Release\sERPSalesMan.dll
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sERPSalesMan\obj\Release\sERPSalesMan.pdb

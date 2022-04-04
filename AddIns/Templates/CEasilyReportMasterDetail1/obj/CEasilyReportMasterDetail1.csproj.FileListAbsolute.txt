@@ -1,0 +1,8 @@
+F:\Work\Infolight\EEP2006\AddIns\EEPNetClient\Solution1\CEasilyReportMasterDetail1.dll
+F:\Work\Infolight\EEP2006\AddIns\EEPNetClient\Solution1\CEasilyReportMasterDetail1.pdb
+F:\Work\Infolight\EEP2006\AddIns\Templates\CEasilyReportMasterDetail1\obj\Debug\ResolveAssemblyReference.cache
+F:\Work\Infolight\EEP2006\AddIns\Templates\CEasilyReportMasterDetail1\obj\Debug\TAG_NAMESPACE.TAG_FORMNAME.resources
+F:\Work\Infolight\EEP2006\AddIns\Templates\CEasilyReportMasterDetail1\obj\Debug\CEasilyReportMasterDetail1.Properties.Resources.resources
+F:\Work\Infolight\EEP2006\AddIns\Templates\CEasilyReportMasterDetail1\obj\Debug\CEasilyReportMasterDetail1.csproj.GenerateResource.Cache
+F:\Work\Infolight\EEP2006\AddIns\Templates\CEasilyReportMasterDetail1\obj\Debug\CEasilyReportMasterDetail1.dll
+F:\Work\Infolight\EEP2006\AddIns\Templates\CEasilyReportMasterDetail1\obj\Debug\CEasilyReportMasterDetail1.pdb

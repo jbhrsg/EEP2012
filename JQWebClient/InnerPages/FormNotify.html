@@ -1,0 +1,69 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title></title>
+</head>
+<body>
+    <div id="tabsMain_FormNotify" class="easyui-tabs" style="width: 450px; height: 280px; padding: 5px">
+        <div title="选择使用者1" class="easyui-layout" style="padding: 5px" fit="true">
+            <div data-options="region:'north'" style="height: 40px; padding: 6px">
+                <label id="lSearchUserId_FormNotify">用户编号</label>
+                <input id="txtSearchUserId_FormNotify" class="easyui-validatebox" style="width: 110px" />
+                <label id="lSearchUserName_FormNotify">用户姓名</label>
+                <input id="txtSearchUserName_FormNotify" class="easyui-validatebox" style="width: 110px" />
+                <a id="btnUsersSeach_FormNotify" href="#" class="easyui-linkbutton">查询1</a>
+            </div>
+            <div data-options="region:'west'" style="width: 190px;">
+                <table id="lstUsersFrom_FormNotify" title="来自" style="width: auto" fit="true" pagination="false" rownumbers="false" singleselect="false"></table>
+            </div>
+            <div data-options="region:'east'" style="width: 190px">
+                <table id="lstUsersTo_FormNotify" title="送往 " style="width: auto" fit="true" pagination="false" rownumbers="false" singleselect="false"></table>
+            </div>
+            <div data-options="region:'center'" style="padding: 0px; text-align: center;">
+                <a id="btnUsersTo_FormNotify" href="#" class="easyui-linkbutton" style="margin-top: 60px">></a>
+                <br />
+                <br />
+                <br />
+                <a id="btnUsersBack_FormNotify" href="#" class="easyui-linkbutton" style="margin: auto"><</a>
+            </div>
+        </div>
+        <div title="选择角色1" class="easyui-layout" fit="true">
+            <div data-options="region:'north'" style="height: 40px; padding: 6px">
+                <label id="lSearchRoleId_FormNotify">角色编号</label>
+                <input id="txtSearchRoleId_FormNotify" class="easyui-validatebox" style="width: 110px" />
+                <label id="lSearchRoleName_FormNotify">角色名称</label>
+                <input id="txtSearchRoleName_FormNotify" class="easyui-validatebox" style="width: 110px" />
+                <a id="btnRolesSeach_FormNotify" href="#" class="easyui-linkbutton">查询</a>
+            </div>
+            <div data-options="region:'west'" style="width: 190px">
+                <table id="lstRolesFrom_FormNotify" title="来自" style="height: 207px; width: auto" pagination="false" rownumbers="false" singleselect="false"></table>
+            </div>
+            <div data-options="region:'east'" style="width: 190px">
+                <table id="lstRolesTo_FormNotify" title="送往 " style="height: 207px; width: auto" pagination="false" rownumbers="false" singleselect="false"></table>
+            </div>
+            <div data-options="region:'center'" style="padding: 0px; text-align: center;">
+                <a id="btnRolesTo_FormNotify" href="#" class="easyui-linkbutton" style="margin-top: 60px">></a>
+                <br />
+                <br />
+                <br />
+                <a id="btnRolesBack_FormNotify" href="#" class="easyui-linkbutton" style="margin: auto"><</a>
+            </div>
+        </div>
+    </div>
+    <fieldset style="width: 435px;">
+        <legend id="lMessage_FormNotify">通知讯息
+        </legend>
+        <div>
+            <textarea id="txtMessage_FormNotify" style="width: 98%; height: 60px"></textarea>
+        </div>
+    </fieldset>
+    <div>
+        <a id="btnOk_FormNotify" href="#" class="easyui-linkbutton">OK</a>
+        <a id="btnCancel_FormNotify" href="#" class="easyui-linkbutton">Close</a>
+        <label id="result_FormNotify" style="color: red"></label>
+    </div>
+    <!--    <form id="formNotify" style="padding: 5px">
+    </form>-->
+</body>
+</html>

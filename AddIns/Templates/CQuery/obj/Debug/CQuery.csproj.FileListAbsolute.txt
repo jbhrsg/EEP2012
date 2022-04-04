@@ -1,0 +1,36 @@
+D:\Program Files\Infolight\EEP2008\AddIns\Templates\CQuery\obj\Debug\ResolveAssemblyReference.cache
+D:\Program Files\Infolight\EEP2008\AddIns\Templates\CQuery\obj\Debug\CQuery.csproj.GenerateResource.Cache
+D:\Program Files\Infolight\EEP2008\AddIns\Templates\CQuery\obj\Debug\TAG_NAMESPACE.TAG_FORMNAME.resources
+D:\Program Files\Infolight\EEP2008\AddIns\Templates\CQuery\obj\Debug\BaseForm1.Properties.Resources.resources
+D:\Program Files\Infolight\EEP2008\AddIns\EEPNetClient\Solution1\BaseForm1.dll
+D:\Program Files\Infolight\EEP2008\AddIns\EEPNetClient\Solution1\BaseForm1.pdb
+D:\Program Files\Infolight\EEP2008\AddIns\Templates\CQuery\obj\Debug\BaseForm1.dll
+D:\Program Files\Infolight\EEP2008\AddIns\Templates\CQuery\obj\Debug\BaseForm1.pdb
+F:\EEP2010\AddIns\EEPNetClient\Solution1\CQuery.dll
+F:\EEP2010\AddIns\EEPNetClient\Solution1\CQuery.pdb
+F:\EEP2010\AddIns\Templates\CQuery\obj\Debug\ResolveAssemblyReference.cache
+F:\EEP2010\AddIns\Templates\CQuery\obj\Debug\CQuery.Form1.resources
+F:\EEP2010\AddIns\Templates\CQuery\obj\Debug\CQuery.Properties.Resources.resources
+F:\EEP2010\AddIns\Templates\CQuery\obj\Debug\GenerateResource-ResGen.read.1.tlog
+F:\EEP2010\AddIns\Templates\CQuery\obj\Debug\GenerateResource-ResGen.write.1.tlog
+F:\EEP2010\AddIns\Templates\CQuery\obj\Debug\CQuery.dll
+F:\EEP2010\AddIns\Templates\CQuery\obj\Debug\CQuery.pdb
+D:\Infolight\EEP2010\AddIns\Templates\CQuery\obj\Debug\ResolveAssemblyReference.cache
+D:\Infolight\EEP2010\AddIns\Templates\CQuery\obj\Debug\TAG_NAMESPACE.TAG_FORMNAME.resources
+D:\Infolight\EEP2010\AddIns\Templates\CQuery\obj\Debug\CQuery.Properties.Resources.resources
+D:\Infolight\EEP2010\AddIns\Templates\CQuery\obj\Debug\GenerateResource-ResGen.read.1.tlog
+D:\Infolight\EEP2010\AddIns\Templates\CQuery\obj\Debug\GenerateResource.read.1.tlog
+D:\Infolight\EEP2010\AddIns\Templates\CQuery\obj\Debug\GenerateResource-ResGen.write.1.tlog
+D:\Infolight\EEP2010\AddIns\Templates\CQuery\obj\Debug\GenerateResource.write.1.tlog
+D:\Infolight\EEP2010\AddIns\Templates\CQuery\obj\Debug\CQuery.dll
+D:\Infolight\EEP2010\AddIns\Templates\CQuery\obj\Debug\CQuery.pdb
+D:\Infolight\EEP2010\AddIns\EEPNetClient\Solution1\CQuery.dll
+D:\Infolight\EEP2010\AddIns\EEPNetClient\Solution1\CQuery.pdb
+C:\Program Files\Infolight\EEP2012\AddIns\EEPNetClient\Solution1\CQuery.dll
+C:\Program Files\Infolight\EEP2012\AddIns\EEPNetClient\Solution1\CQuery.pdb
+C:\Program Files\Infolight\EEP2012\AddIns\Templates\CQuery\obj\Debug\CQuery.csprojResolveAssemblyReference.cache
+C:\Program Files\Infolight\EEP2012\AddIns\Templates\CQuery\obj\Debug\TAG_NAMESPACE.TAG_FORMNAME.resources
+C:\Program Files\Infolight\EEP2012\AddIns\Templates\CQuery\obj\Debug\CQuery.Properties.Resources.resources
+C:\Program Files\Infolight\EEP2012\AddIns\Templates\CQuery\obj\Debug\CQuery.csproj.GenerateResource.Cache
+C:\Program Files\Infolight\EEP2012\AddIns\Templates\CQuery\obj\Debug\CQuery.dll
+C:\Program Files\Infolight\EEP2012\AddIns\Templates\CQuery\obj\Debug\CQuery.pdb

@@ -1,0 +1,15 @@
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sglYearBudget\bin\Debug\sglYearBudget.dll
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sglYearBudget\bin\Debug\sglYearBudget.pdb
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sglYearBudget\obj\Debug\sglYearBudget.csproj.GenerateResource.Cache
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sglYearBudget\obj\Debug\sglYearBudget.dll
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sglYearBudget\obj\Debug\sglYearBudget.pdb
+C:\Program Files (x86)\Infolight\EEP2012\EEPNetServer\JBADMIN\sglYearBudget.dll
+C:\Program Files (x86)\Infolight\EEP2012\EEPNetServer\JBADMIN\sglYearBudget.pdb
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sglYearBudget\obj\Debug\sglYearBudget.Component.resources
+D:\Infolight\EEP2012\EEPNetServer\JBADMIN\sglYearBudget.dll
+D:\Infolight\EEP2012\EEPNetServer\JBADMIN\sglYearBudget.pdb
+D:\Infolight\EEP2012\JBADMIN\sglYearBudget\obj\Debug\sglYearBudget.Component.resources
+D:\Infolight\EEP2012\JBADMIN\sglYearBudget\obj\Debug\sglYearBudget.csproj.GenerateResource.Cache
+D:\Infolight\EEP2012\JBADMIN\sglYearBudget\obj\Debug\sglYearBudget.dll
+D:\Infolight\EEP2012\JBADMIN\sglYearBudget\obj\Debug\sglYearBudget.pdb
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sglYearBudget\obj\Debug\sglYearBudget.csprojResolveAssemblyReference.cache

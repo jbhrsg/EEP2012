@@ -1,0 +1,6 @@
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sShortTermRepoAcct\bin\Release\sShortTermRepoAcct.dll
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sShortTermRepoAcct\bin\Release\sShortTermRepoAcct.pdb
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sShortTermRepoAcct\obj\Release\sShortTermRepoAcct.Component.resources
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sShortTermRepoAcct\obj\Release\sShortTermRepoAcct.csproj.GenerateResource.Cache
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sShortTermRepoAcct\obj\Release\sShortTermRepoAcct.dll
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sShortTermRepoAcct\obj\Release\sShortTermRepoAcct.pdb
