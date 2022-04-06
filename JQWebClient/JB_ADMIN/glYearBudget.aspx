@@ -1,7 +1,5 @@
 ﻿<%@ Page Language="C#" AutoEventWireup="true" CodeFile="glYearBudget.aspx.cs" Inherits="Template_JQuerySingle1" %>
-
 <!DOCTYPE html>
-
 <html>
 <head runat="server">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
@@ -17,7 +15,6 @@
                  $("input, select, textarea").blur(function () {
                      $(this).css("background-color", "white");
                  });
-       
              });
               $(function () {
                  $('#CostCenterID_Query').combobox({
