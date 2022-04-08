@@ -83,7 +83,7 @@
   <String UserId="009" UserName="程進昇">
     <Computer Name="172.19.144.1" LoginTime="2021-09-16 11:59:41" Count="1" />
     <Computer Name="172.19.32.1" LoginTime="2021-09-27 21:39:12" Count="3" />
-    <Computer Name="192.168.9.1" LoginTime="2021-09-28 17:26:34" Count="3" />
+    <Computer Name="192.168.9.1" LoginTime="2021-09-28 17:26:34" Count="2" />
     <Computer Name="172.31.32.1" LoginTime="2021-10-13 12:32:12" Count="1" />
     <Computer Name="::1" LoginTime="2021-01-01 20:34:56" Count="1255" />
     <Computer Name="10.10.1.1" LoginTime="2021-04-10 10:49:12" Count="2" />
