@@ -1,7 +1,5 @@
 ﻿<%@ Page Language="C#" AutoEventWireup="true" CodeFile="glYearBudget.aspx.cs" Inherits="Template_JQuerySingle1" %>
-
 <!DOCTYPE html>
-
 <html>
 <head runat="server">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
@@ -11,14 +9,12 @@
          var DetailGridTitle = '';
          $(document).ready(function () {
              $(function () {
-                 //測試
                  $("input, select, textarea").focus(function () {
                      $(this).css("background-color", "yellow");
                  });
                  $("input, select, textarea").blur(function () {
                      $(this).css("background-color", "white");
                  });
-       
              });
               $(function () {
                  $('#CostCenterID_Query').combobox({
@@ -385,18 +381,18 @@
                     <JQTools:JQQueryColumn AndOr="and" Caption="-" Condition="%" DataType="string" Editor="text" FieldName="AcnoE" IsNvarChar="False" NewLine="False" RemoteMethod="False" RowSpan="0" Span="0" Width="50" />
                 </QueryColumns>
             </JQTools:JQDataGrid>
-            <JQTools:JQDialog ID="JQDialog1" runat="server" BindingObjectID="dataFormMaster" Title="年度預算編輯" Width="500px" DialogLeft="50px" DialogTop="50px">
-                <JQTools:JQDataForm ID="dataFormMaster" runat="server" DataMember="glYearBudget" HorizontalColumnsCount="2" RemoteName="sglYearBudget.glYearBudget" AlwaysReadOnly="False" Closed="False" ContinueAdd="False" disapply="False" DivFramed="False" DuplicateCheck="False" HorizontalGap="0" IsAutoPageClose="False" IsAutoPause="False" IsAutoSubmit="False" IsNotifyOFF="False" IsRejectNotify="False" IsRejectON="False" IsShowFlowIcon="False" ShowApplyButton="False" ValidateStyle="Hint" VerticalGap="0" OnApply="dataFormMasterOnApply" >
+            <JQTools:JQDialog ID="JQDialog1" runat="server" BindingObjectID="dataFormMaster" Title="年度預算編輯" Width="1020px" DialogLeft="20px" DialogTop="50px">
+                <JQTools:JQDataForm ID="dataFormMaster" runat="server" DataMember="glYearBudget" HorizontalColumnsCount="6" RemoteName="sglYearBudget.glYearBudget" AlwaysReadOnly="False" Closed="False" ContinueAdd="False" disapply="False" DivFramed="False" DuplicateCheck="False" HorizontalGap="0" IsAutoPageClose="False" IsAutoPause="False" IsAutoSubmit="False" IsNotifyOFF="False" IsRejectNotify="False" IsRejectON="False" IsShowFlowIcon="False" ShowApplyButton="False" ValidateStyle="Hint" VerticalGap="0" OnApply="dataFormMasterOnApply" >
                     <Columns>
                         <JQTools:JQFormColumn Alignment="left" Caption="AutoKey" Editor="numberbox" FieldName="AutoKey" Format="" Width="180" Span="1" Visible="False" maxlength="0" ReadOnly="False" />
-                        <JQTools:JQFormColumn Alignment="left" Caption="預算年度" Editor="text" FieldName="VoucherYear" Format="" Width="90" Span="2" maxlength="0" />
-                        <JQTools:JQFormColumn Alignment="left" Caption="預算類別" Editor="infocombobox" FieldName="BudgetType" Format="" maxlength="0" Width="92" EditorOptions="valueField:'BudgetType',textField:'BudgetTypeName',remoteName:'sglYearBudget.glBudgetType',tableName:'glBudgetType',pageSize:'-1',checkData:false,selectOnly:false,cacheRelationText:false,panelHeight:200" />
+                        <JQTools:JQFormColumn Alignment="left" Caption="預算年度" Editor="text" FieldName="VoucherYear" Format="" Width="30" Span="6" maxlength="0" />
+                        <JQTools:JQFormColumn Alignment="left" Caption="預算類別" Editor="infocombobox" FieldName="BudgetType" Format="" maxlength="0" Width="70" EditorOptions="valueField:'BudgetType',textField:'BudgetTypeName',remoteName:'sglYearBudget.glBudgetType',tableName:'glBudgetType',pageSize:'-1',checkData:false,selectOnly:false,cacheRelationText:false,panelHeight:200" />
                         <JQTools:JQFormColumn Alignment="left" Caption="成本中心" Editor="infocombobox" FieldName="CostCenterID" Format="" maxlength="0" Width="120" EditorOptions="valueField:'COSTCENTERID',textField:'COSTCENTERNAME',remoteName:'sglYearBudget.CostCenterList',tableName:'CostCenterList',pageSize:'-1',checkData:false,selectOnly:false,cacheRelationText:false,panelHeight:200" />
-                        <JQTools:JQFormColumn Alignment="left" Caption="會計科目主" Editor="text" FieldName="Acno_S" Format="" maxlength="0" Width="92" OnBlur="Acno_SOnBlur" Span="1" />
-                        <JQTools:JQFormColumn Alignment="left" Caption="會計科目次" Editor="text" FieldName="SubAcno_S" Format="" maxlength="0" Width="92" Span="1" OnBlur="SubAcno_SOnBlur" />
-                        <JQTools:JQFormColumn Alignment="left" Caption="會計科目名稱" Editor="text" FieldName="AcnoName" Format="" Width="260" Span="2" />
-                        <JQTools:JQFormColumn Alignment="left" Caption="會計科目主" Editor="text" FieldName="Acno_E" Format="" Width="92" OnBlur="" maxlength="0" />
-                        <JQTools:JQFormColumn Alignment="left" Caption="會計科目次" Editor="text" FieldName="SubAcno_E" maxlength="0" Width="80" Visible="True" />
+                        <JQTools:JQFormColumn Alignment="left" Caption="會計主科目" Editor="text" FieldName="Acno_S" Format="" maxlength="0" Width="60" OnBlur="Acno_SOnBlur" Span="1" />
+                        <JQTools:JQFormColumn Alignment="left" Caption="次科目起" Editor="text" FieldName="SubAcno_S" Format="" maxlength="0" Width="30" Span="1" OnBlur="SubAcno_SOnBlur" />
+                        <JQTools:JQFormColumn Alignment="left" Caption="次科目迄" Editor="text" FieldName="SubAcno_E" maxlength="0" Visible="True" Width="30" />
+                        <JQTools:JQFormColumn Alignment="left" Caption="會計科目名稱" Editor="text" FieldName="AcnoName" Format="" Width="210" Span="1" />
+                        <JQTools:JQFormColumn Alignment="left" Caption="會計科目主" Editor="text" FieldName="Acno_E" Format="" Width="92" OnBlur="" maxlength="0" Visible="False" />
                         <JQTools:JQFormColumn Alignment="left" Caption="AcSubno" Editor="text" FieldName="AcSubno" maxlength="0" NewRow="False" ReadOnly="False" RowSpan="1" Span="1" Visible="False" Width="80" />
                         <JQTools:JQFormColumn Alignment="right" Caption="預算金額" Editor="numberbox" FieldName="BudgetAmt" Format="" Width="92" Visible="True" />
                         <JQTools:JQFormColumn Alignment="left" Caption="主科目加總" Editor="checkbox" FieldName="IsSummary" Width="80" EditorOptions="on:1,off:0" Visible="True" Format="genCheckBox" Span="1" />
