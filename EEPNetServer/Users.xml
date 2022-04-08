@@ -105,7 +105,6 @@
     <Computer Name="172.20.144.1" LoginTime="2021-10-05 09:47:02" Count="2" />
   </String>
   <String UserId="060" UserName="徐曉鈴">
-    <Computer Name="192.168.9.1" LoginTime="2022-04-09 00:58:22" Count="1" />
     <Computer Name="::1" LoginTime="2021-12-06 21:00:54" Count="10" />
   </String>
 </InfolightUsers>
