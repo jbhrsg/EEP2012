@@ -1,6 +1,7 @@
 Addins/
 *.suo
 *.cache
+EEPManager/
 EEPNetServer/Users.xml
 EEPNetServer/*.xml
 EEPNetServer/Temp/
