@@ -1,3 +1,4 @@
 Addins/
 *.suo
 EEPNetServer/*.xml
+EEPNetServer/Temp/
