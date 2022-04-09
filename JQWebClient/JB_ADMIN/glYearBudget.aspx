@@ -7,6 +7,7 @@
     <script src="../js/jquery.jbjob.js"></script>
      <script type="text/javascript">
          var DetailGridTitle = '';
+         var dataGridViewShowFlag = 0;
          $(document).ready(function () {
              $(function () {
                  $("input, select, textarea").focus(function () {
@@ -70,7 +71,20 @@
              if ((CostCenterID) == '000' || CostCenterID == undefined) {
                  GetAllAccItemM();
              }
-             var tt= $('#VoucherYear_Query').combobox('getValue');
+             var tt = $('#VoucherYear_Query').combobox('getValue');
+             var showHide = "hideColumn";
+             if (dataGridViewShowFlag == 1) {
+                 showHide = "showColumn";
+             }
+             var ok = dataGridViewCollumVisible(showHide);
+         }
+         function dataGridViewCollumVisible(showflag) {
+             var GridName = '#dataGridView';
+             var FieldName = ['M01','M02','M03','M04','M05','M06','M07','M08','M09','M10','M11','M12'];
+             $.each(FieldName, function (index, FieldName) {
+                 $(GridName).datagrid(showflag, FieldName);
+             });
+             return true;
          }
          function queryGrid(dg) {
              var UserID = getClientInfo("UserID");
@@ -324,6 +338,18 @@
          function OnLoadSucessJQDBD() {
              $('#JQDialog3').dialog('setTitle', DetailGridTitle);
          }
+         function dataGridViewshowHide() {
+             var showhide = '';
+             if (dataGridViewShowFlag == 0) {
+                 showhide = 'showColumn';
+                 dataGridViewShowFlag = 1;
+             }
+             else {
+                 showhide = 'hideColumn';
+                 dataGridViewShowFlag = 0;
+             }
+             var ok = dataGridViewCollumVisible(showhide);
+         }
          
     </script>
 </head>
@@ -359,6 +385,8 @@
                     </JQTools:JQGridColumn>
                     <JQTools:JQGridColumn Alignment="right" Caption="06月" Editor="text" FieldName="M06" Format="N0" Frozen="False" IsNvarChar="False" MaxLength="0" QueryCondition="" ReadOnly="False" Sortable="False" Visible="True" Width="60">
                     </JQTools:JQGridColumn>
+                    <JQTools:JQGridColumn Alignment="right" Caption="07月" Editor="text" FieldName="M07" Format="N0" Frozen="False" IsNvarChar="False" MaxLength="0" QueryCondition="" ReadOnly="False" Sortable="False" Visible="True" Width="60">
+                    </JQTools:JQGridColumn>
                     <JQTools:JQGridColumn Alignment="right" Caption="08月" Editor="text" FieldName="M08" Format="N0" Frozen="False" IsNvarChar="False" MaxLength="0" QueryCondition="" ReadOnly="False" Sortable="False" Visible="True" Width="60">
                     </JQTools:JQGridColumn> 
                     <JQTools:JQGridColumn Alignment="right" Caption="09月" Editor="text" FieldName="M09" Format="N0" Frozen="False" IsNvarChar="False" MaxLength="0" QueryCondition="" ReadOnly="False" Sortable="False" Visible="True" Width="60">
@@ -393,6 +421,7 @@
                     <JQTools:JQToolItem Icon="icon-add" ItemType="easyui-linkbutton" OnClick="insertItem" Text="新增" />
  <%--               <JQTools:JQToolItem Icon="icon-excel" ItemType="easyui-linkbutton" OnClick="ManualExcel" Text="匯出Excel" Visible="True" />--%>
                     <JQTools:JQToolItem Icon="icon-excel" ItemType="easyui-linkbutton"   OnClick="exportXlsx" Text="匯出Excel" Visible="True" />
+                    <JQTools:JQToolItem Icon="icon-sum"   ItemType="easyui-linkbutton"   OnClick="dataGridViewshowHide"   Text="顯示1-12月金額" />
                 </TooItems>
                 <QueryColumns>
                     <JQTools:JQQueryColumn AndOr="and" Caption="預算年度" Condition="=" DataType="string" Editor="infocombobox" EditorOptions="valueField:'VoucherYear',textField:'VoucherYear',remoteName:'sglYearBudget.VoucherYear',tableName:'VoucherYear',pageSize:'-1',checkData:false,selectOnly:false,cacheRelationText:false,panelHeight:200" FieldName="VoucherYear" IsNvarChar="False" NewLine="False" RemoteMethod="False" RowSpan="0" Span="0" Width="60" DefaultMethod="GetYear" />
