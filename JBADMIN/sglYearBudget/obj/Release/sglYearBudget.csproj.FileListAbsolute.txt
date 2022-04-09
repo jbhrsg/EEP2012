@@ -19,3 +19,10 @@ C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sglYearBudget\obj\Release\sglYe
 C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sglYearBudget\obj\Release\sglYearBudget.pdb
 C:\Program Files (x86)\Infolight\EEP2012\EEPNetServer\JBADMIN\sglYearBudget.dll
 C:\Program Files (x86)\Infolight\EEP2012\EEPNetServer\JBADMIN\sglYearBudget.pdb
+D:\EEP2012\EEPNetServer\JBADMIN\sglYearBudget.dll
+D:\EEP2012\EEPNetServer\JBADMIN\sglYearBudget.pdb
+D:\EEP2012\JBADMIN\sglYearBudget\obj\Release\sglYearBudget.csprojResolveAssemblyReference.cache
+D:\EEP2012\JBADMIN\sglYearBudget\obj\Release\sglYearBudget.Component.resources
+D:\EEP2012\JBADMIN\sglYearBudget\obj\Release\sglYearBudget.csproj.GenerateResource.Cache
+D:\EEP2012\JBADMIN\sglYearBudget\obj\Release\sglYearBudget.dll
+D:\EEP2012\JBADMIN\sglYearBudget\obj\Release\sglYearBudget.pdb

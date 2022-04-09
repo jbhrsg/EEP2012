@@ -333,7 +333,7 @@
             <JQTools:JQScriptManager ID="JQScriptManager1" runat="server" />
             <JQTools:JQDataGrid ID="dataGridView" data-options="pagination:true,view:commandview" RemoteName="sglYearBudget.glYearBudget" runat="server" AutoApply="True"
                 DataMember="glYearBudget" Pagination="True" QueryTitle="" EditDialogID="JQDialog1"
-                Title="年度預算編輯檢視" AllowAdd="True" AllowDelete="False" AllowUpdate="True" AlwaysClose="True" BufferView="False" CheckOnSelect="True" ColumnsHibeable="False" DeleteCommandVisible="False" DuplicateCheck="False" EditMode="Dialog" EditOnEnter="True" InsertCommandVisible="True" MultiSelect="False" NotInitGrid="False" PageList="15,30,45,60" PageSize="15" QueryAutoColumn="False" QueryLeft="" QueryMode="Panel" QueryTop="" RecordLock="False" RecordLockMode="None" RowNumbers="True" TotalCaption="" UpdateCommandVisible="False" ViewCommandVisible="True" OnLoadSuccess="dataGridViewOnLoadSucess" OnInsert="dataGridViewOnInsert" OnUpdate="dataGridViewOnUpdate" Width="1160px">
+                Title="年度預算編輯檢視" AllowAdd="True" AllowDelete="False" AllowUpdate="True" AlwaysClose="True" BufferView="False" CheckOnSelect="True" ColumnsHibeable="False" DeleteCommandVisible="False" DuplicateCheck="False" EditMode="Dialog" EditOnEnter="True" InsertCommandVisible="True" MultiSelect="False" NotInitGrid="False" PageList="15,30,45,60" PageSize="15" QueryAutoColumn="False" QueryLeft="" QueryMode="Panel" QueryTop="" RecordLock="False" RecordLockMode="None" RowNumbers="True" TotalCaption="" UpdateCommandVisible="False" ViewCommandVisible="True" OnLoadSuccess="dataGridViewOnLoadSucess" OnInsert="dataGridViewOnInsert" OnUpdate="dataGridViewOnUpdate">
                 <Columns>
                     <JQTools:JQGridColumn Alignment="right" Caption="AutoKey" Editor="numberbox" FieldName="AutoKey" Format="" Width="120" Visible="False" />
                     <JQTools:JQGridColumn Alignment="right" Caption="BudgetType" Editor="numberbox" FieldName="BudgetType" Format="" Width="120" Visible="False" />
@@ -347,7 +347,29 @@
                     <JQTools:JQGridColumn Alignment="left" Caption="科目名稱" Editor="text" FieldName="AcnoName" Format="" MaxLength="0" Width="150" />
                     <JQTools:JQGridColumn Alignment="center" Caption="加總" Editor="checkbox" EditorOptions="on:1,off:0" FieldName="IsSummary" FormatScript="genCheckBox" Frozen="False" IsNvarChar="False" MaxLength="0" QueryCondition="" ReadOnly="False" Sortable="False" Visible="False" Width="40">
                     </JQTools:JQGridColumn>
-                    <JQTools:JQGridColumn Alignment="right" Caption="全年預算金額" Editor="numberbox" FieldName="BudgetAmt" Format="N0" Width="90" Total="" />
+                    <JQTools:JQGridColumn Alignment="right" Caption="01月" Editor="text" FieldName="M01" Format="N0" Frozen="False" IsNvarChar="False" MaxLength="0" QueryCondition="" ReadOnly="False" Sortable="False" Visible="True" Width="60">
+                    </JQTools:JQGridColumn>
+                    <JQTools:JQGridColumn Alignment="right" Caption="02月" Editor="text" FieldName="M02" Format="N0" Frozen="False" IsNvarChar="False" MaxLength="0" QueryCondition="" ReadOnly="False" Sortable="False" Visible="True" Width="60">
+                    </JQTools:JQGridColumn>
+                    <JQTools:JQGridColumn Alignment="right" Caption="03月" Editor="text" FieldName="M03" Format="N0" Frozen="False" IsNvarChar="False" MaxLength="0" QueryCondition="" ReadOnly="False" Sortable="False" Visible="True" Width="60">
+                    </JQTools:JQGridColumn>
+                    <JQTools:JQGridColumn Alignment="right" Caption="04月" Editor="text" FieldName="M04" Format="N0" Frozen="False" IsNvarChar="False" MaxLength="0" QueryCondition="" ReadOnly="False" Sortable="False" Visible="True" Width="60">
+                    </JQTools:JQGridColumn>
+                    <JQTools:JQGridColumn Alignment="right" Caption="05月" Editor="text" FieldName="M05" Format="N0" Frozen="False" IsNvarChar="False" MaxLength="0" QueryCondition="" ReadOnly="False" Sortable="False" Visible="True" Width="60">
+                    </JQTools:JQGridColumn>
+                    <JQTools:JQGridColumn Alignment="right" Caption="06月" Editor="text" FieldName="M06" Format="N0" Frozen="False" IsNvarChar="False" MaxLength="0" QueryCondition="" ReadOnly="False" Sortable="False" Visible="True" Width="60">
+                    </JQTools:JQGridColumn>
+                    <JQTools:JQGridColumn Alignment="right" Caption="08月" Editor="text" FieldName="M08" Format="N0" Frozen="False" IsNvarChar="False" MaxLength="0" QueryCondition="" ReadOnly="False" Sortable="False" Visible="True" Width="60">
+                    </JQTools:JQGridColumn> 
+                    <JQTools:JQGridColumn Alignment="right" Caption="09月" Editor="text" FieldName="M09" Format="N0" Frozen="False" IsNvarChar="False" MaxLength="0" QueryCondition="" ReadOnly="False" Sortable="False" Visible="True" Width="60">
+                    </JQTools:JQGridColumn> 
+                    <JQTools:JQGridColumn Alignment="right" Caption="10月" Editor="text" FieldName="M10" Format="N0" Frozen="False" IsNvarChar="False" MaxLength="0" QueryCondition="" ReadOnly="False" Sortable="False" Visible="True" Width="60">
+                    </JQTools:JQGridColumn> 
+                    <JQTools:JQGridColumn Alignment="right" Caption="11月" Editor="text" FieldName="M11" Format="N0" Frozen="False" IsNvarChar="False" MaxLength="0" QueryCondition="" ReadOnly="False" Sortable="False" Visible="True" Width="60">
+                    </JQTools:JQGridColumn>
+                    <JQTools:JQGridColumn Alignment="right" Caption="12月" Editor="text" FieldName="M12" Format="N0" Frozen="False" IsNvarChar="False" MaxLength="0" QueryCondition="" ReadOnly="False" Sortable="False" Visible="True" Width="60">
+                    </JQTools:JQGridColumn> 
+                    <JQTools:JQGridColumn Alignment="right" Caption="全年預算金額" Editor="numberbox" FieldName="BudgetAmt" Format="N0" Width="85" Total="" />
                     <JQTools:JQGridColumn Alignment="right" Caption="期間預算金額" Editor="numberbox" FieldName="PBudgetAmt" Format="N0" Frozen="False" IsNvarChar="False" MaxLength="0" QueryCondition="" ReadOnly="False" Sortable="False" Visible="True" Width="90" Total="">
                     </JQTools:JQGridColumn>
                     <JQTools:JQGridColumn Alignment="right" Caption="期間入帳金額" Editor="numberbox" FieldName="BookedAmt" Format="N0" Frozen="False" IsNvarChar="False" MaxLength="0" QueryCondition="" ReadOnly="False" Sortable="False" Visible="True" Width="90" Total="" FormatScript="BookedAmt_FormatScript">
@@ -381,25 +403,37 @@
                     <JQTools:JQQueryColumn AndOr="and" Caption="-" Condition="%" DataType="string" Editor="text" FieldName="AcnoE" IsNvarChar="False" NewLine="False" RemoteMethod="False" RowSpan="0" Span="0" Width="50" />
                 </QueryColumns>
             </JQTools:JQDataGrid>
-            <JQTools:JQDialog ID="JQDialog1" runat="server" BindingObjectID="dataFormMaster" Title="年度預算編輯" Width="1020px" DialogLeft="20px" DialogTop="50px">
-                <JQTools:JQDataForm ID="dataFormMaster" runat="server" DataMember="glYearBudget" HorizontalColumnsCount="6" RemoteName="sglYearBudget.glYearBudget" AlwaysReadOnly="False" Closed="False" ContinueAdd="False" disapply="False" DivFramed="False" DuplicateCheck="False" HorizontalGap="0" IsAutoPageClose="False" IsAutoPause="False" IsAutoSubmit="False" IsNotifyOFF="False" IsRejectNotify="False" IsRejectON="False" IsShowFlowIcon="False" ShowApplyButton="False" ValidateStyle="Hint" VerticalGap="0" OnApply="dataFormMasterOnApply" >
+            <JQTools:JQDialog ID="JQDialog1" runat="server" BindingObjectID="dataFormMaster" Title="年度預算編輯" Width="600px" DialogLeft="10px" DialogTop="12px">
+                <JQTools:JQDataForm ID="dataFormMaster" runat="server" DataMember="glYearBudget" HorizontalColumnsCount="3" RemoteName="sglYearBudget.glYearBudget" AlwaysReadOnly="False" Closed="False" ContinueAdd="False" disapply="False" DivFramed="False" DuplicateCheck="False" HorizontalGap="0" IsAutoPageClose="False" IsAutoPause="False" IsAutoSubmit="False" IsNotifyOFF="False" IsRejectNotify="False" IsRejectON="False" IsShowFlowIcon="False" ShowApplyButton="False" ValidateStyle="Hint" VerticalGap="0" OnApply="dataFormMasterOnApply" >
                     <Columns>
                         <JQTools:JQFormColumn Alignment="left" Caption="AutoKey" Editor="numberbox" FieldName="AutoKey" Format="" Width="180" Span="1" Visible="False" maxlength="0" ReadOnly="False" />
-                        <JQTools:JQFormColumn Alignment="left" Caption="預算年度" Editor="text" FieldName="VoucherYear" Format="" Width="30" Span="6" maxlength="0" />
-                        <JQTools:JQFormColumn Alignment="left" Caption="預算類別" Editor="infocombobox" FieldName="BudgetType" Format="" maxlength="0" Width="70" EditorOptions="valueField:'BudgetType',textField:'BudgetTypeName',remoteName:'sglYearBudget.glBudgetType',tableName:'glBudgetType',pageSize:'-1',checkData:false,selectOnly:false,cacheRelationText:false,panelHeight:200" />
-                        <JQTools:JQFormColumn Alignment="left" Caption="成本中心" Editor="infocombobox" FieldName="CostCenterID" Format="" maxlength="0" Width="120" EditorOptions="valueField:'COSTCENTERID',textField:'COSTCENTERNAME',remoteName:'sglYearBudget.CostCenterList',tableName:'CostCenterList',pageSize:'-1',checkData:false,selectOnly:false,cacheRelationText:false,panelHeight:200" />
-                        <JQTools:JQFormColumn Alignment="left" Caption="會計主科目" Editor="text" FieldName="Acno_S" Format="" maxlength="0" Width="60" OnBlur="Acno_SOnBlur" Span="1" />
-                        <JQTools:JQFormColumn Alignment="left" Caption="次科目起" Editor="text" FieldName="SubAcno_S" Format="" maxlength="0" Width="30" Span="1" OnBlur="SubAcno_SOnBlur" />
-                        <JQTools:JQFormColumn Alignment="left" Caption="次科目迄" Editor="text" FieldName="SubAcno_E" maxlength="0" Visible="True" Width="30" />
-                        <JQTools:JQFormColumn Alignment="left" Caption="會計科目名稱" Editor="text" FieldName="AcnoName" Format="" Width="210" Span="1" />
+                        <JQTools:JQFormColumn Alignment="left" Caption="預算年度" Editor="text" FieldName="VoucherYear" Format="" Width="60" Span="3" maxlength="0" />
+                        <JQTools:JQFormColumn Alignment="left" Caption="預算類別" Editor="infocombobox" FieldName="BudgetType" Format="" maxlength="0" Width="120" EditorOptions="valueField:'BudgetType',textField:'BudgetTypeName',remoteName:'sglYearBudget.glBudgetType',tableName:'glBudgetType',pageSize:'-1',checkData:false,selectOnly:false,cacheRelationText:false,panelHeight:200" Span="3" />
+                        <JQTools:JQFormColumn Alignment="left" Caption="成本中心" Editor="infocombobox" FieldName="CostCenterID" Format="" maxlength="0" Width="120" EditorOptions="valueField:'COSTCENTERID',textField:'COSTCENTERNAME',remoteName:'sglYearBudget.CostCenterList',tableName:'CostCenterList',pageSize:'-1',checkData:false,selectOnly:false,cacheRelationText:false,panelHeight:200" Span="3" />
+                        <JQTools:JQFormColumn Alignment="left" Caption="會計主科目" Editor="text" FieldName="Acno_S" Format="" maxlength="0" Width="113" OnBlur="Acno_SOnBlur" Span="1" />
+                        <JQTools:JQFormColumn Alignment="left" Caption="次科目起" Editor="text" FieldName="SubAcno_S" Format="" maxlength="0" Width="35" Span="1" OnBlur="SubAcno_SOnBlur" />
+                        <JQTools:JQFormColumn Alignment="left" Caption="次科目迄" Editor="text" FieldName="SubAcno_E" maxlength="0" Visible="True" Width="35" />
+                        <JQTools:JQFormColumn Alignment="left" Caption="會計科目名稱" Editor="text" FieldName="AcnoName" Format="" Width="310" Span="3" />
                         <JQTools:JQFormColumn Alignment="left" Caption="會計科目主" Editor="text" FieldName="Acno_E" Format="" Width="92" OnBlur="" maxlength="0" Visible="False" />
                         <JQTools:JQFormColumn Alignment="left" Caption="AcSubno" Editor="text" FieldName="AcSubno" maxlength="0" NewRow="False" ReadOnly="False" RowSpan="1" Span="1" Visible="False" Width="80" />
-                        <JQTools:JQFormColumn Alignment="right" Caption="預算金額" Editor="numberbox" FieldName="BudgetAmt" Format="" Width="92" Visible="True" />
-                        <JQTools:JQFormColumn Alignment="left" Caption="主科目加總" Editor="checkbox" FieldName="IsSummary" Width="80" EditorOptions="on:1,off:0" Visible="True" Format="genCheckBox" Span="1" />
+                        <JQTools:JQFormColumn Alignment="left" Caption="主科目加總" Editor="checkbox" EditorOptions="on:1,off:0" FieldName="IsSummary" Format="genCheckBox" Span="1" Visible="False" Width="80" />
                         <JQTools:JQFormColumn Alignment="left" Caption="CreateBy" Editor="text" FieldName="CreateBy" Format="" Visible="False" Width="180" />
-                        <JQTools:JQFormColumn Alignment="left" Caption="CreateDate" Editor="datebox" FieldName="CreateDate" Format="" Width="180" Visible="False" maxlength="0" />
-                        <JQTools:JQFormColumn Alignment="left" Caption="LastUpdateBy" Editor="text" FieldName="LastUpdateBy" Format="" Width="180" Visible="False" />
-                        <JQTools:JQFormColumn Alignment="left" Caption="LastUpdateDate" Editor="datebox" FieldName="LastUpdateDate" Format="" Width="180" Visible="False" MaxLength="0" NewRow="False" ReadOnly="False" RowSpan="1" Span="1" />
+                        <JQTools:JQFormColumn Alignment="left" Caption="CreateDate" Editor="datebox" FieldName="CreateDate" Format="" maxlength="0" Visible="False" Width="180" />
+                        <JQTools:JQFormColumn Alignment="left" Caption="LastUpdateBy" Editor="text" FieldName="LastUpdateBy" Format="" Visible="False" Width="180" />
+                        <JQTools:JQFormColumn Alignment="left" Caption="LastUpdateDate" Editor="datebox" FieldName="LastUpdateDate" Format="" MaxLength="0" NewRow="False" ReadOnly="False" RowSpan="1" Span="1" Visible="False" Width="180" />
+                        <JQTools:JQFormColumn Alignment="right" Caption="01月" Editor="text" FieldName="M01" Format="N0" MaxLength="0" NewRow="False" ReadOnly="False" RowSpan="1" Span="3" Visible="True" Width="113" />
+                        <JQTools:JQFormColumn Alignment="right" Caption="02月" Editor="text" FieldName="M02" Format="N0" MaxLength="0" NewRow="False" ReadOnly="False" RowSpan="1" Span="3" Visible="True" Width="113" />
+                        <JQTools:JQFormColumn Alignment="right" Caption="03月" Editor="text" FieldName="M03" Format="N0" MaxLength="0" NewRow="False" ReadOnly="False" RowSpan="1" Span="3" Visible="True" Width="113" />
+                        <JQTools:JQFormColumn Alignment="right" Caption="04月" Editor="text" FieldName="M04" Format="N0" MaxLength="0" NewRow="False" ReadOnly="False" RowSpan="1" Span="3" Visible="True" Width="113" />
+                        <JQTools:JQFormColumn Alignment="right" Caption="05月" Editor="text" FieldName="M05" Format="N0" MaxLength="0" NewRow="False" ReadOnly="False" RowSpan="1" Span="3" Visible="True" Width="113" />
+                        <JQTools:JQFormColumn Alignment="right" Caption="06月" Editor="text" FieldName="M06" Format="N0" MaxLength="0" NewRow="False" ReadOnly="False" RowSpan="1" Span="3" Visible="True" Width="113" />
+                        <JQTools:JQFormColumn Alignment="right" Caption="07月" Editor="text" FieldName="M07" Format="N0" MaxLength="0" NewRow="False" ReadOnly="False" RowSpan="1" Span="3" Visible="True" Width="113" />
+                        <JQTools:JQFormColumn Alignment="right" Caption="08月" Editor="text" FieldName="M08" Format="N0" MaxLength="0" NewRow="False" ReadOnly="False" RowSpan="1" Span="3" Visible="True" Width="113" />
+                        <JQTools:JQFormColumn Alignment="right" Caption="09月" Editor="text" FieldName="M09" Format="N0" MaxLength="0" NewRow="False" ReadOnly="False" RowSpan="1" Span="3" Visible="True" Width="113" />
+                        <JQTools:JQFormColumn Alignment="right" Caption="10月" Editor="text" FieldName="M10" Format="N0" MaxLength="0" NewRow="False" ReadOnly="False" RowSpan="1" Span="3" Visible="True" Width="113" />
+                        <JQTools:JQFormColumn Alignment="right" Caption="11月" Editor="text" FieldName="M11" Format="N0" MaxLength="0" NewRow="False" ReadOnly="False" RowSpan="1" Span="3" Visible="True" Width="113" />
+                        <JQTools:JQFormColumn Alignment="right" Caption="12月" Editor="text" FieldName="M12" Format="N0" MaxLength="0" NewRow="False" ReadOnly="False" RowSpan="1" Span="3" Visible="True" Width="113" />
+                        <JQTools:JQFormColumn Alignment="right" Caption="預算金額" Editor="fixtext" FieldName="BudgetAmt" Format="N0" Width="113" Visible="True" Span="3" />
                     </Columns>
                 </JQTools:JQDataForm>
                 <JQTools:JQDefault ID="defaultMaster" runat="server" BindingObjectID="dataFormMaster" EnableTheming="True">
