@@ -46,17 +46,25 @@
              var CostCenterID = rowData.CostCenterID;
              var BudgetYear = $('#VoucherYear_Query').combobox('getValue');
              var EndDate = $("#EndDate_Query").datebox('getValue');
+             var IsSummary = rowData.IsSummary;
              DetailGridTitle = ' 成本中心:'+rowData.CostCenterName + ' 會計科目:' + Acno_S + '-' + rowData.AcnoName + ' ' + '入帳明細'
-             GetGridDataBookedAmt(BudgetYear, EndDate, CostCenterID, Acno_S, Acno_E);
+             GetGridDataBookedAmt(BudgetYear, EndDate, CostCenterID, Acno_S, Acno_E, IsSummary);
              return true;
          }
-         function GetGridDataBookedAmt(BudgetYear, EndDate, CostCenterID, Acno_S,Acno_E) {
+         function GetGridDataBookedAmt(BudgetYear, EndDate, CostCenterID, Acno_S, Acno_E, IsSummary) {
              var FiltStr = '';
              FiltStr = "VoucherYear = '" + BudgetYear + "'";
              FiltStr = FiltStr + " and VoucherDate <='" + EndDate + "'";
              FiltStr = FiltStr + " and CostCenterID = '" + CostCenterID + "'";
-             FiltStr = FiltStr + " and ACNO >='" + Acno_S + "' and ACNO <='" + Acno_E + "'";
-             $("#JQDataGridBookDetails").datagrid('setWhere', FiltStr);
+             //當預算科目非彙總科目時(IsSummary=0),以主科目+次科目抓取傳票明細,反之以主科目抓取明細
+             if (IsSummary == 0) {
+                 FiltStr = FiltStr + " and ACNO >='" + Acno_S + "' and ACNO <='" + Acno_E + "'";
+             }
+             else {
+
+                 FiltStr = FiltStr + " and ACNO1 >='" + Acno_S + "' and ACNO1 <='" + Acno_E + "'";
+             }
+                 $("#JQDataGridBookDetails").datagrid('setWhere', FiltStr);
              openForm('#JQDialog3', {}, "", 'dialog');
          }
 
@@ -109,7 +117,6 @@
          function GetGridDataDynamic(BudgetYear, EndDate, CostCenterID, Acno, UserID, AcnoS, AcnoE) {
              $.ajax({
                  type: "POST",
-
                  url: '../handler/jqDataHandle.ashx?RemoteName=sglYearBudget.glYearBudget',
                  data: "mode=method&method=" + "GetGridDataDynamic" + "&parameters=" + BudgetYear + "," + EndDate + "," + CostCenterID + "," + Acno + "," + AcnoS + ","+ AcnoE + "," + UserID,
                  cache: false,
@@ -125,7 +132,6 @@
                      setTimeout(function () {
                        $.messager.progress('close'); //進度條結束
                      }, 1000);
-                  
                  }
              }
           );
@@ -415,6 +421,8 @@
                     <JQTools:JQGridColumn Alignment="left" Caption="Acno_E" Editor="text" FieldName="Acno_E" Format="" MaxLength="0" Width="120" Visible="False" />
                     <JQTools:JQGridColumn Alignment="left" Caption="SubAcno_E" Editor="text" FieldName="SubAcno_E" Format="" MaxLength="0" Width="120" Visible="False" />
                     <JQTools:JQGridColumn Alignment="left" Caption="RecordType" Editor="text" FieldName="RecordType" Frozen="False" IsNvarChar="False" MaxLength="0" QueryCondition="" ReadOnly="False" Sortable="False" Visible="False" Width="80">
+                    </JQTools:JQGridColumn>
+                    <JQTools:JQGridColumn Alignment="left" Caption="IsSummary" Editor="text" FieldName="IsSummary" Frozen="False" IsNvarChar="False" MaxLength="0" QueryCondition="" ReadOnly="False" Sortable="False" Visible="False" Width="80">
                     </JQTools:JQGridColumn>
                 </Columns>
                 <TooItems>

@@ -82,29 +82,29 @@
   </String>
   <String UserId="009" UserName="程進昇">
     <Computer Name="172.19.144.1" LoginTime="2021-09-16 11:59:41" Count="1" />
-    <Computer Name="172.19.32.1" LoginTime="2021-09-27 21:39:12" Count="3" />
     <Computer Name="192.168.9.1" LoginTime="2021-09-28 17:26:34" Count="1" />
     <Computer Name="172.31.32.1" LoginTime="2021-10-13 12:32:12" Count="1" />
-    <Computer Name="::1" LoginTime="2021-01-01 20:34:56" Count="1260" />
+    <Computer Name="192.168.1.168" LoginTime="2021-09-15 13:20:25" Count="4" />
     <Computer Name="10.10.1.1" LoginTime="2021-04-10 10:49:12" Count="2" />
     <Computer Name="192.168.112.1" LoginTime="2022-01-04 09:33:56" Count="1" />
     <Computer Name="192.168.1.127" LoginTime="2021-02-20 09:41:30" Count="2" />
-    <Computer Name="192.168.56.1" LoginTime="2021-01-21 09:13:40" Count="1" />
     <Computer Name="172.22.48.1" LoginTime="2021-09-04 14:42:40" Count="1" />
     <Computer Name="172.24.112.1" LoginTime="2021-10-14 08:50:15" Count="1" />
     <Computer Name="172.26.144.1" LoginTime="2021-12-20 13:49:02" Count="1" />
     <Computer Name="192.168.1.121" LoginTime="2022-01-27 13:20:01" Count="2" />
     <Computer Name="172.27.64.1" LoginTime="2021-11-18 12:46:21" Count="1" />
     <Computer Name="172.28.128.1" LoginTime="2021-10-22 11:25:08" Count="2" />
-    <Computer Name="192.168.1.168" LoginTime="2021-09-15 13:20:25" Count="4" />
-    <Computer Name="192.168.48.1" LoginTime="2021-10-26 16:07:44" Count="1" />
+    <Computer Name="::1" LoginTime="2021-01-01 20:34:56" Count="1260" />
+    <Computer Name="169.254.8.248" LoginTime="2021-03-30 13:23:41" Count="1" />
     <Computer Name="172.20.80.1" LoginTime="2021-12-06 11:40:16" Count="1" />
     <Computer Name="172.24.240.1" LoginTime="2021-10-19 13:27:02" Count="2" />
-    <Computer Name="192.168.1.4" LoginTime="2021-03-15 21:19:02" Count="1" />
+    <Computer Name="172.17.80.1" LoginTime="2021-11-11 10:29:32" Count="1" />
+    <Computer Name="192.168.56.1" LoginTime="2021-01-21 09:13:40" Count="1" />
     <Computer Name="172.17.96.1" LoginTime="2021-11-03 10:37:04" Count="1" />
     <Computer Name="192.168.1.74" LoginTime="2022-02-09 09:43:37" Count="2" />
-    <Computer Name="169.254.8.248" LoginTime="2021-03-30 13:23:41" Count="1" />
-    <Computer Name="172.17.80.1" LoginTime="2021-11-11 10:29:32" Count="1" />
+    <Computer Name="172.19.32.1" LoginTime="2021-09-27 21:39:12" Count="3" />
+    <Computer Name="192.168.1.4" LoginTime="2021-03-15 21:19:02" Count="1" />
+    <Computer Name="192.168.48.1" LoginTime="2021-10-26 16:07:44" Count="1" />
     <Computer Name="172.20.144.1" LoginTime="2021-10-05 09:47:02" Count="2" />
   </String>
 </InfolightUsers>
