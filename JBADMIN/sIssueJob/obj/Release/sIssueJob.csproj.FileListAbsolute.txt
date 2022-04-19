@@ -13,7 +13,6 @@ C:\Program Files (x86)\Infolight\EEP2012\EEPNetServer\JBADMIN\vi-VN\sIssueJob.re
 D:\infolight\EEP2012\EEPNetServer\JBADMIN\sIssueJob.dll
 D:\infolight\EEP2012\EEPNetServer\JBADMIN\sIssueJob.pdb
 D:\infolight\EEP2012\EEPNetServer\JBADMIN\vi-VN\sIssueJob.resources.dll
-D:\infolight\EEP2012\JBADMIN\sIssueJob\obj\Release\sIssueJob.csprojResolveAssemblyReference.cache
 D:\infolight\EEP2012\JBADMIN\sIssueJob\obj\Release\sIssueJob.Component.resources
 D:\infolight\EEP2012\JBADMIN\sIssueJob\obj\Release\sIssueJob.Component.vi-VN.resources
 D:\infolight\EEP2012\JBADMIN\sIssueJob\obj\Release\sIssueJob.csproj.GenerateResource.Cache

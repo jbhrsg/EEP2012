@@ -12,6 +12,7 @@
         var sVoucherID = "";
         var iVoucherCount = 0;
         $(function () {
+            $("#VirtualColumn_Query").attr("placeholder", "請購單號、申請者工號/姓名、申請事由...");
             //報價檔 清除button
             var clearBtn1 = $("<button type='button'>").attr({ 'id': 'clearBtn1', 'href': '#', 'onclick': 'ClearPurDocVen1()' }).text("清除");
             var clearBtn2 = $("<button type='button'>").attr({ 'id': 'clearBtn2', 'href': '#', 'onclick': 'ClearPurDocVen2()' }).text("清除");
@@ -330,10 +331,19 @@
             if ($("#dataGridView").datagrid('getChecked').length == 0) {
                 alert('請勾選');
             } else {
+                
+                var row = $('#dataGridView').datagrid('getChecked');
+                var userid = getClientInfo("userid");
+
+                //檢查起單者是否為申請者
+                if (row[0].ApplyUserID != userid) {
+                    alert('您非申請者，無法起單');
+                    return false;
+                }
+
+                //起單
                 var pre = confirm("確定起單?");
                 if (pre == true) {
-                    var row = $('#dataGridView').datagrid('getChecked');
-                    var userid = getClientInfo("userid");
                     var PONO = row[0].PONO;
                     var Flowflag = row[0].Flowflag;
                     if (userid != undefined && PONO != undefined && (Flowflag == null || Flowflag == '' || Flowflag == 'X')) {
@@ -840,11 +850,15 @@
                 infolightOptions = infolightOptions.replace("commandButtons:'vud'", "commandButtons:'vu'");
                 dgView.attr("infolight-options", infolightOptions);
 
-                //暫借款 啟用
-                EnableFields("#dataFormMaster", [], ['ShortTermNO'], []);
+                //暫借款 採購說明啟用
+                EnableFields("#dataFormMaster", ['PurComment'], ['ShortTermNO'], []);
 
                 //驗收照片
                 ShowFields('#dataFormDelivery', ['AcceptancePic']);
+
+                if ($("#dataFormMasterPurComment").val() == '') {
+                    $("#dataFormMasterPurComment").val('無');
+                }
 
             } else if (parameter == "S8") {//請購者直屬主管驗收
 
@@ -1823,6 +1837,11 @@
                     return false;
                 }
 
+                if ($("#dataFormMasterPurComment").val() == '') {
+                    alert("採購說明暨驗收說明至少要填'無'");
+                    return false;
+                }
+
             } else if (parameter == 'S8' && (getEditMode($("#dataFormMaster")) == 'updated')) {//請購者主管驗收，卡填驗收人員(沒按確定)
                 var data1 = $("#dataGridDelivery").datagrid("getData");
                 var flag = true;
@@ -2287,8 +2306,8 @@
             if (parameter == "") {
                 parameter = Request.getQueryStringByName("P1");//有加密
             }
-
-            if (val != null && val != "" && !val.includes(',') && parameter=='S8') {//採購主管驗收
+            
+            if (val != null && val != "" && val.indexOf(getClientInfo('_username')) < 0 && parameter == 'S8') {//採購主管驗收 !val.includes(',')
                 return $('<a>', { href: 'javascript:void(0)', onclick: 'OnClickPaperButton(' + index + ')', style: '{ color: red }', color: 'red', fontcolor: 'red' }).linkbutton({ width: '200', text: '請點此驗收', color: 'red' })[0].outerHTML;
             }
             else {
@@ -3358,12 +3377,15 @@
                     <JQTools:JQGridColumn Alignment="left" Caption="申請部門" Editor="infocombobox" FieldName="ApplyOrg_NO" Format="" MaxLength="20" Visible="true" Width="80" EditorOptions="valueField:'ORG_NO',textField:'ORG_DESC',remoteName:'sPO_Normal_PRPOIQC.SYS_ORG',tableName:'SYS_ORG',pageSize:'-1',checkData:false,selectOnly:false,cacheRelationText:false,panelHeight:200" Sortable="True" />
                     <JQTools:JQGridColumn Alignment="left" Caption="Org_NOParent" Editor="text" FieldName="Org_NOParent" Format="" MaxLength="20" Visible="False" Width="120" />
                     <JQTools:JQGridColumn Alignment="left" Caption="物品類別" Editor="infocombobox" FieldName="ItemTypeID" Format="" Visible="true" Width="120" EditorOptions="valueField:'ItemTypeID',textField:'ItemTypeName',remoteName:'sPO_Normal_PRPOIQC.ItemType',tableName:'ItemType',pageSize:'-1',checkData:false,selectOnly:false,cacheRelationText:false,panelHeight:200" MaxLength="80" />
-                    <JQTools:JQGridColumn Alignment="left" Caption="建立者" Editor="text" FieldName="CreateBy" Format="" MaxLength="20" Visible="true" Width="50" />
-                    <JQTools:JQGridColumn Alignment="left" Caption="建立日期" Editor="text" FieldName="CreateDate" Format="yyyy-mm-dd" Visible="true" Width="80" />
-                    <JQTools:JQGridColumn Alignment="left" Caption="修改者" Editor="text" FieldName="LastUpdateBy" Format="" MaxLength="20" Visible="False" Width="120" />
-                    <JQTools:JQGridColumn Alignment="left" Caption="修改日期" Editor="datebox" FieldName="LastUpdateDate" Format="" Visible="False" Width="120" />
-                    <JQTools:JQGridColumn Alignment="left" Caption="ResponsibleGROUPID" Editor="text" FieldName="ResponsibleGROUPID" Format="" MaxLength="0" Visible="False" Width="120" />
-                    <JQTools:JQGridColumn Alignment="left" Caption="採購說明" Editor="text" FieldName="PurComment" Width="50" MaxLength="512" Visible="False" />
+                    <JQTools:JQGridColumn Alignment="left" Caption="採購總金額" Editor="numberbox" FieldName="PurTotalAmount1" Frozen="False" IsNvarChar="False" MaxLength="0" QueryCondition="" ReadOnly="False" Sortable="False" Visible="True" Width="70">
+                    </JQTools:JQGridColumn>
+                    <JQTools:JQGridColumn Alignment="left" Caption="建立者" Editor="text" FieldName="CreateBy" Format="" Visible="true" Width="50" MaxLength="20" />
+                    <JQTools:JQGridColumn Alignment="left" Caption="建立日期" Editor="text" FieldName="CreateDate" Format="yyyy-mm-dd" MaxLength="0" Visible="True" Width="80" />
+                    <JQTools:JQGridColumn Alignment="left" Caption="修改者" Editor="text" FieldName="LastUpdateBy" Format="" Visible="False" Width="120" MaxLength="20" />
+                    <JQTools:JQGridColumn Alignment="left" Caption="修改日期" Editor="datebox" FieldName="LastUpdateDate" Format="" MaxLength="0" Visible="False" Width="120" />
+                    <JQTools:JQGridColumn Alignment="left" Caption="ResponsibleGROUPID" Editor="text" FieldName="ResponsibleGROUPID" Width="120" MaxLength="0" Visible="False" Format="" />
+                    <JQTools:JQGridColumn Alignment="left" Caption="採購說明" Editor="text" FieldName="PurComment" Frozen="False" IsNvarChar="False" MaxLength="512" QueryCondition="" ReadOnly="False" Sortable="False" Visible="False" Width="50">
+                    </JQTools:JQGridColumn>
                 </Columns>
                 <TooItems>
                     <JQTools:JQToolItem Icon="icon-add" ItemType="easyui-linkbutton"
@@ -3381,10 +3403,10 @@
                 </TooItems>
                 <QueryColumns>
                     <JQTools:JQQueryColumn AndOr="and" Caption="成本中心" Condition="=" DataType="string" Editor="infocombobox" FieldName="CostCenterID" IsNvarChar="False" NewLine="False" RemoteMethod="False" RowSpan="0" Span="0" Width="125" EditorOptions="valueField:'CostCenterID',textField:'CostCenterName',remoteName:'sPO_Normal_PRPOIQC.glCostCenter',tableName:'glCostCenter',pageSize:'-1',checkData:false,selectOnly:false,cacheRelationText:false,panelHeight:200" TableName="POMaster" />
-                    <JQTools:JQQueryColumn AndOr="and" Caption="申請日期起訖" Condition="&gt;=" DataType="string" Editor="datebox" FieldName="ApplyDate" IsNvarChar="False" NewLine="False" RemoteMethod="False" RowSpan="0" Span="0" Width="125" />
-                    <JQTools:JQQueryColumn AndOr="and" Caption="流程作業名稱" Condition="=" DataType="string" Editor="infocombobox" EditorOptions="items:[{value:'',text:'',selected:'false'},{value:'請購者申請',text:'請購者申請',selected:'false'},{value:'資料與備品確認',text:'資料與備品確認',selected:'false'},{value:'請購者主管審核',text:'請購者主管審核',selected:'false'},{value:'請購者主管審核_',text:'請購者主管審核_',selected:'false'},{value:'採購作業',text:'採購作業',selected:'false'},{value:'採購主管審核',text:'採購主管審核',selected:'false'},{value:'採購主管審核_',text:'採購主管審核_',selected:'false'},{value:'請購者交期安排',text:'請購者交期安排',selected:'false'},{value:'請購者驗收',text:'請購者驗收',selected:'false'},{value:'請購者主管驗收',text:'請購者主管驗收',selected:'false'},{value:'採購結帳',text:'採購結帳',selected:'false'},{value:'會計審核',text:'會計審核',selected:'false'},{value:'結案通知',text:'結案通知',selected:'false'}],checkData:false,selectOnly:false,cacheRelationText:false,panelHeight:200" FieldName="D_STEP_ID" IsNvarChar="False" NewLine="False" RemoteMethod="False" RowSpan="0" Span="0" Width="125" />
+                    <JQTools:JQQueryColumn AndOr="and" Caption="申請日期起始" Condition="&gt;=" DataType="string" Editor="datebox" FieldName="ApplyDate" IsNvarChar="False" NewLine="False" RemoteMethod="False" RowSpan="0" Span="0" Width="125" />
+                    <JQTools:JQQueryColumn AndOr="and" Caption="流程作業名稱" Condition="=" DataType="string" Editor="infocombobox" EditorOptions="items:[{value:'',text:'',selected:'false'},{value:'請購者申請',text:'請購者申請',selected:'false'},{value:'資料與備品確認',text:'資料與備品確認',selected:'false'},{value:'請購者主管審核',text:'請購者主管審核',selected:'false'},{value:'請購者主管審核_',text:'請購者主管審核_',selected:'false'},{value:'採購作業',text:'採購作業',selected:'false'},{value:'採購主管審核',text:'採購主管審核',selected:'false'},{value:'採購主管審核_',text:'採購主管審核_',selected:'false'},{value:'請購者交期安排',text:'請購者交期安排',selected:'false'},{value:'請購者驗收',text:'請購者驗收',selected:'false'},{value:'請購者主管驗收',text:'請購者主管驗收',selected:'false'},{value:'採購結帳',text:'採購結帳',selected:'false'},{value:'會計審核',text:'會計審核',selected:'false'},{value:'結案通知',text:'結案通知',selected:'false'}],checkData:false,selectOnly:false,cacheRelationText:false,panelHeight:200" FieldName="D_STEP_ID" IsNvarChar="False" NewLine="False" RemoteMethod="False" RowSpan="0" Span="0" Width="134" />
                     <JQTools:JQQueryColumn AndOr="and" Caption="公司別" Condition="=" DataType="string" Editor="infocombobox" EditorOptions="valueField:'InsGroupID',textField:'InsGroupShortName',remoteName:'sPO_Normal_PRPOIQC.InsGroup',tableName:'InsGroup',pageSize:'-1',checkData:true,selectOnly:false,cacheRelationText:false,panelHeight:200" FieldName="InsGroupID" IsNvarChar="False" NewLine="False" RemoteMethod="False" RowSpan="0" Span="0" Width="125" />
-                    <JQTools:JQQueryColumn AndOr="and" Caption="請購單號、申請者工號或姓名、請購說明" Condition="%" DataType="string" Editor="text" FieldName="VirtualColumn" IsNvarChar="False" NewLine="True" RemoteMethod="False" RowSpan="0" Span="2" Width="300" />
+                    <JQTools:JQQueryColumn AndOr="and" Caption="請購單搜尋" Condition="%" DataType="string" Editor="text" FieldName="VirtualColumn" IsNvarChar="False" NewLine="True" RemoteMethod="False" RowSpan="0" Span="2" Width="318" />
                     <JQTools:JQQueryColumn AndOr="and" Caption="物品名稱" Condition="%" DataType="string" Editor="text" FieldName="VirtualColumn1" IsNvarChar="False" NewLine="False" RemoteMethod="False" RowSpan="0" Span="1" Width="125" />
                     <JQTools:JQQueryColumn AndOr="and" Caption="補單" Condition="=" DataType="number" Editor="infocombobox" FieldName="IsAdd" IsNvarChar="False" NewLine="False" RemoteMethod="False" RowSpan="0" Span="1" Width="125" EditorOptions="items:[{value:'',text:'',selected:'false'},{value:'1',text:'有',selected:'false'},{value:'0',text:'無',selected:'false'}],checkData:false,selectOnly:false,cacheRelationText:false,panelHeight:200" />
                 </QueryColumns>
@@ -3419,7 +3441,7 @@
                             <JQTools:JQFormColumn Alignment="left" Caption="報價檔2" Editor="infofileupload" FieldName="PurDocVen2" Format="" Width="120" EditorOptions="filter:'',isAutoNum:true,upLoadFolder:'JB_ADMIN/PO_Normal_PRPOIQC/PurDocVen2',showButton:true,showLocalFile:false,onSuccess:DFDPurDocVen2_OnSuccess,fileSizeLimited:'20000'" NewRow="False" Span="2" maxlength="0" ReadOnly="False" Visible="True" />
                             <JQTools:JQFormColumn Alignment="left" Caption="報價廠商3" Editor="inforefval" FieldName="PurVendor3" Format="" Width="180" EditorOptions="title:'廠商',panelWidth:560,panelHeight:200,remoteName:'sPO_Normal_PRPOIQC.Vendors',tableName:'Vendors',columns:[{field:'VendName',title:'名稱',width:90,align:'left',table:'',isNvarChar:false,queryCondition:''},{field:'ContactName',title:'聯絡人',width:90,align:'left',table:'',isNvarChar:false,queryCondition:''},{field:'ContactTelArea',title:'區碼',width:90,align:'left',table:'',isNvarChar:false,queryCondition:''},{field:'ContactTel',title:'電話',width:90,align:'left',table:'',isNvarChar:false,queryCondition:''},{field:'ContactTelExt',title:'分機',width:90,align:'left',table:'',isNvarChar:false,queryCondition:''},{field:'ContactMobile',title:'聯絡人手機',width:90,align:'left',table:'',isNvarChar:false,queryCondition:''}],columnMatches:[],whereItems:[],valueField:'VendID',textField:'VendName',valueFieldCaption:'廠商ID',textFieldCaption:'廠商名稱',cacheRelationText:false,checkData:true,showValueAndText:false,dialogCenter:false,selectOnly:false,capsLock:'none',fixTextbox:'false'" Span="1" NewRow="True" maxlength="0" ReadOnly="False" />
                             <JQTools:JQFormColumn Alignment="left" Caption="報價檔3" Editor="infofileupload" FieldName="PurDocVen3" Format="" Span="2" Width="120" EditorOptions="filter:'',isAutoNum:true,upLoadFolder:'JB_ADMIN/PO_Normal_PRPOIQC/PurDocVen3',showButton:true,showLocalFile:false,onSuccess:DFDPurDocVen3_OnSuccess,fileSizeLimited:'20000'" NewRow="False" maxlength="0" ReadOnly="False" />
-                        <JQTools:JQFormColumn Alignment="left" Caption="採購說明" Editor="textarea" FieldName="PurComment" Format="" Width="658" EditorOptions="height:40" Span="3" NewRow="True" maxlength="0" ReadOnly="False" RowSpan="1" Visible="True" />    
+                        <JQTools:JQFormColumn Alignment="left" Caption="採購說明暨驗收說明" Editor="textarea" FieldName="PurComment" Format="" Width="658" EditorOptions="height:40" Span="3" NewRow="True" maxlength="0" ReadOnly="False" RowSpan="1" Visible="True" />    
                         <JQTools:JQFormColumn Alignment="left" Caption="採購說明檔" Editor="infofileupload" FieldName="PurCommentFile" Width="658" maxlength="0" ReadOnly="False" NewRow="False" Span="3" RowSpan="1" Visible="True" EditorOptions="filter:'',isAutoNum:true,upLoadFolder:'JB_ADMIN/PO_Normal_PRPOIQC/PurCommentFile',showButton:true,showLocalFile:false,onSuccess:dataFormMasterPurCommentFile_OnSuccess,fileSizeLimited:'20000'" />
 
 
