@@ -1,0 +1,9 @@
+D:\Infolight\EEP2012\JBADMIN\sSYSMenusGroups\bin\Release\sSYSMenusGroups.dll
+D:\Infolight\EEP2012\JBADMIN\sSYSMenusGroups\bin\Release\sSYSMenusGroups.pdb
+D:\Infolight\EEP2012\JBADMIN\sSYSMenusGroups\obj\Release\sSYSMenusGroups.csproj.GenerateResource.Cache
+D:\Infolight\EEP2012\JBADMIN\sSYSMenusGroups\obj\Release\sSYSMenusGroups.dll
+D:\Infolight\EEP2012\JBADMIN\sSYSMenusGroups\obj\Release\sSYSMenusGroups.pdb
+D:\Infolight\EEP2012\EEPNetServer\JBADMIN\sSYSMenusGroups.dll
+D:\Infolight\EEP2012\EEPNetServer\JBADMIN\sSYSMenusGroups.pdb
+D:\Infolight\EEP2012\JBADMIN\sSYSMenusGroups\obj\Release\sSYSMenusGroups.Component.resources
+D:\Infolight\EEP2012\JBADMIN\sSYSMenusGroups\obj\Release\sSYSMenusGroups.csprojResolveAssemblyReference.cache

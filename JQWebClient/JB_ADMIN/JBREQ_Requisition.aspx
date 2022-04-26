@@ -12,7 +12,28 @@
         var iVoucherCount = 0;
         var backcolor = "#cbf1de"
         $(document).ready(function () {
-
+            //檢查預付日期
+            $("#dataFormMasterPlanPayDate").datebox({
+                onSelect: function () {
+                    var EmpID = $("#dataFormMasterEmployeeID").val();
+                    if (EmpID == "") {
+                        return true;
+                    }
+                    var kk = $("#dataFormMasterPlanPayDate").datebox('getValue');
+                    var sday= kk.substring(kk.length - 2, kk.length);
+                    if (sday!=10 && sday!=25){
+                        if (sday <= 15) {
+                            var sdate = kk.substring(0, 7) + "/" + "10"
+                        }
+                        else {
+                            var sdate = kk.substring(0, 7) + "/" + "25"
+                        }
+                        alert('提示:當受款人為員工時,預付日期僅限每月10、25日,系統將帶入'+sdate);
+                        $("#dataFormMasterPlanPayDate").datebox('setValue', sdate);
+                        return true;
+                    }
+                }
+            });
             //設定欄位Caption 變顏色
             var flagIDs = ['#dataFormMasterIsUrgentPay', '#dataFormMasterIsNotPayDate'];
             $(flagIDs.toString()).each(function () {
@@ -195,7 +216,17 @@
                 $("#dataFormMasterPlanPayDate").focus();
                 return false;
             }
-
+            //預付日期每月10,20檢查
+            var EmpID = $("#dataFormMasterEmployeeID").val();
+            if (EmpID != "") {
+                var dstr = $("#dataFormMasterPlanPayDate").datebox('getValue');
+                var sday = dstr.substring(dstr.length - 2, dstr.length);
+                if (sday != 10 && sday != 25) {
+                    alert('注意!!,預付日期僅限每月10,25日');
+                    $("#dataFormMasterPlanPayDate").focus();
+                    return false;
+                }
+            }
             var dataFormMasterPayTypeID = $("#dataFormMasterPayTypeID").combobox('getValue');
             if (dataFormMasterPayTypeID == "" || dataFormMasterPayTypeID == undefined) {
                 alert('注意!!,未選取付款方式,請選取');
@@ -420,6 +451,7 @@
         }
         //當選取客戶時,重新設定付款條件與付款方式並改變預付日期
         function GetPayTerm(rowData) {
+            $("#dataFormMasterEmployeeID").val(rowData.Employee_ID);
             $("#dataFormMasterPayTermID").combobox('setValue', rowData.PayTermID);
             $("#dataFormMasterPayTypeID").combobox('setValue', rowData.PayTypeID);
             if (rowData.PayTypeID == 2) {
@@ -427,10 +459,10 @@
                 $("#dataFormMasterRemit").val(rowData.Remit); //text給值
                }
               else
-               {
-                    $("#dataFormMasterIsRemit").checkbox('setValue',0);
-                    $("#dataFormMasterRemitType").combobox('setValue', "");
-                    $("#dataFormMasterRemit").val(0); //text給值
+            {
+                $("#dataFormMasterIsRemit").checkbox('setValue',0);
+                    //$("#dataFormMasterRemitType").combobox('setValue', " ");
+                $("#dataFormMasterRemit").val(0); //text給值
             }
             return true;
         }
@@ -919,7 +951,6 @@
 
         //========================================= dataFormVoucher ====================================================================================        
         function OnLoadSuccessDFMaster() {
-
             if (getEditMode($("#dataFormVoucher")) == 'viewed') {
                 $('#dataFormDetail').hide();
             } else $('#dataFormDetail').show();
@@ -1255,6 +1286,11 @@
             $("#dataFormDetailSubAcno").combobox('setValue', SubAcno);
             closeForm('#JQDialogToolTip');
         }
+        function right(str, num) {
+            return str.substring(str.length - num, str.length);
+        }
+       
+
     </script>
 
 </head>
@@ -1264,7 +1300,7 @@
             <JQTools:JQScriptManager ID="JQScriptManager1" runat="server" />
             <JQTools:JQDataGrid ID="dataGridView" data-options="pagination:true,view:commandview" RemoteName="sRequisition.Requisition" runat="server" AutoApply="True"
                 DataMember="Requisition" Pagination="True" QueryTitle="Query" EditDialogID="JQDialog1"
-                Title="" AllowAdd="True" AllowDelete="True" AllowUpdate="True" AlwaysClose="False" CheckOnSelect="True" ColumnsHibeable="False" DeleteCommandVisible="True" DuplicateCheck="False" EditMode="Dialog" EditOnEnter="True" InsertCommandVisible="True" MultiSelect="False" PageList="10,20,30,40,50" PageSize="10" QueryAutoColumn="False" QueryLeft="" QueryMode="Window" QueryTop="" RecordLock="False" RecordLockMode="None" TotalCaption="Total:" UpdateCommandVisible="True" ViewCommandVisible="True">
+                Title="" AllowAdd="True" AllowDelete="True" AllowUpdate="True" AlwaysClose="False" CheckOnSelect="True" ColumnsHibeable="False" DeleteCommandVisible="True" DuplicateCheck="False" EditMode="Dialog" EditOnEnter="True" InsertCommandVisible="True" MultiSelect="False" PageList="10,20,30,40,50" PageSize="10" QueryAutoColumn="False" QueryLeft="" QueryMode="Window" QueryTop="" RecordLock="False" RecordLockMode="None" TotalCaption="Total:" UpdateCommandVisible="True" ViewCommandVisible="True" BufferView="False" NotInitGrid="False" RowNumbers="True">
                 <Columns>
                     <JQTools:JQGridColumn Alignment="left" Caption="RequisitionNO" Editor="text" FieldName="RequisitionNO" Format="" MaxLength="0" Width="120" />
                     <JQTools:JQGridColumn Alignment="left" Caption="ApplyOrg_NO" Editor="text" FieldName="ApplyOrg_NO" Format="" MaxLength="0" Width="120" />
@@ -1279,6 +1315,8 @@
                     <JQTools:JQGridColumn Alignment="left" Caption="PayTo" Editor="text" FieldName="PayTo" Format="" MaxLength="0" Width="120" />
                     <JQTools:JQGridColumn Alignment="left" Caption="PayToNotes" Editor="text" FieldName="PayToNotes" Format="" MaxLength="0" Width="120" />
                     <JQTools:JQGridColumn Alignment="left" Caption="CompanyID" Editor="numberbox" FieldName="CompanyID" Frozen="False" MaxLength="0" QueryCondition="" ReadOnly="False" Sortable="False" Visible="True" Width="80" />
+                    <JQTools:JQGridColumn Alignment="left" Caption="EmployeeID" Editor="text" FieldName="EmployeeID" Frozen="False" IsNvarChar="False" MaxLength="0" QueryCondition="" ReadOnly="False" Sortable="False" Visible="False" Width="80">
+                    </JQTools:JQGridColumn>
                 </Columns>
                 <TooItems>
                     <JQTools:JQToolItem Icon="icon-add" ItemType="easyui-linkbutton"
@@ -1321,7 +1359,7 @@
                         <JQTools:JQFormColumn Alignment="left" Caption="受款人" Editor="inforefval" EditorOptions="title:'廠商與員工搜尋',panelWidth:540,panelHeight:240,remoteName:'sRequisition.Vendor',tableName:'Vendor',columns:[{field:'Employee_ID',title:'員工代號',width:120,align:'left',table:'',isNvarChar:false,queryCondition:''},{field:'VendName',title:'廠商/員工姓名',width:200,align:'left',table:'',isNvarChar:false,queryCondition:''},{field:'VendShortName',title:'廠商簡稱',width:160,align:'left',table:'',isNvarChar:false,queryCondition:''}],columnMatches:[],whereItems:[],valueField:'VendID',textField:'VendShortName',valueFieldCaption:'VendID',textFieldCaption:'VendShortName',cacheRelationText:true,checkData:false,showValueAndText:false,dialogCenter:false,onSelect:GetPayTerm,selectOnly:true,capsLock:'none',fixTextbox:'false'" FieldName="PayTo" Format="" Width="130" maxlength="0" Visible="True" ReadOnly="False" />
                         <JQTools:JQFormColumn Alignment="left" Caption="付款方式" Editor="infocombobox" EditorOptions="valueField:'PayTypeID',textField:'PayTypeName',remoteName:'sRequisition.PayType',tableName:'PayType',pageSize:'-1',checkData:true,selectOnly:true,cacheRelationText:false,onSelect:GetPayType,panelHeight:200" FieldName="PayTypeID" Format="" Width="103" Visible="True" Span="1" />
                         <JQTools:JQFormColumn Alignment="left" Caption="付款條件" Editor="infocombobox" FieldName="PayTermID" Width="95" Format="" EditorOptions="valueField:'PayTermID',textField:'PayTermName',remoteName:'sRequisition.PayTerm',tableName:'PayTerm',pageSize:'-1',checkData:true,selectOnly:true,cacheRelationText:false,onSelect:GetPayDateByTerm,panelHeight:200" Visible="True" Span="1" MaxLength="0" NewRow="False" ReadOnly="False" RowSpan="1"/>
-                        <JQTools:JQFormColumn Alignment="left" Caption="預付日期" Editor="datebox" FieldName="PlanPayDate" ReadOnly="False" Span="1" Visible="True" Width="133" EditorOptions="" Format="yyyy/mm/dd" />
+                        <JQTools:JQFormColumn Alignment="left" Caption="預付日期" Editor="datebox" FieldName="PlanPayDate" ReadOnly="False" Span="1" Visible="True" Width="133" EditorOptions="" Format="yyyy/mm/dd" OnBlur="PlanPayDateOnBlur" />
                         <JQTools:JQFormColumn Alignment="left" Caption="匯費金額" Editor="text" FieldName="Remit" MaxLength="0" NewRow="False" ReadOnly="True" RowSpan="1" span="2" Visible="True" Width="96" />
                         <JQTools:JQFormColumn Alignment="left" Caption="緊急付款" Editor="checkbox" FieldName="IsUrgentPay" MaxLength="0" NewRow="False" ReadOnly="True" RowSpan="1" Span="1" Visible="False" Width="80" />
                         <JQTools:JQFormColumn Alignment="left" Caption="非付款日付款" Editor="checkbox" FieldName="IsNotPayDate" Span="1" Width="80" Visible="False" MaxLength="0" NewRow="False" ReadOnly="True" RowSpan="1" />
@@ -1336,6 +1374,7 @@
                         <JQTools:JQFormColumn Alignment="left" Caption="解除設定" Editor="checkbox" FieldName="unlock" MaxLength="0" NewRow="False" ReadOnly="False" RowSpan="1" Span="1" Visible="True" Width="15" />
                         <JQTools:JQFormColumn Alignment="left" Caption="Acno" Editor="text" FieldName="Acno" MaxLength="0" NewRow="False" ReadOnly="False" RowSpan="1" Span="1" Visible="False" Width="80" />
                         <JQTools:JQFormColumn Alignment="left" Caption="SubAcno" Editor="text" FieldName="SubAcno" MaxLength="0" NewRow="False" ReadOnly="False" RowSpan="1" Span="1" Visible="False" Width="80" />
+                        <JQTools:JQFormColumn Alignment="left" Caption="EmployeeID" Editor="text" FieldName="EmployeeID" MaxLength="0" NewRow="False" ReadOnly="False" RowSpan="1" Span="1" Visible="False" Width="80" />
                     </Columns>
                 </JQTools:JQDataForm>
                 <JQTools:JQDefault ID="defaultMaster" runat="server" BindingObjectID="dataFormMaster" EnableTheming="True">

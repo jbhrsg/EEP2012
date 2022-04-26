@@ -106,7 +106,7 @@
                      </JQTools:JQGridColumn>
                      <JQTools:JQGridColumn Alignment="left" Caption="所得給付日期" Editor="text" FieldName="GetDay" Frozen="False" IsNvarChar="False" MaxLength="0" QueryCondition="" ReadOnly="False" Sortable="False" Visible="True" Width="80">
                      </JQTools:JQGridColumn>
-                     <JQTools:JQGridColumn Alignment="left" Caption="所得類別" Editor="text" FieldName="InComeType" Frozen="False" IsNvarChar="False" MaxLength="0" QueryCondition="" ReadOnly="False" Sortable="False" Visible="True" Width="60">
+                     <JQTools:JQGridColumn Alignment="center" Caption="所得類別" Editor="text" FieldName="InComeType" Frozen="False" IsNvarChar="False" MaxLength="0" QueryCondition="" ReadOnly="False" Sortable="False" Visible="True" Width="60">
                      </JQTools:JQGridColumn>
                      <JQTools:JQGridColumn Alignment="left" Caption="給付當月投保金額" Editor="text" FieldName="Note1" Frozen="False" IsNvarChar="False" MaxLength="0" QueryCondition="" ReadOnly="False" Sortable="False" Visible="True" Width="80">
                      </JQTools:JQGridColumn>
@@ -124,9 +124,9 @@
                      </JQTools:JQGridColumn>
                      <JQTools:JQGridColumn Alignment="left" Caption="特殊註記" DrillObjectID="" Editor="text" FieldName="Note8" Frozen="False" IsNvarChar="False" MaxLength="0" QueryCondition="" ReadOnly="False" Sortable="False" Visible="True" Width="60">
                      </JQTools:JQGridColumn>
-                     <JQTools:JQGridColumn Alignment="right" Caption="所得收入給付金額" Editor="text" FieldName="Income" Format="N0" Frozen="False" IsNvarChar="False" MaxLength="0" QueryCondition="" ReadOnly="False" Sortable="False" Visible="True" Width="110">
+                     <JQTools:JQGridColumn Alignment="right" Caption="所得收入給付金額" Editor="text" FieldName="Income" Format="" Frozen="False" IsNvarChar="False" MaxLength="0" QueryCondition="" ReadOnly="False" Sortable="False" Visible="True" Width="110">
                      </JQTools:JQGridColumn>
-                     <JQTools:JQGridColumn Alignment="right" Caption="扣繳補充保險費金額" Editor="text" FieldName="NHI2Amount" Format="N0" Frozen="False" IsNvarChar="False" MaxLength="0" QueryCondition="" ReadOnly="False" Sortable="False" Visible="True" Width="110">
+                     <JQTools:JQGridColumn Alignment="right" Caption="扣繳補充保險費金額" Editor="text" FieldName="NHI2Amount" Format="" Frozen="False" IsNvarChar="False" MaxLength="0" QueryCondition="" ReadOnly="False" Sortable="False" Visible="True" Width="110">
                      </JQTools:JQGridColumn>
                  </Columns>
                  <TooItems>

@@ -53,9 +53,6 @@
   <String UserId="438" UserName="萬貽惠">
     <Computer Name="::1" LoginTime="2021-10-29 10:28:21" Count="2" />
   </String>
-  <String UserId="001" UserName="張凱雄">
-    <Computer Name="::1" LoginTime="2021-01-21 22:55:56" Count="15" />
-  </String>
   <String UserId="509" UserName="陳冠旭">
     <Computer Name="::1" LoginTime="2022-03-17 13:50:26" Count="1" />
   </String>
@@ -80,12 +77,15 @@
   <String UserId="335" UserName="吳椿捷">
     <Computer Name="::1" LoginTime="2021-10-26 16:00:06" Count="26" />
   </String>
+  <String UserId="001" UserName="張凱雄">
+    <Computer Name="::1" LoginTime="2021-01-21 22:55:56" Count="20" />
+  </String>
   <String UserId="009" UserName="程進昇">
     <Computer Name="172.19.144.1" LoginTime="2021-09-16 11:59:41" Count="1" />
     <Computer Name="172.19.32.1" LoginTime="2021-09-27 21:39:12" Count="3" />
     <Computer Name="192.168.9.1" LoginTime="2021-09-28 17:26:34" Count="1" />
     <Computer Name="172.31.32.1" LoginTime="2021-10-13 12:32:12" Count="1" />
-    <Computer Name="::1" LoginTime="2021-01-01 20:34:56" Count="1262" />
+    <Computer Name="::1" LoginTime="2021-01-01 20:34:56" Count="1287" />
     <Computer Name="10.10.1.1" LoginTime="2021-04-10 10:49:12" Count="2" />
     <Computer Name="192.168.112.1" LoginTime="2022-01-04 09:33:56" Count="1" />
     <Computer Name="192.168.1.127" LoginTime="2021-02-20 09:41:30" Count="2" />
@@ -102,7 +102,7 @@
     <Computer Name="172.24.240.1" LoginTime="2021-10-19 13:27:02" Count="2" />
     <Computer Name="192.168.1.4" LoginTime="2021-03-15 21:19:02" Count="1" />
     <Computer Name="172.17.96.1" LoginTime="2021-11-03 10:37:04" Count="1" />
-    <Computer Name="192.168.1.74" LoginTime="2022-02-09 09:43:37" Count="2" />
+    <Computer Name="192.168.1.74" LoginTime="2022-04-25 15:15:29" Count="1" />
     <Computer Name="169.254.8.248" LoginTime="2021-03-30 13:23:41" Count="1" />
     <Computer Name="172.17.80.1" LoginTime="2021-11-11 10:29:32" Count="1" />
     <Computer Name="172.20.144.1" LoginTime="2021-10-05 09:47:02" Count="2" />

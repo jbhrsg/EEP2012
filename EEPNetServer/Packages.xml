@@ -98,6 +98,7 @@
     <PackageFile Name="sPettyCashYM.dll" Active="1" />
     <PackageFile Name="sPO_Normal_PRPOIQC.dll" Active="1" />
     <PackageFile Name="sPO_POType.dll" Active="1" />
+    <PackageFile Name="sPO_Setting_Item.dll" Active="1" />
     <PackageFile Name="sPOType.dll" Active="1" />
     <PackageFile Name="sR_SalesDetails.dll" Active="1" />
     <PackageFile Name="sReferencesADM.dll" Active="1" />
@@ -121,7 +122,7 @@
     <PackageFile Name="sSYS_TodoList.dll" Active="1" />
     <PackageFile Name="sTrainingForm.dll" Active="1" />
     <PackageFile Name="sVendors.dll" Active="1" />
-    <PackageFile Name="sPO_Setting_Item.dll" Active="1" />
+    <PackageFile Name="sSYSMenusGroups.dll" Active="1" />
   </JBADMIN>
   <WENETGROUP>
     <PackageFile Name="_CON_Code_Center.dll" Active="1" />
