@@ -1,0 +1,6 @@
+D:\Infolight\EEP2012\JBADMIN\sSalesTransSys\bin\Release\sSalesTransSys.dll
+D:\Infolight\EEP2012\JBADMIN\sSalesTransSys\bin\Release\sSalesTransSys.pdb
+D:\Infolight\EEP2012\JBADMIN\sSalesTransSys\obj\Release\sSalesTransSys.Component.resources
+D:\Infolight\EEP2012\JBADMIN\sSalesTransSys\obj\Release\sSalesTransSys.csproj.GenerateResource.Cache
+D:\Infolight\EEP2012\JBADMIN\sSalesTransSys\obj\Release\sSalesTransSys.dll
+D:\Infolight\EEP2012\JBADMIN\sSalesTransSys\obj\Release\sSalesTransSys.pdb

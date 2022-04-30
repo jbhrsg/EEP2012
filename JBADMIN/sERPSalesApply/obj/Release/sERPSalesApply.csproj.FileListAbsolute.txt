@@ -12,3 +12,13 @@ C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sERPSalesApply\obj\Release\sERP
 C:\Program Files (x86)\Infolight\EEP2012\EEPNetServer\JBADMIN\sERPSalesApply.dll
 C:\Program Files (x86)\Infolight\EEP2012\EEPNetServer\JBADMIN\sERPSalesApply.pdb
 C:\Program Files (x86)\Infolight\EEP2012\EEPNetServer\JBADMIN\vi-VN\sERPSalesApply.resources.dll
+D:\Infolight\EEP2012\EEPNetServer\JBADMIN\sERPSalesApply.dll
+D:\Infolight\EEP2012\EEPNetServer\JBADMIN\sERPSalesApply.pdb
+D:\Infolight\EEP2012\EEPNetServer\JBADMIN\vi-VN\sERPSalesApply.resources.dll
+D:\Infolight\EEP2012\JBADMIN\sERPSalesApply\obj\Release\sERPSalesApply.Component.resources
+D:\Infolight\EEP2012\JBADMIN\sERPSalesApply\obj\Release\sERPSalesApply.Component.vi-VN.resources
+D:\Infolight\EEP2012\JBADMIN\sERPSalesApply\obj\Release\sERPSalesApply.csproj.GenerateResource.Cache
+D:\Infolight\EEP2012\JBADMIN\sERPSalesApply\obj\Release\vi-VN\sERPSalesApply.resources.dll
+D:\Infolight\EEP2012\JBADMIN\sERPSalesApply\obj\Release\sERPSalesApply.dll
+D:\Infolight\EEP2012\JBADMIN\sERPSalesApply\obj\Release\sERPSalesApply.pdb
+D:\Infolight\EEP2012\JBADMIN\sERPSalesApply\obj\Release\sERPSalesApply.csprojResolveAssemblyReference.cache

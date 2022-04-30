@@ -7,3 +7,11 @@ C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sHRMAttendOverTime\obj\Release\
 C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sHRMAttendOverTime\obj\Release\sHRMAttendOverTime.csproj.GenerateResource.Cache
 C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sHRMAttendOverTime\obj\Release\sHRMAttendOverTime.dll
 C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sHRMAttendOverTime\obj\Release\sHRMAttendOverTime.pdb
+D:\Infolight\EEP2012\JBADMIN\sHRMAttendOverTime\bin\Release\sHRMAttendOverTime.dll
+D:\Infolight\EEP2012\JBADMIN\sHRMAttendOverTime\bin\Release\sHRMAttendOverTime.pdb
+D:\Infolight\EEP2012\JBADMIN\sHRMAttendOverTime\bin\Release\Newtonsoft.Json.dll
+D:\Infolight\EEP2012\JBADMIN\sHRMAttendOverTime\bin\Release\Newtonsoft.Json.xml
+D:\Infolight\EEP2012\JBADMIN\sHRMAttendOverTime\obj\Release\sHRMAttendOverTime.Component.resources
+D:\Infolight\EEP2012\JBADMIN\sHRMAttendOverTime\obj\Release\sHRMAttendOverTime.csproj.GenerateResource.Cache
+D:\Infolight\EEP2012\JBADMIN\sHRMAttendOverTime\obj\Release\sHRMAttendOverTime.dll
+D:\Infolight\EEP2012\JBADMIN\sHRMAttendOverTime\obj\Release\sHRMAttendOverTime.pdb

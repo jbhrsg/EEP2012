@@ -1,0 +1,6 @@
+D:\Infolight\EEP2012\JBADMIN\sShortTermQuery\bin\Release\sShortTermQuery.dll
+D:\Infolight\EEP2012\JBADMIN\sShortTermQuery\bin\Release\sShortTermQuery.pdb
+D:\Infolight\EEP2012\JBADMIN\sShortTermQuery\obj\Release\sShortTermQuery.Component.resources
+D:\Infolight\EEP2012\JBADMIN\sShortTermQuery\obj\Release\sShortTermQuery.csproj.GenerateResource.Cache
+D:\Infolight\EEP2012\JBADMIN\sShortTermQuery\obj\Release\sShortTermQuery.dll
+D:\Infolight\EEP2012\JBADMIN\sShortTermQuery\obj\Release\sShortTermQuery.pdb

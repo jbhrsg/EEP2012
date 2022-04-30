@@ -1,0 +1,11 @@
+D:\Infolight\EEP2012\JBADMIN\sJobType\bin\Release\sJobType.dll.config
+D:\Infolight\EEP2012\JBADMIN\sJobType\bin\Release\sJobType.dll
+D:\Infolight\EEP2012\JBADMIN\sJobType\bin\Release\sJobType.XmlSerializers.dll
+D:\Infolight\EEP2012\JBADMIN\sJobType\bin\Release\sJobType.pdb
+D:\Infolight\EEP2012\JBADMIN\sJobType\bin\Release\Newtonsoft.Json.dll
+D:\Infolight\EEP2012\JBADMIN\sJobType\obj\Release\sJobType.csprojResolveAssemblyReference.cache
+D:\Infolight\EEP2012\JBADMIN\sJobType\obj\Release\sJobType.Component.resources
+D:\Infolight\EEP2012\JBADMIN\sJobType\obj\Release\sJobType.csproj.GenerateResource.Cache
+D:\Infolight\EEP2012\JBADMIN\sJobType\obj\Release\sJobType.dll
+D:\Infolight\EEP2012\JBADMIN\sJobType\obj\Release\sJobType.pdb
+D:\Infolight\EEP2012\JBADMIN\sJobType\obj\Release\sJobType.XmlSerializers.dll

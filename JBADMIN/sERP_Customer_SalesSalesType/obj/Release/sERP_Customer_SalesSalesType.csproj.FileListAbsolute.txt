@@ -1,0 +1,11 @@
+D:\Infolight\EEP2012\JBADMIN\sERP_Customer_SalesSalesType\bin\Release\sERP_Customer_SalesSalesType.dll
+D:\Infolight\EEP2012\JBADMIN\sERP_Customer_SalesSalesType\bin\Release\sERP_Customer_SalesSalesType.pdb
+D:\Infolight\EEP2012\JBADMIN\sERP_Customer_SalesSalesType\bin\Release\vi-VN\sERP_Customer_SalesSalesType.resources.dll
+D:\Infolight\EEP2012\JBADMIN\sERP_Customer_SalesSalesType\bin\Release\Newtonsoft.Json.dll
+D:\Infolight\EEP2012\JBADMIN\sERP_Customer_SalesSalesType\bin\Release\Newtonsoft.Json.xml
+D:\Infolight\EEP2012\JBADMIN\sERP_Customer_SalesSalesType\obj\Release\sERP_Customer_SalesSalesType.Component.resources
+D:\Infolight\EEP2012\JBADMIN\sERP_Customer_SalesSalesType\obj\Release\sERP_Customer_SalesSalesType.Component.vi-VN.resources
+D:\Infolight\EEP2012\JBADMIN\sERP_Customer_SalesSalesType\obj\Release\sERP_Customer_SalesSalesType.csproj.GenerateResource.Cache
+D:\Infolight\EEP2012\JBADMIN\sERP_Customer_SalesSalesType\obj\Release\vi-VN\sERP_Customer_SalesSalesType.resources.dll
+D:\Infolight\EEP2012\JBADMIN\sERP_Customer_SalesSalesType\obj\Release\sERP_Customer_SalesSalesType.dll
+D:\Infolight\EEP2012\JBADMIN\sERP_Customer_SalesSalesType\obj\Release\sERP_Customer_SalesSalesType.pdb

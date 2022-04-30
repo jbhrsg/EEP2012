@@ -21,6 +21,7 @@
             var checkBox1 = $("<input/>").attr({ 'id': 'checkBox1', 'type': 'checkbox', 'onclick': 'OnClick_checkBox(1)' });
             var checkBox2 = $("<input/>").attr({ 'id': 'checkBox2', 'type': 'checkbox', 'onclick': 'OnClick_checkBox(2)' });
             var checkBox3 = $("<input/>").attr({ 'id': 'checkBox3', 'type': 'checkbox', 'onclick': 'OnClick_checkBox(3)' });
+ 
             $('#dataFormMasterPurDocVen1').closest('td').append('&nbsp;').append(clearBtn1).append('&nbsp;').append('帶入採購').append(checkBox1);//.append('&nbsp;&nbsp;')
             $('#dataFormMasterPurDocVen2').closest('td').append('&nbsp;').append(clearBtn2).append('&nbsp;').append('帶入採購').append(checkBox2);
             $('#dataFormMasterPurDocVen3').closest('td').append('&nbsp;').append(clearBtn3).append('&nbsp;').append('帶入採購').append(checkBox3);
@@ -47,7 +48,6 @@
             setTimeout(function () {
                 $("#dataGridView").datagrid('unselectAll');//unselectAll
             }, 600);
-
             //[設值]查詢的成本中心，預設使用者的成本中心
             var myArr = GetUserOrgNOs(getClientInfo("UserID"));//得組織編號和上層組織編號
             var myCostCenterID;
@@ -55,7 +55,6 @@
                 myCostCenterID = GetOrgNO_CostCenterID(myArr[0]);//用所在組織編號得成本中心編號
                 $("#CostCenterID_Query").combobox('setValue', myCostCenterID);
             }        
-
             //[設值]查詢的申請起日，預設今日前十天
             $('#ApplyDate_Query').datebox('setValue', getShiftDay(-10));
             //[設值]查詢的申請迄日，預設今日
@@ -92,8 +91,15 @@
             });
 
         });
-
-        //初始化 JQDialog4 採購歷史單價清單
+        function onblurfunc(para) {
+            if (para == "" || para == undefined) {
+                return true;
+            }
+            var filtstr = "ItemName LIKE '%" + para + "%'";
+            $("#JQDataGrid1").datagrid('setWhere', filtstr);
+            openForm('#JQDialog6', {}, "", 'dialog');
+        }
+       //初始化 JQDialog4 採購歷史單價清單
         function initJQDialog4() {
             $("#JQDialog4").dialog(
             {
@@ -107,7 +113,6 @@
                 closed: true
             });
         };
-
         //開啟 採購歷史單價清單
         function Open_historyPOPrice() {
             var itemID = $("#dataFormDetailItemID").refval('getValue');
@@ -415,7 +420,6 @@
             var EnabledComboboxArr2 = ['DeliveryDate', 'AcceptanceDate', 'PayWayID'];
             var EnabledRefvalArr2 = [];
             EnableFields("#dataFormDelivery", EnabledFieldArr2, EnabledComboboxArr2, EnabledRefvalArr2);
-
             //Master停用採購作業要填的欄位(採購作業S4啟用)
             var DisabledFieldArr = ['OtherFee', 'OtherComment', 'PurComment','OtherFeeTax'];
             var DisabledComboboxArr = ['POPayTypeID'];
@@ -512,14 +516,14 @@
                 infolightOptions.replace("commandButtons:'vu'", "commandButtons:'vud'");
             }
             dgView.attr("infolight-options", infolightOptions);
-
             //某些欄位隱藏或停用
-
             //申請新增或退回到申請的修改
             if (parameter == "" && (getEditMode($("#dataFormMaster")) == 'inserted' || getEditMode($("#dataFormMaster")) == 'updated' || (getEditMode($("#dataFormMaster")) == 'viewed' && $("#dataFormMasterFlowflag").val()==""))) {
-
                 //設值ApplyOrg_NO、Org_NOParent
                 if (getEditMode($("#dataFormMaster")) == 'inserted') {
+                    //開啟查詢物品類別DIV
+                    var textBox1 = $("<input/>").attr({ 'id': 'textBox1', 'type': 'textBox', 'size': '23px', 'placeholder': '輸入物品關鍵字,移動滑鼠查詢', 'onblur': 'onblurfunc(this.value)'});
+                    $('#dataFormMasterItemTypeID').closest('td').append('&nbsp;').append('&nbsp;').append('查詢物品類別').append('&nbsp;').append(textBox1);
                     var myArr = GetUserOrgNOs(getClientInfo("UserID"));//得組織編號和上層組織編號
                     var myCostCenterID;
                     if (myArr.length > 0) {
@@ -1239,6 +1243,10 @@
 
         function dataFormMasterCostCenterID_OnSelect() {
             //setWhere會計科目(依 預算年度、成本中心、物品類別)
+            //if (getEditMode($("#dataFormMaster")) == 'inserted') {
+            //    var textBox1 = $("<input/>").attr({ 'id': 'textBox1', 'type': 'textBox','size':'23px', 'placeholder': '輸入物品關鍵字,移動滑鼠查詢', 'onblur': 'onblurfunc(this.value)' });
+            //    $('#dataFormMasterItemTypeID').closest('td').append('&nbsp;').append('&nbsp;').append('查詢物品類別').append('&nbsp;').append(textBox1);
+            //}
             var voucherYear = $("#dataFormMasterVoucherYear").combobox('getValue');
             var itemTypeID = $("#dataFormMasterItemTypeID").combobox('getValue');
             var costCenterID = $("#dataFormMasterCostCenterID").combobox('getValue');
@@ -2631,7 +2639,7 @@
                 success: function (data) {
                     var rows = $.parseJSON(data);
                     if (rows.length > 0) {
-                        returnValue = rows[0].glCostCenterID;
+                        returnValue = rows[0].CostCenterID;
                     }
                 }
             }
@@ -3348,7 +3356,16 @@
             $("#dataFormDetail0SubAcno").combobox('setValue', SubAcno);
             closeForm('#JQDialogToolTip');
         }
-
+        function JQDialog6OnSubmited() {
+            var RowData = $("#JQDataGrid1").datagrid('getSelected');
+            $("#dataFormMasterItemTypeID").combobox('setValue', RowData.ItemTypeID);
+            $("#dataFormMasterResponsibleGROUPID").combobox('setValue', RowData.ResponsibleGROUPID);
+            //setWhere會計科目和選第一個(依 成本中心、物品類別)
+            dataFormMasterCostCenterID_OnSelect();
+            $("#dataFormMasterRecVendor").refval("setWhere", "ItemTypeID='" + RowData.ItemTypeID + "'");
+           
+            return true;
+        }
 
     </script>
 </head>
@@ -3368,7 +3385,7 @@
                     <JQTools:JQGridColumn Alignment="left" Caption="經辦者" Editor="text" FieldName="SENDTO_NAME" Frozen="False" IsNvarChar="False" MaxLength="0" QueryCondition="" ReadOnly="False" Sortable="False" Visible="True" Width="60">
                     </JQTools:JQGridColumn>
                     <JQTools:JQGridColumn Alignment="left" Caption="流程狀態" Editor="infocombobox" FieldName="Flowflag" Format="" MaxLength="10" Visible="True" Width="60" EditorOptions="items:[{value:'',text:'未起單',selected:'false'},{value:'N',text:'新申請',selected:'false'},{value:'P',text:'流程中',selected:'false'},{value:'Z',text:'結案',selected:'false'},{value:'X',text:'作廢',selected:'false'}],checkData:false,selectOnly:false,cacheRelationText:false,panelHeight:200" />
-                    <JQTools:JQGridColumn Alignment="left" Caption="請購說明" Editor="text" FieldName="Description" Format="" MaxLength="256" Visible="true" Width="240" />
+                    <JQTools:JQGridColumn Alignment="left" Caption="請購說明" Editor="text" FieldName="Description" Format="" MaxLength="256" Visible="true" Width="280" />
                     <JQTools:JQGridColumn Alignment="left" Caption="公司別" Editor="infocombobox" FieldName="InsGroupID" Format="" Visible="true" Width="80" EditorOptions="valueField:'InsGroupID',textField:'InsGroupShortName',remoteName:'sPO_Normal_PRPOIQC.InsGroup',tableName:'InsGroup',pageSize:'-1',checkData:false,selectOnly:false,cacheRelationText:false,panelHeight:200" />
                     <JQTools:JQGridColumn Alignment="left" Caption="請購類別" Editor="infocombobox" FieldName="POTypeID" Frozen="False" IsNvarChar="False" MaxLength="10" QueryCondition="" ReadOnly="False" Sortable="False" Visible="False" Width="80" EditorOptions="valueField:'POTypeID',textField:'POTypeName',remoteName:'sPO_Normal_PRPOIQC.POType',tableName:'POType',pageSize:'-1',checkData:false,selectOnly:false,cacheRelationText:false,panelHeight:200" Format="">
                     </JQTools:JQGridColumn>
@@ -3424,28 +3441,24 @@
                         <JQTools:JQFormColumn Alignment="left" Caption="公司別" Editor="infocombobox" FieldName="InsGroupID" Width="180" NewRow="True" EditorOptions="valueField:'InsGroupID',textField:'InsGroupShortName',remoteName:'sPO_Normal_PRPOIQC.InsGroup',tableName:'InsGroup',pageSize:'-1',checkData:false,selectOnly:true,cacheRelationText:false,onSelect:InsGroupID_OnSelect,panelHeight:200" Span="1" ReadOnly="False" />
                         <JQTools:JQFormColumn Alignment="left" Caption="請購類別" Editor="infocombobox" FieldName="POTypeID" Format="" Width="180" EditorOptions="valueField:'POTypeID',textField:'POTypeName',remoteName:'sPO_Normal_PRPOIQC.POType',tableName:'POType',pageSize:'-1',checkData:false,selectOnly:true,cacheRelationText:false,panelHeight:200" NewRow="False" Span="1" ReadOnly="False" maxlength="0" />
                         <JQTools:JQFormColumn Alignment="left" Caption="請購性質" Editor="infocombobox" FieldName="RequisitKindID" Format="" Width="180" EditorOptions="valueField:'RequisitKindID',textField:'RequistKindName',remoteName:'sPO_Normal_PRPOIQC.RequistKind',tableName:'RequistKind',pageSize:'-1',checkData:false,selectOnly:true,cacheRelationText:false,panelHeight:200" NewRow="False" Span="1" ReadOnly="False" />
-                        <JQTools:JQFormColumn Alignment="left" Caption="請購說明" Editor="textarea" FieldName="Description" Format="" NewRow="True" Span="3" Width="658" />
+                        <JQTools:JQFormColumn Alignment="left" Caption="請購說明" Editor="textarea" FieldName="Description" Format="" NewRow="True" Span="3" Width="653" />
                         <JQTools:JQFormColumn Alignment="left" Caption="預算年度" Editor="infocombobox" EditorOptions="valueField:'VoucherYear',textField:'VoucherYear',remoteName:'sPO_Normal_PRPOIQC.VoucherYear',tableName:'VoucherYear',pageSize:'-1',checkData:true,selectOnly:false,cacheRelationText:false,onSelect:dataFormMasterCostCenterID_OnSelect,panelHeight:200" FieldName="VoucherYear" NewRow="False" Width="180" Span="1" ReadOnly="False" />
                         <JQTools:JQFormColumn Alignment="left" Caption="成本中心" Editor="infocombobox" EditorOptions="valueField:'CostCenterID',textField:'CostCenterName',remoteName:'sPO_Normal_PRPOIQC.glCostCenter',tableName:'glCostCenter',pageSize:'-1',checkData:true,selectOnly:false,cacheRelationText:false,onSelect:dataFormMasterCostCenterID_OnSelect,panelHeight:200" FieldName="CostCenterID" Format="" Width="180" NewRow="False" Span="1" ReadOnly="False" MaxLength="0" />
                         <JQTools:JQFormColumn Alignment="left" Caption="物品類別" Editor="infocombobox" EditorOptions="valueField:'ItemTypeID',textField:'ItemTypeName',remoteName:'sPO_Normal_PRPOIQC.ItemType',tableName:'ItemType',pageSize:'-1',checkData:true,selectOnly:false,cacheRelationText:false,onSelect:DFM_ItemTypeID_OnSelect,panelHeight:200" FieldName="ItemTypeID" Format="" NewRow="False" Span="1" Width="180" />
                         <JQTools:JQFormColumn Alignment="left" Caption="會計科目" Editor="infocombobox" EditorOptions="valueField:'AcSubno',textField:'AcnoName',remoteName:'sPO_Normal_PRPOIQC.ItemTypeAcno',tableName:'ItemTypeAcno',pageSize:'-1',checkData:false,selectOnly:true,cacheRelationText:false,onSelect:dataFormMasterAcSubno_OnSelect,panelHeight:200" FieldName="AcSubno" NewRow="False" OnBlur="dataFormMasterAcSubno_OnSelect" Span="1" Width="180" PlaceHolder="" MaxLength="0" ReadOnly="False" />
                         <JQTools:JQFormColumn Alignment="left" Caption="建議廠商" Editor="inforefval" EditorOptions="title:'廠商',panelWidth:560,panelHeight:200,remoteName:'sPO_Normal_PRPOIQC.Vendors',tableName:'Vendors',columns:[{field:'VendName',title:'名稱',width:90,align:'left',table:'',isNvarChar:false,queryCondition:''},{field:'ContactName',title:'聯絡人',width:90,align:'left',table:'',isNvarChar:false,queryCondition:''},{field:'ContactTelArea',title:'區碼',width:90,align:'left',table:'',isNvarChar:false,queryCondition:''},{field:'ContactTel',title:'電話',width:90,align:'left',table:'',isNvarChar:false,queryCondition:''},{field:'ContactTelExt',title:'分機',width:90,align:'left',table:'',isNvarChar:false,queryCondition:''},{field:'ContactMobile',title:'聯絡人手機',width:90,align:'left',table:'',isNvarChar:false,queryCondition:''}],columnMatches:[],whereItems:[],valueField:'VendID',textField:'VendName',valueFieldCaption:'VendID',textFieldCaption:'VendName',cacheRelationText:false,checkData:true,showValueAndText:false,dialogCenter:false,selectOnly:false,capsLock:'none',fixTextbox:'false'" FieldName="RecVendor" Format="" NewRow="False" Width="180" MaxLength="0" ReadOnly="False" Visible="True" />
-
-
-                            <JQTools:JQFormColumn Alignment="left" Caption="樣本照片" Editor="infofileupload" FieldName="PrPic" Width="160" EditorOptions="filter:'',isAutoNum:true,upLoadFolder:'JB_ADMIN/PO_Normal_PRPOIQC/PrPic',showButton:true,showLocalFile:false,fileSizeLimited:'20000'" NewRow="True" ReadOnly="False" MaxLength="0" Visible="True" RowSpan="1" Span="1" />
-                            <JQTools:JQFormColumn Alignment="left" Caption="估價單" Editor="infofileupload" EditorOptions="filter:'',isAutoNum:true,upLoadFolder:'JB_ADMIN/PO_Normal_PRPOIQC/PrDoc',showButton:true,showLocalFile:false,fileSizeLimited:'20000'" FieldName="PrDoc" MaxLength="0" NewRow="False" ReadOnly="False" RowSpan="1" Span="1" Visible="True" Width="160" />
-                            <JQTools:JQFormColumn Alignment="left" Caption="暫借款單" Editor="infocombobox" EditorOptions="valueField:'ShortTermNO',textField:'ShortTermDescr',remoteName:'sPO_Normal_PRPOIQC.ShortTerm',tableName:'ShortTerm',pageSize:'-1',checkData:false,selectOnly:false,cacheRelationText:false,panelHeight:200" FieldName="ShortTermNO" MaxLength="0" NewRow="True" ReadOnly="False" RowSpan="1" Span="2" Visible="True" Width="425" />
-                            <JQTools:JQFormColumn Alignment="left" Caption="補單" Editor="checkbox" EditorOptions="on:1,off:0" FieldName="IsAdd" NewRow="False" Span="1" Width="80" />
-                            <JQTools:JQFormColumn Alignment="left" Caption="報價廠商1" Editor="inforefval" FieldName="PurVendor1" Format="" Width="180" EditorOptions="title:'廠商',panelWidth:560,panelHeight:200,remoteName:'sPO_Normal_PRPOIQC.Vendors',tableName:'Vendors',columns:[{field:'VendName',title:'名稱',width:90,align:'left',table:'',isNvarChar:false,queryCondition:''},{field:'ContactName',title:'聯絡人',width:90,align:'left',table:'',isNvarChar:false,queryCondition:''},{field:'ContactTelArea',title:'區碼',width:90,align:'left',table:'',isNvarChar:false,queryCondition:''},{field:'ContactTel',title:'電話',width:90,align:'left',table:'',isNvarChar:false,queryCondition:''},{field:'ContactTelExt',title:'分機',width:90,align:'left',table:'',isNvarChar:false,queryCondition:''},{field:'ContactMobile',title:'聯絡人手機',width:90,align:'left',table:'',isNvarChar:false,queryCondition:''}],columnMatches:[],whereItems:[],valueField:'VendID',textField:'VendName',valueFieldCaption:'廠商ID',textFieldCaption:'廠商名稱',cacheRelationText:false,checkData:true,showValueAndText:false,dialogCenter:false,selectOnly:false,capsLock:'none',fixTextbox:'false'" NewRow="True" Span="1" MaxLength="0" ReadOnly="False" Visible="True" />
-                            <JQTools:JQFormColumn Alignment="left" Caption="報價檔1" Editor="infofileupload" FieldName="PurDocVen1" Format="" Width="120" EditorOptions="filter:'',isAutoNum:true,upLoadFolder:'JB_ADMIN/PO_Normal_PRPOIQC/PurDocVen1',showButton:true,showLocalFile:false,onSuccess:DFDPurDocVen1_OnSuccess,fileSizeLimited:'20000'" Span="2" NewRow="False" />
-                            <JQTools:JQFormColumn Alignment="left" Caption="報價廠商2" Editor="inforefval" FieldName="PurVendor2" Format="" NewRow="True" Span="1" Width="180" EditorOptions="title:'廠商',panelWidth:560,panelHeight:200,remoteName:'sPO_Normal_PRPOIQC.Vendors',tableName:'Vendors',columns:[{field:'VendName',title:'名稱',width:90,align:'left',table:'',isNvarChar:false,queryCondition:''},{field:'ContactName',title:'聯絡人',width:90,align:'left',table:'',isNvarChar:false,queryCondition:''},{field:'ContactTelArea',title:'區碼',width:90,align:'left',table:'',isNvarChar:false,queryCondition:''},{field:'ContactTel',title:'電話',width:90,align:'left',table:'',isNvarChar:false,queryCondition:''},{field:'ContactTelExt',title:'分機',width:90,align:'left',table:'',isNvarChar:false,queryCondition:''},{field:'ContactMobile',title:'聯絡人手機',width:90,align:'left',table:'',isNvarChar:false,queryCondition:''}],columnMatches:[],whereItems:[],valueField:'VendID',textField:'VendName',valueFieldCaption:'廠商ID',textFieldCaption:'廠商名稱',cacheRelationText:false,checkData:true,showValueAndText:false,dialogCenter:false,selectOnly:false,capsLock:'none',fixTextbox:'false'" maxlength="0" ReadOnly="False" RowSpan="1" />
-                            <JQTools:JQFormColumn Alignment="left" Caption="報價檔2" Editor="infofileupload" FieldName="PurDocVen2" Format="" Width="120" EditorOptions="filter:'',isAutoNum:true,upLoadFolder:'JB_ADMIN/PO_Normal_PRPOIQC/PurDocVen2',showButton:true,showLocalFile:false,onSuccess:DFDPurDocVen2_OnSuccess,fileSizeLimited:'20000'" NewRow="False" Span="2" maxlength="0" ReadOnly="False" Visible="True" />
-                            <JQTools:JQFormColumn Alignment="left" Caption="報價廠商3" Editor="inforefval" FieldName="PurVendor3" Format="" Width="180" EditorOptions="title:'廠商',panelWidth:560,panelHeight:200,remoteName:'sPO_Normal_PRPOIQC.Vendors',tableName:'Vendors',columns:[{field:'VendName',title:'名稱',width:90,align:'left',table:'',isNvarChar:false,queryCondition:''},{field:'ContactName',title:'聯絡人',width:90,align:'left',table:'',isNvarChar:false,queryCondition:''},{field:'ContactTelArea',title:'區碼',width:90,align:'left',table:'',isNvarChar:false,queryCondition:''},{field:'ContactTel',title:'電話',width:90,align:'left',table:'',isNvarChar:false,queryCondition:''},{field:'ContactTelExt',title:'分機',width:90,align:'left',table:'',isNvarChar:false,queryCondition:''},{field:'ContactMobile',title:'聯絡人手機',width:90,align:'left',table:'',isNvarChar:false,queryCondition:''}],columnMatches:[],whereItems:[],valueField:'VendID',textField:'VendName',valueFieldCaption:'廠商ID',textFieldCaption:'廠商名稱',cacheRelationText:false,checkData:true,showValueAndText:false,dialogCenter:false,selectOnly:false,capsLock:'none',fixTextbox:'false'" Span="1" NewRow="True" maxlength="0" ReadOnly="False" />
-                            <JQTools:JQFormColumn Alignment="left" Caption="報價檔3" Editor="infofileupload" FieldName="PurDocVen3" Format="" Span="2" Width="120" EditorOptions="filter:'',isAutoNum:true,upLoadFolder:'JB_ADMIN/PO_Normal_PRPOIQC/PurDocVen3',showButton:true,showLocalFile:false,onSuccess:DFDPurDocVen3_OnSuccess,fileSizeLimited:'20000'" NewRow="False" maxlength="0" ReadOnly="False" />
+                        <JQTools:JQFormColumn Alignment="left" Caption="樣本照片" Editor="infofileupload" FieldName="PrPic" Width="160" EditorOptions="filter:'',isAutoNum:true,upLoadFolder:'JB_ADMIN/PO_Normal_PRPOIQC/PrPic',showButton:true,showLocalFile:false,fileSizeLimited:'20000'" NewRow="True" ReadOnly="False" MaxLength="0" Visible="True" RowSpan="1" Span="1" />
+                        <JQTools:JQFormColumn Alignment="left" Caption="估價單" Editor="infofileupload" EditorOptions="filter:'',isAutoNum:true,upLoadFolder:'JB_ADMIN/PO_Normal_PRPOIQC/PrDoc',showButton:true,showLocalFile:false,fileSizeLimited:'20000'" FieldName="PrDoc" MaxLength="0" NewRow="False" ReadOnly="False" RowSpan="1" Span="1" Visible="True" Width="160" />
+                        <JQTools:JQFormColumn Alignment="left" Caption="暫借款單" Editor="infocombobox" EditorOptions="valueField:'ShortTermNO',textField:'ShortTermDescr',remoteName:'sPO_Normal_PRPOIQC.ShortTerm',tableName:'ShortTerm',pageSize:'-1',checkData:false,selectOnly:false,cacheRelationText:false,panelHeight:200" FieldName="ShortTermNO" MaxLength="0" NewRow="True" ReadOnly="False" RowSpan="1" Span="2" Visible="True" Width="425" />
+                        <JQTools:JQFormColumn Alignment="left" Caption="補單" Editor="checkbox" EditorOptions="on:1,off:0" FieldName="IsAdd" NewRow="False" Span="1" Width="80" />
+                        <JQTools:JQFormColumn Alignment="left" Caption="報價廠商1" Editor="inforefval" FieldName="PurVendor1" Format="" Width="180" EditorOptions="title:'廠商',panelWidth:560,panelHeight:200,remoteName:'sPO_Normal_PRPOIQC.Vendors',tableName:'Vendors',columns:[{field:'VendName',title:'名稱',width:90,align:'left',table:'',isNvarChar:false,queryCondition:''},{field:'ContactName',title:'聯絡人',width:90,align:'left',table:'',isNvarChar:false,queryCondition:''},{field:'ContactTelArea',title:'區碼',width:90,align:'left',table:'',isNvarChar:false,queryCondition:''},{field:'ContactTel',title:'電話',width:90,align:'left',table:'',isNvarChar:false,queryCondition:''},{field:'ContactTelExt',title:'分機',width:90,align:'left',table:'',isNvarChar:false,queryCondition:''},{field:'ContactMobile',title:'聯絡人手機',width:90,align:'left',table:'',isNvarChar:false,queryCondition:''}],columnMatches:[],whereItems:[],valueField:'VendID',textField:'VendName',valueFieldCaption:'廠商ID',textFieldCaption:'廠商名稱',cacheRelationText:false,checkData:true,showValueAndText:false,dialogCenter:false,selectOnly:false,capsLock:'none',fixTextbox:'false'" NewRow="True" Span="1" MaxLength="0" ReadOnly="False" Visible="True" />
+                        <JQTools:JQFormColumn Alignment="left" Caption="報價檔1" Editor="infofileupload" FieldName="PurDocVen1" Format="" Width="120" EditorOptions="filter:'',isAutoNum:true,upLoadFolder:'JB_ADMIN/PO_Normal_PRPOIQC/PurDocVen1',showButton:true,showLocalFile:false,onSuccess:DFDPurDocVen1_OnSuccess,fileSizeLimited:'20000'" Span="2" NewRow="False" />
+                        <JQTools:JQFormColumn Alignment="left" Caption="報價廠商2" Editor="inforefval" FieldName="PurVendor2" Format="" NewRow="True" Span="1" Width="180" EditorOptions="title:'廠商',panelWidth:560,panelHeight:200,remoteName:'sPO_Normal_PRPOIQC.Vendors',tableName:'Vendors',columns:[{field:'VendName',title:'名稱',width:90,align:'left',table:'',isNvarChar:false,queryCondition:''},{field:'ContactName',title:'聯絡人',width:90,align:'left',table:'',isNvarChar:false,queryCondition:''},{field:'ContactTelArea',title:'區碼',width:90,align:'left',table:'',isNvarChar:false,queryCondition:''},{field:'ContactTel',title:'電話',width:90,align:'left',table:'',isNvarChar:false,queryCondition:''},{field:'ContactTelExt',title:'分機',width:90,align:'left',table:'',isNvarChar:false,queryCondition:''},{field:'ContactMobile',title:'聯絡人手機',width:90,align:'left',table:'',isNvarChar:false,queryCondition:''}],columnMatches:[],whereItems:[],valueField:'VendID',textField:'VendName',valueFieldCaption:'廠商ID',textFieldCaption:'廠商名稱',cacheRelationText:false,checkData:true,showValueAndText:false,dialogCenter:false,selectOnly:false,capsLock:'none',fixTextbox:'false'" maxlength="0" ReadOnly="False" RowSpan="1" />
+                        <JQTools:JQFormColumn Alignment="left" Caption="報價檔2" Editor="infofileupload" FieldName="PurDocVen2" Format="" Width="120" EditorOptions="filter:'',isAutoNum:true,upLoadFolder:'JB_ADMIN/PO_Normal_PRPOIQC/PurDocVen2',showButton:true,showLocalFile:false,onSuccess:DFDPurDocVen2_OnSuccess,fileSizeLimited:'20000'" NewRow="False" Span="2" maxlength="0" ReadOnly="False" Visible="True" />
+                        <JQTools:JQFormColumn Alignment="left" Caption="報價廠商3" Editor="inforefval" FieldName="PurVendor3" Format="" Width="180" EditorOptions="title:'廠商',panelWidth:560,panelHeight:200,remoteName:'sPO_Normal_PRPOIQC.Vendors',tableName:'Vendors',columns:[{field:'VendName',title:'名稱',width:90,align:'left',table:'',isNvarChar:false,queryCondition:''},{field:'ContactName',title:'聯絡人',width:90,align:'left',table:'',isNvarChar:false,queryCondition:''},{field:'ContactTelArea',title:'區碼',width:90,align:'left',table:'',isNvarChar:false,queryCondition:''},{field:'ContactTel',title:'電話',width:90,align:'left',table:'',isNvarChar:false,queryCondition:''},{field:'ContactTelExt',title:'分機',width:90,align:'left',table:'',isNvarChar:false,queryCondition:''},{field:'ContactMobile',title:'聯絡人手機',width:90,align:'left',table:'',isNvarChar:false,queryCondition:''}],columnMatches:[],whereItems:[],valueField:'VendID',textField:'VendName',valueFieldCaption:'廠商ID',textFieldCaption:'廠商名稱',cacheRelationText:false,checkData:true,showValueAndText:false,dialogCenter:false,selectOnly:false,capsLock:'none',fixTextbox:'false'" Span="1" NewRow="True" maxlength="0" ReadOnly="False" />
+                        <JQTools:JQFormColumn Alignment="left" Caption="報價檔3" Editor="infofileupload" FieldName="PurDocVen3" Format="" Span="2" Width="120" EditorOptions="filter:'',isAutoNum:true,upLoadFolder:'JB_ADMIN/PO_Normal_PRPOIQC/PurDocVen3',showButton:true,showLocalFile:false,onSuccess:DFDPurDocVen3_OnSuccess,fileSizeLimited:'20000'" NewRow="False" maxlength="0" ReadOnly="False" />
                         <JQTools:JQFormColumn Alignment="left" Caption="採購說明暨驗收說明" Editor="textarea" FieldName="PurComment" Format="" Width="658" EditorOptions="height:40" Span="3" NewRow="True" maxlength="0" ReadOnly="False" RowSpan="1" Visible="True" />    
                         <JQTools:JQFormColumn Alignment="left" Caption="採購說明檔" Editor="infofileupload" FieldName="PurCommentFile" Width="658" maxlength="0" ReadOnly="False" NewRow="False" Span="3" RowSpan="1" Visible="True" EditorOptions="filter:'',isAutoNum:true,upLoadFolder:'JB_ADMIN/PO_Normal_PRPOIQC/PurCommentFile',showButton:true,showLocalFile:false,onSuccess:dataFormMasterPurCommentFile_OnSuccess,fileSizeLimited:'20000'" />
-
-
                         <JQTools:JQFormColumn Alignment="left" Caption="工程金額" Editor="numberbox" FieldName="OtherFee" MaxLength="0" ReadOnly="False" Width="180" NewRow="False" Span="1" RowSpan="1" Visible="False" Format="" OnBlur="SetdataFormMasterPurTotalAmount" />
                         <JQTools:JQFormColumn Alignment="left" Caption="工程稅額" Editor="numberbox" FieldName="OtherFeeTax" MaxLength="0" NewRow="False" ReadOnly="False" RowSpan="1" Span="1" Visible="False" Width="180" OnBlur="SetdataFormMasterPurTotalAmount" />
                         <JQTools:JQFormColumn Alignment="left" Caption="結帳方式" Editor="infocombobox" FieldName="POPayTypeID" MaxLength="0" NewRow="False" ReadOnly="False" RowSpan="1" Span="1" Visible="True" Width="180" EditorOptions="valueField:'POPayTypeID',textField:'POPayTypeName',remoteName:'sPO_Normal_PRPOIQC.POPayType',tableName:'POPayType',pageSize:'-1',checkData:false,selectOnly:false,cacheRelationText:false,onSelect:DFM_POPayTypeID_OnSelect,panelHeight:200" />
@@ -3867,7 +3880,25 @@
                     </Columns>
                 </JQTools:JQDataGrid>
                 <JQTools:JQButton ID="JQButton1" runat="server" OnClick="SetToolTipValue()" Text="傳回科目" />
-        </JQTools:JQDialog>																																																																																																																																																						   	   
+        </JQTools:JQDialog>	
+         <JQTools:JQDialog ID="JQDialog6" runat="server" DialogLeft="600px" DialogTop="180px" Title="物品類別選單" Width="480px" Closed="True" ShowSubmitDiv="True" DialogCenter="False" EditMode="Dialog" EnableTheming="True" ScrollBars="Vertical" OnSubmited="JQDialog6OnSubmited" Direction="LeftToRight" ShowModal="True">
+            <JQTools:JQDataGrid ID="JQDataGrid1" runat="server" AllowAdd="False" AllowDelete="False" AllowUpdate="False" AlwaysClose="True" AutoApply="True" BufferView="False" CheckOnSelect="True" ColumnsHibeable="False" DataMember="ItemTypeItems" DeleteCommandVisible="False" DuplicateCheck="False" EditMode="Dialog" EditOnEnter="True" InsertCommandVisible="False" MultiSelect="False" NotInitGrid="False" PageList="20,40,60" PageSize="20" Pagination="False" QueryAutoColumn="False" QueryLeft="" QueryMode="Window" QueryTitle="Query" QueryTop="" RecordLock="False" RecordLockMode="None" RemoteName="sPO_Normal_PRPOIQC.ItemTypeItems" RowNumbers="True" Title="" TotalCaption="Total:" UpdateCommandVisible="False" ViewCommandVisible="False" Width="420px">
+                    <Columns>
+                        <JQTools:JQGridColumn Alignment="left" Caption="物品名稱" Editor="text" FieldName="ItemName" Frozen="False" IsNvarChar="False" MaxLength="0" QueryCondition="" ReadOnly="False" Sortable="False" Visible="True" Width="120">
+                        </JQTools:JQGridColumn>
+                        <JQTools:JQGridColumn Alignment="left" Caption="物品類別名稱" Editor="text" FieldName="ItemTypeName" Frozen="False" IsNvarChar="False" MaxLength="0" QueryCondition="" ReadOnly="False" Sortable="False" Visible="True" Width="240">
+                        </JQTools:JQGridColumn>
+                        <JQTools:JQGridColumn Alignment="left" Caption="物品類別代號" Editor="text" FieldName="ItemTypeID" Frozen="False" IsNvarChar="False" MaxLength="0" QueryCondition="" ReadOnly="False" Sortable="False" Visible="False" Width="80">
+                        </JQTools:JQGridColumn>
+                        <JQTools:JQGridColumn Alignment="left" Caption="ResponsibleGROUPID" Editor="text" FieldName="ResponsibleGROUPID" Frozen="False" IsNvarChar="False" MaxLength="0" QueryCondition="" ReadOnly="False" Sortable="False" Visible="False" Width="80">
+                        </JQTools:JQGridColumn>
+                    </Columns>
+                    <TooItems>
+                   <JQTools:JQToolItem Icon="icon-excel" ItemType="easyui-linkbutton" OnClick="exportGrid" Text="匯出Excel" Visible="True" />
+                 </TooItems>
+                </JQTools:JQDataGrid>
+             </JQTools:JQDialog> 
+        																																																																																																																																																					   	   
     </form>
 </body>
 </html>

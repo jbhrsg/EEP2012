@@ -1,0 +1,11 @@
+D:\Infolight\EEP2012\JBADMIN\sARInvoice\bin\Release\sARInvoice.dll.config
+D:\Infolight\EEP2012\JBADMIN\sARInvoice\bin\Release\sARInvoice.dll
+D:\Infolight\EEP2012\JBADMIN\sARInvoice\bin\Release\sARInvoice.XmlSerializers.dll
+D:\Infolight\EEP2012\JBADMIN\sARInvoice\bin\Release\sARInvoice.pdb
+D:\Infolight\EEP2012\JBADMIN\sARInvoice\bin\Release\Newtonsoft.Json.dll
+D:\Infolight\EEP2012\JBADMIN\sARInvoice\bin\Release\Newtonsoft.Json.xml
+D:\Infolight\EEP2012\JBADMIN\sARInvoice\obj\Release\sARInvoice.Component.resources
+D:\Infolight\EEP2012\JBADMIN\sARInvoice\obj\Release\sARInvoice.csproj.GenerateResource.Cache
+D:\Infolight\EEP2012\JBADMIN\sARInvoice\obj\Release\sARInvoice.dll
+D:\Infolight\EEP2012\JBADMIN\sARInvoice\obj\Release\sARInvoice.pdb
+D:\Infolight\EEP2012\JBADMIN\sARInvoice\obj\Release\sARInvoice.XmlSerializers.dll

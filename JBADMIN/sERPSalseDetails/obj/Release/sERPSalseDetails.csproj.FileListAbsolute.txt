@@ -5,3 +5,10 @@ C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sERPSalseDetails\obj\Release\sE
 C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sERPSalseDetails\obj\Release\sERPSalseDetails.csproj.GenerateResource.Cache
 C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sERPSalseDetails\obj\Release\sERPSalseDetails.dll
 C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sERPSalseDetails\obj\Release\sERPSalseDetails.pdb
+D:\Infolight\EEP2012\EEPNetServer\JBADMIN\sERPSalseDetails.dll
+D:\Infolight\EEP2012\EEPNetServer\JBADMIN\sERPSalseDetails.pdb
+D:\Infolight\EEP2012\JBADMIN\sERPSalseDetails\obj\Release\sERPSalseDetails.csprojResolveAssemblyReference.cache
+D:\Infolight\EEP2012\JBADMIN\sERPSalseDetails\obj\Release\sERPSalseDetails.Component.resources
+D:\Infolight\EEP2012\JBADMIN\sERPSalseDetails\obj\Release\sERPSalseDetails.csproj.GenerateResource.Cache
+D:\Infolight\EEP2012\JBADMIN\sERPSalseDetails\obj\Release\sERPSalseDetails.dll
+D:\Infolight\EEP2012\JBADMIN\sERPSalseDetails\obj\Release\sERPSalseDetails.pdb

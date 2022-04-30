@@ -5,3 +5,9 @@ C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sOrganization\obj\Release\sDept
 C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sOrganization\obj\Release\sDept.csproj.GenerateResource.Cache
 C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sOrganization\obj\Release\sOrganization.dll
 C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sOrganization\obj\Release\sOrganization.pdb
+D:\Infolight\EEP2012\JBADMIN\sOrganization\bin\Release\sOrganization.dll
+D:\Infolight\EEP2012\JBADMIN\sOrganization\bin\Release\sOrganization.pdb
+D:\Infolight\EEP2012\JBADMIN\sOrganization\obj\Release\sDept.Component.resources
+D:\Infolight\EEP2012\JBADMIN\sOrganization\obj\Release\sDept.csproj.GenerateResource.Cache
+D:\Infolight\EEP2012\JBADMIN\sOrganization\obj\Release\sOrganization.dll
+D:\Infolight\EEP2012\JBADMIN\sOrganization\obj\Release\sOrganization.pdb

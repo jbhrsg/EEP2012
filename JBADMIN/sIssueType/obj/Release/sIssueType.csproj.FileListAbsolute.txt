@@ -1,0 +1,6 @@
+D:\Infolight\EEP2012\JBADMIN\sIssueType\bin\Release\sIssueType.dll
+D:\Infolight\EEP2012\JBADMIN\sIssueType\bin\Release\sIssueType.pdb
+D:\Infolight\EEP2012\JBADMIN\sIssueType\obj\Release\sIssueType.Component.resources
+D:\Infolight\EEP2012\JBADMIN\sIssueType\obj\Release\sIssueType.csproj.GenerateResource.Cache
+D:\Infolight\EEP2012\JBADMIN\sIssueType\obj\Release\sIssueType.dll
+D:\Infolight\EEP2012\JBADMIN\sIssueType\obj\Release\sIssueType.pdb

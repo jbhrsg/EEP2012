@@ -1,0 +1,6 @@
+D:\Infolight\EEP2012\JBADMIN\sTrainingForm\bin\Release\sTrainingForm.dll
+D:\Infolight\EEP2012\JBADMIN\sTrainingForm\bin\Release\sTrainingForm.pdb
+D:\Infolight\EEP2012\JBADMIN\sTrainingForm\obj\Release\sTrainingForm.Component.resources
+D:\Infolight\EEP2012\JBADMIN\sTrainingForm\obj\Release\sTrainingForm.csproj.GenerateResource.Cache
+D:\Infolight\EEP2012\JBADMIN\sTrainingForm\obj\Release\sTrainingForm.dll
+D:\Infolight\EEP2012\JBADMIN\sTrainingForm\obj\Release\sTrainingForm.pdb

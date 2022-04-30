@@ -1,0 +1,6 @@
+D:\Infolight\EEP2012\JBADMIN\sIssueBelong\bin\Release\sIssueBelong.dll
+D:\Infolight\EEP2012\JBADMIN\sIssueBelong\bin\Release\sIssueBelong.pdb
+D:\Infolight\EEP2012\JBADMIN\sIssueBelong\obj\Release\sIssueBelong.Component.resources
+D:\Infolight\EEP2012\JBADMIN\sIssueBelong\obj\Release\sIssueBelong.csproj.GenerateResource.Cache
+D:\Infolight\EEP2012\JBADMIN\sIssueBelong\obj\Release\sIssueBelong.dll
+D:\Infolight\EEP2012\JBADMIN\sIssueBelong\obj\Release\sIssueBelong.pdb

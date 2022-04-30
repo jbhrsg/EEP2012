@@ -1,0 +1,6 @@
+D:\Infolight\EEP2012\JBADMIN\sDeviceKMQuery\bin\Release\sDeviceKMQuery.dll
+D:\Infolight\EEP2012\JBADMIN\sDeviceKMQuery\bin\Release\sDeviceKMQuery.pdb
+D:\Infolight\EEP2012\JBADMIN\sDeviceKMQuery\obj\Release\sDeviceKMQuery.Component.resources
+D:\Infolight\EEP2012\JBADMIN\sDeviceKMQuery\obj\Release\sDeviceKMQuery.csproj.GenerateResource.Cache
+D:\Infolight\EEP2012\JBADMIN\sDeviceKMQuery\obj\Release\sDeviceKMQuery.dll
+D:\Infolight\EEP2012\JBADMIN\sDeviceKMQuery\obj\Release\sDeviceKMQuery.pdb

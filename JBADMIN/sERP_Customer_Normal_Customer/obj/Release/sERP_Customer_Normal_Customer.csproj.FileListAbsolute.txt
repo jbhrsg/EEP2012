@@ -1,0 +1,12 @@
+D:\Infolight\EEP2012\JBADMIN\sERP_Customer_Normal_Customer\bin\Release\sERP_Customer_Normal_Customer.dll
+D:\Infolight\EEP2012\JBADMIN\sERP_Customer_Normal_Customer\bin\Release\sERP_Customer_Normal_Customer.pdb
+D:\Infolight\EEP2012\JBADMIN\sERP_Customer_Normal_Customer\bin\Release\vi-VN\sERP_Customer_Normal_Customer.resources.dll
+D:\Infolight\EEP2012\JBADMIN\sERP_Customer_Normal_Customer\bin\Release\Newtonsoft.Json.dll
+D:\Infolight\EEP2012\JBADMIN\sERP_Customer_Normal_Customer\bin\Release\Newtonsoft.Json.xml
+D:\Infolight\EEP2012\JBADMIN\sERP_Customer_Normal_Customer\obj\Release\sERP_Customer_Normal_Customer.csprojResolveAssemblyReference.cache
+D:\Infolight\EEP2012\JBADMIN\sERP_Customer_Normal_Customer\obj\Release\sERP_Customer_Normal_Customer.Component.resources
+D:\Infolight\EEP2012\JBADMIN\sERP_Customer_Normal_Customer\obj\Release\sERP_Customer_Normal_Customer.Component.vi-VN.resources
+D:\Infolight\EEP2012\JBADMIN\sERP_Customer_Normal_Customer\obj\Release\sERP_Customer_Normal_Customer.csproj.GenerateResource.Cache
+D:\Infolight\EEP2012\JBADMIN\sERP_Customer_Normal_Customer\obj\Release\vi-VN\sERP_Customer_Normal_Customer.resources.dll
+D:\Infolight\EEP2012\JBADMIN\sERP_Customer_Normal_Customer\obj\Release\sERP_Customer_Normal_Customer.dll
+D:\Infolight\EEP2012\JBADMIN\sERP_Customer_Normal_Customer\obj\Release\sERP_Customer_Normal_Customer.pdb

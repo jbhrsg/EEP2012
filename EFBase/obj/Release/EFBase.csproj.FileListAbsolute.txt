@@ -5,6 +5,5 @@ C:\Program Files (x86)\Infolight\EEP2012\EFBase\obj\Release\EFBase.pdb
 C:\Program Files (x86)\Infolight\EEP2012\EFBase\obj\Release\EFBase.csprojResolveAssemblyReference.cache
 D:\Infolight\EEP2012\EFDesign\EFBase.dll
 D:\Infolight\EEP2012\EFDesign\EFBase.pdb
-D:\Infolight\EEP2012\EFBase\obj\Release\EFBase.csprojResolveAssemblyReference.cache
 D:\Infolight\EEP2012\EFBase\obj\Release\EFBase.dll
 D:\Infolight\EEP2012\EFBase\obj\Release\EFBase.pdb

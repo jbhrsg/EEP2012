@@ -26,3 +26,10 @@ D:\EEP2012\JBADMIN\sglYearBudget\obj\Release\sglYearBudget.Component.resources
 D:\EEP2012\JBADMIN\sglYearBudget\obj\Release\sglYearBudget.csproj.GenerateResource.Cache
 D:\EEP2012\JBADMIN\sglYearBudget\obj\Release\sglYearBudget.dll
 D:\EEP2012\JBADMIN\sglYearBudget\obj\Release\sglYearBudget.pdb
+D:\Infolight\EEP2012\EEPNetServer\JBADMIN\sglYearBudget.dll
+D:\Infolight\EEP2012\EEPNetServer\JBADMIN\sglYearBudget.pdb
+D:\Infolight\EEP2012\JBADMIN\sglYearBudget\obj\Release\sglYearBudget.csprojResolveAssemblyReference.cache
+D:\Infolight\EEP2012\JBADMIN\sglYearBudget\obj\Release\sglYearBudget.Component.resources
+D:\Infolight\EEP2012\JBADMIN\sglYearBudget\obj\Release\sglYearBudget.csproj.GenerateResource.Cache
+D:\Infolight\EEP2012\JBADMIN\sglYearBudget\obj\Release\sglYearBudget.dll
+D:\Infolight\EEP2012\JBADMIN\sglYearBudget\obj\Release\sglYearBudget.pdb

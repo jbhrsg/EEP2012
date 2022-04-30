@@ -1,0 +1,8 @@
+D:\Infolight\EEP2012\JBADMIN\sPerfBonusMaster\bin\Release\sPerfBonusMaster.dll
+D:\Infolight\EEP2012\JBADMIN\sPerfBonusMaster\bin\Release\sPerfBonusMaster.pdb
+D:\Infolight\EEP2012\JBADMIN\sPerfBonusMaster\bin\Release\Newtonsoft.Json.dll
+D:\Infolight\EEP2012\JBADMIN\sPerfBonusMaster\bin\Release\Newtonsoft.Json.xml
+D:\Infolight\EEP2012\JBADMIN\sPerfBonusMaster\obj\Release\sPerfBonusMaster.Component.resources
+D:\Infolight\EEP2012\JBADMIN\sPerfBonusMaster\obj\Release\sPerfBonusMaster.csproj.GenerateResource.Cache
+D:\Infolight\EEP2012\JBADMIN\sPerfBonusMaster\obj\Release\sPerfBonusMaster.dll
+D:\Infolight\EEP2012\JBADMIN\sPerfBonusMaster\obj\Release\sPerfBonusMaster.pdb

@@ -20,3 +20,25 @@ C:\Program Files (x86)\Infolight\EEP2012\EFServerTools\obj\Release\EFServerTools
 C:\Program Files (x86)\Infolight\EEP2012\EFServerTools\obj\Release\EFServerTools.csproj.GenerateResource.Cache
 C:\Program Files (x86)\Infolight\EEP2012\EFServerTools\obj\Release\EFServerTools.dll
 C:\Program Files (x86)\Infolight\EEP2012\EFServerTools\obj\Release\EFServerTools.pdb
+D:\Infolight\EEP2012\EFServerTools\bin\Release\EFServerTools.dll
+D:\Infolight\EEP2012\EFServerTools\bin\Release\EFServerTools.pdb
+D:\Infolight\EEP2012\EFServerTools\bin\Release\EFBase.dll
+D:\Infolight\EEP2012\EFServerTools\bin\Release\EFWCFModule.dll
+D:\Infolight\EEP2012\EFServerTools\bin\Release\EFWCFModule.EEPAdapter.dll
+D:\Infolight\EEP2012\EFServerTools\bin\Release\Newtonsoft.Json.dll
+D:\Infolight\EEP2012\EFServerTools\bin\Release\EFBase.pdb
+D:\Infolight\EEP2012\EFServerTools\bin\Release\EFWCFModule.pdb
+D:\Infolight\EEP2012\EFServerTools\bin\Release\EFWCFModule.EEPAdapter.pdb
+D:\Infolight\EEP2012\EFServerTools\obj\Release\EFServerTools.csprojResolveAssemblyReference.cache
+D:\Infolight\EEP2012\EFServerTools\obj\Release\EFServerTools.Design.EFCommandDesign.EFParameterEditorDialog.resources
+D:\Infolight\EEP2012\EFServerTools\obj\Release\EFServerTools.Design.EFTransactionDesign.EFTransactionEditorDialog.resources
+D:\Infolight\EEP2012\EFServerTools\obj\Release\EFServerTools.Design.EFTransactionDesign.EFTransactionEditorTransFieldsDialog.resources
+D:\Infolight\EEP2012\EFServerTools\obj\Release\EFServerTools.Design.EFTransactionDesign.EFTransactionEditorKeyFieldsDialog.resources
+D:\Infolight\EEP2012\EFServerTools\obj\Release\EFServerTools.Design.EFTransactionDesign.EFTransactionEditorTTransactionDialog.resources
+D:\Infolight\EEP2012\EFServerTools\obj\Release\EFServerTools.Design.EFTransactionDesign.EFTransactionTransFieldsAddDialog.resources
+D:\Infolight\EEP2012\EFServerTools\obj\Release\EFServerTools.Design.EFTransactionDesign.EFTransactionTransKeyFieldsAddDialog.resources
+D:\Infolight\EEP2012\EFServerTools\obj\Release\EFServerTools.Design.EFCommandDesign.EFCommandEditor.resources
+D:\Infolight\EEP2012\EFServerTools\obj\Release\EFServerTools.Properties.Resources.resources
+D:\Infolight\EEP2012\EFServerTools\obj\Release\EFServerTools.csproj.GenerateResource.Cache
+D:\Infolight\EEP2012\EFServerTools\obj\Release\EFServerTools.dll
+D:\Infolight\EEP2012\EFServerTools\obj\Release\EFServerTools.pdb

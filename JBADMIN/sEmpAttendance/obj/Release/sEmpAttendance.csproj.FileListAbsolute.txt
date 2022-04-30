@@ -1,0 +1,6 @@
+D:\Infolight\EEP2012\JBADMIN\sEmpAttendance\bin\Release\sEmpAttendance.dll
+D:\Infolight\EEP2012\JBADMIN\sEmpAttendance\bin\Release\sEmpAttendance.pdb
+D:\Infolight\EEP2012\JBADMIN\sEmpAttendance\obj\Release\sEmpAttendance.Component.resources
+D:\Infolight\EEP2012\JBADMIN\sEmpAttendance\obj\Release\sEmpAttendance.csproj.GenerateResource.Cache
+D:\Infolight\EEP2012\JBADMIN\sEmpAttendance\obj\Release\sEmpAttendance.dll
+D:\Infolight\EEP2012\JBADMIN\sEmpAttendance\obj\Release\sEmpAttendance.pdb

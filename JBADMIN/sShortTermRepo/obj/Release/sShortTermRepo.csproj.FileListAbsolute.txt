@@ -4,3 +4,9 @@ C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sShortTermRepo\obj\Release\sSho
 C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sShortTermRepo\obj\Release\sShortTermRepo.csproj.GenerateResource.Cache
 C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sShortTermRepo\obj\Release\sShortTermRepo.dll
 C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sShortTermRepo\obj\Release\sShortTermRepo.pdb
+D:\Infolight\EEP2012\JBADMIN\sShortTermRepo\bin\Release\sShortTermRepo.dll
+D:\Infolight\EEP2012\JBADMIN\sShortTermRepo\bin\Release\sShortTermRepo.pdb
+D:\Infolight\EEP2012\JBADMIN\sShortTermRepo\obj\Release\sShortTermRepo.Component.resources
+D:\Infolight\EEP2012\JBADMIN\sShortTermRepo\obj\Release\sShortTermRepo.csproj.GenerateResource.Cache
+D:\Infolight\EEP2012\JBADMIN\sShortTermRepo\obj\Release\sShortTermRepo.dll
+D:\Infolight\EEP2012\JBADMIN\sShortTermRepo\obj\Release\sShortTermRepo.pdb

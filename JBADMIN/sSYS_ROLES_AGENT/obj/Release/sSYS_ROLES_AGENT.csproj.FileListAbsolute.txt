@@ -9,3 +9,15 @@ C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sSYS_ROLES_AGENT\obj\Release\sS
 C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sSYS_ROLES_AGENT\obj\Release\vi-VN\sSYS_ROLES_AGENT.resources.dll
 C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sSYS_ROLES_AGENT\obj\Release\sSYS_ROLES_AGENT.dll
 C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sSYS_ROLES_AGENT\obj\Release\sSYS_ROLES_AGENT.pdb
+D:\Infolight\EEP2012\JBADMIN\sSYS_ROLES_AGENT\bin\Release\sSYS_ROLES_AGENT.dll
+D:\Infolight\EEP2012\JBADMIN\sSYS_ROLES_AGENT\bin\Release\sSYS_ROLES_AGENT.pdb
+D:\Infolight\EEP2012\JBADMIN\sSYS_ROLES_AGENT\bin\Release\vi-VN\sSYS_ROLES_AGENT.resources.dll
+D:\Infolight\EEP2012\JBADMIN\sSYS_ROLES_AGENT\bin\Release\Newtonsoft.Json.dll
+D:\Infolight\EEP2012\JBADMIN\sSYS_ROLES_AGENT\bin\Release\Newtonsoft.Json.xml
+D:\Infolight\EEP2012\JBADMIN\sSYS_ROLES_AGENT\obj\Release\sSYS_ROLES_AGENT.Component.resources
+D:\Infolight\EEP2012\JBADMIN\sSYS_ROLES_AGENT\obj\Release\sSYS_ROLES_AGENT.Component.vi-VN.resources
+D:\Infolight\EEP2012\JBADMIN\sSYS_ROLES_AGENT\obj\Release\sSYS_ROLES_AGENT.csproj.GenerateResource.Cache
+D:\Infolight\EEP2012\JBADMIN\sSYS_ROLES_AGENT\obj\Release\vi-VN\sSYS_ROLES_AGENT.resources.dll
+D:\Infolight\EEP2012\JBADMIN\sSYS_ROLES_AGENT\obj\Release\sSYS_ROLES_AGENT.dll
+D:\Infolight\EEP2012\JBADMIN\sSYS_ROLES_AGENT\obj\Release\sSYS_ROLES_AGENT.pdb
+D:\Infolight\EEP2012\JBADMIN\sSYS_ROLES_AGENT\obj\Release\sSYS_ROLES_AGENT.csprojResolveAssemblyReference.cache

@@ -1,0 +1,9 @@
+D:\Infolight\EEP2012\JBADMIN\sERP_Report_UncollectedInvoiceDetails\bin\Release\sERP_Report_UncollectedInvoiceDetails.dll
+D:\Infolight\EEP2012\JBADMIN\sERP_Report_UncollectedInvoiceDetails\bin\Release\sERP_Report_UncollectedInvoiceDetails.pdb
+D:\Infolight\EEP2012\JBADMIN\sERP_Report_UncollectedInvoiceDetails\bin\Release\Newtonsoft.Json.dll
+D:\Infolight\EEP2012\JBADMIN\sERP_Report_UncollectedInvoiceDetails\bin\Release\Newtonsoft.Json.xml
+D:\Infolight\EEP2012\JBADMIN\sERP_Report_UncollectedInvoiceDetails\obj\Release\sERP_Report_UncollectedInvoiceDetails.Component.resources
+D:\Infolight\EEP2012\JBADMIN\sERP_Report_UncollectedInvoiceDetails\obj\Release\sERP_Report_UncollectedInvoiceDetails.csproj.GenerateResource.Cache
+D:\Infolight\EEP2012\JBADMIN\sERP_Report_UncollectedInvoiceDetails\obj\Release\sERP_Report_UncollectedInvoiceDetails.dll
+D:\Infolight\EEP2012\JBADMIN\sERP_Report_UncollectedInvoiceDetails\obj\Release\sERP_Report_UncollectedInvoiceDetails.pdb
+D:\Infolight\EEP2012\JBADMIN\sERP_Report_UncollectedInvoiceDetails\obj\Release\sERP_Report_UncollectedInvoiceDetails.csprojResolveAssemblyReference.cache

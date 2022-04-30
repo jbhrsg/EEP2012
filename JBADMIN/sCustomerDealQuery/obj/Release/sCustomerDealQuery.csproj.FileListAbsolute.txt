@@ -1,0 +1,8 @@
+D:\Infolight\EEP2012\JBADMIN\sCustomerDealQuery\bin\Release\sCustomerDealQuery.dll
+D:\Infolight\EEP2012\JBADMIN\sCustomerDealQuery\bin\Release\sCustomerDealQuery.pdb
+D:\Infolight\EEP2012\JBADMIN\sCustomerDealQuery\bin\Release\Newtonsoft.Json.dll
+D:\Infolight\EEP2012\JBADMIN\sCustomerDealQuery\bin\Release\Newtonsoft.Json.xml
+D:\Infolight\EEP2012\JBADMIN\sCustomerDealQuery\obj\Release\sCustomerDealQuery.Component.resources
+D:\Infolight\EEP2012\JBADMIN\sCustomerDealQuery\obj\Release\sCustomerDealQuery.csproj.GenerateResource.Cache
+D:\Infolight\EEP2012\JBADMIN\sCustomerDealQuery\obj\Release\sCustomerDealQuery.dll
+D:\Infolight\EEP2012\JBADMIN\sCustomerDealQuery\obj\Release\sCustomerDealQuery.pdb

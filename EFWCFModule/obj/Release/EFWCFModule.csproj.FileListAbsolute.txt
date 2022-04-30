@@ -6,3 +6,11 @@ C:\Program Files (x86)\Infolight\EEP2012\EFWCFModule\bin\Release\EFWCFModule.EEP
 C:\Program Files (x86)\Infolight\EEP2012\EFWCFModule\obj\Release\EFWCFModule.dll
 C:\Program Files (x86)\Infolight\EEP2012\EFWCFModule\obj\Release\EFWCFModule.pdb
 C:\Program Files (x86)\Infolight\EEP2012\EFWCFModule\obj\Release\EFWCFModule.csprojResolveAssemblyReference.cache
+D:\Infolight\EEP2012\EFWCFModule\bin\Release\EFWCFModule.dll
+D:\Infolight\EEP2012\EFWCFModule\bin\Release\EFWCFModule.pdb
+D:\Infolight\EEP2012\EFWCFModule\bin\Release\EFWCFModule.EEPAdapter.dll
+D:\Infolight\EEP2012\EFWCFModule\bin\Release\Newtonsoft.Json.dll
+D:\Infolight\EEP2012\EFWCFModule\bin\Release\EFWCFModule.EEPAdapter.pdb
+D:\Infolight\EEP2012\EFWCFModule\obj\Release\EFWCFModule.csprojResolveAssemblyReference.cache
+D:\Infolight\EEP2012\EFWCFModule\obj\Release\EFWCFModule.dll
+D:\Infolight\EEP2012\EFWCFModule\obj\Release\EFWCFModule.pdb

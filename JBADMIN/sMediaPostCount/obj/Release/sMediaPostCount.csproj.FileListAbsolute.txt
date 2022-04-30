@@ -1,0 +1,6 @@
+D:\Infolight\EEP2012\JBADMIN\sMediaPostCount\bin\Release\sMediaPostCount.dll
+D:\Infolight\EEP2012\JBADMIN\sMediaPostCount\bin\Release\sMediaPostCount.pdb
+D:\Infolight\EEP2012\JBADMIN\sMediaPostCount\obj\Release\sMediaPostCount.Component.resources
+D:\Infolight\EEP2012\JBADMIN\sMediaPostCount\obj\Release\sMediaPostCount.csproj.GenerateResource.Cache
+D:\Infolight\EEP2012\JBADMIN\sMediaPostCount\obj\Release\sMediaPostCount.dll
+D:\Infolight\EEP2012\JBADMIN\sMediaPostCount\obj\Release\sMediaPostCount.pdb

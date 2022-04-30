@@ -8,3 +8,9 @@ C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sShortTermMaster\obj\Release\sS
 C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sShortTermMaster\obj\Release\sShortTermMaster.pdb
 C:\Program Files (x86)\Infolight\EEP2012\EEPNetServer\JBADMIN\sShortTermMaster.dll
 C:\Program Files (x86)\Infolight\EEP2012\EEPNetServer\JBADMIN\sShortTermMaster.pdb
+D:\Infolight\EEP2012\EEPNetServer\JBADMIN\sShortTermMaster.dll
+D:\Infolight\EEP2012\EEPNetServer\JBADMIN\sShortTermMaster.pdb
+D:\Infolight\EEP2012\JBADMIN\sShortTermMaster\obj\Release\sShortTermMaster.Component.resources
+D:\Infolight\EEP2012\JBADMIN\sShortTermMaster\obj\Release\sShortTermMaster.csproj.GenerateResource.Cache
+D:\Infolight\EEP2012\JBADMIN\sShortTermMaster\obj\Release\sShortTermMaster.dll
+D:\Infolight\EEP2012\JBADMIN\sShortTermMaster\obj\Release\sShortTermMaster.pdb

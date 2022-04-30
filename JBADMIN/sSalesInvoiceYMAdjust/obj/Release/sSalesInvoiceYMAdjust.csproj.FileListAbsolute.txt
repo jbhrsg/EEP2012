@@ -1,0 +1,6 @@
+D:\Infolight\EEP2012\JBADMIN\sSalesInvoiceYMAdjust\bin\Release\sSalesInvoiceYMAdjust.dll
+D:\Infolight\EEP2012\JBADMIN\sSalesInvoiceYMAdjust\bin\Release\sSalesInvoiceYMAdjust.pdb
+D:\Infolight\EEP2012\JBADMIN\sSalesInvoiceYMAdjust\obj\Release\sSalesInvoiceYMAdjust.Component.resources
+D:\Infolight\EEP2012\JBADMIN\sSalesInvoiceYMAdjust\obj\Release\sSalesInvoiceYMAdjust.csproj.GenerateResource.Cache
+D:\Infolight\EEP2012\JBADMIN\sSalesInvoiceYMAdjust\obj\Release\sSalesInvoiceYMAdjust.dll
+D:\Infolight\EEP2012\JBADMIN\sSalesInvoiceYMAdjust\obj\Release\sSalesInvoiceYMAdjust.pdb

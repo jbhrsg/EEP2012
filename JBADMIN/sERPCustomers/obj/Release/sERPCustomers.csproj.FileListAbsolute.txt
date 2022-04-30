@@ -1,0 +1,17 @@
+D:\Infolight\EEP2012\JBADMIN\sERPCustomers\bin\Release\sERPCustomers.dll
+D:\Infolight\EEP2012\JBADMIN\sERPCustomers\bin\Release\sERPCustomers.pdb
+D:\Infolight\EEP2012\JBADMIN\sERPCustomers\bin\Release\EFBase.dll
+D:\Infolight\EEP2012\JBADMIN\sERPCustomers\bin\Release\EFServerTools.dll
+D:\Infolight\EEP2012\JBADMIN\sERPCustomers\bin\Release\EFWCFModule.dll
+D:\Infolight\EEP2012\JBADMIN\sERPCustomers\bin\Release\Newtonsoft.Json.dll
+D:\Infolight\EEP2012\JBADMIN\sERPCustomers\bin\Release\EFWCFModule.EEPAdapter.dll
+D:\Infolight\EEP2012\JBADMIN\sERPCustomers\bin\Release\EFServerTools.pdb
+D:\Infolight\EEP2012\JBADMIN\sERPCustomers\bin\Release\EFBase.pdb
+D:\Infolight\EEP2012\JBADMIN\sERPCustomers\bin\Release\EFWCFModule.pdb
+D:\Infolight\EEP2012\JBADMIN\sERPCustomers\bin\Release\Newtonsoft.Json.xml
+D:\Infolight\EEP2012\JBADMIN\sERPCustomers\bin\Release\EFWCFModule.EEPAdapter.pdb
+D:\Infolight\EEP2012\JBADMIN\sERPCustomers\obj\Release\sERPCustomers.csprojResolveAssemblyReference.cache
+D:\Infolight\EEP2012\JBADMIN\sERPCustomers\obj\Release\sERPCustomers.Component.resources
+D:\Infolight\EEP2012\JBADMIN\sERPCustomers\obj\Release\sERPCustomers.csproj.GenerateResource.Cache
+D:\Infolight\EEP2012\JBADMIN\sERPCustomers\obj\Release\sERPCustomers.dll
+D:\Infolight\EEP2012\JBADMIN\sERPCustomers\obj\Release\sERPCustomers.pdb

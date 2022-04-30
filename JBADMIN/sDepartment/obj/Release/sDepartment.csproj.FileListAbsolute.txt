@@ -1,0 +1,6 @@
+D:\Infolight\EEP2012\JBADMIN\sDepartment\bin\Release\sDepartment.dll
+D:\Infolight\EEP2012\JBADMIN\sDepartment\bin\Release\sDepartment.pdb
+D:\Infolight\EEP2012\JBADMIN\sDepartment\obj\Release\sDepartment.Component.resources
+D:\Infolight\EEP2012\JBADMIN\sDepartment\obj\Release\sDepartment.csproj.GenerateResource.Cache
+D:\Infolight\EEP2012\JBADMIN\sDepartment\obj\Release\sDepartment.dll
+D:\Infolight\EEP2012\JBADMIN\sDepartment\obj\Release\sDepartment.pdb

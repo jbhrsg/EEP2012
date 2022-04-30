@@ -1,0 +1,6 @@
+D:\Infolight\EEP2012\JBADMIN\sSalesInYears\bin\Release\sSalesInYears.dll
+D:\Infolight\EEP2012\JBADMIN\sSalesInYears\bin\Release\sSalesInYears.pdb
+D:\Infolight\EEP2012\JBADMIN\sSalesInYears\obj\Release\sSalesInYears.Component.resources
+D:\Infolight\EEP2012\JBADMIN\sSalesInYears\obj\Release\sSalesInYears.csproj.GenerateResource.Cache
+D:\Infolight\EEP2012\JBADMIN\sSalesInYears\obj\Release\sSalesInYears.dll
+D:\Infolight\EEP2012\JBADMIN\sSalesInYears\obj\Release\sSalesInYears.pdb

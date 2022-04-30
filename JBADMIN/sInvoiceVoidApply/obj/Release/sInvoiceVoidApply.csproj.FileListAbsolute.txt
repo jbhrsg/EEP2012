@@ -7,3 +7,11 @@ C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sInvoiceVoidApply\obj\Release\s
 C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sInvoiceVoidApply\obj\Release\sInvoiceVoidApply.csproj.GenerateResource.Cache
 C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sInvoiceVoidApply\obj\Release\sInvoiceVoidApply.dll
 C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sInvoiceVoidApply\obj\Release\sInvoiceVoidApply.pdb
+D:\Infolight\EEP2012\JBADMIN\sInvoiceVoidApply\bin\Release\sInvoiceVoidApply.dll
+D:\Infolight\EEP2012\JBADMIN\sInvoiceVoidApply\bin\Release\sInvoiceVoidApply.pdb
+D:\Infolight\EEP2012\JBADMIN\sInvoiceVoidApply\bin\Release\Newtonsoft.Json.dll
+D:\Infolight\EEP2012\JBADMIN\sInvoiceVoidApply\bin\Release\Newtonsoft.Json.xml
+D:\Infolight\EEP2012\JBADMIN\sInvoiceVoidApply\obj\Release\sInvoiceVoidApply.Component.resources
+D:\Infolight\EEP2012\JBADMIN\sInvoiceVoidApply\obj\Release\sInvoiceVoidApply.csproj.GenerateResource.Cache
+D:\Infolight\EEP2012\JBADMIN\sInvoiceVoidApply\obj\Release\sInvoiceVoidApply.dll
+D:\Infolight\EEP2012\JBADMIN\sInvoiceVoidApply\obj\Release\sInvoiceVoidApply.pdb

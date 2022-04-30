@@ -8,3 +8,9 @@ C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sAssetMaster\obj\Release\sAsset
 C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sAssetMaster\obj\Release\sAssetMaster.pdb
 C:\Program Files (x86)\Infolight\EEP2012\EEPNetServer\JBADMIN\sAssetMaster.dll
 C:\Program Files (x86)\Infolight\EEP2012\EEPNetServer\JBADMIN\sAssetMaster.pdb
+D:\Infolight\EEP2012\EEPNetServer\JBADMIN\sAssetMaster.dll
+D:\Infolight\EEP2012\EEPNetServer\JBADMIN\sAssetMaster.pdb
+D:\Infolight\EEP2012\JBADMIN\sAssetMaster\obj\Release\sAssetMaster.Component.resources
+D:\Infolight\EEP2012\JBADMIN\sAssetMaster\obj\Release\sAssetMaster.csproj.GenerateResource.Cache
+D:\Infolight\EEP2012\JBADMIN\sAssetMaster\obj\Release\sAssetMaster.dll
+D:\Infolight\EEP2012\JBADMIN\sAssetMaster\obj\Release\sAssetMaster.pdb

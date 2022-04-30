@@ -24,3 +24,29 @@ C:\Program Files (x86)\Infolight\EEP2012\JBTool\bin\Release\System.Web.Http.WebH
 C:\Program Files (x86)\Infolight\EEP2012\JBTool\obj\Release\JBTool.csprojResolveAssemblyReference.cache
 C:\Program Files (x86)\Infolight\EEP2012\JBTool\obj\Release\JBTool.dll
 C:\Program Files (x86)\Infolight\EEP2012\JBTool\obj\Release\JBTool.pdb
+D:\Infolight\EEP2012\JBTool\bin\Release\JBTool.dll
+D:\Infolight\EEP2012\JBTool\bin\Release\JBTool.pdb
+D:\Infolight\EEP2012\JBTool\bin\Release\ICSharpCode.SharpZipLib.dll
+D:\Infolight\EEP2012\JBTool\bin\Release\NCalc.dll
+D:\Infolight\EEP2012\JBTool\bin\Release\Newtonsoft.Json.dll
+D:\Infolight\EEP2012\JBTool\bin\Release\NPOI.dll
+D:\Infolight\EEP2012\JBTool\bin\Release\NPOI.OOXML.dll
+D:\Infolight\EEP2012\JBTool\bin\Release\NPOI.OpenXml4Net.dll
+D:\Infolight\EEP2012\JBTool\bin\Release\NPOI.OpenXmlFormats.dll
+D:\Infolight\EEP2012\JBTool\bin\Release\System.Net.Http.dll
+D:\Infolight\EEP2012\JBTool\bin\Release\System.Net.Http.Formatting.dll
+D:\Infolight\EEP2012\JBTool\bin\Release\System.Net.Http.WebRequest.dll
+D:\Infolight\EEP2012\JBTool\bin\Release\System.Web.Http.dll
+D:\Infolight\EEP2012\JBTool\bin\Release\System.Web.Http.WebHost.dll
+D:\Infolight\EEP2012\JBTool\bin\Release\Newtonsoft.Json.xml
+D:\Infolight\EEP2012\JBTool\bin\Release\NPOI.xml
+D:\Infolight\EEP2012\JBTool\bin\Release\NPOI.OOXML.xml
+D:\Infolight\EEP2012\JBTool\bin\Release\NPOI.OpenXml4Net.xml
+D:\Infolight\EEP2012\JBTool\bin\Release\System.Net.Http.xml
+D:\Infolight\EEP2012\JBTool\bin\Release\System.Net.Http.Formatting.xml
+D:\Infolight\EEP2012\JBTool\bin\Release\System.Net.Http.WebRequest.xml
+D:\Infolight\EEP2012\JBTool\bin\Release\System.Web.Http.xml
+D:\Infolight\EEP2012\JBTool\bin\Release\System.Web.Http.WebHost.xml
+D:\Infolight\EEP2012\JBTool\obj\Release\JBTool.csprojResolveAssemblyReference.cache
+D:\Infolight\EEP2012\JBTool\obj\Release\JBTool.dll
+D:\Infolight\EEP2012\JBTool\obj\Release\JBTool.pdb

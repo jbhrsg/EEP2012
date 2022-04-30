@@ -10,3 +10,9 @@ C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sShortTerm\obj\Release\sShortTe
 C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sShortTerm\obj\Release\sShortterm.csproj.GenerateResource.Cache
 C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sShortTerm\obj\Release\sShortTerm.dll
 C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sShortTerm\obj\Release\sShortTerm.pdb
+D:\Infolight\EEP2012\EEPNetServer\JBADMIN\sShortTerm.dll
+D:\Infolight\EEP2012\EEPNetServer\JBADMIN\sShortTerm.pdb
+D:\Infolight\EEP2012\JBADMIN\sShortTerm\obj\Release\sShortTerm.Component.resources
+D:\Infolight\EEP2012\JBADMIN\sShortTerm\obj\Release\sShortterm.csproj.GenerateResource.Cache
+D:\Infolight\EEP2012\JBADMIN\sShortTerm\obj\Release\sShortTerm.dll
+D:\Infolight\EEP2012\JBADMIN\sShortTerm\obj\Release\sShortTerm.pdb

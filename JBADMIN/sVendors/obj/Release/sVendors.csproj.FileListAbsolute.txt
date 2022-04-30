@@ -14,3 +14,19 @@ C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sVendors\obj\Release\sVendors.c
 C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sVendors\obj\Release\vi-VN\sVendors.resources.dll
 C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sVendors\obj\Release\sVendors.dll
 C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sVendors\obj\Release\sVendors.pdb
+D:\Infolight\EEP2012\JBADMIN\sVendors\bin\Release\sVendors.dll
+D:\Infolight\EEP2012\JBADMIN\sVendors\bin\Release\sVendors.pdb
+D:\Infolight\EEP2012\JBADMIN\sVendors\bin\Release\vi-VN\sVendors.resources.dll
+D:\Infolight\EEP2012\JBADMIN\sVendors\bin\Release\FLCore.dll
+D:\Infolight\EEP2012\JBADMIN\sVendors\bin\Release\FLTools.dll
+D:\Infolight\EEP2012\JBADMIN\sVendors\bin\Release\Newtonsoft.Json.dll
+D:\Infolight\EEP2012\JBADMIN\sVendors\bin\Release\FLTools.pdb
+D:\Infolight\EEP2012\JBADMIN\sVendors\bin\Release\FLCore.pdb
+D:\Infolight\EEP2012\JBADMIN\sVendors\bin\Release\Newtonsoft.Json.xml
+D:\Infolight\EEP2012\JBADMIN\sVendors\obj\Release\sVendors.csprojResolveAssemblyReference.cache
+D:\Infolight\EEP2012\JBADMIN\sVendors\obj\Release\sVendors.Component.resources
+D:\Infolight\EEP2012\JBADMIN\sVendors\obj\Release\sVendors.Component.vi-VN.resources
+D:\Infolight\EEP2012\JBADMIN\sVendors\obj\Release\sVendors.csproj.GenerateResource.Cache
+D:\Infolight\EEP2012\JBADMIN\sVendors\obj\Release\vi-VN\sVendors.resources.dll
+D:\Infolight\EEP2012\JBADMIN\sVendors\obj\Release\sVendors.dll
+D:\Infolight\EEP2012\JBADMIN\sVendors\obj\Release\sVendors.pdb

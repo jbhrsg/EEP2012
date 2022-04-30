@@ -1,0 +1,6 @@
+D:\Infolight\EEP2012\JBADMIN\sAPDetails\bin\Release\sAPDetails.dll
+D:\Infolight\EEP2012\JBADMIN\sAPDetails\bin\Release\sAPDetails.pdb
+D:\Infolight\EEP2012\JBADMIN\sAPDetails\obj\Release\sAPDetails.Component.resources
+D:\Infolight\EEP2012\JBADMIN\sAPDetails\obj\Release\sAPDetails.csproj.GenerateResource.Cache
+D:\Infolight\EEP2012\JBADMIN\sAPDetails\obj\Release\sAPDetails.dll
+D:\Infolight\EEP2012\JBADMIN\sAPDetails\obj\Release\sAPDetails.pdb

@@ -1,0 +1,6 @@
+D:\Infolight\EEP2012\JBADMIN\sERPARInvoice\bin\Release\sERPARInvoice.dll
+D:\Infolight\EEP2012\JBADMIN\sERPARInvoice\bin\Release\sERPARInvoice.pdb
+D:\Infolight\EEP2012\JBADMIN\sERPARInvoice\obj\Release\sERPARInvoice.Component.resources
+D:\Infolight\EEP2012\JBADMIN\sERPARInvoice\obj\Release\sERPARInvoice.csproj.GenerateResource.Cache
+D:\Infolight\EEP2012\JBADMIN\sERPARInvoice\obj\Release\sERPARInvoice.dll
+D:\Infolight\EEP2012\JBADMIN\sERPARInvoice\obj\Release\sERPARInvoice.pdb

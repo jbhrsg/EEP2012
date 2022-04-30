@@ -4,3 +4,9 @@ C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sERPDispatchArea\obj\Release\sE
 C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sERPDispatchArea\obj\Release\sERPDispatchArea.csproj.GenerateResource.Cache
 C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sERPDispatchArea\obj\Release\sERPDispatchArea.dll
 C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sERPDispatchArea\obj\Release\sERPDispatchArea.pdb
+D:\Infolight\EEP2012\JBADMIN\sERPDispatchArea\bin\Release\sERPDispatchArea.dll
+D:\Infolight\EEP2012\JBADMIN\sERPDispatchArea\bin\Release\sERPDispatchArea.pdb
+D:\Infolight\EEP2012\JBADMIN\sERPDispatchArea\obj\Release\sERPDispatchArea.Component.resources
+D:\Infolight\EEP2012\JBADMIN\sERPDispatchArea\obj\Release\sERPDispatchArea.csproj.GenerateResource.Cache
+D:\Infolight\EEP2012\JBADMIN\sERPDispatchArea\obj\Release\sERPDispatchArea.dll
+D:\Infolight\EEP2012\JBADMIN\sERPDispatchArea\obj\Release\sERPDispatchArea.pdb

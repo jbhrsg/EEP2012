@@ -1,0 +1,6 @@
+D:\Infolight\EEP2012\JBADMIN\sInvoiceVoids\bin\Release\sInvoiceVoids.dll
+D:\Infolight\EEP2012\JBADMIN\sInvoiceVoids\bin\Release\sInvoiceVoids.pdb
+D:\Infolight\EEP2012\JBADMIN\sInvoiceVoids\obj\Release\sInvoiceVoids.Component.resources
+D:\Infolight\EEP2012\JBADMIN\sInvoiceVoids\obj\Release\sInvoiceVoidsApply.csproj.GenerateResource.Cache
+D:\Infolight\EEP2012\JBADMIN\sInvoiceVoids\obj\Release\sInvoiceVoids.dll
+D:\Infolight\EEP2012\JBADMIN\sInvoiceVoids\obj\Release\sInvoiceVoids.pdb

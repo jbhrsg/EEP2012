@@ -4,3 +4,9 @@ C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sAssetType\obj\Release\sAssetTy
 C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sAssetType\obj\Release\sAssetType.csproj.GenerateResource.Cache
 C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sAssetType\obj\Release\sAssetType.dll
 C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sAssetType\obj\Release\sAssetType.pdb
+D:\Infolight\EEP2012\JBADMIN\sAssetType\bin\Release\sAssetType.dll
+D:\Infolight\EEP2012\JBADMIN\sAssetType\bin\Release\sAssetType.pdb
+D:\Infolight\EEP2012\JBADMIN\sAssetType\obj\Release\sAssetType.Component.resources
+D:\Infolight\EEP2012\JBADMIN\sAssetType\obj\Release\sAssetType.csproj.GenerateResource.Cache
+D:\Infolight\EEP2012\JBADMIN\sAssetType\obj\Release\sAssetType.dll
+D:\Infolight\EEP2012\JBADMIN\sAssetType\obj\Release\sAssetType.pdb

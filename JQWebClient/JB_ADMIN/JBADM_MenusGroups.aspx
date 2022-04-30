@@ -27,7 +27,7 @@
             var rowIndex = parseInt($(this).closest('tr').attr('datagrid-row-index'));
             var rowData = $("#dataGridView").datagrid('selectRow', rowIndex).datagrid('getSelected');
             var MENUID = rowData.MENUID;
-            var FiltStr = 'MENUID =' + "'" + MENUID + "'";
+            var FiltStr = 'A.MENUID =' + "'" + MENUID + "'";
             $("#JQDataGrid1").datagrid('setWhere', FiltStr);
             openForm('#JQDialog3', {}, "", 'dialog');
             return true;
@@ -50,7 +50,7 @@
             <JQTools:JQScriptManager ID="JQScriptManager1" runat="server" />
             <JQTools:JQDataGrid ID="dataGridView" data-options="pagination:true,view:commandview" RemoteName="sSYSMenusGroups.MENUTABLE" runat="server" AutoApply="True"
                 DataMember="MENUTABLE" Pagination="True" QueryTitle="Query" EditDialogID="JQDialog1"
-                Title="系統功能對應角色功能權限" AllowAdd="False" AllowDelete="False" AllowUpdate="False" AlwaysClose="False" BufferView="False" CheckOnSelect="True" ColumnsHibeable="False" DeleteCommandVisible="False" DuplicateCheck="False" EditMode="Dialog" EditOnEnter="True" InsertCommandVisible="False" MultiSelect="False" NotInitGrid="False" PageList="20,40,60,80" PageSize="20" QueryAutoColumn="False" QueryLeft="" QueryMode="Window" QueryTop="" RecordLock="False" RecordLockMode="None" RowNumbers="True" TotalCaption="Total:" UpdateCommandVisible="False" ViewCommandVisible="True" Width="455px" OnSelect="dataGridViewOnSelect">
+                Title="系統功能-&gt;角色群組權限" AllowAdd="False" AllowDelete="False" AllowUpdate="False" AlwaysClose="False" BufferView="False" CheckOnSelect="True" ColumnsHibeable="False" DeleteCommandVisible="False" DuplicateCheck="False" EditMode="Dialog" EditOnEnter="True" InsertCommandVisible="False" MultiSelect="False" NotInitGrid="False" PageList="20,40,60,80" PageSize="20" QueryAutoColumn="False" QueryLeft="" QueryMode="Window" QueryTop="" RecordLock="False" RecordLockMode="None" RowNumbers="True" TotalCaption="Total:" UpdateCommandVisible="False" ViewCommandVisible="True" Width="455px" OnSelect="dataGridViewOnSelect">
                 <Columns>
                     <JQTools:JQGridColumn Alignment="left" Caption="MENUID" Editor="text" FieldName="MENUID" Format="" MaxLength="0" Width="120" Visible="False" />
                     <JQTools:JQGridColumn Alignment="left" Caption="PARENT" Editor="text" FieldName="PARENT" Format="" MaxLength="0" Width="120" Visible="False" />
@@ -80,7 +80,7 @@
             </JQTools:JQDialog>
             <br />
             <JQTools:JQDialog ID="JQDialog3" runat="server" DialogLeft="465px" DialogTop="8px" Title="角色群組列表" Width="650px" Closed="True" ShowSubmitDiv="False" DialogCenter="False" EditMode="Dialog" EnableTheming="True" ScrollBars="Vertical">
-            <JQTools:JQDataGrid ID="JQDataGrid1" runat="server" AllowAdd="False" AllowDelete="False" AllowUpdate="False" AlwaysClose="False" AutoApply="True" BufferView="False" CheckOnSelect="True" ColumnsHibeable="False" DataMember="GROUPMENUS" DeleteCommandVisible="False" DuplicateCheck="False" EditMode="Dialog" EditOnEnter="True" InsertCommandVisible="False" MultiSelect="False" NotInitGrid="False" PageList="20,40,60" PageSize="20" Pagination="True" QueryAutoColumn="False" QueryLeft="" QueryMode="Window" QueryTitle="Query" QueryTop="" RecordLock="False" RecordLockMode="None" RemoteName="sSYSMenusGroups.GROUPMENUS" RowNumbers="True" Title="" TotalCaption="Total:" UpdateCommandVisible="False" ViewCommandVisible="False" Width="580px">
+            <JQTools:JQDataGrid ID="JQDataGrid1" runat="server" AllowAdd="False" AllowDelete="False" AllowUpdate="False" AlwaysClose="True" AutoApply="True" BufferView="False" CheckOnSelect="True" ColumnsHibeable="False" DataMember="GROUPMENUS" DeleteCommandVisible="False" DuplicateCheck="False" EditMode="Dialog" EditOnEnter="True" InsertCommandVisible="False" MultiSelect="False" NotInitGrid="False" PageList="20,40,60" PageSize="20" Pagination="True" QueryAutoColumn="False" QueryLeft="" QueryMode="Window" QueryTitle="Query" QueryTop="" RecordLock="False" RecordLockMode="None" RemoteName="sSYSMenusGroups.GROUPMENUS" RowNumbers="True" Title="" TotalCaption="Total:" UpdateCommandVisible="False" ViewCommandVisible="False" Width="580px">
                     <Columns>
                         <JQTools:JQGridColumn Alignment="left" Caption="GROUPID" Editor="text" FieldName="GROUPID" Frozen="False" IsNvarChar="False" MaxLength="0" QueryCondition="" ReadOnly="False" Sortable="False" Visible="False" Width="80">
                         </JQTools:JQGridColumn>

@@ -1,0 +1,6 @@
+D:\Infolight\EEP2012\JBADMIN\sPOType\bin\Release\sPO_POType.dll
+D:\Infolight\EEP2012\JBADMIN\sPOType\bin\Release\sPO_POType.pdb
+D:\Infolight\EEP2012\JBADMIN\sPOType\obj\Release\sPO_POType.Component.resources
+D:\Infolight\EEP2012\JBADMIN\sPOType\obj\Release\sPO_POType.csproj.GenerateResource.Cache
+D:\Infolight\EEP2012\JBADMIN\sPOType\obj\Release\sPO_POType.dll
+D:\Infolight\EEP2012\JBADMIN\sPOType\obj\Release\sPO_POType.pdb

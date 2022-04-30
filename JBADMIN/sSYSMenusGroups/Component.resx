@@ -124,22 +124,36 @@
     <value>17, 143</value>
   </metadata>
   <metadata name="MENUTABLE.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>17, 185</value>
+    <value>17, 227</value>
   </metadata>
   <metadata name="ucMENUTABLE.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>17, 227</value>
+    <value>17, 269</value>
   </metadata>
   <metadata name="View_MENUTABLE.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>17, 59</value>
   </metadata>
   <metadata name="GROUPMENUS.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>197, 143</value>
+    <value>17, 185</value>
   </metadata>
   <data name="GROUPMENUS.CommandText" xml:space="preserve">
     <value>SELECT A.GROUPID,B.GROUPNAME,A.MENUID,Case Upper(b.IsRole) When 'Y' then '角色' Else '群組' end as RoleType,
-dbo.funReturnGroupUserNames(A.GroupID) AS UserNames
+dbo.funReturnGroupUserNames(A.GroupID) AS UserNames,dbo.funReturnMenuPath(c.MENUID)  AS FunctionName
 FROM GROUPMENUS AS A
-LEFT JOIN GROUPS B ON A.GROUPID = B.GROUPID</value>
+LEFT JOIN GROUPS B ON A.GROUPID = B.GROUPID
+LEFT JOIN MENUTABLE C ON A.MENUID=C.MENUID
+
+</value>
+  </data>
+  <metadata name="GROUPS.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>245, 213</value>
+  </metadata>
+  <data name="GROUPS.CommandText" xml:space="preserve">
+    <value>SELECT GROUPID,GROUPNAME,(SELECT COUNT(MENUID) FROM GROUPMENUS WHERE GROUPID=GROUPS.GROUPID) AS FUNCount
+FROM GROUPS
+WHERE GROUPID IN (SELECT GROUPID FROM GROUPMENUS GROUP BY GROUPID)
+ORDER BY GROUPID,GROUPNAME
+
+</value>
   </data>
   <metadata name="$this.TrayLargeIcon" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>False</value>

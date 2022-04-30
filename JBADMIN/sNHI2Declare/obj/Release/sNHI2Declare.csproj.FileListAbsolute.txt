@@ -1,0 +1,6 @@
+D:\Infolight\EEP2012\JBADMIN\sNHI2Declare\bin\Release\sNHI2Declare.dll
+D:\Infolight\EEP2012\JBADMIN\sNHI2Declare\bin\Release\sNHI2Declare.pdb
+D:\Infolight\EEP2012\JBADMIN\sNHI2Declare\obj\Release\sNHI2Declare.Component.resources
+D:\Infolight\EEP2012\JBADMIN\sNHI2Declare\obj\Release\sNHI2Declare.csproj.GenerateResource.Cache
+D:\Infolight\EEP2012\JBADMIN\sNHI2Declare\obj\Release\sNHI2Declare.dll
+D:\Infolight\EEP2012\JBADMIN\sNHI2Declare\obj\Release\sNHI2Declare.pdb

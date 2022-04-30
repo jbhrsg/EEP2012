@@ -5,3 +5,9 @@ C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sEmpYearPayQuery\obj\Release\sE
 C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sEmpYearPayQuery\obj\Release\sEmpYearPayQuery.csproj.GenerateResource.Cache
 C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sEmpYearPayQuery\obj\Release\sEmpYearPayQuery.dll
 C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sEmpYearPayQuery\obj\Release\sEmpYearPayQuery.pdb
+D:\Infolight\EEP2012\JBADMIN\sEmpYearPayQuery\bin\Release\sEmpYearPayQuery.dll
+D:\Infolight\EEP2012\JBADMIN\sEmpYearPayQuery\bin\Release\sEmpYearPayQuery.pdb
+D:\Infolight\EEP2012\JBADMIN\sEmpYearPayQuery\obj\Release\sEmpYearPayQuery.Component.resources
+D:\Infolight\EEP2012\JBADMIN\sEmpYearPayQuery\obj\Release\sEmpYearPayQuery.csproj.GenerateResource.Cache
+D:\Infolight\EEP2012\JBADMIN\sEmpYearPayQuery\obj\Release\sEmpYearPayQuery.dll
+D:\Infolight\EEP2012\JBADMIN\sEmpYearPayQuery\obj\Release\sEmpYearPayQuery.pdb

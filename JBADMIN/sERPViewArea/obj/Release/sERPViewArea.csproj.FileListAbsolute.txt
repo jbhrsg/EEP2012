@@ -6,3 +6,12 @@ C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sERPViewArea\obj\Release\sERPVi
 C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sERPViewArea\obj\Release\sERPViewArea.csproj.GenerateResource.Cache
 C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sERPViewArea\obj\Release\sERPViewArea.dll
 C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sERPViewArea\obj\Release\sERPViewArea.pdb
+D:\Infolight\EEP2012\JBADMIN\sERPViewArea\bin\Release\sERPViewArea.dll
+D:\Infolight\EEP2012\JBADMIN\sERPViewArea\bin\Release\sERPViewArea.pdb
+D:\Infolight\EEP2012\JBADMIN\sERPViewArea\bin\Release\Newtonsoft.Json.dll
+D:\Infolight\EEP2012\JBADMIN\sERPViewArea\bin\Release\Newtonsoft.Json.xml
+D:\Infolight\EEP2012\JBADMIN\sERPViewArea\obj\Release\sERPViewArea.Component.resources
+D:\Infolight\EEP2012\JBADMIN\sERPViewArea\obj\Release\sERPViewArea.csproj.GenerateResource.Cache
+D:\Infolight\EEP2012\JBADMIN\sERPViewArea\obj\Release\sERPViewArea.dll
+D:\Infolight\EEP2012\JBADMIN\sERPViewArea\obj\Release\sERPViewArea.pdb
+D:\Infolight\EEP2012\JBADMIN\sERPViewArea\obj\Release\sERPViewArea.csprojResolveAssemblyReference.cache

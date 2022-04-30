@@ -4,4 +4,3 @@ D:\infolight\EEP2012\JBADMIN\sIssueJobQuery\obj\Release\sIssueJobQuery.Component
 D:\infolight\EEP2012\JBADMIN\sIssueJobQuery\obj\Release\sIssueJobQuery.csproj.GenerateResource.Cache
 D:\infolight\EEP2012\JBADMIN\sIssueJobQuery\obj\Release\sIssueJobQuery.dll
 D:\infolight\EEP2012\JBADMIN\sIssueJobQuery\obj\Release\sIssueJobQuery.pdb
-D:\Infolight\EEP2012\JBADMIN\sIssueJobQuery\obj\Release\sIssueJobQuery.csprojResolveAssemblyReference.cache

@@ -1,0 +1,6 @@
+D:\Infolight\EEP2012\JBADMIN\sJBRecruitOverDuty\bin\Release\sJBRecruitOverDuty.dll
+D:\Infolight\EEP2012\JBADMIN\sJBRecruitOverDuty\bin\Release\sJBRecruitOverDuty.pdb
+D:\Infolight\EEP2012\JBADMIN\sJBRecruitOverDuty\obj\Release\sJBRecruitOverDuty.Component.resources
+D:\Infolight\EEP2012\JBADMIN\sJBRecruitOverDuty\obj\Release\sJBRecruitOverDuty.csproj.GenerateResource.Cache
+D:\Infolight\EEP2012\JBADMIN\sJBRecruitOverDuty\obj\Release\sJBRecruitOverDuty.dll
+D:\Infolight\EEP2012\JBADMIN\sJBRecruitOverDuty\obj\Release\sJBRecruitOverDuty.pdb

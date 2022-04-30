@@ -1,0 +1,9 @@
+D:\Infolight\EEP2012\JBADMIN\sERPDelayLunchSet\bin\Release\sERPDelayLunchSet.dll
+D:\Infolight\EEP2012\JBADMIN\sERPDelayLunchSet\bin\Release\sERPDelayLunchSet.pdb
+D:\Infolight\EEP2012\JBADMIN\sERPDelayLunchSet\bin\Release\Newtonsoft.Json.dll
+D:\Infolight\EEP2012\JBADMIN\sERPDelayLunchSet\bin\Release\Newtonsoft.Json.xml
+D:\Infolight\EEP2012\JBADMIN\sERPDelayLunchSet\obj\Release\sERPDelayLunchSet.Component.resources
+D:\Infolight\EEP2012\JBADMIN\sERPDelayLunchSet\obj\Release\sERPDelayLunchSet.csproj.GenerateResource.Cache
+D:\Infolight\EEP2012\JBADMIN\sERPDelayLunchSet\obj\Release\sERPDelayLunchSet.dll
+D:\Infolight\EEP2012\JBADMIN\sERPDelayLunchSet\obj\Release\sERPDelayLunchSet.pdb
+D:\Infolight\EEP2012\JBADMIN\sERPDelayLunchSet\obj\Release\sERPDelayLunchSet.csprojResolveAssemblyReference.cache

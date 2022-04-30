@@ -1,0 +1,9 @@
+D:\Infolight\EEP2012\JBADMIN\sCostCenter\bin\Release\sCostCenter.dll
+D:\Infolight\EEP2012\JBADMIN\sCostCenter\bin\Release\sCostCenter.pdb
+D:\Infolight\EEP2012\JBADMIN\sCostCenter\bin\Release\Newtonsoft.Json.dll
+D:\Infolight\EEP2012\JBADMIN\sCostCenter\bin\Release\Newtonsoft.Json.xml
+D:\Infolight\EEP2012\JBADMIN\sCostCenter\obj\Release\sCostCenter.csprojResolveAssemblyReference.cache
+D:\Infolight\EEP2012\JBADMIN\sCostCenter\obj\Release\sCostCenter.Component.resources
+D:\Infolight\EEP2012\JBADMIN\sCostCenter\obj\Release\sCostCenter.csproj.GenerateResource.Cache
+D:\Infolight\EEP2012\JBADMIN\sCostCenter\obj\Release\sCostCenter.dll
+D:\Infolight\EEP2012\JBADMIN\sCostCenter\obj\Release\sCostCenter.pdb

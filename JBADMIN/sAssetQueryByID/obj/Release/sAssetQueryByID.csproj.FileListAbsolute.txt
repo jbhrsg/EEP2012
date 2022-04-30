@@ -1,0 +1,8 @@
+D:\Infolight\EEP2012\JBADMIN\sAssetQueryByID\bin\Release\sAssetQueryByID.dll
+D:\Infolight\EEP2012\JBADMIN\sAssetQueryByID\bin\Release\sAssetQueryByID.pdb
+D:\Infolight\EEP2012\JBADMIN\sAssetQueryByID\bin\Release\Newtonsoft.Json.dll
+D:\Infolight\EEP2012\JBADMIN\sAssetQueryByID\bin\Release\Newtonsoft.Json.xml
+D:\Infolight\EEP2012\JBADMIN\sAssetQueryByID\obj\Release\sAssetQueryByID.Component.resources
+D:\Infolight\EEP2012\JBADMIN\sAssetQueryByID\obj\Release\sAssetQueryByID.csproj.GenerateResource.Cache
+D:\Infolight\EEP2012\JBADMIN\sAssetQueryByID\obj\Release\sAssetQueryByID.dll
+D:\Infolight\EEP2012\JBADMIN\sAssetQueryByID\obj\Release\sAssetQueryByID.pdb

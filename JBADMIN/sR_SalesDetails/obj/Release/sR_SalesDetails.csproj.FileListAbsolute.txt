@@ -1,0 +1,9 @@
+D:\Infolight\EEP2012\JBADMIN\sR_SalesDetails\bin\Release\sR_SalesDetails.dll
+D:\Infolight\EEP2012\JBADMIN\sR_SalesDetails\bin\Release\sR_SalesDetails.pdb
+D:\Infolight\EEP2012\JBADMIN\sR_SalesDetails\bin\Release\Newtonsoft.Json.dll
+D:\Infolight\EEP2012\JBADMIN\sR_SalesDetails\bin\Release\Newtonsoft.Json.xml
+D:\Infolight\EEP2012\JBADMIN\sR_SalesDetails\obj\Release\sR_SalesDetails.Component.resources
+D:\Infolight\EEP2012\JBADMIN\sR_SalesDetails\obj\Release\sR_SalesDetails.csproj.GenerateResource.Cache
+D:\Infolight\EEP2012\JBADMIN\sR_SalesDetails\obj\Release\sR_SalesDetails.dll
+D:\Infolight\EEP2012\JBADMIN\sR_SalesDetails\obj\Release\sR_SalesDetails.pdb
+D:\Infolight\EEP2012\JBADMIN\sR_SalesDetails\obj\Release\sR_SalesDetails.csprojResolveAssemblyReference.cache

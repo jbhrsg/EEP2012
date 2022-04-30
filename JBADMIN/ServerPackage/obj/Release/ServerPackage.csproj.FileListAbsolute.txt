@@ -1,0 +1,6 @@
+D:\Infolight\EEP2012\JBADMIN\ServerPackage\bin\Release\ServerPackage.dll
+D:\Infolight\EEP2012\JBADMIN\ServerPackage\bin\Release\ServerPackage.pdb
+D:\Infolight\EEP2012\JBADMIN\ServerPackage\obj\Release\ServerPackage.Component.resources
+D:\Infolight\EEP2012\JBADMIN\ServerPackage\obj\Release\ServerPackage.csproj.GenerateResource.Cache
+D:\Infolight\EEP2012\JBADMIN\ServerPackage\obj\Release\ServerPackage.dll
+D:\Infolight\EEP2012\JBADMIN\ServerPackage\obj\Release\ServerPackage.pdb

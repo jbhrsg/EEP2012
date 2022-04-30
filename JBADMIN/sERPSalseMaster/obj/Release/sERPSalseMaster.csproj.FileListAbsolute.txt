@@ -1,0 +1,6 @@
+D:\Infolight\EEP2012\JBADMIN\sERPSalseMaster\bin\Release\sERPSalseMaster.dll
+D:\Infolight\EEP2012\JBADMIN\sERPSalseMaster\bin\Release\sERPSalseMaster.pdb
+D:\Infolight\EEP2012\JBADMIN\sERPSalseMaster\obj\Release\sERPSalseMaster.Component.resources
+D:\Infolight\EEP2012\JBADMIN\sERPSalseMaster\obj\Release\sERPSalseMaster.csproj.GenerateResource.Cache
+D:\Infolight\EEP2012\JBADMIN\sERPSalseMaster\obj\Release\sERPSalseMaster.dll
+D:\Infolight\EEP2012\JBADMIN\sERPSalseMaster\obj\Release\sERPSalseMaster.pdb

@@ -1050,7 +1050,6 @@
     }
     function OnBlurTaxNO() {
         var TaxNO = $("#dataFormMasterTaxNO").val().trim();
-        alert(TaxNO);
         $("#dataFormMasterTaxNO").val(TaxNO);
     }
     //離開客戶名稱_開發客戶

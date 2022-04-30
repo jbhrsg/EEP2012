@@ -1,0 +1,8 @@
+D:\Infolight\EEP2012\JBADMIN\sJCSEmpAttendance\bin\Release\sJCSEmpAttendance.dll
+D:\Infolight\EEP2012\JBADMIN\sJCSEmpAttendance\bin\Release\sJCSEmpAttendance.pdb
+D:\Infolight\EEP2012\JBADMIN\sJCSEmpAttendance\bin\Release\Newtonsoft.Json.dll
+D:\Infolight\EEP2012\JBADMIN\sJCSEmpAttendance\bin\Release\Newtonsoft.Json.xml
+D:\Infolight\EEP2012\JBADMIN\sJCSEmpAttendance\obj\Release\sJCSEmpAttendance.Component.resources
+D:\Infolight\EEP2012\JBADMIN\sJCSEmpAttendance\obj\Release\sJCSEmpAttendance.csproj.GenerateResource.Cache
+D:\Infolight\EEP2012\JBADMIN\sJCSEmpAttendance\obj\Release\sJCSEmpAttendance.dll
+D:\Infolight\EEP2012\JBADMIN\sJCSEmpAttendance\obj\Release\sJCSEmpAttendance.pdb

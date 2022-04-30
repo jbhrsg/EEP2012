@@ -6,3 +6,11 @@ C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sPettyCashYM\obj\Release\sPetty
 C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sPettyCashYM\obj\Release\sPettyCashYM.csproj.GenerateResource.Cache
 C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sPettyCashYM\obj\Release\sPettyCashYM.dll
 C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sPettyCashYM\obj\Release\sPettyCashYM.pdb
+D:\Infolight\EEP2012\JBADMIN\sPettyCashYM\bin\Release\sPettyCashYM.dll
+D:\Infolight\EEP2012\JBADMIN\sPettyCashYM\bin\Release\sPettyCashYM.pdb
+D:\Infolight\EEP2012\JBADMIN\sPettyCashYM\bin\Release\Newtonsoft.Json.dll
+D:\Infolight\EEP2012\JBADMIN\sPettyCashYM\bin\Release\Newtonsoft.Json.xml
+D:\Infolight\EEP2012\JBADMIN\sPettyCashYM\obj\Release\sPettyCashYM.Component.resources
+D:\Infolight\EEP2012\JBADMIN\sPettyCashYM\obj\Release\sPettyCashYM.csproj.GenerateResource.Cache
+D:\Infolight\EEP2012\JBADMIN\sPettyCashYM\obj\Release\sPettyCashYM.dll
+D:\Infolight\EEP2012\JBADMIN\sPettyCashYM\obj\Release\sPettyCashYM.pdb

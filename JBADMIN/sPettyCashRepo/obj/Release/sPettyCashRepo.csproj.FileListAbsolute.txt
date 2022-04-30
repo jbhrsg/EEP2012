@@ -6,3 +6,12 @@ C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sPettyCashRepo\obj\Release\sPet
 C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sPettyCashRepo\obj\Release\sPettyCashRepo.csproj.GenerateResource.Cache
 C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sPettyCashRepo\obj\Release\sPettyCashRepo.dll
 C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sPettyCashRepo\obj\Release\sPettyCashRepo.pdb
+D:\Infolight\EEP2012\JBADMIN\sPettyCashRepo\bin\Release\sPettyCashRepo.dll
+D:\Infolight\EEP2012\JBADMIN\sPettyCashRepo\bin\Release\sPettyCashRepo.pdb
+D:\Infolight\EEP2012\JBADMIN\sPettyCashRepo\bin\Release\Newtonsoft.Json.dll
+D:\Infolight\EEP2012\JBADMIN\sPettyCashRepo\bin\Release\Newtonsoft.Json.xml
+D:\Infolight\EEP2012\JBADMIN\sPettyCashRepo\obj\Release\sPettyCashRepo.csprojResolveAssemblyReference.cache
+D:\Infolight\EEP2012\JBADMIN\sPettyCashRepo\obj\Release\sPettyCashRepo.Component.resources
+D:\Infolight\EEP2012\JBADMIN\sPettyCashRepo\obj\Release\sPettyCashRepo.csproj.GenerateResource.Cache
+D:\Infolight\EEP2012\JBADMIN\sPettyCashRepo\obj\Release\sPettyCashRepo.dll
+D:\Infolight\EEP2012\JBADMIN\sPettyCashRepo\obj\Release\sPettyCashRepo.pdb

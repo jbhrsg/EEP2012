@@ -1,0 +1,9 @@
+D:\Infolight\EEP2012\JBADMIN\sERPCustomer2\bin\Release\sERPCustomer2.dll
+D:\Infolight\EEP2012\JBADMIN\sERPCustomer2\bin\Release\sERPCustomer2.pdb
+D:\Infolight\EEP2012\JBADMIN\sERPCustomer2\bin\Release\Newtonsoft.Json.dll
+D:\Infolight\EEP2012\JBADMIN\sERPCustomer2\bin\Release\Newtonsoft.Json.xml
+D:\Infolight\EEP2012\JBADMIN\sERPCustomer2\obj\Release\sERPCustomer2.Component.resources
+D:\Infolight\EEP2012\JBADMIN\sERPCustomer2\obj\Release\sERPCustomer2.csproj.GenerateResource.Cache
+D:\Infolight\EEP2012\JBADMIN\sERPCustomer2\obj\Release\sERPCustomer2.dll
+D:\Infolight\EEP2012\JBADMIN\sERPCustomer2\obj\Release\sERPCustomer2.pdb
+D:\Infolight\EEP2012\JBADMIN\sERPCustomer2\obj\Release\sERPCustomer2.csprojResolveAssemblyReference.cache

@@ -1,0 +1,13 @@
+D:\Infolight\EEP2012\JBADMIN\sPO_Normal_PRPOIQC\bin\Release\sPO_Normal_PRPOIQC.dll
+D:\Infolight\EEP2012\JBADMIN\sPO_Normal_PRPOIQC\bin\Release\sPO_Normal_PRPOIQC.pdb
+D:\Infolight\EEP2012\JBADMIN\sPO_Normal_PRPOIQC\bin\Release\vi-VN\sPO_Normal_PRPOIQC.resources.dll
+D:\Infolight\EEP2012\JBADMIN\sPO_Normal_PRPOIQC\bin\Release\Newtonsoft.Json.dll
+D:\Infolight\EEP2012\JBADMIN\sPO_Normal_PRPOIQC\obj\Release\sPO_Normal_PRPOIQC.Component.resources
+D:\Infolight\EEP2012\JBADMIN\sPO_Normal_PRPOIQC\obj\Release\sPO_Normal_PRPOIQC.Component.vi-VN.resources
+D:\Infolight\EEP2012\JBADMIN\sPO_Normal_PRPOIQC\obj\Release\sPO_Normal_PRPOIQC.csproj.GenerateResource.Cache
+D:\Infolight\EEP2012\JBADMIN\sPO_Normal_PRPOIQC\obj\Release\vi-VN\sPO_Normal_PRPOIQC.resources.dll
+D:\Infolight\EEP2012\JBADMIN\sPO_Normal_PRPOIQC\obj\Release\sPO_Normal_PRPOIQC.dll
+D:\Infolight\EEP2012\JBADMIN\sPO_Normal_PRPOIQC\obj\Release\sPO_Normal_PRPOIQC.pdb
+D:\Infolight\EEP2012\EEPNetServer\JBADMIN\sPO_Normal_PRPOIQC.dll
+D:\Infolight\EEP2012\EEPNetServer\JBADMIN\sPO_Normal_PRPOIQC.pdb
+D:\Infolight\EEP2012\EEPNetServer\JBADMIN\vi-VN\sPO_Normal_PRPOIQC.resources.dll

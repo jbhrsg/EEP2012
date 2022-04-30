@@ -4,3 +4,9 @@ C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sAssetLicence\obj\Release\sAsse
 C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sAssetLicence\obj\Release\sAssetLicence.csproj.GenerateResource.Cache
 C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sAssetLicence\obj\Release\sAssetLicence.dll
 C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sAssetLicence\obj\Release\sAssetLicence.pdb
+D:\Infolight\EEP2012\JBADMIN\sAssetLicence\bin\Release\sAssetLicence.dll
+D:\Infolight\EEP2012\JBADMIN\sAssetLicence\bin\Release\sAssetLicence.pdb
+D:\Infolight\EEP2012\JBADMIN\sAssetLicence\obj\Release\sAssetLicence.Component.resources
+D:\Infolight\EEP2012\JBADMIN\sAssetLicence\obj\Release\sAssetLicence.csproj.GenerateResource.Cache
+D:\Infolight\EEP2012\JBADMIN\sAssetLicence\obj\Release\sAssetLicence.dll
+D:\Infolight\EEP2012\JBADMIN\sAssetLicence\obj\Release\sAssetLicence.pdb

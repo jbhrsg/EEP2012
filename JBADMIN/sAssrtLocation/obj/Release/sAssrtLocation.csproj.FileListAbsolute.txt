@@ -4,3 +4,9 @@ C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sAssrtLocation\obj\Release\TAG_
 C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sAssrtLocation\obj\Release\sAssrtLocation.csproj.GenerateResource.Cache
 C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sAssrtLocation\obj\Release\sAssrtLocation.dll
 C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sAssrtLocation\obj\Release\sAssrtLocation.pdb
+D:\Infolight\EEP2012\JBADMIN\sAssrtLocation\bin\Release\sAssrtLocation.dll
+D:\Infolight\EEP2012\JBADMIN\sAssrtLocation\bin\Release\sAssrtLocation.pdb
+D:\Infolight\EEP2012\JBADMIN\sAssrtLocation\obj\Release\TAG_NAMESPACE.Component.resources
+D:\Infolight\EEP2012\JBADMIN\sAssrtLocation\obj\Release\sAssrtLocation.csproj.GenerateResource.Cache
+D:\Infolight\EEP2012\JBADMIN\sAssrtLocation\obj\Release\sAssrtLocation.dll
+D:\Infolight\EEP2012\JBADMIN\sAssrtLocation\obj\Release\sAssrtLocation.pdb

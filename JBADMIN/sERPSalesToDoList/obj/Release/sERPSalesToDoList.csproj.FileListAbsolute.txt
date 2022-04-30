@@ -1,0 +1,6 @@
+D:\Infolight\EEP2012\JBADMIN\sERPSalesToDoList\bin\Release\sERPSalesToDoList.dll
+D:\Infolight\EEP2012\JBADMIN\sERPSalesToDoList\bin\Release\sERPSalesToDoList.pdb
+D:\Infolight\EEP2012\JBADMIN\sERPSalesToDoList\obj\Release\sERPSalesToDoList.Component.resources
+D:\Infolight\EEP2012\JBADMIN\sERPSalesToDoList\obj\Release\sERPSalesToDoList.csproj.GenerateResource.Cache
+D:\Infolight\EEP2012\JBADMIN\sERPSalesToDoList\obj\Release\sERPSalesToDoList.dll
+D:\Infolight\EEP2012\JBADMIN\sERPSalesToDoList\obj\Release\sERPSalesToDoList.pdb

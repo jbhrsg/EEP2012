@@ -7,3 +7,10 @@ C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sShortTermMasterApply\obj\Relea
 C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sShortTermMasterApply\obj\Release\sShortTermMasterApply.dll
 C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sShortTermMasterApply\obj\Release\sShortTermMasterApply.pdb
 C:\Program Files (x86)\Infolight\EEP2012\EEPNetServer\JBADMIN\sShortTermMasterApply.pdb
+D:\Infolight\EEP2012\EEPNetServer\JBADMIN\sShortTermMasterApply.dll
+D:\Infolight\EEP2012\EEPNetServer\JBADMIN\sShortTermMasterApply.pdb
+D:\Infolight\EEP2012\JBADMIN\sShortTermMasterApply\obj\Release\sShortTermMasterApply.csprojResolveAssemblyReference.cache
+D:\Infolight\EEP2012\JBADMIN\sShortTermMasterApply\obj\Release\sShortTermMasterApply.Component.resources
+D:\Infolight\EEP2012\JBADMIN\sShortTermMasterApply\obj\Release\sShortTermMasterApply.csproj.GenerateResource.Cache
+D:\Infolight\EEP2012\JBADMIN\sShortTermMasterApply\obj\Release\sShortTermMasterApply.dll
+D:\Infolight\EEP2012\JBADMIN\sShortTermMasterApply\obj\Release\sShortTermMasterApply.pdb

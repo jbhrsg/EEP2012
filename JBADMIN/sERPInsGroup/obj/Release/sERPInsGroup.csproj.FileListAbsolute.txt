@@ -1,0 +1,6 @@
+D:\Infolight\EEP2012\JBADMIN\sERPInsGroup\bin\Release\sERPInsGroup.dll
+D:\Infolight\EEP2012\JBADMIN\sERPInsGroup\bin\Release\sERPInsGroup.pdb
+D:\Infolight\EEP2012\JBADMIN\sERPInsGroup\obj\Release\sERPInsGroup.Component.resources
+D:\Infolight\EEP2012\JBADMIN\sERPInsGroup\obj\Release\sERPInsGroup.csproj.GenerateResource.Cache
+D:\Infolight\EEP2012\JBADMIN\sERPInsGroup\obj\Release\sERPInsGroup.dll
+D:\Infolight\EEP2012\JBADMIN\sERPInsGroup\obj\Release\sERPInsGroup.pdb

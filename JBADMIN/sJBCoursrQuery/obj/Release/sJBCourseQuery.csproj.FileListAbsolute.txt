@@ -4,3 +4,9 @@ C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sJBCoursrQuery\obj\Release\sJBC
 C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sJBCoursrQuery\obj\Release\sJBCourseQuery.csproj.GenerateResource.Cache
 C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sJBCoursrQuery\obj\Release\sJBCourseQuery.dll
 C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sJBCoursrQuery\obj\Release\sJBCourseQuery.pdb
+D:\Infolight\EEP2012\JBADMIN\sJBCoursrQuery\bin\Release\sJBCourseQuery.dll
+D:\Infolight\EEP2012\JBADMIN\sJBCoursrQuery\bin\Release\sJBCourseQuery.pdb
+D:\Infolight\EEP2012\JBADMIN\sJBCoursrQuery\obj\Release\sJBCourseQuery.Component.resources
+D:\Infolight\EEP2012\JBADMIN\sJBCoursrQuery\obj\Release\sJBCourseQuery.csproj.GenerateResource.Cache
+D:\Infolight\EEP2012\JBADMIN\sJBCoursrQuery\obj\Release\sJBCourseQuery.dll
+D:\Infolight\EEP2012\JBADMIN\sJBCoursrQuery\obj\Release\sJBCourseQuery.pdb

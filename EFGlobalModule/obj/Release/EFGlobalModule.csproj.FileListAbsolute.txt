@@ -15,3 +15,20 @@ C:\Program Files (x86)\Infolight\EEP2012\EFGlobalModule\obj\Release\EFGlobalModu
 C:\Program Files (x86)\Infolight\EEP2012\EFGlobalModule\obj\Release\EFGlobalModule.csproj.GenerateResource.Cache
 C:\Program Files (x86)\Infolight\EEP2012\EFGlobalModule\obj\Release\EFGlobalModule.dll
 C:\Program Files (x86)\Infolight\EEP2012\EFGlobalModule\obj\Release\EFGlobalModule.pdb
+D:\Infolight\EEP2012\EFGlobalModule\bin\Release\EFGlobalModule.dll.config
+D:\Infolight\EEP2012\EFGlobalModule\bin\Release\EFGlobalModule.dll
+D:\Infolight\EEP2012\EFGlobalModule\bin\Release\EFGlobalModule.pdb
+D:\Infolight\EEP2012\EFGlobalModule\bin\Release\EFServerTools.dll
+D:\Infolight\EEP2012\EFGlobalModule\bin\Release\EFWCFModule.dll
+D:\Infolight\EEP2012\EFGlobalModule\bin\Release\EFWCFModule.EEPAdapter.dll
+D:\Infolight\EEP2012\EFGlobalModule\bin\Release\EFBase.dll
+D:\Infolight\EEP2012\EFGlobalModule\bin\Release\Newtonsoft.Json.dll
+D:\Infolight\EEP2012\EFGlobalModule\bin\Release\EFServerTools.pdb
+D:\Infolight\EEP2012\EFGlobalModule\bin\Release\EFWCFModule.pdb
+D:\Infolight\EEP2012\EFGlobalModule\bin\Release\EFWCFModule.EEPAdapter.pdb
+D:\Infolight\EEP2012\EFGlobalModule\bin\Release\EFBase.pdb
+D:\Infolight\EEP2012\EFGlobalModule\obj\Release\EFGlobalModule.csprojResolveAssemblyReference.cache
+D:\Infolight\EEP2012\EFGlobalModule\obj\Release\EFGlobalModule.Component.resources
+D:\Infolight\EEP2012\EFGlobalModule\obj\Release\EFGlobalModule.csproj.GenerateResource.Cache
+D:\Infolight\EEP2012\EFGlobalModule\obj\Release\EFGlobalModule.dll
+D:\Infolight\EEP2012\EFGlobalModule\obj\Release\EFGlobalModule.pdb

@@ -8,3 +8,10 @@ C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sRequisition\obj\Release\sRequi
 C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sRequisition\obj\Release\sRequisition.pdb
 C:\Program Files (x86)\Infolight\EEP2012\EEPNetServer\JBADMIN\sRequisition.dll
 C:\Program Files (x86)\Infolight\EEP2012\EEPNetServer\JBADMIN\sRequisition.pdb
+D:\Infolight\EEP2012\EEPNetServer\JBADMIN\sRequisition.dll
+D:\Infolight\EEP2012\EEPNetServer\JBADMIN\sRequisition.pdb
+D:\Infolight\EEP2012\JBADMIN\sRequisition\obj\Release\sRequisition.csprojResolveAssemblyReference.cache
+D:\Infolight\EEP2012\JBADMIN\sRequisition\obj\Release\sRequisition.Component.resources
+D:\Infolight\EEP2012\JBADMIN\sRequisition\obj\Release\sRequisition.csproj.GenerateResource.Cache
+D:\Infolight\EEP2012\JBADMIN\sRequisition\obj\Release\sRequisition.dll
+D:\Infolight\EEP2012\JBADMIN\sRequisition\obj\Release\sRequisition.pdb

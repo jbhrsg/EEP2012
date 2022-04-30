@@ -1,0 +1,9 @@
+D:\Infolight\EEP2012\JBADMIN\sERP_Normal_SalesAbnormalApply\bin\Release\sERP_Normal_SalesAbnormalApply.dll
+D:\Infolight\EEP2012\JBADMIN\sERP_Normal_SalesAbnormalApply\bin\Release\sERP_Normal_SalesAbnormalApply.pdb
+D:\Infolight\EEP2012\JBADMIN\sERP_Normal_SalesAbnormalApply\bin\Release\Newtonsoft.Json.dll
+D:\Infolight\EEP2012\JBADMIN\sERP_Normal_SalesAbnormalApply\bin\Release\Newtonsoft.Json.xml
+D:\Infolight\EEP2012\JBADMIN\sERP_Normal_SalesAbnormalApply\obj\Release\sERP_Normal_SalesAbnormalApply.Component.resources
+D:\Infolight\EEP2012\JBADMIN\sERP_Normal_SalesAbnormalApply\obj\Release\sERP_Normal_SalesAbnormalApply.csproj.GenerateResource.Cache
+D:\Infolight\EEP2012\JBADMIN\sERP_Normal_SalesAbnormalApply\obj\Release\sERP_Normal_SalesAbnormalApply.dll
+D:\Infolight\EEP2012\JBADMIN\sERP_Normal_SalesAbnormalApply\obj\Release\sERP_Normal_SalesAbnormalApply.pdb
+D:\Infolight\EEP2012\JBADMIN\sERP_Normal_SalesAbnormalApply\obj\Release\sERP_Normal_SalesAbnormalApply.csprojResolveAssemblyReference.cache

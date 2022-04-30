@@ -117,8 +117,8 @@ namespace sPO_Normal_PRPOIQC
                     ep.CallFLMethod(this.ClientInfo, "Submit", new object[]{
                     null,
                     new object[]{
-                    "C:\\Program Files (x86)\\Infolight\\EEP2012\\EEPNetServer\\Workflow\\FL\\PO_Normal_PRPOIQC.xoml",
-                    //"C:\\EEP2012\\EEPNetServer\\Workflow\\FL\\PO_Normal_PRPOIQC.xoml",
+                    //"C:\\Program Files (x86)\\Infolight\\EEP2012\\EEPNetServer\\Workflow\\FL\\PO_Normal_PRPOIQC.xoml",
+                    "C:\\EEP2012\\EEPNetServer\\Workflow\\FL\\PO_Normal_PRPOIQC.xoml",
                     string.Empty,////空白即可，系統使用
                     0,//是否為重要申請
                     0,//是否為緊急申請
@@ -203,8 +203,9 @@ namespace sPO_Normal_PRPOIQC
                     object[] ret1=ep.CallFLMethod(this.ClientInfo, "Submit", new object[]{
                     null,
                     new object[]{
-                    "C:\\Program Files (x86)\\Infolight\\EEP2012\\EEPNetServer\\Workflow\\FL\\PO_Normal_PRPOIQC.xoml",
-                    //"C:\\EEP2012\\EEPNetServer\\Workflow\\FL\\PO_Normal_PRPOIQC.xoml",
+                    //"C:\\Program Files (x86)\\Infolight\\EEP2012\\EEPNetServer\\Workflow\\FL\\PO_Normal_PRPOIQC.xoml",
+                    "C:\\EEP2012\\EEPNetServer\\Workflow\\FL\\PO_Normal_PRPOIQC.xoml",
+                    //"D:\\INFOLIGHT\\EEP2012\\EEPNetServer\\Workflow\\FL\\PO_Normal_PRPOIQC.xoml",
                     string.Empty,////空白即可，系統使用
                     0,//是否為重要申請
                     0,//是否為緊急申請
@@ -284,10 +285,10 @@ namespace sPO_Normal_PRPOIQC
             {
                 string[] parm = objParam[0].ToString().Split(',');
                 string OrgNO = parm[0];
-                string sql = "SELECT distinct cc.[glCostCenterID]" + "\r\n";
-                sql = sql + " FROM [JBADMIN].[dbo].[CostCenter] cc"+ "\r\n";
-                sql = sql + " left join [EIPHRSYS].[dbo].[SYS_ORG] so on so.COSTCENTERID=cc.CostCenterID"+ "\r\n";
-                sql = sql + " where IsActive=1 and so.org_no='" + OrgNO + "'" + "\r\n";
+                string sql = "SELECT distinct cc.[CostCenterID]";
+                sql = sql + " FROM [JBADMIN].[dbo].[glCostCenter] cc";
+                sql = sql + " left join [EIPHRSYS].[dbo].[SYS_ORG] so on so.TOCOSTCENTERID=cc.CostCenterID";
+                sql = sql + " where IsActive=1 and so.org_no='" + OrgNO + "'";
                 DataSet ds = this.ExecuteSql(sql, connection, transaction);
                 js = JsonConvert.SerializeObject(ds.Tables[0], Formatting.Indented);
             }

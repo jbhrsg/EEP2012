@@ -6,3 +6,11 @@ C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sAssetApplyMaster\obj\Release\s
 C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sAssetApplyMaster\obj\Release\sAssetApplyMaster.csproj.GenerateResource.Cache
 C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sAssetApplyMaster\obj\Release\sAssetApplyMaster.dll
 C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sAssetApplyMaster\obj\Release\sAssetApplyMaster.pdb
+D:\Infolight\EEP2012\JBADMIN\sAssetApplyMaster\bin\Release\sAssetApplyMaster.dll
+D:\Infolight\EEP2012\JBADMIN\sAssetApplyMaster\bin\Release\sAssetApplyMaster.pdb
+D:\Infolight\EEP2012\JBADMIN\sAssetApplyMaster\bin\Release\Newtonsoft.Json.dll
+D:\Infolight\EEP2012\JBADMIN\sAssetApplyMaster\bin\Release\Newtonsoft.Json.xml
+D:\Infolight\EEP2012\JBADMIN\sAssetApplyMaster\obj\Release\sAssetApplyMaster.Component.resources
+D:\Infolight\EEP2012\JBADMIN\sAssetApplyMaster\obj\Release\sAssetApplyMaster.csproj.GenerateResource.Cache
+D:\Infolight\EEP2012\JBADMIN\sAssetApplyMaster\obj\Release\sAssetApplyMaster.dll
+D:\Infolight\EEP2012\JBADMIN\sAssetApplyMaster\obj\Release\sAssetApplyMaster.pdb

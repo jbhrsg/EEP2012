@@ -11,3 +11,10 @@ C:\Program Files (x86)\Infolight\EEP2012\EEPNetServer\JB_ADMIN\sDevice.pdb
 C:\Program Files (x86)\Infolight\EEP2012\EEPNetServer\JBADMIN\sDevice.dll
 C:\Program Files (x86)\Infolight\EEP2012\EEPNetServer\JBADMIN\sDevice.pdb
 C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sDevice\obj\Release\sDevice.csprojResolveAssemblyReference.cache
+D:\Infolight\EEP2012\EEPNetServer\JBADMIN\sDevice.dll
+D:\Infolight\EEP2012\EEPNetServer\JBADMIN\sDevice.pdb
+D:\Infolight\EEP2012\JBADMIN\sDevice\obj\Release\sDevice.csprojResolveAssemblyReference.cache
+D:\Infolight\EEP2012\JBADMIN\sDevice\obj\Release\sDevice.Component.resources
+D:\Infolight\EEP2012\JBADMIN\sDevice\obj\Release\sDevice.csproj.GenerateResource.Cache
+D:\Infolight\EEP2012\JBADMIN\sDevice\obj\Release\sDevice.dll
+D:\Infolight\EEP2012\JBADMIN\sDevice\obj\Release\sDevice.pdb

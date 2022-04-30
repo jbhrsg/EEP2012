@@ -6,3 +6,12 @@ C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sPettyCash\obj\Release\sPettyCa
 C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sPettyCash\obj\Release\sPettyCash.csproj.GenerateResource.Cache
 C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sPettyCash\obj\Release\sPettyCash.dll
 C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sPettyCash\obj\Release\sPettyCash.pdb
+D:\Infolight\EEP2012\JBADMIN\sPettyCash\bin\Release\sPettyCash.dll
+D:\Infolight\EEP2012\JBADMIN\sPettyCash\bin\Release\sPettyCash.pdb
+D:\Infolight\EEP2012\JBADMIN\sPettyCash\bin\Release\Newtonsoft.Json.dll
+D:\Infolight\EEP2012\JBADMIN\sPettyCash\bin\Release\Newtonsoft.Json.xml
+D:\Infolight\EEP2012\JBADMIN\sPettyCash\obj\Release\sPettyCash.csprojResolveAssemblyReference.cache
+D:\Infolight\EEP2012\JBADMIN\sPettyCash\obj\Release\sPettyCash.Component.resources
+D:\Infolight\EEP2012\JBADMIN\sPettyCash\obj\Release\sPettyCash.csproj.GenerateResource.Cache
+D:\Infolight\EEP2012\JBADMIN\sPettyCash\obj\Release\sPettyCash.dll
+D:\Infolight\EEP2012\JBADMIN\sPettyCash\obj\Release\sPettyCash.pdb

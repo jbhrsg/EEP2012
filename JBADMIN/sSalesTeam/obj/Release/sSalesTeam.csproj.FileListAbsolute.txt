@@ -1,0 +1,6 @@
+D:\Infolight\EEP2012\JBADMIN\sSalesTeam\bin\Release\sSalesTeam.dll
+D:\Infolight\EEP2012\JBADMIN\sSalesTeam\bin\Release\sSalesTeam.pdb
+D:\Infolight\EEP2012\JBADMIN\sSalesTeam\obj\Release\sSalesTeam.Component.resources
+D:\Infolight\EEP2012\JBADMIN\sSalesTeam\obj\Release\sSalesTeam.csproj.GenerateResource.Cache
+D:\Infolight\EEP2012\JBADMIN\sSalesTeam\obj\Release\sSalesTeam.dll
+D:\Infolight\EEP2012\JBADMIN\sSalesTeam\obj\Release\sSalesTeam.pdb

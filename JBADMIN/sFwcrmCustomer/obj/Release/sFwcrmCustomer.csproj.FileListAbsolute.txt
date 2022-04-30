@@ -1,0 +1,6 @@
+D:\Infolight\EEP2012\JBADMIN\sFwcrmCustomer\bin\Release\sFwcrmCustomer.dll
+D:\Infolight\EEP2012\JBADMIN\sFwcrmCustomer\bin\Release\sFwcrmCustomer.pdb
+D:\Infolight\EEP2012\JBADMIN\sFwcrmCustomer\obj\Release\sFwcrmCustomer.Component.resources
+D:\Infolight\EEP2012\JBADMIN\sFwcrmCustomer\obj\Release\sFwcrmCustomer.csproj.GenerateResource.Cache
+D:\Infolight\EEP2012\JBADMIN\sFwcrmCustomer\obj\Release\sFwcrmCustomer.dll
+D:\Infolight\EEP2012\JBADMIN\sFwcrmCustomer\obj\Release\sFwcrmCustomer.pdb

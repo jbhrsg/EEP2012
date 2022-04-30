@@ -1,0 +1,11 @@
+D:\Infolight\EEP2012\JBADMIN\sJBERP_WorkRecordApply\bin\Release\sJBERP_WorkRecordApply.dll
+D:\Infolight\EEP2012\JBADMIN\sJBERP_WorkRecordApply\bin\Release\sJBERP_WorkRecordApply.pdb
+D:\Infolight\EEP2012\JBADMIN\sJBERP_WorkRecordApply\bin\Release\vi-VN\sJBERP_WorkRecordApply.resources.dll
+D:\Infolight\EEP2012\JBADMIN\sJBERP_WorkRecordApply\bin\Release\Newtonsoft.Json.dll
+D:\Infolight\EEP2012\JBADMIN\sJBERP_WorkRecordApply\bin\Release\Newtonsoft.Json.xml
+D:\Infolight\EEP2012\JBADMIN\sJBERP_WorkRecordApply\obj\Release\sJBERP_WorkRecordApply.Component.resources
+D:\Infolight\EEP2012\JBADMIN\sJBERP_WorkRecordApply\obj\Release\sJBERP_WorkRecordApply.Component.vi-VN.resources
+D:\Infolight\EEP2012\JBADMIN\sJBERP_WorkRecordApply\obj\Release\sJBERP_WorkRecordApply.csproj.GenerateResource.Cache
+D:\Infolight\EEP2012\JBADMIN\sJBERP_WorkRecordApply\obj\Release\vi-VN\sJBERP_WorkRecordApply.resources.dll
+D:\Infolight\EEP2012\JBADMIN\sJBERP_WorkRecordApply\obj\Release\sJBERP_WorkRecordApply.dll
+D:\Infolight\EEP2012\JBADMIN\sJBERP_WorkRecordApply\obj\Release\sJBERP_WorkRecordApply.pdb

@@ -5,3 +5,9 @@ C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\rPettyCashRepoSortByAccountID\o
 C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\rPettyCashRepoSortByAccountID\obj\Release\rPettyCashRepoSortByAccountID.csproj.GenerateResource.Cache
 C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\rPettyCashRepoSortByAccountID\obj\Release\rPettyCashRepoSortByAccountID.dll
 C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\rPettyCashRepoSortByAccountID\obj\Release\rPettyCashRepoSortByAccountID.pdb
+D:\Infolight\EEP2012\JBADMIN\rPettyCashRepoSortByAccountID\bin\Release\rPettyCashRepoSortByAccountID.dll
+D:\Infolight\EEP2012\JBADMIN\rPettyCashRepoSortByAccountID\bin\Release\rPettyCashRepoSortByAccountID.pdb
+D:\Infolight\EEP2012\JBADMIN\rPettyCashRepoSortByAccountID\obj\Release\rPettyCashRepoSortByAccountID.Component.resources
+D:\Infolight\EEP2012\JBADMIN\rPettyCashRepoSortByAccountID\obj\Release\rPettyCashRepoSortByAccountID.csproj.GenerateResource.Cache
+D:\Infolight\EEP2012\JBADMIN\rPettyCashRepoSortByAccountID\obj\Release\rPettyCashRepoSortByAccountID.dll
+D:\Infolight\EEP2012\JBADMIN\rPettyCashRepoSortByAccountID\obj\Release\rPettyCashRepoSortByAccountID.pdb
