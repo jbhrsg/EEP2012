@@ -13,12 +13,12 @@
         var iVoucherCount = 0;
         $(function () {
             $("#VirtualColumn_Query").attr("placeholder", "請購單號、申請者工號/姓名、申請事由...");
-            alert(getEditMode($("#dataFormMaster")) == 'inserted');
-            if (getEditMode($("#dataFormMaster")) == 'inserted') {
+            //alert(getEditMode($("#dataFormMaster")) == 'inserted');
+            //if (getEditMode($("#dataFormMaster")) == 'inserted') {
                 //開啟查詢物品類別DIV
                 var textBox1 = $("<input/>").attr({ 'id': 'textBox1', 'type': 'textBox', 'size': '23px', 'placeholder': '輸入物品關鍵字,移動滑鼠查詢', 'onblur': 'onblurfunc(this.value)' });
                 $('#dataFormMasterItemTypeID').closest('td').append('&nbsp;').append('&nbsp;').append('查詢物品類別').append('&nbsp;').append(textBox1);
-            }
+            //}
             //報價檔 清除button
             var clearBtn1 = $("<button type='button'>").attr({ 'id': 'clearBtn1', 'href': '#', 'onclick': 'ClearPurDocVen1()' }).text("清除");
             var clearBtn2 = $("<button type='button'>").attr({ 'id': 'clearBtn2', 'href': '#', 'onclick': 'ClearPurDocVen2()' }).text("清除");
