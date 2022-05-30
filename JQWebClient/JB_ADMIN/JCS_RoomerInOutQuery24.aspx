@@ -20,13 +20,9 @@
              //var Filtstr = "CardTimeLastIn>=" + "'" + ControlDateTime + "'"
              //alert(Filtstr);
              //$("#dataGridMaster").datagrid('setWhere', Filtstr);
-             //$("#dataGridMaster").datagrid('options').rowStyler = function (index, row) {
-             //    if ((row.CardTimeLastIn == '' || row.CardTimeLastIn == undefined || row.CardTimeLastIn >= ControlDateTime))
-             //        return 'background-color:pink;color:blue;font-weight:bold;';
-             //};
              $("#dataGridMaster").datagrid('options').rowStyler = function (index, row) {
-                 if (row.IsErrHint == true) {
-                     return 'background-color:pink;color:blue;font-weight:bold;';
+                 if (row.LivingApart == true) {
+                     return 'background-color:#DDFF77;color:blue;font-weight:bold;';
                  }
              };
          });
@@ -108,7 +104,7 @@
             <JQTools:JQScriptManager ID="JQScriptManager1" runat="server" AgentDatabase="JBADMIN" AgentSolution="JBADMIN" AgentUser="A0123" />
             <JQTools:JQDataGrid ID="dataGridMaster" data-options="pagination:true,view:commandview" RemoteName="sJCSOutQuery.RoomerInOutQuery" runat="server" AutoApply="True"
                 DataMember="RoomerInOutQuery" Pagination="True" QueryTitle="Query"
-                Title="房客進出資訊" AllowAdd="False" AllowDelete="False" AllowUpdate="False" AlwaysClose="True" BufferView="False" CheckOnSelect="True" ColumnsHibeable="False" DeleteCommandVisible="False" DuplicateCheck="False" EditMode="Dialog" EditOnEnter="True" InsertCommandVisible="False" MultiSelect="False" NotInitGrid="False" PageList="20,40,60,80" PageSize="20" QueryAutoColumn="False" QueryLeft="" QueryMode="Window" QueryTop="" RecordLock="False" RecordLockMode="None" RowNumbers="True" TotalCaption="Total:" UpdateCommandVisible="False" ViewCommandVisible="False" Width="630px" OnLoadSuccess="dataGridMasterOnLoadSucess">
+                Title="房客進出資訊" AllowAdd="False" AllowDelete="False" AllowUpdate="False" AlwaysClose="True" BufferView="False" CheckOnSelect="True" ColumnsHibeable="False" DeleteCommandVisible="False" DuplicateCheck="False" EditMode="Dialog" EditOnEnter="True" InsertCommandVisible="False" MultiSelect="False" NotInitGrid="False" PageList="20,40,60,80" PageSize="20" QueryAutoColumn="False" QueryLeft="" QueryMode="Window" QueryTop="" RecordLock="False" RecordLockMode="None" RowNumbers="True" TotalCaption="Total:" UpdateCommandVisible="False" ViewCommandVisible="False" Width="720px" OnLoadSuccess="dataGridMasterOnLoadSucess">
                 <Columns>
                     <JQTools:JQGridColumn Alignment="left" Caption="客戶名稱" Editor="text" FieldName="CustomerShortName" Format="" MaxLength="0" Width="90" />
                     <JQTools:JQGridColumn Alignment="left" Caption="房客姓名" Editor="text" FieldName="RoomerNameC" Format="" MaxLength="0" Width="90" Sortable="True" />
@@ -121,6 +117,10 @@
                     <JQTools:JQGridColumn Alignment="center" Caption="進出別" Editor="text" FieldName="CardType" Frozen="False" IsNvarChar="False" MaxLength="0" QueryCondition="" ReadOnly="False" Sortable="False" Visible="True" Width="50">
                     </JQTools:JQGridColumn>
                     <JQTools:JQGridColumn Alignment="right" Caption="未刷卡時數" Editor="text" FieldName="HoursNOCards" Frozen="False" IsNvarChar="False" MaxLength="0" QueryCondition="" ReadOnly="False" Sortable="False" Visible="True" Width="70">
+                    </JQTools:JQGridColumn>
+                    <JQTools:JQGridColumn Alignment="left" Caption="備註" Editor="text" FieldName="Notes" Frozen="False" IsNvarChar="False" MaxLength="0" QueryCondition="" ReadOnly="False" Sortable="False" Visible="True" Width="80">
+                    </JQTools:JQGridColumn>
+                    <JQTools:JQGridColumn Alignment="left" Caption="LivingApart" Editor="text" FieldName="LivingApart" Frozen="False" IsNvarChar="False" MaxLength="0" QueryCondition="" ReadOnly="False" Sortable="False" Visible="False" Width="80">
                     </JQTools:JQGridColumn>
                 </Columns>
                 <TooItems>

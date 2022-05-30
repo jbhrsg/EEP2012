@@ -1,0 +1,123 @@
+D:\Program Files\Infolight\EEP2008\Solution1\EEPNetServer\GLModule.dll
+D:\Program Files\Infolight\EEP2008\Solution1\EEPNetServer\GLModule.pdb
+D:\Program Files\Infolight\EEP2008\Solution1\EEPNetServer\vi-VN\GLModule.resources.dll
+D:\Program Files\Infolight\EEP2008\Solution1\GLModule\obj\Debug\ResolveAssemblyReference.cache
+D:\Program Files\Infolight\EEP2008\Solution1\GLModule\obj\Debug\GLModule.Component.resources
+D:\Program Files\Infolight\EEP2008\Solution1\GLModule\obj\Debug\GLModule.Component.vi-VN.resources
+D:\Program Files\Infolight\EEP2008\Solution1\GLModule\obj\Debug\GLModule.csproj.GenerateResource.Cache
+D:\Program Files\Infolight\EEP2008\Solution1\GLModule\obj\Debug\vi-VN\GLModule.resources.dll
+D:\Program Files\Infolight\EEP2008\Solution1\GLModule\obj\Debug\GLModule.dll
+D:\Program Files\Infolight\EEP2008\Solution1\GLModule\obj\Debug\GLModule.pdb
+C:\Program Files\Infolight\Solution1\EEPNetServer\GLModule.dll
+C:\Program Files\Infolight\Solution1\EEPNetServer\GLModule.pdb
+C:\Program Files\Infolight\Solution1\EEPNetServer\vi-VN\GLModule.resources.dll
+C:\Program Files\Infolight\Solution1\GLModule\obj\Debug\ResolveAssemblyReference.cache
+C:\Program Files\Infolight\Solution1\GLModule\obj\Debug\GLModule.Component.resources
+C:\Program Files\Infolight\Solution1\GLModule\obj\Debug\GLModule.Component.vi-VN.resources
+C:\Program Files\Infolight\Solution1\GLModule\obj\Debug\GLModule.csproj.GenerateResource.Cache
+C:\Program Files\Infolight\Solution1\GLModule\obj\Debug\vi-VN\GLModule.resources.dll
+C:\Program Files\Infolight\Solution1\GLModule\obj\Debug\GLModule.dll
+C:\Program Files\Infolight\Solution1\GLModule\obj\Debug\GLModule.pdb
+D:\Infolight\EEP2010\WCFServer\GLModule.dll
+D:\Infolight\EEP2010\WCFServer\GLModule.pdb
+D:\Infolight\EEP2010\WCFServer\vi-VN\GLModule.resources.dll
+D:\Infolight\EEP2010\EEPNetServer\GLModule.dll
+D:\Infolight\EEP2010\EEPNetServer\GLModule.pdb
+D:\Infolight\EEP2010\EEPNetServer\vi-VN\GLModule.resources.dll
+D:\Infolight\EEP2010\GLModule\obj\Debug\ResolveAssemblyReference.cache
+D:\Infolight\EEP2010\GLModule\obj\Debug\GLModule.Component.resources
+D:\Infolight\EEP2010\GLModule\obj\Debug\GLModule.Component.vi-VN.resources
+D:\Infolight\EEP2010\GLModule\obj\Debug\GenerateResource.read.1.tlog
+D:\Infolight\EEP2010\GLModule\obj\Debug\GenerateResource.write.1.tlog
+D:\Infolight\EEP2010\GLModule\obj\Debug\vi-VN\GLModule.resources.dll
+D:\Infolight\EEP2010\GLModule\obj\Debug\GLModule.dll
+D:\Infolight\EEP2010\GLModule\obj\Debug\GLModule.pdb
+C:\Program Files\Infolight\EEP2010\EEPNetServer\GLModule.dll
+C:\Program Files\Infolight\EEP2010\EEPNetServer\GLModule.pdb
+C:\Program Files\Infolight\EEP2010\EEPNetServer\vi-VN\GLModule.resources.dll
+C:\Program Files\Infolight\EEP2010\GLModule\obj\Debug\GLModule.Component.resources
+C:\Program Files\Infolight\EEP2010\GLModule\obj\Debug\GLModule.Component.vi-VN.resources
+C:\Program Files\Infolight\EEP2010\GLModule\obj\Debug\vi-VN\GLModule.resources.dll
+C:\Program Files\Infolight\EEP2010\GLModule\obj\Debug\GLModule.dll
+C:\Program Files\Infolight\EEP2010\GLModule\obj\Debug\GLModule.pdb
+C:\Program Files\Infolight\EEP2010\GLModule\obj\Debug\GLModule.csprojResolveAssemblyReference.cache
+C:\Program Files\Infolight\EEP2010\GLModule\obj\Debug\GLModule.csproj.GenerateResource.Cache
+C:\Program Files\Infolight\EEP2012\EEPNetServer\GLModule.dll
+C:\Program Files\Infolight\EEP2012\EEPNetServer\GLModule.pdb
+C:\Program Files\Infolight\EEP2012\EEPNetServer\vi-VN\GLModule.resources.dll
+C:\Program Files\Infolight\EEP2012\GLModule\obj\Debug\GLModule.csprojResolveAssemblyReference.cache
+C:\Program Files\Infolight\EEP2012\GLModule\obj\Debug\GLModule.Component.resources
+C:\Program Files\Infolight\EEP2012\GLModule\obj\Debug\GLModule.Component.vi-VN.resources
+C:\Program Files\Infolight\EEP2012\GLModule\obj\Debug\GLModule.csproj.GenerateResource.Cache
+C:\Program Files\Infolight\EEP2012\GLModule\obj\Debug\vi-VN\GLModule.resources.dll
+C:\Program Files\Infolight\EEP2012\GLModule\obj\Debug\GLModule.dll
+C:\Program Files\Infolight\EEP2012\GLModule\obj\Debug\GLModule.pdb
+C:\Program Files\Infolight\EEP2012WF\EEPNetServer\GLModule.dll
+C:\Program Files\Infolight\EEP2012WF\EEPNetServer\GLModule.pdb
+C:\Program Files\Infolight\EEP2012WF\EEPNetServer\vi-VN\GLModule.resources.dll
+C:\Program Files\Infolight\EEP2012WF\GLModule\obj\Debug\GLModule.csprojResolveAssemblyReference.cache
+C:\Program Files\Infolight\EEP2012WF\GLModule\obj\Debug\GLModule.Component.resources
+C:\Program Files\Infolight\EEP2012WF\GLModule\obj\Debug\GLModule.Component.vi-VN.resources
+C:\Program Files\Infolight\EEP2012WF\GLModule\obj\Debug\GLModule.csproj.GenerateResource.Cache
+C:\Program Files\Infolight\EEP2012WF\GLModule\obj\Debug\vi-VN\GLModule.resources.dll
+C:\Program Files\Infolight\EEP2012WF\GLModule\obj\Debug\GLModule.dll
+C:\Program Files\Infolight\EEP2012WF\GLModule\obj\Debug\GLModule.pdb
+C:\Program Files (x86)\Infolight\EEP2012WF\EEPNetServer\GLModule.dll
+C:\Program Files (x86)\Infolight\EEP2012WF\EEPNetServer\GLModule.pdb
+C:\Program Files (x86)\Infolight\EEP2012WF\EEPNetServer\vi-VN\GLModule.resources.dll
+C:\Program Files (x86)\Infolight\EEP2012WF\GLModule\obj\Debug\GLModule.csprojResolveAssemblyReference.cache
+C:\Program Files (x86)\Infolight\EEP2012WF\GLModule\obj\Debug\GLModule.Component.resources
+C:\Program Files (x86)\Infolight\EEP2012WF\GLModule\obj\Debug\GLModule.Component.vi-VN.resources
+C:\Program Files (x86)\Infolight\EEP2012WF\GLModule\obj\Debug\GLModule.csproj.GenerateResource.Cache
+C:\Program Files (x86)\Infolight\EEP2012WF\GLModule\obj\Debug\vi-VN\GLModule.resources.dll
+C:\Program Files (x86)\Infolight\EEP2012WF\GLModule\obj\Debug\GLModule.dll
+C:\Program Files (x86)\Infolight\EEP2012WF\GLModule\obj\Debug\GLModule.pdb
+D:\版本\Version\安裝源文件\EEP2012WF(V5.0.0.020140924 SP5)\EEPNetServer\GLModule.dll
+D:\版本\Version\安裝源文件\EEP2012WF(V5.0.0.020140924 SP5)\EEPNetServer\GLModule.pdb
+D:\版本\Version\安裝源文件\EEP2012WF(V5.0.0.020140924 SP5)\EEPNetServer\vi-VN\GLModule.resources.dll
+D:\版本\Version\安裝源文件\EEP2012WF(V5.0.0.020140924 SP5)\GLModule\obj\Debug\GLModule.csprojResolveAssemblyReference.cache
+D:\版本\Version\安裝源文件\EEP2012WF(V5.0.0.020140924 SP5)\GLModule\obj\Debug\GLModule.Component.resources
+D:\版本\Version\安裝源文件\EEP2012WF(V5.0.0.020140924 SP5)\GLModule\obj\Debug\GLModule.Component.vi-VN.resources
+D:\版本\Version\安裝源文件\EEP2012WF(V5.0.0.020140924 SP5)\GLModule\obj\Debug\GLModule.csproj.GenerateResource.Cache
+D:\版本\Version\安裝源文件\EEP2012WF(V5.0.0.020140924 SP5)\GLModule\obj\Debug\vi-VN\GLModule.resources.dll
+D:\版本\Version\安裝源文件\EEP2012WF(V5.0.0.020140924 SP5)\GLModule\obj\Debug\GLModule.dll
+D:\版本\Version\安裝源文件\EEP2012WF(V5.0.0.020140924 SP5)\GLModule\obj\Debug\GLModule.pdb
+D:\版本\Version\安裝源文件\EEP2012(V5.0.0.020140924 SP5)\EEP2012WF\EEPNetServer\GLModule.dll
+D:\版本\Version\安裝源文件\EEP2012(V5.0.0.020140924 SP5)\EEP2012WF\EEPNetServer\GLModule.pdb
+D:\版本\Version\安裝源文件\EEP2012(V5.0.0.020140924 SP5)\EEP2012WF\EEPNetServer\vi-VN\GLModule.resources.dll
+D:\版本\Version\安裝源文件\EEP2012(V5.0.0.020140924 SP5)\EEP2012WF\GLModule\obj\Debug\GLModule.Component.resources
+D:\版本\Version\安裝源文件\EEP2012(V5.0.0.020140924 SP5)\EEP2012WF\GLModule\obj\Debug\GLModule.Component.vi-VN.resources
+D:\版本\Version\安裝源文件\EEP2012(V5.0.0.020140924 SP5)\EEP2012WF\GLModule\obj\Debug\GLModule.csproj.GenerateResource.Cache
+D:\版本\Version\安裝源文件\EEP2012(V5.0.0.020140924 SP5)\EEP2012WF\GLModule\obj\Debug\vi-VN\GLModule.resources.dll
+D:\版本\Version\安裝源文件\EEP2012(V5.0.0.020140924 SP5)\EEP2012WF\GLModule\obj\Debug\GLModule.dll
+D:\版本\Version\安裝源文件\EEP2012(V5.0.0.020140924 SP5)\EEP2012WF\GLModule\obj\Debug\GLModule.pdb
+D:\Program Files (x86)\Your Company Name\EEP2012\EEPNetServer\GLModule.dll
+D:\Program Files (x86)\Your Company Name\EEP2012\EEPNetServer\GLModule.pdb
+D:\Program Files (x86)\Your Company Name\EEP2012\EEPNetServer\vi-VN\GLModule.resources.dll
+D:\Program Files (x86)\Your Company Name\EEP2012\GLModule\obj\Debug\GLModule.csprojResolveAssemblyReference.cache
+D:\Program Files (x86)\Your Company Name\EEP2012\GLModule\obj\Debug\GLModule.Component.resources
+D:\Program Files (x86)\Your Company Name\EEP2012\GLModule\obj\Debug\GLModule.Component.vi-VN.resources
+D:\Program Files (x86)\Your Company Name\EEP2012\GLModule\obj\Debug\GLModule.csproj.GenerateResource.Cache
+D:\Program Files (x86)\Your Company Name\EEP2012\GLModule\obj\Debug\vi-VN\GLModule.resources.dll
+D:\Program Files (x86)\Your Company Name\EEP2012\GLModule\obj\Debug\GLModule.dll
+D:\Program Files (x86)\Your Company Name\EEP2012\GLModule\obj\Debug\GLModule.pdb
+C:\Program Files (x86)\Infolight\EEP2012\EEPNetServer\GLModule.dll
+C:\Program Files (x86)\Infolight\EEP2012\EEPNetServer\GLModule.pdb
+C:\Program Files (x86)\Infolight\EEP2012\EEPNetServer\vi-VN\GLModule.resources.dll
+C:\Program Files (x86)\Infolight\EEP2012\GLModule\obj\Debug\GLModule.csprojResolveAssemblyReference.cache
+C:\Program Files (x86)\Infolight\EEP2012\GLModule\obj\Debug\GLModule.Component.resources
+C:\Program Files (x86)\Infolight\EEP2012\GLModule\obj\Debug\GLModule.Component.vi-VN.resources
+C:\Program Files (x86)\Infolight\EEP2012\GLModule\obj\Debug\GLModule.csproj.GenerateResource.Cache
+C:\Program Files (x86)\Infolight\EEP2012\GLModule\obj\Debug\vi-VN\GLModule.resources.dll
+C:\Program Files (x86)\Infolight\EEP2012\GLModule\obj\Debug\GLModule.dll
+C:\Program Files (x86)\Infolight\EEP2012\GLModule\obj\Debug\GLModule.pdb
+D:\Infolight\EEP2012\EEPNetServer\GLModule.dll
+D:\Infolight\EEP2012\EEPNetServer\GLModule.pdb
+D:\Infolight\EEP2012\EEPNetServer\vi-VN\GLModule.resources.dll
+D:\Infolight\EEP2012\GLModule\obj\Debug\GLModule.csprojResolveAssemblyReference.cache
+D:\Infolight\EEP2012\GLModule\obj\Debug\GLModule.Component.resources
+D:\Infolight\EEP2012\GLModule\obj\Debug\GLModule.Component.vi-VN.resources
+D:\Infolight\EEP2012\GLModule\obj\Debug\GLModule.csproj.GenerateResource.Cache
+D:\Infolight\EEP2012\GLModule\obj\Debug\vi-VN\GLModule.resources.dll
+D:\Infolight\EEP2012\GLModule\obj\Debug\GLModule.dll
+D:\Infolight\EEP2012\GLModule\obj\Debug\GLModule.pdb

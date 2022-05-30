@@ -16,3 +16,5 @@ D:\Infolight\EEP2012\JBADMIN\sJCSOutQuery\obj\Release\sJCSOutQuery.Component.res
 D:\Infolight\EEP2012\JBADMIN\sJCSOutQuery\obj\Release\sJCSOutQuery.csproj.GenerateResource.Cache
 D:\Infolight\EEP2012\JBADMIN\sJCSOutQuery\obj\Release\sJCSOutQuery.dll
 D:\Infolight\EEP2012\JBADMIN\sJCSOutQuery\obj\Release\sJCSOutQuery.pdb
+D:\Infolight\EEP2012\EEPNetServer\JBADMIN\sJCSOutQuery.dll
+D:\Infolight\EEP2012\EEPNetServer\JBADMIN\sJCSOutQuery.pdb

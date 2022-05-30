@@ -10,7 +10,7 @@
          //Detail Grid隨著Master Grid Select改變
          function SetWhereBelongID(rowindex, rowdata) {
              if (rowdata != null && rowdata != undefined) {
-                 var IssueBelongID = rowdata.IssueBelongID;
+                 var IssueBelongID = rowdata.GROUPID;
                  $("#dataGridDetail").datagrid('setWhere', "IssueBelongID= " + IssueBelongID);
              }
          }
@@ -26,7 +26,7 @@
          })
          //新增明細時,抓取Master 關聯值
          function GetBelongID() {
-             var id = $("#dataGridView").datagrid('getSelected').IssueBelongID;
+             var id = $("#dataGridView").datagrid('getSelected').GROUPID;
              return id;
          }
          //刪除Master檢查
@@ -80,20 +80,19 @@
                  return false;
              }
          }
+         
      </script>
 </head>
 <body>
     <form id="form1" runat="server">
         <div>
             <JQTools:JQScriptManager ID="JQScriptManager1" runat="server" />
-            <JQTools:JQDataGrid ID="dataGridView" data-options="pagination:true,view:commandview" RemoteName="sIssueJob.IssueBelong" runat="server" AutoApply="True"
-                DataMember="IssueBelong" Pagination="True" QueryTitle="Query" EditDialogID="JQDialog1"
-                Title="工作歸屬-大項" AllowAdd="True" AllowDelete="True" AllowUpdate="True" AlwaysClose="False" CheckOnSelect="True" ColumnsHibeable="False" DeleteCommandVisible="True" DuplicateCheck="False" EditMode="Dialog" EditOnEnter="True" InsertCommandVisible="True" MultiSelect="False" PageList="10,20,30,40,50" PageSize="10" QueryAutoColumn="False" QueryLeft="" QueryMode="Window" QueryTop="" RecordLock="False" RecordLockMode="None" TotalCaption="Total:" UpdateCommandVisible="True" ViewCommandVisible="False" OnSelect="SetWhereBelongID" OnDelete="CheckMasterDelete">
+            <JQTools:JQDataGrid ID="dataGridView" data-options="pagination:true,view:commandview" RemoteName="sIssueJob.GROUPS" runat="server" AutoApply="True"
+                DataMember="GROUPS" Pagination="True" QueryTitle="Query" EditDialogID=""
+                Title="工作歸屬-大項" AllowAdd="False" AllowDelete="False" AllowUpdate="False" AlwaysClose="False" CheckOnSelect="True" ColumnsHibeable="False" DeleteCommandVisible="True" DuplicateCheck="False" EditMode="Dialog" EditOnEnter="True" InsertCommandVisible="True" MultiSelect="False" PageList="10,20,30,40,50" PageSize="10" QueryAutoColumn="False" QueryLeft="" QueryMode="Window" QueryTop="" RecordLock="False" RecordLockMode="None" TotalCaption="Total:" UpdateCommandVisible="False" ViewCommandVisible="False" OnSelect="SetWhereBelongID" BufferView="False" NotInitGrid="False" RowNumbers="True">
                 <Columns>
-                    <JQTools:JQGridColumn Alignment="center" Caption="代號" Editor="numberbox" FieldName="IssueBelongID" Format="" Width="70" />
-                    <JQTools:JQGridColumn Alignment="left" Caption="工作歸屬名稱" Editor="text" FieldName="IssueBelongName" Format="" MaxLength="0" Width="150" />
-                    <JQTools:JQGridColumn Alignment="left" Caption="CreateBy" Editor="text" FieldName="CreateBy" Format="" MaxLength="0" Width="120" Visible="False" />
-                    <JQTools:JQGridColumn Alignment="left" Caption="CreateDate" Editor="datebox" FieldName="CreateDate" Format="" Width="120" Visible="False" />
+                    <JQTools:JQGridColumn Alignment="center" Caption="代號" Editor="numberbox" FieldName="GROUPID" Format="" Width="70" />
+                    <JQTools:JQGridColumn Alignment="left" Caption="工作歸屬名稱" Editor="text" FieldName="GROUPNAME" Format="" MaxLength="0" Width="150" />
                 </Columns>
                 <TooItems>
                     <JQTools:JQToolItem Icon="icon-add" ItemType="easyui-linkbutton"
@@ -125,7 +124,7 @@
                 </JQTools:JQValidate>
             </JQTools:JQDialog>
 
-                <JQTools:JQDataGrid ID="dataGridDetail" runat="server" AutoApply="True" DataMember="IssueType" EditDialogID="JQDialog2" Pagination="False" ParentObjectID="" RemoteName="sIssueJob.IssueType" Title="工作項目-細項" AllowAdd="True" AllowDelete="True" AllowUpdate="True" AlwaysClose="False" CheckOnSelect="True" ColumnsHibeable="False" DeleteCommandVisible="True" DuplicateCheck="False" EditMode="Dialog" EditOnEnter="True" InsertCommandVisible="True" MultiSelect="False" PageList="10,20,30,40,50" PageSize="10" QueryAutoColumn="False" QueryLeft="" QueryMode="Window" QueryTitle="工作項目名稱查詢" QueryTop="" RecordLock="False" RecordLockMode="None" TotalCaption="Total:" UpdateCommandVisible="True" ViewCommandVisible="False" OnDelete="CheckDetailDelete" >
+                <JQTools:JQDataGrid ID="dataGridDetail" runat="server" AutoApply="True" DataMember="IssueType" EditDialogID="JQDialog2" Pagination="False" ParentObjectID="" RemoteName="sIssueJob.IssueType" Title="工作項目-細項" AllowAdd="True" AllowDelete="True" AllowUpdate="True" AlwaysClose="False" CheckOnSelect="True" ColumnsHibeable="False" DeleteCommandVisible="True" DuplicateCheck="False" EditMode="Dialog" EditOnEnter="True" InsertCommandVisible="True" MultiSelect="False" PageList="10,20,30,40,50" PageSize="10" QueryAutoColumn="False" QueryLeft="" QueryMode="Window" QueryTitle="工作項目名稱查詢" QueryTop="" RecordLock="False" RecordLockMode="None" TotalCaption="Total:" UpdateCommandVisible="True" ViewCommandVisible="False" OnDelete="CheckDetailDelete" BufferView="False" NotInitGrid="False" RowNumbers="True" >
 
                     <Columns>
                         <JQTools:JQGridColumn Alignment="center" Caption="代號" Editor="numberbox" FieldName="IssueTypeID" Format="" Width="70" Visible="False" />
@@ -147,7 +146,7 @@
                 </JQTools:JQDataGrid>
 
                 <JQTools:JQDialog ID="JQDialog2" runat="server" BindingObjectID="dataFormDetail" Title="工作項目維護">
-                    <JQTools:JQDataForm ID="dataFormDetail" runat="server" ParentObjectID="" DataMember="IssueType" HorizontalColumnsCount="2" RemoteName="sIssueJob.IssueType" Closed="False" ContinueAdd="False" disapply="False" DuplicateCheck="False" IsAutoPageClose="False" IsAutoPause="False" IsAutoSubmit="False" IsNotifyOFF="False" IsRejectNotify="False" IsRejectON="False" IsShowFlowIcon="False" ShowApplyButton="False" ValidateStyle="Hint" >
+                    <JQTools:JQDataForm ID="dataFormDetail" runat="server" ParentObjectID="" DataMember="IssueType" HorizontalColumnsCount="2" RemoteName="sIssueJob.IssueType" Closed="False" ContinueAdd="False" disapply="False" DuplicateCheck="False" IsAutoPageClose="False" IsAutoPause="False" IsAutoSubmit="False" IsNotifyOFF="False" IsRejectNotify="False" IsRejectON="False" IsShowFlowIcon="False" ShowApplyButton="False" ValidateStyle="Hint" AlwaysReadOnly="False" DivFramed="False" HorizontalGap="0" VerticalGap="0" >
                         <Columns>
                             <JQTools:JQFormColumn Alignment="left" Caption="代號" Editor="numberbox" FieldName="IssueTypeID" Format="" Width="70" ReadOnly="True" />
                             <JQTools:JQFormColumn Alignment="left" Caption="IssueBelongID" Editor="numberbox" FieldName="IssueBelongID" Format="" Width="120" Visible="False" />

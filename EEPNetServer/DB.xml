@@ -4,7 +4,7 @@
     <EIPHRSYS String="User Id=user;database=EIPHRSYS;server=192.168.1.41,1435;Connect Timeout=60" Type="1" OdbcType="-1" MaxCount="20" TimeOut="60" Master="0" Encrypt="False" Password="BA}CCtxR`faWA%#$" />
     <JBADMIN String="User Id=user;database=JBADMIN;server=192.168.1.41,1435;Connect Timeout=60" Type="1" OdbcType="-1" MaxCount="20" TimeOut="60" Master="1" Encrypt="False" Password="BA}CCtxR`faWA%#$" />
     <JBERP String="User Id=user;database=JBERP;server=192.168.1.41,1435;Connect Timeout=60" Type="1" OdbcType="-1" MaxCount="20" TimeOut="60" Master="1" Encrypt="False" Password="BA}CCtxR`faWA%#$" />
-    <JCS String="User Id=user;database=JCS;server=192.168.10.60;Connect Timeout=60" Type="1" OdbcType="-1" MaxCount="20" TimeOut="60" Master="1" Encrypt="False" Password="zrPe:^JF" />
+    <JCS String="User Id=user;database=JCS;server=192.168.1.41,1435;Connect Timeout=60" Type="1" OdbcType="-1" MaxCount="20" TimeOut="60" Master="1" Encrypt="False" Password="BA}CCtxR`faWA%#$" />
     <JCS1 String="User Id=sa;database=JCS1;server=.\SQL2019;Connect Timeout=60" Type="1" OdbcType="-1" MaxCount="20" TimeOut="60" Master="1" Encrypt="False" Password="FAELIDY[" />
     <JCS2 String="User Id=sa;database=JCS2;server=.\SQL2019;Connect Timeout=60" Type="1" OdbcType="-1" MaxCount="20" TimeOut="60" Master="1" Encrypt="False" Password="FAELIDY[" />
     <Hunter String="User Id=sa;database=Hunter;server=211.78.84.42;Connect Timeout=60" Type="1" OdbcType="-1" MaxCount="20" TimeOut="60" Master="1" Encrypt="False" Password="zrPe:^JF" />

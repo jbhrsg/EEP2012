@@ -5,9 +5,6 @@
   <String UserId="095" UserName="陳雪雲">
     <Computer Name="::1" LoginTime="2021-03-05 23:02:46" Count="1" />
   </String>
-  <String UserId="121" UserName="張孟萱">
-    <Computer Name="::1" LoginTime="2021-03-10 12:55:35" Count="1" />
-  </String>
   <String UserId="004" UserName="鍾懷德">
     <Computer Name="::1" LoginTime="2021-03-12 17:30:11" Count="1" />
   </String>
@@ -59,9 +56,6 @@
   <String UserId="055" UserName="邱雅琳">
     <Computer Name="::1" LoginTime="2021-08-09 13:11:46" Count="6" />
   </String>
-  <String UserId="002" UserName="鍾淑霞">
-    <Computer Name="::1" LoginTime="2022-02-09 09:48:00" Count="3" />
-  </String>
   <String UserId="032" UserName="林建銘">
     <Computer Name="::1" LoginTime="2021-04-26 22:57:08" Count="7" />
   </String>
@@ -74,14 +68,23 @@
   <String UserId="060" UserName="徐曉鈴">
     <Computer Name="::1" LoginTime="2021-12-06 21:00:54" Count="10" />
   </String>
-  <String UserId="001" UserName="張凱雄">
-    <Computer Name="::1" LoginTime="2021-01-21 22:55:56" Count="20" />
-  </String>
   <String UserId="038" UserName="張鈴涓">
     <Computer Name="::1" LoginTime="2022-04-29 13:11:18" Count="1" />
   </String>
   <String UserId="335" UserName="吳椿捷">
     <Computer Name="::1" LoginTime="2021-10-26 16:00:06" Count="27" />
+  </String>
+  <String UserId="002" UserName="鍾淑霞">
+    <Computer Name="::1" LoginTime="2022-02-09 09:48:00" Count="3" />
+  </String>
+  <String UserId="001" UserName="張凱雄">
+    <Computer Name="::1" LoginTime="2021-01-21 22:55:56" Count="20" />
+  </String>
+  <String UserId="121" UserName="張孟萱">
+    <Computer Name="::1" LoginTime="2021-03-10 12:55:35" Count="1" />
+  </String>
+  <String UserId="012" UserName="洪敏雲">
+    <Computer Name="::1" LoginTime="2022-05-04 11:21:22" Count="1" />
   </String>
   <String UserId="009" UserName="程進昇">
     <Computer Name="172.19.144.1" LoginTime="2021-09-16 11:59:41" Count="1" />
@@ -97,7 +100,7 @@
     <Computer Name="192.168.1.121" LoginTime="2022-01-27 13:20:01" Count="2" />
     <Computer Name="172.27.64.1" LoginTime="2021-11-18 12:46:21" Count="1" />
     <Computer Name="172.28.128.1" LoginTime="2021-10-22 11:25:08" Count="2" />
-    <Computer Name="::1" LoginTime="2021-01-01 20:34:56" Count="1319" />
+    <Computer Name="::1" LoginTime="2021-01-01 20:34:56" Count="1328" />
     <Computer Name="169.254.8.248" LoginTime="2021-03-30 13:23:41" Count="1" />
     <Computer Name="172.20.80.1" LoginTime="2021-12-06 11:40:16" Count="1" />
     <Computer Name="172.24.240.1" LoginTime="2021-10-19 13:27:02" Count="2" />

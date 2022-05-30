@@ -11,13 +11,14 @@
         var sCompanyID = "";
         var sVoucherID = "";
         var iVoucherCount = 0;
+        var sCount = 0;
         $(function () {
             $("#VirtualColumn_Query").attr("placeholder", "請購單號、申請者工號/姓名、申請事由...");
             //alert(getEditMode($("#dataFormMaster")) == 'inserted');
             //if (getEditMode($("#dataFormMaster")) == 'inserted') {
                 //開啟查詢物品類別DIV
-                var textBox1 = $("<input/>").attr({ 'id': 'textBox1', 'type': 'textBox', 'size': '23px', 'placeholder': '輸入物品關鍵字,移動滑鼠查詢', 'onblur': 'onblurfunc(this.value)' });
-                $('#dataFormMasterItemTypeID').closest('td').append('&nbsp;').append('&nbsp;').append('查詢物品類別').append('&nbsp;').append(textBox1);
+                //var textBox1 = $("<input/>").attr({ 'id': 'textBox1', 'type': 'textBox', 'size': '23px', 'placeholder': '輸入物品關鍵字,移動滑鼠查詢', 'onblur': 'onblurfunc(this.value)' });
+                //$('#dataFormMasterItemTypeID').closest('td').append('&nbsp;').append('&nbsp;').append('查詢物品類別').append('&nbsp;').append(textBox1);
             //}
             //報價檔 清除button
             var clearBtn1 = $("<button type='button'>").attr({ 'id': 'clearBtn1', 'href': '#', 'onclick': 'ClearPurDocVen1()' }).text("清除");
@@ -528,8 +529,11 @@
                 //設值ApplyOrg_NO、Org_NOParent
                 if (getEditMode($("#dataFormMaster")) == 'inserted') {
                     //開啟查詢物品類別DIV
-                    //var textBox1 = $("<input/>").attr({ 'id': 'textBox1', 'type': 'textBox', 'size': '23px', 'placeholder': '輸入物品關鍵字,移動滑鼠查詢', 'onblur': 'onblurfunc(this.value)'});
-                    //$('#dataFormMasterItemTypeID').closest('td').append('&nbsp;').append('&nbsp;').append('查詢物品類別').append('&nbsp;').append(textBox1);
+                    if (sCount == 0) {
+                        var textBox1 = $("<input/>").attr({ 'id': 'textBox1', 'type': 'textBox', 'size': '23px', 'placeholder': '輸入物品關鍵字,移動滑鼠查詢', 'onblur': 'onblurfunc(this.value)' });
+                        $('#dataFormMasterItemTypeID').closest('td').append('&nbsp;').append('&nbsp;').append('查詢物品類別').append('&nbsp;').append(textBox1);
+                        sCount = sCount + 1;
+                    }
                     var myArr = GetUserOrgNOs(getClientInfo("UserID"));//得組織編號和上層組織編號
                     var myCostCenterID;
                     if (myArr.length > 0) {
@@ -1565,6 +1569,11 @@
                     }
                     
                 }
+            }
+            //會計可修改預付日期
+            if (parameter == 'S9') {
+                $("#dataFormDeliveryPlanPayDate").attr('disabled', false);
+
             }
 
             //其他關卡要看的
@@ -3470,7 +3479,7 @@
                         <JQTools:JQFormColumn Alignment="left" Caption="結帳方式" Editor="infocombobox" FieldName="POPayTypeID" MaxLength="0" NewRow="False" ReadOnly="False" RowSpan="1" Span="1" Visible="True" Width="180" EditorOptions="valueField:'POPayTypeID',textField:'POPayTypeName',remoteName:'sPO_Normal_PRPOIQC.POPayType',tableName:'POPayType',pageSize:'-1',checkData:false,selectOnly:false,cacheRelationText:false,onSelect:DFM_POPayTypeID_OnSelect,panelHeight:200" />
                         <JQTools:JQFormColumn Alignment="left" Caption="分期期數" Editor="text" FieldName="Installments" maxlength="0" ReadOnly="False" Width="146" NewRow="False" Span="1" RowSpan="1" Visible="True" />
                         <JQTools:JQFormColumn Alignment="left" Caption="工程說明" Editor="textarea" FieldName="OtherComment" maxlength="0" ReadOnly="False" Visible="True" Width="658" NewRow="False" RowSpan="1" Span="3" />
-                        <JQTools:JQFormColumn Alignment="left" Caption="採購總金額" Editor="numberbox" FieldName="PurTotalAmount" Width="180" ReadOnly="True" maxlength="0" NewRow="False" RowSpan="1" Span="1" Visible="True" />
+                        <JQTools:JQFormColumn Alignment="left" Caption="採購總金額" Editor="text" FieldName="PurTotalAmount" Width="180" ReadOnly="True" maxlength="0" NewRow="False" RowSpan="1" Span="1" Visible="True" Format="N0" />
                         <JQTools:JQFormColumn Alignment="left" Caption="交貨總金額" Editor="numberbox" FieldName="DeliveryTotalAmount" MaxLength="0" NewRow="False" ReadOnly="True" Visible="True" Width="180" />
                         <JQTools:JQFormColumn Alignment="left" Caption="請款備註" Editor="textarea" FieldName="RequestNotes" MaxLength="0" NewRow="False" ReadOnly="False" RowSpan="1" Span="3" Visible="True" Width="658" />
                         <JQTools:JQFormColumn Alignment="left" Caption="財產目錄" Editor="checkbox" FieldName="IsCatalogue" maxlength="0" NewRow="False" ReadOnly="False" RowSpan="1" Span="1" Visible="True" Width="80" />
@@ -3660,7 +3669,7 @@
                                 <JQTools:JQFormColumn Alignment="left" Caption="退貨數量" Editor="numberbox" FieldName="ReturnQty" MaxLength="0" NewRow="False" ReadOnly="False" RowSpan="1" Span="1" Visible="True" Width="180" />
                                 <JQTools:JQFormColumn Alignment="left" Caption="存放區域" Editor="infocombobox" FieldName="AssetLocaID" MaxLength="0" NewRow="False" ReadOnly="False" RowSpan="1" Span="1" Visible="True" Width="180" EditorOptions="valueField:'AssetLocaID',textField:'AssetLocaName',remoteName:'sPO_Normal_PRPOIQC.AssetLocation',tableName:'AssetLocation',pageSize:'-1',checkData:true,selectOnly:false,cacheRelationText:false,panelHeight:200" />
                             <JQTools:JQFormColumn Alignment="left" Caption="驗收照片" Editor="infofileupload" EditorOptions="filter:'',isAutoNum:true,upLoadFolder:'JB_ADMIN/PO_Normal_PRPOIQC/AcceptancePic',showButton:true,showLocalFile:false,fileSizeLimited:'20000'" FieldName="AcceptancePic" MaxLength="0" NewRow="False" ReadOnly="False" RowSpan="1" Span="2" Visible="True" Width="420" />
-                            <JQTools:JQFormColumn Alignment="left" Caption="物品單價" Editor="numberbox" FieldName="PurPrice" MaxLength="0" NewRow="False" OnBlur="dataFormDelivery_OnBlur" ReadOnly="False" RowSpan="1" Span="1" Visible="True" Width="180" EditorOptions="precision:1" Format="" />
+                            <JQTools:JQFormColumn Alignment="left" Caption="物品單價" Editor="numberbox" FieldName="PurPrice" MaxLength="0" NewRow="False" OnBlur="dataFormDelivery_OnBlur" ReadOnly="False" RowSpan="1" Span="1" Visible="True" Width="180" EditorOptions="precision:2" Format="" />
                             <JQTools:JQFormColumn Alignment="left" Caption="物品總價" Editor="numberbox" FieldName="TotalPrice" MaxLength="0" NewRow="False" ReadOnly="False" RowSpan="1" Span="1" Visible="True" Width="180" EditorOptions="precision:1" />
                             <JQTools:JQFormColumn Alignment="left" Caption="工程金額" Editor="numberbox" FieldName="OtherFee" MaxLength="0" NewRow="False" OnBlur="dataFormDeliveryOtherFee_OnBlur" ReadOnly="False" RowSpan="1" Span="1" Visible="True" Width="180" />
                             <JQTools:JQFormColumn Alignment="left" Caption="稅額" Editor="numberbox" FieldName="AcceptanceTax" MaxLength="0" NewRow="False" ReadOnly="False" RowSpan="1" Span="1" Visible="True" Width="180" OnBlur="" />

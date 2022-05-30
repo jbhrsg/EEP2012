@@ -171,7 +171,7 @@ order by PONO desc</value>
 '' as ItemTypeIDTemp
 --,PurDocVen1 as PurDocVen10
 --,PurDocVen2 as PurDocVen20,PurDocVen3 as PurDocVen30
-,(ISNULL(d.PurPrice,0)*ISNULL(d.PurQty,0))+ISNULL(d.PurTax,0) as TotalAmount--+ISNULL(d.OtherFee,0)
+,ROUND((ISNULL(d.PurPrice,0)*ISNULL(d.PurQty,0))+ISNULL(d.PurTax,0),0) as TotalAmount--+ISNULL(d.OtherFee,0)
 ,Item.TaxRate
 ,(select ISNULL(sum(DeliveryQty),0) from PODelivery  where PODelivery.ItemNO=d.ItemNO and PODelivery.PONO=d.PONO) as sumDeliveryQty
 ,(select ISNULL(sum(AcceptanceQty),0)+ISNULL(sum(ReturnQty),0) from PODelivery  where PODelivery.ItemNO=d.ItemNO and PODelivery.PONO=d.PONO) as sumAcceptanceQty
@@ -185,46 +185,46 @@ left join dbo.Vendors v on v.VendID=d.PurVendor
 left join dbo.PayTerm p on p.PayTermID=v.PayTermID</value>
   </data>
   <metadata name="ucPODetails.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>17, 405</value>
+    <value>17, 321</value>
   </metadata>
   <metadata name="idPOMaster_PODetails.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>17, 489</value>
+    <value>17, 447</value>
   </metadata>
   <metadata name="View_POMaster.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>17, -57</value>
   </metadata>
   <metadata name="autoNumber1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>17, 531</value>
+    <value>17, 489</value>
   </metadata>
   <metadata name="glCostCenter.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>17, 615</value>
+    <value>17, 573</value>
   </metadata>
   <metadata name="ItemType.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>17, 657</value>
+    <value>17, 615</value>
   </metadata>
   <metadata name="POType.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>17, 741</value>
+    <value>17, 657</value>
   </metadata>
   <metadata name="RequistKind.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>17, 825</value>
+    <value>17, 699</value>
   </metadata>
   <metadata name="Item.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>17, 909</value>
+    <value>17, 783</value>
   </metadata>
   <metadata name="Vendors.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>17, 951</value>
+    <value>17, 825</value>
   </metadata>
   <metadata name="Users.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>17, 1035</value>
+    <value>17, 867</value>
   </metadata>
   <metadata name="infoConnection2.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>17, 1119</value>
+    <value>17, 909</value>
   </metadata>
   <metadata name="SYS_ORG.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>17, 1161</value>
+    <value>17, 993</value>
   </metadata>
   <metadata name="PODelivery.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>17, 1245</value>
+    <value>17, 1035</value>
   </metadata>
   <data name="PODelivery.CommandText" xml:space="preserve">
     <value>SELECT dl.*,i.ItemName,i.ItemID,'' as ItemName1,ds.PurVendor,dl.TotalPrice+OtherFee+AcceptanceTax as TotalAmount  FROM dbo.[PODelivery] dl
@@ -233,28 +233,28 @@ left join dbo.Item i on ds.ItemID=i.ItemID
 order by DeliveryNO</value>
   </data>
   <metadata name="idPOMaster_PODelivery.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>17, 1329</value>
+    <value>17, 1119</value>
   </metadata>
   <metadata name="ucPODelivery.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>17, 1203</value>
+    <value>17, 1161</value>
   </metadata>
   <metadata name="InsGroup.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>17, 1413</value>
+    <value>17, 1245</value>
   </metadata>
   <metadata name="infoConnection3.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>17, 1371</value>
+    <value>17, 1287</value>
   </metadata>
   <metadata name="PayWay.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>17, 1287</value>
+    <value>17, 1329</value>
   </metadata>
   <metadata name="ResponsibleGROUPID.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>17, 111</value>
   </metadata>
   <metadata name="GROUPS.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>17, 1077</value>
+    <value>17, 1413</value>
   </metadata>
   <metadata name="PODetailsHistory.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>17, 993</value>
+    <value>17, 1371</value>
   </metadata>
   <data name="PODetailsHistory.CommandText" xml:space="preserve">
     <value>SELECT 
@@ -275,7 +275,7 @@ order by DeliveryNO</value>
   order by m.[ApplyDate] desc</value>
   </data>
   <metadata name="ItemTypeAcno.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>17, 867</value>
+    <value>17, 1203</value>
   </metadata>
   <data name="ItemTypeAcno.CommandText" xml:space="preserve">
     <value>--物品類別 對應 成本中心的會計科目left join 成本中心的會計科目 預算
@@ -285,22 +285,22 @@ order by DeliveryNO</value>
   left join  glYearBudget g on g.Acno_S=i.Acno and g.SubAcno_S=i.SubAcno and g.CostCenterID=i.CostCenterID</value>
   </data>
   <metadata name="ProofType.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>17, 783</value>
+    <value>17, 1077</value>
   </metadata>
   <metadata name="POPayType.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>17, 699</value>
+    <value>17, 951</value>
   </metadata>
   <metadata name="AssetLocation.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>17, 195</value>
   </metadata>
   <metadata name="VoucherYear.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>17, 573</value>
+    <value>17, 741</value>
   </metadata>
   <metadata name="Vendors1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>17, 447</value>
+    <value>17, 531</value>
   </metadata>
   <metadata name="ShortTerm.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>17, 363</value>
+    <value>17, 405</value>
   </metadata>
   <data name="ShortTerm.CommandText" xml:space="preserve">
     <value>select top 50   ShortTerm.ShortTermNO,
@@ -313,7 +313,7 @@ order by ShortTermNO desc
 </value>
   </data>
   <metadata name="UsersAll.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>17, 321</value>
+    <value>17, 363</value>
   </metadata>
   <metadata name="ItemTypeItems.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>309, 92</value>

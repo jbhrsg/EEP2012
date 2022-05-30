@@ -19,3 +19,4 @@ D:\infolight\EEP2012\JBADMIN\sIssueJob\obj\Release\sIssueJob.csproj.GenerateReso
 D:\infolight\EEP2012\JBADMIN\sIssueJob\obj\Release\vi-VN\sIssueJob.resources.dll
 D:\infolight\EEP2012\JBADMIN\sIssueJob\obj\Release\sIssueJob.dll
 D:\infolight\EEP2012\JBADMIN\sIssueJob\obj\Release\sIssueJob.pdb
+D:\Infolight\EEP2012\JBADMIN\sIssueJob\obj\Release\sIssueJob.csprojResolveAssemblyReference.cache
