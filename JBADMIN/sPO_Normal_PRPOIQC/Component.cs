@@ -118,8 +118,8 @@ namespace sPO_Normal_PRPOIQC
                     null,
                     new object[]{
                     //"C:\\Program Files (x86)\\Infolight\\EEP2012\\EEPNetServer\\Workflow\\FL\\PO_Normal_PRPOIQC.xoml",
-                    //"C:\\EEP2012\\EEPNetServer\\Workflow\\FL\\PO_Normal_PRPOIQC.xoml",
-                    "D:\\Infolight\\EEP2012\\EEPNetServer\\Workflow\\FL\\PO_Normal_PRPOIQC.xoml",
+                    "C:\\EEP2012\\EEPNetServer\\Workflow\\FL\\PO_Normal_PRPOIQC.xoml",
+                    //"D:\\Infolight\\EEP2012\\EEPNetServer\\Workflow\\FL\\PO_Normal_PRPOIQC.xoml",
                     string.Empty,////空白即可，系統使用
                     0,//是否為重要申請
                     0,//是否為緊急申請
@@ -130,6 +130,7 @@ namespace sPO_Normal_PRPOIQC
                     "0",//組織類別編號ex:0公司組織、1福利委員會
                     "" //附件
                     },
+
                     new object[]{
                     "PONO",//TAble的鍵值欄位，如果是多個欄位組合的話，可以以分號隔開，比如："OrderID;CustomerID"
                     "PONO='"+ PONO +"'"//+a[0]+b[0] //key值組合，例如："OrderID=10260;CustomerID=‘‘A001’’" （A001左右分別是兩個單引號）
@@ -205,8 +206,8 @@ namespace sPO_Normal_PRPOIQC
                     null,
                     new object[]{
                     //"C:\\Program Files (x86)\\Infolight\\EEP2012\\EEPNetServer\\Workflow\\FL\\PO_Normal_PRPOIQC.xoml",
-                    //"C:\\EEP2012\\EEPNetServer\\Workflow\\FL\\PO_Normal_PRPOIQC.xoml",
-                    "D:\\INFOLIGHT\\EEP2012\\EEPNetServer\\Workflow\\FL\\PO_Normal_PRPOIQC.xoml",
+                    "C:\\EEP2012\\EEPNetServer\\Workflow\\FL\\PO_Normal_PRPOIQC.xoml",
+                    //"D:\\INFOLIGHT\\EEP2012\\EEPNetServer\\Workflow\\FL\\PO_Normal_PRPOIQC.xoml",
                     string.Empty,////空白即可，系統使用
                     0,//是否為重要申請
                     0,//是否為緊急申請

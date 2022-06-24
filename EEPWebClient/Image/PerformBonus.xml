@@ -3,6 +3,6 @@
   <FlowNavMode>Submit</FlowNavMode>
   <NavMode>Insert</NavMode>
   <Parameters>P1=APPLY</Parameters>
-  <FlowFileName>C:\Program Files (x86)\Infolight\EEP2012\EEPNetServer\Workflow\FL\PerformBonus</FlowFileName>
+  <FlowFileName>D:\Infolight\EEP2012\EEPNetServer\Workflow\FL\PerformBonus</FlowFileName>
   <ImageWidth>1387</ImageWidth>
 </FlowDetails>

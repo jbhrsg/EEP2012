@@ -19,59 +19,59 @@ namespace Srvtools
             int offset = -1;
             int c = -1;
 
-            if (PasswordLen < 5)
-            {
-                //raise Exception.Create('[EEP Security System Internal Error] The field length for the user password too short! At least length 5'); 
-            }
-            if (Password.Length > PasswordLen)
-            {
-                if (bCheckValidate)
-                {
+            //if (PasswordLen < 5)
+            //{
+            //    //raise Exception.Create('[EEP Security System Internal Error] The field length for the user password too short! At least length 5'); 
+            //}
+            //if (Password.Length > PasswordLen)
+            //{
+            //    if (bCheckValidate)
+            //    {
 
-                }
-                //  raise Exception.CreateFmt(GetEEPGVar('CommonUtils_errPasswordToLong'),[PasswordLen])
-                else
-                {
-                    return false;
-                }
-            }
+            //    }
+            //    //  raise Exception.CreateFmt(GetEEPGVar('CommonUtils_errPasswordToLong'),[PasswordLen])
+            //    else
+            //    {
+            //        return false;
+            //    }
+            //}
 
-            for (int i = 0; i < Password.Length; i++)
-            {
-                if (Password[i] == ' ')
-                {
-                    if (bCheckValidate)
-                    {
-                        //raise Exception.Create(GetEEPGVar('CommonUtils_errSpacePasswordChar'))
-                    }
-                    else
-                    {
-                        return false;
-                    }
-                }
-                else if (Password[i] == EncryptChar)
-                {
-                    if (bCheckValidate)
-                    {
-                        // raise Exception.CreateFmt(GetEEPGVar('CommonUtils_errLeadingPasswordChar'),[EncryptChar])
-                    }
-                    else
-                    {
-                        return false;
-                    }
-                }
-                else if (((byte)Password[i]) < 33 || ((byte)Password[i]) > 126)
-                {
-                    if (bCheckValidate)
-                    {
-                        //raise Exception.Create(GetEEPGVar('CommonUtils_errInvalidatePasswordChar'))
-                    }
-                    else
-                    {
-                        return false;
-                    }
-                }
-            }
+            //for (int i = 0; i < Password.Length; i++)
+            //{
+            //    if (Password[i] == ' ')
+            //    {
+            //        if (bCheckValidate)
+            //        {
+            //            //raise Exception.Create(GetEEPGVar('CommonUtils_errSpacePasswordChar'))
+            //        }
+            //        else
+            //        {
+            //            return false;
+            //        }
+            //    }
+            //    else if (Password[i] == EncryptChar)
+            //    {
+            //        if (bCheckValidate)
+            //        {
+            //            // raise Exception.CreateFmt(GetEEPGVar('CommonUtils_errLeadingPasswordChar'),[EncryptChar])
+            //        }
+            //        else
+            //        {
+            //            return false;
+            //        }
+            //    }
+            //    else if (((byte)Password[i]) < 33 || ((byte)Password[i]) > 126)
+            //    {
+            //        if (bCheckValidate)
+            //        {
+            //            //raise Exception.Create(GetEEPGVar('CommonUtils_errInvalidatePasswordChar'))
+            //        }
+            //        else
+            //        {
+            //            return false;
+            //        }
+            //    }
+            //}
 
             KeyOffset = 32 + PasswordLen;
             StartKey = 1234;
@@ -94,8 +94,9 @@ namespace Srvtools
             {
                 Password = Password + '\0';
             }
-
-            RetPassword = new Char[10]; 
+            
+            //RetPassword = new Char[10];
+            RetPassword = new Char[PasswordLen]; 
 
             if (PasswordLen % 2 == 0)
             {
@@ -109,7 +110,7 @@ namespace Srvtools
             bHasEncryptChar = false;
             for (int i = 0; i < PasswordLen; i++)
             {
-                b = (byte)Password[i];
+                b = (byte)Password[i];               
                 b = EncryptByte(KeyOffset, ref StartKey, MultKey, AddKey, b);
 
                 if (b == (byte)EncryptChar)

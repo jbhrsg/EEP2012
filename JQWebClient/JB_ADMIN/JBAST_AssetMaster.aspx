@@ -115,11 +115,17 @@
                     if (FiltStr != '' && FiltStr != undefined) {
                         FiltStr = FiltStr + " and "
                     }
-                    if (StatusID == 1) {
-                        FiltStr = FiltStr + " dbo.funReturnAssetTranType(A.AssetID) != 2";
+                    if (StatusID == 4) {
+                        FiltStr = FiltStr + " dbo.funReturnAssetTranType(A.AssetID) = 4";
                     }
-                    else {
-                        FiltStr = FiltStr + "Case A.IsInventory  when 1 then 3 else dbo.funReturnAssetTranType(A.AssetID) end = " + StatusID;
+
+                    if (StatusID == 1) {
+                        FiltStr = FiltStr + " dbo.funReturnAssetTranType(A.AssetID) != 4";
+                    }
+                    if (StatusID == 3){
+                  
+                        FiltStr = FiltStr + " dbo.funReturnAssetTranType(A.AssetID) != 4 AND A.IsInventory = 1 ";
+                         
                     }
                 }
                 $(dg).datagrid('setWhere', FiltStr);

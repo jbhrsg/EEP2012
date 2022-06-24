@@ -1001,7 +1001,7 @@ namespace EFWCFModule.EEPAdapter
             if (!string.IsNullOrEmpty(password))
             {
                 char[] p = new char[] { };
-                EFWCFModule.EEPAdapter.Encrypt.EncryptPassword(user, password, 10, ref p, false);
+                EFWCFModule.EEPAdapter.Encrypt.EncryptPassword(user, password, 20, ref p, false);
                 return new string(p);
             }
             else
@@ -1023,8 +1023,8 @@ namespace EFWCFModule.EEPAdapter
                 {
                     if (emailDataSet.Tables[0].Rows[0]["Email"].ToString() == email)
                     {
-                        var random = new Random(DateTime.Now.Millisecond);
-                        var newPassword = random.Next(100000, 1000000).ToString();
+                        var random = new Random(DateTime.Now.Millisecond); //new Random(int.Parse(DateTime.Now.ToString("MMddHHssfff")));
+                        var newPassword = random.Next(100000, 1000000).ToString();//var newPassword = random.Next(100000000, 999999999).ToString();
                         var sqlCommands = new List<SQLCommandInfo>();
                         sqlCommands.Add(new SQLCommandInfo()
                         {

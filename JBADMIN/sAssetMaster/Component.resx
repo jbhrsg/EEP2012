@@ -215,13 +215,13 @@ order by  AssetLocation.SEQ</value>
     <value>17, 731</value>
   </metadata>
   <metadata name="autoAssetID.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>17, 815</value>
+    <value>17, 773</value>
   </metadata>
   <metadata name="AssetTranType.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>17, 857</value>
+    <value>17, 815</value>
   </metadata>
   <metadata name="SYSVar.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>17, 899</value>
+    <value>17, 857</value>
   </metadata>
   <metadata name="AssetPlace.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>17, 941</value>
@@ -245,7 +245,7 @@ ORDER BY AssetPlace
     <value>17, 227</value>
   </metadata>
   <metadata name="ItemMaintType.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>17, 773</value>
+    <value>17, 899</value>
   </metadata>
   <metadata name="ItemMaintDetails.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>17, 311</value>
@@ -254,7 +254,7 @@ ORDER BY AssetPlace
     <value>17, 353</value>
   </metadata>
   <metadata name="AssetUseStatus.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>321, 214</value>
+    <value>212, 245</value>
   </metadata>
   <metadata name="$this.TrayLargeIcon" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>False</value>

@@ -131,7 +131,7 @@
                     <JQTools:JQGridColumn Alignment="left" Caption="狀態" Editor="infocombobox" FieldName="Flowflag" Format="" MaxLength="0" Width="60" EditorOptions="items:[{value:'N',text:'流程中',selected:'false'},{value:'P',text:'流程中',selected:'false'},{value:'Z',text:'已結案',selected:'false'}],checkData:false,selectOnly:false,cacheRelationText:false,panelHeight:200" />
                     <JQTools:JQGridColumn Alignment="left" Caption="銀行代碼" Editor="text" FieldName="BankNO" Frozen="False" IsNvarChar="False" MaxLength="0" QueryCondition="" ReadOnly="False" Sortable="False" Visible="True" Width="70">
                     </JQTools:JQGridColumn>
-                    <JQTools:JQGridColumn Alignment="left" Caption="帳戶" Editor="text" FieldName="BankName" Frozen="False" IsNvarChar="False" MaxLength="0" QueryCondition="" ReadOnly="False" Sortable="False" Visible="True" Width="100">
+                    <JQTools:JQGridColumn Alignment="left" Caption="帳戶" Editor="text" FieldName="VendAccount" Frozen="False" IsNvarChar="False" MaxLength="0" QueryCondition="" ReadOnly="False" Sortable="False" Visible="True" Width="100">
                     </JQTools:JQGridColumn>
                 </Columns>
                 <TooItems>

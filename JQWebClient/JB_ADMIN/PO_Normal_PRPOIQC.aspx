@@ -385,14 +385,15 @@
 
         //表單onload時(flow各關卡的欄位 顯示或隱藏 及 停用或啟用)
         function dataFormMaster_OnLoadSuccess() {
-            //取flow的parameters
+            var emp = $("#dataFormMasterApplyUserID").combobox('getValue');
+            var filtstr = "EmployeeID = " + "'" + emp + "'"
+            $("#dataFormMasterShortTermNO").combobox('setWhere', filtstr);
             var parameter = Request.getQueryStringByName2("P1");//沒加密
                 //mode = Request.getQueryStringByName2("NAVIGATOR_MODE");
             if (parameter == "") {
                 parameter = Request.getQueryStringByName("P1");//有加密
                 //mode = Request.getQueryStringByName("NAVIGATOR_MODE");
             }
-
             //跑流程時，把query隱藏
             if (parameter != "") {
                 $("#querydataGridView").hide();
@@ -989,7 +990,7 @@
                 //隱藏 編輯、刪除按鈕
                 var dgView = $("#dataGridDetail");
                 var infolightOptions = dgView.attr("infolight-options");
-                infolightOptions = infolightOptions.replace("commandButtons:'vud'", "commandButtons:'v'");
+                infolightOptions = infolightOptions.replace("commandButtons:'vud'", "commandButtons:'vu'");
                 dgView.attr("infolight-options", infolightOptions);
                 var dgView = $("#dataGridDelivery");
                 var infolightOptions = dgView.attr("infolight-options");
@@ -1141,6 +1142,10 @@
                 var link = $("<a download>").attr({ 'id': 'downloadPurCommentFile', 'href': '../JB_ADMIN/PO_Normal_PRPOIQC/PurCommentFile/' + PurCommentFile }).html('下載');
                 $('#dataFormMasterPurCommentFile').closest('td').append(link);
             }
+            //過濾申請者部門申請的暫借單
+            var ApplyOrg_NO = $("#dataFormMasterApplyOrg_NO").combobox('getValue');
+            $("#dataFormMasterShortTermNO").combobox("setWhere", "ApplyOrg_NO = '" + ApplyOrg_NO + "'");
+
         }
 
         //請採購明細OnLoad
@@ -1149,6 +1154,7 @@
             if (parameter == "") {
                 parameter = Request.getQueryStringByName("P1");//有加密
             }
+          
 
             //申請
             if (getEditMode($("#dataFormDetail")) == "inserted" || (getEditMode($("#dataFormDetail")) == "updated" && parameter == "")) {
@@ -1160,6 +1166,8 @@
             } else if (getEditMode($("#dataFormDetail")) == "updated" && parameter=="S4") {//採購作業
                 //[停用]品名 
                 $("#dataFormDetailItemID").refval("disable", true);
+
+                
 
                 //[篩選]setWhere xx廠商(依據物品類別)
                 var ItemTypeID = $("#dataFormMasterItemTypeID").combobox('getValue');
@@ -1223,6 +1231,10 @@
                 if ($("#dataFormDetailFirstDeliveryQty").val() != '' && $("#dataGridDelivery").datagrid('getRows').length != 0) {
                     DisableFields("#dataFormDetail", ['FirstDeliveryQty'], [], []);
                 }
+            }
+            //當驗收時,可點選是否資產
+            if (getEditMode($("#dataFormDetail")) == "updated" && parameter == "S7") {
+                $("#dataFormDetailIsAsset").attr('disabled', false);
             }
 
             //設定請購金額
@@ -2131,7 +2143,9 @@
                 parameter = Request.getQueryStringByName("P1");//有加密
             }
             //請購者交期安排~會計審核
-            if (parameter == "S6" || parameter == "S7" || parameter == "S8" || parameter == "S9" || parameter == "S11") {
+            //if (parameter == "S6" || parameter == "S7" || parameter == "S8" || parameter == "S9" || parameter == "S11") {
+                //
+            if (parameter == "S6" || parameter == "S7" || parameter == "S8" || parameter == "S11") {
                 alert("無法編輯");
                 return false;
             } else if (parameter == "S4") {//採購作業
@@ -3466,7 +3480,7 @@
                         <JQTools:JQFormColumn Alignment="left" Caption="估價單" Editor="infofileupload" EditorOptions="filter:'',isAutoNum:true,upLoadFolder:'JB_ADMIN/PO_Normal_PRPOIQC/PrDoc',showButton:true,showLocalFile:false,fileSizeLimited:'20000'" FieldName="PrDoc" MaxLength="0" NewRow="False" ReadOnly="False" RowSpan="1" Span="1" Visible="True" Width="160" />
                         <JQTools:JQFormColumn Alignment="left" Caption="暫借款單" Editor="infocombobox" EditorOptions="valueField:'ShortTermNO',textField:'ShortTermDescr',remoteName:'sPO_Normal_PRPOIQC.ShortTerm',tableName:'ShortTerm',pageSize:'-1',checkData:false,selectOnly:false,cacheRelationText:false,panelHeight:200" FieldName="ShortTermNO" MaxLength="0" NewRow="True" ReadOnly="False" RowSpan="1" Span="2" Visible="True" Width="425" />
                         <JQTools:JQFormColumn Alignment="left" Caption="補單" Editor="checkbox" EditorOptions="on:1,off:0" FieldName="IsAdd" NewRow="False" Span="1" Width="80" />
-                        <JQTools:JQFormColumn Alignment="left" Caption="報價廠商1" Editor="inforefval" FieldName="PurVendor1" Format="" Width="180" EditorOptions="title:'廠商',panelWidth:560,panelHeight:200,remoteName:'sPO_Normal_PRPOIQC.Vendors',tableName:'Vendors',columns:[{field:'VendName',title:'名稱',width:90,align:'left',table:'',isNvarChar:false,queryCondition:''},{field:'ContactName',title:'聯絡人',width:90,align:'left',table:'',isNvarChar:false,queryCondition:''},{field:'ContactTelArea',title:'區碼',width:90,align:'left',table:'',isNvarChar:false,queryCondition:''},{field:'ContactTel',title:'電話',width:90,align:'left',table:'',isNvarChar:false,queryCondition:''},{field:'ContactTelExt',title:'分機',width:90,align:'left',table:'',isNvarChar:false,queryCondition:''},{field:'ContactMobile',title:'聯絡人手機',width:90,align:'left',table:'',isNvarChar:false,queryCondition:''}],columnMatches:[],whereItems:[],valueField:'VendID',textField:'VendName',valueFieldCaption:'廠商ID',textFieldCaption:'廠商名稱',cacheRelationText:false,checkData:true,showValueAndText:false,dialogCenter:false,selectOnly:false,capsLock:'none',fixTextbox:'false'" NewRow="True" Span="1" MaxLength="0" ReadOnly="False" Visible="True" />
+                        <JQTools:JQFormColumn Alignment="left" Caption="報價廠商1" Editor="inforefval" FieldName="PurVendor1" Format="" Width="180" EditorOptions="title:'廠商',panelWidth:560,panelHeight:200,remoteName:'sPO_Normal_PRPOIQC.Vendors',tableName:'Vendors',columns:[{field:'VendName',title:'名稱',width:150,align:'left',table:'',isNvarChar:false,queryCondition:''},{field:'ContactName',title:'聯絡人',width:90,align:'left',table:'',isNvarChar:false,queryCondition:''},{field:'ContactTel',title:'電話',width:90,align:'left',table:'',isNvarChar:false,queryCondition:''},{field:'ContactMobile',title:'聯絡人手機',width:90,align:'left',table:'',isNvarChar:false,queryCondition:''}],columnMatches:[],whereItems:[],valueField:'VendID',textField:'VendName',valueFieldCaption:'廠商ID',textFieldCaption:'廠商名稱',cacheRelationText:false,checkData:true,showValueAndText:false,dialogCenter:false,selectOnly:false,capsLock:'none',fixTextbox:'false'" NewRow="True" Span="1" MaxLength="0" ReadOnly="False" Visible="True" />
                         <JQTools:JQFormColumn Alignment="left" Caption="報價檔1" Editor="infofileupload" FieldName="PurDocVen1" Format="" Width="120" EditorOptions="filter:'',isAutoNum:true,upLoadFolder:'JB_ADMIN/PO_Normal_PRPOIQC/PurDocVen1',showButton:true,showLocalFile:false,onSuccess:DFDPurDocVen1_OnSuccess,fileSizeLimited:'20000'" Span="2" NewRow="False" />
                         <JQTools:JQFormColumn Alignment="left" Caption="報價廠商2" Editor="inforefval" FieldName="PurVendor2" Format="" NewRow="True" Span="1" Width="180" EditorOptions="title:'廠商',panelWidth:560,panelHeight:200,remoteName:'sPO_Normal_PRPOIQC.Vendors',tableName:'Vendors',columns:[{field:'VendName',title:'名稱',width:90,align:'left',table:'',isNvarChar:false,queryCondition:''},{field:'ContactName',title:'聯絡人',width:90,align:'left',table:'',isNvarChar:false,queryCondition:''},{field:'ContactTelArea',title:'區碼',width:90,align:'left',table:'',isNvarChar:false,queryCondition:''},{field:'ContactTel',title:'電話',width:90,align:'left',table:'',isNvarChar:false,queryCondition:''},{field:'ContactTelExt',title:'分機',width:90,align:'left',table:'',isNvarChar:false,queryCondition:''},{field:'ContactMobile',title:'聯絡人手機',width:90,align:'left',table:'',isNvarChar:false,queryCondition:''}],columnMatches:[],whereItems:[],valueField:'VendID',textField:'VendName',valueFieldCaption:'廠商ID',textFieldCaption:'廠商名稱',cacheRelationText:false,checkData:true,showValueAndText:false,dialogCenter:false,selectOnly:false,capsLock:'none',fixTextbox:'false'" maxlength="0" ReadOnly="False" RowSpan="1" />
                         <JQTools:JQFormColumn Alignment="left" Caption="報價檔2" Editor="infofileupload" FieldName="PurDocVen2" Format="" Width="120" EditorOptions="filter:'',isAutoNum:true,upLoadFolder:'JB_ADMIN/PO_Normal_PRPOIQC/PurDocVen2',showButton:true,showLocalFile:false,onSuccess:DFDPurDocVen2_OnSuccess,fileSizeLimited:'20000'" NewRow="False" Span="2" maxlength="0" ReadOnly="False" Visible="True" />

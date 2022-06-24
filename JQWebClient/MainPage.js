@@ -396,7 +396,8 @@ function changePassword() {
                 var oPassword = $("#oPassword", changePasswordWindow).val();
                 var nPassword = $("#nPassword", changePasswordWindow).val();
                 var cPassword = $("#cPassword", changePasswordWindow).val();
-                if (nPassword != cPassword) {
+                var data = { UserID: userID, OPassword: encodeURI(oPassword), NPassword: encodeURI(nPassword) }//20220510訊光新增及修改第409行,解決密碼特殊字元
+               if (nPassword != cPassword) {
                     alert(NewPasswordErrorMessage);
                 }
                 else if (oPassword == nPassword) {
@@ -405,8 +406,9 @@ function changePassword() {
                 else {
                     $.ajax({
                         type: "POST",
-                        url: "handler/SystemHandle.ashx?Type=ChangePassword&UserID=" + userID + "&OPassword=" + oPassword + "&NPassword=" + nPassword,
+                        url: "handler/SystemHandle.ashx?Type=ChangePassword",
                         cache: false,
+                        data: data,
                         async: true,
                         success: function (data) {
                             if (data == 'o') {

@@ -47,7 +47,6 @@ D:\版本\Version\安裝源文件\EEP2012(V5.0.0.020140924 SP5)\EEP2012WF\EFWCFM
 C:\Program Files (x86)\Infolight\EEP2012\EEPNetServer\EFWCFModule.dll
 D:\Infolight\EEP2012\EEPNetServer\EFWCFModule.dll
 D:\Infolight\EEP2012\EEPNetServer\EFWCFModule.pdb
-D:\Infolight\EEP2012\EFWCFModule\obj\Debug\EFWCFModule.csprojResolveAssemblyReference.cache
 D:\Infolight\EEP2012\EFWCFModule\obj\Debug\EFWCFModule.dll
 D:\Infolight\EEP2012\EFWCFModule\obj\Debug\EFWCFModule.pdb
 C:\Program Files (x86)\Infolight\EEP2012\EEPNetServer\EFWCFModule.pdb

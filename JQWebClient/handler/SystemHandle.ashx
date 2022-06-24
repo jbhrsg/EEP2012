@@ -9,6 +9,9 @@ using EFClientTools.EFServerReference;
 using System.Collections.Generic;
 using System.Web.SessionState;
 using System.Linq;
+using Newtonsoft.Json.Linq;
+using System.Net.Mail;
+using System.Net;
 
 public class SystemHandle : IHttpHandler, IRequiresSessionState
 {
@@ -17,12 +20,13 @@ public class SystemHandle : IHttpHandler, IRequiresSessionState
     Dictionary<string, object> masterKeysDic = new Dictionary<string, object>();
     Dictionary<string, object> keysDic = new Dictionary<string, object>();
     HttpContext hContext;
+
     public void ProcessRequest(HttpContext context)
     {
         context.Response.Cache.SetCacheability(HttpCacheability.NoCache);
         hContext = context;
         var client = EFClientTools.ClientUtility.Client;
-        if (hContext.Request.QueryString["Type"] == "Encrypt") 
+        if (hContext.Request.QueryString["Type"] == "Encrypt")
         {
             var param = hContext.Request.Form["param"];
             var key = Guid.NewGuid().ToString("N");
@@ -120,18 +124,27 @@ public class SystemHandle : IHttpHandler, IRequiresSessionState
         }
         else if (hContext.Request.QueryString["Type"] == "ChangePassword")
         {
-            var userID = hContext.Request.QueryString["UserID"];
-            var oPassword = hContext.Request.QueryString["OPassword"];
-            var nPassword = hContext.Request.QueryString["NPassword"];
+            var member = hContext.Items.Count;
+            var t1 = hContext.Items[0];
+            var t2 = hContext.Items[1];
+            //5/10訊光註解130~133行,新增134~136行
+            //var userID = hContext.Request.QueryString["UserID"];           
+            //var oPassword = hContext.Request.QueryString["OPassword"];
+            //var nPassword = hContext.Request.QueryString["NPassword"];
+            var userID =hContext.Request.Form["UserID"];
+            var oPassword = hContext.Server.UrlDecode(hContext.Request.Form["OPassword"]);
+            var nPassword = hContext.Server.UrlDecode(hContext.Request.Form["NPassword"]);
+
             var parameters = new List<object>();
             parameters.Add(userID + ":" + oPassword + ":" + nPassword);
             //parameters.Add(userID);
             //parameters.Add(oPassword);
             //parameters.Add(nPassword);
+            //20210714 edit by serlina for QUAKER PASSWORD Expiry
             var obj2 = client.CallMethod(EFClientTools.ClientUtility.ClientInfo, "GLModule", "GetLoginFile", new List<object>() { new DateTime() });
 
             var PasswordPolicy = obj2.ToString();
-            var max = 10;
+            var max = 50;
             var min = 0;
             var CharNum = false;
             var Expiry = 0;
@@ -176,28 +189,64 @@ public class SystemHandle : IHttpHandler, IRequiresSessionState
             else if (CharNum)
             {
                 int x = 0, y = 0;
+                int uppercaseCounter = 0;
+                int lowercaseCounter = 0;
+                int specialCounter = 0;
+                bool isContinue = false;
                 for (int i = 0; i < nPassword.Length; i++)
                 {
-                    if (!char.IsLetterOrDigit(nPassword, i))
-                    {
-                        EFBase.MessageProvider provider = new EFBase.MessageProvider(hContext.Request.PhysicalApplicationPath, EFClientTools.ClientUtility.ClientInfo.Locale);
-                        var userString = string.Format(provider["Srvtools/UGControl/PasswordCharCheck"], min.ToString(), max.ToString());
-                        context.Response.Write(userString);
-                        return;
-                    }
-                    else if (char.IsLetter(nPassword, i))
+                    //if (!char.IsLetterOrDigit(nPassword, i))
+                    //{
+                    //    EFBase.MessageProvider provider = new EFBase.MessageProvider(hContext.Request.PhysicalApplicationPath, EFClientTools.ClientUtility.ClientInfo.Locale);
+                    //    var userString = string.Format(provider["Srvtools/UGControl/PasswordCharCheck"], min.ToString(), max.ToString());
+                    //    context.Response.Write(userString);
+                    //    return;
+                    //}
+                    if (char.IsLetter(nPassword, i))
                     {
                         x++;
+                        if (char.IsUpper(nPassword, i))
+                            uppercaseCounter++;
+                        else if (char.IsLower(nPassword, i))
+                            lowercaseCounter++;
                     }
                     else if (char.IsNumber(nPassword, i))
                     {
                         y++;
                     }
+                    else if (!char.IsLetterOrDigit(nPassword, i))
+                    {
+                        specialCounter++;
+                    }
                 }
-                if (x == 0 || y == 0)
+
+                for (var i = 1; i < nPassword.Length - 3; i++)
+                {
+                    var firstIndex = nPassword.ToCharArray()[i - 1];
+                    var secondIndex = nPassword.ToCharArray()[i];
+                    var thirdIndex = nPassword.ToCharArray()[i + 1];
+                    var fourIndex = nPassword.ToCharArray()[i + 2];
+                    var fiveIndex = nPassword.ToCharArray()[i + 3];
+                    if ((fiveIndex - fourIndex == 1) && (fourIndex - thirdIndex == 1) && (thirdIndex - secondIndex == 1) && (secondIndex - firstIndex == 1))
+                        isContinue = true;
+                    else if ((fiveIndex - fourIndex == -1) && (fourIndex - thirdIndex == -1) && (thirdIndex - secondIndex == -1) && (secondIndex - firstIndex == -1))
+                        isContinue = true;
+                    else if ((fiveIndex - fourIndex == 0) && (fourIndex - thirdIndex == 0) && (thirdIndex - secondIndex == 0) && (secondIndex - firstIndex == 0))
+                        isContinue = true;
+                }
+
+
+                if (x == 0 || y == 0 || uppercaseCounter == 0 || lowercaseCounter == 0 || specialCounter == 0 )
                 {
                     EFBase.MessageProvider provider = new EFBase.MessageProvider(hContext.Request.PhysicalApplicationPath, EFClientTools.ClientUtility.ClientInfo.Locale);
-                    var userString = string.Format(provider["Srvtools/UGControl/PasswordCharNum"], min.ToString(), max.ToString());
+                    var userString = string.Format(provider["Srvtools/UGControl/PasswordCharUpper"], min.ToString(), max.ToString());
+                    context.Response.Write(userString);
+                    return;
+                }
+                else if (isContinue)
+                {
+                    EFBase.MessageProvider provider = new EFBase.MessageProvider(hContext.Request.PhysicalApplicationPath, EFClientTools.ClientUtility.ClientInfo.Locale);
+                    var userString = string.Format(provider["Srvtools/UGControl/PasswordCharContinue"], min.ToString(), max.ToString());
                     context.Response.Write(userString);
                     return;
                 }
@@ -317,6 +366,7 @@ public class SystemHandle : IHttpHandler, IRequiresSessionState
         }
         else if (hContext.Request.QueryString["Type"] == "resetUserP")
         {
+            ServicePointManager.SecurityProtocol = (SecurityProtocolType)3072;//
             var user = context.Request.Form["user"];
             var db = context.Request.Form["database"];
             var clientInfo = new ClientInfo()
@@ -328,7 +378,9 @@ public class SystemHandle : IHttpHandler, IRequiresSessionState
             var email = context.Request.Form["email"];
             var newPassword = EFClientTools.ClientUtility.Client.ResetUser(clientInfo,email);
             var title = "您的密碼已經重置";
-            var body = string.Format("Dear {0}：<br/>您的密碼已經重置，登入帳號為：{1}，<br/>新的密碼為：{2}。"
+
+            var body = string.Format(
+                @"<div>Dear {0}：<br/>您的密碼已經重置，為安全起見請自行變更密碼<br/>登入帳號為：{1}<br/>新的密碼為：{2} </div><div>&nbsp</div>"
                 , user, user, newPassword);
             var mailOption = System.Configuration.ConfigurationManager.AppSettings["MailOption"];
             Dictionary<string, string> mailOptions = new Dictionary<string, string>();
@@ -347,11 +399,12 @@ public class SystemHandle : IHttpHandler, IRequiresSessionState
             }
             var smtpclient = new System.Net.Mail.SmtpClient(mailOptions["Smtp"]);
             smtpclient.UseDefaultCredentials = true;
-            smtpclient.Credentials = new System.Net.NetworkCredential(mailOptions["From"], mailOptions["Password"]);
-            if (mailOptions.ContainsKey("EnableSsl"))
-            {
-                smtpclient.EnableSsl = bool.Parse(mailOptions["EnableSsl"]);
-            }
+            smtpclient.Credentials = new NetworkCredential(mailOptions["From"], mailOptions["Password"]); //new System.Net.NetworkCredential(mailOptions["From"], mailOptions["Password"]);
+            smtpclient.EnableSsl = true;
+            //if (mailOptions.ContainsKey("EnableSsl"))
+            //{
+            //    smtpclient.EnableSsl = bool.Parse(mailOptions["EnableSsl"]);
+            //}
             if (mailOptions.ContainsKey("Port"))
             {
                 smtpclient.Port = int.Parse(mailOptions["Port"]);
@@ -421,4 +474,11 @@ public class SystemHandle : IHttpHandler, IRequiresSessionState
             return false;
         }
     }
+
+    ////20210714 edit by serlina for QUAKER PASSWORD Expiry
+    private void WriteMessage(HttpResponse response, string message)
+    {
+        response.Write(HttpUtility.HtmlEncode(message));
+    }
+    ////20210714 edit by serlina for QUAKER PASSWORD Expiry
 }

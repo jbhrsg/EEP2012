@@ -21,6 +21,7 @@ namespace EFGlobalModule
 {
     public partial class Component : EFModule, EFWCFModule.IGlobalModule
     {
+        public int _maxPasswordLength = 20;
         public Component()
         {
             InitializeComponent();
@@ -283,15 +284,32 @@ namespace EFGlobalModule
                     }
                     if (dsUsers.Tables[0].Rows[0]["EMAIL"].ToString().ToLower() == email.ToLower())
                     {
-                        var random = new Random(DateTime.Now.Millisecond);
-                        var newPassword = random.Next(100000, 1000000).ToString();
+                        string[] PWArray = new string[] { "J", "j", "S", "s", "D", "d", "P","p","W","w","G","g","M","m","A","a","U","u","Z","z","E","e","B","b","H","h","Q","q","Y","y","K","k","O","C","c","R","r","L","F","f","X","x","I","i","V","v","T","t","N","n" };
+                        var random = new Random(int.Parse(DateTime.Now.ToString("MddHHssff")));   //var random = new Random(DateTime.Now.Millisecond);                      
+                        var newPassword = random.Next(100000000, 999999999).ToString();  //var newPassword = random.Next(100000, 1000000).ToString();
+                        var Letter0 = int.Parse(newPassword.Substring(8, 1));
+                        var random1 = new Random();
+                        var Letter1 = "";
+                        for (var i = 0; i < 3; i++)
+                        {
+                            if (i > 0)
+                            {
+                                Letter0 = random.Next(0, i + 8);
+                            }
+                            Letter1 =PWArray[random.Next(0, 49)];
+                            newPassword = newPassword.Substring(0, Letter0) + Letter1 + newPassword.Substring(Letter0, newPassword.Length - Letter0);
+                        }
+
                         var sqlCommands = new List<SQLCommandInfo>();
                         char[] p = new char[] { };
-                        bool q = EFWCFModule.EEPAdapter.Encrypt.EncryptPassword(clientInfo.UserID, newPassword, 10, ref p, false);
+                        bool q = EFWCFModule.EEPAdapter.Encrypt.EncryptPassword(clientInfo.UserID, newPassword, _maxPasswordLength, ref p, false);
                         String pwd = new String(p);
+                        string update = DateTime.Now.ToString("yyyyMMdd");
+                        string upTime = DateTime.Now.ToString("HH:mm:ss");//20220516Say新增update及upTime變數
                         sqlCommands.Add(new SQLCommandInfo()
                         {
-                            CommandText = "UPDATE USERS SET PWD='" + pwd + "' WHERE USERID='" + clientInfo.UserID + "'",
+                            //20220516Say修改新增更新日期及時間欄位寫入
+                            CommandText = "UPDATE USERS SET PWD='" + pwd + "',LASTDATE='" + update + "',LASTTIME='" + upTime + "' WHERE USERID='" + clientInfo.UserID + "'",
                             Parameters = null
                         });
                         Database.ExecuteCommands(dbAlias, ClientInfo.SDDeveloperID, sqlCommands);
@@ -3987,7 +4005,7 @@ namespace EFGlobalModule
             if (password.Length > 0)
             {
                 char[] p = new char[] { };
-                bool q = EFWCFModule.EEPAdapter.Encrypt.EncryptPassword(userid, password, 10, ref p, false);
+                bool q = EFWCFModule.EEPAdapter.Encrypt.EncryptPassword(userid, password, _maxPasswordLength, ref p, false);
                 String pwd = new String(p);
                 return pwd.Equals(passwordInDatabase);
             }
@@ -4188,11 +4206,11 @@ namespace EFGlobalModule
 
             char[] p = new char[] { };
             bool q;
-            if (sOldPWD != "") q = Encrypt.EncryptPassword(sUserId, sOldPWD, 10, ref p, false);
+            if (sOldPWD != "") q = Encrypt.EncryptPassword(sUserId, sOldPWD, _maxPasswordLength, ref p, false);
             string sOldPwd = new string(p);
 
             p = new char[] { };
-            if (sNewPWD != "") q = Encrypt.EncryptPassword(sUserId, sNewPWD, 10, ref p, false);
+            if (sNewPWD != "") q = Encrypt.EncryptPassword(sUserId, sNewPWD, _maxPasswordLength, ref p, false);
             string sNewPwd = new string(p);
 
             using (var context = new Entities(CreateEntityConnection(clientInfo.Database, true)))
@@ -4211,9 +4229,9 @@ namespace EFGlobalModule
                 else
                 {
                     USER u = listUser[0];
-                    u.PWD = sNewPwd;
+                    u.PWD = sNewPwd;                    
                     u.LASTDATE = DateTime.Today.Year.ToString() + DateTime.Today.Month.ToString("00") + DateTime.Today.Day.ToString("00");
-
+                    u.LASTTIME = DateTime.Now.ToString("HH:mm:ss");
                     context.AttachUpdated(u);
                     context.SaveChanges();
                     return "O";
@@ -4249,8 +4267,7 @@ namespace EFGlobalModule
                     USER u = listUser[0];
                     u.PWD = String.Empty;
                     u.LASTDATE = String.Format("{0}{1}{2}", DateTime.Today.Year, DateTime.Today.Month, DateTime.Today.Day);
-                    u.LASTTIME = String.Format("{0}{1}{2}", DateTime.Today.Hour, DateTime.Today.Minute, DateTime.Today.Second);
-
+                    u.LASTTIME = DateTime.Now.ToString("HH:mm:ss"); //String.Format("{0}{1}{2}", DateTime.Today.Hour, DateTime.Today.Minute, DateTime.Today.Second);
                     context.AttachUpdated(u);
                     context.SaveChanges();
                     return "O";
@@ -4392,7 +4409,7 @@ namespace EFGlobalModule
                         if (sPassword.Length > 0)
                         {
                             char[] p = new char[] { };
-                            EFWCFModule.EEPAdapter.Encrypt.EncryptPassword(sUSERID, sPassword, 10, ref p, false);
+                            EFWCFModule.EEPAdapter.Encrypt.EncryptPassword(sUSERID, sPassword, _maxPasswordLength, ref p, false);
                             sPassword = new String(p);
                             piPWD.SetValue(e.Object, sPassword, null);
                         }

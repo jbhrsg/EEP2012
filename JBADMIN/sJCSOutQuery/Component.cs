@@ -80,7 +80,9 @@ namespace sJCSOutQuery
                         sql   = "EXEC  JCS2.DBO.procDisplayRoomerInOutOnLimitTimeNewJ0017 '" + CustNO + "','" + CurrentDate + "','" + ControlTime + "'";
                         break;
                 }
+
                 DataSet ds = this.ExecuteSql(sql, conn, transaction);
+            
                 js = JsonConvert.SerializeObject(ds.Tables[0], Formatting.Indented);
             }
             catch

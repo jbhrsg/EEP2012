@@ -97,6 +97,7 @@ namespace GLModule
         /// Required designer variable.
         /// </summary>
         private IContainer components;
+        public int _maxPasswordLength = 20;
 
         public ConnectionType getConnectionType(IDbConnection connection)
         {
@@ -780,7 +781,7 @@ namespace GLModule
                             }
                             else
                             {
-                                if (sUserPwd.Length > 10)
+                                if (sUserPwd.Length > _maxPasswordLength)
                                 {
                                     return new object[] { 0, LoginResult.PasswordError, username, useridindb };
                                 }
@@ -788,7 +789,7 @@ namespace GLModule
                                 if (sUserPwd.Length > 0)
                                 {
                                     char[] p = new char[] { };
-                                    bool q = Encrypt.EncryptPassword(sUserId, sUserPwd, 10, ref p, false);
+                                    bool q = Encrypt.EncryptPassword(sUserId, sUserPwd, _maxPasswordLength, ref p, false);
                                     enPwd = new string(p);
                                 }
 
@@ -1218,6 +1219,7 @@ namespace GLModule
         //ILogin不用
         public object[] ChangePassword(object[] objParam)
         {
+            
             string XMLParams = objParam[0].ToString();
             string[] ss = XMLParams.Split(":".ToCharArray());
             string sUserId = ss[0];
@@ -1231,18 +1233,18 @@ namespace GLModule
             //pwdBytes = md5.ComputeHash(Encoding.ASCII.GetBytes(ss[2]));
             //result = md5.ComputeHash(pwdBytes);
             //string sNewPwd = BitConverter.ToString(result);
-            if (ss[1].Length > 10 || ss[2].Length > 10)
-            {
-                return new object[] { 0, "E" };
-            }
+            //if (ss[1].Length > 10 || ss[2].Length > 10)
+            //{
+            //    return new object[] { 0, "E" };
+            //}
 
             char[] p = new char[] { };
             bool q;
-            if (ss[1] != "") q = Encrypt.EncryptPassword(sUserId, ss[1], 10, ref p, false);
+            if (ss[1] != "") q = Encrypt.EncryptPassword(sUserId, ss[1], _maxPasswordLength, ref p, false);
             string sOldPwd = new string(p);
 
             p = new char[] { };
-            if (ss[2] != "") q = Encrypt.EncryptPassword(sUserId, ss[2], 10, ref p, false);
+            if (ss[2] != "") q = Encrypt.EncryptPassword(sUserId, ss[2], _maxPasswordLength, ref p, false);
             string sNewPwd = new string(p);
 
             #region Build the command and exec the command to log error
@@ -1252,7 +1254,7 @@ namespace GLModule
             try
             {
                 String sQL = "";
-
+                string suptime = DateTime.Now.ToString("HH:mm:ss");
                 //为了区分不同的数据库 by Rei
                 InfoCommand command = new InfoCommand(ClientInfo);
                 if (conn.GetType().ToString() == "System.Data.SqlClient.SqlConnection")
@@ -1298,27 +1300,27 @@ namespace GLModule
 
                 if (conn is OleDbConnection)
                 {
-                    paramNewPwd = new OleDbParameter("@NewPwd", OleDbType.VarChar, 10);
+                    paramNewPwd = new OleDbParameter("@NewPwd", OleDbType.VarChar, _maxPasswordLength);
                     paramUserId = new OleDbParameter("@UserId", OleDbType.VarChar, 20);
-                    paramOldPwd = new OleDbParameter("@OldPwd", OleDbType.VarChar, 10);
+                    paramOldPwd = new OleDbParameter("@OldPwd", OleDbType.VarChar, _maxPasswordLength);
                 }
                 else if (conn is OdbcConnection)
                 {
-                    paramNewPwd = new OdbcParameter("?", OdbcType.NVarChar, 10);
+                    paramNewPwd = new OdbcParameter("?", OdbcType.NVarChar, _maxPasswordLength);
                     paramUserId = new OdbcParameter("?", OdbcType.VarChar, 20);
-                    paramOldPwd = new OdbcParameter("?", OdbcType.NVarChar, 10);
+                    paramOldPwd = new OdbcParameter("?", OdbcType.NVarChar, _maxPasswordLength);
                 }
                 else if (conn is OracleConnection)
                 {
-                    paramNewPwd = new OracleParameter(":NewPwd", OracleType.NVarChar, 10);
+                    paramNewPwd = new OracleParameter(":NewPwd", OracleType.NVarChar, _maxPasswordLength);
                     paramUserId = new OracleParameter(":UserId", OracleType.VarChar, 20);
-                    paramOldPwd = new OracleParameter(":OldPwd", OracleType.NVarChar, 10);
+                    paramOldPwd = new OracleParameter(":OldPwd", OracleType.NVarChar, _maxPasswordLength);
                 }
                 else if (conn is SqlConnection)
                 {
-                    paramNewPwd = new SqlParameter("@NewPwd", SqlDbType.VarChar, 10);
+                    paramNewPwd = new SqlParameter("@NewPwd", SqlDbType.VarChar, _maxPasswordLength);
                     paramUserId = new SqlParameter("@UserId", SqlDbType.VarChar, 20);
-                    paramOldPwd = new SqlParameter("@OldPwd", SqlDbType.VarChar, 10);
+                    paramOldPwd = new SqlParameter("@OldPwd", SqlDbType.VarChar, _maxPasswordLength);                    
                 }
 #if MySql
                 else if (conn is MySqlConnection)
@@ -1357,9 +1359,11 @@ namespace GLModule
                 }
                 else
                 {
+                    
                     //验证密码有效期 by rei
                     command.Parameters.Clear();
-                    command.CommandText = "UPDATE USERS SET LASTDATE='" + DateTime.Today.Year.ToString() + DateTime.Today.Month.ToString("00") + DateTime.Today.Day.ToString("00") + "' WHERE USERID='" + sUserId + "'";
+                    //20220516Say修改新增LASTTIME欄位寫入
+                    command.CommandText = "UPDATE USERS SET LASTDATE='" + DateTime.Today.Year.ToString() + DateTime.Today.Month.ToString("00") + DateTime.Today.Day.ToString("00") + "',LASTTIME='" + suptime + "'  WHERE USERID='" + sUserId + "'";
                     command.ExecuteNonQuery();
 
                     return new object[] { 0, "O" };  //找到该User，并更新好新密码。
