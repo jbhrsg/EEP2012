@@ -1,0 +1,11 @@
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sHRMAttendOverTimeMealQuery\bin\Debug\sHRMAttendOverTimeMealQuery.dll
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sHRMAttendOverTimeMealQuery\bin\Debug\sHRMAttendOverTimeMealQuery.pdb
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sHRMAttendOverTimeMealQuery\obj\Debug\sHRMAttendOverTimeMealQuery.csproj.GenerateResource.Cache
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sHRMAttendOverTimeMealQuery\obj\Debug\sHRMAttendOverTimeMealQuery.dll
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sHRMAttendOverTimeMealQuery\obj\Debug\sHRMAttendOverTimeMealQuery.pdb
+C:\Program Files (x86)\Infolight\EEP2012\EEPNetServer\JBADMIN\sHRMAttendOverTimeMealQuery.dll
+C:\Program Files (x86)\Infolight\EEP2012\EEPNetServer\JBADMIN\sHRMAttendOverTimeMealQuery.pdb
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sHRMAttendOverTimeMealQuery\obj\Debug\sHRMAttendOverTimeMealQuery.Component.resources
+C:\Program Files (x86)\Infolight\EEP2012\EEPNetServer\JBADMIN\vi-VN\sHRMAttendOverTimeMealQuery.resources.dll
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sHRMAttendOverTimeMealQuery\obj\Debug\sHRMAttendOverTimeMealQuery.Component.vi-VN.resources
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sHRMAttendOverTimeMealQuery\obj\Debug\vi-VN\sHRMAttendOverTimeMealQuery.resources.dll

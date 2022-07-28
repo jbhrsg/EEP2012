@@ -1,0 +1,9 @@
+D:\Infolight\EEP2012\JBADMIN\sERPSalseDetailsImport\bin\Debug\sERPSalseDetailsImport.dll
+D:\Infolight\EEP2012\JBADMIN\sERPSalseDetailsImport\bin\Debug\sERPSalseDetailsImport.pdb
+D:\Infolight\EEP2012\JBADMIN\sERPSalseDetailsImport\obj\Debug\sERPSalseDetailsImport.csproj.GenerateResource.Cache
+D:\Infolight\EEP2012\JBADMIN\sERPSalseDetailsImport\obj\Debug\sERPSalseDetailsImport.dll
+D:\Infolight\EEP2012\JBADMIN\sERPSalseDetailsImport\obj\Debug\sERPSalseDetailsImport.pdb
+D:\Infolight\EEP2012\EEPNetServer\JBADMIN\sERPSalseDetailsImport.dll
+D:\Infolight\EEP2012\EEPNetServer\JBADMIN\sERPSalseDetailsImport.pdb
+D:\Infolight\EEP2012\JBADMIN\sERPSalseDetailsImport\obj\Debug\sERPSalseDetailsImport.Component.resources
+D:\Infolight\EEP2012\JBADMIN\sERPSalseDetailsImport\obj\Debug\sERPSalseDetailsImport.csprojResolveAssemblyReference.cache

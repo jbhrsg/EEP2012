@@ -1,0 +1,11 @@
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sERPMediaCustomerQuery\bin\Debug\sERPMediaCustomerQuery.dll
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sERPMediaCustomerQuery\bin\Debug\sERPMediaCustomerQuery.pdb
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sERPMediaCustomerQuery\obj\Debug\sERPMediaCustomerQuery.csproj.GenerateResource.Cache
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sERPMediaCustomerQuery\obj\Debug\sERPMediaCustomerQuery.dll
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sERPMediaCustomerQuery\obj\Debug\sERPMediaCustomerQuery.pdb
+C:\Program Files (x86)\Infolight\EEP2012\EEPNetServer\JBADMIN\sERPMediaCustomerQuery.dll
+C:\Program Files (x86)\Infolight\EEP2012\EEPNetServer\JBADMIN\sERPMediaCustomerQuery.pdb
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sERPMediaCustomerQuery\obj\Debug\sERPMediaCustomerQuery.Component.resources
+C:\Program Files (x86)\Infolight\EEP2012\EEPNetServer\JBADMIN\vi-VN\sERPMediaCustomerQuery.resources.dll
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sERPMediaCustomerQuery\obj\Debug\sERPMediaCustomerQuery.Component.vi-VN.resources
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sERPMediaCustomerQuery\obj\Debug\vi-VN\sERPMediaCustomerQuery.resources.dll

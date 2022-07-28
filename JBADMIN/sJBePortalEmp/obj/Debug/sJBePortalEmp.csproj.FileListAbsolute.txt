@@ -7,9 +7,3 @@ D:\Infolight\EEP2012\EEPNetServer\JBADMIN\sJBePortalEmp.dll
 D:\Infolight\EEP2012\EEPNetServer\JBADMIN\sJBePortalEmp.pdb
 D:\Infolight\EEP2012\JBADMIN\sJBePortalEmp\obj\Debug\sJBePortalEmp.Component.resources
 D:\Infolight\EEP2012\JBADMIN\sJBePortalEmp\obj\Debug\sJBePortalEmp.csprojResolveAssemblyReference.cache
-C:\Program Files (x86)\Infolight\EEP2012\EEPNetServer\JBADMIN\sJBePortalEmp.dll
-C:\Program Files (x86)\Infolight\EEP2012\EEPNetServer\JBADMIN\sJBePortalEmp.pdb
-C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sJBePortalEmp\obj\Debug\sJBePortalEmp.Component.resources
-C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sJBePortalEmp\obj\Debug\sJBePortalEmp.csproj.GenerateResource.Cache
-C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sJBePortalEmp\obj\Debug\sJBePortalEmp.dll
-C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sJBePortalEmp\obj\Debug\sJBePortalEmp.pdb

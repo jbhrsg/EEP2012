@@ -147,7 +147,7 @@
         var DGVHEADCOUNT_FormatScript = function (value, row, index) {
             if (value > 1) {
                 var fieldName = this.field;
-                return $('<a>', { href: 'javascript: void(0)', title: '', onclick: "DGVHEADCOUNT_CommandTrigger.call(this,'')" }).linkbutton({ iconCls: '', plain: true, text: value })[0].outerHTML;
+                return $('<a>', { href: 'javascript: void(0)', title: '', onclick: "DGVHEADCOUNT_CommandTrigger.call(this,'')" }).linkbutton({ iconCls: '', plain: false, text: value })[0].outerHTML;
             }
         }
         var DGVHEADCOUNT_CommandTrigger = function (command) {

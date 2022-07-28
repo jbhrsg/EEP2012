@@ -36,6 +36,8 @@
             Srvtools.Service service5 = new Srvtools.Service();
             Srvtools.Service service6 = new Srvtools.Service();
             Srvtools.Service service7 = new Srvtools.Service();
+            Srvtools.Service service8 = new Srvtools.Service();
+            Srvtools.Service service9 = new Srvtools.Service();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Component));
             Srvtools.KeyItem keyItem1 = new Srvtools.KeyItem();
             Srvtools.FieldAttr fieldAttr1 = new Srvtools.FieldAttr();
@@ -182,6 +184,8 @@
             this.ERPCustomers = new Srvtools.InfoCommand(this.components);
             this.ucERPCustomers = new Srvtools.UpdateComponent(this.components);
             this.infoInvoiceType = new Srvtools.InfoCommand(this.components);
+            this.infoInvoiceDetails = new Srvtools.InfoCommand(this.components);
+            this.infoConnection3 = new Srvtools.InfoConnection(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.InfoConnection1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ERPSalesMaster)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ERPSalesDetails)).BeginInit();
@@ -203,6 +207,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.infoContactRecord)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ERPCustomers)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.infoInvoiceType)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.infoInvoiceDetails)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.infoConnection3)).BeginInit();
             // 
             // serviceManager1
             // 
@@ -227,6 +233,12 @@
             service7.DelegateName = "AddCustomerToDoNotes2";
             service7.NonLogin = false;
             service7.ServiceName = "AddCustomerToDoNotes2";
+            service8.DelegateName = "QueryAutoExcel";
+            service8.NonLogin = false;
+            service8.ServiceName = "QueryAutoExcel";
+            service9.DelegateName = "procAddMail0800";
+            service9.NonLogin = false;
+            service9.ServiceName = "procAddMail0800";
             this.serviceManager1.ServiceCollection.Add(service1);
             this.serviceManager1.ServiceCollection.Add(service2);
             this.serviceManager1.ServiceCollection.Add(service3);
@@ -234,6 +246,8 @@
             this.serviceManager1.ServiceCollection.Add(service5);
             this.serviceManager1.ServiceCollection.Add(service6);
             this.serviceManager1.ServiceCollection.Add(service7);
+            this.serviceManager1.ServiceCollection.Add(service8);
+            this.serviceManager1.ServiceCollection.Add(service9);
             // 
             // InfoConnection1
             // 
@@ -1658,7 +1672,9 @@
             this.ucERPCustomers.TransIsolationLevel = System.Data.IsolationLevel.ReadCommitted;
             this.ucERPCustomers.UseTranscationScope = false;
             this.ucERPCustomers.WhereMode = Srvtools.WhereModeType.Keyfields;
+            this.ucERPCustomers.BeforeInsert += new Srvtools.UpdateComponentBeforeInsertEventHandler(this.ucERPCustomers_BeforeInsert);
             this.ucERPCustomers.AfterInsert += new Srvtools.UpdateComponentAfterInsertEventHandler(this.ucERPCustomers_AfterInsert);
+            this.ucERPCustomers.BeforeModify += new Srvtools.UpdateComponentBeforeModifyEventHandler(this.ucERPCustomers_BeforeModify);
             this.ucERPCustomers.AfterModify += new Srvtools.UpdateComponentAfterModifyEventHandler(this.ucERPCustomers_AfterModify);
             // 
             // infoInvoiceType
@@ -1685,6 +1701,34 @@
             this.infoInvoiceType.SiteControl = false;
             this.infoInvoiceType.SiteFieldName = null;
             this.infoInvoiceType.UpdatedRowSource = System.Data.UpdateRowSource.None;
+            // 
+            // infoInvoiceDetails
+            // 
+            this.infoInvoiceDetails.CacheConnection = false;
+            this.infoInvoiceDetails.CommandText = resources.GetString("infoInvoiceDetails.CommandText");
+            this.infoInvoiceDetails.CommandTimeout = 30;
+            this.infoInvoiceDetails.CommandType = System.Data.CommandType.Text;
+            this.infoInvoiceDetails.DynamicTableName = false;
+            this.infoInvoiceDetails.EEPAlias = "JBERP";
+            this.infoInvoiceDetails.EncodingAfter = null;
+            this.infoInvoiceDetails.EncodingBefore = "Windows-1252";
+            this.infoInvoiceDetails.EncodingConvert = null;
+            this.infoInvoiceDetails.InfoConnection = this.infoConnection3;
+            this.infoInvoiceDetails.MultiSetWhere = false;
+            this.infoInvoiceDetails.Name = "infoInvoiceDetails";
+            this.infoInvoiceDetails.NotificationAutoEnlist = false;
+            this.infoInvoiceDetails.SecExcept = null;
+            this.infoInvoiceDetails.SecFieldName = null;
+            this.infoInvoiceDetails.SecStyle = Srvtools.SecurityStyle.ssByNone;
+            this.infoInvoiceDetails.SelectPaging = false;
+            this.infoInvoiceDetails.SelectTop = 0;
+            this.infoInvoiceDetails.SiteControl = false;
+            this.infoInvoiceDetails.SiteFieldName = null;
+            this.infoInvoiceDetails.UpdatedRowSource = System.Data.UpdateRowSource.None;
+            // 
+            // infoConnection3
+            // 
+            this.infoConnection3.EEPAlias = "JBERP";
             ((System.ComponentModel.ISupportInitialize)(this.InfoConnection1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ERPSalesMaster)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ERPSalesDetails)).EndInit();
@@ -1706,6 +1750,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.infoContactRecord)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ERPCustomers)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.infoInvoiceType)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.infoInvoiceDetails)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.infoConnection3)).EndInit();
 
         }
 
@@ -1742,6 +1788,8 @@
         private Srvtools.InfoCommand ERPCustomers;
         private Srvtools.UpdateComponent ucERPCustomers;
         private Srvtools.InfoCommand infoInvoiceType;
+        private Srvtools.InfoCommand infoInvoiceDetails;
+        private Srvtools.InfoConnection infoConnection3;
 
     }
 }

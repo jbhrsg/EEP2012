@@ -121,10 +121,10 @@
     <value>17, 55</value>
   </metadata>
   <metadata name="InfoConnection1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>17, 131</value>
+    <value>17, 93</value>
   </metadata>
   <metadata name="Employer.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>32, 172</value>
+    <value>17, 169</value>
   </metadata>
   <data name="Employer.CommandText" xml:space="preserve">
     <value>SELECT Employer.*,(select AttendantName from Attendant where AutoKey=Employer.SalesID) as SalesName,
@@ -133,43 +133,43 @@ from Employer
 order by IsActive desc,LastUpdateDate desc</value>
   </data>
   <metadata name="infoConnection3JS.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>27, 327</value>
+    <value>17, 245</value>
   </metadata>
   <metadata name="ucEmployer.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>17, 207</value>
+    <value>17, 359</value>
   </metadata>
   <metadata name="CountryCity.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>521, 142</value>
+    <value>17, 511</value>
   </metadata>
   <metadata name="infoConnection2.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>515, 106</value>
+    <value>17, 131</value>
   </metadata>
   <metadata name="infoFee.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>164, 174</value>
+    <value>17, 435</value>
   </metadata>
   <metadata name="infoSalesId.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>262, 179</value>
+    <value>17, 283</value>
   </metadata>
   <metadata name="infoSalaryDate.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>370, 180</value>
+    <value>17, 207</value>
   </metadata>
   <metadata name="infoFeeJS.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>184, 389</value>
+    <value>17, 549</value>
   </metadata>
   <metadata name="infoSalesIdJS.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>293, 388</value>
+    <value>17, 625</value>
   </metadata>
   <metadata name="infoSalaryDateJS.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>419, 388</value>
+    <value>17, 701</value>
   </metadata>
   <metadata name="infoConnection3JSCare.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>635, 303</value>
+    <value>17, 321</value>
   </metadata>
   <metadata name="ucEmployerJS.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>56, 451</value>
+    <value>17, 739</value>
   </metadata>
   <metadata name="EmployerJS.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>38, 392</value>
+    <value>17, 777</value>
   </metadata>
   <data name="EmployerJS.CommandText" xml:space="preserve">
     <value>SELECT Employer.*,(select AttendantName from Attendant where AutoKey=Employer.SalesID) as SalesName,
@@ -178,25 +178,25 @@ from Employer
 order by IsActive desc,LastUpdateDate desc</value>
   </data>
   <metadata name="EmployerJSCare.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>648, 386</value>
+    <value>17, 587</value>
   </metadata>
-  <data name="EmployerJSCare.CommandText" xml:space="preserve">
-    <value>SELECT Employer.*,(select AttendantName from Attendant where AutoKey=Employer.SalesID) as SalesName,
-	Case Employer.EmployerType when 2 then '公司' else '個人' end as EmployerTypeName
-from Employer 
-order by IsActive desc,LastUpdateDate desc</value>
-  </data>
   <metadata name="ucEmployerJSCare.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>654, 447</value>
+    <value>17, 663</value>
   </metadata>
   <metadata name="infoFeeJSCare.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>804, 385</value>
+    <value>17, 473</value>
   </metadata>
   <metadata name="infoSalesIdJSCare.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>937, 385</value>
+    <value>17, 397</value>
   </metadata>
   <metadata name="infoSalaryDateJSCare.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>1008, 427</value>
+  </metadata>
+  <metadata name="HUT_CustomerContactRecord.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>135, 777</value>
+  </metadata>
+  <metadata name="ucHUT_CustomerContactRecord.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>361, 777</value>
   </metadata>
   <metadata name="$this.TrayLargeIcon" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>False</value>

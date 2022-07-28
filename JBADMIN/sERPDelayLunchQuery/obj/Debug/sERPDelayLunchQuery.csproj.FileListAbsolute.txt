@@ -1,0 +1,7 @@
+D:\Infolight\EEP2012\EEPNetServer\JBADMIN\sERPDelayLunchQuery.dll
+D:\Infolight\EEP2012\EEPNetServer\JBADMIN\sERPDelayLunchQuery.pdb
+D:\Infolight\EEP2012\JBADMIN\sERPDelayLunchQuery\obj\Debug\sERPDelayLunchQuery.Component.resources
+D:\Infolight\EEP2012\JBADMIN\sERPDelayLunchQuery\obj\Debug\sERPDelayLunchQuery.csproj.GenerateResource.Cache
+D:\Infolight\EEP2012\JBADMIN\sERPDelayLunchQuery\obj\Debug\sERPDelayLunchQuery.dll
+D:\Infolight\EEP2012\JBADMIN\sERPDelayLunchQuery\obj\Debug\sERPDelayLunchQuery.pdb
+D:\Infolight\EEP2012\JBADMIN\sERPDelayLunchQuery\obj\Debug\sERPDelayLunchQuery.csprojResolveAssemblyReference.cache

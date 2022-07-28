@@ -16,12 +16,3 @@ D:\Infolight\EEP2012\EEPNetServer\JBADMIN\vi-VN\sCustomersJobs.resources.dll
 D:\Infolight\EEP2012\JBADMIN\sCustomersJobs\obj\Debug\sCustomersJobs.Component.vi-VN.resources
 D:\Infolight\EEP2012\JBADMIN\sCustomersJobs\obj\Debug\vi-VN\sCustomersJobs.resources.dll
 D:\Infolight\EEP2012\JBADMIN\sCustomersJobs\obj\Debug\sCustomersJobs.csprojResolveAssemblyReference.cache
-C:\Program Files (x86)\Infolight\EEP2012\EEPNetServer\JBADMIN\sCustomersJobs.dll
-C:\Program Files (x86)\Infolight\EEP2012\EEPNetServer\JBADMIN\sCustomersJobs.pdb
-C:\Program Files (x86)\Infolight\EEP2012\EEPNetServer\JBADMIN\vi-VN\sCustomersJobs.resources.dll
-C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sCustomersJobs\obj\Debug\sCustomersJobs.Component.resources
-C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sCustomersJobs\obj\Debug\sCustomersJobs.Component.vi-VN.resources
-C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sCustomersJobs\obj\Debug\sCustomersJobs.csproj.GenerateResource.Cache
-C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sCustomersJobs\obj\Debug\vi-VN\sCustomersJobs.resources.dll
-C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sCustomersJobs\obj\Debug\sCustomersJobs.dll
-C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sCustomersJobs\obj\Debug\sCustomersJobs.pdb

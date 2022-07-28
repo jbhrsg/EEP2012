@@ -1,0 +1,17 @@
+D:\Infolight\EEP2012\EEPNetServer\JBHRIS\_HRM_Attend_Normal_AbsentMinus.dll
+D:\Infolight\EEP2012\EEPNetServer\JBHRIS\_HRM_Attend_Normal_AbsentMinus.pdb
+D:\Infolight\EEP2012\EEPNetServer\JBHRIS\vi-VN\_HRM_Attend_Normal_AbsentMinus.resources.dll
+D:\Infolight\EEP2012\JBHRIS\_HRM_Attend_Normal_AbsentMinus\obj\Debug\_HRM_Attend_Normal_AbsentMinus.Component.resources
+D:\Infolight\EEP2012\JBHRIS\_HRM_Attend_Normal_AbsentMinus\obj\Debug\_HRM_Attend_Normal_AbsentMinus.Component.vi-VN.resources
+D:\Infolight\EEP2012\JBHRIS\_HRM_Attend_Normal_AbsentMinus\obj\Debug\_HRM_Attend_Normal_AbsentMinus.csproj.GenerateResource.Cache
+D:\Infolight\EEP2012\JBHRIS\_HRM_Attend_Normal_AbsentMinus\obj\Debug\vi-VN\_HRM_Attend_Normal_AbsentMinus.resources.dll
+D:\Infolight\EEP2012\JBHRIS\_HRM_Attend_Normal_AbsentMinus\obj\Debug\_HRM_Attend_Normal_AbsentMinus.dll
+D:\Infolight\EEP2012\JBHRIS\_HRM_Attend_Normal_AbsentMinus\obj\Debug\_HRM_Attend_Normal_AbsentMinus.pdb
+D:\Infolight\EEP2012\JBHRIS\_HRM_Attend_Normal_AbsentMinus\obj\Debug\_HRM_Attend_Normal_AbsentMinus.csprojResolveAssemblyReference.cache
+D:\Infolight\EEP2012\JBADMIN\_HRM_Attend_Normal_AbsentMinus\obj\Debug\_HRM_Attend_Normal_AbsentMinus.Component.resources
+D:\Infolight\EEP2012\JBADMIN\_HRM_Attend_Normal_AbsentMinus\obj\Debug\_HRM_Attend_Normal_AbsentMinus.Component.vi-VN.resources
+D:\Infolight\EEP2012\JBADMIN\_HRM_Attend_Normal_AbsentMinus\obj\Debug\_HRM_Attend_Normal_AbsentMinus.csproj.GenerateResource.Cache
+D:\Infolight\EEP2012\JBADMIN\_HRM_Attend_Normal_AbsentMinus\obj\Debug\vi-VN\_HRM_Attend_Normal_AbsentMinus.resources.dll
+D:\Infolight\EEP2012\JBADMIN\_HRM_Attend_Normal_AbsentMinus\obj\Debug\_HRM_Attend_Normal_AbsentMinus.dll
+D:\Infolight\EEP2012\JBADMIN\_HRM_Attend_Normal_AbsentMinus\obj\Debug\_HRM_Attend_Normal_AbsentMinus.pdb
+D:\Infolight\EEP2012\JBADMIN\_HRM_Attend_Normal_AbsentMinus\obj\Debug\_HRM_Attend_Normal_AbsentMinus.csprojResolveAssemblyReference.cache

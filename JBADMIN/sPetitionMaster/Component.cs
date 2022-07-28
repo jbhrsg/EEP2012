@@ -148,7 +148,7 @@ namespace sPetitionMaster
                 string[] parm = objParam[0].ToString().Split(',');
                 string UserID = parm[0];
 
-                string sql = "SELECT * FROM View_UsersGROUPS WHERE GROUPID='" + UserID + "'";
+                string sql = "SELECT * FROM View_UsersGROUPS WHERE USERID='" + UserID + "'";
                 DataSet ds = this.ExecuteSql(sql, connection, transaction);
                 js = JsonConvert.SerializeObject(ds.Tables[0], Formatting.Indented);
             }
@@ -224,6 +224,140 @@ namespace sPetitionMaster
                 ReleaseConnection(GetClientInfo(ClientInfoType.LoginDB).ToString(), connection);
             }
             return ret; // 傳回值: 無
+        }
+
+        //取得ListID
+        public object[] GetListID(object[] objParam)
+        {
+            string js = string.Empty;
+            //建立資料庫連結
+            IDbConnection connection = (IDbConnection)AllocateConnection(GetClientInfo(ClientInfoType.LoginDB).ToString());
+
+            //當連線狀態不等於open時，開啟連結
+            if (connection.State != ConnectionState.Open)
+            {
+                connection.Open();
+            }
+            //開始transaction
+            IDbTransaction transaction = connection.BeginTransaction();
+            try
+            {
+                string[] parm = objParam[0].ToString().Split(',');
+                string _PetitionNO = parm[0];
+                string _listid = string.Empty;
+                //string _applicant=string.Empty;
+                string sql = "SELECT Distinct LISTID FROM View_SYS_TODOLIST_Petition WHERE FORM_KEYS='PetitionNO' AND FORM_TABLE='PetitionMaster' ";
+                sql = sql + "AND FORM_PRESENTATION LIKE'%" + _PetitionNO + "%'";
+                //sql = sql + "AND FORM_PRESENTATION ='" + _PetitionNOValue + "'" + "\r\n";
+                DataSet ds = this.ExecuteSql(sql, connection, transaction);
+                //if (ds.Tables[0].Rows.Count > 0)
+                //{
+                //    _listid = ds.Tables[0].Rows[0]["LISTID"].ToString();
+                //    //_applicant = ds.Tables[0].Rows[0]["APPLICANT"].ToString();
+                //    var updatesql = "UPDATE PetitionMaster SET FlowListid='" + _listid + "'";//,APPLICANT='" + _applicant + "'
+                //    updatesql = updatesql + " WHERE PetitionNO='" + _PetitionNO + "'";
+
+                //    this.ExecuteSql(updatesql, connection, transaction);
+                //    transaction.Commit(); // 確認交易
+                //}
+                js = JsonConvert.SerializeObject(ds.Tables[0], Formatting.Indented);
+            }
+            catch
+            {
+                transaction.Rollback();
+            }
+            finally
+            {
+                ReleaseConnection(GetClientInfo(ClientInfoType.LoginDB).ToString(), connection);
+            }
+            return new object[] { 0, js }; // 傳回值: 無
+        }
+
+        //一般查詢
+        public object[] GetNormalPetition(object[] objParam)
+        {
+            string js = string.Empty;
+            //建立資料庫連結
+            IDbConnection connection = (IDbConnection)AllocateConnection(GetClientInfo(ClientInfoType.LoginDB).ToString());
+
+            //當連線狀態不等於open時，開啟連結
+            if (connection.State != ConnectionState.Open)
+            {
+                connection.Open();
+            }
+            //開始transaction
+            IDbTransaction transaction = connection.BeginTransaction();
+            try
+            {
+                string[] parm = objParam[0].ToString().Split(',');
+                string _UserId = parm[0];
+                int _FileLevel = int.Parse(parm[1]);
+                string DateB = parm[2];
+                string DateE = parm[3];
+                string sql = "SELECT * FROM PetitionMaster WHERE EXISTS (SELECT USER_ID FROM View_SYS_TODOHIS_Petition ";
+                sql = sql + " WHERE PetitionMaster.FlowListid= View_SYS_TODOHIS_Petition.LISTID";
+                if (DateB != "" && DateE != "")
+                {
+                    sql = sql + " AND PetitionMaster.PetitionDate BETWEEN '" + DateB + "' AND '" + DateE + "'";
+                }
+                sql = sql + " )";
+                sql = sql + " AND PetitionMaster.FileLevel=" + _FileLevel + " AND PetitionMaster.flowflag='Z' ORDER BY PetitionMaster.CreateDate";
+                DataSet ds = this.ExecuteSql(sql, connection, transaction);
+                js = JsonConvert.SerializeObject(ds.Tables[0], Formatting.Indented);
+            }
+            catch
+            {
+                transaction.Rollback();
+            }
+            finally
+            {
+                ReleaseConnection(GetClientInfo(ClientInfoType.LoginDB).ToString(), connection);
+            }
+            return new object[] { 0, js }; // 傳回值: 無
+        }
+
+        //限閱及密件查詢
+        public object[] GetReadPetition(object[] objParam)
+        {
+            string js = string.Empty;
+            //建立資料庫連結
+            IDbConnection connection = (IDbConnection)AllocateConnection(GetClientInfo(ClientInfoType.LoginDB).ToString());
+
+            //當連線狀態不等於open時，開啟連結
+            if (connection.State != ConnectionState.Open)
+            {
+                connection.Open();
+            }
+            //開始transaction
+            IDbTransaction transaction = connection.BeginTransaction();
+            try
+            {
+                string[] parm = objParam[0].ToString().Split(',');
+                string _UserId = parm[0];
+                int _FileLevel = int.Parse(parm[1]);
+                string DateB = parm[2];
+                string DateE = parm[3];
+                string sql = "SELECT * FROM PetitionMaster WHERE EXISTS (SELECT USER_ID FROM View_SYS_TODOHIS_Petition ";
+                sql = sql + " WHERE PetitionMaster.FlowListid= View_SYS_TODOHIS_Petition.LISTID";
+                sql = sql + " AND View_SYS_TODOHIS_Petition.USER_ID='" + _UserId + "' or  PetitionMaster.ReadDataEmpID like '%" + _UserId + "%'";
+                if (DateB != "" && DateE != "")
+                {
+                    sql = sql + " AND PetitionMaster.PetitionDate BETWEEN '" + DateB + "' AND '" + DateE + "'";
+                }
+                sql = sql + " )";
+                sql = sql + " AND PetitionMaster.FileLevel=" + _FileLevel + " AND PetitionMaster.flowflag='Z' ORDER BY PetitionMaster.CreateDate";
+                DataSet ds = this.ExecuteSql(sql, connection, transaction);
+                js = JsonConvert.SerializeObject(ds.Tables[0], Formatting.Indented);
+            }
+            catch
+            {
+                transaction.Rollback();
+            }
+            finally
+            {
+                ReleaseConnection(GetClientInfo(ClientInfoType.LoginDB).ToString(), connection);
+            }
+            return new object[] { 0, js }; // 傳回值: 無
         }
 
     //    //取得加簽者名單及意見

@@ -6,6 +6,8 @@
 <head runat="server">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <title></title>
+    <%--    <script src="../js/jquery.jbjob.js"></script>--%>
+    <script src="../js/jquery.calendar_jb.js"></script>
      <script>
          //=========================================控制3個Grid1=0都做完才顯示Grid=========================================================================================
          var waitA = false;
@@ -34,7 +36,7 @@
              //    }
              //}
              var sUserID = getClientInfo("UserID");
-             if (sUserID == "011" || sUserID == "020" || sUserID == "060") {
+             if (sUserID == "020" || sUserID == "060" || sUserID == "182" || sUserID == "316") {
                  var bAdmin = true;
              }
              return bAdmin;
@@ -103,8 +105,44 @@
              //代辦事項筆數
              ShowToDoCount();
              ////新增銷貨明細排版and 註冊日曆
-             AddSalesDetailsLoad();                         
-         });        
+             AddSalesDetailsLoad();
+             //預收查詢=>查詢條件預設值
+             var dt = new Date();
+             var FirstDate = new Date($.jbGetFirstDate(dt));
+             $("#SalesDescrDate_Query").datebox('setValue', $.jbjob.Date.DateFormat(FirstDate, 'yyyy/MM/dd'));
+             var LastDate = new Date($.jbGetLastDate(dt));
+             $("#SysDate_Query").datebox('setValue', $.jbjob.Date.DateFormat(LastDate, 'yyyy/MM/dd'));
+
+             //主檔訂單修改加字串(發票已開，贈期不轉下月)
+             var IsConvertNexMonth = $("#dataFormMasterUpdateIsConvertNexMonth").closest('td');
+             IsConvertNexMonth.append('發票已開，贈期不轉下月   ');
+             $("#dataFormMasterUpdateIsConvertNexMonth").closest('td').css("color", "blue");
+             ///主檔新增銷貨加字串(發票已開，贈期不轉下月)
+             var IsConvertNexMonth = $("#dataFormMasterIsConvertNexMonth").closest('td');
+             IsConvertNexMonth.append('發票已開，贈期不轉下月   ');
+             $("#dataFormMasterIsConvertNexMonth").closest('td').css("color", "blue");
+           
+         });
+         
+         //=============================================便利報SalesTypeID=31的日期統計資訊=============================================
+         function OnLoadERPSalseDetailsInfo() {
+             if (flag) {
+                 $.ajax({
+                     type: "POST",
+                     url: '../handler/jqDataHandle.ashx?RemoteName=sERPSalseDetails.ERPSalesDetails',  //連接的Server端，command
+                     data: "mode=method&method=" + "GeERPSalseDetailsInfo" ,
+                     cache: false,
+                     async: true,
+                     success: function (data) {
+                         var rows = $.parseJSON(data);//將JSon轉會到Object類型提供給Grid顯示                            
+                         $('#DGSalseDetailsInfo').datagrid('loadData', rows);//通過loadData方法清除掉原有Grid中的舊有資料並填補新資料
+                     }
+                 });
+                                         
+                 flag = false;
+             }
+         }
+
          //=============================================代辦事項筆數呈現=========================================================================================
          function ShowToDoCount(SalesEmployeeID) {
              var cnt;
@@ -137,6 +175,26 @@
          function GoToDoList() {             
             parent.addTab("待辦事項提醒", "JB_ADMIN/JBERP_SalesToDoList.aspx");             
          }
+         //呼叫預收查詢頁面
+         function OpenAcceptDateList() {             
+             openForm('#JQDialogAcceptDate', {}, 'viewed', 'dialog');
+         }
+         //=============================================預收查詢頁面 OnLoad=========================================================================================
+         function queryGrid(dg) {//查詢後添加固定條件
+             if ($(dg).attr('id') == 'JQGridAcceptDate') {
+                 //查詢條件
+                 var result = [];
+                 var SalesID = $('#SalesID_Query').combobox('getValue');//業務代號
+                 var CustNO = $('#CustNO_Query').combobox('getValue');//客戶代號
+                 var MinSalesDate = $('#SalesDescrDate_Query').datebox('getValue');//開始日期
+                 var MaxSalesDate = $('#SysDate_Query').datebox('getValue');//結束日期                           
+                 if (SalesID != '') result.push("d.SalesID = '" + SalesID + "'");
+                 if (CustNO != '') result.push("m.CustNO = '" + CustNO + "'");
+                 if (MinSalesDate != '') result.push("m.AcceptDate >= '" + MinSalesDate + "'");
+                 if (MaxSalesDate != '') result.push("m.AcceptDate <= '" + MaxSalesDate + "'");
+                 $(dg).datagrid('setWhere', result.join(' and '));
+             }
+         }
          //=============================================上面查詢條件=========================================================================================
          //業務人員combo更新時的事件
          function cbSalesEmployeeIDRefresh() {                        
@@ -145,9 +203,16 @@
              RefreshSalesInfo();//更新資訊統計
          }
          //客戶代號combo更新時的事件
-         function cbCustNORefresh() {             
-             RefreshGrid();
-             RefreshSalesInfo();
+         function cbCustNORefresh(rowData) {
+             //選完客戶時直接帶入選擇客戶的業務   
+             var setvalue = rowData.SalesID;
+            var data = $("#cbSalesEmployeeID").combobox('getData');            
+            if (data.length > 0) {
+                $("#cbSalesEmployeeID").combobox('setValue', setvalue);
+            }
+
+            RefreshGrid();
+            RefreshSalesInfo();
          }
          //交易別combo更新時的事件
          function cbSalesTypeRefresh() {
@@ -161,13 +226,15 @@
          }
          //新增銷貨
          function OnAppliedSalesDetails() {
+             // 修改發報種類, 修改[0800JOB].dbo.Publishing 出刊狀態 ,刊登起訖
+             Update0800JOBPublishing();
              RefreshGrid();
              RefreshSalesInfo();//更新資訊統計
          }
          function AddSalesMasterLoad() {                        
              //新增銷貨畫面選單預設
              ControlShowItem();
-             ControlSalesType();
+             ControlSalesType();            
          }
          //新增銷貨時取得SalesEmployeeID
          function GetSalesEmployeeID() {
@@ -207,8 +274,8 @@
              var HideFieldName = ['NewsTypeID', 'NewsAreaID', 'NewsPublishID', 'Sections', 'OfficePrice', 'OfficeLines', 'CustLines', 'OfficeAmt', 'CustPrice'];//, 'CustAmt'
              var FormName = '#dataFormMaster';
 
-             //版別,版別之區域,贈週報,單位數,總單位數,保留天數 
-             var HideFieldName2 = ['DMTypeID', 'ViewAreaID', 'PresentWNewsCount', 'SalesQty', 'TotalSalesQty', 'KeepDays'];
+             //版別,版別之區域,贈便利報,單位數,見刊數,總單位數,保留天數 
+             var HideFieldName2 = ['DMTypeID', 'ViewAreaID', 'PresentWNewsCount', 'SalesQty', 'SalesQtyView', 'TotalSalesQty', 'KeepDays'];
              var FormName2 = '#dataFormMaster';
 
              //報紙6=>顯示
@@ -222,7 +289,7 @@
                      $(FormName + fieldName).closest('td').prev('td').show();                     
                      $(FormName + fieldName).closest('td').show();
                  });
-                 //版別,版別之區域,贈週報,單位數,總單位數,保留天數 =>隱藏
+                 //版別,版別之區域,贈便利報,單位數,總單位數,保留天數 =>隱藏
                  $.each(HideFieldName2, function (index, fieldName) {                    
                      $(FormName2 + fieldName).closest('td').prev('td').hide();
                      $(FormName2 + fieldName).closest('td').hide();
@@ -235,15 +302,33 @@
                  $("#dataFormMasterDMTypeID").closest('td').prev('td').css("color", "red");
                  $("#dataFormMasterViewAreaID").closest('td').prev('td').css("color", "red");
 
-                 //版別,版別之區域,贈週報,單位數,總單位數,保留天數 =>顯示
+                 //版別,版別之區域,贈便利報,單位數,總單位數,保留天數 =>顯示
                  $.each(HideFieldName2, function (index, fieldName) {
                      $(FormName2 + fieldName).closest('td').prev('td').show();
                      $(FormName2 + fieldName).closest('td').show();
                  });                
              }
-         }
+             var iClass = $('#dataFormMasterPublishType');
+             //控制便利報 => 帶跳登
+             if (SalesTypeID.trim() == "31") {
+                 //修改類別 infooptions預設為發票年月	
+                 iClass.options('setValue', 2);//連登1,跳登2
+             } else iClass.options('setValue', 1);
+             var onSelect = getInfolightOption(iClass).onSelect;
+             if (onSelect) { onSelect.call(iClass, iClass.options('getCheckedValue')); };
+
+             ShowRemark1();
+             //帶出發報種類	
+             ShowIsAcceptePaper();
+         }                  
+         var flag = false; //定義一個全域變數，只有第一次執行  
+
          //主檔OnLoadSuccess
          function MasterOnLoadSuccess() {
+            
+             flag = true; //定義一個全域變數，只有第一次執行        
+             OnLoadERPSalseDetailsInfo();
+
              //刊登方式顯示隱藏與否 (連登或跳登選項)
              ControlSalesType();
              //主檔版面控制預設求才選項
@@ -259,7 +344,14 @@
              var FormName = '#dataFormMaster';
              $.each(HideFieldName, function (index, fieldName) {
                  $(FormName + fieldName).combobox('setValue', "");
-             });                        
+             });
+             //PDF檔名清空
+             $("#dataFormMasterRemark1").val("");
+             //產業別預設
+             $('#dataFormMasterIndustryType').options('setValue', 1);
+             //3.1.出刊客戶 清空
+             $("#dataFormMaster0800Id").combobox('loadData', []).combobox('clear');
+
          }
          //刊登方式顯示隱藏與否 (連登或跳登選項)
          function ControlSalesType() {
@@ -283,7 +375,7 @@
                      $("#dataFormMasterJumpDate").closest('td').show();
                  }
          }
-         //贈週報控制是否顯示日歷元件
+         //贈便利報控制是否顯示日歷元件
          function OnBlur_PresentWNewsCount() {
              var PresentWNewsCount = parseInt($("#dataFormMasterPresentWNewsCount").val());
              if (PresentWNewsCount > 0) {
@@ -295,6 +387,89 @@
                  $("#dataFormMasterWeekendDate").closest('td').hide();
              }
          }
+         //---------------------------------------------------------------------------------------------------------------
+         //新增銷貨時選完客戶時
+         function OnSelectCustNO(rowData) {
+             //1.直接帶入PDF檔名
+             ShowRemark1();
+             //2.帶出發報種類 , 產業別
+             ShowIsAcceptePaper();
+             //3 帶出出刊客戶
+             Get0800Id();
+         }
+         //1.直接帶入PDF檔名
+         function ShowRemark1() {
+             //PDF檔名清空(非 1 : 求才,31 : 便利報 選項)
+             var SalesTypeID = $("#dataFormMasterSalesTypeID").combobox('getValue');
+             if (SalesTypeID != "1" && SalesTypeID != "31") {
+                 $("#dataFormMasterRemark1").val("");
+             } else {
+                 var SalesQtyView = $("#dataFormMasterSalesQtyView").val();
+                 var CustNO = $("#dataFormMasterCustNO").combobox('getValue');
+                 var setvalue = CustNO.trim() + "-" + SalesQtyView.trim();
+                 $("#dataFormMasterRemark1").val(setvalue);
+             }
+         }
+         //2.帶出發報種類,產業別
+         function ShowIsAcceptePaper() {
+             //infooptions清空
+             $('#dataFormMasterIsAcceptePaper').data("infooptions").panel.find(":radio").prop("checked", false);
+
+             var CustNO = $("#dataFormMasterCustNO").combobox('getValue');
+             $.ajax({
+                 type: "POST",
+                 url: '../handler/jqDataHandle.ashx?RemoteName=sERPSalseDetails.ERPSalesMaster', //連接的Server端，command
+                 data: "mode=method&method=" + "GetIsAcceptePaper" + "&parameters=" + CustNO,  //method後的參數為server的Method名稱  parameters後為端的到後端的參數這裡傳入選中資料的CustomerID欄位
+                 cache: false,
+                 async: false,
+                 success: function (data) {//0未確認,1電子檔,2紙本   
+                     var rows = $.parseJSON(data);   //將JSon轉會到Object類型提供給Grid顯示
+                     if (rows.length > 0) {
+                         $("#dataFormMasterIsAcceptePaper").options('setValue', rows[0].IsAcceptePaper);
+                         $("#dataFormMasterIndustryType").options('setValue', rows[0].IndustryType);
+                         $("#dataFormMasterERPCustomerID").val(rows[0].ERPCustomerID);//對應銷貨客戶代號
+                     }
+                     //$("#dataFormMasterIsAcceptePaper").options('setValue', data);
+                     //交易別6 => 不顯示
+                     var SalesTypeID = $("#dataFormMasterSalesTypeID").combobox('getValue');
+                     if (SalesTypeID!=6 ) {
+                         $("#dataFormMasterIsAcceptePaper").closest('td').prev('td').css("color", "red");
+                         $("#dataFormMasterIsAcceptePaper").closest('td').prev('td').show();
+                         $("#dataFormMasterIsAcceptePaper").closest('td').show();
+                     } else {
+                         $("#dataFormMasterIsAcceptePaper").closest('td').prev('td').hide();
+                         $("#dataFormMasterIsAcceptePaper").closest('td').hide();
+                     }
+                 },
+             });
+         }
+         //---------------------------------------呼叫Method---------------------------------------
+         var GetDataFromMethod = function (methodName, data) {
+             var returnValue = null;
+             $.ajax({
+                 url: '../handler/JqDataHandle.ashx?RemoteName=sERPSalseDetails',
+                 data: { mode: 'method', method: methodName, parameters: $.toJSONString(data) },
+                 type: 'POST',
+                 async: false,
+                 success: function (data) { returnValue = $.parseJSON(data); },
+                 error: function (xhr, ajaxOptions, thrownError) { returnValue = null; }
+             });
+             return returnValue;
+         };
+         //---------------------------------------------------------------------------------------------------------------
+         //3.2 客戶代號 帶出出刊客戶
+         var Get0800Id = function () {
+             //3.1.出刊客戶 清空
+             $("#dataFormMaster0800Id").combobox('loadData', []).combobox('clear');
+
+             var Code = $("#dataFormMasterCustNO").combobox('getValue');
+             var CodeList = GetDataFromMethod('Get0800Id', {Co_de: Code });
+             if (CodeList != null) $("#dataFormMaster0800Id").combobox('loadData', CodeList);
+             if (CodeList.length > 1) {
+                 $("#dataFormMaster0800Id").combobox('setValue','');
+             }
+         }
+         //---------------------------------------------------------------------------------------------------------------
          //新增銷貨時檢查是否有此客戶
          function CheckNullCustNO() {
              var CustShortName;
@@ -331,6 +506,9 @@
              var today = $.jbjob.Date.DateFormat(dt, 'yyyy/MM/dd')
              //連登1,跳登2
              var PublishType = $("#dataFormMasterPublishType").options('getValue');
+             //種類
+             var SalesTypeID = $("#dataFormMasterSalesTypeID").combobox('getValue');
+
              if (PublishType.trim() == "1") {                
 
                  //連登日期
@@ -340,9 +518,13 @@
                      return false;
                  }
                  //日期需大於今天日期
-                 if (Check < today) {
-                     alert('連登日期不可小於今天！');
-                     return false;
+                 var sUserID = getClientInfo("UserID");
+                 if (sUserID != "020" && sUserID != "060") {
+
+                     if (Check < today) {
+                         alert('連登日期不可小於今天！');
+                         return false;
+                     }
                  }
                  
              } else {
@@ -354,20 +536,43 @@
                  }
                  //跳登起始日期需大於今天日期                 
                  var sJumpDate = $("#dataFormMasterJumpDate").val();
-                 var arr = sJumpDate.split("\n");                 
-                 if (arr[0] < today) {
-                     alert('跳登起始日期不可小於今天！');
-                     return false;
+                 var arr = sJumpDate.split("\n");
+                 //跳登日期不可小於今天
+                 var sUserID = getClientInfo("UserID");
+                 if (sUserID != "020" && sUserID != "060") {
+
+                     if (arr[0] < today) {
+                         alert('跳登起始日期不可小於今天！');
+                         return false;
+                     }
                  }
+
+                 //便利報(跳登)檢查是否為一、四、六
+                 if (SalesTypeID.trim() == "31") {
+                     var sErrorDate = "";
+                     $.each(arr, function (index, value) {
+                         if (value != "") {
+                             var d = new Date(value);
+                             //getDay()傳回值是一個0到6的整數值，0是星期日，1是星期一
+                             if (d.getDay() != 1 && d.getDay() != 4 && d.getDay() != 6) {
+                                 sErrorDate = sErrorDate + value + ",";
+                             }
+                         }
+                     });
+                     if (sErrorDate != "") {
+                         alert(sErrorDate + '日期錯誤=> 便利報的日期須為禮拜一或四或六！');
+                         return false;
+                     }
+                 }
+
                  var arrCount = arr.length-1;//去掉\n空白
-                 var Sum = parseInt($("#dataFormMasterPublishCount").val(),0) + parseInt($("#dataFormMasterPresentCount").val(),0);
+                 var Sum = parseInt($("#dataFormMasterPublishCount").val(), 0) + parseInt($("#dataFormMasterPresentCount").val(), 0);
                  if (arrCount != Sum) {
                      alert('跳登日期個數錯誤！');//刊期+贈期
                      return false;
                  }
-             }
-             
-             var SalesTypeID = $("#dataFormMasterSalesTypeID").combobox('getValue');
+             }             
+
              ////報紙6
              if (SalesTypeID.trim() == "6") {
                  //客行,社單價,社行,段
@@ -392,19 +597,30 @@
                      return false;
                  } else return true;
              } else {
-                 //贈週報檢查
+
+                 //1求才 / 31便利報時才檢查需要選擇出刊客戶
+                 if (SalesTypeID.trim() == "1" || SalesTypeID.trim() == "31") {
+                     //出刊客戶
+                     var c0800Id = $("#dataFormMaster0800Id").combobox('getValue');
+                     if (c0800Id == "" || c0800Id == undefined) {
+                         alert('出刊客戶未選擇！');
+                         return false;
+                     }
+                 }
+
+                 //贈便利報檢查
                  var PresentWNewsCount = $("#dataFormMasterPresentWNewsCount").val();
                  if (PresentWNewsCount != '') {
-                     //贈週報日期需大於今天日期                 
+                     //贈便利報日期需大於今天日期                 
                      var sWeekendDate = $("#dataFormMasterWeekendDate").val();
                      var arr = sWeekendDate.split("\n");
                      if (arr[0] < today) {
-                         alert('贈週報日期不可小於今天！');
+                         alert('贈便利報日期不可小於今天！');
                          return false;
                      }
                      var arrCount = arr.length - 1;//去掉\n空白
                      if (arrCount != PresentWNewsCount) {
-                         alert('贈週報日期個數錯誤！');
+                         alert('贈便利報日期個數錯誤！');
                          return false;
                      }
                  }
@@ -427,10 +643,24 @@
                      alert('版別區域未選擇！');
                      return false;
                  }
+                 //檢查發報種類
+                 var IsAcceptePaper = $("#dataFormMasterIsAcceptePaper").options('getValue');
+                 if (IsAcceptePaper == "" || IsAcceptePaper == undefined) {
+                     alert('請選擇發報種類！');
+                     return false;
+                 }
+                 //檢查產業別
+                 var IndustryType = $("#dataFormMasterIndustryType").options('getValue');
+                 if (IndustryType == "" || IndustryType == undefined) {
+                     alert('請選擇產業別！');
+                     return false;
+                 }
+
                  return confirm("提醒您,請檢查總單位數。");
                  //alert('提醒您,請檢查總單位數。');
              }            
          }
+                  
          //************************************************繳社*****************************************************************************
          //=================================單價=>推總價========================================
          //發稿行數*繳社單價=>繳社總價
@@ -483,13 +713,20 @@
          }
          //(刊期+贈期)*單位數=總單位數
          function OnBlur_TotalSalesQty() {
+             //(刊期+贈期)*單位數=總單位數
              var SalesTypeID = $('#dataFormMasterSalesTypeID').combobox('getValue');// 交易別
                  var PublishCount = parseInt($("#dataFormMasterPublishCount").val());
                  var PresentCount = parseInt($("#dataFormMasterPresentCount").val());
                  var SalesQty = parseInt($("#dataFormMasterSalesQty").val());
                  var sum = (PublishCount + PresentCount) * SalesQty;
-                 $("#dataFormMasterTotalSalesQty").numberbox('setValue', sum);                    
-         }         
+                 $("#dataFormMasterTotalSalesQty").numberbox('setValue', sum);
+             //單位數填完帶入見刊
+                // $("#dataFormMasterSalesQtyView").numberbox('setValue', SalesQty);
+         }
+         //見刊數量帶入PDF檔名	
+         function OnBlur_SalesQtyView() {
+             ShowRemark1();
+         }
          //天數提醒(主檔),是否失效(明細)CheckBox=>不可以編輯
          function genCheckBox(val) {
              if (val != "0")
@@ -497,7 +734,7 @@
              else
                  return "<input  type='checkbox' onclick='return false;'/>";
          }         
-         //當選取版別時,重新設定區域(連動)         
+         //當選取科目時,重新設定明細 (連動)         
          function GetViewAreaID(rowData) {
              //$("#dataFormMasterViewAreaID").combobox('setValue', "");
              $("#dataFormMasterViewAreaID").combobox('setWhere', "DMTypeID='" + rowData.DMTypeID + "'");
@@ -754,9 +991,9 @@
         }
         //銷貨明細Grid勾選失效
         function GridCheckAllFalse() {
-            if ($("#dataGridDetail").datagrid('getChecked').length == 0) {
-                alert('請勾選銷貨項目。');
-            } else {
+            var rowData = $('#dataGridView').datagrid('getSelected');            
+            if (GetLoginID()||rowData.IsInvoice == "0") {                
+
                 var pre = confirm("確定失效?");
                 if (pre == true) {
                     var rows = $('#dataGridDetail').datagrid('getChecked');
@@ -764,6 +1001,7 @@
                     var adepositSeq = [];//匯入序號
                     var SalesMasterNO = "";
                     var CustNO = "";
+                    var sType = "admin";
                     for (var i = 0; i < rows.length; i++) {
                         if (i == 0) {
                             SalesMasterNO = rows[0].SalesMasterNO;
@@ -775,8 +1013,7 @@
                     var sItemSeq = aItemSeq.join('*');
                     var sdepositSeq = adepositSeq.join('*');
                     //有權限才可以失效匯入的銷貨
-                    var sType = "";
-                    if (GetLoginID()) { sType = "Admin" };
+
                     $.ajax({
                         type: "POST",
                         url: '../handler/jqDataHandle.ashx?RemoteName=sERPSalseDetails.ERPSalesDetails', //連接的Server端，command
@@ -794,8 +1031,13 @@
                             alert(thrownError);
                         }
                     });
-                                                        
+
                 }
+            }else if ($("#dataGridDetail").datagrid('getChecked').length == 0) {
+                alert('請勾選銷貨項目。');
+            } else {
+                alert('已開發票，無法失效');
+                return false;
             }
         }
         //銷貨明細選擇性匯入行政系統
@@ -836,15 +1078,14 @@
         //EditOnEnter銷貨明細檢查
         function DetailUpdateCheck() {
             var row = $("#dataGridDetail").datagrid('getSelected');          
-            var IsTransSys = row.IsTransSys;
+            var ovInvoice = row.ovInvoice;
             var dt = new Date();
             var today = $.jbjob.Date.DateFormat(dt, 'yyyy/MM/dd');            
             var aDate = new Date(row.SalesDate);
             var SalesDate = $.jbjob.Date.DateFormat(aDate, 'yyyy/MM/dd');
             //未匯入且銷貨日期大於今天的可修改,  已匯入=>有權限者改
-            //if (GetLoginID() || (IsTransSys == "0" &&  SalesDate > today)) {
             //未匯入的可修改,  已匯入=>有權限者改
-            if (GetLoginID() || (IsTransSys==false &&  SalesDate > today)) {
+            if (GetLoginID() || (ovInvoice == false)) {
                 return true;
             } else {//未轉入且銷貨日期小於今天=>可修改 有效,發票年月,銷貨日期=>翠玲改
                 var index = $("#dataGridDetail").datagrid('getRowIndex', row);
@@ -933,13 +1174,12 @@
             //項目=>版別,版別區域,贈期,報,版,發
             var HideFieldName = ['DMTypeID', 'ViewAreaID', 'GrantTypeID', 'NewsTypeID', 'NewsAreaID', 'GrantTypeID'];
 
-            var IsTransSys = $("#dataFormSalesDescrIsTransSys").checkbox('getValue');
+            var ovInvoice = $("#dataFormSalesDescrovInvoice").checkbox('getValue');
 
             //銷貨日期大於今天的可修改,  銷貨日期小於今天=>翠玲改,其他隱藏
             //if ((SalesDate <= today && GetLoginID()) || SalesDate > today) {
             //未匯入且銷貨日期大於今天的可修改,  已匯入=>有權限者改
-            if (GetLoginID() || (IsTransSys == "0" &&  SalesDate > today)) {
-
+            if (GetLoginID() || (ovInvoice == "0")) {
                 //解鎖textarea型態欄位
                 $('input,select', "#dataFormSalesDescr").each(function () {//input,select,
                     this.disabled = '';
@@ -951,9 +1191,7 @@
                 //銷貨日期可用
                 $('#dataFormSalesDescrSalesDate').datebox('enable');   
 
-                if (IsTransSys == 1) {
-                    alert('提醒您，此筆銷貨已匯入行政系統\n請記得到 "行政系統" 修改銷貨資料。');
-                }
+              
             } else {
                 //鎖textarea型態欄位
                 $('input,select', "#dataFormSalesDescr").each(function () {//input,select,
@@ -974,7 +1212,7 @@
             //客戶代號,客戶簡稱,匯入鎖定           
             $("#dataFormSalesDescrCustNO").prop('readonly', true);
             $("#dataFormSalesDescrCustShortName").prop('readonly', true);
-            $("#dataFormSalesDescrIsTransSys").attr("disabled", true);
+            $("#dataFormSalesDescrovInvoice").attr("disabled", true);
         }
          //銷貨明細維護OnLoadSuccess
         function OnLoadSuccessDFSalesDescr() {
@@ -1037,6 +1275,8 @@
                 var SalesQtyView = $("#dataFormSalesDetailSalesQtyView").val();
                 //備註	
                 var SalesDescr = $("#dataFormSalesDetailSalesDescr").val();
+                //PDF檔名	
+                var Remark1 = $("#dataFormSalesDetailRemark1").val();
                 //跳登起始日期需大於今天日期                 
                 var sJumpDate = $("#dataFormSalesDetailJumpDate").val();
                 var dt = new Date();
@@ -1070,7 +1310,7 @@
                                     $.ajax({
                                         type: "POST",
                                         url: '../handler/jqDataHandle.ashx?RemoteName=sERPSalseDetails.ERPSalesDetails', //連接的Server端，command
-                                        data: "mode=method&method=" + "InsertERPSalseDetailsLast" + "&parameters=" + SalesMasterNO + "," + CustNO + "," + DMTypeID + "," + ViewAreaID + "," + SalesQty + "," + SalesQtyView + "," + SalesDescr  + "," + YMPoint + "," + sJumpDate + "," + sJumpDate2,  //method後的參數為server的Method名稱  parameters後為端的到後端的參數這裡傳入選中資料的UserID欄位
+                                        data: "mode=method&method=" + "InsertERPSalseDetailsLast" + "&parameters=" + SalesMasterNO + "," + CustNO + "," + DMTypeID + "," + ViewAreaID + "," + SalesQty + "," + SalesQtyView + "," + SalesDescr + "," + Remark1 + "," + YMPoint + "," + sJumpDate + "," + sJumpDate2,  //method後的參數為server的Method名稱  parameters後為端的到後端的參數這裡傳入選中資料的UserID欄位
                                         cache: false,
                                         async: false,
                                         success: function (data) {
@@ -1106,7 +1346,7 @@
             var SalesDate = $.jbjob.Date.DateFormat(aDate, 'yyyy/MM/dd');            
 
             //銷貨日期大於等於今天的可修改,  銷貨日期小於今天=>翠玲改
-            if ((SalesDate < today && GetLoginID()) || SalesDate >= today ) {
+            if (GetLoginID()) {
                 var pre = confirm("確認失效此筆銷貨?");
                 if (pre == true) {
                     var SalesMasterNO = $('#dataGridDetail').datagrid('getSelected').SalesMasterNO;
@@ -1119,9 +1359,7 @@
                         async: true,
                     });
                     RefreshGrid();
-                    if ($('#dataGridDetail').datagrid('getSelected').IsTransSys == true) {
-                        alert('提醒您，此筆銷貨已匯入行政系統\n請記得到 "行政系統" 修改銷貨資料。');
-                    }
+                   
                     return false; //取消失效的動作
                 }
                 else {                    
@@ -1199,17 +1437,43 @@
                 $("#dataFormMasterTotalSalesQty").val(TotalSalesQty);
             }
         }
-      
+         //Grid便利報日期 => 可售單變紅色
+        function FormatScriptRemain(val, rowData) {           
+            return "<div style='font-weight:bold;color:red;'> " + val + "</div>";
+        }
+               
+         // 修改發報種類, 修改[0800JOB].dbo.Publishing 出刊狀態 ,刊登起訖
+        function Update0800JOBPublishing() {
+            var row = $('#dataGridView').datagrid('getSelected');
+            var CustNO = $("#dataFormMasterCustNO").combobox('getValue');//客戶代號            
+            var SalesTypeID = $("#dataFormMasterSalesTypeID").combobox('getValue'); //交易別
+            var IsAcceptePaper = $('#dataFormMasterIsAcceptePaper').options('getValue'); //發報種類
+                $.ajax({
+                    type: "POST",
+                    url: '../handler/jqDataHandle.ashx?RemoteName=sERPSalseDetails.ERPSalesDetails', //連接的Server端，command
+                    data: "mode=method&method=" + "Update0800JOBPublishing" + "&parameters=" + encodeURIComponent(CustNO + "," + SalesTypeID + "," + IsAcceptePaper), //method後的參數為server的Method名稱  parameters後為端的到後端的參數這裡傳入選中資料的UserID欄位
+                    cache: false,
+                    async: false,
+                    success: function (data) {                      
+                    },
+                    error: function (xhr, ajaxOptions, thrownError) {
+                        alert(xhr.status);
+                        alert(thrownError);
+                    }
+                });
+
+        }
+
      </script> 
     </head>
 <body>
     <form id="form1" runat="server">
         <div>
-            <asp:Label ID="Label1" runat="server" Font-Size="Small" Text="業務:"></asp:Label>
-            <JQTools:JQComboBox ID="cbSalesEmployeeID" runat="server" DisplayMember="SalesName" PanelHeight="150" RemoteName="sERPSalseDetails.infoSalesMan" ValueMember="SalesID" Width="50px" OnSelect="cbSalesEmployeeIDRefresh">
-            </JQTools:JQComboBox>
-            &nbsp;<asp:Label ID="Label3" runat="server" Font-Size="Small" Text="客戶代號:"></asp:Label>
+            <asp:Label ID="Label3" runat="server" Font-Size="Small" Text="客戶代號:"></asp:Label>
             <JQTools:JQComboBox ID="cbCustNO" runat="server" DisplayMember="CustShortName" RemoteName="sERPSalseDetails.infoCustomersAll" ValueMember="CustNO" OnSelect="cbCustNORefresh">
+            </JQTools:JQComboBox>           
+            &nbsp; <asp:Label ID="Label1" runat="server" Font-Size="Small" Text="業務:"></asp:Label>
+            <JQTools:JQComboBox ID="cbSalesEmployeeID" runat="server" DisplayMember="SalesName" PanelHeight="150" RemoteName="sERPSalseDetails.infoSalesMan" ValueMember="SalesID" Width="50px" OnSelect="cbSalesEmployeeIDRefresh">
             </JQTools:JQComboBox>
 &nbsp;<asp:Label ID="Label4" runat="server" Font-Size="Small" Text="交易別:"></asp:Label>
             <JQTools:JQComboBox ID="cbSalesType" runat="server" DisplayMember="SalesTypeName" RemoteName="sERPSalseDetails.infoERPSalesType" ValueMember="SalesTypeID" OnSelect="cbSalesTypeRefresh">
@@ -1218,26 +1482,39 @@
             <JQTools:JQDateBox ID="JQDate1" runat="server" Width="100px" />
             〜<JQTools:JQDateBox ID="JQDate2" runat="server" />
             &nbsp;&nbsp;<a href="#" id="LinkToDoList" onclick="GoToDoList()"></a>
+            &nbsp;<a href="#" class="easyui-linkbutton" OnClick="OpenAcceptDateList()">預收查詢</a>
             <br />
         </div>
             <JQTools:JQScriptManager ID="JQScriptManager1" runat="server" />
-
-            <script src="../js/jquery.calendar_jb.js"></script>
-           
-
+                       
             <JQTools:JQDialog ID="JQDialog1" runat="server" BindingObjectID="dataFormMaster" Title="新增銷貨" EditMode="Dialog" DialogLeft="30px" DialogTop="10px" Width="850px">
-                <JQTools:JQDataForm ID="dataFormMaster" runat="server" DataMember="ERPSalesMaster" HorizontalColumnsCount="4" RemoteName="sERPSalseDetails.ERPSalesMaster" Closed="False" ContinueAdd="False" disapply="False" DuplicateCheck="False" IsAutoPageClose="False" IsAutoPause="False" IsAutoSubmit="False" IsNotifyOFF="False" IsRejectNotify="False" IsRejectON="False" IsShowFlowIcon="False" ShowApplyButton="False" ValidateStyle="Dialog" OnLoadSuccess="MasterOnLoadSuccess" OnApply="checkItemNull" OnApplied="OnAppliedSalesDetails" >
+                <JQTools:JQDataGrid ID="DGSalseDetailsInfo" runat="server" AllowAdd="True" AllowDelete="True" AllowUpdate="True" AlwaysClose="True" AutoApply="False" BufferView="False" CheckOnSelect="True" ColumnsHibeable="False" DeleteCommandVisible="False" DuplicateCheck="False" EditMode="Dialog" EditOnEnter="True" InsertCommandVisible="True" MultiSelect="False" NotInitGrid="False" PageList="10,20,30,40,50" PageSize="10" Pagination="False" QueryAutoColumn="False" QueryLeft="" QueryMode="Window" QueryTitle="Query" QueryTop="" RecordLock="False" RecordLockMode="None" RowNumbers="False" Title="" TotalCaption="Total:" UpdateCommandVisible="False" ViewCommandVisible="False" DataMember="infoSalesInfo" RemoteName="sERPSalseDetails.infoSalesInfo" Width="393px">
+                    <Columns>
+                        <JQTools:JQGridColumn Alignment="center" Caption="便利報" Editor="text" FieldName="iday" Frozen="False" IsNvarChar="False" MaxLength="0" QueryCondition="" ReadOnly="False" Sortable="False" Visible="True" Width="100">
+                        </JQTools:JQGridColumn>
+                        <JQTools:JQGridColumn Alignment="center" Caption="總單位數" Editor="text" FieldName="BaseQty" Frozen="False" IsNvarChar="False" MaxLength="0" QueryCondition="" ReadOnly="False" Sortable="False" Visible="True" Width="70">
+                        </JQTools:JQGridColumn>
+                        <JQTools:JQGridColumn Alignment="center" Caption="單位數" Editor="text" FieldName="SalesQty" Frozen="False" IsNvarChar="False" MaxLength="0" QueryCondition="" ReadOnly="False" Sortable="False" Visible="True" Width="70">
+                        </JQTools:JQGridColumn>
+                        <JQTools:JQGridColumn Alignment="center" Caption="見刊" Editor="text" FieldName="SalesQtyView" Frozen="False" IsNvarChar="False" MaxLength="0" QueryCondition="" ReadOnly="False" Sortable="False" Visible="True" Width="70">
+                        </JQTools:JQGridColumn>
+                        <JQTools:JQGridColumn Alignment="center" Caption="可售單" Editor="text" FieldName="Remain" Frozen="False" IsNvarChar="False" MaxLength="0" QueryCondition="" ReadOnly="False" Sortable="False" Visible="True" Width="70" FormatScript="FormatScriptRemain">
+                        </JQTools:JQGridColumn>
+                    </Columns>
+                </JQTools:JQDataGrid>
+                <JQTools:JQDataForm ID="dataFormMaster" runat="server" DataMember="ERPSalesMaster" HorizontalColumnsCount="4" RemoteName="sERPSalseDetails.ERPSalesMaster" Closed="False" ContinueAdd="False" disapply="False" DuplicateCheck="False" IsAutoPageClose="False" IsAutoPause="False" IsAutoSubmit="False" IsNotifyOFF="False" IsRejectNotify="False" IsRejectON="False" IsShowFlowIcon="False" ShowApplyButton="False" ValidateStyle="Dialog" OnLoadSuccess="MasterOnLoadSuccess" OnApply="checkItemNull" OnApplied="OnAppliedSalesDetails" AlwaysReadOnly="False" DivFramed="False" HorizontalGap="0" VerticalGap="0" >
 
                     <Columns>
                         <JQTools:JQFormColumn Alignment="left" Caption="SalesMasterNO" Editor="text" FieldName="SalesMasterNO" Width="80" Visible="False" Span="1" NewRow="False" ReadOnly="False" />
-                        <JQTools:JQFormColumn Alignment="left" Caption="客戶代號" Editor="infocombobox" FieldName="CustNO" Width="190" EditorOptions="valueField:'CustNO',textField:'CustShortName',remoteName:'sERPSalseDetails.infoCustomers',tableName:'infoCustomers',pageSize:'-1',checkData:false,selectOnly:false,cacheRelationText:false,panelHeight:200" Span="1" NewRow="True" Visible="True" MaxLength="0" RowSpan="1" OnBlur="" />
+                        <JQTools:JQFormColumn Alignment="right" Caption=" " Editor="checkbox" EditorOptions="on:1,off:0" FieldName="IsConvertNexMonth" NewRow="True" Span="4" Visible="True" Width="40" ReadOnly="False" MaxLength="0" RowSpan="1" />
+                        <JQTools:JQFormColumn Alignment="left" Caption="客戶代號" Editor="infocombobox" FieldName="CustNO" Width="190" EditorOptions="valueField:'CustNO',textField:'CustShortName',remoteName:'sERPSalseDetails.infoCustomers',tableName:'infoCustomers',pageSize:'-1',checkData:false,selectOnly:false,cacheRelationText:false,onSelect:OnSelectCustNO,panelHeight:200" Span="1" NewRow="True" Visible="True" OnBlur="" MaxLength="0" ReadOnly="False" RowSpan="1" />
                         <JQTools:JQFormColumn Alignment="left" Caption="交易別" Editor="infocombobox" FieldName="SalesTypeID" Width="90" Visible="True" EditorOptions="valueField:'SalesTypeID',textField:'SalesTypeName',remoteName:'sERPSalseDetails.infoERPSalesType',tableName:'infoERPSalesType',pageSize:'-1',checkData:false,selectOnly:false,cacheRelationText:false,onSelect:ControlShowItem,panelHeight:200" NewRow="False" Span="1" ReadOnly="False" MaxLength="0" RowSpan="1" />
                         <JQTools:JQFormColumn Alignment="left" Caption="版別" Editor="infocombobox" FieldName="DMTypeID" Width="90" Visible="True" EditorOptions="valueField:'DMTypeID',textField:'DMTypeName',remoteName:'sERPSalseDetails.infoERPDMType',tableName:'infoERPDMType',pageSize:'-1',checkData:false,selectOnly:false,cacheRelationText:false,onSelect:GetViewAreaID,panelHeight:200" NewRow="False" ReadOnly="False" MaxLength="0" RowSpan="1" Span="1" />
                         <JQTools:JQFormColumn Alignment="left" Caption=" 區域" Editor="infocombobox" EditorOptions="valueField:'ViewAreaID',textField:'ViewAreaName',remoteName:'sERPSalseDetails.infoERPViewArea',tableName:'infoERPViewArea',pageSize:'-1',checkData:false,selectOnly:false,cacheRelationText:false,panelHeight:200" FieldName="ViewAreaID" NewRow="False" Span="1" Visible="True" Width="80" MaxLength="0" ReadOnly="False" RowSpan="1" />
                         <JQTools:JQFormColumn Alignment="left" Caption="報別" Editor="infocombobox" FieldName="NewsTypeID" MaxLength="0" NewRow="True" ReadOnly="False" RowSpan="1" Span="1" Visible="True" Width="125" EditorOptions="valueField:'NewsTypeID',textField:'NewsTypeName',remoteName:'sERPSalseDetails.infoERPNewsType',tableName:'infoERPNewsType',pageSize:'-1',checkData:false,selectOnly:false,cacheRelationText:false,panelHeight:200" />
                         <JQTools:JQFormColumn Alignment="left" Caption="版別" Editor="infocombobox" FieldName="NewsAreaID" MaxLength="0" NewRow="False" ReadOnly="False" RowSpan="1" Span="1" Visible="True" Width="90" EditorOptions="valueField:'NewsAreaID',textField:'NewsAreaName',remoteName:'sERPSalseDetails.infoERPNewsArea',tableName:'infoERPNewsArea',pageSize:'-1',checkData:false,selectOnly:false,cacheRelationText:false,panelHeight:200" />
                         <JQTools:JQFormColumn Alignment="left" Caption="發刊單位" Editor="infocombobox" FieldName="NewsPublishID" MaxLength="0" NewRow="False" RowSpan="1" Span="1" Visible="True" Width="90" EditorOptions="valueField:'NewsPublishID',textField:'NewsPublishName',remoteName:'sERPSalseDetails.infoERPNewsPublish',tableName:'infoERPNewsPublish',pageSize:'-1',checkData:false,selectOnly:false,cacheRelationText:false,panelHeight:200" ReadOnly="False" />
-                        <JQTools:JQFormColumn Alignment="left" Caption="發稿段數" Editor="text" FieldName="Sections" NewRow="True" Span="1" Visible="True" Width="50" />
+                        <JQTools:JQFormColumn Alignment="left" Caption="發稿段數" Editor="text" FieldName="Sections" NewRow="True" Span="1" Visible="True" Width="50" ReadOnly="False" MaxLength="0" RowSpan="1" />
                         <JQTools:JQFormColumn Alignment="left" Caption="發稿行數" Editor="numberbox" FieldName="OfficeLines" MaxLength="0" RowSpan="1" Span="1" Visible="True" Width="50" OnBlur="OnBlur_ChangeOfficePrice" NewRow="False" ReadOnly="False" />
                         <JQTools:JQFormColumn Alignment="left" Caption="繳社單價" Editor="numberbox" FieldName="OfficePrice" MaxLength="0" NewRow="False" ReadOnly="False" RowSpan="1" Span="1" Visible="True" Width="50" EditorOptions="precision:3" OnBlur="OnBlur_ChangeOfficePrice" />
                         <JQTools:JQFormColumn Alignment="left" Caption="繳社總價" Editor="numberbox" FieldName="OfficeAmt" MaxLength="0" NewRow="False" ReadOnly="False" RowSpan="1" Span="1" Visible="True" Width="50" EditorOptions="" OnBlur="OnBlur_ChangeOfficeAmt" />
@@ -1248,20 +1525,27 @@
                         <JQTools:JQFormColumn Alignment="left" Caption="客戶總價" Editor="numberbox" FieldName="CustAmt" MaxLength="0" NewRow="False" RowSpan="1" Span="1" Visible="True" Width="60" EditorOptions="" ReadOnly="False" OnBlur="OnBlur_ChangeCustAmt" />
                         <JQTools:JQFormColumn Alignment="left" Caption="刊期" Editor="text" FieldName="PublishCount" MaxLength="0" NewRow="True" ReadOnly="False" RowSpan="1" Span="1" Visible="True" Width="50" OnBlur="" />
                         <JQTools:JQFormColumn Alignment="left" Caption="贈期" Editor="text" FieldName="PresentCount" MaxLength="0" NewRow="False" ReadOnly="False" RowSpan="1" Span="1" Visible="True" Width="50" OnBlur="OnBlur_TotalSalesQty" />
-                        <JQTools:JQFormColumn Alignment="left" Caption="贈週報" Editor="text" FieldName="PresentWNewsCount" MaxLength="0" NewRow="False" ReadOnly="False" RowSpan="1" Span="1" Visible="True" Width="50" OnBlur="OnBlur_PresentWNewsCount" />
-                        <JQTools:JQFormColumn Alignment="left" Caption="週報日期" Editor="textarea" FieldName="WeekendDate" MaxLength="0" NewRow="False" ReadOnly="False" RowSpan="6" Span="1" Visible="True" Width="85" />
+                        <JQTools:JQFormColumn Alignment="left" Caption="贈便利報" Editor="text" FieldName="PresentWNewsCount" MaxLength="0" NewRow="False" ReadOnly="False" RowSpan="1" Span="1" Visible="True" Width="50" OnBlur="OnBlur_PresentWNewsCount" />
+                        <JQTools:JQFormColumn Alignment="left" Caption="週報日期" Editor="textarea" FieldName="WeekendDate" MaxLength="0" NewRow="False" RowSpan="6" Span="1" Visible="True" Width="85" ReadOnly="False" />
                         <JQTools:JQFormColumn Alignment="left" Caption="單位數" Editor="numberbox" FieldName="SalesQty" MaxLength="0" NewRow="True" RowSpan="1" Span="1" Visible="True" Width="50" OnBlur="OnBlur_TotalSalesQty" ReadOnly="False" />
+                        <JQTools:JQFormColumn Alignment="left" Caption="見刊" Editor="numberbox" FieldName="SalesQtyView" MaxLength="0" NewRow="False" RowSpan="1" Span="1" Visible="True" Width="50" OnBlur="OnBlur_SalesQtyView" ReadOnly="False" />
                         <JQTools:JQFormColumn Alignment="left" Caption="總單位數" Editor="numberbox" FieldName="TotalSalesQty" MaxLength="0" NewRow="False" ReadOnly="False" RowSpan="1" Span="1" Visible="True" Width="50" OnBlur="" />
-                        <JQTools:JQFormColumn Alignment="left" Caption="保留天數" Editor="numberbox" FieldName="KeepDays" MaxLength="0" NewRow="False" ReadOnly="False" RowSpan="1" Span="1" Visible="True" Width="50" />
                         <JQTools:JQFormColumn Alignment="left" Caption="結帳日期" Editor="datebox" FieldName="InvoiceYMPoint" MaxLength="0" NewRow="True" ReadOnly="False" RowSpan="1" Span="1" Visible="True" Width="85" />
-                        <JQTools:JQFormColumn Alignment="left" Caption="刊登方式" Editor="infooptions" FieldName="PublishType" MaxLength="0" NewRow="True" ReadOnly="False" RowSpan="1" Span="2" Visible="True" Width="100" EditorOptions="title:'JQOptions',panelWidth:120,remoteName:'',tableName:'',valueField:'',textField:'',columnCount:2,multiSelect:false,openDialog:false,selectAll:false,onSelect:ControlSalesType,selectOnly:false,items:[{text:'連登',value:'1'},{text:'跳登',value:'2'}]" />
+                        <JQTools:JQFormColumn Alignment="left" Caption="保留天數" Editor="numberbox" FieldName="KeepDays" MaxLength="0" NewRow="False" ReadOnly="False" RowSpan="1" Span="1" Visible="True" Width="50" />
+                        <JQTools:JQFormColumn Alignment="left" Caption="刊登方式" Editor="infooptions" FieldName="PublishType" MaxLength="0" NewRow="True" ReadOnly="False" RowSpan="1" Span="2" Visible="True" Width="100" EditorOptions="title:'JQOptions',panelWidth:150,remoteName:'',tableName:'',valueField:'',textField:'',columnCount:2,multiSelect:false,openDialog:false,selectAll:false,onSelect:ControlSalesType,selectOnly:false,items:[{text:'連登',value:'1'},{text:'跳登',value:'2'}]" />
                         <JQTools:JQFormColumn Alignment="left" Caption="連登日期" Editor="datebox" FieldName="ContinueDate" MaxLength="0" NewRow="True" ReadOnly="False" RowSpan="1" Span="1" Visible="True" Width="100" />
                         <JQTools:JQFormColumn Alignment="left" Caption="跳登日期" Editor="textarea" FieldName="JumpDate" MaxLength="0" NewRow="True" ReadOnly="False" RowSpan="1" Span="4" Visible="True" Width="85" />
-                        <JQTools:JQFormColumn Alignment="left" Caption="出刊備註" Editor="textarea" FieldName="SalesDescr" MaxLength="0" NewRow="True" ReadOnly="False" RowSpan="1" Span="4" Visible="True" Width="500" EditorOptions="height:100" />
+                        <JQTools:JQFormColumn Alignment="left" Caption="出刊備註" Editor="textarea" FieldName="SalesDescr" MaxLength="0" NewRow="True" ReadOnly="False" RowSpan="1" Span="4" Visible="True" Width="500" EditorOptions="height:40" />
+                        <JQTools:JQFormColumn Alignment="left" Caption="PDF檔名" Editor="textarea" EditorOptions="height:20" FieldName="Remark1" MaxLength="50" NewRow="False" ReadOnly="False" RowSpan="1" Span="4" Visible="True" Width="500" />
                         <JQTools:JQFormColumn Alignment="left" Caption="CreateDate" Editor="text" FieldName="CreateDate" MaxLength="0" NewRow="False" ReadOnly="False" RowSpan="1" Span="1" Visible="False" Width="80" />
                         <JQTools:JQFormColumn Alignment="left" Caption="CreateBy" Editor="text" FieldName="CreateBy" MaxLength="0" NewRow="False" ReadOnly="False" RowSpan="1" Span="1" Visible="False" Width="80" />
                         <JQTools:JQFormColumn Alignment="left" Caption="SalesEmployeeID" Editor="text" FieldName="SalesEmployeeID" MaxLength="0" NewRow="False" ReadOnly="False" RowSpan="1" Span="1" Visible="False" Width="80" />
                         <JQTools:JQFormColumn Alignment="left" Caption="天數提醒" Editor="text" FieldName="KeepDaysAlert" MaxLength="0" NewRow="False" ReadOnly="False" RowSpan="1" Span="1" Visible="False" Width="30" EditorOptions="" />
+                        <JQTools:JQFormColumn Alignment="left" Caption="發報種類" Editor="infooptions" EditorOptions="title:'JQOptions',panelWidth:200,remoteName:'',tableName:'',valueField:'',textField:'',columnCount:3,multiSelect:false,openDialog:false,selectAll:false,selectOnly:false,items:[{text:'電子報',value:'1'},{text:'紙本',value:'2'},{text:'Line',value:'3'}]" FieldName="IsAcceptePaper" MaxLength="0" NewRow="True" ReadOnly="False" RowSpan="1" Span="1" Visible="True" Width="80" />
+                        <JQTools:JQFormColumn Alignment="left" Caption="產業別" Editor="infooptions" EditorOptions="title:'JQOptions',panelWidth:320,remoteName:'sERPSalseDetails.infoIndustryType',tableName:'infoIndustryType',valueField:'ListID',textField:'ListContent',columnCount:4,multiSelect:false,openDialog:false,selectAll:false,selectOnly:false,items:[]" FieldName="IndustryType" MaxLength="0" NewRow="False" ReadOnly="False" RowSpan="1" Span="3" Visible="True" Width="320" />
+                        <JQTools:JQFormColumn Alignment="left" Caption="出刊客戶" Editor="infocombobox" EditorOptions="items:[{value:'',text:'',selected:'false'}],checkData:true,selectOnly:true,cacheRelationText:false,panelHeight:120" FieldName="0800Id" MaxLength="0" NewRow="True" ReadOnly="False" RowSpan="1" Span="1" Visible="True" Width="150" />
+                        <JQTools:JQFormColumn Alignment="left" Caption="同步前台" Editor="checkbox" FieldName="Is0800Id" MaxLength="0" NewRow="False" ReadOnly="False" RowSpan="1" Span="1" Visible="True" Width="40" />
+                        <JQTools:JQFormColumn Alignment="left" Caption="ERPCustomerID" Editor="text" FieldName="ERPCustomerID" NewRow="True" Span="1" Visible="False" Width="80" />
                     </Columns>
                 </JQTools:JQDataForm>
 
@@ -1275,10 +1559,12 @@
                         <JQTools:JQDefaultColumn CarryOn="False" DefaultValue="_today" FieldName="SalesDate" RemoteMethod="True" />
                         <JQTools:JQDefaultColumn CarryOn="False" DefaultValue="1" FieldName="PublishType" RemoteMethod="True" />
                         <JQTools:JQDefaultColumn CarryOn="False" DefaultValue="1" FieldName="SalesQty" RemoteMethod="True" />
+                        <JQTools:JQDefaultColumn CarryOn="False" DefaultValue="1" FieldName="SalesQtyView" RemoteMethod="True" />
                         <JQTools:JQDefaultColumn CarryOn="False" DefaultValue="0" FieldName="Commission" RemoteMethod="True" />
                         <JQTools:JQDefaultColumn CarryOn="False" DefaultValue="1" FieldName="KeepDaysAlert" RemoteMethod="True" />
                         <JQTools:JQDefaultColumn CarryOn="False" DefaultValue="0" FieldName="KeepDays" RemoteMethod="True" />
-                        <JQTools:JQDefaultColumn CarryOn="False" DefaultMethod="GetInvoiceYMPoint" FieldName="InvoiceYMPoint" RemoteMethod="False" />
+                        <JQTools:JQDefaultColumn CarryOn="False" FieldName="InvoiceYMPoint" RemoteMethod="False" DefaultMethod="GetInvoiceYMPoint" />
+                        <JQTools:JQDefaultColumn CarryOn="False" DefaultMethod="" DefaultValue="1" FieldName="Is0800Id" RemoteMethod="True" />
                     </Columns>
                 </JQTools:JQDefault>
                 <JQTools:JQValidate ID="validateMaster" runat="server" BindingObjectID="dataFormMaster" EnableTheming="True">
@@ -1290,21 +1576,46 @@
                         <JQTools:JQValidateColumn CheckNull="True" FieldName="PresentCount" RemoteMethod="True" ValidateMessage="請填寫贈送天數" ValidateType="None" />
                         <JQTools:JQValidateColumn CheckNull="True" FieldName="CustAmt" RemoteMethod="True" ValidateMessage="客戶總價	不可空白" ValidateType="None" />
                         <JQTools:JQValidateColumn CheckNull="True" FieldName="SalesQty" RemoteMethod="True" ValidateMessage="單位數不可空白" ValidateType="None" />
+                        <JQTools:JQValidateColumn CheckNull="True" FieldName="SalesQtyView" RemoteMethod="True" ValidateMessage="見刊數不可空白" ValidateType="None" />
                         <JQTools:JQValidateColumn CheckNull="True" FieldName="TotalSalesQty" RemoteMethod="True" ValidateMessage="總單位數不可空白" ValidateType="None" />
                         <JQTools:JQValidateColumn CheckNull="True" FieldName="KeepDays" RemoteMethod="True" ValidateMessage="保留天數不可空白" ValidateType="None" />
                         <JQTools:JQValidateColumn CheckNull="True" FieldName="Commission" RemoteMethod="True" ValidateMessage="佣金不可空白" ValidateType="None" />
                         <JQTools:JQValidateColumn CheckNull="True" FieldName="PublishType" RemoteMethod="True" ValidateType="None" />
+                        <JQTools:JQValidateColumn CheckNull="True" FieldName="IndustryType" RemoteMethod="True" ValidateType="None" />
                     </Columns>
                 </JQTools:JQValidate>
 
             </JQTools:JQDialog>
 
 
+            <JQTools:JQDialog ID="JQDialogAcceptDate" runat="server" DialogLeft="60px" DialogTop="20px" Title="預收查詢" ShowSubmitDiv="False" Width="620px">
+                <JQTools:JQDataGrid ID="JQGridAcceptDate" runat="server" AllowAdd="True" AllowDelete="False" AllowUpdate="False" AlwaysClose="True" AutoApply="True" CheckOnSelect="True" ColumnsHibeable="False" DataMember="infoAcceptDateData" DeleteCommandVisible="False" DuplicateCheck="False" EditMode="Dialog" EditOnEnter="True" InsertCommandVisible="True" MultiSelect="False" PageList="10,20,30,40,50" PageSize="10" Pagination="True" QueryAutoColumn="False" QueryLeft="" QueryMode="Panel" QueryTitle="" QueryTop="" RecordLock="False" RecordLockMode="None" RemoteName="sR_SalesDetails.infoAcceptDateData" Title="" TotalCaption="Total:" UpdateCommandVisible="False" ViewCommandVisible="False" Width="550px" BufferView="False" NotInitGrid="False">
+                    <Columns>
+                        <JQTools:JQGridColumn Alignment="left" Caption="客戶代號" Editor="text" FieldName="CustNO" Frozen="False" IsNvarChar="False" MaxLength="0" QueryCondition="" ReadOnly="False" Sortable="True" Visible="True" Width="98" />
+                        <JQTools:JQGridColumn Alignment="left" Caption="客戶簡稱" Editor="text" FieldName="CustShortName" Frozen="False" IsNvarChar="False" MaxLength="0" QueryCondition="" ReadOnly="False" Sortable="True" Visible="True" Width="110" />
+                        <JQTools:JQGridColumn Alignment="right" Caption="金額" Editor="text" FieldName="CustAmt" Frozen="False" IsNvarChar="False" MaxLength="0" QueryCondition="" ReadOnly="False" Sortable="False" Visible="True" Width="65" />
+                        <JQTools:JQGridColumn Alignment="center" Caption="開發票?" Editor="checkbox" EditorOptions="on:1,off:0" FieldName="depositOV" Frozen="False" IsNvarChar="False" MaxLength="0" QueryCondition="" ReadOnly="True" Sortable="True" Visible="True" Width="55" FormatScript="genCheckBox" />
+                        <JQTools:JQGridColumn Alignment="center" Caption="預收日期" Editor="datebox" FieldName="AcceptDate" Frozen="False" IsNvarChar="False" MaxLength="0" QueryCondition="" ReadOnly="False" Sortable="True" Visible="True" Width="78" />
+                        <JQTools:JQGridColumn Alignment="center" Editor="text" Frozen="False" IsNvarChar="False" MaxLength="0" QueryCondition="" ReadOnly="False" Sortable="True" Visible="True" Width="61" Caption="業務代號" FieldName="SalesID" />
+                    </Columns>
+                    <TooItems>                  
+                    <JQTools:JQToolItem Icon="icon-excel" ItemType="easyui-linkbutton" OnClick="exportGrid" Text="匯出Excel" Visible="True" />
+                </TooItems>
+                    <QueryColumns>
+                    <JQTools:JQQueryColumn AndOr="and" Caption="起始日期" Condition="=" DataType="datetime" Editor="datebox" FieldName="SalesDescrDate" IsNvarChar="False" NewLine="True" RemoteMethod="False" Width="100" />
+                    <JQTools:JQQueryColumn AndOr="and" Caption="終止日期" Condition="=" DataType="datetime" Editor="datebox" FieldName="SysDate" IsNvarChar="False" NewLine="False" RemoteMethod="False" Width="100" />
+                    <JQTools:JQQueryColumn AndOr="and" Caption="業務" Condition="=" DataType="string" Editor="infocombobox" EditorOptions="valueField:'SalesID',textField:'SalesName',remoteName:'sR_SalesDetails.infoSalesMan',tableName:'infoSalesMan',pageSize:'-1',checkData:false,selectOnly:false,cacheRelationText:false,panelHeight:200" FieldName="SalesID" IsNvarChar="False" NewLine="True" RemoteMethod="False" Width="125" />
+                    <JQTools:JQQueryColumn AndOr="and" Caption="客戶代號" Condition="%" DataType="string" Editor="infocombobox" EditorOptions="valueField:'CustNO',textField:'CustShortName',remoteName:'sR_SalesDetails.infoCustomersAll',tableName:'infoCustomersAll',pageSize:'-1',checkData:false,selectOnly:false,cacheRelationText:false,panelHeight:200" FieldName="CustNO" IsNvarChar="False" NewLine="False" RemoteMethod="False" Width="200" />
+                </QueryColumns>
+                </JQTools:JQDataGrid>
+        </JQTools:JQDialog>
+
+
             <div class="easyui-layout" style="height: 450px;">
                 <div data-options="region:'west',split:true" style="width: 320px; height: 16px;">
                      <JQTools:JQDataGrid ID="dataGridView" data-options="pagination:true,view:commandview" RemoteName="sERPSalseDetails.ERPSalesMaster" runat="server" AutoApply="True"
                 DataMember="ERPSalesMaster" Pagination="True" QueryTitle="" EditDialogID="JQDialog1"
-                Title="近期銷貨清單" AllowAdd="True" AllowDelete="False" AllowUpdate="False" AlwaysClose="True" CheckOnSelect="True" ColumnsHibeable="False" DeleteCommandVisible="False" DuplicateCheck="False" EditMode="Dialog" EditOnEnter="False" InsertCommandVisible="True" MultiSelect="False" PageList="10,20,30,40,50" PageSize="10" QueryAutoColumn="False" QueryLeft="" QueryMode="Panel" QueryTop="" RecordLock="False" RecordLockMode="None" TotalCaption="Total:" UpdateCommandVisible="False" ViewCommandVisible="False" Height="448px" OnLoadSuccess="MastersetWhere" OnSelect="dataGridViewSelect" ParentObjectID="">
+                Title="近期銷貨清單" AllowAdd="True" AllowDelete="False" AllowUpdate="False" AlwaysClose="True" CheckOnSelect="True" ColumnsHibeable="False" DeleteCommandVisible="False" DuplicateCheck="False" EditMode="Dialog" EditOnEnter="False" InsertCommandVisible="True" MultiSelect="False" PageList="10,20,30,40,50" PageSize="10" QueryAutoColumn="False" QueryLeft="" QueryMode="Panel" QueryTop="" RecordLock="False" RecordLockMode="None" TotalCaption="Total:" UpdateCommandVisible="False" ViewCommandVisible="False" Height="448px" OnLoadSuccess="MastersetWhere" OnSelect="dataGridViewSelect" ParentObjectID="" BufferView="False" NotInitGrid="False" RowNumbers="True">
                 <Columns>
                     <JQTools:JQGridColumn Alignment="left" Caption="客戶代號" Editor="text" FieldName="CustNO" Format="" MaxLength="0" Width="67" ReadOnly="True" Frozen="True" />
                     <JQTools:JQGridColumn Alignment="left" Caption="客戶簡稱" Editor="text" FieldName="CustShortName" Format="" MaxLength="0" Width="60" ReadOnly="True" FormatScript="FormatScriptIsInvoice" />
@@ -1317,7 +1628,7 @@
                     <JQTools:JQGridColumn Alignment="center" Caption="天數提醒" Editor="checkbox" EditorOptions="on:1,off:0" FieldName="KeepDaysAlert" Frozen="False" IsNvarChar="False" MaxLength="0" QueryCondition="" ReadOnly="False" Sortable="False" Visible="True" Width="53" FormatScript="genCheckBox" />
                     <JQTools:JQGridColumn Alignment="center" Caption="建立日期" Editor="text" FieldName="CreateDate" Format="yyyy/mm/dd" Frozen="False" IsNvarChar="False" MaxLength="0" QueryCondition="" ReadOnly="True" Sortable="False" Visible="True" Width="65" />
                     <JQTools:JQGridColumn Alignment="left" Caption="SalesID" Editor="text" FieldName="SalesID" Format="" MaxLength="0" Width="120" Visible="False" ReadOnly="True" />
-                    <JQTools:JQGridColumn Alignment="left" Caption="序號" Editor="text" FieldName="SalesMasterNO" Frozen="False" IsNvarChar="False" MaxLength="0" QueryCondition="" ReadOnly="False" Sortable="False" Visible="True" Width="30" />
+                    <JQTools:JQGridColumn Alignment="left" Caption="序號" Editor="text" FieldName="SalesMasterNO" Frozen="False" IsNvarChar="False" MaxLength="0" QueryCondition="" ReadOnly="False" Sortable="False" Visible="True" Width="60" />
                 </Columns>
                 <TooItems>                  
                     <JQTools:JQToolItem Icon="icon-add" ItemType="easyui-linkbutton" OnClick="OpenInsertSalesDetails" Text="新增銷貨" />
@@ -1328,16 +1639,19 @@
                 </div>
                                                                                                  
                     <JQTools:JQDialog ID="JQDialog2" runat="server" BindingObjectID="dataFormMasterUpdate" Title="銷貨修改" EditMode="Dialog" DialogLeft="30px" DialogTop="10px" Width="500px">
-                <JQTools:JQDataForm ID="dataFormMasterUpdate" runat="server" DataMember="ERPSalesMaster" HorizontalColumnsCount="4" RemoteName="sERPSalseDetails.ERPSalesMaster" Closed="False" ContinueAdd="False" disapply="False" DuplicateCheck="False" IsAutoPageClose="False" IsAutoPause="False" IsAutoSubmit="False" IsNotifyOFF="False" IsRejectNotify="False" IsRejectON="False" IsShowFlowIcon="False" ShowApplyButton="False" ValidateStyle="Dialog" OnApplied="OnAppliedSalesDetails" >
+                <JQTools:JQDataForm ID="dataFormMasterUpdate" runat="server" DataMember="ERPSalesMaster" HorizontalColumnsCount="4" RemoteName="sERPSalseDetails.ERPSalesMaster" Closed="False" ContinueAdd="False" disapply="False" DuplicateCheck="False" IsAutoPageClose="False" IsAutoPause="False" IsAutoSubmit="False" IsNotifyOFF="False" IsRejectNotify="False" IsRejectON="False" IsShowFlowIcon="False" ShowApplyButton="False" ValidateStyle="Dialog" OnApplied="OnAppliedSalesDetails" AlwaysReadOnly="False" DivFramed="False" HorizontalGap="0" VerticalGap="0" >
 
                     <Columns>
+                        <JQTools:JQFormColumn Alignment="right" Caption=" " Editor="checkbox" EditorOptions="on:1,off:0" FieldName="IsConvertNexMonth" NewRow="True" ReadOnly="False" Span="2" Visible="True" Width="40" />
                         <JQTools:JQFormColumn Alignment="left" Caption="SalesMasterNO" Editor="text" FieldName="SalesMasterNO" Width="80" Visible="False" Span="1" NewRow="False" ReadOnly="False" MaxLength="0" RowSpan="1" />
-                        <JQTools:JQFormColumn Alignment="left" Caption="客戶代號" Editor="infocombobox" FieldName="CustNO" Width="200" EditorOptions="valueField:'CustNO',textField:'CustShortName',remoteName:'sERPSalseDetails.infoCustomers',tableName:'infoCustomers',pageSize:'-1',checkData:false,selectOnly:false,cacheRelationText:false,panelHeight:200" Span="2" NewRow="False" Visible="True" ReadOnly="True" />
-                        <JQTools:JQFormColumn Alignment="left" Caption="客戶簡稱" Editor="text" FieldName="CustShortName" MaxLength="0" NewRow="True" ReadOnly="False" RowSpan="1" Span="1" Visible="True" Width="200" />
+                        <JQTools:JQFormColumn Alignment="left" Caption="客戶代號" Editor="infocombobox" FieldName="CustNO" Width="200" EditorOptions="valueField:'CustNO',textField:'CustShortName',remoteName:'sERPSalseDetails.infoCustomers',tableName:'infoCustomers',pageSize:'-1',checkData:false,selectOnly:false,cacheRelationText:false,panelHeight:200" Span="2" NewRow="True" Visible="True" ReadOnly="True" MaxLength="0" />
+                        <JQTools:JQFormColumn Alignment="left" Caption="客戶簡稱" Editor="text" FieldName="CustShortName" NewRow="True" ReadOnly="False" Span="1" Visible="True" Width="200" />
                         <JQTools:JQFormColumn Alignment="left" Caption="總單位數" Editor="numberbox" FieldName="TotalSalesQty" NewRow="True" ReadOnly="False" Visible="True" Width="50" MaxLength="0" RowSpan="1" Span="1" />
                         <JQTools:JQFormColumn Alignment="left" Caption="預收日期" Editor="datebox" FieldName="AcceptDate" MaxLength="0" NewRow="False" ReadOnly="False" RowSpan="1" Span="1" Visible="True" Width="90" />
-                        <JQTools:JQFormColumn Alignment="left" Caption="保留天數" Editor="numberbox" FieldName="KeepDays" MaxLength="0" NewRow="True" Span="1" Visible="True" Width="60" />
+                        <JQTools:JQFormColumn Alignment="left" Caption="保留天數" Editor="numberbox" FieldName="KeepDays" MaxLength="0" NewRow="True" Span="1" Visible="True" Width="60" ReadOnly="False" RowSpan="1" />
                         <JQTools:JQFormColumn Alignment="left" Caption="天數提醒" Editor="checkbox" FieldName="KeepDaysAlert" maxlength="0" NewRow="False" Span="1" Visible="True" Width="50" ReadOnly="False" RowSpan="1" />
+                        <JQTools:JQFormColumn Alignment="left" Caption="出刊客戶" Editor="text" FieldName="CodeText" MaxLength="0" NewRow="True" ReadOnly="True" RowSpan="1" Span="1" Visible="True" Width="150" />
+                        <JQTools:JQFormColumn Alignment="left" Caption="產業別" Editor="infooptions" FieldName="IndustryType" MaxLength="0" NewRow="True" ReadOnly="False" RowSpan="1" Span="2" Visible="True" Width="90" EditorOptions="title:'JQOptions',panelWidth:310,remoteName:'sERPSalseDetails.infoIndustryType',tableName:'infoIndustryType',valueField:'ListID',textField:'ListContent',columnCount:4,multiSelect:false,openDialog:false,selectAll:false,selectOnly:false,items:[]" />
                     </Columns>
                 </JQTools:JQDataForm>
 
@@ -1346,7 +1660,7 @@
                 <div data-options="region:'center'" height: 450px;">
                     <JQTools:JQDataGrid ID="dataGridDetail" data-options="pagination:true,view:commandview" RemoteName="sERPSalseDetails.ERPSalesDetails" runat="server" AutoApply="True"
                 DataMember="ERPSalesDetails" Pagination="False" QueryTitle="Query"
-                Title="" AllowDelete="False" UpdateCommandVisible="False" ViewCommandVisible="False" AlwaysClose="True" AllowAdd="True" AllowUpdate="True" CheckOnSelect="False" ColumnsHibeable="False" DeleteCommandVisible="False" DuplicateCheck="False" EditMode="Dialog" EditOnEnter="True" InsertCommandVisible="True" MultiSelect="True" OnUpdated="DetailSaveRefresh" PageList="10,20,30,40,50" PageSize="15" QueryAutoColumn="False" QueryLeft="" QueryMode="Window" QueryTop="" RecordLock="False" RecordLockMode="None" TotalCaption="Total:" Height="447px" EditDialogID="" ParentObjectID="" OnUpdate="DetailUpdateCheck" OnDelete="UpdateSalseDetailsIsActive" OnLoadSuccess="DetailsetWhere">
+                Title="" AllowDelete="False" UpdateCommandVisible="False" ViewCommandVisible="False" AlwaysClose="True" AllowAdd="True" AllowUpdate="True" CheckOnSelect="False" ColumnsHibeable="False" DeleteCommandVisible="False" DuplicateCheck="False" EditMode="Dialog" EditOnEnter="True" InsertCommandVisible="True" MultiSelect="True" OnUpdated="DetailSaveRefresh" PageList="10,20,30,40,50" PageSize="15" QueryAutoColumn="False" QueryLeft="" QueryMode="Window" QueryTop="" RecordLock="False" RecordLockMode="None" TotalCaption="Total:" Height="447px" EditDialogID="" ParentObjectID="" OnUpdate="DetailUpdateCheck" OnDelete="UpdateSalseDetailsIsActive" OnLoadSuccess="DetailsetWhere" BufferView="False" NotInitGrid="False" RowNumbers="True">
                                     <Columns>
                                         <JQTools:JQGridColumn Alignment="right" Caption="SalesMasterNO" Editor="numberbox" FieldName="SalesMasterNO" Format="" Width="50" Visible="False" Frozen="False" IsNvarChar="False" MaxLength="0" QueryCondition="" ReadOnly="False" Sortable="False" />
                                         <JQTools:JQGridColumn Alignment="left" Caption="客戶代號" Editor="" FieldName="CustNO" Format="" Width="58" Visible="True" Frozen="True" ReadOnly="True" Sortable="True" IsNvarChar="False" MaxLength="0" QueryCondition="" />
@@ -1356,9 +1670,9 @@
                                         <JQTools:JQGridColumn Alignment="center" Caption="區域" Editor="infocombogrid" FieldName="ViewAreaID" Format="" Width="40" EditorOptions="panelWidth:120,valueField:'ViewAreaID',textField:'ViewAreaName',remoteName:'sERPSalseDetails.infoERPViewArea',tableName:'infoERPViewArea',valueFieldCaption:'ViewAreaID',textFieldCaption:'ViewAreaName',selectOnly:false,checkData:false,columns:[{field:'ViewAreaID',title:'代號',width:40,align:'left',sortable:false},{field:'ViewAreaName',title:'名稱',width:55,align:'left',sortable:false}],cacheRelationText:false" Frozen="True" IsNvarChar="False" MaxLength="0" QueryCondition="" ReadOnly="False" Sortable="False" Visible="True" />                  
                                         <JQTools:JQGridColumn Alignment="center" Caption="銷貨日期" Editor="datebox" FieldName="SalesDate" Format="yyyy-mm-dd" Width="65" FormatScript="" Frozen="True" Sortable="True" ReadOnly="False" IsNvarChar="False" MaxLength="0" QueryCondition="" Visible="True" />
                                         <JQTools:JQGridColumn Alignment="center" Caption="星期" Editor="" FieldName="dWeekday" Frozen="True" IsNvarChar="False" MaxLength="0" QueryCondition="" ReadOnly="True" Sortable="True" Visible="True" Width="30" />
-                                        <JQTools:JQGridColumn Alignment="center" Caption="匯入" Editor="checkbox" FieldName="IsTransSys" Format="" Width="30" Visible="True" EditorOptions="on:1,off:0" FormatScript="genCheckBox" ReadOnly="True" Frozen="False" IsNvarChar="False" MaxLength="0" QueryCondition="" Sortable="False" />
-                                        <JQTools:JQGridColumn Alignment="left" Caption="匯入編號" Editor="" FieldName="depositSeq" Frozen="False" IsNvarChar="False" MaxLength="0" QueryCondition="" ReadOnly="True" Sortable="False" Visible="True" Width="55" />
-                                        <JQTools:JQGridColumn Alignment="center" Caption="需發票" Editor="checkbox" EditorOptions="on:1,off:0" FieldName="IsInvoice" FormatScript="genCheckBox" Frozen="False" IsNvarChar="False" MaxLength="0" QueryCondition="" ReadOnly="False" Sortable="False" Visible="True" Width="40" />
+                                        <JQTools:JQGridColumn Alignment="center" Caption="開發票" Editor="checkbox" FieldName="ovInvoice" Format="" Width="50" Visible="True" EditorOptions="on:1,off:0" FormatScript="genCheckBox" ReadOnly="True" Frozen="False" IsNvarChar="False" MaxLength="0" QueryCondition="" Sortable="False" />
+                                        <JQTools:JQGridColumn Alignment="left" Caption="匯入編號" Editor="" FieldName="depositSeq" Frozen="False" IsNvarChar="False" MaxLength="0" QueryCondition="" ReadOnly="True" Sortable="False" Visible="False" Width="55" />
+<%--                                        <JQTools:JQGridColumn Alignment="center" Caption="需發票" Editor="checkbox" EditorOptions="on:1,off:0" FieldName="IsInvoice" FormatScript="genCheckBox" Frozen="False" IsNvarChar="False" MaxLength="0" QueryCondition="" ReadOnly="False" Sortable="False" Visible="True" Width="40" />--%>
                                         <JQTools:JQGridColumn Alignment="center" Caption="發票年月" Editor="text" FieldName="InvoiceYM" Format="" Width="50" ReadOnly="False" Frozen="False" IsNvarChar="False" MaxLength="0" QueryCondition="" Sortable="False" Visible="True" />
                                         <JQTools:JQGridColumn Alignment="center" Caption="報" Editor="infocombogrid" FieldName="NewsTypeID" Frozen="False" IsNvarChar="False" MaxLength="0" QueryCondition="" ReadOnly="False" Sortable="False" Visible="True" Width="30" EditorOptions="panelWidth:165,valueField:'NewsTypeID',textField:'NewsTypeID',remoteName:'sERPSalseDetails.infoERPNewsType',tableName:'infoERPNewsType',valueFieldCaption:'NewsTypeID',textFieldCaption:'NewsTypeID',selectOnly:false,checkData:false,columns:[{field:'NewsTypeID',title:'代號',width:40,align:'left',sortable:false},{field:'NewsTypeName',title:'名稱',width:105,align:'left',sortable:false}],cacheRelationText:false" />
                                         <JQTools:JQGridColumn Alignment="center" Caption="版" Editor="infocombogrid" FieldName="NewsAreaID" Format="" Width="30" Visible="True" EditorOptions="panelWidth:165,valueField:'NewsAreaID',textField:'NewsAreaID',remoteName:'sERPSalseDetails.infoERPNewsArea',tableName:'infoERPNewsArea',valueFieldCaption:'NewsAreaID',textFieldCaption:'NewsAreaID',selectOnly:false,checkData:false,columns:[{field:'NewsAreaID',title:'代號',width:40,align:'left',sortable:false},{field:'NewsAreaName',title:'名稱',width:105,align:'left',sortable:false}],cacheRelationText:false" />
@@ -1375,6 +1689,8 @@
                                         <JQTools:JQGridColumn Alignment="center" Caption="見刊" Editor="text" FieldName="SalesQtyView" Frozen="False" IsNvarChar="False" MaxLength="0" QueryCondition="" ReadOnly="False" Sortable="False" Visible="True" Width="30" />
                                         <JQTools:JQGridColumn Alignment="left" Caption="有效" Editor="checkbox" EditorOptions="on:1,off:0" FieldName="IsActive" Frozen="True" IsNvarChar="False" MaxLength="0" QueryCondition="" ReadOnly="True" Sortable="False" Visible="False" Width="30" FormatScript="genCheckBox" />
                                         <JQTools:JQGridColumn Alignment="left" Caption="出刊備註" Editor="text" FieldName="SalesDescr" Frozen="False" IsNvarChar="False" MaxLength="0" QueryCondition="" ReadOnly="False" Sortable="False" Visible="True" Width="100" />
+                                        <JQTools:JQGridColumn Alignment="left" Caption="PDF檔名" Editor="text" FieldName="Remark1" Frozen="False" IsNvarChar="False" MaxLength="0" QueryCondition="" ReadOnly="False" Sortable="False" Visible="True" Width="100">
+                                        </JQTools:JQGridColumn>
                                         <JQTools:JQGridColumn Alignment="left" Caption="聯絡備註" Editor="text" FieldName="ContractDescr" Frozen="False" IsNvarChar="False" MaxLength="0" QueryCondition="" ReadOnly="False" Sortable="False" Visible="True" Width="100" />
                                         <JQTools:JQGridColumn Alignment="right" Caption="佣金" Editor="text" FieldName="Commission" Format="" Width="30" Visible="True" Frozen="False" IsNvarChar="False" MaxLength="0" QueryCondition="" ReadOnly="False" Sortable="False" />   
                                         <JQTools:JQGridColumn Alignment="left" Caption="業務代碼" Editor="text" FieldName="SalesEmployeeID" Format="" Width="60" Visible="False" Frozen="False" IsNvarChar="False" MaxLength="0" QueryCondition="" ReadOnly="False" Sortable="False" />                        
@@ -1427,9 +1743,9 @@
                         </Columns>
                     </JQTools:JQDefault>
                     <JQTools:JQDialog ID="Dialog_SalesDescr" runat="server" BindingObjectID="dataFormSalesDescr" EditMode="Dialog" Title="銷貨明細修改" DialogLeft="50px" DialogTop="20px" Width="750px">
-                                <JQTools:JQDataForm runat="server" ID="dataFormSalesDescr" RemoteName="sERPSalseDetails.ERPSalesDetails" DataMember="ERPSalesDetails" Closed="False" ContinueAdd="False" disapply="False" DuplicateCheck="False" HorizontalColumnsCount="4" IsAutoPageClose="False" IsAutoPause="False" IsAutoSubmit="False" IsNotifyOFF="False" IsRejectNotify="False" IsRejectON="False" IsShowFlowIcon="False" ShowApplyButton="False" ValidateStyle="Hint" OnApplied="OnAppliedDFSalesDescr" OnLoadSuccess="OnLoadSuccessDFSalesDescr" >
+                                <JQTools:JQDataForm runat="server" ID="dataFormSalesDescr" RemoteName="sERPSalseDetails.ERPSalesDetails" DataMember="ERPSalesDetails" Closed="False" ContinueAdd="False" disapply="False" DuplicateCheck="False" HorizontalColumnsCount="4" IsAutoPageClose="False" IsAutoPause="False" IsAutoSubmit="False" IsNotifyOFF="False" IsRejectNotify="False" IsRejectON="False" IsShowFlowIcon="False" ShowApplyButton="False" ValidateStyle="Hint" OnApplied="OnAppliedDFSalesDescr" OnLoadSuccess="OnLoadSuccessDFSalesDescr" AlwaysReadOnly="False" DivFramed="False" HorizontalGap="0" VerticalGap="0" >
                                     <Columns>
-                                        <JQTools:JQFormColumn Alignment="left" Caption="客戶代號" Editor="" FieldName="CustNO" ReadOnly="False" Visible="True" Width="80" NewRow="False" />
+                                        <JQTools:JQFormColumn Alignment="left" Caption="客戶代號" Editor="" FieldName="CustNO" ReadOnly="False" Visible="True" Width="80" NewRow="False" MaxLength="0" RowSpan="1" Span="1" />
                                         <JQTools:JQFormColumn Alignment="left" Caption="客戶簡稱" Editor="" FieldName="CustShortName" ReadOnly="False" Visible="True" Width="120" NewRow="False" MaxLength="0" RowSpan="1" Span="1" />
                                         <JQTools:JQFormColumn Alignment="left" Caption="ItemSeq" Editor="text" FieldName="ItemSeq" ReadOnly="True" Visible="False" Width="120" NewRow="False" MaxLength="0" RowSpan="1" Span="1" />
                                         <JQTools:JQFormColumn Alignment="left" Caption="SalesMasterNO" Editor="text" FieldName="SalesMasterNO" Visible="False" Width="80" ReadOnly="False" NewRow="False" MaxLength="0" RowSpan="1" Span="1" />
@@ -1442,7 +1758,7 @@
                                         <JQTools:JQFormColumn Alignment="left" Caption="報別" Editor="infocombobox" FieldName="NewsTypeID" MaxLength="0" NewRow="True" ReadOnly="False" RowSpan="1" Span="1" Visible="True" Width="125" EditorOptions="valueField:'NewsTypeID',textField:'NewsTypeName',remoteName:'sERPSalseDetails.infoERPNewsType',tableName:'infoERPNewsType',pageSize:'-1',checkData:false,selectOnly:false,cacheRelationText:false,panelHeight:200" />
                                         <JQTools:JQFormColumn Alignment="left" Caption="版別" Editor="infocombobox" FieldName="NewsAreaID" MaxLength="0" NewRow="False" ReadOnly="False" RowSpan="1" Span="1" Visible="True" Width="125" EditorOptions="valueField:'NewsAreaID',textField:'NewsAreaName',remoteName:'sERPSalseDetails.infoERPNewsArea',tableName:'infoERPNewsArea',pageSize:'-1',checkData:false,selectOnly:false,cacheRelationText:false,panelHeight:200" />
                                         <JQTools:JQFormColumn Alignment="left" Caption="發刊單位" Editor="infocombobox" FieldName="NewsPublishID" MaxLength="0" NewRow="False" ReadOnly="False" RowSpan="1" Span="1" Visible="True" Width="125" EditorOptions="valueField:'NewsPublishID',textField:'NewsPublishName',remoteName:'sERPSalseDetails.infoERPNewsPublish',tableName:'infoERPNewsPublish',pageSize:'-1',checkData:false,selectOnly:false,cacheRelationText:false,panelHeight:200" />
-                                        <JQTools:JQFormColumn Alignment="left" Caption="發稿段數" Editor="text" FieldName="Sections" MaxLength="0" NewRow="True" RowSpan="1" Span="1" Visible="True" Width="50" ReadOnly="False" />
+                                        <JQTools:JQFormColumn Alignment="left" Caption="發稿段數" Editor="text" FieldName="Sections" NewRow="True" Visible="True" Width="50" ReadOnly="False" />
                                         <JQTools:JQFormColumn Alignment="left" Caption="發稿行數" Editor="numberbox" FieldName="OfficeLines" MaxLength="0" NewRow="False" ReadOnly="False" RowSpan="1" Span="1" Visible="True" Width="50" OnBlur="OnBlur_SalesDescrOfficePrice" />
                                         <JQTools:JQFormColumn Alignment="left" Caption="繳社單價" Editor="numberbox" FieldName="OfficePrice" MaxLength="0" RowSpan="1" Span="1" Visible="True" Width="60" EditorOptions="precision:3" OnBlur="OnBlur_SalesDescrOfficePrice" NewRow="False" ReadOnly="False" />
                                         <JQTools:JQFormColumn Alignment="left" Caption="繳社總價" Editor="numberbox" FieldName="OfficeAmt" MaxLength="0" RowSpan="1" Span="1" Visible="True" Width="60" OnBlur="OnBlur_SalesDescrOfficeAmt" EditorOptions="" NewRow="False" ReadOnly="False" />
@@ -1450,13 +1766,14 @@
                                         <JQTools:JQFormColumn Alignment="left" Caption="客戶行數" Editor="numberbox" FieldName="CustLines" MaxLength="0" NewRow="False" ReadOnly="False" RowSpan="1" Span="1" Visible="True" Width="50" OnBlur="OnBlur_SalesDescrCustPrice" />
                                         <JQTools:JQFormColumn Alignment="left" Caption="客戶單價" Editor="numberbox" FieldName="CustPrice" MaxLength="0" NewRow="False" ReadOnly="False" RowSpan="1" Span="1" Visible="True" Width="60" EditorOptions="precision:3" OnBlur="OnBlur_SalesDescrCustPrice" />
                                         <JQTools:JQFormColumn Alignment="left" Caption="客戶總價" Editor="numberbox" FieldName="CustAmt" MaxLength="0" NewRow="False" ReadOnly="False" RowSpan="1" Span="1" Visible="True" Width="60" EditorOptions="" OnBlur="OnBlur_SalesDescrCustAmt" />
-                                        <JQTools:JQFormColumn Alignment="left" Caption="單位數" Editor="numberbox" FieldName="SalesQty" NewRow="False" Visible="True" Width="50" OnBlur="OnBlur_SalesDescrCustPrice" ReadOnly="False" />
+                                        <JQTools:JQFormColumn Alignment="left" Caption="單位數" Editor="numberbox" FieldName="SalesQty" Visible="True" Width="50" OnBlur="OnBlur_SalesDescrCustPrice" ReadOnly="False" Span="1" />
                                         <JQTools:JQFormColumn Alignment="left" Caption="見刊" Editor="numberbox" FieldName="SalesQtyView" Visible="True" Width="50" MaxLength="0" NewRow="False" ReadOnly="False" RowSpan="1" Span="1" />
                                         <JQTools:JQFormColumn Alignment="left" Caption="提醒日期" Editor="datebox" FieldName="SalesDescrDate" NewRow="False" ReadOnly="False" Visible="True" Width="90" MaxLength="0" RowSpan="1" Span="1" />
-                                        <JQTools:JQFormColumn Alignment="left" Caption="匯入" Editor="checkbox" FieldName="IsTransSys" MaxLength="0" NewRow="False" ReadOnly="True" RowSpan="1" Span="1" Visible="True" Width="50" EditorOptions="on:1,off:0" />
+                                        <JQTools:JQFormColumn Alignment="left" Caption="已開發票" Editor="checkbox" FieldName="ovInvoice" MaxLength="0" NewRow="False" ReadOnly="True" RowSpan="1" Span="1" Visible="True" Width="57" EditorOptions="on:1,off:0" />
                                         <JQTools:JQFormColumn Alignment="left" Caption="需開發票" Editor="checkbox" EditorOptions="on:1,off:0" FieldName="IsInvoice" NewRow="False" ReadOnly="False" Visible="True" Width="50" MaxLength="0" RowSpan="1" Span="1" />
-                                        <JQTools:JQFormColumn Alignment="left" Caption="出刊備註" Editor="textarea" EditorOptions="height:80" FieldName="SalesDescr" ReadOnly="False" Visible="True" Width="500" MaxLength="0" NewRow="True" RowSpan="1" Span="4" />
-                                        <JQTools:JQFormColumn Alignment="left" Caption="聯絡備註" Editor="textarea" EditorOptions="height:80" FieldName="ContractDescr" ReadOnly="False" Span="4" Visible="True" Width="500" />
+                                        <JQTools:JQFormColumn Alignment="left" Caption="出刊備註" Editor="textarea" EditorOptions="height:60" FieldName="SalesDescr" ReadOnly="False" Visible="True" Width="500" MaxLength="0" NewRow="True" RowSpan="1" Span="4" />
+                                        <JQTools:JQFormColumn Alignment="left" Caption="聯絡備註" Editor="textarea" EditorOptions="height:60" FieldName="ContractDescr" ReadOnly="False" Span="4" Visible="True" Width="500" MaxLength="0" NewRow="False" RowSpan="1" />
+                                        <JQTools:JQFormColumn Alignment="left" Caption="PDF檔名" Editor="textarea" EditorOptions="height:40" FieldName="Remark1" NewRow="False" ReadOnly="False" Span="4" Visible="True" Width="500" />
                                     </Columns>
                                 </JQTools:JQDataForm>                               
                                 <JQTools:JQValidate ID="validateMaster0" runat="server" BindingObjectID="dataFormSalesDescr" EnableTheming="True">
@@ -1476,16 +1793,17 @@
                                 <table style="width:100%;">
                                     <tr>
                                         <td>
-                                            <JQTools:JQDataForm ID="dataFormSalesDetail" runat="server" Closed="False" ContinueAdd="False" DataMember="ERPSalesDetails" disapply="False" DuplicateCheck="False" HorizontalColumnsCount="4" IsAutoPageClose="False" IsAutoPause="False" IsAutoSubmit="False" IsNotifyOFF="False" IsRejectNotify="False" IsRejectON="False" IsShowFlowIcon="False" OnApplied="OnAppliedDFSalesDescr" OnLoadSuccess="OnLoadSuccessSalesDetail" RemoteName="sERPSalseDetails.ERPSalesDetails" ShowApplyButton="False" ValidateStyle="Dialog" ParentObjectID="">
+                                            <JQTools:JQDataForm ID="dataFormSalesDetail" runat="server" Closed="False" ContinueAdd="False" DataMember="ERPSalesDetails" disapply="False" DuplicateCheck="False" HorizontalColumnsCount="4" IsAutoPageClose="False" IsAutoPause="False" IsAutoSubmit="False" IsNotifyOFF="False" IsRejectNotify="False" IsRejectON="False" IsShowFlowIcon="False" OnApplied="OnAppliedDFSalesDescr" OnLoadSuccess="OnLoadSuccessSalesDetail" RemoteName="sERPSalseDetails.ERPSalesDetails" ShowApplyButton="False" ValidateStyle="Dialog" ParentObjectID="" AlwaysReadOnly="False" DivFramed="False" HorizontalGap="0" VerticalGap="0">
                                                 <Columns>
-                                                    <JQTools:JQFormColumn Alignment="left" Caption="結帳日期" Editor="datebox" FieldName="InvoiceYMPoint" MaxLength="0" NewRow="True" ReadOnly="False" RowSpan="1" Span="1" Visible="True" Width="85" />
+                                                    <JQTools:JQFormColumn Alignment="left" Caption="結帳日期" Editor="datebox" FieldName="InvoiceYMPoint" NewRow="True" ReadOnly="False" Span="1" Visible="True" Width="85" />
                                                     <JQTools:JQFormColumn Alignment="left" Caption="版別" Editor="infocombobox" EditorOptions="valueField:'DMTypeID',textField:'DMTypeName',remoteName:'sERPSalseDetails.infoERPDMType',tableName:'infoERPDMType',pageSize:'-1',checkData:false,selectOnly:false,cacheRelationText:false,onSelect:GetSalseDetailsViewAreaID,panelHeight:200" FieldName="DMTypeID" NewRow="True" ReadOnly="False" Span="1" Visible="True" Width="140" MaxLength="0" RowSpan="1" />
-                                                    <JQTools:JQFormColumn Alignment="left" Caption="區域" Editor="infocombobox" EditorOptions="valueField:'ViewAreaID',textField:'ViewAreaName',remoteName:'sERPSalseDetails.infoERPViewArea',tableName:'infoERPViewArea',pageSize:'-1',checkData:false,selectOnly:false,cacheRelationText:false,panelHeight:200" FieldName="ViewAreaID" NewRow="False" ReadOnly="False" Span="1" Visible="True" Width="140" />
+                                                    <JQTools:JQFormColumn Alignment="left" Caption="區域" Editor="infocombobox" EditorOptions="valueField:'ViewAreaID',textField:'ViewAreaName',remoteName:'sERPSalseDetails.infoERPViewArea',tableName:'infoERPViewArea',pageSize:'-1',checkData:false,selectOnly:false,cacheRelationText:false,panelHeight:200" FieldName="ViewAreaID" NewRow="False" ReadOnly="False" Span="1" Visible="True" Width="140" MaxLength="0" RowSpan="1" />
                                                     <JQTools:JQFormColumn Alignment="left" Caption="單位數" Editor="numberbox" FieldName="SalesQty" MaxLength="0" NewRow="False" ReadOnly="False" RowSpan="1" Span="1" Visible="True" Width="30" OnBlur="OnBlur_SalesQty" />
                                                     <JQTools:JQFormColumn Alignment="left" Caption="見刊" Editor="numberbox" FieldName="SalesQtyView" MaxLength="0" NewRow="False" OnBlur="" ReadOnly="False" RowSpan="1" Span="1" Visible="True" Width="30" />
                                                     <JQTools:JQFormColumn Alignment="left" Caption="刊登日期" Editor="textarea" FieldName="JumpDate" MaxLength="0" NewRow="True" ReadOnly="False" RowSpan="1" Span="1" Visible="True" Width="100" />
                                                     <JQTools:JQFormColumn Alignment="left" Caption="週報日期" Editor="textarea" FieldName="JumpDate2" MaxLength="0" NewRow="False" RowSpan="1" Span="1" Visible="True" Width="100" ReadOnly="False" />
-                                                    <JQTools:JQFormColumn Alignment="left" Caption="出刊備註" Editor="textarea" FieldName="SalesDescr" MaxLength="0" NewRow="True" ReadOnly="False" RowSpan="1" Span="4" Visible="True" Width="500" EditorOptions="height:100" />
+                                                    <JQTools:JQFormColumn Alignment="left" Caption="出刊備註" Editor="textarea" FieldName="SalesDescr" MaxLength="0" NewRow="True" ReadOnly="False" RowSpan="1" Span="4" Visible="True" Width="500" EditorOptions="height:70" />
+                                                    <JQTools:JQFormColumn Alignment="left" Caption="PDF檔名" Editor="textarea" EditorOptions="height:40" FieldName="Remark1" MaxLength="0" NewRow="False" ReadOnly="False" RowSpan="1" Span="4" Visible="True" Width="500" />
                                                 </Columns>
                                             </JQTools:JQDataForm>
                                             <JQTools:JQValidate ID="validatedataFormSalesDetail" runat="server" BindingObjectID="dataFormSalesDetail" EnableTheming="True">

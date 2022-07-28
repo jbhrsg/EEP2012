@@ -1,0 +1,246 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <metadata name="serviceManager1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 131</value>
+  </metadata>
+  <metadata name="InfoConnection1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 93</value>
+  </metadata>
+  <metadata name="ERPDueFormMaster.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 511</value>
+  </metadata>
+  <data name="ERPDueFormMaster.CommandText" xml:space="preserve">
+    <value>SELECT m.*,'' as PrintConfirm,'' as InsertDetail,
+(select count(DueNO) from ERPDueFormDetail d  where m.DueNO=d.DueNO group by DueNO) as DetailCounts,
+
+(select sum(cast([IsRecontract] as int)) from ERPDueFormDetail d1 where m.DueNO=d1.DueNO group by DueNO) as RecontractCounts,
+(select sum(cast([Transfer] as int)) from ERPDueFormDetail d1 where m.DueNO=d1.DueNO group by DueNO) as TransferCounts,
+(select sum(cast([ReturnHome] as int)) from ERPDueFormDetail d1 where m.DueNO=d1.DueNO group by DueNO) as ReturnHomeCounts,
+(select sum(cast([BackPot] as int)) from ERPDueFormDetail d1 where m.DueNO=d1.DueNO group by DueNO) as BackPotCounts,
+(select sum(cast([TransferAg] as int)) from ERPDueFormDetail d1 where m.DueNO=d1.DueNO group by DueNO) as TransferAgCounts,
+(select sum(cast([IsRecontract] as int)+cast([Transfer] as int)+cast([ReturnHome] as int)+cast([BackPot] as int)) from ERPDueFormDetail d1 where m.DueNO=d1.DueNO group by DueNO) as WillCounts,
+
+convert(varchar,(select COUNT(FlowFlag) from (
+SELECT dd.DueNO,u.FlowFlag FROM dbo.[ERPDueFormDetail] dd left join(
+select distinct CEConfirmNO,LaborName,FlowFlag from [ERPContinueEmployDetail] d left join [ERPContinueEmployMaster] m on d.ContinueEmployNO= m.ContinueEmployNO where FlowFlag = 'Z' and d.DeleteFlag is null) u on u.CEConfirmNO=dd.CEConfirmNO ) j where FlowFlag is not null and m.DueNO=j.DueNO  group by DueNO )) as FlowEndings,
+
+convert(varchar,(select COUNT(FlowFlag) from (
+SELECT dd.DueNO,u.FlowFlag FROM dbo.[ERPDueFormDetail] dd left join(
+select distinct CEConfirmNO,LaborName,FlowFlag from [ERPContinueEmployDetail] d left join [ERPContinueEmployMaster] m on d.ContinueEmployNO= m.ContinueEmployNO where m.FlowFlag = 'N' or  m.FlowFlag = 'P' or (m.FlowFlag ='Z' and d.DeleteFlag is null )) u on u.CEConfirmNO=dd.CEConfirmNO ) j where FlowFlag is not null and m.DueNO=j.DueNO  group by DueNO )) as FlowCounts,
+
+(select COUNT(*) from (
+select ltrim(rtrim(lab_name)) as c1,ltrim(rtrim(lab_edate)) as c2 from [192.168.1.41].lab.dbo.lab 
+where substring(lab_edate,1,5)=m.DueYM and lab_status=1
+except
+select ltrim(rtrim(d.eLaborName)) as c1,convert(varchar,convert(int,Year(d.DueDate))-1911)
++CONVERT(VARCHAR,REPLICATE('0',2-LEN(MONTH(DueDate))))+CONVERT(VARCHAR,MONTH(DueDate))
++CONVERT(VARCHAR,REPLICATE('0',2-LEN(DAY(DueDate))))+CONVERT(VARCHAR,DAY(DueDate)) as c2
+from JBADMIN.dbo.ERPDueFormDetail d left join ERPDueFormMaster m on m.DueNO=d.DueNO where (m.DeleteFlag = 'FALSE' or m.DeleteFlag is null or m.DeleteFlag ='') and m.DueYM=m.DueYM) as tb) as Diffe,'' as DiffeButton
+
+ FROM dbo.[ERPDueFormMaster] m where ((m.DeleteFlag is NULL) or (m.DeleteFlag =0) or(m.DeleteFlag =''))
+order by DueNO desc</value>
+  </data>
+  <metadata name="ucERPDueFormMaster.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 587</value>
+  </metadata>
+  <metadata name="ERPDueFormDetail.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 207</value>
+  </metadata>
+  <data name="ERPDueFormDetail.CommandText" xml:space="preserve">
+    <value>SELECT top 200 d.DueNO, d.AutoKey, d.LaborName, d.eLaborName, d.Employer, d.eEmployer, d.Contact, d.Gender, d.Country, d.ImmigrationDate, d.DueDate, d.IsRecontract, d.CEConfirmNO, d.Transfer, d.ReturnHome, d.IsApplyFlow, d.SalesID, d.SalesName,d.BackPot,d.TransferAg,d.CEConfirmTrackNO,d.ResidenceID,v.FeeAmount,
+
+(select COUNT(dl.CEConfirmNO) from dbo.ERPContinueEmployDetail dl
+ left join ERPDueFormDetail dd on dl.CEConfirmNO=dd.CEConfirmNO
+  left join ERPDueFormMaster m on dd.DueNO=m.DueNO
+   where ((m.DeleteFlag IS NULL) OR (m.DeleteFlag = '') OR (m.DeleteFlag =0)) and (dl.CEConfirmNO=d.CEConfirmNO) group by dl.CEConfirmNO) as counts,
+
+(SELECT top 1 m1.FlowFlag
+FROM dbo.ERPContinueEmployDetail AS d1 LEFT OUTER JOIN dbo.ERPContinueEmployMaster AS m1 ON d1.ContinueEmployNO = m1.ContinueEmployNO where d1.CEConfirmNO=d.CEConfirmNO and m1.CreateDate=(SELECT MAX(m2.CreateDate)
+FROM dbo.ERPContinueEmployDetail AS d2 LEFT OUTER JOIN dbo.ERPContinueEmployMaster AS m2 ON d2.ContinueEmployNO = m2.ContinueEmployNO where d2.CEConfirmNO=d.CEConfirmNO group by CEConfirmNO)) as FlowFlag,
+
+(SELECT top 1 tbff.cff
+FROM dbo.ERPContinueEmployDetail AS d1 LEFT OUTER JOIN dbo.ERPContinueEmployMaster AS m1 ON d1.ContinueEmployNO = m1.ContinueEmployNO
+LEFT OUTER JOIN ((select 'Z' as ff,'結案' as cff)union(select 'N' as ff,'新申請' as cff)union(select 'P' as ff,'流程中' as cff)union(select 'X' as ff,'作廢' as cff) ) tbff on tbff.ff = m1.FlowFlag
+where d1.CEConfirmNO=d.CEConfirmNO and m1.CreateDate=(SELECT MAX(m2.CreateDate)
+FROM dbo.ERPContinueEmployDetail AS d2 LEFT OUTER JOIN dbo.ERPContinueEmployMaster AS m2 ON d2.ContinueEmployNO = m2.ContinueEmployNO where d2.CEConfirmNO=d.CEConfirmNO group by CEConfirmNO)) as CFlowFlag,
+
+(SELECT top 1 d1.DeleteFlag
+FROM dbo.ERPContinueEmployDetail AS d1 LEFT OUTER JOIN dbo.ERPContinueEmployMaster AS m1 ON d1.ContinueEmployNO = m1.ContinueEmployNO where d1.CEConfirmNO=d.CEConfirmNO and m1.CreateDate=(SELECT MAX(m2.CreateDate)
+FROM dbo.ERPContinueEmployDetail AS d2 LEFT OUTER JOIN dbo.ERPContinueEmployMaster AS m2 ON d2.ContinueEmployNO = m2.ContinueEmployNO where d2.CEConfirmNO=d.CEConfirmNO group by CEConfirmNO)) as DeleteFlag
+
+FROM dbo.ERPDueFormDetail d 
+LEFT OUTER JOIN dbo.ERPDueFormMaster m ON m.DueNO = d.DueNO
+left join (
+select ResidenceID,EmployeeTcName,sum(FeeAmount) as FeeAmount from(
+select * from [192.168.1.41].FWCRM.dbo.View_EmployeeDebt--60.250.52.106
+union all
+select * from [192.168.1.41].FWCRMJS.dbo.View_EmployeeDebt--192.168.1.40
+) temp
+group by ResidenceID,EmployeeTcName
+) v on v.ResidenceID=d.ResidenceID and d.Employer not like '%碁富%'
+WHERE (m.DeleteFlag IS NULL) OR (m.DeleteFlag = '') OR (m.DeleteFlag =0)
+ORDER BY FlowFlag , Employer DESC</value>
+  </data>
+  <metadata name="ucERPDueFormDetail.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 473</value>
+  </metadata>
+  <metadata name="idERPDueFormMaster_ERPDueFormDetail.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 245</value>
+  </metadata>
+  <metadata name="View_ERPDueFormMaster.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 55</value>
+  </metadata>
+  <metadata name="autoNumber1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 397</value>
+  </metadata>
+  <metadata name="autoNumber2.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 169</value>
+  </metadata>
+  <metadata name="infoConnection2.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>307, 290</value>
+  </metadata>
+  <metadata name="lab.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 435</value>
+  </metadata>
+  <metadata name="cus.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 359</value>
+  </metadata>
+  <metadata name="ERPDueFormMasterDetail.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 321</value>
+  </metadata>
+  <metadata name="Search_Employer.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 625</value>
+  </metadata>
+  <metadata name="Search_Country.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 663</value>
+  </metadata>
+  <metadata name="Search_LaborName.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 701</value>
+  </metadata>
+  <metadata name="rERPCEConfirmTrack.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 549</value>
+  </metadata>
+  <metadata name="DueYM.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>193, 339</value>
+  </metadata>
+  <metadata name="$this.TrayLargeIcon" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>False</value>
+  </metadata>
+</root>

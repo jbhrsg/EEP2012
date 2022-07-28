@@ -9,15 +9,8 @@ D:\Infolight\EEP2012\JBGL\sglVoucherMaster\obj\Debug\sglVoucherMaster.Component.
 D:\Infolight\EEP2012\JBGL\sglVoucherMaster\obj\Debug\sglVoucherMaster.csprojResolveAssemblyReference.cache
 D:\Infolight\EEP2012\EEPNetServer\JBADMIN\sglVoucherMaster.dll
 D:\Infolight\EEP2012\EEPNetServer\JBADMIN\sglVoucherMaster.pdb
-D:\Infolight\EEP2012\JBADMIN\sglVoucherMaster\obj\Debug\sglVoucherMaster.csprojResolveAssemblyReference.cache
 D:\Infolight\EEP2012\JBADMIN\sglVoucherMaster\obj\Debug\sglVoucherMaster.Component.resources
 D:\Infolight\EEP2012\JBADMIN\sglVoucherMaster\obj\Debug\sglVoucherMaster.csproj.GenerateResource.Cache
 D:\Infolight\EEP2012\JBADMIN\sglVoucherMaster\obj\Debug\sglVoucherMaster.dll
 D:\Infolight\EEP2012\JBADMIN\sglVoucherMaster\obj\Debug\sglVoucherMaster.pdb
-C:\Program Files (x86)\Infolight\EEP2012\EEPNetServer\JBADMIN\sglVoucherMaster.dll
-C:\Program Files (x86)\Infolight\EEP2012\EEPNetServer\JBADMIN\sglVoucherMaster.pdb
-C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sglVoucherMaster\obj\Debug\sglVoucherMaster.Component.resources
-C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sglVoucherMaster\obj\Debug\sglVoucherMaster.csproj.GenerateResource.Cache
-C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sglVoucherMaster\obj\Debug\sglVoucherMaster.dll
-C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sglVoucherMaster\obj\Debug\sglVoucherMaster.pdb
-C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sglVoucherMaster\obj\Debug\sglVoucherMaster.csprojResolveAssemblyReference.cache
+D:\Infolight\EEP2012\JBADMIN\sglVoucherMaster\obj\Debug\sglVoucherMaster.csprojResolveAssemblyReference.cache

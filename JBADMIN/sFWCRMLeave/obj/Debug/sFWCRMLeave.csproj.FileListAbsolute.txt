@@ -1,0 +1,9 @@
+D:\Infolight\EEP2012\JBADMIN\sFWCRMLeave\bin\Debug\sFWCRMLeave.dll
+D:\Infolight\EEP2012\JBADMIN\sFWCRMLeave\bin\Debug\sFWCRMLeave.pdb
+D:\Infolight\EEP2012\JBADMIN\sFWCRMLeave\obj\Debug\sFWCRMLeave.csproj.GenerateResource.Cache
+D:\Infolight\EEP2012\JBADMIN\sFWCRMLeave\obj\Debug\sFWCRMLeave.dll
+D:\Infolight\EEP2012\JBADMIN\sFWCRMLeave\obj\Debug\sFWCRMLeave.pdb
+D:\Infolight\EEP2012\EEPNetServer\JBADMIN\sFWCRMLeave.dll
+D:\Infolight\EEP2012\EEPNetServer\JBADMIN\sFWCRMLeave.pdb
+D:\Infolight\EEP2012\JBADMIN\sFWCRMLeave\obj\Debug\sFWCRMLeave.Component.resources
+D:\Infolight\EEP2012\JBADMIN\sFWCRMLeave\obj\Debug\sFWCRMLeave.csprojResolveAssemblyReference.cache

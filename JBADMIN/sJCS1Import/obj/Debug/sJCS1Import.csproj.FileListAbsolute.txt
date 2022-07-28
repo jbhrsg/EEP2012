@@ -1,0 +1,9 @@
+D:\Infolight\EEP2012\JBADMIN\sJCS1Import\bin\Debug\sJCS1Import.dll
+D:\Infolight\EEP2012\JBADMIN\sJCS1Import\bin\Debug\sJCS1Import.pdb
+D:\Infolight\EEP2012\JBADMIN\sJCS1Import\obj\Debug\sJCS1Import.csprojResolveAssemblyReference.cache
+D:\Infolight\EEP2012\JBADMIN\sJCS1Import\obj\Debug\sJCS1Import.csproj.GenerateResource.Cache
+D:\Infolight\EEP2012\JBADMIN\sJCS1Import\obj\Debug\sJCS1Import.dll
+D:\Infolight\EEP2012\JBADMIN\sJCS1Import\obj\Debug\sJCS1Import.pdb
+D:\Infolight\EEP2012\EEPNetServer\JBADMIN\sJCS1Import.dll
+D:\Infolight\EEP2012\EEPNetServer\JBADMIN\sJCS1Import.pdb
+D:\Infolight\EEP2012\JBADMIN\sJCS1Import\obj\Debug\sJCS1Import.Component.resources

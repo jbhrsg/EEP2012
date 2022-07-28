@@ -1,0 +1,10 @@
+D:\Infolight\EEPNetClient\Solution1\glVoucherMasterWin.dll
+D:\Infolight\EEPNetClient\Solution1\glVoucherMasterWin.pdb
+D:\Infolight\EEP2012\JBADMIN\glVoucherMasterWin\obj\Debug\glVoucherMasterWin.Properties.Resources.resources
+D:\Infolight\EEP2012\JBADMIN\glVoucherMasterWin\obj\Debug\glVoucherMasterWin.csproj.GenerateResource.Cache
+D:\Infolight\EEP2012\JBADMIN\glVoucherMasterWin\obj\Debug\glVoucherMasterWin.dll
+D:\Infolight\EEP2012\JBADMIN\glVoucherMasterWin\obj\Debug\glVoucherMasterWin.pdb
+D:\Infolight\EEP2012\EEPNetClient\JBADMIN\glVoucherMasterWin.dll
+D:\Infolight\EEP2012\EEPNetClient\JBADMIN\glVoucherMasterWin.pdb
+D:\Infolight\EEP2012\JBADMIN\glVoucherMasterWin\obj\Debug\glVoucherMasterWin.Form1.resources
+D:\Infolight\EEP2012\JBADMIN\glVoucherMasterWin\obj\Debug\glVoucherMasterWin.csprojResolveAssemblyReference.cache

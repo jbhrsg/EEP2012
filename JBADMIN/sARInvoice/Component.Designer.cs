@@ -30,7 +30,6 @@
         {
             this.components = new System.ComponentModel.Container();
             Srvtools.Service service1 = new Srvtools.Service();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Component));
             Srvtools.KeyItem keyItem1 = new Srvtools.KeyItem();
             Srvtools.FieldAttr fieldAttr1 = new Srvtools.FieldAttr();
             Srvtools.FieldAttr fieldAttr2 = new Srvtools.FieldAttr();
@@ -54,10 +53,15 @@
             Srvtools.FieldAttr fieldAttr20 = new Srvtools.FieldAttr();
             Srvtools.FieldAttr fieldAttr21 = new Srvtools.FieldAttr();
             Srvtools.KeyItem keyItem2 = new Srvtools.KeyItem();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Component));
             Srvtools.KeyItem keyItem3 = new Srvtools.KeyItem();
             Srvtools.KeyItem keyItem4 = new Srvtools.KeyItem();
             Srvtools.KeyItem keyItem5 = new Srvtools.KeyItem();
             Srvtools.KeyItem keyItem6 = new Srvtools.KeyItem();
+            Srvtools.KeyItem keyItem7 = new Srvtools.KeyItem();
+            Srvtools.KeyItem keyItem8 = new Srvtools.KeyItem();
+            Srvtools.KeyItem keyItem9 = new Srvtools.KeyItem();
+            Srvtools.KeyItem keyItem10 = new Srvtools.KeyItem();
             this.serviceManager1 = new Srvtools.ServiceManager(this.components);
             this.InfoConnection1 = new Srvtools.InfoConnection(this.components);
             this.InvoiceDetails = new Srvtools.InfoCommand(this.components);
@@ -68,6 +72,10 @@
             this.SalesPerson = new Srvtools.InfoCommand(this.components);
             this.SalesType = new Srvtools.InfoCommand(this.components);
             this.InvoiceType = new Srvtools.InfoCommand(this.components);
+            this.Employer = new Srvtools.InfoCommand(this.components);
+            this.QEmployer = new Srvtools.InfoCommand(this.components);
+            this.QCustomer = new Srvtools.InfoCommand(this.components);
+            this.SalesTypeQ = new Srvtools.InfoCommand(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.InfoConnection1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.InvoiceDetails)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.View_InvoiceDetails)).BeginInit();
@@ -76,6 +84,10 @@
             ((System.ComponentModel.ISupportInitialize)(this.SalesPerson)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.SalesType)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.InvoiceType)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Employer)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.QEmployer)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.QCustomer)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.SalesTypeQ)).BeginInit();
             // 
             // serviceManager1
             // 
@@ -91,7 +103,7 @@
             // InvoiceDetails
             // 
             this.InvoiceDetails.CacheConnection = false;
-            this.InvoiceDetails.CommandText = resources.GetString("InvoiceDetails.CommandText");
+            this.InvoiceDetails.CommandText = "select * from View_sARInvoice";
             this.InvoiceDetails.CommandTimeout = 30;
             this.InvoiceDetails.CommandType = System.Data.CommandType.Text;
             this.InvoiceDetails.DynamicTableName = false;
@@ -379,7 +391,7 @@
             // SalesPerson
             // 
             this.SalesPerson.CacheConnection = false;
-            this.SalesPerson.CommandText = "SELECT SalesID,SalesName   FROM SalesPerson";
+            this.SalesPerson.CommandText = "SELECT top 50 SalesID,SalesName   FROM SalesPerson";
             this.SalesPerson.CommandTimeout = 30;
             this.SalesPerson.CommandType = System.Data.CommandType.Text;
             this.SalesPerson.DynamicTableName = false;
@@ -454,6 +466,113 @@
             this.InvoiceType.SiteControl = false;
             this.InvoiceType.SiteFieldName = null;
             this.InvoiceType.UpdatedRowSource = System.Data.UpdateRowSource.None;
+            // 
+            // Employer
+            // 
+            this.Employer.CacheConnection = false;
+            this.Employer.CommandText = "SELECT CUSTOMERID,SHORTNAME FROM CUSTOMER \r\nWHERE CUSTOMERTYPEID=1 ORDER BY SHORT" +
+    "NAME";
+            this.Employer.CommandTimeout = 30;
+            this.Employer.CommandType = System.Data.CommandType.Text;
+            this.Employer.DynamicTableName = false;
+            this.Employer.EEPAlias = "JBERP";
+            this.Employer.EncodingAfter = null;
+            this.Employer.EncodingBefore = "Windows-1252";
+            this.Employer.EncodingConvert = null;
+            this.Employer.InfoConnection = this.InfoConnection1;
+            keyItem7.KeyName = "CUSTOMERID";
+            this.Employer.KeyFields.Add(keyItem7);
+            this.Employer.MultiSetWhere = false;
+            this.Employer.Name = "Employer";
+            this.Employer.NotificationAutoEnlist = false;
+            this.Employer.SecExcept = null;
+            this.Employer.SecFieldName = null;
+            this.Employer.SecStyle = Srvtools.SecurityStyle.ssByNone;
+            this.Employer.SelectPaging = false;
+            this.Employer.SelectTop = 0;
+            this.Employer.SiteControl = false;
+            this.Employer.SiteFieldName = null;
+            this.Employer.UpdatedRowSource = System.Data.UpdateRowSource.None;
+            // 
+            // QEmployer
+            // 
+            this.QEmployer.CacheConnection = false;
+            this.QEmployer.CommandText = "SELECT top 20 CUSTOMERID,SHORTNAME FROM CUSTOMER \r\nWHERE CUSTOMERTYPEID=1 ORDER B" +
+    "Y SHORTNAME";
+            this.QEmployer.CommandTimeout = 30;
+            this.QEmployer.CommandType = System.Data.CommandType.Text;
+            this.QEmployer.DynamicTableName = false;
+            this.QEmployer.EEPAlias = "JBERP";
+            this.QEmployer.EncodingAfter = null;
+            this.QEmployer.EncodingBefore = "Windows-1252";
+            this.QEmployer.EncodingConvert = null;
+            this.QEmployer.InfoConnection = this.InfoConnection1;
+            keyItem8.KeyName = "CUSTOMERID";
+            this.QEmployer.KeyFields.Add(keyItem8);
+            this.QEmployer.MultiSetWhere = false;
+            this.QEmployer.Name = "QEmployer";
+            this.QEmployer.NotificationAutoEnlist = false;
+            this.QEmployer.SecExcept = null;
+            this.QEmployer.SecFieldName = null;
+            this.QEmployer.SecStyle = Srvtools.SecurityStyle.ssByNone;
+            this.QEmployer.SelectPaging = false;
+            this.QEmployer.SelectTop = 0;
+            this.QEmployer.SiteControl = false;
+            this.QEmployer.SiteFieldName = null;
+            this.QEmployer.UpdatedRowSource = System.Data.UpdateRowSource.None;
+            // 
+            // QCustomer
+            // 
+            this.QCustomer.CacheConnection = false;
+            this.QCustomer.CommandText = resources.GetString("QCustomer.CommandText");
+            this.QCustomer.CommandTimeout = 30;
+            this.QCustomer.CommandType = System.Data.CommandType.Text;
+            this.QCustomer.DynamicTableName = false;
+            this.QCustomer.EEPAlias = "JBERP";
+            this.QCustomer.EncodingAfter = null;
+            this.QCustomer.EncodingBefore = "Windows-1252";
+            this.QCustomer.EncodingConvert = null;
+            this.QCustomer.InfoConnection = this.InfoConnection1;
+            keyItem9.KeyName = "CustomerID";
+            this.QCustomer.KeyFields.Add(keyItem9);
+            this.QCustomer.MultiSetWhere = false;
+            this.QCustomer.Name = "QCustomer";
+            this.QCustomer.NotificationAutoEnlist = false;
+            this.QCustomer.SecExcept = null;
+            this.QCustomer.SecFieldName = null;
+            this.QCustomer.SecStyle = Srvtools.SecurityStyle.ssByNone;
+            this.QCustomer.SelectPaging = false;
+            this.QCustomer.SelectTop = 0;
+            this.QCustomer.SiteControl = false;
+            this.QCustomer.SiteFieldName = null;
+            this.QCustomer.UpdatedRowSource = System.Data.UpdateRowSource.None;
+            // 
+            // SalesTypeQ
+            // 
+            this.SalesTypeQ.CacheConnection = false;
+            this.SalesTypeQ.CommandText = "SELECT  SalesTypeID,SalesTypeID+\'-\'+SalesTypeName as SalesTypeName  FROM SalesTyp" +
+    "e";
+            this.SalesTypeQ.CommandTimeout = 30;
+            this.SalesTypeQ.CommandType = System.Data.CommandType.Text;
+            this.SalesTypeQ.DynamicTableName = false;
+            this.SalesTypeQ.EEPAlias = "JBERP";
+            this.SalesTypeQ.EncodingAfter = null;
+            this.SalesTypeQ.EncodingBefore = "Windows-1252";
+            this.SalesTypeQ.EncodingConvert = null;
+            this.SalesTypeQ.InfoConnection = this.InfoConnection1;
+            keyItem10.KeyName = "CustomerID";
+            this.SalesTypeQ.KeyFields.Add(keyItem10);
+            this.SalesTypeQ.MultiSetWhere = false;
+            this.SalesTypeQ.Name = "SalesTypeQ";
+            this.SalesTypeQ.NotificationAutoEnlist = false;
+            this.SalesTypeQ.SecExcept = null;
+            this.SalesTypeQ.SecFieldName = null;
+            this.SalesTypeQ.SecStyle = Srvtools.SecurityStyle.ssByNone;
+            this.SalesTypeQ.SelectPaging = false;
+            this.SalesTypeQ.SelectTop = 0;
+            this.SalesTypeQ.SiteControl = false;
+            this.SalesTypeQ.SiteFieldName = null;
+            this.SalesTypeQ.UpdatedRowSource = System.Data.UpdateRowSource.None;
             ((System.ComponentModel.ISupportInitialize)(this.InfoConnection1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.InvoiceDetails)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.View_InvoiceDetails)).EndInit();
@@ -462,6 +581,10 @@
             ((System.ComponentModel.ISupportInitialize)(this.SalesPerson)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.SalesType)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.InvoiceType)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Employer)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.QEmployer)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.QCustomer)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.SalesTypeQ)).EndInit();
 
         }
 
@@ -477,5 +600,9 @@
         private Srvtools.InfoCommand SalesPerson;
         private Srvtools.InfoCommand SalesType;
         private Srvtools.InfoCommand InvoiceType;
+        private Srvtools.InfoCommand Employer;
+        private Srvtools.InfoCommand QEmployer;
+        private Srvtools.InfoCommand QCustomer;
+        private Srvtools.InfoCommand SalesTypeQ;
     }
 }

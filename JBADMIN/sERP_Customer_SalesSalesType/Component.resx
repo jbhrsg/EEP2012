@@ -118,19 +118,19 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <metadata name="serviceManager1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>17, 59</value>
+    <value>17, 56</value>
   </metadata>
   <metadata name="InfoConnection1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>17, 143</value>
+    <value>17, 407</value>
   </metadata>
   <metadata name="SalesPerson.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>17, 269</value>
+    <value>17, 368</value>
   </metadata>
   <metadata name="ucSalesPerson.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>17, 311</value>
+    <value>230, 371</value>
   </metadata>
   <metadata name="SalesSalesType.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>17, 395</value>
+    <value>17, 212</value>
   </metadata>
   <data name="SalesSalesType.CommandText" xml:space="preserve">
     <value>SELECT ss.*,s.SalesTypeName,i.ShortName 
@@ -140,37 +140,37 @@ left join JBADMIN.dbo.InsGroup i on i.InsGroupID=s.InsGroupID
 order by  ss.SalesTypeID</value>
   </data>
   <metadata name="ucSalesSalesType.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>17, 437</value>
+    <value>264, 202</value>
   </metadata>
   <metadata name="SalesType.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>17, 521</value>
+    <value>17, 251</value>
   </metadata>
   <metadata name="View_SalesPerson.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>17, 101</value>
+    <value>17, 95</value>
   </metadata>
   <metadata name="View_SalesSalesType.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>17, 185</value>
+    <value>17, 173</value>
   </metadata>
   <metadata name="View_SalesType.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>17, 227</value>
+    <value>468, 173</value>
   </metadata>
   <metadata name="Users.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>17, 353</value>
+    <value>16, 332</value>
   </metadata>
   <metadata name="dataGrid2.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>17, 563</value>
+    <value>24, 445</value>
   </metadata>
   <metadata name="InsGroup.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>17, 605</value>
+    <value>17, 587</value>
   </metadata>
   <metadata name="infoConnection2.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>17, 647</value>
+    <value>17, 625</value>
   </metadata>
   <metadata name="QSalesPerson.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>17, 479</value>
+    <value>17, 511</value>
   </metadata>
   <metadata name="SalesTypeTree.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>293, 287</value>
+    <value>45, 292</value>
   </metadata>
   <data name="SalesTypeTree.CommandText" xml:space="preserve">
     <value>SELECT  'Root' as ID,null as ParentID,'銷貨類別' AS Name,'True' as IsClass,'00' AS SEQ

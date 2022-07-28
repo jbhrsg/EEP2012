@@ -6,9 +6,3 @@ C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sERPSalesApplyQuery\obj\Debug\s
 C:\Program Files (x86)\Infolight\EEP2012\EEPNetServer\JBADMIN\sERPSalesApplyQuery.dll
 C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sERPSalesApplyQuery\obj\Debug\sERPSalesApplyQuery.Component.resources
 C:\Program Files (x86)\Infolight\EEP2012\EEPNetServer\JBADMIN\sERPSalesApplyQuery.pdb
-D:\Infolight\EEP2012\EEPNetServer\JBADMIN\sERPSalesApplyQuery.dll
-D:\Infolight\EEP2012\EEPNetServer\JBADMIN\sERPSalesApplyQuery.pdb
-D:\Infolight\EEP2012\JBADMIN\sERPSalesApplyQuery\obj\Debug\sERPSalesApplyQuery.Component.resources
-D:\Infolight\EEP2012\JBADMIN\sERPSalesApplyQuery\obj\Debug\sERPSalesApplyQuery.csproj.GenerateResource.Cache
-D:\Infolight\EEP2012\JBADMIN\sERPSalesApplyQuery\obj\Debug\sERPSalesApplyQuery.dll
-D:\Infolight\EEP2012\JBADMIN\sERPSalesApplyQuery\obj\Debug\sERPSalesApplyQuery.pdb

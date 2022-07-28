@@ -127,13 +127,15 @@
     <value>17, 169</value>
   </metadata>
   <data name="ERPSalesDetails.CommandText" xml:space="preserve">
-    <value>select d.SalesMasterNO,d.ItemSeq,d.CustNO,e.CustShortName,d.SalesID,d.SalesEmployeeID,d.SalesTypeID,d.SalesDate,
-	   d.InvoiceYM,d.GrantTypeID,d.CustPrice,d.CustLines,d.CustAmt,d.OfficeLines,d.OfficePrice,d.OfficeAmt,
-	   m.SalesName,t.SalesTypeName,d.IsInvoice,d.IsTransSys
+    <value>select d.SalesMasterNO,d.ItemSeq,d.CustNO,e.CustShortName,d.SalesID,d.SalesEmployeeID,d.SalesTypeID,d.SalesDate,Right(DATENAME(Weekday,d.SalesDate),1) as dWeekday,
+	   d.InvoiceYM,d.GrantTypeID,d.SalesQty,d.SalesQtyView,d.SalesDescr,d.CustPrice,d.CustLines,d.CustAmt,d.OfficeLines,d.OfficePrice,d.OfficeAmt,
+	   m.SalesName,t.SalesTypeName,d.IsInvoice,d.IsTransSys,d.Remark1,p.DMTypeName,v.ViewAreaName
 from ERPSalesDetails d
 	inner join ERPSalesMaster e on d.SalesMasterNO=e.SalesMasterNO
 	inner join ERPSalesMan m on d.SalesID=m.SalesID
-	inner join ERPSalesType t on d.SalesTypeID=t.SalesTypeID	
+	inner join ERPSalesType t on d.SalesTypeID=t.SalesTypeID
+                   left join ERPDMType p on d.DMTypeID=p.DMTypeID	
+	left join ERPViewArea v on d.ViewAreaID=v.ViewAreaID
 where d.IsActive=1 
 order by d.CustNO,d.SalesTypeID,d.SalesDate</value>
   </data>

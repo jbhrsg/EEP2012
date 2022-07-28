@@ -1,0 +1,16 @@
+D:\Infolight\EEP2012\JBGL\sglVoucherSet\bin\Debug\sglVoucherSet.dll
+D:\Infolight\EEP2012\JBGL\sglVoucherSet\bin\Debug\sglVoucherSet.pdb
+D:\Infolight\EEP2012\JBGL\sglVoucherSet\obj\Debug\sglVoucherSet.csprojResolveAssemblyReference.cache
+D:\Infolight\EEP2012\JBGL\sglVoucherSet\obj\Debug\sglVoucherSet.csproj.GenerateResource.Cache
+D:\Infolight\EEP2012\JBGL\sglVoucherSet\obj\Debug\sglVoucherSet.dll
+D:\Infolight\EEP2012\JBGL\sglVoucherSet\obj\Debug\sglVoucherSet.pdb
+D:\Infolight\EEP2012\EEPNetServer\JBGL\sglVoucherSet.dll
+D:\Infolight\EEP2012\EEPNetServer\JBGL\sglVoucherSet.pdb
+D:\Infolight\EEP2012\JBGL\sglVoucherSet\obj\Debug\sglVoucherSet.Component.resources
+D:\Infolight\EEP2012\JBADMIN\sglVoucherSet\obj\Debug\sglVoucherSet.Component.resources
+D:\Infolight\EEP2012\JBADMIN\sglVoucherSet\obj\Debug\sglVoucherSet.csproj.GenerateResource.Cache
+D:\Infolight\EEP2012\JBADMIN\sglVoucherSet\obj\Debug\sglVoucherSet.dll
+D:\Infolight\EEP2012\JBADMIN\sglVoucherSet\obj\Debug\sglVoucherSet.pdb
+D:\Infolight\EEP2012\EEPNetServer\JBADMIN\sglVoucherSet.dll
+D:\Infolight\EEP2012\EEPNetServer\JBADMIN\sglVoucherSet.pdb
+D:\Infolight\EEP2012\JBADMIN\sglVoucherSet\obj\Debug\sglVoucherSet.csprojResolveAssemblyReference.cache

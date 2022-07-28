@@ -1,0 +1,8 @@
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sERP_Report_CheckSummary\bin\Debug\sERP_Report_CheckSummary.dll
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sERP_Report_CheckSummary\bin\Debug\sERP_Report_CheckSummary.pdb
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sERP_Report_CheckSummary\obj\Debug\sERP_Report_CheckSummary.csproj.GenerateResource.Cache
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sERP_Report_CheckSummary\obj\Debug\sERP_Report_CheckSummary.dll
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sERP_Report_CheckSummary\obj\Debug\sERP_Report_CheckSummary.pdb
+C:\Program Files (x86)\Infolight\EEP2012\EEPNetServer\JBADMIN\sERP_Report_CheckSummary.dll
+C:\Program Files (x86)\Infolight\EEP2012\EEPNetServer\JBADMIN\sERP_Report_CheckSummary.pdb
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sERP_Report_CheckSummary\obj\Debug\sERP_Report_CheckSummary.Component.resources

@@ -1,0 +1,11 @@
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sERP_Report_CashTransferWarrantDetails\bin\Debug\sERP_Report_CashTransferWarrantDetails.dll
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sERP_Report_CashTransferWarrantDetails\bin\Debug\sERP_Report_CashTransferWarrantDetails.pdb
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sERP_Report_CashTransferWarrantDetails\obj\Debug\sERP_Report_CashTransferWarrantDetails.csproj.GenerateResource.Cache
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sERP_Report_CashTransferWarrantDetails\obj\Debug\sERP_Report_CashTransferWarrantDetails.dll
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sERP_Report_CashTransferWarrantDetails\obj\Debug\sERP_Report_CashTransferWarrantDetails.pdb
+C:\Program Files (x86)\Infolight\EEP2012\EEPNetServer\JBADMIN\sERP_Report_CashTransferWarrantDetails.dll
+C:\Program Files (x86)\Infolight\EEP2012\EEPNetServer\JBADMIN\sERP_Report_CashTransferWarrantDetails.pdb
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sERP_Report_CashTransferWarrantDetails\obj\Debug\sERP_Report_CashTransferWarrantDetails.Component.resources
+C:\Program Files (x86)\Infolight\EEP2012\EEPNetServer\JBADMIN\vi-VN\sERP_Report_CashTransferWarrantDetails.resources.dll
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sERP_Report_CashTransferWarrantDetails\obj\Debug\sERP_Report_CashTransferWarrantDetails.Component.vi-VN.resources
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sERP_Report_CashTransferWarrantDetails\obj\Debug\vi-VN\sERP_Report_CashTransferWarrantDetails.resources.dll

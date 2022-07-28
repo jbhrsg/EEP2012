@@ -1,0 +1,7 @@
+D:\Infolight\EEP2012\EEPNetServer\JBADMIN\sglCompany.dll
+D:\Infolight\EEP2012\EEPNetServer\JBADMIN\sglCompany.pdb
+D:\Infolight\EEP2012\JBADMIN\sglCompany\obj\Debug\sglCompany.Component.resources
+D:\Infolight\EEP2012\JBADMIN\sglCompany\obj\Debug\sglCompany.csproj.GenerateResource.Cache
+D:\Infolight\EEP2012\JBADMIN\sglCompany\obj\Debug\sglCompany.dll
+D:\Infolight\EEP2012\JBADMIN\sglCompany\obj\Debug\sglCompany.pdb
+D:\Infolight\EEP2012\JBADMIN\sglCompany\obj\Debug\sglCompany.csprojResolveAssemblyReference.cache

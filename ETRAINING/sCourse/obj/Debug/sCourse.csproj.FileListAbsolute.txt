@@ -1,9 +1,0 @@
-C:\Program Files (x86)\Infolight\EEP2012\eTraining\sCourse\bin\Debug\sCourse.dll
-C:\Program Files (x86)\Infolight\EEP2012\eTraining\sCourse\bin\Debug\sCourse.pdb
-C:\Program Files (x86)\Infolight\EEP2012\eTraining\sCourse\obj\Debug\sCourse.csproj.GenerateResource.Cache
-C:\Program Files (x86)\Infolight\EEP2012\eTraining\sCourse\obj\Debug\sCourse.dll
-C:\Program Files (x86)\Infolight\EEP2012\eTraining\sCourse\obj\Debug\sCourse.pdb
-C:\Program Files (x86)\Infolight\EEP2012\EEPNetServer\eTraining\sCourse.dll
-C:\Program Files (x86)\Infolight\EEP2012\EEPNetServer\eTraining\sCourse.pdb
-C:\Program Files (x86)\Infolight\EEP2012\eTraining\sCourse\obj\Debug\sCourse.Component.resources
-C:\Program Files (x86)\Infolight\EEP2012\eTraining\sCourse\obj\Debug\sCourse.csprojResolveAssemblyReference.cache

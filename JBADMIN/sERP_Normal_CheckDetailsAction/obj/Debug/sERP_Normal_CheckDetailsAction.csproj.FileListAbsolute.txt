@@ -1,0 +1,11 @@
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sERP_Normal_CheckDetailsAction\bin\Debug\sERP_Normal_CheckDetailsAction.dll
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sERP_Normal_CheckDetailsAction\bin\Debug\sERP_Normal_CheckDetailsAction.pdb
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sERP_Normal_CheckDetailsAction\obj\Debug\sERP_Normal_CheckDetailsAction.csproj.GenerateResource.Cache
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sERP_Normal_CheckDetailsAction\obj\Debug\sERP_Normal_CheckDetailsAction.dll
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sERP_Normal_CheckDetailsAction\obj\Debug\sERP_Normal_CheckDetailsAction.pdb
+C:\Program Files (x86)\Infolight\EEP2012\EEPNetServer\JBADMIN\sERP_Normal_CheckDetailsAction.dll
+C:\Program Files (x86)\Infolight\EEP2012\EEPNetServer\JBADMIN\sERP_Normal_CheckDetailsAction.pdb
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sERP_Normal_CheckDetailsAction\obj\Debug\sERP_Normal_CheckDetailsAction.Component.resources
+C:\Program Files (x86)\Infolight\EEP2012\EEPNetServer\JBADMIN\vi-VN\sERP_Normal_CheckDetailsAction.resources.dll
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sERP_Normal_CheckDetailsAction\obj\Debug\sERP_Normal_CheckDetailsAction.Component.vi-VN.resources
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sERP_Normal_CheckDetailsAction\obj\Debug\vi-VN\sERP_Normal_CheckDetailsAction.resources.dll

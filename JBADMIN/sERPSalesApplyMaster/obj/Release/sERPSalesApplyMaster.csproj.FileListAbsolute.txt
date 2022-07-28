@@ -6,12 +6,3 @@ C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sERPSalesApplyMaster\obj\Releas
 C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sERPSalesApplyMaster\obj\Release\sERPSalesApplyMaster.csproj.GenerateResource.Cache
 C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sERPSalesApplyMaster\obj\Release\sERPSalesApplyMaster.dll
 C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sERPSalesApplyMaster\obj\Release\sERPSalesApplyMaster.pdb
-D:\Infolight\EEP2012\JBADMIN\sERPSalesApplyMaster\bin\Release\sERPSalesApplyMaster.dll
-D:\Infolight\EEP2012\JBADMIN\sERPSalesApplyMaster\bin\Release\sERPSalesApplyMaster.pdb
-D:\Infolight\EEP2012\JBADMIN\sERPSalesApplyMaster\bin\Release\Newtonsoft.Json.dll
-D:\Infolight\EEP2012\JBADMIN\sERPSalesApplyMaster\bin\Release\Newtonsoft.Json.xml
-D:\Infolight\EEP2012\JBADMIN\sERPSalesApplyMaster\obj\Release\sERPSalesApplyMaster.csprojResolveAssemblyReference.cache
-D:\Infolight\EEP2012\JBADMIN\sERPSalesApplyMaster\obj\Release\sERPSalesApplyMaster.Component.resources
-D:\Infolight\EEP2012\JBADMIN\sERPSalesApplyMaster\obj\Release\sERPSalesApplyMaster.csproj.GenerateResource.Cache
-D:\Infolight\EEP2012\JBADMIN\sERPSalesApplyMaster\obj\Release\sERPSalesApplyMaster.dll
-D:\Infolight\EEP2012\JBADMIN\sERPSalesApplyMaster\obj\Release\sERPSalesApplyMaster.pdb

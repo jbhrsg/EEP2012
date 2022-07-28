@@ -121,13 +121,13 @@
     <value>17, 93</value>
   </metadata>
   <metadata name="InfoConnection1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>17, 169</value>
-  </metadata>
-  <metadata name="infoCustomersAll.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>17, 207</value>
   </metadata>
-  <metadata name="infoSalesMan.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+  <metadata name="infoCustomersAll.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>17, 245</value>
+  </metadata>
+  <metadata name="infoSalesMan.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 283</value>
   </metadata>
   <metadata name="infoCustArea.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>17, 321</value>
@@ -162,7 +162,7 @@ where d.IsActive=1
 group by m.SalesName,d.SalesID,v.ViewAreaID,v.ViewAreaName,dbo.funReturnReportERPSalseDetails2GrantTypeID(d.SalesTypeID,d.GrantTypeID)</value>
   </data>
   <metadata name="infoSalesType.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>17, 283</value>
+    <value>17, 397</value>
   </metadata>
   <metadata name="infoERPNewsType.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>17, 435</value>
@@ -181,10 +181,10 @@ where  m.IsActive=1 and d.IsActive=1 and m.AcceptDate is not null
 order by m.AcceptDate</value>
   </data>
   <metadata name="infoSalesTypeAll.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>17, 397</value>
+    <value>17, 549</value>
   </metadata>
   <metadata name="infoInvoiceList.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>246, 140</value>
+    <value>17, 169</value>
   </metadata>
   <data name="infoInvoiceList.CommandText" xml:space="preserve">
     <value>select s.SalesTypeID,e.CustNO,s.CustShortName,sum(e.SalesQty) as SalesQty,sum(e.CustAmt) as CustAmt,SalesDate,GrantTypeID,m.SalesID
@@ -196,6 +196,26 @@ order by m.AcceptDate</value>
 	where s.IsActive=1 and e.IsActive=1 and IsInvoice=1 and IsTransSys=0 
 	group by s.SalesTypeID,e.CustNO,s.CustShortName,SalesDate,GrantTypeID,m.SalesID,e.InvoiceYM,e.IsTransSys</value>
   </data>
+  <metadata name="infoCreateBy.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 511</value>
+  </metadata>
+  <metadata name="ERPCustomerToDoNotes.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 473</value>
+  </metadata>
+  <data name="ERPCustomerToDoNotes.CommandText" xml:space="preserve">
+    <value>select  top 10 c.CustNO,c.CustName,c.SalesID,v.CreateBy,t2.ListContent,v.NextCallDate,t.ListContent,v.NotesCreateDate,c.HrBankUrl
+	from View_CustomerToDoNotes v
+		inner join View_ERPCustomers c on v.CustNO=c.CustNO
+		inner join View_ERPReferenceTable t on t.ListCategory='PostType' and c.PostType=t.ListID
+		inner join View_ERPReferenceTable t2 on t2.ListCategory='IndustryType' and c.IndustryType=t2.ListID
+left join ERPSalesMan m on c.SalesID=m.SalesID</value>
+  </data>
+  <metadata name="infoSalesType2.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>242, 229</value>
+  </metadata>
+  <metadata name="infoStats.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>299, 334</value>
+  </metadata>
   <metadata name="$this.TrayLargeIcon" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>False</value>
   </metadata>

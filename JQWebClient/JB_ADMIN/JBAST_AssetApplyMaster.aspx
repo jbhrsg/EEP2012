@@ -49,6 +49,7 @@
             if (getEditMode($("#dataFormMaster")) == 'inserted') {
                 var where = "DESCRIPTION='JB'";
                 $('#dataFormMasterAssetOwnerID').combobox('setWhere', where);
+
                 $.each(HideFieldName, function (index, fieldName) {
                     $(FormName + fieldName).closest('td').prev('td').show();
                     $(FormName + fieldName).closest('td').show();

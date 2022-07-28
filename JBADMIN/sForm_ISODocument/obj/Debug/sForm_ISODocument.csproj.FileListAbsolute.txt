@@ -1,0 +1,11 @@
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sForm_ISODocument\bin\Debug\sForm_ISODocument.dll
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sForm_ISODocument\bin\Debug\sForm_ISODocument.pdb
+C:\Program Files (x86)\Infolight\EEP2012\EEPNetServer\JBADMIN\sForm_ISODocument.dll
+C:\Program Files (x86)\Infolight\EEP2012\EEPNetServer\JBADMIN\sForm_ISODocument.pdb
+C:\Program Files (x86)\Infolight\EEP2012\EEPNetServer\JBADMIN\vi-VN\sForm_ISODocument.resources.dll
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sForm_ISODocument\obj\Debug\sForm_ISODocument.Component.resources
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sForm_ISODocument\obj\Debug\sForm_ISODocument.Component.vi-VN.resources
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sForm_ISODocument\obj\Debug\sForm_ISODocument.csproj.GenerateResource.Cache
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sForm_ISODocument\obj\Debug\vi-VN\sForm_ISODocument.resources.dll
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sForm_ISODocument\obj\Debug\sForm_ISODocument.dll
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sForm_ISODocument\obj\Debug\sForm_ISODocument.pdb

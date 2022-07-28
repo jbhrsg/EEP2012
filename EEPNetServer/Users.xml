@@ -1,116 +1,14 @@
-<InfolightUsers EnableDataBase="False">
-  <String UserId="338" UserName="陳郁欣">
-    <Computer Name="::1" LoginTime="2021-01-21 10:47:57" Count="1" />
-  </String>
-  <String UserId="095" UserName="陳雪雲">
-    <Computer Name="::1" LoginTime="2021-03-05 23:02:46" Count="1" />
-  </String>
-  <String UserId="004" UserName="鍾懷德">
-    <Computer Name="::1" LoginTime="2021-03-12 17:30:11" Count="1" />
-  </String>
-  <String UserId="006" UserName="許名瑤">
-    <Computer Name="::1" LoginTime="2021-03-16 22:15:24" Count="1" />
-  </String>
-  <String UserId="458" UserName="吳慧微">
-    <Computer Name="::1" LoginTime="2021-01-05 17:13:12" Count="1" />
-  </String>
-  <String UserId="370" UserName="楊潔芯">
-    <Computer Name="::1" LoginTime="2021-03-24 12:52:21" Count="1" />
-  </String>
-  <String UserId="jb888" UserName="人才">
-    <Computer Name="::1" LoginTime="2021-08-26 21:54:37" Count="2" />
-  </String>
-  <String UserId="036" UserName="姚建甫">
-    <Computer Name="::1" LoginTime="2021-09-23 10:52:00" Count="1" />
-  </String>
-  <String UserId="011" UserName="林翠玲">
-    <Computer Name="::1" LoginTime="2021-09-29 11:29:38" Count="1" />
-  </String>
-  <String UserId="287" UserName="吳連成">
-    <Computer Name="::1" LoginTime="2021-10-01 12:03:22" Count="1" />
-  </String>
-  <String UserId="068" UserName="方雅晴">
-    <Computer Name="::1" LoginTime="2021-10-26 16:36:15" Count="5" />
-  </String>
-  <String UserId="361" UserName="袁立欣">
-    <Computer Name="::1" LoginTime="2022-01-29 10:19:12" Count="15" />
-  </String>
-  <String UserId="010" UserName="許月英">
-    <Computer Name="::1" LoginTime="2022-01-31 00:47:44" Count="3" />
-  </String>
-  <String UserId="302" UserName="鍾榮進">
-    <Computer Name="::1" LoginTime="2022-01-31 00:31:41" Count="2" />
-  </String>
-  <String UserId="a0123" UserName="登報客戶">
-    <Computer Name="::1" LoginTime="2021-05-31 13:07:24" Count="12" />
-  </String>
-  <String UserId="022" UserName="賴素玄">
-    <Computer Name="::1" LoginTime="2021-10-01 12:40:24" Count="4" />
-  </String>
-  <String UserId="438" UserName="萬貽惠">
-    <Computer Name="::1" LoginTime="2021-10-29 10:28:21" Count="2" />
-  </String>
-  <String UserId="509" UserName="陳冠旭">
-    <Computer Name="::1" LoginTime="2022-03-17 13:50:26" Count="1" />
-  </String>
-  <String UserId="055" UserName="邱雅琳">
-    <Computer Name="::1" LoginTime="2021-08-09 13:11:46" Count="6" />
-  </String>
-  <String UserId="032" UserName="林建銘">
-    <Computer Name="::1" LoginTime="2021-04-26 22:57:08" Count="7" />
-  </String>
-  <String UserId="028" UserName="張慧君">
-    <Computer Name="::1" LoginTime="2021-09-15 15:13:24" Count="14" />
-  </String>
-  <String UserId="003" UserName="陳欽碧">
-    <Computer Name="::1" LoginTime="2021-09-15 13:31:48" Count="16" />
-  </String>
-  <String UserId="060" UserName="徐曉鈴">
-    <Computer Name="::1" LoginTime="2021-12-06 21:00:54" Count="10" />
-  </String>
-  <String UserId="038" UserName="張鈴涓">
-    <Computer Name="::1" LoginTime="2022-04-29 13:11:18" Count="1" />
+<InfolightUsers>
+  <String UserId="121" UserName="張孟萱">
+    <Computer Name="::1" LoginTime="2022-07-19 09:40:37" Count="1" />
   </String>
   <String UserId="335" UserName="吳椿捷">
-    <Computer Name="::1" LoginTime="2021-10-26 16:00:06" Count="27" />
-  </String>
-  <String UserId="002" UserName="鍾淑霞">
-    <Computer Name="::1" LoginTime="2022-02-09 09:48:00" Count="3" />
-  </String>
-  <String UserId="001" UserName="張凱雄">
-    <Computer Name="::1" LoginTime="2021-01-21 22:55:56" Count="20" />
-  </String>
-  <String UserId="121" UserName="張孟萱">
-    <Computer Name="::1" LoginTime="2021-03-10 12:55:35" Count="1" />
-  </String>
-  <String UserId="012" UserName="洪敏雲">
-    <Computer Name="::1" LoginTime="2022-05-04 11:21:22" Count="1" />
+    <Computer Name="::1" LoginTime="2022-07-20 15:12:52" Count="1" />
   </String>
   <String UserId="009" UserName="程進昇">
-    <Computer Name="172.19.144.1" LoginTime="2021-09-16 11:59:41" Count="1" />
-    <Computer Name="192.168.9.1" LoginTime="2021-09-28 17:26:34" Count="1" />
-    <Computer Name="192.168.1.121" LoginTime="2022-01-27 13:20:01" Count="2" />
-    <Computer Name="192.168.1.168" LoginTime="2021-09-15 13:20:25" Count="4" />
-    <Computer Name="10.10.1.1" LoginTime="2021-04-10 10:49:12" Count="2" />
-    <Computer Name="192.168.112.1" LoginTime="2022-01-04 09:33:56" Count="1" />
-    <Computer Name="172.20.144.1" LoginTime="2021-10-05 09:47:02" Count="2" />
-    <Computer Name="192.168.1.127" LoginTime="2021-02-20 09:41:30" Count="2" />
-    <Computer Name="172.22.48.1" LoginTime="2021-09-04 14:42:40" Count="1" />
-    <Computer Name="172.31.32.1" LoginTime="2021-10-13 12:32:12" Count="1" />
-    <Computer Name="172.24.112.1" LoginTime="2021-10-14 08:50:15" Count="1" />
-    <Computer Name="172.26.144.1" LoginTime="2021-12-20 13:49:02" Count="1" />
-    <Computer Name="172.27.64.1" LoginTime="2021-11-18 12:46:21" Count="1" />
-    <Computer Name="172.28.128.1" LoginTime="2021-10-22 11:25:08" Count="2" />
-    <Computer Name="::1" LoginTime="2021-01-01 20:34:56" Count="1340" />
-    <Computer Name="169.254.8.248" LoginTime="2021-03-30 13:23:41" Count="1" />
-    <Computer Name="172.20.80.1" LoginTime="2021-12-06 11:40:16" Count="1" />
-    <Computer Name="172.24.240.1" LoginTime="2021-10-19 13:27:02" Count="2" />
-    <Computer Name="172.17.80.1" LoginTime="2021-11-11 10:29:32" Count="1" />
-    <Computer Name="192.168.1.4" LoginTime="2021-03-15 21:19:02" Count="1" />
-    <Computer Name="172.17.96.1" LoginTime="2021-11-03 10:37:04" Count="1" />
-    <Computer Name="192.168.1.74" LoginTime="2022-04-25 15:15:29" Count="1" />
-    <Computer Name="172.19.32.1" LoginTime="2021-09-27 21:39:12" Count="3" />
-    <Computer Name="192.168.48.1" LoginTime="2021-10-26 16:07:44" Count="1" />
-    <Computer Name="192.168.56.1" LoginTime="2021-01-21 09:13:40" Count="1" />
+    <Computer Name="192.168.1.83" LoginTime="2022-07-19 08:37:36" Count="1" />
+    <Computer Name="192.168.1.74" LoginTime="2022-07-20 10:09:54" Count="3" />
+    <Computer Name="192.168.1.158" LoginTime="2022-07-21 13:21:19" Count="1" />
+    <Computer Name="::1" LoginTime="2022-07-18 10:29:17" Count="25" />
   </String>
 </InfolightUsers>

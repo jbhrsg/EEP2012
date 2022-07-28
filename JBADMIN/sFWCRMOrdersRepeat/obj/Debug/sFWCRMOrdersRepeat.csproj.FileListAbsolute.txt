@@ -1,0 +1,7 @@
+D:\Infolight\EEP2012\EEPNetServer\JBADMIN\sFWCRMOrdersRepeat.dll
+D:\Infolight\EEP2012\EEPNetServer\JBADMIN\sFWCRMOrdersRepeat.pdb
+D:\Infolight\EEP2012\JBADMIN\sFWCRMOrdersRepeat\obj\Debug\sFWCRMOrdersRepeat.Component.resources
+D:\Infolight\EEP2012\JBADMIN\sFWCRMOrdersRepeat\obj\Debug\sFWCRMOrdersRepeat.csproj.GenerateResource.Cache
+D:\Infolight\EEP2012\JBADMIN\sFWCRMOrdersRepeat\obj\Debug\sFWCRMOrdersRepeat.dll
+D:\Infolight\EEP2012\JBADMIN\sFWCRMOrdersRepeat\obj\Debug\sFWCRMOrdersRepeat.pdb
+D:\Infolight\EEP2012\JBADMIN\sFWCRMOrdersRepeat\obj\Debug\sFWCRMOrdersRepeat.csprojResolveAssemblyReference.cache

@@ -10,23 +10,25 @@
     <script type="text/javascript">
         $(document).ready(function () {
             //將Focus 欄位背景顏色改為黃色
-            $(function () {
-                $("input, select, textarea").focus(function () {
-                    $(this).css("background-color", "yellow");
-                });
-                $("input, select, textarea").blur(function () {
-                    $(this).css("background-color", "white");
-                });
-            });
+            //$(function () {
+            //    $("input, select, textarea").focus(function () {
+            //        $(this).css("background-color", "yellow");
+            //    });
+            //    $("input, select, textarea").blur(function () {
+            //        $(this).css("background-color", "white");
+            //    });
+            //});
             var StaTime = $('#dataFormMasterStaTime').closest('td');
             var EndTime = $('#dataFormMasterEndTime').closest('td').children();
             StaTime.append(' - ').append(EndTime)
 
-            setTimeout("setWhere()", 10);
+            var date = new Date();
+            var now = $.jbjob.Date.DateFormat(date, 'yyyy/MM/dd');
+            $("#dataGridView").datagrid('setWhere', "IsActive=1 and ApplyDate='" + now + "'");// 
 
-            //查詢條件=>預設是否有效
-            $('input:radio[name=IsActive_Query_0][value=1]').attr('checked', true);
+            //setTimeout("TimesetWhere()", 10);
 
+            ////查詢條件=>預設是否有效
             //Grid設定寬度
             var dgid = $('#dataGridView');
             var queryPanel = getInfolightOption(dgid).queryDialog;
@@ -40,11 +42,11 @@
             });
         });
 
-        function setWhere() {
-            var date = new Date();
-            var now = $.jbjob.Date.DateFormat(date, 'yyyy/MM/dd');
-            $("#dataGridView").datagrid('setWhere', "IsActive=1 and ApplyDate='" + now + "'");// 
-        }
+        //function TimesetWhere() {
+        //    var date = new Date();
+        //    var now = $.jbjob.Date.DateFormat(date, 'yyyy/MM/dd');
+        //    $("#dataGridView").datagrid('setWhere', "IsActive=1 and ApplyDate='" + now + "'");// 
+        //}
         //查詢后添加固定條件
         function queryGrid(dg) {
                      
@@ -55,12 +57,12 @@
                     alert("起迄時間格式錯誤！");
                 } else {
                     var where = $(dg).datagrid('getWhere');
-                    var value = $("input:radio[name='IsActive_Query_0']:checked").val();
-                    if (where.length > 0) {
-                        where = where + " and IsActive=" + value;
-                    } else {
-                        where = "IsActive = " + value;
-                    }
+                  
+                    var s = "StaTime='" + Stime + "' and EndTime='" + Etime + "'";
+                    where = where.replace(s, "((StaTime between '" + Stime + "' and '" + Etime + "') or (EndTime between '" + Stime + "' and '" + Etime + "') or (StaTime < '" + Stime + "' and EndTime >'" + Etime + "'))");
+
+                    var value = $("input:radio[name='IsActive_Query_0']:checked").val();                    
+                    where = where + " and IsActive=" + value;                   
                     $(dg).datagrid('setWhere', where);
                 }
             }
@@ -165,6 +167,33 @@
             $('#dataGridView').datagrid('reload');
         }
 
+        function OnLoad_dataFormMaster() {
+            //取得部門代號
+            if ($("#dataFormMasterORG_NO").val() == "") {
+                GetUserOrgNOs();
+            }
+        }
+
+        function GetUserOrgNOs() {
+            var UserID = getClientInfo("UserID");
+            $.ajax({
+                type: "POST",
+                url: '../handler/jqDataHandle.ashx?RemoteName=sDeviceUse.DeviceUse', //連接的Server端，command
+                data: "mode=method&method=" + "GetUserOrgNOs" + "&parameters=" + UserID, //method后的參數為server的Method名稱  parameters后為端的到后端的參數這裡傳入選中資料的CustomerID欄位
+                cache: false,
+                async: false,
+                success: function (data) {
+                    //console.log(data);
+                    var rows = $.parseJSON(data);
+                    if (rows.length > 0) {
+                        $("#dataFormMasterORG_NO").val(rows[0].OrgNO);
+                        //$("#dataFormMasterOrg_NOParent").val(rows[0].OrgNOParent);
+                    }
+                }
+            }
+            );
+        }
+
         var oldQuery = query;
         query = function (dgid) {
             if (dgid == '#dataGridView') {
@@ -173,7 +202,7 @@
             }
             else return oldQuery.call(this, dgid);
         };
-      
+       
     </script>
 </head>
 <body>
@@ -185,7 +214,7 @@
                 Title="設備借用一覽表" AllowAdd="True" AllowDelete="False" AllowUpdate="True" AlwaysClose="True" CheckOnSelect="True" ColumnsHibeable="False" DeleteCommandVisible="False" DuplicateCheck="False" EditMode="Dialog" EditOnEnter="True" InsertCommandVisible="True" MultiSelect="False" PageList="10,20,30,40,50" PageSize="10" QueryAutoColumn="False" QueryLeft="50px" QueryMode="Window" QueryTop="50px" RecordLock="False" RecordLockMode="None" TotalCaption="Total:" UpdateCommandVisible="True" ViewCommandVisible="True" OnUpdate="UpdateRow" OnLoadSuccess="queryGrid" Width="920px">
                 <Columns>
                     <JQTools:JQGridColumn Alignment="center" Caption="借用編號" Editor="text" FieldName="UseNO" Format="" MaxLength="0" Width="90" />                    
-                    <JQTools:JQGridColumn Alignment="left" Caption="設備項目" Editor="infocombobox" FieldName="DeviceItemsID" Format="" Width="120" EditorOptions="valueField:'DeviceItemsID',textField:'DeviceItemsName',remoteName:'sDeviceUse.infoDeviceItems',tableName:'infoDeviceItems',pageSize:'-1',checkData:false,selectOnly:false,cacheRelationText:false,panelHeight:200" Sortable="True" />
+                    <JQTools:JQGridColumn Alignment="left" Caption="設備項目" Editor="text" FieldName="DeviceItemsName" Format="" Width="120" EditorOptions="" Sortable="True" />
                     <JQTools:JQGridColumn Alignment="center" Caption="借用日期" Editor="datebox" FieldName="ApplyDate" Format="yyyy/mm/dd" Width="80" Sortable="True" />
                     <JQTools:JQGridColumn Alignment="center" Caption="起迄時間" Editor="text" FieldName="timerange" Format="" MaxLength="0" Width="80" Sortable="True" />
                    
@@ -204,29 +233,30 @@
                 <QueryColumns>
                     <JQTools:JQQueryColumn AndOr="and" Caption="起始日期" Condition="&gt;=" DataType="datetime" DefaultMethod="SetApplyDate" Editor="datebox" FieldName="ApplyDate" Format="yyyy/mm/dd" IsNvarChar="False" NewLine="True" RemoteMethod="False" Width="90" />
                     <JQTools:JQQueryColumn AndOr="and" Caption="終止日期" Condition="&lt;=" DataType="datetime" DefaultMethod="SetApplyDate" Editor="datebox" FieldName="ApplyDate" Format="yyyy/mm/dd" IsNvarChar="False" NewLine="False" RemoteMethod="False" Width="90" />
-                    <JQTools:JQQueryColumn AndOr="and" Caption="起始時間" Condition="&gt;=" DataType="string" DefaultMethod="" Editor="text" FieldName="StaTime" Format="" IsNvarChar="False" NewLine="True" RemoteMethod="False" Width="80" />
-                    <JQTools:JQQueryColumn AndOr="and" Caption="終止時間" Condition="&lt;=" DataType="string" DefaultMethod="" Editor="text" FieldName="EndTime" Format="" IsNvarChar="False" NewLine="False" RemoteMethod="False" Width="80" />
-                    <JQTools:JQQueryColumn AndOr="and" Caption="設備項目" Condition="=" DataType="number" Editor="infocombobox" EditorOptions="valueField:'DeviceItemsID',textField:'DeviceItemsName',remoteName:'sDeviceUse.infoDeviceItems',tableName:'infoDeviceItems',pageSize:'-1',checkData:false,selectOnly:false,cacheRelationText:false,panelHeight:200" FieldName="DeviceItemsID" IsNvarChar="False" NewLine="True" RemoteMethod="False" Width="125" />
-                    <JQTools:JQQueryColumn AndOr="and" Caption="是否有效" Condition="=" DataType="string" Editor="infooptions" EditorOptions="title:'JQOptions',panelWidth:90,remoteName:'',tableName:'',valueField:'',textField:'',columnCount:2,multiSelect:false,openDialog:false,selectAll:false,selectOnly:false,items:[{text:'是',value:'1'},{text:'否',value:'0'}]" FieldName="IsActive" IsNvarChar="False" NewLine="False" RemoteMethod="False" Width="125" />
+                    <JQTools:JQQueryColumn AndOr="and" Caption="起始時間" Condition="=" DataType="string" DefaultMethod="" Editor="text" FieldName="StaTime" Format="" IsNvarChar="False" NewLine="True" RemoteMethod="False" Width="80" />
+                    <JQTools:JQQueryColumn AndOr="and" Caption="終止時間" Condition="=" DataType="string" DefaultMethod="" Editor="text" FieldName="EndTime" Format="" IsNvarChar="False" NewLine="False" RemoteMethod="False" Width="80" />
+                    <JQTools:JQQueryColumn AndOr="and" Caption="設備項目" Condition="=" DataType="number" Editor="infocombobox" EditorOptions="valueField:'DeviceItemsID',textField:'DeviceItemsName',remoteName:'sDeviceUse.infoDeviceItems',tableName:'infoDeviceItems',pageSize:'-1',checkData:false,selectOnly:false,cacheRelationText:false,panelHeight:200" FieldName="d.DeviceItemsID" IsNvarChar="False" NewLine="True" RemoteMethod="False" Width="125" />
+                    <JQTools:JQQueryColumn AndOr="and" Caption="是否有效" Condition="=" DataType="string" Editor="infooptions" EditorOptions="title:'JQOptions',panelWidth:90,remoteName:'',tableName:'',valueField:'',textField:'',columnCount:2,multiSelect:false,openDialog:false,selectAll:false,selectOnly:false,items:[{text:'是',value:'1'},{text:'否',value:'0'}]" FieldName="IsActive" IsNvarChar="False" NewLine="False" RemoteMethod="False" Width="125" DefaultValue="1" />
                 </QueryColumns>
             </JQTools:JQDataGrid>
 
             <JQTools:JQDialog ID="JQDialog1" runat="server" BindingObjectID="dataFormMaster" Title="設備借用申請">
-                <JQTools:JQDataForm ID="dataFormMaster" runat="server" DataMember="DeviceUse" HorizontalColumnsCount="3" RemoteName="sDeviceUse.DeviceUse" Closed="False" ContinueAdd="False" disapply="False" DuplicateCheck="False" IsAutoPageClose="False" IsAutoPause="False" IsAutoSubmit="False" IsNotifyOFF="False" IsRejectNotify="False" IsRejectON="False" IsShowFlowIcon="False" ShowApplyButton="False" ValidateStyle="Hint" OnApply="checkCombo" OnApplied="GridReload" >
+                <JQTools:JQDataForm ID="dataFormMaster" runat="server" DataMember="DeviceUse" HorizontalColumnsCount="3" RemoteName="sDeviceUse.DeviceUse" Closed="False" ContinueAdd="False" disapply="False" DuplicateCheck="False" IsAutoPageClose="False" IsAutoPause="False" IsAutoSubmit="False" IsNotifyOFF="False" IsRejectNotify="False" IsRejectON="False" IsShowFlowIcon="False" ShowApplyButton="False" ValidateStyle="Hint" OnApply="checkCombo" OnApplied="GridReload" AlwaysReadOnly="False" DivFramed="False" HorizontalGap="0" OnLoadSuccess="OnLoad_dataFormMaster" VerticalGap="0" >
                     <Columns>
-                        <JQTools:JQFormColumn Alignment="left" Caption="借用編號" Editor="text" FieldName="UseNO" Format="" maxlength="0" Width="130" ReadOnly="True" Span="2" />
-                        <JQTools:JQFormColumn Alignment="left" Caption="借用日期" Editor="datebox" FieldName="ApplyDate" Format="" Width="90" />
-                        <JQTools:JQFormColumn Alignment="left" Caption="設備類別" Editor="infocombobox" EditorOptions="valueField:'DeviceMasterID',textField:'DeviceMasterName',remoteName:'sDeviceUse.infoDeviceMaster',tableName:'infoDeviceMaster',pageSize:'-1',checkData:false,selectOnly:false,cacheRelationText:false,onSelect:GetDeviceMasterID,panelHeight:200" FieldName="DeviceMasterID" Width="130" Span="2" />
+                        <JQTools:JQFormColumn Alignment="left" Caption="借用編號" Editor="text" FieldName="UseNO" Format="" Width="130" ReadOnly="True" Span="2" />
+                        <JQTools:JQFormColumn Alignment="left" Caption="借用日期" Editor="datebox" FieldName="ApplyDate" Format="" Width="90" Span="1" />
+                        <JQTools:JQFormColumn Alignment="left" Caption="設備類別" Editor="infocombobox" EditorOptions="valueField:'DeviceMasterID',textField:'DeviceMasterName',remoteName:'sDeviceUse.infoDeviceMaster',tableName:'infoDeviceMaster',pageSize:'-1',checkData:false,selectOnly:false,cacheRelationText:false,onSelect:GetDeviceMasterID,panelHeight:200" FieldName="DeviceMasterID" Width="130" Span="2" MaxLength="0" ReadOnly="False" Visible="True" />
                         <JQTools:JQFormColumn Alignment="left" Caption="設備項目" Editor="infocombobox" EditorOptions="valueField:'DeviceItemsID',textField:'DeviceItemsName',remoteName:'sDeviceUse.infoDeviceItems',tableName:'infoDeviceItems',pageSize:'-1',checkData:false,selectOnly:false,cacheRelationText:false,panelHeight:200" FieldName="DeviceItemsID" Format="" MaxLength="0" NewRow="False" ReadOnly="False" RowSpan="1" Span="1" Visible="True" Width="180" />
-                        <JQTools:JQFormColumn Alignment="left" Caption="起迄時間" Editor="text" FieldName="StaTime" Format="" MaxLength="0" Width="41" Span="1" ReadOnly="False" Visible="True" />
-                        <JQTools:JQFormColumn Alignment="left" Caption=" " Editor="text" FieldName="EndTime" Format="" MaxLength="0" Span="2" Width="41" NewRow="False" ReadOnly="False" RowSpan="1" Visible="True" />
-                        <JQTools:JQFormColumn Alignment="left" Caption="用途說明" Editor="textarea" FieldName="OutLine" Format="" Span="3" Width="365" />
-                        <JQTools:JQFormColumn Alignment="left" Caption="確認借用" Editor="checkbox" FieldName="IsActive" Format="" maxlength="0" Width="50" EditorOptions="on:1,off:0" Span="3" />
-                        <JQTools:JQFormColumn Alignment="left" Caption="CreateBy" Editor="text" FieldName="CreateBy" Format="" maxlength="0" Width="180" Visible="False" />
-                        <JQTools:JQFormColumn Alignment="left" Caption="CreateDate" Editor="datebox" FieldName="CreateDate" Format="" Width="180" Visible="False" />
+                        <JQTools:JQFormColumn Alignment="left" Caption="起迄時間" Editor="text" FieldName="StaTime" Format="" MaxLength="0" Width="41" Span="1" ReadOnly="False" Visible="True" NewRow="False" RowSpan="1" />
+                        <JQTools:JQFormColumn Alignment="left" Caption=" " Editor="text" FieldName="EndTime" Format="" Span="2" Width="41" />
+                        <JQTools:JQFormColumn Alignment="left" Caption="用途說明" Editor="textarea" FieldName="OutLine" Format="" Span="3" Width="365" maxlength="0" />
+                        <JQTools:JQFormColumn Alignment="left" Caption="確認借用" Editor="checkbox" FieldName="IsActive" Format="" maxlength="0" Width="50" EditorOptions="on:1,off:0" Span="3" Visible="True" />
+                        <JQTools:JQFormColumn Alignment="left" Caption="CreateBy" Editor="text" FieldName="CreateBy" Format="" Width="180" Visible="False" />
+                        <JQTools:JQFormColumn Alignment="left" Caption="CreateDate" Editor="datebox" FieldName="CreateDate" Format="" Width="180" Visible="False" maxlength="0" />
                         <JQTools:JQFormColumn Alignment="left" Caption="ApplyEmpID" Editor="text" FieldName="ApplyEmpID" Format="" maxlength="0" Width="180" Visible="False" />
-                        <JQTools:JQFormColumn Alignment="left" Caption="LastUpdateBy" Editor="text" FieldName="LastUpdateBy" Format="" maxlength="0" Width="180" Visible="False" />
-                        <JQTools:JQFormColumn Alignment="left" Caption="LastUpdateDate" Editor="datebox" FieldName="LastUpdateDate" Format="" Width="180" Visible="False" />
+                        <JQTools:JQFormColumn Alignment="left" Caption="LastUpdateBy" Editor="text" FieldName="LastUpdateBy" Format="" Width="180" Visible="False" />
+                        <JQTools:JQFormColumn Alignment="left" Caption="LastUpdateDate" Editor="datebox" FieldName="LastUpdateDate" Format="" Width="180" Visible="False" MaxLength="0" NewRow="False" ReadOnly="False" RowSpan="1" Span="1" />
+                        <JQTools:JQFormColumn Alignment="left" Caption="ORG_NO" Editor="text" FieldName="ORG_NO" MaxLength="0" ReadOnly="False" Span="1" Visible="False" Width="80" />
                     </Columns>
                 </JQTools:JQDataForm>
                 <JQTools:JQDefault ID="defaultMaster" runat="server" BindingObjectID="dataFormMaster" EnableTheming="True">

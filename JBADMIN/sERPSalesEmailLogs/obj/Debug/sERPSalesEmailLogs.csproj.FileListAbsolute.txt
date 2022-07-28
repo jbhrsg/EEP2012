@@ -1,0 +1,9 @@
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sERPSalesEmailLogs\bin\Debug\sERPSalesEmailLogs.dll
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sERPSalesEmailLogs\bin\Debug\sERPSalesEmailLogs.pdb
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sERPSalesEmailLogs\obj\Debug\sERPSalesEmailLogs.csprojResolveAssemblyReference.cache
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sERPSalesEmailLogs\obj\Debug\sERPSalesEmailLogs.csproj.GenerateResource.Cache
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sERPSalesEmailLogs\obj\Debug\sERPSalesEmailLogs.dll
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sERPSalesEmailLogs\obj\Debug\sERPSalesEmailLogs.pdb
+C:\Program Files (x86)\Infolight\EEP2012\EEPNetServer\JBADMIN\sERPSalesEmailLogs.dll
+C:\Program Files (x86)\Infolight\EEP2012\EEPNetServer\JBADMIN\sERPSalesEmailLogs.pdb
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sERPSalesEmailLogs\obj\Debug\sERPSalesEmailLogs.Component.resources

@@ -121,7 +121,11 @@ namespace sAttend_Overtime
 
             try
             {
-                string sql = "select A.ROTE_ID," + "\r\n";
+                string sql = "select ROTE_ID from HRM_ATTEND_ROTEMAPPING_DETAIL where ROTEMAPPING_CODE = 'OffDay' or ROTEMAPPING_CODE = 'Holidays'" + "\r\n";
+                DataTable dtRoteMappingDetail = this.ExecuteSql(sql, connection, transaction).Tables[0];
+                dtRoteMappingDetail.PrimaryKey = new DataColumn[] { dtRoteMappingDetail.Columns["ROTE_ID"] };
+
+                sql = "select A.ROTE_ID," + "\r\n";
                 sql = sql + "C.ROTE_CODE," + "\r\n";
                 sql = sql + "C.ON_TIME," + "\r\n";
                 sql = sql + "C.OFF_TIME," + "\r\n";
@@ -165,10 +169,15 @@ namespace sAttend_Overtime
                         on_time = dsHRM_ATTEND_ATTEND.Tables[0].Rows[0]["UPPER_ON_TIME"].ToString();
                         off_time = dsHRM_ATTEND_ATTEND.Tables[0].Rows[0]["UPPER_OFF_TIME"].ToString();
                     }
-                    //判斷當班別是否須刷卡為 'Y' 時才需要判斷刷卡資料
-                    if (dsHRM_ATTEND_ATTEND.Tables[0].Rows[0]["IS_CARD"].ToString() == "Y")
+                    //判斷考勤群組參數ComputingCard是否須刷卡為 1 時才需要判斷刷卡資料
+                    sql = "SELECT * FROM [dbo].[dt_Attend_GroupParameterValue]('" + employeeID + "','" + overtimeDate + "') where GROUP_PARAMETER_CODE = 'ComputingCard'" + "\r\n";
+                    DataSet dsGROUP_PARAMETER = this.ExecuteSql(sql, connection, transaction);
+                    dsGROUP_PARAMETER.Dispose();
+
+                    if (dsGROUP_PARAMETER.Tables[0].Rows[0]["ParameterValue"].ToString() == "1")
                     {
                         if (Convert.IsDBNull(dsHRM_ATTEND_ATTEND.Tables[0].Rows[0]["CARD_ON_TIME"]) && Convert.IsDBNull(dsHRM_ATTEND_ATTEND.Tables[0].Rows[0]["CARD_OFF_TIME"]))
+                            //rejectCode = "";
                             rejectCode = "1";   //申請日期查無出勤刷卡資料
                         else if (dsHRM_ATTEND_ATTEND.Tables[0].Rows[0]["CARD_ON_TIME"].ToString().Length == 0 || dsHRM_ATTEND_ATTEND.Tables[0].Rows[0]["CARD_OFF_TIME"].ToString().Length == 0)
                             rejectCode = "2";   //申請日期出勤刷卡資料不完整
@@ -189,7 +198,9 @@ namespace sAttend_Overtime
                     aOverTime.End = endOvertimeDate;
 
                     //計算正常上班時間
-                    if (dsHRM_ATTEND_ATTEND.Tables[0].Rows[0]["ROTE_CODE"].ToString() != "00")
+                    //if (dsHRM_ATTEND_ATTEND.Tables[0].Rows[0]["ROTE_CODE"].ToString() != "00")
+                    DataRow drRoteMappingDetail = dtRoteMappingDetail.Rows.Find(dsHRM_ATTEND_ATTEND.Tables[0].Rows[0]["ROTE_CODE"].ToString());
+                    if (drRoteMappingDetail == null) 
                     {
                         roteBeginTime = DateAndTimeMerger(overtimeDate, rote_on_time);
                         roteEndTime = DateAndTimeMerger(overtimeDate, rote_off_time);
@@ -221,18 +232,17 @@ namespace sAttend_Overtime
                         restEndTime = DateAndTimeMerger(overtimeDate, Row1["REST_END_TIME"].ToString());
                         ts = restEndTime - restBeginTime;
 
-                        if (Row1["IS_OVERTIME"].ToString() == "Y")  //加班單是否參考
+                        //if (roteCode == "00" && Row1["IS_HOLIDAY_OVERTIME"].ToString() == "Y")   //假日是否參考
+                        if (drRoteMappingDetail != null && Row1["IS_HOLIDAY_OVERTIME"].ToString() == "Y")   //假日是否參考
                         {
-                            if (roteCode == "00" && Row1["IS_HOLIDAY"].ToString() == "Y")   //假日是否參考
-                            {
-                                Reduce.Add(new TheTimeRange { Begin = restBeginTime, End = restEndTime });
-                            }
-                            else if (roteCode != "00" && Row1["IS_NORMAL"].ToString() == "Y")   //平日是否參考	5
-                            {
-                                //restHours = restHours + Convert.ToDecimal(ts.TotalHours);
-                                //restMinutes = restMinutes + Convert.ToDecimal(ts.TotalMinutes);
-                                Reduce.Add(new TheTimeRange { Begin = restBeginTime, End = restEndTime });
-                            }
+                            Reduce.Add(new TheTimeRange { Begin = restBeginTime, End = restEndTime });
+                        }
+                        //else if (roteCode != "00" && Row1["IS_NORMAL_OVERTIME"].ToString() == "Y")   //平日是否參考	5
+                        else if (drRoteMappingDetail == null && Row1["IS_NORMAL_OVERTIME"].ToString() == "Y")   //平日是否參考	5
+                        {
+                            //restHours = restHours + Convert.ToDecimal(ts.TotalHours);
+                            //restMinutes = restMinutes + Convert.ToDecimal(ts.TotalMinutes);
+                            Reduce.Add(new TheTimeRange { Begin = restBeginTime, End = restEndTime });
                         }
                     }
 
@@ -252,7 +262,8 @@ namespace sAttend_Overtime
                     //計算加班時間
                     Reduce = RangeCheck(Reduce);
                     var ReduceMinute = MinuteOfRange(Reduce, aOverTime);
-                    var TotalMinute = (int)new TimeSpan(aOverTime.End.Ticks).Subtract(new TimeSpan(aOverTime.Begin.Ticks)).Duration().TotalMinutes;
+                    //var TotalMinute = (int)new TimeSpan(aOverTime.End.Ticks).Subtract(new TimeSpan(aOverTime.Begin.Ticks)).Duration().TotalMinutes;
+                    var TotalMinute = (int)new TimeSpan(aOverTime.End.Ticks - aOverTime.Begin.Ticks).TotalMinutes;
 
                     int iMin = Convert.ToInt32((TotalMinute - ReduceMinute) % 30);
                     minutes = ((TotalMinute - ReduceMinute) - iMin);

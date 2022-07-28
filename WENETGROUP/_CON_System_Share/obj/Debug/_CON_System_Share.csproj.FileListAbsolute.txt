@@ -1,6 +1,0 @@
-C:\Program Files (x86)\Infolight\EEP2012\EEPNetServer\WENETGROUP\_CON_System_Share.dll
-C:\Program Files (x86)\Infolight\EEP2012\EEPNetServer\WENETGROUP\_CON_System_Share.pdb
-C:\Program Files (x86)\Infolight\EEP2012\WENETGROUP\_CON_System_Share\obj\Debug\_CON_System_Share.Component.resources
-C:\Program Files (x86)\Infolight\EEP2012\WENETGROUP\_CON_System_Share\obj\Debug\_CON_System_Share.csproj.GenerateResource.Cache
-C:\Program Files (x86)\Infolight\EEP2012\WENETGROUP\_CON_System_Share\obj\Debug\_CON_System_Share.dll
-C:\Program Files (x86)\Infolight\EEP2012\WENETGROUP\_CON_System_Share\obj\Debug\_CON_System_Share.pdb

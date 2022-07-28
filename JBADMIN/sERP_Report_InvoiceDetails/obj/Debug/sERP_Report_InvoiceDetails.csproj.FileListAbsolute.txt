@@ -1,0 +1,9 @@
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sERP_Report_InvoiceDetails\bin\Debug\sERP_Report_InvoiceDetails.dll
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sERP_Report_InvoiceDetails\bin\Debug\sERP_Report_InvoiceDetails.pdb
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sERP_Report_InvoiceDetails\obj\Debug\sERP_Report_InvoiceDetails.csproj.GenerateResource.Cache
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sERP_Report_InvoiceDetails\obj\Debug\sERP_Report_InvoiceDetails.dll
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sERP_Report_InvoiceDetails\obj\Debug\sERP_Report_InvoiceDetails.pdb
+C:\Program Files (x86)\Infolight\EEP2012\EEPNetServer\JBADMIN\sERP_Report_InvoiceDetails.dll
+C:\Program Files (x86)\Infolight\EEP2012\EEPNetServer\JBADMIN\sERP_Report_InvoiceDetails.pdb
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sERP_Report_InvoiceDetails\obj\Debug\sERP_Report_InvoiceDetails.Component.resources
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sERP_Report_InvoiceDetails\obj\Debug\sERP_Report_InvoiceDetails.csprojResolveAssemblyReference.cache

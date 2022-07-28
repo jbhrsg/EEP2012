@@ -8,41 +8,51 @@
     <title></title>
         <script type="text/javascript">
             $(document).ready(function () {
+             
                 //雇主名稱+簡稱合併
                 var EmployerName = $('#dataFormMasterEmployerName').closest('td');
                 var ShortName = $('#dataFormMasterEmployerShortName').closest('td').children();
                 EmployerName.append('&nbsp;簡稱').append(ShortName);
+
                 //雇主地址合併
                 //var City = $('#dataFormMasterCustomerCity').closest('td');
                 //var City2 = $('#dataFormMasterCustomerCity2').closest('td').children();
                 //var Address = $('#dataFormMasterEmployerAddress').closest('td').children();
                 //City.append('&nbsp;').append(City2).append('&nbsp;').append(Address);
+
                 //分開收費註解
                 var FirstFeeType = $('#dataFormMasterFirstFeeType').closest('td');                
                 FirstFeeType.append('(不打勾,指16號(含)以後外勞的住宿費用累計下個月一起收)');
                 $("#dataFormMasterFirstFeeType").closest('td').css("color", "blue");
+
                 //加上(顏色)的欄位
                 var HideFieldName = ['EmployerFee', 'EmployerFee2'];
                 var FormName = '#dataFormMaster';
+
                 $.each(HideFieldName, function (index, fieldName) {
                     var Name = $(FormName + fieldName);                   
                     $(FormName + fieldName).closest('td').prev('td').css("color", "rgb(138, 43, 226)");
                 });
-                //傳入客戶代號查詢,並呼叫編輯主畫面
+
+                //--------------客戶職缺傳入客戶代號 => 查詢客戶---------------------------------------------------
                 var parameter = Request.getQueryStringByName("CustID");
                 if (parameter != "") {
+                   
                     $("#dataGridView").datagrid('setWhere', "ERPCustomerID = '" + parameter + "'");
-                    setTimeout(function () {
-                        openForm('#JQDialog1', $('#dataGridView').datagrid('getSelected'), "updated", 'dialog');
-                    }, 800);
+                    //setTimeout(function () {
+                    //    openForm('#JQDialog1', $('#dataGridView').datagrid('getSelected'), "updated", 'dialog');
+                    //}, 800);
                 }
+
             });        
+       
             function ckIsActive(val) {
                 if (val != "0")
                     return "<input  type='checkbox' checked='true' onclick='return false;'/>";
                 else
                     return "<input  type='checkbox' onclick='return false;'/>";
             }
+
             function queryGrid(dg) {//查詢後添加固定條件
                 if ($(dg).attr('id') == 'dataGridView') {
                     //查詢條件
@@ -54,10 +64,16 @@
                     $(dg).datagrid('setWhere', result.join(' and '));
                 }
             }
+
             function OnAppliedCus() {
                 $('#dataGridView').datagrid("reload");
             }
+
         </script>
+
+
+
+
 </head>
 <body>
     <form id="form1" runat="server">
@@ -91,7 +107,7 @@
                         OnClick="openQuery" Text="查詢" />--%>
                 </TooItems>
                 <QueryColumns>
-                    <JQTools:JQQueryColumn AndOr="and" Caption="雇主名稱/雇主編號/統一編號" Condition="%" DataType="string" Editor="text" FieldName="EmployerName" IsNvarChar="False" NewLine="False" RemoteMethod="False" RowSpan="0" Span="0" Width="125" />
+                    <JQTools:JQQueryColumn AndOr="and" Caption="雇主名稱/雇主編號/統一編號" Condition="%" DataType="string" Editor="text" FieldName="EmployerName" IsNvarChar="False" NewLine="True" RemoteMethod="False" RowSpan="0" Span="0" Width="125" />
                 </QueryColumns>
             </JQTools:JQDataGrid>
 
@@ -102,7 +118,7 @@
                         <JQTools:JQFormColumn Alignment="left" Caption="EmployerID" Editor="text" FieldName="EmployerID" Format="" maxlength="0" Visible="False" Width="80" />
                         <JQTools:JQFormColumn Alignment="left" Caption="雇主分類" Editor="infocombobox" EditorOptions="items:[{value:'1',text:'個人',selected:'false'},{value:'2',text:'公司',selected:'false'}],checkData:false,selectOnly:true,cacheRelationText:false,panelHeight:200" FieldName="EmployerType" Format="" Width="80" NewRow="True" />
                         <JQTools:JQFormColumn Alignment="left" Caption="雇主名稱" Editor="text" FieldName="EmployerName" Format="" maxlength="0" Width="170" Span="2" ReadOnly="True" Visible="True" />
-                        <JQTools:JQFormColumn Alignment="left" Caption="統一編號" Editor="numberbox" FieldName="EmployerPID" Format="" maxlength="0" Width="100" ReadOnly="True" Visible="True" />
+                        <JQTools:JQFormColumn Alignment="left" Caption="統一編號" Editor="text" FieldName="EmployerPID" Format="" maxlength="0" Width="100" ReadOnly="True" Visible="True" />
                         <JQTools:JQFormColumn Alignment="left" Caption="雇主編號" Editor="text" FieldName="EmployerNo" Format="" maxlength="0" Width="100" NewRow="False" />
                         <JQTools:JQFormColumn Alignment="left" Caption="雇主地址" Editor="text" FieldName="EmployerAddress" Format="" maxlength="0" ReadOnly="True" Span="3" Width="430" />
                         <JQTools:JQFormColumn Alignment="left" Caption="負責業務" Editor="infocombobox" EditorOptions="valueField:'ID',textField:'Name',remoteName:'sFwcrmCustomer.infoSalesId',tableName:'infoSalesId',pageSize:'-1',checkData:false,selectOnly:false,cacheRelationText:false,panelHeight:200" FieldName="SalesID" Format="" maxlength="0" Width="105" Span="1" ReadOnly="False" Visible="True" />

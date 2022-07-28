@@ -43,16 +43,22 @@
             Srvtools.FieldAttr fieldAttr5 = new Srvtools.FieldAttr();
             Srvtools.FieldAttr fieldAttr6 = new Srvtools.FieldAttr();
             Srvtools.KeyItem keyItem7 = new Srvtools.KeyItem();
+            Srvtools.KeyItem keyItem8 = new Srvtools.KeyItem();
+            Srvtools.FieldAttr fieldAttr7 = new Srvtools.FieldAttr();
+            Srvtools.FieldAttr fieldAttr8 = new Srvtools.FieldAttr();
+            Srvtools.FieldAttr fieldAttr9 = new Srvtools.FieldAttr();
+            Srvtools.FieldAttr fieldAttr10 = new Srvtools.FieldAttr();
+            Srvtools.FieldAttr fieldAttr11 = new Srvtools.FieldAttr();
             this.serviceManager1 = new Srvtools.ServiceManager(this.components);
             this.InfoConnection1 = new Srvtools.InfoConnection(this.components);
             this.Employer = new Srvtools.InfoCommand(this.components);
+            this.infoConnection3JS = new Srvtools.InfoConnection(this.components);
             this.ucEmployer = new Srvtools.UpdateComponent(this.components);
             this.CountryCity = new Srvtools.InfoCommand(this.components);
             this.infoConnection2 = new Srvtools.InfoConnection(this.components);
             this.infoFee = new Srvtools.InfoCommand(this.components);
             this.infoSalesId = new Srvtools.InfoCommand(this.components);
             this.infoSalaryDate = new Srvtools.InfoCommand(this.components);
-            this.infoConnection3JS = new Srvtools.InfoConnection(this.components);
             this.infoFeeJS = new Srvtools.InfoCommand(this.components);
             this.infoSalesIdJS = new Srvtools.InfoCommand(this.components);
             this.infoSalaryDateJS = new Srvtools.InfoCommand(this.components);
@@ -64,14 +70,16 @@
             this.infoFeeJSCare = new Srvtools.InfoCommand(this.components);
             this.infoSalesIdJSCare = new Srvtools.InfoCommand(this.components);
             this.infoSalaryDateJSCare = new Srvtools.InfoCommand(this.components);
+            this.HUT_CustomerContactRecord = new Srvtools.InfoCommand(this.components);
+            this.ucHUT_CustomerContactRecord = new Srvtools.UpdateComponent(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.InfoConnection1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Employer)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.infoConnection3JS)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.CountryCity)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.infoConnection2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.infoFee)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.infoSalesId)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.infoSalaryDate)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.infoConnection3JS)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.infoFeeJS)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.infoSalesIdJS)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.infoSalaryDateJS)).BeginInit();
@@ -81,6 +89,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.infoFeeJSCare)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.infoSalesIdJSCare)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.infoSalaryDateJSCare)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.HUT_CustomerContactRecord)).BeginInit();
             // 
             // InfoConnection1
             // 
@@ -97,7 +106,7 @@
             this.Employer.EncodingAfter = null;
             this.Employer.EncodingBefore = "Windows-1252";
             this.Employer.EncodingConvert = null;
-            this.Employer.InfoConnection = this.infoConnection3JS;
+            this.Employer.InfoConnection = this.InfoConnection1;
             keyItem1.KeyName = "AutoKey";
             this.Employer.KeyFields.Add(keyItem1);
             this.Employer.MultiSetWhere = false;
@@ -111,6 +120,10 @@
             this.Employer.SiteControl = false;
             this.Employer.SiteFieldName = null;
             this.Employer.UpdatedRowSource = System.Data.UpdateRowSource.None;
+            // 
+            // infoConnection3JS
+            // 
+            this.infoConnection3JS.EEPAlias = "FWCRMJS";
             // 
             // ucEmployer
             // 
@@ -253,10 +266,6 @@
             this.infoSalaryDate.SiteControl = false;
             this.infoSalaryDate.SiteFieldName = null;
             this.infoSalaryDate.UpdatedRowSource = System.Data.UpdateRowSource.None;
-            // 
-            // infoConnection3JS
-            // 
-            this.infoConnection3JS.EEPAlias = "FWCRMJS";
             // 
             // infoFeeJS
             // 
@@ -403,7 +412,8 @@
             // EmployerJSCare
             // 
             this.EmployerJSCare.CacheConnection = false;
-            this.EmployerJSCare.CommandText = resources.GetString("EmployerJSCare.CommandText");
+            this.EmployerJSCare.CommandText = "SELECT  *\r\nfrom View_FwcrmEmployerJSCare\r\norder by IsActive desc,LastUpdateDate d" +
+    "esc";
             this.EmployerJSCare.CommandTimeout = 30;
             this.EmployerJSCare.CommandType = System.Data.CommandType.Text;
             this.EmployerJSCare.DynamicTableName = false;
@@ -447,7 +457,7 @@
             this.ucEmployerJSCare.FieldAttrs.Add(fieldAttr5);
             this.ucEmployerJSCare.FieldAttrs.Add(fieldAttr6);
             this.ucEmployerJSCare.LogInfo = null;
-            this.ucEmployerJSCare.Name = "updateComponent1";
+            this.ucEmployerJSCare.Name = "ucEmployerJSCare";
             this.ucEmployerJSCare.RowAffectsCheck = true;
             this.ucEmployerJSCare.SelectCmd = this.EmployerJSCare;
             this.ucEmployerJSCare.SelectCmdForUpdate = null;
@@ -537,14 +547,98 @@
             this.infoSalaryDateJSCare.SiteControl = false;
             this.infoSalaryDateJSCare.SiteFieldName = null;
             this.infoSalaryDateJSCare.UpdatedRowSource = System.Data.UpdateRowSource.None;
+            // 
+            // HUT_CustomerContactRecord
+            // 
+            this.HUT_CustomerContactRecord.CacheConnection = false;
+            this.HUT_CustomerContactRecord.CommandText = "select  *,dbo.funReturnContactLogsViewer(ShareTo) as ShareToName  from ContactLog" +
+    "s\r\nwhere SalesKindID=\'S35\'\r\norder by ContactDate desc";
+            this.HUT_CustomerContactRecord.CommandTimeout = 30;
+            this.HUT_CustomerContactRecord.CommandType = System.Data.CommandType.Text;
+            this.HUT_CustomerContactRecord.DynamicTableName = false;
+            this.HUT_CustomerContactRecord.EEPAlias = "JBERP";
+            this.HUT_CustomerContactRecord.EncodingAfter = null;
+            this.HUT_CustomerContactRecord.EncodingBefore = "Windows-1252";
+            this.HUT_CustomerContactRecord.EncodingConvert = null;
+            this.HUT_CustomerContactRecord.InfoConnection = this.infoConnection2;
+            keyItem8.KeyName = "AutoKey";
+            this.HUT_CustomerContactRecord.KeyFields.Add(keyItem8);
+            this.HUT_CustomerContactRecord.MultiSetWhere = false;
+            this.HUT_CustomerContactRecord.Name = "HUT_CustomerContactRecord";
+            this.HUT_CustomerContactRecord.NotificationAutoEnlist = false;
+            this.HUT_CustomerContactRecord.SecExcept = null;
+            this.HUT_CustomerContactRecord.SecFieldName = null;
+            this.HUT_CustomerContactRecord.SecStyle = Srvtools.SecurityStyle.ssByNone;
+            this.HUT_CustomerContactRecord.SelectPaging = false;
+            this.HUT_CustomerContactRecord.SelectTop = 0;
+            this.HUT_CustomerContactRecord.SiteControl = false;
+            this.HUT_CustomerContactRecord.SiteFieldName = null;
+            this.HUT_CustomerContactRecord.UpdatedRowSource = System.Data.UpdateRowSource.None;
+            // 
+            // ucHUT_CustomerContactRecord
+            // 
+            this.ucHUT_CustomerContactRecord.AutoTrans = true;
+            this.ucHUT_CustomerContactRecord.ExceptJoin = false;
+            fieldAttr7.CheckNull = false;
+            fieldAttr7.DataField = "CustID";
+            fieldAttr7.DefaultMode = Srvtools.DefaultModeType.Insert;
+            fieldAttr7.DefaultValue = null;
+            fieldAttr7.TrimLength = 0;
+            fieldAttr7.UpdateEnable = true;
+            fieldAttr7.WhereMode = true;
+            fieldAttr8.CheckNull = false;
+            fieldAttr8.DataField = "CreateBy";
+            fieldAttr8.DefaultMode = Srvtools.DefaultModeType.Insert;
+            fieldAttr8.DefaultValue = null;
+            fieldAttr8.TrimLength = 0;
+            fieldAttr8.UpdateEnable = true;
+            fieldAttr8.WhereMode = true;
+            fieldAttr9.CheckNull = false;
+            fieldAttr9.DataField = "CreateDate";
+            fieldAttr9.DefaultMode = Srvtools.DefaultModeType.Insert;
+            fieldAttr9.DefaultValue = null;
+            fieldAttr9.TrimLength = 0;
+            fieldAttr9.UpdateEnable = true;
+            fieldAttr9.WhereMode = true;
+            fieldAttr10.CheckNull = false;
+            fieldAttr10.DataField = "UpdateDate";
+            fieldAttr10.DefaultMode = Srvtools.DefaultModeType.Insert;
+            fieldAttr10.DefaultValue = null;
+            fieldAttr10.TrimLength = 0;
+            fieldAttr10.UpdateEnable = true;
+            fieldAttr10.WhereMode = true;
+            fieldAttr11.CheckNull = false;
+            fieldAttr11.DataField = "UpdateBy";
+            fieldAttr11.DefaultMode = Srvtools.DefaultModeType.Insert;
+            fieldAttr11.DefaultValue = null;
+            fieldAttr11.TrimLength = 0;
+            fieldAttr11.UpdateEnable = true;
+            fieldAttr11.WhereMode = true;
+            this.ucHUT_CustomerContactRecord.FieldAttrs.Add(fieldAttr7);
+            this.ucHUT_CustomerContactRecord.FieldAttrs.Add(fieldAttr8);
+            this.ucHUT_CustomerContactRecord.FieldAttrs.Add(fieldAttr9);
+            this.ucHUT_CustomerContactRecord.FieldAttrs.Add(fieldAttr10);
+            this.ucHUT_CustomerContactRecord.FieldAttrs.Add(fieldAttr11);
+            this.ucHUT_CustomerContactRecord.LogInfo = null;
+            this.ucHUT_CustomerContactRecord.Name = "ucHUT_CustomerContactRecord";
+            this.ucHUT_CustomerContactRecord.RowAffectsCheck = true;
+            this.ucHUT_CustomerContactRecord.SelectCmd = this.HUT_CustomerContactRecord;
+            this.ucHUT_CustomerContactRecord.SelectCmdForUpdate = null;
+            this.ucHUT_CustomerContactRecord.SendSQLCmd = true;
+            this.ucHUT_CustomerContactRecord.ServerModify = true;
+            this.ucHUT_CustomerContactRecord.ServerModifyGetMax = true;
+            this.ucHUT_CustomerContactRecord.TranscationScopeTimeOut = System.TimeSpan.Parse("00:02:00");
+            this.ucHUT_CustomerContactRecord.TransIsolationLevel = System.Data.IsolationLevel.ReadCommitted;
+            this.ucHUT_CustomerContactRecord.UseTranscationScope = false;
+            this.ucHUT_CustomerContactRecord.WhereMode = Srvtools.WhereModeType.Keyfields;
             ((System.ComponentModel.ISupportInitialize)(this.InfoConnection1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.Employer)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.infoConnection3JS)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.CountryCity)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.infoConnection2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.infoFee)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.infoSalesId)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.infoSalaryDate)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.infoConnection3JS)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.infoFeeJS)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.infoSalesIdJS)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.infoSalaryDateJS)).EndInit();
@@ -554,6 +648,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.infoFeeJSCare)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.infoSalesIdJSCare)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.infoSalaryDateJSCare)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.HUT_CustomerContactRecord)).EndInit();
 
         }
 
@@ -580,5 +675,7 @@
         private Srvtools.InfoCommand infoFeeJSCare;
         private Srvtools.InfoCommand infoSalesIdJSCare;
         private Srvtools.InfoCommand infoSalaryDateJSCare;
+        private Srvtools.InfoCommand HUT_CustomerContactRecord;
+        private Srvtools.UpdateComponent ucHUT_CustomerContactRecord;
     }
 }

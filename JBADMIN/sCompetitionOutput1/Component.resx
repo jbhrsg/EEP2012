@@ -1,0 +1,426 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <metadata name="serviceManager1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 55</value>
+  </metadata>
+  <metadata name="InfoConnection1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 93</value>
+  </metadata>
+  <metadata name="Competition1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 207</value>
+  </metadata>
+  <metadata name="ucCompetition1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 245</value>
+  </metadata>
+  <metadata name="Competition2.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 283</value>
+  </metadata>
+  <metadata name="ucCompetition2.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 321</value>
+  </metadata>
+  <metadata name="View_Competition1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 359</value>
+  </metadata>
+  <metadata name="View_Competition2.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 397</value>
+  </metadata>
+  <metadata name="RealTargetRatio.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 131</value>
+  </metadata>
+  <data name="RealTargetRatio.CommandText" xml:space="preserve">
+    <value>select * from(
+
+select isnull(c2.[Year],c1.[Year]) as [Year],
+	   isnull(c2.[Department],c1.[Department]) as Department,
+	   isnull(Sum(c2.Real),0) as RealSum,
+	   c1.QuarterTarget,
+	   isnull(round((Sum(c2.Real)/c1.QuarterTarget*100),1),0) as RealTargetRatio
+from (select * from Competition2 where [Date] &lt;= convert(char(10), getdate(), 120) and Year='2022' and Month in('7','8','9') ) c2
+full join ((select distinct [Year],Department,QuarterTarget from Competition1 where Department not in ('媒體部','顧問室','資訊部','中高階獵才部') and Year='2022' and Month in('7','8','9'))) c1 on c1.[Year]=c2.[Year] and c1.Department=c2.Department
+group by isnull(c2.[Year],c1.[Year]),isnull(c2.[Department],c1.[Department]),c1.QuarterTarget
+
+union
+
+select  distinct c1.[Year]
+	   ,c1.[Department]
+	   ,isnull((SELECT SUM(sd.CustAmt) FROM ERPSalesMaster sm 
+	   left join ERPSalesDetails sd on sm.[SalesMasterNO]=sd.[SalesMasterNO] 
+	   WHERE sm.IsActive=1 and sd.IsActive=1 and sm.SalesTypeID IN ('1','31')  AND sd.SalesDate between'2022-07-01' and '2022-09-30' 
+	   and sd.SalesDate&lt;= GETDATE()),0) as RealSum
+	   ,c1.QuarterTarget
+	   ,isnull(round(((SELECT SUM(sd.CustAmt) FROM ERPSalesMaster sm 
+	   left join ERPSalesDetails sd on sm.[SalesMasterNO]=sd.[SalesMasterNO]  
+	   WHERE sm.IsActive=1 and sd.IsActive=1 and sm.SalesTypeID IN ('1','31')  AND sd.SalesDate between'2022-07-01' and '2022-09-30' 
+	   and sd.SalesDate&lt;= GETDATE())/c1.QuarterTarget*100),1),0) as RealTargetRatio
+from Competition1 c1
+where c1.Department = '媒體部' and c1.[Year]='2022' and c1.[Month] in('7','8','9')
+
+union
+
+select  distinct c1.[Year]
+	   ,c1.[Department]
+	   ,isnull((SELECT SUM(sd.Amount) FROM JBERP.dbo.SalesMaster sm left join JBERP.dbo.SalesDetails sd on sm.SalesNO=sd.SalesNO WHERE sm.IsActive=1 and sm.SalesTypeID IN ('12','18','13')  AND sm.SalesDate between'2022-07-01' and '2022-09-30' and sm.SalesDate&lt;= GETDATE()),0) as RealSum
+	   ,c1.QuarterTarget
+	   ,isnull(round(((SELECT SUM(sd.Amount) FROM JBERP.dbo.SalesMaster sm left join JBERP.dbo.SalesDetails sd on sm.SalesNO=sd.SalesNO WHERE sm.IsActive=1 and sm.SalesTypeID IN ('12','18','13')  AND sm.SalesDate between'2022-07-01' and '2022-09-30' and sm.SalesDate&lt;= GETDATE())/c1.QuarterTarget*100),1),0) as RealTargetRatio
+from Competition1 c1
+where c1.Department = '顧問室' and c1.[Year]='2022' and c1.[Month] in('7','8','9')
+
+union
+
+select  distinct c1.[Year]
+	   ,c1.[Department]
+	   ,isnull((SELECT SUM(sd.Amount) FROM JBERP.dbo.SalesMaster sm left join JBERP.dbo.SalesDetails sd on sm.SalesNO=sd.SalesNO WHERE sm.IsActive=1 and sm.SalesTypeID IN ('4','4A')  AND sm.SalesDate between'2022-07-01' and '2022-09-30' and sm.SalesDate&lt;= GETDATE()),0) as RealSum
+	   ,c1.QuarterTarget
+	   ,isnull(round(((SELECT SUM(sd.Amount) FROM JBERP.dbo.SalesMaster sm left join JBERP.dbo.SalesDetails sd on sm.SalesNO=sd.SalesNO WHERE sm.IsActive=1 and sm.SalesTypeID IN ('4','4A')  AND sm.SalesDate between'2022-07-01' and '2022-09-30' and sm.SalesDate&lt;= GETDATE())/c1.QuarterTarget*100),1),0) as RealTargetRatio
+from Competition1 c1
+where c1.Department = '資訊部' and c1.[Year]='2022' and c1.[Month] in('7','8','9')
+
+
+union
+
+select  distinct c1.[Year]
+	   ,c1.[Department]
+	   ,isnull((SELECT SUM(sd.Amount) FROM JBERP.dbo.SalesMaster sm left join JBERP.dbo.SalesDetails sd on sm.SalesNO=sd.SalesNO 
+	   WHERE sm.IsActive=1 and sm.SalesTypeID IN ('30') and sm.SalesID in('010','204','278','412','427')  AND sm.SalesDate between'2022-07-01' and '2022-09-30' 
+	   and sm.SalesDate&lt;= GETDATE()),0) as RealSum
+	   ,c1.QuarterTarget
+	   ,isnull(round(((SELECT SUM(sd.Amount) FROM JBERP.dbo.SalesMaster sm left join JBERP.dbo.SalesDetails sd on sm.SalesNO=sd.SalesNO 
+	   WHERE sm.IsActive=1 and sm.SalesTypeID IN ('30') and sm.SalesID in('010','204','278','412','427')  AND sm.SalesDate between'2022-07-01' and '2022-09-30' 
+	   and sm.SalesDate&lt;= GETDATE())/c1.QuarterTarget*100),1),0) as RealTargetRatio
+
+from Competition1 c1
+where c1.Department = '中高階獵才部' and c1.[Year]='2022' and c1.[Month] in('7','8','9')
+
+
+) ttt order by(
+CASE Department
+WHEN '人才服務台北' THEN '0'
+WHEN '外勞事業部' THEN '1'
+WHEN'人才服務桃園' THEN '2'
+WHEN '傑誠國際村' THEN '3'
+WHEN '媒體部' THEN '4'
+WHEN '人才服務新竹' THEN '5'
+WHEN '資訊部' THEN '6'
+WHEN '中高階獵才部' THEN '7'
+WHEN '顧問室' THEN '8'
+ELSE '9'
+END) asc</value>
+  </data>
+  <metadata name="AccumRealTargetRatio1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 435</value>
+  </metadata>
+  <data name="AccumRealTargetRatio1.CommandText" xml:space="preserve">
+    <value>
+select t1.[Year],t1.[Month],t1.Department,t1.RealSum,t1.QuarterTarget,isnull((sum(t2.RealSum)/t1.QuarterTarget*100),0) as AccumRatio from
+(
+select isnull(c2.[Year],c1.[Year]) as [Year],isnull(c2.[Month],4) as [Month],isnull(c2.[Department],c1.[Department]) as Department,isnull(Sum(c2.Real),0) as RealSum,c1.QuarterTarget,isnull((Sum(c2.Real)/c1.QuarterTarget),0) as RealTargetRatio  from Competition2 c2
+full join (select distinct Year,Department,QuarterTarget from Competition1) c1 on c1.[Year]=c2.[Year] and c1.Department=c2.Department
+group by c2.[Year],c1.[Year],c2.[Month],c2.[Department],c1.[Department],c1.QuarterTarget
+)t1 inner join 
+(
+select isnull(c2.[Year],c1.[Year]) as [Year],isnull(c2.[Month],4) as [Month],isnull(c2.[Department],c1.[Department]) as Department,isnull(Sum(c2.Real),0) as RealSum,c1.QuarterTarget,isnull((Sum(c2.Real)/c1.QuarterTarget),0) as RealTargetRatio  from Competition2 c2
+full join (select distinct Year,Department,QuarterTarget from Competition1) c1 on c1.[Year]=c2.[Year] and c1.Department=c2.Department
+group by c2.[Year],c1.[Year],c2.[Month],c2.[Department],c1.[Department],c1.QuarterTarget
+)t2 on t1.[Month] &gt;= t2.[Month] and t1.[Year] = t2.[Year] and t1.[Department] = t2.[Department]
+group by t1.[Year],t1.[Month],t1.Department,t1.RealSum,t1.QuarterTarget</value>
+  </data>
+  <metadata name="AccumRealTargetRatio.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 169</value>
+  </metadata>
+  <data name="AccumRealTargetRatio.CommandText" xml:space="preserve">
+    <value>select convert(varchar,Month(t1.[Date]))+'/'+convert(varchar,Day(t1.[Date])) as [Date1],t1.[Date],t1.Department,t1.[Real],t1.QuarterTarget,isnull(round((sum(t2.Real)/t1.QuarterTarget*100),1),0)
+as AccumRatio,sum(t2.Real) as sigma
+from
+(
+select c2.[Date],c2.[Department]
+,c2.Real,c1.QuarterTarget
+from Competition2 c2
+left join (select distinct [Year],Department,QuarterTarget from Competition1 where Year='2022' and Month in('7','8','9')) c1
+on c1.[Year]=c2.[Year] and c1.Department=c2.Department
+where c2.Department not in ('媒體部','顧問室','資訊部','中高階獵才部') and c2.[Year]='2022' and c2.[Month] in('7','8','9')
+
+union
+
+select c2.[Date],c2.[Department]
+,c2.Real,c1.QuarterTarget
+from (
+
+SELECT  Year(sd.SalesDate) as [Year]
+,sd.SalesDate as [Date]
+,'媒體部' as Department
+,sum(sd.CustAmt) as [Real] 
+FROM ERPSalesMaster sm 
+left join ERPSalesDetails sd on sm.[SalesMasterNO]=sd.[SalesMasterNO]
+WHERE sm.IsActive=1 and sd.IsActive=1 and sm.SalesTypeID IN ('1','31')  AND sd.SalesDate between'2022-07-01' and '2022-09-30' 
+group by sd.SalesDate
+
+union
+
+SELECT
+Year(sm.SalesDate) as [Year],  
+left(convert(varchar,sm.SalesDate,120),10) as [Date],
+'顧問室' as Department,
+sum(sd.Amount) as [Real] 
+FROM JBERP.dbo.SalesMaster sm
+left join JBERP.dbo.SalesDetails sd on sm.SalesNO=sd.SalesNO
+where sm.IsActive=1 and sm.SalesTypeID IN ('12','18','13')  AND (sm.SalesDate between'2022-07-01' and '2022-09-30') 
+group by SalesDate
+
+union
+
+SELECT
+Year(sm.SalesDate) as [Year],  
+left(convert(varchar,sm.SalesDate,120),10) as [Date],
+'資訊部' as Department,
+sum(sd.Amount) as [Real] 
+FROM JBERP.dbo.SalesMaster sm
+left join JBERP.dbo.SalesDetails sd on sm.SalesNO=sd.SalesNO
+where sm.IsActive=1 and sm.SalesTypeID IN ('4','4A')  AND (sm.SalesDate between'2022-07-01' and '2022-09-30') 
+group by SalesDate
+
+union
+
+SELECT
+Year(sm.SalesDate) as [Year],  
+left(convert(varchar,sm.SalesDate,120),10) as [Date],
+'中高階獵才部' as Department,
+sum(sd.Amount) as [Real] 
+FROM JBERP.dbo.SalesMaster sm
+left join JBERP.dbo.SalesDetails sd on sm.SalesNO=sd.SalesNO
+where sm.IsActive=1 and sm.SalesTypeID IN ('30')  AND (sm.SalesDate between'2022-07-01' and '2022-09-30')  and sm.SalesID in('010','204','278','412','427')
+group by SalesDate
+
+
+) c2 
+left join (select distinct [Year],Department,QuarterTarget from Competition1 where Year='2022' and Month in('7','8','9')) c1
+on c1.[Year]=c2.[Year] and c1.Department=c2.Department
+
+)t1 
+
+
+
+inner join
+(
+
+
+select c2.[Date],c2.[Department]
+,c2.Real,c1.QuarterTarget
+from Competition2 c2
+left join (select distinct [Year],Department,QuarterTarget from Competition1 where Year='2022' and Month in('7','8','9')) c1
+on c1.[Year]=c2.[Year] and c1.Department=c2.Department
+where c2.Department not in ('媒體部','顧問室','資訊部','中高階獵才部') and c2.[Year]='2022' and c2.[Month] in('7','8','9')
+
+union
+
+select c2.[Date],c2.[Department]
+,c2.Real,c1.QuarterTarget
+from (
+
+SELECT  Year(sd.SalesDate) as [Year]
+,sd.SalesDate as [Date]
+,'媒體部' as Department
+,sum(sd.CustAmt) as [Real] 
+FROM ERPSalesMaster sm 
+left join ERPSalesDetails sd on sm.[SalesMasterNO]=sd.[SalesMasterNO]
+WHERE sm.IsActive=1 and sd.IsActive=1 and sm.SalesTypeID IN ('1','31')  AND sd.SalesDate between'2022-07-01' and '2022-09-30' 
+group by sd.SalesDate
+
+union
+
+SELECT
+Year(sm.SalesDate) as [Year],  
+left(convert(varchar,sm.SalesDate,120),10) as [Date],
+'顧問室' as Department,
+sum(sd.Amount) as [Real] 
+FROM JBERP.dbo.SalesMaster sm
+left join JBERP.dbo.SalesDetails sd on sm.SalesNO=sd.SalesNO
+where sm.IsActive=1 and sm.SalesTypeID IN ('12','18','13')  AND (sm.SalesDate between'2022-07-01' and '2022-09-30') 
+group by SalesDate
+
+union
+
+SELECT
+Year(sm.SalesDate) as [Year],  
+left(convert(varchar,sm.SalesDate,120),10) as [Date],
+'資訊部' as Department,
+sum(sd.Amount) as [Real] 
+FROM JBERP.dbo.SalesMaster sm
+left join JBERP.dbo.SalesDetails sd on sm.SalesNO=sd.SalesNO
+where sm.IsActive=1 and sm.SalesTypeID IN ('4','4A')  AND (sm.SalesDate between'2022-07-01' and '2022-09-30') 
+group by SalesDate
+
+union
+
+SELECT
+Year(sm.SalesDate) as [Year],  
+left(convert(varchar,sm.SalesDate,120),10) as [Date],
+'中高階獵才部' as Department,
+sum(sd.Amount) as [Real] 
+FROM JBERP.dbo.SalesMaster sm
+left join JBERP.dbo.SalesDetails sd on sm.SalesNO=sd.SalesNO
+where sm.IsActive=1 and sm.SalesTypeID IN ('30')  AND (sm.SalesDate between'2022-07-01' and '2022-09-30') and sm.SalesID in('010','204','278','412','427')
+group by SalesDate
+
+
+) c2 
+left join (select distinct [Year],Department,QuarterTarget from Competition1 where Year='2022' and Month in('7','8','9')) c1
+on c1.[Year]=c2.[Year] and c1.Department=c2.Department
+
+
+)t2 on t1.[Date] &gt;= t2.[Date] and t1.[Department] = t2.[Department]
+
+
+where t1.Real !=0 and t1.[Date] &lt;= convert(char(10), getdate(), 120)
+group by t1.[Date],t1.Department,t1.[Real],t1.QuarterTarget
+order by Date</value>
+  </data>
+  <metadata name="AccumRealTargetRatio2.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 473</value>
+  </metadata>
+  <data name="AccumRealTargetRatio2.CommandText" xml:space="preserve">
+    <value>select t1.[Date],t1.Department,t1.[Real],t1.QuarterTarget,isnull((sum(t2.Real)/t1.QuarterTarget*100),0) as AccumRatio from
+(
+select c2.[Date],c2.[Department]
+,c2.Real,c1.QuarterTarget
+from Competition2 c2
+left join (select distinct [Year],Department,QuarterTarget from Competition1) c1 
+on c1.[Year]=c2.[Year] and c1.Department=c2.Department
+)t1 inner join 
+(
+select c2.[Date],c2.[Department]
+,c2.Real,c1.QuarterTarget
+from Competition2 c2
+left join (select distinct [Year],Department,QuarterTarget from Competition1) c1 
+on c1.[Year]=c2.[Year] and c1.Department=c2.Department
+)t2 on t1.[Date] &gt;= t2.[Date] and t1.[Department] = t2.[Department]
+group by t1.[Date],t1.Department,t1.[Real],t1.QuarterTarget</value>
+  </data>
+  <metadata name="RealTargetRatio1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>21, 510</value>
+  </metadata>
+  <data name="RealTargetRatio1.CommandText" xml:space="preserve">
+    <value>select isnull(c2.[Year],c1.[Year]) as [Year],isnull(c2.[Department],c1.[Department]) as Department,isnull(Sum(c2.Real),0) as RealSum,c1.QuarterTarget,isnull((Sum(c2.Real)/c1.QuarterTarget*100),0) as RealTargetRatio  from Competition2 c2
+full join ((select distinct Year,Department,QuarterTarget from Competition1)) c1 on c1.[Year]=c2.[Year] and c1.Department=c2.Department
+group by isnull(c2.[Year],c1.[Year]),isnull(c2.[Department],c1.[Department]),c1.QuarterTarget</value>
+  </data>
+  <metadata name="$this.TrayLargeIcon" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>False</value>
+  </metadata>
+</root>

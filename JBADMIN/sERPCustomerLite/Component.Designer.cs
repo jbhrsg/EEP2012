@@ -30,6 +30,7 @@
         {
             this.components = new System.ComponentModel.Container();
             Srvtools.Service service1 = new Srvtools.Service();
+            Srvtools.Service service2 = new Srvtools.Service();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Component));
             Srvtools.KeyItem keyItem1 = new Srvtools.KeyItem();
             Srvtools.FieldAttr fieldAttr1 = new Srvtools.FieldAttr();
@@ -57,21 +58,31 @@
             this.ucERPCustomers = new Srvtools.UpdateComponent(this.components);
             this.View_ERPCustomers = new Srvtools.InfoCommand(this.components);
             this.Salse = new Srvtools.InfoCommand(this.components);
+            this.PostSource = new Srvtools.InfoCommand(this.components);
+            this.infoPostType = new Srvtools.InfoCommand(this.components);
+            this.infoConnection2 = new Srvtools.InfoConnection(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.InfoConnection1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ERPCustomers)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.View_ERPCustomers)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Salse)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PostSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.infoPostType)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.infoConnection2)).BeginInit();
             // 
             // serviceManager1
             // 
             service1.DelegateName = "CheckCustNO";
             service1.NonLogin = false;
             service1.ServiceName = "CheckCustNO";
+            service2.DelegateName = "UpdateERPCustomerToDoNotes";
+            service2.NonLogin = false;
+            service2.ServiceName = "UpdateERPCustomerToDoNotes";
             this.serviceManager1.ServiceCollection.Add(service1);
+            this.serviceManager1.ServiceCollection.Add(service2);
             // 
             // InfoConnection1
             // 
-            this.InfoConnection1.EEPAlias = "JBDBNJB";
+            this.InfoConnection1.EEPAlias = "JBADMIN";
             // 
             // ERPCustomers
             // 
@@ -80,7 +91,7 @@
             this.ERPCustomers.CommandTimeout = 30;
             this.ERPCustomers.CommandType = System.Data.CommandType.Text;
             this.ERPCustomers.DynamicTableName = false;
-            this.ERPCustomers.EEPAlias = "JBDBNJB";
+            this.ERPCustomers.EEPAlias = "JBADMIN";
             this.ERPCustomers.EncodingAfter = null;
             this.ERPCustomers.EncodingBefore = "Windows-1252";
             this.ERPCustomers.EncodingConvert = null;
@@ -288,7 +299,7 @@
             this.Salse.CommandTimeout = 30;
             this.Salse.CommandType = System.Data.CommandType.Text;
             this.Salse.DynamicTableName = false;
-            this.Salse.EEPAlias = "JBDBNJB";
+            this.Salse.EEPAlias = "JBADMIN";
             this.Salse.EncodingAfter = null;
             this.Salse.EncodingBefore = "Windows-1252";
             this.Salse.EncodingConvert = null;
@@ -306,10 +317,66 @@
             this.Salse.SiteControl = false;
             this.Salse.SiteFieldName = null;
             this.Salse.UpdatedRowSource = System.Data.UpdateRowSource.None;
+            // 
+            // PostSource
+            // 
+            this.PostSource.CacheConnection = false;
+            this.PostSource.CommandText = "SELECT  *\r\nFROM  ERPPostSource";
+            this.PostSource.CommandTimeout = 30;
+            this.PostSource.CommandType = System.Data.CommandType.Text;
+            this.PostSource.DynamicTableName = false;
+            this.PostSource.EEPAlias = "JBADMIN";
+            this.PostSource.EncodingAfter = null;
+            this.PostSource.EncodingBefore = "Windows-1252";
+            this.PostSource.EncodingConvert = null;
+            this.PostSource.InfoConnection = this.InfoConnection1;
+            this.PostSource.MultiSetWhere = false;
+            this.PostSource.Name = "PostSource";
+            this.PostSource.NotificationAutoEnlist = false;
+            this.PostSource.SecExcept = null;
+            this.PostSource.SecFieldName = null;
+            this.PostSource.SecStyle = Srvtools.SecurityStyle.ssByNone;
+            this.PostSource.SelectPaging = false;
+            this.PostSource.SelectTop = 0;
+            this.PostSource.SiteControl = false;
+            this.PostSource.SiteFieldName = null;
+            this.PostSource.UpdatedRowSource = System.Data.UpdateRowSource.None;
+            // 
+            // infoPostType
+            // 
+            this.infoPostType.CacheConnection = false;
+            this.infoPostType.CommandText = "select ListID,ListContent\r\nfrom View_ERPReferenceTable\r\nwhere ListCategory=\'PostT" +
+    "ype\'";
+            this.infoPostType.CommandTimeout = 30;
+            this.infoPostType.CommandType = System.Data.CommandType.Text;
+            this.infoPostType.DynamicTableName = false;
+            this.infoPostType.EEPAlias = "JBADMIN";
+            this.infoPostType.EncodingAfter = null;
+            this.infoPostType.EncodingBefore = "Windows-1252";
+            this.infoPostType.EncodingConvert = null;
+            this.infoPostType.InfoConnection = this.infoConnection2;
+            this.infoPostType.MultiSetWhere = false;
+            this.infoPostType.Name = "infoPostType";
+            this.infoPostType.NotificationAutoEnlist = false;
+            this.infoPostType.SecExcept = null;
+            this.infoPostType.SecFieldName = null;
+            this.infoPostType.SecStyle = Srvtools.SecurityStyle.ssByNone;
+            this.infoPostType.SelectPaging = false;
+            this.infoPostType.SelectTop = 0;
+            this.infoPostType.SiteControl = false;
+            this.infoPostType.SiteFieldName = null;
+            this.infoPostType.UpdatedRowSource = System.Data.UpdateRowSource.None;
+            // 
+            // infoConnection2
+            // 
+            this.infoConnection2.EEPAlias = "JBADMIN";
             ((System.ComponentModel.ISupportInitialize)(this.InfoConnection1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ERPCustomers)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.View_ERPCustomers)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.Salse)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PostSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.infoPostType)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.infoConnection2)).EndInit();
 
         }
 
@@ -321,5 +388,8 @@
         private Srvtools.UpdateComponent ucERPCustomers;
         private Srvtools.InfoCommand View_ERPCustomers;
         private Srvtools.InfoCommand Salse;
+        private Srvtools.InfoCommand PostSource;
+        private Srvtools.InfoCommand infoPostType;
+        private Srvtools.InfoConnection infoConnection2;
     }
 }

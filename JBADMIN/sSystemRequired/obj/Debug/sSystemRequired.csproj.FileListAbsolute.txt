@@ -1,0 +1,11 @@
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sSystemRequired\bin\Debug\sSystemRequired.dll
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sSystemRequired\bin\Debug\sSystemRequired.pdb
+C:\Program Files (x86)\Infolight\EEP2012\EEPNetServer\JBADMIN\sSystemRequired.dll
+C:\Program Files (x86)\Infolight\EEP2012\EEPNetServer\JBADMIN\sSystemRequired.pdb
+C:\Program Files (x86)\Infolight\EEP2012\EEPNetServer\JBADMIN\vi-VN\sSystemRequired.resources.dll
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sSystemRequired\obj\Debug\sSystemRequired.Component.resources
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sSystemRequired\obj\Debug\sSystemRequired.Component.vi-VN.resources
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sSystemRequired\obj\Debug\sSystemRequired.csproj.GenerateResource.Cache
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sSystemRequired\obj\Debug\vi-VN\sSystemRequired.resources.dll
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sSystemRequired\obj\Debug\sSystemRequired.dll
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sSystemRequired\obj\Debug\sSystemRequired.pdb

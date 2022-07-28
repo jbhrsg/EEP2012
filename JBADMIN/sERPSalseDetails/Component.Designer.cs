@@ -37,6 +37,10 @@
             Srvtools.Service service6 = new Srvtools.Service();
             Srvtools.Service service7 = new Srvtools.Service();
             Srvtools.Service service8 = new Srvtools.Service();
+            Srvtools.Service service9 = new Srvtools.Service();
+            Srvtools.Service service10 = new Srvtools.Service();
+            Srvtools.Service service11 = new Srvtools.Service();
+            Srvtools.Service service12 = new Srvtools.Service();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Component));
             Srvtools.KeyItem keyItem1 = new Srvtools.KeyItem();
             Srvtools.KeyItem keyItem2 = new Srvtools.KeyItem();
@@ -111,6 +115,7 @@
             Srvtools.FieldAttr fieldAttr59 = new Srvtools.FieldAttr();
             Srvtools.FieldAttr fieldAttr60 = new Srvtools.FieldAttr();
             Srvtools.KeyItem keyItem13 = new Srvtools.KeyItem();
+            Srvtools.KeyItem keyItem14 = new Srvtools.KeyItem();
             this.serviceManager1 = new Srvtools.ServiceManager(this.components);
             this.InfoConnection1 = new Srvtools.InfoConnection(this.components);
             this.ERPSalesMaster = new Srvtools.InfoCommand(this.components);
@@ -131,6 +136,8 @@
             this.infoCustomersAll = new Srvtools.InfoCommand(this.components);
             this.infoERPViewArea = new Srvtools.InfoCommand(this.components);
             this.infoSalesInfo = new Srvtools.InfoCommand(this.components);
+            this.infoSalseDetailsInfo = new Srvtools.InfoCommand(this.components);
+            this.infoIndustryType = new Srvtools.InfoCommand(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.InfoConnection1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ERPSalesMaster)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ERPSalesDetails)).BeginInit();
@@ -146,6 +153,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.infoCustomersAll)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.infoERPViewArea)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.infoSalesInfo)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.infoSalseDetailsInfo)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.infoIndustryType)).BeginInit();
             // 
             // serviceManager1
             // 
@@ -173,6 +182,18 @@
             service8.DelegateName = "ImportSalesDetails";
             service8.NonLogin = false;
             service8.ServiceName = "ImportSalesDetails";
+            service9.DelegateName = "GetIsAcceptePaper";
+            service9.NonLogin = false;
+            service9.ServiceName = "GetIsAcceptePaper";
+            service10.DelegateName = "GeERPSalseDetailsInfo";
+            service10.NonLogin = false;
+            service10.ServiceName = "GeERPSalseDetailsInfo";
+            service11.DelegateName = "Get0800Id";
+            service11.NonLogin = false;
+            service11.ServiceName = "Get0800Id";
+            service12.DelegateName = "Update0800JOBPublishing";
+            service12.NonLogin = false;
+            service12.ServiceName = "Update0800JOBPublishing";
             this.serviceManager1.ServiceCollection.Add(service1);
             this.serviceManager1.ServiceCollection.Add(service2);
             this.serviceManager1.ServiceCollection.Add(service3);
@@ -181,6 +202,10 @@
             this.serviceManager1.ServiceCollection.Add(service6);
             this.serviceManager1.ServiceCollection.Add(service7);
             this.serviceManager1.ServiceCollection.Add(service8);
+            this.serviceManager1.ServiceCollection.Add(service9);
+            this.serviceManager1.ServiceCollection.Add(service10);
+            this.serviceManager1.ServiceCollection.Add(service11);
+            this.serviceManager1.ServiceCollection.Add(service12);
             // 
             // InfoConnection1
             // 
@@ -196,6 +221,7 @@
             this.ERPSalesMaster.EEPAlias = null;
             this.ERPSalesMaster.EncodingAfter = null;
             this.ERPSalesMaster.EncodingBefore = "Windows-1252";
+            this.ERPSalesMaster.EncodingConvert = null;
             this.ERPSalesMaster.InfoConnection = this.InfoConnection1;
             keyItem1.KeyName = "SalesMasterNO";
             this.ERPSalesMaster.KeyFields.Add(keyItem1);
@@ -221,6 +247,7 @@
             this.ERPSalesDetails.EEPAlias = null;
             this.ERPSalesDetails.EncodingAfter = null;
             this.ERPSalesDetails.EncodingBefore = "Windows-1252";
+            this.ERPSalesDetails.EncodingConvert = null;
             this.ERPSalesDetails.InfoConnection = this.InfoConnection1;
             keyItem2.KeyName = "ItemSeq";
             keyItem3.KeyName = "SalesMasterNO";
@@ -463,6 +490,7 @@
             this.ucERPSalseDetails.RowAffectsCheck = true;
             this.ucERPSalseDetails.SelectCmd = this.ERPSalesDetails;
             this.ucERPSalseDetails.SelectCmdForUpdate = null;
+            this.ucERPSalseDetails.SendSQLCmd = true;
             this.ucERPSalseDetails.ServerModify = true;
             this.ucERPSalseDetails.ServerModifyGetMax = false;
             this.ucERPSalseDetails.TranscationScopeTimeOut = System.TimeSpan.Parse("00:02:00");
@@ -484,6 +512,7 @@
             this.infoSalesMan.EEPAlias = null;
             this.infoSalesMan.EncodingAfter = null;
             this.infoSalesMan.EncodingBefore = "Windows-1252";
+            this.infoSalesMan.EncodingConvert = null;
             this.infoSalesMan.InfoConnection = this.InfoConnection1;
             keyItem4.KeyName = "SalseNO";
             this.infoSalesMan.KeyFields.Add(keyItem4);
@@ -509,6 +538,7 @@
             this.infoCustomers.EEPAlias = "";
             this.infoCustomers.EncodingAfter = null;
             this.infoCustomers.EncodingBefore = "Windows-1252";
+            this.infoCustomers.EncodingConvert = null;
             this.infoCustomers.InfoConnection = this.InfoConnection1;
             this.infoCustomers.MultiSetWhere = false;
             this.infoCustomers.Name = "infoCustomers";
@@ -533,6 +563,7 @@
             this.infoERPSalesType.EEPAlias = null;
             this.infoERPSalesType.EncodingAfter = null;
             this.infoERPSalesType.EncodingBefore = "Windows-1252";
+            this.infoERPSalesType.EncodingConvert = null;
             this.infoERPSalesType.InfoConnection = this.InfoConnection1;
             keyItem5.KeyName = "SalesTypeNO";
             this.infoERPSalesType.KeyFields.Add(keyItem5);
@@ -638,6 +669,7 @@
             this.ucERPSalseMaster.RowAffectsCheck = true;
             this.ucERPSalseMaster.SelectCmd = this.ERPSalesMaster;
             this.ucERPSalseMaster.SelectCmdForUpdate = null;
+            this.ucERPSalseMaster.SendSQLCmd = true;
             this.ucERPSalseMaster.ServerModify = true;
             this.ucERPSalseMaster.ServerModifyGetMax = false;
             this.ucERPSalseMaster.TranscationScopeTimeOut = System.TimeSpan.Parse("00:02:00");
@@ -658,6 +690,7 @@
             this.infoERPDMType.EEPAlias = null;
             this.infoERPDMType.EncodingAfter = null;
             this.infoERPDMType.EncodingBefore = "Windows-1252";
+            this.infoERPDMType.EncodingConvert = null;
             this.infoERPDMType.InfoConnection = this.InfoConnection1;
             keyItem6.KeyName = "DMTypeNO";
             this.infoERPDMType.KeyFields.Add(keyItem6);
@@ -683,6 +716,7 @@
             this.infoERPGrantType.EEPAlias = null;
             this.infoERPGrantType.EncodingAfter = null;
             this.infoERPGrantType.EncodingBefore = "Windows-1252";
+            this.infoERPGrantType.EncodingConvert = null;
             this.infoERPGrantType.InfoConnection = this.InfoConnection1;
             keyItem7.KeyName = "GranTypeNO";
             this.infoERPGrantType.KeyFields.Add(keyItem7);
@@ -709,6 +743,7 @@
             this.infoERPNewsType.EEPAlias = null;
             this.infoERPNewsType.EncodingAfter = null;
             this.infoERPNewsType.EncodingBefore = "Windows-1252";
+            this.infoERPNewsType.EncodingConvert = null;
             this.infoERPNewsType.InfoConnection = this.InfoConnection1;
             keyItem8.KeyName = "NewsTypeNO";
             this.infoERPNewsType.KeyFields.Add(keyItem8);
@@ -735,6 +770,7 @@
             this.infoERPNewsArea.EEPAlias = null;
             this.infoERPNewsArea.EncodingAfter = null;
             this.infoERPNewsArea.EncodingBefore = "Windows-1252";
+            this.infoERPNewsArea.EncodingConvert = null;
             this.infoERPNewsArea.InfoConnection = this.InfoConnection1;
             keyItem9.KeyName = "NewsAreaNO";
             this.infoERPNewsArea.KeyFields.Add(keyItem9);
@@ -761,6 +797,7 @@
             this.infoERPNewsPublish.EEPAlias = null;
             this.infoERPNewsPublish.EncodingAfter = null;
             this.infoERPNewsPublish.EncodingBefore = "Windows-1252";
+            this.infoERPNewsPublish.EncodingConvert = null;
             this.infoERPNewsPublish.InfoConnection = this.InfoConnection1;
             keyItem10.KeyName = "NewsPublishNO";
             this.infoERPNewsPublish.KeyFields.Add(keyItem10);
@@ -787,6 +824,7 @@
             this.ERPSalesDetails2.EEPAlias = null;
             this.ERPSalesDetails2.EncodingAfter = null;
             this.ERPSalesDetails2.EncodingBefore = "Windows-1252";
+            this.ERPSalesDetails2.EncodingConvert = null;
             this.ERPSalesDetails2.InfoConnection = this.InfoConnection1;
             keyItem11.KeyName = "ItemSeq";
             keyItem12.KeyName = "SalesMasterNO";
@@ -1013,6 +1051,7 @@
             this.ucERPSalseDetails2.RowAffectsCheck = true;
             this.ucERPSalseDetails2.SelectCmd = this.ERPSalesDetails2;
             this.ucERPSalseDetails2.SelectCmdForUpdate = null;
+            this.ucERPSalseDetails2.SendSQLCmd = true;
             this.ucERPSalseDetails2.ServerModify = true;
             this.ucERPSalseDetails2.ServerModifyGetMax = false;
             this.ucERPSalseDetails2.TranscationScopeTimeOut = System.TimeSpan.Parse("00:02:00");
@@ -1030,6 +1069,7 @@
             this.infoCustomersAll.EEPAlias = "JBADMIN";
             this.infoCustomersAll.EncodingAfter = null;
             this.infoCustomersAll.EncodingBefore = "Windows-1252";
+            this.infoCustomersAll.EncodingConvert = null;
             this.infoCustomersAll.InfoConnection = this.InfoConnection1;
             this.infoCustomersAll.MultiSetWhere = false;
             this.infoCustomersAll.Name = "infoCustomersAll";
@@ -1053,6 +1093,7 @@
             this.infoERPViewArea.EEPAlias = null;
             this.infoERPViewArea.EncodingAfter = null;
             this.infoERPViewArea.EncodingBefore = "Windows-1252";
+            this.infoERPViewArea.EncodingConvert = null;
             this.infoERPViewArea.InfoConnection = this.InfoConnection1;
             keyItem13.KeyName = "ViewAreaNO";
             this.infoERPViewArea.KeyFields.Add(keyItem13);
@@ -1078,6 +1119,7 @@
             this.infoSalesInfo.EEPAlias = null;
             this.infoSalesInfo.EncodingAfter = null;
             this.infoSalesInfo.EncodingBefore = "Windows-1252";
+            this.infoSalesInfo.EncodingConvert = null;
             this.infoSalesInfo.InfoConnection = this.InfoConnection1;
             this.infoSalesInfo.MultiSetWhere = true;
             this.infoSalesInfo.Name = "infoSalesInfo";
@@ -1090,6 +1132,57 @@
             this.infoSalesInfo.SiteControl = false;
             this.infoSalesInfo.SiteFieldName = null;
             this.infoSalesInfo.UpdatedRowSource = System.Data.UpdateRowSource.None;
+            // 
+            // infoSalseDetailsInfo
+            // 
+            this.infoSalseDetailsInfo.CacheConnection = false;
+            this.infoSalseDetailsInfo.CommandText = "select \'\' as iday,0 as SalesQty,0 as SalesQtyView,0 as Remain";
+            this.infoSalseDetailsInfo.CommandTimeout = 30;
+            this.infoSalseDetailsInfo.CommandType = System.Data.CommandType.Text;
+            this.infoSalseDetailsInfo.DynamicTableName = false;
+            this.infoSalseDetailsInfo.EEPAlias = null;
+            this.infoSalseDetailsInfo.EncodingAfter = null;
+            this.infoSalseDetailsInfo.EncodingBefore = "Windows-1252";
+            this.infoSalseDetailsInfo.EncodingConvert = null;
+            this.infoSalseDetailsInfo.InfoConnection = this.InfoConnection1;
+            keyItem14.KeyName = "iday";
+            this.infoSalseDetailsInfo.KeyFields.Add(keyItem14);
+            this.infoSalseDetailsInfo.MultiSetWhere = false;
+            this.infoSalseDetailsInfo.Name = "infoSalseDetailsInfo";
+            this.infoSalseDetailsInfo.NotificationAutoEnlist = false;
+            this.infoSalseDetailsInfo.SecExcept = null;
+            this.infoSalseDetailsInfo.SecFieldName = null;
+            this.infoSalseDetailsInfo.SecStyle = Srvtools.SecurityStyle.ssByNone;
+            this.infoSalseDetailsInfo.SelectPaging = false;
+            this.infoSalseDetailsInfo.SelectTop = 0;
+            this.infoSalseDetailsInfo.SiteControl = false;
+            this.infoSalseDetailsInfo.SiteFieldName = null;
+            this.infoSalseDetailsInfo.UpdatedRowSource = System.Data.UpdateRowSource.None;
+            // 
+            // infoIndustryType
+            // 
+            this.infoIndustryType.CacheConnection = false;
+            this.infoIndustryType.CommandText = "select ListID,ListContent\r\nfrom View_ERPReferenceTable\r\nwhere ListCategory=\'Indus" +
+    "tryType\'";
+            this.infoIndustryType.CommandTimeout = 30;
+            this.infoIndustryType.CommandType = System.Data.CommandType.Text;
+            this.infoIndustryType.DynamicTableName = false;
+            this.infoIndustryType.EEPAlias = null;
+            this.infoIndustryType.EncodingAfter = null;
+            this.infoIndustryType.EncodingBefore = "Windows-1252";
+            this.infoIndustryType.EncodingConvert = null;
+            this.infoIndustryType.InfoConnection = this.InfoConnection1;
+            this.infoIndustryType.MultiSetWhere = false;
+            this.infoIndustryType.Name = "infoIndustryType";
+            this.infoIndustryType.NotificationAutoEnlist = false;
+            this.infoIndustryType.SecExcept = null;
+            this.infoIndustryType.SecFieldName = null;
+            this.infoIndustryType.SecStyle = Srvtools.SecurityStyle.ssByNone;
+            this.infoIndustryType.SelectPaging = false;
+            this.infoIndustryType.SelectTop = 0;
+            this.infoIndustryType.SiteControl = false;
+            this.infoIndustryType.SiteFieldName = null;
+            this.infoIndustryType.UpdatedRowSource = System.Data.UpdateRowSource.None;
             ((System.ComponentModel.ISupportInitialize)(this.InfoConnection1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ERPSalesMaster)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ERPSalesDetails)).EndInit();
@@ -1105,6 +1198,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.infoCustomersAll)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.infoERPViewArea)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.infoSalesInfo)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.infoSalseDetailsInfo)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.infoIndustryType)).EndInit();
 
         }
 
@@ -1130,5 +1225,7 @@
         private Srvtools.InfoCommand infoCustomersAll;
         private Srvtools.InfoCommand infoERPViewArea;
         private Srvtools.InfoCommand infoSalesInfo;
+        private Srvtools.InfoCommand infoSalseDetailsInfo;
+        private Srvtools.InfoCommand infoIndustryType;
     }
 }

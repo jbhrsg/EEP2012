@@ -373,8 +373,8 @@ namespace sERPSalesInvoices
             string ReturnTaxNumber = parm[5].ToString(); //發票作廢文號
             string ReturnRemark = parm[6].ToString();    //發票作廢原因
             string UserID = parm[7].ToString();
-            string InvoiceDate = parm[8].ToString();
-            //string SalesTypeID = parm[8].ToString();
+            //string InvoiceDate = parm[8].ToString();
+            string SalesTypeID = parm[8].ToString();
             IDbConnection connection = (IDbConnection)AllocateConnection("JBERP");
             if (connection.State != ConnectionState.Open)
             {

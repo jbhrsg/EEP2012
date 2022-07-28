@@ -48,6 +48,10 @@
             Srvtools.FieldAttr fieldAttr7 = new Srvtools.FieldAttr();
             Srvtools.FieldAttr fieldAttr8 = new Srvtools.FieldAttr();
             Srvtools.KeyItem keyItem10 = new Srvtools.KeyItem();
+            Srvtools.KeyItem keyItem11 = new Srvtools.KeyItem();
+            Srvtools.FieldAttr fieldAttr9 = new Srvtools.FieldAttr();
+            Srvtools.FieldAttr fieldAttr10 = new Srvtools.FieldAttr();
+            Srvtools.KeyItem keyItem12 = new Srvtools.KeyItem();
             this.serviceManager1 = new Srvtools.ServiceManager(this.components);
             this.InfoConnection = new Srvtools.InfoConnection(this.components);
             this.infoConnection0 = new Srvtools.InfoConnection(this.components);
@@ -69,6 +73,10 @@
             this.Customers3 = new Srvtools.InfoCommand(this.components);
             this.ucEmployer3 = new Srvtools.UpdateComponent(this.components);
             this.infoSalesId3 = new Srvtools.InfoCommand(this.components);
+            this.Customers4 = new Srvtools.InfoCommand(this.components);
+            this.infoConnection4 = new Srvtools.InfoConnection(this.components);
+            this.ucEmployer4 = new Srvtools.UpdateComponent(this.components);
+            this.infoSalesId4 = new Srvtools.InfoCommand(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.InfoConnection)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.infoConnection0)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.CountryCity)).BeginInit();
@@ -85,6 +93,9 @@
             ((System.ComponentModel.ISupportInitialize)(this.infoConnection3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Customers3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.infoSalesId3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Customers4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.infoConnection4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.infoSalesId4)).BeginInit();
             // 
             // InfoConnection
             // 
@@ -495,7 +506,7 @@
             this.ucEmployer3.FieldAttrs.Add(fieldAttr7);
             this.ucEmployer3.FieldAttrs.Add(fieldAttr8);
             this.ucEmployer3.LogInfo = null;
-            this.ucEmployer3.Name = "updateComponent1";
+            this.ucEmployer3.Name = "ucEmployer3";
             this.ucEmployer3.RowAffectsCheck = true;
             this.ucEmployer3.SelectCmd = this.Customers3;
             this.ucEmployer3.SelectCmdForUpdate = null;
@@ -533,6 +544,97 @@
             this.infoSalesId3.SiteControl = false;
             this.infoSalesId3.SiteFieldName = null;
             this.infoSalesId3.UpdatedRowSource = System.Data.UpdateRowSource.None;
+            // 
+            // Customers4
+            // 
+            this.Customers4.CacheConnection = false;
+            this.Customers4.CommandText = "SELECT Customers.*,(select SalesName from Sales where SalesID=Customers.SalesID) " +
+    "as SalesName\r\nfrom Customers\r\norder by IsActive desc,LastUpdateDate desc";
+            this.Customers4.CommandTimeout = 30;
+            this.Customers4.CommandType = System.Data.CommandType.Text;
+            this.Customers4.DynamicTableName = false;
+            this.Customers4.EEPAlias = "JCS4";
+            this.Customers4.EncodingAfter = null;
+            this.Customers4.EncodingBefore = "Windows-1252";
+            this.Customers4.EncodingConvert = null;
+            this.Customers4.InfoConnection = this.infoConnection4;
+            keyItem11.KeyName = "CustomerID";
+            this.Customers4.KeyFields.Add(keyItem11);
+            this.Customers4.MultiSetWhere = false;
+            this.Customers4.Name = "Customers4";
+            this.Customers4.NotificationAutoEnlist = false;
+            this.Customers4.SecExcept = null;
+            this.Customers4.SecFieldName = null;
+            this.Customers4.SecStyle = Srvtools.SecurityStyle.ssByNone;
+            this.Customers4.SelectPaging = false;
+            this.Customers4.SelectTop = 0;
+            this.Customers4.SiteControl = false;
+            this.Customers4.SiteFieldName = null;
+            this.Customers4.UpdatedRowSource = System.Data.UpdateRowSource.None;
+            // 
+            // infoConnection4
+            // 
+            this.infoConnection4.EEPAlias = "JCS4";
+            // 
+            // ucEmployer4
+            // 
+            this.ucEmployer4.AutoTrans = true;
+            this.ucEmployer4.ExceptJoin = false;
+            fieldAttr9.CheckNull = false;
+            fieldAttr9.DataField = "CustAreaID";
+            fieldAttr9.DefaultMode = Srvtools.DefaultModeType.Insert;
+            fieldAttr9.DefaultValue = null;
+            fieldAttr9.TrimLength = 0;
+            fieldAttr9.UpdateEnable = true;
+            fieldAttr9.WhereMode = true;
+            fieldAttr10.CheckNull = false;
+            fieldAttr10.DataField = "CustAreaName";
+            fieldAttr10.DefaultMode = Srvtools.DefaultModeType.Insert;
+            fieldAttr10.DefaultValue = null;
+            fieldAttr10.TrimLength = 0;
+            fieldAttr10.UpdateEnable = true;
+            fieldAttr10.WhereMode = true;
+            this.ucEmployer4.FieldAttrs.Add(fieldAttr9);
+            this.ucEmployer4.FieldAttrs.Add(fieldAttr10);
+            this.ucEmployer4.LogInfo = null;
+            this.ucEmployer4.Name = "updateComponent1";
+            this.ucEmployer4.RowAffectsCheck = true;
+            this.ucEmployer4.SelectCmd = this.Customers4;
+            this.ucEmployer4.SelectCmdForUpdate = null;
+            this.ucEmployer4.SendSQLCmd = true;
+            this.ucEmployer4.ServerModify = true;
+            this.ucEmployer4.ServerModifyGetMax = false;
+            this.ucEmployer4.TranscationScopeTimeOut = System.TimeSpan.Parse("00:02:00");
+            this.ucEmployer4.TransIsolationLevel = System.Data.IsolationLevel.ReadCommitted;
+            this.ucEmployer4.UseTranscationScope = false;
+            this.ucEmployer4.WhereMode = Srvtools.WhereModeType.Keyfields;
+            // 
+            // infoSalesId4
+            // 
+            this.infoSalesId4.CacheConnection = false;
+            this.infoSalesId4.CommandText = "select  SalesID as ID, SalesName as Name\r\n\t\tfrom Sales\r\n\t\twhere IsActive = 1\r\n\t\to" +
+    "rder by ID";
+            this.infoSalesId4.CommandTimeout = 30;
+            this.infoSalesId4.CommandType = System.Data.CommandType.Text;
+            this.infoSalesId4.DynamicTableName = false;
+            this.infoSalesId4.EEPAlias = "JCS4";
+            this.infoSalesId4.EncodingAfter = null;
+            this.infoSalesId4.EncodingBefore = "Windows-1252";
+            this.infoSalesId4.EncodingConvert = null;
+            this.infoSalesId4.InfoConnection = this.infoConnection4;
+            keyItem12.KeyName = "ID";
+            this.infoSalesId4.KeyFields.Add(keyItem12);
+            this.infoSalesId4.MultiSetWhere = false;
+            this.infoSalesId4.Name = "infoSalesId4";
+            this.infoSalesId4.NotificationAutoEnlist = false;
+            this.infoSalesId4.SecExcept = null;
+            this.infoSalesId4.SecFieldName = null;
+            this.infoSalesId4.SecStyle = Srvtools.SecurityStyle.ssByNone;
+            this.infoSalesId4.SelectPaging = false;
+            this.infoSalesId4.SelectTop = 0;
+            this.infoSalesId4.SiteControl = false;
+            this.infoSalesId4.SiteFieldName = null;
+            this.infoSalesId4.UpdatedRowSource = System.Data.UpdateRowSource.None;
             ((System.ComponentModel.ISupportInitialize)(this.InfoConnection)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.infoConnection0)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.CountryCity)).EndInit();
@@ -549,6 +651,9 @@
             ((System.ComponentModel.ISupportInitialize)(this.infoConnection3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.Customers3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.infoSalesId3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Customers4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.infoConnection4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.infoSalesId4)).EndInit();
 
         }
 
@@ -575,5 +680,9 @@
         private Srvtools.InfoCommand Customers3;
         private Srvtools.UpdateComponent ucEmployer3;
         private Srvtools.InfoCommand infoSalesId3;
+        private Srvtools.InfoCommand Customers4;
+        private Srvtools.InfoConnection infoConnection4;
+        private Srvtools.UpdateComponent ucEmployer4;
+        private Srvtools.InfoCommand infoSalesId4;
     }
 }

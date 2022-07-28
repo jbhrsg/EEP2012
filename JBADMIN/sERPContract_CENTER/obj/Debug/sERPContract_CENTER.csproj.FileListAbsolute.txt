@@ -1,0 +1,7 @@
+C:\Program Files (x86)\Infolight\EEP2012\EEPNetServer\JBADMIN\sCON_CENTER.dll
+C:\Program Files (x86)\Infolight\EEP2012\EEPNetServer\JBADMIN\sCON_CENTER.pdb
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sERPContract_CENTER\obj\Debug\sERPContract_CENTER.csproj.GenerateResource.Cache
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sERPContract_CENTER\obj\Debug\sCON_CENTER.dll
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sERPContract_CENTER\obj\Debug\sCON_CENTER.pdb
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sERPContract_CENTER\obj\Debug\sERPContract_CENTER.Component.resources
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sERPContract_CENTER\obj\Debug\sERPContract_CENTER.csprojResolveAssemblyReference.cache

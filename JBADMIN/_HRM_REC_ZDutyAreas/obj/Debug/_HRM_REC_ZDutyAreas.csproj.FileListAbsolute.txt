@@ -1,0 +1,9 @@
+D:\Infolight\EEP2012\JBADMIN\_HRM_REC_ZDutyAreas\bin\Debug\_HRM_REC_ZDutyAreas.dll
+D:\Infolight\EEP2012\JBADMIN\_HRM_REC_ZDutyAreas\bin\Debug\_HRM_REC_ZDutyAreas.pdb
+D:\Infolight\EEP2012\JBADMIN\_HRM_REC_ZDutyAreas\obj\Debug\_HRM_REC_ZDutyAreas.csprojResolveAssemblyReference.cache
+D:\Infolight\EEP2012\JBADMIN\_HRM_REC_ZDutyAreas\obj\Debug\_HRM_REC_ZDutyAreas.csproj.GenerateResource.Cache
+D:\Infolight\EEP2012\JBADMIN\_HRM_REC_ZDutyAreas\obj\Debug\_HRM_REC_ZDutyAreas.dll
+D:\Infolight\EEP2012\JBADMIN\_HRM_REC_ZDutyAreas\obj\Debug\_HRM_REC_ZDutyAreas.pdb
+D:\Infolight\EEP2012\EEPNetServer\JBADMIN\_HRM_REC_ZDutyAreas.dll
+D:\Infolight\EEP2012\EEPNetServer\JBADMIN\_HRM_REC_ZDutyAreas.pdb
+D:\Infolight\EEP2012\JBADMIN\_HRM_REC_ZDutyAreas\obj\Debug\_HRM_REC_ZDutyAreas.Component.resources

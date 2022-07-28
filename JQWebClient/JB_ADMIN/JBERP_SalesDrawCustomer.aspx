@@ -6,11 +6,13 @@
 <head runat="server">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <title></title>
+    <script src="../js/jquery.jbjob.js"></script>
     <script src="../js/jcanvas.min.js"></script>
     <script src="../js/jbCanvasDrawRect.js"></script>
     <script>
-        var CustNO = Request.getQueryStringByName("cn");
-        var InvoiceYM = Request.getQueryStringByName("ym");
+        var CustNO = (Request.getQueryStringByName("cn") == '') ? Request.getQueryStringByName2("cn") : Request.getQueryStringByName("cn");
+        var InvoiceYM = (Request.getQueryStringByName("ym") == '') ? Request.getQueryStringByName2("ym") : Request.getQueryStringByName("ym");
+        
         //=========================================控制Grid 1=0都做完才顯示Grid=========================================================================================
         //var waitA = false;
         //var myVar = setInterval(function () {
@@ -30,30 +32,31 @@
         ///=============================================  ready  ===============================================================================================
         $(document).ready(function () {
             
-            
-
             //日期查詢欄位更新主檔
             $('#JQDate1').datebox({
-                width: 90,
-                onSelect: function (date) {
-                    RefreshGrid();
-                }
-            }).combo('textbox').blur(function () {
-                setTimeout(function () {
-                    RefreshGrid();
-                }, 500);
+                width: 90
+            //    ,onSelect: function (date) {
+            //        RefreshGrid();
+            //    }
+            //}).combo('textbox').blur(function () {
+            //    setTimeout(function () {
+            //        RefreshGrid();
+            //    }, 500);
             });
             $('#JQDate2').datebox({
-                width: 90,
-                onSelect: function (date) {
-                    RefreshGrid();
-                }
-            }).combo('textbox').blur(function () {
-                setTimeout(function () {
-                    RefreshGrid();
-                }, 500);
+                width: 90
+            //    ,onSelect: function (date) {
+            //        RefreshGrid();
+            //    }
+            //}).combo('textbox').blur(function () {
+            //    setTimeout(function () {
+            //        RefreshGrid();
+            //    }, 500);
             });
 
+            $('#JQComboBox1').combobox({
+                width: 90
+            });
         });
 
         //OnLoadSuccessdataGridView
@@ -61,7 +64,7 @@
             if (!$(this).data('firstLoad') && $(this).data('firstLoad', true)) {//若dataGridView第一次OnLoadSuccess
                 //1=0做完
                 //waitA = true;//waitA=true代表dataGridView第一次OnLoadSuccess
-                RefreshGrid();
+                RefreshGrid0();
 
                 var dt = new Date();
                 var aDate = new Date($.jbDateAdd('days', 0, dt));//開始日期今天
@@ -69,10 +72,43 @@
                 var LastaDate = $.jbGetLastDate(aDate);
                 $("#JQDate1").datebox('setValue', $.jbjob.Date.DateFormat(StartaDate, 'yyyy/MM/dd'));
                 $("#JQDate2").datebox('setValue', $.jbjob.Date.DateFormat(LastaDate, 'yyyy/MM/dd'));
+
+
+                $("#JQComboBox1").combobox('setWhere', "d.CustNO='" + CustNO + "'");
+                //$("#JQComboBox1").combobox('setValue', InvoiceYM);
+
             }
         }
 
         function RefreshGrid() {
+            var JQDate1 = $("#JQDate1").combo('textbox').val();//datebox("getBindingValue");//datebox("getValue");                
+            var JQDate2 = $("#JQDate2").combo('textbox').val();//datebox("getBindingValue");
+            //var where = $("#dataGridView").datagrid('getWhere');
+            var where = "";
+            var InvoiceYM0 = $("#JQComboBox1").combobox('getValue');
+
+
+            if (CustNO != undefined && CustNO != "") {
+                where = where + "m.CustNO='" + CustNO + "'";
+
+                if (InvoiceYM0 != undefined && InvoiceYM0 != "") {
+                    where = where + " and d.InvoiceYM='" + InvoiceYM0 + "'";
+                    //InvoiceYM = "";
+                }
+                if (JQDate1 != undefined && JQDate1 != "" && JQDate2 != undefined && JQDate2 != "") {
+                    where = where + " and d.SalesDate between '" + JQDate1 + "' and '" + JQDate2 + "'";
+                }
+                if (InvoiceYM0 == "" && (JQDate1 == "" || JQDate2 == "")) {
+                    alert("「刊登起訖日期」、「發票年月」請擇一");
+                    return false;
+                }
+
+            } else { where = where + "m.CustNO='99999999999'"; }
+            //alert(where);
+            $("#dataGridView").datagrid('setWhere', where);
+        }
+
+        function RefreshGrid0() {
             var JQDate1 = $("#JQDate1").combo('textbox').val();//datebox("getBindingValue");//datebox("getValue");                
             var JQDate2 = $("#JQDate2").combo('textbox').val();//datebox("getBindingValue");
             var where = $("#dataGridView").datagrid('getWhere');
@@ -81,7 +117,7 @@
 
                 if (InvoiceYM != undefined && InvoiceYM != "") {
                     where = where + " and d.InvoiceYM='" + InvoiceYM + "'";
-                    InvoiceYM = "";
+                    //InvoiceYM = "";
                 }
                 if (JQDate1 != undefined && JQDate1 != "" && JQDate2 != undefined && JQDate2 != "") {
                     where = where + " and d.SalesDate between '" + JQDate1 + "' and '" + JQDate2 + "'";
@@ -90,7 +126,6 @@
             } else { where = where + "m.CustNO='99999999999'"; }
             $("#dataGridView").datagrid('setWhere', where);
         }
-
         //天數提醒(主檔),是否失效(明細)CheckBox=>不可以編輯
         function genCheckBox(val) {
             if (val != "0")
@@ -108,6 +143,7 @@
             $('#a1').linkbutton({ text: '下載' })[0];
             $('#a2').linkbutton({ text: '關閉' })[0];
             $('#a3').linkbutton({ text: '列印' })[0];
+            $('#a4').linkbutton({ text: '重整' })[0];
             $("#image-wrapper").click(function () {
                 $('#image1-container, #image2-container').toggle();
             });
@@ -120,6 +156,7 @@
             $('#image2').attr({ 'src': '' });//大圖
             $('.canvas1').jbCanvasDrawRect('clearAll');
             $('.canvas31').jbCanvasDrawRect('clearAll');
+            $('.canvas31-1').jbCanvasDrawRect('clearAll');
             openForm('#JQDialog1', $("#dataGridView").datagrid('getSelected'), "viewed", 'dialog');
         }
 
@@ -131,17 +168,21 @@
         function OnLoadSuccessJQDataForm1(FormData) {
             
             var SalesDate = FormData.SalesDate.substr(0, 10);
-            var SalesTypeID = FormData.SalesTypeID;
+            var SalesTypeID = FormData.SalesTypeID;//打開Form根據Form資料才能判斷顯示求才還是便利報
             var GrantTypeID = FormData.GrantTypeID;
             var AFrameXY = FormData.AFrameXY;
             var BFrameXY = FormData.BFrameXY;
             var CFrameXY = FormData.CFrameXY;
             
-
+            var ddSalesDate = new Date(SalesDate);
+            var dd31newDate = new Date('2018-03-08');
+            var dd31newDate2 = new Date('2018-03-15');
+            var dd31newDate1018 = new Date('2018-10-18');
             //畫報紙,畫框
             if (SalesTypeID == '1' && GrantTypeID != "+") {//求才
                 $('.canvas1').show();//顯示求才畫布
                 $('.canvas31').hide();
+                $('.canvas31-1').hide();
                 if (AFrameXY != "" && AFrameXY != null && AFrameXY != undefined) {
                     var LocationList = $.parseJSON(AFrameXY);
                     var temp = '[[{"x":' + (LocationList[0][0].x) * 4.4 + ',"y":' + (LocationList[0][0].y) * 4.4 + '},{"x":' + (LocationList[0][1].x) * 4.4 + ',"y":' + (LocationList[0][1].y) * 4.4 + '}]]';
@@ -157,9 +198,38 @@
                     var temp = '[[{"x":' + (LocationList[0][0].x) * 4.4 + ',"y":' + (LocationList[0][0].y) * 4.4 + '},{"x":' + (LocationList[0][1].x) * 4.4 + ',"y":' + (LocationList[0][1].y) * 4.4 + '}]]';
                     DrawImage("../Files/JBERP_SalesPaper/SalesType1_C/" + SalesDate + ".jpeg", ".canvas1", temp, SalesDate, SalesTypeID);
                 }
-            } else if (SalesTypeID == '31' || (SalesTypeID == '1' && GrantTypeID == "+")) {//便利報
+            } else if ((SalesTypeID == '31' || (SalesTypeID == '1' && GrantTypeID == "+")) && ((ddSalesDate >= dd31newDate2) && (ddSalesDate < dd31newDate1018))) {//新版便利報2
+                $('.canvas31-1').show();
+                $('.canvas31').hide();
+                $('.canvas1').hide();
+                if (AFrameXY != "" && AFrameXY != null && AFrameXY != undefined) {
+                    var LocationList = $.parseJSON(AFrameXY);
+                    var temp = '[[{"x":' + (LocationList[0][0].x) * 2.6 + ',"y":' + (LocationList[0][0].y) * 2.6 + '},{"x":' + (LocationList[0][1].x) * 2.6 + ',"y":' + (LocationList[0][1].y) * 2.6 + '}]]';
+                    DrawImage("../Files/JBERP_SalesPaper/SalesType31_A/" + SalesDate + ".jpeg", ".canvas31-1", temp, SalesDate, SalesTypeID);
+                }
+                else if (BFrameXY != "" && BFrameXY != null && BFrameXY != undefined) {
+                    var LocationList = $.parseJSON(BFrameXY);
+                    var temp = '[[{"x":' + (LocationList[0][0].x) * 2.6 + ',"y":' + (LocationList[0][0].y) * 2.6 + '},{"x":' + (LocationList[0][1].x) * 2.6 + ',"y":' + (LocationList[0][1].y) * 2.6 + '}]]';
+                    DrawImage("../Files/JBERP_SalesPaper/SalesType31_B/" + SalesDate + ".jpeg", ".canvas31-1", temp, SalesDate, SalesTypeID);
+                }
+            } else if ((SalesTypeID == '31' || (SalesTypeID == '1' && GrantTypeID == "+")) && (ddSalesDate >= dd31newDate && ddSalesDate < dd31newDate2)) {//新版便利報
+                $('.canvas31-1').show();
+                $('.canvas31').hide();
+                $('.canvas1').hide();
+                if (AFrameXY != "" && AFrameXY != null && AFrameXY != undefined) {
+                    var LocationList = $.parseJSON(AFrameXY);
+                    var temp = '[[{"x":' + (LocationList[0][0].x) * 3.2 + ',"y":' + (LocationList[0][0].y) * 3.2 + '},{"x":' + (LocationList[0][1].x) * 3.2 + ',"y":' + (LocationList[0][1].y) * 3.2 + '}]]';
+                    DrawImage("../Files/JBERP_SalesPaper/SalesType31_A/" + SalesDate + ".jpeg", ".canvas31-1", temp, SalesDate, SalesTypeID);
+                }
+                else if (BFrameXY != "" && BFrameXY != null && BFrameXY != undefined) {
+                    var LocationList = $.parseJSON(BFrameXY);
+                    var temp = '[[{"x":' + (LocationList[0][0].x) * 3.2 + ',"y":' + (LocationList[0][0].y) * 3.2 + '},{"x":' + (LocationList[0][1].x) * 3.2 + ',"y":' + (LocationList[0][1].y) * 3.2 + '}]]';
+                    DrawImage("../Files/JBERP_SalesPaper/SalesType31_B/" + SalesDate + ".jpeg", ".canvas31-1", temp, SalesDate, SalesTypeID);
+                }
+            } else if ((SalesTypeID == '31' || (SalesTypeID == '1' && GrantTypeID == "+")) && ((ddSalesDate < dd31newDate) || (ddSalesDate >= dd31newDate1018))) {//便利報
                 $('.canvas31').show();
                 $('.canvas1').hide();
+                $('.canvas31-1').hide();
                 if (AFrameXY != "" && AFrameXY != null && AFrameXY != undefined) {
                     var LocationList = $.parseJSON(AFrameXY);
                     var temp = '[[{"x":' + (LocationList[0][0].x) * 6.3 + ',"y":' + (LocationList[0][0].y) * 6.3 + '},{"x":' + (LocationList[0][1].x) * 6.3 + ',"y":' + (LocationList[0][1].y) * 6.3 + '}]]';
@@ -180,35 +250,38 @@
                 async: false,
                 type: "HEAD",//get status code ex:404(not found)
                 success: function () {
-                    $.messager.progress({ msg: 'Loading...' });//進度條開始
+                    //執行順序1.下載2.畫框3.轉檔
+                    $.messager.progress({ msg: '檔案下載...', interval: '1600' });//進度條開始//
                     $(Canvas).jbCanvasDrawRect('loadImage', FilePath);//畫報
                     setTimeout(function () {
-                        if (Coordinate != "") {
-                            $(Canvas).jbCanvasDrawRect('setLocationList', $.parseJSON(Coordinate));//畫框
-                            $('#a1').attr({ 'download': SalesDate + '_' + SalesTypeID });
-                        }
-                        CanvasToDataURL(Canvas);//canvas轉成<a>和<image>，canvas隱藏
-                        $.messager.progress('close'); //進度條結束
-                    }, 5000);
-                },
-                error: function () { }
+                                $(Canvas).jbCanvasDrawRect('setLocationList', $.parseJSON(Coordinate));//畫框
+                                $('#a1').attr({ 'download': SalesDate + '_' + SalesTypeID });
+
+                                setTimeout(function () {
+                                    CanvasToDataURL(Canvas);//canvas轉成<a>和<image>，canvas隱藏
+                                    $.messager.progress('close'); //進度條結束
+                                }, 500);
+                    }, 15500);
+                }
             });
         }
         //<canvas>轉成<a><image>，<canvas>隱藏
         function CanvasToDataURL(Canvas) {
             if (Canvas == '.canvas1') {
-                var dataurl = $(Canvas).getCanvasImage('jpeg', 0.9);
+                var dataurl = $(Canvas).getCanvasImage('jpeg', 0.9);//回傳based-64編碼的字串
             } else if (Canvas == '.canvas31') {
-                var dataurl = $(Canvas).getCanvasImage('jpeg', 0.5);
+                var dataurl = $(Canvas).getCanvasImage('jpeg', 0.3);
+            } else if (Canvas == '.canvas31-1') {
+                var dataurl = $(Canvas).getCanvasImage('jpeg', 0.7);
             }
-                var blob = dataURItoBlob(dataurl);
-                $('#a1').attr({ 'href': window.URL.createObjectURL(blob) });
+                var blob = dataURItoBlob(dataurl);//blob是二進制的字串
+                $('#a1').attr({ 'href': window.URL.createObjectURL(blob) });//下載，createObjectURL回傳URL字串
                 $('#image1').attr({ 'src': window.URL.createObjectURL(blob) });//小圖
                 $('#image2').attr({ 'src': window.URL.createObjectURL(blob) });//大圖
-                $('#a3').attr({ 'onclick': 'printCanvas("' + dataurl + '","' + Canvas + '")' });
+                $('#a3').attr({ 'onclick': 'printCanvas("' + dataurl + '","' + Canvas + '")' });//列印
                 $("canvas:not(:hidden)").css({ 'display': 'none' });
-                $('#image2-container').hide();
-                $('#image1-container').show();
+                $('#image2-container').hide();//大圖的container
+                $('#image1-container').show();//小圖的container
         }
 
         function dataURItoBlob(dataURI) {
@@ -230,9 +303,8 @@
             return new Blob([ia], { type: mimeString });
         }
 
-        //沒用上
+        //沒用到
         function ResizeImage(maxwidth, maxheight) {
-            //if ($(image).id == "image1") {
             var image = $('#image1');
                 var w = image.width;
                 var h = image.height;
@@ -243,19 +315,132 @@
                 else {
                     if (h > maxheight) image.height(maxheight);
                 }
-            //}
         }
 
         //OnClick"列印"按鈕
         function printCanvas(dataurl,canvas) {
             var win = window.open();
             if (canvas == '.canvas1') {
-                win.document.write("<br><img id='img1' src='" + dataurl + "' width='960'/>");//297*210 2816*1993=1006*711=971*687
+                win.document.write("<HTML><head></head><BODY onload='window.print();window.close()'>");
+                win.document.write("<img id='img1' src='" + dataurl + "' width='960'/>");//297*210 2816*1993=1006*711=971*687
+                win.document.close("</BODY></HTML>");
             } else {
-                win.document.write("<br><img id='img31' src='" + dataurl + "'/>");//297*210
+                win.document.write("<HTML><head></head><BODY onload='window.print();window.close()'>");
+                win.document.write("<img id='img31' src='" + dataurl + "' width='960'/>");//297*210
+                win.document.close("</BODY></HTML>");
             }
-            win.print();
-            win.close();
+        }
+
+        //重整
+        function FreshJQDataForm1() {
+
+            var SalesDate = $("#JQDataForm1SalesDate").val().substr(0, 10);;
+            var SalesTypeID = $("#JQDataForm1SalesTypeID").val();//打開Form根據Form資料才能判斷顯示求才還是便利報
+            var GrantTypeID = $("#JQDataForm1GrantTypeID").val();
+            var AFrameXY = $("#JQDataForm1AFrameXY").val();
+            var BFrameXY = $("#JQDataForm1BFrameXY").val();
+            var CFrameXY = $("#JQDataForm1CFrameXY").val();
+
+            var ddSalesDate = new Date(SalesDate);
+            var dd31newDate = new Date('2018-03-08');
+            var dd31newDate2 = new Date('2018-03-15');
+            var dd31newDate1018 = new Date('2018-10-18');
+            //畫報紙,畫框
+            if (SalesTypeID == '1' && GrantTypeID != "+") {//求才
+                $('.canvas1').show();//顯示求才畫布
+                $('.canvas31').hide();
+                $('.canvas31-1').hide();
+                if (AFrameXY != "" && AFrameXY != null && AFrameXY != undefined) {
+                    var LocationList = $.parseJSON(AFrameXY);
+                    var temp = '[[{"x":' + (LocationList[0][0].x) * 4.4 + ',"y":' + (LocationList[0][0].y) * 4.4 + '},{"x":' + (LocationList[0][1].x) * 4.4 + ',"y":' + (LocationList[0][1].y) * 4.4 + '}]]';
+                    DrawImage1("../Files/JBERP_SalesPaper/SalesType1_A/" + SalesDate + ".jpeg", ".canvas1", temp, SalesDate, SalesTypeID);
+                }
+                else if (BFrameXY != "" && BFrameXY != null && BFrameXY != undefined) {
+                    var LocationList = $.parseJSON(BFrameXY);
+                    var temp = '[[{"x":' + (LocationList[0][0].x) * 4.4 + ',"y":' + (LocationList[0][0].y) * 4.4 + '},{"x":' + (LocationList[0][1].x) * 4.4 + ',"y":' + (LocationList[0][1].y) * 4.4 + '}]]';
+                    DrawImage1("../Files/JBERP_SalesPaper/SalesType1_B/" + SalesDate + ".jpeg", ".canvas1", temp, SalesDate, SalesTypeID);
+                }
+                else if (CFrameXY != "" && CFrameXY != null && CFrameXY != undefined) {
+                    var LocationList = $.parseJSON(CFrameXY);
+                    var temp = '[[{"x":' + (LocationList[0][0].x) * 4.4 + ',"y":' + (LocationList[0][0].y) * 4.4 + '},{"x":' + (LocationList[0][1].x) * 4.4 + ',"y":' + (LocationList[0][1].y) * 4.4 + '}]]';
+                    DrawImage1("../Files/JBERP_SalesPaper/SalesType1_C/" + SalesDate + ".jpeg", ".canvas1", temp, SalesDate, SalesTypeID);
+                }
+            } else if ((SalesTypeID == '31' || (SalesTypeID == '1' && GrantTypeID == "+")) && ((ddSalesDate >= dd31newDate2) && (ddSalesDate < dd31newDate1018))) {//新版便利報2
+                $('.canvas31-1').show();
+                $('.canvas31').hide();
+                $('.canvas1').hide();
+                if (AFrameXY != "" && AFrameXY != null && AFrameXY != undefined) {
+                    var LocationList = $.parseJSON(AFrameXY);
+                    var temp = '[[{"x":' + (LocationList[0][0].x) * 2.6 + ',"y":' + (LocationList[0][0].y) * 2.6 + '},{"x":' + (LocationList[0][1].x) * 2.6 + ',"y":' + (LocationList[0][1].y) * 2.6 + '}]]';
+                    DrawImage1("../Files/JBERP_SalesPaper/SalesType31_A/" + SalesDate + ".jpeg", ".canvas31-1", temp, SalesDate, SalesTypeID);
+                }
+                else if (BFrameXY != "" && BFrameXY != null && BFrameXY != undefined) {
+                    var LocationList = $.parseJSON(BFrameXY);
+                    var temp = '[[{"x":' + (LocationList[0][0].x) * 2.6 + ',"y":' + (LocationList[0][0].y) * 2.6 + '},{"x":' + (LocationList[0][1].x) * 2.6 + ',"y":' + (LocationList[0][1].y) * 2.6 + '}]]';
+                    DrawImage1("../Files/JBERP_SalesPaper/SalesType31_B/" + SalesDate + ".jpeg", ".canvas31-1", temp, SalesDate, SalesTypeID);
+                }
+            } else if ((SalesTypeID == '31' || (SalesTypeID == '1' && GrantTypeID == "+")) && (ddSalesDate >= dd31newDate && ddSalesDate < dd31newDate2)) {//新版便利報
+                $('.canvas31-1').show();
+                $('.canvas31').hide();
+                $('.canvas1').hide();
+                if (AFrameXY != "" && AFrameXY != null && AFrameXY != undefined) {
+                    var LocationList = $.parseJSON(AFrameXY);
+                    var temp = '[[{"x":' + (LocationList[0][0].x) * 3.2 + ',"y":' + (LocationList[0][0].y) * 3.2 + '},{"x":' + (LocationList[0][1].x) * 3.2 + ',"y":' + (LocationList[0][1].y) * 3.2 + '}]]';
+                    DrawImage1("../Files/JBERP_SalesPaper/SalesType31_A/" + SalesDate + ".jpeg", ".canvas31-1", temp, SalesDate, SalesTypeID);
+                }
+                else if (BFrameXY != "" && BFrameXY != null && BFrameXY != undefined) {
+                    var LocationList = $.parseJSON(BFrameXY);
+                    var temp = '[[{"x":' + (LocationList[0][0].x) * 3.2 + ',"y":' + (LocationList[0][0].y) * 3.2 + '},{"x":' + (LocationList[0][1].x) * 3.2 + ',"y":' + (LocationList[0][1].y) * 3.2 + '}]]';
+                    DrawImage1("../Files/JBERP_SalesPaper/SalesType31_B/" + SalesDate + ".jpeg", ".canvas31-1", temp, SalesDate, SalesTypeID);
+                }
+            } else if ((SalesTypeID == '31' || (SalesTypeID == '1' && GrantTypeID == "+")) && ((ddSalesDate < dd31newDate) || (ddSalesDate >= dd31newDate1018))) {//便利報
+                $('.canvas31').show();
+                $('.canvas1').hide();
+                $('.canvas31-1').hide();
+                if (AFrameXY != "" && AFrameXY != null && AFrameXY != undefined) {
+                    var LocationList = $.parseJSON(AFrameXY);
+                    var temp = '[[{"x":' + (LocationList[0][0].x) * 6.3 + ',"y":' + (LocationList[0][0].y) * 6.3 + '},{"x":' + (LocationList[0][1].x) * 6.3 + ',"y":' + (LocationList[0][1].y) * 6.3 + '}]]';
+                    DrawImage1("../Files/JBERP_SalesPaper/SalesType31_A/" + SalesDate + ".jpeg", ".canvas31", temp, SalesDate, SalesTypeID);
+                }
+                else if (BFrameXY != "" && BFrameXY != null && BFrameXY != undefined) {
+                    var LocationList = $.parseJSON(BFrameXY);
+                    var temp = '[[{"x":' + (LocationList[0][0].x) * 6.3 + ',"y":' + (LocationList[0][0].y) * 6.3 + '},{"x":' + (LocationList[0][1].x) * 6.3 + ',"y":' + (LocationList[0][1].y) * 6.3 + '}]]';
+                    DrawImage1("../Files/JBERP_SalesPaper/SalesType31_B/" + SalesDate + ".jpeg", ".canvas31", temp, SalesDate, SalesTypeID);
+                }
+            }
+        }
+        function DrawImage1(FilePath, Canvas, Coordinate, SalesDate, SalesTypeID) {
+            $('#image2-container').hide();//大圖的container
+            $('#image1-container').hide();//小圖的container
+
+            var src;
+            //檢查圖檔是否存在，存在就畫
+            $.ajax({
+                url: FilePath,
+                async: false,
+                type: "HEAD",//get status code ex:404(not found)
+                success: function () {
+                    //執行順序1.下載2.畫框3.轉檔
+                    $.messager.progress({ msg: '重整...', interval: '1000' });//進度條開始//
+                    $(Canvas).jbCanvasDrawRect('loadImage', FilePath);//畫報
+
+                    setTimeout(function () {
+                            $(Canvas).jbCanvasDrawRect('setLocationList', $.parseJSON(Coordinate));//畫框
+                            $('#a1').attr({ 'download': SalesDate + '_' + SalesTypeID });
+
+                            setTimeout(function () {
+                                CanvasToDataURL(Canvas);//canvas轉成<a>和<image>，canvas隱藏
+                                $.messager.progress('close'); //進度條結束
+                            }, 500);
+                    }, 9500);
+                }
+            });
+        }
+
+        function JQButton1_OnClick() {
+            $("#JQDate1").datebox('setValue', '');
+            $("#JQDate2").datebox('setValue', '');
+            $("#JQComboBox1").combobox('setValue', '');
         }
     </script>
 </head>
@@ -265,9 +450,16 @@
             <JQTools:JQScriptManager ID="JQScriptManager1" runat="server" AgentDatabase="JBADMIN" AgentSolution="JBADMIN" AgentUser="A0123" />
             <div>
             
+            
+            <asp:Label ID="Label1" runat="server" Font-Size="Small" Text="發票年月:"></asp:Label>
+                <JQTools:JQComboBox ID="JQComboBox1" runat="server" CheckData="False" DisplayMember="InvoiceYM" RemoteName="sERPSalesDrawCustomer.InvoiceYM" ValueMember="InvoiceYM"></JQTools:JQComboBox>
+
             <asp:Label ID="Label2" runat="server" Font-Size="Small" Text="刊登起訖日期:"></asp:Label>
-            <JQTools:JQDateBox ID="JQDate1" runat="server" Width="100px" />
-            〜<JQTools:JQDateBox ID="JQDate2" runat="server" />
+                <JQTools:JQDateBox ID="JQDate1" runat="server" />
+                〜<JQTools:JQDateBox ID="JQDate2" runat="server" /> 
+                <JQTools:JQButton ID="JQButton2" runat="server" OnClick="RefreshGrid" Text="查詢"/>
+                <JQTools:JQButton ID="JQButton1" runat="server" OnClick="JQButton1_OnClick" Text="清除" />
+            
             </div>
 
             <JQTools:JQDataGrid ID="dataGridView" data-options="pagination:true,view:commandview" RemoteName="sERPSalesDrawCustomer.ERPSalesDetails" runat="server" AutoApply="True"
@@ -330,10 +522,12 @@
 </JQTools:JQValidate>
         <JQTools:JQDialog ID="JQDialog1" runat="server" BindingObjectID="JQDataForm1" Title=" " Width="3850px" DialogLeft="2px" DialogTop="2px">
             <a id="a1" href="#" download="" >下載</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <a id="a4" href="#"  onclick="FreshJQDataForm1()" >重整</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
             <a id="a2" href="#" onclick="closeForm('#JQDialog1')"  >關閉</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
             <a id="a3" href="#">列印</a>
             &nbsp;&nbsp;&nbsp;&nbsp;<label style='color:blue','font-size:12px'>※點圖可放大縮小</label><br />
             <label style='color:red'><b>※建議使用Google Chrome瀏覽器來開啟本系統，如使用IE瀏覽器不能下載、列印，請按滑鼠右鍵另存圖檔。</b></label>
+            <br /><label style='color:red'><b>※如出現黑圖，請按左上角的「重整」。</b></label>
             <br />
             <JQTools:JQDataForm ID="JQDataForm1" runat="server" AlwaysReadOnly="False" Closed="False" ContinueAdd="False" DataMember="ERPSalesDetails" disapply="False" DivFramed="False" DuplicateCheck="False" HorizontalColumnsCount="5" HorizontalGap="0" IsAutoPageClose="False" IsAutoPause="False" IsAutoSubmit="False" IsNotifyOFF="False" IsRejectNotify="False" IsRejectON="False" IsShowFlowIcon="False" RemoteName="sERPSalesDrawCustomer.ERPSalesDetails" ShowApplyButton="False" ValidateStyle="Hint" VerticalGap="0" OnLoadSuccess="OnLoadSuccessJQDataForm1">
                 <Columns>
@@ -348,17 +542,20 @@
                 </Columns>
             </JQTools:JQDataForm>
             <%--<button onClick="javascript:WebBrowser.ExecWB(4,1)">另存新檔...</button><object id="WebBrowser" width=0 height=0 classid="CLSID:8856F961-340A-11D0-A96B-00C04FD705A2"></object>--%>
-            <canvas class="canvas1" style="width: 2816px; height: 1993px"></canvas>
             <%--求才畫布--%><%--760 360--%>
-            <canvas class="canvas31" style="width: 3780px; height: 5078px"></canvas>
+            <canvas class="canvas1" style="width: 2816px; height: 1993px"></canvas>
             <%--便利畫布--%>
+            <canvas class="canvas31" style="width: 3780px; height: 5078px"></canvas>
+            <%--新版便利畫布--%>
+            <canvas class="canvas31-1" style="width: 3500px; height: 2413px"></canvas>
+            
             <%--<img id="saveimage" src=""/>--%>
             <%--<input id="savepngbtn" type="button" value="保存圖片" onclick=>--%>
             <div id="image-wrapper">
                 <div id="image1-container">
-                    <img id="image1" width="800" />
+                    <img id="image1" width="800" /><%--小圖--%>
                 </div>
-                <div id="image2-container">
+                <div id="image2-container"><%--大圖--%>
                     <img id="image2" />
                 </div>
             </div>

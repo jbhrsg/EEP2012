@@ -193,7 +193,7 @@ namespace sShortTermMasterApply
             try
             {
                 string ShortTermNO = objParam[0].ToString();
-                string sql = "SELECT COUNT(ShortTermNO) as cnt FROM [60.250.52.106,1433].FWCRM.DBO.EmployeeFees WHERE ShortTermNO = '" + ShortTermNO + "'";
+                string sql = "SELECT COUNT(ShortTermNO) as cnt FROM [192.168.1.41].FWCRM.DBO.EmployeeFees WHERE ShortTermNO = '" + ShortTermNO + "'";
                 DataSet dsTemp = this.ExecuteSql(sql, connection, transaction);
                 string cnt = dsTemp.Tables[0].Rows[0]["cnt"].ToString();
                 //Indented縮排 將資料轉換成Json格式
@@ -223,7 +223,7 @@ namespace sShortTermMasterApply
             try
             {
                 string ShortTermNO = objParam[0].ToString();
-                string sql = "SELECT COUNT(ShortTermNO) as cnt FROM [60.250.52.106,1433].FWCRM.DBO.FeeSetUpM WHERE left(ShortTermNO,8) = '" + ShortTermNO + "'";
+                string sql = "SELECT COUNT(ShortTermNO) as cnt FROM [192.168.1.41].FWCRM.DBO.FeeSetUpM WHERE left(ShortTermNO,8) = '" + ShortTermNO + "'";
                 DataSet dsTemp = this.ExecuteSql(sql, connection, transaction);
                 string cnt = dsTemp.Tables[0].Rows[0]["cnt"].ToString();
                 js = JsonConvert.SerializeObject(cnt, Formatting.Indented);
@@ -296,7 +296,7 @@ namespace sShortTermMasterApply
             //IDbTransaction transaction = connection.BeginTransaction();
             try
             {
-                string sql = "EXEC [60.250.52.106,1433].FWCRM.dbo.procInsertFeeSetUpMbyEEP '" + FeeID + "','" + YearMonth + "','" + FeeSDate + "','" + FeeEDate + "','" + ShortTermAmount + "','" + ShortTermNO + "','" + DormID + "','" + UserName + "'";
+                string sql = "EXEC [192.168.1.41].FWCRM.dbo.procInsertFeeSetUpMbyEEP '" + FeeID + "','" + YearMonth + "','" + FeeSDate + "','" + FeeEDate + "','" + ShortTermAmount + "','" + ShortTermNO + "','" + DormID + "','" + UserName + "'";
                 cmd = new SqlCommand(sql, conn);
                 cmd.ExecuteNonQuery();
                 //this.ExecuteSql(sql, connection, transaction);

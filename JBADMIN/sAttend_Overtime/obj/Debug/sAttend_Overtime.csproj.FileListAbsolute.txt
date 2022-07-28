@@ -1,6 +1,3 @@
-C:\Program Files (x86)\Infolight\EEP2012\EEPNetServer\JBADMIN\sAttend_Overtime.dll
-C:\Program Files (x86)\Infolight\EEP2012\EEPNetServer\JBADMIN\sAttend_Overtime.pdb
-C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sAttend_Overtime\obj\Debug\sAttend_Overtime.Component.resources
-C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sAttend_Overtime\obj\Debug\sAttend_Overtime.csproj.GenerateResource.Cache
-C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sAttend_Overtime\obj\Debug\sAttend_Overtime.dll
-C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sAttend_Overtime\obj\Debug\sAttend_Overtime.pdb
+D:\Infolight\EEP2012\JBADMIN\sAttend_Overtime\obj\Debug\sAttend_Overtime.csprojResolveAssemblyReference.cache
+D:\Infolight\EEP2012\JBADMIN\sAttend_Overtime\obj\Debug\sAttend_Overtime.Component.resources
+D:\Infolight\EEP2012\JBADMIN\sAttend_Overtime\obj\Debug\sAttend_Overtime.csproj.GenerateResource.Cache

@@ -3,7 +3,7 @@
   <Profiles />
   <Settings>
     <Setting Name="sARInvoice_Cetustek_InvoiceAPIService" Type="(Web Service URL)" Scope="Application">
-      <Value Profile="(Default)">http://invoice.cetustek.com.tw:80/InvoiceMultiWeb/InvoiceAPI</Value>
+      <Value Profile="(Default)">http://www.ei.com.tw/InvoiceMultiWeb/InvoiceAPI?wsdl</Value>
     </Setting>
   </Settings>
 </SettingsFile>

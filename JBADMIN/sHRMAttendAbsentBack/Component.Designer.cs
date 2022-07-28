@@ -39,6 +39,7 @@
             Srvtools.FieldAttr fieldAttr6 = new Srvtools.FieldAttr();
             Srvtools.FieldAttr fieldAttr7 = new Srvtools.FieldAttr();
             Srvtools.FieldAttr fieldAttr8 = new Srvtools.FieldAttr();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Component));
             Srvtools.KeyItem keyItem2 = new Srvtools.KeyItem();
             this.serviceManager1 = new Srvtools.ServiceManager(this.components);
             this.InfoConnection1 = new Srvtools.InfoConnection(this.components);
@@ -177,9 +178,7 @@
             // infoHRM_ATTEND_ABSENT_MINUS
             // 
             this.infoHRM_ATTEND_ABSENT_MINUS.CacheConnection = false;
-            this.infoHRM_ATTEND_ABSENT_MINUS.CommandText = "select * from HRM_ATTEND_ABSENT_MINUS m\r\n\tinner join HRM_ATTEND_HOLIDAY h on m.HO" +
-    "LIDAY_ID=h.HOLIDAY_ID\r\nwhere m.SALARY_YYMM>=Left(CONVERT(nvarchar(10),GETDATE()," +
-    "112),6)\r\norder by m.BEGIN_DATE desc";
+            this.infoHRM_ATTEND_ABSENT_MINUS.CommandText = resources.GetString("infoHRM_ATTEND_ABSENT_MINUS.CommandText");
             this.infoHRM_ATTEND_ABSENT_MINUS.CommandTimeout = 30;
             this.infoHRM_ATTEND_ABSENT_MINUS.CommandType = System.Data.CommandType.Text;
             this.infoHRM_ATTEND_ABSENT_MINUS.DynamicTableName = false;

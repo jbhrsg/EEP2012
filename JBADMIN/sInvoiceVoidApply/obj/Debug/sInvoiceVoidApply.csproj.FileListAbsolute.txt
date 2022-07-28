@@ -6,11 +6,3 @@ C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sInvoiceVoidApply\obj\Debug\sIn
 C:\Program Files (x86)\Infolight\EEP2012\EEPNetServer\JBADMIN\sInvoiceVoidApply.dll
 C:\Program Files (x86)\Infolight\EEP2012\EEPNetServer\JBADMIN\sInvoiceVoidApply.pdb
 C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sInvoiceVoidApply\obj\Debug\sInvoiceVoidApply.Component.resources
-D:\Infolight\EEP2012\EEPNetServer\JBADMIN\sInvoiceVoidApply.dll
-D:\Infolight\EEP2012\EEPNetServer\JBADMIN\sInvoiceVoidApply.pdb
-D:\Infolight\EEP2012\JBADMIN\sInvoiceVoidApply\obj\Debug\sInvoiceVoidApply.Component.resources
-D:\Infolight\EEP2012\JBADMIN\sInvoiceVoidApply\obj\Debug\sInvoiceVoidApply.csproj.GenerateResource.Cache
-D:\Infolight\EEP2012\JBADMIN\sInvoiceVoidApply\obj\Debug\sInvoiceVoidApply.dll
-D:\Infolight\EEP2012\JBADMIN\sInvoiceVoidApply\obj\Debug\sInvoiceVoidApply.pdb
-D:\Infolight\EEP2012\JBADMIN\sInvoiceVoidApply\obj\Debug\sInvoiceVoidApply.csprojResolveAssemblyReference.cache
-C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sInvoiceVoidApply\obj\Debug\sInvoiceVoidApply.csprojResolveAssemblyReference.cache

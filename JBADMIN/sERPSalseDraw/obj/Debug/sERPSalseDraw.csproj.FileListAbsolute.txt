@@ -1,0 +1,11 @@
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sERPSalseDraw\bin\Debug\sERPSalseDraw.dll
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sERPSalseDraw\bin\Debug\sERPSalseDraw.pdb
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sERPSalseDraw\obj\Debug\sERPSalseDraw.csproj.GenerateResource.Cache
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sERPSalseDraw\obj\Debug\sERPSalseDraw.dll
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sERPSalseDraw\obj\Debug\sERPSalseDraw.pdb
+C:\Program Files (x86)\Infolight\EEP2012\EEPNetServer\JBADMIN\sERPSalseDraw.dll
+C:\Program Files (x86)\Infolight\EEP2012\EEPNetServer\JBADMIN\sERPSalseDraw.pdb
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sERPSalseDraw\obj\Debug\sERPSalseDraw.Component.resources
+C:\Program Files (x86)\Infolight\EEP2012\EEPNetServer\JBADMIN\vi-VN\sERPSalseDraw.resources.dll
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sERPSalseDraw\obj\Debug\sERPSalseDraw.Component.vi-VN.resources
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sERPSalseDraw\obj\Debug\vi-VN\sERPSalseDraw.resources.dll

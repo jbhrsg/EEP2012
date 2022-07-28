@@ -14,3 +14,4 @@ D:\Infolight\EEP2012\JBADMIN\sShortTermMaster\obj\Release\sShortTermMaster.Compo
 D:\Infolight\EEP2012\JBADMIN\sShortTermMaster\obj\Release\sShortTermMaster.csproj.GenerateResource.Cache
 D:\Infolight\EEP2012\JBADMIN\sShortTermMaster\obj\Release\sShortTermMaster.dll
 D:\Infolight\EEP2012\JBADMIN\sShortTermMaster\obj\Release\sShortTermMaster.pdb
+D:\Infolight\EEP2012\JBADMIN\sShortTermMaster\obj\Release\sShortTermMaster.csprojResolveAssemblyReference.cache

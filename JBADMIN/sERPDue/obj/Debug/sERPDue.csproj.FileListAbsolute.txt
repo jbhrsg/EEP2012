@@ -1,0 +1,13 @@
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sERPDue\bin\Debug\sERPDue.dll
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sERPDue\bin\Debug\sERPDue.pdb
+C:\Program Files (x86)\Infolight\EEP2012\EEPNetServer\JBADMIN\sERPDue.dll.config
+C:\Program Files (x86)\Infolight\EEP2012\EEPNetServer\JBADMIN\sERPDue.dll
+C:\Program Files (x86)\Infolight\EEP2012\EEPNetServer\JBADMIN\sERPDue.pdb
+C:\Program Files (x86)\Infolight\EEP2012\EEPNetServer\JBADMIN\vi-VN\sERPDue.resources.dll
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sERPDue\obj\Debug\sERPDue.csprojResolveAssemblyReference.cache
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sERPDue\obj\Debug\sERPDue.Component.resources
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sERPDue\obj\Debug\sERPDue.Component.vi-VN.resources
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sERPDue\obj\Debug\sERPDue.csproj.GenerateResource.Cache
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sERPDue\obj\Debug\vi-VN\sERPDue.resources.dll
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sERPDue\obj\Debug\sERPDue.dll
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sERPDue\obj\Debug\sERPDue.pdb

@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="JBERP_R_SalesDetails" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="JBERP_R_SalesDetails" msdata:IsDataSet="true" msdata:CaseSensitive="true" msdata:UseCurrentLocale="true">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="ERPSalesDetails">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="CustNO" type="xs:string" minOccurs="0" />
+              <xs:element name="CustShortName" type="xs:string" minOccurs="0" />
+              <xs:element name="AcceptDate" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="iday" type="xs:string" minOccurs="0" />
+              <xs:element name="Amt" type="xs:string" minOccurs="0" />
+              <xs:element name="SalesID" type="xs:string" minOccurs="0" />
+              <xs:element name="ViewAreaName" type="xs:string" minOccurs="0" />
+              <xs:element name="SalesDate" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="SalesDescr" type="xs:string" minOccurs="0" />
+              <xs:element name="ViewAreaID" type="xs:string" minOccurs="0" />
+              <xs:element name="NewsTypeID" type="xs:string" minOccurs="0" />
+              <xs:element name="NewsTypeName" type="xs:string" minOccurs="0" />
+              <xs:element name="iSum" type="xs:int" minOccurs="0" />
+              <xs:element name="SalesMasterNO" type="xs:int" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="JBERPInvoiceList">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="SalesTypeID" type="xs:string" minOccurs="0" />
+              <xs:element name="CustNO" type="xs:string" minOccurs="0" />
+              <xs:element name="CustName" type="xs:string" minOccurs="0" />
+              <xs:element name="TaxNO" type="xs:string" minOccurs="0" />
+              <xs:element name="SalesQty" type="xs:int" minOccurs="0" />
+              <xs:element name="CustAmt" type="xs:int" minOccurs="0" />
+              <xs:element name="CustAmt2" type="xs:int" minOccurs="0" />
+              <xs:element name="SalesDate" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="SalesID" type="xs:string" minOccurs="0" />
+              <xs:element name="InvoiceYM" type="xs:string" minOccurs="0" />
+              <xs:element name="IsTransSys" type="xs:string" minOccurs="0" />
+              <xs:element name="IsInvoice" type="xs:string" minOccurs="0" />
+              <xs:element name="PayTypeName" type="xs:string" minOccurs="0" />
+              <xs:element name="IsBill" type="xs:string" minOccurs="0" />
+              <xs:element name="Mark1" type="xs:string" minOccurs="0" />
+              <xs:element name="Mark2" type="xs:string" minOccurs="0" />
+              <xs:element name="Mark3" type="xs:string" minOccurs="0" />
+              <xs:element name="BalanceDay" type="xs:string" minOccurs="0" />
+              <xs:element name="AcceptDate" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="NewCustAmt" type="xs:int" minOccurs="0" />
+              <xs:element name="njbCustAmt" type="xs:int" minOccurs="0" />
+              <xs:element name="IsEmail" type="xs:string" minOccurs="0" />
+              <xs:element name="sCheck" type="xs:string" minOccurs="0" />
+              <xs:element name="bElecInvoice" type="xs:string" minOccurs="0" />
+              <xs:element name="bIsEmail" type="xs:int" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

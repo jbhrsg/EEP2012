@@ -26,7 +26,7 @@ namespace sARInvoice.Properties {
         [global::System.Configuration.ApplicationScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.WebServiceUrl)]
-        [global::System.Configuration.DefaultSettingValueAttribute("http://invoice.cetustek.com.tw:80/InvoiceMultiWeb/InvoiceAPI")]
+        [global::System.Configuration.DefaultSettingValueAttribute("http://www.ei.com.tw/InvoiceMultiWeb/InvoiceAPI?wsdl")]
         public string sARInvoice_Cetustek_InvoiceAPIService {
             get {
                 return ((string)(this["sARInvoice_Cetustek_InvoiceAPIService"]));

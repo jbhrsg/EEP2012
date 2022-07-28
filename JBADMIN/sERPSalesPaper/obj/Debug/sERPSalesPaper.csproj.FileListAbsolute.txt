@@ -1,0 +1,11 @@
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sERPSalesPaper\bin\Debug\sERPSalesPaper.dll
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sERPSalesPaper\bin\Debug\sERPSalesPaper.pdb
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sERPSalesPaper\obj\Debug\sERPSalesPaper.csproj.GenerateResource.Cache
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sERPSalesPaper\obj\Debug\sERPSalesPaper.dll
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sERPSalesPaper\obj\Debug\sERPSalesPaper.pdb
+C:\Program Files (x86)\Infolight\EEP2012\EEPNetServer\JBADMIN\sERPSalesPaper.dll
+C:\Program Files (x86)\Infolight\EEP2012\EEPNetServer\JBADMIN\sERPSalesPaper.pdb
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sERPSalesPaper\obj\Debug\sERPSalesPaper.Component.resources
+C:\Program Files (x86)\Infolight\EEP2012\EEPNetServer\JBADMIN\vi-VN\sERPSalesPaper.resources.dll
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sERPSalesPaper\obj\Debug\sERPSalesPaper.Component.vi-VN.resources
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sERPSalesPaper\obj\Debug\vi-VN\sERPSalesPaper.resources.dll

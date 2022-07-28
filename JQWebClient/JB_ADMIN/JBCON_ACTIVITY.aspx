@@ -33,23 +33,6 @@
             openForm('#JQDialog3', {}, "", 'dialog');
             return true;
         }
-        //取得CENTER_ID
-        var GetCenterID = function (SYearMonth, EYearMonth) {
-            var CodeList = GetDataFromMethod('GetCenterID', { SYearMonth: SYearMonth, EYearMonth: EYearMonth });
-            if (CodeList != null) $("#CustomerID_Query").combobox('loadData', CodeList);
-        }
-        var GetDataFromMethod = function (methodName, data) {
-            var returnValue = null;
-            $.ajax({
-                url: '../handler/JqDataHandle.ashx?RemoteName=sCON_ACTIVITYMASTER',
-                data: { mode: 'method', method: methodName, parameters: $.toJSONString(data) },
-                type: 'POST',
-                async: false,
-                success: function (data) { returnValue = $.parseJSON(data); },
-                error: function (xhr, ajaxOptions, thrownError) { returnValue = null; }
-            });
-            return returnValue;
-        };
         function genCheckBox(val) {
             if (val)
                 return "<input  type='checkbox' checked='true' checked onclick='return false;' />";
@@ -159,7 +142,7 @@
                 </JQTools:JQValidate>
             </JQTools:JQDialog>
               <br />
-            <JQTools:JQDataGrid ID="JQDataGrid1" runat="server" AllowAdd="False" AllowDelete="False" AllowUpdate="True" AlwaysClose="True" AutoApply="True" BufferView="False" CheckOnSelect="True" ColumnsHibeable="False" DataMember="CON_ACTIVITYDETAILS" DeleteCommandVisible="False" DuplicateCheck="False" EditMode="Dialog" EditOnEnter="True" InsertCommandVisible="False" MultiSelect="False" NotInitGrid="False" PageList="10,20,30,40,50" PageSize="20" Pagination="True" QueryAutoColumn="False" QueryLeft="" QueryMode="Window" EditDialogID="JQDialog2" QueryTitle="Query" QueryTop="" RecordLock="False" RecordLockMode="None" RemoteName="sCON_ACTIVITYMASTER.CON_ACTIVITYDETAILS" RowNumbers="True" Title="活動名單" TotalCaption="Total:" UpdateCommandVisible="False" ViewCommandVisible="True" Width="1080px">
+            <JQTools:JQDataGrid ID="JQDataGrid1" runat="server" AllowAdd="False" AllowDelete="False" AllowUpdate="False" AlwaysClose="True" AutoApply="True" BufferView="False" CheckOnSelect="True" ColumnsHibeable="False" DataMember="CON_ACTIVITYDETAILS" DeleteCommandVisible="False" DuplicateCheck="False" EditMode="Dialog" EditOnEnter="True" InsertCommandVisible="False" MultiSelect="False" NotInitGrid="False" PageList="10,20,30,40,50" PageSize="20" Pagination="True" QueryAutoColumn="False" QueryLeft="" QueryMode="Window" EditDialogID="JQDialog2" QueryTitle="Query" QueryTop="" RecordLock="False" RecordLockMode="None" RemoteName="sCON_ACTIVITYMASTER.CON_ACTIVITYDETAILS" RowNumbers="True" Title="活動名單" TotalCaption="Total:" UpdateCommandVisible="False" ViewCommandVisible="True" Width="1080px">
                 <Columns>
                     <JQTools:JQGridColumn Alignment="left" Caption="ACTIVITY_ID" Editor="text" FieldName="ACTIVITY_ID" Frozen="False" IsNvarChar="False" MaxLength="0" QueryCondition="" ReadOnly="False" Sortable="False" Visible="False" Width="80">
                     </JQTools:JQGridColumn>
@@ -181,7 +164,7 @@
                     </JQTools:JQGridColumn>
                     <JQTools:JQGridColumn Alignment="left" Caption="信箱" Editor="text" FieldName="CONTACT_EMAIL" Frozen="False" IsNvarChar="False" MaxLength="0" QueryCondition="" ReadOnly="False" Sortable="False" Visible="True" Width="160">
                     </JQTools:JQGridColumn>
-                    <JQTools:JQGridColumn Alignment="left" Caption="匯入來源" Editor="text" FieldName="FROMCENTER" Frozen="False" IsNvarChar="False" MaxLength="0" QueryCondition="" ReadOnly="False" Sortable="False" Visible="True" Width="110">
+                    <JQTools:JQGridColumn Alignment="left" Caption="資料來源" Editor="text" FieldName="FROMCENTER" Frozen="False" IsNvarChar="False" MaxLength="0" QueryCondition="" ReadOnly="False" Sortable="False" Visible="True" Width="110">
                     </JQTools:JQGridColumn>
                 </Columns>
                   <TooItems>

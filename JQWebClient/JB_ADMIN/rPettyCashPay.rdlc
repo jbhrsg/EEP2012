@@ -1375,7 +1375,7 @@
             </TablixMember>
           </TablixMembers>
         </TablixRowHierarchy>
-        <DataSetName>PettyCash</DataSetName>
+        <DataSetName>NewDataSet</DataSetName>
         <Top>0.37782cm</Top>
         <Left>0.28623cm</Left>
         <Height>3.54818cm</Height>
@@ -1695,10 +1695,10 @@
     </DataSource>
   </DataSources>
   <DataSets>
-    <DataSet Name="PettyCash">
+    <DataSet Name="NewDataSet">
       <Query>
         <DataSourceName>DummyDataSource</DataSourceName>
-        <CommandText>/* Local Query */</CommandText>
+        <CommandText />
         <rd:UseGenericDesigner>true</rd:UseGenericDesigner>
       </Query>
       <Fields>
@@ -1776,8 +1776,7 @@
         </Field>
       </Fields>
       <rd:DataSetInfo>
-        <rd:DataSetName>rPettyCashPay</rd:DataSetName>
-        <rd:SchemaPath>C:\Program Files (x86)\Infolight\EEP2012\JQWebClient\JB_ADMIN\rPettyCashPay.xsd</rd:SchemaPath>
+        <rd:DataSetName>NewDataSet</rd:DataSetName>
         <rd:TableName>PettyCash</rd:TableName>
       </rd:DataSetInfo>
     </DataSet>

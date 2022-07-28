@@ -1,0 +1,9 @@
+D:\Infolight\EEP2012\JBADMIN\sSalaryReport\bin\Debug\sSalaryReport.dll
+D:\Infolight\EEP2012\JBADMIN\sSalaryReport\bin\Debug\sSalaryReport.pdb
+D:\Infolight\EEP2012\JBADMIN\sSalaryReport\obj\Debug\sSalaryReport.csproj.GenerateResource.Cache
+D:\Infolight\EEP2012\JBADMIN\sSalaryReport\obj\Debug\sSalaryReport.dll
+D:\Infolight\EEP2012\JBADMIN\sSalaryReport\obj\Debug\sSalaryReport.pdb
+D:\Infolight\EEP2012\EEPNetServer\JBADMIN\sSalaryReport.dll
+D:\Infolight\EEP2012\EEPNetServer\JBADMIN\sSalaryReport.pdb
+D:\Infolight\EEP2012\JBADMIN\sSalaryReport\obj\Debug\sSalaryReport.Component.resources
+D:\Infolight\EEP2012\JBADMIN\sSalaryReport\obj\Debug\sSalaryReport.csprojResolveAssemblyReference.cache

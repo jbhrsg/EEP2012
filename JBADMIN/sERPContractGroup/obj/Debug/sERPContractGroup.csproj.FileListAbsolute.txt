@@ -1,0 +1,8 @@
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sERPContractGroup\bin\Debug\sERPContractGroup.dll
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sERPContractGroup\bin\Debug\sERPContractGroup.pdb
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sERPContractGroup\obj\Debug\sERPContractGroup.csproj.GenerateResource.Cache
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sERPContractGroup\obj\Debug\sERPContractGroup.dll
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sERPContractGroup\obj\Debug\sERPContractGroup.pdb
+C:\Program Files (x86)\Infolight\EEP2012\EEPNetServer\JBADMIN\sERPContractGroup.dll
+C:\Program Files (x86)\Infolight\EEP2012\EEPNetServer\JBADMIN\sERPContractGroup.pdb
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sERPContractGroup\obj\Debug\sERPContractGroup.Component.resources

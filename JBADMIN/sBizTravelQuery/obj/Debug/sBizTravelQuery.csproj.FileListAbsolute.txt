@@ -1,0 +1,11 @@
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sBizTravelQuery\bin\Debug\sBizTravelQuery.dll
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sBizTravelQuery\bin\Debug\sBizTravelQuery.pdb
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sBizTravelQuery\obj\Debug\sBizTravelQuery.csproj.GenerateResource.Cache
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sBizTravelQuery\obj\Debug\sBizTravelQuery.dll
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sBizTravelQuery\obj\Debug\sBizTravelQuery.pdb
+C:\Program Files (x86)\Infolight\EEP2012\EEPNetServer\JBADMIN\sBizTravelQuery.dll
+C:\Program Files (x86)\Infolight\EEP2012\EEPNetServer\JBADMIN\sBizTravelQuery.pdb
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sBizTravelQuery\obj\Debug\sBizTravelQuery.Component.resources
+C:\Program Files (x86)\Infolight\EEP2012\EEPNetServer\JBADMIN\vi-VN\sBizTravelQuery.resources.dll
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sBizTravelQuery\obj\Debug\sBizTravelQuery.Component.vi-VN.resources
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sBizTravelQuery\obj\Debug\vi-VN\sBizTravelQuery.resources.dll

@@ -1,0 +1,9 @@
+D:\Infolight\EEP2012\JBADMIN\sJOB0800\bin\Debug\sJOB0800.dll
+D:\Infolight\EEP2012\JBADMIN\sJOB0800\bin\Debug\sJOB0800.pdb
+D:\Infolight\EEP2012\JBADMIN\sJOB0800\obj\Debug\sJOB0800.csproj.GenerateResource.Cache
+D:\Infolight\EEP2012\JBADMIN\sJOB0800\obj\Debug\sJOB0800.dll
+D:\Infolight\EEP2012\JBADMIN\sJOB0800\obj\Debug\sJOB0800.pdb
+D:\Infolight\EEP2012\EEPNetServer\JBADMIN\sJOB0800.dll
+D:\Infolight\EEP2012\EEPNetServer\JBADMIN\sJOB0800.pdb
+D:\Infolight\EEP2012\JBADMIN\sJOB0800\obj\Debug\sJOB0800.Component.resources
+D:\Infolight\EEP2012\JBADMIN\sJOB0800\obj\Debug\sJOB0800.csprojResolveAssemblyReference.cache

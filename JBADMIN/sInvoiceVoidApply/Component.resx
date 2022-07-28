@@ -118,28 +118,28 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <metadata name="serviceManager1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>17, 57</value>
+    <value>17, 56</value>
   </metadata>
   <metadata name="InfoConnection1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>17, 137</value>
+    <value>233, 102</value>
   </metadata>
   <metadata name="ERPInvoiceVoidApplyMaster.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>17, 177</value>
+    <value>239, 175</value>
   </metadata>
   <metadata name="ucERPInvoiceVoidApplyMaster.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>17, 217</value>
+    <value>505, 182</value>
   </metadata>
   <metadata name="ERPInvoiceVoidApplyDetails.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>269, 208</value>
+    <value>246, 251</value>
   </metadata>
   <metadata name="ucERPInvoiceVoidApplyDetails.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>17, 297</value>
+    <value>479, 253</value>
   </metadata>
   <metadata name="View_ERPInvoiceVoidApplyMaster.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>17, 97</value>
+    <value>208, 132</value>
   </metadata>
   <metadata name="InvoiceLists.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>17, 337</value>
+    <value>163, 342</value>
   </metadata>
   <data name="InvoiceLists.CommandText" xml:space="preserve">
     <value>SELECT DISTINCT A.DLVNO,A.CUNO,B.Cust_SH,DLV_L_AMT,DLV_L_TAX,DLV_L_REM
@@ -150,7 +150,7 @@ AND  DLVNO IN (SELECT DISTINCT DLVNO FROM [60.250.52.106,1433].NJB.dbo.[LTODLVER
 ORDER  BY A.DLVNO</value>
   </data>
   <metadata name="Employee.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>17, 377</value>
+    <value>144, 379</value>
   </metadata>
   <data name="Employee.CommandText" xml:space="preserve">
     <value>select   USERID,
@@ -162,7 +162,7 @@ ORDER  BY A.DLVNO</value>
   </value>
   </data>
   <metadata name="Organization.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>26, 252</value>
+    <value>160, 422</value>
   </metadata>
   <metadata name="$this.TrayLargeIcon" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>False</value>

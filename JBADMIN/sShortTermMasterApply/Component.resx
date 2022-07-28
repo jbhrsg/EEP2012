@@ -118,19 +118,19 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <metadata name="serviceManager1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>17, 97</value>
+    <value>17, 111</value>
   </metadata>
   <metadata name="InfoConnection1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>17, 177</value>
+    <value>17, 205</value>
   </metadata>
   <metadata name="ShortTermMaster.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>17, 217</value>
+    <value>17, 252</value>
   </metadata>
   <metadata name="ucShortTermMaster.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>17, 257</value>
+    <value>17, 299</value>
   </metadata>
   <metadata name="ShortTermDetails.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>17, 297</value>
+    <value>17, 346</value>
   </metadata>
   <data name="ShortTermDetails.CommandText" xml:space="preserve">
     <value>SELECT A.* , (SELECT  EmployerName FROM View_EmployerHasEmp
@@ -139,19 +139,19 @@ FROM dbo.[ShortTermDetails]  A,dbo.[ShortTermMaster] B
 WHERE A.ShortTermNO=B.ShortTermNO </value>
   </data>
   <metadata name="ucShortTermDetails.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>17, 337</value>
+    <value>17, 393</value>
   </metadata>
   <metadata name="idShortTermMaster_ShortTermDetails.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>17, 417</value>
+    <value>17, 487</value>
   </metadata>
   <metadata name="View_ShortTermMaster.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>17, 57</value>
+    <value>17, 64</value>
   </metadata>
   <metadata name="autoShortTermNO.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>17, 457</value>
+    <value>17, 534</value>
   </metadata>
   <metadata name="LaborList.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>17, 497</value>
+    <value>17, 581</value>
   </metadata>
   <data name="LaborList.CommandText" xml:space="preserve">
     <value>SELECT l.EmployerID,e.EmployeeID,EmployeeTcName,SUBSTRING(ER.EmployerName,1,4) AS EmployerName,e.Dorm
@@ -163,35 +163,35 @@ WHERE A.ShortTermNO=B.ShortTermNO </value>
 order by l.EmployerID,e.EmployeeTcName</value>
   </data>
   <metadata name="infoConnection2.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>17, 537</value>
+    <value>17, 628</value>
   </metadata>
   <metadata name="Employee.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>17, 577</value>
+    <value>17, 675</value>
   </metadata>
   <data name="Employee.CommandText" xml:space="preserve">
     <value>SELECT   USERID AS EmployeeID,USERNAME AS EmployeeName,dbo.funReturnEmpOrgNOL2(USERID) AS OrgNO,dbo.funReturnEmpOrgNOParent(USERID)  AS OrgNOParent   from EIPHRSYS.DBO.USERS
 WHERE  description='JB'   order by USERID</value>
   </data>
   <metadata name="Company.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>17, 617</value>
+    <value>17, 722</value>
   </metadata>
   <metadata name="PayType.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>17, 657</value>
+    <value>17, 769</value>
   </metadata>
   <metadata name="Organization.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>17, 697</value>
+    <value>17, 816</value>
   </metadata>
   <metadata name="Employer.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>17, 737</value>
+    <value>17, 910</value>
   </metadata>
   <metadata name="Vendors.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>17, 777</value>
+    <value>17, 863</value>
   </metadata>
   <metadata name="ShortTermType.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>17, 817</value>
+    <value>17, 957</value>
   </metadata>
   <metadata name="Dorm.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>17, 857</value>
+    <value>17, 1004</value>
   </metadata>
   <data name="Dorm.CommandText" xml:space="preserve">
     <value>SELECT l.EmployerID,E.DORM AS DORMID,(Select ListContent FROM FWCRM.DBO.ReferenceTable Where ListCategory='Dorm' AND ListID=E.Dorm) AS DormName
@@ -202,10 +202,10 @@ where l.EffectDate=(Select Max(EffectDate) from FWCRM.DBO.EmployeeLogs where Emp
 and (l.EffectTypeID=1 or l.EffectTypeID=5 )  AND E.DORM&lt;&gt;6 group By l.EmployerID,e.dorm order by l.EmployerID</value>
   </data>
   <metadata name="FeeItem.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>17, 897</value>
+    <value>17, 1098</value>
   </metadata>
   <metadata name="YearMonth.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>17, 937</value>
+    <value>17, 1051</value>
   </metadata>
   <data name="YearMonth.CommandText" xml:space="preserve">
     <value>SELECT YearMonth From  FWCRM.DBO.ARSetUpMaster Where IsDormFeeEE=0 OR IsDormFeeER=0
@@ -214,10 +214,10 @@ SELECT  SUBSTRING(CONVERT(NVARCHAR(10),DATEADD(month, 1, GETDATE()),111),1,4)+SU
 ORDER BY YearMonth desc</value>
   </data>
   <metadata name="BillSetUpList.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>17, 377</value>
+    <value>17, 440</value>
   </metadata>
   <metadata name="FeeSetUpPrePay.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>17, 137</value>
+    <value>17, 158</value>
   </metadata>
   <metadata name="FeeRequisitionList.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>392, 360</value>

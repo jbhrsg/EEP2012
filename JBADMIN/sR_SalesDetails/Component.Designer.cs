@@ -35,6 +35,8 @@
             Srvtools.Service service4 = new Srvtools.Service();
             Srvtools.Service service5 = new Srvtools.Service();
             Srvtools.Service service6 = new Srvtools.Service();
+            Srvtools.Service service7 = new Srvtools.Service();
+            Srvtools.Service service8 = new Srvtools.Service();
             Srvtools.KeyItem keyItem1 = new Srvtools.KeyItem();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Component));
             Srvtools.KeyItem keyItem2 = new Srvtools.KeyItem();
@@ -50,6 +52,10 @@
             this.infoAcceptDateData = new Srvtools.InfoCommand(this.components);
             this.infoSalesTypeAll = new Srvtools.InfoCommand(this.components);
             this.infoInvoiceList = new Srvtools.InfoCommand(this.components);
+            this.infoCreateBy = new Srvtools.InfoCommand(this.components);
+            this.ERPCustomerToDoNotes = new Srvtools.InfoCommand(this.components);
+            this.infoSalesType2 = new Srvtools.InfoCommand(this.components);
+            this.infoStats = new Srvtools.InfoCommand(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.InfoConnection1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.infoCustomersAll)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.infoSalesMan)).BeginInit();
@@ -61,6 +67,10 @@
             ((System.ComponentModel.ISupportInitialize)(this.infoAcceptDateData)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.infoSalesTypeAll)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.infoInvoiceList)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.infoCreateBy)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ERPCustomerToDoNotes)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.infoSalesType2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.infoStats)).BeginInit();
             // 
             // serviceManager1
             // 
@@ -82,12 +92,20 @@
             service6.DelegateName = "ReportInvoiceList";
             service6.NonLogin = false;
             service6.ServiceName = "ReportInvoiceList";
+            service7.DelegateName = "ReportCustomerToDoNotes";
+            service7.NonLogin = false;
+            service7.ServiceName = "ReportCustomerToDoNotes";
+            service8.DelegateName = "SalesDetailsCountRepeat";
+            service8.NonLogin = false;
+            service8.ServiceName = "SalesDetailsCountRepeat";
             this.serviceManager1.ServiceCollection.Add(service1);
             this.serviceManager1.ServiceCollection.Add(service2);
             this.serviceManager1.ServiceCollection.Add(service3);
             this.serviceManager1.ServiceCollection.Add(service4);
             this.serviceManager1.ServiceCollection.Add(service5);
             this.serviceManager1.ServiceCollection.Add(service6);
+            this.serviceManager1.ServiceCollection.Add(service7);
+            this.serviceManager1.ServiceCollection.Add(service8);
             // 
             // InfoConnection1
             // 
@@ -344,6 +362,104 @@
             this.infoInvoiceList.SiteControl = false;
             this.infoInvoiceList.SiteFieldName = null;
             this.infoInvoiceList.UpdatedRowSource = System.Data.UpdateRowSource.None;
+            // 
+            // infoCreateBy
+            // 
+            this.infoCreateBy.CacheConnection = false;
+            this.infoCreateBy.CommandText = "select distinct CreateBy\r\nfrom View_CustomerToDoNotes\r\norder by CreateBy\r\n";
+            this.infoCreateBy.CommandTimeout = 30;
+            this.infoCreateBy.CommandType = System.Data.CommandType.Text;
+            this.infoCreateBy.DynamicTableName = false;
+            this.infoCreateBy.EEPAlias = null;
+            this.infoCreateBy.EncodingAfter = null;
+            this.infoCreateBy.EncodingBefore = "Windows-1252";
+            this.infoCreateBy.EncodingConvert = null;
+            this.infoCreateBy.InfoConnection = this.InfoConnection1;
+            this.infoCreateBy.MultiSetWhere = false;
+            this.infoCreateBy.Name = "infoCreateBy";
+            this.infoCreateBy.NotificationAutoEnlist = false;
+            this.infoCreateBy.SecExcept = null;
+            this.infoCreateBy.SecFieldName = null;
+            this.infoCreateBy.SecStyle = Srvtools.SecurityStyle.ssByNone;
+            this.infoCreateBy.SelectPaging = false;
+            this.infoCreateBy.SelectTop = 0;
+            this.infoCreateBy.SiteControl = false;
+            this.infoCreateBy.SiteFieldName = null;
+            this.infoCreateBy.UpdatedRowSource = System.Data.UpdateRowSource.None;
+            // 
+            // ERPCustomerToDoNotes
+            // 
+            this.ERPCustomerToDoNotes.CacheConnection = false;
+            this.ERPCustomerToDoNotes.CommandText = resources.GetString("ERPCustomerToDoNotes.CommandText");
+            this.ERPCustomerToDoNotes.CommandTimeout = 30;
+            this.ERPCustomerToDoNotes.CommandType = System.Data.CommandType.Text;
+            this.ERPCustomerToDoNotes.DynamicTableName = false;
+            this.ERPCustomerToDoNotes.EEPAlias = null;
+            this.ERPCustomerToDoNotes.EncodingAfter = null;
+            this.ERPCustomerToDoNotes.EncodingBefore = "Windows-1252";
+            this.ERPCustomerToDoNotes.EncodingConvert = null;
+            this.ERPCustomerToDoNotes.InfoConnection = this.InfoConnection1;
+            this.ERPCustomerToDoNotes.MultiSetWhere = false;
+            this.ERPCustomerToDoNotes.Name = "ERPCustomerToDoNotes";
+            this.ERPCustomerToDoNotes.NotificationAutoEnlist = false;
+            this.ERPCustomerToDoNotes.SecExcept = null;
+            this.ERPCustomerToDoNotes.SecFieldName = null;
+            this.ERPCustomerToDoNotes.SecStyle = Srvtools.SecurityStyle.ssByNone;
+            this.ERPCustomerToDoNotes.SelectPaging = false;
+            this.ERPCustomerToDoNotes.SelectTop = 0;
+            this.ERPCustomerToDoNotes.SiteControl = false;
+            this.ERPCustomerToDoNotes.SiteFieldName = null;
+            this.ERPCustomerToDoNotes.UpdatedRowSource = System.Data.UpdateRowSource.None;
+            // 
+            // infoSalesType2
+            // 
+            this.infoSalesType2.CacheConnection = false;
+            this.infoSalesType2.CommandText = "select SalesTypeID,SalesTypeName\r\nfrom ERPSalesType\r\nwhere SalesTypeID in (\'1\',\'6" +
+    "\',\'31\')";
+            this.infoSalesType2.CommandTimeout = 30;
+            this.infoSalesType2.CommandType = System.Data.CommandType.Text;
+            this.infoSalesType2.DynamicTableName = false;
+            this.infoSalesType2.EEPAlias = null;
+            this.infoSalesType2.EncodingAfter = null;
+            this.infoSalesType2.EncodingBefore = "Windows-1252";
+            this.infoSalesType2.EncodingConvert = null;
+            this.infoSalesType2.InfoConnection = this.InfoConnection1;
+            this.infoSalesType2.MultiSetWhere = false;
+            this.infoSalesType2.Name = "infoSalesType2";
+            this.infoSalesType2.NotificationAutoEnlist = false;
+            this.infoSalesType2.SecExcept = null;
+            this.infoSalesType2.SecFieldName = null;
+            this.infoSalesType2.SecStyle = Srvtools.SecurityStyle.ssByNone;
+            this.infoSalesType2.SelectPaging = false;
+            this.infoSalesType2.SelectTop = 0;
+            this.infoSalesType2.SiteControl = false;
+            this.infoSalesType2.SiteFieldName = null;
+            this.infoSalesType2.UpdatedRowSource = System.Data.UpdateRowSource.None;
+            // 
+            // infoStats
+            // 
+            this.infoStats.CacheConnection = false;
+            this.infoStats.CommandText = "select 1 as ID,\'新客戶\' as sName\r\nunion \r\nselect 2 as ID,\'1-2年間\'\r\nunion \r\nselect 3 a" +
+    "s ID,\'久未刊\'";
+            this.infoStats.CommandTimeout = 30;
+            this.infoStats.CommandType = System.Data.CommandType.Text;
+            this.infoStats.DynamicTableName = false;
+            this.infoStats.EEPAlias = null;
+            this.infoStats.EncodingAfter = null;
+            this.infoStats.EncodingBefore = "Windows-1252";
+            this.infoStats.EncodingConvert = null;
+            this.infoStats.InfoConnection = this.InfoConnection1;
+            this.infoStats.MultiSetWhere = false;
+            this.infoStats.Name = "infoStats";
+            this.infoStats.NotificationAutoEnlist = false;
+            this.infoStats.SecExcept = null;
+            this.infoStats.SecFieldName = null;
+            this.infoStats.SecStyle = Srvtools.SecurityStyle.ssByNone;
+            this.infoStats.SelectPaging = false;
+            this.infoStats.SelectTop = 0;
+            this.infoStats.SiteControl = false;
+            this.infoStats.SiteFieldName = null;
+            this.infoStats.UpdatedRowSource = System.Data.UpdateRowSource.None;
             ((System.ComponentModel.ISupportInitialize)(this.InfoConnection1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.infoCustomersAll)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.infoSalesMan)).EndInit();
@@ -355,6 +471,10 @@
             ((System.ComponentModel.ISupportInitialize)(this.infoAcceptDateData)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.infoSalesTypeAll)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.infoInvoiceList)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.infoCreateBy)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ERPCustomerToDoNotes)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.infoSalesType2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.infoStats)).EndInit();
 
         }
 
@@ -372,5 +492,9 @@
         private Srvtools.InfoCommand infoAcceptDateData;
         private Srvtools.InfoCommand infoSalesTypeAll;
         private Srvtools.InfoCommand infoInvoiceList;
+        private Srvtools.InfoCommand infoCreateBy;
+        private Srvtools.InfoCommand ERPCustomerToDoNotes;
+        private Srvtools.InfoCommand infoSalesType2;
+        private Srvtools.InfoCommand infoStats;
     }
 }

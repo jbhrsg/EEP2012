@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="RoomerData" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="RoomerData" msdata:IsDataSet="true" msdata:CaseSensitive="true" msdata:UseCurrentLocale="true">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="infoRoomerData">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="RoomerID" type="xs:string" minOccurs="0" />
+              <xs:element name="PID" type="xs:string" minOccurs="0" />
+              <xs:element name="RoomerNameC" type="xs:string" minOccurs="0" />
+              <xs:element name="RoomerNameE" type="xs:string" minOccurs="0" />
+              <xs:element name="GenderText" type="xs:string" minOccurs="0" />
+              <xs:element name="NationalityID" type="xs:int" minOccurs="0" />
+              <xs:element name="NationalityName" type="xs:string" minOccurs="0" />
+              <xs:element name="PhotoPath" type="xs:string" minOccurs="0" />
+              <xs:element name="RoomID" type="xs:string" minOccurs="0" />
+              <xs:element name="RoomBedID" type="xs:string" minOccurs="0" />
+              <xs:element name="CustomerID" type="xs:string" minOccurs="0" />
+              <xs:element name="CustomerShortName" type="xs:string" minOccurs="0" />
+              <xs:element name="TranType" type="xs:int" minOccurs="0" />
+              <xs:element name="TranTypeText" type="xs:string" minOccurs="0" />
+              <xs:element name="InOutStatus" type="xs:string" minOccurs="0" />
+              <xs:element name="CardNO" type="xs:string" minOccurs="0" />
+              <xs:element name="CustNo" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="infoRoomerCardDetails">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="RoomerID" type="xs:string" minOccurs="0" />
+              <xs:element name="RoomerNameC" type="xs:string" minOccurs="0" />
+              <xs:element name="RoomBedID" type="xs:string" minOccurs="0" />
+              <xs:element name="sYM" type="xs:string" minOccurs="0" />
+              <xs:element name="iCount" type="xs:int" minOccurs="0" />
+              <xs:element name="CardDate" msdata:Caption="TranType" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="CardTime" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="infoRoomCustList">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="CustomerID" type="xs:string" minOccurs="0" />
+              <xs:element name="CustomerShortName" type="xs:string" minOccurs="0" />
+              <xs:element name="sRoom" type="xs:string" minOccurs="0" />
+              <xs:element name="sLevel" type="xs:string" minOccurs="0" />
+              <xs:element name="BedID" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

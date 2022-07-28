@@ -117,6 +117,7 @@
          function GetGridDataDynamic(BudgetYear, EndDate, CostCenterID, Acno, UserID, AcnoS, AcnoE) {
              $.ajax({
                  type: "POST",
+
                  url: '../handler/jqDataHandle.ashx?RemoteName=sglYearBudget.glYearBudget',
                  data: "mode=method&method=" + "GetGridDataDynamic" + "&parameters=" + BudgetYear + "," + EndDate + "," + CostCenterID + "," + Acno + "," + AcnoS + ","+ AcnoE + "," + UserID,
                  cache: false,
@@ -132,6 +133,7 @@
                      setTimeout(function () {
                        $.messager.progress('close'); //進度條結束
                      }, 1000);
+                  
                  }
              }
           );

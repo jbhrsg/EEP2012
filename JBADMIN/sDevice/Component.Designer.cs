@@ -90,7 +90,6 @@
             this.DeviceMaster.EEPAlias = null;
             this.DeviceMaster.EncodingAfter = null;
             this.DeviceMaster.EncodingBefore = "Windows-1252";
-            this.DeviceMaster.EncodingConvert = null;
             this.DeviceMaster.InfoConnection = this.InfoConnection1;
             keyItem1.KeyName = "DeviceMasterID";
             this.DeviceMaster.KeyFields.Add(keyItem1);
@@ -163,7 +162,6 @@
             this.ucDeviceMaster.RowAffectsCheck = true;
             this.ucDeviceMaster.SelectCmd = this.DeviceMaster;
             this.ucDeviceMaster.SelectCmdForUpdate = null;
-            this.ucDeviceMaster.SendSQLCmd = true;
             this.ucDeviceMaster.ServerModify = true;
             this.ucDeviceMaster.ServerModifyGetMax = false;
             this.ucDeviceMaster.TranscationScopeTimeOut = System.TimeSpan.Parse("00:02:00");
@@ -183,7 +181,6 @@
             this.DeviceItems.EEPAlias = null;
             this.DeviceItems.EncodingAfter = null;
             this.DeviceItems.EncodingBefore = "Windows-1252";
-            this.DeviceItems.EncodingConvert = null;
             this.DeviceItems.InfoConnection = this.InfoConnection1;
             keyItem2.KeyName = "DeviceItemsID";
             this.DeviceItems.KeyFields.Add(keyItem2);
@@ -288,7 +285,6 @@
             this.ucDeviceItems.RowAffectsCheck = true;
             this.ucDeviceItems.SelectCmd = this.DeviceItems;
             this.ucDeviceItems.SelectCmdForUpdate = null;
-            this.ucDeviceItems.SendSQLCmd = true;
             this.ucDeviceItems.ServerModify = true;
             this.ucDeviceItems.ServerModifyGetMax = false;
             this.ucDeviceItems.TranscationScopeTimeOut = System.TimeSpan.Parse("00:02:00");
@@ -308,7 +304,6 @@
             this.View_DeviceMaster.EEPAlias = null;
             this.View_DeviceMaster.EncodingAfter = null;
             this.View_DeviceMaster.EncodingBefore = "Windows-1252";
-            this.View_DeviceMaster.EncodingConvert = null;
             this.View_DeviceMaster.InfoConnection = this.InfoConnection1;
             this.View_DeviceMaster.MultiSetWhere = false;
             this.View_DeviceMaster.Name = "View_DeviceMaster";
@@ -332,7 +327,6 @@
             this.View_DeviceItems.EEPAlias = null;
             this.View_DeviceItems.EncodingAfter = null;
             this.View_DeviceItems.EncodingBefore = "Windows-1252";
-            this.View_DeviceItems.EncodingConvert = null;
             this.View_DeviceItems.InfoConnection = this.InfoConnection1;
             this.View_DeviceItems.MultiSetWhere = false;
             this.View_DeviceItems.Name = "View_DeviceItems";

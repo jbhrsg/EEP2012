@@ -689,7 +689,7 @@
                 </TablixMember>
               </TablixMembers>
             </TablixRowHierarchy>
-            <DataSetName>ShortTerm</DataSetName>
+            <DataSetName>NewDataSet</DataSetName>
             <Top>0.1cm</Top>
             <Left>0.5cm</Left>
             <Height>1.04038cm</Height>
@@ -837,10 +837,10 @@
     </DataSource>
   </DataSources>
   <DataSets>
-    <DataSet Name="ShortTerm">
+    <DataSet Name="NewDataSet">
       <Query>
         <DataSourceName>DummyDataSource</DataSourceName>
-        <CommandText>/* Local Query */</CommandText>
+        <CommandText />
         <rd:UseGenericDesigner>true</rd:UseGenericDesigner>
       </Query>
       <Fields>
@@ -906,8 +906,7 @@
         </Field>
       </Fields>
       <rd:DataSetInfo>
-        <rd:DataSetName>rShortTermAcct</rd:DataSetName>
-        <rd:SchemaPath>C:\Program Files (x86)\Infolight\EEP2012\JQWebClient\JB_ADMIN\rShortTermAcct.xsd</rd:SchemaPath>
+        <rd:DataSetName>NewDataSet</rd:DataSetName>
         <rd:TableName>ShortTerm</rd:TableName>
       </rd:DataSetInfo>
     </DataSet>

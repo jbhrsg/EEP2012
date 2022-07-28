@@ -1,0 +1,12 @@
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sERP_Report_InvoiceDetails_MonthSummary\bin\Debug\sERP_Report_InvoiceDetails_MonthSummary.dll
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sERP_Report_InvoiceDetails_MonthSummary\bin\Debug\sERP_Report_InvoiceDetails_MonthSummary.pdb
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sERP_Report_InvoiceDetails_MonthSummary\obj\Debug\sERP_Report_InvoiceDetails_MonthSummary.csproj.GenerateResource.Cache
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sERP_Report_InvoiceDetails_MonthSummary\obj\Debug\sERP_Report_InvoiceDetails_MonthSummary.dll
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sERP_Report_InvoiceDetails_MonthSummary\obj\Debug\sERP_Report_InvoiceDetails_MonthSummary.pdb
+C:\Program Files (x86)\Infolight\EEP2012\EEPNetServer\JBADMIN\sERP_Report_InvoiceDetails_MonthSummary.dll
+C:\Program Files (x86)\Infolight\EEP2012\EEPNetServer\JBADMIN\sERP_Report_InvoiceDetails_MonthSummary.pdb
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sERP_Report_InvoiceDetails_MonthSummary\obj\Debug\sERP_Report_InvoiceDetails_MonthSummary.Component.resources
+C:\Program Files (x86)\Infolight\EEP2012\EEPNetServer\JBADMIN\vi-VN\sERP_Report_InvoiceDetails_MonthSummary.resources.dll
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sERP_Report_InvoiceDetails_MonthSummary\obj\Debug\sERP_Report_InvoiceDetails_MonthSummary.Component.vi-VN.resources
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sERP_Report_InvoiceDetails_MonthSummary\obj\Debug\vi-VN\sERP_Report_InvoiceDetails_MonthSummary.resources.dll
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sERP_Report_InvoiceDetails_MonthSummary\obj\Debug\sERP_Report_InvoiceDetails_MonthSummary.csprojResolveAssemblyReference.cache

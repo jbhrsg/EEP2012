@@ -1,6 +1,9 @@
-C:\Program Files (x86)\Infolight\EEP2012\EEPNetServer\JBADMIN\sSalesInvoiceYMAdjust.dll
-C:\Program Files (x86)\Infolight\EEP2012\EEPNetServer\JBADMIN\sSalesInvoiceYMAdjust.pdb
-C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sSalesInvoiceYMAdjust\obj\Debug\sSalesInvoiceYMAdjust.Component.resources
-C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sSalesInvoiceYMAdjust\obj\Debug\sSalesInvoiceYMAdjust.csproj.GenerateResource.Cache
-C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sSalesInvoiceYMAdjust\obj\Debug\sSalesInvoiceYMAdjust.dll
-C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sSalesInvoiceYMAdjust\obj\Debug\sSalesInvoiceYMAdjust.pdb
+D:\Infolight\EEP2012\JBADMIN\sSalesInvoiceYMAdjust\bin\Debug\sSalesInvoiceYMAdjust.dll
+D:\Infolight\EEP2012\JBADMIN\sSalesInvoiceYMAdjust\bin\Debug\sSalesInvoiceYMAdjust.pdb
+D:\Infolight\EEP2012\JBADMIN\sSalesInvoiceYMAdjust\obj\Debug\sSalesInvoiceYMAdjust.csproj.GenerateResource.Cache
+D:\Infolight\EEP2012\JBADMIN\sSalesInvoiceYMAdjust\obj\Debug\sSalesInvoiceYMAdjust.dll
+D:\Infolight\EEP2012\JBADMIN\sSalesInvoiceYMAdjust\obj\Debug\sSalesInvoiceYMAdjust.pdb
+D:\Infolight\EEP2012\EEPNetServer\JBADMIN\sSalesInvoiceYMAdjust.dll
+D:\Infolight\EEP2012\EEPNetServer\JBADMIN\sSalesInvoiceYMAdjust.pdb
+D:\Infolight\EEP2012\JBADMIN\sSalesInvoiceYMAdjust\obj\Debug\sSalesInvoiceYMAdjust.Component.resources
+D:\Infolight\EEP2012\JBADMIN\sSalesInvoiceYMAdjust\obj\Debug\sSalesInvoiceYMAdjust.csprojResolveAssemblyReference.cache

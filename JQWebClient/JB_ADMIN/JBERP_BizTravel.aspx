@@ -21,14 +21,10 @@
             //排幣別列
             layout4To2('Currency1', 'BorrowAmt1', '3', '320');//fieldname1,fieldname2,colspan,fieldname1Width
             layout4To2('Currency2', 'BorrowAmt2', '3', '320');
-            //layout4To2('CUR1', 'RealTvlAmt1', '3', '320');
-            //layout4To2('CUR2', 'RealTvlAmt2', '3', '320');
-            //layout4To2('ACurrency1', 'ABorrowAmt1', '3', '320');
-            //layout4To2('ACurrency2', 'ABorrowAmt2', '3', '320');
             $('#dataFormMasterTvlDateE').closest('td').prev('td').width('60');
 
             //紅字
-            var RedFieldName = ['CompanyID', 'AccountType', 'AccountID', 'BizTvlGist', 'TvlNationCity', 'PreTvlDescr', 'ApplyDate', 'CostCenterID', 'TvlDateS', 'TvlDateE', 'DemandDate',
+            var RedFieldName = ['CompanyID', 'BizTvlGist', 'TvlNationCity', 'PreTvlDescr', 'ApplyDate', 'CostCenterID','TvlDateS', 'TvlDateE', 'DemandDate',
                 'DrawEmpID', 'InsuraceAmt', 'FeeDetailsPath', 'TvlReportsPath', 'FeeDetailsPath1', 'TvlReportsPath1'];//, 'RealTvlAmt1','CUR1'
             RedTd('#dataFormMaster', RedFieldName);
             RedTd('#dataFormDetail', ['AccStaffID', 'AccStaffPID', 'AccStaffInsGroupName', 'AccStaffBirthday']);
@@ -89,16 +85,25 @@
         }
         //實際出差費1,2Blur→還款額1,2
         function RealTvlAmtOnBlur() {
-            var b1 = $.trim($('#dataFormMasterABorrowAmt1').val());
-            var b2 = $.trim($('#dataFormMasterABorrowAmt2').val());
-            var r1 = $.trim($('#dataFormMasterRealTvlAmt1').val());
-            var r2 = $.trim($('#dataFormMasterRealTvlAmt2').val());
-            if (b1 == '') { b1 = 0; }
-            if (b2 == '') { b2 = 0; }
-            if (r1 == '') { r1 = 0; }
-            if (r2 == '') { r2 = 0; }
-            $('#dataFormMasterReback1').val(b1 - r1);
-            $('#dataFormMasterReback2').val(b2 - r2);
+            var b1 = parseFloat($.trim($('#dataFormMasterABorrowAmt1').val()));
+            var b2 = parseFloat($.trim($('#dataFormMasterABorrowAmt2').val()));
+            var r1 = parseFloat($.trim($('#dataFormMasterRealTvlAmt1').val()));
+            var r2 = parseFloat($.trim($('#dataFormMasterRealTvlAmt2').val()));
+            if (b1 == '') { b1 = 0.00; }
+            if (b2 == '') { b2 = 0.00; }
+            if (r1 == '') { r1 = 0.00; }
+            if (r2 == '') { r2 = 0.00; }
+            $('#dataFormMasterReback1').val(FloatSubtraction(b1,r1));
+            $('#dataFormMasterReback2').val(FloatSubtraction(b2,r2));
+        }
+        //浮點數相減
+        function FloatSubtraction(arg1, arg2) {
+            var r1, r2, m, n;
+            try { r1 = arg1.toString().split(".")[1].length } catch (e) { r1 = 0 }
+            try { r2 = arg2.toString().split(".")[1].length } catch (e) { r2 = 0 }
+            m = Math.pow(10, Math.max(r1, r2));
+            n = (r1 >= r2) ? r1 : r2;
+            return ((arg1 * m - arg2 * m) / m).toFixed(n);
         }
         //dataGridDetailTvl1新增時
         function GridDetailTvl1OnInsert() {
@@ -146,14 +151,26 @@
                 HideFields(ApplyHiddenFields);
                 $('#ReqButton').css({ 'display': 'none' });
                 $('#toolItemdataGridDetailTvl1下載Excel').css({ 'visibility': 'hidden' });
-                //$('#div1').css({ 'display': 'none' });
+
+                //設定"保旅平險"
+                HideFields(['AccountType', 'AccountID']);
+                $('#dataFormMasterIsInsurance').click(function () {
+                    if ($(this).is(":checked") == true) {
+                        RedTd('#dataFormMaster',['AccountType', 'AccountID']);
+                        ShowFields(['AccountType', 'AccountID'])
+                    } else {
+                        HideFields(['AccountType', 'AccountID']);
+                        $("#dataFormMasterAccountType").combobox('setValue', '');
+                        $("#dataFormMasterAccountID").combobox('setValue', '');
+                    }
+                });
             } else if (param == 'applyA') {//主管審核申請
                 HideFields(ApplyHiddenFields);
                 $('#divGrid1').css({ 'display': 'none' });
                 $('#divGrid2').css({ 'display': 'block' });
                 $('#ReqButton').css({ 'display': 'none' });
             } else if (param == 'insurance') {//總務保險
-                var DisabledFieldName = ['BizTvlGist', 'TvlNationCity', 'PreTvlDescr', 'AccCustomers', 'PlanVisitCustomers', 'BorrowAmt1', 'BorrowAmt2', 'Notes'];
+                var DisabledFieldName = ['BizTvlGist', 'TvlNationCity', 'PreTvlDescr', 'AccCustomers', 'PlanVisitCustomers', 'BorrowAmt1', 'BorrowAmt2', 'Notes', 'IsInsurance'];
                 var DisabledComboboxName = ['ApplyDate', 'CostCenterID', 'TvlDateS', 'TvlDateE', 'Currency1', 'Currency2', 'DemandDate', 'DrawEmpID', 'BorrowPayType', 'AccountType', 'AccountID', 'CompanyID'];
                 DisableFields('#dataFormMaster', DisabledFieldName, DisabledComboboxName);
                 HideFields(InsuranceHiddenFields);
@@ -165,17 +182,20 @@
             } else if (param == 'borrowA') {//會計預支審核
                 ComboGetVal('#dataFormMasterCurrency1', '#dataFormMasterACurrency1', '#dataFormMasterCurrency2', '#dataFormMasterACurrency2');//抓預支幣別給會計預支幣別
                 TextGetVal('#dataFormMasterBorrowAmt1', '#dataFormMasterABorrowAmt1', '#dataFormMasterBorrowAmt2', '#dataFormMasterABorrowAmt2');//抓預支金額給會計預支金額
-                var DisabledFieldName = ['BizTvlGist', 'TvlNationCity', 'PreTvlDescr', 'AccCustomers', 'PlanVisitCustomers', 'BorrowAmt1', 'BorrowAmt2', 'Notes'];
-                var DisabledComboboxName = ['ApplyDate', 'CostCenterID', 'TvlDateS', 'TvlDateE', 'Currency1', 'Currency2', 'DemandDate', 'DrawEmpID', 'CompanyID'];
+                var DisabledFieldName = ['BizTvlGist', 'TvlNationCity', 'PreTvlDescr', 'AccCustomers', 'PlanVisitCustomers', 'BorrowAmt1', 'BorrowAmt2', 'Notes', 'IsInsurance'];
+                var DisabledComboboxName = ['ApplyDate', 'CostCenterID', 'TvlDateS', 'TvlDateE', 'Currency1', 'Currency2', 'DemandDate', 'DrawEmpID', 'CompanyID', 'AccountType', 'AccountID'];
                 DisableFields('#dataFormMaster', DisabledFieldName, DisabledComboboxName);
                 var BorrowAHiddenFields = ['RealTvlAmt1', 'CUR1', 'RealTvlAmt2', 'CUR2', 'Reback1', 'Reback2', 'FeeDetailsPath', 'TvlReportsPath', 'FeeDetailsPath1', 'TvlReportsPath1', 'FeeDetailsReceiptPath', 'FeeDetailsReceiptPath1'];
                 HideFields(BorrowAHiddenFields);
                 $('#toolbardataGridDetailTvl1').css('display', 'none');
                 $('#ReqButton').css({ 'display': 'none' });
                 $('#toolItemdataGridDetailTvl1下載Excel').css({ 'visibility': 'hidden' });
+                $('#divGrid1').css({ 'display': 'none' });
+                $('#divGrid2').css({ 'display': 'block' });
+                $('#ReqButton').css({ 'display': 'none' });
             } else if (param == 'report') {//實際費用、費用明細、出差報告
                 ComboGetVal('#dataFormMasterACurrency1', '#dataFormMasterCUR1', '#dataFormMasterACurrency2', '#dataFormMasterCUR2');//抓會計預支幣別給實際支出幣別
-                var DisabledFieldName = ['BizTvlGist', 'TvlNationCity', 'PreTvlDescr', 'AccCustomers', 'PlanVisitCustomers', 'BorrowAmt1', 'BorrowAmt2', 'Notes', 'InsuraceAmt', 'ABorrowAmt1', 'ABorrowAmt2'];
+                var DisabledFieldName = ['BizTvlGist', 'TvlNationCity', 'PreTvlDescr', 'AccCustomers', 'PlanVisitCustomers', 'BorrowAmt1', 'BorrowAmt2', 'Notes', 'InsuraceAmt', 'ABorrowAmt1', 'ABorrowAmt2', 'IsInsurance'];
                 var DisabledComboboxName = ['ApplyDate', 'CostCenterID', 'TvlDateS', 'TvlDateE', 'Currency1', 'Currency2', 'DemandDate', 'DrawEmpID', 'ACurrency1', 'ACurrency2', 'BorrowPayType', 'AccountType', 'AccountID', 'CompanyID'];
                 DisableFields('#dataFormMaster', DisabledFieldName, DisabledComboboxName);
                 if ($('#dataFormMasterACurrency1').combobox('getValue') != '') { $('#dataFormMasterCUR1').combobox('disable'); }
@@ -191,7 +211,7 @@
                 $('#ReqButton').css({ 'display': 'none' });
             } else if (param == 'reportA2') {//會計費用明細與出差審核
                 ComboGetVal('#dataFormMasterACurrency1', '#dataFormMasterCUR1', '#dataFormMasterACurrency2', '#dataFormMasterCUR2');//抓會計預支幣別給實際支出幣別
-                var DisabledFieldName = ['BizTvlGist', 'TvlNationCity', 'PreTvlDescr', 'AccCustomers', 'PlanVisitCustomers', 'BorrowAmt1', 'BorrowAmt2', 'Notes', 'InsuraceAmt', 'ABorrowAmt1', 'ABorrowAmt2'];
+                var DisabledFieldName = ['BizTvlGist', 'TvlNationCity', 'PreTvlDescr', 'AccCustomers', 'PlanVisitCustomers', 'BorrowAmt1', 'BorrowAmt2', 'Notes', 'InsuraceAmt', 'ABorrowAmt1', 'ABorrowAmt2', 'IsInsurance'];
                 var DisabledComboboxName = ['ApplyDate', 'CostCenterID', 'TvlDateS', 'TvlDateE', 'Currency1', 'Currency2', 'DemandDate', 'DrawEmpID', 'ACurrency1', 'ACurrency2', 'BorrowPayType', 'AccountType', 'AccountID', 'CompanyID'];
                 DisableFields('#dataFormMaster', DisabledFieldName, DisabledComboboxName);
                 HideFields(['FeeDetailsPath', 'TvlReportsPath','FeeDetailsReceiptPath']);
@@ -234,7 +254,6 @@
         function GetSignNotesData() {
             //var AbsentMinusID = $('#dataFormMasterAbsentMinusID').val();
             var no = $("#dataFormMasterTvlNo").val();
-            //if (AbsentMinusID != "") {
             if (no != "") {
                 $.ajax({
                     type: "POST",
@@ -251,7 +270,6 @@
                     }
                 });
             }
-
         }
         //取得有簽核內容簽核數
         function GetSignCount() {
@@ -279,9 +297,9 @@
                 fieldName = 'CostCenterID';
                 if (CheckCombobox(FormName, fieldName) == false) { return false; }
                 fieldName = 'AccountType';
-                if (CheckCombobox(FormName, fieldName) == false) { return false; }
+                if ($("#dataFormMasterIsInsurance").checkbox('getValue')==1 && CheckCombobox(FormName, fieldName) == false) { return false; }
                 fieldName = 'AccountID';
-                if (CheckCombobox(FormName, fieldName) == false) { return false; }
+                if ($("#dataFormMasterIsInsurance").checkbox('getValue')==1 && CheckCombobox(FormName, fieldName) == false) { return false; }
                 fieldName = 'BizTvlGist';
                 if (CheckVal(FormName, fieldName) == false) { return false; }
                 fieldName = 'TvlDateS';
@@ -289,7 +307,7 @@
                 fieldName = 'TvlDateE';
                 if (CheckDatebox(FormName, fieldName) == false) { return false; }
 
-                if ($('#dataFormMasterTvlDateE').datebox('getValue') < $('#dataFormMasterTvlDateS').datebox('getValue')) {
+                if (Date.parse($('#dataFormMasterTvlDateE').datebox('getValue')).valueOf() < Date.parse($('#dataFormMasterTvlDateS').datebox('getValue')).valueOf()) {
                     alert('注意!!,回程時間不得早於出發時間!!');
                     $('#dataFormMasterTvlDateE').datebox("textbox").focus();
                     return false;
@@ -305,45 +323,48 @@
                 }
                 //有填金額就需填幣別
                 var ba1=$.trim($('#dataFormMasterBorrowAmt1').val());
-                if (ba1 != '0' && ba1 != '') {
+                if (ba1 != '0' && ba1 != '' && ba1 != '0.00') {
                     fieldName = 'Currency1';
                     if (CheckCombobox(FormName, fieldName) == false) { return false; }
                 }
                 var ba2=$.trim($('#dataFormMasterBorrowAmt2').val());
-                if (ba2 != '0' && ba2 != '') {
+                if (ba2 != '0' && ba2 != '' && ba2 != '0.00') {
                     fieldName = 'Currency2';
                     if (CheckCombobox(FormName, fieldName) == false) { return false; }
                 }
                 //有填金額就需填付款方式
-                if ((ba1 != '0' && ba1 != '') || (ba2 != '0' && ba2 != '')) {
+                if ((ba1 != '0' && ba1 != '' && ba1 != '0.00') || (ba2 != '0' && ba2 != '' && ba2 != '0.00')) {
                     fieldName = 'BorrowPayType';
                     if (CheckCombobox(FormName, fieldName) == false) { return false; }
                 }
-                //if (TvlDateSOnBlur() == false) { return false; } //已被validate控制項取代
-                //if (DemandDateOnBlur() == false) { return false; }
+                //幣別選新台幣以外的就必填旅平險
+                var currency1=$("#dataFormMasterCurrency1").combobox('getValue');
+                var currency2 = $("#dataFormMasterCurrency2").combobox('getValue');
+                var isinsurance = $("#dataFormMasterIsInsurance").checkbox('getValue');
+                if (((currency1 != "新台幣" && currency1 != "") || (currency2 != "新台幣" && currency2 != "")) && isinsurance != 1) {
+                    alert('您的預支幣別為國外幣別，「保旅平險」為必填');
+                    return false;
+                }
 
             } else if (param == 'insurance' || param == 'borrowA') {//總務保險、預支審核時
                 fieldName = 'InsuraceAmt';
-                if (CheckVal(FormName, fieldName) == false) { return false; }
+                if (($("#dataFormMasterIsInsurance").checkbox('getValue') ==1) && (CheckVal(FormName, fieldName) == false)) { return false; }
                 //有填金額就必需填幣別
                 var ba1 = $.trim($('#dataFormMasterABorrowAmt1').val());
-                if (ba1 != '0' && ba1 != '') {
+                if (ba1 != '0' && ba1 != '' && ba1 != '0.00') {
                     fieldName = 'ACurrency1';
                     if (CheckCombobox(FormName, fieldName) == false) { return false; }
                 }
                 var ba2 = $.trim($('#dataFormMasterABorrowAmt2').val());
-                if (ba2 != '0' && ba2 != '') {
+                if (ba2 != '0' && ba2 != '' && ba2 != '0.00') {
                     fieldName = 'ACurrency2';
                     if (CheckCombobox(FormName, fieldName) == false) { return false; }
                 }
                 //有填金額就必需填付款方式
-                if ((ba1 != '0' && ba1 != '') || (ba2 != '0' && ba2 != '')) {
+                if ((ba1 != '0' && ba1 != '' && ba1 != '0.00') || (ba2 != '0' && ba2 != '' && ba2 != '0.00')) {
                     fieldName = 'BorrowPayType';
                     if (CheckCombobox(FormName, fieldName) == false) { return false; }
                 }
-            //} else if (param == 'realFee') {
-            //    fieldName = 'FeeDetailsPath';
-            //    if (CheckUpload(FormName, fieldName) == false) { return false; }
             } else if (param == 'report') {//實際費用,費用明細報告,出差報告
                 //if (CheckCombobox(FormName, 'CUR1') == false) { return false; }
                 ////if (CheckVal(FormName, 'RealTvlAmt1') == false) { return false; }
@@ -387,7 +408,6 @@
         function DemandDateOnBlur() {
             var a = Date.parse($('#dataFormMasterApplyDate').datebox('getText'));
             var b = Date.parse($('#dataFormMasterDemandDate').datebox('getText'));
-            //alert(a + ';' + b);
             if (parseInt(a) > parseInt(b)) {
                 //alert('注意!!,需求日不得早於申請日');
                 return false;
@@ -461,6 +481,13 @@
                 $(FormName + value).closest('td').hide();
             });
         }
+        function ShowFields(FieldNames) {
+            var FormName = '#dataFormMaster';
+            $.each(FieldNames, function (index, value) {
+                $(FormName + value).closest('td').prev('td').show();//closest上一層selector,prev下一個selector
+                $(FormName + value).closest('td').show();
+            });
+        }
         function DisableFields(FormName, DisabledFieldNames, DisabledComboboxNames) {
             $.each(DisabledFieldNames, function (index, value) {
                 $(FormName + value).attr('disabled', true);
@@ -470,9 +497,13 @@
             });
         }
         function RedTd(FormName, FieldNames) {
-            //var FormName = '#dataFormMaster';
             $.each(FieldNames, function (index, value) {
                 $(FormName + value).closest('td').prev('td').css({ 'color': 'red' });
+            });
+        }
+        function BlackTd(FormName, FieldNames) {
+            $.each(FieldNames, function (index, value) {
+                $(FormName + value).closest('td').prev('td').css({ 'color': 'black' });
             });
         }
         function AirfareVisafeeOnTotal(rowData) {
@@ -516,7 +547,6 @@
             });
         }
         function GG(ReqNo) {
-            //var UserID = getClientInfo("UserID");
             $.ajax({
                 type: "POST",
                 url: '../handler/jqDataHandle.ashx?RemoteName=sBizTravel.BizTravelMaster', //連接的Server端，command
@@ -528,40 +558,13 @@
                 }
             });
         }
-        //#region  ////////////////////////////////////以下copy from 請款單///////////////////
+//#region copyfrom請款單
         function JQDataForm1OnLoadSuccess() {
-            //var parameters = Request.getQueryStringByName("P1");
-            //var mode = Request.getQueryStringByName("NAVIGATOR_MODE");
-            //if (getEditMode($("#JQDataForm1")) == 'inserted') {
             var UserID = getClientInfo("UserID");
-            ////依使用者過濾暫借單號
-            //var whereStr = "EmployeeID =  " + "'" + UserID + "'";
-            //$('#JQDataForm1ShortTermNO').combobox('setWhere', '1=2');
-            //$('#JQDataForm1ShortTermNO').combobox('setWhere', whereStr);
             GetUserOrgNOs();//依登入者來設ApplyOrg_NO申請部門、Org_NOParent直屬主管的部門
             var EmpFlowAgentList = GetEmpFlowAgentList();//登入者的有效代理人人員清單
             var whereStr = " EmployeeID in (" + EmpFlowAgentList + ")";
             $('#JQDataForm1ApplyEmpID').combobox('setWhere', whereStr);
-            //var FormName = '#JQDataForm1';
-            //var HideFieldName = ['IsRemit', 'RemitType', 'Remit'];
-            //$.each(HideFieldName, function (index, fieldName) {
-            //    $(FormName + fieldName).closest('td').prev('td').hide();
-            //    $(FormName + fieldName).closest('td').hide();
-            //});
-            //}
-            //if (parameters == "SERVICE" && mode == "0") {
-            //$('#JQDataForm1IsRemit').removeAttr("disabled");
-            //$("#JQDataForm1RemitType").combobox('enable');  //combobox 設為可用
-            //$('#JQDataForm1Remit').removeAttr("disabled");
-            //}
-            //alert('ok');
-            //在請款性質加入請款性質說明超連結
-            //var RequisitKindLink = $("<a>").attr({ 'href': '../JB_ADMIN/Files/委任權限表.pdf', 'target': '_blank' }).text("     請款性質說明");
-            //var RequistKind = $('#JQDataForm1RequistKindID').closest('td');
-            //RequistKind.append(RequisitKindLink);
-            //RequistKind.remove($('a'));
-            //RequistKind.append("<a href='../JB_ADMIN/Files/委任權限表.pdf' target='_blank'>請款性質說明</a>");
-
             //設定緊急付款、非付款日付款 欄位Caption 變顏色
             var flagIDs = ['#JQDataForm1IsUrgentPay', '#JQDataForm1IsNotPayDate'];
             $(flagIDs.toString()).each(function () {
@@ -570,7 +573,19 @@
             });
 
             $('#JQDataForm1SourceBillNO').val($('#dataFormMasterTvlNo').val());
-            $('#JQDataForm1RequisitionDescr').val($('#dataFormMasterBizTvlGist').val() + '-旅平險');
+
+            //把出差人員姓名帶到請款單的請款事由
+            var rowsdata = $('#dataGridDetailTvl1').datagrid('getRows');
+            var nameStr = '';
+            for (var i = 0; i < rowsdata.length; i++) {
+                if (i == 0) nameStr = '，出差人員：' + rowsdata[i].AccStaffName
+                else
+                nameStr = nameStr + '、' + rowsdata[i].AccStaffName
+            }
+            $('#JQDataForm1RequisitionDescr').val($('#dataFormMasterBizTvlGist').val() + '-旅平險' + nameStr);
+
+
+            
 
             $('#JQDataForm1CostCenterID').combobox('setValue', $('#dataFormMasterCostCenterID').combobox('getValue'));
             $('#JQDataForm1AccountType').combobox('setValue', $('#dataFormMasterAccountType').combobox('getValue'));
@@ -639,7 +654,7 @@
 
         }
         //當選取付款客戶時,來設定付款條件PayTermID與付款方式PayTypeID並
-        //                  由付款方式改變須匯款費、匯款費誰付, 由付款條件改變預付日期(受款人Select會呼叫)
+        //由付款方式改變須匯款費、匯款費誰付, 由付款條件改變預付日期(受款人Select會呼叫)
         function GetPayTerm(rowData) {
             $("#JQDataForm1PayTermID").combobox('setValue', rowData.PayTermID);
             $("#JQDataForm1PayTypeID").combobox('setValue', rowData.PayTypeID);
@@ -843,7 +858,7 @@
             var FiltStr = "AccountType=" + "'" + rowData.AccountType + "'" + " and (LimitCostCenters='' or LimitCostCenters like '%" + CostCenterID + "%' or LimitCostCenters is null)";
             $("#JQDataForm1AccountID").combobox('setWhere', FiltStr);
         }
-        //#endregion
+//#endregion copyfrom請款單
         </script>
 </head>
 <body>
@@ -890,41 +905,42 @@
                         <JQTools:JQFormColumn Alignment="left" Caption="申請日期" Editor="datebox" FieldName="ApplyDate" Format="yyyy/mm/dd" Width="140" Span="2" ReadOnly="False" Visible="True" maxlength="0" OnBlur="" NewRow="False" />
                         <JQTools:JQFormColumn Alignment="left" Caption="ApplyEmpID" Editor="text" FieldName="ApplyEmpID" Format="" ReadOnly="True" Width="180" Visible="False" Span="1" NewRow="False" />
                         <JQTools:JQFormColumn Alignment="left" Caption="公司別" Editor="infocombobox" EditorOptions="valueField:'CompanyID',textField:'CompanyName',remoteName:'sBizTravel.Company',tableName:'Company',pageSize:'-1',checkData:false,selectOnly:false,cacheRelationText:false,panelHeight:200" FieldName="CompanyID" MaxLength="0" NewRow="True" ReadOnly="False" RowSpan="1" Span="4" Visible="True" Width="120" />
-                        <JQTools:JQFormColumn Alignment="left" Caption="成本中心" Editor="infocombobox" FieldName="CostCenterID" Format="" Width="120" EditorOptions="valueField:'CostCenterID',textField:'CostCenterName',remoteName:'sBizTravel.CostCenter',tableName:'CostCenter',pageSize:'-1',checkData:false,selectOnly:false,cacheRelationText:false,onSelect:CostCenterIDOnSelect,panelHeight:200" Span="1" NewRow="True" ReadOnly="False" Visible="True" maxlength="0" />
+                        <JQTools:JQFormColumn Alignment="left" Caption="成本中心" Editor="infocombobox" FieldName="CostCenterID" Format="" Width="120" EditorOptions="valueField:'CostCenterID',textField:'CostCenterName',remoteName:'sBizTravel.CostCenter',tableName:'CostCenter',pageSize:'-1',checkData:false,selectOnly:false,cacheRelationText:false,onSelect:CostCenterIDOnSelect,panelHeight:200" Span="4" NewRow="True" ReadOnly="False" Visible="True" maxlength="0" />
+                        <JQTools:JQFormColumn Alignment="left" Caption="保旅平險" Editor="checkbox" FieldName="IsInsurance" MaxLength="0" NewRow="False" ReadOnly="False" Span="1" Visible="True" Width="80" RowSpan="1" />
                         <JQTools:JQFormColumn Alignment="left" Caption="旅平險類別" Editor="infocombobox" EditorOptions="valueField:'AccountType',textField:'AccountType',remoteName:'sBizTravel.AccountType',tableName:'AccountType',pageSize:'-1',checkData:false,selectOnly:false,cacheRelationText:false,onSelect:AccountTypeOnSelect,panelHeight:200" FieldName="AccountType" MaxLength="0" NewRow="False" ReadOnly="False" Span="1" Visible="True" Width="120" />
-                        <JQTools:JQFormColumn Alignment="left" Caption="旅平險會計科目" Editor="infocombobox" EditorOptions="valueField:'AccountID',textField:'AccountName',remoteName:'sBizTravel.AccountTitle',tableName:'AccountTitle',pageSize:'-1',checkData:false,selectOnly:false,cacheRelationText:false,panelHeight:200" FieldName="AccountID" MaxLength="0" NewRow="False" ReadOnly="False" RowSpan="1" Span="2" Visible="True" Width="140" />
-                        <JQTools:JQFormColumn Alignment="left" Caption="CostCenterName" Editor="text" FieldName="CostCenterName" Format="" Width="180" EditorOptions="" ReadOnly="True" Visible="False" Span="1" NewRow="False" />
-                        <JQTools:JQFormColumn Alignment="left" Caption="申請事由" Editor="text" FieldName="BizTvlGist" NewRow="True" Span="4" Width="600" OnBlur="" maxlength="0" />
-                        <JQTools:JQFormColumn Alignment="left" Caption="出發時間" Editor="datebox" FieldName="TvlDateS" Format="yyyy/mm/dd HH:MM" Width="120" EditorOptions="dateFormat:'datetime',showTimeSpinner:true,showSeconds:false,editable:true" Span="1" NewRow="True" OnBlur="" />
-                        <JQTools:JQFormColumn Alignment="left" Caption="回程時間" Editor="datebox" FieldName="TvlDateE" Format="yyyy/mm/dd HH:MM" Width="120" EditorOptions="dateFormat:'datetime',showTimeSpinner:true,showSeconds:false,editable:true" Span="1" OnBlur="" NewRow="False" />
+                        <JQTools:JQFormColumn Alignment="left" Caption="旅平險會計科目" Editor="infocombobox" FieldName="AccountID" Width="140" EditorOptions="valueField:'AccountID',textField:'AccountName',remoteName:'sBizTravel.AccountTitle',tableName:'AccountTitle',pageSize:'-1',checkData:false,selectOnly:false,cacheRelationText:false,panelHeight:200" ReadOnly="False" Visible="True" Span="2" NewRow="False" MaxLength="0" RowSpan="1" />
+                        <JQTools:JQFormColumn Alignment="left" Caption="CostCenterName" Editor="text" FieldName="CostCenterName" NewRow="False" Span="1" Width="180" EditorOptions="" Format="" ReadOnly="True" Visible="False" />
+                        <JQTools:JQFormColumn Alignment="left" Caption="申請事由" Editor="text" FieldName="BizTvlGist" Width="600" Span="4" NewRow="True" OnBlur="" maxlength="0" />
+                        <JQTools:JQFormColumn Alignment="left" Caption="出發時間" Editor="datebox" FieldName="TvlDateS" Format="yyyy/mm/dd HH:MM" Width="120" EditorOptions="dateFormat:'datetime',showTimeSpinner:true,showSeconds:false,editable:true" Span="1" OnBlur="" NewRow="True" />
+                        <JQTools:JQFormColumn Alignment="left" Caption="回程時間" Editor="datebox" FieldName="TvlDateE" Format="yyyy/mm/dd HH:MM" Width="120" Span="1" NewRow="False" EditorOptions="dateFormat:'datetime',showTimeSpinner:true,showSeconds:false,editable:true" OnBlur="" />
                         <JQTools:JQFormColumn Alignment="left" Caption="出差國與城市" Editor="text" FieldName="TvlNationCity" Format="" Width="137" Span="2" NewRow="False" />
-                        <JQTools:JQFormColumn Alignment="left" Caption="出差預計行程說明" Editor="textarea" FieldName="PreTvlDescr" Format="" Width="600" EditorOptions="height:50" Span="4" NewRow="True" maxlength="0" Visible="True" />
+                        <JQTools:JQFormColumn Alignment="left" Caption="出差預計行程說明" Editor="textarea" FieldName="PreTvlDescr" Format="" Width="600" Span="4" NewRow="True" Visible="True" EditorOptions="height:50" maxlength="0" />
                         <JQTools:JQFormColumn Alignment="left" Caption="隨同客戶" Editor="text" FieldName="AccCustomers" Format="" Width="600" Span="4" NewRow="True" Visible="True" />
-                        <JQTools:JQFormColumn Alignment="left" Caption="拜訪客戶" Editor="text" FieldName="PlanVisitCustomers" Format="" Width="600" Span="4" NewRow="True" Visible="True" maxlength="0" />
-                        <JQTools:JQFormColumn Alignment="left" Caption="預支幣別1" Editor="infocombobox" EditorOptions="valueField:'CurrencyName',textField:'CurrencyName',remoteName:'sBizTravel.Currency',tableName:'Currency',pageSize:'-1',checkData:false,selectOnly:false,cacheRelationText:false,panelHeight:200" FieldName="Currency1" Format="" Span="1" Width="60" NewRow="True" Visible="True" maxlength="0" ReadOnly="False" />
-                        <JQTools:JQFormColumn Alignment="left" Caption="預支金額1" Editor="numberbox" FieldName="BorrowAmt1" Format="" Width="80" Span="1" NewRow="False" ReadOnly="False" />
-                        <JQTools:JQFormColumn Alignment="left" Caption="預支幣別2" Editor="infocombobox" FieldName="Currency2" Format="" Width="60" EditorOptions="valueField:'CurrencyName',textField:'CurrencyName',remoteName:'sBizTravel.Currency',tableName:'Currency',pageSize:'-1',checkData:false,selectOnly:false,cacheRelationText:false,panelHeight:200" Span="1" NewRow="False" ReadOnly="False" Visible="True" />
-                        <JQTools:JQFormColumn Alignment="left" Caption="預支金額2" Editor="numberbox" FieldName="BorrowAmt2" Format="" Span="1" Width="77" NewRow="False" ReadOnly="False" Visible="True" maxlength="0" />
-                        <JQTools:JQFormColumn Alignment="left" Caption="預支付款方式" Editor="infocombobox" EditorOptions="items:[{value:'現金',text:'現金',selected:'false'},{value:'匯款',text:'匯款',selected:'false'}],checkData:false,selectOnly:false,cacheRelationText:false,panelHeight:200" FieldName="BorrowPayType" MaxLength="0" NewRow="True" ReadOnly="False" RowSpan="1" Span="2" Visible="True" Width="90" />
-                        <JQTools:JQFormColumn Alignment="left" Caption="機簽費總額" Editor="text" FieldName="TotalAFVF" MaxLength="0" NewRow="False" ReadOnly="True" RowSpan="1" Span="2" Visible="True" Width="87" />
-                        <JQTools:JQFormColumn Alignment="left" Caption="備註" Editor="text" FieldName="Notes" Format="" Width="600" EditorOptions="" Span="4" NewRow="False" ReadOnly="False" Visible="True" />
-                        <JQTools:JQFormColumn Alignment="left" Caption="領款需求日" Editor="datebox" FieldName="DemandDate" Format="yyyy/mm/dd" Width="90" Span="2" ReadOnly="False" NewRow="True" Visible="True" MaxLength="0" RowSpan="1" />
-                        <JQTools:JQFormColumn Alignment="left" Caption="領款人" Editor="infocombobox" FieldName="DrawEmpID" Format="" Width="90" EditorOptions="valueField:'USERID',textField:'USERNAME',remoteName:'sBizTravel.USERS',tableName:'USERS',pageSize:'-1',checkData:false,selectOnly:false,cacheRelationText:false,onSelect:DrawEmpIDOnSelect,panelHeight:200" Span="2" ReadOnly="False" Visible="True" NewRow="False" MaxLength="0" RowSpan="1" />
+                        <JQTools:JQFormColumn Alignment="left" Caption="拜訪客戶" Editor="text" FieldName="PlanVisitCustomers" Format="" Span="4" Width="600" NewRow="True" Visible="True" maxlength="0" />
+                        <JQTools:JQFormColumn Alignment="left" Caption="預支幣別1" Editor="infocombobox" FieldName="Currency1" Format="" Width="60" Span="1" NewRow="True" ReadOnly="False" EditorOptions="valueField:'CurrencyName',textField:'CurrencyName',remoteName:'sBizTravel.Currency',tableName:'Currency',pageSize:'-1',checkData:false,selectOnly:false,cacheRelationText:false,panelHeight:200" maxlength="0" Visible="True" />
+                        <JQTools:JQFormColumn Alignment="left" Caption="預支金額1" Editor="numberbox" FieldName="BorrowAmt1" Format="" Width="80" EditorOptions="precision:2" Span="1" NewRow="False" ReadOnly="False" />
+                        <JQTools:JQFormColumn Alignment="left" Caption="預支幣別2" Editor="infocombobox" FieldName="Currency2" Format="" Span="1" Width="60" NewRow="False" ReadOnly="False" Visible="True" EditorOptions="valueField:'CurrencyName',textField:'CurrencyName',remoteName:'sBizTravel.Currency',tableName:'Currency',pageSize:'-1',checkData:false,selectOnly:false,cacheRelationText:false,panelHeight:200" />
+                        <JQTools:JQFormColumn Alignment="left" Caption="預支金額2" Editor="numberbox" EditorOptions="precision:2" FieldName="BorrowAmt2" MaxLength="0" NewRow="False" ReadOnly="False" Span="1" Visible="True" Width="77" Format="" />
+                        <JQTools:JQFormColumn Alignment="left" Caption="預支付款方式" Editor="infocombobox" FieldName="BorrowPayType" MaxLength="0" NewRow="True" ReadOnly="False" RowSpan="1" Span="2" Visible="True" Width="90" EditorOptions="items:[{value:'現金',text:'現金',selected:'false'},{value:'匯款',text:'匯款',selected:'false'}],checkData:false,selectOnly:false,cacheRelationText:false,panelHeight:200" />
+                        <JQTools:JQFormColumn Alignment="left" Caption="機簽費總額" Editor="text" FieldName="TotalAFVF" Width="87" Span="2" NewRow="False" ReadOnly="True" Visible="True" MaxLength="0" RowSpan="1" />
+                        <JQTools:JQFormColumn Alignment="left" Caption="備註" Editor="text" FieldName="Notes" Format="" Width="600" Span="4" ReadOnly="False" NewRow="False" Visible="True" EditorOptions="" />
+                        <JQTools:JQFormColumn Alignment="left" Caption="領款需求日" Editor="datebox" FieldName="DemandDate" Format="yyyy/mm/dd" Width="90" Span="2" ReadOnly="False" Visible="True" NewRow="True" MaxLength="0" RowSpan="1" />
+                        <JQTools:JQFormColumn Alignment="left" Caption="領款人" Editor="infocombobox" FieldName="DrawEmpID" MaxLength="0" NewRow="False" ReadOnly="False" RowSpan="1" Span="2" Visible="True" Width="90" EditorOptions="valueField:'USERID',textField:'USERNAME',remoteName:'sBizTravel.USERS',tableName:'USERS',pageSize:'-1',checkData:false,selectOnly:false,cacheRelationText:false,onSelect:DrawEmpIDOnSelect,panelHeight:200" Format="" />
                         <JQTools:JQFormColumn Alignment="left" Caption="領款人" Editor="text" FieldName="DrawEmpName" Format="" Width="180" EditorOptions="" Visible="False" Span="1" ReadOnly="False" NewRow="False" MaxLength="0" RowSpan="1" />
-                        <JQTools:JQFormColumn Alignment="left" Caption="投保總金額" Editor="numberbox" FieldName="InsuraceAmt" Format="" Width="87" Span="4" ReadOnly="True" MaxLength="0" NewRow="True" RowSpan="1" Visible="True" />
+                        <JQTools:JQFormColumn Alignment="left" Caption="投保總金額" Editor="numberbox" FieldName="InsuraceAmt" Format="" Width="87" Span="4" ReadOnly="True" MaxLength="0" NewRow="False" RowSpan="1" Visible="True" />
                         <JQTools:JQFormColumn Alignment="left" Caption="會計預支幣別1" Editor="infocombobox" EditorOptions="valueField:'CurrencyName',textField:'CurrencyName',remoteName:'sBizTravel.Currency',tableName:'Currency',pageSize:'-1',checkData:false,selectOnly:false,cacheRelationText:false,panelHeight:200" FieldName="ACurrency1" MaxLength="0" NewRow="False" ReadOnly="False" RowSpan="1" Span="1" Visible="True" Width="60" />
-                        <JQTools:JQFormColumn Alignment="left" Caption="會計預支1" Editor="numberbox" FieldName="ABorrowAmt1" MaxLength="0" NewRow="False" ReadOnly="False" RowSpan="1" Span="1" Visible="True" Width="80" />
+                        <JQTools:JQFormColumn Alignment="left" Caption="會計預支1" Editor="numberbox" FieldName="ABorrowAmt1" MaxLength="0" NewRow="False" ReadOnly="False" RowSpan="1" Span="1" Visible="True" Width="80" EditorOptions="precision:2" />
                         <JQTools:JQFormColumn Alignment="left" Caption="會計預支幣別2" Editor="infocombobox" EditorOptions="valueField:'CurrencyName',textField:'CurrencyName',remoteName:'sBizTravel.Currency',tableName:'Currency',pageSize:'-1',checkData:false,selectOnly:false,cacheRelationText:false,panelHeight:200" FieldName="ACurrency2" MaxLength="0" NewRow="False" ReadOnly="False" RowSpan="1" Span="1" Visible="True" Width="60" />
-                        <JQTools:JQFormColumn Alignment="left" Caption="會計預支2" Editor="numberbox" EditorOptions="" FieldName="ABorrowAmt2" MaxLength="0" NewRow="False" ReadOnly="False" RowSpan="1" Span="1" Visible="True" Width="80" />
+                        <JQTools:JQFormColumn Alignment="left" Caption="會計預支2" Editor="numberbox" EditorOptions="precision:2" FieldName="ABorrowAmt2" MaxLength="0" NewRow="False" ReadOnly="False" RowSpan="1" Span="1" Visible="True" Width="80" />
                         <JQTools:JQFormColumn Alignment="left" Caption="實際幣別1" Editor="infocombobox" FieldName="CUR1" Width="60" ReadOnly="False" Span="1" EditorOptions="valueField:'CurrencyName',textField:'CurrencyName',remoteName:'sBizTravel.Currency',tableName:'Currency',pageSize:'-1',checkData:false,selectOnly:false,cacheRelationText:false,panelHeight:200" NewRow="True" Visible="True" maxlength="0" RowSpan="1" />
-                        <JQTools:JQFormColumn Alignment="left" Caption="實際金額1" Editor="numberbox" FieldName="RealTvlAmt1" Width="80" ReadOnly="False" Span="1" MaxLength="0" NewRow="False" RowSpan="1" Visible="True" Format="" OnBlur="RealTvlAmtOnBlur" />
+                        <JQTools:JQFormColumn Alignment="left" Caption="實際金額1" Editor="numberbox" FieldName="RealTvlAmt1" Width="80" ReadOnly="False" Span="1" MaxLength="0" NewRow="False" RowSpan="1" Visible="True" Format="" OnBlur="RealTvlAmtOnBlur" EditorOptions="precision:2" />
                         <JQTools:JQFormColumn Alignment="left" Caption="實際幣別2" Editor="infocombobox" FieldName="CUR2" Width="60" Span="1" NewRow="False" ReadOnly="False" Visible="True" EditorOptions="valueField:'CurrencyName',textField:'CurrencyName',remoteName:'sBizTravel.Currency',tableName:'Currency',pageSize:'-1',checkData:false,selectOnly:false,cacheRelationText:false,panelHeight:200" maxlength="0" RowSpan="1" />
-                        <JQTools:JQFormColumn Alignment="left" Caption="實際金額2" Editor="numberbox" FieldName="RealTvlAmt2" Width="80" ReadOnly="False" MaxLength="0" NewRow="False" RowSpan="1" Span="1" Visible="True" Format="" OnBlur="RealTvlAmtOnBlur" />
-                        <JQTools:JQFormColumn Alignment="left" Caption="領款人還款1" Editor="numberbox" FieldName="Reback1" MaxLength="0" ReadOnly="True" Span="2" Width="87" NewRow="True" RowSpan="1" Visible="True" />
-                        <JQTools:JQFormColumn Alignment="left" Caption="領款人還款2" Editor="numberbox" FieldName="Reback2" NewRow="False" ReadOnly="True" Span="2" Visible="True" Width="87" maxlength="0" RowSpan="1" />
-                        <JQTools:JQFormColumn Alignment="left" Caption="出差費用明細" Editor="infofileupload" EditorOptions="filter:'',isAutoNum:true,upLoadFolder:'JB_ADMIN/BizTravelFeeDetails',showButton:true,showLocalFile:false,onSuccess:FeeDetailsPathOnSuccess,fileSizeLimited:'5000'" FieldName="FeeDetailsPath" maxlength="0" NewRow="True" ReadOnly="False" RowSpan="1" Span="2" Visible="True" Width="190" />
-                        <JQTools:JQFormColumn Alignment="left" Caption="出差報告" Editor="infofileupload" EditorOptions="filter:'',isAutoNum:true,upLoadFolder:'JB_ADMIN/BizTravelReport',showButton:true,showLocalFile:false,onSuccess:TvlReportsPathOnSuccess,fileSizeLimited:'5000'" FieldName="TvlReportsPath" Span="2" Width="190" MaxLength="0" NewRow="False" ReadOnly="False" RowSpan="1" Visible="True" />
-                        <JQTools:JQFormColumn Alignment="left" Caption="出差費用收據" Editor="infofileupload" EditorOptions="filter:'',isAutoNum:true,upLoadFolder:'JB_ADMIN/BizTravelFeeDetailsReceipt',showButton:true,showLocalFile:false,onSuccess:FeeDetailsReceiptPathOnSuccess,fileSizeLimited:'20000'" FieldName="FeeDetailsReceiptPath" MaxLength="0" NewRow="True" ReadOnly="False" RowSpan="1" Span="2" Visible="True" Width="190" />
+                        <JQTools:JQFormColumn Alignment="left" Caption="實際金額2" Editor="numberbox" FieldName="RealTvlAmt2" Width="80" ReadOnly="False" MaxLength="0" NewRow="False" RowSpan="1" Span="1" Visible="True" Format="" OnBlur="RealTvlAmtOnBlur" EditorOptions="precision:2" />
+                        <JQTools:JQFormColumn Alignment="left" Caption="領款人還款1" Editor="numberbox" FieldName="Reback1" MaxLength="0" ReadOnly="True" Span="2" Width="87" NewRow="True" RowSpan="1" Visible="True" EditorOptions="precision:2" />
+                        <JQTools:JQFormColumn Alignment="left" Caption="領款人還款2" Editor="numberbox" FieldName="Reback2" NewRow="False" ReadOnly="True" Span="2" Visible="True" Width="87" maxlength="0" RowSpan="1" EditorOptions="precision:2" />
+                        <JQTools:JQFormColumn Alignment="left" Caption="出差費用明細" Editor="infofileupload" EditorOptions="filter:'',isAutoNum:true,upLoadFolder:'JB_ADMIN/BizTravelFeeDetails',showButton:true,showLocalFile:false,onSuccess:FeeDetailsPathOnSuccess,fileSizeLimited:'80000'" FieldName="FeeDetailsPath" maxlength="0" NewRow="True" ReadOnly="False" RowSpan="1" Span="2" Visible="True" Width="190" />
+                        <JQTools:JQFormColumn Alignment="left" Caption="出差報告" Editor="infofileupload" EditorOptions="filter:'',isAutoNum:true,upLoadFolder:'JB_ADMIN/BizTravelReport',showButton:true,showLocalFile:false,onSuccess:TvlReportsPathOnSuccess,fileSizeLimited:'80000'" FieldName="TvlReportsPath" Span="2" Width="190" MaxLength="0" NewRow="False" ReadOnly="False" RowSpan="1" Visible="True" />
+                        <JQTools:JQFormColumn Alignment="left" Caption="出差費用收據" Editor="infofileupload" EditorOptions="filter:'',isAutoNum:true,upLoadFolder:'JB_ADMIN/BizTravelFeeDetailsReceipt',showButton:true,showLocalFile:false,onSuccess:FeeDetailsReceiptPathOnSuccess,fileSizeLimited:'80000'" FieldName="FeeDetailsReceiptPath" MaxLength="0" NewRow="True" ReadOnly="False" RowSpan="1" Span="2" Visible="True" Width="190" />
                         <JQTools:JQFormColumn Alignment="left" Caption="出差費用明細下載" Editor="text" FieldName="FeeDetailsPath1" Format="download,folder:JB_ADMIN/BizTravelFeeDetails" maxlength="0" NewRow="True" ReadOnly="False" RowSpan="1" Span="2" Visible="True" Width="80" />
                         <JQTools:JQFormColumn Alignment="left" Caption="出差報告下載" Editor="text" FieldName="TvlReportsPath1" Format="download,folder:JB_ADMIN/BizTravelReport" maxlength="0" NewRow="False" ReadOnly="False" RowSpan="1" Span="2" Visible="True" Width="80" />
                         <JQTools:JQFormColumn Alignment="left" Caption="費用收據下載" Editor="text" FieldName="FeeDetailsReceiptPath1" Format="download,folder:JB_ADMIN/BizTravelFeeDetailsReceipt" MaxLength="0" NewRow="True" ReadOnly="False" RowSpan="1" Span="2" Visible="True" Width="80" />
@@ -965,9 +981,9 @@
                             <JQTools:JQGridColumn Alignment="left" Caption="出差單號" Editor="text" FieldName="TvlNo" Width="30" Visible="False"/>
                             <JQTools:JQGridColumn Alignment="left" Caption="員工工號" Editor="text" FieldName="AccStaffID" Format="" Width="50" />
                             <JQTools:JQGridColumn Alignment="left" Caption="姓名" Editor="text" FieldName="AccStaffName" Format="" Width="60" />
-                            <JQTools:JQGridColumn Alignment="left" Caption="身份證字號" Editor="text" FieldName="AccStaffPID" Format="" Width="100" />
+                            <%--<JQTools:JQGridColumn Alignment="left" Caption="身份證字號" Editor="text" FieldName="AccStaffPID" Format="" Width="100" />--%>
                             <JQTools:JQGridColumn Alignment="left" Caption="投保單位" Editor="text" FieldName="AccStaffInsGroupName" Format=""  Width="120" />
-                            <JQTools:JQGridColumn Alignment="left" Caption="出生日期" Editor="datebox" EditorOptions="dateFormat:'datetime',showTimeSpinner:false,showSeconds:false,editable:true" FieldName="AccStaffBirthday" Format="" Frozen="False" IsNvarChar="False" MaxLength="0" QueryCondition="" ReadOnly="False" Sortable="False" Visible="True" Width="80" />
+                            <%--<JQTools:JQGridColumn Alignment="left" Caption="出生日期" Editor="datebox" EditorOptions="dateFormat:'datetime',showTimeSpinner:false,showSeconds:false,editable:true" FieldName="AccStaffBirthday" Format="" Frozen="False" IsNvarChar="False" MaxLength="0" QueryCondition="" ReadOnly="False" Sortable="False" Visible="True" Width="80" />--%>
                             <JQTools:JQGridColumn Alignment="left" Caption="機簽費" Editor="text" FieldName="AirfareVisafee"  Visible="True" Width="50" Total="" />
                             <JQTools:JQGridColumn Alignment="left" Caption="付款方式" Editor="text" FieldName="AiviPayType" Visible="True" Width="60">
                             </JQTools:JQGridColumn>

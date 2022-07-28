@@ -1,0 +1,7 @@
+D:\Infolight\EEP2012\EEPNetServer\JBADMIN\JBERP_HRPostPublishes.dll
+D:\Infolight\EEP2012\EEPNetServer\JBADMIN\JBERP_HRPostPublishes.pdb
+D:\Infolight\EEP2012\JBADMIN\JBERP_HRPostPublishes\obj\Debug\JBERP_HRPostPublishes.Component.resources
+D:\Infolight\EEP2012\JBADMIN\JBERP_HRPostPublishes\obj\Debug\JBERP_HRPostPublishes.csproj.GenerateResource.Cache
+D:\Infolight\EEP2012\JBADMIN\JBERP_HRPostPublishes\obj\Debug\JBERP_HRPostPublishes.dll
+D:\Infolight\EEP2012\JBADMIN\JBERP_HRPostPublishes\obj\Debug\JBERP_HRPostPublishes.pdb
+D:\Infolight\EEP2012\JBADMIN\JBERP_HRPostPublishes\obj\Debug\JBERP_HRPostPublishes.csprojResolveAssemblyReference.cache

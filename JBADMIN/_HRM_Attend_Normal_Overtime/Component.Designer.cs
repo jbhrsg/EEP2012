@@ -37,6 +37,13 @@
             Srvtools.Service service6 = new Srvtools.Service();
             Srvtools.Service service7 = new Srvtools.Service();
             Srvtools.Service service8 = new Srvtools.Service();
+            Srvtools.Service service9 = new Srvtools.Service();
+            Srvtools.Service service10 = new Srvtools.Service();
+            Srvtools.Service service11 = new Srvtools.Service();
+            Srvtools.Service service12 = new Srvtools.Service();
+            Srvtools.Service service13 = new Srvtools.Service();
+            Srvtools.Service service14 = new Srvtools.Service();
+            Srvtools.Service service15 = new Srvtools.Service();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Component));
             Srvtools.KeyItem keyItem1 = new Srvtools.KeyItem();
             Srvtools.FieldAttr fieldAttr1 = new Srvtools.FieldAttr();
@@ -94,8 +101,10 @@
             Srvtools.SrcFieldNameColumn srcFieldNameColumn25 = new Srvtools.SrcFieldNameColumn();
             Srvtools.SrcFieldNameColumn srcFieldNameColumn26 = new Srvtools.SrcFieldNameColumn();
             Srvtools.SrcFieldNameColumn srcFieldNameColumn27 = new Srvtools.SrcFieldNameColumn();
+            Srvtools.SrcFieldNameColumn srcFieldNameColumn28 = new Srvtools.SrcFieldNameColumn();
             Srvtools.KeyItem keyItem2 = new Srvtools.KeyItem();
             Srvtools.KeyItem keyItem3 = new Srvtools.KeyItem();
+            Srvtools.KeyItem keyItem4 = new Srvtools.KeyItem();
             this.serviceManager1 = new Srvtools.ServiceManager(this.components);
             this.InfoConnection_JBHRIS = new Srvtools.InfoConnection(this.components);
             this.HRM_ATTEND_OVERTIME_DATA = new Srvtools.InfoCommand(this.components);
@@ -104,10 +113,12 @@
             this.View_HRM_ATTEND_OVERTIME_DATA = new Srvtools.InfoCommand(this.components);
             this.autoNumber_OVERTIME_ID = new Srvtools.AutoNumber(this.components);
             this.HRM_ATTEND_OVERTIME_DATA_LOG = new Srvtools.InfoCommand(this.components);
+            this.cb_HRM_ATTEND_ROTE = new Srvtools.InfoCommand(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.InfoConnection_JBHRIS)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.HRM_ATTEND_OVERTIME_DATA)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.View_HRM_ATTEND_OVERTIME_DATA)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.HRM_ATTEND_OVERTIME_DATA_LOG)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.cb_HRM_ATTEND_ROTE)).BeginInit();
             // 
             // serviceManager1
             // 
@@ -129,12 +140,33 @@
             service6.DelegateName = "checkCompensatoryData";
             service6.NonLogin = false;
             service6.ServiceName = "checkCompensatoryData";
-            service7.DelegateName = "FileUpload";
+            service7.DelegateName = "ExcelFileUpload";
             service7.NonLogin = false;
-            service7.ServiceName = "FileUpload";
+            service7.ServiceName = "ExcelFileUpload";
             service8.DelegateName = "getEffectDate";
             service8.NonLogin = false;
             service8.ServiceName = "getEffectDate";
+            service9.DelegateName = "ExcelFileImport";
+            service9.NonLogin = false;
+            service9.ServiceName = "ExcelFileImport";
+            service10.DelegateName = "checkRoteOvertimeHours";
+            service10.NonLogin = false;
+            service10.ServiceName = "checkRoteOvertimeHours";
+            service11.DelegateName = "getIsOvertimeDept";
+            service11.NonLogin = false;
+            service11.ServiceName = "getIsOvertimeDept";
+            service12.DelegateName = "CountMonthOvertimeHour";
+            service12.NonLogin = false;
+            service12.ServiceName = "CountMonthOvertimeHour";
+            service13.DelegateName = "checkOvertimeCause";
+            service13.NonLogin = false;
+            service13.ServiceName = "checkOvertimeCause";
+            service14.DelegateName = "getEffectDate_Normal";
+            service14.NonLogin = false;
+            service14.ServiceName = "getEffectDate_Normal";
+            service15.DelegateName = "getEffectDate_SYMTEK";
+            service15.NonLogin = false;
+            service15.ServiceName = "getEffectDate_SYMTEK";
             this.serviceManager1.ServiceCollection.Add(service1);
             this.serviceManager1.ServiceCollection.Add(service2);
             this.serviceManager1.ServiceCollection.Add(service3);
@@ -143,6 +175,13 @@
             this.serviceManager1.ServiceCollection.Add(service6);
             this.serviceManager1.ServiceCollection.Add(service7);
             this.serviceManager1.ServiceCollection.Add(service8);
+            this.serviceManager1.ServiceCollection.Add(service9);
+            this.serviceManager1.ServiceCollection.Add(service10);
+            this.serviceManager1.ServiceCollection.Add(service11);
+            this.serviceManager1.ServiceCollection.Add(service12);
+            this.serviceManager1.ServiceCollection.Add(service13);
+            this.serviceManager1.ServiceCollection.Add(service14);
+            this.serviceManager1.ServiceCollection.Add(service15);
             // 
             // InfoConnection_JBHRIS
             // 
@@ -164,9 +203,9 @@
             this.HRM_ATTEND_OVERTIME_DATA.MultiSetWhere = false;
             this.HRM_ATTEND_OVERTIME_DATA.Name = "HRM_ATTEND_OVERTIME_DATA";
             this.HRM_ATTEND_OVERTIME_DATA.NotificationAutoEnlist = false;
-            this.HRM_ATTEND_OVERTIME_DATA.SecExcept = null;
-            this.HRM_ATTEND_OVERTIME_DATA.SecFieldName = null;
-            this.HRM_ATTEND_OVERTIME_DATA.SecStyle = Srvtools.SecurityStyle.ssByNone;
+            this.HRM_ATTEND_OVERTIME_DATA.SecExcept = "ATTEND_ADMIN";
+            this.HRM_ATTEND_OVERTIME_DATA.SecFieldName = "ATTEND_GROUP_ID";
+            this.HRM_ATTEND_OVERTIME_DATA.SecStyle = Srvtools.SecurityStyle.ssByGroup;
             this.HRM_ATTEND_OVERTIME_DATA.SelectPaging = false;
             this.HRM_ATTEND_OVERTIME_DATA.SelectTop = 0;
             this.HRM_ATTEND_OVERTIME_DATA.SiteControl = false;
@@ -457,6 +496,7 @@
             srcFieldNameColumn25.FieldName = "CREATE_DATE";
             srcFieldNameColumn26.FieldName = "UPDATE_MAN";
             srcFieldNameColumn27.FieldName = "UPDATE_DATE";
+            srcFieldNameColumn28.FieldName = "OVERTIME_RATE_MASTER_ID";
             this.logInfo_HRM_ATTEND_OVERTIME_DATA.SrcFieldNames.Add(srcFieldNameColumn1);
             this.logInfo_HRM_ATTEND_OVERTIME_DATA.SrcFieldNames.Add(srcFieldNameColumn2);
             this.logInfo_HRM_ATTEND_OVERTIME_DATA.SrcFieldNames.Add(srcFieldNameColumn3);
@@ -484,6 +524,7 @@
             this.logInfo_HRM_ATTEND_OVERTIME_DATA.SrcFieldNames.Add(srcFieldNameColumn25);
             this.logInfo_HRM_ATTEND_OVERTIME_DATA.SrcFieldNames.Add(srcFieldNameColumn26);
             this.logInfo_HRM_ATTEND_OVERTIME_DATA.SrcFieldNames.Add(srcFieldNameColumn27);
+            this.logInfo_HRM_ATTEND_OVERTIME_DATA.SrcFieldNames.Add(srcFieldNameColumn28);
             // 
             // View_HRM_ATTEND_OVERTIME_DATA
             // 
@@ -551,10 +592,38 @@
             this.HRM_ATTEND_OVERTIME_DATA_LOG.SiteControl = false;
             this.HRM_ATTEND_OVERTIME_DATA_LOG.SiteFieldName = null;
             this.HRM_ATTEND_OVERTIME_DATA_LOG.UpdatedRowSource = System.Data.UpdateRowSource.None;
+            // 
+            // cb_HRM_ATTEND_ROTE
+            // 
+            this.cb_HRM_ATTEND_ROTE.CacheConnection = false;
+            this.cb_HRM_ATTEND_ROTE.CommandText = "SELECT * FROM HRM_ATTEND_ROTE\r\nWHERE NOT EXISTS( SELECT * FROM HRM_ATTEND_ROTEMAP" +
+    "PING_DETAIL WHERE HRM_ATTEND_ROTE.ROTE_ID = HRM_ATTEND_ROTEMAPPING_DETAIL.ROTE_I" +
+    "D)  ";
+            this.cb_HRM_ATTEND_ROTE.CommandTimeout = 30;
+            this.cb_HRM_ATTEND_ROTE.CommandType = System.Data.CommandType.Text;
+            this.cb_HRM_ATTEND_ROTE.DynamicTableName = false;
+            this.cb_HRM_ATTEND_ROTE.EEPAlias = null;
+            this.cb_HRM_ATTEND_ROTE.EncodingAfter = null;
+            this.cb_HRM_ATTEND_ROTE.EncodingBefore = "Windows-1252";
+            this.cb_HRM_ATTEND_ROTE.InfoConnection = this.InfoConnection_JBHRIS;
+            keyItem4.KeyName = "ROTE_ID";
+            this.cb_HRM_ATTEND_ROTE.KeyFields.Add(keyItem4);
+            this.cb_HRM_ATTEND_ROTE.MultiSetWhere = false;
+            this.cb_HRM_ATTEND_ROTE.Name = "cb_HRM_ATTEND_ROTE";
+            this.cb_HRM_ATTEND_ROTE.NotificationAutoEnlist = false;
+            this.cb_HRM_ATTEND_ROTE.SecExcept = null;
+            this.cb_HRM_ATTEND_ROTE.SecFieldName = null;
+            this.cb_HRM_ATTEND_ROTE.SecStyle = Srvtools.SecurityStyle.ssByNone;
+            this.cb_HRM_ATTEND_ROTE.SelectPaging = false;
+            this.cb_HRM_ATTEND_ROTE.SelectTop = 0;
+            this.cb_HRM_ATTEND_ROTE.SiteControl = false;
+            this.cb_HRM_ATTEND_ROTE.SiteFieldName = null;
+            this.cb_HRM_ATTEND_ROTE.UpdatedRowSource = System.Data.UpdateRowSource.None;
             ((System.ComponentModel.ISupportInitialize)(this.InfoConnection_JBHRIS)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.HRM_ATTEND_OVERTIME_DATA)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.View_HRM_ATTEND_OVERTIME_DATA)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.HRM_ATTEND_OVERTIME_DATA_LOG)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.cb_HRM_ATTEND_ROTE)).EndInit();
 
         }
 
@@ -568,5 +637,6 @@
         private Srvtools.AutoNumber autoNumber_OVERTIME_ID;
         private Srvtools.InfoCommand HRM_ATTEND_OVERTIME_DATA_LOG;
         private Srvtools.LogInfo logInfo_HRM_ATTEND_OVERTIME_DATA;
+        private Srvtools.InfoCommand cb_HRM_ATTEND_ROTE;
     }
 }

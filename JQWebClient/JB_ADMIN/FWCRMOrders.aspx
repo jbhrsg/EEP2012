@@ -11,10 +11,28 @@
 
         $(document).ready(function () {
          
+            //是否駐廠 + 天數
+            var IsOnSite = $('#dataFormOrdersIsOnSite').closest('td');
+            var SiteDays = $('#dataFormOrdersOnSiteDays').closest('td').children();
+            IsOnSite.append("駐廠天數&nbsp;&nbsp;").append(SiteDays).append("&nbsp;天");
+
+            //付費模式 + 雇主支付費用分攤連結
+            var HotelType = $('#dataFormOrdersHotelType').closest('td');
+            var HotelEmployer = $('#dataFormOrdersHotelEmployer').closest('td').children();
+            var HotelAgent = $('#dataFormOrdersHotelAgent').closest('td').children();
+            var HotelEmployee = $('#dataFormOrdersHotelEmployee').closest('td').children();
+            HotelType.append("&nbsp;").append(HotelEmployer).append("&nbsp;元、仲介支付").append(HotelAgent).append("&nbsp;元、移工支付").append(HotelEmployee).append("&nbsp;元");
+
+            //接工方式連接
+            var TakeTypeOne = $('#dataFormOrdersTakeTypeOne').closest('td');
+            var TypeOneNo = $('#dataFormOrdersTypeOneNo').closest('td').children();
+            var TakeTypeTree = $('#dataFormOrdersTakeTypeTree').closest('td').children();
+            TakeTypeOne.append("第一順位，核函號碼：").append(TypeOneNo).append("&nbsp;&nbsp;&nbsp;").append(TakeTypeTree).append("第三順位");
+
+
         });
         //-----------------------------------OnLoadSuccess   Orders-------------------------------------
         var dataFormOrders_OnLoadSuccess = function (data) {
-            dataFormOrdersImg_onSuccess.call($(infoFileUploaddataFormOrdersWorkImg)); //照片處理      
             if (getEditMode($("#dataFormOrders")) == 'inserted')
             {
                 //登入的工號帶入負責業務combobox
@@ -25,20 +43,52 @@
                         $("#dataFormOrdersSalesID").combobox('setValue', UserID);
                     }
                 }
+                //訂單年度預設
+                var sDate = new Date();
+                var iyear = $.jbjob.Date.DateFormat(sDate, 'yyyy/MM/dd').substring(0, 4);
+                $("#dataFormOrdersOrderYear").numberbox('setValue', iyear);
+                $("#dataFormOrdersOrderYear").val(iyear);
+
             }
         
         }
                
         var dataFormOrdersImg_onSuccess = function (data) {
-            $(this).jbFileUploadWithPhoto();
+            var OrderType = $('#dataFormOrdersOrderType').options('getCheckedValue');
+            if (OrderType == "") {
+
+                //訂單類型 infooptions自動預設為入境 =>1
+                var OrderType = $('#dataFormOrdersOrderType');
+                OrderType.options('setValue', 1);
+                var onSelect = getInfolightOption(OrderType).onSelect;
+                if (onSelect) { onSelect.call(OrderType, OrderType.options('getCheckedValue')); };
+            }
         }
 
+        //-----------------------------------Orders OrderType OnSelect-------------------------------------
+        //訂單類型 選取控制
+        function OnSelectType(rowData) {
+            //版別,區域,發票年月,單位數,見刊,出刊備註,PDF檔名     
+            var FormName = '#dataFormOrders';
+            var HideFieldName = ['ContinueFile'];
+
+            if (rowData != 4) {
+                //隱藏
+                $('#dataFormOrdersContinueFile').closest('td').prev('td').hide();
+                $('#dataFormOrdersContinueFile').closest('td').hide();
+            } else {
+                //顯示
+                $('#dataFormOrdersContinueFile').closest('td').prev('td').show();
+                $('#dataFormOrdersContinueFile').closest('td').show();
+                $('#dataFormOrdersContinueFile').closest('td').prev('td').css("color", "red");
+            }
+        }
         //-----------------------------------OnLoadSuccess   OrdersDetails-------------------------------------
         var dataFormOrdersDetails_OnLoadSuccess = function (data) {
             if (flag) {
                 //工期備註移至工期選項後面
                 var WorkTimeReason = $('#dataFormDetailWorkTimeReason').closest('td').children();
-                $("input[name='dataFormDetailWorkTime_0']:last").closest('td').append(' ').append(WorkTimeReason).append(' 年');
+                $("input[name='dataFormDetailWorkTime_0']:last").closest('td').append(' ').append(WorkTimeReason);//.append(' 年');
                 flag = false;
             }
         }
@@ -60,6 +110,8 @@
         function OnSelectEmployerID(rowData) {
             var EmployerID = rowData.EmployerID;//雇主
             $('#dataFormOrdersWorkNo').combobox('setWhere', "f.EmployerID ='" + EmployerID + "'")
+            //帶入雇主名稱
+            $('#dataFormOrdersEmployerName').val(rowData.EmployerName);
         }
         //dataFormOrders函號 過濾雇主
         function OnFilterorg_okno() {
@@ -90,14 +142,15 @@
             }
             //2.檢查訂單明細 工期=>選擇遞補 2 選項需 填入? 年
             var value = $('#dataFormDetailWorkTime').options('getCheckedValue');
-            if (value == "3") {
+            if (value == "4") {
                 var WorkTimeReason = $("#dataFormDetailWorkTimeReason").val();
                 if (WorkTimeReason == "") {
                     alert('請填入遞補年期。');
                     return false;
                 }
             }
-           
+            
+            
         }        
 
         //選擇來源訂單=>帶出訂單資訊
@@ -143,7 +196,16 @@
                 alert('無訂單明細。');
                 return false;
             }
-           
+            //2.檢查訂單類型 轉單續聘4=>需 上傳續聘文件	
+            var OrderType = $('#dataFormOrdersOrderType').options('getCheckedValue');
+            if (OrderType == "4") {
+                var ContinueFile = $("#dataFormOrdersContinueFile");
+                var infofileUploadvalue = $('.info-fileUpload-value', ContinueFile.next())
+                if (infofileUploadvalue.val() == "") {//取得infofileupload文件名
+                    alert('請上傳續聘相關文件。');
+                    return false;
+                }
+            }
 
         }
       
@@ -176,19 +238,33 @@
                 </QueryColumns>
             </JQTools:JQDataGrid>
 
-            <JQTools:JQDialog ID="JQDialog1" runat="server" BindingObjectID="dataFormOrders" Title="外籍勞工訂單" Width="680px" DialogTop="10px" DialogLeft="10px">
-                <JQTools:JQDataForm ID="dataFormOrders" runat="server" DataMember="FWCRMOrders" HorizontalColumnsCount="2" RemoteName="sFWCRMOrders.FWCRMOrders" OnLoadSuccess="dataFormOrders_OnLoadSuccess" AlwaysReadOnly="False" Closed="False" ContinueAdd="False" disapply="False" DivFramed="False" DuplicateCheck="False" HorizontalGap="0" IsAutoPageClose="True" IsAutoPause="False" IsAutoSubmit="True" IsNotifyOFF="False" IsRejectNotify="False" IsRejectON="False" IsShowFlowIcon="True" ShowApplyButton="False" ValidateStyle="Dialog" VerticalGap="0" OnApply="checkApplyData" >
+            <JQTools:JQDialog ID="JQDialog1" runat="server" BindingObjectID="dataFormOrders" Title="外籍勞工訂單" Width="780px" DialogTop="10px" DialogLeft="10px">
+                <JQTools:JQDataForm ID="dataFormOrders" runat="server" DataMember="FWCRMOrders" HorizontalColumnsCount="4" RemoteName="sFWCRMOrders.FWCRMOrders" OnLoadSuccess="dataFormOrders_OnLoadSuccess" AlwaysReadOnly="False" Closed="False" ContinueAdd="False" disapply="False" DivFramed="False" DuplicateCheck="False" HorizontalGap="0" IsAutoPageClose="True" IsAutoPause="False" IsAutoSubmit="True" IsNotifyOFF="False" IsRejectNotify="False" IsRejectON="False" IsShowFlowIcon="True" ShowApplyButton="False" ValidateStyle="Dialog" VerticalGap="0" OnApply="checkApplyData" >
 
                     <Columns>
-                        <JQTools:JQFormColumn Alignment="left" Caption="訂單編號" Editor="text" FieldName="OrderNo" Format="" maxlength="0" Width="120" ReadOnly="True" Visible="False" />
-                        <JQTools:JQFormColumn Alignment="left" Caption="訂單類型" Editor="infooptions" EditorOptions="title:'JQOptions',panelWidth:190,remoteName:'',tableName:'',valueField:'',textField:'',columnCount:3,multiSelect:false,openDialog:false,selectAll:false,selectOnly:false,items:[{text:'入境',value:'1'},{text:'承接',value:'2'},{text:'轉單',value:'3'}]" FieldName="OrderType" MaxLength="0" NewRow="False" ReadOnly="False" RowSpan="1" Span="1" Visible="True" Width="220" />
-                        <JQTools:JQFormColumn Alignment="left" Caption="負責業務" Editor="infocombobox" EditorOptions="valueField:'EmpID',textField:'NAME_C',remoteName:'sFWCRMOrders.infoSalesID',tableName:'infoSalesID',pageSize:'-1',checkData:false,selectOnly:false,cacheRelationText:false,panelHeight:200" FieldName="SalesID" MaxLength="0" NewRow="False" ReadOnly="False" RowSpan="1" Span="1" Visible="True" Width="100" />
-                        <JQTools:JQFormColumn Alignment="left" Caption="雇主名稱" Editor="infocombobox" EditorOptions="valueField:'EmployerID',textField:'EmployerName',remoteName:'sFWCRMOrders.infoEmployerID',tableName:'infoEmployerID',pageSize:'-1',checkData:false,selectOnly:false,cacheRelationText:false,onSelect:OnSelectEmployerID,panelHeight:200" FieldName="EmployerID" Format="" ReadOnly="False" Width="180" NewRow="True" />
-                        <JQTools:JQFormColumn Alignment="left" Caption="來源訂單" Editor="inforefval" EditorOptions="title:'選擇來源訂單',panelWidth:590,remoteName:'sFWCRMOrders.infoOrderNo',tableName:'infoOrderNo',columns:[{field:'OrderNo',title:'訂單編號',width:92,align:'left',table:'',isNvarChar:false,queryCondition:''},{field:'EmployerName',title:'雇主名稱',width:180,align:'left',table:'',isNvarChar:false,queryCondition:''},{field:'PersonQtyOriginal',title:'訂單人數',width:92,align:'right',table:'',isNvarChar:false,queryCondition:''},{field:'PersonQtyFinal',title:'目前人數',width:92,align:'right',table:'',isNvarChar:false,queryCondition:''},{field:'CreateBy',title:'建立人員',width:92,align:'center',table:'',isNvarChar:false,queryCondition:''}],columnMatches:[{field:'NationalityID',value:'NationalityID'}],whereItems:[],valueField:'OrderNo',textField:'OrderNo',valueFieldCaption:'OrderNo',textFieldCaption:'訂單編號',cacheRelationText:true,checkData:true,showValueAndText:false,dialogCenter:false,onSelect:OnSelectFromOrderNo,selectOnly:false,capsLock:'none',fixTextbox:'false'" FieldName="FromOrderNo" Format="" maxlength="0" NewRow="True" ReadOnly="False" Width="120" Visible="False" />
-                        <JQTools:JQFormColumn Alignment="left" Caption="聘工表號碼" Editor="infocombobox" FieldName="WorkNo" Format="" maxlength="0" Width="180" EditorOptions="valueField:'WorkNo',textField:'WorkNo',remoteName:'sFWCRMOrders.FWCRMWorkNo',tableName:'FWCRMWorkNo',pageSize:'-1',checkData:true,selectOnly:false,cacheRelationText:false,panelHeight:200" ReadOnly="False" NewRow="False" />
-                        <JQTools:JQFormColumn Alignment="left" Caption="引進國別" Editor="infocombobox" EditorOptions="valueField:'AutoKey',textField:'NationalityName',remoteName:'sFWCRMOrders.infoFWCRMNationality',tableName:'infoFWCRMNationality',pageSize:'-1',checkData:false,selectOnly:false,cacheRelationText:false,panelHeight:200" FieldName="NationalityID" Format="" MaxLength="0" NewRow="True" ReadOnly="False" RowSpan="1" Span="1" Width="180" />
-                        <JQTools:JQFormColumn Alignment="left" Caption="聘工表檔案" Editor="infofileupload" FieldName="WorkImg" MaxLength="100" Width="290" EditorOptions="filter:'docx|xlsx|jpg|jpeg|png|bmp|gif|pptx|ppt|pdf',isAutoNum:true,upLoadFolder:'Files/FWCRM/Orders',showButton:true,showLocalFile:false,onSuccess:dataFormOrdersImg_onSuccess,fileSizeLimited:'1024'" NewRow="False" Span="1" Visible="True" />
-                        <JQTools:JQFormColumn Alignment="left" Caption="CreateBy" Editor="text" FieldName="CreateBy" Format="" Width="180" NewRow="True" Visible="False" />
+                        <JQTools:JQFormColumn Alignment="left" Caption="訂單編號" Editor="text" FieldName="OrderNo" Format="" Width="120" ReadOnly="True" Visible="False" maxlength="0" NewRow="False" Span="1" />
+                        <JQTools:JQFormColumn Alignment="left" Caption="訂單類型" Editor="infooptions" EditorOptions="title:'JQOptions',panelWidth:310,remoteName:'',tableName:'',valueField:'',textField:'',columnCount:5,multiSelect:false,openDialog:false,selectAll:false,onSelect:OnSelectType,selectOnly:false,items:[{text:'入境',value:'1'},{text:'承接',value:'2'},{text:'轉單',value:'3'},{text:'轉單續聘',value:'4'},{text:'代招',value:'5'}]" FieldName="OrderType" MaxLength="0" NewRow="False" ReadOnly="False" Span="3" Width="280" RowSpan="1" Visible="True" />
+                        <JQTools:JQFormColumn Alignment="left" Caption="負責業務" Editor="infocombobox" EditorOptions="valueField:'EmpID',textField:'NAME_C',remoteName:'sFWCRMOrders.infoSalesID',tableName:'infoSalesID',pageSize:'-1',checkData:true,selectOnly:false,cacheRelationText:false,panelHeight:200" FieldName="SalesID" MaxLength="0" NewRow="False" ReadOnly="False" Span="1" Visible="True" Width="100" RowSpan="1" />
+                        <JQTools:JQFormColumn Alignment="left" Caption="訂單狀態" Editor="infooptions" EditorOptions="title:'JQOptions',panelWidth:270,remoteName:'sFWCRMOrders.infoOrderStatus',tableName:'infoOrderStatus',valueField:'ID',textField:'Name',columnCount:3,multiSelect:false,openDialog:false,selectAll:false,selectOnly:false,items:[]" FieldName="OrderStatus" NewRow="False" ReadOnly="False" Span="3" Visible="True" Width="150" MaxLength="0" RowSpan="1" />
+                        <JQTools:JQFormColumn Alignment="left" Caption="訂單年度" Editor="numberbox" FieldName="OrderYear" MaxLength="0" ReadOnly="False" Visible="True" Width="60" />
+                        <JQTools:JQFormColumn Alignment="left" Caption="雇主名稱" Editor="infocombobox" EditorOptions="valueField:'EmployerID',textField:'EmployerName',remoteName:'sFWCRMOrders.infoEmployerID',tableName:'infoEmployerID',pageSize:'-1',checkData:true,selectOnly:false,cacheRelationText:false,onSelect:OnSelectEmployerID,panelHeight:200" FieldName="EmployerID" Format="" ReadOnly="False" Width="180" NewRow="True" maxlength="0" Span="3" RowSpan="1" Visible="True" />
+                        <JQTools:JQFormColumn Alignment="left" Caption="EmployerName" Editor="text" FieldName="EmployerName" MaxLength="0" NewRow="False" ReadOnly="False" RowSpan="1" Span="1" Visible="False" Width="80" />
+                        <JQTools:JQFormColumn Alignment="left" Caption="來源訂單" Editor="inforefval" EditorOptions="title:'選擇來源訂單',panelWidth:590,remoteName:'sFWCRMOrders.infoOrderNo',tableName:'infoOrderNo',columns:[{field:'OrderNo',title:'訂單編號',width:92,align:'left',table:'',isNvarChar:false,queryCondition:''},{field:'EmployerName',title:'雇主名稱',width:180,align:'left',table:'',isNvarChar:false,queryCondition:''},{field:'PersonQtyOriginal',title:'訂單人數',width:92,align:'right',table:'',isNvarChar:false,queryCondition:''},{field:'PersonQtyFinal',title:'目前人數',width:92,align:'right',table:'',isNvarChar:false,queryCondition:''},{field:'CreateBy',title:'建立人員',width:92,align:'center',table:'',isNvarChar:false,queryCondition:''}],columnMatches:[{field:'NationalityID',value:'NationalityID'}],whereItems:[],valueField:'OrderNo',textField:'OrderNo',valueFieldCaption:'OrderNo',textFieldCaption:'訂單編號',cacheRelationText:true,checkData:true,showValueAndText:false,dialogCenter:false,onSelect:OnSelectFromOrderNo,selectOnly:false,capsLock:'none',fixTextbox:'false'" FieldName="FromOrderNo" Format="" maxlength="0" NewRow="True" ReadOnly="False" Width="120" Visible="False" RowSpan="1" Span="1" />
+                        <JQTools:JQFormColumn Alignment="left" Caption="聘工表號碼" Editor="infocombobox" FieldName="WorkNo" Format="" maxlength="0" Width="180" EditorOptions="valueField:'WorkNo',textField:'WorkNo',remoteName:'sFWCRMOrders.FWCRMWorkNo',tableName:'FWCRMWorkNo',pageSize:'-1',checkData:true,selectOnly:false,cacheRelationText:false,panelHeight:200" ReadOnly="False" Visible="True" NewRow="False" RowSpan="1" Span="1" />
+                        <JQTools:JQFormColumn Alignment="left" Caption="引進國別" Editor="infocombobox" EditorOptions="valueField:'AutoKey',textField:'NationalityName',remoteName:'sFWCRMOrders.infoFWCRMNationality',tableName:'infoFWCRMNationality',pageSize:'-1',checkData:true,selectOnly:false,cacheRelationText:false,panelHeight:200" FieldName="NationalityID" Format="" MaxLength="0" NewRow="True" Span="3" Width="180" Visible="True" />
+                        <JQTools:JQFormColumn Alignment="left" Caption="聘工表檔案" Editor="infofileupload" FieldName="WorkImg" MaxLength="100" Width="290" EditorOptions="filter:'docx|xlsx|jpg|jpeg|png|bmp|gif|pptx|ppt|pdf',isAutoNum:true,upLoadFolder:'Files/FWCRM/Orders',showButton:true,showLocalFile:false,onSuccess:dataFormOrdersImg_onSuccess,fileSizeLimited:'1024'" NewRow="False" Span="1" Visible="True" ReadOnly="False" RowSpan="1" />
+                        <JQTools:JQFormColumn Alignment="left" Caption="續聘文件" Editor="infofileupload" EditorOptions="filter:'docx|xlsx|jpg|jpeg|png|bmp|gif|pptx|ppt|pdf',isAutoNum:true,upLoadFolder:'Files/FWCRM/Orders',showButton:true,showLocalFile:false,onSuccess:dataFormOrdersImg_onSuccess,fileSizeLimited:'1024'" FieldName="ContinueFile" MaxLength="100" NewRow="False" Span="4" Visible="True" Width="290" ReadOnly="False" RowSpan="1" />
+                        <JQTools:JQFormColumn Alignment="left" Caption="是否駐廠" Editor="checkbox" EditorOptions="on:1,off:0" FieldName="IsOnSite" MaxLength="0" NewRow="False" ReadOnly="False" RowSpan="1" Span="1" Visible="True" Width="50" />
+                        <JQTools:JQFormColumn Alignment="left" Caption=" " Editor="numberbox" FieldName="OnSiteDays" MaxLength="0" NewRow="False" ReadOnly="False" RowSpan="1" Span="2" Visible="True" Width="60" />
+                        <JQTools:JQFormColumn Alignment="left" Caption="防疫旅館需求" Editor="checkbox" EditorOptions="on:1,off:0" FieldName="IsHotel" MaxLength="0" ReadOnly="False" Visible="True" Width="50" NewRow="False" Span="1" RowSpan="1" />
+                        <JQTools:JQFormColumn Alignment="left" Caption="付費模式" Editor="infocombobox" EditorOptions="items:[{value:'1',text:'雇主全額支付',selected:'false'},{value:'2',text:'移工全額支付',selected:'false'},{value:'3',text:'雇主支付',selected:'false'}],checkData:false,selectOnly:false,cacheRelationText:false,panelHeight:130" FieldName="HotelType" NewRow="False" Span="4" Visible="True" Width="180" ReadOnly="False" />
+                        <JQTools:JQFormColumn Alignment="left" Caption=" " Editor="numberbox" FieldName="HotelEmployer" MaxLength="0" NewRow="False" ReadOnly="False" RowSpan="1" Span="1" Visible="True" Width="50" />
+                        <JQTools:JQFormColumn Alignment="left" Caption=" " Editor="numberbox" FieldName="HotelAgent" MaxLength="0" NewRow="False" ReadOnly="False" RowSpan="1" Span="1" Visible="True" Width="50" />
+                        <JQTools:JQFormColumn Alignment="left" Caption=" " Editor="numberbox" FieldName="HotelEmployee" MaxLength="0" NewRow="False" ReadOnly="False" Span="1" Visible="True" Width="50" RowSpan="1" />
+                        <JQTools:JQFormColumn Alignment="left" Caption="接工方式" Editor="checkbox" FieldName="TakeTypeOne" NewRow="True" ReadOnly="False" Span="4" Visible="True" Width="30" MaxLength="0" RowSpan="1" />
+                        <JQTools:JQFormColumn Alignment="left" Caption=" " Editor="text" FieldName="TypeOneNo" MaxLength="0" NewRow="True" ReadOnly="False" Span="1" Width="135" />
+                        <JQTools:JQFormColumn Alignment="left" Caption=" " Editor="checkbox" FieldName="TakeTypeTree" MaxLength="0" NewRow="False" ReadOnly="False" Span="1" Visible="True" Width="30" />
+                        <JQTools:JQFormColumn Alignment="left" Caption="CreateBy" Editor="text" FieldName="CreateBy" Format="" Width="180" NewRow="True" Visible="False" MaxLength="0" ReadOnly="False" RowSpan="1" Span="1" />
                         <JQTools:JQFormColumn Alignment="left" Caption="CreateDate" Editor="datebox" FieldName="CreateDate" Format="" Width="180" Visible="False" MaxLength="0" NewRow="False" ReadOnly="False" RowSpan="1" Span="1" />
                         <JQTools:JQFormColumn Alignment="left" Caption="UserID" Editor="text" FieldName="UserID" MaxLength="0" NewRow="False" ReadOnly="False" RowSpan="1" Span="1" Visible="False" Width="80" />
                     </Columns>
@@ -222,7 +298,7 @@
                         <JQTools:JQToolItem Icon="icon-add" ItemType="easyui-linkbutton" OnClick="insertItem" Text="新增" />
                     </TooItems>
                 </JQTools:JQDataGrid>
-                <JQTools:JQDialog ID="JQDialog2" runat="server" BindingObjectID="dataFormDetail" EditMode="Switch">
+                <JQTools:JQDialog ID="JQDialog2" runat="server" BindingObjectID="dataFormDetail" EditMode="Switch" Width="650px">
                     <JQTools:JQDataForm ID="dataFormDetail" runat="server" AlwaysReadOnly="False" Closed="False" ContinueAdd="False" DataMember="FWCRMOrdersDetails" disapply="False" DivFramed="False" DuplicateCheck="False" HorizontalColumnsCount="2" HorizontalGap="0" IsAutoPageClose="False" IsAutoPause="False" IsAutoSubmit="False" IsNotifyOFF="False" IsRejectNotify="False" IsRejectON="False" IsShowFlowIcon="False" OnApply="OnApplydataFormDetail" ParentObjectID="dataFormOrders" RemoteName="sFWCRMOrders.FWCRMOrders" ShowApplyButton="False" ValidateStyle="Hint" VerticalGap="0" OnLoadSuccess="dataFormOrdersDetails_OnLoadSuccess">
                         <Columns>
                             <JQTools:JQFormColumn Alignment="left" Caption="批次" Editor="text" FieldName="Item" Format="" NewRow="True" ReadOnly="True" Width="40" />
@@ -231,8 +307,8 @@
                             <JQTools:JQFormColumn Alignment="left" Caption="目前人數" Editor="numberbox" FieldName="PersonQtyFinal" NewRow="False" ReadOnly="True" Width="80" Visible="False" />
                             <JQTools:JQFormColumn Alignment="left" Caption="性別" Editor="infooptions" EditorOptions="title:'JQOptions',panelWidth:120,remoteName:'',tableName:'',valueField:'',textField:'',columnCount:2,multiSelect:false,openDialog:false,selectAll:false,selectOnly:false,items:[{text:'女',value:'1'},{text:'男',value:'2'}]" FieldName="Gender" Format="" NewRow="False" Width="120" />
                             <JQTools:JQFormColumn Alignment="left" Caption="函號" Editor="inforefval" EditorOptions="title:'選擇函號',panelWidth:300,remoteName:'sFWCRMOrders.infoOrg_okno',tableName:'infoOrg_okno',columns:[{field:'cus_name',title:'雇主名稱',width:150,align:'left',table:'',isNvarChar:false,queryCondition:''},{field:'org_okno',title:'函號',width:110,align:'left',table:'',isNvarChar:false,queryCondition:''}],columnMatches:[{field:'sgn_no',value:'sgn_no'},{field:'sgn_type',value:'sgn_type'}],whereItems:[],valueField:'org_okno',textField:'cus_name',valueFieldCaption:'函號',textFieldCaption:'函號',cacheRelationText:true,checkData:true,showValueAndText:false,dialogCenter:false,selectOnly:false,capsLock:'none',fixTextbox:'false'" FieldName="org_okno" Format="" Span="1" Width="160" NewRow="True" />
-                            <JQTools:JQFormColumn Alignment="left" Caption="工期" Editor="infooptions" EditorOptions="title:'JQOptions',panelWidth:280,remoteName:'sFWCRMOrders.infoWorkTime',tableName:'infoWorkTime',valueField:'ID',textField:'Name',columnCount:3,multiSelect:false,openDialog:false,selectAll:false,selectOnly:false,items:[]" FieldName="WorkTime" MaxLength="0" NewRow="False" ReadOnly="False" RowSpan="1" Span="1" Visible="True" Width="80" />
-                            <JQTools:JQFormColumn Alignment="left" Caption=" " Editor="text" FieldName="WorkTimeReason" MaxLength="0" NewRow="False" ReadOnly="False" RowSpan="1" Span="1" Visible="True" Width="40" />
+                            <JQTools:JQFormColumn Alignment="left" Caption="工期" Editor="infooptions" EditorOptions="title:'JQOptions',panelWidth:600,remoteName:'sFWCRMOrders.infoWorkTime',tableName:'infoWorkTime',valueField:'ID',textField:'Name',columnCount:6,multiSelect:false,openDialog:false,selectAll:false,selectOnly:false,items:[]" FieldName="WorkTime" MaxLength="0" NewRow="True" ReadOnly="False" RowSpan="1" Span="2" Visible="True" Width="80" />
+                            <JQTools:JQFormColumn Alignment="left" Caption=" " Editor="text" FieldName="WorkTimeReason" MaxLength="0" NewRow="False" ReadOnly="False" RowSpan="1" Span="2" Visible="True" Width="120" />
                             <JQTools:JQFormColumn Alignment="left" Caption="備註" Editor="textarea" EditorOptions="height:50" FieldName="Notes" Format="" NewRow="True" Span="2" Visible="True" Width="460" />
                             <JQTools:JQFormColumn Alignment="left" Caption="CreateBy" Editor="text" FieldName="CreateBy" Format="" NewRow="True" Visible="False" Width="120" />
                             <JQTools:JQFormColumn Alignment="left" Caption="CreateDate" Editor="datebox" FieldName="CreateDate" Format="" MaxLength="0" NewRow="False" ReadOnly="False" RowSpan="1" Span="1" Visible="False" Width="120" />
@@ -259,11 +335,13 @@
                     <Columns>
                         <JQTools:JQValidateColumn CheckNull="True" FieldName="WorkNo" RemoteMethod="True" ValidateMessage="請選擇聘工表" ValidateType="None" />
                         <JQTools:JQValidateColumn CheckNull="True" FieldName="OrderType" RemoteMethod="True" ValidateMessage="請選擇訂單類型" ValidateType="None" />
+                        <JQTools:JQValidateColumn CheckNull="True" FieldName="OrderStatus" RemoteMethod="True" ValidateMessage="請選擇訂單狀態" ValidateType="None" />
                         <JQTools:JQValidateColumn CheckNull="True" FieldName="NationalityID" RemoteMethod="True" ValidateMessage="請選擇引進國別	" ValidateType="None" />
                         <JQTools:JQValidateColumn CheckNull="True" FieldName="WorkImg" RemoteMethod="True" ValidateMessage="請選擇聘工表檔案" ValidateType="None" />
                         <JQTools:JQValidateColumn CheckNull="True" FieldName="SalesID" RemoteMethod="True" ValidateMessage="請選擇業務" ValidateType="None" />
                         <JQTools:JQValidateColumn CheckNull="True" FieldName="EmployerID" RemoteMethod="True" ValidateMessage="請選擇雇主名稱	" ValidateType="None" />
                         <JQTools:JQValidateColumn CheckNull="True" FieldName="WorkImg" RemoteMethod="True" ValidateMessage="請夾帶檔案" ValidateType="None" />
+                        <JQTools:JQValidateColumn CheckNull="True" FieldName="OrderYear" RemoteMethod="True" ValidateMessage="訂單年度	不可空白" ValidateType="None" />
                     </Columns>
                 </JQTools:JQValidate>
                 <JQTools:JQDefault ID="defaultDetail" runat="server" BindingObjectID="dataFormDetail" EnableTheming="True">

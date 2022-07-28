@@ -1,0 +1,12 @@
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sBizTravel\bin\Debug\sBizTravel.dll
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sBizTravel\bin\Debug\sBizTravel.pdb
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sBizTravel\obj\Debug\sBizTravel.csproj.GenerateResource.Cache
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sBizTravel\obj\Debug\sBizTravel.dll
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sBizTravel\obj\Debug\sBizTravel.pdb
+C:\Program Files (x86)\Infolight\EEP2012\EEPNetServer\JBADMIN\sBizTravel.dll
+C:\Program Files (x86)\Infolight\EEP2012\EEPNetServer\JBADMIN\sBizTravel.pdb
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sBizTravel\obj\Debug\sBizTravel.Component.resources
+C:\Program Files (x86)\Infolight\EEP2012\EEPNetServer\JBADMIN\vi-VN\sBizTravel.resources.dll
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sBizTravel\obj\Debug\sBizTravel.Component.vi-VN.resources
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sBizTravel\obj\Debug\vi-VN\sBizTravel.resources.dll
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sBizTravel\obj\Debug\sBizTravel.csprojResolveAssemblyReference.cache

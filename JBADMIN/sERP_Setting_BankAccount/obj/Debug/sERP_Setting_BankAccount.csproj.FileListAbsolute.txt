@@ -1,0 +1,8 @@
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sERP_Setting_BankAccount\bin\Debug\sERP_Setting_BankAccount.dll
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sERP_Setting_BankAccount\bin\Debug\sERP_Setting_BankAccount.pdb
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sERP_Setting_BankAccount\obj\Debug\sERP_Setting_BankAccount.csproj.GenerateResource.Cache
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sERP_Setting_BankAccount\obj\Debug\sERP_Setting_BankAccount.dll
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sERP_Setting_BankAccount\obj\Debug\sERP_Setting_BankAccount.pdb
+C:\Program Files (x86)\Infolight\EEP2012\EEPNetServer\JBADMIN\sERP_Setting_BankAccount.dll
+C:\Program Files (x86)\Infolight\EEP2012\EEPNetServer\JBADMIN\sERP_Setting_BankAccount.pdb
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sERP_Setting_BankAccount\obj\Debug\sERP_Setting_BankAccount.Component.resources

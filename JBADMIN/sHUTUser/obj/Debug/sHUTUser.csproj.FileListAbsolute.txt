@@ -1,0 +1,9 @@
+D:\Infolight\EEP2012\JBADMIN\sHUTUser\bin\Debug\sHUTUser.dll
+D:\Infolight\EEP2012\JBADMIN\sHUTUser\bin\Debug\sHUTUser.pdb
+D:\Infolight\EEP2012\JBADMIN\sHUTUser\obj\Debug\sHUTUser.csproj.GenerateResource.Cache
+D:\Infolight\EEP2012\JBADMIN\sHUTUser\obj\Debug\sHUTUser.dll
+D:\Infolight\EEP2012\JBADMIN\sHUTUser\obj\Debug\sHUTUser.pdb
+D:\Infolight\EEP2012\EEPNetServer\JBADMIN\sHUTUser.dll
+D:\Infolight\EEP2012\EEPNetServer\JBADMIN\sHUTUser.pdb
+D:\Infolight\EEP2012\JBADMIN\sHUTUser\obj\Debug\sHUTUser.Component.resources
+D:\Infolight\EEP2012\JBADMIN\sHUTUser\obj\Debug\sHUTUser.csprojResolveAssemblyReference.cache

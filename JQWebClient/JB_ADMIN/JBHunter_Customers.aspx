@@ -34,6 +34,13 @@
             CustName.append(EconmicLink);
 
             //--------------聯絡人頁籤-----------------------------------------------------------------
+            //聯絡人+性別+職稱+部門+屬性 合併為同TD顯示
+            var ContactName = $('#DFContactPersonContactName').closest('td');
+            var Gender = $('#DFContactPersonContactGender').closest('td').children();
+            var ContactTitle = $('#DFContactPersonContactTitle').closest('td').children();
+            var ContactDept = $('#DFContactPersonContactDept').closest('td').children();
+            var Property = $('#DFContactPersonContactProperty').closest('td').children();
+            ContactName.append('&nbsp;&nbsp;性別').append(Gender).append('&nbsp;&nbsp;職稱').append(ContactTitle).append('&nbsp;&nbsp;部門').append(ContactDept).append('&nbsp;&nbsp;屬性').append(Property);
             //客戶聯絡人區號+電話+分機+Mail 合併為同TD顯示
             var ContactCountyArea = $('#DFContactPersonContactCountyArea').closest('td');
             var area1 = $('#DFContactPersonContactTelArea').closest('td').children();
@@ -191,11 +198,11 @@
                 var bJobCount = $("#bJobCount_Query").checkbox('getValue')//有職缺
                 var bContractCount = $("#bContractCount_Query").checkbox('getValue')//有合約
 
-                if (CustID != '') result.push("c.CustName like '%" + CustID + "%' or c.CustTaxNo like '%" + CustID + "%' or c.CustomerTelArea+c.CustomerTel like '%" + CustID + "%' or c.CustID like '%" + CustID + "%'");
+                if (CustID != '') result.push("(c.CustName like '%" + CustID + "%' or c.CustTaxNo like '%" + CustID + "%' or c.CustomerTelArea+c.CustomerTel like '%" + CustID + "%' or c.CustID like '%" + CustID + "%')");
                 if (SalesTeamID != '') result.push("c.SalesTeamID = " + SalesTeamID);
                 if (HunterID != '') result.push("dbo.funReturnHUT_CustomersHunterName(c.CustID) like '%" + HunterID + "%'");
                 if (bJobCount == 1) result.push("(select count(*) from HUT_JobTemp j where CustID=c.CustID and iDate=1)>0");
-                if (bContractCount == 1) result.push("Isnull(Convert(nvarchar(10),t.BeginDate,111),'')!=''");
+                if (bContractCount == 1) result.push("dbo.funReturnCustomerContract(c.CustID)!=''");
 
                 $(dg).datagrid('setWhere', result.join(' and '));
             }
@@ -587,6 +594,80 @@
             dialog.dialog('open');
 
         }
+        //Grid 同步人脈顯示
+        function sCheckBoxCON_CONTACT(val) {
+            if (val != null)
+                return "<input  type='checkbox' checked='true' checked onclick='return false;' />";
+            else
+                return "<input  type='checkbox' onclick='return false;' />";
+        }
+        //Grid 同步人脈連結
+        function ContactLink(value, row, index) {
+            var CONTACT_ID = row.CONTACT_ID;
+            if (CONTACT_ID == null) {
+                return $('<a>', { href: 'javascript:void(0)', name: 'Link', onclick: 'OpenSyncContact(' + index + ')' }).linkbutton({ plain: false, text: '同步人脈' })[0].outerHTML;
+            } else "已同步";
+        }
+        function OpenSyncContact(index) {
+            $("#DGContactPerson").datagrid('selectRow', index);
+            openForm('#Dialog_CON_CONTACT', $('#DGContactPerson').datagrid('getSelected'), "updated", 'dialog');
+
+            //SyncContact(ConType, rows.ContactName, rows.CustID, 40);//40中高階
+
+        }
+        //同步聯絡人 傳入參數:Conb 聯絡人姓名,CustNO 客戶代號,ConType 聯絡人項次 1,2
+        function SyncContact() {
+            var rows = $("#DGContactPerson").datagrid('getSelected');
+            var ConType = 2;
+            var CTCONTACT_CNAME = $("#DFCON_CONTACTCONTACT_CNAME").val();
+            var CONTACT_ENAME = $("#DFCON_CONTACTCONTACT_ENAME").val();
+            var CONTACT_GENDER = $("#DFCON_CONTACTCONTACT_GENDER").combobox('getValue');
+            var ContactTitle = $("#DFCON_CONTACTContactTitle").val();
+            var ContactDept = $("#DFCON_CONTACTContactDept").val();
+            var CONTACT_TEL = $("#DFCON_CONTACTCONTACT_TEL").val();
+            var TelExt = $("#DFCON_CONTACTContactTelExt").val();
+            var ContacteMail = $("#DFCON_CONTACTContacteMail").val();
+            var ContactMobile1 = $("#DFCON_CONTACTContactMobile1").val();
+            var ContactMobile2 = $("#DFCON_CONTACTContactMobile2").val();
+            var CONTACT_TRADE = $("#DFCON_CONTACTCONTACT_TRADE").combobox('getValue');//行業別
+            var CONTACT_TRADENOTES = $("#DFCON_CONTACTCONTACT_TRADENOTES").val();
+            var CustID = rows.CustID;
+            var AutoKey = rows.AutoKey;
+
+            if (CTCONTACT_CNAME == "" || ContactTitle == "" || CONTACT_GENDER == "" || CONTACT_TRADE == "") {
+                alert("請填寫姓名/職稱/性別/行業別。");
+                return true;
+            }
+
+            //檢查必填
+            //var  a =submitForm($('#Dialog_CON_CONTACT'));
+            //alert(a);
+            var ConfirmYN = confirm("確定要同步聯絡人:(" + CTCONTACT_CNAME + ')?');
+            if (ConfirmYN == false) {
+                return true;
+            }
+            $.ajax({
+                type: "POST",
+                url: '../handler/jqDataHandle.ashx?RemoteName=sCustomersJobs.HUT_Customer',
+                data: "mode=method&method=" + "procSyncContact" + " &parameters=" + CTCONTACT_CNAME + "," + CONTACT_ENAME + "," + CONTACT_GENDER + "," + ContactTitle + "," + ContactDept + "," + CONTACT_TEL + "," + TelExt + "," + ContacteMail + "," + ContactMobile1 + "," + ContactMobile2 + "," + CustID + "," + CONTACT_TRADE + "," + CONTACT_TRADENOTES + "," + AutoKey,
+                cache: false,
+                async: false,
+                success: function (data) {
+                    alert("同步聯絡人成功");
+                    closeForm('#Dialog_CON_CONTACT');
+                    $('#DGContactPerson').datagrid("reload");
+
+
+                },
+                error: function (xhr, ajaxOptions, thrownError) {
+                    alert(xhr.status);
+                    alert(thrownError);
+                    alert("注意!! 同步聯絡人失敗");
+                }
+
+            });
+        }
+
 
     </script>
     <style type="text/css">
@@ -610,12 +691,12 @@
                                 <JQTools:JQGridColumn Alignment="center" Caption="客戶編號" Editor="text" FieldName="CustID" MaxLength="20" Width="55" EditorOptions="" Visible="True" Sortable="False" />
                                 <JQTools:JQGridColumn Alignment="left" Caption="客戶名稱" Editor="text" FieldName="CustName" MaxLength="30" Width="186" Sortable="True" />
                                 <JQTools:JQGridColumn Alignment="center" Caption="統一編號" Editor="text" FieldName="CustTaxNo" MaxLength="0" Width="65" />
-                                <JQTools:JQGridColumn Alignment="left" Caption="客戶電話" Editor="text" FieldName="CustTel" Frozen="False" MaxLength="0" ReadOnly="False" Sortable="False" Visible="True" Width="110" />
+                                <JQTools:JQGridColumn Alignment="left" Caption="客戶電話" Editor="text" FieldName="CustTel" Frozen="False" MaxLength="0" ReadOnly="False" Sortable="False" Visible="True" Width="100" />
                                 <JQTools:JQGridColumn Alignment="center" Caption="開缺數" Editor="text" FieldName="JobOCount" Frozen="False" MaxLength="0" QueryCondition="" ReadOnly="False" Sortable="False" Visible="True" Width="50" FormatScript="OpenJobTab" />
                                 <JQTools:JQGridColumn Alignment="center" Caption="關缺數" Editor="text" FieldName="JobCCount" Frozen="False" IsNvarChar="False" MaxLength="0" QueryCondition="" ReadOnly="False" Sortable="False" Visible="True" Width="50" FormatScript="OpenJobTab2">
                                 </JQTools:JQGridColumn>
-                                <JQTools:JQGridColumn Alignment="center" Caption="合約區間" Editor="text" EditorOptions="" FieldName="sContract" Frozen="False" IsNvarChar="False" MaxLength="0" QueryCondition="" ReadOnly="True" Sortable="False" Visible="True" Width="150" Format="" FormatScript="" />
-                                <JQTools:JQGridColumn Alignment="left" Caption="執案顧問" Editor="text" EditorOptions="" FieldName="sHunterName" Frozen="False" MaxLength="0" QueryCondition="" ReadOnly="True" Sortable="False" Visible="True" Width="130" FormatScript="ShowAllGrid" />
+                                <JQTools:JQGridColumn Alignment="center" Caption="合約區間" Editor="text" EditorOptions="" FieldName="sContract" Frozen="False" IsNvarChar="False" MaxLength="0" QueryCondition="" ReadOnly="True" Sortable="False" Visible="True" Width="180" Format="" FormatScript="ShowAllGrid" />
+                                <JQTools:JQGridColumn Alignment="left" Caption="執案顧問" Editor="text" EditorOptions="" FieldName="sHunterName" Frozen="False" MaxLength="0" QueryCondition="" ReadOnly="True" Sortable="False" Visible="True" Width="110" FormatScript="ShowAllGrid" />
                                 <JQTools:JQGridColumn Alignment="center" Caption="更新日期" Editor="datebox" FieldName="LastUpdateDate" Frozen="False" IsNvarChar="False" MaxLength="0" QueryCondition="" ReadOnly="False" Sortable="False" Visible="True" Width="70" Format="yyyy/mm/dd" FormatScript="">
                                 </JQTools:JQGridColumn>
                                 <JQTools:JQGridColumn Alignment="center" Caption="更新人員" Editor="text" EditorOptions="" FieldName="LastUpdateBy" Frozen="False" MaxLength="0" QueryCondition="" ReadOnly="True" Sortable="False" Visible="True" Width="65" />
@@ -629,7 +710,7 @@
                                 <JQTools:JQQueryColumn AndOr="and" Caption="業務單位" Condition="=" DataType="string" DefaultValue="" Editor="infocombobox" EditorOptions="valueField:'ID',textField:'SalesTeamName',remoteName:'sSalesTeam.HUT_SalesTeam',tableName:'HUT_SalesTeam',pageSize:'-1',checkData:false,selectOnly:false,cacheRelationText:false,panelHeight:200" FieldName="SalesTeamID" IsNvarChar="False" NewLine="False" RemoteMethod="False" Width="115" />
                                 <JQTools:JQQueryColumn AndOr="and" Caption="執案顧問" Condition="=" DataType="string" DefaultValue="" Editor="infocombobox" EditorOptions="valueField:'ID',textField:'HunterName',remoteName:'sCustomersJobs.HUT_Hunter',tableName:'HUT_Hunter',pageSize:'-1',checkData:false,selectOnly:false,cacheRelationText:false,panelHeight:200" FieldName="HunterID" IsNvarChar="False" NewLine="False" RemoteMethod="False" Width="105" />
                                 <JQTools:JQQueryColumn AndOr="and" Caption="有效職缺" Condition="%" DataType="string" Editor="checkbox" FieldName="bJobCount" IsNvarChar="False" NewLine="False" RemoteMethod="False" RowSpan="0" Span="0" Width="30" />
-                                <JQTools:JQQueryColumn AndOr="and" Caption="有合約" Condition="%" DataType="string" Editor="checkbox" FieldName="bContractCount" IsNvarChar="False" NewLine="False" RemoteMethod="False" RowSpan="0" Span="0" Width="30" />
+                                <JQTools:JQQueryColumn AndOr="and" Caption="有效合約" Condition="%" DataType="string" Editor="checkbox" FieldName="bContractCount" IsNvarChar="False" NewLine="False" RemoteMethod="False" RowSpan="0" Span="0" Width="30" />
                             </QueryColumns>
                         </JQTools:JQDataGrid>
                         <JQTools:JQDialog ID="JQDialog1" runat="server" BindingObjectID="dataFormMaster" Title="客戶資料" DialogLeft="2px" DialogTop="1px" Width="1050px" Wrap="False" EditMode="Dialog">
@@ -674,17 +755,21 @@
                                          <Columns>
                                              <JQTools:JQGridColumn Alignment="center" Caption="屬性" Editor="infocombobox" EditorOptions="items:[{value:'2',text:'主要',selected:'false'},{value:'1',text:'次要',selected:'false'}],checkData:false,selectOnly:true,cacheRelationText:false,panelHeight:200" FieldName="ContactProperty" Frozen="False" IsNvarChar="False" MaxLength="0" QueryCondition="" ReadOnly="False" Sortable="False" Visible="True" Width="40">
                                              </JQTools:JQGridColumn>
-                                             <JQTools:JQGridColumn Alignment="left" Caption="聯絡人" Editor="text" FieldName="ContactName" Format="" Frozen="False" IsNvarChar="False" MaxLength="0" QueryCondition="" ReadOnly="False" Sortable="True" Visible="True" Width="111">
+                                             <JQTools:JQGridColumn Alignment="left" Caption="聯絡人" Editor="text" FieldName="ContactName" Format="" Frozen="False" IsNvarChar="False" MaxLength="0" QueryCondition="" ReadOnly="False" Sortable="True" Visible="True" Width="110">
                                              </JQTools:JQGridColumn>
-                                             <JQTools:JQGridColumn Alignment="left" Caption="職稱" Editor="text" FieldName="ContactTitle" Frozen="False" IsNvarChar="False" MaxLength="0" QueryCondition="" ReadOnly="False" Sortable="False" Visible="True" Width="140">
+<%--                                             <JQTools:JQGridColumn Alignment="center" Caption="轉入人脈" Editor="checkbox" FieldName="CONTACT_ID" FormatScript="sCheckBoxCON_CONTACT" Frozen="False" IsNvarChar="False" MaxLength="0" QueryCondition="" ReadOnly="False" Sortable="False" Visible="True" Width="58">
                                              </JQTools:JQGridColumn>
-                                             <JQTools:JQGridColumn Alignment="left" Caption="部門" Editor="text" FieldName="ContactDept" Frozen="False" IsNvarChar="False" MaxLength="0" QueryCondition="" ReadOnly="False" Sortable="False" Visible="True" Width="105">
+                                             <JQTools:JQGridColumn Alignment="center" Caption=" " Editor="text" FieldName="ContactLink" FormatScript="ContactLink" Frozen="False" IsNvarChar="False" MaxLength="0" QueryCondition="" ReadOnly="False" Sortable="False" Visible="True" Width="89">
+                                             </JQTools:JQGridColumn>--%>
+                                             <JQTools:JQGridColumn Alignment="left" Caption="職稱" Editor="text" FieldName="ContactTitle" Frozen="False" IsNvarChar="False" MaxLength="0" QueryCondition="" ReadOnly="False" Sortable="False" Visible="True" Width="130">
+                                             </JQTools:JQGridColumn>
+                                             <JQTools:JQGridColumn Alignment="left" Caption="部門" Editor="text" FieldName="ContactDept" Frozen="False" IsNvarChar="False" MaxLength="0" QueryCondition="" ReadOnly="False" Sortable="False" Visible="True" Width="95">
                                              </JQTools:JQGridColumn>
                                              <JQTools:JQGridColumn Alignment="right" Caption="國碼" Editor="infocombobox" EditorOptions="valueField:'ContryAreaID',textField:'ContryAreaID',remoteName:'sCustomersJobs.HUT_ContryArea',tableName:'HUT_ContryArea',pageSize:'-1',checkData:false,selectOnly:false,cacheRelationText:false,panelHeight:200" FieldName="ContactCountyArea" Frozen="False" IsNvarChar="False" MaxLength="0" QueryCondition="" ReadOnly="False" Sortable="False" Visible="True" Width="40">
                                              </JQTools:JQGridColumn>
                                              <JQTools:JQGridColumn Alignment="center" Caption="區碼" Editor="text" FieldName="ContactTelArea" Frozen="False" IsNvarChar="False" MaxLength="0" QueryCondition="" ReadOnly="False" Sortable="False" Visible="True" Width="35">
                                              </JQTools:JQGridColumn>
-                                             <JQTools:JQGridColumn Alignment="left" Caption="電話" Editor="text" FieldName="ContactTel" Frozen="False" IsNvarChar="False" MaxLength="0" QueryCondition="" ReadOnly="False" Sortable="False" Visible="True" Width="66">
+                                             <JQTools:JQGridColumn Alignment="left" Caption="電話" Editor="text" FieldName="ContactTel" Frozen="False" IsNvarChar="False" MaxLength="0" QueryCondition="" ReadOnly="False" Sortable="False" Visible="True" Width="63">
                                              </JQTools:JQGridColumn>
                                              <JQTools:JQGridColumn Alignment="left" Caption="分機" Editor="text" FieldName="ContactTelExt" Frozen="False" IsNvarChar="False" MaxLength="0" QueryCondition="" ReadOnly="False" Sortable="False" Visible="True" Width="35">
                                              </JQTools:JQGridColumn>
@@ -722,6 +807,8 @@
                                              </JQTools:JQGridColumn>
                                              <JQTools:JQGridColumn Alignment="left" Caption="ContactMobile2" Editor="text" FieldName="ContactMobile2" Frozen="False" IsNvarChar="False" MaxLength="0" QueryCondition="" ReadOnly="False" Sortable="False" Visible="False" Width="80">
                                              </JQTools:JQGridColumn>
+                                             <JQTools:JQGridColumn Alignment="left" Caption="ContactGender" Editor="text" FieldName="ContactGender" Frozen="False" IsNvarChar="False" MaxLength="0" QueryCondition="" ReadOnly="False" Sortable="False" Visible="False" Width="80">
+                                             </JQTools:JQGridColumn>
                                          </Columns>
                                          <RelationColumns>
                                              <JQTools:JQRelationColumn FieldName="CustID" ParentFieldName="CustID" />
@@ -733,23 +820,24 @@
                             <JQTools:JQDialog ID="JQDialogContactPerson" runat="server" BindingObjectID="DFContactPerson" DialogLeft="80px" DialogTop="80px" Title="聯絡人維護" Width="850px">
                                 <JQTools:JQDataForm ID="DFContactPerson" runat="server" AlwaysReadOnly="False" Closed="False" ContinueAdd="False" DataMember="HUT_CustomerContactPerson" disapply="False" DivFramed="False" DuplicateCheck="False" HorizontalColumnsCount="4" HorizontalGap="0" IsAutoPageClose="False" IsAutoPause="False" IsAutoSubmit="False" IsNotifyOFF="False" IsRejectNotify="False" IsRejectON="False" IsShowFlowIcon="False" OnApplied="OnAppliedContactPerson" OnLoadSuccess="OnLoadSuccessContactPerson" ParentObjectID="dataFormMaster" RemoteName="sCustomersJobs.HUT_Customer" ShowApplyButton="False" ValidateStyle="Hint" VerticalGap="0">
                                     <Columns>
-                                        <JQTools:JQFormColumn Alignment="left" Caption="AutoKey" Editor="text" FieldName="AutoKey" MaxLength="0" NewRow="False" ReadOnly="False" RowSpan="1" Span="1" Visible="False" Width="80" />
-                                        <JQTools:JQFormColumn Alignment="left" Caption="CustID" Editor="text" FieldName="CustID" MaxLength="0" NewRow="False" Span="1" Visible="False" Width="80" />
-                                        <JQTools:JQFormColumn Alignment="left" Caption="聯絡人" Editor="text" FieldName="ContactName" MaxLength="20" NewRow="False" ReadOnly="False" RowSpan="1" Span="1" Visible="True" Width="140" />
-                                        <JQTools:JQFormColumn Alignment="left" Caption="職稱" Editor="text" FieldName="ContactTitle" MaxLength="100" NewRow="False" ReadOnly="False" RowSpan="1" Span="1" Visible="True" Width="155" />
-                                        <JQTools:JQFormColumn Alignment="left" Caption="部門" Editor="text" FieldName="ContactDept" MaxLength="0" NewRow="False" Span="1" Visible="True" Width="150" />
-                                        <JQTools:JQFormColumn Alignment="left" Caption="屬性" Editor="infocombobox" EditorOptions="items:[{value:'2',text:'主要',selected:'false'},{value:'1',text:'次要',selected:'false'}],checkData:true,selectOnly:false,cacheRelationText:false,panelHeight:200" FieldName="ContactProperty" MaxLength="0" NewRow="False" Span="1" Visible="True" Width="80" />
-                                        <JQTools:JQFormColumn Alignment="left" Caption="國碼" Editor="infocombobox" FieldName="ContactCountyArea" MaxLength="0" NewRow="False" RowSpan="1" Span="4" Visible="True" Width="100" EditorOptions="valueField:'ContryAreaID',textField:'sAreaID',remoteName:'sCustomersJobs.HUT_ContryArea',tableName:'HUT_ContryArea',pageSize:'-1',checkData:true,selectOnly:false,cacheRelationText:false,panelHeight:200" />
+                                        <JQTools:JQFormColumn Alignment="left" Caption="AutoKey" Editor="text" FieldName="AutoKey" MaxLength="0" NewRow="False" Span="1" Visible="False" Width="80" ReadOnly="False" RowSpan="1" />
+                                        <JQTools:JQFormColumn Alignment="left" Caption="CustID" Editor="text" FieldName="CustID" MaxLength="0" NewRow="False" Span="1" Visible="False" Width="80" ReadOnly="False" RowSpan="1" />
+                                        <JQTools:JQFormColumn Alignment="left" Caption="聯絡人" Editor="text" FieldName="ContactName" MaxLength="20" NewRow="False" Span="4" Visible="True" Width="125" />
+                                        <JQTools:JQFormColumn Alignment="left" Caption=" " Editor="infocombobox" EditorOptions="items:[{value:'0',text:'女',selected:'false'},{value:'1',text:'男',selected:'false'}],checkData:false,selectOnly:true,cacheRelationText:false,panelHeight:100" FieldName="ContactGender" MaxLength="0" NewRow="True" Span="1" Visible="True" Width="72" />
+                                        <JQTools:JQFormColumn Alignment="left" Caption=" " Editor="text" FieldName="ContactTitle" MaxLength="100" NewRow="False" Span="1" Visible="True" Width="155" />
+                                        <JQTools:JQFormColumn Alignment="left" Caption=" " Editor="text" FieldName="ContactDept" MaxLength="0" NewRow="False" Span="1" Visible="True" Width="150" RowSpan="1" />
+                                        <JQTools:JQFormColumn Alignment="left" Caption=" " Editor="infocombobox" EditorOptions="items:[{value:'2',text:'主要',selected:'false'},{value:'1',text:'次要',selected:'false'}],checkData:true,selectOnly:false,cacheRelationText:false,panelHeight:200" FieldName="ContactProperty" MaxLength="0" NewRow="False" Span="1" Visible="True" Width="80" RowSpan="1" ReadOnly="False" />
+                                        <JQTools:JQFormColumn Alignment="left" Caption="國碼" Editor="infocombobox" FieldName="ContactCountyArea" MaxLength="0" NewRow="False" Span="4" Visible="True" Width="100" EditorOptions="valueField:'ContryAreaID',textField:'sAreaID',remoteName:'sCustomersJobs.HUT_ContryArea',tableName:'HUT_ContryArea',pageSize:'-1',checkData:true,selectOnly:false,cacheRelationText:false,panelHeight:200" />
                                         <JQTools:JQFormColumn Alignment="left" Caption=" " Editor="text" FieldName="ContactTelArea" MaxLength="0" NewRow="True" ReadOnly="False" RowSpan="1" Span="1" Visible="True" Width="39" />
-                                        <JQTools:JQFormColumn Alignment="left" Caption=" " Editor="text" FieldName="ContactTel" MaxLength="20" NewRow="False" Span="1" Visible="True" Width="78" />
-                                        <JQTools:JQFormColumn Alignment="left" Caption=" " Editor="text" FieldName="ContactTelExt" MaxLength="10" NewRow="False" Visible="True" Width="50" />
-                                        <JQTools:JQFormColumn Alignment="left" Caption=" " Editor="text" FieldName="ContacteMail" MaxLength="128" NewRow="False" ReadOnly="False" RowSpan="1" Span="1" Visible="True" Width="330" />
+                                        <JQTools:JQFormColumn Alignment="left" Caption=" " Editor="text" FieldName="ContactTel" MaxLength="20" NewRow="False" Visible="True" Width="78" />
+                                        <JQTools:JQFormColumn Alignment="left" Caption=" " Editor="text" FieldName="ContactTelExt" MaxLength="10" NewRow="False" Visible="True" Width="50" ReadOnly="False" RowSpan="1" Span="1" />
+                                        <JQTools:JQFormColumn Alignment="left" Caption=" " Editor="text" FieldName="ContacteMail" MaxLength="128" NewRow="False" Span="1" Width="330" />
                                         <JQTools:JQFormColumn Alignment="left" Caption="國碼" Editor="infocombobox" EditorOptions="valueField:'ContryAreaID',textField:'sAreaID',remoteName:'sCustomersJobs.HUT_ContryArea',tableName:'HUT_ContryArea',pageSize:'-1',checkData:true,selectOnly:false,cacheRelationText:false,panelHeight:200" FieldName="ContactMobile1Area" MaxLength="0" NewRow="True" ReadOnly="False" RowSpan="1" Span="4" Visible="True" Width="100" />
                                         <JQTools:JQFormColumn Alignment="left" Caption=" " Editor="text" FieldName="ContactMobile1" MaxLength="20" NewRow="True" OnBlur="" Span="1" Width="105" />
                                         <JQTools:JQFormColumn Alignment="left" Caption=" " Editor="infocombobox" EditorOptions="valueField:'ContryAreaID',textField:'sAreaID',remoteName:'sCustomersJobs.HUT_ContryArea',tableName:'HUT_ContryArea',pageSize:'-1',checkData:true,selectOnly:false,cacheRelationText:false,panelHeight:200" FieldName="ContactMobile2Area" MaxLength="0" NewRow="False" ReadOnly="False" RowSpan="1" Span="1" Visible="True" Width="100" />
                                         <JQTools:JQFormColumn Alignment="left" Caption=" " Editor="text" FieldName="ContactMobile2" MaxLength="0" NewRow="False" Span="1" Width="105" />
-                                        <JQTools:JQFormColumn Alignment="left" Caption="即時通1" Editor="infocombobox" EditorOptions="valueField:'ID',textField:'IMNAME',remoteName:'sCustomersJobs.HUT_ZIMType',tableName:'HUT_ZIMType',pageSize:'-1',checkData:false,selectOnly:true,cacheRelationText:false,panelHeight:150" FieldName="ContIMType1" MaxLength="20" NewRow="True" Span="3" Width="90" />
-                                        <JQTools:JQFormColumn Alignment="left" Caption="狀態" Editor="infocombobox" EditorOptions="valueField:'ID',textField:'ContactStatusName',remoteName:'sCustomersJobs.HUT_CustomerContactStatus',tableName:'HUT_CustomerContactStatus',pageSize:'-1',checkData:false,selectOnly:true,cacheRelationText:false,panelHeight:200" FieldName="ContactStatus" MaxLength="0" NewRow="False" Span="1" Visible="True" Width="80" />
+                                        <JQTools:JQFormColumn Alignment="left" Caption="即時通1" Editor="infocombobox" EditorOptions="valueField:'ID',textField:'IMNAME',remoteName:'sCustomersJobs.HUT_ZIMType',tableName:'HUT_ZIMType',pageSize:'-1',checkData:false,selectOnly:true,cacheRelationText:false,panelHeight:150" FieldName="ContIMType1" MaxLength="20" NewRow="True" Span="3" Width="90" Visible="True" />
+                                        <JQTools:JQFormColumn Alignment="left" Caption="狀態" Editor="infocombobox" EditorOptions="valueField:'ID',textField:'ContactStatusName',remoteName:'sCustomersJobs.HUT_CustomerContactStatus',tableName:'HUT_CustomerContactStatus',pageSize:'-1',checkData:false,selectOnly:true,cacheRelationText:false,panelHeight:200" FieldName="ContactStatus" MaxLength="0" NewRow="False" Span="1" Visible="True" Width="80" ReadOnly="False" RowSpan="1" />
 
                                         <JQTools:JQFormColumn Alignment="left" Caption="備註" Editor="textarea" EditorOptions="height:80" FieldName="ContacteNotes" MaxLength="256" NewRow="True" ReadOnly="False" RowSpan="1" Span="5" Visible="True" Width="700" />
                                         <JQTools:JQFormColumn Alignment="left" Caption=" " Editor="text" FieldName="ContIMNO1" MaxLength="0" NewRow="True" ReadOnly="False" RowSpan="1" Span="1" Visible="True" Width="136" />
@@ -794,9 +882,9 @@
                                              </JQTools:JQGridColumn>
                                              <JQTools:JQGridColumn Alignment="left" Caption="聯絡人" Editor="text" FieldName="Dialogue" Frozen="False" IsNvarChar="False" MaxLength="0" QueryCondition="" ReadOnly="False" Sortable="False" Visible="True" Width="90" EditorOptions="">
                                              </JQTools:JQGridColumn>
-                                             <JQTools:JQGridColumn Alignment="left" Caption="聯繫內容" Editor="textarea" FieldName="ContactDescr" FormatScript="" Frozen="False" IsNvarChar="False" MaxLength="0" QueryCondition="" ReadOnly="False" Sortable="False" Visible="True" Width="580">
+                                             <JQTools:JQGridColumn Alignment="left" Caption="聯繫內容" Editor="textarea" FieldName="ContactDescr" FormatScript="" Frozen="False" IsNvarChar="False" MaxLength="0" QueryCondition="" ReadOnly="False" Sortable="False" Visible="True" Width="230">
                                              </JQTools:JQGridColumn>
-                                             <JQTools:JQGridColumn Alignment="left" Caption="遮蔽內容" Editor="textarea" FieldName="ShadeContactDescr" Frozen="False" IsNvarChar="False" MaxLength="0" QueryCondition="" ReadOnly="False" Sortable="False" Visible="False" Width="530">
+                                             <JQTools:JQGridColumn Alignment="left" Caption="遮蔽內容" Editor="textarea" FieldName="ShadeContactDescr" Frozen="False" IsNvarChar="False" MaxLength="0" QueryCondition="" ReadOnly="False" Sortable="False" Visible="True" Width="350">
                                              </JQTools:JQGridColumn>
                                              <JQTools:JQGridColumn Alignment="center" Caption="更新日期" Editor="text" FieldName="CreateDate" Frozen="False" IsNvarChar="False" MaxLength="0" QueryCondition="" ReadOnly="False" Sortable="True" Visible="True" Width="60" Format="yyyy/mm/dd">
                                              </JQTools:JQGridColumn>
@@ -925,16 +1013,52 @@
 
                         </JQTools:JQDialog>
         
-        <JQTools:JQDialog ID="JQDialogClu" runat="server" DialogLeft="330px" DialogTop="50px" Title="業務人員" Width="200px" Closed="True" ShowSubmitDiv="True" DialogCenter="False"  EnableTheming="False" ScrollBars="Vertical" OnSubmited="JQDialogCluOnSubmited" Height="370px">
-                 <JQTools:JQDataGrid ID="JQDataGrid1" runat="server" EditDialogID="" AlwaysClose="True" DataMember="SalesKindUser" RemoteName="sERP_Customer_Normal_Customer.SalesKindUser" AllowAdd="False" AllowDelete="False" AllowUpdate="False" AutoApply="True" CheckOnSelect="False" ColumnsHibeable="False" DeleteCommandVisible="False" DuplicateCheck="False" EditMode="Dialog" EditOnEnter="True" InsertCommandVisible="False" MultiSelect="True" PageList="10,20,40,60,80" PageSize="10" Pagination="False" QueryAutoColumn="False" QueryLeft="120px" QueryMode="Window" QueryTitle="" QueryTop="50px" RecordLock="False" RecordLockMode="None" Title="" TotalCaption="Total:" UpdateCommandVisible="False" ViewCommandVisible="False" Height="270px" Width="150px" BufferView="False" NotInitGrid="False" RowNumbers="False" EnableTheming="False" OnLoadSuccess="JQDataGrid1OnLoadSuccess">
-                     <Columns>
-                         <JQTools:JQGridColumn Alignment="left" Caption="業務人員" Editor="text" FieldName="SalesName" Frozen="False" IsNvarChar="False" MaxLength="0" QueryCondition="" ReadOnly="False" Sortable="False" Visible="True" Width="75">
-                         </JQTools:JQGridColumn>
-                         <JQTools:JQGridColumn Alignment="left" Caption="SalesID" Editor="text" FieldName="SalesID" Frozen="False" IsNvarChar="False" MaxLength="0" QueryCondition="" ReadOnly="False" Sortable="False" Visible="False" Width="80">
-                         </JQTools:JQGridColumn>
-                     </Columns>
-                 </JQTools:JQDataGrid>
-          </JQTools:JQDialog>
+        
+
+                        <JQTools:JQDialog ID="Dialog_CON_CONTACT" runat="server" BindingObjectID="DFCON_CONTACT" Title="同步人脈資料" DialogLeft="30px" DialogTop="80px" Width="880px" Wrap="False" EditMode="Dialog" ShowSubmitDiv="False">
+                            <table style="width:100%;">
+                             <tr>
+                                 <td style="vertical-align: bottom;"> 
+                            <JQTools:JQDataForm ID="DFCON_CONTACT" runat="server" AlwaysReadOnly="False" Closed="False" ContinueAdd="False" DataMember="HUT_CustomerContactPerson" disapply="False" DivFramed="False" DuplicateCheck="False" HorizontalColumnsCount="5" HorizontalGap="0" IsAutoPageClose="False" IsAutoPause="False" IsAutoSubmit="False" IsNotifyOFF="False" IsRejectNotify="False" IsRejectON="False" IsShowFlowIcon="False" ParentObjectID="dataFormMaster" RemoteName="sCustomersJobs.HUT_Customer" ShowApplyButton="False" ValidateStyle="Dialog" VerticalGap="0">
+                                <Columns>
+                                    <JQTools:JQFormColumn Alignment=" " Caption="AutoKey" Editor="text" FieldName="AutoKey" MaxLength="0" NewRow="False" Span="1" Visible="False" Width="80" />
+                                    <JQTools:JQFormColumn Alignment="left" Caption="CustID" Editor="text" FieldName="CustID" MaxLength="0" NewRow="False" Span="1" Visible="False" Width="80" ReadOnly="False" RowSpan="1" />
+                                    <JQTools:JQFormColumn Alignment="left" Caption="姓名" Editor="text" FieldName="CONTACT_CNAME" MaxLength="20" NewRow="False" Span="1" Visible="True" Width="80" />
+                                    <JQTools:JQFormColumn Alignment="left" Caption="英文名" Editor="text" FieldName="CONTACT_ENAME" MaxLength="0" NewRow="False" Span="2" Visible="True" Width="120" ReadOnly="False" RowSpan="1" />
+                                    <JQTools:JQFormColumn Alignment="left" Caption="職稱" Editor="text" FieldName="ContactTitle" MaxLength="100" NewRow="False" Span="1" Visible="True" Width="155" />
+                                    <JQTools:JQFormColumn Alignment="left" Caption="部門" Editor="text" FieldName="ContactDept" MaxLength="0" NewRow="False" Span="1" Visible="True" Width="140" />
+                                    <JQTools:JQFormColumn Alignment="left" Caption="性別" Editor="infocombobox" EditorOptions="items:[{value:'0',text:'女',selected:'false'},{value:'1',text:'男',selected:'false'}],checkData:false,selectOnly:true,cacheRelationText:false,panelHeight:100" FieldName="CONTACT_GENDER" MaxLength="0" NewRow="False" ReadOnly="False" RowSpan="1" Span="1" Visible="True" Width="90" />
+                                    <JQTools:JQFormColumn Alignment="left" Caption="電話" Editor="text" FieldName="CONTACT_TEL" MaxLength="20" NewRow="False" Span="1" Width="80" />
+                                    <JQTools:JQFormColumn Alignment="left" Caption="分機" Editor="text" FieldName="ContactTelExt" MaxLength="10" NewRow="False" Span="1" Width="40" ReadOnly="False" RowSpan="1" Visible="True" />
+                                    <JQTools:JQFormColumn Alignment="left" Caption="eMail" Editor="text" FieldName="ContacteMail" MaxLength="128" Width="330" Span="2" ReadOnly="False" Visible="True" />
+                                    <JQTools:JQFormColumn Alignment="left" Caption="手機1" Editor="text" FieldName="ContactMobile1" MaxLength="20" NewRow="True" ReadOnly="False" RowSpan="1" Span="1" Visible="True" Width="105" OnBlur="" />
+                                    <JQTools:JQFormColumn Alignment="left" Caption="手機2" Editor="text" FieldName="ContactMobile2" MaxLength="0" Span="2" Width="105" ReadOnly="False" Visible="True" NewRow="False" RowSpan="1" />
+                                    <JQTools:JQFormColumn Alignment="left" Caption="行業別" Editor="infocombobox" EditorOptions="valueField:'JB_TYPE',textField:'JB_NAME',remoteName:'sCustomersJobs.CONTACT_TRADE',tableName:'CONTACT_TRADE',pageSize:'-1',checkData:true,selectOnly:true,cacheRelationText:false,panelHeight:200" FieldName="CONTACT_TRADE" MaxLength="0" ReadOnly="False" Visible="True" Width="160" Span="1" NewRow="False" RowSpan="1" />
+                                    <JQTools:JQFormColumn Alignment="left" Caption="行業備註" Editor="text" FieldName="CONTACT_TRADENOTES" MaxLength="0" NewRow="False" ReadOnly="False" RowSpan="1" Span="1" Visible="True" Width="200" />                                    
+                                     </Columns>
+                                <RelationColumns>
+                                    <JQTools:JQRelationColumn FieldName="CustID" ParentFieldName="CustID" />
+                                </RelationColumns>
+                            </JQTools:JQDataForm>
+                                     <JQTools:JQValidate ID="JQValidateContactPerson" runat="server" BindingObjectID="DFCON_CONTACT" EnableTheming="True">
+                                         <Columns>
+                                             <JQTools:JQValidateColumn CheckNull="True" FieldName="CONTACT_CNAME" RemoteMethod="True" ValidateMessage="請填寫姓名！" ValidateType="None" />
+                                             <JQTools:JQValidateColumn CheckNull="True" FieldName="ContactTitle" RemoteMethod="True" ValidateMessage="請填寫職稱！" ValidateType="None" />
+                                             <JQTools:JQValidateColumn CheckNull="True" FieldName="CONTACT_GENDER" RemoteMethod="True" ValidateMessage="請選擇性別！" ValidateType="None" />
+                                             <JQTools:JQValidateColumn CheckNull="True" FieldName="CONTACT_TRADE" RemoteMethod="True" ValidateMessage="請選擇行業別！" ValidateType="None" />
+                                         </Columns>
+                                     </JQTools:JQValidate>
+                            </td>
+                            </tr>
+                                <tr>
+                                    <td style="vertical-align: bottom; text-align: center;">   
+                                        <a href="#" class="easyui-linkbutton" data-options="" onclick="SyncContact()">同步資料</a>
+                                     </td>
+                                </tr>
+                            </table>
+                        </JQTools:JQDialog>
+
+
                     </td>
 
                 </tr>

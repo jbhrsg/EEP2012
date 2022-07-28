@@ -1,0 +1,16 @@
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sERPContinueEmploy\bin\Debug\sERPContinueEmploy.dll
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sERPContinueEmploy\bin\Debug\sERPContinueEmploy.pdb
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sERPContinueEmploy\obj\Debug\sERPContinueEmploy.csproj.GenerateResource.Cache
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sERPContinueEmploy\obj\Debug\sERPContinueEmploy.dll
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sERPContinueEmploy\obj\Debug\sERPContinueEmploy.pdb
+C:\Program Files (x86)\Infolight\EEP2012\EEPNetServer\JBADMIN\sERPContinueEmploy.dll
+C:\Program Files (x86)\Infolight\EEP2012\EEPNetServer\JBADMIN\sERPContinueEmploy.pdb
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sERPContinueEmploy\obj\Debug\sERPContinueEmploy.Component.resources
+C:\Program Files (x86)\Infolight\EEP2012\EEPNetServer\JBADMIN\vi-VN\sERPContinueEmploy.resources.dll
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sERPContinueEmploy\obj\Debug\sERPContinueEmploy.Component.vi-VN.resources
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sERPContinueEmploy\obj\Debug\vi-VN\sERPContinueEmploy.resources.dll
+F:\生產1\EEP2012\JBADMIN\sERPContinueEmploy\obj\Debug\sERPContinueEmploy.csprojResolveAssemblyReference.cache
+F:\生產1\EEP2012\JBADMIN\sERPContinueEmploy\obj\Debug\sERPContinueEmploy.Component.resources
+F:\生產1\EEP2012\JBADMIN\sERPContinueEmploy\obj\Debug\sERPContinueEmploy.Component.vi-VN.resources
+F:\生產1\EEP2012\JBADMIN\sERPContinueEmploy\obj\Debug\sERPContinueEmploy.csproj.GenerateResource.Cache
+F:\生產1\EEP2012\JBADMIN\sERPContinueEmploy\obj\Debug\sERPContinueEmploy.dll

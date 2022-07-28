@@ -18,7 +18,7 @@
             if (flag) {
                 userid = getClientInfo("UserID");
                 var WhereString = "";
-                WhereString = WhereString + "m.EMPLOYEE_ID = '" + userid + "'";  
+                WhereString = WhereString + "b.EMPLOYEE_CODE = '" + userid + "'";
                 $("#dataFormMasterAbsentMinusID").refval('setWhere', WhereString);
                 flag = false;
             }

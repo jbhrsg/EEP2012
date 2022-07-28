@@ -1,0 +1,5 @@
+D:\Infolight\EEP2012\JBADMIN\_HRM_Attend_Normal_Overtime\obj\Debug\_HRM_Attend_Normal_Overtime.csprojResolveAssemblyReference.cache
+D:\Infolight\EEP2012\JBADMIN\_HRM_Attend_Normal_Overtime\obj\Debug\_HRM_Attend_Normal_Overtime.Component.resources
+D:\Infolight\EEP2012\JBADMIN\_HRM_Attend_Normal_Overtime\obj\Debug\_HRM_Attend_Normal_Overtime.Component.vi-VN.resources
+D:\Infolight\EEP2012\JBADMIN\_HRM_Attend_Normal_Overtime\obj\Debug\_HRM_Attend_Normal_Overtime.csproj.GenerateResource.Cache
+D:\Infolight\EEP2012\JBADMIN\_HRM_Attend_Normal_Overtime\obj\Debug\_HRM_Attend_Normal_Overtime.dll

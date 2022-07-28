@@ -133,6 +133,8 @@
                     </JQTools:JQGridColumn>
                     <JQTools:JQGridColumn Alignment="left" Caption="帳戶" Editor="text" FieldName="VendAccount" Frozen="False" IsNvarChar="False" MaxLength="0" QueryCondition="" ReadOnly="False" Sortable="False" Visible="True" Width="100">
                     </JQTools:JQGridColumn>
+                    <JQTools:JQGridColumn Alignment="left" Caption="帳戶名稱" Editor="text" FieldName="VendAccountName" Frozen="False" IsNvarChar="False" MaxLength="0" QueryCondition="" ReadOnly="False" Sortable="False" Visible="True" Width="80">
+                    </JQTools:JQGridColumn>
                 </Columns>
                 <TooItems>
                     <JQTools:JQToolItem Icon="icon-excel" ItemType="easyui-linkbutton" OnClick="exportGrid" Text="匯出Excel" Visible="True" />

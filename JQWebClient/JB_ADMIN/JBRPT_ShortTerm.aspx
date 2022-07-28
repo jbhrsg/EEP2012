@@ -22,6 +22,7 @@
                  else
                      $('#Flowflag_Query').combobox('setValue', '');
              });
+             $('.infosysbutton-q', '#querydataGridView').closest('td').attr({ 'align': 'middle' });
          });
          function dataGridViewOnLoadSucess() {
              var dgid = $('#dataGridView');

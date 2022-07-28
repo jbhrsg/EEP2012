@@ -1,0 +1,11 @@
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sMedia_Report_Envelope\bin\Debug\sMedia_Report_Envelope.dll
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sMedia_Report_Envelope\bin\Debug\sMedia_Report_Envelope.pdb
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sMedia_Report_Envelope\obj\Debug\sMedia_Report_Envelope.csproj.GenerateResource.Cache
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sMedia_Report_Envelope\obj\Debug\sMedia_Report_Envelope.dll
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sMedia_Report_Envelope\obj\Debug\sMedia_Report_Envelope.pdb
+C:\Program Files (x86)\Infolight\EEP2012\EEPNetServer\JBADMIN\sMedia_Report_Envelope.dll
+C:\Program Files (x86)\Infolight\EEP2012\EEPNetServer\JBADMIN\sMedia_Report_Envelope.pdb
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sMedia_Report_Envelope\obj\Debug\sMedia_Report_Envelope.Component.resources
+C:\Program Files (x86)\Infolight\EEP2012\EEPNetServer\JBADMIN\vi-VN\sMedia_Report_Envelope.resources.dll
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sMedia_Report_Envelope\obj\Debug\sMedia_Report_Envelope.Component.vi-VN.resources
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sMedia_Report_Envelope\obj\Debug\vi-VN\sMedia_Report_Envelope.resources.dll

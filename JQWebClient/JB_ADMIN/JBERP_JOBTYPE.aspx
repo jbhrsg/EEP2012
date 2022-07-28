@@ -22,7 +22,7 @@
                 $.ajax({
                     type: "POST",
                     url: '../handler/jqDataHandle.ashx?RemoteName=sJobType.jb_type', 
-                    data: "mode=method&method=" + "CheckJobType" + "&parameters=" + jb_type ,
+                    data: "mode=method&method=" + "CheckJobType" + "&parameters=" + jb_type,
                     cache: false,
                     async: false,
                     success: function (data) {
@@ -50,25 +50,6 @@
             var UserName = getClientInfo("USERNAME");
             return UserName;
         }
-        function APITest() {
-            var UserID = getClientInfo("UserID");
-            $.ajax({
-                type: "POST",
-                url: '../handler/jqDataHandle.ashx?RemoteName=sJobType.jb_type',
-                data: "mode=method&method=" + "procCallAPI" + " &parameters=" + UserID ,
-                cache: false,
-                async: false,
-                success: function (data) {
-                    alert(data);
-                    //if (data == "True") {
-                    //    $('#dataGridCenter1').datagrid("reload");
-                    //}
-                    //else {
-                    //    alert("注意!! 聯絡人加入群組失敗")
-                    //}
-                }
-            });
-        }
 
     </script>
 </head>
@@ -82,8 +63,6 @@
                 <Columns>
                     <JQTools:JQGridColumn Alignment="left" Caption="代號" Editor="text" FieldName="jb_type" Format="" MaxLength="0" Visible="true" Width="60" />
                     <JQTools:JQGridColumn Alignment="left" Caption="行業名稱" Editor="text" FieldName="jb_name" Format="" MaxLength="0" Visible="true" Width="240" Sortable="True" />
-                    <JQTools:JQGridColumn Alignment="left" Caption="ApiXml" Editor="text" FieldName="ApiXml" Frozen="False" IsNvarChar="False" MaxLength="0" QueryCondition="" ReadOnly="False" Sortable="False" Visible="True" Width="80">
-                    </JQTools:JQGridColumn>
                     <JQTools:JQGridColumn Alignment="left" Caption="建立人員" Editor="text" FieldName="key_man" Format="" MaxLength="0" Visible="true" Width="80" />
                     <JQTools:JQGridColumn Alignment="left" Caption="建立日期" Editor="datebox" FieldName="key_date" Format="yyyy/mm/dd HH:MM:SS" Visible="true" Width="120" />
                     <JQTools:JQGridColumn Alignment="left" Caption="O_NO" Editor="text" FieldName="O_NO" Frozen="False" IsNvarChar="False" MaxLength="0" QueryCondition="" ReadOnly="False" Sortable="False" Visible="False" Width="80">
@@ -92,8 +71,10 @@
                 <TooItems>
                     <JQTools:JQToolItem Icon="icon-add" ItemType="easyui-linkbutton"
                         OnClick="insertItem" Text="新增" />
-                    <JQTools:JQToolItem Icon="icon-save" ItemType="easyui-linkbutton" OnClick="APITest" Text="API測試" />
-                   
+                   <%-- <JQTools:JQToolItem Icon="icon-save" ItemType="easyui-linkbutton" OnClick="apply"
+                        Text="存檔" />
+                    <JQTools:JQToolItem Icon="icon-undo" ItemType="easyui-linkbutton" OnClick="cancel"
+                        Text="取消"  />--%>
                     <JQTools:JQToolItem Icon="icon-search" ItemType="easyui-linkbutton"
                         OnClick="openQuery" Text="查詢" />
                 </TooItems>

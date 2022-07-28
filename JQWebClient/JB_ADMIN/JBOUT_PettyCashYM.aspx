@@ -28,7 +28,7 @@
         })
         function dataGridViewLoadSucess() {
             var UserID = getClientInfo("UserID");
-            if (UserID == '001' || UserID == '009') {
+            if (UserID == '001' || UserID == '009' || UserID == '068') {
                 setReadOnly($('#dataGridView'), false);
             }
             else {

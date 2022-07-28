@@ -14,4 +14,6 @@ D:\Infolight\EEP2012\JBADMIN\sShortTermClose\obj\Release\sShortTermClose.Compone
 D:\Infolight\EEP2012\JBADMIN\sShortTermClose\obj\Release\sShortTermClose.csproj.GenerateResource.Cache
 D:\Infolight\EEP2012\JBADMIN\sShortTermClose\obj\Release\sShortTermClose.dll
 D:\Infolight\EEP2012\JBADMIN\sShortTermClose\obj\Release\sShortTermClose.pdb
+D:\Infolight\EEP2012\EEPNetServer\JBADMIN\sShortTermClose.dll
+D:\Infolight\EEP2012\EEPNetServer\JBADMIN\sShortTermClose.pdb
 D:\Infolight\EEP2012\JBADMIN\sShortTermClose\obj\Release\sShortTermClose.csprojResolveAssemblyReference.cache

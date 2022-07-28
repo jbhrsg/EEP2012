@@ -1,0 +1,9 @@
+D:\Infolight\EEP2012\JBADMIN\sSalesDetailsImport\bin\Debug\sSalesDetailsImport.dll
+D:\Infolight\EEP2012\JBADMIN\sSalesDetailsImport\bin\Debug\sSalesDetailsImport.pdb
+D:\Infolight\EEP2012\JBADMIN\sSalesDetailsImport\obj\Debug\sSalesDetailsImport.csprojResolveAssemblyReference.cache
+D:\Infolight\EEP2012\JBADMIN\sSalesDetailsImport\obj\Debug\sSalesDetailsImport.csproj.GenerateResource.Cache
+D:\Infolight\EEP2012\JBADMIN\sSalesDetailsImport\obj\Debug\sSalesDetailsImport.dll
+D:\Infolight\EEP2012\JBADMIN\sSalesDetailsImport\obj\Debug\sSalesDetailsImport.pdb
+D:\Infolight\EEP2012\EEPNetServer\JBADMIN\sSalesDetailsImport.dll
+D:\Infolight\EEP2012\EEPNetServer\JBADMIN\sSalesDetailsImport.pdb
+D:\Infolight\EEP2012\JBADMIN\sSalesDetailsImport\obj\Debug\sSalesDetailsImport.Component.resources

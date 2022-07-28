@@ -6,3 +6,4 @@ C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sERP_Report_UncollectedInvoiceD
 C:\Program Files (x86)\Infolight\EEP2012\EEPNetServer\JBADMIN\sERP_Report_UncollectedInvoiceDetails.dll
 C:\Program Files (x86)\Infolight\EEP2012\EEPNetServer\JBADMIN\sERP_Report_UncollectedInvoiceDetails.pdb
 C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sERP_Report_UncollectedInvoiceDetails\obj\Debug\sERP_Report_UncollectedInvoiceDetails.Component.resources
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sERP_Report_UncollectedInvoiceDetails\obj\Debug\sERP_Report_UncollectedInvoiceDetails.csprojResolveAssemblyReference.cache

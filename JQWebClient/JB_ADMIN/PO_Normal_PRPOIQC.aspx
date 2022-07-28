@@ -471,8 +471,9 @@
             var DisabledComboboxArr00 = ['AssetLocaID'];
             var DisabledRefvalArr00 = [];
             DisableFields("#dataFormDelivery", DisabledFieldArr00, DisabledComboboxArr00, DisabledRefvalArr00);
-
             //隱藏 採購職稱、安排交貨數量完成、未收數量、作業名稱、系統變數、分期期數
+            //var HiddenMasterFields = ['ResponsibleGROUPID', 'FlagDeliveryEnough', 'D_STEP_ID', 'sysVariable', 'Acno', 'SubAcno', 'ApplyOrg_NO', 'Flowflag', 'Installments', 'IsCatalogue','OtherFee','OtherFeeTax','unlock'];
+            //開放採
             var HiddenMasterFields = ['ResponsibleGROUPID', 'FlagDeliveryEnough', 'D_STEP_ID', 'sysVariable', 'Acno', 'SubAcno', 'ApplyOrg_NO', 'Flowflag', 'Installments', 'IsCatalogue','OtherFee','OtherFeeTax','unlock'];
             HideFields('#dataFormMaster', HiddenMasterFields);
             $("#installmentsBtn").hide();//分期期數的確定按鈕(採購方式選到分期付款，再顯示)
@@ -694,11 +695,15 @@
                 HideFields('#dataFormMaster', HiddenMasterFields);
                 //停用欄位(交貨明細)
                 var DisabledFieldArr2 = ['PurPrice', 'OtherFee', 'TotalPrice', 'DebtorDays', 'InvoiceNO', 'AcceptanceQty'];//'DeliveryQty'
+                //採購必須填寫工程金額
+                //var DisabledFieldArr2 = ['PurPrice','TotalPrice', 'DebtorDays', 'InvoiceNO', 'AcceptanceQty'];//'DeliveryQty'
                 var DisabledComboboxArr2 = ['PayWayID', 'AcceptanceDate'];
                 var DisabledRefvalArr2 = [];
                 DisableFields("#dataFormDelivery", DisabledFieldArr2, DisabledComboboxArr2, DisabledRefvalArr2);
                 //隱藏交貨明細的欄位
-                var HiddenDeliveryFields = ['PurPrice', 'OtherFee', 'TotalPrice', 'DebtorDays', 'InvoiceNO', 'AcceptanceQty', 'PayWayID', 'AcceptanceDate', 'Surveyors', 'ReturnQty', 'AcceptanceTax','AccountNO','ProofTypeID','PayTo','PlanPayDate'];
+                //20220706
+                var HiddenDeliveryFields = ['PurPrice', 'OtherFee', 'TotalPrice', 'DebtorDays', 'InvoiceNO', 'AcceptanceQty', 'PayWayID', 'AcceptanceDate', 'Surveyors', 'ReturnQty', 'AcceptanceTax', 'AccountNO', 'ProofTypeID', 'PayTo', 'PlanPayDate'];
+                //var HiddenDeliveryFields = ['PurPrice', 'TotalPrice', 'DebtorDays', 'InvoiceNO', 'AcceptanceQty', 'PayWayID', 'AcceptanceDate', 'Surveyors', 'ReturnQty', 'AcceptanceTax', 'AccountNO', 'ProofTypeID', 'PayTo', 'PlanPayDate'];
                 HideFields('#dataFormDelivery', HiddenDeliveryFields);
                 //顯示 首批交貨日期、首批交貨數量(只有"採購作業"這關才會顯示)
                 var ShowyFields = ['FirstDeliveryDate', 'FirstDeliveryQty'];
@@ -710,7 +715,8 @@
                     $("#dataGridDeliveryDiv").hide();
                 }
                 //隱藏dataGridDelivery欄位
-                gridDeliveryColumns = ['AcceptanceQty', 'ReturnQty', 'Surveyors', 'InvoiceNO', 'PurPrice', 'OtherFee', 'TotalPrice'];
+                //gridDeliveryColumns = ['AcceptanceQty', 'ReturnQty', 'Surveyors', 'InvoiceNO', 'PurPrice', 'OtherFee', 'TotalPrice'];
+                gridDeliveryColumns = ['AcceptanceQty', 'ReturnQty', 'Surveyors', 'InvoiceNO', 'PurPrice', 'TotalPrice'];
                 HideGridColumns("#dataGridDelivery", gridDeliveryColumns);
                 //setWhere廠商(依據物品類別)
                 var ItemTypeID = $("#dataFormMasterItemTypeID").combobox('getValue');
@@ -749,10 +755,13 @@
                 var DisabledRefvalArr = [];
                 DisableFields("#dataFormMaster", DisabledFieldArr, DisabledComboboxArr, DisabledRefvalArr);
                 //隱藏交貨明細的欄位
-                var HiddenDeliveryFields = ['PurPrice', 'OtherFee', 'TotalPrice', 'DebtorDays', 'InvoiceNO', 'AcceptanceQty', 'PayWayID', 'AcceptanceDate', 'Surveyors', 'ReturnQty', 'AcceptanceTax', 'AccountNO', 'ProofTypeID', 'PayTo', 'PlanPayDate'];
+                //var HiddenDeliveryFields = ['PurPrice', 'OtherFee', 'TotalPrice', 'DebtorDays', 'InvoiceNO', 'AcceptanceQty', 'PayWayID', 'AcceptanceDate', 'Surveyors', 'ReturnQty', 'AcceptanceTax', 'AccountNO', 'ProofTypeID', 'PayTo', 'PlanPayDate'];
+                //20220706
+                var HiddenDeliveryFields = ['PurPrice', 'TotalPrice', 'DebtorDays', 'InvoiceNO', 'AcceptanceQty', 'PayWayID', 'AcceptanceDate', 'Surveyors', 'ReturnQty', 'AcceptanceTax', 'AccountNO', 'ProofTypeID', 'PayTo', 'PlanPayDate'];
                 HideFields('#dataFormDelivery', HiddenDeliveryFields);
                 //隱藏dataGridDelivery欄位
-                gridDeliveryColumns = ['AcceptanceQty', 'ReturnQty', 'Surveyors', 'InvoiceNO', 'PurPrice', 'OtherFee', 'TotalPrice'];
+                //gridDeliveryColumns = ['AcceptanceQty', 'ReturnQty', 'Surveyors', 'InvoiceNO', 'PurPrice', 'OtherFee', 'TotalPrice'];
+                gridDeliveryColumns = ['AcceptanceQty', 'ReturnQty', 'Surveyors', 'InvoiceNO', 'PurPrice', 'TotalPrice'];
                 HideGridColumns("#dataGridDelivery", gridDeliveryColumns);
                 //隱藏
                 HideFields('#dataFormMaster', ['RequestNotes', 'DeliveryTotalAmount']);
@@ -3621,11 +3630,11 @@
                         <JQTools:JQGridColumn Alignment="center" Caption="請項" Editor="text" FieldName="ItemNO" MaxLength="10" Width="40" />
                         <JQTools:JQGridColumn Alignment="center" Caption="交項" Editor="text" FieldName="DeliveryNO" MaxLength="10" Width="40" Visible="True" />
                         <JQTools:JQGridColumn Alignment="left" Caption="品名" Editor="infocombobox" FieldName="ItemID" MaxLength="0" Width="120" EditorOptions="valueField:'ItemID',textField:'ItemName',remoteName:'sPO_Normal_PRPOIQC.Item',tableName:'Item',pageSize:'-1',checkData:false,selectOnly:false,cacheRelationText:false,panelHeight:200" Visible="True" />
-                        <JQTools:JQGridColumn Alignment="left" Caption="交貨日期" Editor="text" FieldName="DeliveryDate" MaxLength="8" Width="60" Format="yyyy/mm/dd" Visible="True" />
-                        <JQTools:JQGridColumn Alignment="right" Caption="交貨數" Editor="text" FieldName="DeliveryQty" MaxLength="4" Width="40" />
+                        <JQTools:JQGridColumn Alignment="left" Caption="交貨日期" Editor="text" FieldName="DeliveryDate" MaxLength="8" Width="65" Format="yyyy/mm/dd" Visible="True" />
+                        <JQTools:JQGridColumn Alignment="right" Caption="交貨數" Editor="text" FieldName="DeliveryQty" MaxLength="4" Width="45" />
                         <JQTools:JQGridColumn Alignment="right" Caption="驗收數" Editor="numberbox" FieldName="AcceptanceQty" MaxLength="0" Width="40" Visible="True" />
                         <JQTools:JQGridColumn Alignment="right" Caption="退貨數" Editor="text" FieldName="ReturnQty" MaxLength="0" Width="40" Visible="True" />
-                        <JQTools:JQGridColumn Alignment="left" Caption="驗收照片" Editor="text" FieldName="AcceptancePic" MaxLength="0" Width="50" Visible="True" Format="download,folder:JB_ADMIN/PO_Normal_PRPOIQC/AcceptancePic" />
+                        <JQTools:JQGridColumn Alignment="left" Caption="驗收照片" Editor="text" FieldName="AcceptancePic" MaxLength="0" Width="60" Visible="True" Format="download,folder:JB_ADMIN/PO_Normal_PRPOIQC/AcceptancePic" />
                         <JQTools:JQGridColumn Alignment="left" Caption="驗收人員" Editor="text" FieldName="Surveyors" MaxLength="20" Width="90" Visible="True" FormatScript="FormatScriptSurveyors" />
                         <JQTools:JQGridColumn Alignment="left" Caption="憑據號碼" Editor="text" FieldName="InvoiceNO" MaxLength="20" Width="80" Visible="True" />
                         <JQTools:JQGridColumn Alignment="right" Caption="物品單價" Editor="text" FieldName="PurPrice" MaxLength="4" Width="60" Visible="True" Format="N1" Frozen="False" IsNvarChar="False" QueryCondition="" ReadOnly="False" Sortable="False" />

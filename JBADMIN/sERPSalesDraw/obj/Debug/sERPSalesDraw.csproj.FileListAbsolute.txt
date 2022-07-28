@@ -1,0 +1,11 @@
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sERPSalesDraw\bin\Debug\sERPSalesDraw.dll
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sERPSalesDraw\bin\Debug\sERPSalesDraw.pdb
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sERPSalesDraw\obj\Debug\sERPSalesDraw.csproj.GenerateResource.Cache
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sERPSalesDraw\obj\Debug\sERPSalesDraw.dll
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sERPSalesDraw\obj\Debug\sERPSalesDraw.pdb
+C:\Program Files (x86)\Infolight\EEP2012\EEPNetServer\JBADMIN\sERPSalesDraw.dll
+C:\Program Files (x86)\Infolight\EEP2012\EEPNetServer\JBADMIN\sERPSalesDraw.pdb
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sERPSalesDraw\obj\Debug\sERPSalesDraw.Component.resources
+C:\Program Files (x86)\Infolight\EEP2012\EEPNetServer\JBADMIN\vi-VN\sERPSalesDraw.resources.dll
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sERPSalesDraw\obj\Debug\sERPSalesDraw.Component.vi-VN.resources
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sERPSalesDraw\obj\Debug\vi-VN\sERPSalesDraw.resources.dll

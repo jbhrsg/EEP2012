@@ -35,7 +35,7 @@
             theQueryKey1 = theQueryKey1 ? theQueryKey1 : '';
             var theQueryKey2 = schedule.data('theQueryKey2');                     //行事曆篩選條件載入
             theQueryKey2 = theQueryKey2 ? theQueryKey2 : '';
-            var options = schedule.data('options');                               //加入QueryString
+            var options = schedule.data('options');                             //加入QueryString
             options.queryWord.whereString += String.format(" and [ScheType]='{0}' ", theQueryKey1);
             if (theQueryKey2 == '00000') {
                 options.queryWord.whereString += String.format('AND ApplyOrg_NO IS NOT NULL');

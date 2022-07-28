@@ -1,0 +1,9 @@
+D:\Infolight\EEP2012\JBADMIN\sglVoucherMasterWin\bin\Debug\sglVoucherMasterWin.dll
+D:\Infolight\EEP2012\JBADMIN\sglVoucherMasterWin\bin\Debug\sglVoucherMasterWin.pdb
+D:\Infolight\EEP2012\JBADMIN\sglVoucherMasterWin\obj\Debug\sglVoucherMasterWin.csproj.GenerateResource.Cache
+D:\Infolight\EEP2012\JBADMIN\sglVoucherMasterWin\obj\Debug\sglVoucherMasterWin.dll
+D:\Infolight\EEP2012\JBADMIN\sglVoucherMasterWin\obj\Debug\sglVoucherMasterWin.pdb
+D:\Infolight\EEP2012\EEPNetServer\JBADMIN\sglVoucherMasterWin.dll
+D:\Infolight\EEP2012\EEPNetServer\JBADMIN\sglVoucherMasterWin.pdb
+D:\Infolight\EEP2012\JBADMIN\sglVoucherMasterWin\obj\Debug\sglVoucherMasterWin.Component.resources
+D:\Infolight\EEP2012\JBADMIN\sglVoucherMasterWin\obj\Debug\sglVoucherMasterWin.csprojResolveAssemblyReference.cache

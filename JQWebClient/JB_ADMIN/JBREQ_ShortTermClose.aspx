@@ -109,9 +109,7 @@
                     FiltStr1 = '( CompanyID=1 OR CompanyID=3 ) AND ';
                     break;
             }
-            //var FiltStr = FiltStr1 + 'IsSettleAccount = 0 and (ISNULL((SELECT SUM(Amount) FROM ShortTermMinusDetails WHERE ShortTermNO=SHORTTERM.ShortTermNO),0)+ISNULL((SELECT SUM(Amount) FROM [60.250.52.106,1433].FWCRM.dbo.ShortTermMinusDetails WHERE ShortTermNO=SHORTTERM.ShortTermNO),0)) >= ShortTermAmount';
-            //var FiltStr = FiltStr1 + 'IsSettleAccount = 0 and (ISNULL((SELECT SUM(Amount) FROM ShortTermMinusDetails WHERE ShortTermNO=SHORTTERM.ShortTermNO),0)+ISNULL((SELECT SUM(Amount) FROM [60.250.52.106,1433].FWCRM.dbo.ShortTermMinusDetails WHERE ShortTermNO=SHORTTERM.ShortTermNO),0) + ISNULL((SELECT SUM(Amount) FROM ShortTermMinusDetails WHERE ShortTermNO=SHORTTERM.ShortTermNO),0)+ISNULL((SELECT SUM(Amount) FROM [60.250.52.106,1433].FWCRMJS.dbo.ShortTermMinusDetails WHERE ShortTermNO=SHORTTERM.ShortTermNO),0)) >= ShortTermAmount';
-            var FiltStr = FiltStr1 + 'IsSettleAccount = 0 and (ISNULL((SELECT SUM(Amount) FROM ShortTermMinusDetails WHERE ShortTermNO = SHORTTERM.ShortTermNO),0)+ISNULL((SELECT SUM(Amount) FROM [60.250.52.106,1433].FWCRM.dbo.ShortTermMinusDetails WHERE ShortTermNO=SHORTTERM.ShortTermNO),0) + ISNULL((SELECT SUM(Amount) FROM [60.250.52.106,1433].FWCRMJS.dbo.ShortTermMinusDetails WHERE ShortTermNO=SHORTTERM.ShortTermNO),0)) >= ShortTermAmount';
+            var FiltStr = FiltStr1 + 'IsSettleAccount = 0 and (ISNULL((SELECT SUM(Amount) FROM ShortTermMinusDetails WHERE ShortTermNO = SHORTTERM.ShortTermNO),0)+ISNULL((SELECT SUM(Amount) FROM [192.168.1.41].FWCRM.dbo.ShortTermMinusDetails WHERE ShortTermNO=SHORTTERM.ShortTermNO),0) + ISNULL((SELECT SUM(Amount) FROM [192.168.1.41].FWCRMJS.dbo.ShortTermMinusDetails WHERE ShortTermNO=SHORTTERM.ShortTermNO),0)) >= ShortTermAmount';
             $("#dataGridView").datagrid('setWhere', FiltStr);
         }
         function queryGrid(dg) {

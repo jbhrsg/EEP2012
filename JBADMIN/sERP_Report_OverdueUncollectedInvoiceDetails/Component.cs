@@ -23,42 +23,11 @@ namespace sERP_Report_OverdueUncollectedInvoiceDetails
 
             InitializeComponent();
         }
-        //取得使用者銷貨類別權限字串
-        public object[] GetUserSalesTypesStr(object[] objParam)
-        {
-            string js = string.Empty;
-            IDbConnection connection = (IDbConnection)AllocateConnection("JBERP");
-            if (connection.State != ConnectionState.Open)
-            {
-                connection.Open();
-            }
-            //開始transaction
-            IDbTransaction transaction = connection.BeginTransaction();
-            try
-            {
-                string[] parm = objParam[0].ToString().Split(',');
-                string UserID = parm[0];
-                string sql = "SELECT IsNull(dbo.funReturnUserSalesTypesStr('" + UserID + "'),'') as  UserSalesTypesStr FROM EIPHRSYS.dbo.Users WHERE UserID='" + UserID + "'";
-                DataSet ds = this.ExecuteSql(sql, connection, transaction);
-                js = JsonConvert.SerializeObject(ds.Tables[0], Formatting.Indented);
-
-            }
-            catch
-            {
-                transaction.Rollback();
-            }
-            finally
-            {
-                ReleaseConnection("JBERP", connection);
-                //ReleaseConnection(GetClientInfo(ClientInfoType.LoginDB).ToString(), connection);
-            }
-            return new object[] { 0, js }; ;
-
-        }
 
         public object[] GetReportData(object[] objParam)
         {
             string js = "";
+
             string[] parm = objParam[0].ToString().Split(',');
             string InsGroupID = parm[0];
             string SalesTypeID = parm[1];

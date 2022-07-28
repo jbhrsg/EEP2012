@@ -29,8 +29,7 @@
             var PettyCashTax = $('#dataFormMasterPettyCashTax').closest('td');
             //PettyCashTax.append('   ←可修改為發票上實際稅額')
         })
-        function dataFormMaster_OnLoadSuccess() {
-           var UserID = getClientInfo("UserID");
+       function dataFormMaster_OnLoadSuccess() {
            var parameters = Request.getQueryStringByName("P1");
            var mode = Request.getQueryStringByName("NAVIGATOR_MODE");
            if (getEditMode($("#dataFormMaster")) == 'inserted') {
@@ -46,7 +45,7 @@
                //取得部門對應的成本中心-----------------------------------------------------
                $("#dataFormMasterAcSubno").combobox("setValue", "");
                $("#dataFormMasterAcSubno").combobox('setWhere', "1=2");
-               var UserOrgNO = GetUserOrgNO(UserID);
+               var UserOrgNO = GetUserOrgNO();
                $("#dataFormMasterOrg_NOParent").val(UserOrgNO);
            }
        }
@@ -192,8 +191,8 @@
         function PettyCashTaxOnBlur() {
             return true;
         }
-        function GetUserOrgNO(UserID) {
-            //var UserID = getClientInfo("UserID");
+        function GetUserOrgNO() {
+            var UserID = getClientInfo("UserID");
             var _return = "";
             $.ajax({
                 type: "POST",
@@ -209,6 +208,7 @@
                 }
             })
             return _return;
+
         }
         function GetUserOrg() {
             var UserID = getClientInfo("UserID");

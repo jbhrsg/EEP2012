@@ -1,0 +1,8 @@
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sMedia_Report_CustomerGroupSalesSummary\bin\Debug\sMedia_Report_CustomerGroupSalesSummary.dll
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sMedia_Report_CustomerGroupSalesSummary\bin\Debug\sMedia_Report_CustomerGroupSalesSummary.pdb
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sMedia_Report_CustomerGroupSalesSummary\obj\Debug\sMedia_Report_CustomerGroupSalesSummary.csproj.GenerateResource.Cache
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sMedia_Report_CustomerGroupSalesSummary\obj\Debug\sMedia_Report_CustomerGroupSalesSummary.dll
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sMedia_Report_CustomerGroupSalesSummary\obj\Debug\sMedia_Report_CustomerGroupSalesSummary.pdb
+C:\Program Files (x86)\Infolight\EEP2012\EEPNetServer\JBADMIN\sMedia_Report_CustomerGroupSalesSummary.dll
+C:\Program Files (x86)\Infolight\EEP2012\EEPNetServer\JBADMIN\sMedia_Report_CustomerGroupSalesSummary.pdb
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sMedia_Report_CustomerGroupSalesSummary\obj\Debug\sMedia_Report_CustomerGroupSalesSummary.Component.resources

@@ -375,7 +375,7 @@
                 </QueryColumns>
             </JQTools:JQDataGrid>
 
-            <JQTools:JQDialog ID="JQDialog1" runat="server" BindingObjectID="dataFormMaster" Title="請假單" Width="650px" DialogLeft="50px" DialogTop="30px" Closed="True">
+            <JQTools:JQDialog ID="JQDialog1" runat="server" BindingObjectID="dataFormMaster" Title="請假單" Width="650px" DialogLeft="30px" DialogTop="40px" Closed="True">
                 <JQTools:JQDataForm ID="dataFormMaster" runat="server" DataMember="HRMAttendAbsentApply" HorizontalColumnsCount="2" RemoteName="sHRMAttendAbsent.HRMAttendAbsentApply" Closed="False" ContinueAdd="False" disapply="False" DuplicateCheck="False" IsAutoPageClose="False" IsAutoSubmit="False" IsNotifyOFF="False" IsRejectNotify="False" OnApply="checkAbsentData" IsRejectON="False" IsShowFlowIcon="False" ShowApplyButton="False" ValidateStyle="Hint" OnApplied="gridReload" IsAutoPause="False" OnLoadSuccess="OnLoadFormMaster" AlwaysReadOnly="False" DivFramed="False" HorizontalGap="0" VerticalGap="0">
                     <Columns>
                         <JQTools:JQFormColumn Alignment="left" Caption="請假單號" Editor="numberbox" FieldName="AbsentMinusID" Format="" Width="150" Visible="False" MaxLength="0" />

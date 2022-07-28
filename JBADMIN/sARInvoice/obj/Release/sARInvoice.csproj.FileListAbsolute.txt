@@ -9,3 +9,7 @@ D:\Infolight\EEP2012\JBADMIN\sARInvoice\obj\Release\sARInvoice.csproj.GenerateRe
 D:\Infolight\EEP2012\JBADMIN\sARInvoice\obj\Release\sARInvoice.dll
 D:\Infolight\EEP2012\JBADMIN\sARInvoice\obj\Release\sARInvoice.pdb
 D:\Infolight\EEP2012\JBADMIN\sARInvoice\obj\Release\sARInvoice.XmlSerializers.dll
+D:\Infolight\EEP2012\JBADMIN\sARInvoice\bin\Release\vi-VN\sARInvoice.resources.dll
+D:\Infolight\EEP2012\JBADMIN\sARInvoice\obj\Release\sARInvoice.csprojResolveAssemblyReference.cache
+D:\Infolight\EEP2012\JBADMIN\sARInvoice\obj\Release\sARInvoice.Component.vi-VN.resources
+D:\Infolight\EEP2012\JBADMIN\sARInvoice\obj\Release\vi-VN\sARInvoice.resources.dll

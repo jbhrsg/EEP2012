@@ -118,13 +118,13 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <metadata name="serviceManager1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>17, 57</value>
+    <value>17, 64</value>
   </metadata>
   <metadata name="InfoConnection1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>17, 137</value>
+    <value>17, 158</value>
   </metadata>
   <metadata name="ShortTerm.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>17, 177</value>
+    <value>17, 346</value>
   </metadata>
   <data name="ShortTerm.CommandText" xml:space="preserve">
     <value>SELECT dbo.[ShortTerm].* ,
@@ -132,37 +132,37 @@
              (SELECT ShortTermTypeName   FROM SHORTTERMTYPE Where ShortTermTypeID=ShortTerm.ShortTermTypeID) AS ShortTypeName,
              (SELECT CompanyName FROM Company WHERE CompanyID = ShortTerm.CompanyID) AS  CompanyName,
              (ISNULL((SELECT SUM(Amount) FROM  dbo.ShortTermMinusDetails WHERE ShortTermNO=SHORTTERM.ShortTermNO),0)+
-              ISNULL((SELECT SUM(Amount)   FROM  [60.250.52.106,1433].FWCRM.dbo.ShortTermMinusDetails WHERE ShortTermNO=SHORTTERM.ShortTermNO),0)+
-              ISNULL((SELECT SUM(Amount)   FROM  [60.250.52.106,1433].FWCRMJS.dbo.ShortTermMinusDetails WHERE ShortTermNO=SHORTTERM.ShortTermNO),0))  AS TotalMinus,
+              ISNULL((SELECT SUM(Amount)   FROM  [192.168.1.41].FWCRM.dbo.ShortTermMinusDetails WHERE ShortTermNO=SHORTTERM.ShortTermNO),0)+
+              ISNULL((SELECT SUM(Amount)   FROM  [192.168.1.41].FWCRMJS.dbo.ShortTermMinusDetails WHERE ShortTermNO=SHORTTERM.ShortTermNO),0))  AS TotalMinus,
               Case WHEN  (ISNULL((SELECT SUM(Amount) FROM  dbo.ShortTermMinusDetails WHERE ShortTermNO=SHORTTERM.ShortTermNO),0)+
-              ISNULL((SELECT SUM(Amount)   FROM  [60.250.52.106,1433].FWCRM.dbo.ShortTermMinusDetails WHERE ShortTermNO=SHORTTERM.ShortTermNO),0)) - dbo.[ShortTerm].ShortTermAmount &gt; 0 THEN 
+              ISNULL((SELECT SUM(Amount)   FROM  [192.168.1.41].FWCRM.dbo.ShortTermMinusDetails WHERE ShortTermNO=SHORTTERM.ShortTermNO),0)) - dbo.[ShortTerm].ShortTermAmount &gt; 0 THEN 
                (ISNULL((SELECT SUM(Amount) FROM  dbo.ShortTermMinusDetails WHERE ShortTermNO=SHORTTERM.ShortTermNO),0)+
-              ISNULL((SELECT SUM(Amount)   FROM  [60.250.52.106,1433].FWCRM.dbo.ShortTermMinusDetails WHERE ShortTermNO=SHORTTERM.ShortTermNO),0))-dbo.[ShortTerm].ShortTermAmount ELSE 0 END AS DIffAmt,
+              ISNULL((SELECT SUM(Amount)   FROM  [192.168.1.41].FWCRM.dbo.ShortTermMinusDetails WHERE ShortTermNO=SHORTTERM.ShortTermNO),0))-dbo.[ShortTerm].ShortTermAmount ELSE 0 END AS DIffAmt,
 '' AS Reason,
 '匯款' AS CashType
 FROM dbo.[ShortTerm]
 WHERE  flowflag='Z' </value>
   </data>
   <metadata name="ucShortTerm.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>17, 97</value>
+    <value>17, 111</value>
   </metadata>
   <metadata name="View_ShortTerm.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>17, 217</value>
+    <value>17, 205</value>
   </metadata>
   <metadata name="ShortTermMinusDetails.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>17, 337</value>
+    <value>17, 440</value>
   </metadata>
   <metadata name="Employer.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>17, 257</value>
+    <value>17, 252</value>
   </metadata>
   <metadata name="PayType.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>17, 417</value>
+    <value>17, 487</value>
   </metadata>
   <metadata name="Vendors.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>17, 457</value>
+    <value>17, 534</value>
   </metadata>
   <metadata name="Employee.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>17, 497</value>
+    <value>17, 581</value>
   </metadata>
   <data name="Employee.CommandText" xml:space="preserve">
     <value>select   View_Employee.EmployeeID,
@@ -174,13 +174,13 @@ WHERE  flowflag='Z' </value>
   </value>
   </data>
   <metadata name="Applyer.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>17, 297</value>
+    <value>17, 299</value>
   </metadata>
   <metadata name="ShortTermNO.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>17, 377</value>
+    <value>17, 393</value>
   </metadata>
   <metadata name="Company.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>191, 174</value>
+    <value>188, 277</value>
   </metadata>
   <metadata name="$this.TrayLargeIcon" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>False</value>

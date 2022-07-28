@@ -8,6 +8,18 @@
     <script src="../js/jquery.jbjob.js"></script>
     <title>請假單</title>
     <script>
+        var waitA = false;
+        var waitB = false;
+        var myVar = setInterval(function () { myTimer(); }, 100);
+        setTimeout(function () { clearTimeout(myVar); }, 6000);//最多6秒結束
+        function myTimer() {
+            if (waitA == true && waitB == true) {//dataFormMaster第一次OnloadSuccess 和 GridHolidayData第一次OnloadSuccess
+                OnLoadHolidayData();
+                clearTimeout(myVar);
+            }
+        }
+
+
         $(document).ready(function () {
             $("input, select, textarea").focus(function () {
                 $(this).css("background-color", "#FFFFB5");
@@ -31,7 +43,8 @@
             });
 
             $("#dataFormMasterBeginDate").datebox({
-                onSelect: function (date) {                   
+                onSelect: function (date) {
+                    SetSamDate();
                     timeSet();
                     checkAbsentHours();
                 }
@@ -75,7 +88,6 @@
             var employeeID = $("#dataFormMasterEmployeeID").refval('getValue');
             var dt = new Date();
             var sDate = $.jbjob.Date.DateFormat(dt, 'yyyy/MM/dd')
-
             if (employeeID != "") {
 
                 //取得申請時的部門名稱,班別
@@ -90,20 +102,71 @@
                         if (rows.length > 0) {                           
                             $('#dataFormMasterDEPT_Name').val(rows[0].DEPT_CNAME);                            
                             $('#dataFormMasterROTE_Name').val(rows[0].ROTE_CNAME);
+                            $('#dataFormMasterROTE_ID').val(rows[0].ROTE_ID);
+                            
                         }
                     }
                 });
             }
             //請起時間(ON_TIME) && 請迄時間(OFF_TIME)
             timeSet();
-            // GetHolidayData();
+            //取得到職日
+            getEFFECT_DATE(employeeID);
+            ////申請成功檢視 核示資訊
+            //var parameter = Request.getQueryStringByName("P1");
+            
+            //if (parameter == "SucessView") {
+            //    GetSignNotesData();
+            //} else $('#divSignNotesData').hide();
+
+            //取得部門代號
+            if ($("#dataFormMasterORG_NO").val() == "") {
+                GetUserOrgNOs();
+            }
+            if (!$(this).data('firstLoad') && $(this).data('firstLoad', true)) {
+                waitA = true;
+            }
+        }
+        
+        ////得到核示資訊
+        //function GetSignNotesData() {
+        //    var AbsentMinusID = $('#dataFormMasterAbsentMinusID').val();
+        //    if (AbsentMinusID != "") {
+
+        //        $.ajax({
+        //            type: "POST",
+        //            url: '../handler/jqDataHandle.ashx?RemoteName=sHRMAttendAbsent.infoABSENT_PLUS',  //連接的Server端，command
+        //            data: "mode=method&method=" + "GetSignNotesData" + "&parameters=" + AbsentMinusID,
+        //            cache: false,
+        //            async: true,
+        //            success: function (data) {
+        //                var rows = $.parseJSON(data);//將JSon轉會到Object類型提供給Grid顯示                            
+        //                $('#GridSignNotesData').datagrid('loadData', rows);//通過loadData方法清除掉原有Grid中的舊有資料並填補新資料
+        //                if (rows.length == 0) {
+        //                    $('#divSignNotesData').hide();
+        //                } else $('#divSignNotesData').show();
+        //            }
+        //        });
+        //    }          
+        //}
+
+        function OnLoadGridHolidayData() {
+        //    setTimeout(function () {
+        //        OnLoadHolidayData();
+            //    }, 300);
+            if (!$(this).data('firstLoad') && $(this).data('firstLoad', true)) {
+                waitB = true;
+            }
         }
         //得到假別資訊(已請、剩餘)
         var flag = true; //定義一個全域變數，只有第一次執行        
         function OnLoadHolidayData() {
+            
             if (flag) {
+
                 var employeeID = $("#dataFormMasterEmployeeID").refval('getValue');
-                var dt = new Date();
+                var beginDate = $('#dataFormMasterBeginDate').datebox('getValue');
+                var dt = new Date(beginDate);
                 var sDate = $.jbjob.Date.DateFormat(dt, 'yyyy/MM/dd')
 
                 if (employeeID != "") {
@@ -125,6 +188,8 @@
                 flag = false;
             }
         }
+
+        
         //請起時間(ON_TIME) && 請迄時間(OFF_TIME)
         function timeSet() {
             var beginDate = $('#dataFormMasterBeginDate').datebox('getValue');
@@ -176,10 +241,16 @@
                 absentMinusID = "0";
 
             //判斷起迄時間是否正確
-            beginTimeValidate = $.jbIsTimeFormat(beginTime);
-            endTimeValidate = $.jbIsTimeFormat(endTime);
+            if ($('#dataFormMasterROTE_ID').val() == "17") {//0750上班
+                beginTimeValidate = true;
+                endTimeValidate = true;
+            } else {
+                beginTimeValidate = $.jbIsTimeFormat(beginTime);
+                endTimeValidate = $.jbIsTimeFormat(endTime);
+            }
 
             if (employeeID != "" && holidayID != "" && beginDate != "" && endDate != "" && beginTime != "" && endTime != "" && beginDateValidate != "Invalid Date" && endDateValidate != "Invalid Date" && $.jbIsDateStr(beginDate) && $.jbIsDateStr(endDate) && beginTimeValidate && endTimeValidate) {
+
                 $.ajax({
                     type: "POST",
                     url: '../handler/jqDataHandle.ashx?RemoteName=sHRMAttendAbsent.HRMAttendAbsentApply', //連接的Server端，command
@@ -203,10 +274,15 @@
             else {
                 $('#dataFormMasterTotalHours').numberbox('setValue', "");
             }
+        }       
+        
+        //預設終止日期與起始日期同一天
+        function SetSamDate() {
+            var aDate = new Date($('#dataFormMasterBeginDate').datebox('getValue'));
+            $('#dataFormMasterEndDate').datebox('setValue',$.jbjob.Date.DateFormat(aDate, 'yyyy/MM/dd'));
         }
-
         //存檔前
-        //1. 檢查combox 必要欄位
+        //1. 請假起始日期最小不可小於7日前申請,檢查combox 必要欄位
         //2. 判斷請假起始日期不可大於截止日期
         //3. 判斷請假起始時間不可大於截止時間
         //3.1 判斷生理假起始日期須等於截止日期   
@@ -215,6 +291,8 @@
         //5. 判斷請假時數
         //6. 判斷申請的時段內是否已有存在的請假資料
         //7. 判斷請假資料(在途)
+
+
         function checkAbsentData() {
             if (!$(this).form('validateForm')) return false;                
             var employeeID = $("#dataFormMasterEmployeeID").refval('getValue');
@@ -228,7 +306,11 @@
             var holidayID = $("#dataFormMasterHolidayID").refval('getValue');
             var totalHours = $('#dataFormMasterTotalHours').numberbox('getValue');
             var absentMinusID;
-         
+
+            if (getEditMode($("#dataFormMaster")) == 'updated')
+                absentMinusID = $('#dataFormMasterAbsentMinusID').val();
+            else
+                absentMinusID = "0";
             ////代理人
             //if (AgentEmployeeID == "" || AgentEmployeeID == undefined) {
             //    alert("請選擇代理人");
@@ -241,6 +323,36 @@
             //    $("#dataFormMasterHolidayID").data("inforefval").refval.find("input.refval-text").focus();
             //    return false;
             //}
+            //1.請假終止日期不可小於? //1.請假終止日期不可小於?日前申請=>看 sSYS_Variable設定之天數 AbsentDays
+            var AbsentDays;
+            var AttendSetDaysrows;
+            var result;
+            $.ajax({
+                type: "POST",
+                url: '../handler/jqDataHandle.ashx?RemoteName=sSYS_Variable.HRMAttendSetDays', //連接的Server端，command
+                data: "mode=method&method=" + "GetHRM_AttendSetDays",
+                cache: false,
+                async: false,
+                success: function (data) {
+                    result = $.parseJSON(data);                                     
+                }
+            });
+            
+            if (result.IsOK == undefined) {
+                AttendSetDaysrows = result;
+                AbsentDays = AttendSetDaysrows[0].AbsentDays;
+                var dt = new Date();
+                var aDate = new Date($.jbDateAdd('days', -AbsentDays, dt));//小一個月
+                var bDate = $.jbjob.Date.DateFormat(aDate, 'yyyy/MM/dd');
+                if (endDate < bDate) {
+                    alert("請假終止日期須在今天前" + AbsentDays + "日內");
+                    $("#dataFormMasterBeginDate").datebox('textbox').focus();
+                    return false;
+                }
+            } else {
+                alert("無天數限制設定");
+                return false;
+            }
 
             //2. 判斷請假起始日期不可大於截止日期
             if (beginDateValidate == "Invalid Date" || !$.jbIsDateStr(beginDate)) {
@@ -261,8 +373,8 @@
                 return false;
             }
 
-            //3. 判斷請假起始時間不可大於截止時間
-            if (parseInt(beginTime) >= parseInt(endTime)) {
+            //3. 判斷請假起始時間不可大於截止時間(同一天而言)
+            if (beginDate == endDate && parseInt(beginTime) >= parseInt(endTime)) {
                 alert('請假起始時間 : ' + beginTime + ' 需小於請假截止時間 : ' + endTime);
                 return false;
             }
@@ -302,12 +414,7 @@
             if ((cnt == "0")) {
                 alert("此假別有性別限制");
                 return false;
-            }
-
-            if (getEditMode($("#dataFormMaster")) == 'updated')
-                absentMinusID = $('#dataFormMasterAbsentMinusID').val();
-            else
-                absentMinusID = "0";
+            }           
 
             if ($("#dataGridMaster").datagrid('getSelected')) {
                 var o_employeeID = $("#dataGridMaster").datagrid('getSelected').EmployeeID;
@@ -321,12 +428,17 @@
                 var o_totalHours = 0;
 
             //4. 判斷請假剩餘時數(順便產生得假資料)
+            var sStatus = 0;
+            if (getEditMode($("#dataFormMaster")) == 'updated') {
+                sStatus = 1;
+            }
+
             var rows;
 
             $.ajax({
                 type: "POST",
                 url: '../handler/jqDataHandle.ashx?RemoteName=sHRMAttendAbsent.HRMAttendAbsentApply', //連接的Server端，command
-                data: "mode=method&method=" + "checkAbsentRestHours" + "&parameters=" + absentMinusID + "," + employeeID + "," + beginDate + "," + endDate + "," + beginTime + "," + endTime + "," + holidayID + "," + totalHours,
+                data: "mode=method&method=" + "checkAbsentRestHours" + "&parameters=" + absentMinusID + "," + employeeID + "," + beginDate + "," + endDate + "," + beginTime + "," + endTime + "," + holidayID + "," + totalHours + "," + sStatus,
                 cache: false,
                 async: false,
                 success: function (data) {
@@ -395,9 +507,7 @@
             }
            
             //6. 判斷請假資料申請的時段內是否已有存在的請假資料 
-            if (getEditMode($("#dataFormMaster")) == 'inserted') {
                 var cnt;
-                absentMinusID = "0";
 
                 $.ajax({
                     type: "POST",
@@ -416,6 +526,26 @@
                     return false;
                 }
 
+                //6.1 代理人檢查(是否代理人此區段內也有請假資料)=>另增加 "人資室=0" 不做檢查
+                var iAgentEmpID;
+                if (AgentEmployeeID != "0") {
+                    $.ajax({
+                        type: "POST",
+                        url: '../handler/jqDataHandle.ashx?RemoteName=sHRMAttendAbsent.HRMAttendAbsentApply', //連接的Server端，command
+                        data: "mode=method&method=" + "checkAgentEmployeeID" + "&parameters=" + AgentEmployeeID + "," + beginDate + "," + endDate + "," + beginTime + "," + endTime, //method後的參數為server的Method名稱  parameters後為端的到後端的參數這裡傳入選中資料的CustomerID欄位
+                        cache: false,
+                        async: false,
+                        success: function (data) {
+                            if (data != false) {
+                                iAgentEmpID = $.parseJSON(data);
+                            }
+                        }
+                    });
+                    if ((iAgentEmpID != "0" && iAgentEmpID != "undefined")) {
+                        alert("此代理人此區間已有請假資料");
+                        return false;
+                    }
+                }
                 //7. 判斷請假資料(在途)
 
                 var sd = new Date(beginDate);
@@ -424,7 +554,12 @@
                 var ed = new Date(endDate);
                 var eDate = $.jbjob.Date.DateFormat(ed, 'yyyy/MM/dd');
                 var beginDateTime = bDate + " " + beginTime.substr(0, 2) + ":" + beginTime.substr(2, 2);
-                var endDateTime = eDate + " " + endTime.substr(0, 2) + ":" + endTime.substr(2, 2)
+                if (endTime == "2400") {
+                    var endDateTime = eDate + " 23:59";
+                }
+                else {
+                    var endDateTime = eDate + " " + endTime.substr(0, 2) + ":" + endTime.substr(2, 2);
+                }
 
                 var cnt2;
                 $.ajax({
@@ -445,7 +580,6 @@
                 }
                 else
                     return true;
-            }
         }
         
         function genCheckBox(val) {
@@ -457,7 +591,9 @@
 
         //check 時間格式如 : 0800 或 0830
         function checkTimeFormat(val) {
-            return $.jbIsTimeFormat(val);
+            if ($('#dataFormMasterROTE_ID').val() == "17") {//0750上班
+                return true;
+            } else return $.jbIsTimeFormat(val);
         }
 
         //check 計薪年月格式如 : 201401 或 201412
@@ -468,8 +604,44 @@
         function gridReload() {
             $("#dataGridMaster").datagrid('reload');
         }
-       
-
+        function getEFFECT_DATE(EmployeeID) {
+            var EFFECT_DATE;
+            if (EmployeeID != '' || EmployeeID == 'undefined') {
+                $.ajax({
+                    type: "POST",
+                    url: '../handler/jqDataHandle.ashx?RemoteName=sHRMAttendAbsent.HRMAttendAbsentApply', //連接的Server端，command
+                    data: "mode=method&method=" + "getEFFECT_DATE" + "&parameters=" + EmployeeID,
+                    cache: false,
+                    async: false,
+                    success: function (data) {
+                        if (data != false) {
+                            EFFECT_DATE = $.parseJSON(data);
+                            var index = EFFECT_DATE.search("上");
+                            $('#dataFormMasterEFFECT_DATE').val(EFFECT_DATE.substr(0, index));
+                        }
+                    }
+                });
+            }
+        }
+        function GetUserOrgNOs() {
+            var UserID = getClientInfo("UserID");
+            $.ajax({
+                type: "POST",
+                url: '../handler/jqDataHandle.ashx?RemoteName=sHRMAttendAbsent.HRMAttendAbsentApply', //連接的Server端，command
+                data: "mode=method&method=" + "GetUserOrgNOs" + "&parameters=" + UserID, //method后的參數為server的Method名稱  parameters后為端的到后端的參數這裡傳入選中資料的CustomerID欄位
+                cache: false,
+                async: false,
+                success: function (data) {
+                    //console.log(data);
+                    var rows = $.parseJSON(data);
+                    if (rows.length > 0) {
+                        $("#dataFormMasterORG_NO").val(rows[0].OrgNO);
+                        //$("#dataFormMasterOrg_NOParent").val(rows[0].OrgNOParent);
+                    }
+                }
+            }
+            );
+        }
     </script>
 
     </head>
@@ -519,24 +691,27 @@
          
                 <JQTools:JQDataForm ID="dataFormMaster" runat="server" DataMember="HRMAttendAbsentApply" HorizontalColumnsCount="2" RemoteName="sHRMAttendAbsent.HRMAttendAbsentApply" Closed="False" ContinueAdd="False" disapply="False" DuplicateCheck="False" IsAutoPageClose="True" IsAutoSubmit="True" IsNotifyOFF="False" IsRejectNotify="False" OnApply="checkAbsentData" IsRejectON="False" IsShowFlowIcon="True" ShowApplyButton="False" ValidateStyle="Dialog" OnApplied="gridReload" IsAutoPause="False" OnLoadSuccess="OnLoadFormMaster" AlwaysReadOnly="False" DivFramed="False" HorizontalGap="0" VerticalGap="0">
                     <Columns>
-                        <JQTools:JQFormColumn Alignment="left" Caption="請假單號" Editor="numberbox" FieldName="AbsentMinusID" Format="" Width="150" Visible="False" MaxLength="0" />
-                        <JQTools:JQFormColumn Alignment="left" Caption="申請姓名" Editor="inforefval" FieldName="EmployeeID" Format="" Width="90" EditorOptions="title:'JQRefval',panelWidth:350,remoteName:'sHRMAttendAbsent.infoHRM_BASE_BASE',tableName:'infoHRM_BASE_BASE',columns:[],columnMatches:[{field:'EmployeeText',value:'NAME_C'}],whereItems:[],valueField:'EMPLOYEE_ID',textField:'NAME_C',valueFieldCaption:'EMPLOYEE_ID',textFieldCaption:'NAME_C',cacheRelationText:true,checkData:true,showValueAndText:false,dialogCenter:false,selectOnly:false,capsLock:'none'" OnBlur="" NewRow="True" ReadOnly="True" Visible="True" />
-                        <JQTools:JQFormColumn Alignment="left" Caption="代理人" Editor="inforefval" EditorOptions="title:'選擇代理人',panelWidth:350,remoteName:'sHRMAttendAbsent.infoAgentEmployeeID',tableName:'infoAgentEmployeeID',columns:[],columnMatches:[],whereItems:[],valueField:'EMPLOYEE_ID',textField:'NAME_C',valueFieldCaption:'工號',textFieldCaption:'姓名',cacheRelationText:true,checkData:true,showValueAndText:false,dialogCenter:false,selectOnly:true,capsLock:'none',fixTextbox:'false'" FieldName="AgentEmployeeID" MaxLength="0" Visible="True" Width="110" NewRow="False" ReadOnly="False" RowSpan="1" Span="1" />
-                        <JQTools:JQFormColumn Alignment="left" Caption="部門名稱" Editor="text" FieldName="DEPT_Name" NewRow="True" ReadOnly="True" Span="1" Visible="True" Width="130" />
-                        <JQTools:JQFormColumn Alignment="left" Caption="班別名稱" Editor="text" FieldName="ROTE_Name" Width="130" ReadOnly="True" MaxLength="0" NewRow="False" RowSpan="1" Span="1" Visible="True" />
-                        <JQTools:JQFormColumn Alignment="left" Caption="起始日期" Editor="datebox" FieldName="BeginDate" Format="" Width="90" OnBlur="checkAbsentHours" Span="1" NewRow="True" />
-                        <JQTools:JQFormColumn Alignment="left" Caption="終止日期" Editor="datebox" FieldName="EndDate" Format="" Width="90" OnBlur="checkAbsentHours" MaxLength="0" />
-                        <JQTools:JQFormColumn Alignment="left" Caption="起始時間" Editor="text" FieldName="BeginTime" Format="" MaxLength="50" Width="90" OnBlur="checkAbsentHours" />
-                        <JQTools:JQFormColumn Alignment="left" Caption="終止時間" Editor="text" FieldName="EndTime" Format="" MaxLength="50" Width="90" OnBlur="checkAbsentHours" Visible="True" />
-                        <JQTools:JQFormColumn Alignment="left" Caption="起始請假日期(含時間)" Editor="datebox" FieldName="AbsentDateTimeBegin" Format="" Width="180" Visible="False" />
-                        <JQTools:JQFormColumn Alignment="left" Caption="起始請假日期(含時間)" Editor="datebox" FieldName="AbsentDateTimeEnd" Format="" Width="180" Visible="False" />
-                        <JQTools:JQFormColumn Alignment="left" Caption="假別選擇" Editor="inforefval" FieldName="HolidayID" Format="" Width="140" Visible="True" MaxLength="0" EditorOptions="title:'假別選擇',panelWidth:350,remoteName:'sHRMAttendAbsent.infoHRM_ATTEND_HOLIDAY',tableName:'infoHRM_ATTEND_HOLIDAY',columns:[],columnMatches:[{field:'HolidayText',value:'HOLIDAY_CNAME'}],whereItems:[],valueField:'HOLIDAY_ID',textField:'HOLIDAY_CNAME',valueFieldCaption:'假別代號',textFieldCaption:'假別名稱',cacheRelationText:true,checkData:true,showValueAndText:false,dialogCenter:false,onSelect:checkAbsentHours,selectOnly:false,capsLock:'none'" OnBlur="" />
+                        <JQTools:JQFormColumn Alignment="left" Caption="請假單號" Editor="numberbox" FieldName="AbsentMinusID" Format="" Width="150" Visible="False" NewRow="False" ReadOnly="False" Span="1" />
+                        <JQTools:JQFormColumn Alignment="left" Caption="申請姓名" Editor="inforefval" FieldName="EmployeeID" Format="" Width="90" EditorOptions="title:'JQRefval',panelWidth:350,remoteName:'sHRMAttendAbsent.infoHRM_BASE_BASE',tableName:'infoHRM_BASE_BASE',columns:[],columnMatches:[{field:'EmployeeText',value:'NAME_C'}],whereItems:[],valueField:'EMPLOYEE_ID',textField:'NAME_C',valueFieldCaption:'EMPLOYEE_ID',textFieldCaption:'NAME_C',cacheRelationText:true,checkData:true,showValueAndText:false,dialogCenter:false,selectOnly:false,capsLock:'none'" OnBlur="" NewRow="True" ReadOnly="True" MaxLength="0" />
+                        <JQTools:JQFormColumn Alignment="left" Caption="代理人" Editor="inforefval" EditorOptions="title:'選擇代理人',panelWidth:273,remoteName:'sHRMAttendAbsent.infoAgentEmployeeID',tableName:'infoAgentEmployeeID',columns:[{field:'EMPLOYEE_CODE',title:'員工工號',width:120,align:'left',table:'',isNvarChar:false,queryCondition:''},{field:'NAME_C',title:'員工姓名',width:120,align:'left',table:'',isNvarChar:false,queryCondition:''}],columnMatches:[],whereItems:[],valueField:'EMPLOYEE_CODE',textField:'NAME_C',valueFieldCaption:'工號',textFieldCaption:'姓名',cacheRelationText:true,checkData:true,showValueAndText:false,dialogCenter:false,selectOnly:true,capsLock:'none',fixTextbox:'false'" FieldName="AgentEmployeeID" Width="110" NewRow="False" ReadOnly="False" MaxLength="0" />
+                        <JQTools:JQFormColumn Alignment="left" Caption="部門名稱" Editor="text" FieldName="DEPT_Name" NewRow="True" ReadOnly="True" Span="1" Visible="True" Width="145" MaxLength="0" RowSpan="1" />
+                        <JQTools:JQFormColumn Alignment="left" Caption="班別名稱" Editor="text" FieldName="ROTE_Name" Width="130" ReadOnly="True" NewRow="False" MaxLength="0" Visible="True" />
+                        <JQTools:JQFormColumn Alignment="left" Caption="起始日期" Editor="datebox" FieldName="BeginDate" Format="yyyy/mm/dd" Width="90" OnBlur="checkAbsentHours" NewRow="True" MaxLength="0" Visible="True" />
+                        <JQTools:JQFormColumn Alignment="left" Caption="終止日期" Editor="datebox" FieldName="EndDate" Format="yyyy/mm/dd" Width="90" OnBlur="checkAbsentHours" MaxLength="0" Visible="True" />
+                        <JQTools:JQFormColumn Alignment="left" Caption="起始時間" Editor="text" FieldName="BeginTime" Format="" MaxLength="50" Width="90" OnBlur="checkAbsentHours" Visible="True" />
+                        <JQTools:JQFormColumn Alignment="left" Caption="終止時間" Editor="text" FieldName="EndTime" Format="" MaxLength="50" Width="90" OnBlur="checkAbsentHours" Visible="True" ReadOnly="False" />
+                        <JQTools:JQFormColumn Alignment="left" Caption="起始請假日期(含時間)" Editor="datebox" FieldName="AbsentDateTimeBegin" Format="" Width="180" Visible="False" MaxLength="0" ReadOnly="False" NewRow="False" Span="1" />
+                        <JQTools:JQFormColumn Alignment="left" Caption="起始請假日期(含時間)" Editor="datebox" FieldName="AbsentDateTimeEnd" Format="" Width="180" Visible="False" MaxLength="0" ReadOnly="False" NewRow="False" Span="1" />
+                        <JQTools:JQFormColumn Alignment="left" Caption="假別選擇" Editor="inforefval" FieldName="HolidayID" Format="" Width="140" Visible="True" MaxLength="0" EditorOptions="title:'假別選擇',panelWidth:350,remoteName:'sHRMAttendAbsent.infoHRM_ATTEND_HOLIDAY',tableName:'infoHRM_ATTEND_HOLIDAY',columns:[],columnMatches:[{field:'HolidayText',value:'HOLIDAY_CNAME'}],whereItems:[],valueField:'HOLIDAY_ID',textField:'HOLIDAY_CNAME',valueFieldCaption:'假別代號',textFieldCaption:'假別名稱',cacheRelationText:true,checkData:true,showValueAndText:false,dialogCenter:false,onSelect:checkAbsentHours,selectOnly:false,capsLock:'none'" OnBlur="" ReadOnly="False" NewRow="False" Span="1" />
                         <JQTools:JQFormColumn Alignment="left" Caption="HolidayText" Editor="text" FieldName="HolidayText" MaxLength="0" NewRow="False" ReadOnly="False" RowSpan="1" Span="1" Visible="False" Width="80" />
-                        <JQTools:JQFormColumn Alignment="left" Caption="請假時數/天" Editor="numberbox" FieldName="TotalHours" Format="" MaxLength="0" Width="90" Visible="True" EditorOptions="precision:1" ReadOnly="True" />
-                        <JQTools:JQFormColumn Alignment="left" Caption="請假事由" Editor="textarea" FieldName="Memo" Format="" Visible="True" Width="380" ReadOnly="False" MaxLength="200" NewRow="True" Span="2" />
-                        <JQTools:JQFormColumn Alignment="left" Caption="flowflag" Editor="text" FieldName="flowflag" Format="" Width="180" ReadOnly="False" Visible="False" MaxLength="1" NewRow="False" Span="1" />
-                        <JQTools:JQFormColumn Alignment="left" Caption="建檔人員" Editor="text" FieldName="CreateBy" Format="" MaxLength="50" Width="180" NewRow="False" Span="1" Visible="False" />
-                        <JQTools:JQFormColumn Alignment="left" Caption="建檔日期" Editor="datebox" FieldName="CreateDate" Format="" MaxLength="0" Width="180" Visible="False" />
+                        <JQTools:JQFormColumn Alignment="left" Caption="請假時數/天" Editor="numberbox" FieldName="TotalHours" Format="" MaxLength="0" Width="90" Visible="True" EditorOptions="precision:1" ReadOnly="True" NewRow="False" Span="1" />
+                        <JQTools:JQFormColumn Alignment="left" Caption="請假事由" Editor="textarea" FieldName="Memo" Format="" Visible="True" Width="380" MaxLength="200" NewRow="True" Span="2" ReadOnly="False" RowSpan="1" />
+                        <JQTools:JQFormColumn Alignment="left" Caption="到職日期" Editor="text" EditorOptions="" FieldName="EFFECT_DATE" MaxLength="0" NewRow="False" ReadOnly="True" RowSpan="1" Span="1" Visible="True" Width="80" />
+                        <JQTools:JQFormColumn Alignment="left" Caption="flowflag" Editor="text" FieldName="flowflag" Format="" Width="180" Visible="False" MaxLength="1" NewRow="False" ReadOnly="False" RowSpan="1" Span="1" />
+                        <JQTools:JQFormColumn Alignment="left" Caption="建檔人員" Editor="text" FieldName="CreateBy" Format="" MaxLength="50" Width="180" Visible="False" NewRow="False" ReadOnly="False" />
+                        <JQTools:JQFormColumn Alignment="left" Caption="建檔日期" Editor="datebox" FieldName="CreateDate" Format="" Width="180" Visible="False" NewRow="False" ReadOnly="False" Span="1" />
+                        <JQTools:JQFormColumn Alignment="left" Caption="ORG_NO" Editor="text" FieldName="ORG_NO" NewRow="False" ReadOnly="False" Visible="False" Width="80" Span="1" MaxLength="0" RowSpan="1" />
+                        <JQTools:JQFormColumn Alignment="left" Caption="ROTE_ID" Editor="text" FieldName="ROTE_ID" MaxLength="0" NewRow="False" ReadOnly="False" Visible="False" Width="80" />
                     </Columns>
                 </JQTools:JQDataForm>
                 <JQTools:JQDefault ID="defaultMaster" runat="server" BindingObjectID="dataFormMaster" EnableTheming="True">
@@ -550,7 +725,7 @@
                 </JQTools:JQDefault>
                 <JQTools:JQValidate ID="validateMaster" runat="server" BindingObjectID="dataFormMaster" EnableTheming="True">
                     <Columns>
-                        <JQTools:JQValidateColumn CheckNull="True" FieldName="BeginDate" RemoteMethod="True" ValidateMessage="請輸入起始請假日期" ValidateType="None" />
+                        <JQTools:JQValidateColumn CheckNull="True" FieldName="BeginDate" RemoteMethod="True" ValidateMessage="請輸入起始請假日期" ValidateType="None" CheckMethod="" />
                         <JQTools:JQValidateColumn CheckNull="True" FieldName="EndDate" RemoteMethod="True" ValidateMessage="請輸入截止請假日期" ValidateType="None" />
                         <JQTools:JQValidateColumn CheckMethod="checkTimeFormat" CheckNull="True" FieldName="BeginTime" RemoteMethod="False" ValidateMessage="請輸入正確的時間格式如 : 0800 或 0830" ValidateType="None" />
                         <JQTools:JQValidateColumn CheckMethod="checkTimeFormat" CheckNull="True" FieldName="EndTime" RemoteMethod="False" ValidateMessage="請輸入正確的時間格式如 : 0800 或 0830" ValidateType="None" />
@@ -560,7 +735,7 @@
                         <JQTools:JQValidateColumn CheckNull="True" FieldName="HolidayID" RemoteMethod="True" ValidateMessage="請選擇假別" ValidateType="None" />
                     </Columns>
                 </JQTools:JQValidate>
-                <JQTools:JQDataGrid ID="GridHolidayData" runat="server" AllowAdd="True" AllowDelete="True" AllowUpdate="True" AlwaysClose="True" AutoApply="True" BufferView="False" CheckOnSelect="True" ColumnsHibeable="False" DataMember="infoABSENT_PLUS" DeleteCommandVisible="False" DuplicateCheck="False" EditMode="Dialog" EditOnEnter="False" InsertCommandVisible="True" MultiSelect="False" NotInitGrid="False" PageList="10,20,30,40,50" PageSize="10" Pagination="False" QueryAutoColumn="False" QueryLeft="" QueryMode="Window" QueryTitle="Query" QueryTop="" RecordLock="False" RecordLockMode="None" RemoteName="sHRMAttendAbsent.infoABSENT_PLUS" Title="" TotalCaption="Total:" UpdateCommandVisible="False" ViewCommandVisible="False" Width="227px" OnLoadSuccess="OnLoadHolidayData">
+                <JQTools:JQDataGrid ID="GridHolidayData" runat="server" AllowAdd="True" AllowDelete="True" AllowUpdate="True" AlwaysClose="True" AutoApply="True" BufferView="False" CheckOnSelect="True" ColumnsHibeable="False" DataMember="infoABSENT_PLUS" DeleteCommandVisible="False" DuplicateCheck="False" EditMode="Dialog" EditOnEnter="False" InsertCommandVisible="True" MultiSelect="False" NotInitGrid="False" PageList="10,20,30,40,50" PageSize="10" Pagination="False" QueryAutoColumn="False" QueryLeft="" QueryMode="Window" QueryTitle="Query" QueryTop="" RecordLock="False" RecordLockMode="None" RemoteName="sHRMAttendAbsent.infoABSENT_PLUS" Title="" TotalCaption="Total:" UpdateCommandVisible="False" ViewCommandVisible="False" Width="227px" OnLoadSuccess="OnLoadGridHolidayData">
                     <Columns>
                         <JQTools:JQGridColumn Alignment="left" Caption="假別/小時" Editor="text" FieldName="HOLIDAY_CNAME" Frozen="False" IsNvarChar="False" MaxLength="0" QueryCondition="" ReadOnly="False" Sortable="False" Visible="True" Width="55">
                         </JQTools:JQGridColumn>
@@ -573,6 +748,22 @@
                     </Columns>
                 </JQTools:JQDataGrid>
                
+                <%--<br />--%>
+               
+               <%-- <div id="divSignNotesData">
+                <table ID="GridSignNotesData" class="easyui-datagrid" style="width:411px;" data-options="fitColumns:true,singleSelect:true">
+                    <thead>
+                        <tr>
+                            <th data-options="field:'S_STEP_ID',width:100">流程</th>
+                            <th data-options="field:'USERNAME',width:100">簽核者</th>
+                            <th data-options="field:'REMARK',width:100,align:'right'">簽核內容</th>
+                            <th data-options="field:'UPDATEDATE',width:113,align:'right'">簽核日期</th>
+                        </tr>
+                    </thead>
+                </table>
+                </div>--%>
+
+
             </JQTools:JQDialog>
         </div>
     </form>

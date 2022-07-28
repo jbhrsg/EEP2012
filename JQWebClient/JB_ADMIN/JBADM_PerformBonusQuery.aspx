@@ -41,7 +41,7 @@
                 Title="" AllowAdd="False" AllowDelete="False" AllowUpdate="False" AlwaysClose="True" BufferView="False" CheckOnSelect="True" ColumnsHibeable="False" DeleteCommandVisible="False" DuplicateCheck="False" EditMode="Dialog" EditOnEnter="True" InsertCommandVisible="False" MultiSelect="False" NotInitGrid="False" PageList="10,20,30,40,50" PageSize="10" QueryAutoColumn="False" QueryLeft="" QueryMode="Panel" QueryTop="" RecordLock="False" RecordLockMode="None" RowNumbers="True" TotalCaption="合計:" UpdateCommandVisible="False" ViewCommandVisible="True" Width="660px">
                 <Columns>
                     <JQTools:JQGridColumn Alignment="left" Caption="績效年月" Editor="text" FieldName="PerfBonusYM" Format="" MaxLength="0" Width="80" />
-                    <JQTools:JQGridColumn Alignment="left" Caption="部門代號" Editor="text" FieldName="Org_NOParent" Format="" MaxLength="0" Width="75" />
+                    <JQTools:JQGridColumn Alignment="left" Caption="部門代號" Editor="text" FieldName="Org_NOParent" Format="" MaxLength="0" Width="80" />
                     <JQTools:JQGridColumn Alignment="left" Caption="部門" Editor="text" FieldName="OrgParentName" Format="" MaxLength="0" Width="180" />
                     <JQTools:JQGridColumn Alignment="left" Caption="工號" Editor="text" FieldName="EMPID" Format="" MaxLength="0" Width="45" Visible="True" />
                     <JQTools:JQGridColumn Alignment="left" Caption="姓名" Editor="text" FieldName="EmpName" Format="" MaxLength="0" Width="80" />

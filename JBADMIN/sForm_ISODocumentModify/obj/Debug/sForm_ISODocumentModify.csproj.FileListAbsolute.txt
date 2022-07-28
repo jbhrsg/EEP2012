@@ -1,0 +1,8 @@
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sForm_ISODocumentModify\bin\Debug\sForm_ISODocumentModify.dll
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sForm_ISODocumentModify\bin\Debug\sForm_ISODocumentModify.pdb
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sForm_ISODocumentModify\obj\Debug\sForm_ISODocumentModify.csproj.GenerateResource.Cache
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sForm_ISODocumentModify\obj\Debug\sForm_ISODocumentModify.dll
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sForm_ISODocumentModify\obj\Debug\sForm_ISODocumentModify.pdb
+C:\Program Files (x86)\Infolight\EEP2012\EEPNetServer\JBADMIN\sForm_ISODocumentModify.dll
+C:\Program Files (x86)\Infolight\EEP2012\EEPNetServer\JBADMIN\sForm_ISODocumentModify.pdb
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sForm_ISODocumentModify\obj\Debug\sForm_ISODocumentModify.Component.resources

@@ -1,0 +1,6 @@
+D:\Infolight\EEP2012\EEPNetServer\JBADMIN\_HRM_REC_User_Management.dll
+D:\Infolight\EEP2012\EEPNetServer\JBADMIN\_HRM_REC_User_Management.pdb
+D:\Infolight\EEP2012\JBADMIN\sREC_User\obj\Debug\sREC_User.Component.resources
+D:\Infolight\EEP2012\JBADMIN\sREC_User\obj\Debug\_HRM_REC_User_Management.csproj.GenerateResource.Cache
+D:\Infolight\EEP2012\JBADMIN\sREC_User\obj\Debug\_HRM_REC_User_Management.dll
+D:\Infolight\EEP2012\JBADMIN\sREC_User\obj\Debug\_HRM_REC_User_Management.pdb

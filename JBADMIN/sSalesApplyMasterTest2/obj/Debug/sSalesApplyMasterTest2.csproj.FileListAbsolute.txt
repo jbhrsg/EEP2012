@@ -1,0 +1,11 @@
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sSalesApplyMasterTest2\bin\Debug\sSalesApplyMasterTest2.dll
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sSalesApplyMasterTest2\bin\Debug\sSalesApplyMasterTest2.pdb
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sSalesApplyMasterTest2\obj\Debug\sSalesApplyMasterTest2.csproj.GenerateResource.Cache
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sSalesApplyMasterTest2\obj\Debug\sSalesApplyMasterTest2.dll
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sSalesApplyMasterTest2\obj\Debug\sSalesApplyMasterTest2.pdb
+C:\Program Files (x86)\Infolight\EEP2012\EEPNetServer\JBADMIN\sSalesApplyMasterTest2.dll
+C:\Program Files (x86)\Infolight\EEP2012\EEPNetServer\JBADMIN\sSalesApplyMasterTest2.pdb
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sSalesApplyMasterTest2\obj\Debug\sSalesApplyMasterTest2.Component.resources
+C:\Program Files (x86)\Infolight\EEP2012\EEPNetServer\JBADMIN\vi-VN\sSalesApplyMasterTest2.resources.dll
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sSalesApplyMasterTest2\obj\Debug\sSalesApplyMasterTest2.Component.vi-VN.resources
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sSalesApplyMasterTest2\obj\Debug\vi-VN\sSalesApplyMasterTest2.resources.dll

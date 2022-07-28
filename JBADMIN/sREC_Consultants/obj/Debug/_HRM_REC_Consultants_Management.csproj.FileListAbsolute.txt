@@ -1,0 +1,6 @@
+D:\Infolight\EEP2012\EEPNetServer\JBADMIN\_HRM_REC_Consultants_Management.dll
+D:\Infolight\EEP2012\EEPNetServer\JBADMIN\_HRM_REC_Consultants_Management.pdb
+D:\Infolight\EEP2012\JBADMIN\sREC_Consultants\obj\Debug\_HRM_REC_Consultants_Management.Component.resources
+D:\Infolight\EEP2012\JBADMIN\sREC_Consultants\obj\Debug\_HRM_REC_Consultants_Management.csproj.GenerateResource.Cache
+D:\Infolight\EEP2012\JBADMIN\sREC_Consultants\obj\Debug\_HRM_REC_Consultants_Management.dll
+D:\Infolight\EEP2012\JBADMIN\sREC_Consultants\obj\Debug\_HRM_REC_Consultants_Management.pdb

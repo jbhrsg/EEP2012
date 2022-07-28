@@ -1,18 +1,18 @@
 <InfolightDB>
   <DataBase>
     <eTraining String="User ID=sa;database=eTraining;server=192.168.1.15;Connect Timeout=60" Type="1" OdbcType="-1" MaxCount="20" TimeOut="60" Master="1" Encrypt="False" Password=";=:;h@;:&gt;:" />
-    <EIPHRSYS String="User Id=user;database=EIPHRSYS;server=192.168.1.41,1435;Connect Timeout=60" Type="1" OdbcType="-1" MaxCount="20" TimeOut="60" Master="0" Encrypt="False" Password="BA}CCtxR`faWA%#$" />
-    <JBADMIN String="User Id=user;database=JBADMIN;server=192.168.1.41,1435;Connect Timeout=60" Type="1" OdbcType="-1" MaxCount="20" TimeOut="60" Master="1" Encrypt="False" Password="BA}CCtxR`faWA%#$" />
-    <JBERP String="User Id=user;database=JBERP;server=192.168.1.41,1435;Connect Timeout=60" Type="1" OdbcType="-1" MaxCount="20" TimeOut="60" Master="1" Encrypt="False" Password="BA}CCtxR`faWA%#$" />
+    <EIPHRSYS String="User Id=sa;database=EIPHRSYS;server=.\SQL2019;Connect Timeout=60" Type="1" OdbcType="-1" MaxCount="20" TimeOut="60" Master="0" Encrypt="False" Password="FAELIDY[" />
+    <JBADMIN String="User Id=sa;database=JBADMIN;server=.\SQL2019;Connect Timeout=60" Type="1" OdbcType="-1" MaxCount="20" TimeOut="60" Master="1" Encrypt="False" Password="FAELIDY[" />
+    <JBERP String="User Id=sa;database=JBERP;server=.\SQL2019;Connect Timeout=60" Type="1" OdbcType="-1" MaxCount="20" TimeOut="60" Master="1" Encrypt="False" Password="FAELIDY[" />
     <JCS String="User Id=user;database=JCS;server=192.168.1.41,1435;Connect Timeout=60" Type="1" OdbcType="-1" MaxCount="20" TimeOut="60" Master="1" Encrypt="False" Password="BA}CCtxR`faWA%#$" />
     <JCS1 String="User Id=sa;database=JCS1;server=.\SQL2019;Connect Timeout=60" Type="1" OdbcType="-1" MaxCount="20" TimeOut="60" Master="1" Encrypt="False" Password="FAELIDY[" />
     <JCS2 String="User Id=sa;database=JCS2;server=.\SQL2019;Connect Timeout=60" Type="1" OdbcType="-1" MaxCount="20" TimeOut="60" Master="1" Encrypt="False" Password="FAELIDY[" />
-    <Hunter String="User Id=sa;database=Hunter;server=211.78.84.42;Connect Timeout=60" Type="1" OdbcType="-1" MaxCount="20" TimeOut="60" Master="1" Encrypt="False" Password="zrPe:^JF" />
-    <FWCRM String="User Id=sa;database=FWCRM;server=.\SQL2016;Connect Timeout=60" Type="1" OdbcType="-1" MaxCount="20" TimeOut="60" Master="1" Encrypt="False" Password="FAELIDY[" />
+    <Hunter String="User Id=sa;database=Hunter;server=.\SQL2019;Connect Timeout=60" Type="1" OdbcType="-1" MaxCount="20" TimeOut="60" Master="1" Encrypt="False" Password="FAELIDY[" />
+    <FWCRM String="User Id=jb;database=FWCRM;server=192.168.1.41;Connect Timeout=60" Type="1" OdbcType="-1" MaxCount="20" TimeOut="60" Master="1" Encrypt="False" Password="Q$Bjrd%%irDA$EF(" />
     <FWCRMJSCare String="User Id=sa;database=FWCRMJSCare;server=.\SQL2016;Connect Timeout=60" Type="1" OdbcType="-1" MaxCount="20" TimeOut="60" Master="1" Encrypt="False" Password="FAELIDY[" />
     <FWCRMJS String="User Id=sa;database=FWCRMJS;server=.\SQL2016;Connect Timeout=60" Type="1" OdbcType="-1" MaxCount="20" TimeOut="60" Master="1" Encrypt="False" Password="FAELIDY[" />
     <FWCRMCare String="User Id=sa;database=FWCRMCare;server=.\SQL2016;Connect Timeout=60" Type="1" OdbcType="-1" MaxCount="20" TimeOut="60" Master="0" Encrypt="False" Password="FAELIDY[" />
-    <JBDB String="User Id=sa;database=FWCRMCare;server=.\SQL2016;Connect Timeout=60" Type="1" OdbcType="-1" MaxCount="20" TimeOut="60" Master="0" Encrypt="False" Password="FAELIDY[" />
+    <JBDB String="User Id=jb;database=FWCRMCare;server=192.168.1.41;Connect Timeout=60" Type="1" OdbcType="-1" MaxCount="20" TimeOut="60" Master="0" Encrypt="False" Password="Q$Bjrd%%irDA$EF(" />
     <JB0800 String="User Id=sa;database=JB0800;server=.\SQL2019;Connect Timeout=60" Type="1" OdbcType="-1" MaxCount="20" TimeOut="60" Master="1" Encrypt="False" Password="FAELIDY[" />
     <JBRecruit String="User Id=sa;database=JBRecruit;server=.\SQL2019;Connect Timeout=60" Type="1" OdbcType="-1" MaxCount="20" TimeOut="60" Master="1" Encrypt="False" Password="FAELIDY[" />
   </DataBase>

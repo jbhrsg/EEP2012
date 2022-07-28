@@ -1,0 +1,15 @@
+C:\Program Files (x86)\Infolight\EEP2012\JBHunter\sHunter\bin\Debug\sHunter.dll
+C:\Program Files (x86)\Infolight\EEP2012\JBHunter\sHunter\bin\Debug\sHunter.pdb
+C:\Program Files (x86)\Infolight\EEP2012\JBHunter\sHunter\obj\Debug\sHunter.csproj.GenerateResource.Cache
+C:\Program Files (x86)\Infolight\EEP2012\JBHunter\sHunter\obj\Debug\sHunter.dll
+C:\Program Files (x86)\Infolight\EEP2012\JBHunter\sHunter\obj\Debug\sHunter.pdb
+C:\Program Files (x86)\Infolight\EEP2012\EEPNetServer\JBHunter\sHunter.dll
+C:\Program Files (x86)\Infolight\EEP2012\EEPNetServer\JBHunter\sHunter.pdb
+C:\Program Files (x86)\Infolight\EEP2012\JBHunter\sHunter\obj\Debug\sHunter.Component.resources
+D:\Infolight\EEP2012\EEPNetServer\JBADMIN\sHunter.dll
+D:\Infolight\EEP2012\EEPNetServer\JBADMIN\sHunter.pdb
+D:\Infolight\EEP2012\JBADMIN\sHunter\obj\Debug\sHunter.csprojResolveAssemblyReference.cache
+D:\Infolight\EEP2012\JBADMIN\sHunter\obj\Debug\sHunter.Component.resources
+D:\Infolight\EEP2012\JBADMIN\sHunter\obj\Debug\sHunter.csproj.GenerateResource.Cache
+D:\Infolight\EEP2012\JBADMIN\sHunter\obj\Debug\sHunter.dll
+D:\Infolight\EEP2012\JBADMIN\sHunter\obj\Debug\sHunter.pdb

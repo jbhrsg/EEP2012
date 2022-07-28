@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="BillData" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="BillData" msdata:IsDataSet="true" msdata:CaseSensitive="true" msdata:UseCurrentLocale="true">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="BillPayMaster">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="YearMonth" type="xs:string" minOccurs="0" />
+              <xs:element name="BillPayID" type="xs:string" />
+              <xs:element name="RoomerID" type="xs:string" minOccurs="0" />
+              <xs:element name="PID" type="xs:string" minOccurs="0" />
+              <xs:element name="RoomerNameC" type="xs:string" minOccurs="0" />
+              <xs:element name="MustPayAmount" type="xs:int" minOccurs="0" />
+              <xs:element name="RoomBedID" type="xs:string" minOccurs="0" />
+              <xs:element name="FeeItemName" type="xs:string" minOccurs="0" />
+              <xs:element name="CustomerID" type="xs:string" minOccurs="0" />
+              <xs:element name="CustomerShortName" type="xs:string" minOccurs="0" />
+              <xs:element name="FeeItemID" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//BillPayMaster" />
+      <xs:field xpath="BillPayID" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>

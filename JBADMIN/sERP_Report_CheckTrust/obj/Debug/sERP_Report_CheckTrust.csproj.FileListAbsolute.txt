@@ -1,0 +1,8 @@
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sERP_Report_CheckTrust\bin\Debug\sERP_Report_CheckTrust.dll
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sERP_Report_CheckTrust\bin\Debug\sERP_Report_CheckTrust.pdb
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sERP_Report_CheckTrust\obj\Debug\sERP_Report_CheckTrust.csproj.GenerateResource.Cache
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sERP_Report_CheckTrust\obj\Debug\sERP_Report_CheckTrust.dll
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sERP_Report_CheckTrust\obj\Debug\sERP_Report_CheckTrust.pdb
+C:\Program Files (x86)\Infolight\EEP2012\EEPNetServer\JBADMIN\sERP_Report_CheckTrust.dll
+C:\Program Files (x86)\Infolight\EEP2012\EEPNetServer\JBADMIN\sERP_Report_CheckTrust.pdb
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sERP_Report_CheckTrust\obj\Debug\sERP_Report_CheckTrust.Component.resources

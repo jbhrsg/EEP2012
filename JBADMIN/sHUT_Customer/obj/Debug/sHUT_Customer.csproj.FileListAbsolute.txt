@@ -1,0 +1,9 @@
+D:\Infolight\EEP2012\JBADMIN\sHUT_Customer\bin\Debug\sHUT_Customer.dll
+D:\Infolight\EEP2012\JBADMIN\sHUT_Customer\bin\Debug\sHUT_Customer.pdb
+D:\Infolight\EEP2012\JBADMIN\sHUT_Customer\obj\Debug\sHUT_Customer.csprojResolveAssemblyReference.cache
+D:\Infolight\EEP2012\JBADMIN\sHUT_Customer\obj\Debug\sHUT_Customer.csproj.GenerateResource.Cache
+D:\Infolight\EEP2012\JBADMIN\sHUT_Customer\obj\Debug\sHUT_Customer.dll
+D:\Infolight\EEP2012\JBADMIN\sHUT_Customer\obj\Debug\sHUT_Customer.pdb
+D:\Infolight\EEP2012\EEPNetServer\JBADMIN\sHUT_Customer.dll
+D:\Infolight\EEP2012\EEPNetServer\JBADMIN\sHUT_Customer.pdb
+D:\Infolight\EEP2012\JBADMIN\sHUT_Customer\obj\Debug\sHUT_Customer.Component.resources

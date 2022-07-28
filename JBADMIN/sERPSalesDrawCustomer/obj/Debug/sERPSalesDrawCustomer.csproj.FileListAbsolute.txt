@@ -1,0 +1,12 @@
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sERPSalesDrawCustomer\bin\Debug\sERPSalesDrawCustomer.dll
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sERPSalesDrawCustomer\bin\Debug\sERPSalesDrawCustomer.pdb
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sERPSalesDrawCustomer\obj\Debug\sERPSalesDrawCustomer.csproj.GenerateResource.Cache
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sERPSalesDrawCustomer\obj\Debug\sERPSalesDrawCustomer.dll
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sERPSalesDrawCustomer\obj\Debug\sERPSalesDrawCustomer.pdb
+C:\Program Files (x86)\Infolight\EEP2012\EEPNetServer\JBADMIN\sERPSalesDrawCustomer.dll
+C:\Program Files (x86)\Infolight\EEP2012\EEPNetServer\JBADMIN\sERPSalesDrawCustomer.pdb
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sERPSalesDrawCustomer\obj\Debug\sERPSalesDrawCustomer.Component.resources
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sERPSalesDrawCustomer\obj\Debug\sERPSalesDrawCustomer.csprojResolveAssemblyReference.cache
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sERPSalesDrawCustomer\obj\Debug\sERPSalesDrawCustomer.Component.vi-VN.resources
+C:\Program Files (x86)\Infolight\EEP2012\EEPNetServer\JBADMIN\vi-VN\sERPSalesDrawCustomer.resources.dll
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sERPSalesDrawCustomer\obj\Debug\vi-VN\sERPSalesDrawCustomer.resources.dll

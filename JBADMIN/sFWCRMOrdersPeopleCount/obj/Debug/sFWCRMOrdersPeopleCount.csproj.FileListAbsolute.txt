@@ -1,0 +1,7 @@
+D:\Infolight\EEP2012\EEPNetServer\JBADMIN\sFWCRMOrdersPeopleCount.dll
+D:\Infolight\EEP2012\EEPNetServer\JBADMIN\sFWCRMOrdersPeopleCount.pdb
+D:\Infolight\EEP2012\JBADMIN\sFWCRMOrdersPeopleCount\obj\Debug\sFWCRMOrdersPeopleCount.Component.resources
+D:\Infolight\EEP2012\JBADMIN\sFWCRMOrdersPeopleCount\obj\Debug\sFWCRMOrdersPeopleCount.csproj.GenerateResource.Cache
+D:\Infolight\EEP2012\JBADMIN\sFWCRMOrdersPeopleCount\obj\Debug\sFWCRMOrdersPeopleCount.dll
+D:\Infolight\EEP2012\JBADMIN\sFWCRMOrdersPeopleCount\obj\Debug\sFWCRMOrdersPeopleCount.pdb
+D:\Infolight\EEP2012\JBADMIN\sFWCRMOrdersPeopleCount\obj\Debug\sFWCRMOrdersPeopleCount.csprojResolveAssemblyReference.cache

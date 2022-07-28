@@ -72,12 +72,6 @@
       <DependentUpon>Component.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\..\JBTool\JBTool.csproj">
-      <Project>{449844b6-3d41-41aa-a96d-84a975bbf9a4}</Project>
-      <Name>JBTool</Name>
-    </ProjectReference>
-  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

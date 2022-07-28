@@ -1,0 +1,9 @@
+D:\Infolight\EEP2012\JBADMIN\sglVoucherImport\bin\Debug\sglVoucherImport.dll
+D:\Infolight\EEP2012\JBADMIN\sglVoucherImport\bin\Debug\sglVoucherImport.pdb
+D:\Infolight\EEP2012\JBADMIN\sglVoucherImport\obj\Debug\sglVoucherImport.csprojResolveAssemblyReference.cache
+D:\Infolight\EEP2012\JBADMIN\sglVoucherImport\obj\Debug\sglVoucherImport.csproj.GenerateResource.Cache
+D:\Infolight\EEP2012\JBADMIN\sglVoucherImport\obj\Debug\sglVoucherImport.dll
+D:\Infolight\EEP2012\JBADMIN\sglVoucherImport\obj\Debug\sglVoucherImport.pdb
+D:\Infolight\EEP2012\EEPNetServer\JBADMIN\sglVoucherImport.dll
+D:\Infolight\EEP2012\EEPNetServer\JBADMIN\sglVoucherImport.pdb
+D:\Infolight\EEP2012\JBADMIN\sglVoucherImport\obj\Debug\sglVoucherImport.Component.resources

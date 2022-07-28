@@ -1,0 +1,11 @@
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sERPIntro\bin\Debug\sERPIntro.dll
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sERPIntro\bin\Debug\sERPIntro.pdb
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sERPIntro\obj\Debug\sERPIntro.csproj.GenerateResource.Cache
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sERPIntro\obj\Debug\sERPIntro.dll
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sERPIntro\obj\Debug\sERPIntro.pdb
+C:\Program Files (x86)\Infolight\EEP2012\EEPNetServer\JBADMIN\sERPIntro.dll
+C:\Program Files (x86)\Infolight\EEP2012\EEPNetServer\JBADMIN\sERPIntro.pdb
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sERPIntro\obj\Debug\sERPIntro.Component.resources
+C:\Program Files (x86)\Infolight\EEP2012\EEPNetServer\JBADMIN\vi-VN\sERPIntro.resources.dll
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sERPIntro\obj\Debug\sERPIntro.Component.vi-VN.resources
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sERPIntro\obj\Debug\vi-VN\sERPIntro.resources.dll

@@ -6,10 +6,16 @@ D:\Infolight\EEP2012\JBADMIN\sHRMAttendOverTime\obj\Debug\sHRMAttendOverTime.pdb
 D:\Infolight\EEP2012\EEPNetServer\JBADMIN\sHRMAttendOverTime.dll
 D:\Infolight\EEP2012\JBADMIN\sHRMAttendOverTime\obj\Debug\sHRMAttendOverTime.Component.resources
 D:\Infolight\EEP2012\EEPNetServer\JBADMIN\sHRMAttendOverTime.pdb
-D:\Infolight\EEP2012\JBADMIN\sHRMAttendOverTime\obj\Debug\sHRMAttendOverTime.csprojResolveAssemblyReference.cache
 C:\Program Files (x86)\Infolight\EEP2012\EEPNetServer\JBADMIN\sHRMAttendOverTime.dll
 C:\Program Files (x86)\Infolight\EEP2012\EEPNetServer\JBADMIN\sHRMAttendOverTime.pdb
+C:\Program Files (x86)\Infolight\EEP2012\EEPNetServer\JBADMIN\vi-VN\sHRMAttendOverTime.resources.dll
 C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sHRMAttendOverTime\obj\Debug\sHRMAttendOverTime.Component.resources
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sHRMAttendOverTime\obj\Debug\sHRMAttendOverTime.Component.vi-VN.resources
 C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sHRMAttendOverTime\obj\Debug\sHRMAttendOverTime.csproj.GenerateResource.Cache
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sHRMAttendOverTime\obj\Debug\vi-VN\sHRMAttendOverTime.resources.dll
 C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sHRMAttendOverTime\obj\Debug\sHRMAttendOverTime.dll
 C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sHRMAttendOverTime\obj\Debug\sHRMAttendOverTime.pdb
+D:\Infolight\EEP2012\EEPNetServer\JBADMIN\vi-VN\sHRMAttendOverTime.resources.dll
+D:\Infolight\EEP2012\JBADMIN\sHRMAttendOverTime\obj\Debug\sHRMAttendOverTime.Component.vi-VN.resources
+D:\Infolight\EEP2012\JBADMIN\sHRMAttendOverTime\obj\Debug\vi-VN\sHRMAttendOverTime.resources.dll
+D:\Infolight\EEP2012\JBADMIN\sHRMAttendOverTime\obj\Debug\sHRMAttendOverTime.csprojResolveAssemblyReference.cache

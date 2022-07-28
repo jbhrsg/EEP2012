@@ -118,54 +118,38 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <metadata name="serviceManager1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>17, 64</value>
+    <value>17, 56</value>
   </metadata>
   <metadata name="InfoConnection1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>17, 158</value>
+    <value>17, 95</value>
   </metadata>
   <metadata name="SalesKind.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>17, 205</value>
+    <value>17, 212</value>
   </metadata>
   <metadata name="ucSalesKind.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>17, 252</value>
+    <value>219, 214</value>
   </metadata>
   <metadata name="SalesKindSalesType.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>17, 299</value>
+    <value>12, 306</value>
   </metadata>
-  <data name="SalesKindSalesType.CommandText" xml:space="preserve">
-    <value>SELECT s.*,sk.SalesKindName,st.SalesTypeName FROM dbo.[SalesKindSalesType] s
-left join SalesKind sk on sk.SalesKindID=s.SalesKindID
-left join SalesType st on st.SalesTypeID=s.SalesTypeID
-order by s.SalesKindID,s.SalesTypeID</value>
-  </data>
   <metadata name="ucSalesKindSalesType.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>17, 346</value>
+    <value>221, 311</value>
   </metadata>
   <metadata name="SalesType_dataForm1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>17, 487</value>
+    <value>17, 257</value>
   </metadata>
   <metadata name="ucSalesType.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>17, 534</value>
+    <value>22, 459</value>
   </metadata>
   <metadata name="View_SalesKind.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>17, 440</value>
+    <value>17, 134</value>
   </metadata>
   <metadata name="View_SalesKindSalesType.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>17, 393</value>
+    <value>17, 173</value>
   </metadata>
   <metadata name="View_SalesType.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>17, 111</value>
+    <value>357, 56</value>
   </metadata>
-  <metadata name="SalesTypeTree.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>284, 356</value>
-  </metadata>
-  <data name="SalesTypeTree.CommandText" xml:space="preserve">
-    <value>SELECT  'Root' as ID,null as ParentID,'銷貨類別' AS Name,'True' as IsClass,0 AS SEQ
-Union 
-SELECT  SalesTypeID AS ID,'Root' AS ParentID,SalesTypeID+'-'+SalesTypeName as Name,'False' as IsClass ,SEQ  
-FROM SalesType WHERE IsActive=1
-ORDER BY SEQ</value>
-  </data>
   <metadata name="$this.TrayLargeIcon" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>False</value>
   </metadata>

@@ -1,0 +1,9 @@
+D:\Infolight\EEP2012\JBADMIN\sREC_User\bin\Debug\sREC_User.dll
+D:\Infolight\EEP2012\JBADMIN\sREC_User\bin\Debug\sREC_User.pdb
+D:\Infolight\EEP2012\JBADMIN\sREC_User\obj\Debug\sREC_User.csprojResolveAssemblyReference.cache
+D:\Infolight\EEP2012\JBADMIN\sREC_User\obj\Debug\sREC_User.csproj.GenerateResource.Cache
+D:\Infolight\EEP2012\JBADMIN\sREC_User\obj\Debug\sREC_User.dll
+D:\Infolight\EEP2012\JBADMIN\sREC_User\obj\Debug\sREC_User.pdb
+D:\Infolight\EEP2012\EEPNetServer\JBADMIN\sREC_User.dll
+D:\Infolight\EEP2012\EEPNetServer\JBADMIN\sREC_User.pdb
+D:\Infolight\EEP2012\JBADMIN\sREC_User\obj\Debug\sREC_User.Component.resources

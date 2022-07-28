@@ -1,6 +1,9 @@
-C:\Program Files (x86)\Infolight\EEP2012\EEPNetServer\JBADMIN\sERPSalesToDoList.dll
-C:\Program Files (x86)\Infolight\EEP2012\EEPNetServer\JBADMIN\sERPSalesToDoList.pdb
-C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sERPSalesToDoList\obj\Debug\sERPSalesToDoList.Component.resources
-C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sERPSalesToDoList\obj\Debug\sERPSalesToDoList.csproj.GenerateResource.Cache
-C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sERPSalesToDoList\obj\Debug\sERPSalesToDoList.dll
-C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sERPSalesToDoList\obj\Debug\sERPSalesToDoList.pdb
+D:\Infolight\EEP2012\JBADMIN\sERPSalesToDoList\bin\Debug\sERPSalesToDoList.dll
+D:\Infolight\EEP2012\JBADMIN\sERPSalesToDoList\bin\Debug\sERPSalesToDoList.pdb
+D:\Infolight\EEP2012\JBADMIN\sERPSalesToDoList\obj\Debug\sERPSalesToDoList.csproj.GenerateResource.Cache
+D:\Infolight\EEP2012\JBADMIN\sERPSalesToDoList\obj\Debug\sERPSalesToDoList.dll
+D:\Infolight\EEP2012\JBADMIN\sERPSalesToDoList\obj\Debug\sERPSalesToDoList.pdb
+D:\Infolight\EEP2012\EEPNetServer\JBADMIN\sERPSalesToDoList.dll
+D:\Infolight\EEP2012\EEPNetServer\JBADMIN\sERPSalesToDoList.pdb
+D:\Infolight\EEP2012\JBADMIN\sERPSalesToDoList\obj\Debug\sERPSalesToDoList.Component.resources
+D:\Infolight\EEP2012\JBADMIN\sERPSalesToDoList\obj\Debug\sERPSalesToDoList.csprojResolveAssemblyReference.cache

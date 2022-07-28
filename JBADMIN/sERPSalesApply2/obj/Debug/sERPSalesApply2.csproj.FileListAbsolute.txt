@@ -1,0 +1,8 @@
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sERPSalesApply2\bin\Debug\sERPSalesApply2.dll
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sERPSalesApply2\bin\Debug\sERPSalesApply2.pdb
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sERPSalesApply2\obj\Debug\sERPSalesApply2.csproj.GenerateResource.Cache
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sERPSalesApply2\obj\Debug\sERPSalesApply2.dll
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sERPSalesApply2\obj\Debug\sERPSalesApply2.pdb
+C:\Program Files (x86)\Infolight\EEP2012\EEPNetServer\JBADMIN\sERPSalesApply2.dll
+C:\Program Files (x86)\Infolight\EEP2012\EEPNetServer\JBADMIN\sERPSalesApply2.pdb
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sERPSalesApply2\obj\Debug\sERPSalesApply2.Component.resources

@@ -1,0 +1,7 @@
+D:\Infolight\EEP2012\EEPNetServer\JBADMIN\sFWCRMStickStatus.dll
+D:\Infolight\EEP2012\EEPNetServer\JBADMIN\sFWCRMStickStatus.pdb
+D:\Infolight\EEP2012\JBADMIN\sFWCRMStickStatus\obj\Debug\sFWCRMStickStatus.Component.resources
+D:\Infolight\EEP2012\JBADMIN\sFWCRMStickStatus\obj\Debug\sFWCRMStickStatus.csproj.GenerateResource.Cache
+D:\Infolight\EEP2012\JBADMIN\sFWCRMStickStatus\obj\Debug\sFWCRMStickStatus.dll
+D:\Infolight\EEP2012\JBADMIN\sFWCRMStickStatus\obj\Debug\sFWCRMStickStatus.pdb
+D:\Infolight\EEP2012\JBADMIN\sFWCRMStickStatus\obj\Debug\sFWCRMStickStatus.csprojResolveAssemblyReference.cache

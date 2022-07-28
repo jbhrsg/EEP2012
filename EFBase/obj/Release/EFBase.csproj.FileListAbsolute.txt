@@ -7,3 +7,4 @@ D:\Infolight\EEP2012\EFDesign\EFBase.dll
 D:\Infolight\EEP2012\EFDesign\EFBase.pdb
 D:\Infolight\EEP2012\EFBase\obj\Release\EFBase.dll
 D:\Infolight\EEP2012\EFBase\obj\Release\EFBase.pdb
+D:\Infolight\EEP2012\EFBase\obj\Release\EFBase.csprojResolveAssemblyReference.cache

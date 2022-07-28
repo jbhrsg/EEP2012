@@ -7,9 +7,3 @@ D:\Infolight\EEP2012\EEPNetServer\JBADMIN\sERPDelayLunchSet.dll
 D:\Infolight\EEP2012\EEPNetServer\JBADMIN\sERPDelayLunchSet.pdb
 D:\Infolight\EEP2012\JBADMIN\sERPDelayLunchSet\obj\Debug\sERPDelayLunchSet.Component.resources
 D:\Infolight\EEP2012\JBADMIN\sERPDelayLunchSet\obj\Debug\sERPDelayLunchSet.csprojResolveAssemblyReference.cache
-C:\Program Files (x86)\Infolight\EEP2012\EEPNetServer\JBADMIN\sERPDelayLunchSet.dll
-C:\Program Files (x86)\Infolight\EEP2012\EEPNetServer\JBADMIN\sERPDelayLunchSet.pdb
-C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sERPDelayLunchSet\obj\Debug\sERPDelayLunchSet.Component.resources
-C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sERPDelayLunchSet\obj\Debug\sERPDelayLunchSet.csproj.GenerateResource.Cache
-C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sERPDelayLunchSet\obj\Debug\sERPDelayLunchSet.dll
-C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sERPDelayLunchSet\obj\Debug\sERPDelayLunchSet.pdb

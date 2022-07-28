@@ -1,0 +1,10 @@
+C:\Program Files (x86)\Infolight\EEP2012\EEPNetServer\JBADMIN\sERPContract.dll
+C:\Program Files (x86)\Infolight\EEP2012\EEPNetServer\JBADMIN\sERPContract.pdb
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sERPContract1\obj\Debug\sERPContract.Component.resources
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sERPContract1\obj\Debug\sERPContract.csproj.GenerateResource.Cache
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sERPContract1\obj\Debug\sERPContract.dll
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sERPContract1\obj\Debug\sERPContract.pdb
+C:\Program Files (x86)\Infolight\EEP2012\EEPNetServer\JBADMIN\vi-VN\sERPContract.resources.dll
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sERPContract1\obj\Debug\sERPContract.Component.vi-VN.resources
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sERPContract1\obj\Debug\vi-VN\sERPContract.resources.dll
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sERPContract1\obj\Debug\sERPContract.csprojResolveAssemblyReference.cache

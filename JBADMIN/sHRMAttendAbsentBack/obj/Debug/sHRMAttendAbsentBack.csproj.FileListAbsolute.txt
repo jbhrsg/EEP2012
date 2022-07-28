@@ -1,13 +1,7 @@
-C:\Program Files (x86)\Infolight\EEP2012\EEPNetServer\JBADMIN\sHRMAttendAbsentBack.dll
-C:\Program Files (x86)\Infolight\EEP2012\EEPNetServer\JBADMIN\sHRMAttendAbsentBack.pdb
-C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sHRMAttendAbsentBack\obj\Debug\sHRMAttendAbsentBack.Component.resources
-C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sHRMAttendAbsentBack\obj\Debug\sHRMAttendAbsentBack.csproj.GenerateResource.Cache
-C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sHRMAttendAbsentBack\obj\Debug\sHRMAttendAbsentBack.dll
-C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sHRMAttendAbsentBack\obj\Debug\sHRMAttendAbsentBack.pdb
 D:\Infolight\EEP2012\EEPNetServer\JBADMIN\sHRMAttendAbsentBack.dll
 D:\Infolight\EEP2012\EEPNetServer\JBADMIN\sHRMAttendAbsentBack.pdb
-D:\Infolight\EEP2012\JBADMIN\sHRMAttendAbsentBack\obj\Debug\sHRMAttendAbsentBack.csprojResolveAssemblyReference.cache
 D:\Infolight\EEP2012\JBADMIN\sHRMAttendAbsentBack\obj\Debug\sHRMAttendAbsentBack.Component.resources
 D:\Infolight\EEP2012\JBADMIN\sHRMAttendAbsentBack\obj\Debug\sHRMAttendAbsentBack.csproj.GenerateResource.Cache
 D:\Infolight\EEP2012\JBADMIN\sHRMAttendAbsentBack\obj\Debug\sHRMAttendAbsentBack.dll
 D:\Infolight\EEP2012\JBADMIN\sHRMAttendAbsentBack\obj\Debug\sHRMAttendAbsentBack.pdb
+D:\Infolight\EEP2012\JBADMIN\sHRMAttendAbsentBack\obj\Debug\sHRMAttendAbsentBack.csprojResolveAssemblyReference.cache

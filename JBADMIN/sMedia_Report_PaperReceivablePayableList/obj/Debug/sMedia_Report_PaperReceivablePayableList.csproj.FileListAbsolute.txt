@@ -1,0 +1,11 @@
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sMedia_Report_PaperReceivablePayableList\bin\Debug\sMedia_Report_PaperReceivablePayableList.dll
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sMedia_Report_PaperReceivablePayableList\bin\Debug\sMedia_Report_PaperReceivablePayableList.pdb
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sMedia_Report_PaperReceivablePayableList\obj\Debug\sMedia_Report_PaperReceivablePayableList.csproj.GenerateResource.Cache
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sMedia_Report_PaperReceivablePayableList\obj\Debug\sMedia_Report_PaperReceivablePayableList.dll
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sMedia_Report_PaperReceivablePayableList\obj\Debug\sMedia_Report_PaperReceivablePayableList.pdb
+C:\Program Files (x86)\Infolight\EEP2012\EEPNetServer\JBADMIN\sMedia_Report_PaperReceivablePayableList.dll
+C:\Program Files (x86)\Infolight\EEP2012\EEPNetServer\JBADMIN\sMedia_Report_PaperReceivablePayableList.pdb
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sMedia_Report_PaperReceivablePayableList\obj\Debug\sMedia_Report_PaperReceivablePayableList.Component.resources
+C:\Program Files (x86)\Infolight\EEP2012\EEPNetServer\JBADMIN\vi-VN\sMedia_Report_PaperReceivablePayableList.resources.dll
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sMedia_Report_PaperReceivablePayableList\obj\Debug\sMedia_Report_PaperReceivablePayableList.Component.vi-VN.resources
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sMedia_Report_PaperReceivablePayableList\obj\Debug\vi-VN\sMedia_Report_PaperReceivablePayableList.resources.dll

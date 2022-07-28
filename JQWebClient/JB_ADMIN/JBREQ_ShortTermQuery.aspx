@@ -42,7 +42,7 @@
                 DataMember="ShortTerm" Pagination="True" QueryTitle="查詢條件"
                 Title="暫借款立帳查詢" AllowAdd="False" AllowDelete="False" AllowUpdate="False" AlwaysClose="False" CheckOnSelect="True" ColumnsHibeable="False" DeleteCommandVisible="False" DuplicateCheck="False" EditMode="Dialog" EditOnEnter="True" InsertCommandVisible="False" MultiSelect="False" PageList="10,20,30,40,50" PageSize="10" QueryAutoColumn="False" QueryLeft="50px" QueryMode="Window" QueryTop="50px" RecordLock="False" RecordLockMode="None" TotalCaption="Total:" UpdateCommandVisible="False" ViewCommandVisible="True">
                 <Columns>
-                    <JQTools:JQGridColumn FieldName="STATUS" Caption="狀態" IsNvarChar="False" Alignment="left" Width="45" Editor="text" MaxLength="0" Sortable="False" Frozen="False" ReadOnly="False" Visible="True" QueryCondition=""></JQTools:JQGridColumn>
+<JQTools:JQGridColumn FieldName="STATUS" Caption="狀態" IsNvarChar="False" Alignment="left" Width="45" Editor="text" MaxLength="0" Sortable="False" Frozen="False" ReadOnly="False" Visible="True" QueryCondition=""></JQTools:JQGridColumn>
                     <JQTools:JQGridColumn Alignment="left" Caption="暫借單號" Editor="text" FieldName="ShortTermNO" MaxLength="0" Width="65" Sortable="True" />
                     <JQTools:JQGridColumn Alignment="left" Caption="暫借使用客戶" Editor="text" FieldName="EMPLOYERNAME1" MaxLength="0" Width="90" />
                     <JQTools:JQGridColumn Alignment="left" Caption="暫借事由" Editor="text" FieldName="ShortTermGist" MaxLength="0" Width="180" />

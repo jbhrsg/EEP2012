@@ -135,6 +135,13 @@
   <metadata name="infoHRM_ATTEND_ABSENT_MINUS.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>17, 245</value>
   </metadata>
+  <data name="infoHRM_ATTEND_ABSENT_MINUS.CommandText" xml:space="preserve">
+    <value>select m.SALARY_YYMM,Left(CONVERT(nvarchar(10),GETDATE(),112),6),* from HRM_ATTEND_ABSENT_MINUS m
+	inner join HRM_ATTEND_HOLIDAY h on m.HOLIDAY_ID=h.HOLIDAY_ID
+	inner join HRM_BASE_BASE b on m.EMPLOYEE_ID=b.EMPLOYEE_ID
+where  (m.SALARY_YYMM&gt;=Left(CONVERT(nvarchar(10),GETDATE(),112),6) or ((m.HOLIDAY_ID=1 or m.HOLIDAY_ID=2)  and m.SALARY_YYMM&gt;=Left(CONVERT(nvarchar(10),Dateadd(month,-2,GETDATE()),112),6))) 
+order by m.BEGIN_DATE desc</value>
+  </data>
   <metadata name="auto_AbsentBackID.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>230, 87</value>
   </metadata>

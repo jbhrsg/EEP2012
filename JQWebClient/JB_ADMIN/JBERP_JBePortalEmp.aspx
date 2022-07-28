@@ -126,7 +126,7 @@
             </JQTools:JQDataGrid>
 
             <JQTools:JQDialog ID="JQDialog1" runat="server" BindingObjectID="dataFormMaster" Title="資料維護">
-                <JQTools:JQDataForm ID="dataFormMaster" runat="server" DataMember="EmpBase" HorizontalColumnsCount="2" RemoteName="sJBePortalEmp.EmpBase" AlwaysReadOnly="False" Closed="False" ContinueAdd="False" disapply="False" DivFramed="False" DuplicateCheck="False" HorizontalGap="0" IsAutoPageClose="False" IsAutoPause="False" IsAutoSubmit="False" IsNotifyOFF="False" IsRejectNotify="False" IsRejectON="False" IsShowFlowIcon="False" OnLoadSuccess="OnLoadSuccessDF" ShowApplyButton="False" ValidateStyle="Hint" VerticalGap="0" OnApply="OnApplyDF" >
+                <JQTools:JQDataForm ID="dataFormMaster" runat="server" DataMember="EmpBase" HorizontalColumnsCount="2" RemoteName="sJBePortalEmp.EmpBase" AlwaysReadOnly="False" Closed="False" ContinueAdd="False" disapply="False" DivFramed="False" DuplicateCheck="False" HorizontalGap="0" IsAutoPageClose="False" IsAutoPause="False" IsAutoSubmit="False" IsNotifyOFF="False" IsRejectNotify="False" IsRejectON="False" IsShowFlowIcon="False" OnLoadSuccess="OnLoadSuccessDF" ShowApplyButton="False" ValidateStyle="Dialog" VerticalGap="0" OnApply="OnApplyDF" >
                     <Columns>
                         <JQTools:JQFormColumn Alignment="left" Caption="工號" Editor="text" FieldName="EmpNum" MaxLength="0" NewRow="False" ReadOnly="False" RowSpan="1" Span="1" Visible="True" Width="80" />
                         <JQTools:JQFormColumn Alignment="left" Caption="姓名" Editor="text" FieldName="Name" MaxLength="0" NewRow="False" ReadOnly="False" RowSpan="1" Span="1" Visible="True" Width="100" />

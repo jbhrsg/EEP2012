@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="rERPContinueEmploy" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="rERPContinueEmploy" msdata:IsDataSet="true" msdata:CaseSensitive="true" msdata:UseCurrentLocale="true">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="View_ERPContinueEmploy">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="ContinueEmployNO" type="xs:string" />
+              <xs:element name="CreateBy" type="xs:string" minOccurs="0" />
+              <xs:element name="CreateDate" type="xs:string" minOccurs="0" />
+              <xs:element name="AutoKey" type="xs:string" minOccurs="0" />
+              <xs:element name="Gender" type="xs:string" minOccurs="0" />
+              <xs:element name="Country" type="xs:string" minOccurs="0" />
+              <xs:element name="ImmigrationDate" type="xs:string" minOccurs="0" />
+              <xs:element name="DueDate" type="xs:string" minOccurs="0" />
+              <xs:element name="CEConfirmNO" type="xs:string" minOccurs="0" />
+              <xs:element name="LaborName" type="xs:string" minOccurs="0" />
+              <xs:element name="Employer" type="xs:string" minOccurs="0" />
+              <xs:element name="IsRecontract" type="xs:boolean" minOccurs="0" />
+              <xs:element name="Transfer" type="xs:boolean" minOccurs="0" />
+              <xs:element name="ReturnHome" type="xs:boolean" minOccurs="0" />
+              <xs:element name="BackPot" type="xs:string" minOccurs="0" />
+              <xs:element name="LetterClass" type="xs:string" minOccurs="0" />
+              <xs:element name="LetterNO" type="xs:string" minOccurs="0" />
+              <xs:element name="SalesName" type="xs:string" minOccurs="0" />
+              <xs:element name="CustomerManager" type="xs:string" minOccurs="0" />
+              <xs:element name="SalesManager" type="xs:string" minOccurs="0" />
+              <xs:element name="TransferAg" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//View_ERPContinueEmploy" />
+      <xs:field xpath="ContinueEmployNO" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>

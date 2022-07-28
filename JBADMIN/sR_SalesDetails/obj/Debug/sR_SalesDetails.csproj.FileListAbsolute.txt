@@ -7,9 +7,3 @@ D:\Infolight\EEP2012\EEPNetServer\JBADMIN\sR_SalesDetails.dll
 D:\Infolight\EEP2012\EEPNetServer\JBADMIN\sR_SalesDetails.pdb
 D:\Infolight\EEP2012\JBADMIN\sR_SalesDetails\obj\Debug\sR_SalesDetails.Component.resources
 D:\Infolight\EEP2012\JBADMIN\sR_SalesDetails\obj\Debug\sR_SalesDetails.csprojResolveAssemblyReference.cache
-C:\Program Files (x86)\Infolight\EEP2012\EEPNetServer\JBADMIN\sR_SalesDetails.dll
-C:\Program Files (x86)\Infolight\EEP2012\EEPNetServer\JBADMIN\sR_SalesDetails.pdb
-C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sR_SalesDetails\obj\Debug\sR_SalesDetails.Component.resources
-C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sR_SalesDetails\obj\Debug\sR_SalesDetails.csproj.GenerateResource.Cache
-C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sR_SalesDetails\obj\Debug\sR_SalesDetails.dll
-C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sR_SalesDetails\obj\Debug\sR_SalesDetails.pdb

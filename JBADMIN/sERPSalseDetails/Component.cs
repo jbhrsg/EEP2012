@@ -8,6 +8,8 @@ using System.Linq;
 using System.Text;
 using Newtonsoft.Json;
 using Srvtools;
+using JBTool;
+using System.Collections;
 
 namespace sERPSalseDetails
 {
@@ -77,7 +79,7 @@ namespace sERPSalseDetails
             Double CustAmt = Convert.ToDouble(ucERPSalseMaster.GetFieldCurrentValue("CustAmt"));//客總價
             Double OldCustAmt = CustAmt;//原始客總價
             int SalesQty = Convert.ToInt32(ucERPSalseMaster.GetFieldCurrentValue("SalesQty"));//單位數
-            int SalesQtyView = SalesQty;//見刊             
+            int SalesQtyView = Convert.ToInt32(ucERPSalseMaster.GetFieldCurrentValue("SalesQtyView"));//見刊             
             int Commission = Convert.ToInt32(ucERPSalseMaster.GetFieldCurrentValue("Commission"));//佣金
 
             int PublishType = Convert.ToInt32(ucERPSalseMaster.GetFieldCurrentValue("PublishType"));//刊登方式
@@ -103,6 +105,7 @@ namespace sERPSalseDetails
             int SubCount = PublishCount + PresentCount;//刊+贈
             int sumCount = PublishCount + PresentCount + PresentWNewsCount;//刊+贈+贈週報=>總期數(要跑的次數)
             string SalesDescr = ucERPSalseMaster.GetFieldCurrentValue("SalesDescr").ToString();//銷貨備註
+            string Remark1 = ucERPSalseMaster.GetFieldCurrentValue("Remark1").ToString();//註解
 
             string SalesDate = "";//銷貨日期+1 =>104/05/01 , InvoiceYM=>104/05
             DateTime ContinueDate = DateTime.Parse("1900/01/01");//連登日期
@@ -156,6 +159,12 @@ namespace sERPSalseDetails
             string InvoiceYMPoint = (DateTime.Parse(ucERPSalseMaster.GetFieldCurrentValue("InvoiceYMPoint").ToString())).ToString("yyyy/MM/dd"); ;//結帳日切點
             string CreateBy = ucERPSalseMaster.GetFieldCurrentValue("CreateBy").ToString();
             string CreateDate = (DateTime.Parse(ucERPSalseMaster.GetFieldCurrentValue("CreateDate").ToString())).ToString("yyyy/MM/dd HH:mm");
+            //發報種類
+            int IsAcceptePaper = 0;
+            if (ucERPSalseMaster.GetFieldCurrentValue("IsAcceptePaper") != DBNull.Value)
+            {
+                IsAcceptePaper = Convert.ToInt32(ucERPSalseMaster.GetFieldCurrentValue("IsAcceptePaper"));
+            }
 
             for (int i = 0; i < sumCount; i++)//總期數
             {
@@ -224,7 +233,7 @@ namespace sERPSalseDetails
                         CustAmt = Math.Round(CustPrice * CustLines);//客總額(四捨五入)
                     }
                     OldCustAmt = OldCustAmt - CustAmt;
-                    if (SalesTypeID.Trim() == "1" && i == PublishCount - 1)//要錢的最後一期
+                    if (SalesTypeID.Trim() != "6" && i == PublishCount - 1)//要錢的最後一期
                     {
                         CustAmt = CustAmt +OldCustAmt;
                     }
@@ -238,16 +247,21 @@ namespace sERPSalseDetails
                 }
                 //開始transaction
                 IDbTransaction transaction = connection.BeginTransaction();
+
+                
+                //------------------------------------------------------------------------------------------------------------------
+
                 try
                 {
-                    string SQL = "exec procInsertERPSalseDetails " +i+","+ SalesMasterNO + ",'" + CustNO + "','" + SalesEmployeeID + "','" +
+                    string SQL = "exec procInsertERPSalseDetails " +sumCount+","+ SalesMasterNO + ",'" + CustNO + "','" + SalesEmployeeID + "','" +
                         SalesTypeID + "','" + DMTypeID + "','" + ViewAreaID + "','" + SalesDate + "','" + GrantTypeID + "'," +
                         CustPrice + "," + SalesQty + "," + SalesQtyView + "," + CustAmt + "," + Commission + "," +
-                        PublishCount + "," + PresentCount + "," + PresentWNewsCount + ",'" + SalesDescr + "'," +
+                        PublishCount + "," + PresentCount + "," + PresentWNewsCount + ",'" + SalesDescr + "','" + Remark1 + "'," +
                         CustLines + "," + OfficePrice + "," + OfficeLines + "," + OfficeAmt + ",'" + NewsTypeID + "','" +
-                        NewsAreaID + "','" + NewsPublishID + "'," + Sections+",'" +InvoiceYMPoint+ "','" + CreateBy + "','" + CreateDate + "'";
+                        NewsAreaID + "','" + NewsPublishID + "'," + Sections + ",'" + InvoiceYMPoint + "','" + CreateBy + "','" + CreateDate + "'," + IsAcceptePaper;
                     this.ExecuteSql(SQL, connection, transaction);
-                    transaction.Commit();
+                    transaction.Commit();                                                      
+
                 }
                 catch
                 {
@@ -258,9 +272,60 @@ namespace sERPSalseDetails
                     ReleaseConnection(GetClientInfo(ClientInfoType.LoginDB).ToString(), connection);
                 }
 
-            }                                                                     
+            }
 
         }
+        // 修改發報種類, 修改[0800JOB].dbo.Publishing 出刊狀態 ,刊登起訖
+        public object[] Update0800JOBPublishing(object[] objParam)
+        {
+            //encodeURIComponent
+            string[] parm = objParam[0].ToString().Split(',');
+            string CustNO = parm[0];
+            string SalesTypeID = parm[1];//新的值
+            string IsAcceptePaper = parm[2];
+
+            string userid = GetClientInfo(ClientInfoType.LoginUser).ToString();
+            string username = SrvGL.GetUserName(userid.ToLower());
+
+            string js = string.Empty;
+
+            SqlCommand cmd;
+            SqlConnection conn;
+            string connetionString = null;
+            string sq1 = null;
+            connetionString = "Data Source=192.168.10.60;Initial Catalog=JBADMIN;User ID=JBDBsql;Password=J3554436B";//敦緯內網
+            //connetionString = "Data Source=211.78.84.42;Initial Catalog=JBADMIN0118;User ID=JBDBsql;Password=J3554436B";//Test
+
+            conn = new SqlConnection(connetionString);
+            //IDbConnection conn = (IDbConnection)AllocateConnection(GetClientInfo(ClientInfoType.LoginDB).ToString());
+            if (conn.State != ConnectionState.Open)
+            {
+                conn.Open();
+            }
+            try
+            {
+                //修改發報種類
+                string SQL2 = "exec procUpdateERPCustomersIsAcceptePaper '" + CustNO + "','" + SalesTypeID + "'," + IsAcceptePaper;
+                cmd = new SqlCommand(SQL2, conn);
+                cmd.ExecuteNonQuery();
+
+                sq1 = "exec [192.168.10.70].[0800JOB].dbo.procUpdate0800JOBPublishing '" + CustNO+ "'";//
+                //sq1 = "exec [192.168.10.70].[0800JOB0118].dbo.procUpdate0800JOBPublishing " + CustNO;//Test
+                cmd = new SqlCommand(sq1, conn);
+                cmd.ExecuteNonQuery();
+
+            }
+            catch
+            {
+            }
+            finally
+            {
+                conn.Dispose();
+                ReleaseConnection(GetClientInfo(ClientInfoType.LoginDB).ToString(), conn);
+            }
+            return new object[] { 0, js };
+        }
+
         private void ucERPSalseDetails_BeforeModify(object sender, UpdateComponentBeforeModifyEventArgs e)
         {
             ucERPSalseDetails.SetFieldValue("LastUpdateDate", DateTime.Now);//欄位賦值
@@ -277,6 +342,10 @@ namespace sERPSalseDetails
         private void ucERPSalseMaster_BeforeInsert(object sender, UpdateComponentBeforeInsertEventArgs e)
         {
             ucERPSalseMaster.SetFieldValue("CreateDate", DateTime.Now);//欄位賦值
+            if (ucERPSalseMaster.GetFieldCurrentValue("Is0800Id").ToString() == "False")
+            {
+                ucERPSalseMaster.SetFieldValue("0800Id", DBNull.Value);
+            }
         }
         //代辦事項筆數
         public object[] ShowToDoCount(object[] objParam)
@@ -364,9 +433,10 @@ namespace sERPSalseDetails
             string SalesQty = parm[4];
             string SalesQtyView = parm[5];
             string SalesDescr = parm[6];
-            string YMPoint = parm[7];
-            string sJumpDate = parm[8].Replace('\n', ',');//刊登日期      
-            string sJumpDate2 = parm[9].Replace('\n', ',');//週報日期                       
+            string Remark1 = parm[7];
+            string YMPoint = parm[8];
+            string sJumpDate = parm[9].Replace('\n', ',');//刊登日期      
+            string sJumpDate2 = parm[10].Replace('\n', ',');//週報日期                       
             string CreateDate = DateTime.Now.ToString("yyyy/MM/dd HH:mm");
             string userid = GetClientInfo(ClientInfoType.LoginUser).ToString();
             string LoginUser = SrvGL.GetUserName(userid.ToLower());
@@ -388,13 +458,13 @@ namespace sERPSalseDetails
             try
             {   //贈期
                 string SQL = "exec procInsertERPSalseDetailsLast '"+YMPoint+"','*'," + SalesMasterNO + ",'" + CustNO + "','" + DMTypeID + "','" +
-                      ViewAreaID + "'," + SalesQty + "," + SalesQtyView + ",'" + sJumpDate + "','" + LoginUser + "','" + CreateDate + "','" + SalesDescr + "'";
+                      ViewAreaID + "'," + SalesQty + "," + SalesQtyView + ",'" + sJumpDate + "','" + LoginUser + "','" + CreateDate + "','" + SalesDescr + "','" + Remark1 + "'";
                 this.ExecuteSql(SQL, connection, transaction);
                 //週報
                 if (sJumpDate2.Trim() != "")
                 {
                     string SQL2 = "exec procInsertERPSalseDetailsLast '" + YMPoint + "','+'," + SalesMasterNO + ",'" + CustNO + "','" + DMTypeID + "','" +
-                          ViewAreaID + "'," + SalesQty + "," + SalesQtyView + ",'" + sJumpDate2 + "','" + LoginUser + "','" + CreateDate + "','" + SalesDescr + "'";
+                          ViewAreaID + "'," + SalesQty + "," + SalesQtyView + ",'" + sJumpDate2 + "','" + LoginUser + "','" + CreateDate + "','" + SalesDescr + "','" + Remark1 + "'";
                     this.ExecuteSql(SQL2, connection, transaction);
                 }
                 transaction.Commit();               
@@ -455,31 +525,11 @@ namespace sERPSalseDetails
             string username = SrvGL.GetUserName(userid.ToLower()); 
             string js = string.Empty;
 
-            ////建立資料庫連結
-            //IDbConnection connection = (IDbConnection)AllocateConnection(GetClientInfo(ClientInfoType.LoginDB).ToString());
-
-            ////當連線狀態不等於open時，開啟連結
-            //if (connection.State != ConnectionState.Open)
-            //{
-            //    connection.Open();
-            //}
-
-            ////開始transaction
-            //IDbTransaction transaction = connection.BeginTransaction();
-
-            //try
-            //{
-            //    string SQL = "exec procUpdateERPSalseDetailsIsActive '" + SalesMasterNO + "','" + ItemSeq + "','" + sType + "','" + username + "'";
-            //    this.ExecuteSql(SQL, connection, transaction);
-            //    transaction.Commit();
-            //}
-            //
             SqlCommand cmd;
             SqlConnection conn;
             string connetionString = null;
             string sql = null;
-            string sq2 = null;
-            connetionString = "Data Source=192.168.10.60;Initial Catalog=JBADMIN;User ID=sa;Password=J3554436B";//敦緯內網
+            connetionString = "Data Source=192.168.10.60;Initial Catalog=JBADMIN;User ID=JBDBsql;Password=J3554436B";//敦緯內網
             //connetionString = "Data Source=211.78.84.42;Initial Catalog=JBADMIN;User ID=sa;Password=J3554436B";
 
             conn = new SqlConnection(connetionString);
@@ -495,12 +545,7 @@ namespace sERPSalseDetails
                 sql = "EXEC procUpdateERPSalseDetailsIsActive '" + SalesMasterNO + "','" + ItemSeq + "','" + sType + "','" + username + "'";
                 //sql = "EXEC [60.250.52.107,3225].JBADMIN.dbo.procUpdateERPSalseDetailsIsActive '" + SalesMasterNO + "','" + ItemSeq + "','" + sType + "','" + username + "'";
                 cmd = new SqlCommand(sql, conn);
-                cmd.ExecuteNonQuery();
-                ////刪除行政系統部分 //有權限才可以失效匯入的銷貨
-                sq2 = "EXEC [60.250.52.107,3225].JBADMIN.dbo.procDeleteNjbDeposit '" + CustNO + "','" + depositSeq + "','" + sType + "','" + username + "'";
-                cmd = new SqlCommand(sq2, conn);
-                cmd.ExecuteNonQuery();
-
+                cmd.ExecuteNonQuery();              
             }
             catch
             {
@@ -508,7 +553,7 @@ namespace sERPSalseDetails
             }
             finally
             {
-
+                conn.Dispose();                
                 ReleaseConnection(GetClientInfo(ClientInfoType.LoginDB).ToString(), conn);
             }
             return new object[] { 0, js };
@@ -547,7 +592,6 @@ namespace sERPSalseDetails
             }
             finally
             {
-
                 ReleaseConnection(GetClientInfo(ClientInfoType.LoginDB).ToString(), connection);
             }
             return new object[] { 0, js };
@@ -568,7 +612,7 @@ namespace sERPSalseDetails
             string connetionString = null;
             string sql = null;
 
-            connetionString = "Data Source=192.168.10.60;Initial Catalog=JBADMIN;User ID=sa;Password=J3554436B";//敦緯內網
+            connetionString = "Data Source=192.168.10.60;Initial Catalog=JBADMIN;User ID=JBDBsql;Password=J3554436B";//敦緯內網
             //connetionString = "Data Source=211.78.84.42;Initial Catalog=JBADMIN;User ID=sa;Password=J3554436B";
             conn = new SqlConnection(connetionString);
             //IDbConnection conn = (IDbConnection)AllocateConnection(GetClientInfo(ClientInfoType.LoginDB).ToString());
@@ -592,7 +636,7 @@ namespace sERPSalseDetails
             }
             finally
             {
-
+                conn.Dispose();  
                 ReleaseConnection(GetClientInfo(ClientInfoType.LoginDB).ToString(), conn);
             }
             return new object[] { 0, js };
@@ -633,75 +677,136 @@ namespace sERPSalseDetails
             return new object[] { 0, js };
         }
 
-        //匯入銷貨修改同步更新行政系統(已匯入且未開發票之銷貨)
         private void ucERPSalseDetails_AfterModify(object sender, UpdateComponentAfterModifyEventArgs e)
         {
-            int IsTransSys = Convert.ToInt32(ucERPSalseDetails.GetFieldCurrentValue("IsTransSys"));//匯入?
-            int depositOV = Convert.ToInt32(ucERPSalseDetails.GetFieldCurrentValue("depositOV"));//開發票
 
-            if (IsTransSys == 1 && depositOV==0)
+        }
+        //得到客戶的發報種類
+        public object[] GetIsAcceptePaper(object[] objParam)
+        {
+            string[] parm = objParam[0].ToString().Split(',');
+            string CustNO = parm[0];
+            string js = string.Empty;
+
+            //建立資料庫連結
+            IDbConnection connection = (IDbConnection)AllocateConnection(GetClientInfo(ClientInfoType.LoginDB).ToString());
+
+            //當連線狀態不等於open時，開啟連結
+            if (connection.State != ConnectionState.Open)
             {
-                //主鍵
-                string CustNO = ucERPSalseDetails.GetFieldCurrentValue("CustNO").ToString();//客戶代號
-                string SalesTypeID = ucERPSalseDetails.GetFieldCurrentValue("SalesTypeID").ToString();//交易別
-                string depositSeq = ucERPSalseDetails.GetFieldCurrentValue("depositSeq").ToString();//depositSeq
+                connection.Open();
+            }
 
-                string DMTypeID = ucERPSalseDetails.GetFieldCurrentValue("DMTypeID").ToString();//版別
-                string ViewAreaID = ucERPSalseDetails.GetFieldCurrentValue("ViewAreaID").ToString();//版別區域
-                DateTime SalesDate = DateTime.Parse(ucERPSalseDetails.GetFieldCurrentValue("SalesDate").ToString());//銷貨日期
-                string NSalesDate = SalesDate.ToString("yyyy/MM/dd");
+            //開始transaction
+            IDbTransaction transaction = connection.BeginTransaction();
 
-                string InvoiceYM = ucERPSalseDetails.GetFieldCurrentValue("InvoiceYM").ToString(); ;//發票年月
-                string GrantTypeID = ucERPSalseDetails.GetFieldCurrentValue("GrantTypeID").ToString(); ;//贈期
-                int Commission = Convert.ToInt32(ucERPSalseDetails.GetFieldCurrentValue("Commission").ToString()); ;//佣金
-                Double CustPrice = Convert.ToDouble(ucERPSalseDetails.GetFieldCurrentValue("CustPrice").ToString()); ;//客戶單價
-                Double CustAmt = Convert.ToDouble(ucERPSalseDetails.GetFieldCurrentValue("CustAmt").ToString()); ;//客戶總價
-                int SalesQty = Convert.ToInt32(ucERPSalseDetails.GetFieldCurrentValue("SalesQty").ToString()); ;//單位數
-                int SalesQtyView = Convert.ToInt32(ucERPSalseDetails.GetFieldCurrentValue("SalesQtyView").ToString()); ;//見刊                   
+            try
+            {
+                string sql = " select IsAcceptePaper,IndustryType,ERPCustomerID from View_ERPCustomers where CustNO='" + CustNO + "' ";
+                DataSet sCustNO = this.ExecuteSql(sql, connection, transaction);
+                //// Indented縮排 將資料轉換成Json格式
+                //js = sCustNO.Tables[0].Rows[0]["IsAcceptePaper"].ToString();
+                js = JsonConvert.SerializeObject(sCustNO.Tables[0], Formatting.Indented);
 
-                string NewsTypeID = ucERPSalseDetails.GetFieldCurrentValue("NewsTypeID").ToString(); ;//報別
-                string NewsAreaID = ucERPSalseDetails.GetFieldCurrentValue("NewsAreaID").ToString(); ;//版別
-                string NewsPublishID = ucERPSalseDetails.GetFieldCurrentValue("NewsPublishID").ToString(); ;//發刊單位
-                string Sections = ucERPSalseDetails.GetFieldCurrentValue("Sections").ToString(); ;//發稿段數
-                string OfficeLines = ucERPSalseDetails.GetFieldCurrentValue("OfficeLines").ToString(); ;//發稿行數
-                string OfficePrice = ucERPSalseDetails.GetFieldCurrentValue("OfficePrice").ToString(); ;//繳社單價	
-                string OfficeAmt = ucERPSalseDetails.GetFieldCurrentValue("OfficeAmt").ToString(); ;//繳社總價
-                string CustLines = ucERPSalseDetails.GetFieldCurrentValue("CustLines").ToString(); ;//客戶行數
+                transaction.Commit();
+            }
+            catch
+            {
+                transaction.Rollback();
+            }
+            finally
+            {
 
-                SqlCommand cmd;
-                SqlConnection conn;
-                string connetionString = null;
-                string sql = null;
-                connetionString = "Data Source=192.168.10.60;Initial Catalog=JBADMIN;User ID=sa;Password=J3554436B";//敦緯內網
-                //connetionString = "Data Source=211.78.84.42;Initial Catalog=JBADMIN;User ID=sa;Password=J3554436B";
+                ReleaseConnection(GetClientInfo(ClientInfoType.LoginDB).ToString(), connection);
+            }
+            return new object[] { 0, js };
+        }
 
-                conn = new SqlConnection(connetionString);
-                if (conn.State != ConnectionState.Open)
+        // 取得便利報SalesTypeID=31的日期統計資訊
+        public object[] GeERPSalseDetailsInfo(object[] objParam)
+        {
+            string js = string.Empty;
+
+            //建立資料庫連結
+            IDbConnection connection = (IDbConnection)AllocateConnection(GetClientInfo(ClientInfoType.LoginDB).ToString());
+            //當連線狀態不等於open時，開啟連結
+            if (connection.State != ConnectionState.Open)
+            {
+                connection.Open();
+            }
+            //開始transaction
+            IDbTransaction transaction = connection.BeginTransaction();
+
+            try
+            {
+                string SQL = " exec procReportERPSalseDetailsInfo";
+
+                DataSet ds = this.ExecuteSql(SQL, connection, transaction);
+                //// Indented縮排 將資料轉換成Json格式
+                js = JsonConvert.SerializeObject(ds.Tables[0], Formatting.Indented);
+                transaction.Commit();
+            }
+            catch
+            {
+                transaction.Rollback();
+            }
+            finally
+            {
+                ReleaseConnection(GetClientInfo(ClientInfoType.LoginDB).ToString(), connection);
+            }
+            return new object[] { 0, js };
+        }
+        //================================================================================================================================//
+        /// <summary>Combobox用資料</summary>
+        public class ComboboxField
+        {
+            public string text { get; set; }
+
+            public string value { get; set; }
+
+            public bool selected { get; set; }
+
+            public ComboboxField()
+            {
+                selected = false;
+            }
+        }
+        //取得連動,客戶代號 帶出出刊客戶
+        public object[] Get0800Id(object[] objParam)
+        {
+            try
+            {
+                var Parameter_Input = TheJsonResult.GetParameterObj(objParam);
+                var Code = Parameter_Input["Co_de"].ToString().Trim();                
+                
+                string SQL = @"
+select Id,Code
+from  View_0800jobPublishing
+where Code like '%"+@Code+"%'";
+
+                ArrayList Parameter = new ArrayList();
+                Parameter.Add(new SqlParameter("@Code", Code));
+
+                var DataSet = SQL_Tools.GetDataSet(this, SQL, Parameter);
+
+                var ComboboxList = DataSet.Tables[0].AsEnumerable().Select(m => new ComboboxField
                 {
-                    conn.Open();
-                }
-                try
-                {
-                    sql = "EXEC [60.250.52.107,3225].JBADMIN.dbo.procUpdateNjbDeposit '" + CustNO + "','" + SalesTypeID + "','" + depositSeq + "','" + DMTypeID + "','" + ViewAreaID + "','" +
-                             NSalesDate + "','" + InvoiceYM + "','" + GrantTypeID + "'," + Commission + "," + CustPrice + "," +
-                             CustAmt + "," + SalesQty + "," + SalesQtyView + ",'" + NewsTypeID + "','" + NewsAreaID + "','" +
-                             NewsPublishID + "'," + Sections + "," + OfficeLines + "," + OfficePrice + "," + OfficeAmt + "," + CustLines;
-                    cmd = new SqlCommand(sql, conn);
-                    cmd.ExecuteNonQuery();                   
-                }
-                catch
-                {
-                }
-                finally
-                {
-                    ReleaseConnection(GetClientInfo(ClientInfoType.LoginDB).ToString(), conn);
-                }
+                    value = m.Field<Guid>("Id").ToString(),
+                    text = m.Field<string>("Code") ?? ""
+                }).ToList();
 
+                //預設第一筆
+                if (ComboboxList.Count > 0 && !ComboboxList.Any(m => m.selected == true)) ComboboxList[0].selected = true;
+
+                //回傳
+                return new object[] { 0, JsonConvert.SerializeObject(ComboboxList, Formatting.Indented) };
+            }
+            catch (Exception)
+            {
+                return new object[] { 0, JsonConvert.SerializeObject(new ArrayList(), Formatting.Indented) };
             }
 
         }
-
-        
 
 
 

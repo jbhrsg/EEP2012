@@ -1,0 +1,12 @@
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sCompetition\bin\Debug\sCompetition.dll
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sCompetition\bin\Debug\sCompetition.pdb
+C:\Program Files (x86)\Infolight\EEP2012\EEPNetServer\JBADMIN\sCompetition.dll
+C:\Program Files (x86)\Infolight\EEP2012\EEPNetServer\JBADMIN\sCompetition.pdb
+C:\Program Files (x86)\Infolight\EEP2012\EEPNetServer\JBADMIN\vi-VN\sCompetition.resources.dll
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sCompetition\obj\Debug\sCompetition.csprojResolveAssemblyReference.cache
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sCompetition\obj\Debug\sCompetition.Component.resources
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sCompetition\obj\Debug\sCompetition.Component.vi-VN.resources
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sCompetition\obj\Debug\sCompetition.csproj.GenerateResource.Cache
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sCompetition\obj\Debug\vi-VN\sCompetition.resources.dll
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sCompetition\obj\Debug\sCompetition.dll
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sCompetition\obj\Debug\sCompetition.pdb

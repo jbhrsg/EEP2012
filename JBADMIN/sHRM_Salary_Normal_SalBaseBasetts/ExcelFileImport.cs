@@ -10,7 +10,7 @@ using System.IO;
 using System.Linq;
 using System.Reflection;
 
-namespace TheExcelFileImport
+namespace TheExcelFileImport1
 {
     /// <summary>上傳作業</summary>
     public class ExcelFileImport

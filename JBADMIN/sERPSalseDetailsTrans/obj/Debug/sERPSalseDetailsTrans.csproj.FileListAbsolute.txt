@@ -1,6 +1,7 @@
-C:\Program Files (x86)\Infolight\EEP2012\EEPNetServer\JBADMIN\sERPSalseDetailsTrans.dll
-C:\Program Files (x86)\Infolight\EEP2012\EEPNetServer\JBADMIN\sERPSalseDetailsTrans.pdb
-C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sERPSalseDetailsTrans\obj\Debug\sERPSalseDetailsTrans.Component.resources
-C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sERPSalseDetailsTrans\obj\Debug\sERPSalseDetailsTrans.csproj.GenerateResource.Cache
-C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sERPSalseDetailsTrans\obj\Debug\sERPSalseDetailsTrans.dll
-C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sERPSalseDetailsTrans\obj\Debug\sERPSalseDetailsTrans.pdb
+D:\Infolight\EEP2012\EEPNetServer\JBADMIN\sERPSalseDetailsTrans.dll
+D:\Infolight\EEP2012\EEPNetServer\JBADMIN\sERPSalseDetailsTrans.pdb
+D:\Infolight\EEP2012\JBADMIN\sERPSalseDetailsTrans\obj\Debug\sERPSalseDetailsTrans.Component.resources
+D:\Infolight\EEP2012\JBADMIN\sERPSalseDetailsTrans\obj\Debug\sERPSalseDetailsTrans.csproj.GenerateResource.Cache
+D:\Infolight\EEP2012\JBADMIN\sERPSalseDetailsTrans\obj\Debug\sERPSalseDetailsTrans.dll
+D:\Infolight\EEP2012\JBADMIN\sERPSalseDetailsTrans\obj\Debug\sERPSalseDetailsTrans.pdb
+D:\Infolight\EEP2012\JBADMIN\sERPSalseDetailsTrans\obj\Debug\sERPSalseDetailsTrans.csprojResolveAssemblyReference.cache

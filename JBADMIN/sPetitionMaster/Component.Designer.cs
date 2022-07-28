@@ -34,6 +34,9 @@
             Srvtools.Service service3 = new Srvtools.Service();
             Srvtools.Service service4 = new Srvtools.Service();
             Srvtools.Service service5 = new Srvtools.Service();
+            Srvtools.Service service6 = new Srvtools.Service();
+            Srvtools.Service service7 = new Srvtools.Service();
+            Srvtools.Service service8 = new Srvtools.Service();
             Srvtools.KeyItem keyItem1 = new Srvtools.KeyItem();
             Srvtools.FieldAttr fieldAttr1 = new Srvtools.FieldAttr();
             Srvtools.FieldAttr fieldAttr2 = new Srvtools.FieldAttr();
@@ -70,6 +73,7 @@
             Srvtools.KeyItem keyItem6 = new Srvtools.KeyItem();
             Srvtools.ColumnItem columnItem3 = new Srvtools.ColumnItem();
             Srvtools.ColumnItem columnItem4 = new Srvtools.ColumnItem();
+            Srvtools.KeyItem keyItem7 = new Srvtools.KeyItem();
             this.serviceManager1 = new Srvtools.ServiceManager(this.components);
             this.InfoConnection1 = new Srvtools.InfoConnection(this.components);
             this.PetitionMaster = new Srvtools.InfoCommand(this.components);
@@ -88,6 +92,8 @@
             this.PlusApprove = new Srvtools.InfoCommand(this.components);
             this.idPetitionMaster_PlusApprove = new Srvtools.InfoDataSource(this.components);
             this.ucPlusApproveList = new Srvtools.UpdateComponent(this.components);
+            this.UrgentLevel = new Srvtools.InfoCommand(this.components);
+            this.ReaderList = new Srvtools.InfoCommand(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.InfoConnection1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.PetitionMaster)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.PetitionCountersign)).BeginInit();
@@ -99,6 +105,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.PetitionList)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.PlusApproveList)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.PlusApprove)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.UrgentLevel)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ReaderList)).BeginInit();
             // 
             // serviceManager1
             // 
@@ -117,11 +125,23 @@
             service5.DelegateName = "PlusApproveLists";
             service5.NonLogin = false;
             service5.ServiceName = "PlusApproveLists";
+            service6.DelegateName = "GetListID";
+            service6.NonLogin = false;
+            service6.ServiceName = "GetListID";
+            service7.DelegateName = "GetNormalPetition";
+            service7.NonLogin = false;
+            service7.ServiceName = "GetNormalPetition";
+            service8.DelegateName = "GetReadPetition";
+            service8.NonLogin = false;
+            service8.ServiceName = "GetReadPetition";
             this.serviceManager1.ServiceCollection.Add(service1);
             this.serviceManager1.ServiceCollection.Add(service2);
             this.serviceManager1.ServiceCollection.Add(service3);
             this.serviceManager1.ServiceCollection.Add(service4);
             this.serviceManager1.ServiceCollection.Add(service5);
+            this.serviceManager1.ServiceCollection.Add(service6);
+            this.serviceManager1.ServiceCollection.Add(service7);
+            this.serviceManager1.ServiceCollection.Add(service8);
             // 
             // InfoConnection1
             // 
@@ -310,8 +330,8 @@
             this.PetitionCountersign.EncodingBefore = "Windows-1252";
             this.PetitionCountersign.EncodingConvert = null;
             this.PetitionCountersign.InfoConnection = this.InfoConnection1;
-            keyItem2.KeyName = "AutoKey";
-            keyItem3.KeyName = "PetitionNO";
+            keyItem2.KeyName = "PetitionNO";
+            keyItem3.KeyName = "AutoKey";
             this.PetitionCountersign.KeyFields.Add(keyItem2);
             this.PetitionCountersign.KeyFields.Add(keyItem3);
             this.PetitionCountersign.MultiSetWhere = false;
@@ -575,7 +595,7 @@
             // PetitionList
             // 
             this.PetitionList.CacheConnection = false;
-            this.PetitionList.CommandText = "SELECT * FROM View_UsersGROUPS";
+            this.PetitionList.CommandText = "SELECT DISTINCT USERID,USERNAME  FROM View_UsersGROUPS";
             this.PetitionList.CommandTimeout = 30;
             this.PetitionList.CommandType = System.Data.CommandType.Text;
             this.PetitionList.DynamicTableName = false;
@@ -670,6 +690,57 @@
             this.ucPlusApproveList.TransIsolationLevel = System.Data.IsolationLevel.ReadCommitted;
             this.ucPlusApproveList.UseTranscationScope = false;
             this.ucPlusApproveList.WhereMode = Srvtools.WhereModeType.Keyfields;
+            // 
+            // UrgentLevel
+            // 
+            this.UrgentLevel.CacheConnection = false;
+            this.UrgentLevel.CommandText = "select Code,CodeNmae from CodeFile  where TableName=\'UrgentLevel\' and UseState=\'1" +
+    "\'";
+            this.UrgentLevel.CommandTimeout = 30;
+            this.UrgentLevel.CommandType = System.Data.CommandType.Text;
+            this.UrgentLevel.DynamicTableName = false;
+            this.UrgentLevel.EEPAlias = null;
+            this.UrgentLevel.EncodingAfter = null;
+            this.UrgentLevel.EncodingBefore = "Windows-1252";
+            this.UrgentLevel.EncodingConvert = null;
+            this.UrgentLevel.InfoConnection = this.InfoConnection1;
+            this.UrgentLevel.MultiSetWhere = false;
+            this.UrgentLevel.Name = "UrgentLevel";
+            this.UrgentLevel.NotificationAutoEnlist = false;
+            this.UrgentLevel.SecExcept = null;
+            this.UrgentLevel.SecFieldName = null;
+            this.UrgentLevel.SecStyle = Srvtools.SecurityStyle.ssByNone;
+            this.UrgentLevel.SelectPaging = false;
+            this.UrgentLevel.SelectTop = 0;
+            this.UrgentLevel.SiteControl = false;
+            this.UrgentLevel.SiteFieldName = null;
+            this.UrgentLevel.UpdatedRowSource = System.Data.UpdateRowSource.None;
+            // 
+            // ReaderList
+            // 
+            this.ReaderList.CacheConnection = false;
+            this.ReaderList.CommandText = "SELECT DISTINCT USERID+\'-\'+USERNAME AS USERID,USERNAME  FROM View_UsersGROUPS";
+            this.ReaderList.CommandTimeout = 30;
+            this.ReaderList.CommandType = System.Data.CommandType.Text;
+            this.ReaderList.DynamicTableName = false;
+            this.ReaderList.EEPAlias = null;
+            this.ReaderList.EncodingAfter = null;
+            this.ReaderList.EncodingBefore = "Windows-1252";
+            this.ReaderList.EncodingConvert = null;
+            this.ReaderList.InfoConnection = this.InfoConnection1;
+            keyItem7.KeyName = "USERID";
+            this.ReaderList.KeyFields.Add(keyItem7);
+            this.ReaderList.MultiSetWhere = false;
+            this.ReaderList.Name = "ReaderList";
+            this.ReaderList.NotificationAutoEnlist = false;
+            this.ReaderList.SecExcept = null;
+            this.ReaderList.SecFieldName = null;
+            this.ReaderList.SecStyle = Srvtools.SecurityStyle.ssByNone;
+            this.ReaderList.SelectPaging = false;
+            this.ReaderList.SelectTop = 0;
+            this.ReaderList.SiteControl = false;
+            this.ReaderList.SiteFieldName = null;
+            this.ReaderList.UpdatedRowSource = System.Data.UpdateRowSource.None;
             ((System.ComponentModel.ISupportInitialize)(this.InfoConnection1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.PetitionMaster)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.PetitionCountersign)).EndInit();
@@ -681,6 +752,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.PetitionList)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.PlusApproveList)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.PlusApprove)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.UrgentLevel)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ReaderList)).EndInit();
 
         }
 
@@ -704,5 +777,7 @@
         private Srvtools.InfoCommand PlusApprove;
         private Srvtools.InfoDataSource idPetitionMaster_PlusApprove;
         private Srvtools.UpdateComponent ucPlusApproveList;
+        private Srvtools.InfoCommand UrgentLevel;
+        private Srvtools.InfoCommand ReaderList;
     }
 }

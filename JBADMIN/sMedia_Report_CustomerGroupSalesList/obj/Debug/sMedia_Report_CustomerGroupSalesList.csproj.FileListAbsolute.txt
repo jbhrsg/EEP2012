@@ -1,0 +1,11 @@
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sMedia_Report_CustomerGroupSalesList\bin\Debug\sMedia_Report_CustomerGroupSalesList.dll
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sMedia_Report_CustomerGroupSalesList\bin\Debug\sMedia_Report_CustomerGroupSalesList.pdb
+C:\Program Files (x86)\Infolight\EEP2012\EEPNetServer\JBADMIN\sMedia_Report_CustomerGroupSalesList.dll
+C:\Program Files (x86)\Infolight\EEP2012\EEPNetServer\JBADMIN\sMedia_Report_CustomerGroupSalesList.pdb
+C:\Program Files (x86)\Infolight\EEP2012\EEPNetServer\JBADMIN\vi-VN\sMedia_Report_CustomerGroupSalesList.resources.dll
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sMedia_Report_CustomerGroupSalesList\obj\Debug\sMedia_Report_CustomerGroupSalesList.Component.resources
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sMedia_Report_CustomerGroupSalesList\obj\Debug\sMedia_Report_CustomerGroupSalesList.Component.vi-VN.resources
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sMedia_Report_CustomerGroupSalesList\obj\Debug\sMedia_Report_CustomerGroupSalesList.csproj.GenerateResource.Cache
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sMedia_Report_CustomerGroupSalesList\obj\Debug\vi-VN\sMedia_Report_CustomerGroupSalesList.resources.dll
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sMedia_Report_CustomerGroupSalesList\obj\Debug\sMedia_Report_CustomerGroupSalesList.dll
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sMedia_Report_CustomerGroupSalesList\obj\Debug\sMedia_Report_CustomerGroupSalesList.pdb

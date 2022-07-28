@@ -1,11 +1,12 @@
 C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sJBERP_WorkRecordApply\bin\Debug\sJBERP_WorkRecordApply.dll
 C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sJBERP_WorkRecordApply\bin\Debug\sJBERP_WorkRecordApply.pdb
-C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sJBERP_WorkRecordApply\obj\Debug\sJBERP_WorkRecordApply.csproj.GenerateResource.Cache
-C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sJBERP_WorkRecordApply\obj\Debug\sJBERP_WorkRecordApply.dll
-C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sJBERP_WorkRecordApply\obj\Debug\sJBERP_WorkRecordApply.pdb
 C:\Program Files (x86)\Infolight\EEP2012\EEPNetServer\JBADMIN\sJBERP_WorkRecordApply.dll
 C:\Program Files (x86)\Infolight\EEP2012\EEPNetServer\JBADMIN\sJBERP_WorkRecordApply.pdb
-C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sJBERP_WorkRecordApply\obj\Debug\sJBERP_WorkRecordApply.Component.resources
 C:\Program Files (x86)\Infolight\EEP2012\EEPNetServer\JBADMIN\vi-VN\sJBERP_WorkRecordApply.resources.dll
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sJBERP_WorkRecordApply\obj\Debug\sJBERP_WorkRecordApply.csprojResolveAssemblyReference.cache
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sJBERP_WorkRecordApply\obj\Debug\sJBERP_WorkRecordApply.Component.resources
 C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sJBERP_WorkRecordApply\obj\Debug\sJBERP_WorkRecordApply.Component.vi-VN.resources
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sJBERP_WorkRecordApply\obj\Debug\sJBERP_WorkRecordApply.csproj.GenerateResource.Cache
 C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sJBERP_WorkRecordApply\obj\Debug\vi-VN\sJBERP_WorkRecordApply.resources.dll
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sJBERP_WorkRecordApply\obj\Debug\sJBERP_WorkRecordApply.dll
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sJBERP_WorkRecordApply\obj\Debug\sJBERP_WorkRecordApply.pdb

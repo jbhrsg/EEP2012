@@ -1,0 +1,11 @@
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sERP_Report_InvoiceDetails_WarrantDetails\bin\Debug\sERP_Report_InvoiceDetails_WarrantDetails.dll
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sERP_Report_InvoiceDetails_WarrantDetails\bin\Debug\sERP_Report_InvoiceDetails_WarrantDetails.pdb
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sERP_Report_InvoiceDetails_WarrantDetails\obj\Debug\sERP_Report_InvoiceDetails_WarrantDetails.csproj.GenerateResource.Cache
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sERP_Report_InvoiceDetails_WarrantDetails\obj\Debug\sERP_Report_InvoiceDetails_WarrantDetails.dll
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sERP_Report_InvoiceDetails_WarrantDetails\obj\Debug\sERP_Report_InvoiceDetails_WarrantDetails.pdb
+C:\Program Files (x86)\Infolight\EEP2012\EEPNetServer\JBADMIN\sERP_Report_InvoiceDetails_WarrantDetails.dll
+C:\Program Files (x86)\Infolight\EEP2012\EEPNetServer\JBADMIN\sERP_Report_InvoiceDetails_WarrantDetails.pdb
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sERP_Report_InvoiceDetails_WarrantDetails\obj\Debug\sERP_Report_InvoiceDetails_WarrantDetails.Component.resources
+C:\Program Files (x86)\Infolight\EEP2012\EEPNetServer\JBADMIN\vi-VN\sERP_Report_InvoiceDetails_WarrantDetails.resources.dll
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sERP_Report_InvoiceDetails_WarrantDetails\obj\Debug\sERP_Report_InvoiceDetails_WarrantDetails.Component.vi-VN.resources
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sERP_Report_InvoiceDetails_WarrantDetails\obj\Debug\vi-VN\sERP_Report_InvoiceDetails_WarrantDetails.resources.dll

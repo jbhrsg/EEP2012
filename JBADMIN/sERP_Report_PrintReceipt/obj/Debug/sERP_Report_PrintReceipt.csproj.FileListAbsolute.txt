@@ -1,0 +1,11 @@
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sERP_Report_PrintReceipt\bin\Debug\sERP_Report_PrintReceipt.dll
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sERP_Report_PrintReceipt\bin\Debug\sERP_Report_PrintReceipt.pdb
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sERP_Report_PrintReceipt\obj\Debug\sERP_Report_PrintReceipt.csproj.GenerateResource.Cache
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sERP_Report_PrintReceipt\obj\Debug\sERP_Report_PrintReceipt.dll
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sERP_Report_PrintReceipt\obj\Debug\sERP_Report_PrintReceipt.pdb
+C:\Program Files (x86)\Infolight\EEP2012\EEPNetServer\JBADMIN\sERP_Report_PrintReceipt.dll
+C:\Program Files (x86)\Infolight\EEP2012\EEPNetServer\JBADMIN\sERP_Report_PrintReceipt.pdb
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sERP_Report_PrintReceipt\obj\Debug\sERP_Report_PrintReceipt.Component.resources
+C:\Program Files (x86)\Infolight\EEP2012\EEPNetServer\JBADMIN\vi-VN\sERP_Report_PrintReceipt.resources.dll
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sERP_Report_PrintReceipt\obj\Debug\sERP_Report_PrintReceipt.Component.vi-VN.resources
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sERP_Report_PrintReceipt\obj\Debug\vi-VN\sERP_Report_PrintReceipt.resources.dll

@@ -10,3 +10,5 @@ D:\Infolight\EEP2012\JBADMIN\sDeviceUse\obj\Release\sDeviceUse.Component.resourc
 D:\Infolight\EEP2012\JBADMIN\sDeviceUse\obj\Release\sDeviceUse.csproj.GenerateResource.Cache
 D:\Infolight\EEP2012\JBADMIN\sDeviceUse\obj\Release\sDeviceUse.dll
 D:\Infolight\EEP2012\JBADMIN\sDeviceUse\obj\Release\sDeviceUse.pdb
+D:\Infolight\EEP2012\JBADMIN\sDeviceUse\bin\Release\Newtonsoft.Json.dll
+D:\Infolight\EEP2012\JBADMIN\sDeviceUse\bin\Release\Newtonsoft.Json.xml

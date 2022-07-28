@@ -132,7 +132,7 @@
 ,case when CHARINDEX('/',REVERSE(SENDTO_NAME))=0  then SENDTO_NAME else REVERSE(SUBSTRING(REVERSE(SENDTO_NAME),0,CHARINDEX('/',REVERSE(SENDTO_NAME)))) end as SENDTO_NAME
 ,replace((SELECT '◎'+[BeginTime]+'~'+[EndTime]+'：'+CHAR(13)+[RecordText]+CHAR(13)+CHAR(13) FROM [WRDetail] WHERE WRNO=[WRMaster].WRNO FOR XML PATH ('')),'&amp;#x0D;',char(13)) as RecordText
 FROM dbo.[WRMaster]
-LEFT OUTER JOIN EIPHRSYS.dbo.SYS_TODOLIST AS tdl ON tdl.FORM_PRESENTATION = 'WRNO=''' + dbo.WRMaster.WRNO + '''' 
+LEFT OUTER JOIN EIPHRSYS.dbo.SYS_TODOLIST AS tdl ON tdl.FORM_PRESENTATION = 'WRNO=''' + dbo.WRMaster.WRNO + '''' and tdl.[STATUS]!='F'
 order by [WRMaster].WRNO desc
 
 --WITH EMPLOYEE_CTE([ORG_NO],[ORG_DESC],[UPPER_ORG],[ORG_MAN],USERID,LEVEL)--

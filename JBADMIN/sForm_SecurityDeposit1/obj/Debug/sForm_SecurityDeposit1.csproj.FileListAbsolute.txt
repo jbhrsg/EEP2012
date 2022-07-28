@@ -1,0 +1,12 @@
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sForm_SecurityDeposit1\bin\Debug\sForm_SecurityDeposit1.dll
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sForm_SecurityDeposit1\bin\Debug\sForm_SecurityDeposit1.pdb
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sForm_SecurityDeposit1\obj\Debug\sForm_SecurityDeposit1.csproj.GenerateResource.Cache
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sForm_SecurityDeposit1\obj\Debug\sForm_SecurityDeposit1.dll
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sForm_SecurityDeposit1\obj\Debug\sForm_SecurityDeposit1.pdb
+C:\Program Files (x86)\Infolight\EEP2012\EEPNetServer\JBADMIN\sForm_SecurityDeposit1.dll
+C:\Program Files (x86)\Infolight\EEP2012\EEPNetServer\JBADMIN\sForm_SecurityDeposit1.pdb
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sForm_SecurityDeposit1\obj\Debug\sForm_SecurityDeposit1.Component.resources
+C:\Program Files (x86)\Infolight\EEP2012\EEPNetServer\JBADMIN\vi-VN\sForm_SecurityDeposit1.resources.dll
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sForm_SecurityDeposit1\obj\Debug\sForm_SecurityDeposit1.Component.vi-VN.resources
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sForm_SecurityDeposit1\obj\Debug\vi-VN\sForm_SecurityDeposit1.resources.dll
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sForm_SecurityDeposit1\obj\Debug\sForm_SecurityDeposit1.csprojResolveAssemblyReference.cache

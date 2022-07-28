@@ -82,7 +82,7 @@
                 <QueryColumns>
                     <JQTools:JQQueryColumn AndOr="and" Caption="起迄日期" Condition="=" DataType="datetime" DefaultValue="_today" Editor="datebox" FieldName="StdDate" IsNvarChar="False" NewLine="False" RemoteMethod="False" RowSpan="0" Span="0" Width="90" />
                     <JQTools:JQQueryColumn AndOr="and" Caption="-" Condition="=" DataType="datetime" DefaultValue="_today" Editor="datebox" FieldName="EndDate" IsNvarChar="False" NewLine="False" RemoteMethod="False" RowSpan="0" Span="0" Width="90" />
-                    <JQTools:JQQueryColumn AndOr="and" Caption="公務車號" Condition="%" DataType="string" Editor="infocombobox" EditorOptions="valueField:'DeviceItemsID',textField:'DeviceItemsName',remoteName:'sDeviceKMQuery.DeviceItem',tableName:'DeviceItem',pageSize:'-1',checkData:false,selectOnly:true,cacheRelationText:false,panelHeight:200" FieldName="DeviceItemsID" IsNvarChar="False" NewLine="False" RemoteMethod="False" RowSpan="0" Span="0" Width="125" />
+                    <JQTools:JQQueryColumn AndOr="and" Caption="公務車號" Condition="%" DataType="string" Editor="infocombobox" EditorOptions="valueField:'DeviceItemsID',textField:'DeviceItemsName',remoteName:'sDeviceKMQuery.DeviceItem',tableName:'DeviceItem',pageSize:'-1',checkData:false,selectOnly:false,cacheRelationText:false,panelHeight:200" FieldName="DeviceItemsID" IsNvarChar="False" NewLine="False" RemoteMethod="False" RowSpan="0" Span="0" Width="125" />
                 </QueryColumns>
             </JQTools:JQDataGrid>
 

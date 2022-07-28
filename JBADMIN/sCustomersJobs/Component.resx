@@ -118,54 +118,56 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <metadata name="serviceManager1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>17, 55</value>
+    <value>17, 111</value>
   </metadata>
   <metadata name="InfoConnection1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>17, 131</value>
+    <value>17, 205</value>
   </metadata>
   <metadata name="HUT_Customer.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>17, 359</value>
+    <value>17, 252</value>
   </metadata>
   <data name="HUT_Customer.CommandText" xml:space="preserve">
     <value>SELECT distinct c.*,
 Isnull(c.CustomerTelArea+'-','')+c.CustomerTel AS CustTel,LEFT(c.CustName,8) as CustName2,
-(select COUNT(*) from HUT_Job j where j.CustID=c.CustID ) as JobCount,
-Convert(nvarchar(10),r.ContactDate,111) as ContactDate,r.UpdateBy,
-Isnull(Convert(nvarchar(10),t.BeginDate,111),'')+Isnull('～'+Convert(nvarchar(10),t.EndDate,111),'') as sContract,
+dbo.funReturnCustomerJobCount(c.CustID,1) as JobOCount,dbo.funReturnCustomerJobCount(c.CustID,2) as JobCCount,
+dbo.funReturnCustomerContract(c.CustID) sContract,
 dbo.funReturnHUT_CustomersHunterName(c.CustID) as sHunterName
 FROM [HUT_Customer] c
- left join HUT_CustomerContactRecord r on c.CustID=r.CustID and r.AutoKey=(select top 1 AutoKey from HUT_CustomerContactRecord where CustID=c.CustID order by ContactDate desc,UpdateDate desc)
- left join [JBADMIN].dbo.ERPContract t on t.CustomerID=c.CustID and t.Contractkey=(select top 1 Contractkey from [JBADMIN].dbo.ERPContract where CustomerID=c.CustID order by BeginDate desc,EndDate desc)
- left join HUT_Job j on j.CustID=c.CustID
- left join HUT_Hunter h on h.ID=j.HunterID
-ORDER BY c.CREATEDATE DESC</value>
+ORDER BY c.LastUpdateDate DESC</value>
   </data>
   <metadata name="ucHUT_Customer.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>17, 397</value>
+    <value>17, 346</value>
   </metadata>
   <metadata name="HUT_CustomerContactRecord.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>17, 473</value>
+    <value>17, 393</value>
+  </metadata>
+  <data name="HUT_CustomerContactRecord.CommandText" xml:space="preserve">
+    <value>select  *,dbo.funReturnContactLogsViewer(ShareTo) as ShareToName  
+	,(select top 1 SalesTeamID from [Hunter].dbo.HUT_Hunter where HunterName like '%'+ContactLogs.CreateByName+'%') as SalesTeamID
+from ContactLogs
+where SalesKindID='S05'
+order by ContactDate desc</value>
+  </data>
+  <metadata name="infoConnection2.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 440</value>
   </metadata>
   <metadata name="ucHUT_CustomerContactRecord.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>17, 93</value>
-  </metadata>
-  <metadata name="idHUT_Customer_ContactRecord.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>17, 511</value>
+    <value>17, 487</value>
   </metadata>
   <metadata name="View_HUT_Customer.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>17, 625</value>
+    <value>17, 534</value>
   </metadata>
   <metadata name="autoNumber1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>17, 169</value>
+    <value>17, 581</value>
   </metadata>
   <metadata name="infoDataSource1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>17, 663</value>
+    <value>17, 628</value>
   </metadata>
   <metadata name="HUT_IndCategory.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>17, 739</value>
+    <value>17, 675</value>
   </metadata>
   <metadata name="HUT_IndCategoryL1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>17, 777</value>
+    <value>17, 722</value>
   </metadata>
   <data name="HUT_IndCategoryL1.CommandText" xml:space="preserve">
     <value>Select 0 as ID,
@@ -183,7 +185,7 @@ HUT_IndCategory.NodeLevel
 ORDER BY ID</value>
   </data>
   <metadata name="HUT_EduSubject.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>17, 815</value>
+    <value>17, 769</value>
   </metadata>
   <data name="HUT_EduSubject.CommandText" xml:space="preserve">
     <value>select 0 as ID,'不拘' as SubjectName,null  AS ParentID,1 as NodeLevel
@@ -196,100 +198,103 @@ select HUT_EduSubject. ID,
 order by ID</value>
   </data>
   <metadata name="HUT_Contract.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>17, 853</value>
+    <value>17, 816</value>
   </metadata>
   <metadata name="HUT_ZJobArea.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>17, 891</value>
+    <value>17, 863</value>
   </metadata>
   <metadata name="HUT_ZNotifyType.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>17, 929</value>
+    <value>17, 910</value>
   </metadata>
   <metadata name="HUT_JobRequest.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>17, 967</value>
+    <value>17, 957</value>
   </metadata>
   <metadata name="HUT_GenType.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>17, 1005</value>
+    <value>17, 1004</value>
   </metadata>
   <metadata name="HUT_ZEduLevel.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>17, 1043</value>
+    <value>17, 1051</value>
   </metadata>
   <metadata name="HUT_ZLangNeedType.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>17, 1081</value>
+    <value>17, 1098</value>
   </metadata>
   <metadata name="HUT_ZIMType.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>17, 1119</value>
+    <value>17, 1145</value>
   </metadata>
   <metadata name="HUT_ZLangType.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>17, 1157</value>
+    <value>17, 1192</value>
   </metadata>
   <metadata name="HUT_ZLangLevel.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>17, 1195</value>
+    <value>17, 1239</value>
   </metadata>
   <metadata name="HUT_ZPRIType.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>17, 1233</value>
+    <value>17, 1286</value>
   </metadata>
   <metadata name="HUT_ZKeepType.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>17, 1271</value>
+    <value>17, 1333</value>
   </metadata>
   <metadata name="HUT_ZGRAType.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>17, 1309</value>
+    <value>17, 1380</value>
   </metadata>
   <metadata name="HUT_Hunter.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>17, 1347</value>
+    <value>17, 1427</value>
   </metadata>
   <metadata name="HUT_Job.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>17, 1385</value>
+    <value>17, 1474</value>
   </metadata>
   <metadata name="ucHUT_Job.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>17, 1423</value>
+    <value>17, 1521</value>
   </metadata>
   <metadata name="HUT_JobContactRecord.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>17, 1461</value>
+    <value>17, 1568</value>
   </metadata>
   <metadata name="idHUT_Job_RequirementRecord.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>17, 1499</value>
+    <value>17, 1662</value>
   </metadata>
   <metadata name="HUT_JobRequirementRecord.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>17, 1537</value>
+    <value>17, 1709</value>
   </metadata>
   <metadata name="ucHUT_JobContactRecord.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>17, 1575</value>
+    <value>17, 1756</value>
   </metadata>
   <metadata name="HUT_JobDateLog.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>17, 1651</value>
-  </metadata>
-  <metadata name="ucHUT_JobDateLog.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>17, 1727</value>
-  </metadata>
-  <metadata name="ucHUT_JobRequirementRecord.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>17, 1765</value>
-  </metadata>
-  <metadata name="infoDataSource2.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>17, 1803</value>
   </metadata>
+  <metadata name="ucHUT_JobDateLog.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 1850</value>
+  </metadata>
+  <metadata name="ucHUT_JobRequirementRecord.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 1897</value>
+  </metadata>
+  <metadata name="infoDataSource2.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 1991</value>
+  </metadata>
   <metadata name="idHUT_Job_DateLog.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>17, 1841</value>
+    <value>17, 2038</value>
   </metadata>
   <metadata name="HUT_CustomerContactPerson.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>17, 701</value>
+    <value>17, 2085</value>
   </metadata>
   <data name="HUT_CustomerContactPerson.CommandText" xml:space="preserve">
     <value>select *,ContactTelArea+'-'+ContactTel+Case ISNULL(ContactTelExt,'') when '' then '' else '#'+ContactTelExt end as sContactTel
-,ContactMobile1+','+ContactMobile2 as ContactMobileAll,(select ContactStatusName from HUT_CustomerContactStatus where ID=ContactStatus) as ContactStatusName
+,ContactMobile1+','+ContactMobile2 as ContactMobileAll,(select ContactStatusName from HUT_CustomerContactStatus where ID=ContactStatus) as ContactStatusName,CASE WHEN PATINDEX('%[A-z]%', ContactName)&gt;0 then 
+	substring(ContactName,PATINDEX('%[A-z]%', ContactName),len(ContactName)+1) else '' end as CONTACT_ENAME,Isnull(ContactTelArea+'-','')+ContactTel as CONTACT_TEL,
+	CASE WHEN PATINDEX('%[A-z]%', ContactName)&gt;0 then substring(ContactName,0,PATINDEX('%[A-z]%', ContactName)) else ContactName end as CONTACT_CNAME
 from HUT_CustomerContactPerson
-order by ContactStatus,UpdateDate desc</value>
+order by ContactProperty desc,ContactStatus,AutoKey
+</value>
   </data>
   <metadata name="ucHUT_CustomerContactPerson.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>17, 549</value>
+    <value>17, 2132</value>
   </metadata>
   <metadata name="idHUT_Customer_ContactPerson.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>17, 207</value>
+    <value>17, 2179</value>
   </metadata>
   <metadata name="HUT_CustomerContactStatus.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>17, 1879</value>
+    <value>17, 2226</value>
   </metadata>
   <metadata name="HUT_JobContactPerson.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>17, 1917</value>
+    <value>17, 2273</value>
   </metadata>
   <data name="HUT_JobContactPerson.CommandText" xml:space="preserve">
     <value>select *,ContactTelArea+'-'+ContactTel+Case ISNULL(ContactTelExt,'') when '' then '' else '#'+ContactTelExt end as sContactTel
@@ -298,46 +303,74 @@ from HUT_JobContactPerson
 order by ContactStatus,AutoKey desc</value>
   </data>
   <metadata name="ucHUT_JobContactPerson.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>17, 1955</value>
+    <value>17, 2320</value>
   </metadata>
   <metadata name="idHUT_Job_ContactPerson.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>17, 1993</value>
+    <value>17, 2367</value>
   </metadata>
   <metadata name="autoNumberJob.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>17, 2069</value>
+    <value>17, 2414</value>
   </metadata>
   <metadata name="idHUT_Customer_File.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>17, 245</value>
+    <value>17, 2461</value>
   </metadata>
   <metadata name="HUT_CustomerFile.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>17, 283</value>
+    <value>17, 2508</value>
   </metadata>
   <metadata name="ucHUT_CustomerFile.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>17, 321</value>
+    <value>17, 2555</value>
   </metadata>
   <metadata name="idHUT_Job_File.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>17, 1613</value>
+    <value>17, 2602</value>
   </metadata>
   <metadata name="HUT_JobFile.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>17, 2031</value>
+    <value>17, 2649</value>
   </metadata>
   <metadata name="ucHUT_JobFile.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>17, 1689</value>
+    <value>17, 2696</value>
   </metadata>
   <metadata name="HUT_ContryArea.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>426, 109</value>
+    <value>17, 2743</value>
   </metadata>
   <metadata name="infoJobCloseReason.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>17, 587</value>
+    <value>17, 2790</value>
   </metadata>
   <metadata name="infoRequirementRecordJoin.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>262, 437</value>
+    <value>17, 2837</value>
   </metadata>
   <metadata name="ucHUT_ContryArea.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>406, 165</value>
+    <value>17, 64</value>
   </metadata>
-  <metadata name="infoCommand1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>425, 1636</value>
+  <metadata name="infoSelectUser.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 158</value>
+  </metadata>
+  <metadata name="ucHUT_JobAssignLogs.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 1944</value>
+  </metadata>
+  <metadata name="HUT_JobAssignLogs.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 1615</value>
+  </metadata>
+  <data name="HUT_JobAssignLogs.CommandText" xml:space="preserve">
+    <value>select HUT_JobAssignLogs.*,(select NameC from HUT_User where UserID=HUT_JobAssignLogs.UserID) as NameC
+,(select HunterName from HUT_Hunter where ID=HUT_JobAssignLogs.HunterID) as AssignHunterName
+,(select HunterName from HUT_Hunter where ID=h.HunterID) as JobHunterName
+,dbo.funReturnJobAssignLogsStatus(1,0,HUT_JobAssignLogs.JobID) as JBERPSalseName
+,ROUND(iTurnoverReal*ratioReal,0) as AmountReal
+,c.CustTaxNo
+,Isnull((select SalesTeamID from HUT_Hunter where ID=HUT_JobAssignLogs.HunterID),0) as HunterSalesTeamID,Convert(nvarchar(10),DATEADD(day,AssureDay-1,AssignTime),111) as Deadline
+from HUT_JobAssignLogs
+	inner join HUT_Job h on HUT_JobAssignLogs.JobID=h.JobID
+	inner join HUT_customer c on h.CustID=c.CustID
+order by AssignTime desc,AssignID desc</value>
+  </data>
+  <metadata name="idHUT_User_JobAssignLogs.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 299</value>
+  </metadata>
+  <metadata name="infoSelectJobInterview.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 17</value>
+  </metadata>
+  <metadata name="CONTACT_TRADE.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>314, 2837</value>
   </metadata>
   <metadata name="$this.TrayLargeIcon" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>False</value>

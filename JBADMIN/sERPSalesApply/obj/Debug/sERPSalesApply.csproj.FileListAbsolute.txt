@@ -8,4 +8,4 @@ C:\Program Files (x86)\Infolight\EEP2012\EEPNetServer\JBADMIN\sERPSalesApply.pdb
 C:\Program Files (x86)\Infolight\EEP2012\EEPNetServer\JBADMIN\vi-VN\sERPSalesApply.resources.dll
 C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sERPSalesApply\obj\Debug\sERPSalesApply.Component.vi-VN.resources
 C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sERPSalesApply\obj\Debug\vi-VN\sERPSalesApply.resources.dll
-C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sERPSalesApply\obj\Debug\sERPSalesApply2.Component.resources
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sERPSalesApply\obj\Debug\sERPSalesApply.Component.resources

@@ -6,7 +6,7 @@
 <head runat="server">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <title></title>
-    <script src="../js/jquery.jbjob.js"></script>
+     <script src="../js/jquery.jbjob.js"></script>
     <script type="text/javascript">
         function genCheckBox(val) {
             if (val)

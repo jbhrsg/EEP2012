@@ -83,9 +83,25 @@
                 if (IssueTypeID != "") {
                     $('#dataFormMasterIssueDescr').val(row.IssueTypeDescr);
                 }
-                if (IssueType == 84 || IssueType == 85) {
+                if (IssueType == 84 || IssueType == 85 || IssueType == 91) {
                     ShowField(_ShowHideFields1);
+                    var _ShowHideField = ['PeriodDays'];
+                    if (IssueType != 91) {
+                        ShowField(_ShowHideField);
+                        $("#dataFormMasterEndDate").datebox('enable');
+                    }
+                    else {
+                        HiddenField(_ShowHideField);
+                        $("#dataFormMasterEndDate").datebox('disable');
+
+                    }
                 }
+                else {
+                    HiddenField(_ShowHideFields1);
+                }
+                 
+                
+
             }
             //需求項目選到"軟體安裝"
             if (row.IssueTypeName == '軟體安裝') {
@@ -139,6 +155,7 @@
             var parameter = Request.getQueryStringByName("D");
             var mode = Request.getQueryStringByName("NAVIGATOR_MODE");
             var dataFormMasterIsTransfer = $("#dataFormMasterIsTransfer").checkbox('getValue');
+           
             //檢查預計完成日(有可能只填預計完成日or若填實際完成日期則檢查不可大於今天)
             if (parameter == "EstimationDate" && mode == "2" && dataFormMasterIsTransfer ==false) {//管控"填預計完成日"此步驟的onApply
                 var dataFormMasterEstimationDate = $("#dataFormMasterEstimationDate").datebox('getValue');
@@ -180,6 +197,7 @@
             }
             //檢查驗收日期
             if (parameter == "CheckDate" && mode == "2") {//管控"填驗收日期"此步驟的onApply
+              
                 var dataFormMasterCheckDate = $("#dataFormMasterCheckDate").datebox('getValue');
                 var dataFormMasterCloseDate = $("#dataFormMasterCloseDate").datebox('getValue');
                 if (dataFormMasterCheckDate == "" || dataFormMasterCheckDate == undefined) {
@@ -214,7 +232,7 @@
             if ((IssueTypeID == 'undefined' || IssueTypeID == '') ) {
                 HiddenField(_ShowHideFields1);
             }
-            else if (IssueTypeID == '84' || IssueTypeID == '85') {
+            else if (IssueTypeID == '84' || IssueTypeID == '85' || IssueTypeID == '91') {
                  ShowField(_ShowHideFields1);
             }
             else {
@@ -239,6 +257,9 @@
                 $("#dataFormMasterIsTransfer").closest('tr').appendTo(hideTable);//轉單
                 $("#dataFormMasterIssueTypeID").combobox("disable");//需求項目
                 $("#dataFormMasterCost").closest('tr').appendTo(hideTable);//花費時數
+                $("#dataFormMasterBeginDate").datebox('setValue', getTodayDate());
+                $("#dataFormMasterEndDate").datebox('setValue', getYearLastDate());
+
             } else if (parameter == "Notify" || mode == "0" || mode1 == "viewed") {//Notify 通知(0) viewed
                 
                 //$("#dataFormMasterPlusApproveEmployeeID").closest('tr').appendTo(hideTable);
@@ -263,10 +284,15 @@
                     $("#dataFormMasterIssueTypeID").combobox('enable');
                     $("#dataFormMasterIssueTypeID").combobox('setWhere', "IssueBelongID=" + $("#dataFormMasterIssueBelongID").combobox("getValue"));
                     $("#dataFormMasterIssueDescr").prop('disabled', false);
+                    //當
+                    if (IssueTypeID != 84 && IssueTypeID != 85 && IssueTypeID != 91) {
+                        HiddenField(_ShowHideFields1);
+                    }
                     if (parameter == "EstimationDate") {
                         $("#dataFormMasterIsTransfer").attr("disabled",false);//轉單
                     }
                 } if (parameter == "CloseDate") {//填實際完成日期
+               
                     $("#dataFormMasterCloseDate").datebox("textbox").focus();//實際完成日期為焦點
                     $("#dataFormMasterCloseDescr").prop('disabled', false);//處理描述打開
                     $("#dataFormMasterEstimationDate").datebox("disable");//預計完成日不可選取  
@@ -384,6 +410,13 @@
             var today = yyyy + "/" + MM + "/" + dd;
             return today;
         }
+        //取得當年最後一天 
+        function getYearLastDate() {
+            var dt = new Date();
+            var year = dt.getFullYear();
+            var lastdate = year + '/' + 12 + '/' + 31;
+            return lastdate;
+        }
     </script>
 </head>
 <body>
@@ -436,8 +469,8 @@
                         <JQTools:JQFormColumn Alignment="left" Caption="需求單號" Editor="text" FieldName="IssueJobNO" Format="" Width="90" ReadOnly="True" NewRow="False" maxlength="0" Span="1" />
                         <JQTools:JQFormColumn Alignment="left" Caption="申請日期" Editor="datebox" FieldName="IssueJobDate" Format="" Width="100" NewRow="False" maxlength="0" Span="1" />
                         <JQTools:JQFormColumn Alignment="left" Caption="申請部門" Editor="infocombobox" EditorOptions="valueField:'ORG_NO',textField:'ORG_DESC',remoteName:'sIssueJob.ORG',tableName:'ORG',pageSize:'-1',checkData:false,selectOnly:false,cacheRelationText:false,panelHeight:200" FieldName="ORG_NO" MaxLength="0" NewRow="False" ReadOnly="False" RowSpan="1" Span="1" Visible="True" Width="147" />
-                        <JQTools:JQFormColumn Alignment="left" Caption="負責職稱" Editor="infocombobox" FieldName="IssueBelongID" Format="" Width="180" EditorOptions="valueField:'GROUPID',textField:'GROUPNAME',remoteName:'sIssueJob.GROUPS',tableName:'GROUPS',pageSize:'-1',checkData:true,selectOnly:false,cacheRelationText:false,onSelect:GetIssueType,panelHeight:200" NewRow="True" maxlength="0" Span="1" />
-                        <JQTools:JQFormColumn Alignment="left" Caption="需求項目" Editor="infocombobox" FieldName="IssueTypeID" Format="" Width="312" EditorOptions="valueField:'IssueTypeID',textField:'IssueTypeName',remoteName:'sIssueJob.IssueType',tableName:'IssueType',pageSize:'-1',checkData:false,selectOnly:true,cacheRelationText:false,onSelect:IssueTypeIDOnSelect,panelHeight:200" maxlength="0" NewRow="False" Span="2" />
+                        <JQTools:JQFormColumn Alignment="left" Caption="負責職稱" Editor="infocombobox" FieldName="IssueBelongID" Format="" Width="190" EditorOptions="valueField:'GROUPID',textField:'GROUPNAME',remoteName:'sIssueJob.GROUPS',tableName:'GROUPS',pageSize:'-1',checkData:true,selectOnly:false,cacheRelationText:false,onSelect:GetIssueType,panelHeight:200" NewRow="True" maxlength="0" Span="1" />
+                        <JQTools:JQFormColumn Alignment="left" Caption="需求項目" Editor="infocombobox" FieldName="IssueTypeID" Format="" Width="318" EditorOptions="valueField:'IssueTypeID',textField:'IssueTypeName',remoteName:'sIssueJob.IssueType',tableName:'IssueType',pageSize:'-1',checkData:false,selectOnly:true,cacheRelationText:false,onSelect:IssueTypeIDOnSelect,panelHeight:200" maxlength="0" NewRow="False" Span="2" />
                         <JQTools:JQFormColumn Alignment="left" Caption="需求描述" Editor="textarea" FieldName="IssueDescr" Format="" maxlength="0" Width="560" EditorOptions="height:100" NewRow="True" Span="3" />
                         <JQTools:JQFormColumn Alignment="left" Caption="啟用日期" Editor="datebox" FieldName="BeginDate" NewRow="False" ReadOnly="False" Width="90" OnBlur="" />
                         <JQTools:JQFormColumn Alignment="left" Caption="使用天數" Editor="numberbox" FieldName="PeriodDays" MaxLength="0" NewRow="False" Span="1" Width="70" OnBlur="OnBlurPeriodsDays" />

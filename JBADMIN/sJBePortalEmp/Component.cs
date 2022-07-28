@@ -38,7 +38,7 @@ namespace sJBePortalEmp
             SqlConnection conn;
             string connetionString = null;
             string sql = null;
-            connetionString = "Data Source=60.250.52.106,1433;Initial Catalog=JBePortal;User ID=sa;Password=8421JB1021";
+            connetionString = "Data Source=192.168.1.41;Initial Catalog=JBePortal;User ID=jb;Password=8VU4QTby55tbzR4A";
 
             conn = new SqlConnection(connetionString);
             if (conn.State != ConnectionState.Open)
@@ -74,7 +74,7 @@ namespace sJBePortalEmp
             SqlConnection conn;
             string connetionString = null;
             string sql = null;
-            connetionString = "Data Source=60.250.52.106,1433;Initial Catalog=JBePortal;User ID=sa;Password=8421JB1021";
+            connetionString = "Data Source=192.168.1.41;Initial Catalog=JBePortal;User ID=jb;Password=8VU4QTby55tbzR4A";
 
             conn = new SqlConnection(connetionString);
             if (conn.State != ConnectionState.Open)
@@ -164,7 +164,7 @@ namespace sJBePortalEmp
 
             try
             {
-                string sql = " select count(*) as iCount from [60.250.52.106,1433].JBePortal.dbo.EmpBase where EmpNum='" + EmpNum + "'";
+                string sql = " select count(*) as iCount from [192.168.1.41].JBePortal.dbo.EmpBase where EmpNum='" + EmpNum + "'";
                 DataSet sCustNO = this.ExecuteSql(sql, connection, transaction);
                 //// Indented縮排 將資料轉換成Json格式
                 js = sCustNO.Tables[0].Rows[0]["iCount"].ToString();
@@ -202,7 +202,7 @@ namespace sJBePortalEmp
 
             try
             {
-                string sql = " select count(*) as iCount2 from [60.250.52.106,1433].JBePortal.dbo.EmpBase where Account='" + Account + "'";
+                string sql = " select count(*) as iCount2 from [192.168.1.41].JBePortal.dbo.EmpBase where Account='" + Account + "'";
                 DataSet sCustNO = this.ExecuteSql(sql, connection, transaction);
                 //// Indented縮排 將資料轉換成Json格式
                 js = sCustNO.Tables[0].Rows[0]["iCount2"].ToString();

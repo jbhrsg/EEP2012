@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="glVoucherList" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="glVoucherList" msdata:IsDataSet="true" msdata:CaseSensitive="true" msdata:UseCurrentLocale="true">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="glVoucherDetails">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="AutoKey" type="xs:int" minOccurs="0" />
+              <xs:element name="CompanyID" type="xs:int" minOccurs="0" />
+              <xs:element name="VoucherID" type="xs:int" minOccurs="0" />
+              <xs:element name="VoucherNoShow" type="xs:string" minOccurs="0" />
+              <xs:element name="VoucherDate" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="Item" type="xs:int" minOccurs="0" />
+              <xs:element name="BorrowLendType" type="xs:int" minOccurs="0" />
+              <xs:element name="Acno" type="xs:string" minOccurs="0" />
+              <xs:element name="SubAcno" type="xs:string" minOccurs="0" />
+              <xs:element name="AcnoSubAcno" type="xs:string" minOccurs="0" />
+              <xs:element name="DescribeID" type="xs:string" minOccurs="0" />
+              <xs:element name="CostCenterID" type="xs:string" minOccurs="0" />
+              <xs:element name="Describe" type="xs:string" minOccurs="0" />
+              <xs:element name="Amt" type="xs:int" minOccurs="0" />
+              <xs:element name="AmtShow" type="xs:int" minOccurs="0" />
+              <xs:element name="CreateBy" type="xs:string" minOccurs="0" />
+              <xs:element name="CreateDate" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="AcnoName" type="xs:string" minOccurs="0" />
+              <xs:element name="CostCenterName" type="xs:string" minOccurs="0" />
+              <xs:element name="BorrowAmt" type="xs:int" minOccurs="0" />
+              <xs:element name="LendAmt" type="xs:int" minOccurs="0" />
+              <xs:element name="VoucherYear" type="xs:string" minOccurs="0" />
+              <xs:element name="RemainAmt" type="xs:int" minOccurs="0" />
+              <xs:element name="FinalAmt" type="xs:long" minOccurs="0" />
+              <xs:element name="VoucherType" type="xs:string" minOccurs="0" />
+              <xs:element name="VoucherN" type="xs:string" minOccurs="0" />
+              <xs:element name="BorrowCount" type="xs:int" minOccurs="0" />
+              <xs:element name="LendCount" type="xs:int" minOccurs="0" />
+              <xs:element name="BorrowRemainAmt" type="xs:int" minOccurs="0" />
+              <xs:element name="LendRemainAmt" type="xs:int" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="ProfitList">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="CompanyID" type="xs:int" minOccurs="0" />
+              <xs:element name="BalanceYear" type="xs:string" minOccurs="0" />
+              <xs:element name="VoucherType" type="xs:string" minOccurs="0" />
+              <xs:element name="Acno" type="xs:string" minOccurs="0" />
+              <xs:element name="ClassID" type="xs:string" minOccurs="0" />
+              <xs:element name="ClassName" type="xs:string" minOccurs="0" />
+              <xs:element name="AcnoName" type="xs:string" minOccurs="0" />
+              <xs:element name="Amt1" type="xs:int" minOccurs="0" />
+              <xs:element name="Amt2" type="xs:int" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="AssetDebt1">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="CompanyID" type="xs:int" minOccurs="0" />
+              <xs:element name="BalanceYear" type="xs:string" minOccurs="0" />
+              <xs:element name="VoucherType" type="xs:string" minOccurs="0" />
+              <xs:element name="BalanceSheetID" type="xs:int" minOccurs="0" />
+              <xs:element name="BalanceSheetName" type="xs:string" minOccurs="0" />
+              <xs:element name="Acno" type="xs:string" minOccurs="0" />
+              <xs:element name="ClassID" type="xs:string" minOccurs="0" />
+              <xs:element name="ClassName" type="xs:string" minOccurs="0" />
+              <xs:element name="AcnoName" type="xs:string" minOccurs="0" />
+              <xs:element name="Amt" type="xs:int" minOccurs="0" />
+              <xs:element name="SumClass" type="xs:int" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="ProfitListCompare">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="CompanyID" type="xs:int" minOccurs="0" />
+              <xs:element name="BalanceYear" type="xs:string" minOccurs="0" />
+              <xs:element name="VoucherType" type="xs:string" minOccurs="0" />
+              <xs:element name="Acno" type="xs:string" minOccurs="0" />
+              <xs:element name="ClassID" type="xs:string" minOccurs="0" />
+              <xs:element name="ClassName" type="xs:string" minOccurs="0" />
+              <xs:element name="AcnoName" type="xs:string" minOccurs="0" />
+              <xs:element name="MAmt" msdata:Caption="Amt1" type="xs:int" minOccurs="0" />
+              <xs:element name="LYAmt" msdata:Caption="Amt2" type="xs:int" minOccurs="0" />
+              <xs:element name="AvgLYAmt" type="xs:string" minOccurs="0" />
+              <xs:element name="iPercent" type="xs:double" minOccurs="0" />
+              <xs:element name="sAlert" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="POMasterAmortization">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="CompanyName" type="xs:string" minOccurs="0" />
+              <xs:element name="AssetName" type="xs:string" minOccurs="0" />
+              <xs:element name="AssetGetDate" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="CostCenterID" type="xs:string" minOccurs="0" />
+              <xs:element name="AssetGetAmt" type="xs:int" minOccurs="0" />
+              <xs:element name="ScrapValue" type="xs:int" minOccurs="0" />
+              <xs:element name="RemainAmt" type="xs:int" minOccurs="0" />
+              <xs:element name="MentionAmt" type="xs:int" minOccurs="0" />
+              <xs:element name="Amt" type="xs:int" minOccurs="0" />
+              <xs:element name="DeductionAmt" type="xs:int" minOccurs="0" />
+              <xs:element name="glAmt" type="xs:int" minOccurs="0" />
+              <xs:element name="BorrowNo" type="xs:string" minOccurs="0" />
+              <xs:element name="LendNo" type="xs:string" minOccurs="0" />
+              <xs:element name="AddAmt" type="xs:int" minOccurs="0" />
+              <xs:element name="FiveAmt" type="xs:int" minOccurs="0" />
+              <xs:element name="AssetQty" type="xs:short" minOccurs="0" />
+              <xs:element name="AssetUnit" type="xs:int" minOccurs="0" />
+              <xs:element name="NowValue" type="xs:int" minOccurs="0" />
+              <xs:element name="sumAmt" type="xs:int" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

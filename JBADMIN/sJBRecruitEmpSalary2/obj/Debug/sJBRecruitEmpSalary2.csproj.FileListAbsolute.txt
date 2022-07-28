@@ -1,0 +1,9 @@
+D:\Infolight\EEP2012\JBADMIN\sJBRecruitEmpSalary2\bin\Debug\sJBRecruitEmpSalary2.dll
+D:\Infolight\EEP2012\JBADMIN\sJBRecruitEmpSalary2\bin\Debug\sJBRecruitEmpSalary2.pdb
+D:\Infolight\EEP2012\JBADMIN\sJBRecruitEmpSalary2\obj\Debug\sJBRecruitEmpSalary2.csproj.GenerateResource.Cache
+D:\Infolight\EEP2012\JBADMIN\sJBRecruitEmpSalary2\obj\Debug\sJBRecruitEmpSalary2.dll
+D:\Infolight\EEP2012\JBADMIN\sJBRecruitEmpSalary2\obj\Debug\sJBRecruitEmpSalary2.pdb
+D:\Infolight\EEP2012\EEPNetServer\JBADMIN\sJBRecruitEmpSalary2.dll
+D:\Infolight\EEP2012\EEPNetServer\JBADMIN\sJBRecruitEmpSalary2.pdb
+D:\Infolight\EEP2012\JBADMIN\sJBRecruitEmpSalary2\obj\Debug\sJBRecruitEmpSalary2.Component.resources
+D:\Infolight\EEP2012\JBADMIN\sJBRecruitEmpSalary2\obj\Debug\sJBRecruitEmpSalary2.csprojResolveAssemblyReference.cache

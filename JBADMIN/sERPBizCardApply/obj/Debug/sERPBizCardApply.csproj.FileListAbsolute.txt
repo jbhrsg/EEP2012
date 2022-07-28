@@ -1,0 +1,9 @@
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sERPBizCardApply\bin\Debug\sERPBizCardApply.dll
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sERPBizCardApply\bin\Debug\sERPBizCardApply.pdb
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sERPBizCardApply\obj\Debug\sERPBizCardApply.csproj.GenerateResource.Cache
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sERPBizCardApply\obj\Debug\sERPBizCardApply.dll
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sERPBizCardApply\obj\Debug\sERPBizCardApply.pdb
+C:\Program Files (x86)\Infolight\EEP2012\EEPNetServer\JBADMIN\sERPBizCardApply.dll
+C:\Program Files (x86)\Infolight\EEP2012\EEPNetServer\JBADMIN\sERPBizCardApply.pdb
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sERPBizCardApply\obj\Debug\sERPBizCardApply.Component.resources
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sERPBizCardApply\obj\Debug\sERPBizCardApply.csprojResolveAssemblyReference.cache

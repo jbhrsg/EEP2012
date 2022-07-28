@@ -43,6 +43,7 @@
             Srvtools.FieldAttr fieldAttr11 = new Srvtools.FieldAttr();
             Srvtools.FieldAttr fieldAttr12 = new Srvtools.FieldAttr();
             Srvtools.FieldAttr fieldAttr13 = new Srvtools.FieldAttr();
+            Srvtools.FieldAttr fieldAttr14 = new Srvtools.FieldAttr();
             Srvtools.KeyItem keyItem2 = new Srvtools.KeyItem();
             Srvtools.Service service1 = new Srvtools.Service();
             Srvtools.Service service2 = new Srvtools.Service();
@@ -56,8 +57,38 @@
             Srvtools.Service service10 = new Srvtools.Service();
             Srvtools.Service service11 = new Srvtools.Service();
             Srvtools.Service service12 = new Srvtools.Service();
+            Srvtools.Service service13 = new Srvtools.Service();
+            Srvtools.Service service14 = new Srvtools.Service();
+            Srvtools.Service service15 = new Srvtools.Service();
+            Srvtools.Service service16 = new Srvtools.Service();
+            Srvtools.Service service17 = new Srvtools.Service();
+            Srvtools.Service service18 = new Srvtools.Service();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Component));
             Srvtools.KeyItem keyItem3 = new Srvtools.KeyItem();
+            Srvtools.KeyItem keyItem4 = new Srvtools.KeyItem();
+            Srvtools.FieldAttr fieldAttr15 = new Srvtools.FieldAttr();
+            Srvtools.FieldAttr fieldAttr16 = new Srvtools.FieldAttr();
+            Srvtools.FieldAttr fieldAttr17 = new Srvtools.FieldAttr();
+            Srvtools.FieldAttr fieldAttr18 = new Srvtools.FieldAttr();
+            Srvtools.FieldAttr fieldAttr19 = new Srvtools.FieldAttr();
+            Srvtools.FieldAttr fieldAttr20 = new Srvtools.FieldAttr();
+            Srvtools.FieldAttr fieldAttr21 = new Srvtools.FieldAttr();
+            Srvtools.FieldAttr fieldAttr22 = new Srvtools.FieldAttr();
+            Srvtools.FieldAttr fieldAttr23 = new Srvtools.FieldAttr();
+            Srvtools.FieldAttr fieldAttr24 = new Srvtools.FieldAttr();
+            Srvtools.FieldAttr fieldAttr25 = new Srvtools.FieldAttr();
+            Srvtools.FieldAttr fieldAttr26 = new Srvtools.FieldAttr();
+            Srvtools.FieldAttr fieldAttr27 = new Srvtools.FieldAttr();
+            Srvtools.FieldAttr fieldAttr28 = new Srvtools.FieldAttr();
+            Srvtools.FieldAttr fieldAttr29 = new Srvtools.FieldAttr();
+            Srvtools.FieldAttr fieldAttr30 = new Srvtools.FieldAttr();
+            Srvtools.FieldAttr fieldAttr31 = new Srvtools.FieldAttr();
+            Srvtools.FieldAttr fieldAttr32 = new Srvtools.FieldAttr();
+            Srvtools.FieldAttr fieldAttr33 = new Srvtools.FieldAttr();
+            Srvtools.FieldAttr fieldAttr34 = new Srvtools.FieldAttr();
+            Srvtools.FieldAttr fieldAttr35 = new Srvtools.FieldAttr();
+            Srvtools.FieldAttr fieldAttr36 = new Srvtools.FieldAttr();
+            Srvtools.FieldAttr fieldAttr37 = new Srvtools.FieldAttr();
             this.InfoConnection1 = new Srvtools.InfoConnection(this.components);
             this.HRMAttendAbsentApply = new Srvtools.InfoCommand(this.components);
             this.ucHRMAttendAbsentApply = new Srvtools.UpdateComponent(this.components);
@@ -68,6 +99,8 @@
             this.infoHRM_BASE_BASE = new Srvtools.InfoCommand(this.components);
             this.infoABSENT_PLUS = new Srvtools.InfoCommand(this.components);
             this.infoAgentEmployeeID = new Srvtools.InfoCommand(this.components);
+            this.HRM_ATTEND_ABSENT_MINUS = new Srvtools.InfoCommand(this.components);
+            this.ucHRM_ATTEND_ABSENT_MINUS = new Srvtools.UpdateComponent(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.InfoConnection1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.HRMAttendAbsentApply)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.infoHRM_ATTEND_HOLIDAY)).BeginInit();
@@ -75,6 +108,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.infoHRM_BASE_BASE)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.infoABSENT_PLUS)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.infoAgentEmployeeID)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.HRM_ATTEND_ABSENT_MINUS)).BeginInit();
             // 
             // InfoConnection1
             // 
@@ -83,7 +117,8 @@
             // HRMAttendAbsentApply
             // 
             this.HRMAttendAbsentApply.CacheConnection = false;
-            this.HRMAttendAbsentApply.CommandText = "SELECT dbo.[HRMAttendAbsentApply].* FROM dbo.[HRMAttendAbsentApply]";
+            this.HRMAttendAbsentApply.CommandText = "SELECT dbo.[HRMAttendAbsentApply].*,\'\' as EFFECT_DATE FROM dbo.[HRMAttendAbsentAp" +
+    "ply]";
             this.HRMAttendAbsentApply.CommandTimeout = 30;
             this.HRMAttendAbsentApply.CommandType = System.Data.CommandType.Text;
             this.HRMAttendAbsentApply.DynamicTableName = false;
@@ -201,6 +236,13 @@
             fieldAttr13.TrimLength = 0;
             fieldAttr13.UpdateEnable = true;
             fieldAttr13.WhereMode = true;
+            fieldAttr14.CheckNull = false;
+            fieldAttr14.DataField = "ORG_NO";
+            fieldAttr14.DefaultMode = Srvtools.DefaultModeType.Insert;
+            fieldAttr14.DefaultValue = null;
+            fieldAttr14.TrimLength = 0;
+            fieldAttr14.UpdateEnable = true;
+            fieldAttr14.WhereMode = true;
             this.ucHRMAttendAbsentApply.FieldAttrs.Add(fieldAttr1);
             this.ucHRMAttendAbsentApply.FieldAttrs.Add(fieldAttr2);
             this.ucHRMAttendAbsentApply.FieldAttrs.Add(fieldAttr3);
@@ -214,6 +256,7 @@
             this.ucHRMAttendAbsentApply.FieldAttrs.Add(fieldAttr11);
             this.ucHRMAttendAbsentApply.FieldAttrs.Add(fieldAttr12);
             this.ucHRMAttendAbsentApply.FieldAttrs.Add(fieldAttr13);
+            this.ucHRMAttendAbsentApply.FieldAttrs.Add(fieldAttr14);
             this.ucHRMAttendAbsentApply.LogInfo = null;
             this.ucHRMAttendAbsentApply.Name = "ucHRMAttendAbsentApply";
             this.ucHRMAttendAbsentApply.RowAffectsCheck = true;
@@ -227,6 +270,7 @@
             this.ucHRMAttendAbsentApply.UseTranscationScope = false;
             this.ucHRMAttendAbsentApply.WhereMode = Srvtools.WhereModeType.Keyfields;
             this.ucHRMAttendAbsentApply.BeforeInsert += new Srvtools.UpdateComponentBeforeInsertEventHandler(this.ucHRMAttendAbsentApply_BeforeInsert);
+            this.ucHRMAttendAbsentApply.BeforeModify += new Srvtools.UpdateComponentBeforeModifyEventHandler(this.ucHRMAttendAbsentApply_BeforeModify);
             // 
             // auto_AbsentMinusID
             // 
@@ -249,7 +293,7 @@
             // 
             this.infoHRM_ATTEND_HOLIDAY.CacheConnection = false;
             this.infoHRM_ATTEND_HOLIDAY.CommandText = "SELECT HOLIDAY_ID,HOLIDAY_CODE,HOLIDAY_CNAME,HOLIDAY_FLAG       \r\nFROM  HRM_ATTEN" +
-    "D_HOLIDAY\r\nwhere HOLIDAY_KIND_ID!=1";
+    "D_HOLIDAY\r\nwhere HOLIDAY_KIND_ID!=1 and HOLIDAY_FLAG=\'-\'";
             this.infoHRM_ATTEND_HOLIDAY.CommandTimeout = 30;
             this.infoHRM_ATTEND_HOLIDAY.CommandType = System.Data.CommandType.Text;
             this.infoHRM_ATTEND_HOLIDAY.DynamicTableName = false;
@@ -314,6 +358,24 @@
             service12.DelegateName = "getEmployeeID";
             service12.NonLogin = false;
             service12.ServiceName = "getEmployeeID";
+            service13.DelegateName = "checkAgentEmployeeID";
+            service13.NonLogin = false;
+            service13.ServiceName = "checkAgentEmployeeID";
+            service14.DelegateName = "GetSignNotesData";
+            service14.NonLogin = false;
+            service14.ServiceName = "GetSignNotesData";
+            service15.DelegateName = "getEFFECT_DATE";
+            service15.NonLogin = false;
+            service15.ServiceName = "getEFFECT_DATE";
+            service16.DelegateName = "GetUserOrgNOs";
+            service16.NonLogin = false;
+            service16.ServiceName = "GetUserOrgNOs";
+            service17.DelegateName = "flowSendCheck";
+            service17.NonLogin = false;
+            service17.ServiceName = "flowSendCheck";
+            service18.DelegateName = "flowCheckDate";
+            service18.NonLogin = false;
+            service18.ServiceName = "flowCheckDate";
             this.serviceManager1.ServiceCollection.Add(service1);
             this.serviceManager1.ServiceCollection.Add(service2);
             this.serviceManager1.ServiceCollection.Add(service3);
@@ -326,6 +388,12 @@
             this.serviceManager1.ServiceCollection.Add(service10);
             this.serviceManager1.ServiceCollection.Add(service11);
             this.serviceManager1.ServiceCollection.Add(service12);
+            this.serviceManager1.ServiceCollection.Add(service13);
+            this.serviceManager1.ServiceCollection.Add(service14);
+            this.serviceManager1.ServiceCollection.Add(service15);
+            this.serviceManager1.ServiceCollection.Add(service16);
+            this.serviceManager1.ServiceCollection.Add(service17);
+            this.serviceManager1.ServiceCollection.Add(service18);
             // 
             // infoHRM_BASE_BASE
             // 
@@ -378,8 +446,9 @@
             // infoAgentEmployeeID
             // 
             this.infoAgentEmployeeID.CacheConnection = false;
-            this.infoAgentEmployeeID.CommandText = "SELECT  EMPLOYEE_ID,EMPLOYEE_CODE,NAME_C  \r\nFrom [dtHRM_BaseAndBasetts_Employed](" +
-    "GetDate())";
+            this.infoAgentEmployeeID.CommandText = "select \'0\' as EMPLOYEE_ID,\'0\' as EMPLOYEE_CODE,\'人資室\' as NAME_C\r\nunion \r\nSELECT  E" +
+    "MPLOYEE_ID,EMPLOYEE_CODE,NAME_C  \r\nFrom [dtHRM_BaseAndBasetts_Employed](GetDate(" +
+    "))";
             this.infoAgentEmployeeID.CommandTimeout = 30;
             this.infoAgentEmployeeID.CommandType = System.Data.CommandType.Text;
             this.infoAgentEmployeeID.DynamicTableName = false;
@@ -401,6 +470,233 @@
             this.infoAgentEmployeeID.SiteControl = false;
             this.infoAgentEmployeeID.SiteFieldName = null;
             this.infoAgentEmployeeID.UpdatedRowSource = System.Data.UpdateRowSource.None;
+            // 
+            // HRM_ATTEND_ABSENT_MINUS
+            // 
+            this.HRM_ATTEND_ABSENT_MINUS.CacheConnection = false;
+            this.HRM_ATTEND_ABSENT_MINUS.CommandText = resources.GetString("HRM_ATTEND_ABSENT_MINUS.CommandText");
+            this.HRM_ATTEND_ABSENT_MINUS.CommandTimeout = 30;
+            this.HRM_ATTEND_ABSENT_MINUS.CommandType = System.Data.CommandType.Text;
+            this.HRM_ATTEND_ABSENT_MINUS.DynamicTableName = false;
+            this.HRM_ATTEND_ABSENT_MINUS.EEPAlias = null;
+            this.HRM_ATTEND_ABSENT_MINUS.EncodingAfter = null;
+            this.HRM_ATTEND_ABSENT_MINUS.EncodingBefore = "Windows-1252";
+            this.HRM_ATTEND_ABSENT_MINUS.EncodingConvert = null;
+            this.HRM_ATTEND_ABSENT_MINUS.InfoConnection = this.infoConnection2;
+            keyItem4.KeyName = "ABSENT_MINUS_ID";
+            this.HRM_ATTEND_ABSENT_MINUS.KeyFields.Add(keyItem4);
+            this.HRM_ATTEND_ABSENT_MINUS.MultiSetWhere = false;
+            this.HRM_ATTEND_ABSENT_MINUS.Name = "HRM_ATTEND_ABSENT_MINUS";
+            this.HRM_ATTEND_ABSENT_MINUS.NotificationAutoEnlist = false;
+            this.HRM_ATTEND_ABSENT_MINUS.SecExcept = "ATTEND_ADMIN";
+            this.HRM_ATTEND_ABSENT_MINUS.SecFieldName = "DEPT_ASSISTANT_CODE";
+            this.HRM_ATTEND_ABSENT_MINUS.SecStyle = Srvtools.SecurityStyle.ssByGroup;
+            this.HRM_ATTEND_ABSENT_MINUS.SelectPaging = false;
+            this.HRM_ATTEND_ABSENT_MINUS.SelectTop = 0;
+            this.HRM_ATTEND_ABSENT_MINUS.SiteControl = false;
+            this.HRM_ATTEND_ABSENT_MINUS.SiteFieldName = null;
+            this.HRM_ATTEND_ABSENT_MINUS.UpdatedRowSource = System.Data.UpdateRowSource.None;
+            // 
+            // ucHRM_ATTEND_ABSENT_MINUS
+            // 
+            this.ucHRM_ATTEND_ABSENT_MINUS.AutoTrans = true;
+            this.ucHRM_ATTEND_ABSENT_MINUS.ExceptJoin = false;
+            fieldAttr15.CheckNull = false;
+            fieldAttr15.DataField = "ABSENT_MINUS_ID";
+            fieldAttr15.DefaultMode = Srvtools.DefaultModeType.Insert;
+            fieldAttr15.DefaultValue = null;
+            fieldAttr15.TrimLength = 0;
+            fieldAttr15.UpdateEnable = true;
+            fieldAttr15.WhereMode = true;
+            fieldAttr16.CheckNull = false;
+            fieldAttr16.DataField = "EMPLOYEE_ID";
+            fieldAttr16.DefaultMode = Srvtools.DefaultModeType.Insert;
+            fieldAttr16.DefaultValue = null;
+            fieldAttr16.TrimLength = 0;
+            fieldAttr16.UpdateEnable = true;
+            fieldAttr16.WhereMode = true;
+            fieldAttr17.CheckNull = false;
+            fieldAttr17.DataField = "BEGIN_DATE";
+            fieldAttr17.DefaultMode = Srvtools.DefaultModeType.Insert;
+            fieldAttr17.DefaultValue = null;
+            fieldAttr17.TrimLength = 0;
+            fieldAttr17.UpdateEnable = true;
+            fieldAttr17.WhereMode = true;
+            fieldAttr18.CheckNull = false;
+            fieldAttr18.DataField = "END_DATE";
+            fieldAttr18.DefaultMode = Srvtools.DefaultModeType.Insert;
+            fieldAttr18.DefaultValue = null;
+            fieldAttr18.TrimLength = 0;
+            fieldAttr18.UpdateEnable = true;
+            fieldAttr18.WhereMode = true;
+            fieldAttr19.CheckNull = false;
+            fieldAttr19.DataField = "BEGIN_TIME";
+            fieldAttr19.DefaultMode = Srvtools.DefaultModeType.Insert;
+            fieldAttr19.DefaultValue = null;
+            fieldAttr19.TrimLength = 0;
+            fieldAttr19.UpdateEnable = true;
+            fieldAttr19.WhereMode = true;
+            fieldAttr20.CheckNull = false;
+            fieldAttr20.DataField = "END_TIME";
+            fieldAttr20.DefaultMode = Srvtools.DefaultModeType.Insert;
+            fieldAttr20.DefaultValue = null;
+            fieldAttr20.TrimLength = 0;
+            fieldAttr20.UpdateEnable = true;
+            fieldAttr20.WhereMode = true;
+            fieldAttr21.CheckNull = false;
+            fieldAttr21.DataField = "ABSENT_DATE_TIME_BEGIN";
+            fieldAttr21.DefaultMode = Srvtools.DefaultModeType.Insert;
+            fieldAttr21.DefaultValue = null;
+            fieldAttr21.TrimLength = 0;
+            fieldAttr21.UpdateEnable = true;
+            fieldAttr21.WhereMode = true;
+            fieldAttr22.CheckNull = false;
+            fieldAttr22.DataField = "ABSENT_DATE_TIME_END";
+            fieldAttr22.DefaultMode = Srvtools.DefaultModeType.Insert;
+            fieldAttr22.DefaultValue = null;
+            fieldAttr22.TrimLength = 0;
+            fieldAttr22.UpdateEnable = true;
+            fieldAttr22.WhereMode = true;
+            fieldAttr23.CheckNull = false;
+            fieldAttr23.DataField = "HOLIDAY_ID";
+            fieldAttr23.DefaultMode = Srvtools.DefaultModeType.Insert;
+            fieldAttr23.DefaultValue = null;
+            fieldAttr23.TrimLength = 0;
+            fieldAttr23.UpdateEnable = true;
+            fieldAttr23.WhereMode = true;
+            fieldAttr24.CheckNull = false;
+            fieldAttr24.DataField = "TOTAL_HOURS";
+            fieldAttr24.DefaultMode = Srvtools.DefaultModeType.Insert;
+            fieldAttr24.DefaultValue = null;
+            fieldAttr24.TrimLength = 0;
+            fieldAttr24.UpdateEnable = true;
+            fieldAttr24.WhereMode = true;
+            fieldAttr25.CheckNull = false;
+            fieldAttr25.DataField = "TOTAL_DAY";
+            fieldAttr25.DefaultMode = Srvtools.DefaultModeType.Insert;
+            fieldAttr25.DefaultValue = null;
+            fieldAttr25.TrimLength = 0;
+            fieldAttr25.UpdateEnable = true;
+            fieldAttr25.WhereMode = true;
+            fieldAttr26.CheckNull = false;
+            fieldAttr26.DataField = "SALARY_YYMM";
+            fieldAttr26.DefaultMode = Srvtools.DefaultModeType.Insert;
+            fieldAttr26.DefaultValue = null;
+            fieldAttr26.TrimLength = 0;
+            fieldAttr26.UpdateEnable = true;
+            fieldAttr26.WhereMode = true;
+            fieldAttr27.CheckNull = false;
+            fieldAttr27.DataField = "MEMO";
+            fieldAttr27.DefaultMode = Srvtools.DefaultModeType.Insert;
+            fieldAttr27.DefaultValue = null;
+            fieldAttr27.TrimLength = 0;
+            fieldAttr27.UpdateEnable = true;
+            fieldAttr27.WhereMode = true;
+            fieldAttr28.CheckNull = false;
+            fieldAttr28.DataField = "ABSENT_NO";
+            fieldAttr28.DefaultMode = Srvtools.DefaultModeType.Insert;
+            fieldAttr28.DefaultValue = null;
+            fieldAttr28.TrimLength = 0;
+            fieldAttr28.UpdateEnable = true;
+            fieldAttr28.WhereMode = true;
+            fieldAttr29.CheckNull = false;
+            fieldAttr29.DataField = "NOT_ALLOW_MODIFY";
+            fieldAttr29.DefaultMode = Srvtools.DefaultModeType.Insert;
+            fieldAttr29.DefaultValue = "N";
+            fieldAttr29.TrimLength = 0;
+            fieldAttr29.UpdateEnable = true;
+            fieldAttr29.WhereMode = true;
+            fieldAttr30.CheckNull = false;
+            fieldAttr30.DataField = "NOT_CALCULATE";
+            fieldAttr30.DefaultMode = Srvtools.DefaultModeType.Insert;
+            fieldAttr30.DefaultValue = "N";
+            fieldAttr30.TrimLength = 0;
+            fieldAttr30.UpdateEnable = true;
+            fieldAttr30.WhereMode = true;
+            fieldAttr31.CheckNull = false;
+            fieldAttr31.DataField = "SYSCREATE";
+            fieldAttr31.DefaultMode = Srvtools.DefaultModeType.Insert;
+            fieldAttr31.DefaultValue = "N";
+            fieldAttr31.TrimLength = 0;
+            fieldAttr31.UpdateEnable = true;
+            fieldAttr31.WhereMode = true;
+            fieldAttr32.CheckNull = false;
+            fieldAttr32.DataField = "IS_IMPORT";
+            fieldAttr32.DefaultMode = Srvtools.DefaultModeType.Insert;
+            fieldAttr32.DefaultValue = "N";
+            fieldAttr32.TrimLength = 0;
+            fieldAttr32.UpdateEnable = true;
+            fieldAttr32.WhereMode = true;
+            fieldAttr33.CheckNull = false;
+            fieldAttr33.DataField = "FLOWFLAG";
+            fieldAttr33.DefaultMode = Srvtools.DefaultModeType.Insert;
+            fieldAttr33.DefaultValue = null;
+            fieldAttr33.TrimLength = 0;
+            fieldAttr33.UpdateEnable = true;
+            fieldAttr33.WhereMode = true;
+            fieldAttr34.CheckNull = false;
+            fieldAttr34.DataField = "CREATE_MAN";
+            fieldAttr34.DefaultMode = Srvtools.DefaultModeType.Insert;
+            fieldAttr34.DefaultValue = "_username";
+            fieldAttr34.TrimLength = 0;
+            fieldAttr34.UpdateEnable = true;
+            fieldAttr34.WhereMode = true;
+            fieldAttr35.CheckNull = false;
+            fieldAttr35.DataField = "CREATE_DATE";
+            fieldAttr35.DefaultMode = Srvtools.DefaultModeType.Insert;
+            fieldAttr35.DefaultValue = "_sysdate";
+            fieldAttr35.TrimLength = 0;
+            fieldAttr35.UpdateEnable = true;
+            fieldAttr35.WhereMode = true;
+            fieldAttr36.CheckNull = false;
+            fieldAttr36.DataField = "UPDATE_MAN";
+            fieldAttr36.DefaultMode = Srvtools.DefaultModeType.InsertAndUpdate;
+            fieldAttr36.DefaultValue = "_username";
+            fieldAttr36.TrimLength = 0;
+            fieldAttr36.UpdateEnable = true;
+            fieldAttr36.WhereMode = true;
+            fieldAttr37.CheckNull = false;
+            fieldAttr37.DataField = "UPDATE_DATE";
+            fieldAttr37.DefaultMode = Srvtools.DefaultModeType.InsertAndUpdate;
+            fieldAttr37.DefaultValue = "_sysdate";
+            fieldAttr37.TrimLength = 0;
+            fieldAttr37.UpdateEnable = true;
+            fieldAttr37.WhereMode = true;
+            this.ucHRM_ATTEND_ABSENT_MINUS.FieldAttrs.Add(fieldAttr15);
+            this.ucHRM_ATTEND_ABSENT_MINUS.FieldAttrs.Add(fieldAttr16);
+            this.ucHRM_ATTEND_ABSENT_MINUS.FieldAttrs.Add(fieldAttr17);
+            this.ucHRM_ATTEND_ABSENT_MINUS.FieldAttrs.Add(fieldAttr18);
+            this.ucHRM_ATTEND_ABSENT_MINUS.FieldAttrs.Add(fieldAttr19);
+            this.ucHRM_ATTEND_ABSENT_MINUS.FieldAttrs.Add(fieldAttr20);
+            this.ucHRM_ATTEND_ABSENT_MINUS.FieldAttrs.Add(fieldAttr21);
+            this.ucHRM_ATTEND_ABSENT_MINUS.FieldAttrs.Add(fieldAttr22);
+            this.ucHRM_ATTEND_ABSENT_MINUS.FieldAttrs.Add(fieldAttr23);
+            this.ucHRM_ATTEND_ABSENT_MINUS.FieldAttrs.Add(fieldAttr24);
+            this.ucHRM_ATTEND_ABSENT_MINUS.FieldAttrs.Add(fieldAttr25);
+            this.ucHRM_ATTEND_ABSENT_MINUS.FieldAttrs.Add(fieldAttr26);
+            this.ucHRM_ATTEND_ABSENT_MINUS.FieldAttrs.Add(fieldAttr27);
+            this.ucHRM_ATTEND_ABSENT_MINUS.FieldAttrs.Add(fieldAttr28);
+            this.ucHRM_ATTEND_ABSENT_MINUS.FieldAttrs.Add(fieldAttr29);
+            this.ucHRM_ATTEND_ABSENT_MINUS.FieldAttrs.Add(fieldAttr30);
+            this.ucHRM_ATTEND_ABSENT_MINUS.FieldAttrs.Add(fieldAttr31);
+            this.ucHRM_ATTEND_ABSENT_MINUS.FieldAttrs.Add(fieldAttr32);
+            this.ucHRM_ATTEND_ABSENT_MINUS.FieldAttrs.Add(fieldAttr33);
+            this.ucHRM_ATTEND_ABSENT_MINUS.FieldAttrs.Add(fieldAttr34);
+            this.ucHRM_ATTEND_ABSENT_MINUS.FieldAttrs.Add(fieldAttr35);
+            this.ucHRM_ATTEND_ABSENT_MINUS.FieldAttrs.Add(fieldAttr36);
+            this.ucHRM_ATTEND_ABSENT_MINUS.FieldAttrs.Add(fieldAttr37);
+            this.ucHRM_ATTEND_ABSENT_MINUS.LogInfo = null;
+            this.ucHRM_ATTEND_ABSENT_MINUS.Name = "ucHRM_ATTEND_ABSENT_MINUS";
+            this.ucHRM_ATTEND_ABSENT_MINUS.RowAffectsCheck = true;
+            this.ucHRM_ATTEND_ABSENT_MINUS.SelectCmd = this.HRM_ATTEND_ABSENT_MINUS;
+            this.ucHRM_ATTEND_ABSENT_MINUS.SelectCmdForUpdate = null;
+            this.ucHRM_ATTEND_ABSENT_MINUS.SendSQLCmd = true;
+            this.ucHRM_ATTEND_ABSENT_MINUS.ServerModify = true;
+            this.ucHRM_ATTEND_ABSENT_MINUS.ServerModifyGetMax = false;
+            this.ucHRM_ATTEND_ABSENT_MINUS.TranscationScopeTimeOut = System.TimeSpan.Parse("00:02:00");
+            this.ucHRM_ATTEND_ABSENT_MINUS.TransIsolationLevel = System.Data.IsolationLevel.ReadUncommitted;
+            this.ucHRM_ATTEND_ABSENT_MINUS.UseTranscationScope = false;
+            this.ucHRM_ATTEND_ABSENT_MINUS.WhereMode = Srvtools.WhereModeType.Keyfields;
             ((System.ComponentModel.ISupportInitialize)(this.InfoConnection1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.HRMAttendAbsentApply)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.infoHRM_ATTEND_HOLIDAY)).EndInit();
@@ -408,6 +704,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.infoHRM_BASE_BASE)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.infoABSENT_PLUS)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.infoAgentEmployeeID)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.HRM_ATTEND_ABSENT_MINUS)).EndInit();
 
         }
 
@@ -423,5 +720,7 @@
         private Srvtools.InfoCommand infoABSENT_PLUS;
         private Srvtools.InfoConnection infoConnection2;
         private Srvtools.InfoCommand infoAgentEmployeeID;
+        private Srvtools.InfoCommand HRM_ATTEND_ABSENT_MINUS;
+        private Srvtools.UpdateComponent ucHRM_ATTEND_ABSENT_MINUS;
     }
 }

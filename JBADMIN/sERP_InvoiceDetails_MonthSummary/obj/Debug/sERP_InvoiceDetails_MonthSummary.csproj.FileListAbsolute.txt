@@ -1,0 +1,8 @@
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sERP_InvoiceDetails_MonthSummary\bin\Debug\sERP_InvoiceDetails_MonthSummary.dll
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sERP_InvoiceDetails_MonthSummary\bin\Debug\sERP_InvoiceDetails_MonthSummary.pdb
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sERP_InvoiceDetails_MonthSummary\obj\Debug\sERP_InvoiceDetails_MonthSummary.csproj.GenerateResource.Cache
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sERP_InvoiceDetails_MonthSummary\obj\Debug\sERP_InvoiceDetails_MonthSummary.dll
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sERP_InvoiceDetails_MonthSummary\obj\Debug\sERP_InvoiceDetails_MonthSummary.pdb
+C:\Program Files (x86)\Infolight\EEP2012\EEPNetServer\JBADMIN\sERP_InvoiceDetails_MonthSummary.dll
+C:\Program Files (x86)\Infolight\EEP2012\EEPNetServer\JBADMIN\sERP_InvoiceDetails_MonthSummary.pdb
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sERP_InvoiceDetails_MonthSummary\obj\Debug\sERP_InvoiceDetails_MonthSummary.Component.resources

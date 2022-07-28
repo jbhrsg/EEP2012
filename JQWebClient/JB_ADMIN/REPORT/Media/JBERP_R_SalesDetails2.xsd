@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="JBERP_R_SalesDetails2" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="JBERP_R_SalesDetails2" msdata:IsDataSet="true" msdata:CaseSensitive="true" msdata:UseCurrentLocale="true" msprop:Generator_UserDSName="JBERP_R_SalesDetails2" msprop:Generator_DataSetName="JBERP_R_SalesDetails2">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="ERPSalesDetails2" msprop:Generator_TableClassName="ERPSalesDetails2DataTable" msprop:Generator_TableVarName="tableERPSalesDetails2" msprop:Generator_RowChangedName="ERPSalesDetails2RowChanged" msprop:Generator_TablePropName="ERPSalesDetails2" msprop:Generator_RowDeletingName="ERPSalesDetails2RowDeleting" msprop:Generator_RowChangingName="ERPSalesDetails2RowChanging" msprop:Generator_RowEvHandlerName="ERPSalesDetails2RowChangeEventHandler" msprop:Generator_RowDeletedName="ERPSalesDetails2RowDeleted" msprop:Generator_RowClassName="ERPSalesDetails2Row" msprop:Generator_UserTableName="ERPSalesDetails2" msprop:Generator_RowEvArgName="ERPSalesDetails2RowChangeEvent">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="SalesName" msprop:Generator_ColumnVarNameInTable="columnSalesName" msprop:Generator_ColumnPropNameInRow="SalesName" msprop:Generator_ColumnPropNameInTable="SalesNameColumn" msprop:Generator_UserColumnName="SalesName" type="xs:string" minOccurs="0" />
+              <xs:element name="SalesEmployeeID" msprop:Generator_ColumnVarNameInTable="columnSalesEmployeeID" msprop:Generator_ColumnPropNameInRow="SalesEmployeeID" msprop:Generator_ColumnPropNameInTable="SalesEmployeeIDColumn" msprop:Generator_UserColumnName="SalesEmployeeID" type="xs:string" minOccurs="0" />
+              <xs:element name="ViewAreaName" msprop:Generator_ColumnVarNameInTable="columnViewAreaName" msprop:Generator_ColumnPropNameInRow="ViewAreaName" msprop:Generator_ColumnPropNameInTable="ViewAreaNameColumn" msprop:Generator_UserColumnName="ViewAreaName" type="xs:string" minOccurs="0" />
+              <xs:element name="iCount" msprop:Generator_ColumnVarNameInTable="columniCount" msprop:Generator_ColumnPropNameInRow="iCount" msprop:Generator_ColumnPropNameInTable="iCountColumn" msprop:Generator_UserColumnName="iCount" type="xs:int" minOccurs="0" />
+              <xs:element name="salesQty" msprop:Generator_ColumnVarNameInTable="columnsalesQty" msprop:Generator_ColumnPropNameInRow="salesQty" msprop:Generator_ColumnPropNameInTable="salesQtyColumn" msprop:Generator_UserColumnName="salesQty" type="xs:int" minOccurs="0" />
+              <xs:element name="CustAmt" msprop:Generator_ColumnVarNameInTable="columnCustAmt" msprop:Generator_ColumnPropNameInRow="CustAmt" msprop:Generator_ColumnPropNameInTable="CustAmtColumn" msprop:Generator_UserColumnName="CustAmt" type="xs:double" minOccurs="0" />
+              <xs:element name="GrantTypeID" msprop:Generator_ColumnVarNameInTable="columnGrantTypeID" msprop:Generator_ColumnPropNameInRow="GrantTypeID" msprop:Generator_ColumnPropNameInTable="GrantTypeIDColumn" msprop:Generator_UserColumnName="GrantTypeID" type="xs:string" minOccurs="0" />
+              <xs:element name="SalesID" msprop:Generator_ColumnVarNameInTable="columnSalesID" msprop:Generator_ColumnPropNameInRow="SalesID" msprop:Generator_ColumnPropNameInTable="SalesIDColumn" msprop:Generator_UserColumnName="SalesID" type="xs:string" minOccurs="0" />
+              <xs:element name="AreaType" msprop:Generator_ColumnVarNameInTable="columnAreaType" msprop:Generator_ColumnPropNameInRow="AreaType" msprop:Generator_ColumnPropNameInTable="AreaTypeColumn" msprop:Generator_UserColumnName="AreaType" type="xs:int" minOccurs="0" />
+              <xs:element name="iSort" msprop:Generator_ColumnVarNameInTable="columniSort" msprop:Generator_ColumnPropNameInRow="iSort" msprop:Generator_ColumnPropNameInTable="iSortColumn" msprop:Generator_UserColumnName="iSort" type="xs:int" minOccurs="0" />
+              <xs:element name="SalesiSort" msprop:Generator_ColumnVarNameInTable="columnSalesiSort" msprop:Generator_ColumnPropNameInRow="SalesiSort" msprop:Generator_ColumnPropNameInTable="SalesiSortColumn" msprop:Generator_UserColumnName="SalesiSort" type="xs:int" minOccurs="0" />
+              <xs:element name="SalesTypeID" msprop:Generator_ColumnVarNameInTable="columnSalesTypeID" msprop:Generator_ColumnPropNameInRow="SalesTypeID" msprop:Generator_ColumnPropNameInTable="SalesTypeIDColumn" msprop:Generator_UserColumnName="SalesTypeID" type="xs:int" minOccurs="0" />
+              <xs:element name="SalesQtyView" type="xs:int" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="ERPSalesDetails22" msprop:Generator_TableClassName="ERPSalesDetails22DataTable" msprop:Generator_TableVarName="tableERPSalesDetails22" msprop:Generator_RowChangedName="ERPSalesDetails22RowChanged" msprop:Generator_TablePropName="ERPSalesDetails22" msprop:Generator_RowDeletingName="ERPSalesDetails22RowDeleting" msprop:Generator_RowChangingName="ERPSalesDetails22RowChanging" msprop:Generator_RowEvHandlerName="ERPSalesDetails22RowChangeEventHandler" msprop:Generator_RowDeletedName="ERPSalesDetails22RowDeleted" msprop:Generator_RowClassName="ERPSalesDetails22Row" msprop:Generator_UserTableName="ERPSalesDetails22" msprop:Generator_RowEvArgName="ERPSalesDetails22RowChangeEvent">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="SalesName" msprop:Generator_ColumnVarNameInTable="columnSalesName" msprop:Generator_ColumnPropNameInRow="SalesName" msprop:Generator_ColumnPropNameInTable="SalesNameColumn" msprop:Generator_UserColumnName="SalesName" type="xs:string" minOccurs="0" />
+              <xs:element name="iCount" msprop:Generator_ColumnVarNameInTable="columniCount" msprop:Generator_ColumnPropNameInRow="iCount" msprop:Generator_ColumnPropNameInTable="iCountColumn" msprop:Generator_UserColumnName="iCount" type="xs:int" minOccurs="0" />
+              <xs:element name="salesQty" msprop:Generator_ColumnVarNameInTable="columnsalesQty" msprop:Generator_ColumnPropNameInRow="salesQty" msprop:Generator_ColumnPropNameInTable="salesQtyColumn" msprop:Generator_UserColumnName="salesQty" type="xs:int" minOccurs="0" />
+              <xs:element name="CustAmt" msprop:Generator_ColumnVarNameInTable="columnCustAmt" msprop:Generator_ColumnPropNameInRow="CustAmt" msprop:Generator_ColumnPropNameInTable="CustAmtColumn" msprop:Generator_UserColumnName="CustAmt" type="xs:double" minOccurs="0" />
+              <xs:element name="GrantTypeID" msprop:Generator_ColumnVarNameInTable="columnGrantTypeID" msprop:Generator_ColumnPropNameInRow="GrantTypeID" msprop:Generator_ColumnPropNameInTable="GrantTypeIDColumn" msprop:Generator_UserColumnName="GrantTypeID" type="xs:string" minOccurs="0" />
+              <xs:element name="SalesID" msprop:Generator_ColumnVarNameInTable="columnSalesID" msprop:Generator_ColumnPropNameInRow="SalesID" msprop:Generator_ColumnPropNameInTable="SalesIDColumn" msprop:Generator_UserColumnName="SalesID" type="xs:string" minOccurs="0" />
+              <xs:element name="iYM" msprop:Generator_ColumnVarNameInTable="columniYM" msprop:Generator_ColumnPropNameInRow="iYM" msprop:Generator_ColumnPropNameInTable="iYMColumn" msprop:Generator_UserColumnName="iYM" type="xs:int" minOccurs="0" />
+              <xs:element name="SalesiSort" msprop:Generator_ColumnVarNameInTable="columnSalesiSort" msprop:Generator_ColumnPropNameInRow="SalesiSort" msprop:Generator_ColumnPropNameInTable="SalesiSortColumn" msprop:Generator_UserColumnName="SalesiSort" type="xs:int" minOccurs="0" />
+              <xs:element name="SalesTypeID" msprop:Generator_ColumnVarNameInTable="columnSalesTypeID" msprop:Generator_ColumnPropNameInRow="SalesTypeID" msprop:Generator_ColumnPropNameInTable="SalesTypeIDColumn" msprop:Generator_UserColumnName="SalesTypeID" type="xs:int" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="ERPSalesDetails3" msprop:Generator_TableClassName="ERPSalesDetails3DataTable" msprop:Generator_TableVarName="tableERPSalesDetails3" msprop:Generator_RowChangedName="ERPSalesDetails3RowChanged" msprop:Generator_TablePropName="ERPSalesDetails3" msprop:Generator_RowDeletingName="ERPSalesDetails3RowDeleting" msprop:Generator_RowChangingName="ERPSalesDetails3RowChanging" msprop:Generator_RowEvHandlerName="ERPSalesDetails3RowChangeEventHandler" msprop:Generator_RowDeletedName="ERPSalesDetails3RowDeleted" msprop:Generator_RowClassName="ERPSalesDetails3Row" msprop:Generator_UserTableName="ERPSalesDetails3" msprop:Generator_RowEvArgName="ERPSalesDetails3RowChangeEvent">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="CustNO" msprop:Generator_ColumnVarNameInTable="columnCustNO" msprop:Generator_ColumnPropNameInRow="CustNO" msprop:Generator_ColumnPropNameInTable="CustNOColumn" msprop:Generator_UserColumnName="CustNO" type="xs:string" minOccurs="0" />
+              <xs:element name="CustShortName" msprop:Generator_ColumnVarNameInTable="columnCustShortName" msprop:Generator_ColumnPropNameInRow="CustShortName" msprop:Generator_ColumnPropNameInTable="CustShortNameColumn" msprop:Generator_UserColumnName="CustShortName" type="xs:string" minOccurs="0" />
+              <xs:element name="CustAmt" msprop:Generator_ColumnVarNameInTable="columnCustAmt" msprop:Generator_ColumnPropNameInRow="CustAmt" msprop:Generator_ColumnPropNameInTable="CustAmtColumn" msprop:Generator_UserColumnName="CustAmt" type="xs:int" minOccurs="0" />
+              <xs:element name="SalesTypeID" msprop:Generator_ColumnVarNameInTable="columnSalesTypeID" msprop:Generator_ColumnPropNameInRow="SalesTypeID" msprop:Generator_ColumnPropNameInTable="SalesTypeIDColumn" msprop:Generator_UserColumnName="SalesTypeID" type="xs:int" minOccurs="0" />
+              <xs:element name="SalesTypeID2" msprop:Generator_ColumnVarNameInTable="columnSalesTypeName" msprop:Generator_ColumnPropNameInRow="SalesTypeName" msprop:Generator_ColumnPropNameInTable="SalesTypeNameColumn" msprop:Generator_UserColumnName="SalesTypeName" type="xs:int" minOccurs="0" />
+              <xs:element name="SalesTypeID3" type="xs:int" minOccurs="0" />
+              <xs:element name="iRANK" type="xs:int" minOccurs="0" />
+              <xs:element name="sIndustryType" type="xs:string" minOccurs="0" />
+              <xs:element name="SalesID" type="xs:string" minOccurs="0" />
+              <xs:element name="iMonth" type="xs:int" minOccurs="0" />
+              <xs:element name="SalesDate" type="xs:string" minOccurs="0" />
+              <xs:element name="sStats" type="xs:string" minOccurs="0" />
+              <xs:element name="SalesDate2" type="xs:string" minOccurs="0" />
+              <xs:element name="iPeopleCount" type="xs:int" minOccurs="0" />
+              <xs:element name="PeopleStatus" type="xs:string" minOccurs="0" />
+              <xs:element name="SalesDate0" type="xs:string" minOccurs="0" />
+              <xs:element name="Product" type="xs:string" minOccurs="0" />
+              <xs:element name="IndustryTypeText" type="xs:string" minOccurs="0" />
+              <xs:element name="sIndustryID" type="xs:string" minOccurs="0" />
+              <xs:element name="CustAreaName" type="xs:string" minOccurs="0" />
+              <xs:element name="sStatsG" type="xs:string" minOccurs="0" />
+              <xs:element name="iSalesTypeID" type="xs:int" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="ERPSalesDetails222">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="SalesDate" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="iCount" type="xs:int" minOccurs="0" />
+              <xs:element name="salesQty" type="xs:int" minOccurs="0" />
+              <xs:element name="SalesQtyView" type="xs:int" minOccurs="0" />
+              <xs:element name="CustAmt" type="xs:int" minOccurs="0" />
+              <xs:element name="iCount2" type="xs:int" minOccurs="0" />
+              <xs:element name="SalesQty2" type="xs:int" minOccurs="0" />
+              <xs:element name="SalesQtyView2" type="xs:int" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="CustomerToDoNotes">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="CustNO" type="xs:string" minOccurs="0" />
+              <xs:element name="CustName" type="xs:string" minOccurs="0" />
+              <xs:element name="IndustryTypeText" type="xs:string" minOccurs="0" />
+              <xs:element name="NextCallDate" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="PostTypeText" type="xs:string" minOccurs="0" />
+              <xs:element name="NotesCreateDate" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="HrBankUrl" type="xs:string" minOccurs="0" />
+              <xs:element name="SalesDate" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="SalesDate2" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="iday" type="xs:int" minOccurs="0" />
+              <xs:element name="sStats" type="xs:string" minOccurs="0" />
+              <xs:element name="CreateBy" type="xs:string" minOccurs="0" />
+              <xs:element name="SalesID" type="xs:string" minOccurs="0" />
+              <xs:element name="SalesName" type="xs:string" minOccurs="0" />
+              <xs:element name="CreateDate" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

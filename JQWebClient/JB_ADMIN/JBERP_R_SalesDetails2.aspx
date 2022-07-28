@@ -23,7 +23,7 @@
              var dgid = $('#dataGridMaster');
              var queryPanel = getInfolightOption(dgid).queryDialog;
              if (queryPanel)
-                 $(queryPanel).panel('resize', { width: 500 });
+                 $(queryPanel).panel('resize', { width: 630 });
              //Grid隱藏
              $('#dataGridMaster').datagrid('getPanel').hide();
              
@@ -36,6 +36,8 @@
              $('#iday_Query').options('setValue',1);
              //$('input:radio[name=iday_Query_0][value=1]').attr('checked', true);          
              $('#SalesTypeID_Query').combobox('setValue', 1);
+             $('#SalesName_Query').options('setValue', 1);//類別=>預設為區域 =>1區域,2月份別,3日期,4交易別
+
          });
                  
          function queryGrid(dg) {//查詢後添加固定條件
@@ -44,11 +46,11 @@
                  var JQDate1 = $("#CreateDate_Query").datebox("getValue");//datebox("getBindingValue");//datebox("getValue");                
                  var JQDate2 = $("#AcceptDate_Query").combo('textbox').val();
                  var SalesEmployeeID = $("#SalesID_Query").combobox('getValue');
-                 var SalesTypeID = $("#SalesTypeID_Query").combobox('getValue');
-                 var CustNO = $("#CustNO_Query").combobox('getValue');                
-                 var SalesTypeText = $("#SalesTypeID_Query").combobox('getText');//標題
-
-                 var url = "../JB_ADMIN/REPORT/Media/JBERP_R_SalesDetailsReportView2.aspx?SDate=" + JQDate1 + "&EDate=" + JQDate2 + "&SalesEmployeeID=" + SalesEmployeeID + "&SalesTypeID=" + SalesTypeID + "&SalesTypeText=" + SalesTypeText + "&CustNO=" + CustNO;
+                 var SalesTypeID = $('#SalesTypeID_Query').combobox('getValue');//交易別
+                 var CustNO = $("#CustNO_Query").combobox('getValue');
+                 var SalesTypeText = $("#SalesTypeID_Query").combogrid('getText'); //標題
+                 var iClass = $('#SalesName_Query').options('getValue');
+                 var url = "../JB_ADMIN/REPORT/Media/JBERP_R_SalesDetailsReportView2.aspx?SDate=" + JQDate1 + "&EDate=" + JQDate2 + "&SalesEmployeeID=" + SalesEmployeeID + "&SalesTypeID=" + SalesTypeID + "&SalesTypeText=" + SalesTypeText + "&CustNO=" + CustNO + "&iClass=" + iClass;
             
              var height = $(window).height() - 20;
              var width = $(window).width() - 20;
@@ -91,7 +93,8 @@
                     <JQTools:JQQueryColumn AndOr="and" Caption="終止日期" Condition="=" DataType="datetime" Editor="datebox" FieldName="AcceptDate" IsNvarChar="False" NewLine="False" RemoteMethod="False" Width="100" />
                     <JQTools:JQQueryColumn AndOr="and" Caption="業務" Condition="=" DataType="string" Editor="infocombobox" EditorOptions="valueField:'SalesID',textField:'SalesName',remoteName:'sR_SalesDetails.infoSalesMan',tableName:'infoSalesMan',pageSize:'-1',checkData:false,selectOnly:false,cacheRelationText:false,panelHeight:200" FieldName="SalesID" IsNvarChar="False" NewLine="True" RemoteMethod="False" Width="125" />
                     <JQTools:JQQueryColumn AndOr="and" Caption="客戶代號" Condition="%" DataType="string" Editor="infocombobox" EditorOptions="valueField:'CustNO',textField:'CustShortName',remoteName:'sR_SalesDetails.infoCustomersAll',tableName:'infoCustomersAll',pageSize:'-1',checkData:false,selectOnly:false,cacheRelationText:false,panelHeight:200" FieldName="CustNO" IsNvarChar="False" NewLine="False" RemoteMethod="False" Width="200" />
-                    <JQTools:JQQueryColumn AndOr="and" Caption="交易別" Condition="=" DataType="string" Editor="infocombobox" EditorOptions="valueField:'SalesTypeID',textField:'SalesTypeName',remoteName:'sR_SalesDetails.infoSalesType',tableName:'infoSalesType',pageSize:'-1',checkData:false,selectOnly:false,cacheRelationText:false,panelHeight:200" FieldName="SalesTypeID" IsNvarChar="False" NewLine="True" RemoteMethod="False" Width="125" />
+                    <JQTools:JQQueryColumn AndOr="and" Caption="交易別" Condition="=" DataType="string" Editor="infocombobox" EditorOptions="valueField:'SalesTypeID',textField:'SalesTypeName',remoteName:'sR_SalesDetails.infoSalesType2',tableName:'infoSalesType2',pageSize:'-1',checkData:false,selectOnly:false,cacheRelationText:false,panelHeight:200" FieldName="SalesTypeID" IsNvarChar="False" NewLine="True" RemoteMethod="False" Width="130" />
+                    <JQTools:JQQueryColumn AndOr="and" Caption="類別" Condition="=" DataType="string" Editor="infooptions" EditorOptions="title:'JQOptions',panelWidth:120,remoteName:'',tableName:'',valueField:'',textField:'',columnCount:4,multiSelect:false,openDialog:false,selectAll:false,selectOnly:false,items:[{text:'區域',value:'1'},{text:'日期',value:'3'},{text:'交易別',value:'4'}]" FieldName="SalesName" IsNvarChar="False" NewLine="True" RemoteMethod="False" RowSpan="0" Span="0" Width="125" />
                 </QueryColumns>
             </JQTools:JQDataGrid>
             </div>

@@ -6,10 +6,11 @@ D:\Infolight\EEP2012\JBADMIN\sHRMAttendAbsent\obj\Debug\sHRMAttendAbsent.pdb
 D:\Infolight\EEP2012\EEPNetServer\JBADMIN\sHRMAttendAbsent.dll
 D:\Infolight\EEP2012\EEPNetServer\JBADMIN\sHRMAttendAbsent.pdb
 D:\Infolight\EEP2012\JBADMIN\sHRMAttendAbsent\obj\Debug\sHRMAttendAbsent.Component.resources
-D:\Infolight\EEP2012\JBADMIN\sHRMAttendAbsent\obj\Debug\sHRMAttendAbsent.csprojResolveAssemblyReference.cache
 C:\Program Files (x86)\Infolight\EEP2012\EEPNetServer\JBADMIN\sHRMAttendAbsent.dll
+C:\Program Files (x86)\Infolight\EEP2012\EEPNetServer\JBADMIN\sHRMAttendAbsent.pdb
 C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sHRMAttendAbsent\obj\Debug\sHRMAttendAbsent.Component.resources
 C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sHRMAttendAbsent\obj\Debug\sHRMAttendAbsent.csproj.GenerateResource.Cache
 C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sHRMAttendAbsent\obj\Debug\sHRMAttendAbsent.dll
 C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sHRMAttendAbsent\obj\Debug\sHRMAttendAbsent.pdb
-C:\Program Files (x86)\Infolight\EEP2012\EEPNetServer\JBADMIN\sHRMAttendAbsent.pdb
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sHRMAttendAbsent\obj\Debug\sHRMAttendAbsent.csprojResolveAssemblyReference.cache
+D:\Infolight\EEP2012\JBADMIN\sHRMAttendAbsent\obj\Debug\sHRMAttendAbsent.csprojResolveAssemblyReference.cache

@@ -1,0 +1,213 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <metadata name="serviceManager1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 64</value>
+  </metadata>
+  <metadata name="infoCustomers.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 205</value>
+  </metadata>
+  <metadata name="InfoConnJCS.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 111</value>
+  </metadata>
+  <metadata name="infoConnection.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 299</value>
+  </metadata>
+  <metadata name="infoRoomerData.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 158</value>
+  </metadata>
+  <data name="infoRoomerData.CommandText" xml:space="preserve">
+    <value>select d.DormID,r.RoomerID,PID,RTRIM(RoomerNameC) AS RoomerNameC ,RoomerNameE,dbo.funReturnListData('Gender',r.Gender) as GenderText,
+r.NationalityID,n.NationalityName,PhotoPath,d.Description as RoomID,
+RoomBedID,t.CustomerID,c.CustomerShortName,l.TranType
+,dbo.funReturnListData('TranType',l.TranType) as TranTypeText
+,CASE WHEN r.INCounts=1 THEN '內' ELSE '外' END as InOutStatus
+,IsNull((Select top 1 CardNO from RoomerCards where RoomerID = r.RoomerID and EffectDate=(Select Max(EffectDate) from RoomerCards where RoomerID=r.RoomerID)
+and CreateDate=(Select Max(CreateDate) from RoomerCards where RoomerID=r.RoomerID)),'') as CardNO,r.CustNo
+from Roomer r
+inner join RoomerInOutLogs l on r.RoomerID = l.RoomerID
+inner join CustomerContracts t on l.ContractID = t.ContractID 
+inner join Customers c on t.CustomerID =c.CustomerID
+inner join Nationality n on r.NationalityID = n.NationalityID
+inner join DormRoomBeds d on l.RoomBedID=d.BedID
+where l.EffectDate=(Select Max(EffectDate) from RoomerInOutLogs where RoomerID = r.RoomerID ) </value>
+  </data>
+  <metadata name="infoDorm.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 440</value>
+  </metadata>
+  <metadata name="infoInOutStatus.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 393</value>
+  </metadata>
+  <metadata name="infoRoomerType.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 252</value>
+  </metadata>
+  <metadata name="infoCommand1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 346</value>
+  </metadata>
+  <data name="infoCommand1.CommandText" xml:space="preserve">
+    <value>select d.DormID,r.RoomerID,PID,RTRIM(RoomerNameC) AS RoomerNameC ,RoomerNameE,dbo.funReturnListData('Gender',r.Gender) as GenderText,
+r.NationalityID,n.NationalityName,PhotoPath,d.Description as RoomID,
+RoomBedID,t.CustomerID,c.CustomerShortName,l.TranType
+,dbo.funReturnListData('TranType',l.TranType) as TranTypeText
+,CASE WHEN r.INCounts=1 THEN '內' ELSE '外' END as InOutStatus
+,IsNull((Select top 1 CardNO from RoomerCards where RoomerID = r.RoomerID and EffectDate=(Select Max(EffectDate) from RoomerCards where RoomerID=r.RoomerID)
+and CreateDate=(Select Max(CreateDate) from RoomerCards where RoomerID=r.RoomerID)),'') as CardNO,r.CustNo
+from Roomer r
+inner join RoomerInOutLogs l on r.RoomerID = l.RoomerID
+inner join CustomerContracts t on l.ContractID = t.ContractID 
+inner join Customers c on t.CustomerID =c.CustomerID
+inner join Nationality n on r.NationalityID = n.NationalityID
+inner join DormRoomBeds d on l.RoomBedID=d.BedID
+where l.EffectDate=(Select Max(EffectDate) from RoomerInOutLogs where RoomerID = r.RoomerID ) </value>
+  </data>
+  <metadata name="infoRoomerCard.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>266, 283</value>
+  </metadata>
+  <data name="infoRoomerCard.CommandText" xml:space="preserve">
+    <value>select r.RoomerID,r.RoomerNameC,d.Description as RoomBedID,Left(CONVERT(nvarchar(10),ca.CardDate,112),6) as sYM,COUNT(*) as iCount
+from Roomer r
+	inner join RoomerInOutLogs l on r.RoomerID=l.RoomerID
+	inner join CustomerContracts t on l.ContractID=t.ContractID
+	inner join Customers c on t.CustomerID=c.CustomerID and c.CustomerID='C0001'
+	inner join DormRoomBeds d on l.RoomBedID=d.BedID
+	inner join RoomerCardDetails ca on r.RoomerID=ca.RoomerID
+where l.EffectDate=(Select Max(EffectDate) from RoomerInOutLogs where RoomerID = r.RoomerID ) and l.TranType!=2
+	and Left(CONVERT(nvarchar(10),ca.CardDate,112),6)= '201809'
+group by r.RoomerID,r.RoomerNameC,d.Description,Left(CONVERT(nvarchar(10),ca.CardDate,112),6)
+having COUNT(*)&lt;=10</value>
+  </data>
+  <metadata name="infoRoomCustList.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>154, 440</value>
+  </metadata>
+  <data name="infoRoomCustList.CommandText" xml:space="preserve">
+    <value>SELECT c.CustomerID,c.CustomerShortName,d2.Description as sRoom,d3.Description as sLevel,d3.BedID
+from Roomer r
+inner join RoomerInOutLogs l on r.RoomerID = l.RoomerID
+inner join CustomerContracts t on l.ContractID = t.ContractID 
+inner join Customers c on t.CustomerID =c.CustomerID
+inner join DormRoomBeds d on l.RoomBedID=d.BedID		
+left join DormRoomBeds d2 on d.ParentNodeID=d2.NodeID and d2.NodeLevel=2
+left join DormRoomBeds d3 on d2.ParentNodeID=d3.NodeID and d3.NodeLevel=1
+where l.EffectDate=(Select Max(EffectDate) from RoomerInOutLogs where RoomerID = r.RoomerID and TranType !=2)
+and convert(nvarchar(10),getdate(),111) between l.EffectDate and l.DueDate  and t.CreateBy!='JB'</value>
+  </data>
+  <metadata name="$this.TrayLargeIcon" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>False</value>
+  </metadata>
+</root>

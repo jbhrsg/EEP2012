@@ -24,6 +24,7 @@ namespace sARInvoice
 
             InitializeComponent();
         }
+        //§@¼oµo²¼
         public object[] procCallApi_Cancel(object[] objParam)
         {
             string invoicexml = string.Empty;

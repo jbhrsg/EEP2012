@@ -29,11 +29,11 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            Srvtools.Service service2 = new Srvtools.Service();
+            Srvtools.Service service1 = new Srvtools.Service();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Component));
-            Srvtools.KeyItem keyItem4 = new Srvtools.KeyItem();
             Srvtools.KeyItem keyItem1 = new Srvtools.KeyItem();
             Srvtools.KeyItem keyItem2 = new Srvtools.KeyItem();
+            Srvtools.KeyItem keyItem3 = new Srvtools.KeyItem();
             this.serviceManager1 = new Srvtools.ServiceManager(this.components);
             this.InfoConnection1 = new Srvtools.InfoConnection(this.components);
             this.UncollectedInvoiceDetails = new Srvtools.InfoCommand(this.components);
@@ -54,10 +54,10 @@
             // 
             // serviceManager1
             // 
-            service2.DelegateName = "GetReportUncollectedInvoiceDetails";
-            service2.NonLogin = false;
-            service2.ServiceName = "GetReportUncollectedInvoiceDetails";
-            this.serviceManager1.ServiceCollection.Add(service2);
+            service1.DelegateName = "GetReportUncollectedInvoiceDetails";
+            service1.NonLogin = false;
+            service1.ServiceName = "GetReportUncollectedInvoiceDetails";
+            this.serviceManager1.ServiceCollection.Add(service1);
             // 
             // InfoConnection1
             // 
@@ -75,8 +75,8 @@
             this.UncollectedInvoiceDetails.EncodingBefore = "Windows-1252";
             this.UncollectedInvoiceDetails.EncodingConvert = null;
             this.UncollectedInvoiceDetails.InfoConnection = this.InfoConnection1;
-            keyItem4.KeyName = "InvoiceNO";
-            this.UncollectedInvoiceDetails.KeyFields.Add(keyItem4);
+            keyItem1.KeyName = "InvoiceNO";
+            this.UncollectedInvoiceDetails.KeyFields.Add(keyItem1);
             this.UncollectedInvoiceDetails.MultiSetWhere = false;
             this.UncollectedInvoiceDetails.Name = "UncollectedInvoiceDetails";
             this.UncollectedInvoiceDetails.NotificationAutoEnlist = false;
@@ -155,8 +155,8 @@
             this.Customer.EncodingBefore = "Windows-1252";
             this.Customer.EncodingConvert = null;
             this.Customer.InfoConnection = this.InfoConnection1;
-            keyItem1.KeyName = "CustomerID";
-            this.Customer.KeyFields.Add(keyItem1);
+            keyItem2.KeyName = "CustomerID";
+            this.Customer.KeyFields.Add(keyItem2);
             this.Customer.MultiSetWhere = false;
             this.Customer.Name = "Customer";
             this.Customer.NotificationAutoEnlist = false;
@@ -181,8 +181,8 @@
             this.InsGroup.EncodingBefore = "Windows-1252";
             this.InsGroup.EncodingConvert = null;
             this.InsGroup.InfoConnection = this.infoConnection2;
-            keyItem2.KeyName = "InsGroupID";
-            this.InsGroup.KeyFields.Add(keyItem2);
+            keyItem3.KeyName = "InsGroupID";
+            this.InsGroup.KeyFields.Add(keyItem3);
             this.InsGroup.MultiSetWhere = false;
             this.InsGroup.Name = "InsGroup";
             this.InsGroup.NotificationAutoEnlist = false;

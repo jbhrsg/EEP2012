@@ -92,9 +92,9 @@
             // 
             // serviceManager1
             // 
-            service1.DelegateName = "UpdateInvoiceYM";
+            service1.DelegateName = "UpdateSalesDetails";
             service1.NonLogin = false;
-            service1.ServiceName = "UpdateInvoiceYM";
+            service1.ServiceName = "UpdateSalesDetails";
             service2.DelegateName = "InsertSalesDetailsYetImport";
             service2.NonLogin = false;
             service2.ServiceName = "InsertSalesDetailsYetImport";
@@ -115,6 +115,7 @@
             this.ERPSalesDetails.EEPAlias = null;
             this.ERPSalesDetails.EncodingAfter = null;
             this.ERPSalesDetails.EncodingBefore = "Windows-1252";
+            this.ERPSalesDetails.EncodingConvert = null;
             this.ERPSalesDetails.InfoConnection = this.InfoConnection1;
             keyItem1.KeyName = "SalesMasterNO";
             keyItem2.KeyName = "ItemSeq";
@@ -453,6 +454,7 @@
             this.ucERPSalesDetails.RowAffectsCheck = true;
             this.ucERPSalesDetails.SelectCmd = this.ERPSalesDetails;
             this.ucERPSalesDetails.SelectCmdForUpdate = null;
+            this.ucERPSalesDetails.SendSQLCmd = true;
             this.ucERPSalesDetails.ServerModify = true;
             this.ucERPSalesDetails.ServerModifyGetMax = false;
             this.ucERPSalesDetails.TranscationScopeTimeOut = System.TimeSpan.Parse("00:02:00");
@@ -470,6 +472,7 @@
             this.infoCustNO.EEPAlias = null;
             this.infoCustNO.EncodingAfter = null;
             this.infoCustNO.EncodingBefore = "Windows-1252";
+            this.infoCustNO.EncodingConvert = null;
             this.infoCustNO.InfoConnection = this.InfoConnection1;
             this.infoCustNO.MultiSetWhere = false;
             this.infoCustNO.Name = "infoCustNO";
@@ -494,6 +497,7 @@
             this.infoSalesMan.EEPAlias = null;
             this.infoSalesMan.EncodingAfter = null;
             this.infoSalesMan.EncodingBefore = "Windows-1252";
+            this.infoSalesMan.EncodingConvert = null;
             this.infoSalesMan.InfoConnection = this.InfoConnection1;
             keyItem3.KeyName = "SalseNO";
             this.infoSalesMan.KeyFields.Add(keyItem3);
@@ -520,6 +524,7 @@
             this.infoSalesTypeAll.EEPAlias = null;
             this.infoSalesTypeAll.EncodingAfter = null;
             this.infoSalesTypeAll.EncodingBefore = "Windows-1252";
+            this.infoSalesTypeAll.EncodingConvert = null;
             this.infoSalesTypeAll.InfoConnection = this.InfoConnection1;
             this.infoSalesTypeAll.MultiSetWhere = false;
             this.infoSalesTypeAll.Name = "infoSalesTypeAll";
@@ -545,6 +550,7 @@
             this.infoSalesManAll.EEPAlias = null;
             this.infoSalesManAll.EncodingAfter = null;
             this.infoSalesManAll.EncodingBefore = "Windows-1252";
+            this.infoSalesManAll.EncodingConvert = null;
             this.infoSalesManAll.InfoConnection = this.InfoConnection1;
             keyItem4.KeyName = "SalseNO";
             this.infoSalesManAll.KeyFields.Add(keyItem4);

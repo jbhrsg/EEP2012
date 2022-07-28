@@ -1,0 +1,9 @@
+D:\Infolight\EEP2012\JBADMIN\sPOMasterAmortization\bin\Debug\sPOMasterAmortization.dll
+D:\Infolight\EEP2012\JBADMIN\sPOMasterAmortization\bin\Debug\sPOMasterAmortization.pdb
+D:\Infolight\EEP2012\JBADMIN\sPOMasterAmortization\obj\Debug\sPOMasterAmortization.csprojResolveAssemblyReference.cache
+D:\Infolight\EEP2012\JBADMIN\sPOMasterAmortization\obj\Debug\sPOMasterAmortization.csproj.GenerateResource.Cache
+D:\Infolight\EEP2012\JBADMIN\sPOMasterAmortization\obj\Debug\sPOMasterAmortization.dll
+D:\Infolight\EEP2012\JBADMIN\sPOMasterAmortization\obj\Debug\sPOMasterAmortization.pdb
+D:\Infolight\EEP2012\EEPNetServer\JBADMIN\sPOMasterAmortization.dll
+D:\Infolight\EEP2012\EEPNetServer\JBADMIN\sPOMasterAmortization.pdb
+D:\Infolight\EEP2012\JBADMIN\sPOMasterAmortization\obj\Debug\sPOMasterAmortization.Component.resources

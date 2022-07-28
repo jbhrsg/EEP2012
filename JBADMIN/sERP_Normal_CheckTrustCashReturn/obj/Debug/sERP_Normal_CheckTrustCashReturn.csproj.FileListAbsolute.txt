@@ -1,0 +1,9 @@
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sERP_Normal_CheckTrustCashReturn\bin\Debug\sERP_Normal_CheckTrustCashReturn.dll
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sERP_Normal_CheckTrustCashReturn\bin\Debug\sERP_Normal_CheckTrustCashReturn.pdb
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sERP_Normal_CheckTrustCashReturn\obj\Debug\sERP_Normal_CheckTrustCashReturn.csprojResolveAssemblyReference.cache
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sERP_Normal_CheckTrustCashReturn\obj\Debug\sERP_Normal_CheckTrustCashReturn.csproj.GenerateResource.Cache
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sERP_Normal_CheckTrustCashReturn\obj\Debug\sERP_Normal_CheckTrustCashReturn.dll
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sERP_Normal_CheckTrustCashReturn\obj\Debug\sERP_Normal_CheckTrustCashReturn.pdb
+C:\Program Files (x86)\Infolight\EEP2012\EEPNetServer\JBADMIN\sERP_Normal_CheckTrustCashReturn.dll
+C:\Program Files (x86)\Infolight\EEP2012\EEPNetServer\JBADMIN\sERP_Normal_CheckTrustCashReturn.pdb
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sERP_Normal_CheckTrustCashReturn\obj\Debug\sERP_Normal_CheckTrustCashReturn.Component.resources

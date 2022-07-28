@@ -89,6 +89,12 @@
                                     <asp:Literal ID="FailureLabel" runat="server" EnableViewState="True"></asp:Literal>
                                 </td>
                             </tr>
+                            <tr>
+                                 <td></td>
+                                <td>
+                                    <asp:Label ID="Label2" runat="server"  Text="*密碼錯誤5次會鎖定30分鐘"></asp:Label>
+                                </td>
+                            </tr>
                         </table>
                     </div>
 

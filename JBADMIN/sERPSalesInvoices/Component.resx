@@ -118,19 +118,19 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <metadata name="serviceManager1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>398, 17</value>
+    <value>301, -40</value>
   </metadata>
   <metadata name="InfoConnection1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>575, 17</value>
+    <value>255, 37</value>
   </metadata>
   <metadata name="SalesMaster.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>1172, 17</value>
+    <value>25, 202</value>
   </metadata>
   <metadata name="ucSalesMaster.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>1312, 17</value>
+    <value>279, 221</value>
   </metadata>
   <metadata name="SalesDetails.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>1469, 17</value>
+    <value>24, 73</value>
   </metadata>
   <data name="SalesDetails.CommandText" xml:space="preserve">
     <value>SELECT [SalesDetails].*,FeeItem .FeeItemName as FeeItemNameShow
@@ -138,19 +138,19 @@
 left join FeeItem on  FeeItem .SalesTypeID= [SalesDetails].SalesTypeID and FeeItem .FeeItemID=[SalesDetails].FeeItemID</value>
   </data>
   <metadata name="ucSalesDetails.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>461, 59</value>
+    <value>165, 81</value>
   </metadata>
   <metadata name="idSalesMaster_SalesDetails.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>151, 17</value>
+    <value>17, -64</value>
   </metadata>
   <metadata name="View_SalesMaster.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>1023, 59</value>
+    <value>59, 428</value>
   </metadata>
   <metadata name="InsGroup.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>1346, 59</value>
+    <value>53, 474</value>
   </metadata>
   <metadata name="Customer.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>17, 101</value>
+    <value>48, 522</value>
   </metadata>
   <data name="Customer.CommandText" xml:space="preserve">
     <value>SELECT  CustomerID
@@ -168,31 +168,31 @@ left join [SYSWebHost] h on Customer.CustomerID!='C' and left(CustomerID,1)=h.We
 ORDER BY  CustomerTypeID, ShortName</value>
   </data>
   <metadata name="SalesType.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>140, 101</value>
+    <value>136, 119</value>
   </metadata>
   <metadata name="TaxType.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>265, 101</value>
+    <value>271, 388</value>
   </metadata>
   <metadata name="SalesPerson.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>377, 101</value>
+    <value>266, 487</value>
   </metadata>
   <metadata name="SalesKind.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>764, 101</value>
+    <value>267, 419</value>
   </metadata>
   <metadata name="InvoiceType.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>886, 101</value>
+    <value>260, 518</value>
   </metadata>
   <metadata name="SalesUploadCode.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>1026, 101</value>
+    <value>261, 453</value>
   </metadata>
   <metadata name="QInvoiceType.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>1207, 101</value>
+    <value>267, 178</value>
   </metadata>
   <metadata name="Employer.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>17, 143</value>
+    <value>49, 393</value>
   </metadata>
   <metadata name="CustomerSaleType.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>983, 17</value>
+    <value>26, 32</value>
   </metadata>
   <data name="CustomerSaleType.CommandText" xml:space="preserve">
     <value>SELECT distinct  SalesTypeID, SalesTypeID+'-'+SalesTypeName as SalesTypeName,seq,InsGroupID  from 
@@ -205,32 +205,32 @@ left join SalesSalesType sst on cst.SalesTypeID=sst.SalesTypeID
 order by seq,SalesTypeID</value>
   </data>
   <metadata name="SalesDetails_SalesTypeName.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>1359, 101</value>
+    <value>25, 164</value>
   </metadata>
   <metadata name="DonateMark.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>182, 59</value>
+    <value>258, 137</value>
   </metadata>
   <metadata name="CarrierType.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>1621, 101</value>
+    <value>50, 355</value>
   </metadata>
   <metadata name="FeeItem.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>749, 17</value>
+    <value>448, 49</value>
   </metadata>
   <metadata name="SalesDetailsMasterTemp.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>1465, 59</value>
+    <value>30, 275</value>
   </metadata>
   <data name="SalesDetailsMasterTemp.CommandText" xml:space="preserve">
     <value>select SalesDetailsMasterTemp.*,FeeItem.FeeItemName as FeeITemNameShow from SalesDetailsMasterTemp
 left join FeeItem on FeeItem.FeeItemID=SalesDetailsMasterTemp.FeeItemID and FeeItem.SalesTypeID=SalesDetailsMasterTemp.SalesTypeID</value>
   </data>
   <metadata name="ucSalesDetailsMasterTemp.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>516, 101</value>
+    <value>272, 285</value>
   </metadata>
   <metadata name="PayWay.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>1696, 59</value>
+    <value>56, 312</value>
   </metadata>
   <metadata name="SalesDetails1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>1608, 17</value>
+    <value>24, 237</value>
   </metadata>
   <data name="SalesDetails1.CommandText" xml:space="preserve">
     <value>SELECT d.*,f.FeeItemName as FeeItemNameShow,CustomerID,SalesDate,SalesID,Remark,TaxType,
@@ -240,10 +240,10 @@ PayWayID,InsGroupID,SalesKindID,BalanceDate,DebtorDays,EmailAddress,Employer
 left join FeeItem f on  f .SalesTypeID= d.SalesTypeID and f .FeeItemID=d.FeeItemID</value>
   </data>
   <metadata name="ucSalesDetails1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>17, 59</value>
+    <value>281, 256</value>
   </metadata>
   <metadata name="QCustomer.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>325, 59</value>
+    <value>263, 347</value>
   </metadata>
   <data name="QCustomer.CommandText" xml:space="preserve">
     <value>SELECT  top 20 CustomerID,
@@ -252,19 +252,19 @@ left join FeeItem f on  f .SalesTypeID= d.SalesTypeID and f .FeeItemID=d.FeeItem
 FROM    CUSTOMER  ORDER BY  CustomerTypeID, ShortName</value>
   </data>
   <metadata name="QEmployer.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>17, 17</value>
+    <value>296, -87</value>
   </metadata>
   <metadata name="SalesItem.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>860, 17</value>
+    <value>17, 116</value>
   </metadata>
   <metadata name="QSalesPerson.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>871, 59</value>
+    <value>381, 518</value>
   </metadata>
   <metadata name="QInvoiceYM.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>1205, 59</value>
+    <value>17, 568</value>
   </metadata>
   <metadata name="CustomerSaleTypeForApply.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>617, 59</value>
+    <value>642, 520</value>
   </metadata>
   <data name="CustomerSaleTypeForApply.CommandText" xml:space="preserve">
     <value>SELECT distinct  SalesTypeID, SalesTypeID+'-'+SalesTypeName as SalesTypeName,seq,InsGroupID  from 

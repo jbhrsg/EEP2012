@@ -1,0 +1,12 @@
+D:\Infolight\EEP2012\JBHunter\sJobQuery\bin\Debug\sJobQuery.dll
+D:\Infolight\EEP2012\JBHunter\sJobQuery\bin\Debug\sJobQuery.pdb
+D:\Infolight\EEP2012\EEPNetServer\JBHunter\sJobQuery.dll
+D:\Infolight\EEP2012\EEPNetServer\JBHunter\sJobQuery.pdb
+D:\Infolight\EEP2012\EEPNetServer\JBHunter\vi-VN\sJobQuery.resources.dll
+D:\Infolight\EEP2012\JBHunter\sJobQuery\obj\Debug\sJobQuery.Component.resources
+D:\Infolight\EEP2012\JBHunter\sJobQuery\obj\Debug\sJobQuery.Component.vi-VN.resources
+D:\Infolight\EEP2012\JBHunter\sJobQuery\obj\Debug\sJobQuery.csproj.GenerateResource.Cache
+D:\Infolight\EEP2012\JBHunter\sJobQuery\obj\Debug\vi-VN\sJobQuery.resources.dll
+D:\Infolight\EEP2012\JBHunter\sJobQuery\obj\Debug\sJobQuery.dll
+D:\Infolight\EEP2012\JBHunter\sJobQuery\obj\Debug\sJobQuery.pdb
+D:\Infolight\EEP2012\JBHunter\sJobQuery\obj\Debug\sJobQuery.csprojResolveAssemblyReference.cache

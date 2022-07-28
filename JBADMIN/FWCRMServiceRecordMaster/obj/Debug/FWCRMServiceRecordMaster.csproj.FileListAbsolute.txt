@@ -1,0 +1,9 @@
+D:\Infolight\EEP2012\JBADMIN\FWCRMServiceRecordMaster\bin\Debug\FWCRMServiceRecordMaster.dll
+D:\Infolight\EEP2012\JBADMIN\FWCRMServiceRecordMaster\bin\Debug\FWCRMServiceRecordMaster.pdb
+D:\Infolight\EEP2012\JBADMIN\FWCRMServiceRecordMaster\obj\Debug\FWCRMServiceRecordMaster.csprojResolveAssemblyReference.cache
+D:\Infolight\EEP2012\JBADMIN\FWCRMServiceRecordMaster\obj\Debug\FWCRMServiceRecordMaster.csproj.GenerateResource.Cache
+D:\Infolight\EEP2012\JBADMIN\FWCRMServiceRecordMaster\obj\Debug\FWCRMServiceRecordMaster.dll
+D:\Infolight\EEP2012\JBADMIN\FWCRMServiceRecordMaster\obj\Debug\FWCRMServiceRecordMaster.pdb
+D:\Infolight\EEP2012\EEPNetServer\JBADMIN\FWCRMServiceRecordMaster.dll
+D:\Infolight\EEP2012\EEPNetServer\JBADMIN\FWCRMServiceRecordMaster.pdb
+D:\Infolight\EEP2012\JBADMIN\FWCRMServiceRecordMaster\obj\Debug\FWCRMServiceRecordMaster.Component.resources

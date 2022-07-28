@@ -1,7 +1,9 @@
-C:\Program Files (x86)\Infolight\EEP2012\EEPNetServer\JBADMIN\sAttend_AbsentMinus.dll
-C:\Program Files (x86)\Infolight\EEP2012\EEPNetServer\JBADMIN\sAttend_AbsentMinus.pdb
-C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sAttend_AbsentMinus\obj\Debug\sAttend_AbsentMinus.Component.resources
-C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sAttend_AbsentMinus\obj\Debug\sAttend_AbsentMinus.csproj.GenerateResource.Cache
-C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sAttend_AbsentMinus\obj\Debug\sAttend_AbsentMinus.dll
-C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sAttend_AbsentMinus\obj\Debug\sAttend_AbsentMinus.pdb
-C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sAttend_AbsentMinus\obj\Debug\sAttend_AbsentMinus.csprojResolveAssemblyReference.cache
+D:\Infolight\EEP2012\JBADMIN\sAttend_AbsentMinus\bin\Debug\sAttend_AbsentMinus.dll
+D:\Infolight\EEP2012\JBADMIN\sAttend_AbsentMinus\bin\Debug\sAttend_AbsentMinus.pdb
+D:\Infolight\EEP2012\JBADMIN\sAttend_AbsentMinus\obj\Debug\sAttend_AbsentMinus.csproj.GenerateResource.Cache
+D:\Infolight\EEP2012\JBADMIN\sAttend_AbsentMinus\obj\Debug\sAttend_AbsentMinus.dll
+D:\Infolight\EEP2012\JBADMIN\sAttend_AbsentMinus\obj\Debug\sAttend_AbsentMinus.pdb
+D:\Infolight\EEP2012\EEPNetServer\JBADMIN\sAttend_AbsentMinus.dll
+D:\Infolight\EEP2012\EEPNetServer\JBADMIN\sAttend_AbsentMinus.pdb
+D:\Infolight\EEP2012\JBADMIN\sAttend_AbsentMinus\obj\Debug\sAttend_AbsentMinus.Component.resources
+D:\Infolight\EEP2012\JBADMIN\sAttend_AbsentMinus\obj\Debug\sAttend_AbsentMinus.csprojResolveAssemblyReference.cache

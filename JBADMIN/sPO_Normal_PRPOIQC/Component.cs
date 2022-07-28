@@ -118,8 +118,8 @@ namespace sPO_Normal_PRPOIQC
                     null,
                     new object[]{
                     //"C:\\Program Files (x86)\\Infolight\\EEP2012\\EEPNetServer\\Workflow\\FL\\PO_Normal_PRPOIQC.xoml",
-                    "C:\\EEP2012\\EEPNetServer\\Workflow\\FL\\PO_Normal_PRPOIQC.xoml",
-                    //"D:\\Infolight\\EEP2012\\EEPNetServer\\Workflow\\FL\\PO_Normal_PRPOIQC.xoml",
+                    //"C:\\EEP2012\\EEPNetServer\\Workflow\\FL\\PO_Normal_PRPOIQC.xoml",
+                    "D:\\Infolight\\EEP2012\\EEPNetServer\\Workflow\\FL\\PO_Normal_PRPOIQC.xoml",
                     string.Empty,////空白即可，系統使用
                     0,//是否為重要申請
                     0,//是否為緊急申請
@@ -206,8 +206,8 @@ namespace sPO_Normal_PRPOIQC
                     null,
                     new object[]{
                     //"C:\\Program Files (x86)\\Infolight\\EEP2012\\EEPNetServer\\Workflow\\FL\\PO_Normal_PRPOIQC.xoml",
-                    "C:\\EEP2012\\EEPNetServer\\Workflow\\FL\\PO_Normal_PRPOIQC.xoml",
-                    //"D:\\INFOLIGHT\\EEP2012\\EEPNetServer\\Workflow\\FL\\PO_Normal_PRPOIQC.xoml",
+                    //"C:\\EEP2012\\EEPNetServer\\Workflow\\FL\\PO_Normal_PRPOIQC.xoml",
+                    "D:\\INFOLIGHT\\EEP2012\\EEPNetServer\\Workflow\\FL\\PO_Normal_PRPOIQC.xoml",
                     string.Empty,////空白即可，系統使用
                     0,//是否為重要申請
                     0,//是否為緊急申請

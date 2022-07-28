@@ -1,0 +1,8 @@
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sMedia_Report_PaperSalesDetails\bin\Debug\sMedia_Report_PaperSalesDetails.dll
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sMedia_Report_PaperSalesDetails\bin\Debug\sMedia_Report_PaperSalesDetails.pdb
+C:\Program Files (x86)\Infolight\EEP2012\EEPNetServer\JBADMIN\sMedia_Report_PaperSalesDetails.dll
+C:\Program Files (x86)\Infolight\EEP2012\EEPNetServer\JBADMIN\sMedia_Report_PaperSalesDetails.pdb
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sMedia_Report_PaperSalesDetails\obj\Debug\sMedia_Report_PaperSalesDetails.Component.resources
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sMedia_Report_PaperSalesDetails\obj\Debug\sMedia_Report_PaperSalesDetails.csproj.GenerateResource.Cache
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sMedia_Report_PaperSalesDetails\obj\Debug\sMedia_Report_PaperSalesDetails.dll
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sMedia_Report_PaperSalesDetails\obj\Debug\sMedia_Report_PaperSalesDetails.pdb

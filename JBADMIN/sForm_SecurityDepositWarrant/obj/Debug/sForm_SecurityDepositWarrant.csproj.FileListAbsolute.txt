@@ -1,0 +1,11 @@
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sForm_SecurityDepositWarrant\bin\Debug\sForm_SecurityDepositWarrant.dll
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sForm_SecurityDepositWarrant\bin\Debug\sForm_SecurityDepositWarrant.pdb
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sForm_SecurityDepositWarrant\obj\Debug\sForm_SecurityDepositWarrant.csproj.GenerateResource.Cache
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sForm_SecurityDepositWarrant\obj\Debug\sForm_SecurityDepositWarrant.dll
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sForm_SecurityDepositWarrant\obj\Debug\sForm_SecurityDepositWarrant.pdb
+C:\Program Files (x86)\Infolight\EEP2012\EEPNetServer\JBADMIN\sForm_SecurityDepositWarrant.dll
+C:\Program Files (x86)\Infolight\EEP2012\EEPNetServer\JBADMIN\sForm_SecurityDepositWarrant.pdb
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sForm_SecurityDepositWarrant\obj\Debug\sForm_SecurityDepositWarrant.Component.resources
+C:\Program Files (x86)\Infolight\EEP2012\EEPNetServer\JBADMIN\vi-VN\sForm_SecurityDepositWarrant.resources.dll
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sForm_SecurityDepositWarrant\obj\Debug\sForm_SecurityDepositWarrant.Component.vi-VN.resources
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sForm_SecurityDepositWarrant\obj\Debug\vi-VN\sForm_SecurityDepositWarrant.resources.dll

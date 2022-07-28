@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="ARMasterReport" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="ARMasterReport" msdata:IsDataSet="true" msdata:CaseSensitive="true" msdata:UseCurrentLocale="true">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="ARMasterReport">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="RoomID" type="xs:string" minOccurs="0" />
+              <xs:element name="EmployeeID" type="xs:string" minOccurs="0" />
+              <xs:element name="Name" type="xs:string" minOccurs="0" />
+              <xs:element name="ARMasterID" type="xs:string" minOccurs="0" />
+              <xs:element name="YearMonth" type="xs:string" minOccurs="0" />
+              <xs:element name="EmployerName" type="xs:string" minOccurs="0" />
+              <xs:element name="FeeID" type="xs:string" minOccurs="0" />
+              <xs:element name="Description" type="xs:string" minOccurs="0" />
+              <xs:element name="FeeAmount" type="xs:short" minOccurs="0" />
+              <xs:element name="FeeAmount2" type="xs:short" minOccurs="0" />
+              <xs:element name="oldYearMonth" type="xs:string" minOccurs="0" />
+              <xs:element name="FeeName" type="xs:string" minOccurs="0" />
+              <xs:element name="FeeName2" type="xs:string" minOccurs="0" />
+              <xs:element name="NationalityID" type="xs:string" minOccurs="0" />
+              <xs:element name="Nationality" type="xs:string" minOccurs="0" />
+              <xs:element name="TempborrowBill" type="xs:string" minOccurs="0" />
+              <xs:element name="FeePayDate" type="xs:string" minOccurs="0" />
+              <xs:element name="AutoKey" type="xs:int" minOccurs="0" />
+              <xs:element name="WorkerID" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

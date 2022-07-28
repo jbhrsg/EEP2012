@@ -1,0 +1,2 @@
+D:\Infolight\EEP2012\JBADMIN\sFWCRMOrdersLeave\bin\Debug\sFWCRMOrdersLeave.dll
+D:\Infolight\EEP2012\JBADMIN\sFWCRMOrdersLeave\bin\Debug\sFWCRMOrdersLeave.pdb

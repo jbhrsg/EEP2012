@@ -1,0 +1,231 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <metadata name="serviceManager1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 93</value>
+  </metadata>
+  <metadata name="InfoConnection1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 131</value>
+  </metadata>
+  <metadata name="JobQuery.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 169</value>
+  </metadata>
+  <data name="JobQuery.CommandText" xml:space="preserve">
+    <value>Select j.JobID,j.CustID,j.JobCloseDate,j.JobDateStd,'' as LastUpdateDate,c.CustShortName,JobName,j.HunterID,
+h.HunterName,t.JobTypeName,f.FunctionName,j.JobNeedCount,j.JobGender,j.JobAge1,j.JobAge2,j.EduLevelID,j.EduSubject,
+j.EduDepart,c.IndustryType,j.DutyDept,j.DutyTitle,j.JobLangNeedType
+from HUT_Job j 
+inner join HUT_Customer c on j.CustID = c.CustID
+inner join HUT_Hunter h on j.HunterID=h.ID
+inner join HUT_JobType t on j.JobTypeID=t.ID
+inner join HUT_Function f on j.JobFunctionID=f.FunctionID
+order by h.HunterName,c.CustShortName,JobName
+
+
+</value>
+  </data>
+  <metadata name="QueryResult.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 207</value>
+  </metadata>
+  <data name="QueryResult.CommandText" xml:space="preserve">
+    <value> select distinct u.UserID,u.Country1,u.Gender,u.NameC,u.NameC + '(' + g.Gender+','
+		+ Cast(DateDiff(Year,u.BirthDay,GetDate()) as nvarchar(5))+ '歲)' as Name,u.MobileNo1,u.eMail1
+		,dbo.funReturnJobAssignLogsStatus(2,0,u.UserID) as AssignName
+		,dbo.funReturnJobAssignLogsStatus(1,0,u.UserID) as LastStatus
+,u.Address1,l.EduName+Isnull(GradStatus1,'')+' '+u.SchoolName1+' '+Isnull(s.SubjectName,'')+' '+Isnull(u.Department1,'') as sEdu
+		,u.PhotoFile,u.LastUpdateDate
+		,Isnull(DutyStartDate,'')+Isnull('~'+DutyEndDate,'')+' '+Isnull(ComName,'')+' '+Isnull(DutyDept,'')+' '+Isnull(DutyTitle,'') as sCareer,(select Case COUNT(*) when 0 then 0 else 1 end from HUT_JobAssignLogs where UserID=u.UserID and AssignID=6  ) as NotMatch
+	from HUT_User u	
+		inner join HUT_ZGENType g on u.Gender=g.ID	
+		left join HUT_ZEduLevel d on u.EduID1=d.EduID
+        left join HUT_UseCareer c on u.UserID=c.UserID and c.ComID=1	
+        left join HUT_ZEduLevel l on u.EduID1=l.EduID
+        left join HUT_EduSubject s on u.EduSubject1=s.ID	
+where IsActive=1
+  </value>
+  </data>
+  <metadata name="AssignStep.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 283</value>
+  </metadata>
+  <metadata name="JobAssignNew.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 359</value>
+  </metadata>
+  <data name="JobAssignNew.CommandText" xml:space="preserve">
+    <value>Select distinct n.AssignNO,
+		n.UserID,
+		n.JobID,
+		n.AssignID,
+		n.AssignTime,
+		u.NameC + '(' + g.Gender+','+ Cast(DateDiff(Year,u.BirthDay,GetDate()) as nvarchar(5))+ '歲)' as Name,
+		u.MobileNo1,u.eMail1,		
+		s.AssignName,
+		f.FileUrl,
+		(Select COUNT(*) FROM dbo.[HUT_JobAssignLogs] where AssignID=2 and n.UserID=UserID) as iInterview,
+		h.HunterName,'' as OpenResume,'' as OpenResume2,'' as OpenLetter
+		,Isnull(j.JobResumeFile,'') as JobResumeFile,Isnull(j.JobResumeFile,'')+'_'+u.NameC as JobResumeFileNameC,isnull(r.downloadpdf,'') as downloadpdf
+ From	HUT_JobAssignLogs n 	
+ inner join HUT_User u on n.UserID=u.UserID 	
+ inner join HUT_ZGENType g on u.Gender=g.ID	
+ inner join HUT_ZAssignStep s on n.AssignID=s.AssignID
+ inner join HUT_Job j on n.JobID=j.JobID
+ left join HUT_JobAssignLogsFile f on n.JobID=f.JobID and n.UserID=f.UserID and f.AssignID=4
+ left  join HUT_Hunter h on n.ServicePerson=h.ID 
+ left  join HUT_RUser r on n.UserID=r.UserID and n.JobID=r.JobID
+where   n.AssignNO=(Select MAX(AssignNO) from HUT_JobAssignLogs where n.UserID=UserID and n.JobID=JobID)
+and n.AssignID!=6
+order by n.AssignTime desc</value>
+  </data>
+  <metadata name="ucHUT_JobAssignNew.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 397</value>
+  </metadata>
+  <metadata name="AssignNotes.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 435</value>
+  </metadata>
+  <metadata name="ucHUT_AssignNotes.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 473</value>
+  </metadata>
+  <metadata name="idHUT_JobAssignNew_HUT_AssignNotes.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 511</value>
+  </metadata>
+  <metadata name="autoNumber1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 549</value>
+  </metadata>
+  <metadata name="AssignLogs.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 55</value>
+  </metadata>
+  <data name="AssignLogs.CommandText" xml:space="preserve">
+    <value>Select l.AssignNO,j.JobName,l.AssignTime,s.AssignName
+ From	HUT_JobAssignLogs l 
+		inner join HUT_Job j on l.JobID=j.JobID		
+		inner join HUT_ZAssignStep s on l.AssignID=s.AssignID
+order by l.JobID,l.AssignTime desc</value>
+  </data>
+  <metadata name="infoIndustryType.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 245</value>
+  </metadata>
+  <metadata name="ucQueryResult.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 321</value>
+  </metadata>
+  <metadata name="HUT_UserInterview.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>246, 456</value>
+  </metadata>
+  <metadata name="$this.TrayLargeIcon" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>False</value>
+  </metadata>
+</root>

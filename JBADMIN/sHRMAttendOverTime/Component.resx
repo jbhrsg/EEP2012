@@ -118,37 +118,161 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <metadata name="serviceManager1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>17, 93</value>
+    <value>17, 111</value>
   </metadata>
   <metadata name="InfoConnection1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>17, 131</value>
+    <value>17, 158</value>
   </metadata>
   <metadata name="HRMAttendOverTimeApplyMaster.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>17, 169</value>
+    <value>17, 299</value>
   </metadata>
+  <data name="HRMAttendOverTimeApplyMaster.CommandText" xml:space="preserve">
+    <value>SELECT dbo.[HRMAttendOverTimeApplyMaster].*,'' as DEPT_Name,'' as ROTE_Name,'' as TotalHoursLMZ,'' as TotalHoursLMNZ,'' as TotalHoursTMZ,'' as TotalHoursTMNZ,'' as  TMOvertimeHrs,'' as LMOvertimeHrs FROM dbo.[HRMAttendOverTimeApplyMaster]</value>
+  </data>
   <metadata name="ucHRMAttendOverTimeApplyMaster.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>17, 207</value>
+    <value>17, 346</value>
   </metadata>
   <metadata name="HRMAttendOverTimeApplyDetails.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>17, 245</value>
+    <value>17, 393</value>
   </metadata>
   <metadata name="ucHRMAttendOverTimeApplyDetails.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>17, 321</value>
+    <value>17, 628</value>
   </metadata>
   <metadata name="idHRMAttendOverTimeApplyMaster_HRMAttendOverTimeApplyDetails.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>17, 359</value>
+    <value>17, 675</value>
   </metadata>
   <metadata name="autoOverTimeNO.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>17, 55</value>
+    <value>17, 722</value>
   </metadata>
   <metadata name="infoHRM_BASE_BASE.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>17, 283</value>
+    <value>17, 769</value>
   </metadata>
   <metadata name="infoConnection2.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>17, 397</value>
+    <value>17, 205</value>
   </metadata>
   <metadata name="infoOverTimeCauseID.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>281, 321</value>
+    <value>17, 816</value>
+  </metadata>
+  <metadata name="SumHRMAttendOverTimeApplyDetails.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 910</value>
+  </metadata>
+  <data name="SumHRMAttendOverTimeApplyDetails.CommandText" xml:space="preserve">
+    <value>select t1.OverTimeYYMM,t1.EmployeeID,SumTotalHours1,SumTotalHours2 from
+(
+SELECT 
+LEFT(CONVERT(NVARCHAR(10),d.OverTimeDate,120),7) as OverTimeYYMM
+,m.EmployeeID
+FROM [JBADMIN].[dbo].[HRMAttendOverTimeApplyDetails] as d
+left join [JBADMIN].[dbo].[HRMAttendOverTimeApplyMaster] as m on m.OverTimeNO=d.OverTimeNO
+group by LEFT(CONVERT(NVARCHAR(10),d.OverTimeDate,120),7),EmployeeID
+) as t1 
+full outer join
+(
+SELECT 
+sum([TotalHours]) as SumTotalHours1
+,LEFT(CONVERT(NVARCHAR(10),d.OverTimeDate,120),7) as OverTimeYYMM
+,m.EmployeeID
+FROM [JBADMIN].[dbo].[HRMAttendOverTimeApplyDetails] as d
+left join [JBADMIN].[dbo].[HRMAttendOverTimeApplyMaster] as m on m.OverTimeNO=d.OverTimeNO
+where  m.flowflag in ('N','P')
+group by LEFT(CONVERT(NVARCHAR(10),d.OverTimeDate,120),7),EmployeeID
+) as t2 on t2.EmployeeID=t1.EmployeeID and t2.OverTimeYYMM=t1.OverTimeYYMM
+full outer join
+(
+SELECT 
+sum([TotalHours]) as SumTotalHours2
+,LEFT(CONVERT(NVARCHAR(10),d.OverTimeDate,120),7) as OverTimeYYMM
+,m.EmployeeID
+FROM [JBADMIN].[dbo].[HRMAttendOverTimeApplyDetails] as d
+left join [JBADMIN].[dbo].[HRMAttendOverTimeApplyMaster] as m on m.OverTimeNO=d.OverTimeNO
+where  m.flowflag ='Z'
+group by LEFT(CONVERT(NVARCHAR(10),d.OverTimeDate,120),7),EmployeeID
+)as t3 on t3.EmployeeID=t1.EmployeeID and t3.OverTimeYYMM=t1.OverTimeYYMM
+where 1=0
+order by OverTimeYYMM</value>
+  </data>
+  <metadata name="HRMAttendOverTimeApplyHospital.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 487</value>
+  </metadata>
+  <data name="HRMAttendOverTimeApplyHospital.CommandText" xml:space="preserve">
+    <value>select a1.*,
+(select COUNT(AutoKey) from HRMAttendOverTimeApplyHospital
+where Employer=a1.Employer and ForeignLaborer=a1.ForeignLaborer
+group by Employer,ForeignLaborer
+) as counts,'' as counts1,'' as EmployeeCEName1,
+(Select SUM(f.FeeAmount+f.tFeeAmount)-sum(IsNull(p.FeeAmount,0))
+				from  [192.168.1.41].FWCRM.dbo.ARDetails a
+				inner join  [192.168.1.41].FWCRM.dbo.ARMaster m on a.ARMasterID=m.ARMasterID
+				inner join  [192.168.1.41].FWCRM.dbo.EmployeeFees f on a.FeeAccountID=f.FeeAccountID 
+				left join  [192.168.1.41].FWCRM.dbo.EmployeePays p on a.FeeAccountID=p.FeeAccountID  		
+				inner join  [192.168.1.41].FWCRM.dbo.FeeItem i on f.FeeID=i.FeeID	
+				inner join  [192.168.1.41].FWCRM.dbo.Employee e on f.EmployeeID=e.EmployeeID						
+	where m.YearMonth=(select MAX(YearMonth) from  [192.168.1.41].FWCRM.dbo.ARSetUpMaster where IsDormFeeEE=1) and f.EmployeeID=a1.ForeignLaborer) as debt
+from HRMAttendOverTimeApplyHospital a1</value>
+  </data>
+  <metadata name="infoDataSource1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 581</value>
+  </metadata>
+  <metadata name="updateComponent1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 252</value>
+  </metadata>
+  <metadata name="EmployerName.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 1004</value>
+  </metadata>
+  <metadata name="infoConnection3.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 64</value>
+  </metadata>
+  <metadata name="GoToHospitalNumber.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 1051</value>
+  </metadata>
+  <metadata name="users.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 957</value>
+  </metadata>
+  <metadata name="EmployeeCEName.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 863</value>
+  </metadata>
+  <data name="EmployeeCEName.CommandText" xml:space="preserve">
+    <value>SELECT  distinct top 100 er.EmployerID,e.EmployeeID,case (l.description) when '續聘' then '(續聘)' else '' end+e.EmployeeTcName+'/'+e.EmployeeEnName as EmployeeCEName,h.counts1,
+(Select SUM(f.FeeAmount+f.tFeeAmount)-sum(IsNull(p.FeeAmount,0))
+		from [192.168.1.41].FWCRM.dbo.ARDetails a
+		inner join [192.168.1.41].FWCRM.dbo.ARMaster m on a.ARMasterID=m.ARMasterID 
+			and m.EmployeeID=e.EmployeeID
+		inner join [192.168.1.41].FWCRM.dbo.EmployeeFees f on a.FeeAccountID=f.FeeAccountID 
+			and f.EmployeeID=e.EmployeeID
+		left join [192.168.1.41].FWCRM.dbo.EmployeePays p on a.FeeAccountID=p.FeeAccountID 
+	where m.YearMonth=(select MAX(YearMonth) from [192.168.1.41].FWCRM.dbo.ARSetUpMaster where IsDormFeeEE=1) and f.EmployeeID=e.EmployeeID) as debt
+	From [192.168.1.41].FWCRM.dbo.Employee e
+		inner join [192.168.1.41].FWCRM.dbo.EmployeeLogs l on e.EmployeeID=l.EmployeeID
+		inner join [192.168.1.41].FWCRM.dbo.employer er on l.employerid=er.employerid
+		left join 
+		(
+		select COUNT(AutoKey) as counts1,Employer,ForeignLaborer from JBADMIN.dbo.HRMAttendOverTimeApplyHospital
+		group by Employer,ForeignLaborer
+		) h on h.Employer=er.EmployerID and h.ForeignLaborer=e.EmployeeID	
+	where l.EffectDate=(Select Max(EffectDate) from [192.168.1.41].FWCRM.dbo.EmployeeLogs where e.EmployeeID=EmployeeID and IsActive=1)
+		and (l.EffectTypeID=1 or l.EffectTypeID=5 ) </value>
+  </data>
+  <metadata name="EmployeeDebt.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 440</value>
+  </metadata>
+  <data name="EmployeeDebt.CommandText" xml:space="preserve">
+    <value>select * from(
+Select f.EmployeeID,(SUM(f.FeeAmount+f.tFeeAmount)-sum(IsNull(p.FeeAmount,0))) as debt
+				from ARDetails a
+				inner join ARMaster m on a.ARMasterID=m.ARMasterID
+				inner join EmployeeFees f on a.FeeAccountID=f.FeeAccountID 
+				left join EmployeePays p on a.FeeAccountID=p.FeeAccountID  		
+				inner join FeeItem i on f.FeeID=i.FeeID	
+				inner join Employee ee on f.EmployeeID=ee.EmployeeID						
+	where m.YearMonth=(select MAX(YearMonth) from ARSetUpMaster where IsDormFeeEE=1)
+	group by f.EmployeeID
+) tt</value>
+  </data>
+  <metadata name="HRMAttendOverTimeMealApplyType.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 534</value>
+  </metadata>
+  <metadata name="HRMAttendOverTimeApplyHospitalDrilldown.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>424, 442</value>
   </metadata>
   <metadata name="$this.TrayLargeIcon" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>False</value>

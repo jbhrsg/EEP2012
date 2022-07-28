@@ -1,0 +1,9 @@
+D:\Infolight\EEP2012\JBADMIN\sFWCRMSetStatus\bin\Debug\sFWCRMSetStatus.dll
+D:\Infolight\EEP2012\JBADMIN\sFWCRMSetStatus\bin\Debug\sFWCRMSetStatus.pdb
+D:\Infolight\EEP2012\JBADMIN\sFWCRMSetStatus\obj\Debug\sFWCRMSetStatus.csproj.GenerateResource.Cache
+D:\Infolight\EEP2012\JBADMIN\sFWCRMSetStatus\obj\Debug\sFWCRMSetStatus.dll
+D:\Infolight\EEP2012\JBADMIN\sFWCRMSetStatus\obj\Debug\sFWCRMSetStatus.pdb
+D:\Infolight\EEP2012\EEPNetServer\JBADMIN\sFWCRMSetStatus.dll
+D:\Infolight\EEP2012\EEPNetServer\JBADMIN\sFWCRMSetStatus.pdb
+D:\Infolight\EEP2012\JBADMIN\sFWCRMSetStatus\obj\Debug\sFWCRMSetStatus.Component.resources
+D:\Infolight\EEP2012\JBADMIN\sFWCRMSetStatus\obj\Debug\sFWCRMSetStatus.csprojResolveAssemblyReference.cache

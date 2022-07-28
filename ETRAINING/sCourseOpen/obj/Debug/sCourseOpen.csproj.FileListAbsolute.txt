@@ -1,9 +1,0 @@
-C:\Program Files (x86)\Infolight\EEP2012\eTraining\sCourseOpen\bin\Debug\sCourseOpen.dll
-C:\Program Files (x86)\Infolight\EEP2012\eTraining\sCourseOpen\bin\Debug\sCourseOpen.pdb
-C:\Program Files (x86)\Infolight\EEP2012\EEPNetServer\eTraining\sCourseOpen.dll
-C:\Program Files (x86)\Infolight\EEP2012\EEPNetServer\eTraining\sCourseOpen.pdb
-C:\Program Files (x86)\Infolight\EEP2012\eTraining\sCourseOpen\obj\Debug\sCourseOpen.Component.resources
-C:\Program Files (x86)\Infolight\EEP2012\eTraining\sCourseOpen\obj\Debug\sCourseOpen.csproj.GenerateResource.Cache
-C:\Program Files (x86)\Infolight\EEP2012\eTraining\sCourseOpen\obj\Debug\sCourseOpen.dll
-C:\Program Files (x86)\Infolight\EEP2012\eTraining\sCourseOpen\obj\Debug\sCourseOpen.pdb
-C:\Program Files (x86)\Infolight\EEP2012\eTraining\sCourseOpen\obj\Debug\sCourseOpen.csprojResolveAssemblyReference.cache

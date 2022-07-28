@@ -1,0 +1,9 @@
+D:\Infolight\EEP2012\JBADMIN\sREC_Consultants\bin\Debug\sREC_Consultants.dll
+D:\Infolight\EEP2012\JBADMIN\sREC_Consultants\bin\Debug\sREC_Consultants.pdb
+D:\Infolight\EEP2012\JBADMIN\sREC_Consultants\obj\Debug\sREC_Consultants.csprojResolveAssemblyReference.cache
+D:\Infolight\EEP2012\JBADMIN\sREC_Consultants\obj\Debug\sREC_Consultants.csproj.GenerateResource.Cache
+D:\Infolight\EEP2012\JBADMIN\sREC_Consultants\obj\Debug\sREC_Consultants.dll
+D:\Infolight\EEP2012\JBADMIN\sREC_Consultants\obj\Debug\sREC_Consultants.pdb
+D:\Infolight\EEP2012\EEPNetServer\JBADMIN\sREC_Consultants.dll
+D:\Infolight\EEP2012\EEPNetServer\JBADMIN\sREC_Consultants.pdb
+D:\Infolight\EEP2012\JBADMIN\sREC_Consultants\obj\Debug\sREC_Consultants.Component.resources

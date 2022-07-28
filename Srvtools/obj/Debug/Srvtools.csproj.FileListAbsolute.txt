@@ -834,3 +834,4 @@ C:\Program Files (x86)\Infolight\EEP2012\Srvtools\obj\Debug\Srvtools.csproj.Gene
 C:\Program Files (x86)\Infolight\EEP2012\Srvtools\obj\Debug\Srvtools.dll
 C:\Program Files (x86)\Infolight\EEP2012\Srvtools\obj\Debug\Srvtools.pdb
 C:\Program Files (x86)\Infolight\EEP2012\Srvtools\obj\Debug\Srvtools.csprojResolveAssemblyReference.cache
+D:\Infolight\EEP2012\Srvtools\obj\Debug\Srvtools.csprojResolveAssemblyReference.cache

@@ -29,7 +29,6 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            Srvtools.Service service1 = new Srvtools.Service();
             Srvtools.KeyItem keyItem1 = new Srvtools.KeyItem();
             Srvtools.FieldAttr fieldAttr1 = new Srvtools.FieldAttr();
             Srvtools.FieldAttr fieldAttr2 = new Srvtools.FieldAttr();
@@ -38,7 +37,6 @@
             Srvtools.FieldAttr fieldAttr5 = new Srvtools.FieldAttr();
             Srvtools.FieldAttr fieldAttr6 = new Srvtools.FieldAttr();
             Srvtools.FieldAttr fieldAttr7 = new Srvtools.FieldAttr();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Component));
             Srvtools.KeyItem keyItem2 = new Srvtools.KeyItem();
             Srvtools.KeyItem keyItem3 = new Srvtools.KeyItem();
             Srvtools.FieldAttr fieldAttr8 = new Srvtools.FieldAttr();
@@ -74,7 +72,6 @@
             this.View_SalesKind = new Srvtools.InfoCommand(this.components);
             this.View_SalesKindSalesType = new Srvtools.InfoCommand(this.components);
             this.View_SalesType = new Srvtools.InfoCommand(this.components);
-            this.SalesTypeTree = new Srvtools.InfoCommand(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.InfoConnection1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.SalesKind)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.SalesKindSalesType)).BeginInit();
@@ -82,14 +79,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.View_SalesKind)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.View_SalesKindSalesType)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.View_SalesType)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.SalesTypeTree)).BeginInit();
-            // 
-            // serviceManager1
-            // 
-            service1.DelegateName = "SaveKindSaleType";
-            service1.NonLogin = false;
-            service1.ServiceName = "SaveKindSaleType";
-            this.serviceManager1.ServiceCollection.Add(service1);
             // 
             // InfoConnection1
             // 
@@ -98,8 +87,7 @@
             // SalesKind
             // 
             this.SalesKind.CacheConnection = false;
-            this.SalesKind.CommandText = "SELECT dbo.[SalesKind].* ,\r\nJBERP.dbo.funReturnSalesKindSaleType(SalesKindID) As " +
-    "KindSaleTypeIDS\r\nFROM dbo.[SalesKind] order by SalesKindID";
+            this.SalesKind.CommandText = "SELECT dbo.[SalesKind].* FROM dbo.[SalesKind] order by AutoKey desc";
             this.SalesKind.CommandTimeout = 30;
             this.SalesKind.CommandType = System.Data.CommandType.Text;
             this.SalesKind.DynamicTableName = false;
@@ -108,7 +96,7 @@
             this.SalesKind.EncodingBefore = "Windows-1252";
             this.SalesKind.EncodingConvert = null;
             this.SalesKind.InfoConnection = this.InfoConnection1;
-            keyItem1.KeyName = "SalesKindID";
+            keyItem1.KeyName = "AutoKey";
             this.SalesKind.KeyFields.Add(keyItem1);
             this.SalesKind.MultiSetWhere = false;
             this.SalesKind.Name = "SalesKind";
@@ -149,21 +137,21 @@
             fieldAttr3.WhereMode = true;
             fieldAttr4.CheckNull = false;
             fieldAttr4.DataField = "CreateBy";
-            fieldAttr4.DefaultMode = Srvtools.DefaultModeType.InsertAndUpdate;
+            fieldAttr4.DefaultMode = Srvtools.DefaultModeType.Insert;
             fieldAttr4.DefaultValue = "_username";
             fieldAttr4.TrimLength = 0;
             fieldAttr4.UpdateEnable = true;
             fieldAttr4.WhereMode = true;
             fieldAttr5.CheckNull = false;
             fieldAttr5.DataField = "CreateDate";
-            fieldAttr5.DefaultMode = Srvtools.DefaultModeType.InsertAndUpdate;
-            fieldAttr5.DefaultValue = "";
+            fieldAttr5.DefaultMode = Srvtools.DefaultModeType.Insert;
+            fieldAttr5.DefaultValue = "_sysdate";
             fieldAttr5.TrimLength = 0;
             fieldAttr5.UpdateEnable = true;
             fieldAttr5.WhereMode = true;
             fieldAttr6.CheckNull = false;
             fieldAttr6.DataField = "LastUpdateBy";
-            fieldAttr6.DefaultMode = Srvtools.DefaultModeType.Update;
+            fieldAttr6.DefaultMode = Srvtools.DefaultModeType.Insert;
             fieldAttr6.DefaultValue = "_username";
             fieldAttr6.TrimLength = 0;
             fieldAttr6.UpdateEnable = true;
@@ -171,7 +159,7 @@
             fieldAttr7.CheckNull = false;
             fieldAttr7.DataField = "LastUpdateDate";
             fieldAttr7.DefaultMode = Srvtools.DefaultModeType.Insert;
-            fieldAttr7.DefaultValue = "";
+            fieldAttr7.DefaultValue = "_sysdate";
             fieldAttr7.TrimLength = 0;
             fieldAttr7.UpdateEnable = true;
             fieldAttr7.WhereMode = true;
@@ -194,13 +182,13 @@
             this.ucSalesKind.TransIsolationLevel = System.Data.IsolationLevel.ReadCommitted;
             this.ucSalesKind.UseTranscationScope = false;
             this.ucSalesKind.WhereMode = Srvtools.WhereModeType.Keyfields;
-            this.ucSalesKind.BeforeInsert += new Srvtools.UpdateComponentBeforeInsertEventHandler(this.ucSalesKind_BeforeInsert);
-            this.ucSalesKind.BeforeModify += new Srvtools.UpdateComponentBeforeModifyEventHandler(this.ucSalesKind_BeforeModify);
             // 
             // SalesKindSalesType
             // 
             this.SalesKindSalesType.CacheConnection = false;
-            this.SalesKindSalesType.CommandText = resources.GetString("SalesKindSalesType.CommandText");
+            this.SalesKindSalesType.CommandText = "SELECT s.*,sk.SalesKindName,st.SalesTypeName FROM dbo.[SalesKindSalesType] s\r\nlef" +
+    "t join SalesKind sk on sk.SalesKindID=s.SalesKindID\r\nleft join SalesType st on s" +
+    "t.SalesTypeID=s.SalesTypeID";
             this.SalesKindSalesType.CommandTimeout = 30;
             this.SalesKindSalesType.CommandType = System.Data.CommandType.Text;
             this.SalesKindSalesType.DynamicTableName = false;
@@ -501,30 +489,6 @@
             this.View_SalesType.SiteControl = false;
             this.View_SalesType.SiteFieldName = null;
             this.View_SalesType.UpdatedRowSource = System.Data.UpdateRowSource.None;
-            // 
-            // SalesTypeTree
-            // 
-            this.SalesTypeTree.CacheConnection = false;
-            this.SalesTypeTree.CommandText = resources.GetString("SalesTypeTree.CommandText");
-            this.SalesTypeTree.CommandTimeout = 30;
-            this.SalesTypeTree.CommandType = System.Data.CommandType.Text;
-            this.SalesTypeTree.DynamicTableName = false;
-            this.SalesTypeTree.EEPAlias = "JBERP";
-            this.SalesTypeTree.EncodingAfter = null;
-            this.SalesTypeTree.EncodingBefore = "Windows-1252";
-            this.SalesTypeTree.EncodingConvert = null;
-            this.SalesTypeTree.InfoConnection = this.InfoConnection1;
-            this.SalesTypeTree.MultiSetWhere = false;
-            this.SalesTypeTree.Name = "SalesTypeTree";
-            this.SalesTypeTree.NotificationAutoEnlist = false;
-            this.SalesTypeTree.SecExcept = null;
-            this.SalesTypeTree.SecFieldName = null;
-            this.SalesTypeTree.SecStyle = Srvtools.SecurityStyle.ssByNone;
-            this.SalesTypeTree.SelectPaging = false;
-            this.SalesTypeTree.SelectTop = 0;
-            this.SalesTypeTree.SiteControl = false;
-            this.SalesTypeTree.SiteFieldName = null;
-            this.SalesTypeTree.UpdatedRowSource = System.Data.UpdateRowSource.None;
             ((System.ComponentModel.ISupportInitialize)(this.InfoConnection1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.SalesKind)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.SalesKindSalesType)).EndInit();
@@ -532,7 +496,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.View_SalesKind)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.View_SalesKindSalesType)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.View_SalesType)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.SalesTypeTree)).EndInit();
 
         }
 
@@ -549,6 +512,5 @@
         private Srvtools.InfoCommand View_SalesKind;
         private Srvtools.InfoCommand View_SalesKindSalesType;
         private Srvtools.InfoCommand View_SalesType;
-        private Srvtools.InfoCommand SalesTypeTree;
     }
 }

@@ -1,0 +1,9 @@
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sMedia_Report_PostList\bin\Debug\sMedia_Report_PostList.dll
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sMedia_Report_PostList\bin\Debug\sMedia_Report_PostList.pdb
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sMedia_Report_PostList\obj\Debug\sMedia_Report_PostList.csprojResolveAssemblyReference.cache
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sMedia_Report_PostList\obj\Debug\sMedia_Report_PostList.csproj.GenerateResource.Cache
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sMedia_Report_PostList\obj\Debug\sMedia_Report_PostList.dll
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sMedia_Report_PostList\obj\Debug\sMedia_Report_PostList.pdb
+C:\Program Files (x86)\Infolight\EEP2012\EEPNetServer\JBADMIN\sMedia_Report_PostList.dll
+C:\Program Files (x86)\Infolight\EEP2012\EEPNetServer\JBADMIN\sMedia_Report_PostList.pdb
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sMedia_Report_PostList\obj\Debug\sMedia_Report_PostList.Component.resources

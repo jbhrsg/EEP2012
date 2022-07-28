@@ -1,0 +1,8 @@
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sSalesKind_ImportXlsx\bin\Debug\sSalesKind_ImportXlsx.dll
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sSalesKind_ImportXlsx\bin\Debug\sSalesKind_ImportXlsx.pdb
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sSalesKind_ImportXlsx\obj\Debug\sSalesKind_ImportXlsx.csproj.GenerateResource.Cache
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sSalesKind_ImportXlsx\obj\Debug\sSalesKind_ImportXlsx.dll
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sSalesKind_ImportXlsx\obj\Debug\sSalesKind_ImportXlsx.pdb
+C:\Program Files (x86)\Infolight\EEP2012\EEPNetServer\JBADMIN\sSalesKind_ImportXlsx.dll
+C:\Program Files (x86)\Infolight\EEP2012\EEPNetServer\JBADMIN\sSalesKind_ImportXlsx.pdb
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sSalesKind_ImportXlsx\obj\Debug\sSalesKind_ImportXlsx.Component.resources

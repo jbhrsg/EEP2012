@@ -609,7 +609,9 @@
             <JQTools:JQValidate ID="Validate_ImportMain" runat="server" BindingObjectID="DataForm_ImportMain" EnableTheming="True">
             </JQTools:JQValidate>
         </JQTools:JQDialog>
-        <JQTools:JQDialog ID="JQDialogImportInfo" runat="server" DialogLeft="200px" DialogTop="100px" Title="匯入紀錄查詢" ShowSubmitDiv="False" Width="400px">
+
+
+            <JQTools:JQDialog ID="JQDialogImportInfo" runat="server" DialogLeft="200px" DialogTop="100px" Title="匯入紀錄查詢" ShowSubmitDiv="False" Width="400px">
                 <JQTools:JQDataGrid ID="JQGridImportInfo" runat="server" AllowAdd="True" AllowDelete="False" AllowUpdate="False" AlwaysClose="False" AutoApply="True" CheckOnSelect="True" ColumnsHibeable="False" DataMember="infoImportInfo" DeleteCommandVisible="False" DuplicateCheck="False" EditMode="Dialog" EditOnEnter="True" InsertCommandVisible="True" MultiSelect="False" PageList="10,20,30,40,50" PageSize="10" Pagination="False" QueryAutoColumn="False" QueryLeft="" QueryMode="Panel" QueryTitle="" QueryTop="" RecordLock="False" RecordLockMode="None" RemoteName="sHumanImport.infoImportInfo" Title="" TotalCaption="Total:" UpdateCommandVisible="False" ViewCommandVisible="False" Width="320px" BufferView="False" NotInitGrid="False" RowNumbers="True" Height="300px">
                     <Columns>
                         <JQTools:JQGridColumn Alignment="center" Caption="匯入日期" Editor="datebox" FieldName="cDate" Frozen="False" IsNvarChar="False" MaxLength="0" QueryCondition="" ReadOnly="False" Sortable="True" Visible="True" Width="95" Format="yyyy/mm/dd HH:MM" />

@@ -91,25 +91,27 @@
 
             //----------------修改jqDataForm的Caption為Hypelink-----------------------------------
             //呼叫科目明細
-            $("#dataFormDetail").form({
-                onLoadSuccess: function (data) {
-                    $("td", "#dataFormDetail").each(function (index) {
-                        if ($(this).children().length == 0) {
-                            if ($(this).html() == "呼叫明細") {
-                                $(this).html("");
-                                //$('<a>aa</a>').attr({
-                                //    'href': 'bOrders1.aspx'
-                                //}).appendTo(this);
-                                $('<input type="image" img  src="img/clock_red.png" onclick="OpenSubAcnoToolTip()">').attr({
-                                }).appendTo(this);
+            //$("#dataFormDetail").form({
+            //    onLoadSuccess: function (data) {
+            //        $("td", "#dataFormDetail").each(function (index) {
+            //            if ($(this).children().length == 0) {
+            //                if ($(this).html() == "呼叫明細") {
+            //                    $(this).html("");
+            //                    //$('<a>aa</a>').attr({
+            //                    //    'href': 'bOrders1.aspx'
+            //                    //}).appendTo(this);
+            //                    $('<input type="image" img  src="img/clock_red.png" onclick="OpenSubAcnoToolTip()">').attr({
+            //                    }).appendTo(this);
 
-                                $("#dataFormDetailOpenToolTip").closest('td').hide();
-                            }
+            //                    $("#dataFormDetailOpenToolTip").closest('td').hide();
+            //                }
 
-                        }
-                    });
-                }
-            });
+            //            }
+            //        });
+            //    }
+            //});
+
+
         });       
         function OnSelectOrg_NO(rowData) {
             //$("#dataFormMasterCostCenterID").combobox('setValue', rowData.CostCenterID);
@@ -736,10 +738,14 @@
         //=========================================開啟傳票設定內容=========================================
         function OpeneglVoucher() {
 
-            openForm('#JQDialogVoucherOpen', $('#dataGridDetail').datagrid('getSelected'), "updated", 'dialog');
+            //openForm('#JQDialogVoucherOpen', {}, 'inserted', 'Dialog');
+
+            openForm('#JQDialogVoucherOpen', $('#dataGridView').datagrid('getSelected'), "updated", 'dialog');
             setTimeout(function () {
                 SetglVoucher();
-                queryGrid($('#dataGridDetail'));
+                //queryGrid($('#dataGridDetail'));
+                //queryGrid($('#dataGridDetail1'));
+
             }, 500);
             
 
@@ -763,12 +769,15 @@
                             sCompanyID = rows[0].glCompanyID;
                             sVoucherID = rows[0].VoucherID;
                             iVoucherCount = rows[0].iVoucherCount;
+                            iVoucherCount1 = rows[0].iVoucherCount1;
                             var VoucherDate = rows[0].VoucherDate;
 
-                            //設定dataForm
-                            $("#dataFormVoucherRequisitionNO").val(sRequisitionNO);
+                            //設定dataForm(內帳)
                             $("#dataFormVoucherCompanyID").combobox('setValue', sCompanyID);
                             $("#dataFormVoucherVoucherID").options('setValue', sVoucherID);
+
+                            //設定dataForm(外帳)
+                            $("#dataFormVoucher1CompanyID").combobox('setValue', 2);
 
                             //是否Grid已有資料
                             if (iVoucherCount > 0) {
@@ -778,6 +787,17 @@
                             } else {
                                 //$("#dataFormVoucherVoucherDate").removeAttr("disable");
                                 $('#lbVoucher').show();
+                                //$('#dataGridDetail').datagrid('loadData', []); //銷貨明細清空資料
+
+                            }
+
+                            //是否Grid已有資料
+                            if (iVoucherCount1 > 0) {
+                                $('#lbVoucher1').hide();//載入項目
+                            } else {
+                                $('#lbVoucher1').show();
+                                //$('#dataGridDetail1').datagrid('loadData', []); //銷貨明細清空資料
+
                             }
                         }
 
@@ -793,15 +813,22 @@
 
         function queryGrid(dg) {//查詢後添加固定條件
 
-            if ($(dg).attr('id') == 'dataGridDetail') {
-                //查詢條件
-                var result = [];
-                if (sRequisitionNO != '') result.push("g.RequisitionNO = '" + sRequisitionNO + "'");
+            //if ($(dg).attr('id') == 'dataGridDetail') {
+            //    //查詢條件
+            //    var result = [];
+            //    if (sRequisitionNO != '') result.push("g.RequisitionNO = '" + sRequisitionNO + "'");
 
-                $(dg).datagrid('setWhere', result.join(' and '));
-            }
+            //    $(dg).datagrid('setWhere', result.join(' and '));
+            //}
+            //if ($(dg).attr('id') == 'dataGridDetail1') {
+            //    //查詢條件
+            //    var result = [];
+            //    if (sRequisitionNO != '') result.push("g.RequisitionNO = '" + sRequisitionNO + "'");
+
+            //    $(dg).datagrid('setWhere', result.join(' and '));
+            //}
         }
-        //========================================= 寫入傳票內容 ====================================================================================        
+        //========================================= 寫入傳票內容(內帳)  ====================================================================================        
         function InsertVoucherData() {
 
             var VoucherMVoucherDate = $("#dataFormVoucherVoucherDate").datebox('getValue');
@@ -820,6 +847,30 @@
                 success: function (data) {
                     $('#dataGridDetail').datagrid('reload');
                     $('#lbVoucher').hide();
+                },
+                error: function (xhr, ajaxOptions, thrownError) {
+                    alert(xhr.status);
+                    alert(thrownError);
+                }
+            });
+        }
+        //========================================= 寫入傳票內容(外帳) ====================================================================================        
+        function InsertVoucherData1() {
+            var VoucherMVoucherDate = $("#dataFormVoucherVoucherDate").datebox('getValue');
+            if (VoucherMVoucherDate == "" || VoucherMVoucherDate == undefined) {
+                alert('請選取傳票日期');
+                $("#dataFormVoucherVoucherDate").focus();
+                return false;
+            }
+            $.ajax({
+                type: "POST",
+                url: '../handler/jqDataHandle.ashx?RemoteName=sRequisition.Requisition', //連接的Server端，command
+                data: "mode=method&method=" + "InsertRequisitionVoucher1" + "&parameters=" + sRequisitionNO + "," + VoucherMVoucherDate, //method後的參數為server的Method名稱  parameters後為端的到後端的參數這裡傳入選中資料的UserID欄位
+                cache: false,
+                async: false,
+                success: function (data) {
+                    $('#dataGridDetail1').datagrid('reload');//外帳
+                    $('#lbVoucher1').hide();
                 },
                 error: function (xhr, ajaxOptions, thrownError) {
                     alert(xhr.status);
@@ -876,6 +927,7 @@
                 return false;
             }
         }
+        //========================================= DataFormDetails(內帳) ====================================================================================              
         //========================================= 公司別 & 科目 連動Combobox ====================================================================================   
         //主檔的 公司別 有變動時      
         //---------------------------------------選公司別觸發---------------------------------
@@ -951,28 +1003,28 @@
 
         //========================================= dataFormVoucher ====================================================================================        
         function OnLoadSuccessDFMaster() {
-            if (getEditMode($("#dataFormVoucher")) == 'viewed') {
-                $('#dataFormDetail').hide();
-            } else $('#dataFormDetail').show();
+            //if (getEditMode($("#dataFormVoucher")) == 'viewed') {
+            //    $('#dataFormDetail').hide();
+            //} else $('#dataFormDetail').show();
 
-            if (getEditMode($("#dataFormVoucher")) == 'inserted') {
-                //傳票日期disable属性删除
-                $("#dataFormVoucherVoucherDate").combo('textbox').removeAttr("disabled");
-                $("#dataFormVoucherVoucherDate").datebox().removeAttr("disabled");
-                //預設傳票日期
-                var dt = new Date();
-                var today = $.jbjob.Date.DateFormat(dt, 'yyyy/MM/dd')
-                $("#dataFormVoucherVoucherDate").datebox('setValue', today);
-                //設定傳回目前的公司別、傳票類別   
-                $("#dataFormVoucherRequisitionNO").val(sRequisitionNO);
-                $("#dataFormVoucherCompanyID").combobox('setValue', sCompanyID);
-                $("#dataFormVoucherVoucherID").options('setValue', sVoucherID);
-                //Detail dataform
-                GetAcno("");
-                GetSubAcno("0", "");//新增時預設
-                //分錄科目預設清空
-                $("#dataFormVoucherOftenUsedAcno").combobox('setValue', "");
-            }
+            //if (getEditMode($("#dataFormVoucher")) == 'inserted') {
+            //    //傳票日期disable属性删除
+            //    $("#dataFormVoucherVoucherDate").combo('textbox').removeAttr("disabled");
+            //    $("#dataFormVoucherVoucherDate").datebox().removeAttr("disabled");
+            //    //預設傳票日期
+            //    var dt = new Date();
+            //    var today = $.jbjob.Date.DateFormat(dt, 'yyyy/MM/dd')
+            //    $("#dataFormVoucherVoucherDate").datebox('setValue', today);
+            //    //設定傳回目前的公司別、傳票類別   
+            //    $("#dataFormVoucherRequisitionNO").val(sRequisitionNO);
+            //    $("#dataFormVoucherCompanyID").combobox('setValue', sCompanyID);
+            //    $("#dataFormVoucherVoucherID").options('setValue', sVoucherID);
+            //    //Detail dataform
+            //    GetAcno("");
+            //    GetSubAcno("0", "");//新增時預設
+            //    //分錄科目預設清空
+            //    $("#dataFormVoucherOftenUsedAcno").combobox('setValue', "");
+            //}
             //else {
             //    //傳票日期不可編輯
             //    $("#dataFormVoucherVoucherDate").datebox("disable");
@@ -1105,10 +1157,9 @@
             //明細  => 選取時將文字帶入DataForm的文字欄位=>之後Grid用            
             $("#dataFormDetailSubAcnoText").val(rowData.text);
         }
-
+       
         //DataFormDetails存檔前檢查
         function OnApplyDFDetail() {
-
             //公司別
             var CompanyID = $("#dataFormVoucherCompanyID").combobox('getValue');
             $("#dataFormDetailCompanyID").val(CompanyID);
@@ -1155,11 +1206,15 @@
             }
 
         }
-
+        function OnAppliedDFDetail() {
+            $('#dataGridDetail').datagrid("reload");
+        }
+        
         //========================================= 存檔前檢查 ====================================================================================              
-        //存檔前檢查 OnSubmited
+        //存檔前檢查 OnSubmited(內帳+外帳)
         function OnApplyDFMaster() {
 
+            //-------------內帳----------------------------------------------------------------------
             var GridName = '#dataGridDetail';                       
 
             //1.檢查 dataGridDetail 的 公司別 是否有跑掉
@@ -1185,7 +1240,7 @@
                 var Acno = rows[i].Acno;
                 //檢查科目
                 if (Acno == null) {
-                    alert('科目為必填!');
+                    alert('內帳科目為必填!');
                     return false;
                 }
 
@@ -1193,7 +1248,7 @@
                 var bCostCenterID = GetDataFromMethod('GetCostCenterID', { Company_ID: CompanyID, Ac_no: Acno, Sub_Acno: SubAcno });
                 var CostCenterID = rows[i].CostCenterID;
                 if (bCostCenterID == "True" && CostCenterID == "") {
-                    alert('此科目' + Acno + ' ' + SubAcno + '需成本中心-請選擇成本中心!');
+                    alert('內帳科目' + Acno + ' ' + SubAcno + '需成本中心-請選擇成本中心!');
                     return false;
                 }
 
@@ -1203,69 +1258,112 @@
                     lend = parseInt(lend) + parseInt(rows[i].AmtShow);
                 }
             }
-            //if (rows.length> 0 && borrow == 0) {
-            //    alert("借:" + borrow + ",貸:" + lend + " 借貸有問題！");
-            //    return false;
-            //}
             if (borrow != lend) {
-                alert("借:" + borrow + ",貸:" + lend + " 總金額不平衡！");
+                alert("內帳 借:" + borrow + ",貸:" + lend + " 總金額不平衡！");
                 return false;
             }
 
-            //3.傳票日期檢查=>是否已鎖檔
+            ////傳票日期檢查=>是否已鎖檔
             var VoucherDate = $('#dataFormVoucherVoucherDate').datebox('getValue')
             //檢查若沒有glVoucherDetails,則可以刪除
-            var cnt = GetDataFromMethod('CheckDeleteglVoucherMaster', { Company_ID: CompanyID, Voucher_Date: VoucherDate });
-            if ((cnt == "0") || (cnt == "undefined")) {
+            //var cnt = GetDataFromMethod('CheckDeleteglVoucherMaster', { Company_ID: CompanyID, Voucher_Date: VoucherDate });
+            //if ((cnt == "0") || (cnt == "undefined")) {
+            //    return true;
+            //}
+            //else {
+            //    alert('此內帳年月已鎖檔,無法新增!!');
+            //    return false;
+            //}
+
+            //-------------外帳----------------------------------------------------------------------
+            var GridName1 = '#dataGridDetail1';
+
+            //1.檢查 dataGridDetail 的 公司別 是否有跑掉
+            //公司別 
+            var CompanyID1 = $("#dataFormVoucher1CompanyID").combobox('getValue');
+            //2.傳票內容檢查
+            var rows1 = $(GridName1).datagrid('getRows');
+
+            //3.借貸方金額要平衡 借+貸=0 BorrowLendType 1=>借 , 2=>貸           
+            var borrow1 = 0;//借金額
+            var lend1 = 0;//貸金額
+
+            for (var i = 0; i < rows1.length; i++) {
+
+                //是否要成本中心=>由Acno,SubAcno推 
+                var Acno1 = rows1[i].Acno;
+                //檢查科目
+                if (Acno1 == "" || Acno1 == null) {
+                    alert('外帳科目為必填!');
+                    return false;
+                }
+
+                var SubAcno1 = rows1[i].SubAcno;
+                var bCostCenterID1 = GetDataFromMethod('GetCostCenterID', { Company_ID: CompanyID1, Ac_no: Acno1, Sub_Acno: SubAcno1 });
+                var CostCenterID1 = rows1[i].CostCenterID;
+                if (bCostCenterID1 == "True" && CostCenterID1 == "") {
+                    alert('外帳科目' + Acno1 + ' ' + SubAcno1 + '需成本中心-請選擇成本中心!');
+                    return false;
+                }
+
+                if (rows1[i].BorrowLendType == 1) {
+                    borrow1 = parseInt(borrow1) + parseInt(rows1[i].AmtShow);
+                } else {
+                    lend1 = parseInt(lend1) + parseInt(rows1[i].AmtShow);
+                }
+            }
+            if (borrow1 != lend1) {
+                alert("外帳 借:" + borrow1 + ",貸:" + lend1 + " 總金額不平衡！");
+                return false;
+            }
+
+            //傳票日期檢查=>是否已鎖檔
+            //檢查若沒有glVoucherDetails,則可以刪除
+            var cnt1 = GetDataFromMethod('CheckDeleteglVoucherMaster', { Company_ID: CompanyID1, Voucher_Date: VoucherDate });
+            if ((cnt1 == "0") || (cnt1 == "undefined")) {
                 return true;
             }
             else {
-                alert('此年月已鎖檔,無法新增!!');
+                alert('此外帳年月已鎖檔,無法新增!!');
                 return false;
             }
-
-
-            ////4.傳票日期檢查 => 不同年份提醒檢查
-            //var dt = new Date();
-            //var today = $.jbjob.Date.DateFormat(dt, 'yyyy/MM/dd')
-            //return confirm("提醒您,傳票日期。");
-
-            ////更新
-            //$('#dataGridView').datagrid('reload');
-            //queryGrid('#dataGridView');//按查詢
 
         }
 
         //複制分錄
         function CopyDetail() {
-            var GridName = '#dataGridDetail';            
 
-            var rowcount = $(GridName).datagrid('getData').total;
-            if (rowcount <= 0) {
-                alert('注意!! 沒有可選取明細資料,本功能無法使用');
-                return false;
-            }
-            var aNewObj = {};
-            var row = $(GridName).datagrid('getSelected');
-            $.extend(aNewObj, row);//複製結構與資料
+            var row = $('#dataGridDetail').datagrid('getSelected');
+            openForm('#JQDialog2', row, "inserted", 'Continue');
+            //$("#dataFormDetail").focus();
 
-            //取目前編號
-            var Item = 0;
-            var AutoKey = 0;
-            var rows = $(GridName).datagrid('getRows');
-            for (var i = 0; i < rows.length; i++) {
-                if (parseInt(rows[i].Item) > Item) {
-                    Item = rows[i].Item;
-                }
-                if (parseInt(rows[i].AutoKey) > AutoKey) {
-                    AutoKey = rows[i].AutoKey;
-                }
-            }
-            aNewObj.AutoKey = parseInt(AutoKey) + 1;
-            aNewObj.Item = padLeft(parseInt(Item) + 1, 3);
+            //var GridName = '#dataGridDetail';            
 
-            $(GridName).datagrid('appendRow', aNewObj);
+            //var rowcount = $(GridName).datagrid('getData').total;
+            //if (rowcount <= 0) {
+            //    alert('注意!! 沒有可選取明細資料,本功能無法使用');
+            //    return false;
+            //}
+            //var aNewObj = {};
+            //var row = $(GridName).datagrid('getSelected');
+            //$.extend(aNewObj, row);//複製結構與資料
 
+            ////取目前編號
+            //var Item = 0;
+            //var AutoKey = 0;
+            //var rows = $(GridName).datagrid('getRows');
+            //for (var i = 0; i < rows.length; i++) {
+            //    if (parseInt(rows[i].Item) > Item) {
+            //        Item = rows[i].Item;
+            //    }
+            //    if (parseInt(rows[i].AutoKey) > AutoKey) {
+            //        AutoKey = rows[i].AutoKey;
+            //    }
+            //}
+            //aNewObj.AutoKey = parseInt(AutoKey) + 1;
+            //aNewObj.Item = padLeft(parseInt(Item) + 1, 3);
+
+            //$(GridName).datagrid('appendRow', aNewObj);
         }
         //補左邊字串
         function padLeft(str, len) {
@@ -1290,6 +1388,254 @@
             return str.substring(str.length - num, str.length);
         }
        
+        //========================================= DataFormDetails(外帳) ====================================================================================              
+
+        //========================================= 公司別 & 科目 連動Combobox ====================================================================================   
+        //主檔的 公司別 有變動時      
+        //---------------------------------------選公司別觸發---------------------------------
+        var CompanyID_OnSelect1 = function (rowdata) {
+            //影響
+            GetAcno1("");//科目
+            //RunGetSubAcno();//明細           
+        }
+        //得到科目資料
+        var GetAcno1 = function (Acno) {
+            //公司別
+            var CompanyID = $("#dataFormVoucher1CompanyID").combobox('getValue');
+            var CodeList = GetDataFromMethod('GetAcno', { Company_ID: CompanyID, Ac_no: Acno });
+            if (CodeList != null) {
+                $("#dataFormDetail1Acno").combobox('loadData', CodeList);//Detail
+            }
+        }
+        function RunGetSubAcno1() {
+            //若DataFormDetails不為viewed狀態,則重跑
+            if (getEditMode($("#dataFormDetail1")) != 'viewed') {
+                var Acno = $("#dataFormDetail1Acno").combobox('getValue');
+                GetSubAcno1(Acno, "");
+            }
+        }
+        //得到明細資料
+        var GetSubAcno1 = function (Acno, SubAcno) {
+            //公司別
+            var CompanyID = $("#dataFormVoucher1CompanyID").combobox('getValue');
+            var CodeList = GetDataFromMethod('GetSubAcno', { Company_ID: CompanyID, Ac_no: Acno, Sub_Acno: SubAcno });
+            if (CodeList != null) $("#dataFormDetail1SubAcno").combobox('loadData', CodeList);
+        }
+        //========================================= 科目 1.明細 2.摘碼代號 連動Combobox ====================================================================================   
+
+        //---------------------------------------選取科目觸發---------------------------------
+        var Acno_OnSelect1 = function (rowdata) {
+            //1.明細
+            GetSubAcno1(rowdata.value, "");
+            //2.摘碼代號
+            GetDescribeID1(rowdata.value, "");
+        }
+
+        function ClearAcnoCombo1() {
+            //1.明細 清空
+            $("#dataFormDetail1SubAcno").combobox('loadData', []).combobox('clear');
+            //2.摘碼代號 清空
+            $("#dataFormDetail1DescribeID").combobox('loadData', []).combobox('clear');
+        }
+
+        //得到摘碼代號
+        var GetDescribeID1 = function (Acno, DescribeID) {
+            //公司別
+            var CompanyID = $("#dataFormVoucher1CompanyID").combobox('getValue');
+            var CodeList = GetDataFromMethod('GetDescribeID', { Company_ID: CompanyID, Ac_no: Acno, Describe_ID: DescribeID });
+            if (CodeList != null) $("#dataFormDetail1DescribeID").combobox('loadData', CodeList);
+        }
+
+        //========================================= dataFormVoucher1 ====================================================================================        
+        function OnLoadSuccessDFMaster1() {
+
+            if (getEditMode($("#dataFormVoucher1")) == 'viewed') {
+                $('#dataFormDetail1').hide();
+            } else $('#dataFormDetail1').show();
+
+            if (getEditMode($("#dataFormVoucher1")) == 'inserted') {
+                //傳票日期disable属性删除
+                $("#dataFormVoucher1VoucherDate").combo('textbox').removeAttr("disabled");
+                $("#dataFormVoucher1VoucherDate").datebox().removeAttr("disabled");
+                //設定傳回目前的公司別、傳票類別   
+                $("#dataFormVoucher1RequisitionNO").val(sRequisitionNO);
+                $("#dataFormVoucher1CompanyID").combobox('setValue', 2);//外帳
+                //Detail1 dataform
+                GetAcno1("");
+                GetSubAcno1("0", "");//新增時預設
+                //分錄科目預設清空
+                $("#dataFormVoucher1OftenUsedAcno").combobox('setValue', "");
+            }
+
+        }
+        //主檔的 公司別 或 傳票類別 有變動時
+        function OnSelectCompanyID1(rowdata) {
+            RunGetSubAcno1();//科目            
+
+        }
+
+        //摘碼代號 => 得到內容
+        function GetDescribeText1(CompanyID, DetailAcno, DescribeID) {
+            $.ajax({
+                type: "POST",
+                url: '../handler/jqDataHandle.ashx?RemoteName=sglVoucherMaster.glVoucherDetails', //連接的Server端，command
+                data: "mode=method&method=" + "GetDescribeText" + "&parameters=" + CompanyID + "," + DetailAcno + "," + DescribeID,
+                cache: false,
+                async: false,
+                success: function (data) {
+                    var rows = $.parseJSON(data);
+                    if (rows.length > 0) {
+                        $('#dataFormDetail1Describe').val(rows[0].Describe);
+                    }
+                }
+            });
+        }
+
+        //明細代號 => 得到內容 (顯示在Grid中)
+        function GetAcnoNameText1(CompanyID, Acno, SubAcno) {
+            $.ajax({
+                type: "POST",
+                url: '../handler/jqDataHandle.ashx?RemoteName=sglVoucherMaster.glVoucherDetails', //連接的Server端，command
+                data: "mode=method&method=" + "GetAcnoNameText" + "&parameters=" + CompanyID + "," + Acno + "," + SubAcno,
+                cache: false,
+                async: false,
+                success: function (data) {
+                    var rows = $.parseJSON(data);
+                    if (rows.length > 0) {
+                        //明細  => 選取時將文字帶入DataForm的文字欄位=>之後Grid用            
+                        $('#dataFormDetail1SubAcnoText').val(rows[0].AcnoName);
+                    }
+                }
+            });
+        }
+
+
+        var OnLoadSuccessDFDetail1 = function (rowdata) {
+            //DataFormDetails 資料編輯時
+            if (getEditMode($("#dataFormDetail1")) == 'updated') {
+                GetAcno1(rowdata.Acno);
+                GetSubAcno1(rowdata.Acno, rowdata.SubAcno);
+                GetDescribeID1(rowdata.Acno, rowdata.DescribeID);
+            }
+            if (getEditMode($("#dataFormDetail1")) == 'inserted') {
+                $("#dataFormDetail1BorrowLendType").combo('textbox').focus();//焦點
+                $("#dataFormDetail1BorrowLendType").combobox('setValue', "");
+            }
+            //================================== combo blur 事件 ====================================       
+
+            //combo blur 事件  =>   科目
+            $("#dataFormDetail1Acno").combo('textbox').blur(function () {
+                var DetailAcno = $("#dataFormDetail1Acno").combobox('getValue');//科目
+                //1.得到明細
+                //GetSubAcno(DetailAcno, "");
+                $("#dataFormDetail1SubAcno").combobox('setValue', "");//明細清空
+                //2.摘碼代號
+                GetDescribeID1(DetailAcno, "");
+            });
+            //combo blur 事件  =>   明細
+            $("#dataFormDetail1SubAcno").combo('textbox').blur(function () {
+                //明細  => 選取時將文字帶入DataForm的文字欄位=>之後Grid用      
+                var CompanyID = $("#dataFormVoucher1CompanyID").combobox('getValue');//公司別
+                var DetailAcno = $("#dataFormDetail1Acno").combobox('getValue');//科目
+                var SubAcno = $("#dataFormDetail1SubAcno").combobox('getValue');//明細
+                //得到內容
+                GetAcnoNameText(CompanyID, DetailAcno, SubAcno);
+
+            });
+
+
+            //combo blur 事件  =>   摘碼代號
+            $("#dataFormDetail1DescribeID").combo('textbox').blur(function () {
+
+                var CompanyID = $("#dataFormVoucher1CompanyID").combobox('getValue');//公司別
+                var DetailAcno = $("#dataFormDetail1Acno").combobox('getValue');//科目
+                var DescribeID = $("#dataFormDetail1DescribeID").combobox('getValue');//摘碼代號
+
+                //得到內容
+                GetDescribeText(CompanyID, DetailAcno, DescribeID);
+            });
+        }
+
+        //將摘碼代號所選帶入摘碼內容(外帳) 
+        function OnSelectDescribeID1(rowData) {
+            var CompanyID = $("#dataFormVoucher1CompanyID").combobox('getValue');//公司別
+            var DetailAcno = $("#dataFormDetail1Acno").combobox('getValue');//科目
+            var DescribeID = $("#dataFormDetail1DescribeID").combobox('getValue');//摘碼代號
+            //得到內容
+            GetDescribeText(CompanyID, DetailAcno, DescribeID);
+        }
+
+        //明細	驗證 =>可能selected Value 為空白=> 判斷文字
+        function CheckSubAcno1() {
+            var SubAcno = $("#dataFormDetail1SubAcno").combobox('getText');
+            if (SubAcno == "" || SubAcno == "---請選擇---") {
+                alert('請選擇明細!');
+                return false;
+            } else return true;//通過
+        }
+        function OnSelectSubAcno1(rowData) {
+            //明細  => 選取時將文字帶入DataForm的文字欄位=>之後Grid用            
+            $("#dataFormDetail1SubAcnoText").val(rowData.text);
+        }
+
+        //DataFormDetails存檔前檢查(外帳)
+        function OnApplyDFDetail1() {
+
+            //公司別
+            var CompanyID = $("#dataFormVoucher1CompanyID").combobox('getValue');
+            $("#dataFormDetail1CompanyID").val(CompanyID);
+
+            var Acno = $("#dataFormDetail1Acno").combobox('getValue');
+            var SubAcno = $("#dataFormDetail1SubAcno").combobox('getValue');
+            var BorrowLendType = $("#dataFormDetail1BorrowLendType").combobox('getValue');
+            var Describe = $("#dataFormDetail1Describe").val();
+            //1.必選檢查
+            if (BorrowLendType == "") {
+                alert('請選擇借貸!');
+                return false;
+            }
+            if (SubAcno == "---請選擇---") {
+                alert('請選擇明細!');
+                return false;
+            }
+            if (Describe == "") {
+                alert('內容不可為空白!');
+                return false;
+            }
+
+            //3.新增明細時檢查  => 科目+明細檢查       
+            //公司別
+            var iCount = GetDataFromMethod('GetDetailData', { Company_ID: CompanyID, Ac_no: Acno, Sub_Acno: SubAcno });
+            if (iCount == 0) {
+                alert("科目或明細資料不存在！");
+                return false;
+            }
+            //4.是否要成本中心=>由Acno,SubAcno推 
+            var bCostCenterID = GetDataFromMethod('GetCostCenterID', { Company_ID: CompanyID, Ac_no: Acno, Sub_Acno: SubAcno });
+            var CostCenterID = $("#dataFormDetail1CostCenterID").combobox('getValue');
+            if (bCostCenterID == "True" && CostCenterID == "") {
+                alert('此科目需成本中心-請選擇成本中心!');
+                return false;
+            }
+
+        }
+
+        function OnAppliedDFDetail1() {
+            $('#dataGridDetail1').datagrid("reload");
+        }
+
+        //複制分錄
+        function CopyDetail1() {
+            var row = $('#dataGridDetail1').datagrid('getSelected');
+            openForm('#JQDialog3', row, "inserted", 'Continue');
+
+        }
+        //補左邊字串
+        function padLeft(str, len) {
+            str = '' + str;
+            return str.length >= len ? str : new Array(len - str.length + 1).join("0") + str;
+        }
+
 
     </script>
 
@@ -1333,7 +1679,7 @@
             </JQTools:JQDataGrid>
 
             <JQTools:JQDialog ID="JQDialog1" runat="server" BindingObjectID="dataFormMaster" Title="請款單申請" Width="720px" DialogLeft="10px" DialogTop="10px">
-                <JQTools:JQDataForm ID="dataFormMaster" runat="server" DataMember="Requisition" HorizontalColumnsCount="3" RemoteName="sRequisition.Requisition" Closed="False" ContinueAdd="False" disapply="False" DuplicateCheck="False" IsAutoPageClose="True" IsAutoSubmit="True" IsNotifyOFF="False" IsRejectNotify="False" IsRejectON="False" IsShowFlowIcon="True" ShowApplyButton="False" ValidateStyle="Hint" Width="720px" OnApply="dataFormMasterOnApply" OnLoadSuccess="dataFormMaster_OnLoadSuccess" OnCancel="CloseDataForm" IsAutoPause="False" AlwaysReadOnly="False" DivFramed="False" HorizontalGap="0" VerticalGap="0">
+                <JQTools:JQDataForm ID="dataFormMaster" runat="server" DataMember="Requisition" HorizontalColumnsCount="3" RemoteName="sRequisition.Requisition" Closed="False" ContinueAdd="False" disapply="False" DuplicateCheck="False" IsAutoPageClose="True" IsAutoSubmit="True" IsNotifyOFF="False" IsRejectNotify="False" IsRejectON="False" IsShowFlowIcon="True" ShowApplyButton="False" ValidateStyle="Hint" Width="720px" OnApply="dataFormMasterOnApply" OnLoadSuccess="dataFormMaster_OnLoadSuccess" OnCancel="CloseDataForm" IsAutoPause="False" AlwaysReadOnly="False" DivFramed="False" HorizontalGap="0" VerticalGap="0" ChainDataFormID="" ParentObjectID="">
                     <Columns>
                         <JQTools:JQFormColumn Alignment="left" Caption="編號" Editor="text" FieldName="RequisitionNO" Format="" maxlength="0" Width="96"  ReadOnly="True" Span="1"/>
                         <JQTools:JQFormColumn Alignment="left" Caption="公司別" Editor="infocombobox" EditorOptions="valueField:'CompanyID',textField:'CompanyName',remoteName:'sRequisition.InsGroup',tableName:'InsGroup',pageSize:'-1',checkData:false,selectOnly:false,cacheRelationText:false,panelHeight:250" FieldName="CompanyID" maxlength="0" NewRow="False" ReadOnly="False" RowSpan="1" Span="1" Visible="True" Width="130" />
@@ -1414,121 +1760,228 @@
                 <input ID='dataFormMasterClear' type="button" style="background-image:url(../image/Ajax/close.gif);border:0;width:14px;height:14px;">
             </JQTools:JQDialog>
             
-            <JQTools:JQDialog ID="JQDialogVoucherOpen" runat="server" BindingObjectID="dataFormVoucher" Title="傳票維護" DialogLeft="20px" DialogTop="5px" Width="870px">
-                <JQTools:JQDataForm ID="dataFormVoucher" runat="server" AlwaysReadOnly="False" Closed="False" ContinueAdd="False" DataMember="RequisitionglVoucherM" disapply="False" DivFramed="False" DuplicateCheck="False" HorizontalColumnsCount="4" HorizontalGap="0" IsAutoPageClose="False" IsAutoPause="False" IsAutoSubmit="False" IsNotifyOFF="False" IsRejectNotify="False" IsRejectON="False" IsShowFlowIcon="False" RemoteName="sRequisition.RequisitionglVoucherM" ShowApplyButton="False" ValidateStyle="Dialog" VerticalGap="0" OnLoadSuccess="OnLoadSuccessDFMaster" OnApply="OnApplyDFMaster" OnApplied="OnAppliedDFMaster" >
 
-                    <Columns>
-                        <JQTools:JQFormColumn Alignment="left" Caption="傳票日期" Editor="datebox" FieldName="VoucherDate" Format="" MaxLength="0" Width="90" />
-                        <JQTools:JQFormColumn Alignment="left" Caption="請款單號" Editor="text" FieldName="RequisitionNO" Format="" Width="100" ReadOnly="True" MaxLength="0" NewRow="False" RowSpan="1" Span="1" Visible="True" />
-                        <JQTools:JQFormColumn Alignment="left" Caption="公司別" Editor="infocombobox" EditorOptions="valueField:'CompanyID',textField:'CompanyName',remoteName:'sglVoucherMaster.glCompany',tableName:'glCompany',pageSize:'-1',checkData:true,selectOnly:true,cacheRelationText:false,onSelect:CompanyID_OnSelect,panelHeight:200" FieldName="CompanyID" Format="" Width="160" ReadOnly="True" />
-                        <JQTools:JQFormColumn Alignment="left" Caption="傳票類別" Editor="infooptions" FieldName="VoucherID" Format="" Width="180" EditorOptions="title:'JQOptions',panelWidth:260,remoteName:'sglVoucherMaster.infoglVoucherType',tableName:'infoglVoucherType',valueField:'VoucherID',textField:'VoucherTypeName',columnCount:3,multiSelect:false,openDialog:false,selectAll:false,selectOnly:false,items:[]" MaxLength="0" ReadOnly="False" Span="1" />
-                    </Columns>
-                </JQTools:JQDataForm>
-
-                <a id="lbVoucher" class="easyui-linkbutton" data-options="" href="#" onclick="InsertVoucherData()">載入項目</a><JQTools:JQDataGrid ID="dataGridDetail" runat="server" AllowAdd="True" AllowDelete="True" AllowUpdate="True" AlwaysClose="False" AutoApply="False" BufferView="False" CheckOnSelect="True" ColumnsHibeable="False" DataMember="RequisitionglVoucherD" DeleteCommandVisible="True" DuplicateCheck="False" EditDialogID="JQDialog2" EditMode="Dialog" EditOnEnter="True" Height="240px" InsertCommandVisible="True" MultiSelect="False" NotInitGrid="False" OnInsert="OnInsertDetail" PageList="10,20,30,40,50" PageSize="10" Pagination="False" ParentObjectID="dataFormVoucher" QueryAutoColumn="False" QueryLeft="" QueryMode="Window" QueryTitle="Query" QueryTop="" RecordLock="False" RecordLockMode="None" RemoteName="sRequisition.RequisitionglVoucherD" RowNumbers="True" Title="" TotalCaption="Total:" UpdateCommandVisible="True" ViewCommandVisible="False">
-                    <Columns>
-                        <JQTools:JQGridColumn Alignment="left" Caption="AutoKey" Editor="text" FieldName="AutoKey" Frozen="False" IsNvarChar="False" MaxLength="0" QueryCondition="" ReadOnly="False" Sortable="False" Visible="False" Width="80">
-                        </JQTools:JQGridColumn>
-                        <JQTools:JQGridColumn Alignment="left" Caption="RequisitionNO" Editor="text" FieldName="RequisitionNO" Frozen="False" IsNvarChar="False" MaxLength="0" QueryCondition="" ReadOnly="False" Sortable="False" Visible="False" Width="80">
-                        </JQTools:JQGridColumn>
-                        <JQTools:JQGridColumn Alignment="center" Caption="序號" Editor="text" FieldName="Item" Frozen="False" IsNvarChar="False" MaxLength="0" QueryCondition="" ReadOnly="False" Sortable="False" Visible="False" Width="30">
-                        </JQTools:JQGridColumn>
-                        <JQTools:JQGridColumn Alignment="center" Caption="借貸" Editor="infocombobox" EditorOptions="valueField:'ListID',textField:'ListContent',remoteName:'sglVoucherMaster.infoglBorrowLendType',tableName:'infoglBorrowLendType',pageSize:'-1',checkData:false,selectOnly:false,cacheRelationText:false,panelHeight:200" FieldName="BorrowLendType" Frozen="False" IsNvarChar="False" MaxLength="0" QueryCondition="" ReadOnly="False" Sortable="False" Visible="True" Width="40">
-                        </JQTools:JQGridColumn>
-                        <JQTools:JQGridColumn Alignment="center" Caption="科目" Editor="text" EditorOptions="" FieldName="Acno" Frozen="False" IsNvarChar="False" MaxLength="0" QueryCondition="" ReadOnly="False" Sortable="False" Visible="True" Width="50">
-                        </JQTools:JQGridColumn>
-                        <JQTools:JQGridColumn Alignment="left" Caption="明細" Editor="text" EditorOptions="" FieldName="SubAcnoText" Frozen="False" IsNvarChar="False" MaxLength="0" QueryCondition="" ReadOnly="False" Sortable="False" Visible="True" Width="190">
-                        </JQTools:JQGridColumn>
-                        <JQTools:JQGridColumn Alignment="left" Caption="成本中心" Editor="infocombobox" EditorOptions="valueField:'CostCenterID',textField:'CostCenterName',remoteName:'sglVoucherMaster.infoglCostCenter',tableName:'infoglCostCenter',pageSize:'-1',checkData:false,selectOnly:false,cacheRelationText:false,panelHeight:200" FieldName="CostCenterID" Frozen="False" IsNvarChar="False" MaxLength="0" QueryCondition="" ReadOnly="False" Sortable="False" Visible="True" Width="85">
-                        </JQTools:JQGridColumn>
-                        <JQTools:JQGridColumn Alignment="center" Caption="摘碼代號" Editor="text" EditorOptions="" FieldName="DescribeID" Frozen="False" IsNvarChar="False" MaxLength="0" QueryCondition="" ReadOnly="False" Sortable="False" Visible="True" Width="60">
-                        </JQTools:JQGridColumn>
-                        <JQTools:JQGridColumn Alignment="left" Caption="摘碼內容" Editor="text" FieldName="Describe" Frozen="False" IsNvarChar="False" MaxLength="0" QueryCondition="" ReadOnly="False" Sortable="False" Visible="True" Width="197">
-                        </JQTools:JQGridColumn>
-                        <JQTools:JQGridColumn Alignment="right" Caption="金額" Editor="numberbox" FieldName="AmtShow" Frozen="False" IsNvarChar="False" MaxLength="0" QueryCondition="" ReadOnly="False" Sortable="False" Visible="True" Width="70">
-                        </JQTools:JQGridColumn>
-                        <JQTools:JQGridColumn Alignment="left" Caption="CreateBy" Editor="text" FieldName="CreateBy" Frozen="False" IsNvarChar="False" MaxLength="0" QueryCondition="" ReadOnly="False" Sortable="False" Visible="False" Width="80">
-                        </JQTools:JQGridColumn>
-                        <JQTools:JQGridColumn Alignment="left" Caption="CreateDate" Editor="text" FieldName="CreateDate" Frozen="False" IsNvarChar="False" MaxLength="0" QueryCondition="" ReadOnly="False" Sortable="False" Visible="False" Width="80">
-                        </JQTools:JQGridColumn>
-                        <JQTools:JQGridColumn Alignment="left" Caption="LastUpdateBy" Editor="text" FieldName="LastUpdateBy" Frozen="False" IsNvarChar="False" MaxLength="0" QueryCondition="" ReadOnly="False" Sortable="False" Visible="False" Width="80">
-                        </JQTools:JQGridColumn>
-                        <JQTools:JQGridColumn Alignment="left" Caption="LastUpdateDate" Editor="text" FieldName="LastUpdateDate" Frozen="False" IsNvarChar="False" MaxLength="0" QueryCondition="" ReadOnly="False" Sortable="False" Visible="False" Width="80">
-                        </JQTools:JQGridColumn>
-                        <JQTools:JQGridColumn Alignment="left" Caption="SubAcno" Editor="text" FieldName="SubAcno" Frozen="False" IsNvarChar="False" MaxLength="0" QueryCondition="" ReadOnly="False" Sortable="False" Visible="False" Width="80">
-                        </JQTools:JQGridColumn>
-                        <JQTools:JQGridColumn Alignment="left" Caption="CompanyID" Editor="text" FieldName="CompanyID" Frozen="False" IsNvarChar="False" MaxLength="0" QueryCondition="" ReadOnly="False" Sortable="False" Visible="False" Width="80">
-                        </JQTools:JQGridColumn>
-                        <JQTools:JQGridColumn Alignment="left" Caption="VoucherID" Editor="text" FieldName="VoucherID" Frozen="False" IsNvarChar="False" MaxLength="0" QueryCondition="" ReadOnly="False" Sortable="False" Visible="False" Width="80">
-                        </JQTools:JQGridColumn>
-                        <JQTools:JQGridColumn Alignment="left" Caption="OpenToolTip" Editor="text" FieldName="OpenToolTip" Frozen="False" IsNvarChar="False" MaxLength="0" QueryCondition="" ReadOnly="False" Sortable="False" Visible="False" Width="80">
-                        </JQTools:JQGridColumn>
-                    </Columns>
-                    <RelationColumns>
-                        <JQTools:JQRelationColumn FieldName="RequisitionNO" ParentFieldName="RequisitionNO" />
-                    </RelationColumns>
-                    <TooItems>
-                        <JQTools:JQToolItem Icon="icon-add" ItemType="easyui-linkbutton" OnClick="insertItem" Text="新增" />
-                        <JQTools:JQToolItem Icon="icon-cut" ItemType="easyui-linkbutton" OnClick="CopyDetail" Text="複製" Visible="True" />
-                    </TooItems>
-                </JQTools:JQDataGrid>
-
-                <JQTools:JQDialog ID="JQDialog2" runat="server" BindingObjectID="dataFormDetail" EditMode="Continue" Width="780px" Closed="True" Title="">
-                    <JQTools:JQDataForm ID="dataFormDetail" runat="server" ParentObjectID="dataFormVoucher" AlwaysReadOnly="False" Closed="False" ContinueAdd="True" DataMember="RequisitionglVoucherD" disapply="False" DivFramed="False" DuplicateCheck="False" HorizontalColumnsCount="5" HorizontalGap="0" IsAutoPageClose="False" IsAutoPause="False" IsAutoSubmit="False" IsNotifyOFF="False" IsRejectNotify="False" IsRejectON="False" IsShowFlowIcon="False" RemoteName="sRequisition.RequisitionglVoucherD" ShowApplyButton="False" ValidateStyle="Dialog" VerticalGap="0" OnApply="OnApplyDFDetail" OnLoadSuccess="OnLoadSuccessDFDetail" >
-                        <Columns>
-                            <JQTools:JQFormColumn Alignment="left" Caption="AutoKey" Editor="text" FieldName="AutoKey" MaxLength="0" NewRow="False" ReadOnly="False" RowSpan="1" Span="1" Visible="False" Width="80" />
-                            <JQTools:JQFormColumn Alignment="left" Caption="序號" Editor="text" FieldName="Item" MaxLength="0" NewRow="False" ReadOnly="True" RowSpan="1" Span="1" Visible="False" Width="40" />
-                            <JQTools:JQFormColumn Alignment="left" Caption="借貸" Editor="infocombobox" EditorOptions="valueField:'ListID',textField:'ListID',remoteName:'sglVoucherMaster.infoglBorrowLendType',tableName:'infoglBorrowLendType',pageSize:'-1',checkData:true,selectOnly:false,cacheRelationText:false,panelHeight:100" FieldName="BorrowLendType" MaxLength="0" NewRow="False" ReadOnly="False" RowSpan="1" Span="1" Visible="True" Width="40" />
-                            <JQTools:JQFormColumn Alignment="left" Caption="科目" Editor="infocombobox" EditorOptions="items:[{value:'',text:'',selected:'false'}],checkData:true,selectOnly:false,cacheRelationText:false,onSelect:Acno_OnSelect,panelHeight:150" FieldName="Acno" MaxLength="0" NewRow="False" ReadOnly="False" RowSpan="1" Span="1" Visible="True" Width="80" />
-                            <JQTools:JQFormColumn Alignment="left" Caption="明細" Editor="infocombobox" EditorOptions="items:[{value:'',text:'',selected:'false'}],checkData:true,selectOnly:false,cacheRelationText:false,onSelect:OnSelectSubAcno,panelHeight:150" FieldName="SubAcno" MaxLength="0" NewRow="False" ReadOnly="False" RowSpan="1" Span="1" Visible="True" Width="180" OnBlur="" />
-                            <JQTools:JQFormColumn Alignment="left" Caption="呼叫明細" Editor="text" FieldName="OpenToolTip" MaxLength="0" NewRow="False" ReadOnly="False" RowSpan="1" Span="1" Visible="True" Width="20" Format="" EditorOptions="" />
-                            <JQTools:JQFormColumn Alignment="left" Caption="SubAcnoText" Editor="text" FieldName="SubAcnoText" MaxLength="0" NewRow="False" ReadOnly="True" RowSpan="1" Span="1" Visible="False" Width="80" />
-                            <JQTools:JQFormColumn Alignment="left" Caption="成本中心" Editor="infocombobox" EditorOptions="valueField:'CostCenterID',textField:'CostCenterName',remoteName:'sglVoucherMaster.infoglCostCenter',tableName:'infoglCostCenter',pageSize:'-1',checkData:true,selectOnly:false,cacheRelationText:false,panelHeight:200" FieldName="CostCenterID" MaxLength="0" NewRow="False" ReadOnly="False" RowSpan="1" Span="1" Visible="True" Width="105" />
-                            <JQTools:JQFormColumn Alignment="left" Caption="摘碼代號" Editor="infocombobox" FieldName="DescribeID" MaxLength="0" NewRow="False" ReadOnly="False" RowSpan="1" Span="1" Visible="True" Width="150" EditorOptions="items:[{value:'',text:'',selected:'false'}],checkData:false,selectOnly:false,cacheRelationText:false,onSelect:OnSelectDescribeID,panelHeight:200" />
-                            <JQTools:JQFormColumn Alignment="left" Caption="內容" Editor="text" FieldName="Describe" MaxLength="0" NewRow="False" ReadOnly="False" RowSpan="1" Span="2" Visible="True" Width="290" />
-                            <JQTools:JQFormColumn Alignment="left" Caption="金額" Editor="numberbox" FieldName="AmtShow" MaxLength="0" NewRow="False" ReadOnly="False" RowSpan="1" Span="1" Visible="True" Width="70" />
-                            <JQTools:JQFormColumn Alignment="left" Caption="CreateBy" Editor="text" FieldName="CreateBy" MaxLength="0" NewRow="False" ReadOnly="False" RowSpan="1" Span="1" Visible="False" Width="80" />
-                            <JQTools:JQFormColumn Alignment="left" Caption="CreateDate" Editor="text" FieldName="CreateDate" MaxLength="0" NewRow="False" ReadOnly="False" RowSpan="1" Span="1" Visible="False" Width="80" />
-                            <JQTools:JQFormColumn Alignment="left" Caption="LastUpdateBy" Editor="text" FieldName="LastUpdateBy" MaxLength="0" NewRow="False" ReadOnly="False" RowSpan="1" Span="1" Visible="False" Width="80" />
-                            <JQTools:JQFormColumn Alignment="left" Caption="LastUpdateDate" Editor="text" FieldName="LastUpdateDate" MaxLength="0" NewRow="False" ReadOnly="False" RowSpan="1" Span="1" Visible="False" Width="80" />
-                            <JQTools:JQFormColumn Alignment="left" Caption="RequisitionNO" Editor="text" FieldName="RequisitionNO" MaxLength="0" NewRow="False" ReadOnly="False" RowSpan="1" Span="1" Visible="False" Width="80" />
-                            <JQTools:JQFormColumn Alignment="left" Caption="CompanyID" Editor="text" FieldName="CompanyID" MaxLength="0" NewRow="False" ReadOnly="False" RowSpan="1" Span="1" Visible="False" Width="80" />
-                            <JQTools:JQFormColumn Alignment="left" Caption="VoucherID" Editor="text" FieldName="VoucherID" MaxLength="0" NewRow="False" ReadOnly="False" RowSpan="1" Span="1" Visible="False" Width="80" />
-                        </Columns>
-                        <RelationColumns>
-                            <JQTools:JQRelationColumn FieldName="RequisitionNO" ParentFieldName="RequisitionNO" />
-                        </RelationColumns>
-                    </JQTools:JQDataForm>
-                    <JQTools:JQAutoSeq ID="JQAutoSeq1" runat="server" BindingObjectID="dataFormDetail" FieldName="Item" NumDig="3" />
-                    <JQTools:JQAutoSeq ID="JQAutoSeq11" runat="server" BindingObjectID="dataFormDetail" FieldName="AutoKey" NumDig="1" />
+                <JQTools:JQDialog ID="JQDialogVoucherOpen" runat="server" BindingObjectID="dataFormVoucher" DialogLeft="20px" DialogTop="5px" Title="傳票維護" Width="930px" ShowSubmitDiv="True">
+                    <div id="tt" class="easyui-tabs" style="width:auto;height:auto;">
+                        <div style="padding:20px;" title="內帳設定">
+                            <JQTools:JQDataForm ID="dataFormVoucher" runat="server" AlwaysReadOnly="False" Closed="False" ContinueAdd="False" DataMember="Requisition" disapply="False" DivFramed="False" DuplicateCheck="False" HorizontalColumnsCount="4" HorizontalGap="0" IsAutoPageClose="False" IsAutoPause="False" IsAutoSubmit="False" IsNotifyOFF="False" IsRejectNotify="False" IsRejectON="False" IsShowFlowIcon="False" OnApplied="OnAppliedDFMaster" OnApply="OnApplyDFMaster" OnLoadSuccess="OnLoadSuccessDFMaster" ParentObjectID="dataGridView" RemoteName="sRequisition.Requisition" ShowApplyButton="False" ValidateStyle="Dialog" VerticalGap="0" ChainDataFormID="dataFormVoucher1">
+                                <Columns>
+                                    <JQTools:JQFormColumn Alignment="left" Caption="傳票日期" Editor="datebox" FieldName="VoucherDate" Format="" MaxLength="0" Width="90" />
+                                    <JQTools:JQFormColumn Alignment="left" Caption="請款單號" Editor="text" FieldName="RequisitionNO" Format="" MaxLength="0" NewRow="False" ReadOnly="True" RowSpan="1" Span="1" Visible="True" Width="100" />
+                                    <JQTools:JQFormColumn Alignment="left" Caption="公司別" Editor="infocombobox" EditorOptions="valueField:'CompanyID',textField:'CompanyName',remoteName:'sglVoucherMaster.glCompany',tableName:'glCompany',pageSize:'-1',checkData:true,selectOnly:true,cacheRelationText:false,onSelect:CompanyID_OnSelect,panelHeight:200" FieldName="CompanyID" Format="" ReadOnly="True" Width="160" />
+                                    <JQTools:JQFormColumn Alignment="left" Caption="傳票類別" Editor="infooptions" EditorOptions="title:'JQOptions',panelWidth:260,remoteName:'sglVoucherMaster.infoglVoucherType',tableName:'infoglVoucherType',valueField:'VoucherID',textField:'VoucherTypeName',columnCount:3,multiSelect:false,openDialog:false,selectAll:false,selectOnly:false,items:[]" FieldName="VoucherID" Format="" MaxLength="0" ReadOnly="False" Span="1" Width="180" />
+                                </Columns>
+                                <RelationColumns>
+                                    <JQTools:JQRelationColumn FieldName="RequisitionNO" ParentFieldName="RequisitionNO" />
+                                </RelationColumns>
+                            </JQTools:JQDataForm>
+                            <a id="lbVoucher" class="easyui-linkbutton" data-options="" href="#" onclick="InsertVoucherData()">載入項目</a><JQTools:JQDataGrid ID="dataGridDetail" runat="server" AllowAdd="True" AllowDelete="True" AllowUpdate="True" AlwaysClose="True" AutoApply="True" BufferView="False" CheckOnSelect="True" ColumnsHibeable="False" DataMember="RequisitionglVoucherD" DeleteCommandVisible="True" DuplicateCheck="False" EditDialogID="JQDialog2" EditMode="Dialog" EditOnEnter="True" Height="200px" InsertCommandVisible="True" MultiSelect="False" NotInitGrid="False" OnInsert="OnInsertDetail" PageList="10,20,30,40,50" PageSize="10" Pagination="False" ParentObjectID="dataFormVoucher" QueryAutoColumn="False" QueryLeft="" QueryMode="Window" QueryTitle="Query" QueryTop="" RecordLock="False" RecordLockMode="None" RemoteName="sRequisition.Requisition" RowNumbers="True" Title="" TotalCaption="Total:" UpdateCommandVisible="True" ViewCommandVisible="False">
+                                <Columns>
+                                    <JQTools:JQGridColumn Alignment="left" Caption="AutoKey" Editor="text" FieldName="AutoKey" Frozen="False" IsNvarChar="False" MaxLength="0" QueryCondition="" ReadOnly="False" Sortable="False" Visible="False" Width="80">
+                                    </JQTools:JQGridColumn>
+                                    <JQTools:JQGridColumn Alignment="left" Caption="RequisitionNO" Editor="text" FieldName="RequisitionNO" Frozen="False" IsNvarChar="False" MaxLength="0" QueryCondition="" ReadOnly="False" Sortable="False" Visible="False" Width="80">
+                                    </JQTools:JQGridColumn>
+                                    <JQTools:JQGridColumn Alignment="center" Caption="序號" Editor="text" FieldName="Item" Frozen="False" IsNvarChar="False" MaxLength="0" QueryCondition="" ReadOnly="False" Sortable="False" Visible="False" Width="30">
+                                    </JQTools:JQGridColumn>
+                                    <JQTools:JQGridColumn Alignment="center" Caption="借貸" Editor="infocombobox" EditorOptions="valueField:'ListID',textField:'ListContent',remoteName:'sglVoucherMaster.infoglBorrowLendType',tableName:'infoglBorrowLendType',pageSize:'-1',checkData:false,selectOnly:false,cacheRelationText:false,panelHeight:200" FieldName="BorrowLendType" Frozen="False" IsNvarChar="False" MaxLength="0" QueryCondition="" ReadOnly="False" Sortable="False" Visible="True" Width="40">
+                                    </JQTools:JQGridColumn>
+                                    <JQTools:JQGridColumn Alignment="center" Caption="科目" Editor="text" EditorOptions="" FieldName="Acno" Frozen="False" IsNvarChar="False" MaxLength="0" QueryCondition="" ReadOnly="False" Sortable="False" Visible="True" Width="50">
+                                    </JQTools:JQGridColumn>
+                                    <JQTools:JQGridColumn Alignment="left" Caption="明細" Editor="text" EditorOptions="" FieldName="SubAcnoText" Frozen="False" IsNvarChar="False" MaxLength="0" QueryCondition="" ReadOnly="False" Sortable="False" Visible="True" Width="190">
+                                    </JQTools:JQGridColumn>
+                                    <JQTools:JQGridColumn Alignment="left" Caption="成本中心" Editor="infocombobox" EditorOptions="valueField:'CostCenterID',textField:'CostCenterName',remoteName:'sglVoucherMaster.infoglCostCenter',tableName:'infoglCostCenter',pageSize:'-1',checkData:false,selectOnly:false,cacheRelationText:false,panelHeight:200" FieldName="CostCenterID" Frozen="False" IsNvarChar="False" MaxLength="0" QueryCondition="" ReadOnly="False" Sortable="False" Visible="True" Width="85">
+                                    </JQTools:JQGridColumn>
+                                    <JQTools:JQGridColumn Alignment="center" Caption="摘碼代號" Editor="text" EditorOptions="" FieldName="DescribeID" Frozen="False" IsNvarChar="False" MaxLength="0" QueryCondition="" ReadOnly="False" Sortable="False" Visible="True" Width="60">
+                                    </JQTools:JQGridColumn>
+                                    <JQTools:JQGridColumn Alignment="left" Caption="摘碼內容" Editor="text" FieldName="Describe" Frozen="False" IsNvarChar="False" MaxLength="0" QueryCondition="" ReadOnly="False" Sortable="False" Visible="True" Width="197">
+                                    </JQTools:JQGridColumn>
+                                    <JQTools:JQGridColumn Alignment="right" Caption="金額" Editor="numberbox" FieldName="AmtShow" Frozen="False" IsNvarChar="False" MaxLength="0" QueryCondition="" ReadOnly="False" Sortable="False" Visible="True" Width="70">
+                                    </JQTools:JQGridColumn>
+                                    <JQTools:JQGridColumn Alignment="left" Caption="CreateBy" Editor="text" FieldName="CreateBy" Frozen="False" IsNvarChar="False" MaxLength="0" QueryCondition="" ReadOnly="False" Sortable="False" Visible="False" Width="80">
+                                    </JQTools:JQGridColumn>
+                                    <JQTools:JQGridColumn Alignment="left" Caption="CreateDate" Editor="text" FieldName="CreateDate" Frozen="False" IsNvarChar="False" MaxLength="0" QueryCondition="" ReadOnly="False" Sortable="False" Visible="False" Width="80">
+                                    </JQTools:JQGridColumn>
+                                    <JQTools:JQGridColumn Alignment="left" Caption="LastUpdateBy" Editor="text" FieldName="LastUpdateBy" Frozen="False" IsNvarChar="False" MaxLength="0" QueryCondition="" ReadOnly="False" Sortable="False" Visible="False" Width="80">
+                                    </JQTools:JQGridColumn>
+                                    <JQTools:JQGridColumn Alignment="left" Caption="LastUpdateDate" Editor="text" FieldName="LastUpdateDate" Frozen="False" IsNvarChar="False" MaxLength="0" QueryCondition="" ReadOnly="False" Sortable="False" Visible="False" Width="80">
+                                    </JQTools:JQGridColumn>
+                                    <JQTools:JQGridColumn Alignment="left" Caption="SubAcno" Editor="text" FieldName="SubAcno" Frozen="False" IsNvarChar="False" MaxLength="0" QueryCondition="" ReadOnly="False" Sortable="False" Visible="False" Width="80">
+                                    </JQTools:JQGridColumn>
+                                    <JQTools:JQGridColumn Alignment="left" Caption="CompanyID" Editor="text" FieldName="CompanyID" Frozen="False" IsNvarChar="False" MaxLength="0" QueryCondition="" ReadOnly="False" Sortable="False" Visible="False" Width="80">
+                                    </JQTools:JQGridColumn>
+                                    <JQTools:JQGridColumn Alignment="left" Caption="VoucherID" Editor="text" FieldName="VoucherID" Frozen="False" IsNvarChar="False" MaxLength="0" QueryCondition="" ReadOnly="False" Sortable="False" Visible="False" Width="80">
+                                    </JQTools:JQGridColumn>
+                                </Columns>
+                                <RelationColumns>
+                                    <JQTools:JQRelationColumn FieldName="RequisitionNO" ParentFieldName="RequisitionNO" />
+                                </RelationColumns>
+                                <TooItems>
+                                    <JQTools:JQToolItem Icon="icon-add" ItemType="easyui-linkbutton" OnClick="insertItem" Text="新增" />
+                                    <JQTools:JQToolItem Icon="icon-cut" ItemType="easyui-linkbutton" OnClick="CopyDetail" Text="複製" Visible="True" />
+                                </TooItems>
+                            </JQTools:JQDataGrid>
+                            <JQTools:JQDialog ID="JQDialog2" runat="server" BindingObjectID="dataFormDetail" Closed="True" EditMode="Continue" Title="" Width="780px">
+                                <JQTools:JQDataForm ID="dataFormDetail" runat="server" AlwaysReadOnly="False" Closed="False" ContinueAdd="True" DataMember="RequisitionglVoucherD" disapply="False" DivFramed="False" DuplicateCheck="False" HorizontalColumnsCount="5" HorizontalGap="0" IsAutoPageClose="False" IsAutoPause="False" IsAutoSubmit="False" IsNotifyOFF="False" IsRejectNotify="False" IsRejectON="False" IsShowFlowIcon="False" OnApply="OnApplyDFDetail" OnLoadSuccess="OnLoadSuccessDFDetail" ParentObjectID="dataFormVoucher" RemoteName="sRequisition.Requisition" ShowApplyButton="False" ValidateStyle="Dialog" VerticalGap="0" OnApplied="OnAppliedDFDetail">
+                                    <Columns>
+                                        <JQTools:JQFormColumn Alignment="left" Caption="AutoKey" Editor="text" FieldName="AutoKey" MaxLength="0" NewRow="False" ReadOnly="False" RowSpan="1" Span="1" Visible="False" Width="80" />
+                                        <JQTools:JQFormColumn Alignment="left" Caption="序號" Editor="text" FieldName="Item" MaxLength="0" NewRow="False" ReadOnly="True" RowSpan="1" Span="1" Visible="False" Width="40" />
+                                        <JQTools:JQFormColumn Alignment="left" Caption="借貸" Editor="infocombobox" EditorOptions="valueField:'ListID',textField:'ListID',remoteName:'sglVoucherMaster.infoglBorrowLendType',tableName:'infoglBorrowLendType',pageSize:'-1',checkData:true,selectOnly:false,cacheRelationText:false,panelHeight:100" FieldName="BorrowLendType" MaxLength="0" NewRow="False" ReadOnly="False" RowSpan="1" Span="1" Visible="True" Width="40" />
+                                        <JQTools:JQFormColumn Alignment="left" Caption="科目" Editor="infocombobox" EditorOptions="items:[{value:'',text:'',selected:'false'}],checkData:true,selectOnly:false,cacheRelationText:false,onSelect:Acno_OnSelect,panelHeight:150" FieldName="Acno" MaxLength="0" NewRow="False" ReadOnly="False" RowSpan="1" Span="1" Visible="True" Width="80" />
+                                        <JQTools:JQFormColumn Alignment="left" Caption="明細" Editor="infocombobox" EditorOptions="items:[{value:'',text:'',selected:'false'}],checkData:true,selectOnly:false,cacheRelationText:false,onSelect:OnSelectSubAcno,panelHeight:150" FieldName="SubAcno" MaxLength="0" NewRow="False" OnBlur="" ReadOnly="False" RowSpan="1" Span="1" Visible="True" Width="180" />
+                                        <JQTools:JQFormColumn Alignment="left" Caption="SubAcnoText" Editor="text" FieldName="SubAcnoText" MaxLength="0" NewRow="False" ReadOnly="True" RowSpan="1" Span="1" Visible="False" Width="80" />
+                                        <JQTools:JQFormColumn Alignment="left" Caption="成本中心" Editor="infocombobox" EditorOptions="valueField:'CostCenterID',textField:'CostCenterName',remoteName:'sglVoucherMaster.infoglCostCenter',tableName:'infoglCostCenter',pageSize:'-1',checkData:true,selectOnly:false,cacheRelationText:false,panelHeight:200" FieldName="CostCenterID" MaxLength="0" NewRow="False" ReadOnly="False" RowSpan="1" Span="1" Visible="True" Width="105" />
+                                        <JQTools:JQFormColumn Alignment="left" Caption="摘碼代號" Editor="infocombobox" EditorOptions="items:[{value:'',text:'',selected:'false'}],checkData:false,selectOnly:false,cacheRelationText:false,onSelect:OnSelectDescribeID,panelHeight:200" FieldName="DescribeID" MaxLength="0" NewRow="True" ReadOnly="False" RowSpan="1" Span="1" Visible="True" Width="150" />
+                                        <JQTools:JQFormColumn Alignment="left" Caption="內容" Editor="text" FieldName="Describe" MaxLength="0" NewRow="False" ReadOnly="False" RowSpan="1" Span="2" Visible="True" Width="290" />
+                                        <JQTools:JQFormColumn Alignment="left" Caption="金額" Editor="numberbox" FieldName="AmtShow" MaxLength="0" NewRow="False" ReadOnly="False" RowSpan="1" Span="1" Visible="True" Width="70" />
+                                        <JQTools:JQFormColumn Alignment="left" Caption="CreateBy" Editor="text" FieldName="CreateBy" MaxLength="0" NewRow="False" ReadOnly="False" RowSpan="1" Span="1" Visible="False" Width="80" />
+                                        <JQTools:JQFormColumn Alignment="left" Caption="CreateDate" Editor="text" FieldName="CreateDate" MaxLength="0" NewRow="False" ReadOnly="False" RowSpan="1" Span="1" Visible="False" Width="80" />
+                                        <JQTools:JQFormColumn Alignment="left" Caption="LastUpdateBy" Editor="text" FieldName="LastUpdateBy" MaxLength="0" NewRow="False" ReadOnly="False" RowSpan="1" Span="1" Visible="False" Width="80" />
+                                        <JQTools:JQFormColumn Alignment="left" Caption="LastUpdateDate" Editor="text" FieldName="LastUpdateDate" MaxLength="0" NewRow="False" ReadOnly="False" RowSpan="1" Span="1" Visible="False" Width="80" />
+                                        <JQTools:JQFormColumn Alignment="left" Caption="RequisitionNO" Editor="text" FieldName="RequisitionNO" MaxLength="0" NewRow="False" ReadOnly="False" RowSpan="1" Span="1" Visible="False" Width="80" />
+                                        <JQTools:JQFormColumn Alignment="left" Caption="CompanyID" Editor="text" FieldName="CompanyID" MaxLength="0" NewRow="False" ReadOnly="False" RowSpan="1" Span="1" Visible="False" Width="80" />
+                                        <JQTools:JQFormColumn Alignment="left" Caption="VoucherID" Editor="text" FieldName="VoucherID" MaxLength="0" NewRow="False" ReadOnly="False" RowSpan="1" Span="1" Visible="False" Width="80" />
+                                    </Columns>
+                                    <RelationColumns>
+                                        <JQTools:JQRelationColumn FieldName="RequisitionNO" ParentFieldName="RequisitionNO" />
+                                    </RelationColumns>
+                                </JQTools:JQDataForm>
+                                <JQTools:JQAutoSeq ID="JQAutoSeq1" runat="server" BindingObjectID="dataFormDetail" FieldName="Item" NumDig="3" />
+                                <JQTools:JQAutoSeq ID="JQAutoSeq11" runat="server" BindingObjectID="dataFormDetail" FieldName="AutoKey" NumDig="1" />
+                                <JQTools:JQValidate ID="validateDetail" runat="server" BindingObjectID="dataFormDetail" EnableTheming="True">
+                                    <Columns>
+                                        <JQTools:JQValidateColumn CheckNull="True" FieldName="BorrowLendType" RemoteMethod="True" ValidateMessage="請選擇借貸！" ValidateType="None" />
+                                        <JQTools:JQValidateColumn CheckNull="True" FieldName="Acno" RemoteMethod="True" ValidateMessage="請選擇科目！" ValidateType="None" />
+                                        <JQTools:JQValidateColumn CheckMethod="CheckSubAcno" CheckNull="False" FieldName="SubAcno" RemoteMethod="False" ValidateMessage="請選擇明細！" ValidateType="None" />
+                                        <JQTools:JQValidateColumn CheckNull="True" FieldName="Describe" RemoteMethod="True" ValidateMessage="請填寫摘碼內容！" ValidateType="None" />
+                                        <JQTools:JQValidateColumn CheckNull="True" FieldName="AmtShow" RemoteMethod="True" ValidateMessage="請填寫金額！" ValidateType="None" />
+                                    </Columns>
+                                </JQTools:JQValidate>
+                                <JQTools:JQDefault ID="defaultDetail" runat="server" BindingObjectID="dataFormDetail" EnableTheming="True">
+                                    <Columns>
+                                        <JQTools:JQDefaultColumn CarryOn="False" DefaultValue="1" FieldName="BorrowLendType" RemoteMethod="True" />
+                                        <JQTools:JQDefaultColumn CarryOn="False" DefaultValue="_username" FieldName="CreateBy" RemoteMethod="True" />
+                                        <JQTools:JQDefaultColumn CarryOn="False" DefaultValue="_today" FieldName="CreateDate" RemoteMethod="True" />
+                                        <JQTools:JQDefaultColumn DefaultValue="_username" FieldName="LastUpdateBy" RemoteMethod="True" />
+                                        <JQTools:JQDefaultColumn CarryOn="False" DefaultValue="_today" FieldName="LastUpdateDate" RemoteMethod="True" />
+                                    </Columns>
+                                </JQTools:JQDefault>
+                            </JQTools:JQDialog>
+                        </div>
+                        <div data-options="closable:true" style="overflow:auto;padding:20px;" title="外帳設定">
+                            <JQTools:JQDataForm ID="dataFormVoucher1" runat="server" AlwaysReadOnly="False" Closed="False" ContinueAdd="False" DataMember="Requisition" disapply="False" DivFramed="False" DuplicateCheck="False" HorizontalColumnsCount="4" HorizontalGap="0" IsAutoPageClose="False" IsAutoPause="False" IsAutoSubmit="False" IsNotifyOFF="False" IsRejectNotify="False" IsRejectON="False" IsShowFlowIcon="False" OnLoadSuccess="OnLoadSuccessDFMaster1" RemoteName="sRequisition.Requisition" ShowApplyButton="False" ValidateStyle="Dialog" VerticalGap="0" ParentObjectID="dataFormVoucher">
+                                <Columns>
+                                    <JQTools:JQFormColumn Alignment="left" Caption="請款單號" Editor="text" FieldName="RequisitionNO" Format="" MaxLength="0" NewRow="False" ReadOnly="True" RowSpan="1" Span="1" Visible="True" Width="100" />
+                                    <JQTools:JQFormColumn Alignment="0" Caption="公司別" Editor="infocombobox" EditorOptions="valueField:'CompanyID',textField:'CompanyName',remoteName:'sglVoucherMaster.glCompany',tableName:'glCompany',pageSize:'-1',checkData:true,selectOnly:true,cacheRelationText:false,onSelect:CompanyID_OnSelect1,panelHeight:200" FieldName="CompanyID" Format="" ReadOnly="True" Width="190" />
+                                </Columns>
+                                <RelationColumns>
+                                    <JQTools:JQRelationColumn FieldName="RequisitionNO" ParentFieldName="RequisitionNO" />
+                                </RelationColumns>
+                            </JQTools:JQDataForm>
+                            <a id="lbVoucher1" class="easyui-linkbutton" data-options="" href="#" onclick="InsertVoucherData1()">載入項目</a><JQTools:JQDataGrid ID="dataGridDetail1" runat="server" AllowAdd="True" AllowDelete="True" AllowUpdate="True" AlwaysClose="True" AutoApply="True" BufferView="False" CheckOnSelect="True" ColumnsHibeable="False" DataMember="RequisitionglVoucherD1" DeleteCommandVisible="True" DuplicateCheck="False" EditDialogID="JQDialog3" EditMode="Dialog" EditOnEnter="True" Height="200px" InsertCommandVisible="True" MultiSelect="False" NotInitGrid="False" OnInsert="OnInsertDetail" PageList="10,20,30,40,50" PageSize="10" Pagination="False" ParentObjectID="dataFormVoucher" QueryAutoColumn="False" QueryLeft="" QueryMode="Window" QueryTitle="Query" QueryTop="" RecordLock="False" RecordLockMode="None" RemoteName="sRequisition.Requisition" RowNumbers="True" Title="" TotalCaption="Total:" UpdateCommandVisible="True" ViewCommandVisible="False">
+                                <Columns>
+                                    <JQTools:JQGridColumn Alignment="left" Caption="AutoKey" Editor="text" FieldName="AutoKey" Frozen="False" IsNvarChar="False" MaxLength="0" QueryCondition="" ReadOnly="False" Sortable="False" Visible="False" Width="80">
+                                    </JQTools:JQGridColumn>
+                                    <JQTools:JQGridColumn Alignment="left" Caption="RequisitionNO" Editor="text" FieldName="RequisitionNO" Frozen="False" IsNvarChar="False" MaxLength="0" QueryCondition="" ReadOnly="False" Sortable="False" Visible="False" Width="80">
+                                    </JQTools:JQGridColumn>
+                                    <JQTools:JQGridColumn Alignment="center" Caption="序號" Editor="text" FieldName="Item" Frozen="False" IsNvarChar="False" MaxLength="0" QueryCondition="" ReadOnly="False" Sortable="False" Visible="False" Width="30">
+                                    </JQTools:JQGridColumn>
+                                    <JQTools:JQGridColumn Alignment="center" Caption="借貸" Editor="infocombobox" EditorOptions="valueField:'ListID',textField:'ListContent',remoteName:'sglVoucherMaster.infoglBorrowLendType',tableName:'infoglBorrowLendType',pageSize:'-1',checkData:false,selectOnly:false,cacheRelationText:false,panelHeight:200" FieldName="BorrowLendType" Frozen="False" IsNvarChar="False" MaxLength="0" QueryCondition="" ReadOnly="False" Sortable="False" Visible="True" Width="40">
+                                    </JQTools:JQGridColumn>
+                                    <JQTools:JQGridColumn Alignment="center" Caption="科目" Editor="text" EditorOptions="" FieldName="Acno" Frozen="False" IsNvarChar="False" MaxLength="0" QueryCondition="" ReadOnly="False" Sortable="False" Visible="True" Width="50">
+                                    </JQTools:JQGridColumn>
+                                    <JQTools:JQGridColumn Alignment="left" Caption="明細" Editor="text" EditorOptions="" FieldName="SubAcnoText" Frozen="False" IsNvarChar="False" MaxLength="0" QueryCondition="" ReadOnly="False" Sortable="False" Visible="True" Width="190">
+                                    </JQTools:JQGridColumn>
+                                    <JQTools:JQGridColumn Alignment="left" Caption="成本中心" Editor="infocombobox" EditorOptions="valueField:'CostCenterID',textField:'CostCenterName',remoteName:'sglVoucherMaster.infoglCostCenter',tableName:'infoglCostCenter',pageSize:'-1',checkData:false,selectOnly:false,cacheRelationText:false,panelHeight:200" FieldName="CostCenterID" Frozen="False" IsNvarChar="False" MaxLength="0" QueryCondition="" ReadOnly="False" Sortable="False" Visible="True" Width="85">
+                                    </JQTools:JQGridColumn>
+                                    <JQTools:JQGridColumn Alignment="center" Caption="摘碼代號" Editor="text" EditorOptions="" FieldName="DescribeID" Frozen="False" IsNvarChar="False" MaxLength="0" QueryCondition="" ReadOnly="False" Sortable="False" Visible="True" Width="60">
+                                    </JQTools:JQGridColumn>
+                                    <JQTools:JQGridColumn Alignment="left" Caption="摘碼內容" Editor="text" FieldName="Describe" Frozen="False" IsNvarChar="False" MaxLength="0" QueryCondition="" ReadOnly="False" Sortable="False" Visible="True" Width="197">
+                                    </JQTools:JQGridColumn>
+                                    <JQTools:JQGridColumn Alignment="right" Caption="金額" Editor="numberbox" FieldName="AmtShow" Frozen="False" IsNvarChar="False" MaxLength="0" QueryCondition="" ReadOnly="False" Sortable="False" Visible="True" Width="70">
+                                    </JQTools:JQGridColumn>
+                                    <JQTools:JQGridColumn Alignment="left" Caption="CreateBy" Editor="text" FieldName="CreateBy" Frozen="False" IsNvarChar="False" MaxLength="0" QueryCondition="" ReadOnly="False" Sortable="False" Visible="False" Width="80">
+                                    </JQTools:JQGridColumn>
+                                    <JQTools:JQGridColumn Alignment="left" Caption="CreateDate" Editor="text" FieldName="CreateDate" Frozen="False" IsNvarChar="False" MaxLength="0" QueryCondition="" ReadOnly="False" Sortable="False" Visible="False" Width="80">
+                                    </JQTools:JQGridColumn>
+                                    <JQTools:JQGridColumn Alignment="left" Caption="LastUpdateBy" Editor="text" FieldName="LastUpdateBy" Frozen="False" IsNvarChar="False" MaxLength="0" QueryCondition="" ReadOnly="False" Sortable="False" Visible="False" Width="80">
+                                    </JQTools:JQGridColumn>
+                                    <JQTools:JQGridColumn Alignment="left" Caption="LastUpdateDate" Editor="text" FieldName="LastUpdateDate" Frozen="False" IsNvarChar="False" MaxLength="0" QueryCondition="" ReadOnly="False" Sortable="False" Visible="False" Width="80">
+                                    </JQTools:JQGridColumn>
+                                    <JQTools:JQGridColumn Alignment="left" Caption="SubAcno" Editor="text" FieldName="SubAcno" Frozen="False" IsNvarChar="False" MaxLength="0" QueryCondition="" ReadOnly="False" Sortable="False" Visible="False" Width="80">
+                                    </JQTools:JQGridColumn>
+                                    <JQTools:JQGridColumn Alignment="left" Caption="CompanyID" Editor="text" FieldName="CompanyID" Frozen="False" IsNvarChar="False" MaxLength="0" QueryCondition="" ReadOnly="False" Sortable="False" Visible="False" Width="80">
+                                    </JQTools:JQGridColumn>
+                                    <JQTools:JQGridColumn Alignment="left" Caption="VoucherID" Editor="text" FieldName="VoucherID" Frozen="False" IsNvarChar="False" MaxLength="0" QueryCondition="" ReadOnly="False" Sortable="False" Visible="False" Width="80">
+                                    </JQTools:JQGridColumn>
+                                    <%--<JQTools:JQGridColumn Alignment="left" Caption="OpenToolTip" Editor="text" FieldName="OpenToolTip" Frozen="False" IsNvarChar="False" MaxLength="0" QueryCondition="" ReadOnly="False" Sortable="False" Visible="False" Width="80">
+                                    </JQTools:JQGridColumn>--%>
+                                </Columns>
+                                <RelationColumns>
+                                    <JQTools:JQRelationColumn FieldName="RequisitionNO" ParentFieldName="RequisitionNO" />
+                                </RelationColumns>
+                                <TooItems>
+<%--                                    <JQTools:JQToolItem Icon="icon-save" ItemType="easyui-linkbutton" OnClick="apply" Text="存檔" />--%>
+                                    <JQTools:JQToolItem Icon="icon-add" ItemType="easyui-linkbutton" OnClick="insertItem" Text="新增" />
+                                    <JQTools:JQToolItem Icon="icon-cut" ItemType="easyui-linkbutton" OnClick="CopyDetail1" Text="複製" Visible="True" />
+                                </TooItems>
+                            </JQTools:JQDataGrid>
+                            <JQTools:JQDialog ID="JQDialog3" runat="server" BindingObjectID="dataFormDetail1" Closed="True" EditMode="Continue" Title="" Width="780px">
+                                <JQTools:JQDataForm ID="dataFormDetail1" runat="server" AlwaysReadOnly="False" Closed="False" ContinueAdd="True" DataMember="RequisitionglVoucherD1" disapply="False" DivFramed="False" DuplicateCheck="False" HorizontalColumnsCount="5" HorizontalGap="0" IsAutoPageClose="False" IsAutoPause="False" IsAutoSubmit="False" IsNotifyOFF="False" IsRejectNotify="False" IsRejectON="False" IsShowFlowIcon="False" OnApply="OnApplyDFDetail1" OnLoadSuccess="OnLoadSuccessDFDetail1" ParentObjectID="dataFormVoucher" RemoteName="sRequisition.Requisition" ShowApplyButton="False" ValidateStyle="Dialog" VerticalGap="0" OnApplied="OnAppliedDFDetail1">
+                                    <Columns>
+                                        <JQTools:JQFormColumn Alignment="left" Caption="AutoKey" Editor="text" FieldName="AutoKey" MaxLength="0" NewRow="False" ReadOnly="False" RowSpan="1" Span="1" Visible="False" Width="80" />
+                                        <JQTools:JQFormColumn Alignment="left" Caption="序號" Editor="text" FieldName="Item" MaxLength="0" NewRow="False" ReadOnly="True" RowSpan="1" Span="1" Visible="False" Width="40" />
+                                        <JQTools:JQFormColumn Alignment="left" Caption="借貸" Editor="infocombobox" EditorOptions="valueField:'ListID',textField:'ListID',remoteName:'sglVoucherMaster.infoglBorrowLendType',tableName:'infoglBorrowLendType',pageSize:'-1',checkData:true,selectOnly:false,cacheRelationText:false,panelHeight:100" FieldName="BorrowLendType" MaxLength="0" NewRow="False" ReadOnly="False" RowSpan="1" Span="1" Visible="True" Width="40" />
+                                        <JQTools:JQFormColumn Alignment="left" Caption="科目" Editor="infocombobox" EditorOptions="items:[{value:'',text:'',selected:'false'}],checkData:true,selectOnly:false,cacheRelationText:false,onSelect:Acno_OnSelect1,panelHeight:150" FieldName="Acno" MaxLength="0" NewRow="False" ReadOnly="False" RowSpan="1" Span="1" Visible="True" Width="80" />
+                                        <JQTools:JQFormColumn Alignment="left" Caption="明細" Editor="infocombobox" EditorOptions="items:[{value:'',text:'',selected:'false'}],checkData:true,selectOnly:false,cacheRelationText:false,onSelect:OnSelectSubAcno1,panelHeight:150" FieldName="SubAcno" MaxLength="0" NewRow="False" OnBlur="" ReadOnly="False" RowSpan="1" Span="1" Visible="True" Width="180" />
+                                        <JQTools:JQFormColumn Alignment="left" Caption="SubAcnoText" Editor="text" FieldName="SubAcnoText" MaxLength="0" NewRow="False" ReadOnly="True" RowSpan="1" Span="1" Visible="False" Width="80" />
+                                        <JQTools:JQFormColumn Alignment="left" Caption="成本中心" Editor="infocombobox" EditorOptions="valueField:'CostCenterID',textField:'CostCenterName',remoteName:'sglVoucherMaster.infoglCostCenter',tableName:'infoglCostCenter',pageSize:'-1',checkData:true,selectOnly:false,cacheRelationText:false,panelHeight:200" FieldName="CostCenterID" MaxLength="0" NewRow="False" ReadOnly="False" RowSpan="1" Span="1" Visible="True" Width="105" />
+                                        <JQTools:JQFormColumn Alignment="left" Caption="摘碼代號" Editor="infocombobox" EditorOptions="items:[{value:'',text:'',selected:'false'}],checkData:false,selectOnly:false,cacheRelationText:false,onSelect:OnSelectDescribeID1,panelHeight:200" FieldName="DescribeID" MaxLength="0" NewRow="True" ReadOnly="False" RowSpan="1" Span="1" Visible="True" Width="150" />
+                                        <JQTools:JQFormColumn Alignment="left" Caption="內容" Editor="text" FieldName="Describe" MaxLength="0" NewRow="False" ReadOnly="False" RowSpan="1" Span="2" Visible="True" Width="290" />
+                                        <JQTools:JQFormColumn Alignment="left" Caption="金額" Editor="numberbox" FieldName="AmtShow" MaxLength="0" NewRow="False" ReadOnly="False" RowSpan="1" Span="1" Visible="True" Width="70" />
+                                        <JQTools:JQFormColumn Alignment="left" Caption="CreateBy" Editor="text" FieldName="CreateBy" MaxLength="0" NewRow="False" ReadOnly="False" RowSpan="1" Span="1" Visible="False" Width="80" />
+                                        <JQTools:JQFormColumn Alignment="left" Caption="CreateDate" Editor="text" FieldName="CreateDate" MaxLength="0" NewRow="False" ReadOnly="False" RowSpan="1" Span="1" Visible="False" Width="80" />
+                                        <JQTools:JQFormColumn Alignment="left" Caption="LastUpdateBy" Editor="text" FieldName="LastUpdateBy" MaxLength="0" NewRow="False" ReadOnly="False" RowSpan="1" Span="1" Visible="False" Width="80" />
+                                        <JQTools:JQFormColumn Alignment="left" Caption="LastUpdateDate" Editor="text" FieldName="LastUpdateDate" MaxLength="0" NewRow="False" ReadOnly="False" RowSpan="1" Span="1" Visible="False" Width="80" />
+                                        <JQTools:JQFormColumn Alignment="left" Caption="RequisitionNO" Editor="text" FieldName="RequisitionNO" MaxLength="0" NewRow="False" ReadOnly="False" RowSpan="1" Span="1" Visible="False" Width="80" />
+                                        <JQTools:JQFormColumn Alignment="left" Caption="CompanyID" Editor="text" FieldName="CompanyID" MaxLength="0" NewRow="False" ReadOnly="False" RowSpan="1" Span="1" Visible="False" Width="80" />
+                                        <JQTools:JQFormColumn Alignment="left" Caption="VoucherID" Editor="text" FieldName="VoucherID" MaxLength="0" NewRow="False" ReadOnly="False" RowSpan="1" Span="1" Visible="False" Width="80" />
+                                    </Columns>
+                                    <RelationColumns>
+                                        <JQTools:JQRelationColumn FieldName="RequisitionNO" ParentFieldName="RequisitionNO" />
+                                    </RelationColumns>
+                                </JQTools:JQDataForm>
+                                <JQTools:JQAutoSeq ID="JQSeq1" runat="server" BindingObjectID="dataFormDetail1" FieldName="Item" NumDig="3" />
+                                <JQTools:JQAutoSeq ID="AutoSeq1" runat="server" BindingObjectID="dataFormDetail1" FieldName="AutoKey" NumDig="1" />
+                                <JQTools:JQDefault ID="JQDefault1" runat="server" BindingObjectID="dataFormDetail1" EnableTheming="True">
+                                    <Columns>
+                                        <JQTools:JQDefaultColumn CarryOn="False" DefaultValue="1" FieldName="BorrowLendType" RemoteMethod="True" />
+                                        <JQTools:JQDefaultColumn CarryOn="False" DefaultValue="_username" FieldName="CreateBy" RemoteMethod="True" />
+                                        <JQTools:JQDefaultColumn CarryOn="False" DefaultValue="_today" FieldName="CreateDate" RemoteMethod="True" />
+                                        <JQTools:JQDefaultColumn DefaultValue="_username" FieldName="LastUpdateBy" RemoteMethod="True" />
+                                        <JQTools:JQDefaultColumn CarryOn="False" DefaultValue="_today" FieldName="LastUpdateDate" RemoteMethod="True" />
+                                    </Columns>
+                                </JQTools:JQDefault>
+                                <JQTools:JQValidate ID="JQValidate1" runat="server" BindingObjectID="dataFormDetail1" EnableTheming="True">
+                                    <Columns>
+                                        <JQTools:JQValidateColumn CheckNull="True" FieldName="BorrowLendType" RemoteMethod="True" ValidateMessage="請選擇借貸！" ValidateType="None" />
+                                        <JQTools:JQValidateColumn CheckNull="True" FieldName="Acno" RemoteMethod="True" ValidateMessage="請選擇科目！" ValidateType="None" />
+                                        <JQTools:JQValidateColumn CheckMethod="CheckSubAcno1" CheckNull="False" FieldName="SubAcno" RemoteMethod="False" ValidateMessage="請選擇明細！" ValidateType="None" />
+                                        <JQTools:JQValidateColumn CheckNull="True" FieldName="Describe" RemoteMethod="True" ValidateMessage="請填寫摘碼內容！" ValidateType="None" />
+                                        <JQTools:JQValidateColumn CheckNull="True" FieldName="AmtShow" RemoteMethod="True" ValidateMessage="請填寫金額！" ValidateType="None" />
+                                    </Columns>
+                                </JQTools:JQValidate>
+                            </JQTools:JQDialog>
+                            <JQTools:JQValidate ID="validateMaster0" runat="server" BindingObjectID="dataFormVoucher" EnableTheming="True">
+                                <Columns>
+                                    <JQTools:JQValidateColumn CheckNull="True" FieldName="CompanyID" RemoteMethod="True" ValidateMessage="請選擇公司別！" ValidateType="None" />
+                                    <JQTools:JQValidateColumn CheckNull="True" FieldName="VoucherID" RemoteMethod="True" ValidateMessage="請選擇傳票類別！" ValidateType="None" />
+                                    <JQTools:JQValidateColumn CheckNull="True" FieldName="VoucherDate" RemoteMethod="True" ValidateMessage="傳票日期	不可空白！" ValidateType="None" />
+                                </Columns>
+                            </JQTools:JQValidate>
+                        </div>
+                    </div>
                 </JQTools:JQDialog>
-                <JQTools:JQValidate ID="validateMaster0" runat="server" BindingObjectID="dataFormVoucher" EnableTheming="True">
-                    <Columns>
-                        <JQTools:JQValidateColumn CheckNull="True" FieldName="CompanyID" RemoteMethod="True" ValidateMessage="請選擇公司別！" ValidateType="None" />
-                        <JQTools:JQValidateColumn CheckNull="True" FieldName="VoucherID" RemoteMethod="True" ValidateMessage="請選擇傳票類別！" ValidateType="None" />
-                        <JQTools:JQValidateColumn CheckNull="True" FieldName="VoucherDate" RemoteMethod="True" ValidateMessage="傳票日期	不可空白！" ValidateType="None" />
-                    </Columns>
-                </JQTools:JQValidate>
-                <JQTools:JQDefault ID="defaultDetail" runat="server" BindingObjectID="dataFormDetail" EnableTheming="True">
-                    <Columns>
-                        <JQTools:JQDefaultColumn CarryOn="False" DefaultValue="1" FieldName="BorrowLendType" RemoteMethod="True" />
-                        <JQTools:JQDefaultColumn CarryOn="False" DefaultValue="_username" FieldName="CreateBy" RemoteMethod="True" />
-                        <JQTools:JQDefaultColumn CarryOn="False" DefaultValue="_today" FieldName="CreateDate" RemoteMethod="True" />
-                        <JQTools:JQDefaultColumn DefaultValue="_username" FieldName="LastUpdateBy" RemoteMethod="True" />
-                        <JQTools:JQDefaultColumn CarryOn="False" DefaultValue="_today" FieldName="LastUpdateDate" RemoteMethod="True" />
-                    </Columns>
-                </JQTools:JQDefault>
-                <JQTools:JQValidate ID="validateDetail" runat="server" BindingObjectID="dataFormDetail" EnableTheming="True">
-                    <Columns>
-                        <JQTools:JQValidateColumn CheckNull="True" FieldName="BorrowLendType" RemoteMethod="True" ValidateMessage="請選擇借貸！" ValidateType="None" />
-                        <JQTools:JQValidateColumn CheckNull="True" FieldName="Acno" RemoteMethod="True" ValidateMessage="請選擇科目！" ValidateType="None" />
-                        <JQTools:JQValidateColumn CheckNull="False" FieldName="SubAcno" RemoteMethod="False" ValidateMessage="請選擇明細！" ValidateType="None" CheckMethod="CheckSubAcno" />
-                        <JQTools:JQValidateColumn CheckNull="True" FieldName="Describe" RemoteMethod="True" ValidateMessage="請填寫摘碼內容！" ValidateType="None" />
-                        <JQTools:JQValidateColumn CheckNull="True" FieldName="AmtShow" RemoteMethod="True" ValidateMessage="請填寫金額！" ValidateType="None" />
-                    </Columns>
-                </JQTools:JQValidate>
-            </JQTools:JQDialog>
-
+            
 
             <JQTools:JQDialog ID="JQDialogToolTip" runat="server" DialogLeft="130px" DialogTop="80px" Title="明細查詢" ShowSubmitDiv="False" Width="420px" Height="370px">
                 <JQTools:JQDataGrid ID="ToolTip" runat="server" AllowAdd="True" AllowDelete="False" AllowUpdate="False" AlwaysClose="False" AutoApply="True" CheckOnSelect="True" ColumnsHibeable="False" DataMember="infoSubAcno" DeleteCommandVisible="False" DuplicateCheck="False" EditMode="Dialog" EditOnEnter="True" InsertCommandVisible="True" MultiSelect="False" PageList="10,20,30,40,50" PageSize="10" Pagination="True" QueryAutoColumn="False" QueryLeft="" QueryMode="Panel" QueryTitle="" QueryTop="" RecordLock="False" RecordLockMode="None" RemoteName="sglVoucherMaster.infoSubAcno" Title="" TotalCaption="Total:" UpdateCommandVisible="False" ViewCommandVisible="False" BufferView="False" NotInitGrid="False" RowNumbers="True" Width="100%">

@@ -11,7 +11,7 @@
            //將Focus 欄位背景顏色改為黃色
             $(function () {
                 $("input, select, textarea").focus(function () {
-                    $(this).css("background-color", "lightyellow");
+                    $(this).css("background-color", "yellow");
                 });
                 $("input, select, textarea").blur(function () {
                     $(this).css("background-color", "white");
@@ -223,10 +223,10 @@
                 <JQTools:JQValidate ID="validate1" runat="server" BindingObjectID="dataForm1" BorderStyle="NotSet" ClientIDMode="Inherit" Enabled="True" EnableTheming="True" EnableViewState="True" ViewStateMode="Inherit">
                 </JQTools:JQValidate>
             </JQTools:JQDialog>
-            <JQTools:JQDialog ID="JQDialog3" runat="server" DialogLeft="260px" DialogTop="20px" Title="選取銷貨類別" Width="360px" OnSubmited="SalesTypeOnSubmited">
-                  <div class="easyui-layout" style="height: 360px;">
+            <JQTools:JQDialog ID="JQDialog3" runat="server" DialogLeft="260px" DialogTop="20px" Title="選取銷貨類別" Width="450px" OnSubmited="SalesTypeOnSubmited">
+                  <div class="easyui-layout" style="height: 480px;">
                     <div data-options="region:'center',title:'',border:false" title="">
-                 <JQTools:JQTreeView ID="JQSalesType" runat="server" DataMember="SalesTypeTree" idField="ID" parentField="ParentID" RemoteName="sERP_Setting_SalesKindSalesType.SalesTypeTree" textField="Name" Checkbox="True" Height="360px"></JQTools:JQTreeView>
+                 <JQTools:JQTreeView ID="JQSalesType" runat="server" DataMember="SalesTypeTree" idField="ID" parentField="ParentID" RemoteName="sERP_Setting_SalesKindSalesType.SalesTypeTree" textField="Name" Checkbox="True"></JQTools:JQTreeView>
                     </div>
                     </div>
        </JQTools:JQDialog>

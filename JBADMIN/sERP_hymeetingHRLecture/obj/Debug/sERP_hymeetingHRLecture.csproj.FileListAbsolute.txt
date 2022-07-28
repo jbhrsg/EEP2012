@@ -1,0 +1,8 @@
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sERP_hymeetingHRLecture\bin\Debug\sERP_hymeetingHRLecture.dll
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sERP_hymeetingHRLecture\bin\Debug\sERP_hymeetingHRLecture.pdb
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sERP_hymeetingHRLecture\obj\Debug\sERP_hymeetingHRLecture.csproj.GenerateResource.Cache
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sERP_hymeetingHRLecture\obj\Debug\sERP_hymeetingHRLecture.dll
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sERP_hymeetingHRLecture\obj\Debug\sERP_hymeetingHRLecture.pdb
+C:\Program Files (x86)\Infolight\EEP2012\EEPNetServer\JBADMIN\sERP_hymeetingHRLecture.dll
+C:\Program Files (x86)\Infolight\EEP2012\EEPNetServer\JBADMIN\sERP_hymeetingHRLecture.pdb
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sERP_hymeetingHRLecture\obj\Debug\sERP_hymeetingHRLecture.Component.resources

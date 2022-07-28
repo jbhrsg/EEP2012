@@ -1,0 +1,7 @@
+D:\Infolight\EEP2012\EEPNetServer\JBADMIN\sFWCRMWorkNoLogs.dll
+D:\Infolight\EEP2012\EEPNetServer\JBADMIN\sFWCRMWorkNoLogs.pdb
+D:\Infolight\EEP2012\JBADMIN\sFWCRMWorkNoLogs\obj\Debug\sFWCRMWorkNoLogs.Component.resources
+D:\Infolight\EEP2012\JBADMIN\sFWCRMWorkNoLogs\obj\Debug\sFWCRMWorkNoLogs.csproj.GenerateResource.Cache
+D:\Infolight\EEP2012\JBADMIN\sFWCRMWorkNoLogs\obj\Debug\sFWCRMWorkNoLogs.dll
+D:\Infolight\EEP2012\JBADMIN\sFWCRMWorkNoLogs\obj\Debug\sFWCRMWorkNoLogs.pdb
+D:\Infolight\EEP2012\JBADMIN\sFWCRMWorkNoLogs\obj\Debug\sFWCRMWorkNoLogs.csprojResolveAssemblyReference.cache

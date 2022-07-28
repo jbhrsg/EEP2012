@@ -1,0 +1,9 @@
+D:\Infolight\EEP2012\JBADMIN\s0800PublishingJob\bin\Debug\s0800PublishingJob.dll
+D:\Infolight\EEP2012\JBADMIN\s0800PublishingJob\bin\Debug\s0800PublishingJob.pdb
+D:\Infolight\EEP2012\JBADMIN\s0800PublishingJob\obj\Debug\s0800PublishingJob.csprojResolveAssemblyReference.cache
+D:\Infolight\EEP2012\JBADMIN\s0800PublishingJob\obj\Debug\s0800PublishingJob.csproj.GenerateResource.Cache
+D:\Infolight\EEP2012\JBADMIN\s0800PublishingJob\obj\Debug\s0800PublishingJob.dll
+D:\Infolight\EEP2012\JBADMIN\s0800PublishingJob\obj\Debug\s0800PublishingJob.pdb
+D:\Infolight\EEP2012\EEPNetServer\JBADMIN\s0800PublishingJob.dll
+D:\Infolight\EEP2012\EEPNetServer\JBADMIN\s0800PublishingJob.pdb
+D:\Infolight\EEP2012\JBADMIN\s0800PublishingJob\obj\Debug\s0800PublishingJob.Component.resources

@@ -36,6 +36,11 @@
             Srvtools.Service service5 = new Srvtools.Service();
             Srvtools.Service service6 = new Srvtools.Service();
             Srvtools.Service service7 = new Srvtools.Service();
+            Srvtools.Service service8 = new Srvtools.Service();
+            Srvtools.Service service9 = new Srvtools.Service();
+            Srvtools.Service service10 = new Srvtools.Service();
+            Srvtools.Service service11 = new Srvtools.Service();
+            Srvtools.Service service12 = new Srvtools.Service();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Component));
             Srvtools.KeyItem keyItem1 = new Srvtools.KeyItem();
             Srvtools.FieldAttr fieldAttr1 = new Srvtools.FieldAttr();
@@ -89,8 +94,6 @@
             Srvtools.FieldAttr fieldAttr48 = new Srvtools.FieldAttr();
             Srvtools.FieldAttr fieldAttr49 = new Srvtools.FieldAttr();
             Srvtools.FieldAttr fieldAttr50 = new Srvtools.FieldAttr();
-            Srvtools.ColumnItem columnItem1 = new Srvtools.ColumnItem();
-            Srvtools.ColumnItem columnItem2 = new Srvtools.ColumnItem();
             Srvtools.KeyItem keyItem3 = new Srvtools.KeyItem();
             Srvtools.KeyItem keyItem4 = new Srvtools.KeyItem();
             Srvtools.KeyItem keyItem5 = new Srvtools.KeyItem();
@@ -152,8 +155,8 @@
             Srvtools.FieldAttr fieldAttr94 = new Srvtools.FieldAttr();
             Srvtools.FieldAttr fieldAttr95 = new Srvtools.FieldAttr();
             Srvtools.KeyItem keyItem18 = new Srvtools.KeyItem();
-            Srvtools.ColumnItem columnItem3 = new Srvtools.ColumnItem();
-            Srvtools.ColumnItem columnItem4 = new Srvtools.ColumnItem();
+            Srvtools.ColumnItem columnItem1 = new Srvtools.ColumnItem();
+            Srvtools.ColumnItem columnItem2 = new Srvtools.ColumnItem();
             Srvtools.KeyItem keyItem19 = new Srvtools.KeyItem();
             Srvtools.FieldAttr fieldAttr96 = new Srvtools.FieldAttr();
             Srvtools.FieldAttr fieldAttr97 = new Srvtools.FieldAttr();
@@ -419,18 +422,18 @@
             Srvtools.FieldAttr fieldAttr356 = new Srvtools.FieldAttr();
             Srvtools.FieldAttr fieldAttr357 = new Srvtools.FieldAttr();
             Srvtools.FieldAttr fieldAttr358 = new Srvtools.FieldAttr();
+            Srvtools.ColumnItem columnItem3 = new Srvtools.ColumnItem();
+            Srvtools.ColumnItem columnItem4 = new Srvtools.ColumnItem();
             Srvtools.ColumnItem columnItem5 = new Srvtools.ColumnItem();
             Srvtools.ColumnItem columnItem6 = new Srvtools.ColumnItem();
-            Srvtools.ColumnItem columnItem7 = new Srvtools.ColumnItem();
-            Srvtools.ColumnItem columnItem8 = new Srvtools.ColumnItem();
             Srvtools.KeyItem keyItem21 = new Srvtools.KeyItem();
             Srvtools.FieldAttr fieldAttr359 = new Srvtools.FieldAttr();
             Srvtools.FieldAttr fieldAttr360 = new Srvtools.FieldAttr();
             Srvtools.FieldAttr fieldAttr361 = new Srvtools.FieldAttr();
             Srvtools.FieldAttr fieldAttr362 = new Srvtools.FieldAttr();
             Srvtools.FieldAttr fieldAttr363 = new Srvtools.FieldAttr();
-            Srvtools.ColumnItem columnItem9 = new Srvtools.ColumnItem();
-            Srvtools.ColumnItem columnItem10 = new Srvtools.ColumnItem();
+            Srvtools.ColumnItem columnItem7 = new Srvtools.ColumnItem();
+            Srvtools.ColumnItem columnItem8 = new Srvtools.ColumnItem();
             Srvtools.KeyItem keyItem22 = new Srvtools.KeyItem();
             Srvtools.KeyItem keyItem23 = new Srvtools.KeyItem();
             Srvtools.FieldAttr fieldAttr364 = new Srvtools.FieldAttr();
@@ -542,18 +545,18 @@
             Srvtools.FieldAttr fieldAttr470 = new Srvtools.FieldAttr();
             Srvtools.FieldAttr fieldAttr471 = new Srvtools.FieldAttr();
             Srvtools.FieldAttr fieldAttr472 = new Srvtools.FieldAttr();
+            Srvtools.ColumnItem columnItem9 = new Srvtools.ColumnItem();
+            Srvtools.ColumnItem columnItem10 = new Srvtools.ColumnItem();
             Srvtools.ColumnItem columnItem11 = new Srvtools.ColumnItem();
             Srvtools.ColumnItem columnItem12 = new Srvtools.ColumnItem();
-            Srvtools.ColumnItem columnItem13 = new Srvtools.ColumnItem();
-            Srvtools.ColumnItem columnItem14 = new Srvtools.ColumnItem();
             Srvtools.KeyItem keyItem24 = new Srvtools.KeyItem();
             Srvtools.FieldAttr fieldAttr473 = new Srvtools.FieldAttr();
             Srvtools.FieldAttr fieldAttr474 = new Srvtools.FieldAttr();
             Srvtools.FieldAttr fieldAttr475 = new Srvtools.FieldAttr();
             Srvtools.FieldAttr fieldAttr476 = new Srvtools.FieldAttr();
             Srvtools.FieldAttr fieldAttr477 = new Srvtools.FieldAttr();
-            Srvtools.ColumnItem columnItem15 = new Srvtools.ColumnItem();
-            Srvtools.ColumnItem columnItem16 = new Srvtools.ColumnItem();
+            Srvtools.ColumnItem columnItem13 = new Srvtools.ColumnItem();
+            Srvtools.ColumnItem columnItem14 = new Srvtools.ColumnItem();
             Srvtools.KeyItem keyItem25 = new Srvtools.KeyItem();
             Srvtools.FieldAttr fieldAttr478 = new Srvtools.FieldAttr();
             Srvtools.FieldAttr fieldAttr479 = new Srvtools.FieldAttr();
@@ -710,13 +713,22 @@
             Srvtools.FieldAttr fieldAttr629 = new Srvtools.FieldAttr();
             Srvtools.FieldAttr fieldAttr630 = new Srvtools.FieldAttr();
             Srvtools.FieldAttr fieldAttr631 = new Srvtools.FieldAttr();
+            Srvtools.KeyItem keyItem27 = new Srvtools.KeyItem();
+            Srvtools.FieldAttr fieldAttr632 = new Srvtools.FieldAttr();
+            Srvtools.FieldAttr fieldAttr633 = new Srvtools.FieldAttr();
+            Srvtools.FieldAttr fieldAttr634 = new Srvtools.FieldAttr();
+            Srvtools.FieldAttr fieldAttr635 = new Srvtools.FieldAttr();
+            Srvtools.FieldAttr fieldAttr636 = new Srvtools.FieldAttr();
+            Srvtools.KeyItem keyItem28 = new Srvtools.KeyItem();
+            Srvtools.ColumnItem columnItem15 = new Srvtools.ColumnItem();
+            Srvtools.ColumnItem columnItem16 = new Srvtools.ColumnItem();
             this.serviceManager1 = new Srvtools.ServiceManager(this.components);
             this.InfoConnection1 = new Srvtools.InfoConnection(this.components);
             this.HUT_Customer = new Srvtools.InfoCommand(this.components);
             this.ucHUT_Customer = new Srvtools.UpdateComponent(this.components);
             this.HUT_CustomerContactRecord = new Srvtools.InfoCommand(this.components);
+            this.infoConnection2 = new Srvtools.InfoConnection(this.components);
             this.ucHUT_CustomerContactRecord = new Srvtools.UpdateComponent(this.components);
-            this.idHUT_Customer_ContactRecord = new Srvtools.InfoDataSource(this.components);
             this.View_HUT_Customer = new Srvtools.InfoCommand(this.components);
             this.autoNumber1 = new Srvtools.AutoNumber(this.components);
             this.infoDataSource1 = new Srvtools.InfoDataSource(this.components);
@@ -766,10 +778,16 @@
             this.infoJobCloseReason = new Srvtools.InfoCommand(this.components);
             this.infoRequirementRecordJoin = new Srvtools.InfoCommand(this.components);
             this.ucHUT_ContryArea = new Srvtools.UpdateComponent(this.components);
-            this.infoCommand1 = new Srvtools.InfoCommand(this.components);
+            this.infoSelectUser = new Srvtools.InfoCommand(this.components);
+            this.ucHUT_JobAssignLogs = new Srvtools.UpdateComponent(this.components);
+            this.HUT_JobAssignLogs = new Srvtools.InfoCommand(this.components);
+            this.idHUT_User_JobAssignLogs = new Srvtools.InfoDataSource(this.components);
+            this.infoSelectJobInterview = new Srvtools.InfoCommand(this.components);
+            this.CONTACT_TRADE = new Srvtools.InfoCommand(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.InfoConnection1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.HUT_Customer)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.HUT_CustomerContactRecord)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.infoConnection2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.View_HUT_Customer)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.HUT_IndCategory)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.HUT_IndCategoryL1)).BeginInit();
@@ -800,7 +818,10 @@
             ((System.ComponentModel.ISupportInitialize)(this.HUT_ContryArea)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.infoJobCloseReason)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.infoRequirementRecordJoin)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.infoCommand1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.infoSelectUser)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.HUT_JobAssignLogs)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.infoSelectJobInterview)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.CONTACT_TRADE)).BeginInit();
             // 
             // serviceManager1
             // 
@@ -825,6 +846,21 @@
             service7.DelegateName = "procReportJobRequire";
             service7.NonLogin = false;
             service7.ServiceName = "procReportJobRequire";
+            service8.DelegateName = "procReportCustDomain";
+            service8.NonLogin = false;
+            service8.ServiceName = "procReportCustDomain";
+            service9.DelegateName = "ReturnSalesTeamID";
+            service9.NonLogin = false;
+            service9.ServiceName = "ReturnSalesTeamID";
+            service10.DelegateName = "ReturnJobUnion";
+            service10.NonLogin = false;
+            service10.ServiceName = "ReturnJobUnion";
+            service11.DelegateName = "ReturnUserUnion";
+            service11.NonLogin = false;
+            service11.ServiceName = "ReturnUserUnion";
+            service12.DelegateName = "procSyncContact";
+            service12.NonLogin = false;
+            service12.ServiceName = "procSyncContact";
             this.serviceManager1.ServiceCollection.Add(service1);
             this.serviceManager1.ServiceCollection.Add(service2);
             this.serviceManager1.ServiceCollection.Add(service3);
@@ -832,10 +868,15 @@
             this.serviceManager1.ServiceCollection.Add(service5);
             this.serviceManager1.ServiceCollection.Add(service6);
             this.serviceManager1.ServiceCollection.Add(service7);
+            this.serviceManager1.ServiceCollection.Add(service8);
+            this.serviceManager1.ServiceCollection.Add(service9);
+            this.serviceManager1.ServiceCollection.Add(service10);
+            this.serviceManager1.ServiceCollection.Add(service11);
+            this.serviceManager1.ServiceCollection.Add(service12);
             // 
             // InfoConnection1
             // 
-            this.InfoConnection1.EEPAlias = "Hunter";
+            this.InfoConnection1.EEPAlias = "JBADMIN";
             // 
             // HUT_Customer
             // 
@@ -1245,15 +1286,15 @@
             // HUT_CustomerContactRecord
             // 
             this.HUT_CustomerContactRecord.CacheConnection = false;
-            this.HUT_CustomerContactRecord.CommandText = "select  *  from [HUT_CustomerContactRecord]\r\norder by ContactDate desc";
+            this.HUT_CustomerContactRecord.CommandText = resources.GetString("HUT_CustomerContactRecord.CommandText");
             this.HUT_CustomerContactRecord.CommandTimeout = 30;
             this.HUT_CustomerContactRecord.CommandType = System.Data.CommandType.Text;
             this.HUT_CustomerContactRecord.DynamicTableName = false;
-            this.HUT_CustomerContactRecord.EEPAlias = "Hunter";
+            this.HUT_CustomerContactRecord.EEPAlias = "JBERP";
             this.HUT_CustomerContactRecord.EncodingAfter = null;
             this.HUT_CustomerContactRecord.EncodingBefore = "Windows-1252";
             this.HUT_CustomerContactRecord.EncodingConvert = null;
-            this.HUT_CustomerContactRecord.InfoConnection = this.InfoConnection1;
+            this.HUT_CustomerContactRecord.InfoConnection = this.infoConnection2;
             keyItem2.KeyName = "AutoKey";
             this.HUT_CustomerContactRecord.KeyFields.Add(keyItem2);
             this.HUT_CustomerContactRecord.MultiSetWhere = false;
@@ -1267,6 +1308,10 @@
             this.HUT_CustomerContactRecord.SiteControl = false;
             this.HUT_CustomerContactRecord.SiteFieldName = null;
             this.HUT_CustomerContactRecord.UpdatedRowSource = System.Data.UpdateRowSource.None;
+            // 
+            // infoConnection2
+            // 
+            this.infoConnection2.EEPAlias = "JBERP";
             // 
             // ucHUT_CustomerContactRecord
             // 
@@ -1326,16 +1371,6 @@
             this.ucHUT_CustomerContactRecord.WhereMode = Srvtools.WhereModeType.Keyfields;
             this.ucHUT_CustomerContactRecord.BeforeInsert += new Srvtools.UpdateComponentBeforeInsertEventHandler(this.ucHUT_CustomerContactRecord_BeforeInsert);
             this.ucHUT_CustomerContactRecord.BeforeModify += new Srvtools.UpdateComponentBeforeModifyEventHandler(this.ucHUT_CustomerContactRecord_BeforeModify);
-            // 
-            // idHUT_Customer_ContactRecord
-            // 
-            this.idHUT_Customer_ContactRecord.Detail = this.HUT_CustomerContactRecord;
-            columnItem1.FieldName = "CustID";
-            this.idHUT_Customer_ContactRecord.DetailColumns.Add(columnItem1);
-            this.idHUT_Customer_ContactRecord.DynamicTableName = false;
-            this.idHUT_Customer_ContactRecord.Master = this.HUT_Customer;
-            columnItem2.FieldName = "CustID";
-            this.idHUT_Customer_ContactRecord.MasterColumns.Add(columnItem2);
             // 
             // View_HUT_Customer
             // 
@@ -1699,7 +1734,8 @@
             // HUT_ZLangLevel
             // 
             this.HUT_ZLangLevel.CacheConnection = false;
-            this.HUT_ZLangLevel.CommandText = "select HUT_ZLangLevel.ID,HUT_ZLangLevel.Level from HUT_ZLangLevel";
+            this.HUT_ZLangLevel.CommandText = "select HUT_ZLangLevel.ID,HUT_ZLangLevel.Level from HUT_ZLangLevel\r\norder by ID de" +
+    "sc";
             this.HUT_ZLangLevel.CommandTimeout = 30;
             this.HUT_ZLangLevel.CommandType = System.Data.CommandType.Text;
             this.HUT_ZLangLevel.DynamicTableName = false;
@@ -1801,7 +1837,8 @@
             // HUT_Hunter
             // 
             this.HUT_Hunter.CacheConnection = false;
-            this.HUT_Hunter.CommandText = "select HUT_Hunter.* from HUT_Hunter\r\norder by HunterName";
+            this.HUT_Hunter.CommandText = "select HUT_Hunter.* from HUT_Hunter\r\nwhere IsActive=1\r\norder by SalesTeamID,Hunte" +
+    "rName";
             this.HUT_Hunter.CommandTimeout = 30;
             this.HUT_Hunter.CommandType = System.Data.CommandType.Text;
             this.HUT_Hunter.DynamicTableName = false;
@@ -1827,7 +1864,7 @@
             // HUT_Job
             // 
             this.HUT_Job.CacheConnection = false;
-            this.HUT_Job.CommandText = "select * from HUT_JobTemp\r\norder by CreateDate desc";
+            this.HUT_Job.CommandText = "select * from HUT_JobTemp\r\norder by LastUpdateDate desc";
             this.HUT_Job.CommandTimeout = 30;
             this.HUT_Job.CommandType = System.Data.CommandType.Text;
             this.HUT_Job.DynamicTableName = false;
@@ -2258,12 +2295,12 @@
             // idHUT_Job_RequirementRecord
             // 
             this.idHUT_Job_RequirementRecord.Detail = this.HUT_JobRequirementRecord;
-            columnItem3.FieldName = "JobID";
-            this.idHUT_Job_RequirementRecord.DetailColumns.Add(columnItem3);
+            columnItem1.FieldName = "JobID";
+            this.idHUT_Job_RequirementRecord.DetailColumns.Add(columnItem1);
             this.idHUT_Job_RequirementRecord.DynamicTableName = false;
             this.idHUT_Job_RequirementRecord.Master = this.HUT_Job;
-            columnItem4.FieldName = "JobID";
-            this.idHUT_Job_RequirementRecord.MasterColumns.Add(columnItem4);
+            columnItem2.FieldName = "JobID";
+            this.idHUT_Job_RequirementRecord.MasterColumns.Add(columnItem2);
             // 
             // HUT_JobRequirementRecord
             // 
@@ -4482,22 +4519,22 @@
             // infoDataSource2
             // 
             this.infoDataSource2.Detail = this.HUT_JobContactRecord;
-            columnItem5.FieldName = "JobID";
-            this.infoDataSource2.DetailColumns.Add(columnItem5);
+            columnItem3.FieldName = "JobID";
+            this.infoDataSource2.DetailColumns.Add(columnItem3);
             this.infoDataSource2.DynamicTableName = false;
             this.infoDataSource2.Master = this.HUT_Job;
-            columnItem6.FieldName = "JobID";
-            this.infoDataSource2.MasterColumns.Add(columnItem6);
+            columnItem4.FieldName = "JobID";
+            this.infoDataSource2.MasterColumns.Add(columnItem4);
             // 
             // idHUT_Job_DateLog
             // 
             this.idHUT_Job_DateLog.Detail = this.HUT_JobDateLog;
-            columnItem7.FieldName = "JobID";
-            this.idHUT_Job_DateLog.DetailColumns.Add(columnItem7);
+            columnItem5.FieldName = "JobID";
+            this.idHUT_Job_DateLog.DetailColumns.Add(columnItem5);
             this.idHUT_Job_DateLog.DynamicTableName = false;
             this.idHUT_Job_DateLog.Master = this.HUT_Job;
-            columnItem8.FieldName = "JobID";
-            this.idHUT_Job_DateLog.MasterColumns.Add(columnItem8);
+            columnItem6.FieldName = "JobID";
+            this.idHUT_Job_DateLog.MasterColumns.Add(columnItem6);
             // 
             // HUT_CustomerContactPerson
             // 
@@ -4587,12 +4624,12 @@
             // idHUT_Customer_ContactPerson
             // 
             this.idHUT_Customer_ContactPerson.Detail = this.HUT_CustomerContactPerson;
-            columnItem9.FieldName = "CustID";
-            this.idHUT_Customer_ContactPerson.DetailColumns.Add(columnItem9);
+            columnItem7.FieldName = "CustID";
+            this.idHUT_Customer_ContactPerson.DetailColumns.Add(columnItem7);
             this.idHUT_Customer_ContactPerson.DynamicTableName = false;
             this.idHUT_Customer_ContactPerson.Master = this.HUT_Customer;
-            columnItem10.FieldName = "CustID";
-            this.idHUT_Customer_ContactPerson.MasterColumns.Add(columnItem10);
+            columnItem8.FieldName = "CustID";
+            this.idHUT_Customer_ContactPerson.MasterColumns.Add(columnItem8);
             // 
             // HUT_CustomerContactStatus
             // 
@@ -5540,12 +5577,12 @@
             // idHUT_Job_ContactPerson
             // 
             this.idHUT_Job_ContactPerson.Detail = this.HUT_JobContactPerson;
-            columnItem11.FieldName = "JobID";
-            this.idHUT_Job_ContactPerson.DetailColumns.Add(columnItem11);
+            columnItem9.FieldName = "JobID";
+            this.idHUT_Job_ContactPerson.DetailColumns.Add(columnItem9);
             this.idHUT_Job_ContactPerson.DynamicTableName = false;
             this.idHUT_Job_ContactPerson.Master = this.HUT_Job;
-            columnItem12.FieldName = "JobID";
-            this.idHUT_Job_ContactPerson.MasterColumns.Add(columnItem12);
+            columnItem10.FieldName = "JobID";
+            this.idHUT_Job_ContactPerson.MasterColumns.Add(columnItem10);
             // 
             // autoNumberJob
             // 
@@ -5567,12 +5604,12 @@
             // idHUT_Customer_File
             // 
             this.idHUT_Customer_File.Detail = this.HUT_CustomerFile;
-            columnItem13.FieldName = "CustID";
-            this.idHUT_Customer_File.DetailColumns.Add(columnItem13);
+            columnItem11.FieldName = "CustID";
+            this.idHUT_Customer_File.DetailColumns.Add(columnItem11);
             this.idHUT_Customer_File.DynamicTableName = false;
             this.idHUT_Customer_File.Master = this.HUT_Customer;
-            columnItem14.FieldName = "CustID";
-            this.idHUT_Customer_File.MasterColumns.Add(columnItem14);
+            columnItem12.FieldName = "CustID";
+            this.idHUT_Customer_File.MasterColumns.Add(columnItem12);
             // 
             // HUT_CustomerFile
             // 
@@ -5661,12 +5698,12 @@
             // idHUT_Job_File
             // 
             this.idHUT_Job_File.Detail = this.HUT_JobFile;
-            columnItem15.FieldName = "JobID";
-            this.idHUT_Job_File.DetailColumns.Add(columnItem15);
+            columnItem13.FieldName = "JobID";
+            this.idHUT_Job_File.DetailColumns.Add(columnItem13);
             this.idHUT_Job_File.DynamicTableName = false;
             this.idHUT_Job_File.Master = this.HUT_Job;
-            columnItem16.FieldName = "JobID";
-            this.idHUT_Job_File.MasterColumns.Add(columnItem16);
+            columnItem14.FieldName = "JobID";
+            this.idHUT_Job_File.MasterColumns.Add(columnItem14);
             // 
             // HUT_JobFile
             // 
@@ -6587,7 +6624,7 @@
             // HUT_ContryArea
             // 
             this.HUT_ContryArea.CacheConnection = false;
-            this.HUT_ContryArea.CommandText = "select *  from HUT_ContryArea\r\norder by ContryAreaID";
+            this.HUT_ContryArea.CommandText = "select *\r\nfrom vHUT_ContryArea\r\norder by ContryAreaID";
             this.HUT_ContryArea.CommandTimeout = 30;
             this.HUT_ContryArea.CommandType = System.Data.CommandType.Text;
             this.HUT_ContryArea.DynamicTableName = false;
@@ -7025,7 +7062,7 @@
             this.ucHUT_ContryArea.FieldAttrs.Add(fieldAttr630);
             this.ucHUT_ContryArea.FieldAttrs.Add(fieldAttr631);
             this.ucHUT_ContryArea.LogInfo = null;
-            this.ucHUT_ContryArea.Name = "updateComponent1";
+            this.ucHUT_ContryArea.Name = "ucHUT_ContryArea";
             this.ucHUT_ContryArea.RowAffectsCheck = true;
             this.ucHUT_ContryArea.SelectCmd = this.HUT_ContryArea;
             this.ucHUT_ContryArea.SelectCmdForUpdate = null;
@@ -7037,34 +7074,177 @@
             this.ucHUT_ContryArea.UseTranscationScope = false;
             this.ucHUT_ContryArea.WhereMode = Srvtools.WhereModeType.Keyfields;
             // 
-            // infoCommand1
+            // infoSelectUser
             // 
-            this.infoCommand1.CacheConnection = false;
-            this.infoCommand1.CommandText = " select h.JobID,Convert(nvarchar(10),RequirementDate,111) as RequirementDate,h.No" +
-    "tes from Hunter.dbo.HUT_JobRequirementRecord h\r\n WHERE h.IsActive=1\r\norder by Re" +
-    "quirementDate desc";
-            this.infoCommand1.CommandTimeout = 30;
-            this.infoCommand1.CommandType = System.Data.CommandType.Text;
-            this.infoCommand1.DynamicTableName = false;
-            this.infoCommand1.EEPAlias = "Hunter";
-            this.infoCommand1.EncodingAfter = null;
-            this.infoCommand1.EncodingBefore = "Windows-1252";
-            this.infoCommand1.EncodingConvert = null;
-            this.infoCommand1.InfoConnection = this.InfoConnection1;
-            this.infoCommand1.MultiSetWhere = false;
-            this.infoCommand1.Name = "infoCommand1";
-            this.infoCommand1.NotificationAutoEnlist = false;
-            this.infoCommand1.SecExcept = null;
-            this.infoCommand1.SecFieldName = null;
-            this.infoCommand1.SecStyle = Srvtools.SecurityStyle.ssByNone;
-            this.infoCommand1.SelectPaging = false;
-            this.infoCommand1.SelectTop = 0;
-            this.infoCommand1.SiteControl = false;
-            this.infoCommand1.SiteFieldName = null;
-            this.infoCommand1.UpdatedRowSource = System.Data.UpdateRowSource.None;
+            this.infoSelectUser.CacheConnection = false;
+            this.infoSelectUser.CommandText = " select *\r\n from HUT_SelectUserTemp\r\norder by sName";
+            this.infoSelectUser.CommandTimeout = 30;
+            this.infoSelectUser.CommandType = System.Data.CommandType.Text;
+            this.infoSelectUser.DynamicTableName = false;
+            this.infoSelectUser.EEPAlias = "Hunter";
+            this.infoSelectUser.EncodingAfter = null;
+            this.infoSelectUser.EncodingBefore = "Windows-1252";
+            this.infoSelectUser.EncodingConvert = null;
+            this.infoSelectUser.InfoConnection = this.InfoConnection1;
+            keyItem27.KeyName = "UserID";
+            this.infoSelectUser.KeyFields.Add(keyItem27);
+            this.infoSelectUser.MultiSetWhere = false;
+            this.infoSelectUser.Name = "infoSelectUser";
+            this.infoSelectUser.NotificationAutoEnlist = false;
+            this.infoSelectUser.SecExcept = null;
+            this.infoSelectUser.SecFieldName = null;
+            this.infoSelectUser.SecStyle = Srvtools.SecurityStyle.ssByNone;
+            this.infoSelectUser.SelectPaging = false;
+            this.infoSelectUser.SelectTop = 0;
+            this.infoSelectUser.SiteControl = false;
+            this.infoSelectUser.SiteFieldName = null;
+            this.infoSelectUser.UpdatedRowSource = System.Data.UpdateRowSource.None;
+            // 
+            // ucHUT_JobAssignLogs
+            // 
+            this.ucHUT_JobAssignLogs.AutoTrans = true;
+            this.ucHUT_JobAssignLogs.ExceptJoin = false;
+            fieldAttr632.CheckNull = false;
+            fieldAttr632.DataField = "CustID";
+            fieldAttr632.DefaultMode = Srvtools.DefaultModeType.Insert;
+            fieldAttr632.DefaultValue = null;
+            fieldAttr632.TrimLength = 0;
+            fieldAttr632.UpdateEnable = true;
+            fieldAttr632.WhereMode = true;
+            fieldAttr633.CheckNull = false;
+            fieldAttr633.DataField = "CreateBy";
+            fieldAttr633.DefaultMode = Srvtools.DefaultModeType.Insert;
+            fieldAttr633.DefaultValue = null;
+            fieldAttr633.TrimLength = 0;
+            fieldAttr633.UpdateEnable = true;
+            fieldAttr633.WhereMode = true;
+            fieldAttr634.CheckNull = false;
+            fieldAttr634.DataField = "CreateDate";
+            fieldAttr634.DefaultMode = Srvtools.DefaultModeType.Insert;
+            fieldAttr634.DefaultValue = null;
+            fieldAttr634.TrimLength = 0;
+            fieldAttr634.UpdateEnable = true;
+            fieldAttr634.WhereMode = true;
+            fieldAttr635.CheckNull = false;
+            fieldAttr635.DataField = "UpdateDate";
+            fieldAttr635.DefaultMode = Srvtools.DefaultModeType.Insert;
+            fieldAttr635.DefaultValue = null;
+            fieldAttr635.TrimLength = 0;
+            fieldAttr635.UpdateEnable = true;
+            fieldAttr635.WhereMode = true;
+            fieldAttr636.CheckNull = false;
+            fieldAttr636.DataField = "UpdateBy";
+            fieldAttr636.DefaultMode = Srvtools.DefaultModeType.Insert;
+            fieldAttr636.DefaultValue = null;
+            fieldAttr636.TrimLength = 0;
+            fieldAttr636.UpdateEnable = true;
+            fieldAttr636.WhereMode = true;
+            this.ucHUT_JobAssignLogs.FieldAttrs.Add(fieldAttr632);
+            this.ucHUT_JobAssignLogs.FieldAttrs.Add(fieldAttr633);
+            this.ucHUT_JobAssignLogs.FieldAttrs.Add(fieldAttr634);
+            this.ucHUT_JobAssignLogs.FieldAttrs.Add(fieldAttr635);
+            this.ucHUT_JobAssignLogs.FieldAttrs.Add(fieldAttr636);
+            this.ucHUT_JobAssignLogs.LogInfo = null;
+            this.ucHUT_JobAssignLogs.Name = "ucHUT_JobAssignLogs";
+            this.ucHUT_JobAssignLogs.RowAffectsCheck = true;
+            this.ucHUT_JobAssignLogs.SelectCmd = this.HUT_JobAssignLogs;
+            this.ucHUT_JobAssignLogs.SelectCmdForUpdate = null;
+            this.ucHUT_JobAssignLogs.SendSQLCmd = true;
+            this.ucHUT_JobAssignLogs.ServerModify = true;
+            this.ucHUT_JobAssignLogs.ServerModifyGetMax = true;
+            this.ucHUT_JobAssignLogs.TranscationScopeTimeOut = System.TimeSpan.Parse("00:02:00");
+            this.ucHUT_JobAssignLogs.TransIsolationLevel = System.Data.IsolationLevel.ReadCommitted;
+            this.ucHUT_JobAssignLogs.UseTranscationScope = false;
+            this.ucHUT_JobAssignLogs.WhereMode = Srvtools.WhereModeType.Keyfields;
+            // 
+            // HUT_JobAssignLogs
+            // 
+            this.HUT_JobAssignLogs.CacheConnection = false;
+            this.HUT_JobAssignLogs.CommandText = resources.GetString("HUT_JobAssignLogs.CommandText");
+            this.HUT_JobAssignLogs.CommandTimeout = 30;
+            this.HUT_JobAssignLogs.CommandType = System.Data.CommandType.Text;
+            this.HUT_JobAssignLogs.DynamicTableName = false;
+            this.HUT_JobAssignLogs.EEPAlias = "Hunter";
+            this.HUT_JobAssignLogs.EncodingAfter = null;
+            this.HUT_JobAssignLogs.EncodingBefore = "Windows-1252";
+            this.HUT_JobAssignLogs.EncodingConvert = null;
+            this.HUT_JobAssignLogs.InfoConnection = this.InfoConnection1;
+            keyItem28.KeyName = "AutoKey";
+            this.HUT_JobAssignLogs.KeyFields.Add(keyItem28);
+            this.HUT_JobAssignLogs.MultiSetWhere = false;
+            this.HUT_JobAssignLogs.Name = "HUT_JobAssignLogs";
+            this.HUT_JobAssignLogs.NotificationAutoEnlist = false;
+            this.HUT_JobAssignLogs.SecExcept = null;
+            this.HUT_JobAssignLogs.SecFieldName = null;
+            this.HUT_JobAssignLogs.SecStyle = Srvtools.SecurityStyle.ssByNone;
+            this.HUT_JobAssignLogs.SelectPaging = false;
+            this.HUT_JobAssignLogs.SelectTop = 0;
+            this.HUT_JobAssignLogs.SiteControl = false;
+            this.HUT_JobAssignLogs.SiteFieldName = null;
+            this.HUT_JobAssignLogs.UpdatedRowSource = System.Data.UpdateRowSource.None;
+            // 
+            // idHUT_User_JobAssignLogs
+            // 
+            this.idHUT_User_JobAssignLogs.Detail = this.HUT_JobAssignLogs;
+            columnItem15.FieldName = "JobID";
+            this.idHUT_User_JobAssignLogs.DetailColumns.Add(columnItem15);
+            this.idHUT_User_JobAssignLogs.DynamicTableName = false;
+            this.idHUT_User_JobAssignLogs.Master = this.HUT_Job;
+            columnItem16.FieldName = "JobID";
+            this.idHUT_User_JobAssignLogs.MasterColumns.Add(columnItem16);
+            // 
+            // infoSelectJobInterview
+            // 
+            this.infoSelectJobInterview.CacheConnection = false;
+            this.infoSelectJobInterview.CommandText = " select  CustID,JobName,JobInterview\r\n from HUT_Job where ISNULL(JobInterview,\'\')" +
+    "!=\'\'";
+            this.infoSelectJobInterview.CommandTimeout = 30;
+            this.infoSelectJobInterview.CommandType = System.Data.CommandType.Text;
+            this.infoSelectJobInterview.DynamicTableName = false;
+            this.infoSelectJobInterview.EEPAlias = "Hunter";
+            this.infoSelectJobInterview.EncodingAfter = null;
+            this.infoSelectJobInterview.EncodingBefore = "Windows-1252";
+            this.infoSelectJobInterview.EncodingConvert = null;
+            this.infoSelectJobInterview.InfoConnection = this.InfoConnection1;
+            this.infoSelectJobInterview.MultiSetWhere = false;
+            this.infoSelectJobInterview.Name = "infoSelectJobInterview";
+            this.infoSelectJobInterview.NotificationAutoEnlist = false;
+            this.infoSelectJobInterview.SecExcept = null;
+            this.infoSelectJobInterview.SecFieldName = null;
+            this.infoSelectJobInterview.SecStyle = Srvtools.SecurityStyle.ssByNone;
+            this.infoSelectJobInterview.SelectPaging = false;
+            this.infoSelectJobInterview.SelectTop = 0;
+            this.infoSelectJobInterview.SiteControl = false;
+            this.infoSelectJobInterview.SiteFieldName = null;
+            this.infoSelectJobInterview.UpdatedRowSource = System.Data.UpdateRowSource.None;
+            // 
+            // CONTACT_TRADE
+            // 
+            this.CONTACT_TRADE.CacheConnection = false;
+            this.CONTACT_TRADE.CommandText = "SELECT  JB_TYPE,JB_NAME  \r\nFROM JB_TYPE\r\nORDER BY  JB_NAME  \r\n\r\n";
+            this.CONTACT_TRADE.CommandTimeout = 30;
+            this.CONTACT_TRADE.CommandType = System.Data.CommandType.Text;
+            this.CONTACT_TRADE.DynamicTableName = false;
+            this.CONTACT_TRADE.EEPAlias = null;
+            this.CONTACT_TRADE.EncodingAfter = null;
+            this.CONTACT_TRADE.EncodingBefore = "Windows-1252";
+            this.CONTACT_TRADE.EncodingConvert = null;
+            this.CONTACT_TRADE.InfoConnection = this.InfoConnection1;
+            this.CONTACT_TRADE.MultiSetWhere = false;
+            this.CONTACT_TRADE.Name = "CONTACT_TRADE";
+            this.CONTACT_TRADE.NotificationAutoEnlist = false;
+            this.CONTACT_TRADE.SecExcept = null;
+            this.CONTACT_TRADE.SecFieldName = null;
+            this.CONTACT_TRADE.SecStyle = Srvtools.SecurityStyle.ssByNone;
+            this.CONTACT_TRADE.SelectPaging = false;
+            this.CONTACT_TRADE.SelectTop = 0;
+            this.CONTACT_TRADE.SiteControl = false;
+            this.CONTACT_TRADE.SiteFieldName = null;
+            this.CONTACT_TRADE.UpdatedRowSource = System.Data.UpdateRowSource.None;
             ((System.ComponentModel.ISupportInitialize)(this.InfoConnection1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.HUT_Customer)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.HUT_CustomerContactRecord)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.infoConnection2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.View_HUT_Customer)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.HUT_IndCategory)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.HUT_IndCategoryL1)).EndInit();
@@ -7095,7 +7275,10 @@
             ((System.ComponentModel.ISupportInitialize)(this.HUT_ContryArea)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.infoJobCloseReason)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.infoRequirementRecordJoin)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.infoCommand1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.infoSelectUser)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.HUT_JobAssignLogs)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.infoSelectJobInterview)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.CONTACT_TRADE)).EndInit();
 
         }
 
@@ -7107,7 +7290,6 @@
         private Srvtools.UpdateComponent ucHUT_Customer;
         private Srvtools.InfoCommand HUT_CustomerContactRecord;
         private Srvtools.UpdateComponent ucHUT_CustomerContactRecord;
-        private Srvtools.InfoDataSource idHUT_Customer_ContactRecord;
         private Srvtools.InfoCommand View_HUT_Customer;
         private Srvtools.AutoNumber autoNumber1;
         private Srvtools.InfoDataSource infoDataSource1;
@@ -7157,6 +7339,12 @@
         private Srvtools.InfoCommand infoJobCloseReason;
         private Srvtools.InfoCommand infoRequirementRecordJoin;
         private Srvtools.UpdateComponent ucHUT_ContryArea;
-        private Srvtools.InfoCommand infoCommand1;
+        private Srvtools.InfoCommand infoSelectUser;
+        private Srvtools.UpdateComponent ucHUT_JobAssignLogs;
+        private Srvtools.InfoCommand HUT_JobAssignLogs;
+        private Srvtools.InfoDataSource idHUT_User_JobAssignLogs;
+        private Srvtools.InfoConnection infoConnection2;
+        private Srvtools.InfoCommand infoSelectJobInterview;
+        private Srvtools.InfoCommand CONTACT_TRADE;
     }
 }

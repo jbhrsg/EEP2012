@@ -1,0 +1,12 @@
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sERPSalesEmail\bin\Debug\sERPSalesEmail.dll
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sERPSalesEmail\bin\Debug\sERPSalesEmail.pdb
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sERPSalesEmail\obj\Debug\sERPSalesEmail.csproj.GenerateResource.Cache
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sERPSalesEmail\obj\Debug\sERPSalesEmail.dll
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sERPSalesEmail\obj\Debug\sERPSalesEmail.pdb
+C:\Program Files (x86)\Infolight\EEP2012\EEPNetServer\JBADMIN\sERPSalesEmail.dll
+C:\Program Files (x86)\Infolight\EEP2012\EEPNetServer\JBADMIN\sERPSalesEmail.pdb
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sERPSalesEmail\obj\Debug\sERPSalesEmail.Component.resources
+C:\Program Files (x86)\Infolight\EEP2012\EEPNetServer\JBADMIN\vi-VN\sERPSalesEmail.resources.dll
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sERPSalesEmail\obj\Debug\sERPSalesEmail.Component.vi-VN.resources
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sERPSalesEmail\obj\Debug\vi-VN\sERPSalesEmail.resources.dll
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sERPSalesEmail\obj\Debug\sERPSalesEmail.csprojResolveAssemblyReference.cache

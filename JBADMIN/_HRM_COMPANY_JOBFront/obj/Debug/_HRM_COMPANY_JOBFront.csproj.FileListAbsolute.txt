@@ -1,0 +1,9 @@
+D:\Infolight\EEP2012\JBADMIN\_HRM_COMPANY_JOBFront\bin\Debug\_HRM_COMPANY_JOBFront.dll
+D:\Infolight\EEP2012\JBADMIN\_HRM_COMPANY_JOBFront\bin\Debug\_HRM_COMPANY_JOBFront.pdb
+D:\Infolight\EEP2012\JBADMIN\_HRM_COMPANY_JOBFront\obj\Debug\_HRM_COMPANY_JOBFront.csproj.GenerateResource.Cache
+D:\Infolight\EEP2012\JBADMIN\_HRM_COMPANY_JOBFront\obj\Debug\_HRM_COMPANY_JOBFront.dll
+D:\Infolight\EEP2012\JBADMIN\_HRM_COMPANY_JOBFront\obj\Debug\_HRM_COMPANY_JOBFront.pdb
+D:\Infolight\EEP2012\EEPNetServer\JBADMIN\_HRM_COMPANY_JOBFront.dll
+D:\Infolight\EEP2012\EEPNetServer\JBADMIN\_HRM_COMPANY_JOBFront.pdb
+D:\Infolight\EEP2012\JBADMIN\_HRM_COMPANY_JOBFront\obj\Debug\_HRM_COMPANY_JOBFront.Component.resources
+D:\Infolight\EEP2012\JBADMIN\_HRM_COMPANY_JOBFront\obj\Debug\_HRM_COMPANY_JOBFront.csprojResolveAssemblyReference.cache

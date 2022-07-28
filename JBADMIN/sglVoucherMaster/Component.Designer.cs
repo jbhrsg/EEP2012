@@ -78,6 +78,8 @@
             Srvtools.KeyItem keyItem9 = new Srvtools.KeyItem();
             Srvtools.KeyItem keyItem10 = new Srvtools.KeyItem();
             Srvtools.KeyItem keyItem11 = new Srvtools.KeyItem();
+            Srvtools.KeyItem keyItem12 = new Srvtools.KeyItem();
+            Srvtools.KeyItem keyItem13 = new Srvtools.KeyItem();
             this.serviceManager1 = new Srvtools.ServiceManager(this.components);
             this.InfoConnection1 = new Srvtools.InfoConnection(this.components);
             this.glVoucherMaster = new Srvtools.InfoCommand(this.components);
@@ -95,6 +97,9 @@
             this.infoglVoucherType = new Srvtools.InfoCommand(this.components);
             this.glCompany = new Srvtools.InfoCommand(this.components);
             this.infoCreateBy = new Srvtools.InfoCommand(this.components);
+            this.infoRequisitionInfo = new Srvtools.InfoCommand(this.components);
+            this.infoglVoucherType2 = new Srvtools.InfoCommand(this.components);
+            this.glCompany2 = new Srvtools.InfoCommand(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.InfoConnection1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.glVoucherMaster)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.glVoucherDetails)).BeginInit();
@@ -107,6 +112,9 @@
             ((System.ComponentModel.ISupportInitialize)(this.infoglVoucherType)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.glCompany)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.infoCreateBy)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.infoRequisitionInfo)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.infoglVoucherType2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.glCompany2)).BeginInit();
             // 
             // serviceManager1
             // 
@@ -174,7 +182,7 @@
             // glVoucherMaster
             // 
             this.glVoucherMaster.CacheConnection = false;
-            this.glVoucherMaster.CommandText = "select *\r\nfrom View_glVoucherMaster";
+            this.glVoucherMaster.CommandText = "select *\r\nfrom View_glVoucherMaster\r\norder by CreateDate,importNo";
             this.glVoucherMaster.CommandTimeout = 30;
             this.glVoucherMaster.CommandType = System.Data.CommandType.Text;
             this.glVoucherMaster.DynamicTableName = false;
@@ -547,7 +555,7 @@
             // 
             this.infoglCostCenter.CacheConnection = false;
             this.infoglCostCenter.CommandText = "SELECT AutoKey,CostCenterID,CostCenterID+\':\'+CostCenterName as CostCenterName\r\nFR" +
-    "OM glCostCenter\r\n";
+    "OM glCostCenter\r\nwhere CostCenterID!=\'000\' and CostCenterID!=\'999\'";
             this.infoglCostCenter.CommandTimeout = 30;
             this.infoglCostCenter.CommandType = System.Data.CommandType.Text;
             this.infoglCostCenter.DynamicTableName = false;
@@ -625,7 +633,7 @@
             // infoglVoucherType
             // 
             this.infoglVoucherType.CacheConnection = false;
-            this.infoglVoucherType.CommandText = "SELECT *\r\nFROM glVoucherType\r\n";
+            this.infoglVoucherType.CommandText = "SELECT VoucherID,VoucherTypeName\r\nFROM glVoucherType\r\n";
             this.infoglVoucherType.CommandTimeout = 30;
             this.infoglVoucherType.CommandType = System.Data.CommandType.Text;
             this.infoglVoucherType.DynamicTableName = false;
@@ -697,6 +705,85 @@
             this.infoCreateBy.SiteControl = false;
             this.infoCreateBy.SiteFieldName = null;
             this.infoCreateBy.UpdatedRowSource = System.Data.UpdateRowSource.None;
+            // 
+            // infoRequisitionInfo
+            // 
+            this.infoRequisitionInfo.CacheConnection = false;
+            this.infoRequisitionInfo.CommandText = "select * from View_glRequisitionPOMaster\r\norder by sStatus desc,RequisitionNO des" +
+    "c";
+            this.infoRequisitionInfo.CommandTimeout = 30;
+            this.infoRequisitionInfo.CommandType = System.Data.CommandType.Text;
+            this.infoRequisitionInfo.DynamicTableName = false;
+            this.infoRequisitionInfo.EEPAlias = "";
+            this.infoRequisitionInfo.EncodingAfter = null;
+            this.infoRequisitionInfo.EncodingBefore = "Windows-1252";
+            this.infoRequisitionInfo.EncodingConvert = null;
+            this.infoRequisitionInfo.InfoConnection = this.InfoConnection1;
+            this.infoRequisitionInfo.MultiSetWhere = false;
+            this.infoRequisitionInfo.Name = "infoRequisitionInfo";
+            this.infoRequisitionInfo.NotificationAutoEnlist = false;
+            this.infoRequisitionInfo.SecExcept = null;
+            this.infoRequisitionInfo.SecFieldName = null;
+            this.infoRequisitionInfo.SecStyle = Srvtools.SecurityStyle.ssByNone;
+            this.infoRequisitionInfo.SelectPaging = false;
+            this.infoRequisitionInfo.SelectTop = 0;
+            this.infoRequisitionInfo.SiteControl = false;
+            this.infoRequisitionInfo.SiteFieldName = null;
+            this.infoRequisitionInfo.UpdatedRowSource = System.Data.UpdateRowSource.None;
+            // 
+            // infoglVoucherType2
+            // 
+            this.infoglVoucherType2.CacheConnection = false;
+            this.infoglVoucherType2.CommandText = "SELECT VoucherID,Cast(VoucherID as nvarchar(5))+VoucherTypeName as VoucherTypeNam" +
+    "e \r\nFROM glVoucherType\r\n";
+            this.infoglVoucherType2.CommandTimeout = 30;
+            this.infoglVoucherType2.CommandType = System.Data.CommandType.Text;
+            this.infoglVoucherType2.DynamicTableName = false;
+            this.infoglVoucherType2.EEPAlias = "";
+            this.infoglVoucherType2.EncodingAfter = null;
+            this.infoglVoucherType2.EncodingBefore = "Windows-1252";
+            this.infoglVoucherType2.EncodingConvert = null;
+            this.infoglVoucherType2.InfoConnection = this.InfoConnection1;
+            keyItem12.KeyName = "VoucherID";
+            this.infoglVoucherType2.KeyFields.Add(keyItem12);
+            this.infoglVoucherType2.MultiSetWhere = false;
+            this.infoglVoucherType2.Name = "infoglVoucherType2";
+            this.infoglVoucherType2.NotificationAutoEnlist = false;
+            this.infoglVoucherType2.SecExcept = null;
+            this.infoglVoucherType2.SecFieldName = null;
+            this.infoglVoucherType2.SecStyle = Srvtools.SecurityStyle.ssByNone;
+            this.infoglVoucherType2.SelectPaging = false;
+            this.infoglVoucherType2.SelectTop = 0;
+            this.infoglVoucherType2.SiteControl = false;
+            this.infoglVoucherType2.SiteFieldName = null;
+            this.infoglVoucherType2.UpdatedRowSource = System.Data.UpdateRowSource.None;
+            // 
+            // glCompany2
+            // 
+            this.glCompany2.CacheConnection = false;
+            this.glCompany2.CommandText = "SELECT CompanyID,Cast(CompanyID as nvarchar(5))+CompanyName as CompanyName \r\nFROM" +
+    " glCompany";
+            this.glCompany2.CommandTimeout = 30;
+            this.glCompany2.CommandType = System.Data.CommandType.Text;
+            this.glCompany2.DynamicTableName = false;
+            this.glCompany2.EEPAlias = "";
+            this.glCompany2.EncodingAfter = null;
+            this.glCompany2.EncodingBefore = "Windows-1252";
+            this.glCompany2.EncodingConvert = null;
+            this.glCompany2.InfoConnection = this.InfoConnection1;
+            keyItem13.KeyName = "CompanyID";
+            this.glCompany2.KeyFields.Add(keyItem13);
+            this.glCompany2.MultiSetWhere = false;
+            this.glCompany2.Name = "glCompany2";
+            this.glCompany2.NotificationAutoEnlist = false;
+            this.glCompany2.SecExcept = null;
+            this.glCompany2.SecFieldName = null;
+            this.glCompany2.SecStyle = Srvtools.SecurityStyle.ssByNone;
+            this.glCompany2.SelectPaging = false;
+            this.glCompany2.SelectTop = 0;
+            this.glCompany2.SiteControl = false;
+            this.glCompany2.SiteFieldName = null;
+            this.glCompany2.UpdatedRowSource = System.Data.UpdateRowSource.None;
             ((System.ComponentModel.ISupportInitialize)(this.InfoConnection1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.glVoucherMaster)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.glVoucherDetails)).EndInit();
@@ -709,6 +796,9 @@
             ((System.ComponentModel.ISupportInitialize)(this.infoglVoucherType)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.glCompany)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.infoCreateBy)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.infoRequisitionInfo)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.infoglVoucherType2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.glCompany2)).EndInit();
 
         }
 
@@ -731,5 +821,8 @@
         private Srvtools.InfoCommand infoglVoucherType;
         private Srvtools.InfoCommand glCompany;
         private Srvtools.InfoCommand infoCreateBy;
+        private Srvtools.InfoCommand infoRequisitionInfo;
+        private Srvtools.InfoCommand infoglVoucherType2;
+        private Srvtools.InfoCommand glCompany2;
     }
 }

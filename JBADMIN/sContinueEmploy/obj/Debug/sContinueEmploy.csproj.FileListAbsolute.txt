@@ -1,0 +1,9 @@
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sContinueEmploy\bin\Debug\sContinueEmploy.dll
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sContinueEmploy\bin\Debug\sContinueEmploy.pdb
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sContinueEmploy\obj\Debug\sContinueEmploy.csprojResolveAssemblyReference.cache
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sContinueEmploy\obj\Debug\sContinueEmploy.csproj.GenerateResource.Cache
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sContinueEmploy\obj\Debug\sContinueEmploy.dll
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sContinueEmploy\obj\Debug\sContinueEmploy.pdb
+C:\Program Files (x86)\Infolight\EEP2012\EEPNetServer\JBADMIN\sContinueEmploy.dll
+C:\Program Files (x86)\Infolight\EEP2012\EEPNetServer\JBADMIN\sContinueEmploy.pdb
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sContinueEmploy\obj\Debug\sContinueEmploy.Component.resources

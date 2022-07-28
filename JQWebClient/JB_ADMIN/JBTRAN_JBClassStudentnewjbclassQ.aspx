@@ -29,7 +29,7 @@
             <JQTools:JQScriptManager ID="JQScriptManager1" runat="server" />
             <JQTools:JQDataGrid ID="dataGridView" data-options="pagination:true,view:commandview" RemoteName="sJBCourseQuery.JBClassStudentnewjbclass" runat="server" AutoApply="True"
                 DataMember="JBClassStudentnewjbclass" Pagination="True" QueryTitle="公開班課程" EditDialogID="JQDialog1"
-                Title="" QueryMode="Fuzzy" Width="1280px" PageSize="10" AlwaysClose="True" AllowDelete="False" AllowUpdate="False">
+                Title="" QueryMode="Fuzzy" Width="1280px" PageSize="20" AlwaysClose="True" AllowDelete="False" AllowUpdate="False">
                 <Columns>
                     <JQTools:JQGridColumn Alignment="left" Caption="課程名稱" Editor="text" FieldName="descr" Format="" MaxLength="0" Width="200" />
                     <JQTools:JQGridColumn Alignment="left" Caption="公司名稱" Editor="text" FieldName="company" Format="" MaxLength="0" Width="140" Sortable="True" />

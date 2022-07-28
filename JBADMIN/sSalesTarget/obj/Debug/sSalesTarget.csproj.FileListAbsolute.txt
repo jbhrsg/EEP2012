@@ -1,0 +1,11 @@
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sSalesTarget\bin\Debug\sSalesTarget.dll
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sSalesTarget\bin\Debug\sSalesTarget.pdb
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sSalesTarget\obj\Debug\sSalesTarget.csproj.GenerateResource.Cache
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sSalesTarget\obj\Debug\sSalesTarget.dll
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sSalesTarget\obj\Debug\sSalesTarget.pdb
+C:\Program Files (x86)\Infolight\EEP2012\EEPNetServer\JBADMIN\sSalesTarget.dll
+C:\Program Files (x86)\Infolight\EEP2012\EEPNetServer\JBADMIN\sSalesTarget.pdb
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sSalesTarget\obj\Debug\sSalesTarget.Component.resources
+C:\Program Files (x86)\Infolight\EEP2012\EEPNetServer\JBADMIN\vi-VN\sSalesTarget.resources.dll
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sSalesTarget\obj\Debug\sSalesTarget.Component.vi-VN.resources
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sSalesTarget\obj\Debug\vi-VN\sSalesTarget.resources.dll

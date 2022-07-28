@@ -682,7 +682,7 @@
             this.YearMonth.CommandTimeout = 30;
             this.YearMonth.CommandType = System.Data.CommandType.Text;
             this.YearMonth.DynamicTableName = false;
-            this.YearMonth.EEPAlias = null;
+            this.YearMonth.EEPAlias = "FWCRM";
             this.YearMonth.EncodingAfter = null;
             this.YearMonth.EncodingBefore = "Windows-1252";
             this.YearMonth.EncodingConvert = null;

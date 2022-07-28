@@ -1,0 +1,282 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <metadata name="serviceManager1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 93</value>
+  </metadata>
+  <metadata name="InfoConnection1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 169</value>
+  </metadata>
+  <metadata name="WarrantMaster.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 207</value>
+  </metadata>
+  <data name="WarrantMaster.CommandText" xml:space="preserve">
+    <value>SELECT [WarrantMaster].*,c.CustomerName,
+(select SUM([InvoiceDetails].SalesTotal) from WarrantDetails
+left join [InvoiceDetails] on [InvoiceDetails].InvoiceNO=[WarrantDetails].InvoiceNO
+where [WarrantMaster].WarrantNO=WarrantDetails.WarrantNO) as SumSalesTotal
+FROM dbo.[WarrantMaster]
+left join Customer c on [WarrantMaster].CompanyCustomerID=c.CustomerID
+order by WarrantNO desc</value>
+  </data>
+  <metadata name="ucWarrantMaster.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 245</value>
+  </metadata>
+  <metadata name="WarrantDetails.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 397</value>
+  </metadata>
+  <data name="WarrantDetails.CommandText" xml:space="preserve">
+    <value>select d.WarrantNO,d.ItemNO,d.InvoiceNO,t.InvoiceTypeName,id.InvoiceDate,d.SalesDate,id.ARDate,id.SalesTotal,d.RecAmount,
+d.OthAmount,d.RebAmount,d.RetAmount,d.BadAmount,d.CreateBy,d.CreateDate,d.LastUpdateBy,d.LastUpdateDate,
+(select  SUM(ISNULL([RecAmount],0)+ISNULL([OthAmount],0)+ISNULL([RebAmount],0)+ISNULL([RetAmount],0)+ISNULL([BadAmount],0)) as AcceptedAmount
+from WarrantDetails
+where WarrantDetails.InvoiceNO=d.InvoiceNO
+) as AcceptedAmount
+from WarrantDetails d
+left join InvoiceDetails id on id.InvoiceNO=d.InvoiceNO
+left join InvoiceType t on t.InvoiceTypeID=id.QInvoiceType</value>
+  </data>
+  <metadata name="ucWarrantDetails.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 473</value>
+  </metadata>
+  <metadata name="idWarrantMaster_WarrantDetails.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 435</value>
+  </metadata>
+  <metadata name="View_WarrantMaster.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 55</value>
+  </metadata>
+  <metadata name="Customer.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 511</value>
+  </metadata>
+  <metadata name="PayWay.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 701</value>
+  </metadata>
+  <metadata name="CompanyCustomerOfInvoiceDetails.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 739</value>
+  </metadata>
+  <data name="CompanyCustomerOfInvoiceDetails.CommandText" xml:space="preserve">
+    <value>select * from(
+select distinct i.CustomerID,c.CustomerName,i.InsGroupID,c.ShortName,c.TelNO,c.ShortCode from InvoiceDetails i
+inner join Customer c on c .CustomerID=i.CustomerID
+where c.CustomerTypeID='1'
+union
+select distinct i.Employer,c.CustomerName,i.InsGroupID,c.ShortName,c.TelNO,c.ShortCode from InvoiceDetails i
+inner join Customer c on c .CustomerID=i.Employer
+where c.CustomerTypeID='1'
+) as Temp </value>
+  </data>
+  <metadata name="InsGroup.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 891</value>
+  </metadata>
+  <metadata name="infoConnection2.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 131</value>
+  </metadata>
+  <metadata name="CompanyCustomerOfWarrantMaster.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 853</value>
+  </metadata>
+  <metadata name="OffsetAccountType.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 815</value>
+  </metadata>
+  <metadata name="CashTakeBackDetails.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 777</value>
+  </metadata>
+  <data name="CashTakeBackDetails.CommandText" xml:space="preserve">
+    <value>SELECT d.[CashTakeBackNO]+'-'+d.[ItemNO] as [CashTakeBackNOItemNO]
+,d.[CashTakeBackNO]
+,d.[ItemNO]
+      ,[ShortTermNO]
+      ,[ShortTermGist]
+      ,[Currency]
+      ,[Amount]
+      ,[CashType]
+      ,d.[CustomerID]
+      ,c.[ShortName]
+,d.[CreateDate]
+  FROM [JBADMIN].[dbo].[CashTakeBackDetails] d
+  inner join [JBADMIN].[dbo].[CashTakeBackMaster] m on m.CashTakeBackNO=d.CashTakeBackNO
+  left join Customer c on c.CustomerID=d.CustomerID
+  where m.flowflag='Z' and d.Amount !=
+  ISNULL((select sum(wd.RecAmount+wd.OthAmount+wd.RebAmount+wd.RetAmount+wd.BadAmount)
+  from WarrantDetails wd 
+  inner join WarrantMaster wm on wd.WarrantNO=wm.WarrantNO
+  where left(wm.CashNO,9)=d.[CashTakeBackNO] and right(wm.CashNO,3)=d.ItemNO),0)</value>
+  </data>
+  <metadata name="idWarrantMaster_CheckDetails.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 283</value>
+  </metadata>
+  <metadata name="CheckDetails.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 359</value>
+  </metadata>
+  <data name="CheckDetails.CommandText" xml:space="preserve">
+    <value>SELECT  [WarrantNO]
+      ,[ItemNO]
+      ,[InsGroupID]
+      ,[WarrantDate]
+      ,[CheckNO]
+      ,[CheckDueDate]
+      ,[Amount]
+      ,[BankRootID]
+      ,[BankBranchID]
+      ,[Bourse]
+      ,[BankID]
+      ,[CheckAccount]
+      ,[AccountID]
+      ,[CustomerID]
+,[ActionCode]
+      ,[CreateBy]
+      ,[CreateDate]
+      ,[LastUpdateBy]
+      ,[LastUpdateDate]
+  FROM [CheckDetails]
+</value>
+  </data>
+  <metadata name="ucCheckDetails.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 321</value>
+  </metadata>
+  <metadata name="Bank.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 663</value>
+  </metadata>
+  <metadata name="BankAccount.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 625</value>
+  </metadata>
+  <data name="BankAccount.CommandText" xml:space="preserve">
+    <value>SELECT  [AutoKey]
+      ,[AccountID]
+      ,[AccountName]
+      ,[BankID]
+      ,[BankAccount]
+      ,[CreateBy]
+      ,[CreateDate]
+      ,[LastUpdateBy]
+      ,[LastUpdateDate]
+  FROM  [BankAccount]</value>
+  </data>
+  <metadata name="BankRootID.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 587</value>
+  </metadata>
+  <metadata name="CheckAccount.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 549</value>
+  </metadata>
+  <metadata name="CreateBy.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>314, 438</value>
+  </metadata>
+  <metadata name="$this.TrayLargeIcon" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>False</value>
+  </metadata>
+</root>

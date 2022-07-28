@@ -50,7 +50,6 @@
                 async: false,
                 success: function (data) {
                     if (data != "False") {
-                        //var rows = $.parseJSON(data);
                         closeForm("#dialogTrust");
                         alert("已修改" + data + "筆")
                         $("#dataGridView").datagrid("reload");
@@ -86,7 +85,6 @@
             var WarrantNOs = $("#dataFormCashWarrantNO").val().trim();
             var ItemNOs = $("#dataFormCashItemNO").val().trim();
             var CashDate = $("#dataFormCashCashDate").datebox('getValue');
-            //var TrustAccountID = $("#dataFormTrustTrustAccountID").val().trim();
             $.ajax({
                 type: "POST",
                 url: '../handler/jqDataHandle.ashx?RemoteName=sERP_Normal_CheckDetailsAction.CheckDetails', //連接的Server端，command
@@ -95,7 +93,6 @@
                 async: false,
                 success: function (data) {
                     if (data != "False") {
-                        //var rows = $.parseJSON(data);
                         closeForm("#dialogCash");
                         alert("已修改" + data + "筆")
                         $("#dataGridView").datagrid("reload");
@@ -141,7 +138,6 @@
                 async: false,
                 success: function (data) {
                     if (data != "False") {
-                        //var rows = $.parseJSON(data);
                         closeForm("#dialogReturn");
                         alert("已修改" + data + "筆")
                         $("#dataGridView").datagrid("reload");
@@ -160,6 +156,10 @@
             if (dlgID=="#dialogTrust") submitFormTrust();
             else if (dlgID == "#dialogCash") submitFormCash();
             else if (dlgID == "#dialogReturn") submitFormReturn();
+            else if (dlgID == "#JQDialog1") {
+                applyForm("#dataFormMaster");
+                closeForm(dlgID)
+            }
         }
         
 
@@ -222,6 +222,7 @@
                 });
             }
         }
+        
         </script>
 </head>
 <body>
@@ -230,7 +231,7 @@
             <JQTools:JQScriptManager ID="JQScriptManager1" runat="server" />
             <JQTools:JQDataGrid ID="dataGridView" data-options="pagination:true,view:commandview" RemoteName="sERP_Normal_CheckDetailsAction.CheckDetails" runat="server" AutoApply="True"
                 DataMember="CheckDetails" Pagination="True" QueryTitle="查詢條件" EditDialogID="JQDialog1"
-                Title="票據託收兌現退票" UpdateCommandVisible="False" DeleteCommandVisible="False" MultiSelect="True" OnLoadSuccess="dataGridView_OnLoadSuccess" AllowAdd="True" AllowDelete="True" AllowUpdate="True" AlwaysClose="True" BufferView="False" CheckOnSelect="True" ColumnsHibeable="False" DuplicateCheck="False" EditMode="Dialog" EditOnEnter="True" InsertCommandVisible="True" NotInitGrid="False" PageList="10,20,30,40,50" PageSize="10" QueryAutoColumn="False" QueryLeft="" QueryMode="Panel" QueryTop="" RecordLock="False" RecordLockMode="None" RowNumbers="True" TotalCaption="Total:" ViewCommandVisible="True">
+                Title="票據託收兌現退票" UpdateCommandVisible="True" DeleteCommandVisible="False" MultiSelect="True" OnLoadSuccess="dataGridView_OnLoadSuccess" AllowAdd="True" AllowDelete="True" AllowUpdate="True" AlwaysClose="True" BufferView="False" CheckOnSelect="False" ColumnsHibeable="False" DuplicateCheck="False" EditMode="Dialog" EditOnEnter="True" InsertCommandVisible="True" NotInitGrid="False" PageList="10,20,30,40,50" PageSize="10" QueryAutoColumn="False" QueryLeft="" QueryMode="Panel" QueryTop="" RecordLock="False" RecordLockMode="None" RowNumbers="True" TotalCaption="Total:" ViewCommandVisible="True">
                 <Columns>
                     <JQTools:JQGridColumn Alignment="left" Caption="WarrantNO" Editor="text" FieldName="WarrantNO" Format="" MaxLength="0" Visible="False" Width="70" />
                     <JQTools:JQGridColumn Alignment="right" Caption="ItemNO" Editor="numberbox" FieldName="ItemNO" Format="" Visible="False" Width="40" />
@@ -247,11 +248,11 @@
                     <JQTools:JQGridColumn Alignment="left" Caption="銀行分行" Editor="text" FieldName="BankBranchName" MaxLength="0" Visible="true" Width="120" />
                     <JQTools:JQGridColumn Alignment="left" Caption="交換碼" Editor="text" FieldName="Bourse" Format="" Frozen="False" IsNvarChar="False" MaxLength="0" QueryCondition="" ReadOnly="False" Sortable="False" Visible="True" Width="45">
                     </JQTools:JQGridColumn>
+                    <JQTools:JQGridColumn Alignment="left" Caption="客戶" Editor="infocombobox" FieldName="CustomerID" Format="" MaxLength="0" Visible="True" Width="80" EditorOptions="valueField:'CustomerID',textField:'ShortName',remoteName:'sERP_Normal_CheckDetailsAction.Customers',tableName:'Customers',pageSize:'-1',checkData:false,selectOnly:false,cacheRelationText:false,panelHeight:200" />
                     <JQTools:JQGridColumn Alignment="left" Caption="客戶支票帳號" Editor="text" FieldName="CheckAccount" Format="" MaxLength="0" Visible="True" Width="120" />
                     <JQTools:JQGridColumn Alignment="left" Caption="AccountID" Editor="text" FieldName="AccountID" Format="" MaxLength="0" Visible="False" Width="120" EditorOptions="" />
-                    <JQTools:JQGridColumn Alignment="left" Caption="CustomerID" Editor="text" FieldName="CustomerID" Format="" MaxLength="0" Visible="False" Width="120" />
                     <JQTools:JQGridColumn Alignment="left" Caption="託收日" Editor="datebox" FieldName="TrustDate" Format="yyyy/mm/dd" Visible="true" Width="60" />
-                    <JQTools:JQGridColumn Alignment="left" Caption="託收銀行帳戶" Editor="infocombobox" FieldName="TrustAccountID" Format="" MaxLength="0" Visible="true" Width="120" EditorOptions="valueField:'AccountID',textField:'AccountName',remoteName:'sERP_Normal_CheckDetailsAction.BankAccount',tableName:'BankAccount',pageSize:'-1',checkData:false,selectOnly:false,cacheRelationText:false,panelHeight:200" />
+                    <JQTools:JQGridColumn Alignment="left" Caption="託收銀行帳戶" Editor="infocombobox" FieldName="TrustAccountID" Format="" MaxLength="0" Visible="true" Width="120" EditorOptions="valueField:'CheckAccountID',textField:'CheckAccountName',remoteName:'sERP_Normal_CheckDetailsAction.CheckAccount',tableName:'CheckAccount',pageSize:'-1',checkData:false,selectOnly:false,cacheRelationText:false,panelHeight:200" />
                     <JQTools:JQGridColumn Alignment="left" Caption="兌現日" Editor="datebox" FieldName="CashDate" Format="yyyy/mm/dd" Visible="true" Width="60" />
                     <JQTools:JQGridColumn Alignment="left" Caption="退票日" Editor="datebox" FieldName="ReturnDate" Format="yyyy/mm/dd" Visible="true" Width="60" />
                     <JQTools:JQGridColumn Alignment="left" Caption="退票原因" Editor="text" FieldName="ReturnNotes" Format="" MaxLength="0" Visible="true" Width="120" />
@@ -282,35 +283,36 @@
                     <JQTools:JQQueryColumn AndOr="and" Caption="~" Condition="&lt;=" DataType="string" Editor="datebox" FieldName="TrustDate" IsNvarChar="False" NewLine="False" RemoteMethod="False" RowSpan="0" Span="0" Width="125" />
                     <JQTools:JQQueryColumn AndOr="and" Caption="客戶" Condition="=" DataType="string" Editor="infocombobox" FieldName="CustomerID" IsNvarChar="False" NewLine="True" RemoteMethod="False" RowSpan="0" Span="0" Width="125" EditorOptions="valueField:'CustomerID',textField:'ShortName',remoteName:'sERP_Normal_CheckDetailsAction.Customer',tableName:'Customer',pageSize:'-1',checkData:true,selectOnly:false,cacheRelationText:false,panelHeight:200" />
                     <JQTools:JQQueryColumn AndOr="and" Caption="支票號碼" Condition="=" DataType="string" Editor="text" FieldName="CheckNO" IsNvarChar="False" NewLine="False" RemoteMethod="False" RowSpan="0" Span="0" Width="125" />
+                    <JQTools:JQQueryColumn AndOr="and" Caption="支票銀行帳戶" Condition="=" DataType="string" Editor="infocombobox" EditorOptions="valueField:'CheckAccountID',textField:'CheckAccountName',remoteName:'sERP_Normal_CheckDetailsAction.CheckAccount',tableName:'CheckAccount',pageSize:'-1',checkData:true,selectOnly:false,cacheRelationText:false,panelHeight:200" FieldName="AccountID" IsNvarChar="False" NewLine="True" RemoteMethod="False" RowSpan="0" Span="0" Width="125" />
                 </QueryColumns>
             </JQTools:JQDataGrid>
 
             <JQTools:JQDialog ID="JQDialog1" runat="server" BindingObjectID="dataFormMaster" Title="票據託收兌現退票">
                 <JQTools:JQDataForm ID="dataFormMaster" runat="server" DataMember="CheckDetails" HorizontalColumnsCount="2" RemoteName="sERP_Normal_CheckDetailsAction.CheckDetails" AlwaysReadOnly="False" Closed="False" ContinueAdd="False" disapply="False" DivFramed="False" DuplicateCheck="False" HorizontalGap="0" IsAutoPageClose="False" IsAutoPause="False" IsAutoSubmit="False" IsNotifyOFF="False" IsRejectNotify="False" IsRejectON="False" IsShowFlowIcon="False" ShowApplyButton="False" ValidateStyle="Hint" VerticalGap="0" >
                     <Columns>
-                        <JQTools:JQFormColumn Alignment="left" Caption="WarrantNO" Editor="text" FieldName="WarrantNO" Format="" maxlength="0" Width="180" Visible="False" />
-                        <JQTools:JQFormColumn Alignment="left" Caption="ItemNO" Editor="numberbox" FieldName="ItemNO" Format="" Width="180" Visible="False" />
-                        <JQTools:JQFormColumn Alignment="left" Caption="公司別代號" Editor="infocombobox" FieldName="InsGroupID" Format="" Width="180" EditorOptions="valueField:'InsGroupID',textField:'ShortName',remoteName:'sERP_Normal_CheckDetailsAction.InsGroup',tableName:'InsGroup',pageSize:'-1',checkData:false,selectOnly:false,cacheRelationText:false,panelHeight:200" />
-                        <JQTools:JQFormColumn Alignment="left" Caption="收款日" Editor="datebox" FieldName="WarrantDate" Format="" Width="180" />
-                        <JQTools:JQFormColumn Alignment="left" Caption="支票號碼" Editor="text" FieldName="CheckNO" Format="" maxlength="0" Width="180" />
-                        <JQTools:JQFormColumn Alignment="left" Caption="到期日" Editor="datebox" FieldName="CheckDueDate" Format="" Width="180" />
-                        <JQTools:JQFormColumn Alignment="left" Caption="支票金額" Editor="numberbox" FieldName="Amount" Format="" Width="180" />
-                        <JQTools:JQFormColumn Alignment="left" Caption="銀行主行" Editor="text" FieldName="BankRootName" Format="" maxlength="0" Width="180" Visible="False" />
-                        <JQTools:JQFormColumn Alignment="left" Caption="銀行分行" Editor="text" FieldName="BankBranchName" Format="" maxlength="0" Width="180" Visible="False" />
-                        <JQTools:JQFormColumn Alignment="left" Caption="交換碼" Editor="text" FieldName="Bourse" Format="" maxlength="0" Width="177" />
-                        <JQTools:JQFormColumn Alignment="left" Caption="BankID" Editor="text" FieldName="BankID" Format="" maxlength="0" Width="180" Visible="False" />
-                        <JQTools:JQFormColumn Alignment="left" Caption="客戶支票帳號" Editor="text" FieldName="CheckAccount" Format="" maxlength="0" Width="180" />
-                        <JQTools:JQFormColumn Alignment="left" Caption="支票銀行帳戶" Editor="infocombobox" FieldName="AccountID" Format="" maxlength="0" Width="180" EditorOptions="valueField:'CheckAccountID',textField:'CheckAccountName',remoteName:'sERP_Normal_CheckDetailsAction.CheckAccount',tableName:'CheckAccount',pageSize:'-1',checkData:false,selectOnly:false,cacheRelationText:false,panelHeight:200" />
-                        <JQTools:JQFormColumn Alignment="left" Caption="客戶" Editor="infocombobox" FieldName="CustomerID" Format="" maxlength="0" Width="180" EditorOptions="valueField:'CustomerID',textField:'ShortName',remoteName:'sERP_Normal_CheckDetailsAction.Customer',tableName:'Customer',pageSize:'-1',checkData:false,selectOnly:false,cacheRelationText:false,panelHeight:200" />
+                        <JQTools:JQFormColumn Alignment="left" Caption="WarrantNO" Editor="text" FieldName="WarrantNO" Format="" maxlength="0" Width="180" Visible="False" ReadOnly="True" />
+                        <JQTools:JQFormColumn Alignment="left" Caption="ItemNO" Editor="numberbox" FieldName="ItemNO" Format="" Width="180" Visible="False" ReadOnly="True" />
+                        <JQTools:JQFormColumn Alignment="left" Caption="公司別代號" Editor="infocombobox" FieldName="InsGroupID" Format="" Width="180" EditorOptions="valueField:'InsGroupID',textField:'ShortName',remoteName:'sERP_Normal_CheckDetailsAction.InsGroup',tableName:'InsGroup',pageSize:'-1',checkData:false,selectOnly:false,cacheRelationText:false,panelHeight:200" ReadOnly="True" />
+                        <JQTools:JQFormColumn Alignment="left" Caption="收款日" Editor="datebox" FieldName="WarrantDate" Format="" Width="180" ReadOnly="True" />
+                        <JQTools:JQFormColumn Alignment="left" Caption="支票號碼" Editor="text" FieldName="CheckNO" Format="" maxlength="0" Width="180" ReadOnly="True" />
+                        <JQTools:JQFormColumn Alignment="left" Caption="到期日" Editor="datebox" FieldName="CheckDueDate" Format="" Width="180" ReadOnly="True" />
+                        <JQTools:JQFormColumn Alignment="left" Caption="支票金額" Editor="numberbox" FieldName="Amount" Format="" Width="180" ReadOnly="True" />
+                        <JQTools:JQFormColumn Alignment="left" Caption="銀行主行" Editor="text" FieldName="BankRootName" Format="" maxlength="0" Width="180" Visible="False" ReadOnly="True" />
+                        <JQTools:JQFormColumn Alignment="left" Caption="銀行分行" Editor="text" FieldName="BankBranchName" Format="" maxlength="0" Width="180" Visible="False" ReadOnly="True" />
+                        <JQTools:JQFormColumn Alignment="left" Caption="交換碼" Editor="text" FieldName="Bourse" Format="" maxlength="0" Width="177" ReadOnly="True" />
+                        <JQTools:JQFormColumn Alignment="left" Caption="BankID" Editor="text" FieldName="BankID" Format="" maxlength="0" Width="180" Visible="False" ReadOnly="True" />
+                        <JQTools:JQFormColumn Alignment="left" Caption="客戶支票帳號" Editor="text" FieldName="CheckAccount" Format="" maxlength="0" Width="180" ReadOnly="True" />
+                        <JQTools:JQFormColumn Alignment="left" Caption="支票銀行帳戶" Editor="infocombobox" FieldName="AccountID" Format="" maxlength="0" Width="180" EditorOptions="valueField:'CheckAccountID',textField:'CheckAccountName',remoteName:'sERP_Normal_CheckDetailsAction.CheckAccount',tableName:'CheckAccount',pageSize:'-1',checkData:false,selectOnly:false,cacheRelationText:false,panelHeight:200" ReadOnly="True" />
+                        <JQTools:JQFormColumn Alignment="left" Caption="客戶" Editor="infocombobox" FieldName="CustomerID" Format="" maxlength="0" Width="180" EditorOptions="valueField:'CustomerID',textField:'ShortName',remoteName:'sERP_Normal_CheckDetailsAction.Customer',tableName:'Customer',pageSize:'-1',checkData:false,selectOnly:false,cacheRelationText:false,panelHeight:200" ReadOnly="True" />
                         <JQTools:JQFormColumn Alignment="left" Caption="託收日" Editor="datebox" FieldName="TrustDate" Format="" Width="180" NewRow="True" />
-                        <JQTools:JQFormColumn Alignment="left" Caption="託收銀行帳戶" Editor="infocombobox" FieldName="TrustAccountID" Format="" maxlength="0" Width="180" EditorOptions="valueField:'AccountID',textField:'AccountName',remoteName:'sERP_Normal_CheckDetailsAction.BankAccount',tableName:'BankAccount',pageSize:'-1',checkData:false,selectOnly:false,cacheRelationText:false,panelHeight:200" />
+                        <JQTools:JQFormColumn Alignment="left" Caption="託收銀行帳戶" Editor="infocombobox" FieldName="TrustAccountID" Format="" maxlength="0" Width="180" EditorOptions="valueField:'CheckAccountID',textField:'CheckAccountName',remoteName:'sERP_Normal_CheckDetailsAction.CheckAccount',tableName:'CheckAccount',pageSize:'-1',checkData:false,selectOnly:false,cacheRelationText:false,panelHeight:200" />
                         <JQTools:JQFormColumn Alignment="left" Caption="兌現日" Editor="datebox" FieldName="CashDate" Format="" Width="180" />
                         <JQTools:JQFormColumn Alignment="left" Caption="退票日" Editor="datebox" FieldName="ReturnDate" Format="" Width="180" />
                         <JQTools:JQFormColumn Alignment="left" Caption="退票備註" Editor="textarea" FieldName="ReturnNotes" Format="" maxlength="0" Width="435" EditorOptions="height:60" NewRow="True" Span="2" />
-                        <JQTools:JQFormColumn Alignment="left" Caption="建立人員" Editor="text" FieldName="CreateBy" Format="" maxlength="0" Width="180" NewRow="True" />
-                        <JQTools:JQFormColumn Alignment="left" Caption="建立日期" Editor="datebox" FieldName="CreateDate" Format="" Width="180" />
-                        <JQTools:JQFormColumn Alignment="left" Caption="修正人員" Editor="text" FieldName="LastUpdateBy" Format="" maxlength="0" Width="180" />
-                        <JQTools:JQFormColumn Alignment="left" Caption="修正日期" Editor="datebox" FieldName="LastUpdateDate" Format="" Width="180" />
+                        <JQTools:JQFormColumn Alignment="left" Caption="建立人員" Editor="text" FieldName="CreateBy" Format="" maxlength="0" Width="180" NewRow="True" ReadOnly="True" />
+                        <JQTools:JQFormColumn Alignment="left" Caption="建立日期" Editor="datebox" FieldName="CreateDate" Format="" Width="180" ReadOnly="True" />
+                        <JQTools:JQFormColumn Alignment="left" Caption="修正人員" Editor="text" FieldName="LastUpdateBy" Format="" maxlength="0" Width="180" ReadOnly="True" />
+                        <JQTools:JQFormColumn Alignment="left" Caption="修正日期" Editor="datebox" FieldName="LastUpdateDate" Format="" Width="180" ReadOnly="True" />
                     </Columns>
                 </JQTools:JQDataForm>
                 <JQTools:JQDefault ID="defaultMaster" runat="server" BindingObjectID="dataFormMaster" BorderStyle="NotSet" ClientIDMode="Inherit" Enabled="True" EnableTheming="True" EnableViewState="True" ViewStateMode="Inherit">
@@ -363,7 +365,7 @@
                         <JQTools:JQFormColumn Alignment="left" Caption="WarrantNO" Editor="text" FieldName="WarrantNO" Format="" maxlength="0" Width="180" Visible="False" />
                         <JQTools:JQFormColumn Alignment="left" Caption="ItemNO" Editor="numberbox" FieldName="ItemNO" Format="" Width="180" Visible="False" />
                         <JQTools:JQFormColumn Alignment="left" Caption="託收日" Editor="datebox" FieldName="TrustDate" Format="" Width="180" Visible="True" />
-                        <JQTools:JQFormColumn Alignment="left" Caption="託收銀行" Editor="infocombobox" FieldName="TrustAccountID" Format="" Width="180" Visible="True" EditorOptions="valueField:'AccountID',textField:'AccountName',remoteName:'sERP_Normal_CheckDetailsAction.BankAccount',tableName:'BankAccount',pageSize:'-1',checkData:true,selectOnly:false,cacheRelationText:false,panelHeight:200" />
+                        <JQTools:JQFormColumn Alignment="left" Caption="託收銀行帳戶" Editor="infocombobox" FieldName="TrustAccountID" Format="" Width="180" Visible="True" EditorOptions="valueField:'CheckAccountID',textField:'CheckAccountName',remoteName:'sERP_Normal_CheckDetailsAction.CheckAccount',tableName:'CheckAccount',pageSize:'-1',checkData:true,selectOnly:false,cacheRelationText:false,panelHeight:200" />
                         <JQTools:JQFormColumn Alignment="left" Caption="CashDate" Editor="datebox" FieldName="CashDate" Format="" maxlength="0" Width="180" Visible="False" />
                         <JQTools:JQFormColumn Alignment="left" Caption="ReturnDate" Editor="datebox" FieldName="ReturnDate" Format="" Width="180" Visible="False" />
                         <JQTools:JQFormColumn Alignment="left" Caption="ReturnNotes" Editor="text" FieldName="ReturnNotes" Format="" Width="180" Visible="False" />

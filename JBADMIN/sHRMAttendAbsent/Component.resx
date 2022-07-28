@@ -118,31 +118,31 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <metadata name="InfoConnection1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>17, 131</value>
+    <value>17, 64</value>
   </metadata>
   <metadata name="HRMAttendAbsentApply.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>17, 207</value>
+    <value>17, 111</value>
   </metadata>
   <metadata name="ucHRMAttendAbsentApply.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>17, 55</value>
+    <value>17, 205</value>
   </metadata>
   <metadata name="auto_AbsentMinusID.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>17, 93</value>
+    <value>17, 252</value>
   </metadata>
   <metadata name="infoHRM_ATTEND_HOLIDAY.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>17, 245</value>
+    <value>17, 299</value>
   </metadata>
   <metadata name="infoConnection2.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>17, 283</value>
+    <value>17, 440</value>
   </metadata>
   <metadata name="serviceManager1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>17, 359</value>
+    <value>17, 487</value>
   </metadata>
   <metadata name="infoHRM_BASE_BASE.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>17, 321</value>
+    <value>17, 534</value>
   </metadata>
   <metadata name="infoABSENT_PLUS.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>17, 169</value>
+    <value>17, 158</value>
   </metadata>
   <data name="infoABSENT_PLUS.CommandText" xml:space="preserve">
     <value>select h.HOLIDAY_CNAME,
@@ -152,7 +152,29 @@ from HRM_ATTEND_HOLIDAY h
 where h.HOLIDAY_ID in(23,27,41,42)</value>
   </data>
   <metadata name="infoAgentEmployeeID.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>190, 322</value>
+    <value>17, 346</value>
+  </metadata>
+  <metadata name="HRM_ATTEND_ABSENT_MINUS.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 393</value>
+  </metadata>
+  <data name="HRM_ATTEND_ABSENT_MINUS.CommandText" xml:space="preserve">
+    <value>SELECT HRM_ATTEND_ABSENT_MINUS.*,
+HRM_BASE_BASE.EMPLOYEE_CODE,
+HRM_BASE_BASE.NAME_C,
+HRM_ATTEND_HOLIDAY.HOLIDAY_CODE,
+HRM_ATTEND_HOLIDAY.HOLIDAY_CNAME,
+HRM_DEPT.DEPT_CODE,
+HRM_DEPT.DEPT_CNAME,
+HRM_DEPT.DEPT_ASSISTANT_CODE,
+'異動資料紀錄' AS TRANSLOG 
+FROM HRM_ATTEND_ABSENT_MINUS
+LEFT JOIN HRM_BASE_BASE ON HRM_ATTEND_ABSENT_MINUS.EMPLOYEE_ID =  HRM_BASE_BASE.EMPLOYEE_ID
+LEFT JOIN HRM_ATTEND_HOLIDAY ON HRM_ATTEND_ABSENT_MINUS.HOLIDAY_ID = HRM_ATTEND_HOLIDAY.HOLIDAY_ID
+LEFT JOIN HRM_DEPT ON HRM_DEPT.DEPT_ID = dbo.fnHRM_BASE_BASETTS_FieldName(HRM_ATTEND_ABSENT_MINUS.EMPLOYEE_ID,HRM_ATTEND_ABSENT_MINUS.BEGIN_DATE,'DEPT_ID')
+WHERE HRM_ATTEND_HOLIDAY.HOLIDAY_FLAG='-'</value>
+  </data>
+  <metadata name="ucHRM_ATTEND_ABSENT_MINUS.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>425, 359</value>
   </metadata>
   <metadata name="$this.TrayLargeIcon" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>False</value>

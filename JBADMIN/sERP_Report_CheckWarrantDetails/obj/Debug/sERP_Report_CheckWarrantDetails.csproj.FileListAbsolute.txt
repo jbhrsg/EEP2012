@@ -1,0 +1,11 @@
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sERP_Report_CheckWarrantDetails\bin\Debug\sERP_Report_CheckWarrantDetails.dll
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sERP_Report_CheckWarrantDetails\bin\Debug\sERP_Report_CheckWarrantDetails.pdb
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sERP_Report_CheckWarrantDetails\obj\Debug\sERP_Report_CheckWarrantDetails.csproj.GenerateResource.Cache
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sERP_Report_CheckWarrantDetails\obj\Debug\sERP_Report_CheckWarrantDetails.dll
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sERP_Report_CheckWarrantDetails\obj\Debug\sERP_Report_CheckWarrantDetails.pdb
+C:\Program Files (x86)\Infolight\EEP2012\EEPNetServer\JBADMIN\sERP_Report_CheckWarrantDetails.dll
+C:\Program Files (x86)\Infolight\EEP2012\EEPNetServer\JBADMIN\sERP_Report_CheckWarrantDetails.pdb
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sERP_Report_CheckWarrantDetails\obj\Debug\sERP_Report_CheckWarrantDetails.Component.resources
+C:\Program Files (x86)\Infolight\EEP2012\EEPNetServer\JBADMIN\vi-VN\sERP_Report_CheckWarrantDetails.resources.dll
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sERP_Report_CheckWarrantDetails\obj\Debug\sERP_Report_CheckWarrantDetails.Component.vi-VN.resources
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sERP_Report_CheckWarrantDetails\obj\Debug\vi-VN\sERP_Report_CheckWarrantDetails.resources.dll

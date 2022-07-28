@@ -1,8 +1,9 @@
-C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sHRM_Attend_AbsentMinus\bin\Debug\sHRM_Attend_AbsentMinus.dll
-C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sHRM_Attend_AbsentMinus\bin\Debug\sHRM_Attend_AbsentMinus.pdb
-C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sHRM_Attend_AbsentMinus\bin\Debug\Newtonsoft.Json.dll
-C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sHRM_Attend_AbsentMinus\bin\Debug\Newtonsoft.Json.xml
-C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sHRM_Attend_AbsentMinus\obj\Debug\sHRM_Attend_AbsentMinus.Component.resources
-C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sHRM_Attend_AbsentMinus\obj\Debug\sHRM_Attend_AbsentMinus.csproj.GenerateResource.Cache
-C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sHRM_Attend_AbsentMinus\obj\Debug\sHRM_Attend_AbsentMinus.dll
-C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sHRM_Attend_AbsentMinus\obj\Debug\sHRM_Attend_AbsentMinus.pdb
+D:\Infolight\EEP2012\JBADMIN\sHRM_Attend_AbsentMinus\obj\Debug\sHRM_Attend_AbsentMinus.csproj.GenerateResource.Cache
+D:\Infolight\EEP2012\JBADMIN\sHRM_Attend_AbsentMinus\obj\Debug\sHRM_Attend_AbsentMinus.Component.resources
+D:\Infolight\EEP2012\JBADMIN\sHRM_Attend_AbsentMinus\bin\Debug\Newtonsoft.Json.dll
+D:\Infolight\EEP2012\JBADMIN\sHRM_Attend_AbsentMinus\bin\Debug\Newtonsoft.Json.xml
+D:\Infolight\EEP2012\JBADMIN\sHRM_Attend_AbsentMinus\bin\Debug\sHRM_Attend_AbsentMinus.dll
+D:\Infolight\EEP2012\JBADMIN\sHRM_Attend_AbsentMinus\bin\Debug\sHRM_Attend_AbsentMinus.pdb
+D:\Infolight\EEP2012\JBADMIN\sHRM_Attend_AbsentMinus\obj\Debug\sHRM_Attend_AbsentMinus.dll
+D:\Infolight\EEP2012\JBADMIN\sHRM_Attend_AbsentMinus\obj\Debug\sHRM_Attend_AbsentMinus.pdb
+D:\Infolight\EEP2012\JBADMIN\sHRM_Attend_AbsentMinus\obj\Debug\sHRM_Attend_AbsentMinus.csprojResolveAssemblyReference.cache

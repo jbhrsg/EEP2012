@@ -1,0 +1,12 @@
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sERP_Normal_Warrant\bin\Debug\sERP_Normal_Warrant.dll
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sERP_Normal_Warrant\bin\Debug\sERP_Normal_Warrant.pdb
+C:\Program Files (x86)\Infolight\EEP2012\EEPNetServer\JBADMIN\sERP_Normal_Warrant.dll
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sERP_Normal_Warrant\obj\Debug\sERP_Normal_Warrant.Component.resources
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sERP_Normal_Warrant\obj\Debug\sERP_Normal_Warrant.Component.vi-VN.resources
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sERP_Normal_Warrant\obj\Debug\sERP_Normal_Warrant.csproj.GenerateResource.Cache
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sERP_Normal_Warrant\obj\Debug\vi-VN\sERP_Normal_Warrant.resources.dll
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sERP_Normal_Warrant\obj\Debug\sERP_Normal_Warrant.dll
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sERP_Normal_Warrant\obj\Debug\sERP_Normal_Warrant.pdb
+C:\Program Files (x86)\Infolight\EEP2012\EEPNetServer\JBADMIN\sERP_Normal_Warrant.pdb
+C:\Program Files (x86)\Infolight\EEP2012\EEPNetServer\JBADMIN\vi-VN\sERP_Normal_Warrant.resources.dll
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sERP_Normal_Warrant\obj\Debug\sERP_Normal_Warrant.csprojResolveAssemblyReference.cache

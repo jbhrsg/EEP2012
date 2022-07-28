@@ -33,15 +33,16 @@
                     var Name = $(FormName + fieldName);                   
                     $(FormName + fieldName).closest('td').prev('td').css("color", "rgb(138, 43, 226)");
                 });
-                //傳入客戶代號查詢,並呼叫編輯主畫面
+
+                //--------------客戶職缺傳入客戶代號 => 查詢客戶---------------------------------------------------
                 var parameter = Request.getQueryStringByName("CustID");
                 if (parameter != "") {
+                   
                     $("#dataGridView").datagrid('setWhere', "ERPCustomerID = '" + parameter + "'");
-                    setTimeout(function () {
-                        openForm('#JQDialog1', $('#dataGridView').datagrid('getSelected'), "updated", 'dialog');
-                    }, 800);
+                    //setTimeout(function () {
+                    //    openForm('#JQDialog1', $('#dataGridView').datagrid('getSelected'), "updated", 'dialog');
+                    //}, 800);
                 }
-
 
             });        
        
@@ -106,7 +107,7 @@
                         OnClick="openQuery" Text="查詢" />--%>
                 </TooItems>
                 <QueryColumns>
-                    <JQTools:JQQueryColumn AndOr="and" Caption="雇主名稱/雇主編號/統一編號" Condition="%" DataType="string" Editor="text" FieldName="EmployerName" IsNvarChar="False" NewLine="False" RemoteMethod="False" RowSpan="0" Span="0" Width="125" />
+                    <JQTools:JQQueryColumn AndOr="and" Caption="雇主名稱/雇主編號/統一編號" Condition="%" DataType="string" Editor="text" FieldName="EmployerName" IsNvarChar="False" NewLine="True" RemoteMethod="False" RowSpan="0" Span="0" Width="125" />
                 </QueryColumns>
             </JQTools:JQDataGrid>
 
@@ -117,7 +118,7 @@
                         <JQTools:JQFormColumn Alignment="left" Caption="EmployerID" Editor="text" FieldName="EmployerID" Format="" maxlength="0" Visible="False" Width="80" />
                         <JQTools:JQFormColumn Alignment="left" Caption="雇主分類" Editor="infocombobox" EditorOptions="items:[{value:'1',text:'個人',selected:'false'},{value:'2',text:'公司',selected:'false'}],checkData:false,selectOnly:true,cacheRelationText:false,panelHeight:200" FieldName="EmployerType" Format="" Width="80" NewRow="True" />
                         <JQTools:JQFormColumn Alignment="left" Caption="雇主名稱" Editor="text" FieldName="EmployerName" Format="" maxlength="0" Width="170" Span="2" ReadOnly="True" />
-                        <JQTools:JQFormColumn Alignment="left" Caption="統一編號" Editor="numberbox" FieldName="EmployerPID" Format="" maxlength="0" Width="100" ReadOnly="True" />
+                        <JQTools:JQFormColumn Alignment="left" Caption="統一編號" Editor="text" FieldName="EmployerPID" Format="" maxlength="0" Width="100" ReadOnly="True" />
                         <JQTools:JQFormColumn Alignment="left" Caption="雇主編號" Editor="text" FieldName="EmployerNo" Format="" maxlength="0" Width="100" NewRow="False" />
                         <JQTools:JQFormColumn Alignment="left" Caption="雇主地址" Editor="text" FieldName="EmployerAddress" Format="" maxlength="0" Width="430" Span="3" ReadOnly="True" />
                         <JQTools:JQFormColumn Alignment="left" Caption="負責業務" Editor="infocombobox" FieldName="SalesID" Format="" Width="105" EditorOptions="valueField:'ID',textField:'Name',remoteName:'sFwcrmCustomer.infoSalesIdJS',tableName:'infoSalesIdJS',pageSize:'-1',checkData:false,selectOnly:false,cacheRelationText:false,panelHeight:200" />

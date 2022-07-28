@@ -1,0 +1,9 @@
+D:\Infolight\EEP2012\JBADMIN\sFWCRMARMaster\bin\Debug\sFWCRMARMaster.dll
+D:\Infolight\EEP2012\JBADMIN\sFWCRMARMaster\bin\Debug\sFWCRMARMaster.pdb
+D:\Infolight\EEP2012\JBADMIN\sFWCRMARMaster\obj\Debug\sFWCRMARMaster.csprojResolveAssemblyReference.cache
+D:\Infolight\EEP2012\JBADMIN\sFWCRMARMaster\obj\Debug\sFWCRMARMaster.csproj.GenerateResource.Cache
+D:\Infolight\EEP2012\JBADMIN\sFWCRMARMaster\obj\Debug\sFWCRMARMaster.dll
+D:\Infolight\EEP2012\JBADMIN\sFWCRMARMaster\obj\Debug\sFWCRMARMaster.pdb
+D:\Infolight\EEP2012\EEPNetServer\JBADMIN\sFWCRMARMaster.dll
+D:\Infolight\EEP2012\EEPNetServer\JBADMIN\sFWCRMARMaster.pdb
+D:\Infolight\EEP2012\JBADMIN\sFWCRMARMaster\obj\Debug\sFWCRMARMaster.Component.resources

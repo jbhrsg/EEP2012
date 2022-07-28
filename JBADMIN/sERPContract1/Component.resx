@@ -1,0 +1,230 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <metadata name="serviceManager1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 95</value>
+  </metadata>
+  <metadata name="InfoConnection1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 133</value>
+  </metadata>
+  <metadata name="ERPContract.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>162, 52</value>
+  </metadata>
+  <data name="ERPContract.CommandText" xml:space="preserve">
+    <value>SELECT ContractKey,ParentKey,ContractNO,ContractName,ContractB,ContractClass,ResponsibleDepart,KeepDepart,AssignChecker
+,Amount,Remarks,Remarks2,Keeper,Attachment1,Attachment2,Attachment3,Attachment4,Attachment5,FlowFlag,ContinueFlag,CreateBy,CreateDate,IsGuaranty,GuarantyAmount,GuarantyEndDate,GuarantyNO,IsForeignDept
+,'' as Button1, Attachment1 as Attachment1d
+, Attachment2 as Attachment2d, Attachment3 as Attachment3d
+, Attachment4 as Attachment4d, Attachment5 as Attachment5d
+,(select count(ContractAlterNO) from ERPContractAlter where ContractNO=ERPContract.ContractNO and (FlowFlag !='X' or FlowFlag is null)) AlterCounts
+,BeginDate,EndDate, PhysicalContractNO,RemindDays,SignDate
+,(select  CONVERT(varchar(10),sdw.InOutDate,120)+' / '
+from SecurityDepositWarrant sdw 
+left join SecurityDeposit sd on sd.DepositNO=sdw.DepositNO 
+where sd.Flowflag='Z' and sdw.Flowflag='Z' and sd.ContractNO=[ERPContract].ContractNO
+FOR XML PATH('')) as InOutDate
+,(select  REPLACE(CONVERT(varchar, sdw.WarrantAmount, 1), '.00', '')+' / '
+from SecurityDepositWarrant sdw 
+left join SecurityDeposit sd on sd.DepositNO=sdw.DepositNO 
+where sd.Flowflag='Z' and sdw.Flowflag='Z' and sd.ContractNO=[ERPContract].ContractNO
+FOR XML PATH('')) as WarrantAmount
+FROM dbo.[ERPContract] order by ContractKey desc</value>
+  </data>
+  <metadata name="ucERPContract.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 55</value>
+  </metadata>
+  <metadata name="View_ERPContract.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>578, 17</value>
+  </metadata>
+  <metadata name="USERS.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 246</value>
+  </metadata>
+  <metadata name="ContractClass.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>187, 242</value>
+  </metadata>
+  <data name="ContractClass.CommandText" xml:space="preserve">
+    <value>select ContractClassID,ContractClass,KeepDepart,u.USERNAME,o.ORG_MAN from ERPContractClass e
+left join [EIPHRSYS].[dbo].[SYS_ORG] o on e.KeepDepart=o.org_no
+left join [EIPHRSYS].[dbo].[USERGROUPS] ug on ug.GROUPID=o.ORG_MAN
+left join [EIPHRSYS].[dbo].[USERS] u on u.USERID=ug.USERID</value>
+  </data>
+  <metadata name="ContractName.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 322</value>
+  </metadata>
+  <metadata name="ResponsibleDepart.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 398</value>
+  </metadata>
+  <metadata name="GroupUsers.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 169</value>
+  </metadata>
+  <data name="GroupUsers.CommandText" xml:space="preserve">
+    <value>with lp(org_no,org_desc,upper_org,lvl) as 
+(
+SELECT org_no,org_desc,upper_org,0 as lvl FROM [EIPHRSYS].[dbo].[SYS_ORG] where 11=11
+union all
+SELECT o.org_no,o.org_desc,o.upper_org,lvl+1 FROM [EIPHRSYS].[dbo].[SYS_ORG] o inner join lp l on o.UPPER_ORG=l.org_no
+)
+SELECT distinct u.USERID,USERNAME FROM[EIPHRSYS].dbo.[USERS] u inner JOIN [EIPHRSYS].[dbo].[USERGROUPS] ug ON ug.USERID=u.USERID inner join [EIPHRSYS].[dbo].[SYS_ORGROLES] ro on ro.ROLE_ID=ug.GROUPID
+where DESCRIPTION='JB' and org_no in(
+select org_no from lp where  ORG_DESC !='福委會') 
+union
+select u.USERID,USERNAME  FROM [EIPHRSYS].[dbo].[SYS_ORG] o 
+inner join [EIPHRSYS].[dbo].[USERGROUPS] ug on ug.GROUPID=o.ORG_MAN
+inner join [EIPHRSYS].[dbo].[USERS] u on u.USERID=ug.USERID
+where DESCRIPTION='JB' and org_no in(
+select org_no from lp where  ORG_DESC !='福委會') </value>
+  </data>
+  <metadata name="VenderCustomer.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 436</value>
+  </metadata>
+  <data name="VenderCustomer.CommandText" xml:space="preserve">
+    <value>select  * from(
+select CustomerID as ID,CustomerName as [Name],TelNO as Tel,Addr_Desc as Addr,'客戶' as EntityType from [JBERP].[dbo].[Customer] where [CustomerName] !=''
+union
+SELECT VendID as ID,VendName as [Name],ContactTel as Tel,VendAddress as Addr,'供應商' as EntityType  FROM  [Vendors] where [VendName]  !=''
+)tt</value>
+  </data>
+  <metadata name="ucContractClass.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>223, 282</value>
+  </metadata>
+  <metadata name="CenterCname.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 207</value>
+  </metadata>
+  <metadata name="SYS_ORG.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>361, 91</value>
+  </metadata>
+  <metadata name="ERPContractAlter.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 283</value>
+  </metadata>
+  <metadata name="ContractB.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 360</value>
+  </metadata>
+  <data name="ContractB.CommandText" xml:space="preserve">
+    <value>select distinct ContractB,t.[Name],t.Tel,t.Addr,t.EntityType from ERPContract
+left join (
+select  * from(
+select CustomerID as ID,CustomerName as [Name],TelNO as Tel,Addr_Desc as Addr,'客戶' as EntityType from [JBERP].[dbo].[Customer] where [CustomerName] !=''
+union
+SELECT VendID as ID,VendName as [Name],ContactTel as Tel,VendAddress as Addr,'供應商' as EntityType  FROM  [Vendors] where [VendName]  !=''
+)tt) t on t.ID=ERPContract.ContractB</value>
+  </data>
+  <metadata name="$this.TrayLargeIcon" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>False</value>
+  </metadata>
+</root>

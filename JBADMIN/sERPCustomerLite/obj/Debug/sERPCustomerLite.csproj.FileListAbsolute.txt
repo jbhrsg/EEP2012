@@ -12,3 +12,4 @@ D:\Infolight\EEP2012\JBADMIN\sERPCustomerLite\obj\Debug\sERPCustomerLite.Compone
 D:\Infolight\EEP2012\JBADMIN\sERPCustomerLite\obj\Debug\sERPCustomerLite.csproj.GenerateResource.Cache
 D:\Infolight\EEP2012\JBADMIN\sERPCustomerLite\obj\Debug\sERPCustomerLite.dll
 D:\Infolight\EEP2012\JBADMIN\sERPCustomerLite\obj\Debug\sERPCustomerLite.pdb
+D:\Infolight\EEP2012\JBADMIN\sERPCustomerLite\obj\Debug\sERPCustomerLite.csprojResolveAssemblyReference.cache

@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="Media_Report_CustomerGroupSalesList" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="Media_Report_CustomerGroupSalesList" msdata:IsDataSet="true" msdata:CaseSensitive="true" msdata:UseCurrentLocale="true">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="Media_Report_CustomerGroupSalesDetails">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="CustNO" type="xs:string" minOccurs="0" />
+              <xs:element name="SalesID" type="xs:string" minOccurs="0" />
+              <xs:element name="DMTypeID" type="xs:string" minOccurs="0" />
+              <xs:element name="SalesDate" type="xs:string" minOccurs="0" />
+              <xs:element name="GrantTypeID" type="xs:string" minOccurs="0" />
+              <xs:element name="CustPrice" type="xs:string" minOccurs="0" />
+              <xs:element name="SalesQty" type="xs:string" minOccurs="0" />
+              <xs:element name="CustAmt" type="xs:string" minOccurs="0" />
+              <xs:element name="Commission" type="xs:string" minOccurs="0" />
+              <xs:element name="ViewAreaName" type="xs:string" minOccurs="0" />
+              <xs:element name="CustShortName" type="xs:string" minOccurs="0" />
+              <xs:element name="TaxAmount" type="xs:string" minOccurs="0" />
+              <xs:element name="TotalAmount" type="xs:string" minOccurs="0" />
+              <xs:element name="InvoiceNO" type="xs:string" minOccurs="0" />
+              <xs:element name="InvoiceDate" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="Media_Report_CustomerGroupSalesSummary">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="SalesMasterNO" type="xs:string" minOccurs="0" />
+              <xs:element name="CustNO" type="xs:string" minOccurs="0" />
+              <xs:element name="CustShortName" type="xs:string" minOccurs="0" />
+              <xs:element name="jb_name" type="xs:string" minOccurs="0" />
+              <xs:element name="TotalSalesQty" type="xs:string" minOccurs="0" />
+              <xs:element name="CustAmt" type="xs:string" minOccurs="0" />
+              <xs:element name="InvoiceNO" type="xs:string" minOccurs="0" />
+              <xs:element name="InvoiceDate" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="Media_Report_PaperSalesDetails">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="SalesDate" type="xs:string" minOccurs="0" />
+              <xs:element name="SalesID" type="xs:string" minOccurs="0" />
+              <xs:element name="CustNO" type="xs:string" minOccurs="0" />
+              <xs:element name="CustShortName" type="xs:string" minOccurs="0" />
+              <xs:element name="Sections" type="xs:string" minOccurs="0" />
+              <xs:element name="OfficeLines" type="xs:string" minOccurs="0" />
+              <xs:element name="CustLines" type="xs:string" minOccurs="0" />
+              <xs:element name="NewsTypeID" type="xs:string" minOccurs="0" />
+              <xs:element name="NewsAreaID" type="xs:string" minOccurs="0" />
+              <xs:element name="OfficeAmt" type="xs:string" minOccurs="0" />
+              <xs:element name="CustPrice" type="xs:string" minOccurs="0" />
+              <xs:element name="CustAmt" type="xs:string" minOccurs="0" />
+              <xs:element name="NewsPublishID" type="xs:string" minOccurs="0" />
+              <xs:element name="NewsPublishName" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="Media_Report_PaperReceivablePayableList">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="NewsTypeName" type="xs:string" minOccurs="0" />
+              <xs:element name="NewsPublishName" type="xs:string" minOccurs="0" />
+              <xs:element name="SalesID" type="xs:string" minOccurs="0" />
+              <xs:element name="SalesYM" type="xs:string" minOccurs="0" />
+              <xs:element name="CustAmtS" type="xs:string" minOccurs="0" />
+              <xs:element name="OfficeAmtS" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="Media_Report_Customer">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="CustNO" type="xs:string" minOccurs="0" />
+              <xs:element name="CustName" type="xs:string" minOccurs="0" />
+              <xs:element name="CustShortName" type="xs:string" minOccurs="0" />
+              <xs:element name="SalesID" type="xs:string" minOccurs="0" />
+              <xs:element name="BossName" type="xs:string" minOccurs="0" />
+              <xs:element name="TaxNO" type="xs:string" minOccurs="0" />
+              <xs:element name="IndustryTypeID" type="xs:string" minOccurs="0" />
+              <xs:element name="CustTelNO" type="xs:string" minOccurs="0" />
+              <xs:element name="CustTelNO1" type="xs:string" minOccurs="0" />
+              <xs:element name="CustCityNO" type="xs:string" minOccurs="0" />
+              <xs:element name="CustRegion" type="xs:string" minOccurs="0" />
+              <xs:element name="CustPost" type="xs:string" minOccurs="0" />
+              <xs:element name="CustAddr" type="xs:string" minOccurs="0" />
+              <xs:element name="CustFaxNO" type="xs:string" minOccurs="0" />
+              <xs:element name="CustDeptID" type="xs:string" minOccurs="0" />
+              <xs:element name="CustDeptName" type="xs:string" minOccurs="0" />
+              <xs:element name="CustAreaID" type="xs:string" minOccurs="0" />
+              <xs:element name="PMID" type="xs:string" minOccurs="0" />
+              <xs:element name="samA" type="xs:string" minOccurs="0" />
+              <xs:element name="ContactA" type="xs:string" minOccurs="0" />
+              <xs:element name="ContactATel" type="xs:string" minOccurs="0" />
+              <xs:element name="ContactASubTel" type="xs:string" minOccurs="0" />
+              <xs:element name="ContactAMail" type="xs:string" minOccurs="0" />
+              <xs:element name="ContactAJobID" type="xs:string" minOccurs="0" />
+              <xs:element name="ContactAIsMail" type="xs:string" minOccurs="0" />
+              <xs:element name="samB" type="xs:string" minOccurs="0" />
+              <xs:element name="ContactB" type="xs:string" minOccurs="0" />
+              <xs:element name="ContactBTel" type="xs:string" minOccurs="0" />
+              <xs:element name="ContactBSubTel" type="xs:string" minOccurs="0" />
+              <xs:element name="ContactBMail" type="xs:string" minOccurs="0" />
+              <xs:element name="ContactBJobID" type="xs:string" minOccurs="0" />
+              <xs:element name="ContactBIsMail" type="xs:string" minOccurs="0" />
+              <xs:element name="samC" type="xs:string" minOccurs="0" />
+              <xs:element name="BillDeal" type="xs:string" minOccurs="0" />
+              <xs:element name="BillDealEmail" type="xs:string" minOccurs="0" />
+              <xs:element name="BalanceDay" type="xs:string" minOccurs="0" />
+              <xs:element name="CustNotes" type="xs:string" minOccurs="0" />
+              <xs:element name="RecallDate" type="xs:string" minOccurs="0" />
+              <xs:element name="IsPutInvoice" type="xs:string" minOccurs="0" />
+              <xs:element name="IsPutPaperInvoice" type="xs:string" minOccurs="0" />
+              <xs:element name="CreateBy" type="xs:string" minOccurs="0" />
+              <xs:element name="CreateDate" type="xs:string" minOccurs="0" />
+              <xs:element name="LatelyDayD" type="xs:string" minOccurs="0" />
+              <xs:element name="LatelyDayP" type="xs:string" minOccurs="0" />
+              <xs:element name="LatelyDayW" type="xs:string" minOccurs="0" />
+              <xs:element name="LatelyDayN" type="xs:string" minOccurs="0" />
+              <xs:element name="DealNotesP" type="xs:string" minOccurs="0" />
+              <xs:element name="DealNotesW" type="xs:string" minOccurs="0" />
+              <xs:element name="DealNotesN" type="xs:string" minOccurs="0" />
+              <xs:element name="PayNotes" type="xs:string" minOccurs="0" />
+              <xs:element name="LetterType" type="xs:string" minOccurs="0" />
+              <xs:element name="LastUpdateBy" type="xs:string" minOccurs="0" />
+              <xs:element name="LastUpdateDate" type="xs:string" minOccurs="0" />
+              <xs:element name="IsPublicView" type="xs:string" minOccurs="0" />
+              <xs:element name="IsAcceptePaper" type="xs:string" minOccurs="0" />
+              <xs:element name="NotAcceptPaper" type="xs:string" minOccurs="0" />
+              <xs:element name="IsAddLine" type="xs:string" minOccurs="0" />
+              <xs:element name="PostType" type="xs:string" minOccurs="0" />
+              <xs:element name="IsChangeBank" type="xs:string" minOccurs="0" />
+              <xs:element name="UserID" type="xs:string" minOccurs="0" />
+              <xs:element name="HrBankURL" type="xs:string" minOccurs="0" />
+              <xs:element name="PostedDate" type="xs:string" minOccurs="0" />
+              <xs:element name="PostedMan" type="xs:string" minOccurs="0" />
+              <xs:element name="DevelopDescr" type="xs:string" minOccurs="0" />
+              <xs:element name="PostSourceID" type="xs:string" minOccurs="0" />
+              <xs:element name="IndustryID" type="xs:string" minOccurs="0" />
+              <xs:element name="IndustryType" type="xs:string" minOccurs="0" />
+              <xs:element name="iPeopleCount" type="xs:string" minOccurs="0" />
+              <xs:element name="ERPCustomerID" type="xs:string" minOccurs="0" />
+              <xs:element name="OfficeNo" type="xs:string" minOccurs="0" />
+              <xs:element name="iPeopleFCount" type="xs:string" minOccurs="0" />
+              <xs:element name="JobWeekendNo" type="xs:string" minOccurs="0" />
+              <xs:element name="bElecInvoice" type="xs:string" minOccurs="0" />
+              <xs:element name="ElecInvoiceReason" type="xs:string" minOccurs="0" />
+              <xs:element name="ForeignCompany" type="xs:string" minOccurs="0" />
+              <xs:element name="ForeignDorm" type="xs:string" minOccurs="0" />
+              <xs:element name="SALESIDName" type="xs:string" minOccurs="0" />
+              <xs:element name="IndustryTypeIDName" type="xs:string" minOccurs="0" />
+              <xs:element name="CustCityNOName" type="xs:string" minOccurs="0" />
+              <xs:element name="CustRegionName" type="xs:string" minOccurs="0" />
+              <xs:element name="CustDeptIDName" type="xs:string" minOccurs="0" />
+              <xs:element name="CustAreaIDName" type="xs:string" minOccurs="0" />
+              <xs:element name="ContactAJobIDName" type="xs:string" minOccurs="0" />
+              <xs:element name="ContactBJobIDName" type="xs:string" minOccurs="0" />
+              <xs:element name="PostTypeName" type="xs:string" minOccurs="0" />
+              <xs:element name="PMIDName" type="xs:string" minOccurs="0" />
+              <xs:element name="IndustryIDName" type="xs:string" minOccurs="0" />
+              <xs:element name="IndustryTypeName" type="xs:string" minOccurs="0" />
+              <xs:element name="IsAcceptePaperName" type="xs:string" minOccurs="0" />
+              <xs:element name="DealDays" type="xs:string" minOccurs="0" />
+              <xs:element name="NextCallDate" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="Media_Report_Envelope">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="CustNO" type="xs:string" minOccurs="0" />
+              <xs:element name="CustName" type="xs:string" minOccurs="0" />
+              <xs:element name="CustPost" type="xs:string" minOccurs="0" />
+              <xs:element name="CustAddr" type="xs:string" minOccurs="0" />
+              <xs:element name="ContactA" type="xs:string" minOccurs="0" />
+              <xs:element name="LetterTypeName" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="Media_Report_BulkRegisteredMail">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="CustShortName" type="xs:string" minOccurs="0" />
+              <xs:element name="CustAddr" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="Media_Report_Envelope_VisitRecord">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="CustNO" type="xs:string" minOccurs="0" />
+              <xs:element name="CustName" type="xs:string" minOccurs="0" />
+              <xs:element name="CustAddr" type="xs:string" minOccurs="0" />
+              <xs:element name="CustTelNO" type="xs:string" minOccurs="0" />
+              <xs:element name="IndustryID" type="xs:string" minOccurs="0" />
+              <xs:element name="jb_name" type="xs:string" minOccurs="0" />
+              <xs:element name="IndustryType" type="xs:string" minOccurs="0" />
+              <xs:element name="IndustryName" type="xs:string" minOccurs="0" />
+              <xs:element name="ContactA" type="xs:string" minOccurs="0" />
+              <xs:element name="ContactAMail" type="xs:string" minOccurs="0" />
+              <xs:element name="ContactAJobID" type="xs:string" minOccurs="0" />
+              <xs:element name="ContactASubTel" type="xs:string" minOccurs="0" />
+              <xs:element name="CustJobName" type="xs:string" minOccurs="0" />
+              <xs:element name="ContactB" type="xs:string" minOccurs="0" />
+              <xs:element name="ContactBMail" type="xs:string" minOccurs="0" />
+              <xs:element name="ContactBJobID" type="xs:string" minOccurs="0" />
+              <xs:element name="ContactBSubTel" type="xs:string" minOccurs="0" />
+              <xs:element name="CustJobNameB" type="xs:string" minOccurs="0" />
+              <xs:element name="iPeopleCount" type="xs:string" minOccurs="0" />
+              <xs:element name="iPeopleFCount" type="xs:string" minOccurs="0" />
+              <xs:element name="LatelyDayP" type="xs:string" minOccurs="0" />
+              <xs:element name="LatelyDayW" type="xs:string" minOccurs="0" />
+              <xs:element name="LatelyDayN" type="xs:string" minOccurs="0" />
+              <xs:element name="fs" type="xs:string" minOccurs="0" />
+              <xs:element name="ts" type="xs:string" minOccurs="0" />
+              <xs:element name="is" type="xs:string" minOccurs="0" />
+              <xs:element name="vs" type="xs:string" minOccurs="0" />
+              <xs:element name="SalesName" type="xs:string" minOccurs="0" />
+              <xs:element name="Notes" type="xs:string" minOccurs="0" />
+              <xs:element name="ncounts" type="xs:string" minOccurs="0" />
+              <xs:element name="ForeignCompany" type="xs:string" minOccurs="0" />
+              <xs:element name="ForeignDorm" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="Media_Report_Envelope_VisitCustList">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="CustNO" type="xs:string" minOccurs="0" />
+              <xs:element name="CustName" type="xs:string" minOccurs="0" />
+              <xs:element name="CustFaxNO" type="xs:string" minOccurs="0" />
+              <xs:element name="ContactA" type="xs:string" minOccurs="0" />
+              <xs:element name="CustJobName" type="xs:string" minOccurs="0" />
+              <xs:element name="ContactAMail" type="xs:string" minOccurs="0" />
+              <xs:element name="LatelyDayP" type="xs:string" minOccurs="0" />
+              <xs:element name="LatelyDayN" type="xs:string" minOccurs="0" />
+              <xs:element name="CustAddr" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

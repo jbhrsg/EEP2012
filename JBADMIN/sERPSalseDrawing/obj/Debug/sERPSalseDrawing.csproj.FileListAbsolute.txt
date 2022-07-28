@@ -1,0 +1,15 @@
+D:\Infolight\EEP2012\JBADMIN\sERPSalseDrawing\bin\Debug\sERPSalseDrawing.dll
+D:\Infolight\EEP2012\JBADMIN\sERPSalseDrawing\bin\Debug\sERPSalseDrawing.pdb
+D:\Infolight\EEP2012\JBADMIN\sERPSalseDrawing\obj\Debug\sERPSalseDrawing.csprojResolveAssemblyReference.cache
+D:\Infolight\EEP2012\JBADMIN\sERPSalseDrawing\obj\Debug\sERPSalseDrawing.csproj.GenerateResource.Cache
+D:\Infolight\EEP2012\JBADMIN\sERPSalseDrawing\obj\Debug\sERPSalseDrawing.dll
+D:\Infolight\EEP2012\JBADMIN\sERPSalseDrawing\obj\Debug\sERPSalseDrawing.pdb
+D:\Infolight\EEP2012\EEPNetServer\JBADMIN\sERPSalseDrawing.dll
+D:\Infolight\EEP2012\EEPNetServer\JBADMIN\sERPSalseDrawing.pdb
+D:\Infolight\EEP2012\JBADMIN\sERPSalseDrawing\obj\Debug\sERPSalseDrawing.Component.resources
+C:\Program Files (x86)\Infolight\EEP2012\EEPNetServer\JBADMIN\sERPSalseDrawing.dll
+C:\Program Files (x86)\Infolight\EEP2012\EEPNetServer\JBADMIN\sERPSalseDrawing.pdb
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sERPSalseDrawing\obj\Debug\sERPSalseDrawing.Component.resources
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sERPSalseDrawing\obj\Debug\sERPSalseDrawing.csproj.GenerateResource.Cache
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sERPSalseDrawing\obj\Debug\sERPSalseDrawing.dll
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sERPSalseDrawing\obj\Debug\sERPSalseDrawing.pdb

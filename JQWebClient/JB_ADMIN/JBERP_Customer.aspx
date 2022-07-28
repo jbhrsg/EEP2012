@@ -110,7 +110,7 @@
             //媒體代辦事項傳入客戶代號
             var parameter = Request.getQueryStringByName("CustID");
             if (parameter != "") {
-                $("#CustTelNO_Query").combobox('setValue', parameter);
+                $("#CustNO_Query").combobox('setValue', parameter);
                 queryGrid('#dataGridView');
             }
             //當實際覆訪日選取時
@@ -325,16 +325,16 @@
         function dataFormMasterOnApplied() {
             var CustNO = $("#dataFormMasterCustNO").val();
             if (getEditMode($("#dataFormMaster")) == 'inserted') {
-                $("#CustTelNO_Query").combobox('setValue', CustNO);
+                $("#CustNO_Query").combobox('setValue', CustNO);
                                 $("#CustShortName_Query").val('');
                                 $("#SalesID_Query").combobox('setValue', '');
                                 $("#DealDays_Query").val('');
                                 queryGrid($('#dataGridView'));
                                 $('#dataGridView').datagrid('reload');
             }
-            //if (getEditMode($("#dataFormMaster")) == 'updated') {
-            //    openForm('#JQDialog1', $('#dataGridView').datagrid('getSelected'), "updated", 'dialog');
-            //}
+            if (getEditMode($("#dataFormMaster")) == 'updated') {
+                openForm('#JQDialog1', $('#dataGridView').datagrid('getSelected'), "updated", 'dialog');
+            }
         }
         //客戶刪除檢查
         function dataGridViewOnDelete(data) {
@@ -342,8 +342,8 @@
                 var cnt;
                 $.ajax({
                     type: "POST",
-                    url: '../handler/jqDataHandle.ashx?RemoteName=sERPCustomer.ERPCustomers', 
-                    data: "mode=method&method=" + "CheckDelCustNO" + "&parameters=" + CustNO, 
+                    url: '../handler/jqDataHandle.ashx?RemoteName=sERPCustomer.ERPCustomers', //連接的Server端，command
+                    data: "mode=method&method=" + "CheckDelCustNO" + "&parameters=" + CustNO, //method后的參數為server的Method名稱  parameters后為端的到后端的參數這裡傳入選中資料的CustomerID欄位
                     cache: false,
                     async: false,
                     success: function (data) {
@@ -576,7 +576,7 @@
             <JQTools:JQScriptManager ID="JQScriptManager1" runat="server" />
             <JQTools:JQDataGrid ID="dataGridView" data-options="pagination:true,view:commandview" RemoteName="sERPCustomer.ERPCustomers" runat="server" AutoApply="True"
                 DataMember="ERPCustomers" Pagination="True" QueryTitle="客戶篩選" EditDialogID="JQDialog1"
-                Title="客戶維護" AllowAdd="True" AllowDelete="True" AllowUpdate="True" AlwaysClose="True" CheckOnSelect="True" ColumnsHibeable="False" DeleteCommandVisible="True" DuplicateCheck="False" EditMode="Dialog" EditOnEnter="True" InsertCommandVisible="True" MultiSelect="False" PageList="10,20,30,40,50" PageSize="10" QueryAutoColumn="False" QueryLeft="" QueryMode="Panel" QueryTop="" RecordLock="False" RecordLockMode="None" TotalCaption="Total:" UpdateCommandVisible="True" ViewCommandVisible="True" ParentObjectID="" OnSelect="SetWherePayKind" OnDelete="dataGridViewOnDelete" OnLoadSuccess="dataGridViewLoadSucess" BufferView="False" NotInitGrid="False" RowNumbers="True">
+                Title="客戶維護" AllowAdd="True" AllowDelete="True" AllowUpdate="True" AlwaysClose="True" CheckOnSelect="True" ColumnsHibeable="False" DeleteCommandVisible="True" DuplicateCheck="False" EditMode="Dialog" EditOnEnter="True" InsertCommandVisible="True" MultiSelect="False" PageList="10,20,30,40,50" PageSize="10" QueryAutoColumn="False" QueryLeft="" QueryMode="Panel" QueryTop="" RecordLock="False" RecordLockMode="None" TotalCaption="Total:" UpdateCommandVisible="True" ViewCommandVisible="False" ParentObjectID="" OnSelect="SetWherePayKind" OnDelete="dataGridViewOnDelete" OnLoadSuccess="dataGridViewLoadSucess" BufferView="False" NotInitGrid="False" RowNumbers="True">
                 <Columns>
                     <JQTools:JQGridColumn Alignment="left" Caption="客戶代號" Editor="text" FieldName="CustNO" Format="" MaxLength="0" Width="80" Frozen="True" />
                     <JQTools:JQGridColumn Alignment="left" Caption="客戶簡稱" Editor="text" FieldName="CustShortName" Format="" MaxLength="0" Width="100" Frozen="True" />

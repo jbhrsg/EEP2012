@@ -1,0 +1,2 @@
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sPO_Normal_Requisition\bin\Debug\sPO_Normal_Requisition.dll
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sPO_Normal_Requisition\bin\Debug\sPO_Normal_Requisition.pdb

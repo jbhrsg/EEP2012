@@ -1,0 +1,7 @@
+D:\Infolight\EEP2012\JBADMIN\sEstimateProfit\obj\Debug\sEstimateProfit.csprojResolveAssemblyReference.cache
+D:\Infolight\EEP2012\JBADMIN\sEstimateProfit\obj\Debug\sEstimateProfit.Component.resources
+D:\Infolight\EEP2012\JBADMIN\sEstimateProfit\obj\Debug\sEstimateProfit.csproj.GenerateResource.Cache
+D:\Infolight\EEP2012\EEPNetServer\JBADMIN\sEstimateProfit.dll
+D:\Infolight\EEP2012\EEPNetServer\JBADMIN\sEstimateProfit.pdb
+D:\Infolight\EEP2012\JBADMIN\sEstimateProfit\obj\Debug\sEstimateProfit.dll
+D:\Infolight\EEP2012\JBADMIN\sEstimateProfit\obj\Debug\sEstimateProfit.pdb

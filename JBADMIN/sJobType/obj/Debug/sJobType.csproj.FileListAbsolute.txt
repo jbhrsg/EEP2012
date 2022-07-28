@@ -1,13 +1,19 @@
-C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sJobType\bin\Debug\sJobType.dll
-C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sJobType\bin\Debug\sJobType.pdb
-C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sJobType\obj\Debug\sJobType.csproj.GenerateResource.Cache
-C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sJobType\obj\Debug\sJobType.dll
-C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sJobType\obj\Debug\sJobType.pdb
-C:\Program Files (x86)\Infolight\EEP2012\EEPNetServer\JBADMIN\sJobType.dll
-C:\Program Files (x86)\Infolight\EEP2012\EEPNetServer\JBADMIN\sJobType.pdb
-C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sJobType\obj\Debug\sJobType.Component.resources
-C:\Program Files (x86)\Infolight\EEP2012\EEPNetServer\JBADMIN\sJobType.dll.config
-D:\Infolight\EEP2012\EEPNetServer\JBADMIN\sJobType.dll.config
+C:\Program Files (x86)\Infolight\EEP2012\JBHunter\sJobType\bin\Debug\sJobType.dll
+C:\Program Files (x86)\Infolight\EEP2012\JBHunter\sJobType\bin\Debug\sJobType.pdb
+C:\Program Files (x86)\Infolight\EEP2012\JBHunter\sJobType\obj\Debug\sJobType.csprojResolveAssemblyReference.cache
+C:\Program Files (x86)\Infolight\EEP2012\JBHunter\sJobType\obj\Debug\sJobType.csproj.GenerateResource.Cache
+C:\Program Files (x86)\Infolight\EEP2012\JBHunter\sJobType\obj\Debug\sJobType.dll
+C:\Program Files (x86)\Infolight\EEP2012\JBHunter\sJobType\obj\Debug\sJobType.pdb
+C:\Program Files (x86)\Infolight\EEP2012\EEPNetServer\JBHunter\sJobType.dll
+C:\Program Files (x86)\Infolight\EEP2012\EEPNetServer\JBHunter\sJobType.pdb
+C:\Program Files (x86)\Infolight\EEP2012\JBHunter\sJobType\obj\Debug\sJobType.Component.resources
+D:\Infolight\EEP2012\EEPNetServer\JBHunter\sJobType.dll
+D:\Infolight\EEP2012\EEPNetServer\JBHunter\sJobType.pdb
+D:\Infolight\EEP2012\JBHunter\sJobType\obj\Debug\sJobType.Component.resources
+D:\Infolight\EEP2012\JBHunter\sJobType\obj\Debug\sJobType.csproj.GenerateResource.Cache
+D:\Infolight\EEP2012\JBHunter\sJobType\obj\Debug\sJobType.dll
+D:\Infolight\EEP2012\JBHunter\sJobType\obj\Debug\sJobType.pdb
+D:\Infolight\EEP2012\JBHunter\sJobType\obj\Debug\sJobType.csprojResolveAssemblyReference.cache
 D:\Infolight\EEP2012\EEPNetServer\JBADMIN\sJobType.dll
 D:\Infolight\EEP2012\EEPNetServer\JBADMIN\sJobType.pdb
 D:\Infolight\EEP2012\JBADMIN\sJobType\obj\Debug\sJobType.csprojResolveAssemblyReference.cache
@@ -15,4 +21,3 @@ D:\Infolight\EEP2012\JBADMIN\sJobType\obj\Debug\sJobType.Component.resources
 D:\Infolight\EEP2012\JBADMIN\sJobType\obj\Debug\sJobType.csproj.GenerateResource.Cache
 D:\Infolight\EEP2012\JBADMIN\sJobType\obj\Debug\sJobType.dll
 D:\Infolight\EEP2012\JBADMIN\sJobType\obj\Debug\sJobType.pdb
-C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sJobType\obj\Debug\sJobType.csprojResolveAssemblyReference.cache

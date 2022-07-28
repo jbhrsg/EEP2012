@@ -1,0 +1,11 @@
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sForm_ISODocumentQuery\bin\Debug\sForm_ISODocumentQuery.dll
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sForm_ISODocumentQuery\bin\Debug\sForm_ISODocumentQuery.pdb
+C:\Program Files (x86)\Infolight\EEP2012\EEPNetServer\JBADMIN\sForm_ISODocumentQuery.dll
+C:\Program Files (x86)\Infolight\EEP2012\EEPNetServer\JBADMIN\sForm_ISODocumentQuery.pdb
+C:\Program Files (x86)\Infolight\EEP2012\EEPNetServer\JBADMIN\vi-VN\sForm_ISODocumentQuery.resources.dll
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sForm_ISODocumentQuery\obj\Debug\sForm_ISODocumentQuery.Component.resources
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sForm_ISODocumentQuery\obj\Debug\sForm_ISODocumentQuery.Component.vi-VN.resources
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sForm_ISODocumentQuery\obj\Debug\sForm_ISODocumentQuery.csproj.GenerateResource.Cache
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sForm_ISODocumentQuery\obj\Debug\vi-VN\sForm_ISODocumentQuery.resources.dll
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sForm_ISODocumentQuery\obj\Debug\sForm_ISODocumentQuery.dll
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sForm_ISODocumentQuery\obj\Debug\sForm_ISODocumentQuery.pdb

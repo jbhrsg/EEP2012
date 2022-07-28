@@ -17,32 +17,56 @@
             $("input, select, textarea").blur(function () {
                 $(this).css("background-color", "white");
             });
+
+            ////取得流程狀態=>控制顯示項目
+            parameter = Request.getQueryStringByName("D");
+
+            if (parameter == "")//經辦事項,查看已結案資料 => 設定一種模式可查看全部東西
+            {
+                parameter = "ConfirmDate";
+            }
+
+            //--------------------------------------★Need Update-----------------------------------------------
+            //parameter = "Select";//Need Update
+            //----------------------------------------------------------------------------------------------------
+
+
+            //國外組入境輸入Confirm => 把 預定入境日 帶入 最後入境日
+            if (parameter == "Confirm") {
+                $('#dataFormIndateCheckPlanIndate').datebox({
+                    onSelect: function (date) {
+                        SetPlanIndate();
+                    }
+                }).combo('textbox').blur(function () {
+                    SetPlanIndate();                   
+                });
+            }
+
         })
+        //國外組入境輸入Confirm => 把 預定入境日 帶入 最後入境日
+        function SetPlanIndate() {
+            var dt = $("#dataFormIndateCheckPlanIndate").datebox('getValue');
+            var D= new Date(dt);
+            $("#dataFormIndateCheckPlanIndate2").datebox('setValue', $.jbjob.Date.DateFormat(D, 'yyyy/MM/dd'));
+        }
+        
         //--------------------------------------★外籍勞工訂單 Order-----------------------------------------------
         function OnLoadSuccessOrders() {
             //預設不顯示-------------------------------------------------
-            //挑工進度維護
-            $("#linkStickStatus").hide();                     
+                           
             //結案日期
             $('#dataFormOrdersCloseDate').closest('td').prev('td').hide();
             $('#dataFormOrdersCloseDate').closest('td').hide();
             //結案原因
             $('#dataFormOrdersCloseType').closest('td').prev('td').hide();
             $('#dataFormOrdersCloseType').closest('td').hide();
-
-            ////取得流程狀態=>控制顯示項目
-            parameter = Request.getQueryStringByName("D");
-
-            //--------------------------------------★Need Update-----------------------------------------------
-            //parameter = "Select";//Need Update
-            //----------------------------------------------------------------------------------------------------
-
-            //國外組挑工
-            if (parameter == "Select" || parameter == "Close") {
+            
+            //國外組挑工=> 顯示聘工表的修改紀錄=>圖片+tooltip
+            //if (parameter = "Select" || parameter == "Close") {
                 OPWorkNoLogs();
-            }
+            //}
 
-            //業務結案確認 --> 顯示結案日期 結案原因 ,其他不可編輯
+            //業務結parameter案確認 --> 顯示結案日期 結案原因 ,其他不可編輯
             if (parameter == "Close") {
                 //顯示
                 $('#dataFormOrdersCloseDate').closest('td').prev('td').show();
@@ -52,7 +76,24 @@
                 $('#dataFormOrdersCloseType').closest('td').prev('td').show();
                 $('#dataFormOrdersCloseType').closest('td').show();
                 $("#dataFormOrdersCloseType").closest('td').prev('td').css("color", "red");
+                //國外仲介不可選取
+                $("#dataFormOrderssup_no").refval("disable");
 
+            }
+            if (parameter == "Confirm") {
+                //國外仲介不可選取
+                $("#dataFormOrderssup_no").refval("disable");
+            }
+            //訂單類型控制=>續聘文件
+            var value = $('#dataFormOrdersOrderType').options('getCheckedValue');
+            if (value != 4) {
+                //隱藏
+                $('#dataFormOrdersContinueFile').closest('td').prev('td').hide();
+                $('#dataFormOrdersContinueFile').closest('td').hide();
+            } else {
+                //顯示
+                $('#dataFormOrdersContinueFile').closest('td').prev('td').show();
+                $('#dataFormOrdersContinueFile').closest('td').show();
             }
                      
         }
@@ -64,11 +105,10 @@
             }
         }
 
-        ////國外組挑工=>1. 顯示挑工進度維護,2. 顯示聘工表的修改紀錄=>圖片+tooltip
+        ////國外組挑工=> 顯示聘工表的修改紀錄=>圖片+tooltip
         function OPWorkNoLogs() {
-            //1. 顯示挑工進度維護 select挑工狀態=>可編輯 , Close 結案狀態可觀看
-            $("#linkStickStatus").show();
-            //2. 顯示聘工表的修改紀錄=>圖片+tooltip            
+
+            //顯示聘工表的修改紀錄=>圖片+tooltip            
             var WorkNoLogsLink = '<a href="javascript:void(0)" onclick="OpenWorkNoLogs.call(this)" ><img src="../img/msalert.gif" title="聘工表修改紀錄"></a>';
 
             var tdWorkImg = $('#dataFormOrdersWorkImg').closest('td');
@@ -99,12 +139,16 @@
                 return "簽核中";
             }
         }
-        
+        //Grid聘工表下載檔案 
+        //欄值,row,index
+        function WorkNoLogsFileScript(val, rowData, index) {
+            return '<a href="../handler/JqFileHandler.ashx?File=/FWCRM/Orders/' + val + '">' + val + '</a>';
+        }
         //-----------------------------------★訂單明細dataGridDetail--------------------------------------------------------------------- 
 
-        //訂單GridDetail目前人數Link => 入境確認輸入Confirm(可編輯) & 結案狀態Close(可觀看) 時才有連結
+        //訂單GridDetail目前人數Link => 國外組入境輸入Confirm or 業務輸入預定日InputDate or 國外組日期確認ConfirmDate or  結案狀態Close(可觀看) 時才有連結
         function PersonQtyFinalLink(value, row, index) {
-            if (row.Gender != undefined && (parameter == "Confirm" || parameter == "Close"))//表示最後一筆加總的row && 入境確認輸入時
+            if (row.Gender != undefined && (parameter == "Confirm" || parameter == "InputDate" || parameter == "ConfirmDate" || parameter == "Close"))//表示最後一筆加總的row && 入境確認輸入時
                 return "<a href='javascript: void(0)' onclick='LinkIndateCheck(" + index + ");'> <div style='color:Red;font-weight:bolder;font-size: 16px'>" + value + "</div></a>";
             else return value;
         }
@@ -113,26 +157,37 @@
         // open入境確認單畫面 dialog
         function LinkIndateCheck(index, iType) {
             $("#dataGridDetail").datagrid('selectRow', index); //按連結時返回Grid焦點  
-            if (parameter == "Confirm") {//入境確認輸入Confirm(可編輯) 
+
+            //國外組入境輸入Confirm or 業務輸入預定日InputDate or 國外組日期確認ConfirmDate
+            if (parameter == "Confirm" || parameter == "InputDate" || parameter == "ConfirmDate") {
                 openForm('#Dialog_IndateCheck', $('#dataGridDetail').datagrid('getSelected'), "updated", 'dialog');
             } else openForm('#Dialog_IndateCheck', $('#dataGridDetail').datagrid('getSelected'), "viewed", 'dialog');//結案狀態Close(可觀看)
+        }
+        //入境確認維護Grid
+        function OnLoadSuccessDGIndateCheck() {
+            //入境確認輸入=>隱藏 最後入境日
+            if (parameter == "Confirm") {
+                $("#dataGrid_IndateCheck").datagrid('hideColumn', 'PlanIndate2');
+            }
+            //業務輸入預定日InputDate
+            if (parameter == "InputDate") {
+                //入境單號碼不可選取
+                $("#dataFormIndateCheckIndateNo").combobox("disable");
+                //人數不可key
+                $("#dataFormIndateCheckPersonQty").attr("disabled", "disabled");
+                //入境單檔案不可傳                
+                $("#infoFileUploaddataFormIndateCheckIndateImg").attr("disabled", "disabled");
+                //預定入境日不可選取
+                $("#dataFormIndateCheckPlanIndate").combobox("disable");
+            }            
         }
         //過濾入境確認維護Grid setWhere
         function OnLoadSuccessDFIndateCheck() {           
             var OrderNo = $("#dataFormDetailOrderNo").val();//訂單編號
             var Item = $("#dataFormDetailItem").val();//批次
-            $("#dataGrid_IndateCheck").datagrid('setWhere', "OrderNo = '" + OrderNo + "' and Item=" + Item);           
-        }        
-        
-      
-        //上傳檔案處理
-        var dataFormIndateImg_onSuccess = function (data) {
-            dataFormIndateImg_onSuccess.call($(infoFileUploaddataFormOrdersWorkImg));
+            $("#dataGrid_IndateCheck").datagrid('setWhere', "OrderNo = '" + OrderNo + "' and Item=" + Item);
+            
         }
-        var dataFormIndateImg_onSuccess = function (data) {
-            $(this).jbFileUploadWithPhoto();
-        }
-
         //入境單號碼過濾 =>combobx 的 onBeforeLoad 
         function OnBeforeLoadIndateNo(param) {
             var queryWord = new Object();
@@ -145,8 +200,46 @@
         function OnLoadSuccessIndateCheck() {
             var OrderNo = $("#dataFormDetailOrderNo").val();//訂單編號
             $('#dataFormIndateCheckIndateNo').combobox('setWhere', "OrderNo ='" + OrderNo + "'")
+
+            //入境確認輸入=>最後入境日隱藏
+            if (parameter == "Confirm") {
+                $("#dataFormIndateCheckPlanIndate2").closest('td').prev('td').hide();
+                $("#dataFormIndateCheckPlanIndate2").closest('td').hide();
+            }
         }
-      
+        //----------------------------------------------------------
+        //入境確認維護Grid Command Control
+        function OnDeleteIndateCheck() {//刪除
+            //業務輸入預定日InputDate,國外組日期確認ConfirmDate
+            if (parameter == "InputDate" || parameter == "ConfirmDate") {
+                alert('不可刪除！')
+                return false;
+            }
+        }
+        function OnInsertIndateCheck() {//新增
+            //業務輸入預定日InputDate,國外組日期確認ConfirmDate
+            if (parameter == "InputDate" || parameter == "ConfirmDate") {
+                alert('不可新增！')
+                return false;
+            }
+        }
+        function OnUpdateIndateCheck() {//修改
+            //國外組日期確認ConfirmDate
+            if (parameter == "ConfirmDate") {
+                alert('不可修改！')
+                return false;
+            }
+        }
+        //--------------------------------------------------------
+        //上傳檔案處理
+        var dataFormIndateImg_onSuccess = function (data) {
+            dataFormIndateImg_onSuccess.call($(infoFileUploaddataFormOrdersWorkImg));
+        }
+        var dataFormIndateImg_onSuccess = function (data) {
+            $(this).jbFileUploadWithPhoto();
+        }
+
+              
         //Grid下載檔案 
         //欄值,row,index
         function downloadScript(val, rowData, index) {
@@ -184,6 +277,7 @@
             } else $('#dataGrid_IndateCheck').datagrid("reload");
             
         }
+
         //-----------------------------------★主檔存檔前檢查 dataFormOrders---------------------------------------------------------------------             
         function checkApplyData() {
 
@@ -277,15 +371,20 @@
                     <Columns>
                         <JQTools:JQFormColumn Alignment="left" Caption="訂單編號" Editor="text" FieldName="OrderNo" Format="" Width="120" ReadOnly="True" NewRow="False" Visible="True" MaxLength="0" Span="1" />
                         <JQTools:JQFormColumn Alignment="left" Caption="來源訂單" Editor="text" FieldName="FromOrderNo" Format="" Width="120" EditorOptions="" NewRow="False" ReadOnly="True" Visible="False" MaxLength="0" />
-                        <JQTools:JQFormColumn Alignment="left" Caption="訂單類型" Editor="infooptions" EditorOptions="title:'JQOptions',panelWidth:190,remoteName:'',tableName:'',valueField:'',textField:'',columnCount:3,multiSelect:false,openDialog:false,selectAll:false,selectOnly:false,items:[{text:'入境',value:'1'},{text:'承接',value:'2'},{text:'轉單',value:'3'}]" FieldName="OrderType" NewRow="True" ReadOnly="True" Visible="True" Width="220" />
+                        <JQTools:JQFormColumn Alignment="left" Caption="訂單類型" Editor="infooptions" EditorOptions="title:'JQOptions',panelWidth:310,remoteName:'',tableName:'',valueField:'',textField:'',columnCount:5,multiSelect:false,openDialog:false,selectAll:false,selectOnly:false,items:[{text:'入境',value:'1'},{text:'承接',value:'2'},{text:'轉單',value:'3'},{text:'轉單續聘',value:'4'},{text:'代招',value:'5'}]" FieldName="OrderType" NewRow="True" ReadOnly="True" Visible="True" Width="220" />
                         <JQTools:JQFormColumn Alignment="left" Caption="負責業務" Editor="text" FieldName="NAME_C" Width="80" ReadOnly="True" NewRow="False" MaxLength="0" />
+                        <JQTools:JQFormColumn Alignment="left" Caption="訂單狀態" Editor="infooptions" EditorOptions="title:'JQOptions',panelWidth:270,remoteName:'sFWCRMOrders.infoOrderStatus',tableName:'infoOrderStatus',valueField:'ID',textField:'Name',columnCount:3,multiSelect:false,openDialog:false,selectAll:false,selectOnly:false,items:[]" FieldName="OrderStatus" MaxLength="0" NewRow="False" ReadOnly="False" RowSpan="1" Span="2" Visible="True" Width="150" />
                         <JQTools:JQFormColumn Alignment="left" Caption="雇主名稱" Editor="infocombobox" FieldName="EmployerID" Format="" Width="180" EditorOptions="valueField:'EmployerID',textField:'EmployerName',remoteName:'sFWCRMOrders.infoEmployerID',tableName:'infoEmployerID',pageSize:'-1',checkData:false,selectOnly:false,cacheRelationText:false,panelHeight:200" ReadOnly="True" MaxLength="0" NewRow="True" RowSpan="1" Span="1" Visible="True" />
                         <JQTools:JQFormColumn Alignment="left" Caption="聘工表號碼" Editor="text" EditorOptions="" FieldName="WorkNo" Format="" MaxLength="0" NewRow="False" ReadOnly="True" Visible="True" Width="120" />
                         <JQTools:JQFormColumn Alignment="left" Caption="引進國別" Editor="infocombobox" EditorOptions="valueField:'AutoKey',textField:'NationalityName',remoteName:'sFWCRMOrders.infoFWCRMNationality',tableName:'infoFWCRMNationality',pageSize:'-1',checkData:false,selectOnly:false,cacheRelationText:false,panelHeight:200" FieldName="NationalityID" Format="" MaxLength="0" NewRow="True" ReadOnly="True" Visible="True" Width="180" RowSpan="1" Span="1" />
                         <JQTools:JQFormColumn Alignment="left" Caption="聘工表檔案" Editor="text" FieldName="WorkImg" MaxLength="100" Width="190" EditorOptions="" NewRow="False" Format="download,folder:Files/FWCRM/Orders" ReadOnly="False" />
+                        <JQTools:JQFormColumn Alignment="left" Caption="續聘文件" Editor="text" FieldName="ContinueFile" MaxLength="100" Width="190" EditorOptions="" NewRow="False" Visible="True" Format="download,folder:Files/FWCRM/Orders" ReadOnly="False" RowSpan="1" Span="1" />
+                        <JQTools:JQFormColumn Alignment="left" Caption="是否駐廠" Editor="checkbox" EditorOptions="on:1,off:0" FieldName="IsOnSite" MaxLength="0" NewRow="True" ReadOnly="True" RowSpan="1" Span="1" Visible="True" Width="80" />
+                        <JQTools:JQFormColumn Alignment="left" Caption="駐廠天數" Editor="numberbox" FieldName="OnSiteDays" MaxLength="0" NewRow="False" ReadOnly="True" RowSpan="1" Span="1" Visible="True" Width="60" />
                         <JQTools:JQFormColumn Alignment="left" Caption="CreateBy" Editor="text" FieldName="CreateBy" Format="" MaxLength="0" NewRow="True" ReadOnly="False" RowSpan="1" Span="1" Visible="False" Width="180" />
                         <JQTools:JQFormColumn Alignment="left" Caption="CreateDate" Editor="datebox" FieldName="CreateDate" Format="" Width="180" NewRow="False" Visible="False" MaxLength="0" ReadOnly="False" RowSpan="1" Span="1" />
-                        <JQTools:JQFormColumn Alignment="left" Caption="國外仲介" Editor="inforefval" FieldName="sup_no" Width="350" Visible="True" MaxLength="0" NewRow="False" ReadOnly="True" RowSpan="1" Span="2" EditorOptions="title:'選擇國外仲介',panelWidth:450,panelHeight:290,remoteName:'sFWCRMOrders.infosup',tableName:'infosup',columns:[{field:'sup_cname',title:'仲介名稱',width:420,align:'left',table:'',isNvarChar:false,queryCondition:''},{field:'sup_no',title:'仲介代號',width:90,align:'center',table:'',isNvarChar:false,queryCondition:''}],columnMatches:[{field:'sup_cname',value:'sup_cname'}],whereItems:[],valueField:'sup_no',textField:'sup_cname',valueFieldCaption:'仲介代號',textFieldCaption:'仲介名稱',cacheRelationText:false,checkData:true,showValueAndText:false,dialogCenter:false,selectOnly:false,capsLock:'none',fixTextbox:'false'" />
+                        <JQTools:JQFormColumn Alignment="left" Caption="駐廠說明 " Editor="textarea" EditorOptions="height:50" FieldName="OnSiteDescribe" MaxLength="0" NewRow="False" ReadOnly="True" RowSpan="1" Span="2" Visible="True" Width="550" />
+                        <JQTools:JQFormColumn Alignment="left" Caption="國外仲介" Editor="inforefval" FieldName="sup_no" Width="350" Visible="True" MaxLength="0" NewRow="False" ReadOnly="False" RowSpan="1" Span="2" EditorOptions="title:'選擇國外仲介',panelWidth:450,panelHeight:290,remoteName:'sFWCRMOrders.infosup',tableName:'infosup',columns:[{field:'sup_cname',title:'仲介名稱',width:420,align:'left',table:'',isNvarChar:false,queryCondition:''},{field:'sup_no',title:'仲介代號',width:90,align:'center',table:'',isNvarChar:false,queryCondition:''}],columnMatches:[{field:'sup_cname',value:'sup_cname'}],whereItems:[],valueField:'sup_no',textField:'sup_cname',valueFieldCaption:'仲介代號',textFieldCaption:'仲介名稱',cacheRelationText:false,checkData:true,showValueAndText:false,dialogCenter:false,selectOnly:false,capsLock:'none',fixTextbox:'false'" />
                         <JQTools:JQFormColumn Alignment="left" Caption="sup_cname" Editor="text" FieldName="sup_cname" MaxLength="0" NewRow="False" ReadOnly="False" RowSpan="1" Span="1" Visible="False" Width="80" />
                         <JQTools:JQFormColumn Alignment="left" Caption="結案日期" Editor="datebox" FieldName="CloseDate" MaxLength="0" NewRow="True" ReadOnly="False" Width="90" RowSpan="1" Span="1" Visible="True" />
                         <JQTools:JQFormColumn Alignment="left" Caption="結案原因" Editor="infooptions" EditorOptions="title:'JQOptions',panelWidth:190,remoteName:'',tableName:'',valueField:'',textField:'',columnCount:2,multiSelect:false,openDialog:false,selectAll:false,selectOnly:false,items:[{text:'訂單作廢',value:'1'},{text:'不再引進',value:'2'}]" FieldName="CloseType" MaxLength="0" NewRow="False" ReadOnly="False" RowSpan="1" Span="1" Visible="True" Width="80" />
@@ -295,13 +394,13 @@
 
                     <Columns>
                         <JQTools:JQGridColumn Alignment="center" Caption="批次" Editor="text" FieldName="Item" Format="" Width="30" />
-                        <JQTools:JQGridColumn Alignment="left" Caption="預定年月" Editor="text" FieldName="PlanIndate" Format="" Width="56" />
+                        <JQTools:JQGridColumn Alignment="left" Caption="預計入境年月" Editor="text" FieldName="PlanIndate" Format="" Width="75" />
                         <JQTools:JQGridColumn Alignment="right" Caption="訂單人數" Editor="text" FieldName="PersonQtyOriginal" Format="" Width="56" Total="sum" />
                         <JQTools:JQGridColumn Alignment="right" Caption="目前人數" Editor="text" FieldName="PersonQtyFinal" Width="56" Total="sum" FormatScript="PersonQtyFinalLink" />
                         <JQTools:JQGridColumn Alignment="center" Caption="性別" Editor="infocombobox" FieldName="Gender" Format="" Width="38" EditorOptions="items:[{value:'1',text:'女',selected:'false'},{value:'2',text:'男',selected:'false'}],checkData:false,selectOnly:false,cacheRelationText:false,panelHeight:200" Visible="True" />
-                        <JQTools:JQGridColumn Alignment="left" Caption="函號" Editor="text" FieldName="org_okno" Format="" Width="83" Frozen="False" IsNvarChar="False" MaxLength="0" QueryCondition="" ReadOnly="False" Sortable="False" Visible="True" />
-                        <JQTools:JQGridColumn Alignment="left" Caption="工期" Editor="text" FieldName="WorkTimeText" Frozen="False" IsNvarChar="False" MaxLength="0" QueryCondition="" ReadOnly="False" Sortable="False" Visible="True" Width="65" />
-                        <JQTools:JQGridColumn Alignment="left" Caption="備註" Editor="text" FieldName="Notes" Format="" Width="151" />
+                        <JQTools:JQGridColumn Alignment="left" Caption="函號" Editor="text" FieldName="org_okno" Format="" Width="88" Frozen="False" IsNvarChar="False" MaxLength="0" QueryCondition="" ReadOnly="False" Sortable="False" Visible="True" />
+                        <JQTools:JQGridColumn Alignment="left" Caption="工期" Editor="text" FieldName="WorkTimeText" Frozen="False" IsNvarChar="False" MaxLength="0" QueryCondition="" ReadOnly="False" Sortable="False" Visible="True" Width="80" />
+                        <JQTools:JQGridColumn Alignment="left" Caption="備註" Editor="text" FieldName="Notes" Format="" Width="255" />
                         <JQTools:JQGridColumn Alignment="left" Caption="OrderNo" Editor="text" FieldName="OrderNo" Width="80" Frozen="False" IsNvarChar="False" MaxLength="0" QueryCondition="" ReadOnly="False" Sortable="False" Visible="False" />
                         <JQTools:JQGridColumn Alignment="left" Caption="CreateBy" Editor="text" FieldName="CreateBy" Visible="False" Width="80" />
                         <JQTools:JQGridColumn Alignment="left" Caption="CreateDate" Editor="text" FieldName="CreateDate" Frozen="False" IsNvarChar="False" MaxLength="0" QueryCondition="" ReadOnly="False" Sortable="False" Visible="False" Width="80">
@@ -323,13 +422,17 @@
                             <JQTools:JQRelationColumn FieldName="OrderNo" ParentFieldName="OrderNo" />
                         </RelationColumns>
                     </JQTools:JQDataForm>
-                    <JQTools:JQDataGrid ID="dataGrid_IndateCheck" runat="server" AllowAdd="True" AllowDelete="True" AllowUpdate="True" AlwaysClose="False" AutoApply="True" BufferView="False" CheckOnSelect="True" ColumnsHibeable="False" data-options="pagination:true,view:commandview" DataMember="FWCRMIndateCheck" DeleteCommandVisible="True" DuplicateCheck="False" EditDialogID="JQDialog4" EditMode="Dialog" EditOnEnter="True" InsertCommandVisible="True" MultiSelect="False" NotInitGrid="False" PageList="10,20,30,40,50" PageSize="10" Pagination="True" QueryAutoColumn="False" QueryLeft="" QueryMode="Window" QueryTitle="Query" QueryTop="" RecordLock="False" RecordLockMode="None" RemoteName="sFWCRMOrders.FWCRMIndateCheck" RowNumbers="True" Title="" TotalCaption="Total:" UpdateCommandVisible="True" ViewCommandVisible="False" ParentObjectID="">
+                    <JQTools:JQDataGrid ID="dataGrid_IndateCheck" runat="server" AllowAdd="True" AllowDelete="True" AllowUpdate="True" AlwaysClose="False" AutoApply="True" BufferView="False" CheckOnSelect="True" ColumnsHibeable="False" data-options="pagination:true,view:commandview" DataMember="FWCRMIndateCheck" DeleteCommandVisible="True" DuplicateCheck="False" EditDialogID="JQDialog4" EditMode="Dialog" EditOnEnter="True" InsertCommandVisible="True" MultiSelect="False" NotInitGrid="False" PageList="10,20,30,40,50" PageSize="10" Pagination="True" QueryAutoColumn="False" QueryLeft="" QueryMode="Window" QueryTitle="Query" QueryTop="" RecordLock="False" RecordLockMode="None" RemoteName="sFWCRMOrders.FWCRMIndateCheck" RowNumbers="True" Title="" TotalCaption="Total:" UpdateCommandVisible="True" ViewCommandVisible="False" ParentObjectID="" OnDelete="OnDeleteIndateCheck" OnInsert="OnInsertIndateCheck" OnLoadSuccess="OnLoadSuccessDGIndateCheck" OnUpdate="OnUpdateIndateCheck">
                         <Columns>
-                            <JQTools:JQGridColumn Alignment="left" Caption="入境單號碼" Editor="text" EditorOptions="" FieldName="IndateNo" Frozen="False" IsNvarChar="False" MaxLength="0" QueryCondition="" ReadOnly="False" Sortable="False" Visible="True" Width="102">
+                            <JQTools:JQGridColumn Alignment="left" Caption="入境單號碼" Editor="text" EditorOptions="" FieldName="IndateNo" Frozen="False" IsNvarChar="False" MaxLength="0" QueryCondition="" ReadOnly="False" Sortable="False" Visible="True" Width="80">
                             </JQTools:JQGridColumn>
-                            <JQTools:JQGridColumn Alignment="right" Caption="人數" Editor="numberbox" FieldName="PersonQty" Frozen="False" IsNvarChar="False" MaxLength="0" QueryCondition="" ReadOnly="False" Sortable="False" Total="sum" Visible="True" Width="68">
+                            <JQTools:JQGridColumn Alignment="right" Caption="人數" Editor="numberbox" FieldName="PersonQty" Frozen="False" IsNvarChar="False" MaxLength="0" QueryCondition="" ReadOnly="False" Sortable="False" Total="sum" Visible="True" Width="60">
                             </JQTools:JQGridColumn>
-                            <JQTools:JQGridColumn Alignment="left" Caption="入境單檔案" Editor="text" FieldName="IndateImg" Format="" FormatScript="downloadScript" Frozen="False" IsNvarChar="False" MaxLength="0" QueryCondition="" ReadOnly="False" Sortable="False" Visible="True" Width="300" />
+                            <JQTools:JQGridColumn Alignment="left" Caption="入境單檔案" Editor="text" FieldName="IndateImg" Format="" FormatScript="downloadScript" Frozen="False" IsNvarChar="False" MaxLength="0" QueryCondition="" ReadOnly="False" Sortable="False" Visible="True" Width="170" />
+                            <JQTools:JQGridColumn Alignment="center" Caption="預定入境日" Editor="text" FieldName="PlanIndate" Format="yyyy-mm-dd" Frozen="False" IsNvarChar="False" MaxLength="0" QueryCondition="" ReadOnly="False" Sortable="False" Visible="True" Width="80">
+                            </JQTools:JQGridColumn>
+                            <JQTools:JQGridColumn Alignment="center" Caption="最後入境日" Editor="text" FieldName="PlanIndate2" Format="yyyy-mm-dd" Frozen="False" IsNvarChar="False" MaxLength="0" QueryCondition="" ReadOnly="False" Sortable="False" Visible="True" Width="80">
+                            </JQTools:JQGridColumn>
                             <JQTools:JQGridColumn Alignment="left" Caption="OrderNo" Editor="text" FieldName="OrderNo" Frozen="False" IsNvarChar="False" MaxLength="0" QueryCondition="" ReadOnly="False" Sortable="False" Visible="False" Width="80">
                             </JQTools:JQGridColumn>
                             <JQTools:JQGridColumn Alignment="left" Caption="Item" Editor="text" FieldName="Item" Frozen="False" IsNvarChar="False" MaxLength="0" QueryCondition="" ReadOnly="False" Sortable="False" Visible="False" Width="80">
@@ -348,9 +451,11 @@
                     <JQTools:JQDialog ID="JQDialog4" runat="server" BindingObjectID="dataFormIndateCheck" DialogLeft="190px" DialogTop="170px" EditMode="Dialog" ShowSubmitDiv="True" Title="入境確認輸入" Width="450px">
                         <JQTools:JQDataForm ID="dataFormIndateCheck" runat="server" AlwaysReadOnly="False" Closed="False" ContinueAdd="False" DataMember="FWCRMIndateCheck" disapply="False" DivFramed="False" DuplicateCheck="False" HorizontalColumnsCount="1" HorizontalGap="0" IsAutoPageClose="False" IsAutoPause="False" IsAutoSubmit="False" IsNotifyOFF="False" IsRejectNotify="False" IsRejectON="False" IsShowFlowIcon="False" OnApplied="OnAppliedIndate" OnApply="OnApplyIndateCheck" OnLoadSuccess="OnLoadSuccessIndateCheck" ParentObjectID="dataFormDetail" RemoteName="sFWCRMOrders.FWCRMIndateCheck" ShowApplyButton="False" ValidateStyle="Hint" VerticalGap="0">
                             <Columns>
-                                <JQTools:JQFormColumn Alignment="left" Caption="入境單號碼" Editor="infocombobox" EditorOptions="valueField:'IndateNo',textField:'IndateNo',remoteName:'sFWCRMOrders.FWCRMIndateNo',tableName:'FWCRMIndateNo',pageSize:'-1',checkData:false,selectOnly:false,cacheRelationText:false,panelHeight:200" FieldName="IndateNo" NewRow="False" ReadOnly="False" Visible="True" Width="130" />
-                                <JQTools:JQFormColumn Alignment="left" Caption="人數" Editor="numberbox" FieldName="PersonQty" MaxLength="0" NewRow="False" ReadOnly="False" RowSpan="1" Span="1" Visible="True" Width="70" />
-                                <JQTools:JQFormColumn Alignment="left" Caption="入境單檔案" Editor="infofileupload" EditorOptions="filter:'docx|xlsx|jpg|jpeg|png|bmp|gif',isAutoNum:true,upLoadFolder:'Files/FWCRM/Orders',showButton:true,showLocalFile:false,onSuccess:dataFormIndateImg_onSuccess,fileSizeLimited:'500'" FieldName="IndateImg" MaxLength="100" NewRow="False" ReadOnly="False" Span="1" Visible="True" Width="100" />
+                                <JQTools:JQFormColumn Alignment="left" Caption="入境單號碼" Editor="infocombobox" EditorOptions="valueField:'IndateNo',textField:'IndateNo',remoteName:'sFWCRMOrders.FWCRMIndateNo',tableName:'FWCRMIndateNo',pageSize:'-1',checkData:false,selectOnly:false,cacheRelationText:false,panelHeight:200" FieldName="IndateNo" NewRow="False" ReadOnly="False" Visible="True" Width="130" MaxLength="0" Span="1" RowSpan="1" />
+                                <JQTools:JQFormColumn Alignment="left" Caption="人數" Editor="numberbox" FieldName="PersonQty" NewRow="False" ReadOnly="False" Visible="True" Width="70" MaxLength="0" Span="1" />
+                                <JQTools:JQFormColumn Alignment="left" Caption="入境單檔案" Editor="infofileupload" EditorOptions="filter:'docx|xlsx|jpg|jpeg|png|bmp|gif|pdf',isAutoNum:true,upLoadFolder:'Files/FWCRM/Orders',showButton:true,showLocalFile:false,onSuccess:dataFormIndateImg_onSuccess,fileSizeLimited:'500'" FieldName="IndateImg" MaxLength="100" NewRow="False" ReadOnly="False" Span="1" Visible="True" Width="100" RowSpan="1" />
+                                <JQTools:JQFormColumn Alignment="left" Caption="預定入境日" Editor="datebox" FieldName="PlanIndate" NewRow="False" ReadOnly="False" Visible="True" Width="90" MaxLength="0" OnBlur="" Span="1" RowSpan="1" />
+                                <JQTools:JQFormColumn Alignment="left" Caption="最後入境日" Editor="datebox" FieldName="PlanIndate2" NewRow="False" ReadOnly="False" Visible="True" Width="90" />
                                 <JQTools:JQFormColumn Alignment="left" Caption="iAutokey" Editor="text" FieldName="iAutokey" MaxLength="0" NewRow="False" ReadOnly="False" RowSpan="1" Span="1" Visible="False" Width="80" />
                                 <JQTools:JQFormColumn Alignment="left" Caption="OrderNo" Editor="text" FieldName="OrderNo" MaxLength="0" NewRow="False" ReadOnly="False" RowSpan="1" Span="1" Visible="False" Width="80" />
                                 <JQTools:JQFormColumn Alignment="left" Caption="Item" Editor="text" FieldName="Item" MaxLength="0" NewRow="False" ReadOnly="False" RowSpan="1" Span="1" Visible="False" Width="80" />
@@ -374,6 +479,7 @@
                                 <JQTools:JQValidateColumn CheckNull="True" FieldName="IndateNo" RemoteMethod="True" ValidateMessage="請選擇入境單號碼！" ValidateType="None" />
                                 <JQTools:JQValidateColumn CheckNull="True" FieldName="PersonQty" RemoteMethod="True" ValidateMessage="人數不可空白！" ValidateType="None" />
                                 <JQTools:JQValidateColumn CheckNull="True" FieldName="IndateImg" RemoteMethod="True" ValidateMessage="請上傳入境單檔案！" ValidateType="None" />
+                                <JQTools:JQValidateColumn CheckNull="True" FieldName="PlanIndate" RemoteMethod="True" ValidateMessage="請選擇預定入境日！" ValidateType="None" />
                             </Columns>
                         </JQTools:JQValidate>
                     </JQTools:JQDialog>
@@ -418,6 +524,7 @@
                  <JQTools:JQValidate ID="validateDetailStickStatus" runat="server" BindingObjectID="dataGridStickStatus" EnableTheming="True">
                      <Columns>
                          <JQTools:JQValidateColumn CheckNull="True" FieldName="StatusID" RemoteMethod="True" ValidateMessage="請選擇進度狀態！" ValidateType="None" />
+                         <JQTools:JQValidateColumn CheckNull="True" FieldName="StatusDate" RemoteMethod="True" ValidateMessage="請選擇日期！" ValidateType="None" />
                      </Columns>
                  </JQTools:JQValidate>
             </JQTools:JQDialog>
@@ -430,6 +537,8 @@
                     <JQTools:JQDataGrid ID="dataGridWorkNoLogs" runat="server" AllowAdd="False" AllowDelete="False" AllowUpdate="False" AlwaysClose="False" AutoApply="True" BufferView="False" CheckOnSelect="True" ColumnsHibeable="False" DataMember="FWCRMWorkNoLogs" DeleteCommandVisible="False" DuplicateCheck="False" EditDialogID="JQDialog3" EditMode="Dialog" EditOnEnter="True" InsertCommandVisible="False" MultiSelect="False" NotInitGrid="False" PageList="10,20,30,40,50" PageSize="10" Pagination="False" ParentObjectID="dataFormOrders1" QueryAutoColumn="False" QueryLeft="" QueryMode="Window" QueryTitle="Query" QueryTop="" RecordLock="False" RecordLockMode="None" RemoteName="sFWCRMOrders.FWCRMOrders" RowNumbers="True" Title="" TotalCaption="Total:" UpdateCommandVisible="False" ViewCommandVisible="True">
                         <Columns>
                             <JQTools:JQGridColumn Alignment="left" Caption="修改內容" Editor="textarea" EditorOptions="height:70" FieldName="Memo" Visible="True" Width="390" />
+                            <JQTools:JQGridColumn Alignment="left" Caption="聘工表檔案" Editor="text" FieldName="WorkImg" FormatScript="WorkNoLogsFileScript" Frozen="False" IsNvarChar="False" MaxLength="0" QueryCondition="" ReadOnly="False" Sortable="False" Visible="True" Width="80">
+                            </JQTools:JQGridColumn>
                             <JQTools:JQGridColumn Alignment="center" Caption="流程狀態" Editor="text" FieldName="flowflag" FormatScript="FormatScriptflag" Frozen="False" IsNvarChar="False" MaxLength="0" QueryCondition="" ReadOnly="False" Sortable="False" Visible="True" Width="65">
                             </JQTools:JQGridColumn>
                             <JQTools:JQGridColumn Alignment="center" Caption="建立日期" Editor="text" FieldName="CreateDate" Frozen="False" IsNvarChar="False" MaxLength="0" QueryCondition="" ReadOnly="False" Sortable="False" Visible="True" Width="65" Format="yyyy/mm/dd">

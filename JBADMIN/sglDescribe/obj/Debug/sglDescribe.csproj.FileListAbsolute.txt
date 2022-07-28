@@ -1,0 +1,16 @@
+D:\Infolight\EEP2012\JBGL\sglDescribe\bin\Debug\sglDescribe.dll
+D:\Infolight\EEP2012\JBGL\sglDescribe\bin\Debug\sglDescribe.pdb
+D:\Infolight\EEP2012\JBGL\sglDescribe\obj\Debug\sglDescribe.csprojResolveAssemblyReference.cache
+D:\Infolight\EEP2012\JBGL\sglDescribe\obj\Debug\sglDescribe.csproj.GenerateResource.Cache
+D:\Infolight\EEP2012\JBGL\sglDescribe\obj\Debug\sglDescribe.dll
+D:\Infolight\EEP2012\JBGL\sglDescribe\obj\Debug\sglDescribe.pdb
+D:\Infolight\EEP2012\EEPNetServer\JBGL\sglDescribe.dll
+D:\Infolight\EEP2012\EEPNetServer\JBGL\sglDescribe.pdb
+D:\Infolight\EEP2012\JBGL\sglDescribe\obj\Debug\sglDescribe.Component.resources
+D:\Infolight\EEP2012\EEPNetServer\JBADMIN\sglDescribe.dll
+D:\Infolight\EEP2012\EEPNetServer\JBADMIN\sglDescribe.pdb
+D:\Infolight\EEP2012\JBADMIN\sglDescribe\obj\Debug\sglDescribe.Component.resources
+D:\Infolight\EEP2012\JBADMIN\sglDescribe\obj\Debug\sglDescribe.csproj.GenerateResource.Cache
+D:\Infolight\EEP2012\JBADMIN\sglDescribe\obj\Debug\sglDescribe.dll
+D:\Infolight\EEP2012\JBADMIN\sglDescribe\obj\Debug\sglDescribe.pdb
+D:\Infolight\EEP2012\JBADMIN\sglDescribe\obj\Debug\sglDescribe.csprojResolveAssemblyReference.cache

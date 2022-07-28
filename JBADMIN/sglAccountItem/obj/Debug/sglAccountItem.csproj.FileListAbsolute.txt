@@ -1,0 +1,7 @@
+D:\Infolight\EEP2012\EEPNetServer\JBADMIN\sglAccountItem.dll
+D:\Infolight\EEP2012\EEPNetServer\JBADMIN\sglAccountItem.pdb
+D:\Infolight\EEP2012\JBADMIN\sglAccountItem\obj\Debug\sglAccountItem.Component.resources
+D:\Infolight\EEP2012\JBADMIN\sglAccountItem\obj\Debug\sglAccountItem.csproj.GenerateResource.Cache
+D:\Infolight\EEP2012\JBADMIN\sglAccountItem\obj\Debug\sglAccountItem.dll
+D:\Infolight\EEP2012\JBADMIN\sglAccountItem\obj\Debug\sglAccountItem.pdb
+D:\Infolight\EEP2012\JBADMIN\sglAccountItem\obj\Debug\sglAccountItem.csprojResolveAssemblyReference.cache

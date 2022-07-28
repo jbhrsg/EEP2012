@@ -28,7 +28,7 @@ namespace sERPCustomer
         }
         private void ucERPPayKind_BeforeInsert(object sender, UpdateComponentBeforeInsertEventArgs e)
         {
-            
+            ucERPPayKind.SetFieldValue("CreateBy", ucERPPayKind.GetFieldCurrentValue("CreateBy").ToString());
             ucERPPayKind.SetFieldValue("CreateDate", DateTime.Now);
         }
         private void ucERPPayKind_BeforeUpdate(object sender, UpdateComponentBeforeInsertEventArgs e)
@@ -52,7 +52,7 @@ namespace sERPCustomer
             try
             {
                 string CustNO = objParam[0].ToString();
-                string sql = "SELECT COUNT(*) AS CNT FROM [60.250.52.106,1433].JBADMIN.dbo.ERPCustomers WHERE CustNO = '" + CustNO + "'";
+                string sql = "SELECT COUNT(*) AS CNT FROM ERPCustomers WHERE CustNO = '" + CustNO + "'";
                 DataSet dsTemp = this.ExecuteSql(sql, connection, transaction);
                 string cnt = dsTemp.Tables[0].Rows[0]["cnt"].ToString();
 
@@ -87,7 +87,7 @@ namespace sERPCustomer
             try
             {
                 string CustNO = objParam[0].ToString();
-                string sql = "SELECT dbo.funReturnIsDeleteCust(CustNO) AS CNT FROM [60.250.52.106,1433].JBADMIN.dbo.ERPCustomers WHERE CustNO = '" + CustNO + "'";
+                string sql = "SELECT dbo.funReturnIsDeleteCust(CustNO) AS CNT FROM ERPCustomers WHERE CustNO = '" + CustNO + "'";
                 DataSet dsTemp = this.ExecuteSql(sql, connection, transaction);
                 string cnt = dsTemp.Tables[0].Rows[0]["cnt"].ToString();
                 //Indented縮排 將資料轉換成Json格式
@@ -127,7 +127,7 @@ namespace sERPCustomer
                 string CustNO = parm[0];
                 string SalesTypeID = parm[1];
                 string PayTypeID = parm[2];
-                string sql = "SELECT COUNT(*) AS CNT FROM [60.250.52.106,1433].JBADMIN.dbo.ERPPayKind WHERE CustNO = '" + CustNO + "' AND SalesTypeID='" + SalesTypeID + "' AND PayTypeID='" + PayTypeID + "'";
+                string sql = "SELECT COUNT(*) AS CNT FROM ERPPayKind WHERE CustNO = '" + CustNO + "' AND SalesTypeID='" + SalesTypeID + "' AND PayTypeID='" + PayTypeID + "'";
                 DataSet dsTemp = this.ExecuteSql(sql, connection, transaction);
                 string cnt = dsTemp.Tables[0].Rows[0]["cnt"].ToString();
 
@@ -177,7 +177,7 @@ namespace sERPCustomer
                 transaction.Commit();
                 ReleaseConnection(GetClientInfo(ClientInfoType.LoginDB).ToString(), connection);
             }
-            return new object[] { 0, true };
+            return new object[] { 0, js };
         }
 
         private void ucCustNotes_BeforeInsert(object sender, UpdateComponentBeforeInsertEventArgs e)
@@ -187,36 +187,199 @@ namespace sERPCustomer
         //新增客戶備註
         public object[] procAddERPCustomerToDoNotes(object[] objParam)
         {
-            SqlCommand cmd;
-            SqlConnection conn;
-            string connetionString = null;
             string sql = null;
             string[] parm = objParam[0].ToString().Split('*');
             string CustNO = parm[0].ToString();
             string NextCallDate = parm[1].ToString();
             string NextCallTime = parm[2].ToString();
             string UserName = parm[3].ToString();
-            connetionString = "Data Source=192.168.10.60;Initial Catalog=JBADMIN;User ID=JBDBsql;Password=J3554436B";
-            conn = new SqlConnection(connetionString);
-            if (conn.State != ConnectionState.Open)
+            IDbConnection connection = (IDbConnection)AllocateConnection(GetClientInfo(ClientInfoType.LoginDB).ToString());
+            string js = string.Empty;
+
+            if (connection.State != ConnectionState.Open)
             {
-                conn.Open();
+                connection.Open();
             }
+            IDbTransaction transaction = connection.BeginTransaction();
             try
             {
-                sql = "EXEC [60.250.52.106,1433].JBADMIN.dbo.procInsertERPCustomerToDoNotes '" + CustNO + "','" + NextCallDate + "','" + NextCallTime + "','" + UserName + "'";
-                cmd = new SqlCommand(sql, conn);
-                cmd.ExecuteNonQuery();
+                sql = "EXEC procInsertERPCustomerToDoNotes '" + CustNO + "','" + NextCallDate + "','" + NextCallTime + "','" + UserName + "'";
+                this.ExecuteSql(sql, connection, transaction);
             }
-            catch (Exception ex)
+            catch
             {
-                return new object[] { 0, false };
+                transaction.Rollback();
             }
             finally
             {
-                ReleaseConnection(GetClientInfo(ClientInfoType.LoginDB).ToString(), conn);
+                transaction.Commit();
+                ReleaseConnection(GetClientInfo(ClientInfoType.LoginDB).ToString(), connection);
             }
-            return new object[] { 0, true };
+            return new object[] { 0, js };
+
         }
+
+        private void ucERPCustomers_AfterInsert(object sender, UpdateComponentAfterInsertEventArgs e)
+        {
+
+        }
+
+        
+        private void ucERPPayKind_AfterInsert(object sender, UpdateComponentAfterInsertEventArgs e)
+        {
+            
+        }
+        //至銷貨客戶新增收款方式
+        public object[] procAddJBERPCustomerSaleType(object[] objParam)
+        {
+            string sql = null;
+            string[] parm = objParam[0].ToString().Split(',');
+            string CustNO = parm[0].ToString();
+            string userid = GetClientInfo(ClientInfoType.LoginUser).ToString();
+            string username = SrvGL.GetUserName(userid.ToLower());
+            string js = string.Empty;
+
+            //IDbConnection connection = (IDbConnection)AllocateConnection(GetClientInfo(ClientInfoType.LoginDB).ToString());
+            string sLoginDB = "JBERP";
+            IDbConnection connection = (IDbConnection)AllocateConnection(sLoginDB);
+
+            if (connection.State != ConnectionState.Open)
+            {
+                connection.Open();
+            }
+            IDbTransaction transaction = connection.BeginTransaction();
+            try
+            {
+                sql = "EXEC procInsertCustomerSaleType '" + CustNO + "','" + username + "'";
+                this.ExecuteSql(sql, connection, transaction);
+            }
+            catch 
+            {
+                transaction.Rollback();
+            }
+            finally
+            {
+                transaction.Commit();
+                //ReleaseConnection(GetClientInfo(ClientInfoType.LoginDB).ToString(), connection);
+                ReleaseConnection(sLoginDB, connection);
+
+            }
+            return new object[] { 0, js };
+
+        }
+        //至銷貨客戶修改收款方式
+        public object[] procUpdateJBERPCustomerSaleType(object[] objParam)
+        {
+            string sql = null;
+            string[] parm = objParam[0].ToString().Split(',');
+            string CustNO = parm[0].ToString();
+            string PayKindNO = parm[1].ToString();
+            string js = string.Empty;
+
+            //IDbConnection connection = (IDbConnection)AllocateConnection(GetClientInfo(ClientInfoType.LoginDB).ToString());
+            string sLoginDB = "JBERP";
+            IDbConnection connection = (IDbConnection)AllocateConnection(sLoginDB);
+
+            if (connection.State != ConnectionState.Open)
+            {
+                connection.Open();
+            }
+            IDbTransaction transaction = connection.BeginTransaction();
+
+            try
+            {
+                sql = "EXEC procUpdateCustomerSaleType '" + CustNO + "'," + PayKindNO;
+                this.ExecuteSql(sql, connection, transaction);
+            }
+            catch 
+            {
+                transaction.Rollback();
+            }
+            finally
+            {
+                transaction.Commit();
+                //ReleaseConnection(GetClientInfo(ClientInfoType.LoginDB).ToString(), connection);
+                ReleaseConnection(sLoginDB, connection);
+            }
+            return new object[] { 0, js };
+
+        }
+
+        ///至銷貨客戶刪除收款方式
+        public void procDeleteJBERPCustomerSaleType(object[] objParam)
+        {
+            string sql = null;
+            string[] parm = objParam[0].ToString().Split(',');
+            string CustNO = parm[0].ToString();
+            string SalesTypeID = parm[1].ToString();
+
+            //IDbConnection connection = (IDbConnection)AllocateConnection(GetClientInfo(ClientInfoType.LoginDB).ToString());
+            string sLoginDB = "JBERP";
+            IDbConnection connection = (IDbConnection)AllocateConnection(sLoginDB);
+            if (connection.State != ConnectionState.Open)
+            {
+                connection.Open();
+            }
+            IDbTransaction transaction = connection.BeginTransaction();
+
+            try
+            {
+                sql = "EXEC procDeleteCustomerSaleType '" + CustNO + "','" + SalesTypeID+"'";
+                this.ExecuteSql(sql, connection, transaction);
+            }
+            catch 
+            {
+                transaction.Rollback();
+            }
+            finally
+            {
+                transaction.Commit();
+                //ReleaseConnection(GetClientInfo(ClientInfoType.LoginDB).ToString(), connection);
+                ReleaseConnection(sLoginDB, connection);
+            }
+            
+        }
+
+        private void ucERPPayKind_AfterDelete(object sender, UpdateComponentAfterDeleteEventArgs e)
+        {
+            //建立資料庫連結
+            //IDbConnection connection = (IDbConnection)AllocateConnection(GetClientInfo(ClientInfoType.LoginDB).ToString());
+            string sLoginDB = "JBERP";
+            IDbConnection connection = (IDbConnection)AllocateConnection(sLoginDB);
+            //當連線狀態不等於open時，開啟連結
+            if (connection.State != ConnectionState.Open)
+            {
+                connection.Open();
+            }
+            //開始transaction
+            IDbTransaction transaction = connection.BeginTransaction();
+
+            string CustNO = ucERPPayKind.GetFieldOldValue("CustNO").ToString();
+            string SalesTypeID = ucERPPayKind.GetFieldOldValue("SalesTypeID").ToString();
+
+            //------------------------------------------------------------------------------------------------------------------
+
+            try
+            {
+                string SQL = "EXEC procDeleteCustomerSaleType '" + CustNO + "','" + SalesTypeID + "'";
+                this.ExecuteSql(SQL, connection, transaction);
+                transaction.Commit();
+
+            }
+            catch
+            {
+                transaction.Rollback();
+            }
+            finally
+            {
+                //ReleaseConnection(GetClientInfo(ClientInfoType.LoginDB).ToString(), connection);
+                ReleaseConnection(sLoginDB, connection);
+            }
+
+        }
+
+
+
+
      }
 }

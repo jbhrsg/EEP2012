@@ -1,0 +1,7 @@
+D:\Infolight\EEP2012\EEPNetServer\JBADMIN\sFWCRMOrdersYearUpdate.dll
+D:\Infolight\EEP2012\EEPNetServer\JBADMIN\sFWCRMOrdersYearUpdate.pdb
+D:\Infolight\EEP2012\JBADMIN\sFWCRMOrdersYearUpdate\obj\Debug\sFWCRMOrdersYearUpdate.Component.resources
+D:\Infolight\EEP2012\JBADMIN\sFWCRMOrdersYearUpdate\obj\Debug\sFWCRMOrdersYearUpdate.csproj.GenerateResource.Cache
+D:\Infolight\EEP2012\JBADMIN\sFWCRMOrdersYearUpdate\obj\Debug\sFWCRMOrdersYearUpdate.dll
+D:\Infolight\EEP2012\JBADMIN\sFWCRMOrdersYearUpdate\obj\Debug\sFWCRMOrdersYearUpdate.pdb
+D:\Infolight\EEP2012\JBADMIN\sFWCRMOrdersYearUpdate\obj\Debug\sFWCRMOrdersYearUpdate.csprojResolveAssemblyReference.cache

@@ -18,3 +18,7 @@ D:\Infolight\EEP2012\JBADMIN\sDevice\obj\Release\sDevice.Component.resources
 D:\Infolight\EEP2012\JBADMIN\sDevice\obj\Release\sDevice.csproj.GenerateResource.Cache
 D:\Infolight\EEP2012\JBADMIN\sDevice\obj\Release\sDevice.dll
 D:\Infolight\EEP2012\JBADMIN\sDevice\obj\Release\sDevice.pdb
+D:\Infolight\EEP2012\JBADMIN\sDevice\bin\Release\sDevice.dll
+D:\Infolight\EEP2012\JBADMIN\sDevice\bin\Release\sDevice.pdb
+D:\Infolight\EEP2012\JBADMIN\sDevice\bin\Release\Newtonsoft.Json.dll
+D:\Infolight\EEP2012\JBADMIN\sDevice\bin\Release\Newtonsoft.Json.xml

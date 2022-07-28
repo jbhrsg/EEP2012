@@ -7,11 +7,7 @@ C:\Program Files (x86)\Infolight\EEP2012\EEPNetServer\JBADMIN\sARInvoice.dll
 C:\Program Files (x86)\Infolight\EEP2012\EEPNetServer\JBADMIN\sARInvoice.pdb
 C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sARInvoice\obj\Debug\sARInvoice.Component.resources
 C:\Program Files (x86)\Infolight\EEP2012\EEPNetServer\JBADMIN\sARInvoice.dll.config
-D:\Infolight\EEP2012\EEPNetServer\JBADMIN\sARInvoice.dll.config
-D:\Infolight\EEP2012\EEPNetServer\JBADMIN\sARInvoice.dll
-D:\Infolight\EEP2012\EEPNetServer\JBADMIN\sARInvoice.pdb
-D:\Infolight\EEP2012\JBADMIN\sARInvoice\obj\Debug\sARInvoice.csprojResolveAssemblyReference.cache
-D:\Infolight\EEP2012\JBADMIN\sARInvoice\obj\Debug\sARInvoice.Component.resources
-D:\Infolight\EEP2012\JBADMIN\sARInvoice\obj\Debug\sARInvoice.csproj.GenerateResource.Cache
-D:\Infolight\EEP2012\JBADMIN\sARInvoice\obj\Debug\sARInvoice.dll
-D:\Infolight\EEP2012\JBADMIN\sARInvoice\obj\Debug\sARInvoice.pdb
+C:\Program Files (x86)\Infolight\EEP2012\EEPNetServer\JBADMIN\vi-VN\sARInvoice.resources.dll
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sARInvoice\obj\Debug\sARInvoice.Component.vi-VN.resources
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sARInvoice\obj\Debug\vi-VN\sARInvoice.resources.dll
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sARInvoice\obj\Debug\sARInvoice.csprojResolveAssemblyReference.cache

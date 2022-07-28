@@ -8,6 +8,7 @@ using System.Linq;
 using System.Text;
 using Newtonsoft.Json;
 using Srvtools;
+using JBTool;
 
 namespace sERPToDoCustomer
 {
@@ -273,12 +274,141 @@ namespace sERPToDoCustomer
         }
         private void ucERPCustomers_AfterModify(object sender, UpdateComponentAfterModifyEventArgs e)
         {
-    
+            //修改客戶關係管理=>匯款碼
+            string ShortCode = ucERPCustomers.GetFieldCurrentValue("ShortCode").ToString();//匯款碼        
+            string ERPCustomerID = ucERPCustomers.GetFieldCurrentValue("ERPCustomerID").ToString();//關聯代號        
+
+            //建立資料庫連結
+            IDbConnection connection = (IDbConnection)AllocateConnection(GetClientInfo(ClientInfoType.LoginDB).ToString());
+            //當連線狀態不等於open時，開啟連結
+            if (connection.State != ConnectionState.Open)
+            {
+                connection.Open();
+            }
+            //開始transaction
+            IDbTransaction transaction = connection.BeginTransaction();
+
+            //------------------------------------------------------------------------------------------------------------------
+
+            try
+            {
+                string SQL = "update JBERP.dbo.Customer set ShortCode='" + ShortCode + "' from JBERP.dbo.Customer where CustomerID='" + ERPCustomerID + "'";
+
+                this.ExecuteSql(SQL, connection, transaction);
+                transaction.Commit();
+
+            }
+            catch
+            {
+                transaction.Rollback();
+            }
+            finally
+            {
+                ReleaseConnection(GetClientInfo(ClientInfoType.LoginDB).ToString(), connection);
+            }
         }
 
-      
+        //複訪客戶清單 匯出Excel
+        public object[] QueryAutoExcel(object[] objParam)
+        {
+            string[] parm = objParam[0].ToString().Split(',');
+            string SalesID = parm[0];
+            string CustNO = parm[1];
+            string MinSalesDate = parm[2];
+            string MaxSalesDate = parm[3];
+            string iSourse = parm[4];           
 
-        
+            string js = string.Empty;
+            //建立資料庫連結
+            IDbConnection connection = (IDbConnection)AllocateConnection(GetClientInfo(ClientInfoType.LoginDB).ToString());
+            //當連線狀態不等於open時，開啟連結
+            if (connection.State != ConnectionState.Open)
+            {
+                connection.Open();
+            }
+            //開始transaction
+            IDbTransaction transaction = connection.BeginTransaction();
+
+            var theResult = new Dictionary<string, object>();
+
+            try
+            {
+                string SQL = " exec procDisplayToDoCustomer '" + SalesID + "','" + CustNO + "','" + MinSalesDate + "','" + MaxSalesDate + "','" + iSourse + "'" + "\r\n";
+
+                DataSet ds = this.ExecuteSql(SQL, connection, transaction);
+                //// Indented縮排 將資料轉換成Json格式
+                //js = JsonConvert.SerializeObject(ds.Tables[0], Formatting.Indented);
+                transaction.Commit();
+
+
+                theResult.Add("FileStreamOrFileName", NPOIHelper.DataTableToExcel(ds.Tables[0]));
+
+                theResult.Add("IsOK", true);
+                theResult.Add("Msg", "錯誤訊息");
+                theResult.Add("FileName", "這是一個檔案.xls");
+
+            }
+            catch
+            {
+                transaction.Rollback();
+            }
+            finally
+            {
+                ReleaseConnection(GetClientInfo(ClientInfoType.LoginDB).ToString(), connection);
+            }
+            return new object[] { 0, HandlerHelper.SerializeObject(theResult) };
+
+        }
+
+        private void ucERPCustomers_BeforeModify(object sender, UpdateComponentBeforeModifyEventArgs e)
+        {
+            ucERPCustomers.SetFieldValue("LastUpdateDate", DateTime.Now);//寫入日期的時分秒
+
+        }
+
+        private void ucERPCustomers_BeforeInsert(object sender, UpdateComponentBeforeInsertEventArgs e)
+        {
+            ucERPCustomers.SetFieldValue("LastUpdateDate", DateTime.Now);//寫入日期的時分秒
+
+        }
+
+        //修改0800Email------dbo.Publishing , dbo.Account
+        public object[] procAddMail0800(object[] objParam)
+        {
+            string sql = null;
+            string[] parm = objParam[0].ToString().Split(',');
+            string CustNO = parm[0].ToString();           
+            string Email = parm[1].ToString();
+
+            string sLoginDB = "JOB0800";
+            IDbConnection connection = (IDbConnection)AllocateConnection(sLoginDB);
+            string js = string.Empty;
+
+            if (connection.State != ConnectionState.Open)
+            {
+                connection.Open();
+            }
+            //開始transaction
+            IDbTransaction transaction = connection.BeginTransaction();
+
+            try
+            {
+                sql = "EXEC procUpdate0800Email '" + CustNO + "','" + Email + "'";
+                this.ExecuteSql(sql, connection, transaction);
+                transaction.Commit();
+            }
+            catch (Exception ex)
+            {
+                transaction.Rollback();
+            }
+            finally
+            {
+                ReleaseConnection(GetClientInfo(ClientInfoType.LoginDB).ToString(), connection);
+                ReleaseConnection(sLoginDB, connection);
+            }
+            return new object[] { 0, js };
+
+        }
 
 
     }

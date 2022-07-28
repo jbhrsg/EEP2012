@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeFile="JBREQ_Requisition.aspx.cs" Inherits="Template_JQuerySingle1" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeFile="JBREQ_RequisitionFare.aspx.cs" Inherits="Template_JQuerySingle1" %>
 <!DOCTYPE html>
 <html>
 <head runat="server">

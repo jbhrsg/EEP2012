@@ -3,6 +3,6 @@
   <FlowNavMode>Submit</FlowNavMode>
   <NavMode>Insert</NavMode>
   <Parameters>D=Apply</Parameters>
-  <FlowFileName>C:\Program Files (x86)\Infolight\EEP2012\EEPNetServer\Workflow\FL\IssueJob</FlowFileName>
-  <ImageWidth>1366</ImageWidth>
+  <FlowFileName>D:\Infolight\EEP2012\EEPNetServer\Workflow\FL\IssueJob</FlowFileName>
+  <ImageWidth>842</ImageWidth>
 </FlowDetails>

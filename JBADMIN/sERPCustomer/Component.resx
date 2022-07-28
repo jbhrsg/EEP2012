@@ -118,109 +118,127 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <metadata name="serviceManager1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>17, 93</value>
+    <value>17, 111</value>
   </metadata>
   <metadata name="InfoConnection1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>17, 169</value>
+    <value>17, 205</value>
   </metadata>
   <metadata name="ERPCustomers.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>17, 283</value>
+    <value>340, 477</value>
   </metadata>
   <data name="ERPCustomers.CommandText" xml:space="preserve">
-    <value>SELECT  TOP 60  A.*,rtrim(ltrim(A.SALESID))+' '+B.SalesName AS SalesName,
+    <value>SELECT top 2000 A.*,rtrim(ltrim(A.SALESID))+' '+B.SalesName AS SalesName,
  rtrim(ltrim(A.ContactA))+' '+RTRIM(IsNull(C.CustJobName,'')) AS CustJobName,
- (SELECT CENTER_ID FROM NJB.DBO.SALSE WHERE Sal_NO=A.SALESID) as   CENTER_ID,
+ (SELECT CENTER_ID FROM ERPSalesMan WHERE SalesID=A.SALESID) as   CENTER_ID,
  dbo.funReturnCustDealDays(LatelyDayD) as DealDays,
  '' AS SalesTypeID,
  '' AS QSDate,
- '' AS QEDate
+ '' AS QEDate,
+ (select MAX(NextCallDate) from ERPCustomerToDoNotes where CustNO=A.CustNO and IsNull(Notes,'')='') as NextCallDate,
+ case (select COUNT(*) from CON_CONTACT where CONTACT_TEL=A.CustNO and CONTACT_NAME=A.ContactA) when 0 then CAST(0 as bit) else CAST(1 as bit) end bContactA,
+ case (select COUNT(*) from CON_CONTACT where CONTACT_TEL=A.CustNO and CONTACT_NAME=A.ContactB) when 0 then CAST(0 as bit) else CAST(1 as bit) end as bContactB
  FROM dbo.ERPCustomers as A 
- INNER  join DBO.ERPSALESMAN as B
- on (A.SALESID=B.SALESID) 
- left join DBO.ERPCUSTJOB as C
- on (A.ContactAJobID =C.CustJobID)
- where 1=1  
- order by DealDays asc  </value>
+	inner join DBO.ERPSALESMAN as B on (A.SALESID=B.SALESID) 
+	left join DBO.ERPCUSTJOB as C on (A.ContactAJobID =C.CustJobID) 	
+ where 1=1 
+ order by a.LastUpdateDate desc</value>
   </data>
   <metadata name="ucERPCustomers.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>17, 321</value>
+    <value>402, 419</value>
   </metadata>
   <metadata name="View_ERPCustomers.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>17, 55</value>
+    <value>17, 64</value>
   </metadata>
   <metadata name="ERPPayKind.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>17, 397</value>
+    <value>17, 628</value>
   </metadata>
   <metadata name="ucERPPayKind.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>17, 435</value>
+    <value>17, 722</value>
   </metadata>
   <metadata name="CustBill.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>17, 473</value>
+    <value>17, 769</value>
   </metadata>
   <metadata name="SalesMan.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>17, 511</value>
+    <value>17, 816</value>
   </metadata>
-  <data name="SalesMan.CommandText" xml:space="preserve">
-    <value>select  ERPSalesMan.SalesID,
-        ERPSalesMan.SalesID+' '+ERPSalesMan.SalesName as SalesName,
-        ERPSalesMan.SalesEmployeeID,
-        (SELECT CENTER_ID FROM NJB.DBO.SALSE WHERE sal_no = ERPSalesMan.SalesID) AS CENTER_ID
-        --dbo.funReturnEmpOrgNOTop(ERPSalesMan.SalesEmployeeID) as ORG
-from   ERPSalesMan</value>
-  </data>
   <metadata name="City.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>17, 549</value>
+    <value>17, 863</value>
   </metadata>
   <metadata name="CustDept.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>17, 587</value>
+    <value>17, 910</value>
   </metadata>
   <metadata name="CustArea.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>17, 625</value>
+    <value>17, 957</value>
   </metadata>
   <metadata name="SalesType.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>17, 663</value>
+    <value>17, 1004</value>
   </metadata>
   <metadata name="PayType.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>17, 701</value>
+    <value>17, 1051</value>
   </metadata>
   <metadata name="Industry.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>17, 739</value>
+    <value>17, 1098</value>
   </metadata>
   <metadata name="CustJob.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>17, 777</value>
+    <value>17, 1145</value>
   </metadata>
   <metadata name="Region.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>17, 815</value>
+    <value>17, 1239</value>
   </metadata>
   <metadata name="LetterType.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>17, 853</value>
+    <value>17, 1286</value>
   </metadata>
   <metadata name="SYSVar.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>17, 891</value>
+    <value>17, 1333</value>
   </metadata>
   <metadata name="PaperType.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>17, 929</value>
+    <value>17, 1380</value>
   </metadata>
   <metadata name="PostType.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>17, 967</value>
+    <value>17, 1427</value>
   </metadata>
   <metadata name="SYSVar2.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>17, 1005</value>
+    <value>17, 1474</value>
   </metadata>
   <metadata name="CustNotes.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>17, 131</value>
+    <value>17, 158</value>
   </metadata>
   <metadata name="ucCustNotes.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>17, 207</value>
+    <value>17, 252</value>
   </metadata>
   <metadata name="NextCallTime.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>17, 245</value>
+    <value>17, 1521</value>
   </metadata>
   <metadata name="IndustryType.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>17, 359</value>
+    <value>17, 1568</value>
   </metadata>
   <metadata name="NotesType.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>185, 193</value>
+    <value>17, 299</value>
+  </metadata>
+  <metadata name="SYSVar3.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 1192</value>
+  </metadata>
+  <metadata name="info0800Cus.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>534, 614</value>
+  </metadata>
+  <data name="info0800Cus.CommandText" xml:space="preserve">
+    <value>select p.Id,p.Code,c.Name,Convert(nvarchar(10),p.StartDate,111)+'–'+Convert(nvarchar(10),p.EndTime,111) as sDate,p.Email_2 as PublishingEmail_2,a.Id as AccountId,a.Name as AccountName,a.Mobile,a.Email as AccountEmail,p.CustomerId
+from Publishing p
+	inner join Customer c on p.CustomerId=c.Id
+	left join Account a on c.AccountId=a.Id
+</value>
+  </data>
+  <metadata name="infoConnection2.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 440</value>
+  </metadata>
+  <metadata name="updateComponent1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 581</value>
+  </metadata>
+  <metadata name="updateComponent2.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 346</value>
+  </metadata>
+  <metadata name="info0800Account.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>754, 147</value>
   </metadata>
   <metadata name="$this.TrayLargeIcon" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>False</value>

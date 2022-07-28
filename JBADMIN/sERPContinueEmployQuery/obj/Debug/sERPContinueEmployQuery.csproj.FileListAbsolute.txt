@@ -1,0 +1,8 @@
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sERPContinueEmployQuery\bin\Debug\sERPContinueEmployQuery.dll
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sERPContinueEmployQuery\bin\Debug\sERPContinueEmployQuery.pdb
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sERPContinueEmployQuery\obj\Debug\sERPContinueEmployQuery.csproj.GenerateResource.Cache
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sERPContinueEmployQuery\obj\Debug\sERPContinueEmployQuery.dll
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sERPContinueEmployQuery\obj\Debug\sERPContinueEmployQuery.pdb
+C:\Program Files (x86)\Infolight\EEP2012\EEPNetServer\JBADMIN\sERPContinueEmployQuery.dll
+C:\Program Files (x86)\Infolight\EEP2012\EEPNetServer\JBADMIN\sERPContinueEmployQuery.pdb
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sERPContinueEmployQuery\obj\Debug\sERPContinueEmployQuery.Component.resources

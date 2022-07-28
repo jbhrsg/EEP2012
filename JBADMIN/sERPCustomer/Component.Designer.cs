@@ -34,6 +34,9 @@
             Srvtools.Service service3 = new Srvtools.Service();
             Srvtools.Service service4 = new Srvtools.Service();
             Srvtools.Service service5 = new Srvtools.Service();
+            Srvtools.Service service6 = new Srvtools.Service();
+            Srvtools.Service service7 = new Srvtools.Service();
+            Srvtools.Service service8 = new Srvtools.Service();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Component));
             Srvtools.KeyItem keyItem1 = new Srvtools.KeyItem();
             Srvtools.FieldAttr fieldAttr1 = new Srvtools.FieldAttr();
@@ -98,6 +101,7 @@
             Srvtools.KeyItem keyItem7 = new Srvtools.KeyItem();
             Srvtools.KeyItem keyItem8 = new Srvtools.KeyItem();
             Srvtools.KeyItem keyItem9 = new Srvtools.KeyItem();
+            Srvtools.KeyItem keyItem10 = new Srvtools.KeyItem();
             Srvtools.FieldAttr fieldAttr55 = new Srvtools.FieldAttr();
             Srvtools.FieldAttr fieldAttr56 = new Srvtools.FieldAttr();
             Srvtools.FieldAttr fieldAttr57 = new Srvtools.FieldAttr();
@@ -109,6 +113,27 @@
             Srvtools.FieldAttr fieldAttr63 = new Srvtools.FieldAttr();
             Srvtools.FieldAttr fieldAttr64 = new Srvtools.FieldAttr();
             Srvtools.FieldAttr fieldAttr65 = new Srvtools.FieldAttr();
+            Srvtools.KeyItem keyItem11 = new Srvtools.KeyItem();
+            Srvtools.KeyItem keyItem12 = new Srvtools.KeyItem();
+            Srvtools.FieldAttr fieldAttr66 = new Srvtools.FieldAttr();
+            Srvtools.FieldAttr fieldAttr67 = new Srvtools.FieldAttr();
+            Srvtools.FieldAttr fieldAttr68 = new Srvtools.FieldAttr();
+            Srvtools.FieldAttr fieldAttr69 = new Srvtools.FieldAttr();
+            Srvtools.FieldAttr fieldAttr70 = new Srvtools.FieldAttr();
+            Srvtools.FieldAttr fieldAttr71 = new Srvtools.FieldAttr();
+            Srvtools.FieldAttr fieldAttr72 = new Srvtools.FieldAttr();
+            Srvtools.FieldAttr fieldAttr73 = new Srvtools.FieldAttr();
+            Srvtools.FieldAttr fieldAttr74 = new Srvtools.FieldAttr();
+            Srvtools.FieldAttr fieldAttr75 = new Srvtools.FieldAttr();
+            Srvtools.FieldAttr fieldAttr76 = new Srvtools.FieldAttr();
+            Srvtools.FieldAttr fieldAttr77 = new Srvtools.FieldAttr();
+            Srvtools.FieldAttr fieldAttr78 = new Srvtools.FieldAttr();
+            Srvtools.FieldAttr fieldAttr79 = new Srvtools.FieldAttr();
+            Srvtools.FieldAttr fieldAttr80 = new Srvtools.FieldAttr();
+            Srvtools.FieldAttr fieldAttr81 = new Srvtools.FieldAttr();
+            Srvtools.FieldAttr fieldAttr82 = new Srvtools.FieldAttr();
+            Srvtools.FieldAttr fieldAttr83 = new Srvtools.FieldAttr();
+            Srvtools.KeyItem keyItem13 = new Srvtools.KeyItem();
             this.serviceManager1 = new Srvtools.ServiceManager(this.components);
             this.InfoConnection1 = new Srvtools.InfoConnection(this.components);
             this.ERPCustomers = new Srvtools.InfoCommand(this.components);
@@ -136,6 +161,12 @@
             this.NextCallTime = new Srvtools.InfoCommand(this.components);
             this.IndustryType = new Srvtools.InfoCommand(this.components);
             this.NotesType = new Srvtools.InfoCommand(this.components);
+            this.SYSVar3 = new Srvtools.InfoCommand(this.components);
+            this.info0800Cus = new Srvtools.InfoCommand(this.components);
+            this.infoConnection2 = new Srvtools.InfoConnection(this.components);
+            this.updateComponent1 = new Srvtools.UpdateComponent(this.components);
+            this.updateComponent2 = new Srvtools.UpdateComponent(this.components);
+            this.info0800Account = new Srvtools.InfoCommand(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.InfoConnection1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ERPCustomers)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.View_ERPCustomers)).BeginInit();
@@ -159,6 +190,10 @@
             ((System.ComponentModel.ISupportInitialize)(this.NextCallTime)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.IndustryType)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.NotesType)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.SYSVar3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.info0800Cus)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.infoConnection2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.info0800Account)).BeginInit();
             // 
             // serviceManager1
             // 
@@ -177,15 +212,27 @@
             service5.DelegateName = "procAddERPCustomerToDoNotes";
             service5.NonLogin = false;
             service5.ServiceName = "procAddERPCustomerToDoNotes";
+            service6.DelegateName = "procAddJBERPCustomerSaleType";
+            service6.NonLogin = false;
+            service6.ServiceName = "procAddJBERPCustomerSaleType";
+            service7.DelegateName = "procUpdateJBERPCustomerSaleType";
+            service7.NonLogin = false;
+            service7.ServiceName = "procUpdateJBERPCustomerSaleType";
+            service8.DelegateName = "procDeleteJBERPCustomerSaleType";
+            service8.NonLogin = false;
+            service8.ServiceName = "procDeleteJBERPCustomerSaleType";
             this.serviceManager1.ServiceCollection.Add(service1);
             this.serviceManager1.ServiceCollection.Add(service2);
             this.serviceManager1.ServiceCollection.Add(service3);
             this.serviceManager1.ServiceCollection.Add(service4);
             this.serviceManager1.ServiceCollection.Add(service5);
+            this.serviceManager1.ServiceCollection.Add(service6);
+            this.serviceManager1.ServiceCollection.Add(service7);
+            this.serviceManager1.ServiceCollection.Add(service8);
             // 
             // InfoConnection1
             // 
-            this.InfoConnection1.EEPAlias = "JBDBNJB";
+            this.InfoConnection1.EEPAlias = "JBADMIN";
             // 
             // ERPCustomers
             // 
@@ -194,7 +241,7 @@
             this.ERPCustomers.CommandTimeout = 30;
             this.ERPCustomers.CommandType = System.Data.CommandType.Text;
             this.ERPCustomers.DynamicTableName = false;
-            this.ERPCustomers.EEPAlias = "JBDBNJB";
+            this.ERPCustomers.EEPAlias = "JBADMIN";
             this.ERPCustomers.EncodingAfter = null;
             this.ERPCustomers.EncodingBefore = "Windows-1252";
             this.ERPCustomers.EncodingConvert = null;
@@ -589,6 +636,7 @@
             this.ucERPCustomers.TransIsolationLevel = System.Data.IsolationLevel.ReadCommitted;
             this.ucERPCustomers.UseTranscationScope = false;
             this.ucERPCustomers.WhereMode = Srvtools.WhereModeType.Keyfields;
+            this.ucERPCustomers.AfterInsert += new Srvtools.UpdateComponentAfterInsertEventHandler(this.ucERPCustomers_AfterInsert);
             // 
             // View_ERPCustomers
             // 
@@ -624,7 +672,7 @@
             this.ERPPayKind.CommandTimeout = 30;
             this.ERPPayKind.CommandType = System.Data.CommandType.Text;
             this.ERPPayKind.DynamicTableName = false;
-            this.ERPPayKind.EEPAlias = "JBDBNJB";
+            this.ERPPayKind.EEPAlias = "JBADMIN";
             this.ERPPayKind.EncodingAfter = null;
             this.ERPPayKind.EncodingBefore = "Windows-1252";
             this.ERPPayKind.EncodingConvert = null;
@@ -736,6 +784,8 @@
             this.ucERPPayKind.UseTranscationScope = false;
             this.ucERPPayKind.WhereMode = Srvtools.WhereModeType.Keyfields;
             this.ucERPPayKind.BeforeInsert += new Srvtools.UpdateComponentBeforeInsertEventHandler(this.ucERPPayKind_BeforeInsert);
+            this.ucERPPayKind.AfterInsert += new Srvtools.UpdateComponentAfterInsertEventHandler(this.ucERPPayKind_AfterInsert);
+            this.ucERPPayKind.AfterDelete += new Srvtools.UpdateComponentAfterDeleteEventHandler(this.ucERPPayKind_AfterDelete);
             // 
             // CustBill
             // 
@@ -745,7 +795,7 @@
             this.CustBill.CommandTimeout = 30;
             this.CustBill.CommandType = System.Data.CommandType.Text;
             this.CustBill.DynamicTableName = false;
-            this.CustBill.EEPAlias = "JBDBNJB";
+            this.CustBill.EEPAlias = "JBADMIN";
             this.CustBill.EncodingAfter = null;
             this.CustBill.EncodingBefore = "Windows-1252";
             this.CustBill.EncodingConvert = null;
@@ -767,11 +817,12 @@
             // SalesMan
             // 
             this.SalesMan.CacheConnection = false;
-            this.SalesMan.CommandText = resources.GetString("SalesMan.CommandText");
+            this.SalesMan.CommandText = "select  ERPSalesMan.SalesID,\r\n        ERPSalesMan.SalesID+\' \'+ERPSalesMan.SalesNa" +
+    "me as SalesName,\r\n        ERPSalesMan.SalesEmployeeID    \r\nfrom   ERPSalesMan";
             this.SalesMan.CommandTimeout = 30;
             this.SalesMan.CommandType = System.Data.CommandType.Text;
             this.SalesMan.DynamicTableName = false;
-            this.SalesMan.EEPAlias = "JBDBNJB";
+            this.SalesMan.EEPAlias = "JBADMIN";
             this.SalesMan.EncodingAfter = null;
             this.SalesMan.EncodingBefore = "Windows-1252";
             this.SalesMan.EncodingConvert = null;
@@ -914,15 +965,17 @@
             // Industry
             // 
             this.Industry.CacheConnection = false;
-            this.Industry.CommandText = "SELECT * FROM View_Industry ORDER BY JB_NAME";
+            this.Industry.CommandText = "SELECT * FROM ERPIndustryType";
             this.Industry.CommandTimeout = 30;
             this.Industry.CommandType = System.Data.CommandType.Text;
             this.Industry.DynamicTableName = false;
-            this.Industry.EEPAlias = "JBDBNJB";
+            this.Industry.EEPAlias = "JBADMIN";
             this.Industry.EncodingAfter = null;
             this.Industry.EncodingBefore = "Windows-1252";
             this.Industry.EncodingConvert = null;
             this.Industry.InfoConnection = this.InfoConnection1;
+            keyItem7.KeyName = "jb_type";
+            this.Industry.KeyFields.Add(keyItem7);
             this.Industry.MultiSetWhere = false;
             this.Industry.Name = "Industry";
             this.Industry.NotificationAutoEnlist = false;
@@ -1040,13 +1093,13 @@
             this.PaperType.CommandTimeout = 30;
             this.PaperType.CommandType = System.Data.CommandType.Text;
             this.PaperType.DynamicTableName = false;
-            this.PaperType.EEPAlias = "JBDBNJB";
+            this.PaperType.EEPAlias = "JBADMIN";
             this.PaperType.EncodingAfter = null;
             this.PaperType.EncodingBefore = "Windows-1252";
             this.PaperType.EncodingConvert = null;
             this.PaperType.InfoConnection = this.InfoConnection1;
-            keyItem7.KeyName = "AutoKey";
-            this.PaperType.KeyFields.Add(keyItem7);
+            keyItem8.KeyName = "AutoKey";
+            this.PaperType.KeyFields.Add(keyItem8);
             this.PaperType.MultiSetWhere = false;
             this.PaperType.Name = "PaperType";
             this.PaperType.NotificationAutoEnlist = false;
@@ -1071,8 +1124,8 @@
             this.PostType.EncodingBefore = "Windows-1252";
             this.PostType.EncodingConvert = null;
             this.PostType.InfoConnection = this.InfoConnection1;
-            keyItem8.KeyName = "AutoKey";
-            this.PostType.KeyFields.Add(keyItem8);
+            keyItem9.KeyName = "AutoKey";
+            this.PostType.KeyFields.Add(keyItem9);
             this.PostType.MultiSetWhere = false;
             this.PostType.Name = "PostType";
             this.PostType.NotificationAutoEnlist = false;
@@ -1113,17 +1166,17 @@
             // 
             this.CustNotes.CacheConnection = false;
             this.CustNotes.CommandText = "SELECT *,NextCallDate  AS PreNextCallDate,NextCallTime AS PreNextCallTime\r\n FROM " +
-    "ERPCustomerToDoNotes\r\nORDER BY  NEXTCALLDATE DESC\r\n";
+    "ERPCustomerToDoNotes\r\nORDER BY  CreateDate DESC\r\n";
             this.CustNotes.CommandTimeout = 30;
             this.CustNotes.CommandType = System.Data.CommandType.Text;
             this.CustNotes.DynamicTableName = false;
-            this.CustNotes.EEPAlias = "JBDBNJB";
+            this.CustNotes.EEPAlias = "JBADMIN";
             this.CustNotes.EncodingAfter = null;
             this.CustNotes.EncodingBefore = "Windows-1252";
             this.CustNotes.EncodingConvert = null;
             this.CustNotes.InfoConnection = this.InfoConnection1;
-            keyItem9.KeyName = "AutoKey";
-            this.CustNotes.KeyFields.Add(keyItem9);
+            keyItem10.KeyName = "AutoKey";
+            this.CustNotes.KeyFields.Add(keyItem10);
             this.CustNotes.MultiSetWhere = false;
             this.CustNotes.Name = "CustNotes";
             this.CustNotes.NotificationAutoEnlist = false;
@@ -1250,7 +1303,7 @@
             this.NextCallTime.CommandTimeout = 30;
             this.NextCallTime.CommandType = System.Data.CommandType.Text;
             this.NextCallTime.DynamicTableName = false;
-            this.NextCallTime.EEPAlias = "JBDBNJB";
+            this.NextCallTime.EEPAlias = "JBADMIN";
             this.NextCallTime.EncodingAfter = null;
             this.NextCallTime.EncodingBefore = "Windows-1252";
             this.NextCallTime.EncodingConvert = null;
@@ -1275,7 +1328,7 @@
             this.IndustryType.CommandTimeout = 30;
             this.IndustryType.CommandType = System.Data.CommandType.Text;
             this.IndustryType.DynamicTableName = false;
-            this.IndustryType.EEPAlias = "JBDBNJB";
+            this.IndustryType.EEPAlias = "JBADMIN";
             this.IndustryType.EncodingAfter = null;
             this.IndustryType.EncodingBefore = "Windows-1252";
             this.IndustryType.EncodingConvert = null;
@@ -1300,7 +1353,7 @@
             this.NotesType.CommandTimeout = 30;
             this.NotesType.CommandType = System.Data.CommandType.Text;
             this.NotesType.DynamicTableName = false;
-            this.NotesType.EEPAlias = "JBDBNJB";
+            this.NotesType.EEPAlias = "JBADMIN";
             this.NotesType.EncodingAfter = null;
             this.NotesType.EncodingBefore = "Windows-1252";
             this.NotesType.EncodingConvert = null;
@@ -1316,6 +1369,267 @@
             this.NotesType.SiteControl = false;
             this.NotesType.SiteFieldName = null;
             this.NotesType.UpdatedRowSource = System.Data.UpdateRowSource.None;
+            // 
+            // SYSVar3
+            // 
+            this.SYSVar3.CacheConnection = false;
+            this.SYSVar3.CommandText = "SELECT CategoryValue FROM SYS_Variable WHERE CateGory=\'SetSalesIDUsersEEP\'";
+            this.SYSVar3.CommandTimeout = 30;
+            this.SYSVar3.CommandType = System.Data.CommandType.Text;
+            this.SYSVar3.DynamicTableName = false;
+            this.SYSVar3.EEPAlias = "JBADMIN";
+            this.SYSVar3.EncodingAfter = null;
+            this.SYSVar3.EncodingBefore = "Windows-1252";
+            this.SYSVar3.EncodingConvert = null;
+            this.SYSVar3.InfoConnection = this.InfoConnection1;
+            this.SYSVar3.MultiSetWhere = false;
+            this.SYSVar3.Name = "SYSVar3";
+            this.SYSVar3.NotificationAutoEnlist = false;
+            this.SYSVar3.SecExcept = null;
+            this.SYSVar3.SecFieldName = null;
+            this.SYSVar3.SecStyle = Srvtools.SecurityStyle.ssByNone;
+            this.SYSVar3.SelectPaging = false;
+            this.SYSVar3.SelectTop = 0;
+            this.SYSVar3.SiteControl = false;
+            this.SYSVar3.SiteFieldName = null;
+            this.SYSVar3.UpdatedRowSource = System.Data.UpdateRowSource.None;
+            // 
+            // info0800Cus
+            // 
+            this.info0800Cus.CacheConnection = false;
+            this.info0800Cus.CommandText = resources.GetString("info0800Cus.CommandText");
+            this.info0800Cus.CommandTimeout = 30;
+            this.info0800Cus.CommandType = System.Data.CommandType.Text;
+            this.info0800Cus.DynamicTableName = false;
+            this.info0800Cus.EEPAlias = "JOB0800";
+            this.info0800Cus.EncodingAfter = null;
+            this.info0800Cus.EncodingBefore = "Windows-1252";
+            this.info0800Cus.EncodingConvert = null;
+            this.info0800Cus.InfoConnection = this.infoConnection2;
+            keyItem11.KeyName = "Id";
+            keyItem12.KeyName = "Code";
+            this.info0800Cus.KeyFields.Add(keyItem11);
+            this.info0800Cus.KeyFields.Add(keyItem12);
+            this.info0800Cus.MultiSetWhere = false;
+            this.info0800Cus.Name = "info0800Cus";
+            this.info0800Cus.NotificationAutoEnlist = false;
+            this.info0800Cus.SecExcept = null;
+            this.info0800Cus.SecFieldName = null;
+            this.info0800Cus.SecStyle = Srvtools.SecurityStyle.ssByNone;
+            this.info0800Cus.SelectPaging = false;
+            this.info0800Cus.SelectTop = 0;
+            this.info0800Cus.SiteControl = false;
+            this.info0800Cus.SiteFieldName = null;
+            this.info0800Cus.UpdatedRowSource = System.Data.UpdateRowSource.None;
+            // 
+            // infoConnection2
+            // 
+            this.infoConnection2.EEPAlias = "JOB0800";
+            // 
+            // updateComponent1
+            // 
+            this.updateComponent1.AutoTrans = true;
+            this.updateComponent1.ExceptJoin = false;
+            fieldAttr66.CheckNull = false;
+            fieldAttr66.DataField = "PayKindNO";
+            fieldAttr66.DefaultMode = Srvtools.DefaultModeType.Insert;
+            fieldAttr66.DefaultValue = null;
+            fieldAttr66.TrimLength = 0;
+            fieldAttr66.UpdateEnable = true;
+            fieldAttr66.WhereMode = true;
+            fieldAttr67.CheckNull = false;
+            fieldAttr67.DataField = "CustNO";
+            fieldAttr67.DefaultMode = Srvtools.DefaultModeType.Insert;
+            fieldAttr67.DefaultValue = null;
+            fieldAttr67.TrimLength = 0;
+            fieldAttr67.UpdateEnable = true;
+            fieldAttr67.WhereMode = true;
+            fieldAttr68.CheckNull = false;
+            fieldAttr68.DataField = "SalesTypeID";
+            fieldAttr68.DefaultMode = Srvtools.DefaultModeType.Insert;
+            fieldAttr68.DefaultValue = null;
+            fieldAttr68.TrimLength = 0;
+            fieldAttr68.UpdateEnable = true;
+            fieldAttr68.WhereMode = true;
+            fieldAttr69.CheckNull = false;
+            fieldAttr69.DataField = "PayTypeID";
+            fieldAttr69.DefaultMode = Srvtools.DefaultModeType.Insert;
+            fieldAttr69.DefaultValue = null;
+            fieldAttr69.TrimLength = 0;
+            fieldAttr69.UpdateEnable = true;
+            fieldAttr69.WhereMode = true;
+            fieldAttr70.CheckNull = false;
+            fieldAttr70.DataField = "BalanceDay";
+            fieldAttr70.DefaultMode = Srvtools.DefaultModeType.Insert;
+            fieldAttr70.DefaultValue = null;
+            fieldAttr70.TrimLength = 0;
+            fieldAttr70.UpdateEnable = true;
+            fieldAttr70.WhereMode = true;
+            fieldAttr71.CheckNull = false;
+            fieldAttr71.DataField = "PayDays";
+            fieldAttr71.DefaultMode = Srvtools.DefaultModeType.Insert;
+            fieldAttr71.DefaultValue = null;
+            fieldAttr71.TrimLength = 0;
+            fieldAttr71.UpdateEnable = true;
+            fieldAttr71.WhereMode = true;
+            fieldAttr72.CheckNull = false;
+            fieldAttr72.DataField = "PayLeadDays";
+            fieldAttr72.DefaultMode = Srvtools.DefaultModeType.Insert;
+            fieldAttr72.DefaultValue = null;
+            fieldAttr72.TrimLength = 0;
+            fieldAttr72.UpdateEnable = true;
+            fieldAttr72.WhereMode = true;
+            fieldAttr73.CheckNull = false;
+            fieldAttr73.DataField = "CreateBy";
+            fieldAttr73.DefaultMode = Srvtools.DefaultModeType.Insert;
+            fieldAttr73.DefaultValue = "_username";
+            fieldAttr73.TrimLength = 0;
+            fieldAttr73.UpdateEnable = true;
+            fieldAttr73.WhereMode = true;
+            fieldAttr74.CheckNull = false;
+            fieldAttr74.DataField = "CreateDate";
+            fieldAttr74.DefaultMode = Srvtools.DefaultModeType.Insert;
+            fieldAttr74.DefaultValue = null;
+            fieldAttr74.TrimLength = 0;
+            fieldAttr74.UpdateEnable = true;
+            fieldAttr74.WhereMode = true;
+            this.updateComponent1.FieldAttrs.Add(fieldAttr66);
+            this.updateComponent1.FieldAttrs.Add(fieldAttr67);
+            this.updateComponent1.FieldAttrs.Add(fieldAttr68);
+            this.updateComponent1.FieldAttrs.Add(fieldAttr69);
+            this.updateComponent1.FieldAttrs.Add(fieldAttr70);
+            this.updateComponent1.FieldAttrs.Add(fieldAttr71);
+            this.updateComponent1.FieldAttrs.Add(fieldAttr72);
+            this.updateComponent1.FieldAttrs.Add(fieldAttr73);
+            this.updateComponent1.FieldAttrs.Add(fieldAttr74);
+            this.updateComponent1.LogInfo = null;
+            this.updateComponent1.Name = "updateComponent1";
+            this.updateComponent1.RowAffectsCheck = false;
+            this.updateComponent1.SelectCmd = this.info0800Cus;
+            this.updateComponent1.SelectCmdForUpdate = null;
+            this.updateComponent1.SendSQLCmd = true;
+            this.updateComponent1.ServerModify = true;
+            this.updateComponent1.ServerModifyGetMax = false;
+            this.updateComponent1.TranscationScopeTimeOut = System.TimeSpan.Parse("00:02:00");
+            this.updateComponent1.TransIsolationLevel = System.Data.IsolationLevel.ReadCommitted;
+            this.updateComponent1.UseTranscationScope = false;
+            this.updateComponent1.WhereMode = Srvtools.WhereModeType.Keyfields;
+            // 
+            // updateComponent2
+            // 
+            this.updateComponent2.AutoTrans = true;
+            this.updateComponent2.ExceptJoin = false;
+            fieldAttr75.CheckNull = false;
+            fieldAttr75.DataField = "PayKindNO";
+            fieldAttr75.DefaultMode = Srvtools.DefaultModeType.Insert;
+            fieldAttr75.DefaultValue = null;
+            fieldAttr75.TrimLength = 0;
+            fieldAttr75.UpdateEnable = true;
+            fieldAttr75.WhereMode = true;
+            fieldAttr76.CheckNull = false;
+            fieldAttr76.DataField = "CustNO";
+            fieldAttr76.DefaultMode = Srvtools.DefaultModeType.Insert;
+            fieldAttr76.DefaultValue = null;
+            fieldAttr76.TrimLength = 0;
+            fieldAttr76.UpdateEnable = true;
+            fieldAttr76.WhereMode = true;
+            fieldAttr77.CheckNull = false;
+            fieldAttr77.DataField = "SalesTypeID";
+            fieldAttr77.DefaultMode = Srvtools.DefaultModeType.Insert;
+            fieldAttr77.DefaultValue = null;
+            fieldAttr77.TrimLength = 0;
+            fieldAttr77.UpdateEnable = true;
+            fieldAttr77.WhereMode = true;
+            fieldAttr78.CheckNull = false;
+            fieldAttr78.DataField = "PayTypeID";
+            fieldAttr78.DefaultMode = Srvtools.DefaultModeType.Insert;
+            fieldAttr78.DefaultValue = null;
+            fieldAttr78.TrimLength = 0;
+            fieldAttr78.UpdateEnable = true;
+            fieldAttr78.WhereMode = true;
+            fieldAttr79.CheckNull = false;
+            fieldAttr79.DataField = "BalanceDay";
+            fieldAttr79.DefaultMode = Srvtools.DefaultModeType.Insert;
+            fieldAttr79.DefaultValue = null;
+            fieldAttr79.TrimLength = 0;
+            fieldAttr79.UpdateEnable = true;
+            fieldAttr79.WhereMode = true;
+            fieldAttr80.CheckNull = false;
+            fieldAttr80.DataField = "PayDays";
+            fieldAttr80.DefaultMode = Srvtools.DefaultModeType.Insert;
+            fieldAttr80.DefaultValue = null;
+            fieldAttr80.TrimLength = 0;
+            fieldAttr80.UpdateEnable = true;
+            fieldAttr80.WhereMode = true;
+            fieldAttr81.CheckNull = false;
+            fieldAttr81.DataField = "PayLeadDays";
+            fieldAttr81.DefaultMode = Srvtools.DefaultModeType.Insert;
+            fieldAttr81.DefaultValue = null;
+            fieldAttr81.TrimLength = 0;
+            fieldAttr81.UpdateEnable = true;
+            fieldAttr81.WhereMode = true;
+            fieldAttr82.CheckNull = false;
+            fieldAttr82.DataField = "CreateBy";
+            fieldAttr82.DefaultMode = Srvtools.DefaultModeType.Insert;
+            fieldAttr82.DefaultValue = "_username";
+            fieldAttr82.TrimLength = 0;
+            fieldAttr82.UpdateEnable = true;
+            fieldAttr82.WhereMode = true;
+            fieldAttr83.CheckNull = false;
+            fieldAttr83.DataField = "CreateDate";
+            fieldAttr83.DefaultMode = Srvtools.DefaultModeType.Insert;
+            fieldAttr83.DefaultValue = null;
+            fieldAttr83.TrimLength = 0;
+            fieldAttr83.UpdateEnable = true;
+            fieldAttr83.WhereMode = true;
+            this.updateComponent2.FieldAttrs.Add(fieldAttr75);
+            this.updateComponent2.FieldAttrs.Add(fieldAttr76);
+            this.updateComponent2.FieldAttrs.Add(fieldAttr77);
+            this.updateComponent2.FieldAttrs.Add(fieldAttr78);
+            this.updateComponent2.FieldAttrs.Add(fieldAttr79);
+            this.updateComponent2.FieldAttrs.Add(fieldAttr80);
+            this.updateComponent2.FieldAttrs.Add(fieldAttr81);
+            this.updateComponent2.FieldAttrs.Add(fieldAttr82);
+            this.updateComponent2.FieldAttrs.Add(fieldAttr83);
+            this.updateComponent2.LogInfo = null;
+            this.updateComponent2.Name = "updateComponent2";
+            this.updateComponent2.RowAffectsCheck = false;
+            this.updateComponent2.SelectCmd = this.info0800Cus;
+            this.updateComponent2.SelectCmdForUpdate = null;
+            this.updateComponent2.SendSQLCmd = true;
+            this.updateComponent2.ServerModify = true;
+            this.updateComponent2.ServerModifyGetMax = false;
+            this.updateComponent2.TranscationScopeTimeOut = System.TimeSpan.Parse("00:02:00");
+            this.updateComponent2.TransIsolationLevel = System.Data.IsolationLevel.ReadCommitted;
+            this.updateComponent2.UseTranscationScope = false;
+            this.updateComponent2.WhereMode = Srvtools.WhereModeType.Keyfields;
+            // 
+            // info0800Account
+            // 
+            this.info0800Account.CacheConnection = false;
+            this.info0800Account.CommandText = "select Id,Name,Email,Name+\'-\'+Email as sName\r\nfrom Account\r\n WHERE TeamId=\'000000" +
+    "00-0000-0000-0000-000000000001\'";
+            this.info0800Account.CommandTimeout = 30;
+            this.info0800Account.CommandType = System.Data.CommandType.Text;
+            this.info0800Account.DynamicTableName = false;
+            this.info0800Account.EEPAlias = "JOB0800";
+            this.info0800Account.EncodingAfter = null;
+            this.info0800Account.EncodingBefore = "Windows-1252";
+            this.info0800Account.EncodingConvert = null;
+            this.info0800Account.InfoConnection = this.infoConnection2;
+            keyItem13.KeyName = "Id";
+            this.info0800Account.KeyFields.Add(keyItem13);
+            this.info0800Account.MultiSetWhere = false;
+            this.info0800Account.Name = "info0800Account";
+            this.info0800Account.NotificationAutoEnlist = false;
+            this.info0800Account.SecExcept = null;
+            this.info0800Account.SecFieldName = null;
+            this.info0800Account.SecStyle = Srvtools.SecurityStyle.ssByNone;
+            this.info0800Account.SelectPaging = false;
+            this.info0800Account.SelectTop = 0;
+            this.info0800Account.SiteControl = false;
+            this.info0800Account.SiteFieldName = null;
+            this.info0800Account.UpdatedRowSource = System.Data.UpdateRowSource.None;
             ((System.ComponentModel.ISupportInitialize)(this.InfoConnection1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ERPCustomers)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.View_ERPCustomers)).EndInit();
@@ -1339,6 +1653,10 @@
             ((System.ComponentModel.ISupportInitialize)(this.NextCallTime)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.IndustryType)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.NotesType)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.SYSVar3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.info0800Cus)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.infoConnection2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.info0800Account)).EndInit();
 
         }
 
@@ -1371,5 +1689,11 @@
         private Srvtools.InfoCommand NextCallTime;
         private Srvtools.InfoCommand IndustryType;
         private Srvtools.InfoCommand NotesType;
+        private Srvtools.InfoCommand SYSVar3;
+        private Srvtools.InfoCommand info0800Cus;
+        private Srvtools.UpdateComponent updateComponent1;
+        private Srvtools.InfoConnection infoConnection2;
+        private Srvtools.UpdateComponent updateComponent2;
+        private Srvtools.InfoCommand info0800Account;
     }
 }

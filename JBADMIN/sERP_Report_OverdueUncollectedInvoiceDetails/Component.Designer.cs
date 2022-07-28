@@ -30,14 +30,11 @@
         {
             this.components = new System.ComponentModel.Container();
             Srvtools.Service service1 = new Srvtools.Service();
-            Srvtools.Service service2 = new Srvtools.Service();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Component));
             Srvtools.KeyItem keyItem1 = new Srvtools.KeyItem();
             Srvtools.KeyItem keyItem2 = new Srvtools.KeyItem();
             Srvtools.KeyItem keyItem3 = new Srvtools.KeyItem();
             Srvtools.KeyItem keyItem4 = new Srvtools.KeyItem();
-            Srvtools.KeyItem keyItem5 = new Srvtools.KeyItem();
-            Srvtools.KeyItem keyItem6 = new Srvtools.KeyItem();
             this.serviceManager1 = new Srvtools.ServiceManager(this.components);
             this.InfoConnection1 = new Srvtools.InfoConnection(this.components);
             this.InvoiceDetails = new Srvtools.InfoCommand(this.components);
@@ -59,11 +56,7 @@
             service1.DelegateName = "GetReportData";
             service1.NonLogin = false;
             service1.ServiceName = "GetReportData";
-            service2.DelegateName = "GetUserSalesTypesStr";
-            service2.NonLogin = false;
-            service2.ServiceName = "GetUserSalesTypesStr";
             this.serviceManager1.ServiceCollection.Add(service1);
-            this.serviceManager1.ServiceCollection.Add(service2);
             // 
             // InfoConnection1
             // 
@@ -129,7 +122,8 @@
             // SalesType
             // 
             this.SalesType.CacheConnection = false;
-            this.SalesType.CommandText = resources.GetString("SalesType.CommandText");
+            this.SalesType.CommandText = "select SalesType.SalesTypeID,SalesType.SalesTypeName from SalesType order by Sale" +
+    "sTypeID";
             this.SalesType.CommandTimeout = 30;
             this.SalesType.CommandType = System.Data.CommandType.Text;
             this.SalesType.DynamicTableName = false;
@@ -138,10 +132,6 @@
             this.SalesType.EncodingBefore = "Windows-1252";
             this.SalesType.EncodingConvert = null;
             this.SalesType.InfoConnection = this.InfoConnection1;
-            keyItem3.KeyName = "SalesID";
-            keyItem4.KeyName = "SalesTypeID";
-            this.SalesType.KeyFields.Add(keyItem3);
-            this.SalesType.KeyFields.Add(keyItem4);
             this.SalesType.MultiSetWhere = false;
             this.SalesType.Name = "SalesType";
             this.SalesType.NotificationAutoEnlist = false;
@@ -167,8 +157,8 @@
             this.Customer.EncodingBefore = "Windows-1252";
             this.Customer.EncodingConvert = null;
             this.Customer.InfoConnection = this.InfoConnection1;
-            keyItem5.KeyName = "CustomerID";
-            this.Customer.KeyFields.Add(keyItem5);
+            keyItem3.KeyName = "CustomerID";
+            this.Customer.KeyFields.Add(keyItem3);
             this.Customer.MultiSetWhere = false;
             this.Customer.Name = "Customer";
             this.Customer.NotificationAutoEnlist = false;
@@ -193,8 +183,8 @@
             this.InsGroup.EncodingBefore = "Windows-1252";
             this.InsGroup.EncodingConvert = null;
             this.InsGroup.InfoConnection = this.infoConnection2;
-            keyItem6.KeyName = "InsGroupID";
-            this.InsGroup.KeyFields.Add(keyItem6);
+            keyItem4.KeyName = "InsGroupID";
+            this.InsGroup.KeyFields.Add(keyItem4);
             this.InsGroup.MultiSetWhere = false;
             this.InsGroup.Name = "InsGroup";
             this.InsGroup.NotificationAutoEnlist = false;

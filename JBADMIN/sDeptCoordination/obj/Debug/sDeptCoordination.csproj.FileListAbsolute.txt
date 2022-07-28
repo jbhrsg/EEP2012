@@ -1,0 +1,9 @@
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sDeptCoordination\bin\Debug\sDeptCoordination.dll
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sDeptCoordination\bin\Debug\sDeptCoordination.pdb
+C:\Program Files (x86)\Infolight\EEP2012\EEPNetServer\JBADMIN\sDeptCoordination.dll
+C:\Program Files (x86)\Infolight\EEP2012\EEPNetServer\JBADMIN\sDeptCoordination.pdb
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sDeptCoordination\obj\Debug\sDeptCoordination.csprojResolveAssemblyReference.cache
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sDeptCoordination\obj\Debug\sDeptCoordination.Component.resources
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sDeptCoordination\obj\Debug\sDeptCoordination.csproj.GenerateResource.Cache
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sDeptCoordination\obj\Debug\sDeptCoordination.dll
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sDeptCoordination\obj\Debug\sDeptCoordination.pdb

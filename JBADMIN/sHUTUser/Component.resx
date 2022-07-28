@@ -1,0 +1,285 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <metadata name="serviceManager1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 64</value>
+  </metadata>
+  <metadata name="InfoConnection1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 111</value>
+  </metadata>
+  <metadata name="HUT_User.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 205</value>
+  </metadata>
+  <data name="HUT_User.CommandText" xml:space="preserve">
+    <value>select u.*,g.Gender as GenderText,DATEDIFF(YEAR,u.Birthday,GETDATE()) as iAge,m.Marriage as sMarriage
+	,(select count(distinct JobID) from HUT_JobAssignLogs where UserID=u.UserID) as iJob
+	,Isnull((select IsActive from HUT_Hunter where ID=u.UserHunterID),0) as HunterIsActive
+	,Isnull((select SalesTeamID from HUT_Hunter where ID=u.UserHunterID),0) as HunterSalesTeamID
+	,(select HunterName from HUT_Hunter where ID=u.UserHunterID) as UserHunterName
+from HUT_User u 
+	left join HUT_ZGENType g on u.Gender=g.ID
+	left join HUT_ZMarType m on u.MarriageStatus=m.ID
+order by u.LastUpdateDate desc,u.NameC</value>
+  </data>
+  <metadata name="ucHUT_User.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 252</value>
+  </metadata>
+  <metadata name="HUT_UserCareer.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 299</value>
+  </metadata>
+  <metadata name="ucHUT_UserCareer.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 346</value>
+  </metadata>
+  <metadata name="idHUT_User_Career.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 393</value>
+  </metadata>
+  <metadata name="autoNumber1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 440</value>
+  </metadata>
+  <metadata name="infoHUT_ZMarType.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 487</value>
+  </metadata>
+  <metadata name="infoHUT_ZComScale.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 534</value>
+  </metadata>
+  <metadata name="HUT_UserLang.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 581</value>
+  </metadata>
+  <metadata name="ucHUT_UserLang.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 628</value>
+  </metadata>
+  <metadata name="idHUT_User_Lang.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 675</value>
+  </metadata>
+  <metadata name="infoHUT_ZLangType.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 722</value>
+  </metadata>
+  <metadata name="infoHUT_ZLangLevel.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 816</value>
+  </metadata>
+  <metadata name="infoHUT_ZEduLevel.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 863</value>
+  </metadata>
+  <metadata name="infoUserCareerCategory.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 910</value>
+  </metadata>
+  <metadata name="ucUserCareerCategory.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 957</value>
+  </metadata>
+  <metadata name="HUT_UserCareerCategory.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 1004</value>
+  </metadata>
+  <metadata name="ucHUT_JobAssignLogs.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 1051</value>
+  </metadata>
+  <metadata name="HUT_JobAssignLogs.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 1098</value>
+  </metadata>
+  <data name="HUT_JobAssignLogs.CommandText" xml:space="preserve">
+    <value>select HUT_JobAssignLogs.*,h.JobName,ROUND(iTurnoverReal*ratioReal,0) as AmountReal
+,(select HunterName from HUT_Hunter where ID=HUT_JobAssignLogs.HunterID) as AssignHunterName
+,(select HunterName from HUT_Hunter where ID=h.HunterID) as JobHunterName
+,Isnull((select SalesTeamID from HUT_Hunter where ID=HUT_JobAssignLogs.HunterID),0) as HunterSalesTeamID
+,dbo.funReturnJobAssignLogsStatus(1,0,HUT_JobAssignLogs.JobID) as JBERPSalseName
+,c.CustTaxNo,left(c.CustName,4)+' - '+h.JobName as sCustJobName
+from HUT_JobAssignLogs 
+	inner join HUT_Job h on HUT_JobAssignLogs.JobID=h.JobID
+	inner join HUT_customer c on h.CustID=c.CustID
+order by AssignTime desc,AssignID desc</value>
+  </data>
+  <metadata name="idHUT_User_JobAssignLogs.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 1145</value>
+  </metadata>
+  <metadata name="HUT_Job.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 1192</value>
+  </metadata>
+  <data name="HUT_Job.CommandText" xml:space="preserve">
+    <value>select j.JobID,left(c.CustName,4) as CustName,j.JobName,left(c.CustName,4)+' - '+j.JobName as sJobName,j.HunterID
+from HUT_Customer c
+	inner join HUT_Job j on j.CustID=c.CustID
+	where j.JobID in (select JobID from HUT_JobTemp  where CustID=c.CustID and iDate=1)</value>
+  </data>
+  <metadata name="HUT_ZAssignStep.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 1286</value>
+  </metadata>
+  <metadata name="infoJobAssignSource.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 1333</value>
+  </metadata>
+  <metadata name="infoUserSourse.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 1380</value>
+  </metadata>
+  <metadata name="infoDutyDate.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 1427</value>
+  </metadata>
+  <metadata name="ucHUT_UserContactRecord.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 1474</value>
+  </metadata>
+  <metadata name="HUT_UserContactRecord.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 1521</value>
+  </metadata>
+  <data name="HUT_UserContactRecord.CommandText" xml:space="preserve">
+    <value>select *,(select NameC from HUT_User where UserID=HUT_UserContactRecord.UserID) as cNameC
+,(select HunterName from HUT_Hunter where ID=HUT_UserContactRecord.HunterID) as HunterName
+from HUT_UserContactRecord 
+order by  ContactDate desc,AutoKey desc</value>
+  </data>
+  <metadata name="idHUT_User_ContactRecord.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 1568</value>
+  </metadata>
+  <metadata name="infoDutyDate2.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 1615</value>
+  </metadata>
+  <metadata name="infoHUT_ZAssignStepReason.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 1709</value>
+  </metadata>
+  <metadata name="idHUT_UserFile.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 1756</value>
+  </metadata>
+  <metadata name="HUT_UserFile.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 1662</value>
+  </metadata>
+  <metadata name="ucHUT_UserFile.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 158</value>
+  </metadata>
+  <metadata name="HUT_Hunter.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 1239</value>
+  </metadata>
+  <metadata name="infoReportRevenue.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 769</value>
+  </metadata>
+  <data name="infoReportRevenue.CommandText" xml:space="preserve">
+    <value>select distinct  a.AutoKey,j.CustID,Left(c.CustName,4) as ShortCustName,j.JobID,j.JobName,h.HunterName,u.UserID,u.NameC,
+		h2.HunterName as AssignHunter,a.AssignTime,a.Draft,a.DraftMonth,Isnull(j.iTurnover*j.ratio,0) as EstimateTurnover,a.AssignExplain
+	from HUT_Job j
+		inner join HUT_Customer c on c.CustID=j.CustID
+		left join HUT_Hunter h on j.HunterID=h.ID
+		inner join HUT_JobAssignLogs a on a.JobID=j.JobID
+		left join HUT_Hunter h2 on a.HunterID=h2.ID
+		left join HUT_JobDateLog l on j.JobID=l.JobID and l.AutoKey=(select MAX(AutoKey) from HUT_JobDateLog where JobID=j.JobID)
+		inner join HUT_User u on a.UserID=u.UserID 
+		where a.AssignID=1 and dbo.procReturnJobAssignLogsRevenue(u.UserID,j.JobID,a.AssignTime)=0
+order by h.HunterName,a.AssignTime</value>
+  </data>
+  <metadata name="infoReportRevenueExplain.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>596, 274</value>
+  </metadata>
+  <metadata name="$this.TrayLargeIcon" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>False</value>
+  </metadata>
+</root>

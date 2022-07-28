@@ -1,0 +1,9 @@
+D:\Infolight\EEP2012\JBADMIN\sPowerData\bin\Debug\sPowerData.dll
+D:\Infolight\EEP2012\JBADMIN\sPowerData\bin\Debug\sPowerData.pdb
+D:\Infolight\EEP2012\JBADMIN\sPowerData\obj\Debug\sPowerData.csproj.GenerateResource.Cache
+D:\Infolight\EEP2012\JBADMIN\sPowerData\obj\Debug\sPowerData.dll
+D:\Infolight\EEP2012\JBADMIN\sPowerData\obj\Debug\sPowerData.pdb
+D:\Infolight\EEP2012\EEPNetServer\JBADMIN\sPowerData.dll
+D:\Infolight\EEP2012\EEPNetServer\JBADMIN\sPowerData.pdb
+D:\Infolight\EEP2012\JBADMIN\sPowerData\obj\Debug\sPowerData.Component.resources
+D:\Infolight\EEP2012\JBADMIN\sPowerData\obj\Debug\sPowerData.csprojResolveAssemblyReference.cache

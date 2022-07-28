@@ -1,0 +1,11 @@
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sERP_Setting_Item\bin\Debug\sERP_Setting_Item.dll
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sERP_Setting_Item\bin\Debug\sERP_Setting_Item.pdb
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sERP_Setting_Item\obj\Debug\sERP_Setting_Item.csproj.GenerateResource.Cache
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sERP_Setting_Item\obj\Debug\sERP_Setting_Item.dll
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sERP_Setting_Item\obj\Debug\sERP_Setting_Item.pdb
+C:\Program Files (x86)\Infolight\EEP2012\EEPNetServer\JBADMIN\sERP_Setting_Item.dll
+C:\Program Files (x86)\Infolight\EEP2012\EEPNetServer\JBADMIN\sERP_Setting_Item.pdb
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sERP_Setting_Item\obj\Debug\sERP_Setting_Item.Component.resources
+C:\Program Files (x86)\Infolight\EEP2012\EEPNetServer\JBADMIN\vi-VN\sERP_Setting_Item.resources.dll
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sERP_Setting_Item\obj\Debug\sERP_Setting_Item.Component.vi-VN.resources
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sERP_Setting_Item\obj\Debug\vi-VN\sERP_Setting_Item.resources.dll

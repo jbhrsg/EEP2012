@@ -181,15 +181,16 @@ namespace sJBERP_WorkRecordApply
                     ep.CallFLMethod(this.ClientInfo, "Submit", new object[]{
                     null,
                     new object[]{
-                    "C:\\Program Files (x86)\\Infolight\\EEP2012\\EEPNetServer\\Workflow\\FL\\JBERP_WorkRecordApply.xoml",
-                    //"C:\\EEP2012\\EEPNetServer\\Workflow\\FL\\JBERP_WorkRecordApply.xoml",
+                    //"C:\\Program Files (x86)\\Infolight\\EEP2012\\EEPNetServer\\Workflow\\FL\\JBERP_WorkRecordApply.xoml",
+                    "C:\\EEP2012\\EEPNetServer\\Workflow\\FL\\JBERP_WorkRecordApply.xoml",
                     string.Empty,////空白即可，系統使用
                     0,//是否為重要申請
                     0,//是否為緊急申請
                     "",//提交意見說明
                     RoleID,//申請者的RoleID(角色編號)
                     "sJBERP_WorkRecordApply.WRMaster",//Server端的Dll名稱以及對應的InfoCommand的名字，比如S001.InfoCommand1
-                    0,//系統使用
+                    //0,//系統使用
+                    "http://www.jbhr.com.tw//jqwebclient//MainPage_Flow.aspx?FolderName={0}&amp;FormName={1}&amp;LISTID={2}&amp;FLOWPATH={3}&amp;WHERESTRING={4}&amp;NAVMODE={5}&amp;FLNAVMODE={6}&amp;Users={7}&amp;PLUSAPPROVE={8}&amp;STATUS={9}&amp;SENDTOID={10}&amp;MULTISTEPRETURN={11}&amp;ATTACHMENTS={12}",  
                     "0",//組織類別編號ex:0公司組織、1福利委員會
                     "" //附件
                     },
@@ -212,6 +213,51 @@ namespace sJBERP_WorkRecordApply
         }
 
 
+        public object[] RejectServerMethod(object[] objParam)
+        {
+            //一.作廢該筆 WRMaster 1.flowflag update 為 ''  
+            //二.刪除 EIPHRYS.DBO.SYS_TODOLIST
+            //   例.DELETE FROM EIPHRSYS.DBO.SYS_TODOLIST WHERE FORM_PRESENTATION='WRNO=''WR000070'''
+            //三.刪除 EIPHRYS.DBO.SYS_TODOHIS
+            //   例.DELETE FROM EIPHRSYS.DBO.SYS_TODOHIS WHERE FORM_PRESENTATION='WRNO=''WR000070'''
+
+            object[] ret = new object[] { 0, 0 };
+            IDbConnection connection;
+            IDbTransaction transaction;
+            DataRow dr = (DataRow)objParam[0];
+            string WRNO = dr["WRNO"].ToString();
+            connection = (IDbConnection)AllocateConnection(GetClientInfo(ClientInfoType.LoginDB).ToString());
+            if (connection.State != ConnectionState.Open) { connection.Open(); }
+            transaction = connection.BeginTransaction();
+
+            try
+            {
+                string sql0 = "update WRMaster set Flowflag=NULL where WRNO='" + WRNO + "'";
+                this.ExecuteCommand(sql0, connection, transaction);
+
+                string sql1 = "DELETE FROM EIPHRSYS.DBO.SYS_TODOLIST WHERE FORM_PRESENTATION='WRNO=''" + WRNO + "'''";
+                this.ExecuteCommand(sql1, connection, transaction);
+
+                string sql2 = "DELETE FROM EIPHRSYS.DBO.SYS_TODOHIS WHERE FORM_PRESENTATION='WRNO=''" + WRNO + "'''";
+                this.ExecuteCommand(sql2, connection, transaction);
+
+                transaction.Commit();
+            }
+            catch (Exception ex)
+            {
+                transaction.Rollback();
+                throw ex;
+            }
+            finally
+            {
+                ReleaseConnection(GetClientInfo(ClientInfoType.LoginDB).ToString(), connection);
+            }
+
+
+
+
+            return ret;
+        }
         
     }
 }

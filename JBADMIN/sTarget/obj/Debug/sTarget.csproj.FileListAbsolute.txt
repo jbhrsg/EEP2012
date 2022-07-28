@@ -1,0 +1,11 @@
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sTarget\bin\Debug\sTarget.dll
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sTarget\bin\Debug\sTarget.pdb
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sTarget\obj\Debug\sTarget.csproj.GenerateResource.Cache
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sTarget\obj\Debug\sTarget.dll
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sTarget\obj\Debug\sTarget.pdb
+C:\Program Files (x86)\Infolight\EEP2012\EEPNetServer\JBADMIN\sTarget.dll
+C:\Program Files (x86)\Infolight\EEP2012\EEPNetServer\JBADMIN\sTarget.pdb
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sTarget\obj\Debug\sTarget.Component.resources
+C:\Program Files (x86)\Infolight\EEP2012\EEPNetServer\JBADMIN\vi-VN\sTarget.resources.dll
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sTarget\obj\Debug\sTarget.Component.vi-VN.resources
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sTarget\obj\Debug\vi-VN\sTarget.resources.dll

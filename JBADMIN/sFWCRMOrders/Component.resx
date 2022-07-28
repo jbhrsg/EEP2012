@@ -1,0 +1,293 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <metadata name="serviceManager1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 64</value>
+  </metadata>
+  <metadata name="InfoConnection1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 111</value>
+  </metadata>
+  <metadata name="FWCRMOrders.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 205</value>
+  </metadata>
+  <metadata name="ucFWCRMOrders.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 346</value>
+  </metadata>
+  <metadata name="FWCRMOrdersDetails.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 393</value>
+  </metadata>
+  <metadata name="ucFWCRMOrdersDetails.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 440</value>
+  </metadata>
+  <metadata name="idFWCRMOrders_FWCRMOrdersDetails.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 487</value>
+  </metadata>
+  <metadata name="autoOrderNo.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 299</value>
+  </metadata>
+  <metadata name="FWCRMWorkNo.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 534</value>
+  </metadata>
+  <metadata name="infoEmployerID.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 628</value>
+  </metadata>
+  <metadata name="infoOrderNo.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 675</value>
+  </metadata>
+  <data name="infoOrderNo.CommandText" xml:space="preserve">
+    <value>select distinct f.OrderNo,r.EmployerName,
+	SUM(d.PersonQtyOriginal) as PersonQtyOriginal,f.NationalityID,f.CreateBy,
+	(select Isnull(sum(PersonQty),0) from FWCRMIndateCheck where OrderNo=f.OrderNo) as PersonQtyFinal
+from FWCRMOrders f
+	inner join FWCRMOrdersDetails d on f.OrderNo=d.OrderNo
+	inner join View_FWCRMEmployer r on f.EmployerID=r.EmployerID
+group by f.OrderNo,r.EmployerName,f.NationalityID,f.CreateBy
+order by f.OrderNo desc</value>
+  </data>
+  <metadata name="infoFWCRMNationality.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 722</value>
+  </metadata>
+  <metadata name="infoOrg_okno.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 769</value>
+  </metadata>
+  <data name="infoOrg_okno.CommandText" xml:space="preserve">
+    <value>
+WITH org_oknoData(cus_name,sgn_type,sgn_no,org_okno)
+AS
+(
+	select ltrim(rtrim(c.cus_name))+'-'+org_okno as cus_name,'初招',sgn_no,org_okno
+	from [192.168.1.41].lab.dbo.sgn s
+		inner join [192.168.1.41].lab.dbo.cus c on s.cus_no=c.cus_no
+	where stime_no='A' and org_okno!='' and org_okno not like '%承%'---初招(sgn_no簽約編號,org_okno函號)
+	union all
+	select ltrim(rtrim(c.cus_name))+'-'+org_okno,'重招',sgn_no,org_okno
+	from [192.168.1.41].lab.dbo.sgn s
+		inner join [192.168.1.41].lab.dbo.cus c on s.cus_no=c.cus_no
+	where stime_no!='A' and org_okno!='' and org_okno not like '%承%'--重招
+	union all
+	select ltrim(rtrim(c.cus_name))+'-'+cas_no,'遞補',cas_no,cas_no
+	from [192.168.1.41].lab.dbo.Back s
+		inner join [192.168.1.41].lab.dbo.cus c on s.cus_no=c.cus_no
+	where cas_no!='' --遞補
+	union all
+	select ltrim(rtrim(c.cus_name))+'-'+carry_no,'承接',cas_no,carry_no
+	from [192.168.1.41].lab.dbo.cas s
+		inner join [192.168.1.41].lab.dbo.cus c on s.cus_no=c.cus_no	
+	where carry_no!='' 	--承接
+	union all
+	select ' 尚未取得',' ',' ',' '
+	union all
+	select ' 申請中',' ',' ','申請中'
+	union all
+	select ' 免函號',' ',' ','免函號'
+)
+-- Statement that executes the CTE
+SELECT * FROM org_oknoData
+WHERE 11=11 
+order by cus_name</value>
+  </data>
+  <metadata name="infosup.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 816</value>
+  </metadata>
+  <data name="infosup.CommandText" xml:space="preserve">
+    <value>WITH supData(sup_no,sup_cname)
+AS
+(
+	select '999',' 其它外仲'
+	union
+	select sup_no,sup_cname from [192.168.1.41].lab.dbo.sup where sup_no!='999'	
+)
+-- Statement that executes the CTE
+SELECT * FROM supData
+order by sup_cname</value>
+  </data>
+  <metadata name="infoReportOrders.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 863</value>
+  </metadata>
+  <data name="infoReportOrders.CommandText" xml:space="preserve">
+    <value>select m.OrderNo,m.OrderType,m.WorkNo,m.EmployerID,r.EmployerName,m.FromOrderNo,
+	m.NationalityID,dbo.funReturnReferenceData('nationality',m.NationalityID) as NationalityText,
+	d.Item,d.PlanIndate,d.PersonQtyOriginal,d.sgn_no,d.org_okno,d.Notes,
+	d.Gender,case d.Gender when 1 then '女' else '男' end as GenderText
+from FWCRMOrders m 
+inner join FWCRMOrdersDetails d on m.OrderNo=d.OrderNo 
+inner join View_FWCRMEmployer r on m.EmployerID=r.EmployerID
+</value>
+  </data>
+  <metadata name="idFWCRMOrders_FWCRMStickStatus.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 910</value>
+  </metadata>
+  <metadata name="FWCRMStickStatus.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 957</value>
+  </metadata>
+  <metadata name="ucFWCRMStickStatus.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 1004</value>
+  </metadata>
+  <metadata name="infoFWCRMSetStatus.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 1051</value>
+  </metadata>
+  <metadata name="idFWCRMOrders_FWCRMWorkNoLogs.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 1098</value>
+  </metadata>
+  <metadata name="FWCRMWorkNoLogs.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 1145</value>
+  </metadata>
+  <metadata name="ucFWCRMWorkNoLogs.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 1192</value>
+  </metadata>
+  <metadata name="FWCRMIndateCheck.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 1239</value>
+  </metadata>
+  <metadata name="ucFWCRMIndateCheck.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 1286</value>
+  </metadata>
+  <metadata name="FWCRMIndateNo.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 1333</value>
+  </metadata>
+  <metadata name="infoOrdersSalse.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 1521</value>
+  </metadata>
+  <metadata name="infoSelectAdmin.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 1568</value>
+  </metadata>
+  <metadata name="ucinfoOrdersSalse.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 158</value>
+  </metadata>
+  <metadata name="ucinfoSelectAdmin.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 252</value>
+  </metadata>
+  <metadata name="infoSalesID.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 1380</value>
+  </metadata>
+  <metadata name="infoEmpID.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 1474</value>
+  </metadata>
+  <metadata name="infoConnection2.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 1427</value>
+  </metadata>
+  <metadata name="infoWorkTime.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 581</value>
+  </metadata>
+  <metadata name="infoOrderStatus.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>130, 523</value>
+  </metadata>
+  <metadata name="$this.TrayLargeIcon" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>False</value>
+  </metadata>
+</root>

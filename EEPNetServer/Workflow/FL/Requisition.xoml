@@ -13,30 +13,31 @@
 		</IfElseBranchActivity>
 		<IfElseBranchActivity x:Name="一般申請" />
 	</IfElseActivity>
-	<IfElseActivity x:Name="主管審核">
-		<IfElseBranchActivity x:Name="媒體部">
-			<ns0:FLApprove SendEmail="True" DelayAutoApprove="False" SendToKind="Manager" InvokedDateTime="0001-01-01T00:00:00.0000000" FormName="" TimeUnit="Day" SendToUser="" AllowSendBack="True" PlusApproveReturn="True" PlusApprove="True" WebFormName="" ExpTime="0" Parameters="{x:Null}" NavigatorMode="Normal" SendToField="{x:Null}" SendToId="{x:Null}" SendToRole="" UrgentTime="0" x:Name="主管審核2" FLNavigatorMode="Approve">
+	<IfElseActivity x:Name="例行性非例行性">
+		<IfElseBranchActivity Description="(RequistKindID == 1)" x:Name="例行性">
+			<ns0:FLApprove SendEmail="True" DelayAutoApprove="False" SendToKind="Manager" InvokedDateTime="0001-01-01T00:00:00.0000000" FormName="" TimeUnit="Day" SendToUser="" AllowSendBack="True" PlusApproveReturn="True" PlusApprove="True" WebFormName="" ExpTime="0" Parameters="{x:Null}" NavigatorMode="Normal" SendToField="{x:Null}" SendToId="{x:Null}" SendToRole="" UrgentTime="0" x:Name="主管審核" FLNavigatorMode="Approve">
 				<ns0:FLApprove.ApproveRights>
 					<ns1:ApproveRightCollection xmlns:ns1="clr-namespace:FLCore;Assembly=FLTools, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null">
-						<ns1:ApproveRight Grade="0 ; 直屬主管" ParentActivity="{x:Null}" Expression="Org_NOParent != &quot;10000&quot; || ApplyOrg_NO =='11100'  || CompanyID ==5" Name="0" />
-						<ns1:ApproveRight Grade="6 ; 經理/副理/顧問" ParentActivity="{x:Null}" Expression="true" Name="6" />
-						<ns1:ApproveRight Grade="7 ; 協理" ParentActivity="{x:Null}" Expression="true" Name="7" />
-						<ns1:ApproveRight Grade="8 ; 副總" ParentActivity="{x:Null}" Expression="true" Name="8" />
-						<ns1:ApproveRight Grade="9 ; 總經理" ParentActivity="{x:Null}" Expression="(RequisitAmt&gt;10000 &amp;&amp; RequistKindID==2)" Name="9" />
+						<ns1:ApproveRight Grade="0 ; 直屬主管" ParentActivity="{x:Null}" Expression="(Org_NOParent != &quot;10000&quot;)" Name="0" />
+						<ns1:ApproveRight Grade="5 ; 主任/課長/專案經理" ParentActivity="{x:Null}" Expression="(RequisitAmt&lt;=5000)" Name="5" />
+						<ns1:ApproveRight Grade="6 ; 經理/副理/顧問" ParentActivity="{x:Null}" Expression="(RequisitAmt&gt;5000) &amp;&amp; (RequisitAmt&lt;=10000) " Name="6" />
+						<ns1:ApproveRight Grade="7 ; 跨部門經理/協理" ParentActivity="{x:Null}" Expression="(RequisitAmt&gt;5000)" Name="7" />
+						<ns1:ApproveRight Grade="8 ; 副總" ParentActivity="{x:Null}" Expression="(RequisitAmt&gt;5000)" Name="8" />
+						<ns1:ApproveRight Grade="9 ; 總經理" ParentActivity="{x:Null}" Expression="(RequisitAmt&gt;10000)" Name="9" />
 					</ns1:ApproveRightCollection>
 				</ns0:FLApprove.ApproveRights>
 			</ns0:FLApprove>
 		</IfElseBranchActivity>
-		<IfElseBranchActivity Description="(ApplyOrg_NO != &quot;10400&quot;)" x:Name="一般部門">
+		<IfElseBranchActivity x:Name="非例行性">
 			<ns0:FLApprove SendEmail="True" DelayAutoApprove="False" SendToKind="Manager" InvokedDateTime="0001-01-01T00:00:00.0000000" FormName="" TimeUnit="Day" SendToUser="" AllowSendBack="True" PlusApproveReturn="True" PlusApprove="True" WebFormName="" ExpTime="0" Parameters="{x:Null}" NavigatorMode="Normal" SendToField="{x:Null}" SendToId="{x:Null}" SendToRole="" UrgentTime="0" x:Name="主管審核1" FLNavigatorMode="Approve">
 				<ns0:FLApprove.ApproveRights>
 					<ns1:ApproveRightCollection xmlns:ns1="clr-namespace:FLCore;Assembly=FLTools, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null">
-						<ns1:ApproveRight Grade="0 ; 直屬主管" ParentActivity="{x:Null}" Expression="Org_NOParent != &quot;10000&quot; || ApplyOrg_NO =='11100'  || CompanyID==5" Name="0" />
-						<ns1:ApproveRight Grade="5 ; 主任/課長/專案經理" ParentActivity="{x:Null}" Expression="true" Name="5" />
+						<ns1:ApproveRight Grade="0 ; 直屬主管" ParentActivity="{x:Null}" Expression="(Org_NOParent != &quot;10000&quot;)" Name="0" />
+						<ns1:ApproveRight Grade="5 ; 主任/課長/專案經理" ParentActivity="{x:Null}" Expression="(RequisitAmt&lt;=3000)" Name="5" />
 						<ns1:ApproveRight Grade="6 ; 經理/副理/顧問" ParentActivity="{x:Null}" Expression="(RequisitAmt&gt;3000) " Name="6" />
 						<ns1:ApproveRight Grade="7 ; 跨部門經理/協理" ParentActivity="{x:Null}" Expression="(RequisitAmt&gt;3000)" Name="7" />
 						<ns1:ApproveRight Grade="8 ; 副總" ParentActivity="{x:Null}" Expression="(RequisitAmt&gt;5000)" Name="8" />
-						<ns1:ApproveRight Grade="9 ; 總經理" ParentActivity="{x:Null}" Expression="(RequisitAmt&gt;5000 &amp;&amp; RequistKindID==2)" Name="9" />
+						<ns1:ApproveRight Grade="9 ; 總經理" ParentActivity="{x:Null}" Expression="(RequisitAmt&gt;5000)" Name="9" />
 					</ns1:ApproveRightCollection>
 				</ns0:FLApprove.ApproveRights>
 			</ns0:FLApprove>

@@ -452,8 +452,8 @@ order by OftenUsedEntryID
 
             string BorrowLendType = ucglVoucherDetails.GetFieldCurrentValue("BorrowLendType").ToString();//1借,2貸(新)
 
-            string CreateBy = ucglVoucherMaster.GetFieldCurrentValue("CreateBy").ToString();
-            string CreateDate = (DateTime.Parse(ucglVoucherMaster.GetFieldCurrentValue("CreateDate").ToString())).ToString("yyyy/MM/dd HH:mm");
+            string CreateBy = ucglVoucherDetails.GetFieldCurrentValue("CreateBy").ToString();
+            string CreateDate = (DateTime.Parse(ucglVoucherDetails.GetFieldCurrentValue("CreateDate").ToString())).ToString("yyyy/MM/dd HH:mm");
 
             string sql = "";
             //----關聯後 Detail主鍵 AutoKey => 有總帳資料=>加上金額,無資料則新增

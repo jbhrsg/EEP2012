@@ -226,8 +226,13 @@
                 if (PayTo == "" || PayTo == undefined) {
                     alert('請選擇受款人！');                   
                     return false;
+                }                
+            } else if (parameter == "Modify3") {
+                var CloseDate = $("#dataFormMasterCloseDate").combo('textbox').val()
+                if (CloseDate == "") {
+                    alert('請選擇結案日期！');
+                    return false;
                 }
-                
             }
         }
         //當點按關閉按鈕時,關閉目前Tab
@@ -243,21 +248,31 @@
             var mode = Request.getQueryStringByName("NAVIGATOR_MODE");
             var FormName = '#dataFormMaster';
 
-            //新增申請或承辦初審 把承辦人員資料(請款欄位)隱藏
-            if ((parameter == "" )||parameter == "Modify1") {
-                //申請補助,請款金額,憑據號碼,報名人數,報名備註,請款依據,檢附憑證,請款備註,受款人,付款方式,預付日期,付款條件,緊急付款,非付款日付款,付款備註,需匯款費,匯款費付款,匯費金額,結案日期
-                var HideFieldName = ['IsApplyHelp', 'RequisitAmt', 'ProofNO', 'TrainFinalCount', 'SignupNotes', 'RequisitionTypeID', 'ProofTypeID', 'RequisitionNotes', 'PayTo', 'PayTypeID', 'PlanPayDate', 'PayTermID', 'IsUrgentPay', 'IsNotPayDate', 'PayToNotes', 'IsRemit', 'RemitType', 'Remit', 'CloseDate'];
+            //預期效益前加文字
+            $("#dataFormMasterExpectBenefit").closest('td').prepend($('<div>', { style: 'color:red;' }).html('★預期效益內容請提及實際具體可達成的課後績效'));
 
-                $.each(HideFieldName, function (index, fieldName) {
-                    $(FormName + fieldName).closest('td').prev('td').hide();
-                    $(FormName + fieldName).closest('td').hide();
-                });
-                //審核時顯示申請補助
-                if (mode == "0") {
-                    //申請補助disable属性顯示                     
-                    $("#dataFormMasterIsApplyHelp").closest('td').prev('td').show();
-                    $("#dataFormMasterIsApplyHelp").closest('td').show();                    
+
+            //新增申請或承辦初審 把承辦人員資料(請款欄位)隱藏
+            if ((parameter == "") || parameter == "Modify1" ) {
+                //已結案日期       
+                var CloseDate = $("#dataFormMasterCloseDate").combo('textbox').val()
+                //未結案不顯示,已結案則顯示
+                if (CloseDate == "") {
+                    //申請補助,請款金額,憑據號碼,報名人數,報名備註,請款依據,檢附憑證,請款備註,受款人,付款方式,預付日期,付款條件,緊急付款,非付款日付款,付款備註,需匯款費,匯款費付款,匯費金額,結案日期
+                    var HideFieldName = ['IsApplyHelp', 'RequisitAmt', 'ProofNO', 'TrainFinalCount', 'SignupNotes', 'RequisitionTypeID', 'ProofTypeID', 'RequisitionNotes', 'PayTo', 'PayTypeID', 'PlanPayDate', 'PayTermID', 'IsUrgentPay', 'IsNotPayDate', 'PayToNotes', 'IsRemit', 'RemitType', 'Remit', 'CloseDate'];
+
+                    $.each(HideFieldName, function (index, fieldName) {
+                        $(FormName + fieldName).closest('td').prev('td').hide();
+                        $(FormName + fieldName).closest('td').hide();
+                    });
+                    //審核時顯示申請補助
+                    if (mode == "0") {
+                        //申請補助disable属性顯示                     
+                        $("#dataFormMasterIsApplyHelp").closest('td').prev('td').show();
+                        $("#dataFormMasterIsApplyHelp").closest('td').show();
+                    }
                 }
+               
             } 
             if (parameter != "") {
                 //鎖textarea型態欄位
@@ -374,7 +389,7 @@
             </JQTools:JQDataGrid>
 
             <JQTools:JQDialog ID="JQDialog1" runat="server" BindingObjectID="dataFormMaster" Title="教育訓練申請單" DialogLeft="30px" DialogTop="10px" Width="710px">
-                <JQTools:JQDataForm ID="dataFormMaster" runat="server" DataMember="TrainingForm" HorizontalColumnsCount="3" RemoteName="sTrainingForm.TrainingForm" Closed="False" ContinueAdd="False" disapply="False" DuplicateCheck="False" IsAutoPageClose="True" IsAutoPause="False" IsAutoSubmit="True" IsNotifyOFF="False" IsRejectNotify="False" IsRejectON="False" IsShowFlowIcon="True" ShowApplyButton="False" ValidateStyle="Hint" OnApply="checkCombo" OnCancel="CloseDataForm" OnLoadSuccess="ControlModify">
+                <JQTools:JQDataForm ID="dataFormMaster" runat="server" DataMember="TrainingForm" HorizontalColumnsCount="3" RemoteName="sTrainingForm.TrainingForm" Closed="False" ContinueAdd="False" disapply="False" DuplicateCheck="False" IsAutoPageClose="True" IsAutoPause="False" IsAutoSubmit="True" IsNotifyOFF="False" IsRejectNotify="False" IsRejectON="False" IsShowFlowIcon="True" ShowApplyButton="False" ValidateStyle="Hint" OnApply="checkCombo" OnCancel="CloseDataForm" OnLoadSuccess="ControlModify" AlwaysReadOnly="False" DivFramed="False" HorizontalGap="0" VerticalGap="0">
                     <Columns>
                         <JQTools:JQFormColumn Alignment="left" Caption="表單編號" Editor="text" FieldName="TrainingFormID" Format="" Width="120" ReadOnly="True" Visible="False" NewRow="False"  />
                         <JQTools:JQFormColumn Alignment="left" Caption="訓練類別" Editor="infocombobox" FieldName="TrainTypeID" Format="" Width="150" NewRow="True" EditorOptions="valueField:'TrainTypeID',textField:'TrainTypeName',remoteName:'sTrainingForm.infoTrainType',tableName:'infoTrainType',pageSize:'-1',checkData:false,selectOnly:false,cacheRelationText:false,panelHeight:120" />
@@ -385,14 +400,16 @@
                         <JQTools:JQFormColumn Alignment="left" Caption="申請日期" Editor="datebox" FieldName="ApplyDate" Format="" Width="85" NewRow="False" Span="1"  />                        
                         <JQTools:JQFormColumn Alignment="left" Caption="課程名稱" Editor="text" FieldName="CourseName" Format="" Width="380" NewRow="True" Span="2" Visible="True"/>                       
                          <JQTools:JQFormColumn Alignment="left" Caption="上課人數" Editor="numberbox" FieldName="TrainHeadCount" Format="" Width="85" maxlength="0" NewRow="False" Span="1" />    
-                        <JQTools:JQFormColumn Alignment="left" Caption="指定人員" Editor="textarea" FieldName="TrainEmpList" Format="" Width="540" NewRow="True" Span="3" />                    
+                        <JQTools:JQFormColumn Alignment="left" Caption="參訓學員" Editor="textarea" FieldName="TrainEmpList" Format="" Width="540" NewRow="True" Span="3" />                    
                         <JQTools:JQFormColumn Alignment="left" Caption="訓練單位" Editor="text" FieldName="TrainOrg" Format="" Width="380" NewRow="True" Span="2" maxlength="0"/>
                         <JQTools:JQFormColumn Alignment="left" Caption="課程總費用" Editor="text" FieldName="TrainFee" Format="" Width="85" NewRow="False" Span="1"  />
                         
                         <JQTools:JQFormColumn Alignment="left" Caption="上課地點" Editor="text" FieldName="TrainLocation" Format="" Width="380" NewRow="True" Span="2" maxlength="0"/>                        
                        <JQTools:JQFormColumn Alignment="left" Caption="課程時數" Editor="numberbox" FieldName="TrainHours" Format="" Width="85" EditorOptions="precision:1" maxlength="0" NewRow="False" Span="1" />
                         <JQTools:JQFormColumn Alignment="left" Caption="上課日期" Editor="text" FieldName="TrainDate" Format="" Width="540" NewRow="True" Span="3" />
-                        <JQTools:JQFormColumn Alignment="left" Caption="課程大綱" Editor="textarea" FieldName="OutLine" Format="" Width="540" EditorOptions="height:80" NewRow="True" Span="3" maxlength="0" Visible="True" />
+                        <JQTools:JQFormColumn Alignment="left" Caption="課程大綱" Editor="textarea" FieldName="OutLine" Format="" Width="540" EditorOptions="height:60" NewRow="True" Span="3" maxlength="0" Visible="True" />
+                        <JQTools:JQFormColumn Alignment="left" Caption="訓練目的" Editor="textarea" EditorOptions="height:60" FieldName="TrainPurpose" MaxLength="0" NewRow="False" ReadOnly="False" RowSpan="1" Span="3" Visible="True" Width="540" />
+                        <JQTools:JQFormColumn Alignment="left" Caption="預期效益" Editor="textarea" EditorOptions="height:60" FieldName="ExpectBenefit" MaxLength="0" NewRow="False" ReadOnly="False" RowSpan="1" Span="3" Visible="True" Width="540" />
                         <JQTools:JQFormColumn Alignment="left" Caption="其他備註" Editor="textarea" FieldName="ApplyNotes" Format="" Width="540" NewRow="True" Span="3" EditorOptions="height:40" maxlength="0" Visible="True" />
                         <JQTools:JQFormColumn Alignment="left" Caption="CreateBy" Editor="text" FieldName="CreateBy" MaxLength="0" NewRow="False" ReadOnly="False" RowSpan="1" Span="1" Visible="False" Width="180" Format="" />                        
                         <JQTools:JQFormColumn Alignment="left" Caption="CreateDate" Editor="datebox" FieldName="CreateDate" Format="" Width="180" Visible="False" Span="1" />
@@ -428,7 +445,7 @@
                         <JQTools:JQDefaultColumn CarryOn="False" DefaultValue="自動編號" FieldName="TrainingFormID" RemoteMethod="True" />
                         <JQTools:JQDefaultColumn CarryOn="False" DefaultValue="_today" FieldName="CreateDate" RemoteMethod="True" />
                         <JQTools:JQDefaultColumn CarryOn="False" DefaultValue="_today" FieldName="ApplyDate" RemoteMethod="True" />
-                        <JQTools:JQDefaultColumn CarryOn="False" DefaultValue="_today" FieldName="CloseDate" RemoteMethod="True" />
+<%--                        <JQTools:JQDefaultColumn CarryOn="False" DefaultValue="_today" FieldName="CloseDate" RemoteMethod="True" />--%>
                         <JQTools:JQDefaultColumn CarryOn="False" DefaultValue="_usercode" FieldName="CreateBy" RemoteMethod="True" />
                     </Columns>
                 </JQTools:JQDefault>
@@ -440,6 +457,9 @@
                         <JQTools:JQValidateColumn CheckNull="True" FieldName="CompanyID" RemoteMethod="True" ValidateMessage="請選擇公司別" ValidateType="None" />
                         <JQTools:JQValidateColumn CheckNull="True" FieldName="CostCenterID" RemoteMethod="True" ValidateMessage="請選擇成本中心" ValidateType="None" />
                         <JQTools:JQValidateColumn CheckNull="True" FieldName="CourseName" RemoteMethod="True" ValidateMessage="請填寫課程名稱" ValidateType="None" />
+                     
+
+                        <JQTools:JQValidateColumn CheckNull="True" FieldName="ExpectBenefit" RemoteMethod="True" ValidateMessage="請填謝預期效益" ValidateType="None" />
                      
 
                     </Columns>

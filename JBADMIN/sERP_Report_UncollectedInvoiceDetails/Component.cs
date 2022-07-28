@@ -40,6 +40,8 @@ namespace sERP_Report_UncollectedInvoiceDetails
             string ReportType = parm[7];
             string InvoiceDateFrom = parm[8];
             string InvoiceDateTo = parm[9];
+            string MediaSalesDateFrom = parm[10];
+            string MediaSalesDateTo = parm[11];
 
             if (InsGroupID != "")
             {
@@ -165,6 +167,16 @@ sql = sql + "left join JBADMIN.dbo.ERPPayType pt on pt.PayTypeID=pk.PayTypeID" +
                     {
                         sql = sql + "and id.InvoiceDate <='" + InvoiceDateTo + "'" + "\r\n";
                     }
+
+                    if (MediaSalesDateFrom != "")
+                    {
+                        sql = sql + "and  msd.SalesDate >='" + MediaSalesDateFrom + "'" + "\r\n";
+                    }
+                    if (MediaSalesDateTo != "")
+                    {
+                        sql = sql + "and  msd.SalesDate <='" + MediaSalesDateTo + "'" + "\r\n";
+                    }
+
                     //if (ARDate != "")
                     //{
                     //    sql = sql + "and id.InvoiceDate <= '" + ARDate + "'" + "\r\n";//發票日期

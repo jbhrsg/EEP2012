@@ -20,6 +20,16 @@
              });
 
          });
+
+         function OnLoadSuccess_dataGridView() {
+             if (!$(this).data('firstLoad') && $(this).data('firstLoad', true)) {
+                 //var where = $('#dataGridView').datagrid('getWhere');
+                 //$('#dataGridView').datagrid('setWhere', where);
+                 //$($('#querydataGridView').find('input')[0]).combobox('setValue', '20170119');
+                 $($('#querydataGridView').find('input')[0]).combobox('setWhere', "coscode not in('20170119','20160000')");
+                 //$($('#querydataGridView').find('input')[0]).combobox('disable');
+             }
+         }
          </script>
 
 
@@ -30,7 +40,7 @@
             <JQTools:JQScriptManager ID="JQScriptManager1" runat="server" />
             <JQTools:JQDataGrid ID="dataGridView" data-options="pagination:true,view:commandview" RemoteName="sJBCourseQuery.JBClassStudentHyMeeting" runat="server" AutoApply="True"
                 DataMember="JBClassStudentHyMeeting" Pagination="True" QueryTitle="人資活動課程查詢" EditDialogID="JQDialog1"
-                Title="" AlwaysClose="True" QueryMode="Fuzzy" Width="1300px" PageSize="20" AllowAdd="True" AllowDelete="False" AllowUpdate="False" BufferView="False" CheckOnSelect="True" ColumnsHibeable="False" DeleteCommandVisible="False" DuplicateCheck="False" EditMode="Dialog" EditOnEnter="True" InsertCommandVisible="True" MultiSelect="False" NotInitGrid="False" PageList="10,20,30,40,50" QueryAutoColumn="False" QueryLeft="" QueryTop="" RecordLock="False" RecordLockMode="None" RowNumbers="True" TotalCaption="Total:" UpdateCommandVisible="False" ViewCommandVisible="True">
+                Title="" AlwaysClose="True" QueryMode="Fuzzy" Width="1300px" PageSize="20" AllowAdd="True" AllowDelete="False" AllowUpdate="False" BufferView="False" CheckOnSelect="True" ColumnsHibeable="False" DeleteCommandVisible="False" DuplicateCheck="False" EditMode="Dialog" EditOnEnter="True" InsertCommandVisible="True" MultiSelect="False" NotInitGrid="False" PageList="10,20,30,40,50" QueryAutoColumn="False" QueryLeft="" QueryTop="" RecordLock="False" RecordLockMode="None" RowNumbers="True" TotalCaption="Total:" UpdateCommandVisible="False" ViewCommandVisible="True" OnLoadSuccess="OnLoadSuccess_dataGridView">
                 <Columns>
                     <JQTools:JQGridColumn Alignment="left" Caption="課程名稱" Editor="text" FieldName="descr" Format="" MaxLength="0" Width="160" />
                     <JQTools:JQGridColumn Alignment="left" Caption="公司名稱" Editor="text" FieldName="company" Format="" MaxLength="0" Width="180" Sortable="True" />
@@ -43,7 +53,7 @@
                     <JQTools:JQGridColumn Alignment="left" Caption="手機" Editor="text" FieldName="fax" Format="" MaxLength="0" Width="80" />
                     <JQTools:JQGridColumn Alignment="left" Caption="地址" Editor="text" FieldName="address" Format="" MaxLength="0" Width="100" Sortable="True" />
                     <JQTools:JQGridColumn Alignment="left" Caption="信箱" Editor="text" FieldName="mail" Format="" MaxLength="0" Width="150" Sortable="True" />
-                    <JQTools:JQGridColumn Alignment="left" Caption="報名日期" Editor="datebox" FieldName="key_date" Format="yyyy/mm/dd hh:MM:ss" Width="110" Visible="True" Sortable="True" />
+                    <JQTools:JQGridColumn Alignment="left" Caption="報名日期" Editor="datebox" FieldName="key_date" Format="yyyy/mm/dd HH:MM:SS" Width="110" Visible="True" Sortable="True" />
                     <JQTools:JQGridColumn Alignment="left" Caption="日期" Editor="datebox" FieldName="cosdate" Format="yyyy/mm/dd" Width="70" Visible="False" />
                     <JQTools:JQGridColumn Alignment="left" Caption="學歷" Editor="text" FieldName="education" Format="" MaxLength="0" Width="120" Visible="False" />
                     <JQTools:JQGridColumn Alignment="left" Caption="報名場次" Editor="text" FieldName="class" Format="" MaxLength="0" Width="60" Visible="True" Sortable="True" />

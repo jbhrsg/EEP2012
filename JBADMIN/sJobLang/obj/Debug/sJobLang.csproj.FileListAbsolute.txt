@@ -1,0 +1,9 @@
+D:\Infolight\EEP2012\JBHunter\sJobLang\bin\Debug\sJobLang.dll
+D:\Infolight\EEP2012\JBHunter\sJobLang\bin\Debug\sJobLang.pdb
+D:\Infolight\EEP2012\JBHunter\sJobLang\obj\Debug\sJobLang.csproj.GenerateResource.Cache
+D:\Infolight\EEP2012\JBHunter\sJobLang\obj\Debug\sJobLang.dll
+D:\Infolight\EEP2012\JBHunter\sJobLang\obj\Debug\sJobLang.pdb
+D:\Infolight\EEP2012\EEPNetServer\JBHunter\sJobLang.dll
+D:\Infolight\EEP2012\EEPNetServer\JBHunter\sJobLang.pdb
+D:\Infolight\EEP2012\JBHunter\sJobLang\obj\Debug\sJobLang.Component.resources
+D:\Infolight\EEP2012\JBHunter\sJobLang\obj\Debug\sJobLang.csprojResolveAssemblyReference.cache

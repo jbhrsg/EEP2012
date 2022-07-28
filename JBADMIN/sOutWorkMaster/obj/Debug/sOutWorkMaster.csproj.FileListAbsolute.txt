@@ -1,8 +1,2 @@
 C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sOutWorkMaster\bin\Debug\sOutWorkMaster.dll
 C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sOutWorkMaster\bin\Debug\sOutWorkMaster.pdb
-C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sOutWorkMaster\obj\Debug\sOutWorkMaster.csproj.GenerateResource.Cache
-C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sOutWorkMaster\obj\Debug\sOutWorkMaster.dll
-C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sOutWorkMaster\obj\Debug\sOutWorkMaster.pdb
-C:\Program Files (x86)\Infolight\EEP2012\EEPNetServer\JBADMIN\sOutWorkMaster.dll
-C:\Program Files (x86)\Infolight\EEP2012\EEPNetServer\JBADMIN\sOutWorkMaster.pdb
-C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sOutWorkMaster\obj\Debug\sOutWorkMaster.Component.resources

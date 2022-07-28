@@ -1,14 +1,16 @@
-C:\Program Files (x86)\Infolight\EEP2012\EEPNetServer\JBADMIN\sDevice.dll
-C:\Program Files (x86)\Infolight\EEP2012\EEPNetServer\JBADMIN\sDevice.pdb
-C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sDevice\obj\Debug\sDevice.Component.resources
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sDevice\bin\Debug\sDevice.dll
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sDevice\bin\Debug\sDevice.pdb
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sDevice\obj\Debug\sDevice.csprojResolveAssemblyReference.cache
 C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sDevice\obj\Debug\sDevice.csproj.GenerateResource.Cache
 C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sDevice\obj\Debug\sDevice.dll
 C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sDevice\obj\Debug\sDevice.pdb
+C:\Program Files (x86)\Infolight\EEP2012\EEPNetServer\JBADMIN\sDevice.dll
+C:\Program Files (x86)\Infolight\EEP2012\EEPNetServer\JBADMIN\sDevice.pdb
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sDevice\obj\Debug\sDevice.Component.resources
 D:\Infolight\EEP2012\EEPNetServer\JBADMIN\sDevice.dll
 D:\Infolight\EEP2012\EEPNetServer\JBADMIN\sDevice.pdb
-D:\Infolight\EEP2012\JBADMIN\sDevice\obj\Debug\sDevice.csprojResolveAssemblyReference.cache
 D:\Infolight\EEP2012\JBADMIN\sDevice\obj\Debug\sDevice.Component.resources
 D:\Infolight\EEP2012\JBADMIN\sDevice\obj\Debug\sDevice.csproj.GenerateResource.Cache
 D:\Infolight\EEP2012\JBADMIN\sDevice\obj\Debug\sDevice.dll
 D:\Infolight\EEP2012\JBADMIN\sDevice\obj\Debug\sDevice.pdb
-C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sDevice\obj\Debug\sDevice.csprojResolveAssemblyReference.cache
+D:\Infolight\EEP2012\JBADMIN\sDevice\obj\Debug\sDevice.csprojResolveAssemblyReference.cache

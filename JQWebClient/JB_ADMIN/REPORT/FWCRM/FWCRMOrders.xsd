@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="FWCRMOrders" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="FWCRMOrders" msdata:IsDataSet="true" msdata:CaseSensitive="true" msdata:UseCurrentLocale="true">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="infoReportOrders">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="OrderNo" type="xs:string" />
+              <xs:element name="OrderType" type="xs:unsignedByte" minOccurs="0" />
+              <xs:element name="WorkNo" type="xs:string" minOccurs="0" />
+              <xs:element name="EmployerID" type="xs:string" minOccurs="0" />
+              <xs:element name="FromOrderNo" type="xs:string" minOccurs="0" />
+              <xs:element name="NationalityID" type="xs:unsignedByte" minOccurs="0" />
+              <xs:element name="EmployerName" type="xs:string" minOccurs="0" />
+              <xs:element name="NationalityText" type="xs:string" minOccurs="0" />
+              <xs:element name="Item" type="xs:int" />
+              <xs:element name="PlanIndate" type="xs:string" minOccurs="0" />
+              <xs:element name="PersonQtyOriginal" type="xs:int" minOccurs="0" />
+              <xs:element name="PersonQtyFinal" type="xs:int" minOccurs="0" />
+              <xs:element name="Gender" type="xs:int" minOccurs="0" />
+              <xs:element name="GenderText" type="xs:string" minOccurs="0" />
+              <xs:element name="Notes" type="xs:string" minOccurs="0" />
+              <xs:element name="org_okno" type="xs:string" minOccurs="0" />
+              <xs:element name="sgn_type" type="xs:string" minOccurs="0" />
+              <xs:element name="WorkTime" type="xs:string" minOccurs="0" />
+              <xs:element name="WorkTimeReason" type="xs:string" minOccurs="0" />
+              <xs:element name="IsOnSite" type="xs:boolean" minOccurs="0" />
+              <xs:element name="OnSiteDays" type="xs:short" minOccurs="0" />
+              <xs:element name="OnSiteDescribe" type="xs:string" minOccurs="0" />
+              <xs:element name="sTakeType" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="OrdersPeopleCount">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="OrderNo" type="xs:string" />
+              <xs:element name="iYear" type="xs:string" minOccurs="0" />
+              <xs:element name="EmployerName" type="xs:string" minOccurs="0" />
+              <xs:element name="SalesID" type="xs:string" minOccurs="0" />
+              <xs:element name="NAME_C" type="xs:string" />
+              <xs:element name="NationalityID" type="xs:int" minOccurs="0" />
+              <xs:element name="NationalityName" type="xs:string" minOccurs="0" />
+              <xs:element name="WorkTimeCount1" type="xs:int" minOccurs="0" />
+              <xs:element name="WorkTimeCount2" type="xs:int" minOccurs="0" />
+              <xs:element name="WorkTimeCount3" type="xs:int" minOccurs="0" />
+              <xs:element name="month1" type="xs:int" minOccurs="0" />
+              <xs:element name="month2" type="xs:int" minOccurs="0" />
+              <xs:element name="month3" type="xs:int" minOccurs="0" />
+              <xs:element name="month4" type="xs:int" minOccurs="0" />
+              <xs:element name="month5" type="xs:int" minOccurs="0" />
+              <xs:element name="month6" type="xs:int" minOccurs="0" />
+              <xs:element name="month7" type="xs:int" minOccurs="0" />
+              <xs:element name="month8" type="xs:int" minOccurs="0" />
+              <xs:element name="month9" type="xs:int" minOccurs="0" />
+              <xs:element name="month10" type="xs:int" minOccurs="0" />
+              <xs:element name="month11" type="xs:int" minOccurs="0" />
+              <xs:element name="month12" type="xs:int" minOccurs="0" />
+              <xs:element name="OrderStatusText" type="xs:string" minOccurs="0" />
+              <xs:element name="Plan1" type="xs:int" minOccurs="0" />
+              <xs:element name="Plan2" type="xs:int" minOccurs="0" />
+              <xs:element name="Plan3" type="xs:int" minOccurs="0" />
+              <xs:element name="Plan4" type="xs:int" minOccurs="0" />
+              <xs:element name="Plan5" type="xs:int" minOccurs="0" />
+              <xs:element name="Plan6" type="xs:int" minOccurs="0" />
+              <xs:element name="Plan7" type="xs:int" minOccurs="0" />
+              <xs:element name="Plan8" type="xs:int" minOccurs="0" />
+              <xs:element name="Plan9" type="xs:int" minOccurs="0" />
+              <xs:element name="Plan10" type="xs:int" minOccurs="0" />
+              <xs:element name="Plan11" type="xs:int" minOccurs="0" />
+              <xs:element name="Plan12" type="xs:int" minOccurs="0" />
+              <xs:element name="WorkTimeCount4" type="xs:int" minOccurs="0" />
+              <xs:element name="flowflagText" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//infoReportOrders" />
+      <xs:field xpath="OrderNo" />
+      <xs:field xpath="Item" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>

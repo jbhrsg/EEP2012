@@ -13,7 +13,7 @@
         var CDate = Request.getQueryStringByName("date");
         $(document).ready(function () {
             setTimeout(function () {
-            var FiltStr = "salesNO='" + SalesNO + "' AND ARDate <= '" + CDate + "'";
+            var FiltStr = "salesNO='" + SalesNO + "' AND ARDate<='" + CDate + "'";
             $('#dataGridView').datagrid('setWhere', FiltStr);
             }, 300);
             //$("#dataGridMaster").datagrid('options').rowStyler = function (index, row) {

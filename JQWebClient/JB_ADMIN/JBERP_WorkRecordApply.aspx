@@ -9,7 +9,7 @@
     <script src="../js/jquery.jbjob.js"></script>
     <script>
         $(document).ready(function () {
-            $('.infosysbutton-q', '#querydataGridView').closest('td').attr({ 'align': 'middle' });
+            //$('.infosysbutton-q', '#querydataGridView').closest('td').attr({ 'align': 'middle' });
             $('#querydataGridView').find(".infosysbutton-cl").hide();
             $('#querydataGridView').find(".infosysbutton-q").hide();
             
@@ -57,8 +57,12 @@
                                 //設值第一個
                                 $('#USERID_Query').combobox('setValue', data1[0].USERID);
                             }
-                            $('#ORG_NO_Query').combobox('disable');
-                            $('#USERID_Query').combobox('disable');
+                            if (userid.trim() != '335' && userid.trim() != '022') {
+                                $('#ORG_NO_Query').combobox('disable');
+                                $('#USERID_Query').combobox('disable');
+                            } else if (userid.trim() == '335' || userid.trim() == '022') {
+                                $('#querydataGridView').find(".infosysbutton-cl").show();
+                            }
                         }
                         //查詢按鈕
                         $('#querydataGridView').find(".infosysbutton-q").show();
@@ -154,7 +158,7 @@
         function DFM_OnApplied() {
             
             if (getEditMode($("#dataFormMaster")) == 'updated' && $("#dataFormMasterFlowflag").val() == '') {
-                var cf = confirm("請注意!!按下確定即送出審核，無法再修改");
+                var cf = confirm("請注意!!按下確定即送出審核，無法再編輯。\n如後續還要繼續編輯，請按取消。");
                 if (cf == true) {
                     var userid = $("#dataFormMasterUSERID").combobox('getValue');
                     var WRNO = $("#dataFormMasterWRNO").val();
@@ -293,7 +297,7 @@
 
         function DGV_OnUpdate(row) {
             var userid = getClientInfo("UserID");
-            if (row.USERID!=userid) {
+            if (row.USERID.trim() != userid.trim()) {
                 alert('非申請人無法編輯');
                 return false;
             } else if (row.D_STEP_ID=='工作紀錄單申請') {//為了退回到申請者，還能編輯

@@ -1,0 +1,11 @@
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sERP_Report_BadOthAmountWarrantDetails\bin\Debug\sERP_Report_BadOthAmountWarrantDetails.dll
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sERP_Report_BadOthAmountWarrantDetails\bin\Debug\sERP_Report_BadOthAmountWarrantDetails.pdb
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sERP_Report_BadOthAmountWarrantDetails\obj\Debug\sERP_Report_BadOthAmountWarrantDetails.csproj.GenerateResource.Cache
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sERP_Report_BadOthAmountWarrantDetails\obj\Debug\sERP_Report_BadOthAmountWarrantDetails.dll
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sERP_Report_BadOthAmountWarrantDetails\obj\Debug\sERP_Report_BadOthAmountWarrantDetails.pdb
+C:\Program Files (x86)\Infolight\EEP2012\EEPNetServer\JBADMIN\sERP_Report_BadOthAmountWarrantDetails.dll
+C:\Program Files (x86)\Infolight\EEP2012\EEPNetServer\JBADMIN\sERP_Report_BadOthAmountWarrantDetails.pdb
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sERP_Report_BadOthAmountWarrantDetails\obj\Debug\sERP_Report_BadOthAmountWarrantDetails.Component.resources
+C:\Program Files (x86)\Infolight\EEP2012\EEPNetServer\JBADMIN\vi-VN\sERP_Report_BadOthAmountWarrantDetails.resources.dll
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sERP_Report_BadOthAmountWarrantDetails\obj\Debug\sERP_Report_BadOthAmountWarrantDetails.Component.vi-VN.resources
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sERP_Report_BadOthAmountWarrantDetails\obj\Debug\vi-VN\sERP_Report_BadOthAmountWarrantDetails.resources.dll

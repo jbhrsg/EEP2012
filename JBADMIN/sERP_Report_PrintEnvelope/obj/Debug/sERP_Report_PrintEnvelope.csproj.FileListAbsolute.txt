@@ -1,0 +1,8 @@
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sERP_Report_PrintEnvelope\bin\Debug\sERP_Report_PrintEnvelope.dll
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sERP_Report_PrintEnvelope\bin\Debug\sERP_Report_PrintEnvelope.pdb
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sERP_Report_PrintEnvelope\obj\Debug\sERP_Report_PrintEnvelope.csproj.GenerateResource.Cache
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sERP_Report_PrintEnvelope\obj\Debug\sERP_Report_PrintEnvelope.dll
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sERP_Report_PrintEnvelope\obj\Debug\sERP_Report_PrintEnvelope.pdb
+C:\Program Files (x86)\Infolight\EEP2012\EEPNetServer\JBADMIN\sERP_Report_PrintEnvelope.dll
+C:\Program Files (x86)\Infolight\EEP2012\EEPNetServer\JBADMIN\sERP_Report_PrintEnvelope.pdb
+C:\Program Files (x86)\Infolight\EEP2012\JBADMIN\sERP_Report_PrintEnvelope\obj\Debug\sERP_Report_PrintEnvelope.Component.resources

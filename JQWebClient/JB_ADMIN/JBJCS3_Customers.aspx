@@ -34,6 +34,14 @@
                     $(FormName + fieldName).closest('td').prev('td').css("color", "rgb(138, 43, 226)");
                 });
 
+                //--------------客戶職缺傳入客戶代號 => 查詢客戶---------------------------------------------------
+                var parameter = Request.getQueryStringByName("CustID");
+                if (parameter != "") {
+                    $("#dataGridView").datagrid('setWhere', "ERPCustomerID = '" + parameter + "'");
+                    setTimeout(function () {
+                        openForm('#JQDialog1', $('#dataGridView').datagrid('getSelected'), "updated", 'dialog');
+                    }, 800);
+                }
 
             });        
        
@@ -73,7 +81,7 @@
             <JQTools:JQScriptManager ID="JQScriptManager1" runat="server" />
             <JQTools:JQDataGrid ID="dataGridView" data-options="pagination:true,view:commandview" RemoteName="sJCSCustomer.Customers3" runat="server" AutoApply="True"
                 DataMember="Customers3" Pagination="True" QueryTitle="" EditDialogID="JQDialog1"
-                Title="台茂宿舍客戶資料維護" QueryMode="Panel" AllowAdd="True" AllowDelete="True" AllowUpdate="True" AlwaysClose="False" BufferView="False" CheckOnSelect="True" ColumnsHibeable="False" DeleteCommandVisible="False" DuplicateCheck="False" EditMode="Dialog" EditOnEnter="True" InsertCommandVisible="True" MultiSelect="False" NotInitGrid="False" PageList="10,20,30,40,50" PageSize="10" QueryAutoColumn="False" QueryLeft="" QueryTop="" RecordLock="False" RecordLockMode="None" RowNumbers="True" TotalCaption="Total:" UpdateCommandVisible="True" ViewCommandVisible="False">
+                Title="新榮宿舍客戶資料維護" QueryMode="Panel" AllowAdd="True" AllowDelete="True" AllowUpdate="True" AlwaysClose="False" BufferView="False" CheckOnSelect="True" ColumnsHibeable="False" DeleteCommandVisible="False" DuplicateCheck="False" EditMode="Dialog" EditOnEnter="True" InsertCommandVisible="True" MultiSelect="False" NotInitGrid="False" PageList="10,20,30,40,50" PageSize="10" QueryAutoColumn="False" QueryLeft="" QueryTop="" RecordLock="False" RecordLockMode="None" RowNumbers="True" TotalCaption="Total:" UpdateCommandVisible="True" ViewCommandVisible="False">
                 <Columns>
                     <JQTools:JQGridColumn Alignment="center" Caption="系統代碼" Editor="text" FieldName="CustomerID" Format="" MaxLength="0" Visible="true" Width="80" />
                     <JQTools:JQGridColumn Alignment="left" Caption="客戶名稱" Editor="text" FieldName="CustomerName" Format="" MaxLength="0" Visible="true" Width="170" />
@@ -105,7 +113,7 @@
                 </QueryColumns>
             </JQTools:JQDataGrid>
 
-            <JQTools:JQDialog ID="JQDialog1" runat="server" BindingObjectID="dataFormMaster" Title="台茂客戶維護" DialogLeft="50px" DialogTop="50px" Width="1030px">
+            <JQTools:JQDialog ID="JQDialog1" runat="server" BindingObjectID="dataFormMaster" Title="新榮客戶維護" DialogLeft="50px" DialogTop="50px" Width="1030px">
                 <JQTools:JQDataForm ID="dataFormMaster" runat="server" DataMember="Customers3" HorizontalColumnsCount="7" RemoteName="sJCSCustomer.Customers3" AlwaysReadOnly="False" Closed="False" ContinueAdd="False" disapply="False" DivFramed="False" DuplicateCheck="False" HorizontalGap="0" IsAutoPageClose="False" IsAutoPause="False" IsAutoSubmit="False" IsNotifyOFF="False" IsRejectNotify="False" IsRejectON="False" IsShowFlowIcon="False" ShowApplyButton="False" ValidateStyle="Hint" VerticalGap="0" OnApplied="OnAppliedCus" >
                     <Columns>
                         <JQTools:JQFormColumn Alignment="left" Caption="AutoKey" Editor="numberbox" FieldName="AutoKey" Format="" Visible="False" Width="180" maxlength="0" NewRow="False" />
@@ -127,13 +135,13 @@
                         <JQTools:JQFormColumn Alignment="left" Caption="職稱" Editor="text" FieldName="contact2Title" Format="" maxlength="0" Width="95" NewRow="False" />
                         <JQTools:JQFormColumn Alignment="left" Caption="手機" Editor="text" FieldName="contact2Mobile" Format="" maxlength="0" Width="100" />
                         <JQTools:JQFormColumn Alignment="left" Caption="分機" Editor="text" FieldName="contact2TelExt" Format="" maxlength="0" Width="90" />
-                        <JQTools:JQFormColumn Alignment="left" Caption="email" Editor="text" FieldName="Email2" Format="" maxlength="0" Span="2" Width="180" />
+                        <JQTools:JQFormColumn Alignment="left" Caption="email" Editor="text" FieldName="Email1" Format="" maxlength="0" Span="2" Width="180" />
                         <JQTools:JQFormColumn Alignment="left" Caption="聯絡人3姓名" Editor="text" FieldName="Contact3Name" Format="" maxlength="0" NewRow="True" Width="80" Span="1" />
                         <JQTools:JQFormColumn Alignment="left" Caption="職稱" Editor="text" FieldName="Contact3Title" Format="" maxlength="0" Width="95" NewRow="False" ReadOnly="False" RowSpan="1" Span="1" Visible="True" />
                         <JQTools:JQFormColumn Alignment="left" Caption="手機" Editor="text" FieldName="Contact3Mobile" Format="" maxlength="0" Width="100" NewRow="False" ReadOnly="False" RowSpan="1" Span="1" Visible="True" />
                         <JQTools:JQFormColumn Alignment="left" Caption="分機" Editor="text" FieldName="Contact3TelExt" Format="" maxlength="0" Width="90" NewRow="False" ReadOnly="False" RowSpan="1" Span="1" Visible="True" />
                         <JQTools:JQFormColumn Alignment="left" Caption="email" Editor="text" FieldName="Email2" Format="" maxlength="0" Span="2" Width="180" NewRow="False" ReadOnly="False" RowSpan="1" Visible="True" />
-                        <JQTools:JQFormColumn Alignment="left" Caption="電費單價" Editor="numberbox" FieldName="iPowerQty" MaxLength="0" Visible="True" Width="80" NewRow="True" />
+                        <JQTools:JQFormColumn Alignment="left" Caption="電費單價" Editor="numberbox" FieldName="iPowerQty" MaxLength="0" Visible="True" Width="80" NewRow="True" EditorOptions="precision:1,groupSeparator:'',prefix:''" />
                         <JQTools:JQFormColumn Alignment="left" Caption="收款結帳日" Editor="numberbox" FieldName="BalanceDate" NewRow="False" Span="1" Width="95" />
                         <JQTools:JQFormColumn Alignment="left" Caption="帳款天數" Editor="numberbox" FieldName="DebtorDays" MaxLength="0" Width="100" />
                         <JQTools:JQFormColumn Alignment="left" Caption="是否有效" Editor="checkbox" FieldName="IsActive" Format="" maxlength="0" Width="30" EditorOptions="on:1,off:0" />
